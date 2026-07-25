@@ -1,0 +1,62 @@
+{
+  "application": {
+    "name": "VetPara Atlas",
+    "shortName": "VetPara",
+    "version": "0.2.0",
+    "releaseDate": "2026-07-25",
+    "status": "Development",
+    "description": "Veterinary Parasitology Diagnostic Atlas",
+    "language": "sk",
+    "supportedLanguages": [
+      "sk",
+      "en"
+    ]
+  },
+
+  "theme": {
+    "default": "light",
+    "allowUserSwitch": true,
+    "rememberChoice": true
+  },
+
+  "database": {
+    "path": "../database/",
+    "defaultHost": "dog",
+    "format": "json",
+    "cache": true
+  },
+
+  "gallery": {
+    "thumbnailWidth": 320,
+    "lazyLoading": true,
+    "enableZoom": true,
+    "maxImagesPerPage": 48
+  },
+
+  "search": {
+    "minimumCharacters": 2,
+    "maxResults": 100,
+    "caseSensitive": false
+  },
+
+  "filters": {
+    "rememberLastSelection": true,
+    "allowMultipleSelection": true
+  },
+
+  "expertSystem": {
+    "enabled": false,
+    "maxSuggestions": 20
+  },
+
+  "accessibility": {
+    "highContrast": true,
+    "keyboardNavigation": true,
+    "animations": true
+  },
+
+  "development": {
+    "debug": true,
+    "consoleLog": true
+  }
+}
