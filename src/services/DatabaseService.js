@@ -7,9 +7,11 @@ class DatabaseService {
 
     constructor() {
 
-        this.cache = new Map();
+    this.cache = new Map();
 
-    }
+    this.currentDatabase = null;
+
+}
 
     async load(file) {
 
@@ -34,12 +36,52 @@ class DatabaseService {
         return json;
 
     }
+async loadDogDatabase() {
 
-    clearCache() {
+    const database = await this.load("dog.json");
 
-        this.cache.clear();
+    this.currentDatabase = database;
+
+    return database;
+
+}
+
+isLoaded() {
+
+    return this.currentDatabase != null;
+
+}
+
+getRecords() {
+
+    if (!this.currentDatabase) {
+
+        return [];
 
     }
+
+    return this.currentDatabase;
+
+}
+
+getRecordById(id) {
+
+    if (!this.currentDatabase) {
+
+        return null;
+
+    }
+
+    return this.currentDatabase.find(item => item.id === id) ?? null;
+
+}
+    clearCache() {
+
+    this.cache.clear();
+
+    this.currentDatabase = null;
+
+}
 
 }
 

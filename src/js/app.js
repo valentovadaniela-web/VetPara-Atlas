@@ -1,8 +1,11 @@
 /******************************************************************************
  * VetPara Atlas
- * File: app.js
+ * File: App.js
  * Version: 0.2.0
  ******************************************************************************/
+
+import DatabaseService from "../services/DatabaseService.js";
+import ApplicationState from "./ApplicationState.js";
 
 const App = {
 
@@ -17,9 +20,12 @@ const App = {
 
         await this.loadConfiguration();
 
+        await this.loadDatabase();
+
         this.printApplicationInfo();
 
         console.info("Application ready.");
+
     },
 
     async loadConfiguration() {
@@ -29,7 +35,9 @@ const App = {
             const response = await fetch("../config/config.json");
 
             if (!response.ok) {
+
                 throw new Error("Unable to load configuration.");
+
             }
 
             this.config = await response.json();
@@ -39,6 +47,31 @@ const App = {
         catch (error) {
 
             console.error(error);
+
+        }
+
+    },
+
+    async loadDatabase() {
+
+        try {
+
+            const database = await DatabaseService.loadDogDatabase();
+
+            ApplicationState.database = database;
+            ApplicationState.ready = true;
+
+            console.info(
+                `Dog database loaded (${DatabaseService.getRecords().length} records).`
+            );
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+            alert("Dog database could not be loaded.");
 
         }
 
@@ -57,12 +90,11 @@ const App = {
         console.table({
 
             Name: this.config.application.name,
-
             Version: this.config.application.version,
-
             Language: this.config.application.language,
-
-            Status: this.config.application.status
+            Status: this.config.application.status,
+            DatabaseLoaded: ApplicationState.ready,
+            Records: DatabaseService.getRecords().length
 
         });
 
