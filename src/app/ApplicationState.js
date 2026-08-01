@@ -9,6 +9,10 @@ const ApplicationState = {
 
     species: "dog",
 
+    selectedRecord: null,
+
+    filters: {},
+
     ready: false,
 
     version: "0.1.0"

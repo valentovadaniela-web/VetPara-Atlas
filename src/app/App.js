@@ -4,8 +4,34 @@
  ******************************************************************************/
 
 import Router from "./Router.js";
+import ApplicationState from "./ApplicationState.js";
+import DatabaseService from "../services/DatabaseService.js";
+import Repository from "../services/Repository.js";
 
 const App = {
+
+    async loadDatabase() {
+
+        try {
+
+            const database = await DatabaseService.loadDogDatabase();
+
+            ApplicationState.database = database;
+            ApplicationState.ready = true;
+
+            console.info(
+                `Dog database loaded (${Repository.count()} records)`
+            );
+
+        }
+
+        catch (error) {
+
+            console.error(error);
+
+        }
+
+    },
 
     async start() {
 
@@ -13,6 +39,8 @@ const App = {
         console.info(" VetPara Atlas");
         console.info(" Starting...");
         console.info("================================");
+
+        await this.loadDatabase();
 
         this.registerRoutes();
 
