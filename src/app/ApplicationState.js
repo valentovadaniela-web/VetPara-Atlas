@@ -11,7 +11,19 @@ const ApplicationState = {
 
     selectedRecord: null,
 
-    filters: {},
+filters: {
+
+    search: "",
+
+    species: "dog",
+
+    category: null,
+
+    diagnosis: null,
+
+    parasite: null
+
+},
 
     ready: false,
 

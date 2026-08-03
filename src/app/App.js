@@ -42,6 +42,11 @@ const App = {
 
         await this.loadDatabase();
 
+        console.info(
+    "Repository ready:",
+    Repository.count(),
+    "records"
+);
         this.registerRoutes();
 
         Router.start();
