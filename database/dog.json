@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Toxocara canis",
+    "species": "dog",
+    "category": "Nematoda"
+  },
+  {
+    "id": 2,
+    "name": "Dipylidium caninum",
+    "species": "dog",
+    "category": "Cestoda"
+  }
+]
