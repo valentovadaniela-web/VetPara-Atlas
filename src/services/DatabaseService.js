@@ -21,7 +21,7 @@ class DatabaseService {
 
         }
 
-        const response = await fetch(`../database/${file}`);
+        const response = await fetch(`database/${file}`);
 
         if (!response.ok) {
 
