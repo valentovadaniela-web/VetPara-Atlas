@@ -7,12 +7,35 @@ const XLSX = require("xlsx");
 const fs = require("fs");
 const path = require("path");
 
-const workbook = XLSX.readFile(
-    path.join(__dirname, "..", "data", "Mikrometria - parazity.xls")
+const excelFile = path.join(
+    __dirname,
+    "..",
+    "resources",
+    "Mikrometria - parazity.xls"
 );
+
+const workbook = XLSX.readFile(excelFile);
 
 const sheet = workbook.Sheets["Psy"];
 
-const rows = XLSX.utils.sheet_to_json(sheet);
+if (!sheet) {
 
-console.log(rows.length);
+    console.error("Worksheet 'Psy' not found.");
+
+    process.exit(1);
+
+}
+
+const rows = XLSX.utils.sheet_to_json(sheet, {
+    defval: ""
+});
+
+console.log("Rows:", rows.length);
+
+if (rows.length > 0) {
+
+    console.log("Columns:");
+
+    console.log(Object.keys(rows[0]));
+
+}
