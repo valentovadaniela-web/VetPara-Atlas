@@ -1,14 +1,352 @@
 [
   {
-    "id": 1,
-    "name": "Toxocara canis",
-    "species": "dog",
-    "category": "Nematoda"
+    "id": "DOG-0001",
+    "host": "pes",
+    "taxon": "Giardia intestinalis",
+    "size": "8-12 x 7-10",
+    "shape": "oválny",
+    "color": "nazelenalá",
+    "wall": "hladká",
+    "notes": "polmesiačikovitá cytoplazma excentricky"
   },
   {
-    "id": 2,
-    "name": "Dipylidium caninum",
-    "species": "dog",
-    "category": "Cestoda"
+    "id": "DOG-0002",
+    "host": "",
+    "taxon": "Isospora canis",
+    "size": "35-42 x 27-33",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0003",
+    "host": "",
+    "taxon": "Isospora ohioensis",
+    "size": "19-27 x 18-23",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0004",
+    "host": "",
+    "taxon": "Isospora burrowsi",
+    "size": "16-22 x 16-19",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "podobná I.ohioensis"
+  },
+  {
+    "id": "DOG-0005",
+    "host": "",
+    "taxon": "Isospora neorivolta",
+    "size": "17-24 x 16-22",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0006",
+    "host": "",
+    "taxon": "Cryptosporidium parvum",
+    "size": "4-5 x 4-5",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0007",
+    "host": "",
+    "taxon": "Hammondia heydornii",
+    "size": "12-14 x 10-11",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "nepatogén"
+  },
+  {
+    "id": "DOG-0008",
+    "host": "",
+    "taxon": "Sarcocystis spp.",
+    "size": "8-13x6-11",
+    "shape": "oválny, elipsovitý",
+    "color": "",
+    "wall": "",
+    "notes": "vnútri 4 rohlíkovité sporozoity, nepatogén"
+  },
+  {
+    "id": "DOG-0009",
+    "host": "",
+    "taxon": "Balantioides (predtým Balantidium) coli",
+    "size": "40-60 x 40-60",
+    "shape": "okrúhly",
+    "color": "",
+    "wall": "",
+    "notes": "vnútri vakuola"
+  },
+  {
+    "id": "DOG-0010",
+    "host": "",
+    "taxon": "Fasciola hepatica",
+    "size": "110-150 x 55-65",
+    "shape": "oválny",
+    "color": "žltohnedá",
+    "wall": "hladká s viečkom",
+    "notes": "vzácne u pastierskych psov"
+  },
+  {
+    "id": "DOG-0011",
+    "host": "",
+    "taxon": "Alaria alata",
+    "size": "98-134 × 62-70 (120 x 65), dospelé 2,5 – 6 x 0,5 – 2 mm",
+    "shape": "",
+    "color": "zelenožltá",
+    "wall": "viečko nevýrazné",
+    "notes": "dosp: predok plochý, zadok kužeľovitý"
+  },
+  {
+    "id": "DOG-0012",
+    "host": "",
+    "taxon": "Dipylidium caninum",
+    "size": "38-45 x 38-45",
+    "shape": "oválny",
+    "color": "svetlá",
+    "wall": "tenká",
+    "notes": "v kokónoch, viditeľné háčiky vo vajíčkach"
+  },
+  {
+    "id": "DOG-0013",
+    "host": "",
+    "taxon": "Taenia spp./Echinococcus",
+    "size": "34-39 x 31-35",
+    "shape": "okrúhly",
+    "color": "",
+    "wall": "hrubá",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0014",
+    "host": "",
+    "taxon": "Mesocestoides spp.",
+    "size": "50-50 x 39-39 (30-40)",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "embryo so 6 háčikmi"
+  },
+  {
+    "id": "DOG-0015",
+    "host": "",
+    "taxon": "Diphyllobothrium latum",
+    "size": "67-73 x 45-51",
+    "shape": "oválne",
+    "color": "žltá",
+    "wall": "operculum s výčnelkom",
+    "notes": "rybožravé zvieratá"
+  },
+  {
+    "id": "DOG-0016",
+    "host": "",
+    "taxon": "Toxocara canis",
+    "size": "75 - 90",
+    "shape": "oválny",
+    "color": "hnedá až žltá",
+    "wall": "žltá, hrubá, ako povraz, jamkovitý povrch",
+    "notes": "hrubšia stena ako u T.cati"
+  },
+  {
+    "id": "DOG-0017",
+    "host": "",
+    "taxon": "Toxascaris leonina",
+    "size": "75 x 85",
+    "shape": "oválny",
+    "color": "svetlohnedá až žltá",
+    "wall": "žltá, hrubá, vnútorný lem, hladký povrch",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0018",
+    "host": "",
+    "taxon": "Ancylostoma caninum",
+    "size": "53-69 x 35-54",
+    "shape": "oválny",
+    "color": "",
+    "wall": "tenká",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0019",
+    "host": "",
+    "taxon": "Uncinaria stenocephala",
+    "size": "75-85 x 40-45",
+    "shape": "oválny, podlhovastý",
+    "color": "",
+    "wall": "tenká",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0020",
+    "host": "",
+    "taxon": "Angiostrongylus vasorum",
+    "size": "310-400 x 20",
+    "shape": "výrastok na chvoste",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0021",
+    "host": "",
+    "taxon": "Crenosoma vulpis",
+    "size": "265-330 x 20",
+    "shape": "kopijovitý koniec chvosta",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0022",
+    "host": "",
+    "taxon": "Oslerus (Filaroides) osleri",
+    "size": 300,
+    "shape": "výrazne stenčený konček chvosta",
+    "color": "",
+    "wall": "",
+    "notes": "zriedkavo"
+  },
+  {
+    "id": "DOG-0023",
+    "host": "",
+    "taxon": "Physaloptera spp.",
+    "size": "32 × 55",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "vnútri larva"
+  },
+  {
+    "id": "DOG-0024",
+    "host": "",
+    "taxon": "Spirocerca lupi",
+    "size": " 30-40 x 11-15",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "najmä trópy, JV USA"
+  },
+  {
+    "id": "DOG-0025",
+    "host": "",
+    "taxon": "Dirofilaria immitis",
+    "size": 300,
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0026",
+    "host": "",
+    "taxon": "Dirofilaria repens",
+    "size": "280-360",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0027",
+    "host": "",
+    "taxon": "Strongyloides spp.",
+    "size": "v: 62-64 x 32-36, l: 230-350",
+    "shape": "oválny",
+    "color": "",
+    "wall": "tenká",
+    "notes": "larva stočená do tvaru U, larva L1 - veľké genit. promodium, L3 dlhý ezofágus"
+  },
+  {
+    "id": "DOG-0028",
+    "host": "",
+    "taxon": "Dioctophyme renale",
+    "size": "71-84 x 46-52",
+    "shape": "",
+    "color": "hnedá",
+    "wall": "hrboľatý, pórovitý povrch",
+    "notes": "v močovom sedimente"
+  },
+  {
+    "id": "DOG-0029",
+    "host": "",
+    "taxon": "Trichuris vulpis",
+    "size": "70-85 x 36-40",
+    "shape": "citrónovitý",
+    "color": "hnedá",
+    "wall": "zátky vypuklé",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0030",
+    "host": "",
+    "taxon": "Pearsonema (Capillaria) plica",
+    "size": "55-67 x 26-29",
+    "shape": "citrónovitý, súdkovitý",
+    "color": "",
+    "wall": "zátky rovné",
+    "notes": "v močovom sedimente"
+  },
+  {
+    "id": "DOG-0031",
+    "host": "",
+    "taxon": "Eucoleus boehmi",
+    "size": "55-67 x 26-34",
+    "shape": "citrónovitý, súdkovitý",
+    "color": "",
+    "wall": "vnútri morula",
+    "notes": "v nose, vajíčka sa dostanú sa aj do trusu"
+  },
+  {
+    "id": "DOG-0032",
+    "host": "",
+    "taxon": "Eucoleus aerophilus (= Capillaria aerophila)",
+    "size": "55-67 x 26-35",
+    "shape": "citrónovitý, súdkovitý",
+    "color": "",
+    "wall": "zátky rovné, sieťovaný povrch",
+    "notes": "v truse"
+  },
+  {
+    "id": "DOG-0033",
+    "host": "",
+    "taxon": "Linguatula serrata",
+    "size": "90 x 70",
+    "shape": "",
+    "color": "žltá",
+    "wall": "",
+    "notes": "nosový výtok, trus, vajíčko obsahuje embryo"
+  },
+  {
+    "id": "DOG-0034",
+    "host": "",
+    "taxon": "Demodex canis",
+    "size": "",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": ""
+  },
+  {
+    "id": "DOG-0035",
+    "host": "",
+    "taxon": "Demodex injai",
+    "size": "",
+    "shape": "",
+    "color": "",
+    "wall": "",
+    "notes": "dlhý, predĺžený koniec"
   }
 ]
