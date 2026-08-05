@@ -21,7 +21,6 @@ const sheet = workbook.Sheets["Psy"];
 if (!sheet) {
 
     console.error("Worksheet 'Psy' not found.");
-
     process.exit(1);
 
 }
@@ -30,12 +29,38 @@ const rows = XLSX.utils.sheet_to_json(sheet, {
     defval: ""
 });
 
-console.log("Rows:", rows.length);
+const data = rows.map((row, index) => ({
 
-if (rows.length > 0) {
+    id: `DOG-${String(index + 1).padStart(4, "0")}`,
 
-    console.log("Columns:");
+    host: row["hostiteľ"],
 
-    console.log(Object.keys(rows[0]));
+    taxon: row["druh"],
 
-}
+    size: row["veľkosť"],
+
+    shape: row["tvar"],
+
+    color: row["farba"],
+
+    wall: row["stena"],
+
+    notes: row["ďalšie znaky"]
+
+}));
+
+const output = path.join(
+    __dirname,
+    "..",
+    "database",
+    "dog.json"
+);
+
+fs.writeFileSync(
+    output,
+    JSON.stringify(data, null, 2),
+    "utf8"
+);
+
+console.log(`Created ${output}`);
+console.log(`Records: ${data.length}`);
