@@ -77,8 +77,7 @@ app.innerHTML = `
 
 });
 
-        });
-
+        
         Router.register("gallery", () => {
 
             console.log("Gallery page");
