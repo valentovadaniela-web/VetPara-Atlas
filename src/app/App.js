@@ -3,6 +3,7 @@
  * Core application
  ******************************************************************************/
 
+import AtlasPage from "../pages/AtlasPage.js";
 import Router from "./Router.js";
 import ApplicationState from "./ApplicationState.js";
 import DatabaseService from "../services/DatabaseService.js";
@@ -59,13 +60,22 @@ const App = {
 
         Router.register("home", () => {
 
-            console.log("Home page");
+            const app = document.getElementById("app");
+
+app.innerHTML = `
+    <h2>VetPara Atlas</h2>
+    <p>Diagnostický atlas veterinárnej parazitológie.</p>
+`;
 
         });
 
-        Router.register("atlas", () => {
+   Router.register("atlas", () => {
 
-            console.log("Atlas page");
+    const app = document.getElementById("app");
+
+    app.innerHTML = AtlasPage.render();
+
+});
 
         });
 
