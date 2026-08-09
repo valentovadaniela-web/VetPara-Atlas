@@ -7,6 +7,13 @@ import Repository from "../services/Repository.js";
 
 const AtlasPage = {
 
+    state: {
+        search: "",
+        host: "",
+        shape: "",
+        color: ""
+    },
+
     render() {
 
         return `
@@ -22,18 +29,52 @@ const AtlasPage = {
 
                 </div>
 
-                <div class="atlas-search">
+                <div class="atlas-controls">
 
-                    <label for="atlas-search-input">
-                        Vyhľadávanie
-                    </label>
+                    <div class="atlas-search">
 
-                    <input
-                        id="atlas-search-input"
-                        type="search"
-                        placeholder="Hľadať parazita..."
-                        autocomplete="off"
+                        <label for="atlas-search-input">
+                            Vyhľadávanie
+                        </label>
+
+                        <input
+                            id="atlas-search-input"
+                            type="search"
+                            placeholder="Hľadať parazita..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <div class="atlas-filters">
+
+                        ${this.renderFilter(
+                            "host",
+                            "Hostiteľ",
+                            this.getValues("host")
+                        )}
+
+                        ${this.renderFilter(
+                            "shape",
+                            "Tvar",
+                            this.getValues("shape")
+                        )}
+
+                        ${this.renderFilter(
+                            "color",
+                            "Farba",
+                            this.getValues("color")
+                        )}
+
+                    </div>
+
+                    <button
+                        type="button"
+                        id="atlas-clear-filters"
+                        class="atlas-clear-filters"
                     >
+                        Zrušiť filtre
+                    </button>
 
                 </div>
 
@@ -54,28 +95,130 @@ const AtlasPage = {
 
     init() {
 
-        const input = document.getElementById("atlas-search-input");
+        const input =
+            document.getElementById("atlas-search-input");
 
-        if (!input) {
+        if (input) {
+
+            input.value = this.state.search;
+
+            input.addEventListener("input", (event) => {
+
+                this.state.search = event.target.value;
+
+                this.renderRecords();
+
+            });
+
+        }
+
+        this.bindFilter("host");
+        this.bindFilter("shape");
+        this.bindFilter("color");
+
+        const clearButton =
+            document.getElementById("atlas-clear-filters");
+
+        if (clearButton) {
+
+            clearButton.addEventListener("click", () => {
+
+                this.state.search = "";
+                this.state.host = "";
+                this.state.shape = "";
+                this.state.color = "";
+
+                this.render();
+
+                const app = document.getElementById("app");
+
+                app.innerHTML = this.render();
+
+                this.init();
+
+            });
+
+        }
+
+        this.renderRecords();
+
+    },
+
+    getValues(field) {
+
+        const values = Repository.getAll()
+            .map(record => record[field])
+            .filter(value =>
+                value !== undefined &&
+                value !== null &&
+                String(value).trim() !== ""
+            )
+            .map(value => String(value).trim());
+
+        return [...new Set(values)].sort((a, b) =>
+            a.localeCompare(b, "sk")
+        );
+
+    },
+
+    renderFilter(field, label, values) {
+
+        return `
+            <div class="atlas-filter">
+
+                <label for="atlas-filter-${field}">
+                    ${label}
+                </label>
+
+                <select id="atlas-filter-${field}">
+
+                    <option value="">
+                        Všetky
+                    </option>
+
+                    ${values.map(value => `
+                        <option value="${this.escapeHtml(value)}">
+                            ${this.escapeHtml(value)}
+                        </option>
+                    `).join("")}
+
+                </select>
+
+            </div>
+        `;
+
+    },
+
+    bindFilter(field) {
+
+        const select =
+            document.getElementById(`atlas-filter-${field}`);
+
+        if (!select) {
 
             return;
 
         }
 
-        this.renderRecords("");
+        select.value = this.state[field];
 
-        input.addEventListener("input", (event) => {
+        select.addEventListener("change", (event) => {
 
-            this.renderRecords(event.target.value);
+            this.state[field] = event.target.value;
+
+            this.renderRecords();
 
         });
 
     },
 
-    renderRecords(searchTerm) {
+    renderRecords() {
 
-        const container = document.getElementById("atlas-records");
-        const count = document.getElementById("atlas-results-count");
+        const container =
+            document.getElementById("atlas-records");
+
+        const count =
+            document.getElementById("atlas-results-count");
 
         if (!container || !count) {
 
@@ -85,19 +228,35 @@ const AtlasPage = {
 
         const records = Repository.getAll();
 
-        const search = searchTerm.trim().toLowerCase();
+        const search =
+            this.state.search.trim().toLowerCase();
 
         const filtered = records.filter(record => {
 
-            if (!search) {
+            const matchesSearch =
+                !search ||
+                String(record.taxon ?? "")
+                    .toLowerCase()
+                    .includes(search);
 
-                return true;
+            const matchesHost =
+                !this.state.host ||
+                String(record.host ?? "") === this.state.host;
 
-            }
+            const matchesShape =
+                !this.state.shape ||
+                String(record.shape ?? "") === this.state.shape;
 
-            return String(record.taxon ?? "")
-                .toLowerCase()
-                .includes(search);
+            const matchesColor =
+                !this.state.color ||
+                String(record.color ?? "") === this.state.color;
+
+            return (
+                matchesSearch &&
+                matchesHost &&
+                matchesShape &&
+                matchesColor
+            );
 
         });
 
@@ -108,7 +267,10 @@ const AtlasPage = {
 
             container.innerHTML = `
                 <div class="atlas-empty">
-                    <p>Žiadny záznam nevyhovuje vyhľadávaniu.</p>
+                    <p>
+                        Žiadny záznam nevyhovuje zadaným
+                        kritériám.
+                    </p>
                 </div>
             `;
 
@@ -126,7 +288,9 @@ const AtlasPage = {
 
                 <header class="parasite-card-header">
 
-                    <h2>${this.escapeHtml(record.taxon)}</h2>
+                    <h2>
+                        ${this.escapeHtml(record.taxon)}
+                    </h2>
 
                 </header>
 
@@ -142,7 +306,10 @@ const AtlasPage = {
 
                     ${this.field("Stena", record.wall)}
 
-                    ${this.field("Ďalšie znaky", record.notes)}
+                    ${this.field(
+                        "Ďalšie znaky",
+                        record.notes
+                    )}
 
                 </div>
 
@@ -156,7 +323,8 @@ const AtlasPage = {
 
     bindCards() {
 
-        const cards = document.querySelectorAll(".parasite-card");
+        const cards =
+            document.querySelectorAll(".parasite-card");
 
         cards.forEach(card => {
 
@@ -211,25 +379,43 @@ const AtlasPage = {
 
                 <header class="parasite-detail-header">
 
-                    <h1>${this.escapeHtml(record.taxon)}</h1>
+                    <h1>
+                        ${this.escapeHtml(record.taxon)}
+                    </h1>
 
                     <p>
-                        ID: ${this.escapeHtml(record.id)}
+                        ID:
+                        ${this.escapeHtml(record.id)}
                     </p>
 
                 </header>
 
                 <div class="parasite-detail-content">
 
-                    ${this.detailField("Hostiteľ", record.host)}
+                    ${this.detailField(
+                        "Hostiteľ",
+                        record.host
+                    )}
 
-                    ${this.detailField("Veľkosť", record.size)}
+                    ${this.detailField(
+                        "Veľkosť",
+                        record.size
+                    )}
 
-                    ${this.detailField("Tvar", record.shape)}
+                    ${this.detailField(
+                        "Tvar",
+                        record.shape
+                    )}
 
-                    ${this.detailField("Farba", record.color)}
+                    ${this.detailField(
+                        "Farba",
+                        record.color
+                    )}
 
-                    ${this.detailField("Stena", record.wall)}
+                    ${this.detailField(
+                        "Stena",
+                        record.wall
+                    )}
 
                     ${this.detailField(
                         "Ďalšie znaky",

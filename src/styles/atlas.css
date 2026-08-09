@@ -124,3 +124,38 @@
 .parasite-detail-field p {
     margin-bottom: 0;
 }
+.atlas-controls {
+    margin-bottom: 1.5rem;
+}
+
+.atlas-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.atlas-filter {
+    min-width: 200px;
+}
+
+.atlas-filter label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.atlas-filter select {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.atlas-clear-filters {
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+}
