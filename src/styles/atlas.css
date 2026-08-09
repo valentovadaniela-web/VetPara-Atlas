@@ -1,0 +1,78 @@
+/******************************************************************************
+ * VetPara Atlas
+ * Atlas UI
+ ******************************************************************************/
+
+.atlas-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.atlas-header {
+    margin-bottom: 2rem;
+}
+
+.atlas-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.atlas-search {
+    margin-bottom: 1rem;
+}
+
+.atlas-search label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.atlas-search input {
+    width: 100%;
+    max-width: 600px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+.atlas-results-count {
+    margin: 1rem 0;
+    font-weight: 600;
+}
+
+.atlas-records {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.parasite-card {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    background: #fff;
+}
+
+.parasite-card-header {
+    margin-bottom: 1rem;
+}
+
+.parasite-card-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.parasite-field {
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+}
+
+.parasite-field strong {
+    display: block;
+}
+
+.atlas-empty {
+    padding: 2rem;
+    border: 1px solid #ccc;
+}

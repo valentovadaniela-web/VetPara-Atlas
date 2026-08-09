@@ -69,11 +69,13 @@ app.innerHTML = `
 
         });
 
-   Router.register("atlas", () => {
+Router.register("atlas", () => {
 
     const app = document.getElementById("app");
 
     app.innerHTML = AtlasPage.render();
+
+    AtlasPage.init();
 
 });
 
