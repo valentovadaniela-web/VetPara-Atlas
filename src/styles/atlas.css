@@ -264,3 +264,45 @@
     }
 
 }
+/******************************************************************************
+ * Active filters
+ ******************************************************************************/
+
+.atlas-active-filters {
+    margin-top: 1rem;
+}
+
+.atlas-active-filters-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.atlas-filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.atlas-filter-tag {
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.atlas-filter-tag span {
+    margin-left: 0.4rem;
+    font-weight: 700;
+}
+
+.atlas-filter-tag:hover {
+    text-decoration: underline;
+}
+
+.atlas-filter-tag:focus {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}

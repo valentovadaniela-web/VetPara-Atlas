@@ -40,8 +40,8 @@ const AtlasPage = {
                         <input
                             id="atlas-search-input"
                             type="search"
-                            aria-label="Vyhľadávanie parazita"
                             placeholder="Hľadať parazita..."
+                            aria-label="Vyhľadávanie parazita"
                             autocomplete="off"
                         >
 
@@ -69,12 +69,18 @@ const AtlasPage = {
 
                     </div>
 
+                    <div
+                        id="atlas-active-filters"
+                        class="atlas-active-filters"
+                        aria-live="polite"
+                    ></div>
+
                     <button
                         type="button"
                         id="atlas-clear-filters"
                         class="atlas-clear-filters"
                     >
-                        Zrušiť filtre
+                        Zrušiť všetky filtre
                     </button>
 
                 </div>
@@ -82,6 +88,7 @@ const AtlasPage = {
                 <div
                     id="atlas-results-count"
                     class="atlas-results-count"
+                    aria-live="polite"
                 ></div>
 
                 <div
@@ -124,18 +131,7 @@ const AtlasPage = {
 
             clearButton.addEventListener("click", () => {
 
-                this.state.search = "";
-                this.state.host = "";
-                this.state.shape = "";
-                this.state.color = "";
-
-                this.render();
-
-                const app = document.getElementById("app");
-
-                app.innerHTML = this.render();
-
-                this.init();
+                this.clearFilters();
 
             });
 
@@ -221,6 +217,9 @@ const AtlasPage = {
         const count =
             document.getElementById("atlas-results-count");
 
+        const activeFilters =
+            document.getElementById("atlas-active-filters");
+
         if (!container || !count) {
 
             return;
@@ -264,14 +263,23 @@ const AtlasPage = {
         count.textContent =
             `Zobrazené záznamy: ${filtered.length} / ${records.length}`;
 
+        if (activeFilters) {
+
+            activeFilters.innerHTML =
+                this.renderActiveFilters();
+
+        }
+
         if (filtered.length === 0) {
 
             container.innerHTML = `
                 <div class="atlas-empty">
+
                     <p>
                         Žiadny záznam nevyhovuje zadaným
                         kritériám.
                     </p>
+
                 </div>
             `;
 
@@ -281,12 +289,12 @@ const AtlasPage = {
 
         container.innerHTML = filtered.map(record => `
 
-                <article
-                 class="parasite-card"
-                 data-id="${this.escapeHtml(record.id)}"
-                 tabindex="0"
-                 role="button"
-                 aria-label="Otvoriť detail: ${this.escapeHtml(record.taxon)}"
+            <article
+                class="parasite-card"
+                data-id="${this.escapeHtml(record.id)}"
+                tabindex="0"
+                role="button"
+                aria-label="Otvoriť detail: ${this.escapeHtml(record.taxon)}"
             >
 
                 <header class="parasite-card-header">
@@ -321,6 +329,159 @@ const AtlasPage = {
         `).join("");
 
         this.bindCards();
+
+        this.bindActiveFilterButtons();
+
+    },
+
+    renderActiveFilters() {
+
+        const filters = [];
+
+        if (this.state.search.trim()) {
+
+            filters.push({
+                key: "search",
+                label: "Hľadanie",
+                value: this.state.search.trim()
+            });
+
+        }
+
+        if (this.state.host) {
+
+            filters.push({
+                key: "host",
+                label: "Hostiteľ",
+                value: this.state.host
+            });
+
+        }
+
+        if (this.state.shape) {
+
+            filters.push({
+                key: "shape",
+                label: "Tvar",
+                value: this.state.shape
+            });
+
+        }
+
+        if (this.state.color) {
+
+            filters.push({
+                key: "color",
+                label: "Farba",
+                value: this.state.color
+            });
+
+        }
+
+        if (filters.length === 0) {
+
+            return "";
+
+        }
+
+        return `
+
+            <div class="atlas-active-filters-title">
+                Aktívne filtre:
+            </div>
+
+            <div class="atlas-filter-tags">
+
+                ${filters.map(filter => `
+
+                    <button
+                        type="button"
+                        class="atlas-filter-tag"
+                        data-filter-key="${filter.key}"
+                        aria-label="Odstrániť filter ${filter.label}: ${this.escapeHtml(filter.value)}"
+                    >
+
+                        ${filter.label}:
+                        ${this.escapeHtml(filter.value)}
+
+                        <span aria-hidden="true">×</span>
+
+                    </button>
+
+                `).join("")}
+
+            </div>
+
+        `;
+
+    },
+
+    bindActiveFilterButtons() {
+
+        const buttons =
+            document.querySelectorAll(".atlas-filter-tag");
+
+        buttons.forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const key =
+                    button.dataset.filterKey;
+
+                if (!key) {
+
+                    return;
+
+                }
+
+                this.state[key] = "";
+
+                this.syncControls();
+
+                this.renderRecords();
+
+            });
+
+        });
+
+    },
+
+    syncControls() {
+
+        const input =
+            document.getElementById("atlas-search-input");
+
+        if (input) {
+
+            input.value = this.state.search;
+
+        }
+
+        ["host", "shape", "color"].forEach(field => {
+
+            const select =
+                document.getElementById(`atlas-filter-${field}`);
+
+            if (select) {
+
+                select.value = this.state[field];
+
+            }
+
+        });
+
+    },
+
+    clearFilters() {
+
+        this.state.search = "";
+        this.state.host = "";
+        this.state.shape = "";
+        this.state.color = "";
+
+        this.syncControls();
+
+        this.renderRecords();
 
     },
 
@@ -366,7 +527,8 @@ const AtlasPage = {
 
         }
 
-        const app = document.getElementById("app");
+        const app =
+            document.getElementById("app");
 
         app.innerHTML = `
 
@@ -434,8 +596,6 @@ const AtlasPage = {
         document
             .getElementById("atlas-back")
             .addEventListener("click", () => {
-
-                const app = document.getElementById("app");
 
                 app.innerHTML = this.render();
 
