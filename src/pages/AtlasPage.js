@@ -40,6 +40,7 @@ const AtlasPage = {
                         <input
                             id="atlas-search-input"
                             type="search"
+                            aria-label="Vyhľadávanie parazita"
                             placeholder="Hľadať parazita..."
                             autocomplete="off"
                         >
@@ -280,10 +281,12 @@ const AtlasPage = {
 
         container.innerHTML = filtered.map(record => `
 
-            <article
-                class="parasite-card"
-                data-id="${this.escapeHtml(record.id)}"
-                tabindex="0"
+                <article
+                 class="parasite-card"
+                 data-id="${this.escapeHtml(record.id)}"
+                 tabindex="0"
+                 role="button"
+                 aria-label="Otvoriť detail: ${this.escapeHtml(record.taxon)}"
             >
 
                 <header class="parasite-card-header">

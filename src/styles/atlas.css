@@ -159,3 +159,108 @@
     padding: 0.7rem 1rem;
     cursor: pointer;
 }
+/******************************************************************************
+ * VetPara Atlas
+ * Atlas UI - Responsive & Accessibility
+ ******************************************************************************/
+
+/* Keyboard focus */
+
+.atlas-search input:focus,
+.atlas-filter select:focus,
+.atlas-clear-filters:focus,
+.atlas-back:focus,
+.parasite-card:focus {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+/* Better touch targets */
+
+.atlas-search input,
+.atlas-filter select,
+.atlas-clear-filters,
+.atlas-back {
+    min-height: 44px;
+}
+
+
+/* Cards */
+
+.parasite-card {
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.parasite-card:hover {
+    cursor: pointer;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .atlas-page {
+        padding: 1rem;
+    }
+
+    .atlas-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .atlas-filters {
+        display: block;
+    }
+
+    .atlas-filter {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: 1rem;
+    }
+
+    .atlas-filter select {
+        width: 100%;
+    }
+
+    .atlas-records {
+        grid-template-columns: 1fr;
+    }
+
+    .parasite-card {
+        padding: 1rem;
+    }
+
+    .parasite-detail {
+        padding: 1rem;
+    }
+
+}
+
+
+/* Tablet */
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    .atlas-records {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+}
