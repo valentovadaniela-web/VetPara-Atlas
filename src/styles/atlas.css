@@ -76,3 +76,51 @@
     padding: 2rem;
     border: 1px solid #ccc;
 }
+.parasite-card {
+    cursor: pointer;
+}
+
+.parasite-card:focus {
+    outline: 3px solid currentColor;
+    outline-offset: 2px;
+}
+
+.atlas-back {
+    padding: 0.7rem 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.parasite-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.parasite-detail-header {
+    margin-bottom: 2rem;
+}
+
+.parasite-detail-header h1 {
+    margin-bottom: 0.5rem;
+}
+
+.parasite-detail-content {
+    display: grid;
+    gap: 1rem;
+}
+
+.parasite-detail-field {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.parasite-detail-field h2 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.parasite-detail-field p {
+    margin-bottom: 0;
+}
