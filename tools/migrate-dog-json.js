@@ -12,12 +12,23 @@
  *   database/dog.migrated.json
  *   database/dog.migration-report.json
  *
- * DÔLEŽITÉ:
- * - pôvodný dog.json sa NEPREPISUJE
- * - odborné údaje sa NEHÁDAJÚ
- * - nejednoznačné rozmery idú do reportu
- * - stage/sample/taxonomy sa automaticky nevymýšľajú
+ * Bezpečnostné pravidlá:
+ * - pôvodný dog.json sa nikdy neprepíše
+ * - odborné údaje sa nedopĺňajú odhadom
+ * - nejednoznačná mikrometria ide do manualReview
+ * - kombinované diagnostické objekty sa automaticky nerozdeľujú
+ * - created/modified/version sa doplnia ako migračné metadáta
+ *
+ * Spustenie:
+ *   node tools/migrate-dog-json.js
+ *
+ * Ak má projekt package.json s "type": "module":
+ *   premenuj súbor na migrate-dog-json.cjs
+ *   a spusti:
+ *   node tools/migrate-dog-json.cjs
  */
+
+"use strict";
 
 const fs = require("fs");
 const path = require("path");
@@ -47,6 +58,11 @@ const REPORT = path.join(
     "dog.migration-report.json"
 );
 
+const MIGRATION_TIMESTAMP =
+    new Date().toISOString();
+
+const DEFAULT_VERSION = "1.0.0";
+
 
 // ============================================================
 // POMOCNÉ FUNKCIE
@@ -55,7 +71,10 @@ const REPORT = path.join(
 function readJson(file) {
 
     return JSON.parse(
-        fs.readFileSync(file, "utf8")
+        fs.readFileSync(
+            file,
+            "utf8"
+        )
     );
 
 }
@@ -65,7 +84,11 @@ function writeJson(file, data) {
 
     fs.writeFileSync(
         file,
-        JSON.stringify(data, null, 2) + "\n",
+        JSON.stringify(
+            data,
+            null,
+            2
+        ) + "\n",
         "utf8"
     );
 
@@ -79,14 +102,18 @@ function asArray(value) {
         value === undefined ||
         value === ""
     ) {
+
         return [];
+
     }
+
 
     if (Array.isArray(value)) {
 
         return value.filter(Boolean);
 
     }
+
 
     return [value];
 
@@ -96,83 +123,113 @@ function asArray(value) {
 function firstNonEmpty(...values) {
 
     return values.find(
+
         value =>
+
             value !== undefined &&
             value !== null &&
             String(value).trim() !== ""
+
     );
 
 }
 
 
 // ============================================================
-// NORMALIZÁCIA HOSTITEĽA
+// HOSTITEĽ
 // ============================================================
 
 function normalizeHost(value) {
 
-    const values = asArray(value);
+    const values =
+        asArray(value);
 
-    const result = values
-        .map(value => {
-
-            const text = String(value).trim();
-
-            if (!text) {
-                return null;
-            }
-
-            const lower =
-                text.toLocaleLowerCase("sk-SK");
-
-            if (
-                lower === "pes" ||
-                lower === "pes domáci" ||
-                lower === "canis familiaris"
-            ) {
-
-                return "Pes";
-
-            }
-
-            return text;
-
-        })
-        .filter(Boolean);
 
     return [
-        ...new Set(result)
+
+        ...new Set(
+
+            values
+
+                .map(value => {
+
+                    const text =
+                        String(value).trim();
+
+
+                    if (!text) {
+
+                        return null;
+
+                    }
+
+
+                    const lower =
+                        text.toLocaleLowerCase(
+                            "sk-SK"
+                        );
+
+
+                    if (
+
+                        lower === "pes" ||
+                        lower === "pes domáci" ||
+                        lower === "canis familiaris"
+
+                    ) {
+
+                        return "Pes";
+
+                    }
+
+
+                    return text;
+
+                })
+
+                .filter(Boolean)
+
+        )
+
     ];
 
 }
 
 
 // ============================================================
-// NORMALIZÁCIA ID
+// ID
 // ============================================================
 
 function slugifyId(value) {
 
     return String(value || "")
+
         .normalize("NFD")
+
         .replace(
             /[\u0300-\u036f]/g,
             ""
         )
+
         .replace(
             /[^\p{L}\p{N}\s_-]/gu,
             ""
         )
+
         .trim()
+
         .toLowerCase()
+
         .replace(
             /\s+/g,
             "_"
         )
+
         .replace(
             /-+/g,
             "_"
         )
+
         .replace(
             /_+/g,
             "_"
@@ -183,21 +240,6 @@ function slugifyId(value) {
 
 // ============================================================
 // MIKROMETRIA
-// ============================================================
-//
-// Bezpečne spracujeme napr.:
-//
-// 75-90 x 65-75
-// 75 - 90 x 65 - 75
-// 75 x 85
-// 34-39 x 31-35
-//
-// NEBUDEME hádať:
-//
-// 75-90
-// 300
-// v: 62-64 x 32-36, l: 230-350
-//
 // ============================================================
 
 function parseMicrometry(raw) {
@@ -214,33 +256,45 @@ function parseMicrometry(raw) {
 
             status: "missing",
 
-            reason: "missing_size"
+            reason:
+                "missing_size"
 
         };
 
     }
 
 
-    const text = String(raw)
+    const text =
 
-        .replace(/µm/gi, "")
-        .replace(/μm/gi, "")
+        String(raw)
 
-        .replace(
-            /\s+/g,
-            " "
-        )
+            .replace(
+                /µm/gi,
+                ""
+            )
 
-        .trim();
+            .replace(
+                /μm/gi,
+                ""
+            )
+
+            .replace(
+                /\s+/g,
+                " "
+            )
+
+            .trim();
 
 
     // --------------------------------------------------------
-    // VIAC STÁDIÍ / VIAC OBJEKTOV
+    // VIAC STÁDIÍ / OBJEKTOV
     // --------------------------------------------------------
 
     if (
+
         /\b[vl]\s*:/i.test(text) &&
         /[,;]/.test(text)
+
     ) {
 
         return {
@@ -268,16 +322,7 @@ function parseMicrometry(raw) {
 
     let match = text.match(
 
-        /^
-        (\d+(?:[.,]\d+)?)
-        \s*[-–]\s*
-        (\d+(?:[.,]\d+)?)
-        \s*[x×]\s*
-        (\d+(?:[.,]\d+)?)
-        \s*[-–]\s*
-        (\d+(?:[.,]\d+)?)
-        $
-        /ix
+        /^(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*[x×]\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)$/i
 
     );
 
@@ -290,29 +335,42 @@ function parseMicrometry(raw) {
 
                 lengthMin:
                     Number(
-                        match[1].replace(",", ".")
+                        match[1].replace(
+                            ",",
+                            "."
+                        )
                     ),
 
                 lengthMax:
                     Number(
-                        match[2].replace(",", ".")
+                        match[2].replace(
+                            ",",
+                            "."
+                        )
                     ),
 
                 widthMin:
                     Number(
-                        match[3].replace(",", ".")
+                        match[3].replace(
+                            ",",
+                            "."
+                        )
                     ),
 
                 widthMax:
                     Number(
-                        match[4].replace(",", ".")
+                        match[4].replace(
+                            ",",
+                            "."
+                        )
                     ),
 
                 unit: "µm"
 
             },
 
-            status: "converted"
+            status:
+                "converted"
 
         };
 
@@ -320,7 +378,7 @@ function parseMicrometry(raw) {
 
 
     // --------------------------------------------------------
-    // RANGE / SINGLE x RANGE / SINGLE
+    // SINGLE / RANGE x SINGLE / RANGE
     //
     // napr.
     // 75 x 85
@@ -330,20 +388,7 @@ function parseMicrometry(raw) {
 
     match = text.match(
 
-        /^
-        (\d+(?:[.,]\d+)?)
-        (?:
-            \s*[-–]\s*
-            (\d+(?:[.,]\d+)?)
-        )?
-        \s*[x×]\s*
-        (\d+(?:[.,]\d+)?)
-        (?:
-            \s*[-–]\s*
-            (\d+(?:[.,]\d+)?)
-        )?
-        $
-        /ix
+        /^(\d+(?:[.,]\d+)?)(?:\s*[-–]\s*(\d+(?:[.,]\d+)?))?\s*[x×]\s*(\d+(?:[.,]\d+)?)(?:\s*[-–]\s*(\d+(?:[.,]\d+)?))?$/i
 
     );
 
@@ -351,28 +396,50 @@ function parseMicrometry(raw) {
     if (match) {
 
         const lengthMin =
+
             Number(
-                match[1].replace(",", ".")
+                match[1].replace(
+                    ",",
+                    "."
+                )
             );
 
+
         const lengthMax =
+
             match[2]
+
                 ? Number(
-                    match[2].replace(",", ".")
+                    match[2].replace(
+                        ",",
+                        "."
+                    )
                 )
+
                 : lengthMin;
 
 
         const widthMin =
+
             Number(
-                match[3].replace(",", ".")
+                match[3].replace(
+                    ",",
+                    "."
+                )
             );
 
+
         const widthMax =
+
             match[4]
+
                 ? Number(
-                    match[4].replace(",", ".")
+                    match[4].replace(
+                        ",",
+                        "."
+                    )
                 )
+
                 : widthMin;
 
 
@@ -392,7 +459,8 @@ function parseMicrometry(raw) {
 
             },
 
-            status: "converted"
+            status:
+                "converted"
 
         };
 
@@ -400,7 +468,77 @@ function parseMicrometry(raw) {
 
 
     // --------------------------------------------------------
-    // IBA JEDEN ROZSAH
+    // PARENTHETICKÝ RANGE
+    //
+    // napr.
+    // 69,4 x 43,6
+    // (60,3-75,9 x 39,8-51,8)
+    //
+    // Použije sa iba jasne uvedený rozsah.
+    // --------------------------------------------------------
+
+    match = text.match(
+
+        /\(\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*[x×]\s*(\d+(?:[.,]\d+)?)\s*[-–]\s*(\d+(?:[.,]\d+)?)\s*\)/
+
+    );
+
+
+    if (match) {
+
+        return {
+
+            value: {
+
+                lengthMin:
+                    Number(
+                        match[1].replace(
+                            ",",
+                            "."
+                        )
+                    ),
+
+                lengthMax:
+                    Number(
+                        match[2].replace(
+                            ",",
+                            "."
+                        )
+                    ),
+
+                widthMin:
+                    Number(
+                        match[3].replace(
+                            ",",
+                            "."
+                        )
+                    ),
+
+                widthMax:
+                    Number(
+                        match[4].replace(
+                            ",",
+                            "."
+                        )
+                    ),
+
+                unit: "µm"
+
+            },
+
+            status:
+                "converted",
+
+            reason:
+                "parenthetical_range_used"
+
+        };
+
+    }
+
+
+    // --------------------------------------------------------
+    // JEDEN ROZSAH
     //
     // napr.
     // 75-90
@@ -409,20 +547,24 @@ function parseMicrometry(raw) {
     // --------------------------------------------------------
 
     if (
+
         /^\d+(?:[.,]\d+)?\s*[-–]\s*\d+(?:[.,]\d+)?$/
             .test(text)
+
     ) {
 
         return {
 
             value: null,
 
-            status: "manual",
+            status:
+                "manual",
 
             reason:
                 "one_dimension_only",
 
-            raw: text
+            raw:
+                text
 
         };
 
@@ -435,24 +577,28 @@ function parseMicrometry(raw) {
     // napr.
     // 300
     //
-    // Jednotku ani význam nehádam.
+    // Jednotku NEHÁDAME.
     // --------------------------------------------------------
 
     if (
+
         /^\d+(?:[.,]\d+)?$/
             .test(text)
+
     ) {
 
         return {
 
             value: null,
 
-            status: "manual",
+            status:
+                "manual",
 
             reason:
                 "bare_number_without_confirmed_unit",
 
-            raw: text
+            raw:
+                text
 
         };
 
@@ -467,12 +613,14 @@ function parseMicrometry(raw) {
 
         value: null,
 
-        status: "manual",
+        status:
+            "manual",
 
         reason:
             "unrecognized_size_format",
 
-        raw: text
+        raw:
+            text
 
     };
 
@@ -480,7 +628,7 @@ function parseMicrometry(raw) {
 
 
 // ============================================================
-// NOVÁ ŠTRUKTÚRA ZÁZNAMU
+// NOVÝ ZÁZNAM PODĽA SCHÉMY
 // ============================================================
 
 function createEmptyRecord() {
@@ -535,7 +683,13 @@ function createEmptyRecord() {
 
         references: [],
 
-        notes: null
+        notes: null,
+
+        created: null,
+
+        modified: null,
+
+        version: null
 
     };
 
@@ -556,28 +710,37 @@ function migrateRecord(source, index) {
 
     // --------------------------------------------------------
     // ID
+    //
+    // Ak existuje source.id:
+    // DOG-0001 -> dog_0001
+    //
+    // ID zámerne nemeníme na taxon_stage,
+    // pretože stage nemusí byť známy.
     // --------------------------------------------------------
 
+    const originalId =
+        firstNonEmpty(
+            source.id
+        );
+
+
     output.id =
+
         slugifyId(
 
-            firstNonEmpty(
+            originalId ||
 
-                source.id,
+            source.latinName ||
 
-                source.latinName,
+            source.taxon ||
 
-                source.taxon,
-
-                `record_${index + 1}`
-
-            )
+            `record_${index + 1}`
 
         );
 
 
     // --------------------------------------------------------
-    // latinName
+    // LATIN NAME
     //
     // taxon -> latinName
     // --------------------------------------------------------
@@ -591,6 +754,17 @@ function migrateRecord(source, index) {
             source.taxon
 
         ) || "";
+
+
+    // --------------------------------------------------------
+    // SLOVAK NAME
+    // --------------------------------------------------------
+
+    output.slovakName =
+
+        firstNonEmpty(
+            source.slovakName
+        ) ?? null;
 
 
     // --------------------------------------------------------
@@ -613,9 +787,7 @@ function migrateRecord(source, index) {
 
 
     // --------------------------------------------------------
-    // POVINNÉ / ZNÁME POLIA
-    //
-    // Nič nevymýšľame.
+    // SAMPLE
     // --------------------------------------------------------
 
     output.sample =
@@ -628,6 +800,10 @@ function migrateRecord(source, index) {
 
         ) ?? null;
 
+
+    // --------------------------------------------------------
+    // STAGE
+    // --------------------------------------------------------
 
     output.stage =
 
@@ -642,22 +818,29 @@ function migrateRecord(source, index) {
         ) ?? null;
 
 
+    // --------------------------------------------------------
+    // GROUP
+    // --------------------------------------------------------
+
     output.group =
 
         firstNonEmpty(
-
             source.group
-
         ) ?? null;
 
 
     // --------------------------------------------------------
-    // TAXONÓMIA
+    // TAXONOMY
     // --------------------------------------------------------
 
     if (
+
         source.taxonomy &&
-        typeof source.taxonomy === "object"
+
+        typeof source.taxonomy === "object" &&
+
+        !Array.isArray(source.taxonomy)
+
     ) {
 
         output.taxonomy =
@@ -675,13 +858,14 @@ function migrateRecord(source, index) {
         asArray(
 
             source.methods ??
+
             source.method
 
         );
 
 
     // --------------------------------------------------------
-    // DIAGNOSTICKÉ ZNAKY
+    // DIAGNOSTIC SIGNS
     // --------------------------------------------------------
 
     output.diagnosticSigns =
@@ -689,13 +873,14 @@ function migrateRecord(source, index) {
         asArray(
 
             source.diagnosticSigns ??
+
             source.diagnostic_signs
 
         );
 
 
     // --------------------------------------------------------
-    // DIFERENCIÁLNA DIAGNOSTIKA
+    // DIFFERENTIAL DIAGNOSIS
     // --------------------------------------------------------
 
     output.differentialDiagnosis =
@@ -703,13 +888,24 @@ function migrateRecord(source, index) {
         asArray(
 
             source.differentialDiagnosis ??
+
             source.differential
 
         );
 
 
     // --------------------------------------------------------
-    // OSTATNÉ
+    // ZOONOSIS
+    // --------------------------------------------------------
+
+    output.zoonosis =
+
+        source.zoonosis ??
+        null;
+
+
+    // --------------------------------------------------------
+    // IMAGES / REFERENCES / NOTES
     // --------------------------------------------------------
 
     output.images =
@@ -718,15 +914,13 @@ function migrateRecord(source, index) {
     output.references =
         asArray(source.references);
 
-    output.zoonosis =
-        source.zoonosis ?? null;
-
     output.notes =
-        source.notes ?? null;
+        source.notes ??
+        null;
 
 
     // --------------------------------------------------------
-    // MORFOLÓGIA
+    // MORPHOLOGY
     //
     // shape/color/wall
     // ->
@@ -736,7 +930,10 @@ function migrateRecord(source, index) {
     const morphologySource =
 
         source.morphology &&
-        typeof source.morphology === "object"
+
+        typeof source.morphology === "object" &&
+
+        !Array.isArray(source.morphology)
 
             ? source.morphology
 
@@ -788,35 +985,35 @@ function migrateRecord(source, index) {
 
         operculum:
 
-            morphologySource.operculum ??
+            firstNonEmpty(
 
-            source.operculum ??
+                morphologySource.operculum,
 
-            null,
+                source.operculum
+
+            ) ?? null,
 
 
         contents:
 
-            morphologySource.contents ??
+            firstNonEmpty(
 
-            source.contents ??
+                morphologySource.contents,
 
-            null,
+                source.contents
+
+            ) ?? null,
 
 
         texture:
 
             morphologySource.texture ??
-
-            source.texture ??
-
             null,
 
 
         remarks:
 
             morphologySource.remarks ??
-
             null
 
     };
@@ -825,17 +1022,6 @@ function migrateRecord(source, index) {
     // --------------------------------------------------------
     // MIKROMETRIA
     // --------------------------------------------------------
-
-    const rawSize =
-
-        firstNonEmpty(
-
-            source.size,
-
-            source.micrometryText
-
-        );
-
 
     if (
 
@@ -854,10 +1040,12 @@ function migrateRecord(source, index) {
         const numeric =
 
             [
+
                 "lengthMin",
                 "lengthMax",
                 "widthMin",
                 "widthMax"
+
             ].every(
 
                 field =>
@@ -900,7 +1088,8 @@ function migrateRecord(source, index) {
 
             review.push({
 
-                field: "micrometry",
+                field:
+                    "micrometry",
 
                 reason:
                     "existing_micrometry_contains_non_numeric_values"
@@ -913,12 +1102,29 @@ function migrateRecord(source, index) {
 
     else {
 
+        const rawSize =
+
+            firstNonEmpty(
+
+                source.size,
+
+                source.micrometryText
+
+            );
+
+
         const parsed =
-            parseMicrometry(rawSize);
+
+            parseMicrometry(
+                rawSize
+            );
 
 
         if (
-            parsed.status === "converted"
+
+            parsed.status ===
+            "converted"
+
         ) {
 
             output.micrometry =
@@ -926,19 +1132,19 @@ function migrateRecord(source, index) {
 
         }
 
-        else if (
-            parsed.status === "manual"
-        ) {
+        else {
 
             review.push({
 
-                field: "micrometry",
+                field:
+                    "micrometry",
 
                 reason:
                     parsed.reason,
 
                 raw:
-                    parsed.raw ?? rawSize
+                    parsed.raw ??
+                    rawSize
 
             });
 
@@ -947,15 +1153,61 @@ function migrateRecord(source, index) {
     }
 
 
+    // ========================================================
+    // METADÁTA
+    // ========================================================
+
+    /*
+     * Ak existujú v pôvodnom zázname,
+     * zachováme ich.
+     *
+     * Ak chýbajú, doplníme:
+     *
+     * created  = čas migrácie
+     * modified = čas migrácie
+     * version  = 1.0.0
+     *
+     * Ide o technické migračné metadáta,
+     * nie o tvrdenie, kedy vznikol odborný záznam.
+     */
+
+    output.created =
+
+        firstNonEmpty(
+            source.created
+        ) ||
+
+        MIGRATION_TIMESTAMP;
+
+
+    output.modified =
+
+        firstNonEmpty(
+            source.modified
+        ) ||
+
+        MIGRATION_TIMESTAMP;
+
+
+    output.version =
+
+        firstNonEmpty(
+            source.version
+        ) ||
+
+        DEFAULT_VERSION;
+
+
     // --------------------------------------------------------
-    // POVINNÉ POLIA
+    // CHÝBAJÚCE ODBORNÉ ÚDAJE
     // --------------------------------------------------------
 
     if (!output.latinName) {
 
         review.push({
 
-            field: "latinName",
+            field:
+                "latinName",
 
             reason:
                 "missing_latinName"
@@ -969,7 +1221,8 @@ function migrateRecord(source, index) {
 
         review.push({
 
-            field: "sample",
+            field:
+                "sample",
 
             reason:
                 "missing_sample_cannot_be_safely_inferred"
@@ -983,7 +1236,8 @@ function migrateRecord(source, index) {
 
         review.push({
 
-            field: "stage",
+            field:
+                "stage",
 
             reason:
                 "missing_stage_cannot_be_safely_inferred"
@@ -994,13 +1248,19 @@ function migrateRecord(source, index) {
 
 
     if (
+
         !output.taxonomy ||
-        Object.keys(output.taxonomy).length === 0
+
+        Object.keys(
+            output.taxonomy
+        ).length === 0
+
     ) {
 
         review.push({
 
-            field: "taxonomy",
+            field:
+                "taxonomy",
 
             reason:
                 "missing_taxonomy"
@@ -1011,7 +1271,7 @@ function migrateRecord(source, index) {
 
 
     // --------------------------------------------------------
-    // PODOZRENIE NA VIAC DIAGNOSTICKÝCH OBJEKTOV
+    // VIAC DIAGNOSTICKÝCH OBJEKTOV
     // --------------------------------------------------------
 
     const sourceText =
@@ -1019,18 +1279,60 @@ function migrateRecord(source, index) {
 
 
     if (
-        /\b[vl]\s*:/i
-            .test(sourceText)
+
+        /\b[vl]\s*:/i.test(
+            sourceText
+        )
+
     ) {
 
         review.push({
 
-            field: "diagnosticObject",
+            field:
+                "diagnosticObject",
 
             reason:
                 "possible_multiple_stages_or_objects_manual_split_required"
 
         });
+
+    }
+
+
+    // --------------------------------------------------------
+    // NORMALIZÁCIA ID
+    // --------------------------------------------------------
+
+    if (originalId) {
+
+        const normalizedId =
+            slugifyId(
+                originalId
+            );
+
+
+        if (
+            normalizedId !==
+            originalId
+        ) {
+
+            review.push({
+
+                field:
+                    "id",
+
+                reason:
+                    "id_normalized_from_original",
+
+                original:
+                    originalId,
+
+                migrated:
+                    normalizedId
+
+            });
+
+        }
 
     }
 
@@ -1047,308 +1349,462 @@ function migrateRecord(source, index) {
 
 
 // ============================================================
-// KONTROLA VSTUPU
+// DUPLICITNÉ ID
 // ============================================================
 
-if (!fs.existsSync(INPUT)) {
-
-    console.error("");
-
-    console.error(
-        "CHYBA: Súbor dog.json neexistuje:"
-    );
-
-    console.error(INPUT);
-
-    console.error("");
-
-    console.error(
-        "Skontroluj, či máš dog.json v:"
-    );
-
-    console.error(
-        "VetPara-Atlas/database/"
-    );
-
-    process.exit(2);
-
-}
-
-
-// ============================================================
-// NAČÍTANIE
-// ============================================================
-
-const input =
-    readJson(INPUT);
-
-
-let records;
-
-
-if (Array.isArray(input)) {
-
-    records = input;
-
-}
-
-else if (
-    Array.isArray(input.records)
+function checkDuplicateIds(
+    migrated,
+    report
 ) {
 
-    records =
-        input.records;
+    const ids =
+        new Map();
 
-}
 
-else {
+    migrated.forEach(
 
-    console.error(
-        "CHYBA: dog.json musí byť pole záznamov alebo objekt s poľom records."
+        (record, index) => {
+
+            if (
+                ids.has(record.id)
+            ) {
+
+                report.manualReview.push({
+
+                    index,
+
+                    id:
+                        record.id,
+
+                    latinName:
+                        record.latinName,
+
+                    issues: [
+
+                        {
+
+                            field:
+                                "id",
+
+                            reason:
+                                "duplicate_id_after_normalization",
+
+                            conflictsWithRecord:
+                                ids.get(record.id) + 1
+
+                        }
+
+                    ]
+
+                });
+
+            }
+
+            else {
+
+                ids.set(
+                    record.id,
+                    index
+                );
+
+            }
+
+        }
+
     );
 
-    process.exit(3);
-
 }
 
 
 // ============================================================
-// REPORT
+// MAIN
 // ============================================================
 
-const migrated = [];
+function main() {
 
-const report = {
+    // --------------------------------------------------------
+    // EXISTENCIA INPUTU
+    // --------------------------------------------------------
 
-    generatedAt:
-        new Date().toISOString(),
+    if (!fs.existsSync(INPUT)) {
 
-    input:
-        "database/dog.json",
+        console.error("");
 
-    output:
-        "database/dog.migrated.json",
+        console.error(
+            "CHYBA: dog.json neexistuje:"
+        );
 
-    summary: {
+        console.error(
+            INPUT
+        );
 
-        totalRecords:
-            records.length,
+        console.error("");
 
-        recordsWithoutManualReview:
-            0,
+        console.error(
+            "Skontroluj:"
+        );
 
-        recordsWithManualReview:
-            0,
+        console.error(
+            "VetPara-Atlas/database/dog.json"
+        );
 
-        sizeConverted:
-            0,
-
-        sizeManualReview:
-            0
-
-    },
-
-    manualReview: [],
-
-    warnings: []
-
-};
-
-
-const ids =
-    new Map();
-
-
-// ============================================================
-// SPRACOVANIE
-// ============================================================
-
-records.forEach(
-
-    (source, index) => {
-
-        const result =
-            migrateRecord(
-                source,
-                index
-            );
-
-
-        const output =
-            result.output;
-
-        const review =
-            result.review;
-
-
-        // ----------------------------------------------------
-        // DUPLICITNÉ ID
-        // ----------------------------------------------------
-
-        if (ids.has(output.id)) {
-
-            review.push({
-
-                field: "id",
-
-                reason:
-                    `duplicate_id_after_normalization_conflicts_with_record_${ids.get(output.id) + 1}`
-
-            });
-
-        }
-
-        else {
-
-            ids.set(
-                output.id,
-                index
-            );
-
-        }
-
-
-        // ----------------------------------------------------
-        // ŠTATISTIKY
-        // ----------------------------------------------------
-
-        if (output.micrometry) {
-
-            report.summary.sizeConverted++;
-
-        }
-
-
-        const sizeReview =
-            review.some(
-                item =>
-                    item.field === "micrometry"
-            );
-
-
-        if (sizeReview) {
-
-            report.summary.sizeManualReview++;
-
-        }
-
-
-        if (review.length > 0) {
-
-            report.summary.recordsWithManualReview++;
-
-
-            report.manualReview.push({
-
-                index,
-
-                id:
-                    output.id,
-
-                latinName:
-                    output.latinName,
-
-                issues:
-                    review
-
-            });
-
-        }
-
-        else {
-
-            report.summary.recordsWithoutManualReview++;
-
-        }
-
-
-        migrated.push(output);
+        process.exit(2);
 
     }
 
-);
+
+    // --------------------------------------------------------
+    // NAČÍTANIE JSON
+    // --------------------------------------------------------
+
+    let input;
 
 
-// ============================================================
-// ZÁPIS
-// ============================================================
+    try {
 
-writeJson(
-    OUTPUT,
-    migrated
-);
+        input =
+            readJson(INPUT);
 
-writeJson(
-    REPORT,
-    report
-);
+    }
+
+    catch (error) {
+
+        console.error("");
+
+        console.error(
+            "CHYBA: dog.json nie je platný JSON."
+        );
+
+        console.error(
+            error.message
+        );
+
+        process.exit(3);
+
+    }
 
 
-// ============================================================
-// VÝSLEDOK
-// ============================================================
+    // --------------------------------------------------------
+    // ZÍSKANIE ZÁZNAMOV
+    // --------------------------------------------------------
 
-console.log("");
+    let records;
 
-console.log(
-    "=========================================="
-);
 
-console.log(
-    "VetPara Atlas – migrácia dog.json"
-);
+    if (
+        Array.isArray(input)
+    ) {
 
-console.log(
-    "=========================================="
-);
+        records =
+            input;
 
-console.log("");
+    }
 
-console.log(
-    `Počet záznamov:        ${report.summary.totalRecords}`
-);
+    else if (
+        Array.isArray(input.records)
+    ) {
 
-console.log(
-    `Bez ručnej kontroly:   ${report.summary.recordsWithoutManualReview}`
-);
+        records =
+            input.records;
 
-console.log(
-    `Vyžaduje kontrolu:     ${report.summary.recordsWithManualReview}`
-);
+    }
 
-console.log(
-    `Mikrometria prevedená: ${report.summary.sizeConverted}`
-);
+    else {
 
-console.log(
-    `Mikrometria kontrola:  ${report.summary.sizeManualReview}`
-);
+        console.error("");
 
-console.log("");
+        console.error(
+            "CHYBA: dog.json musí byť pole záznamov alebo objekt s poľom records."
+        );
 
-console.log(
-    "Výstup:"
-);
+        process.exit(4);
 
-console.log(
-    OUTPUT
-);
+    }
 
-console.log("");
 
-console.log(
-    "Report:"
-);
+    // --------------------------------------------------------
+    // REPORT
+    // --------------------------------------------------------
 
-console.log(
-    REPORT
-);
+    const report = {
 
-console.log("");
+        generatedAt:
+            MIGRATION_TIMESTAMP,
 
-console.log(
-    "Pôvodný dog.json NEBOL zmenený."
-);
+        input:
+            "database/dog.json",
 
-console.log("");
+        output:
+            "database/dog.migrated.json",
+
+
+        summary: {
+
+            totalRecords:
+                records.length,
+
+            recordsWithoutManualReview:
+                0,
+
+            recordsWithManualReview:
+                0,
+
+            sizeConverted:
+                0,
+
+            sizeManualReview:
+                0,
+
+            idsNormalized:
+                0
+
+        },
+
+
+        manualReview: [],
+
+
+        metadata: {
+
+            createdFallback:
+                MIGRATION_TIMESTAMP,
+
+            modifiedFallback:
+                MIGRATION_TIMESTAMP,
+
+            defaultVersion:
+                DEFAULT_VERSION
+
+        }
+
+    };
+
+
+    // --------------------------------------------------------
+    // MIGRÁCIA
+    // --------------------------------------------------------
+
+    const migrated = [];
+
+
+    records.forEach(
+
+        (source, index) => {
+
+            const result =
+
+                migrateRecord(
+                    source,
+                    index
+                );
+
+
+            migrated.push(
+                result.output
+            );
+
+
+            const review =
+                result.review;
+
+
+            // ------------------------------------------------
+            // MIKROMETRIA
+            // ------------------------------------------------
+
+            if (
+                result.output.micrometry
+            ) {
+
+                report.summary
+                    .sizeConverted++;
+
+            }
+
+
+            if (
+
+                review.some(
+                    item =>
+                        item.field ===
+                        "micrometry"
+                )
+
+            ) {
+
+                report.summary
+                    .sizeManualReview++;
+
+            }
+
+
+            // ------------------------------------------------
+            // ID
+            // ------------------------------------------------
+
+            if (
+
+                review.some(
+
+                    item =>
+
+                        item.field ===
+                        "id" &&
+
+                        item.reason ===
+                        "id_normalized_from_original"
+
+                )
+
+            ) {
+
+                report.summary
+                    .idsNormalized++;
+
+            }
+
+
+            // ------------------------------------------------
+            // MANUAL REVIEW
+            // ------------------------------------------------
+
+            if (
+                review.length > 0
+            ) {
+
+                report.summary
+                    .recordsWithManualReview++;
+
+
+                report.manualReview.push({
+
+                    index,
+
+                    id:
+                        result.output.id,
+
+                    latinName:
+                        result.output.latinName,
+
+                    issues:
+                        review
+
+                });
+
+            }
+
+            else {
+
+                report.summary
+                    .recordsWithoutManualReview++;
+
+            }
+
+        }
+
+    );
+
+
+    // --------------------------------------------------------
+    // DUPLICITY
+    // --------------------------------------------------------
+
+    checkDuplicateIds(
+        migrated,
+        report
+    );
+
+
+    // --------------------------------------------------------
+    // ZÁPIS
+    // --------------------------------------------------------
+
+    writeJson(
+        OUTPUT,
+        migrated
+    );
+
+
+    writeJson(
+        REPORT,
+        report
+    );
+
+
+    // --------------------------------------------------------
+    // VÝSTUP
+    // --------------------------------------------------------
+
+    console.log("");
+
+    console.log(
+        "=========================================="
+    );
+
+    console.log(
+        "VetPara Atlas – migrácia dog.json"
+    );
+
+    console.log(
+        "=========================================="
+    );
+
+    console.log("");
+
+    console.log(
+        `Záznamov:              ${report.summary.totalRecords}`
+    );
+
+    console.log(
+        `Bez ručnej kontroly:   ${report.summary.recordsWithoutManualReview}`
+    );
+
+    console.log(
+        `Vyžaduje kontrolu:     ${report.summary.recordsWithManualReview}`
+    );
+
+    console.log(
+        `Mikrometria prevedená: ${report.summary.sizeConverted}`
+    );
+
+    console.log(
+        `Mikrometria kontrola:  ${report.summary.sizeManualReview}`
+    );
+
+    console.log(
+        `ID normalizované:      ${report.summary.idsNormalized}`
+    );
+
+    console.log("");
+
+    console.log(
+        "Výstup:"
+    );
+
+    console.log(
+        OUTPUT
+    );
+
+    console.log("");
+
+    console.log(
+        "Report:"
+    );
+
+    console.log(
+        REPORT
+    );
+
+    console.log("");
+
+    console.log(
+        "Pôvodný dog.json NEBOL zmenený."
+    );
+
+    console.log("");
+
+}
+
+
+main();
 ```
