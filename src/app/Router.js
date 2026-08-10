@@ -17,6 +17,20 @@ class Router {
 
     }
 
+    navigate(route) {
+
+        if (!this.routes.has(route)) {
+
+            console.warn(`Unknown route: ${route}`);
+
+            return;
+
+        }
+
+        window.location.hash = route;
+
+    }
+
     start() {
 
         window.addEventListener("hashchange", () => {
@@ -31,7 +45,8 @@ class Router {
 
     resolve() {
 
-        const route = window.location.hash.replace("#", "") || "home";
+        const route =
+            window.location.hash.replace("#", "") || "home";
 
         if (this.routes.has(route)) {
 
@@ -42,6 +57,8 @@ class Router {
         }
 
         console.warn(`Unknown route: ${route}`);
+
+        this.navigate("home");
 
     }
 

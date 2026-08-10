@@ -60,12 +60,70 @@ const App = {
 
         Router.register("home", () => {
 
-            const app = document.getElementById("app");
+    const app = document.getElementById("app");
 
-app.innerHTML = `
-    <h2>VetPara Atlas</h2>
-    <p>Diagnostický atlas veterinárnej parazitológie.</p>
-`;
+    app.innerHTML = `
+
+        <section class="home-page">
+
+            <h1>VetPara Atlas</h1>
+
+            <p>
+                Diagnostický atlas veterinárnej parazitológie.
+            </p>
+
+            <nav
+                class="main-navigation"
+                aria-label="Hlavná navigácia"
+            >
+
+                <button
+                    type="button"
+                    data-route="atlas"
+                >
+                    Atlas
+                </button>
+
+                <button
+                    type="button"
+                    data-route="gallery"
+                >
+                    Galéria
+                </button>
+
+                <button
+                    type="button"
+                    data-route="expert"
+                >
+                    Expert
+                </button>
+
+                <button
+                    type="button"
+                    data-route="settings"
+                >
+                    Nastavenia
+                </button>
+
+            </nav>
+
+        </section>
+
+    `;
+
+    document
+        .querySelectorAll("[data-route]")
+        .forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                Router.navigate(button.dataset.route);
+
+            });
+
+        });
+
+});
 
         });
 
