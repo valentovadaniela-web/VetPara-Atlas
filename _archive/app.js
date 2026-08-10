@@ -4,7 +4,7 @@
  * Version: 0.2.0
  ******************************************************************************/
 
-import DatabaseService from "../services/DatabaseService.js";
+import DatabaseService from "../src/services/DatabaseService.js";
 import ApplicationState from "./ApplicationState.js";
 
 const App = {
