@@ -44,10 +44,11 @@ const App = {
         await this.loadDatabase();
 
         console.info(
-    "Repository ready:",
-    Repository.count(),
-    "records"
-);
+            "Repository ready:",
+            Repository.count(),
+            "records"
+        );
+
         this.registerRoutes();
 
         Router.start();
@@ -60,83 +61,85 @@ const App = {
 
         Router.register("home", () => {
 
-    const app = document.getElementById("app");
+            const app = document.getElementById("app");
 
-    app.innerHTML = `
+            app.innerHTML = `
 
-        <section class="home-page">
+                <section class="home-page container py-5">
 
-            <h1>VetPara Atlas</h1>
+                    <h1 class="display-4 fw-bold">VetPara Atlas</h1>
 
-            <p>
-                Diagnostický atlas veterinárnej parazitológie.
-            </p>
+                    <p class="lead">
+                        Diagnostický atlas veterinárnej parazitológie.
+                    </p>
 
-            <nav
-                class="main-navigation"
-                aria-label="Hlavná navigácia"
-            >
+                    <nav
+                        class="main-navigation d-flex gap-2 flex-wrap"
+                        aria-label="Hlavná navigácia"
+                    >
 
-                <button
-                    type="button"
-                    data-route="atlas"
-                >
-                    Atlas
-                </button>
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-route="atlas"
+                        >
+                            Atlas
+                        </button>
 
-                <button
-                    type="button"
-                    data-route="gallery"
-                >
-                    Galéria
-                </button>
+                        <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-route="gallery"
+                        >
+                            Galéria
+                        </button>
 
-                <button
-                    type="button"
-                    data-route="expert"
-                >
-                    Expert
-                </button>
+                        <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-route="expert"
+                        >
+                            Expert
+                        </button>
 
-                <button
-                    type="button"
-                    data-route="settings"
-                >
-                    Nastavenia
-                </button>
+                        <button
+                            type="button"
+                            class="btn btn-outline-primary"
+                            data-route="settings"
+                        >
+                            Nastavenia
+                        </button>
 
-            </nav>
+                    </nav>
 
-        </section>
+                </section>
 
-    `;
+            `;
 
-    document
-        .querySelectorAll("[data-route]")
-        .forEach(button => {
+            document
+                .querySelectorAll("[data-route]")
+                .forEach(button => {
 
-            button.addEventListener("click", () => {
+                    button.addEventListener("click", () => {
 
-                Router.navigate(button.dataset.route);
+                        Router.navigate(button.dataset.route);
 
-            });
+                    });
+
+                });
 
         });
 
-});
+        Router.register("atlas", () => {
 
+            const app = document.getElementById("app");
 
-Router.register("atlas", () => {
+            app.innerHTML = AtlasPage.render();
 
-    const app = document.getElementById("app");
+            AtlasPage.init();
 
-    app.innerHTML = AtlasPage.render();
+        });
 
-    AtlasPage.init();
-
-});
-
-        
         Router.register("gallery", () => {
 
             console.log("Gallery page");
