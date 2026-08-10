@@ -125,7 +125,6 @@ const App = {
 
 });
 
-        });
 
 Router.register("atlas", () => {
 
