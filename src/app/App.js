@@ -65,52 +65,123 @@ const App = {
 
             app.innerHTML = `
 
-                <section class="home-page container py-5">
+                <section class="hero">
 
-                    <h1 class="display-4 fw-bold">VetPara Atlas</h1>
+                    <div class="container">
 
-                    <p class="lead">
-                        Diagnostický atlas veterinárnej parazitológie.
-                    </p>
+                        <div class="row align-items-center py-5">
 
-                    <nav
-                        class="main-navigation d-flex gap-2 flex-wrap"
-                        aria-label="Hlavná navigácia"
-                    >
+                            <div class="col-lg-7">
 
-                        <button
-                            type="button"
-                            class="btn btn-primary"
-                            data-route="atlas"
-                        >
-                            Atlas
-                        </button>
+                                <h1 class="display-4 fw-bold">
+                                    VetPara Atlas
+                                </h1>
 
-                        <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-route="gallery"
-                        >
-                            Galéria
-                        </button>
+                                <p class="lead">
+                                    Moderný diagnostický atlas veterinárnej parazitológie.
+                                </p>
 
-                        <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-route="expert"
-                        >
-                            Expert
-                        </button>
+                                <p>
+                                    Projekt určený pre veterinárne laboratóriá,
+                                    diagnostikov, univerzity a študentov.
+                                </p>
 
-                        <button
-                            type="button"
-                            class="btn btn-outline-primary"
-                            data-route="settings"
-                        >
-                            Nastavenia
-                        </button>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary btn-lg"
+                                    data-route="atlas"
+                                >
+                                    Otvoriť atlas
+                                </button>
 
-                    </nav>
+                            </div>
+
+                            <div class="col-lg-5 text-center">
+
+                                <img
+                                    src="public/images/logo.svg"
+                                    alt="VetPara Atlas"
+                                    class="img-fluid"
+                                    style="max-width:320px;"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <div class="container py-5">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+
+                                <button
+                                    type="button"
+                                    class="card h-100 shadow-sm text-start w-100 border-0"
+                                    data-route="atlas"
+                                >
+                                    <div class="card-body">
+
+                                        <h3>Databáza</h3>
+
+                                        <p>
+                                            Komplexná databáza diagnostických objektov.
+                                        </p>
+
+                                    </div>
+                                </button>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <button
+                                    type="button"
+                                    class="card h-100 shadow-sm text-start w-100 border-0"
+                                    data-route="gallery"
+                                >
+                                    <div class="card-body">
+
+                                        <h3>Galéria</h3>
+
+                                        <p>
+                                            Fotografie s odbornými metadátami.
+                                        </p>
+
+                                    </div>
+                                </button>
+
+                            </div>
+
+                            <div class="col-md-4">
+
+                                <button
+                                    type="button"
+                                    class="card h-100 shadow-sm text-start w-100 border-0"
+                                    data-route="expert"
+                                >
+                                    <div class="card-body">
+
+                                        <h3>Diagnostický expert</h3>
+
+                                        <p>
+                                            Budúci inteligentný systém diferenciálnej diagnostiky.
+                                        </p>
+
+                                    </div>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
 
                 </section>
 
