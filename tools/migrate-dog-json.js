@@ -734,7 +734,7 @@ function migrateRecord(source, index) {
 
             source.taxon ||
 
-            `record_${index + 1}`
+            ("record_" + (index + 1))
 
         );
 
