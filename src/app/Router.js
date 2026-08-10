@@ -44,7 +44,9 @@ class Router {
 
         console.warn(`Unknown route: ${route}`);
 
-    }
+    navigate(route) {
+    window.location.hash = route;
+}
 
 }
 
