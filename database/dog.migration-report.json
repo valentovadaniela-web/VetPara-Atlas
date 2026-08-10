@@ -1,0 +1,942 @@
+{
+  "generatedAt": "2026-08-10T17:49:33.389Z",
+  "input": "database/dog.json",
+  "output": "database/dog.migrated.json",
+  "summary": {
+    "totalRecords": 35,
+    "recordsWithoutManualReview": 0,
+    "recordsWithManualReview": 35,
+    "sizeConverted": 26,
+    "sizeManualReview": 9,
+    "idsNormalized": 35
+  },
+  "manualReview": [
+    {
+      "index": 0,
+      "id": "dog_0001",
+      "latinName": "Giardia intestinalis",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0001",
+          "migrated": "dog_0001"
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "id": "dog_0002",
+      "latinName": "Isospora canis",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0002",
+          "migrated": "dog_0002"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "id": "dog_0003",
+      "latinName": "Isospora ohioensis",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0003",
+          "migrated": "dog_0003"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "id": "dog_0004",
+      "latinName": "Isospora burrowsi",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0004",
+          "migrated": "dog_0004"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "id": "dog_0005",
+      "latinName": "Isospora neorivolta",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0005",
+          "migrated": "dog_0005"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "id": "dog_0006",
+      "latinName": "Cryptosporidium parvum",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0006",
+          "migrated": "dog_0006"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "id": "dog_0007",
+      "latinName": "Hammondia heydornii",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0007",
+          "migrated": "dog_0007"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "id": "dog_0008",
+      "latinName": "Sarcocystis spp.",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0008",
+          "migrated": "dog_0008"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "id": "dog_0009",
+      "latinName": "Balantioides (predtým Balantidium) coli",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0009",
+          "migrated": "dog_0009"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "id": "dog_0010",
+      "latinName": "Fasciola hepatica",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0010",
+          "migrated": "dog_0010"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "id": "dog_0011",
+      "latinName": "Alaria alata",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "unrecognized_size_format",
+          "raw": "98-134 × 62-70 (120 x 65), dospelé 2,5 – 6 x 0,5 – 2 mm"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0011",
+          "migrated": "dog_0011"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "id": "dog_0012",
+      "latinName": "Dipylidium caninum",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0012",
+          "migrated": "dog_0012"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "id": "dog_0013",
+      "latinName": "Taenia spp./Echinococcus",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0013",
+          "migrated": "dog_0013"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "id": "dog_0014",
+      "latinName": "Mesocestoides spp.",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "unrecognized_size_format",
+          "raw": "50-50 x 39-39 (30-40)"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0014",
+          "migrated": "dog_0014"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "id": "dog_0015",
+      "latinName": "Diphyllobothrium latum",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0015",
+          "migrated": "dog_0015"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "id": "dog_0016",
+      "latinName": "Toxocara canis",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "one_dimension_only",
+          "raw": "75 - 90"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0016",
+          "migrated": "dog_0016"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "id": "dog_0017",
+      "latinName": "Toxascaris leonina",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0017",
+          "migrated": "dog_0017"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "id": "dog_0018",
+      "latinName": "Ancylostoma caninum",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0018",
+          "migrated": "dog_0018"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "id": "dog_0019",
+      "latinName": "Uncinaria stenocephala",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0019",
+          "migrated": "dog_0019"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "id": "dog_0020",
+      "latinName": "Angiostrongylus vasorum",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0020",
+          "migrated": "dog_0020"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "id": "dog_0021",
+      "latinName": "Crenosoma vulpis",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0021",
+          "migrated": "dog_0021"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "id": "dog_0022",
+      "latinName": "Oslerus (Filaroides) osleri",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "bare_number_without_confirmed_unit",
+          "raw": "300"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0022",
+          "migrated": "dog_0022"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "id": "dog_0023",
+      "latinName": "Physaloptera spp.",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0023",
+          "migrated": "dog_0023"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "id": "dog_0024",
+      "latinName": "Spirocerca lupi",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0024",
+          "migrated": "dog_0024"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "id": "dog_0025",
+      "latinName": "Dirofilaria immitis",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "bare_number_without_confirmed_unit",
+          "raw": "300"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0025",
+          "migrated": "dog_0025"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "id": "dog_0026",
+      "latinName": "Dirofilaria repens",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "one_dimension_only",
+          "raw": "280-360"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0026",
+          "migrated": "dog_0026"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "id": "dog_0027",
+      "latinName": "Strongyloides spp.",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "multiple_stages_or_objects",
+          "raw": "v: 62-64 x 32-36, l: 230-350"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "diagnosticObject",
+          "reason": "possible_multiple_stages_or_objects_manual_split_required"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0027",
+          "migrated": "dog_0027"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "id": "dog_0028",
+      "latinName": "Dioctophyme renale",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0028",
+          "migrated": "dog_0028"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "id": "dog_0029",
+      "latinName": "Trichuris vulpis",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0029",
+          "migrated": "dog_0029"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "id": "dog_0030",
+      "latinName": "Pearsonema (Capillaria) plica",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0030",
+          "migrated": "dog_0030"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "id": "dog_0031",
+      "latinName": "Eucoleus boehmi",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0031",
+          "migrated": "dog_0031"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "id": "dog_0032",
+      "latinName": "Eucoleus aerophilus (= Capillaria aerophila)",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0032",
+          "migrated": "dog_0032"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "id": "dog_0033",
+      "latinName": "Linguatula serrata",
+      "issues": [
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0033",
+          "migrated": "dog_0033"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "id": "dog_0034",
+      "latinName": "Demodex canis",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "missing_size"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0034",
+          "migrated": "dog_0034"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "id": "dog_0035",
+      "latinName": "Demodex injai",
+      "issues": [
+        {
+          "field": "micrometry",
+          "reason": "missing_size"
+        },
+        {
+          "field": "sample",
+          "reason": "missing_sample_cannot_be_safely_inferred"
+        },
+        {
+          "field": "stage",
+          "reason": "missing_stage_cannot_be_safely_inferred"
+        },
+        {
+          "field": "taxonomy",
+          "reason": "missing_taxonomy"
+        },
+        {
+          "field": "id",
+          "reason": "id_normalized_from_original",
+          "original": "DOG-0035",
+          "migrated": "dog_0035"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "createdFallback": "2026-08-10T17:49:33.389Z",
+    "modifiedFallback": "2026-08-10T17:49:33.389Z",
+    "defaultVersion": "1.0.0"
+  }
+}
