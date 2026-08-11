@@ -133,6 +133,55 @@ Zmena dokumentácie.
 # 5. História projektu
 
 ---
+## [Unreleased]
+
+**Dátum:** 2026-08-11
+
+### Changed
+
+Vytvorená migrácia `database/dog.json` z pôvodnej plochej štruktúry
+(`taxon`, `host` ako text, `size` ako text, `shape`/`color`/`wall`)
+na schému definovanú v `02_DATABASE_SPECIFICATION.md` sekcii 7
+(`latinName`, `host[]`, `micrometry{}`, `morphology{}`, `taxonomy{}` atď.).
+
+Záznam `Strongyloides spp.` (DOG-0027) a `Alaria alata` (DOG-0011) boli
+rozdelené na samostatné diagnostické objekty podľa jednotlivých štádií
+(vajíčko/larva, resp. vajíčko/dospelý jedinec), v súlade s princípom
+"diagnostický objekt, nie druh" z `00_PROJECT_CONTEXT.md` sekcie 10.
+
+**Dôvod:**
+
+Pôvodný `dog.json` nezodpovedal vlastnej databázovej schéme projektu —
+`host` bol nekonzistentný text namiesto poľa, `size` bol nestrukturovaný
+reťazec namiesto číselnej `micrometry`, chýbali polia `stage`, `sample`,
+`group`, `taxonomy`, `diagnosticSigns[]` a ďalšie. To blokovalo správne
+fungovanie filtrov v `AtlasPage.js` a bolo v rozpore s
+`03_DATA_ENTRY_STANDARD.md`.
+
+**Stav:** ⚠️ Migrácia NIE JE dokončená — `dog_migrated.json` je
+prechodný súbor, nie finálna produkčná databáza. Chýba:
+
+- `stage` a `sample` pre všetkých 37 záznamov (vyžaduje odbornú kontrolu),
+- potvrdenie `group` (aktuálne len ako `aiSuggested.group`),
+- doplnenie mikrometrie pre 5 záznamov (`Mesocestoides spp.`,
+  `Oslerus osleri`, `Dirofilaria immitis`, `Demodex canis`,
+  `Demodex injai`) — zámerne neprevedené automaticky.
+
+Pridaný nový nástroj `tools/migrate.py` — konvertuje starú plochú
+schému na novú štruktúru, s reportom nejednoznačných záznamov.
+
+**Súvisiace dokumenty:**
+`02_DATABASE_SPECIFICATION.md`, `03_DATA_ENTRY_STANDARD.md`,
+`06_IMPORT_AND_EXPORT.md` (sekcia 19 — zálohovanie pred zmenou databázy),
+`11_SESSION_LOG.md`
+
+### Documentation
+
+Vygenerovaný `migration_report.md` s kompletným zoznamom všetkých 37
+záznamov a ich stavom migrácie (dostupné mimo `docs/`, ako pracovný
+záznam k tejto zmene).
+
+---
 
 ## [0.1.0]
 

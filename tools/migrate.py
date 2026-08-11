@@ -74,6 +74,8 @@ RE_RANGE_SINGLE_WIDTH = re.compile(rf"^\s*({NUM})\s*-\s*({NUM})\s*x\s*({NUM})\s*
 RE_RANGE_ONLY = re.compile(rf"^\s*({NUM})\s*-\s*({NUM})\s*$")
 # X  (jedno číslo, bez rozsahu)
 RE_SINGLE = re.compile(rf"^\s*({NUM})\s*$")
+# X x Y  (jedna dĺžka x jedna šírka, BEZ rozsahu na oboch stranách)
+RE_SINGLE_PAIR = re.compile(rf"^\s*({NUM})\s*x\s*({NUM})\s*$")
 
 
 def clean_size_string(raw: str) -> str:
@@ -150,6 +152,19 @@ def parse_size(raw: str):
             "widthMin/widthMax ponechané ako null.",
         )
 
+    m = RE_SINGLE_PAIR.match(cleaned)
+    if m:
+        length_val, width_val = (to_float(x) for x in m.groups())
+        return (
+            {"lengthMin": length_val, "lengthMax": length_val,
+             "widthMin": width_val, "widthMax": width_val, "unit": "µm"},
+            "ok_partial",
+            f"Zdroj uvádzal jednu hodnotu dĺžky ({length_val}) a jednu "
+            f"hodnotu šírky ({width_val}), nie rozsah — "
+            f"lengthMin=lengthMax a widthMin=widthMax. Overiť, či ide "
+            f"o typickú/priemernú hodnotu alebo chýba skutočný rozsah.",
+        )
+
     m = RE_SINGLE.match(cleaned)
     if m:
         val = to_float(m.group(1))
@@ -223,6 +238,126 @@ GROUP_SUGGESTIONS = {
 
 
 # ---------------------------------------------------------------------------
+# 3b. Rozdelenie záznamov, kde zdroj SÁM textovo označuje dve odlišné
+#     štádiá v jednom poli "size" (napr. "v: ... l: ..." alebo
+#     "..., dospelé ..."). Toto NIE JE odhad AI z všeobecných znalostí —
+#     je to priamy prepis toho, čo už zdroj obsahoval, len rozdelené do
+#     dvoch diagnostických objektov podľa filozofie projektu
+#     (00_PROJECT_CONTEXT.md sekcia 10).
+#     Stage sa napriek tomu NEZAPISUJE priamo do "stage" (zostáva null),
+#     iba do aiSuggested.stage s vysokou mierou istoty a odôvodnením —
+#     odborník má poslednú kontrolu.
+# ---------------------------------------------------------------------------
+
+SPLIT_OVERRIDES = {
+    "DOG-0027": [  # Strongyloides spp.
+        {
+            "idSuffix": "egg",
+            "stageSuggested": "vajíčko",
+            "confidence": "vysoká — priamo z označenia 'v:' v zdrojovom texte",
+            "micrometry": {"lengthMin": 62.0, "lengthMax": 64.0,
+                            "widthMin": 32.0, "widthMax": 36.0, "unit": "µm"},
+            "extraNote": "Rozdelené zo záznamu DOG-0027, pôvodne "
+                         "'v: 62-64 x 32-36, l: 230-350'.",
+        },
+        {
+            "idSuffix": "larva",
+            "stageSuggested": "larva",
+            "confidence": "vysoká — priamo z označenia 'l:' v zdrojovom texte; "
+                          "presné larválne štádium (L1 vs L3) NIE JE isté z "
+                          "poznámky, treba overiť",
+            "micrometry": {"lengthMin": 230.0, "lengthMax": 350.0,
+                            "widthMin": None, "widthMax": None, "unit": "µm"},
+            "extraNote": "Rozdelené zo záznamu DOG-0027, pôvodne "
+                         "'v: 62-64 x 32-36, l: 230-350'. Šírka larvy "
+                         "v zdroji vôbec nebola uvedená. Poznámka "
+                         "'larva stočená do tvaru U, larva L1 - veľké "
+                         "genit. promodium, L3 dlhý ezofágus' naznačuje, "
+                         "že ide možno o dve rôzne larválne štádiá "
+                         "(L1 aj L3) — over, či toto nemá byť rozdelené "
+                         "ešte ďalej.",
+        },
+    ],
+    "DOG-0011": [  # Alaria alata
+        {
+            "idSuffix": "egg",
+            "stageSuggested": "vajíčko",
+            "confidence": "stredná — rozsah 98-134 x 62-70 je zo zdroja "
+                          "jasný, ale hodnota '(120 x 65)' v zátvorke "
+                          "pravdepodobne predstavuje priemer, nie ďalší "
+                          "údaj — v migrácii bola zátvorka ignorovaná",
+            "micrometry": {"lengthMin": 98.0, "lengthMax": 134.0,
+                            "widthMin": 62.0, "widthMax": 70.0, "unit": "µm"},
+            "extraNote": "Rozdelené zo záznamu DOG-0011, pôvodne "
+                         "'98-134 × 62-70 (120 x 65), dospelé 2,5–6 x "
+                         "0,5–2 mm'.",
+        },
+        {
+            "idSuffix": "adult",
+            "stageSuggested": "dospelý jedinec",
+            "confidence": "stredná — číselný prevod mm→µm je mechanický "
+                          "a spoľahlivý, ALE zásadná otázka je klinická: "
+                          "dospelý jedinec sa štandardne nezachytáva "
+                          "flotáciou trusu ako ostatné objekty v tejto "
+                          "databáze — over, či tento objekt vôbec patrí "
+                          "do rovnakej kategórie 'sample' ako ostatné, "
+                          "alebo či ho treba označiť inou diagnostickou "
+                          "metódou (napr. pitva/histológia)",
+            "micrometry": {"lengthMin": 2500.0, "lengthMax": 6000.0,
+                            "widthMin": 500.0, "widthMax": 2000.0, "unit": "µm"},
+            "extraNote": "Rozdelené zo záznamu DOG-0011, pôvodná hodnota "
+                         "'2,5–6 x 0,5–2 mm' prevedená na µm "
+                         "(1 mm = 1000 µm). Prevod je matematicky "
+                         "korektný, ale odborne over jednotku aj "
+                         "relevantnosť pre laboratórnu diagnostiku.",
+        },
+    ],
+}
+
+# Záznamy, kde AI VEDOME NEODHADUJE konkrétne číselné rozmery, len
+# vysvetľuje, prečo je hodnota nejednoznačná a čo presne treba overiť.
+# Toto sú explicitne otvorené otázky pre odborníka, nie návrhy.
+NO_GUESS_NOTES = {
+    "DOG-0014": (
+        "Pôvodná hodnota '50-50 x 39-39 (30-40)' je vnútorne nekonzistentná "
+        "(rozsah '50-50' fakticky nie je rozsah, ale opakovaná hodnota; "
+        "nie je jasné, či '(30-40)' patrí k dĺžke, šírke, alebo je to "
+        "úplne iný údaj, napr. rozsah priemeru embrya). AI zámerne "
+        "NEHÁDA výklad — vyžaduje priame nahliadnutie do pôvodného zdroja "
+        "(prezentácia/Excel), z ktorého táto hodnota pochádza."
+    ),
+    "DOG-0022": (
+        "Pôvodná hodnota je jedno číslo (300) bez rozsahu. Vzhľadom na "
+        "formát ostatných záznamov v tejto skupine (Angiostrongylus, "
+        "Crenosoma majú rozsah dĺžky + šírku) je pravdepodobné, že 300 "
+        "je len dĺžka (µm) bez uvedenej šírky, možno priemerná/typická "
+        "hodnota, nie min-max rozsah. AI zámerne neponúka konkrétny "
+        "rozsah min/max — treba overiť v odbornej literatúre alebo "
+        "pôvodnom zdroji."
+    ),
+    "DOG-0025": (
+        "Rovnaký prípad ako DOG-0022 — jedno číslo (300) bez rozsahu a "
+        "bez jasného významu. AI zámerne neponúka konkrétny rozsah "
+        "min/max pre mikrofilárie D. immitis — over v odbornej "
+        "literatúre alebo pôvodnom zdroji."
+    ),
+    "DOG-0034": (
+        "Rozmer v zdroji úplne chýba (prázdny reťazec). Demodex canis "
+        "sa navyše bežne nezachytáva flotáciou, ale škrabom kože — over, "
+        "či pre tento objekt vôbec dáva zmysel vypĺňať pole 'sample' "
+        "rovnako ako pri fekálnych nálezoch, a doplň mikrometriu podľa "
+        "odbornej literatúry."
+    ),
+    "DOG-0035": (
+        "Rozmer v zdroji úplne chýba (prázdny reťazec). Poznámka "
+        "'dlhý, predĺžený koniec' naznačuje, že D. injai sa od D. canis "
+        "líši predovšetkým tvarom/dĺžkou tela — mikrometriu treba "
+        "doplniť podľa odbornej literatúry, AI ju nevymýšľa."
+    ),
+}
+
+
+# ---------------------------------------------------------------------------
 # 4. Hlavná migrácia
 # ---------------------------------------------------------------------------
 
@@ -234,19 +369,96 @@ for rec in original:
     latin_raw = rec.get("taxon", "").strip()
     latin_name = latin_raw
 
-    id_base = slugify(latin_name) if latin_name else legacy_id.lower()
-
     host_list, host_missing = normalize_host(rec.get("host", ""))
-
-    size_raw = rec.get("size", "")
-    micrometry, size_status, size_note = parse_size(str(size_raw))
-
     shape = clean_text(rec.get("shape"))
     colour = clean_text(rec.get("color"))
     shell = clean_text(rec.get("wall"))
     notes_original = clean_text(rec.get("notes"))
-
     group_suggestion = GROUP_SUGGESTIONS.get(latin_name)
+    size_raw = rec.get("size", "")
+
+    # ---- Prípad A: zdroj sám rozlišuje dve štádiá -> rozdeliť na 2 objekty
+    if legacy_id in SPLIT_OVERRIDES:
+
+        for variant in SPLIT_OVERRIDES[legacy_id]:
+
+            id_base = f"{slugify(latin_name)}_{variant['idSuffix']}"
+
+            new_record = {
+                "id": id_base,
+                "legacyId": legacy_id,
+                "latinName": latin_name if latin_name else None,
+                "slovakName": None,
+                "taxonomy": {
+                    "kingdom": None, "phylum": None, "class": None,
+                    "order": None, "family": None, "genus": None,
+                    "species": None,
+                },
+                "host": host_list,
+                "sample": None,
+                "stage": None,
+                "group": None,
+                "methods": [],
+                "micrometry": variant["micrometry"],
+                "morphology": {
+                    "shape": shape, "colour": colour, "shell": shell,
+                    "operculum": None, "contents": None,
+                },
+                "diagnosticSigns": [],
+                "differentialDiagnosis": [],
+                "images": [],
+                "references": [],
+                "notes": notes_original,
+                "rawSize": size_raw,
+                "aiSuggested": {
+                    "group": group_suggestion,
+                    "stage": variant["stageSuggested"],
+                    "stageConfidence": variant["confidence"],
+                    "splitNote": variant["extraNote"],
+                    "disclaimer": (
+                        "Návrh AI — group je zo všeobecnej taxonómie "
+                        "(neoverené), stage je odvodené priamo z "
+                        "označenia v pôvodnom zdrojovom texte (vyššia "
+                        "istota, ale stále vyžaduje potvrdenie). Pred "
+                        "použitím oboje potvrdiť a prepísať do "
+                        "'group'/'stage', potom tento blok odstrániť."
+                    ),
+                },
+                "created": TODAY,
+                "modified": TODAY,
+                "version": "1.0",
+            }
+
+            migrated.append(new_record)
+
+            flags = [
+                "TENTO ZÁZNAM VZNIKOL ROZDELENÍM PÔVODNÉHO "
+                f"{legacy_id} (dva diagnostické objekty namiesto jedného) "
+                "— over, či rozdelenie a priradené hodnoty dávajú zmysel",
+                f"stage: AI navrhuje '{variant['stageSuggested']}' "
+                f"({variant['confidence']}) — potvrdiť a prepísať z "
+                f"aiSuggested do stage",
+                "sample: chýba (vždy nutná ručná kontrola)",
+                f"group: AI navrhuje '{group_suggestion}' — nutné potvrdiť"
+                if group_suggestion else
+                "group: AI nemá spoľahlivý návrh — nutné doplniť ručne",
+                variant["extraNote"],
+            ]
+
+            report_rows.append({
+                "legacyId": f"{legacy_id} → {id_base}",
+                "id": id_base,
+                "latinName": latin_name,
+                "flags": flags,
+                "size_status": "split",
+            })
+
+        continue  # pôvodný nerozdelený záznam sa už ďalej nespracováva
+
+    # ---- Prípad B: bežné spracovanie (1 zdrojový záznam = 1 objekt) ----
+
+    id_base = slugify(latin_name) if latin_name else legacy_id.lower()
+    micrometry, size_status, size_note = parse_size(str(size_raw))
 
     new_record = {
         "id": id_base,
@@ -312,6 +524,9 @@ for rec in original:
     elif size_status == "ok_partial":
         flags.append(f"micrometry: čiastočne prevedené — {size_note}")
 
+    if legacy_id in NO_GUESS_NOTES:
+        flags.append(f"⚠️ AI ZÁMERNE NEHÁDA rozmer: {NO_GUESS_NOTES[legacy_id]}")
+
     if group_suggestion:
         flags.append(f"group: AI navrhuje '{group_suggestion}' — nutné potvrdiť")
     else:
@@ -366,7 +581,7 @@ lines.append("- `created` / `modified` / `version` doplnené\n")
 
 lines.append("\n## 1. Čo NIKDY nebolo doplnené automaticky (vyžaduje odborníka)\n")
 lines.append("Podľa `09_MASTER_PROMPT.md` bod 4 (\"Nikdy nevytváraj odborné údaje bez označenia, že ide o návrh\") "
-              "nasledovné polia zostali zámerne `null` pre **všetkých 35 záznamov**:\n")
+              f"nasledovné polia zostali zámerne `null` pre **všetkých {len(migrated)} záznamov**:\n")
 lines.append("- **`stage`** (štádium — vajíčko/larva/cysta/dospelý jedinec...) — nedá sa spoľahlivo odvodiť z pôvodných dát.\n")
 lines.append("- **`sample`** (typ vzorky — trus/krv/koža...) — nedá sa spoľahlivo odvodiť z pôvodných dát.\n")
 lines.append("- **`group`** — AI ponúka návrh v poli `aiSuggested.group`, ale nie je zapísaný priamo do `group`. Treba ho odborne potvrdiť.\n")
@@ -385,7 +600,7 @@ else:
                   "POZOR: to sa môže zmeniť, keď sa ID rozšíria o `stage`.\n")
 
 lines.append("\n## 3. Záznamy vyžadujúce mimoriadnu pozornosť (nejednoznačný rozmer)\n")
-critical = [r for r in report_rows if r["size_status"] == "unparsed"]
+critical = [r for r in report_rows if r["size_status"] in ("unparsed", "empty", "split")]
 for r in critical:
     lines.append(f"### `{r['legacyId']}` — {r['latinName']}\n")
     for flag in r["flags"]:
@@ -400,11 +615,15 @@ for r in report_rows:
     lines.append(f"| {r['legacyId']} | `{r['id']}` | {r['latinName']} | {r['size_status']} | {flags_short} |")
 
 lines.append("\n## 5. Odporúčaný ďalší postup\n")
-lines.append("1. Prejsť sekciu 3 (kritické záznamy s nejednoznačným rozmerom) — najmä `Strongyloides spp.` "
-              "(kombinuje vajíčko aj larvu — podľa filozofie \"diagnostický objekt\" z `00_PROJECT_CONTEXT.md` "
-              "sekcie 10 by mali byť **dva samostatné záznamy**, nie jeden).\n")
-lines.append("2. Doplniť `stage` a `sample` pre všetkých 35 záznamov (odborník, nie AI).\n")
-lines.append("3. Potvrdiť alebo opraviť `aiSuggested.group` a prepísať do `group`, potom `aiSuggested` blok odstrániť.\n")
+lines.append("1. Prejsť sekciu 3 (záznamy vyžadujúce pozornosť) — `Strongyloides spp.` a `Alaria alata` už boli "
+              "AI rozdelené na samostatné diagnostické objekty (vajíčko/larva, resp. vajíčko/dospelý jedinec) "
+              "podľa filozofie z `00_PROJECT_CONTEXT.md` sekcie 10 — over, či je rozdelenie a priradenie "
+              "hodnôt správne. `Mesocestoides spp.`, `Oslerus osleri`, `Dirofilaria immitis`, `Demodex canis`, "
+              "`Demodex injai` potrebujú rozmer doplniť/overiť z literatúry alebo pôvodného zdroja — AI ho "
+              "zámerne nevymýšľala.\n")
+lines.append(f"2. Doplniť `stage` a `sample` pre všetkých {len(migrated)} záznamov (odborník, nie AI).\n")
+lines.append("3. Potvrdiť alebo opraviť `aiSuggested.group` (a pri rozdelených záznamoch aj `aiSuggested.stage`) "
+              "a prepísať do `group`/`stage`, potom `aiSuggested` blok odstrániť.\n")
 lines.append("4. Po doplnení `stage` rozšíriť `id` podľa vzoru `03_DATA_ENTRY_STANDARD.md` (napr. `toxocara_canis_egg`) "
               "a znovu skontrolovať duplicity.\n")
 lines.append("5. Rozdeliť `notes` do `diagnosticSigns[]` (pole jednotlivých znakov, nie súvislý text) podľa "
