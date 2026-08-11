@@ -1,6 +1,11 @@
 /******************************************************************************
  * VetPara Atlas
  * Atlas UI
+ *
+ * POZNÁMKA (2026-08-11): Prepracované na novú databázovú schému podľa
+ * 02_DATABASE_SPECIFICATION.md — polia latinName / host[] / micrometry{} /
+ * morphology{shape,colour,shell} nahrádzajú staré ploché polia
+ * taxon / host (text) / size (text) / shape / color / wall.
  ******************************************************************************/
 
 import Repository from "../services/Repository.js";
@@ -11,7 +16,7 @@ const AtlasPage = {
         search: "",
         host: "",
         shape: "",
-        color: ""
+        colour: ""
     },
 
     render() {
@@ -52,19 +57,19 @@ const AtlasPage = {
                         ${this.renderFilter(
                             "host",
                             "Hostiteľ",
-                            this.getValues("host")
+                            this.getHostValues()
                         )}
 
                         ${this.renderFilter(
                             "shape",
                             "Tvar",
-                            this.getValues("shape")
+                            this.getValues("morphology.shape")
                         )}
 
                         ${this.renderFilter(
-                            "color",
+                            "colour",
                             "Farba",
-                            this.getValues("color")
+                            this.getValues("morphology.colour")
                         )}
 
                     </div>
@@ -122,7 +127,7 @@ const AtlasPage = {
 
         this.bindFilter("host");
         this.bindFilter("shape");
-        this.bindFilter("color");
+        this.bindFilter("colour");
 
         const clearButton =
             document.getElementById("atlas-clear-filters");
@@ -141,10 +146,28 @@ const AtlasPage = {
 
     },
 
-    getValues(field) {
+    // ------------------------------------------------------------------
+    // Pomocné funkcie na čítanie vnorených polí (napr. "morphology.shape")
+    // ------------------------------------------------------------------
+
+    getFieldValue(record, path) {
+
+        return path
+            .split(".")
+            .reduce(
+                (value, key) =>
+                    (value === undefined || value === null)
+                        ? undefined
+                        : value[key],
+                record
+            );
+
+    },
+
+    getValues(path) {
 
         const values = Repository.getAll()
-            .map(record => record[field])
+            .map(record => this.getFieldValue(record, path))
             .filter(value =>
                 value !== undefined &&
                 value !== null &&
@@ -155,6 +178,87 @@ const AtlasPage = {
         return [...new Set(values)].sort((a, b) =>
             a.localeCompare(b, "sk")
         );
+
+    },
+
+    getHostValues() {
+
+        const values = Repository.getAll()
+            .flatMap(record => Array.isArray(record.host) ? record.host : [])
+            .filter(value =>
+                value !== undefined &&
+                value !== null &&
+                String(value).trim() !== ""
+            )
+            .map(value => String(value).trim());
+
+        return [...new Set(values)].sort((a, b) =>
+            a.localeCompare(b, "sk")
+        );
+
+    },
+
+    // ------------------------------------------------------------------
+    // Formátovanie mikrometrie a hostiteľov na zobrazenie
+    // ------------------------------------------------------------------
+
+    formatSize(micrometry) {
+
+        if (!micrometry) {
+
+            return "";
+
+        }
+
+        const {
+            lengthMin, lengthMax,
+            widthMin, widthMax,
+            unit
+        } = micrometry;
+
+        const hasLength =
+            lengthMin !== null && lengthMin !== undefined &&
+            lengthMax !== null && lengthMax !== undefined;
+
+        const hasWidth =
+            widthMin !== null && widthMin !== undefined &&
+            widthMax !== null && widthMax !== undefined;
+
+        if (!hasLength && !hasWidth) {
+
+            return "";
+
+        }
+
+        const lengthPart = hasLength
+            ? (lengthMin === lengthMax
+                ? `${lengthMin}`
+                : `${lengthMin}–${lengthMax}`)
+            : "?";
+
+        const widthPart = hasWidth
+            ? (widthMin === widthMax
+                ? `${widthMin}`
+                : `${widthMin}–${widthMax}`)
+            : null;
+
+        const unitLabel = unit || "µm";
+
+        return widthPart
+            ? `${lengthPart} × ${widthPart} ${unitLabel}`
+            : `${lengthPart} ${unitLabel}`;
+
+    },
+
+    formatHosts(hosts) {
+
+        if (!Array.isArray(hosts) || hosts.length === 0) {
+
+            return "";
+
+        }
+
+        return hosts.join(", ");
 
     },
 
@@ -235,27 +339,31 @@ const AtlasPage = {
 
             const matchesSearch =
                 !search ||
-                String(record.taxon ?? "")
+                String(record.latinName ?? "")
+                    .toLowerCase()
+                    .includes(search) ||
+                String(record.slovakName ?? "")
                     .toLowerCase()
                     .includes(search);
 
             const matchesHost =
                 !this.state.host ||
-                String(record.host ?? "") === this.state.host;
+                (Array.isArray(record.host) &&
+                    record.host.includes(this.state.host));
 
             const matchesShape =
                 !this.state.shape ||
-                String(record.shape ?? "") === this.state.shape;
+                String(record.morphology?.shape ?? "") === this.state.shape;
 
-            const matchesColor =
-                !this.state.color ||
-                String(record.color ?? "") === this.state.color;
+            const matchesColour =
+                !this.state.colour ||
+                String(record.morphology?.colour ?? "") === this.state.colour;
 
             return (
                 matchesSearch &&
                 matchesHost &&
                 matchesShape &&
-                matchesColor
+                matchesColour
             );
 
         });
@@ -294,28 +402,28 @@ const AtlasPage = {
                 data-id="${this.escapeHtml(record.id)}"
                 tabindex="0"
                 role="button"
-                aria-label="Otvoriť detail: ${this.escapeHtml(record.taxon)}"
+                aria-label="Otvoriť detail: ${this.escapeHtml(record.latinName ?? record.id)}"
             >
 
                 <header class="parasite-card-header">
 
                     <h2>
-                        ${this.escapeHtml(record.taxon)}
+                        ${this.escapeHtml(record.latinName ?? record.id)}
                     </h2>
 
                 </header>
 
                 <div class="parasite-card-body">
 
-                    ${this.field("Hostiteľ", record.host)}
+                    ${this.field("Hostiteľ", this.formatHosts(record.host))}
 
-                    ${this.field("Veľkosť", record.size)}
+                    ${this.field("Veľkosť", this.formatSize(record.micrometry))}
 
-                    ${this.field("Tvar", record.shape)}
+                    ${this.field("Tvar", record.morphology?.shape)}
 
-                    ${this.field("Farba", record.color)}
+                    ${this.field("Farba", record.morphology?.colour)}
 
-                    ${this.field("Stena", record.wall)}
+                    ${this.field("Obal", record.morphology?.shell)}
 
                     ${this.field(
                         "Ďalšie znaky",
@@ -368,12 +476,12 @@ const AtlasPage = {
 
         }
 
-        if (this.state.color) {
+        if (this.state.colour) {
 
             filters.push({
-                key: "color",
+                key: "colour",
                 label: "Farba",
-                value: this.state.color
+                value: this.state.colour
             });
 
         }
@@ -457,7 +565,7 @@ const AtlasPage = {
 
         }
 
-        ["host", "shape", "color"].forEach(field => {
+        ["host", "shape", "colour"].forEach(field => {
 
             const select =
                 document.getElementById(`atlas-filter-${field}`);
@@ -477,7 +585,7 @@ const AtlasPage = {
         this.state.search = "";
         this.state.host = "";
         this.state.shape = "";
-        this.state.color = "";
+        this.state.colour = "";
 
         this.syncControls();
 
@@ -545,7 +653,7 @@ const AtlasPage = {
                 <header class="parasite-detail-header">
 
                     <h1>
-                        ${this.escapeHtml(record.taxon)}
+                        ${this.escapeHtml(record.latinName ?? record.id)}
                     </h1>
 
                     <p>
@@ -559,27 +667,37 @@ const AtlasPage = {
 
                     ${this.detailField(
                         "Hostiteľ",
-                        record.host
+                        this.formatHosts(record.host)
+                    )}
+
+                    ${this.detailField(
+                        "Štádium",
+                        record.stage
+                    )}
+
+                    ${this.detailField(
+                        "Typ vzorky",
+                        record.sample
                     )}
 
                     ${this.detailField(
                         "Veľkosť",
-                        record.size
+                        this.formatSize(record.micrometry)
                     )}
 
                     ${this.detailField(
                         "Tvar",
-                        record.shape
+                        record.morphology?.shape
                     )}
 
                     ${this.detailField(
                         "Farba",
-                        record.color
+                        record.morphology?.colour
                     )}
 
                     ${this.detailField(
-                        "Stena",
-                        record.wall
+                        "Obal",
+                        record.morphology?.shell
                     )}
 
                     ${this.detailField(
