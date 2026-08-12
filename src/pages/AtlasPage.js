@@ -164,6 +164,15 @@ const AtlasPage = {
 
     },
 
+    getDisplayName(record) {
+
+        const latinName =
+            String(record?.latinName ?? "").trim();
+
+        return latinName || record?.id || "";
+
+    },
+
     getValues(path) {
 
         const values = Repository.getAll()
@@ -395,20 +404,25 @@ const AtlasPage = {
 
         }
 
-        container.innerHTML = filtered.map(record => `
+        container.innerHTML = filtered.map(record => {
+
+            const displayName =
+                this.getDisplayName(record);
+
+            return `
 
             <article
                 class="parasite-card"
                 data-id="${this.escapeHtml(record.id)}"
                 tabindex="0"
                 role="button"
-                aria-label="Otvoriť detail: ${this.escapeHtml(record.latinName ?? record.id)}"
+                aria-label="Otvoriť detail: ${this.escapeHtml(displayName)}"
             >
 
                 <header class="parasite-card-header">
 
                     <h2>
-                        ${this.escapeHtml(record.latinName ?? record.id)}
+                        ${this.escapeHtml(displayName)}
                     </h2>
 
                 </header>
@@ -434,7 +448,9 @@ const AtlasPage = {
 
             </article>
 
-        `).join("");
+        `;
+
+        }).join("");
 
         this.bindCards();
 
@@ -638,6 +654,9 @@ const AtlasPage = {
         const app =
             document.getElementById("app");
 
+        const displayName =
+            this.getDisplayName(record);
+
         app.innerHTML = `
 
             <section class="parasite-detail">
@@ -653,7 +672,7 @@ const AtlasPage = {
                 <header class="parasite-detail-header">
 
                     <h1>
-                        ${this.escapeHtml(record.latinName ?? record.id)}
+                        ${this.escapeHtml(displayName)}
                     </h1>
 
                     <p>
