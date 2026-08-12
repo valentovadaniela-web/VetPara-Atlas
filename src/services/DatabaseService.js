@@ -38,7 +38,7 @@ class DatabaseService {
     }
 async loadDogDatabase() {
 
-    const database = await this.load("dog.json");
+    const database = await this.load("dog.migrated.json");
 
     this.currentDatabase = database;
 
