@@ -135,6 +135,72 @@ Zmena dokumentácie.
 ---
 ## [Unreleased]
 
+## [0.2.0]
+
+**Dátum:** 2026-08-12
+
+### Added
+
+- Databáza psa (`dog.migrated.json`) rozšírená z 35 na **37 diagnostických objektov** —
+  *Alaria alata* a *Strongyloides spp.* rozdelené na samostatné objekty podľa vývojového
+  štádia (`alaria_alata_egg` / `alaria_alata_adult`, `strongyloides_spp_egg` /
+  `strongyloides_spp_larva`), v súlade s princípom "diagnostický objekt, nie druh"
+  (`00_PROJECT_CONTEXT.md`, kap. 10).
+- Doplnené polia `host`, `sample`, `stage`, `group` pri všetkých 37 objektoch — zdroj:
+  pracovný hárok `dog_worksheet.xlsx`.
+- Doplnená/spresnená mikrometria (`micrometry.lengthMin/lengthMax`) tam, kde bola predtým
+  neurčená (napr. *Toxocara canis*, *Toxascaris leonina*).
+
+### Changed
+
+- ID diagnostických objektov zmenené z technického tvaru `dog_0001`…`dog_0035`
+  (odvodeného slugifikáciou legacy ID) na sémantické ID podľa `03_DATA_ENTRY_STANDARD.md`
+  (napr. `toxocara_canis`, `giardia_intestinalis`). Pôvodné legacy ID zachované v novom
+  poli `legacyId`.
+- Pri 15 objektoch upravené `morphology.shape` / `morphology.colour` / `morphology.shell`
+  v prospech hodnôt z `dog_worksheet.xlsx` (podrobný zoznam v prílohe
+  `docs/2026-08-12_merge-dog-worksheet-report.md`).
+- Pri objekte `toxocara_canis` doplnená šírka (`widthMin`/`widthMax` = 75/90 µm) na základe
+  pravidla: zdrojové rozpätie bez „x" (napr. „75-90") pri okrúhlych/guľatých objektoch
+  znamená rovnakú dĺžku aj šírku. Pravidlo zámerne **neaplikované** na červovité/vláknité
+  tvary (napr. *Dirofilaria repens*), kde by šírka = dĺžka bola biologicky nezmyselná —
+  tieto zostávajú so `width = null`, čakajú na doplnenie z literatúry.
+
+### Documentation
+
+- Vytvorený `docs/2026-08-12_merge-dog-worksheet-report.md` — kompletný audit zlúčenia
+  (zoznam vyriešených konfliktov, rozdelených objektov, stále chýbajúcich polí).
+- Aktualizovaný `AI_STATUS.md`.
+
+### Known limitations (prenesené ako TODO)
+
+- `taxonomy` (kingdom–phylum–class–order–family–genus–species) zostáva prázdne pri všetkých
+  37 objektoch — čaká na budúci import kompletného taxonomického stromu.
+- `group` pri objektoch *Demodex canis*, *Demodex injai* (`"Arthropoda (Acari)"`) a
+  *Linguatula serrata* (`"Pentastomida (mimo hlavných skupín — overiť zaradenie)"`) obsahuje
+  hodnoty mimo kontrolovaného zoznamu z `02_DATABASE_SPECIFICATION.md` — dočasne ponechané
+  doslovne, čaká na rozhodnutie pri návrhu `taxonomy.json`.
+- `diagnosticSigns`, `differentialDiagnosis`, `images`, `references`, `zoonosis`, `methods`
+  zostávajú prázdne pri všetkých 37 objektoch.
+- Šírka pre *Dirofilaria repens*, *Dirofilaria immitis*, *Oslerus (Filaroides) osleri*
+  neurčená — čaká na doplnenie z odbornej literatúry.
+
+### Dôvod
+
+Doplnenie chýbajúcich polí databázy psa bolo nevyhnutné pre spustenie modulov Vyhľadávanie,
+Filtre a Diagnostický expert (`01_PROJECT_SPECIFICATION.md`, moduly 4 a 6), ktoré závisia od
+vyplnených hodnôt `sample`, `stage` a `group`.
+
+### Súvisiace dokumenty
+
+- `00_PROJECT_CONTEXT.md`
+- `02_DATABASE_SPECIFICATION.md`
+- `03_DATA_ENTRY_STANDARD.md`
+- `docs/2026-08-12_merge-dog-worksheet-report.md`
+- `AI_STATUS.md`
+
+---
+
 **Dátum:** 2026-08-11
 
 ### Changed
