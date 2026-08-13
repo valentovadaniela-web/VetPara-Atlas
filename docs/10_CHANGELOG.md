@@ -135,6 +135,109 @@ Zmena dokumentácie.
 ---
 ## [Unreleased]
 
+## [0.3.0]
+
+**Dátum:** 2026-08-13
+
+### Added
+
+- Doplnené pole `diagnosticSigns` pri **17 z 38** diagnostických objektov — morfologické/
+  identifikačné frázy, ktoré po merge z 2026-08-12 skončili nesprávne v poli `notes`,
+  boli extrahované a presunuté do `diagnosticSigns` ako samostatné položky poľa, v súlade
+  s `03_DATA_ENTRY_STANDARD.md` § 12 (jeden znak = jedna položka, nie voľný text).
+  Epidemiologické/klinické poznámky (napr. „nepatogén", „zriedkavý nález") zostali v `notes`.
+  Detaily: `docs/2026-08-13_diagnosticSigns-extraction.md`.
+- Doplnené pole `taxonomy` (kingdom–phylum–class–order–family–genus–species) pri
+  **30 z 38** diagnostických objektov, na základe importu z NCBI taxonomického exportu
+  (`Taxonómia.xlsx`, dodaného autorkou projektu), podľa `02_DATABASE_SPECIFICATION.md` § 8.
+  22 objektov má taxonómiu do úrovne `species`, 8 iba do úrovne `genus`
+  (`species: null` — druh nie je mikroskopicky/zdrojovo jednoznačne určiteľný).
+  Zostávajúcich 8 objektov nemá taxonómiu vôbec — nenájdené v zdrojovej tabuľke, zoznam
+  odovzdaný autorke projektu v prílohe `Taxonomia_na_doplnenie.xlsx`.
+  Detaily: `docs/2026-08-13_taxonomy-import-report.md`.
+- Nový diagnostický objekt `echinococcus_sp_egg` (pozri Changed nižšie — vznikol
+  rozdelením existujúceho objektu, nie ako nový odborný nález).
+
+### Changed
+
+- **Diagnostický objekt `taenia_spp_echinococcus` rozdelený na 2 samostatné objekty**
+  — `taenia_sp_egg` a `echinococcus_sp_egg` — keďže *Taenia* a *Echinococcus* sú odlišné
+  rody, aj keď ich vajíčka sú mikroskopicky nerozoznateľné (taeniový typ). Rozhodnutie
+  autorky projektu, v súlade s princípom "diagnostický objekt, nie druh"
+  (`00_PROJECT_CONTEXT.md`, kap. 10). Oba nové objekty majú zhodné `host`/`sample`/
+  `stage`/`group`/`micrometry`/`morphology` (prevzaté z pôvodného záznamu) a zhodnú
+  poznámku: *„Vajíčka Taenia a Echinococcus sú morfologicky nerozoznateľné, udávame
+  vajíčka taeniového typu."* Oba zachovávajú pôvodné `legacyId: "DOG-0013"` pre
+  dohľadateľnosť.
+- **Počet diagnostických objektov v `dog.migrated.json` sa zvýšil z 37 na 38** v
+  dôsledku vyššie uvedeného rozdelenia. Ak akýkoľvek kód, test alebo dokumentácia
+  predpokladá presný počet 37 záznamov, treba to opraviť.
+- Pole `taxonomy.kingdom` bolo pri troch prvokoch (`cryptosporidium_parvum`,
+  `sarcocystis_spp`, `balantioides_predtym_balantidium_coli`) explicitne nastavené na
+  **„Protista"** na základe výslovného pokynu autorky projektu — zdrojová NCBI tabuľka
+  mala pre tieto taxóny pole Kingdom prázdne (NCBI formálne nezaraďuje prvoky pod
+  Metazoa). Toto je jediné miesto v rámci tejto zmeny, kde `taxonomy` obsahuje hodnotu
+  nad rámec priamej zhody so zdrojovou tabuľkou — zapísané na explicitný pokyn, nie ako
+  odhad AI.
+
+### Documentation
+
+- Vytvorený `docs/2026-08-13_diagnosticSigns-extraction.md` — kompletný zoznam
+  zmenených záznamov (notes → diagnosticSigns) s odôvodnením.
+- Vytvorený `docs/2026-08-13_taxonomy-import-report.md` — metóda párovania s NCBI
+  tabuľkou, zoznam zhôd/nezhôd, zdôvodnenie splitu Taenia/Echinococcus.
+- Vytvorená pracovná príloha `Taxonomia_na_doplnenie.xlsx` (14 riadkov) — odovzdaná
+  autorke projektu na doplnenie/rozhodnutie o zvyšných nejasných taxonomických
+  priradeniach.
+- Aktualizovaný `AI_STATUS.md`.
+
+### Known limitations (prenesené ako TODO)
+
+- 8 diagnostických objektov (`giardia_intestinalis`, `isospora_canis`,
+  `isospora_ohioensis`, `isospora_burrowsi`, `isospora_neorivolta`,
+  `hammondia_heydornii`, `diphyllobothrium_latum`, `linguatula_serrata`) nemá `taxonomy`
+  vôbec vyplnenú — nenájdené v dodanej NCBI tabuľke.
+- 8 diagnostických objektov má `taxonomy` iba do úrovne `genus` (`species: null`):
+  `sarcocystis_spp`, `mesocestoides_spp`, `physaloptera_spp`, `strongyloides_spp_egg`,
+  `strongyloides_spp_larva`, `taenia_sp_egg`, `echinococcus_sp_egg`.
+- `diagnosticSigns` zostáva prázdne pri 21 z 38 objektov — pôvodné zdrojové materiály
+  pre ne neobsahovali samostatne extrahovateľný diagnostický znak.
+- `differentialDiagnosis`, `images`, `references`, `zoonosis`, `methods` zostávajú
+  prázdne pri všetkých 38 objektoch.
+- `group` pri `demodex_canis`/`demodex_injai` (`"Arthropoda (Acari)"`) a
+  `linguatula_serrata` (`"Pentastomida (mimo hlavných skupín — overiť zaradenie)"`)
+  naďalej obsahuje hodnoty mimo kontrolovaného zoznamu z `02_DATABASE_SPECIFICATION.md`
+  — nerieši sa touto úpravou.
+- **UI (`AtlasPage.js`) zatiaľ nezobrazuje ani `diagnosticSigns`, ani `taxonomy`** —
+  obe dátové vylepšenia z verzií 0.2.0 a 0.3.0 sú v aplikácii zatiaľ neviditeľné.
+
+### Dôvod
+
+Doplnenie `diagnosticSigns` bolo potrebné, pretože po merge 2026-08-12 skončili
+diagnosticky významné frázy nesprávne v poli `notes` namiesto v poli určenom presne na
+tento účel (`03_DATA_ENTRY_STANDARD.md` § 12), čo by dlhodobo sťažilo konzistentné
+vyhľadávanie a zobrazovanie diagnostických znakov.
+
+Import taxonómie bol potrebný pre modul Detail diagnostického objektu
+(`01_PROJECT_SPECIFICATION.md`, modul 3 — sekcia "taxonómia") a pre budúce filtrovanie
+podľa taxonomickej skupiny (`Úlohy.txt` bod 5).
+
+Rozdelenie `taenia_spp_echinococcus` na dva objekty bolo potrebné, pretože pôvodný
+kombinovaný záznam nebolo možné korektne taxonomicky opísať jedným záznamom (ide o dva
+odlišné rody) bez porušenia princípu "jedna hodnota = jeden význam"
+(`00_PROJECT_CONTEXT.md`, kap. 4.2).
+
+### Súvisiace dokumenty
+
+- `00_PROJECT_CONTEXT.md`
+- `02_DATABASE_SPECIFICATION.md`
+- `03_DATA_ENTRY_STANDARD.md`
+- `docs/2026-08-13_diagnosticSigns-extraction.md`
+- `docs/2026-08-13_taxonomy-import-report.md`
+- `AI_STATUS.md`
+
+---
+
 ## [0.2.0]
 
 **Dátum:** 2026-08-12
@@ -293,41 +396,18 @@ Projekt je vo fáze:
 
 # 6. Budúce verzie
 
-## 0.2.0
-
-Plánované:
-
-### Added
-
-- vytvorenie adresárovej štruktúry projektu,
-- základná HTML aplikácia,
-- Bootstrap layout,
-- navigácia,
-- dashboard.
-
----
-
-## 0.3.0
-
-Plánované:
-
-### Added
-
-- databáza psa,
-- prvé diagnostické objekty,
-- vyhľadávanie.
-
----
-
 ## 0.4.0
 
-Plánované:
+Plánované (na základe `Úlohy.txt`):
 
 ### Added
 
-- galéria,
-- detail objektu,
-- filtre.
+- zobrazenie `diagnosticSigns` a `taxonomy` v `AtlasPage.js` (karta + detail),
+- externý odkaz na Catalogue of Life / WoRMS v detaile objektu,
+- filter podľa veľkosti (rozsah dĺžka/šírka od–do),
+- filter podľa `sample`,
+- multi-select filtre (farba, tvar, hostiteľ, sample),
+- fulltext vyhľadávanie cez všetky relevantné textové polia.
 
 ---
 
@@ -589,5 +669,4 @@ Tento dokument je jediným oficiálnym záznamom histórie projektu.
 Každá významná zmena musí byť zapísaná ešte pred zlúčením do hlavnej vetvy (`main`). Tým sa zabezpečí úplná dohľadateľnosť vývoja projektu a jednoduchá orientácia v histórii rozhodnutí.
 
 ---
-
 **Koniec dokumentu**
