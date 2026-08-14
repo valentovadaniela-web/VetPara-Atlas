@@ -6,17 +6,37 @@
  * 02_DATABASE_SPECIFICATION.md — polia latinName / host[] / micrometry{} /
  * morphology{shape,colour,shell} nahrádzajú staré ploché polia
  * taxon / host (text) / size (text) / shape / color / wall.
+ *
+ * POZNÁMKA (2026-08-13): Rozšírené podľa Úlohy.txt:
+ *  - zobrazenie diagnosticSigns (karta + detail)
+ *  - zobrazenie taxonomy v detaile + externé odkazy na Catalogue of Life / WoRMS
+ *  - filter podľa veľkosti (rozsah dĺžka/šírka od-do, prekryv s nameraným rozsahom)
+ *  - filter podľa sample ("materiál")
+ *  - multi-select pre host/shape/colour/sample (OR logika v rámci poľa)
+ *  - fulltext rozšírený na notes, diagnosticSigns, morphology.*
+ *
+ * Filtrovacia logika zostáva zámerne lokálne v tejto stránke (rovnaký prístup
+ * ako doteraz) — Repository.js naďalej slúži iba ako prístup k dátam, bez
+ * vlastnej filtračnej logiky. Prepojenie na ApplicationState.filters je
+ * samostatná plánovaná úloha (AI_STATUS.md bod 6.7), touto zmenou sa nerieši.
  ******************************************************************************/
 
 import Repository from "../services/Repository.js";
+
+const MULTI_SELECT_FIELDS = ["host", "shape", "colour", "sample"];
 
 const AtlasPage = {
 
     state: {
         search: "",
-        host: "",
-        shape: "",
-        colour: ""
+        host: [],
+        shape: [],
+        colour: [],
+        sample: [],
+        lengthMin: "",
+        lengthMax: "",
+        widthMin: "",
+        widthMax: ""
     },
 
     render() {
@@ -45,7 +65,7 @@ const AtlasPage = {
                         <input
                             id="atlas-search-input"
                             type="search"
-                            placeholder="Hľadať parazita..."
+                            placeholder="Hľadať v názve, znakoch, poznámkach..."
                             aria-label="Vyhľadávanie parazita"
                             autocomplete="off"
                         >
@@ -54,23 +74,102 @@ const AtlasPage = {
 
                     <div class="atlas-filters">
 
-                        ${this.renderFilter(
+                        ${this.renderMultiFilter(
                             "host",
                             "Hostiteľ",
                             this.getHostValues()
                         )}
 
-                        ${this.renderFilter(
+                        ${this.renderMultiFilter(
+                            "sample",
+                            "Materiál (vzorka)",
+                            this.getValues("sample")
+                        )}
+
+                        ${this.renderMultiFilter(
                             "shape",
                             "Tvar",
                             this.getValues("morphology.shape")
                         )}
 
-                        ${this.renderFilter(
+                        ${this.renderMultiFilter(
                             "colour",
                             "Farba",
                             this.getValues("morphology.colour")
                         )}
+
+                    </div>
+
+                    <div class="atlas-size-filter">
+
+                        <fieldset>
+
+                            <legend>Veľkosť (µm)</legend>
+
+                            <div class="atlas-size-row">
+
+                                <label for="atlas-filter-lengthMin">
+                                    Dĺžka od
+                                </label>
+
+                                <input
+                                    id="atlas-filter-lengthMin"
+                                    type="number"
+                                    min="0"
+                                    step="any"
+                                    inputmode="decimal"
+                                >
+
+                                <label for="atlas-filter-lengthMax">
+                                    do
+                                </label>
+
+                                <input
+                                    id="atlas-filter-lengthMax"
+                                    type="number"
+                                    min="0"
+                                    step="any"
+                                    inputmode="decimal"
+                                >
+
+                            </div>
+
+                            <div class="atlas-size-row">
+
+                                <label for="atlas-filter-widthMin">
+                                    Šírka od
+                                </label>
+
+                                <input
+                                    id="atlas-filter-widthMin"
+                                    type="number"
+                                    min="0"
+                                    step="any"
+                                    inputmode="decimal"
+                                >
+
+                                <label for="atlas-filter-widthMax">
+                                    do
+                                </label>
+
+                                <input
+                                    id="atlas-filter-widthMax"
+                                    type="number"
+                                    min="0"
+                                    step="any"
+                                    inputmode="decimal"
+                                >
+
+                            </div>
+
+                            <p class="atlas-size-hint">
+                                Zobrazia sa objekty, ktorých nameraný rozsah sa
+                                prekrýva so zadaným rozsahom. Objekty bez
+                                nameraného údaja sa pri aktívnom filtri
+                                nezobrazia.
+                            </p>
+
+                        </fieldset>
 
                     </div>
 
@@ -125,9 +224,17 @@ const AtlasPage = {
 
         }
 
-        this.bindFilter("host");
-        this.bindFilter("shape");
-        this.bindFilter("colour");
+        MULTI_SELECT_FIELDS.forEach(field => {
+
+            this.bindMultiFilter(field);
+
+        });
+
+        ["lengthMin", "lengthMax", "widthMin", "widthMax"].forEach(field => {
+
+            this.bindSizeFilter(field);
+
+        });
 
         const clearButton =
             document.getElementById("atlas-clear-filters");
@@ -161,15 +268,6 @@ const AtlasPage = {
                         : value[key],
                 record
             );
-
-    },
-
-    getDisplayName(record) {
-
-        const latinName =
-            String(record?.latinName ?? "").trim();
-
-        return latinName || record?.id || "";
 
     },
 
@@ -271,20 +369,35 @@ const AtlasPage = {
 
     },
 
-    renderFilter(field, label, values) {
+    // ------------------------------------------------------------------
+    // Multi-select filtre (host / sample / shape / colour)
+    // ------------------------------------------------------------------
+
+    renderMultiFilter(field, label, values) {
+
+        if (values.length === 0) {
+
+            return "";
+
+        }
+
+        const size = Math.min(6, Math.max(3, values.length));
 
         return `
-            <div class="atlas-filter">
+            <div class="atlas-filter atlas-filter-multi">
 
                 <label for="atlas-filter-${field}">
                     ${label}
+                    <span class="atlas-filter-hint">
+                        (viac možností naraz)
+                    </span>
                 </label>
 
-                <select id="atlas-filter-${field}">
-
-                    <option value="">
-                        Všetky
-                    </option>
+                <select
+                    id="atlas-filter-${field}"
+                    multiple
+                    size="${size}"
+                >
 
                     ${values.map(value => `
                         <option value="${this.escapeHtml(value)}">
@@ -299,7 +412,7 @@ const AtlasPage = {
 
     },
 
-    bindFilter(field) {
+    bindMultiFilter(field) {
 
         const select =
             document.getElementById(`atlas-filter-${field}`);
@@ -310,15 +423,257 @@ const AtlasPage = {
 
         }
 
-        select.value = this.state[field];
+        Array.from(select.options).forEach(option => {
 
-        select.addEventListener("change", (event) => {
+            option.selected =
+                this.state[field].includes(option.value);
+
+        });
+
+        select.addEventListener("change", () => {
+
+            this.state[field] =
+                Array.from(select.selectedOptions)
+                    .map(option => option.value);
+
+            this.renderRecords();
+
+        });
+
+    },
+
+    // ------------------------------------------------------------------
+    // Filter podľa veľkosti (rozsah dĺžka/šírka)
+    // ------------------------------------------------------------------
+
+    bindSizeFilter(field) {
+
+        const input =
+            document.getElementById(`atlas-filter-${field}`);
+
+        if (!input) {
+
+            return;
+
+        }
+
+        input.value = this.state[field];
+
+        input.addEventListener("input", (event) => {
 
             this.state[field] = event.target.value;
 
             this.renderRecords();
 
         });
+
+    },
+
+    /**
+     * Prekryvová zhoda rozsahu.
+     *
+     * Zobrazí objekt, ak sa jeho nameraný rozsah [recordMin, recordMax]
+     * prekrýva so zadaným hľadaným rozsahom [queryMin, queryMax].
+     *
+     * Ak používateľ zadal iba jednu hranicu, kontroluje sa iba tá.
+     * Ak objekt nemá pre daný rozmer namerané hodnoty vôbec, pri aktívnom
+     * filtri tohto rozmeru sa nezobrazí (nevieme potvrdiť zhodu).
+     */
+    matchesSizeRange(recordMin, recordMax, queryMin, queryMax) {
+
+        const hasQuery =
+            queryMin !== "" || queryMax !== "";
+
+        if (!hasQuery) {
+
+            return true;
+
+        }
+
+        if (
+            recordMin === null || recordMin === undefined ||
+            recordMax === null || recordMax === undefined
+        ) {
+
+            return false;
+
+        }
+
+        if (queryMin !== "" && recordMax < Number(queryMin)) {
+
+            return false;
+
+        }
+
+        if (queryMax !== "" && recordMin > Number(queryMax)) {
+
+            return false;
+
+        }
+
+        return true;
+
+    },
+
+    // ------------------------------------------------------------------
+    // Diagnostické znaky a taxonómia — zobrazenie
+    // ------------------------------------------------------------------
+
+    diagnosticSignsList(signs) {
+
+        if (!Array.isArray(signs) || signs.length === 0) {
+
+            return "";
+
+        }
+
+        return `
+            <ul class="parasite-diagnostic-signs">
+
+                ${signs.map(sign => `
+                    <li>
+                        <span aria-hidden="true">⚡</span>
+                        ${this.escapeHtml(sign)}
+                    </li>
+                `).join("")}
+
+            </ul>
+        `;
+
+    },
+
+    taxonomyBlock(taxonomy) {
+
+        if (!taxonomy || Object.keys(taxonomy).length === 0) {
+
+            return "";
+
+        }
+
+        const ranks = [
+            ["kingdom", "Ríša"],
+            ["phylum", "Kmeň"],
+            ["class", "Trieda"],
+            ["order", "Rad"],
+            ["family", "Čeľaď"],
+            ["genus", "Rod"],
+            ["species", "Druh"]
+        ];
+
+        const rows = ranks
+            .filter(([key]) =>
+                taxonomy[key] !== null &&
+                taxonomy[key] !== undefined &&
+                String(taxonomy[key]).trim() !== ""
+            )
+            .map(([key, label]) => `
+                <div class="taxonomy-row">
+                    <span class="taxonomy-rank">${label}</span>
+                    <span class="taxonomy-value">${this.escapeHtml(taxonomy[key])}</span>
+                </div>
+            `)
+            .join("");
+
+        if (!rows) {
+
+            return "";
+
+        }
+
+        return `
+            <div class="parasite-taxonomy">
+                ${rows}
+            </div>
+        `;
+
+    },
+
+    /**
+     * Externé odkazy na overenie taxonómie.
+     *
+     * Iba zostavenie vyhľadávacieho odkazu z latinName — žiadne API volanie,
+     * žiadne automatické priradenie výsledku. Používateľ si zhodu overí sám.
+     */
+    taxonomyExternalLinks(latinName) {
+
+        if (!latinName) {
+
+            return "";
+
+        }
+
+        const query =
+            encodeURIComponent(latinName);
+
+        const colUrl =
+            `https://www.catalogueoflife.org/data/search?q=${query}`;
+
+        const wormsUrl =
+            `https://www.marinespecies.org/aphia.php?p=search&tName=${query}`;
+
+        return `
+            <div class="parasite-taxonomy-links">
+
+                <a
+                    href="${colUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Overiť na Catalogue of Life ↗
+                </a>
+
+                <a
+                    href="${wormsUrl}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Overiť na WoRMS ↗
+                </a>
+
+            </div>
+        `;
+
+    },
+
+    // ------------------------------------------------------------------
+    // Vykreslenie zoznamu záznamov
+    // ------------------------------------------------------------------
+
+    matchesFulltext(record, search) {
+
+        if (!search) {
+
+            return true;
+
+        }
+
+        const haystackParts = [
+
+            record.latinName,
+
+            record.slovakName,
+
+            record.notes,
+
+            record.morphology?.shape,
+
+            record.morphology?.colour,
+
+            record.morphology?.shell,
+
+            ...(Array.isArray(record.diagnosticSigns)
+                ? record.diagnosticSigns
+                : [])
+
+        ];
+
+        const haystack =
+            haystackParts
+                .filter(Boolean)
+                .join(" ")
+                .toLowerCase();
+
+        return haystack.includes(search);
 
     },
 
@@ -347,32 +702,49 @@ const AtlasPage = {
         const filtered = records.filter(record => {
 
             const matchesSearch =
-                !search ||
-                String(record.latinName ?? "")
-                    .toLowerCase()
-                    .includes(search) ||
-                String(record.slovakName ?? "")
-                    .toLowerCase()
-                    .includes(search);
+                this.matchesFulltext(record, search);
 
             const matchesHost =
-                !this.state.host ||
+                this.state.host.length === 0 ||
                 (Array.isArray(record.host) &&
-                    record.host.includes(this.state.host));
+                    record.host.some(h => this.state.host.includes(h)));
+
+            const matchesSample =
+                this.state.sample.length === 0 ||
+                this.state.sample.includes(record.sample);
 
             const matchesShape =
-                !this.state.shape ||
-                String(record.morphology?.shape ?? "") === this.state.shape;
+                this.state.shape.length === 0 ||
+                this.state.shape.includes(record.morphology?.shape);
 
             const matchesColour =
-                !this.state.colour ||
-                String(record.morphology?.colour ?? "") === this.state.colour;
+                this.state.colour.length === 0 ||
+                this.state.colour.includes(record.morphology?.colour);
+
+            const matchesLength =
+                this.matchesSizeRange(
+                    record.micrometry?.lengthMin,
+                    record.micrometry?.lengthMax,
+                    this.state.lengthMin,
+                    this.state.lengthMax
+                );
+
+            const matchesWidth =
+                this.matchesSizeRange(
+                    record.micrometry?.widthMin,
+                    record.micrometry?.widthMax,
+                    this.state.widthMin,
+                    this.state.widthMax
+                );
 
             return (
                 matchesSearch &&
                 matchesHost &&
+                matchesSample &&
                 matchesShape &&
-                matchesColour
+                matchesColour &&
+                matchesLength &&
+                matchesWidth
             );
 
         });
@@ -404,25 +776,20 @@ const AtlasPage = {
 
         }
 
-        container.innerHTML = filtered.map(record => {
-
-            const displayName =
-                this.getDisplayName(record);
-
-            return `
+        container.innerHTML = filtered.map(record => `
 
             <article
                 class="parasite-card"
                 data-id="${this.escapeHtml(record.id)}"
                 tabindex="0"
                 role="button"
-                aria-label="Otvoriť detail: ${this.escapeHtml(displayName)}"
+                aria-label="Otvoriť detail: ${this.escapeHtml(record.latinName ?? record.id)}"
             >
 
                 <header class="parasite-card-header">
 
                     <h2>
-                        ${this.escapeHtml(displayName)}
+                        ${this.escapeHtml(record.latinName ?? record.id)}
                     </h2>
 
                 </header>
@@ -430,6 +797,8 @@ const AtlasPage = {
                 <div class="parasite-card-body">
 
                     ${this.field("Hostiteľ", this.formatHosts(record.host))}
+
+                    ${this.field("Materiál", record.sample)}
 
                     ${this.field("Veľkosť", this.formatSize(record.micrometry))}
 
@@ -439,8 +808,10 @@ const AtlasPage = {
 
                     ${this.field("Obal", record.morphology?.shell)}
 
+                    ${this.diagnosticSignsList(record.diagnosticSigns)}
+
                     ${this.field(
-                        "Ďalšie znaky",
+                        "Poznámka",
                         record.notes
                     )}
 
@@ -448,9 +819,7 @@ const AtlasPage = {
 
             </article>
 
-        `;
-
-        }).join("");
+        `).join("");
 
         this.bindCards();
 
@@ -472,32 +841,46 @@ const AtlasPage = {
 
         }
 
-        if (this.state.host) {
+        MULTI_SELECT_FIELDS.forEach(field => {
+
+            const labels = {
+                host: "Hostiteľ",
+                sample: "Materiál",
+                shape: "Tvar",
+                colour: "Farba"
+            };
+
+            this.state[field].forEach(value => {
+
+                filters.push({
+                    key: field,
+                    label: labels[field],
+                    value,
+                    multiValue: value
+                });
+
+            });
+
+        });
+
+        if (this.state.lengthMin !== "" || this.state.lengthMax !== "") {
 
             filters.push({
-                key: "host",
-                label: "Hostiteľ",
-                value: this.state.host
+                key: "length",
+                label: "Dĺžka",
+                value:
+                    `${this.state.lengthMin || "…"}–${this.state.lengthMax || "…"} µm`
             });
 
         }
 
-        if (this.state.shape) {
+        if (this.state.widthMin !== "" || this.state.widthMax !== "") {
 
             filters.push({
-                key: "shape",
-                label: "Tvar",
-                value: this.state.shape
-            });
-
-        }
-
-        if (this.state.colour) {
-
-            filters.push({
-                key: "colour",
-                label: "Farba",
-                value: this.state.colour
+                key: "width",
+                label: "Šírka",
+                value:
+                    `${this.state.widthMin || "…"}–${this.state.widthMax || "…"} µm`
             });
 
         }
@@ -522,6 +905,7 @@ const AtlasPage = {
                         type="button"
                         class="atlas-filter-tag"
                         data-filter-key="${filter.key}"
+                        data-filter-value="${filter.multiValue ? this.escapeHtml(filter.multiValue) : ""}"
                         aria-label="Odstrániť filter ${filter.label}: ${this.escapeHtml(filter.value)}"
                     >
 
@@ -558,7 +942,32 @@ const AtlasPage = {
 
                 }
 
-                this.state[key] = "";
+                if (MULTI_SELECT_FIELDS.includes(key)) {
+
+                    const value =
+                        button.dataset.filterValue;
+
+                    this.state[key] =
+                        this.state[key].filter(v => v !== value);
+
+                }
+                else if (key === "length") {
+
+                    this.state.lengthMin = "";
+                    this.state.lengthMax = "";
+
+                }
+                else if (key === "width") {
+
+                    this.state.widthMin = "";
+                    this.state.widthMax = "";
+
+                }
+                else {
+
+                    this.state[key] = "";
+
+                }
 
                 this.syncControls();
 
@@ -581,14 +990,32 @@ const AtlasPage = {
 
         }
 
-        ["host", "shape", "colour"].forEach(field => {
+        MULTI_SELECT_FIELDS.forEach(field => {
 
             const select =
                 document.getElementById(`atlas-filter-${field}`);
 
             if (select) {
 
-                select.value = this.state[field];
+                Array.from(select.options).forEach(option => {
+
+                    option.selected =
+                        this.state[field].includes(option.value);
+
+                });
+
+            }
+
+        });
+
+        ["lengthMin", "lengthMax", "widthMin", "widthMax"].forEach(field => {
+
+            const input =
+                document.getElementById(`atlas-filter-${field}`);
+
+            if (input) {
+
+                input.value = this.state[field];
 
             }
 
@@ -599,9 +1026,14 @@ const AtlasPage = {
     clearFilters() {
 
         this.state.search = "";
-        this.state.host = "";
-        this.state.shape = "";
-        this.state.colour = "";
+        this.state.host = [];
+        this.state.sample = [];
+        this.state.shape = [];
+        this.state.colour = [];
+        this.state.lengthMin = "";
+        this.state.lengthMax = "";
+        this.state.widthMin = "";
+        this.state.widthMax = "";
 
         this.syncControls();
 
@@ -654,9 +1086,6 @@ const AtlasPage = {
         const app =
             document.getElementById("app");
 
-        const displayName =
-            this.getDisplayName(record);
-
         app.innerHTML = `
 
             <section class="parasite-detail">
@@ -672,7 +1101,7 @@ const AtlasPage = {
                 <header class="parasite-detail-header">
 
                     <h1>
-                        ${this.escapeHtml(displayName)}
+                        ${this.escapeHtml(record.latinName ?? record.id)}
                     </h1>
 
                     <p>
@@ -690,13 +1119,13 @@ const AtlasPage = {
                     )}
 
                     ${this.detailField(
-                        "Štádium",
-                        record.stage
+                        "Materiál (vzorka)",
+                        record.sample
                     )}
 
                     ${this.detailField(
-                        "Typ vzorky",
-                        record.sample
+                        "Štádium",
+                        record.stage
                     )}
 
                     ${this.detailField(
@@ -719,8 +1148,12 @@ const AtlasPage = {
                         record.morphology?.shell
                     )}
 
+                    ${this.diagnosticSignsSection(record.diagnosticSigns)}
+
+                    ${this.taxonomySection(record)}
+
                     ${this.detailField(
-                        "Ďalšie znaky",
+                        "Poznámka",
                         record.notes
                     )}
 
@@ -739,6 +1172,54 @@ const AtlasPage = {
                 this.init();
 
             });
+
+    },
+
+    diagnosticSignsSection(signs) {
+
+        const list =
+            this.diagnosticSignsList(signs);
+
+        if (!list) {
+
+            return "";
+
+        }
+
+        return `
+            <div class="parasite-detail-field">
+
+                <h2>Diagnostické znaky</h2>
+
+                ${list}
+
+            </div>
+        `;
+
+    },
+
+    taxonomySection(record) {
+
+        const block =
+            this.taxonomyBlock(record.taxonomy);
+
+        if (!block) {
+
+            return "";
+
+        }
+
+        return `
+            <div class="parasite-detail-field">
+
+                <h2>Taxonomické zaradenie</h2>
+
+                ${block}
+
+                ${this.taxonomyExternalLinks(record.latinName)}
+
+            </div>
+        `;
 
     },
 
