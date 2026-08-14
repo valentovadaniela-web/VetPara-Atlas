@@ -395,15 +395,14 @@
 }
 
 .atlas-size-row {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
     align-items: center;
     gap: var(--space-sm);
     margin-bottom: var(--space-sm);
 }
 
 .atlas-size-row label {
-    flex: 0 0 auto;
     white-space: nowrap;
     font-weight: 600;
     font-size: var(--font-size-sm);
@@ -411,7 +410,7 @@
 }
 
 .atlas-size-row input[type="number"] {
-    flex: 1 1 6rem;
+    width: 100%;
     min-width: 0;
     min-height: 44px;
     padding: var(--space-sm);
@@ -538,13 +537,25 @@
         min-height: 100px;
     }
 
-    .atlas-size-row label {
-        min-width: 5rem;
-    }
-
     .taxonomy-row {
         grid-template-columns: 1fr;
         gap: var(--space-xs);
+    }
+
+}
+
+
+/* Veľmi úzke obrazovky (napr. staršie/menšie telefóny) - zúžené medzery,
+   aby sa "od"/"do" dvojica pri veľkostnom filtri stále zmestila na riadok */
+
+@media (max-width: 380px) {
+
+    .atlas-size-row {
+        gap: var(--space-xs);
+    }
+
+    .atlas-size-row label {
+        font-size: var(--font-size-xs);
     }
 
 }

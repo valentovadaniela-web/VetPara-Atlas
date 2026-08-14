@@ -1,5 +1,5 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-14 (v2)
+Aktualizované: 2026-08-14 (v3)
 Branch: develop
 Git: working tree clean (pred touto zmenou — nezabudni commitnúť opravený
 atlas.css)
@@ -7,9 +7,57 @@ atlas.css)
 ## 1. Milestone
 Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → **UI dobieha dáta
 (diagnosticSigns, taxonomy) + rozšírené filtre (Úlohy.txt) + CSS pre v2 triedy
-(OVERENÉ proti skutočnému AtlasPage.js)**
+(OVERENÉ proti kódu AJ proti reálnemu behu na mobile cez raw.githack.com)**
 
 ## 2. Posledná vykonaná zmena
+
+**Reálny test na mobile (autorka projektu, cez `raw.githack.com/.../develop/`)
++ oprava nájdeného CSS bugu vo veľkostnom filtri.**
+
+### 2.1 Zistenia z testu na mobile
+
+1. **Multi-select filtre fungujú správne** — na mobile sa correctly správajú
+   ako zaškrtávacie zoznamy (natívne mobilné UI pre `<select multiple>`).
+2. **Na desktope ide vybrať vždy len jedna hodnota kliknutím** — toto NIE JE
+   chyba, je to natívne správanie `<select multiple>`: viac hodnôt sa vyberá
+   podržaním Ctrl (Windows) / Cmd (Mac) pri klikaní. Autorke to bolo
+   vysvetlené. **Otvorená otázka pre budúcnosť:** ak by sa mal tento control
+   prerobiť na skutočné checkboxy (rovnaké UX na desktope aj mobile), ide
+   o zásah do `AtlasPage.js` (markup + JS), nie len CSS — čaká na explicitné
+   rozhodnutie autorky, zatiaľ NEROBENÉ.
+3. **Bug: veľkostný filter na mobile** — pole "do" sa zalamovalo pod pole "od"
+   a naťahovalo sa na celú šírku namiesto zarovnania vedľa "od" v jednom
+   riadku, s rovnakou šírkou. **Opravené** (pozri 2.2).
+4. Taxonomické zaradenie sa na mobile nezobrazovalo — **čaká sa na opravenú
+   dátovú tabuľku od autorky** (samostatná téma/samostatný chat, mimo rozsahu
+   tejto CSS opravy — pravdepodobne dátový, nie CSS problém, keďže
+   `taxonomyBlock()` vracia prázdny reťazec pri `taxonomy: {}`).
+
+### 2.2 CSS oprava — `.atlas-size-row`
+
+Príčina: riadok mal 4 flex-položky (label, input, label, input) s
+`flex-wrap: wrap`. Pri nedostatku miesta sa posledná položka ("do" input)
+zalomila sama na nový riadok, a keďže mala `flex-grow: 1` a bola na riadku
+sama, roztiahla sa na celú šírku kontajnera.
+
+Oprava: `.atlas-size-row` prerobený z `display: flex` na `display: grid`
+so `grid-template-columns: auto 1fr auto 1fr` — label/input dvojice teraz
+vždy zostávajú v jednom riadku, oba inputy majú rovnakú šírku (`1fr` stĺpce),
+na akejkoľvek šírke obrazovky. Odstránená zastaraná mobilná úprava
+`.atlas-size-row label { min-width: 5rem }` (už netreba, grid stĺpce sa
+sizujú automaticky), pridaný jemný doplnok pre veľmi úzke obrazovky
+(`max-width: 380px` — menší gap a font-size labelov).
+
+Overené: zátvorky vyvážené (86 `{` / 86 `}`), diff izolovaný presne na
+`.atlas-size-row` blok a nový `@media (max-width: 380px)` blok — nič iné
+v súbore sa nezmenilo.
+
+**Stále NEOVERENÉ vizuálne po tejto konkrétnej oprave** — treba znova
+otestovať na mobile cez `raw.githack.com` link.
+
+Súbor na stiahnutie z tejto session: `atlas.css` (opravená verzia).
+
+## 2b. Predchádzajúca zmena (2026-08-14, prvá+druhá iterácia CSS v2)
 
 **`src/styles/atlas.css` — CSS pre v2 triedy, OPRAVENÉ po nahratí skutočného
 `AtlasPage.js`.**
@@ -157,9 +205,9 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 
 ## 4. Posledné zmeny v súboroch
 - src/styles/atlas.css – **nahradiť opravenou verziou z tejto session**
-  (pridaná + opravená v2 sekcia na konci, pôvodný obsah nezmenený)
-- src/pages/AtlasPage.js – bez zmeny (iba prečítaný na overenie CSS)
-- (nový, z predchádzajúcej session) docs/2026-08-13_atlaspage-v2-filters-and-detail.md
+  (opravený `.atlas-size-row` na CSS grid, ostatný obsah nezmenený)
+- taxonómia (samostatná téma) – **nová session/nový chat, viď pripravený
+  úvodný prompt nižšie v konverzácii**
 
 ---
 
