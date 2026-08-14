@@ -391,6 +391,9 @@ const AtlasPage = {
                     <span class="atlas-filter-hint">
                         (viac možností naraz)
                     </span>
+                    <span class="atlas-filter-hint atlas-filter-hint-desktop">
+                        — na výber viacerých podrž Ctrl (Windows) / Cmd (Mac)
+                    </span>
                 </label>
 
                 <select

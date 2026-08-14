@@ -347,6 +347,22 @@
     color: var(--color-text-muted);
 }
 
+/* Ctrl/Cmd poznámka má zmysel iba na desktope (klik + klávesa) - na mobile
+   sa vyberá dotykom/zaškrtávaním, tam by mátala. Skrytá pod rovnakým
+   breakpointom (700px), aký používa zvyšok atlas.css pre mobile štýly. */
+
+.atlas-filter-hint-desktop {
+    display: inline-block;
+}
+
+@media (max-width: 700px) {
+
+    .atlas-filter-hint-desktop {
+        display: none;
+    }
+
+}
+
 .atlas-filter-multi select[multiple] {
     width: 100%;
     min-height: 120px;

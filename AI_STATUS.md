@@ -1,15 +1,70 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-14 (v3)
+Aktualizované: 2026-08-14 (v4)
 Branch: develop
-Git: working tree clean (pred touto zmenou — nezabudni commitnúť opravený
-atlas.css)
+Git: working tree clean (pred touto zmenou — nezabudni commitnúť atlas.css AJ
+AtlasPage.js z tejto session — prvýkrát v tejto sérii krokov ide o zmenu JS,
+nie len CSS)
 
 ## 1. Milestone
 Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → **UI dobieha dáta
 (diagnosticSigns, taxonomy) + rozšírené filtre (Úlohy.txt) + CSS pre v2 triedy
-(OVERENÉ proti kódu AJ proti reálnemu behu na mobile cez raw.githack.com)**
+(OVERENÉ proti kódu aj proti reálnemu behu na mobile) + UX doplnok (Ctrl/Cmd
+poznámka na desktope)**
 
 ## 2. Posledná vykonaná zmena
+
+**Doplnená poznámka pre desktop používateľov o Ctrl/Cmd+click pri multi-select
+filtroch.**
+
+Kontext: autorka na mobile otestovala appku (`raw.githack.com`) — potvrdila, že
+multi-select filtre aj taxonomické zaradenie fungujú správne (predchádzajúce
+podozrenie na chýbajúcu taxonómiu bolo len tým, že sa pozerala na záznam, kde
+`taxonomy` skutočne je prázdna — nie chyba). Požiadala o jasnejšiu nápovedu
+na desktope, keďže výber viacerých hodnôt vyžaduje podržanie Ctrl/Cmd, čo nie
+je zjavné z UI.
+
+### 2.1 Zmena v `src/pages/AtlasPage.js` (PRVÁ ZMENA JS SÚBORU V TEJTO SÉRII)
+
+V metóde `renderMultiFilter()` pridaný nový `<span>` vedľa existujúceho
+`.atlas-filter-hint`:
+
+```diff
+                 <label for="atlas-filter-${field}">
+                     ${label}
+                     <span class="atlas-filter-hint">
+                         (viac možností naraz)
+                     </span>
++                    <span class="atlas-filter-hint atlas-filter-hint-desktop">
++                        — na výber viacerých podrž Ctrl (Windows) / Cmd (Mac)
++                    </span>
+                 </label>
+```
+
+Presne 3 pridané riadky, nič iné v súbore nezmenené (potvrdené diffom).
+`node --check` prešiel bez chyby (validný ES modul).
+
+### 2.2 Zmena v `src/styles/atlas.css`
+
+Nová trieda `.atlas-filter-hint-desktop` — viditeľná na desktope
+(`display: inline-block`), skrytá pod rovnakým breakpointom, aký používa
+zvyšok súboru pre mobile štýly (`@media (max-width: 700px)`), pretože na
+mobile sa vyberá dotykom/zaškrtávaním a poznámka o klávesách by mátala.
+
+Zátvorky vyvážené (89 `{` / 89 `}`).
+
+**Prečo textová poznámka v HTML, nie cez CSS `::before`/`::after` s
+`content:`:** inštrukčný text (nie dekorácia) patrí do markupu kvôli
+prístupnosti (čítačky obrazovky spoľahlivo nečítajú generovaný CSS obsah,
+navyše sa nedá označiť/skopírovať) — v súlade s WCAG 2.1 AA cieľom
+z `04_UI_UX_SPECIFICATION.md` § 16.
+
+**Stále NEOVERENÉ vizuálne** — treba znova pozrieť na desktope (a potvrdiť,
+že sa na mobile poznámka správne skrýva).
+
+Súbory na stiahnutie z tejto session: `atlas.css`, `AtlasPage.js` (obe
+kompletné, s vyznačenou zmenou).
+
+## 2b. Predchádzajúca zmena (2026-08-14, oprava .atlas-size-row na mobile)
 
 **Reálny test na mobile (autorka projektu, cez `raw.githack.com/.../develop/`)
 + oprava nájdeného CSS bugu vo veľkostnom filtri.**
@@ -28,10 +83,12 @@ Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → **UI dobieha
 3. **Bug: veľkostný filter na mobile** — pole "do" sa zalamovalo pod pole "od"
    a naťahovalo sa na celú šírku namiesto zarovnania vedľa "od" v jednom
    riadku, s rovnakou šírkou. **Opravené** (pozri 2.2).
-4. Taxonomické zaradenie sa na mobile nezobrazovalo — **čaká sa na opravenú
-   dátovú tabuľku od autorky** (samostatná téma/samostatný chat, mimo rozsahu
-   tejto CSS opravy — pravdepodobne dátový, nie CSS problém, keďže
-   `taxonomyBlock()` vracia prázdny reťazec pri `taxonomy: {}`).
+4. ~~Taxonomické zaradenie sa na mobile nezobrazovalo~~ — **OPRAVA (dodatočne
+   potvrdené autorkou):** toto NEBOL bug. Autorka sa pri prvom teste pozerala
+   na záznam, ktorý reálne má `taxonomy: {}` (prázdne pole) — pri zázname
+   s vyplnenou taxonómiou sa blok zobrazuje správne. Import taxonómie
+   (`Taxonomia_na_doplnenie.xlsx`) naďalej prebieha samostatne/v inom chate,
+   ale nejde o UI problém.
 
 ### 2.2 CSS oprava — `.atlas-size-row`
 
@@ -204,10 +261,13 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 ---
 
 ## 4. Posledné zmeny v súboroch
-- src/styles/atlas.css – **nahradiť opravenou verziou z tejto session**
-  (opravený `.atlas-size-row` na CSS grid, ostatný obsah nezmenený)
-- taxonómia (samostatná téma) – **nová session/nový chat, viď pripravený
-  úvodný prompt nižšie v konverzácii**
+- src/pages/AtlasPage.js – **nahradiť verziou z tejto session** (pridané 3
+  riadky v `renderMultiFilter()` — Ctrl/Cmd hint span, nič iné zmenené)
+- src/styles/atlas.css – **nahradiť verziou z tejto session** (pridaná
+  trieda `.atlas-filter-hint-desktop` + jej mobile skrytie, ostatný obsah
+  vrátane predošlej opravy `.atlas-size-row` zachovaný)
+- taxonómia (samostatná téma) – nová session/nový chat, prompt bol pripravený
+  v predchádzajúcom kroku tejto konverzácie
 
 ---
 
