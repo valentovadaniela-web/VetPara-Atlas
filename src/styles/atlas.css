@@ -306,3 +306,245 @@
     outline: 3px solid currentColor;
     outline-offset: 3px;
 }
+
+
+/******************************************************************************
+ * VetPara Atlas
+ * Atlas UI - Filter & Detail engine v2
+ * (diagnosticSigns, taxonomy, size filter, multi-select filters)
+ *
+ * Overené proti skutočnému AtlasPage.js (nahraté 2026-08-14). Markup:
+ * - multi-select: <div class="atlas-filter atlas-filter-multi">
+ *     <label>Label <span class="atlas-filter-hint">(...)</span></label>
+ *     <select multiple size="n">...
+ * - veľkosť: <div class="atlas-size-filter"><fieldset><legend>...</legend>
+ *     <div class="atlas-size-row"><label/><input/><label/><input/></div> x2
+ *     <p class="atlas-size-hint">...
+ * - diagnostické znaky: <ul class="parasite-diagnostic-signs">
+ *     <li><span aria-hidden="true">⚡</span> text</li> - ikona JE v markupe,
+ *     CSS ju nesmie duplikovať cez ::before.
+ * - taxonómia: <div class="parasite-taxonomy"><div class="taxonomy-row">
+ *     <span class="taxonomy-rank">/<span class="taxonomy-value"> - vždy
+ *     vnorená v .parasite-detail-field (tá už má vlastný border/padding).
+ ******************************************************************************/
+
+
+/* ---------------------------------------------------------------------
+   Multi-select filtre (host / sample / shape / colour)
+   Kontajner má obe triedy "atlas-filter atlas-filter-multi", takže
+   dedí .atlas-filter label (font-weight/margin) - tu iba doplnky.
+   --------------------------------------------------------------------- */
+
+.atlas-filter-multi {
+    min-width: 220px;
+}
+
+.atlas-filter-hint {
+    display: inline-block;
+    margin-left: var(--space-xs);
+    font-weight: 400;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.atlas-filter-multi select[multiple] {
+    width: 100%;
+    min-height: 120px;
+    padding: var(--space-sm);
+    font-size: var(--font-size-base);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+}
+
+.atlas-filter-multi select[multiple]:focus {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.atlas-filter-multi select[multiple] option:checked {
+    background: var(--color-primary);
+    color: var(--color-surface);
+}
+
+
+/* ---------------------------------------------------------------------
+   Filter podľa veľkosti (dĺžka / šírka od-do)
+   Skutočný markup: .atlas-size-filter > fieldset > legend + 2x .atlas-size-row
+   --------------------------------------------------------------------- */
+
+.atlas-size-filter {
+    min-width: 280px;
+    padding: var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+}
+
+.atlas-size-filter fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+.atlas-size-filter legend {
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.atlas-size-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.atlas-size-row label {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.atlas-size-row input[type="number"] {
+    flex: 1 1 6rem;
+    min-width: 0;
+    min-height: 44px;
+    padding: var(--space-sm);
+    font-size: var(--font-size-base);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.atlas-size-row input[type="number"]:focus {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.atlas-size-hint {
+    margin: var(--space-xs) 0 0;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+
+/* ---------------------------------------------------------------------
+   Diagnostické znaky (karta aj detail)
+   Ikona ⚡ je už priamo v markupe (<span aria-hidden="true">⚡</span>) -
+   NEPRIDÁVAŤ cez ::before, inak sa zobrazí dvakrát.
+   --------------------------------------------------------------------- */
+
+.parasite-diagnostic-signs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    margin: 0 0 var(--space-md);
+}
+
+.parasite-diagnostic-signs li {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-xs);
+    line-height: 1.5;
+}
+
+.parasite-diagnostic-signs li span[aria-hidden="true"] {
+    flex: 0 0 auto;
+    color: var(--color-warning);
+}
+
+
+/* ---------------------------------------------------------------------
+   Taxonómia (iba detail) - vždy vnorená v .parasite-detail-field,
+   ktorá už má vlastný border/padding, preto tu žiadny ďalší box.
+   --------------------------------------------------------------------- */
+
+.parasite-taxonomy {
+    margin-top: var(--space-sm);
+}
+
+.taxonomy-row {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+    border-bottom: 1px solid var(--color-surface-alt);
+}
+
+.taxonomy-row:last-of-type {
+    border-bottom: none;
+}
+
+.taxonomy-rank {
+    font-weight: 600;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+.taxonomy-value {
+    font-style: italic;
+    color: var(--color-text);
+}
+
+.parasite-taxonomy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+}
+
+.parasite-taxonomy-links a {
+    display: inline-block;
+    min-height: 44px;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    line-height: 1.8;
+}
+
+.parasite-taxonomy-links a:hover {
+    background: var(--color-surface-alt);
+    text-decoration: underline;
+}
+
+.parasite-taxonomy-links a:focus {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+}
+
+
+/* ---------------------------------------------------------------------
+   Mobile (v2 doplnky) - rovnaký breakpoint ako existujúci mobile blok
+   --------------------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .atlas-filter-multi,
+    .atlas-size-filter {
+        width: 100%;
+        min-width: 0;
+        margin-bottom: var(--space-md);
+    }
+
+    .atlas-filter-multi select[multiple] {
+        min-height: 100px;
+    }
+
+    .atlas-size-row label {
+        min-width: 5rem;
+    }
+
+    .taxonomy-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-xs);
+    }
+
+}
