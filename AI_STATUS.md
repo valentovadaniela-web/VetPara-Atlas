@@ -1,17 +1,113 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-14 (v4)
+Aktualizované: 2026-08-15 (v6)
 Branch: develop
-Git: working tree clean (pred touto zmenou — nezabudni commitnúť atlas.css AJ
-AtlasPage.js z tejto session — prvýkrát v tejto sérii krokov ide o zmenu JS,
-nie len CSS)
+Git: working tree clean (pred touto zmenou — nezabudni commitnúť nový
+`database/dog.migrated.json` (38 záznamov, dáta zmenené/opravené/zlúčené) z
+tejto session; `atlas.css` a `AtlasPage.js` z predchádzajúcej session
+(2026-08-14, v4) zatiaľ podľa predchádzajúceho zápisu ešte neboli
+commitnuté — over)
 
 ## 1. Milestone
 Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → **UI dobieha dáta
 (diagnosticSigns, taxonomy) + rozšírené filtre (Úlohy.txt) + CSS pre v2 triedy
 (OVERENÉ proti kódu aj proti reálnemu behu na mobile) + UX doplnok (Ctrl/Cmd
-poznámka na desktope)**
+poznámka na desktope) + DATABÁZA: mikrometria a taxonómia doplnená/opravená pre
+psa z tabuľky `Mikrometria_doplnená__opravená.xlsx`, vrátane zlúčenia
+duplicitného záznamu Diphyllobothrium/Dibothriocephalus latus a opravy
+kingdom pri Cryptosporidium parvum (38 záznamov, obsah zmenený)**
 
 ## 2. Posledná vykonaná zmena
+
+**Import mikrometrie a taxonómie z `Mikrometria_doplnená__opravená.xlsx` do
+`database/dog.migrated.json`.** Toto je zmena DÁT, nie kódu — nedotýka sa
+`AtlasPage.js` ani `atlas.css` z predchádzajúcej session (tie zostávajú
+nezmenené a nepresunuté do repozitára, pozri hlavičku vyššie).
+
+Kontext: autorka nahrala novú, opravenú/doplnenú tabuľku (569 riadkov, všetci
+hostitelia; hárok `vetpara_atlas_taxony`), z ktorej bola pre tento krok použitá
+podmnožina `host = Pes` (38 riadkov) + 1 riadok `host = Mačka` (na explicitný
+pokyn, pozri nižšie).
+
+### 2.1 Politika prepisovania (schválená autorkou v chate pred zápisom)
+
+1. `micrometry` — tabuľka je autoritatívna, prepisuje aj vyplnené hodnoty.
+2. `taxonomy` — pri konflikte je autoritatívna tabuľka, OKREM 11 explicitných
+   odborných korekcií od autorky (zoznam nižšie — tam zostala pôvodná DB
+   hodnota).
+3. `notes` — doplnené len tam, kde tabuľka mala explicitný pokyn „do poznámky
+   napíš/daj: ...", textom prevzatým doslovne.
+4. Kingdom normalizácia: `Metazoa` → `Animalia`, `Protista` sa nepoužíva
+   (nahradené `Protozoa`/`Chromista` podľa konkrétneho taxónu z tabuľky).
+
+### 2.2 Explicitné odborné korekcie autorky (DB hodnota ponechaná, tabuľka ignorovaná)
+
+| Záznam | Pole | Ponechané (DB) | Ignorované (tabuľka) |
+|---|---|---|---|
+| `toxocara_canis` | family | Toxocaridae | Ascarididae |
+| `crenosoma_vulpis` | family | Crenosomatidae | Metastrongylidae |
+| `oslerus_filaroides_osleri` | genus/species | Oslerus / Oslerus osleri | Filaroides / Filaroides osleri |
+| `dioctophyme_renale`, `trichuris_vulpis`, `pearsonema_capillaria_plica`, `eucoleus_boehmi` | class | Enoplea | Chromadorea |
+| `pearsonema_capillaria_plica` | family | Capillariidae | Trichuridae |
+| `demodex_canis`, `demodex_injai` | family | Demodicidae | Demodecidae |
+
+`spirocerca_lupi.family` bolo zmenené na **Spirocercidae** — zhoduje sa
+s tabuľkou aj s explicitným potvrdením autorky, nejde o konflikt.
+
+### 2.3 Výsledné čísla (po druhom kole spätnej väzby)
+
+- **37 z 38** pôvodných záznamov zmenených (13× `micrometry`, 37× `taxonomy`,
+  6× `notes`).
+- **`dipylidium_caninum`** — kompletne prevzaté hodnoty z riadku pre mačku
+  (tabuľka nemala riadok pre psa) — **autorka potvrdila správnosť** („ten istý
+  druh, sedí").
+- **`diphyllobothrium_latum` + `dibothriocephalus_latus_egg` ZLÚČENÉ do
+  jedného záznamu** (na pokyn autorky: Dibothriocephalus latus je aktuálny
+  názov, Diphyllobothrium latum starší/synonymný). Výsledné ID:
+  `dibothriocephalus_latus_egg`, `legacyId` zachované ako `DOG-0015`.
+  `micrometry`/`morphology` ponechané z pôvodného (overeného) záznamu —
+  hodnoty z druhého tabuľkového riadku (`Dibothriocephalus_latus_egg`, bez
+  operkula, "v kokónoch") NEBOLI prevzaté, pretože biologicky nesedia k tejto
+  čeľadi (podozrenie na chybu/zámenu riadkov v zdrojovej tabuľke) — **flagnuté,
+  autorka toto explicitne nepotvrdila, len názvoslovný merge**.
+- **`cryptosporidium_parvum`** — `kingdom`: `Chromista` → `Protozoa` (na pokyn
+  autorky), `phylum`: `Myzozoa` → `Apicomplexa` (dodatočná úprava pre
+  konzistenciu s ostatnými Apicomplexa v DB — **nebola explicitne vyžiadaná,
+  over**).
+- Databáza psa: **38 → 39 → 38 záznamov** (čistý výsledok: rovnaký počet ako
+  na začiatku, ale výrazne doplnený/opravený/zlúčený obsah).
+- Zmenené záznamy z 1. kola: `modified = 2026-08-15T00:00:00.000000+00:00`,
+  `version 1.2.0`. Záznamy dotknuté 2. kolom (zlúčenie, kingdom fix):
+  `modified = 2026-08-15T01:00:00.000000+00:00`, `version 1.3.0`.
+
+Kompletný detail (presné hodnoty pred/po, per-záznam zoznam, zdôvodnenia,
+vrátane dodatku so zlúčením): `docs/2026-08-15_micrometry-taxonomy-import.md`
+sekcia 12.
+
+### 2.4 Otvorené TODO z tejto zmeny
+
+- ~~`dipylidium_caninum` — hodnoty prevzaté od mačky~~ — **POTVRDENÉ
+  autorkou**, žiadna ďalšia akcia.
+- ~~`dibothriocephalus_latus_egg` vs `diphyllobothrium_latum`~~ —
+  **ZLÚČENÉ**, ale mikrometria/morfológia z druhého tabuľkového riadku bola
+  zámerne NEpoužitá kvôli podozreniu na chybu v zdroji — **odporúčam
+  skontrolovať tento konkrétny riadok v pôvodnej tabuľke**.
+- ~~`cryptosporidium_parvum.taxonomy.kingdom`~~ — **OPRAVENÉ** na `Protozoa`;
+  `phylum` zmenený na `Apicomplexa` ako súvisiaca úprava — potvrď, či to
+  zodpovedá zámeru.
+- `group` pri `demodex_canis`/`demodex_injai`/`linguatula_serrata` naďalej mimo
+  kontrolovaného zoznamu — nerieši sa touto zmenou (pozri aj bod 3.4 nižšie).
+- Tabuľka obsahuje dáta pre ďalších **14 hostiteľov** (530 riadkov) —
+  pripravené na budúcu Etapu 2, mimo rozsahu tejto session.
+
+**Súbory na stiahnutie z tejto session:**
+- `dog.migrated.json` (finálna verzia po oboch kolách, 38 záznamov)
+- `2026-08-15_micrometry-taxonomy-import.md` (kompletný popis zmeny vrátane
+  dodatku so zlúčením — sekcia 12)
+
+**`dog.json`, `Repository.js`, `AtlasPage.js`, `atlas.css` NEBOLI touto zmenou
+menené.**
+
+## 2b. Predchádzajúca zmena (2026-08-14, Ctrl/Cmd hint)
 
 **Doplnená poznámka pre desktop používateľov o Ctrl/Cmd+click pri multi-select
 filtroch.**
@@ -207,21 +303,34 @@ kompletný súbor polí zavedených v predchádzajúcich session (`diagnosticSig
 - **Repository.js** – vyhľadávanie, filtrovanie, triedenie (bez zmeny)
 - **AtlasPage.js** – **NOVÁ VERZIA** — zobrazuje `diagnosticSigns` + `taxonomy`,
   multi-select filtre, filter veľkosti a materiálu, rozšírený fulltext
-- **dog.migrated.json** – 38 záznamov, bez zmeny v tomto kroku
+- **dog.migrated.json** – **38 záznamov** (2026-08-15: doplnená/opravená
+  mikrometria a taxonómia z novej tabuľky pri 37 záznamoch, `dipylidium_caninum`
+  prevzaté od mačky, `diphyllobothrium_latum`+`dibothriocephalus_latus_egg`
+  zlúčené do jedného záznamu, `cryptosporidium_parvum` kingdom/phylum
+  opravené — pozri sekciu 2)
 - **migrate-dog-json.js** – pôvodná migrácia z dog.json, stále platná
 - **index.html** – základná štruktúra aplikácie
 - **main.js** – inicializácia App.start()
 
 ### 3.2 Čo funguje technicky
-- `node --check` na `AtlasPage.js` prešiel bez chyby, zátvorky vyvážené.
-- Logika filtrovania overená manuálne proti aktuálnej štruktúre
-  `dog.migrated.json` (38 záznamov).
+- `node --check` na `AtlasPage.js` prešiel bez chyby, zátvorky vyvážené
+  (kód z tejto session nebol menený — týka sa predchádzajúcej verzie).
+- `dog.migrated.json` (finálna verzia po 2. kole, 38 záznamov) overená ako
+  validný JSON, bez duplicitných ID.
+- Logika filtrovania (v `AtlasPage.js`) nebola v tejto session prepočítaná
+  proti novej štruktúre — polia použité vo filtroch (`host`, `sample`,
+  `morphology.shape/colour`, `micrometry.*`) neboli touto zmenou premenované,
+  filtre by mali fungovať bez zásahu, ale odporúča sa funkčný test.
 - **Reálny beh v prehliadači nebol v tomto prostredí overený** — odporúča sa
   funkčný test po nasadení, najmä `<select multiple>` binding.
 
 ### 3.3 Zmena schémy ID / počtu záznamov
-(bez zmeny — 38 záznamov, sémantické ID + `legacyId`, pozri predchádzajúci
-záznam v `10_CHANGELOG.md` [0.3.0])
+**38 záznamov** (2026-08-15, obsahovo zmenené — pozri sekciu 2). Sémantické
+ID + `legacyId` konvencia zachovaná; ID `diphyllobothrium_latum` bolo
+premenované na `dibothriocephalus_latus_egg` (odráža aktuálne platný
+vedecký názov), `legacyId: "DOG-0015"` zachované pre dohľadateľnosť. Ak
+niekde v kóde/URL/poznámkach existuje odkaz na staré ID
+`diphyllobothrium_latum`, treba ho opraviť.
 
 ### 3.4 Čo nefunguje / je prázdne
 - Gallery page – placeholder
@@ -243,17 +352,25 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 - Repository zatiaľ neaplikuje `ApplicationState.filters` (filtre zostávajú
   lokálne v `AtlasPage.js` — architektonické rozhodnutie zachované z
   predchádzajúcej verzie, zmena je samostatná plánovaná úloha)
-- Šírka mikrofilárií (`dirofilaria_repens`, `dirofilaria_immitis`,
-  `oslerus_filaroides_osleri`) stále chýba — **dôsledok:** tieto 3 záznamy sa
-  nezobrazia pri aktívnom filtri šírky, aj keby inak vyhovovali
+- ~~Šírka mikrofilárií (`dirofilaria_repens`, `dirofilaria_immitis`,
+  `oslerus_filaroides_osleri`) stále chýba~~ — **OPRAVENÉ 2026-08-15**,
+  doplnené z novej tabuľky (pozri sekciu 2).
 
 ### 3.5 Databáza – stav
-(bez zmeny oproti predchádzajúcej verzii — 38 záznamov, `dog.json` nemenené)
-- **Taxonomia_na_doplnenie.xlsx** – autorka projektu pripravuje opravy
-  (spracuje sa v samostatnom nasledujúcom kroku po dodaní)
-- Súbežne beží spracovanie zvyšných 15 hárkov z `Mikrometria__parazity.xls`
-  (Etapa 2, ďalší hostitelia) — **v inom AI nástroji (DeepSeek), mimo tejto
-  session**, nezasahuje do súborov upravovaných tu
+**38 záznamov** (2026-08-15, obsahovo zmenené/opravené/zlúčené oproti
+predchádzajúcej verzii), `dog.json` naďalej nemenené (iba
+`dog.migrated.json`).
+- ✅ **Taxonómia pre psa** — doplnená/opravená z `Mikrometria_doplnená__opravená.xlsx`
+  (pozri sekciu 2) — TOTO NAHRÁDZA predchádzajúci plán so
+  `Taxonomia_na_doplnenie.xlsx` (zdá sa, že autorka doručila výsledok
+  spracovania cez novú tabuľku namiesto pôvodne plánovaného súboru — over,
+  či `Taxonomia_na_doplnenie.xlsx` ešte treba spracovať samostatne, alebo je
+  týmto krokom nahradený).
+- Nová tabuľka obsahuje dáta pre **14 ďalších hostiteľov** (530 riadkov mimo
+  Pes/Mačka-dipylidium) — pripravené na budúcu Etapu 2, zatiaľ nespracované.
+- Súbežné spracovanie zvyšných hárkov z `Mikrometria__parazity.xls` v DeepSeek
+  (mimo tejto session) — status neznámy, over či je stále aktuálne alebo bolo
+  nahradené novou tabuľkou.
 
 ### 3.6 Architektúra
 (bez zmeny)
@@ -272,15 +389,22 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 ---
 
 ## 5. Posledný problém
-Žiadny aktívny dátový problém. Treba:
-1. stiahnuť nový `atlas.css` a nahradiť ním súbor v `src/styles/`,
-2. **reálne otestovať v prehliadači** (vizuálny vzhľad, multi-select binding,
+Žiadny aktívny dátový problém pri importe (JSON validný, žiadne duplicitné
+ID). Treba:
+1. **nahradiť `database/dog.migrated.json` v repozitári** novým súborom
+   z tejto session (38 záznamov, finálna verzia po zlúčení) + commitnúť,
+2. skontrolovať zdrojový riadok `Dibothriocephalus_latus_egg` v tabuľke —
+   podozrenie na chybné/zamenené dáta (pozri 2.4),
+3. stiahnuť `atlas.css` a `AtlasPage.js` z predchádzajúcej session
+   (2026-08-14) a nahradiť nimi súbory v `src/` — **stále nepotvrdené, či boli
+   commitnuté**,
+4. **reálne otestovať v prehliadači** (vizuálny vzhľad, multi-select binding,
    filter veľkosti, zobrazenie taxonómie/diagnosticSigns) — v tomto prostredí
    nebolo možné spustiť DOM, iba statická kontrola markup↔CSS,
-3. po dodaní opravenej `Taxonomia_na_doplnenie.xlsx` od autorky projektu
-   spracovať druhé kolo importu taxonómie (**prebieha mimo tohto chatu**),
-4. po dokončení spracovania zvyšných 15 hárkov (DeepSeek, mimo tejto session)
-   zosúladiť výstup so schémou pred zaradením do `database/`.
+5. overiť, či `Taxonomia_na_doplnenie.xlsx` (pôvodne plánované ako samostatný
+   krok) je týmto importom nahradený, alebo treba spracovať zvlášť,
+6. spracovať zvyšných 14 hostiteľov z novej tabuľky (Etapa 2) — mimo rozsahu
+   tejto session.
 
 ---
 
@@ -288,19 +412,22 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 
 1. ✅ CSS pre nové triedy z `AtlasPage.js` v2 pripravené a **overené proti
    skutočnému zdrojovému kódu** (2026-08-14)
-2. Funkčný test v prehliadači po nasadení (vizuálny, nie len statický)
-3. Vyriešiť `group` pre Acari/Pentastomida (mimo kontrolovaného zoznamu)
-4. Implementovať Gallery page (zatiaľ placeholder)
-5. Implementovať Expert page (diagnostický systém)
-6. Rozšíriť Repository o podporu ApplicationState.filters (samostatná úloha,
+2. ✅ Mikrometria a taxonómia pre psa doplnená/opravená z novej tabuľky,
+   vrátane zlúčenia duplicity a kingdom-opravy (2026-08-15) — **treba
+   nahradiť súbor v repozitári + commit**
+3. Funkčný test v prehliadači po nasadení (vizuálny, nie len statický)
+4. Vyriešiť `group` pre Acari/Pentastomida (mimo kontrolovaného zoznamu)
+5. Implementovať Gallery page (zatiaľ placeholder)
+6. Implementovať Expert page (diagnostický systém)
+7. Rozšíriť Repository o podporu ApplicationState.filters (samostatná úloha,
    architektonicky oddelená od tejto zmeny)
-7. Pridať error page pre neexistujúce ID, preloader pri načítaní databázy
-8. Zapracovať výstup DeepSeek session (15 hárkov ďalších hostiteľov) po jeho
-   dodaní — validovať proti schéme pred zaradením do `database/`
-9. Taxonómia (`Taxonomia_na_doplnenie.xlsx`) — **rieši sa v inej session/inom
-   nástroji podľa pokynu autorky, mimo rozsahu tohto chatu**
-10. Doplniť šírku pre `dirofilaria_repens`, `dirofilaria_immitis`,
-    `oslerus_filaroides_osleri` z odbornej literatúry
+8. Pridať error page pre neexistujúce ID, preloader pri načítaní databázy
+9. Spracovať zvyšných 14 hostiteľov z `Mikrometria_doplnená__opravená.xlsx`
+   (Etapa 2) — validovať proti schéme pred zaradením do `database/`
+10. Skontrolovať zdrojový riadok `Dibothriocephalus_latus_egg` v tabuľke
+    (podozrenie na chybné dáta — pozri 2.4)
+11. Overiť/rozhodnúť osud `Taxonomia_na_doplnenie.xlsx` (pravdepodobne
+    nahradený týmto krokom, ale nepotvrdené)
 
 ---
 
@@ -310,7 +437,9 @@ záznam v `10_CHANGELOG.md` [0.3.0])
 - AI nesmie meniť architektúru bez súhlasu
 - AI nesmie prepisovať dog.json (iba dog.migrated.json)
 - AI nesmie dopĺňať odborné údaje odhadom — výnimkou sú iba explicitné inštrukcie
-  autorky projektu priamo v chate (napr. Kingdom Protista, Taenia/Echinococcus split)
+  autorky projektu priamo v chate (napr. Taenia/Echinococcus split,
+  Kingdom-normalizácia Animalia/Protozoa/Chromista namiesto zastaraných
+  Metazoa/Protista — rozhodnuté 2026-08-15, pozri sekciu 2.1)
 - AI musí rešpektovať databázovú štruktúru podľa 02_DATABASE_SPECIFICATION.md
 - Projekt je hlavný zdroj pravdy (nie konverzácia)
 - Git commit po každej zmene

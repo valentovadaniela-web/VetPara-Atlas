@@ -4,7 +4,15 @@
     "legacyId": "DOG-0001",
     "latinName": "Giardia intestinalis",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Metamonada",
+      "class": "Fornicata",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Giardia",
+      "species": "Giardia intestinalis"
+    },
     "host": [
       "Pes"
     ],
@@ -33,17 +41,25 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "polmesiačikovitá cytoplazma excentricky",
+    "notes": "polmesiačikovitá cytoplazma excentricky Giardia intestinalis je synonymum názvu Giardia duodenalis.",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "isospora_canis",
     "legacyId": "DOG-0002",
     "latinName": "Isospora canis",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Cystoisospora",
+      "species": "Cystoisospora canis"
+    },
     "host": [
       "Pes"
     ],
@@ -72,17 +88,25 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": null,
+    "notes": "Cystoisospora canis je synonymom pre Isospora canis.",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "isospora_ohioensis",
     "legacyId": "DOG-0003",
     "latinName": "Isospora ohioensis",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Cystoisospora",
+      "species": "Isospora ohioensis"
+    },
     "host": [
       "Pes"
     ],
@@ -111,17 +135,25 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex",
+    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "isospora_burrowsi",
     "legacyId": "DOG-0004",
     "latinName": "Isospora burrowsi",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Cystoisospora",
+      "species": "Isospora burrowsi"
+    },
     "host": [
       "Pes"
     ],
@@ -150,17 +182,25 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex",
+    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "isospora_neorivolta",
     "legacyId": "DOG-0005",
     "latinName": "Isospora neorivolta",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Cystoisospora",
+      "species": "Isospora neorivolta"
+    },
     "host": [
       "Pes"
     ],
@@ -189,10 +229,10 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex",
+    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "cryptosporidium_parvum",
@@ -200,7 +240,7 @@
     "latinName": "Cryptosporidium parvum",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Protista",
+      "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
       "class": "Conoidasida",
       "order": "Eucoccidiorida",
@@ -238,15 +278,23 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T01:00:00.000000+00:00",
+    "version": "1.3.0"
   },
   {
     "id": "hammondia_heydornii",
     "legacyId": "DOG-0007",
     "latinName": "Hammondia heydornii",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Hammondia",
+      "species": "Hammondia heydorni"
+    },
     "host": [
       "Pes"
     ],
@@ -275,10 +323,10 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "nepatogén",
+    "notes": "nepatogén Morfologicky neodlíšiteľné od Neospora canis.",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "sarcocystis_spp",
@@ -286,13 +334,13 @@
     "latinName": "Sarcocystis spp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Protista",
+      "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
       "class": "Conoidasida",
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Sarcocystis",
-      "species": null
+      "species": "Sarcocystis sp."
     },
     "host": [
       "Pes"
@@ -324,8 +372,8 @@
     "references": [],
     "notes": "vnútri 4 rohlíkovité sporozoity, nepatogén",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "balantioides_predtym_balantidium_coli",
@@ -333,7 +381,7 @@
     "latinName": "Balantioides (predtým Balantidium) coli",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Protista",
+      "kingdom": "Protozoa",
       "phylum": "Ciliophora",
       "class": "Litostomatea",
       "order": "Vestibuliferida",
@@ -371,8 +419,8 @@
     "references": [],
     "notes": "vnútri vakuola",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "fasciola_hepatica",
@@ -380,7 +428,7 @@
     "latinName": "Fasciola hepatica",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Trematoda",
       "order": "Plagiorchiida",
@@ -418,8 +466,8 @@
     "references": [],
     "notes": "vzácne u pastierskych psov",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "alaria_alata_egg",
@@ -427,7 +475,7 @@
     "latinName": "Alaria alata",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Trematoda",
       "order": "Diplostomida",
@@ -445,8 +493,8 @@
     "micrometry": {
       "lengthMin": 98.0,
       "lengthMax": 134.0,
-      "widthMin": null,
-      "widthMax": null,
+      "widthMin": 62.0,
+      "widthMax": 70.0,
       "unit": "µm"
     },
     "morphology": {
@@ -465,8 +513,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "alaria_alata_adult",
@@ -474,7 +522,7 @@
     "latinName": "Alaria alata",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Trematoda",
       "order": "Diplostomida",
@@ -492,8 +540,8 @@
     "micrometry": {
       "lengthMin": 2500.0,
       "lengthMax": 6000.0,
-      "widthMin": null,
-      "widthMax": null,
+      "widthMin": 500.0,
+      "widthMax": 2000.0,
       "unit": "µm"
     },
     "morphology": {
@@ -512,8 +560,8 @@
     "references": [],
     "notes": "dosp: predok plochý, zadok kužeľovitý",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "dipylidium_caninum",
@@ -521,7 +569,7 @@
     "latinName": "Dipylidium caninum",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Cestoda",
       "order": "Cyclophyllidea",
@@ -537,15 +585,15 @@
     "group": "Cestoda",
     "methods": [],
     "micrometry": {
-      "lengthMin": 38.0,
-      "lengthMax": 45.0,
-      "widthMin": 38,
-      "widthMax": 45,
+      "lengthMin": 35.0,
+      "lengthMax": 60.0,
+      "widthMin": 35.0,
+      "widthMax": 60.0,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Svetlá",
+      "colour": "Sivobiely",
       "shell": "Tenká",
       "operculum": null,
       "contents": null,
@@ -557,10 +605,10 @@
     "zoonosis": null,
     "images": [],
     "references": [],
-    "notes": "v kokónoch, viditeľné háčiky vo vajíčkach",
+    "notes": "v kokónoch, viditeľné háčiky vo vajíčkach V kokónoch (120–200 μm)",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "taenia_sp_egg",
@@ -568,13 +616,13 @@
     "latinName": "Taenia sp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Cestoda",
       "order": "Cyclophyllidea",
       "family": "Taeniidae",
       "genus": "Taenia",
-      "species": null
+      "species": "Taenia sp."
     },
     "host": [
       "Pes"
@@ -606,8 +654,8 @@
     "references": [],
     "notes": "Vajíčka Taenia a Echinococcus sú morfologicky nerozoznateľné, udávame vajíčka taeniového typu.",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "echinococcus_sp_egg",
@@ -615,13 +663,13 @@
     "latinName": "Echinococcus sp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Cestoda",
       "order": "Cyclophyllidea",
       "family": "Taeniidae",
       "genus": "Echinococcus",
-      "species": null
+      "species": "Echinococcus sp."
     },
     "host": [
       "Pes"
@@ -653,8 +701,8 @@
     "references": [],
     "notes": "Vajíčka Taenia a Echinococcus sú morfologicky nerozoznateľné, udávame vajíčka taeniového typu.",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "mesocestoides_spp",
@@ -662,13 +710,13 @@
     "latinName": "Mesocestoides spp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
       "class": "Cestoda",
       "order": "Cyclophyllidea",
       "family": "Mesocestoididae",
       "genus": "Mesocestoides",
-      "species": null
+      "species": "Mesocestoides sp."
     },
     "host": [
       "Pes"
@@ -677,7 +725,13 @@
     "stage": "Vajíčko",
     "group": "Cestoda",
     "methods": [],
-    "micrometry": null,
+    "micrometry": {
+      "unit": "µm",
+      "lengthMin": 30.0,
+      "lengthMax": 50.0,
+      "widthMin": 39.0,
+      "widthMax": 50.0
+    },
     "morphology": {
       "shape": "Oválny",
       "colour": "Bezfarebná",
@@ -694,47 +748,8 @@
     "references": [],
     "notes": "embryo so 6 háčikmi",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
-  },
-  {
-    "id": "diphyllobothrium_latum",
-    "legacyId": "DOG-0015",
-    "latinName": "Diphyllobothrium latum",
-    "slovakName": null,
-    "taxonomy": {},
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 67.0,
-      "lengthMax": 73.0,
-      "widthMin": 45,
-      "widthMax": 51,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Žltá",
-      "shell": "Operculum s výčnelkom",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "rybožravé zvieratá",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "toxocara_canis",
@@ -742,7 +757,7 @@
     "latinName": "Toxocara canis",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -761,7 +776,7 @@
       "lengthMin": 75.0,
       "lengthMax": 90.0,
       "widthMin": 75.0,
-      "widthMax": 90.0,
+      "widthMax": 75.0,
       "unit": "µm"
     },
     "morphology": {
@@ -780,8 +795,8 @@
     "references": [],
     "notes": "hrubšia stena ako u T.cati",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "toxascaris_leonina",
@@ -789,7 +804,7 @@
     "latinName": "Toxascaris leonina",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -806,8 +821,8 @@
     "methods": [],
     "micrometry": {
       "lengthMin": 75.0,
-      "lengthMax": 75.0,
-      "widthMin": 85,
+      "lengthMax": 85.0,
+      "widthMin": 75.0,
       "widthMax": 85,
       "unit": "µm"
     },
@@ -827,8 +842,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "ancylostoma_caninum",
@@ -836,7 +851,7 @@
     "latinName": "Ancylostoma caninum",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -874,8 +889,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "uncinaria_stenocephala",
@@ -883,7 +898,7 @@
     "latinName": "Uncinaria stenocephala",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -921,8 +936,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "angiostrongylus_vasorum",
@@ -930,7 +945,7 @@
     "latinName": "Angiostrongylus vasorum",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -968,8 +983,8 @@
     "references": [],
     "notes": "výrastok na chvoste",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "crenosoma_vulpis",
@@ -977,7 +992,7 @@
     "latinName": "Crenosoma vulpis",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -1015,8 +1030,8 @@
     "references": [],
     "notes": "kopijovitý koniec chvosta",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "oslerus_filaroides_osleri",
@@ -1024,7 +1039,7 @@
     "latinName": "Oslerus (Filaroides) osleri",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -1039,7 +1054,13 @@
     "stage": "Larva",
     "group": "Nematoda",
     "methods": [],
-    "micrometry": null,
+    "micrometry": {
+      "unit": "µm",
+      "lengthMin": 300.0,
+      "lengthMax": 300.0,
+      "widthMin": 15.0,
+      "widthMax": 20.0
+    },
     "morphology": {
       "shape": null,
       "colour": "Bezfarebná",
@@ -1056,8 +1077,8 @@
     "references": [],
     "notes": "výrazne stenčený konček chvosta, zriedkavo",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "physaloptera_spp",
@@ -1065,13 +1086,13 @@
     "latinName": "Physaloptera spp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
       "family": "Physalopteridae",
       "genus": "Physaloptera",
-      "species": null
+      "species": "Physaloptera sp."
     },
     "host": [
       "Pes"
@@ -1082,8 +1103,8 @@
     "methods": [],
     "micrometry": {
       "lengthMin": 32.0,
-      "lengthMax": 32.0,
-      "widthMin": 55,
+      "lengthMax": 55.0,
+      "widthMin": 32.0,
       "widthMax": 55,
       "unit": "µm"
     },
@@ -1103,8 +1124,8 @@
     "references": [],
     "notes": "vnútri larva",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "spirocerca_lupi",
@@ -1112,11 +1133,11 @@
     "latinName": "Spirocerca lupi",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
-      "family": "Thelaziidae",
+      "family": "Spirocercidae",
       "genus": "Spirocerca",
       "species": "Spirocerca lupi"
     },
@@ -1150,8 +1171,8 @@
     "references": [],
     "notes": "najmä trópy, JV USA",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "dirofilaria_immitis",
@@ -1159,7 +1180,7 @@
     "latinName": "Dirofilaria immitis",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -1174,7 +1195,13 @@
     "stage": "Larva",
     "group": "Nematoda",
     "methods": [],
-    "micrometry": null,
+    "micrometry": {
+      "unit": "µm",
+      "lengthMin": 300.0,
+      "lengthMax": 300.0,
+      "widthMin": 6.0,
+      "widthMax": 7.0
+    },
     "morphology": {
       "shape": "Červovitý",
       "colour": "Bezfarebná",
@@ -1191,8 +1218,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "dirofilaria_repens",
@@ -1200,7 +1227,7 @@
     "latinName": "Dirofilaria repens",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
@@ -1218,8 +1245,8 @@
     "micrometry": {
       "lengthMin": 280.0,
       "lengthMax": 360.0,
-      "widthMin": null,
-      "widthMax": null,
+      "widthMin": 6.0,
+      "widthMax": 8.0,
       "unit": "µm"
     },
     "morphology": {
@@ -1238,8 +1265,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "strongyloides_spp_egg",
@@ -1247,13 +1274,13 @@
     "latinName": "Strongyloides spp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
-      "species": null
+      "species": "Strongyloides sp."
     },
     "host": [
       "Pes"
@@ -1265,8 +1292,8 @@
     "micrometry": {
       "lengthMin": 62.0,
       "lengthMax": 64.0,
-      "widthMin": null,
-      "widthMax": null,
+      "widthMin": 32.0,
+      "widthMax": 36.0,
       "unit": "µm"
     },
     "morphology": {
@@ -1285,8 +1312,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "strongyloides_spp_larva",
@@ -1294,13 +1321,13 @@
     "latinName": "Strongyloides spp.",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Rhabditida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
-      "species": null
+      "species": "Strongyloides sp."
     },
     "host": [
       "Pes"
@@ -1312,8 +1339,8 @@
     "micrometry": {
       "lengthMin": 230.0,
       "lengthMax": 350.0,
-      "widthMin": null,
-      "widthMax": null,
+      "widthMin": 30.0,
+      "widthMax": 40.0,
       "unit": "µm"
     },
     "morphology": {
@@ -1332,8 +1359,8 @@
     "references": [],
     "notes": "larva stočená do tvaru U, larva L1 - veľké genit. promodium, L3 dlhý ezofágus",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "dioctophyme_renale",
@@ -1341,7 +1368,7 @@
     "latinName": "Dioctophyme renale",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
       "order": "Dioctophymatida",
@@ -1379,8 +1406,8 @@
     "references": [],
     "notes": "v močovom sedimente",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "trichuris_vulpis",
@@ -1388,7 +1415,7 @@
     "latinName": "Trichuris vulpis",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
       "order": "Trichinellida",
@@ -1426,8 +1453,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "pearsonema_capillaria_plica",
@@ -1435,7 +1462,7 @@
     "latinName": "Pearsonema (Capillaria) plica",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
       "order": "Trichinellida",
@@ -1473,8 +1500,8 @@
     "references": [],
     "notes": "v močovom sedimente",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "eucoleus_boehmi",
@@ -1482,7 +1509,7 @@
     "latinName": "Eucoleus boehmi",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
       "order": "Trichinellida",
@@ -1520,8 +1547,8 @@
     "references": [],
     "notes": "v nose, vajíčka sa dostanú sa aj do trusu",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "eucoleus_aerophilus_capillaria_aerophila",
@@ -1529,7 +1556,7 @@
     "latinName": "Eucoleus aerophilus (= Capillaria aerophila)",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
       "order": "Trichinellida",
@@ -1567,15 +1594,23 @@
     "references": [],
     "notes": "v truse",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "linguatula_serrata",
     "legacyId": "DOG-0033",
     "latinName": "Linguatula serrata",
     "slovakName": null,
-    "taxonomy": {},
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Pentastomida",
+      "order": "Porocephalida",
+      "family": "Linguatulidae",
+      "genus": "Linguatula",
+      "species": "Linguatula serrata"
+    },
     "host": [
       "Pes"
     ],
@@ -1606,8 +1641,8 @@
     "references": [],
     "notes": "nosový výtok, trus, vajíčko obsahuje embryo",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-12T11:31:42.232084+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "demodex_canis",
@@ -1615,7 +1650,7 @@
     "latinName": "Demodex canis",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Arthropoda",
       "class": "Arachnida",
       "order": "Trombidiformes",
@@ -1630,7 +1665,13 @@
     "stage": "Dospelý jedinec",
     "group": "Arthropoda (Acari)",
     "methods": [],
-    "micrometry": null,
+    "micrometry": {
+      "unit": "µm",
+      "lengthMin": 165.0,
+      "lengthMax": 300.0,
+      "widthMin": 33.0,
+      "widthMax": 43.0
+    },
     "morphology": {
       "shape": "Cigarovitý",
       "colour": "Bezfarebná",
@@ -1647,8 +1688,8 @@
     "references": [],
     "notes": null,
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
   },
   {
     "id": "demodex_injai",
@@ -1656,7 +1697,7 @@
     "latinName": "Demodex injai",
     "slovakName": null,
     "taxonomy": {
-      "kingdom": "Metazoa",
+      "kingdom": "Animalia",
       "phylum": "Arthropoda",
       "class": "Arachnida",
       "order": "Trombidiformes",
@@ -1671,7 +1712,13 @@
     "stage": "Dospelý jedinec",
     "group": "Arthropoda (Acari)",
     "methods": [],
-    "micrometry": null,
+    "micrometry": {
+      "unit": "µm",
+      "lengthMin": 282.0,
+      "lengthMax": 411.0,
+      "widthMin": 40.0,
+      "widthMax": 48.0
+    },
     "morphology": {
       "shape": "Cigarovitý",
       "colour": "Bezfarebná",
@@ -1688,7 +1735,54 @@
     "references": [],
     "notes": "dlhý, predĺžený koniec",
     "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-13T00:00:00.000000+00:00",
-    "version": "1.1.0"
+    "modified": "2026-08-15T00:00:00.000000+00:00",
+    "version": "1.2.0"
+  },
+  {
+    "id": "dibothriocephalus_latus_egg",
+    "legacyId": "DOG-0015",
+    "latinName": "Dibothriocephalus latus",
+    "slovakName": null,
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Diphyllobothriidea",
+      "family": "Diphyllobothriidae",
+      "genus": "Dibothriocephalus",
+      "species": "Dibothriocephalus latus"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 67.0,
+      "lengthMax": 73.0,
+      "widthMin": 45,
+      "widthMax": 51,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Žltá",
+      "shell": "Operculum s výčnelkom",
+      "operculum": null,
+      "contents": null,
+      "texture": null,
+      "remarks": null
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "zoonosis": null,
+    "images": [],
+    "references": [],
+    "notes": "rybožravé zvieratá. Diphyllobothrium latum je starší (synonymný) názov pre aktuálne platný názov Dibothriocephalus latus.",
+    "created": "2026-08-10T17:49:33.389Z",
+    "modified": "2026-08-15T01:00:00.000000+00:00",
+    "version": "1.3.0"
   }
 ]
