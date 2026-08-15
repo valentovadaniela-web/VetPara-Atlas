@@ -1,22 +1,169 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-15 (v6)
+Aktualizované: 2026-08-15 (v7)
 Branch: develop
 Git: working tree clean (pred touto zmenou — nezabudni commitnúť nový
 `database/dog.migrated.json` (38 záznamov, dáta zmenené/opravené/zlúčené) z
-tejto session; `atlas.css` a `AtlasPage.js` z predchádzajúcej session
-(2026-08-14, v4) zatiaľ podľa predchádzajúceho zápisu ešte neboli
-commitnuté — over)
+predchádzajúcej session; `atlas.css` a `AtlasPage.js` z session 2026-08-14
+(v4) zatiaľ podľa predchádzajúceho zápisu ešte neboli commitnuté — over.
+**Táto session (v7) je iba PLÁNOVACIA — žiadny súbor kódu ani databázy nebol
+zmenený, iba rozhodnutia zaznamenané nižšie.**
 
 ## 1. Milestone
-Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → **UI dobieha dáta
+Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → UI dobieha dáta
 (diagnosticSigns, taxonomy) + rozšírené filtre (Úlohy.txt) + CSS pre v2 triedy
-(OVERENÉ proti kódu aj proti reálnemu behu na mobile) + UX doplnok (Ctrl/Cmd
-poznámka na desktope) + DATABÁZA: mikrometria a taxonómia doplnená/opravená pre
-psa z tabuľky `Mikrometria_doplnená__opravená.xlsx`, vrátane zlúčenia
-duplicitného záznamu Diphyllobothrium/Dibothriocephalus latus a opravy
-kingdom pri Cryptosporidium parvum (38 záznamov, obsah zmenený)**
++ DATABÁZA: mikrometria a taxonómia doplnená/opravená pre psa (38 záznamov).
+**Práve začína Milestone 2 – Vizuálny redizajn (nový dizajnový systém podľa
+mockupu/master-promptu tretej strany, zatiaľ vo fáze PLÁNOVANIA, implementácia
+neodsúhlasená/nezačatá)**
 
-## 2. Posledná vykonaná zmena
+## 0. PLÁNOVACIA SESSION 2026-08-15 (v7) — Vizuálny redizajn, zatiaľ NEIMPLEMENTOVANÉ
+
+### 0.1 Kontext a zdroj podnetu
+
+Autorka nahrala 3 nové súbory z inej AI konverzácie (mimo tohto vlákna):
+- `KOMPLETNÝ_MASTER-PROMPT_PRE_CLAUDE_-_Implementácia_Vizuálneho_Systému_VetPara_Atlas.docx`
+- `mockup.html` (statická HTML/CSS/JS ukážka nového vzhľadu)
+- `variables.css` (nová sada CSS premenných zodpovedajúca mockupu)
+
+Cieľ: zjednotiť vizuál Home/Databáza/Detail podľa tohto nového dizajnového
+systému. **Toto NIE JE súčasť pôvodného Developer Guide/Master Prompt
+(`08_DEVELOPER_GUIDE.md`, `09_MASTER_PROMPT.md`) — je to nový, externe
+navrhnutý vizuálny systém, ktorý autorka chce do projektu zaviesť.**
+
+### 0.2 Zistené konflikty s existujúcim projektom (analyzované, nie ešte vyriešené kódom)
+
+1. **`atlas.css` (v2, overená sekcia z 2026-08-14) používa CSS premenné, ktoré
+   v novom `variables.css` vôbec nie sú definované:**
+   `--font-size-xs/sm/base` (nové má `--fs-xs/sm/base` — iný názov),
+   `--color-surface`, `--color-surface-alt`, `--color-warning`, `--color-text`.
+   Bez opravy by nasadenie nového `variables.css` **rozbilo už funkčné a
+   overené štýly** (multi-select filtre, veľkostný filter, diagnostické znaky,
+   taxonómia).
+   **Rozhodnutie:** doplniť do `variables.css` mostíkové aliasy (napr.
+   `--font-size-xs: var(--fs-xs);`), NEPREMENOVÁVAŤ nič v už overenom
+   `atlas.css` naviac k tomu, čo aj tak ide prerobiť (viď bod 4).
+
+2. **Architektonický nesúlad: perzistentné view-divy vs. Router/innerHTML swap.**
+   `variables.css` aj mockup cielia na trvalé `#database-view`/`#detail-view`
+   elementy (viditeľnosť prepínaná triedou). Skutočná appka (`Router.js` +
+   `App.js`) vykresľuje každú route cez `innerHTML` swap do jediného
+   `<div id="app">`, žiadne `#database-view`/`#detail-view` neexistujú.
+   **Rozhodnutie:** Router/App.js architektúru NEMENIŤ (žiadny prechod na
+   perzistentné divy). Namiesto toho koreňový element, ktorý
+   `AtlasPage.render()`/`showDetail()` vracia, dostane `id="database-view"`
+   resp. `id="detail-view"`, aby CSS selektory z `variables.css` mali čo
+   zasiahnuť. Minimálny zásah, žiadna zmena `Router.js`.
+
+3. **Bootstrap konflikt.** Master-prompt vyžaduje „žiadny framework/Bootstrap",
+   ale `00_PROJECT_CONTEXT.md` §12 a `05_TECHNICAL_ARCHITECTURE.md` §4
+   explicitne definujú Bootstrap 5 ako rozhodnutú technológiu a súčasný
+   `App.js` (Home route) Bootstrap triedy reálne používa (`container`, `row`,
+   `col-lg-7`, `btn btn-primary btn-lg`, `card h-100 shadow-sm`).
+   **Rozhodnutie autorky (odsúhlasené v chate 2026-08-15):** Bootstrap sa
+   **RUŠÍ v celej aplikácii vrátane Home** — jednotný vlastný CSS systém
+   (`variables.css`) všade. Toto je zmena zdokumentovanej architektúry →
+   **`00_PROJECT_CONTEXT.md` §12 a `05_TECHNICAL_ARCHITECTURE.md` §4 treba
+   aktualizovať** (odstrániť Bootstrap zo zoznamu technológií) — **zatiaľ
+   NEVYKONANÉ, je to TODO**.
+
+4. **Veľkostný filter — zmena zo statických min/max inputov na dual-range
+   slidery s prepínačom jednotiek.** Pôvodne (2026-08-13/14) boli `lengthMin/
+   Max`, `widthMin/Max` číselné inputy. Autorka chce namiesto toho posuvníky,
+   s prepínačom µm/mm (kvôli budúcemu rozšíreniu na ďalších hostiteľov s
+   väčšími dospelými štádiami).
+
+   **Zistenie z reálnych dát (`dog_migrated.json`, 38 záznamov, výpočet
+   vykonaný v tejto session):**
+   - `lengthMax` rozsah: 4 µm (`cryptosporidium_parvum`) až 6000 µm
+     (`alaria_alata_adult`).
+   - **37 z 38 záznamov má `lengthMax ≤ 500 µm`** — jediný odľahlý záznam je
+     `alaria_alata_adult` (dospelá motolica, 2500–6000 µm = 2,5–6 mm).
+   - Lineárny slider 0–6000 µm by stlačil 97 % databázy do ~7 % dráhy
+     posuvníka — nepoužiteľné.
+
+   **Rozhodnutie (odsúhlasené autorkou):**
+   - Prepínač jednotiek: **µm a mm, BEZ cm** (cm zatiaľ nemá v databáze psa
+     využitie — max hodnota je 0,6 cm; cm sa doplní v Etape 2 pri importe
+     ďalších hostiteľov s reálne centimetrovými dospelými štádiami).
+   - Rozsah µm slidera: **0–500 µm** (pokrýva 37/38 záznamov).
+   - Rozsah mm slidera: **0–10 mm** (pokrýva `alaria_alata_adult` + rezerva).
+   - Databáza zostáva vždy v µm (`03_DATA_ENTRY_STANDARD.md` §10 — jednotka
+     sa nemení). Prepínač je čisto UI vrstva — hodnota zo slidera v mm sa pred
+     porovnaním v `matchesSizeRange()` prevedie ×1000 na µm; samotná funkcia
+     `matchesSizeRange()` sa nemení.
+   - Technicky: keďže `<input type="range">` má iba jeden bod, „od–do" sa
+     implementuje ako **2 prekrývajúce sa range inputy na dimenziu** (vanilla
+     JS/CSS technika, žiadna externá knižnica — `08_DEVELOPER_GUIDE.md` §8).
+     Spolu 4 slidery viditeľné naraz (dĺžka od/do, šírka od/do) pre aktuálne
+     zvolenú jednotku.
+
+5. **Filtre `shape`/`colour` (tvar/farba) — ZACHOVAŤ.** Mockup ich vo
+   filter-sidebar nemá, ale autorka potvrdila, že ich chce ponechať (ako
+   multi-select, rovnako ako doteraz).
+
+6. **Taxonómia — mockup pridáva riadok „Doména" (napr. Eukaryota), ktorý
+   NEEXISTUJE v `02_DATABASE_SPECIFICATION.md` schéme** (`taxonomy` obsahuje
+   len kingdom→species, bez domain). **Rozhodnutie zatiaľ nepadlo explicitne
+   — plán počíta s vynechaním riadku „Doména", pokým autorka
+   nerozhodne inak** (pridanie poľa by vyžadovalo najprv rozšíriť schému a
+   zdokumentovať v `02_DATABASE_SPECIFICATION.md` + `10_CHANGELOG.md`, podľa
+   `09_MASTER_PROMPT.md` §5).
+
+7. **Terminológia mockupu nesedí s kontrolovaným slovníkom** — mockup používa
+   „Fekálie" (má byť `Trus`, `03_DATA_ENTRY_STANDARD.md` §8) a hostiteľov s
+   vedeckým menom v labeli („Pes (Canis lupus)" — `hosts.json` slovník obsahuje
+   iba čisté `Pes`). Pri implementácii sa použijú skutočné hodnoty z databázy,
+   nie text z mockupu.
+
+8. **Chýbajúci asset** `image_C05HpU.png` (pozadie hero sekcie Home) — nebol
+   nahraný, treba ho dodať alebo použiť placeholder.
+
+9. **CSS triedy — rozhodnutie o prístupe (autorka delegovala na AI):**
+   **Rozhodnuté: existujúce overené triedy v `atlas.css` (v2 sekcia) sa
+   PREMENUJÚ na nové názvy z mockupu** (napr. `.atlas-filter-multi` →
+   zodpovedajúci mockup ekvivalent), namiesto ponechania dvoch paralelných
+   sád tried. Dôvod: vyhnúť sa mŕtvemu/duplicitnému CSS, jeden konzistentný
+   systém (`08_DEVELOPER_GUIDE.md`: „nekopírovať rovnaký kód na viac miest").
+
+### 0.3 Zhrnutie rozhodnutí tejto session
+
+| Téma | Rozhodnutie | Stav |
+|---|---|---|
+| Prístup k implementácii | Reskin — zachovať JS filter/detail logiku, zmeniť markup+CSS | odsúhlasené |
+| `variables.css` chýbajúce premenné | Doplniť mostíkové aliasy, neprepisovať `atlas.css` | naplánované |
+| Perzistentné view-divy vs Router swap | Zachovať Router/innerHTML swap, len pridať `id="database-view"`/`id="detail-view"` na koreňový element | odsúhlasené |
+| Bootstrap | **Zrušiť všade** (aj Home) | **odsúhlasené — vyžaduje aj update `00_PROJECT_CONTEXT.md` §12 a `05_TECHNICAL_ARCHITECTURE.md` §4** |
+| Veľkostný filter | Dual-range slidery, prepínač µm (0–500)/mm (0–10), bez cm | odsúhlasené |
+| Shape/colour filter | Zachovať ako doteraz (multi-select) | odsúhlasené |
+| Taxonómia „Doména" | Vynechať (nie je v DB schéme) | predbežné, čaká na explicitné potvrdenie |
+| Terminológia (Fekálie, vedecké mená v host labeloch) | Pri implementácii použiť skutočné hodnoty z DB, nie text z mockupu | odsúhlasené |
+| Názvy CSS tried | Premenovať existujúce na nové (mockup), nie ponechať duplicitne | rozhodnuté (AI, na základe delegovania) |
+| Chýbajúci obrázok `image_C05HpU.png` | Treba dodať alebo placeholder | otvorené |
+
+### 0.4 Čo NEBOLO v tejto session urobené
+
+- **Žiadny súbor v `src/` ani `database/` nebol zmenený.**
+- `variables.css` mostíkové aliasy — pripravené na papieri, nie zapísané.
+- `App.js`, `AtlasPage.js`, `atlas.css` diffy — ešte nenapísané (nasledujúci krok).
+- `00_PROJECT_CONTEXT.md` a `05_TECHNICAL_ARCHITECTURE.md` — Bootstrap
+  odkazy ešte nezmazané.
+
+### 0.5 Ďalší krok
+
+1. Napísať konkrétne diffy pre `variables.css`, `App.js`, `AtlasPage.js`,
+   `atlas.css` (markup + CSS pre checkboxy, dual-range slidery s
+   µm/mm prepínačom, `.quad-grid`, `.morphology-card-main`, `.taxonomy-table`,
+   Home bez Bootstrapu).
+2. Po schválení diffov aplikovať zmeny a znova aktualizovať `AI_STATUS.md`
+   (táto sekcia sa presunie do „Predchádzajúca zmena", pribudne nová `## 2.`).
+3. Aktualizovať `00_PROJECT_CONTEXT.md` §12 a `05_TECHNICAL_ARCHITECTURE.md`
+   §4 (odstrániť Bootstrap).
+4. Vyriešiť chýbajúci `image_C05HpU.png`.
+5. Potvrdiť/zamietnuť riadok „Doména" v taxonómii.
+
+---
+
+## 2. Posledná vykonaná zmena (predchádzajúca session, 2026-08-15 v6 — databázový import, kód nemenený)
 
 **Import mikrometrie a taxonómie z `Mikrometria_doplnená__opravená.xlsx` do
 `database/dog.migrated.json`.** Toto je zmena DÁT, nie kódu — nedotýka sa
