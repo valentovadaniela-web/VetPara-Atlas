@@ -1,27 +1,131 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>VetPara Atlas</title>
-    <meta name="description" content="Veterinary Parasitology Diagnostic Atlas">
-    <meta name="author" content="VetPara Atlas">
-    <meta name="theme-color" content="#10283d">
+
+    <meta name="description"
+        content="Veterinary Parasitology Diagnostic Atlas">
+
+    <meta name="author"
+        content="VetPara Atlas">
+
+    <meta name="theme-color"
+        content="#0d6efd">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="src/styles/atlas.css">
+    
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
 
     <link rel="icon" href="public/favicon.ico">
     <link rel="manifest" href="manifest.json">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/css/variables.css">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/typography.css">
     <link rel="stylesheet" href="src/css/layout.css">
-    <link rel="stylesheet" href="src/styles/atlas.css">
-</head>
-<body>
-    <main id="app"></main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="src/js/main.js"></script>
+</head>
+
+<body>
+
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+
+<div class="container">
+
+<a class="navbar-brand fw-bold"
+   href="index.html">
+
+VetPara Atlas
+
+</a>
+
+<button class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div
+class="collapse navbar-collapse"
+id="navbar">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link active"
+href="#home">
+Domov
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="#atlas">
+Atlas
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="#gallery">
+Galéria
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="#expert">
+Diagnostický expert
+</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="#settings">
+Nastavenia
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+<main id="app"></main>
+
+<footer class="border-top">
+
+<div class="container py-4 text-center">
+
+VetPara Atlas © 2026
+
+</div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<script type="module" src="src/js/main.js"></script>
+
 </body>
+
 </html>

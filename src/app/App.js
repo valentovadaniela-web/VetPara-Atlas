@@ -69,45 +69,89 @@ const App = {
             document.body.classList.add("dark-mode");
 
             app.innerHTML = `
-                <div id="home-view" class="view-page active-view">
-                    <header class="site-header">
-                        <a class="site-brand" href="#" data-route="home">VetPara Atlas</a>
-                        <nav class="site-nav" aria-label="Hlavná navigácia">
-                            <button type="button" class="site-nav-link is-active" data-route="home">Domov</button>
-                            <button type="button" class="site-nav-link" data-route="atlas">Atlas</button>
-                            <button type="button" class="site-nav-link" data-route="gallery">Galéria</button>
-                            <button type="button" class="site-nav-link" data-route="expert">Diagnostický expert</button>
-                        </nav>
-                        <button class="mobile-menu-button" type="button" aria-label="Otvoriť menu">☰</button>
-                    </header>
-                    <main class="home-main">
-                        <section class="hero-home">
-                            <div class="hero-home-container"><div class="hero-home-content">
-                                <h1 class="hero-home-title">VetPara Atlas</h1>
-                                <p class="hero-home-subtitle">Moderný diagnostický atlas veterinárnej parazitológie.</p>
-                                <p class="hero-home-lead">Projekt určený pre veterinárne laboratóriá, diagnostikov, univerzity a študentov.</p>
-                                <form class="home-search" id="home-search-form">
-                                    <span class="home-search-icon" aria-hidden="true">⌕</span>
-                                    <input id="home-search-input" type="search" placeholder="Hľadať v atlase (napr. Toxocara canis, Babesia)">
-                                    <button type="submit" aria-label="Vyhľadať">⌕</button>
-                                </form>
-                            </div></div>
-                        </section>
-                        <section class="home-cards-grid" aria-label="Funkcie atlasu">
-                            <button type="button" class="card home-card-button" data-route="atlas"><span class="home-card-icon">▢</span><span><strong class="home-card-title">Databáza</strong><span class="home-card-text">Komplexná databáza diagnostických objektov.</span></span></button>
-                            <button type="button" class="card home-card-button" data-route="gallery"><span class="home-card-icon">▧</span><span><strong class="home-card-title">Galéria</strong><span class="home-card-text">Fotografie s odbornými metadátami.</span></span></button>
-                            <button type="button" class="card home-card-button" data-route="expert"><span class="home-card-icon">♙</span><span><strong class="home-card-title">Diagnostický expert</strong><span class="home-card-text">Budúci inteligentný systém diferenciálnej diagnostiky.</span></span></button>
-                        </section>
-                    </main>
-                    <footer class="site-footer">VetPara Atlas © 2026</footer>
-                </div>
-            `;
 
-            document.getElementById("home-search-form")?.addEventListener("submit", event => {
-                event.preventDefault();
-                AtlasPage.state.search = document.getElementById("home-search-input").value.trim();
-                Router.navigate("atlas");
-            });
+                <div id="home-view" class="view-page active-view">
+
+                    <section class="hero-home">
+
+                        <div class="hero-home-container">
+
+                            <div class="hero-home-content">
+
+                                <h1 class="hero-home-title">
+                                    VetPara Atlas
+                                </h1>
+
+                                <p class="hero-home-subtitle">
+                                    Moderný diagnostický atlas veterinárnej
+                                    parazitológie určený pre laboratóriá,
+                                    diagnostikov, univerzity a študentov.
+                                </p>
+
+                                <button
+                                    type="button"
+                                    class="btn-open-atlas"
+                                    data-route="atlas"
+                                >
+                                    Otvoriť atlas
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                    <div class="home-cards-grid">
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="atlas"
+                        >
+
+                            <h3 class="home-card-title">Databáza</h3>
+
+                            <p class="home-card-text">
+                                Komplexná databáza diagnostických objektov.
+                            </p>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="gallery"
+                        >
+
+                            <h3 class="home-card-title">Galéria</h3>
+
+                            <p class="home-card-text">
+                                Fotografie s odbornými metadátami.
+                            </p>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="expert"
+                        >
+
+                            <h3 class="home-card-title">Diagnostický expert</h3>
+
+                            <p class="home-card-text">
+                                Budúci inteligentný systém diferenciálnej
+                                diagnostiky.
+                            </p>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            `;
 
             document
                 .querySelectorAll("[data-route]")
