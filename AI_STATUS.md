@@ -1,4 +1,154 @@
 # VetPara Atlas – AI STATUS
+
+### Stále NEOVERENÉ
+-- Skutočné vykreslenie v prehliadači po v11 (header farba, font, funkčnosť
+-  theme toggle) — **čaká sa na test autorkou**, výsledok zatiaľ nenahlásený.
+-- `--font-family-base`, `--color-background`, `--color-heading` —
++- `--font-family-base`, `--color-background`, `--color-heading` —
+   `reset.css`/`typography.css` neboli v tejto session nahraté, ich stav
+   voči týmto premenným nepotvrdený.
+
+### Otvorené TODO (poradie: 3 hotové, 2 hotové/TODO zapísané → čaká sa na 1, potom 4, 5)
+-- **Bod 1 (test v prehliadači)** — autorka testuje, výsledok sa nahlási
+-  v ďalšej session/správe.
++- **Bod 1 (test v prehliadači)** — ✅ POTVRDENÉ autorkou 2026-08-16,
++  header/farba/font/theme toggle fungujú správne.
+ - **Bod 4 (hamburger menu pre mobil)** — odložené, čaká na výsledok bodu 1.
+   `04_UI_UX_SPECIFICATION.md` §6 ho vyžaduje.
+ - **`Navbar.js` → presun do `_archive/`** — TODO, zatiaľ nevykonané.
+
+## 1d. Zmena 2026-08-16 (v11): Header dokončený (nav obsah, Bootstrap-free, theme toggle, font-fix)
+
+Nadväzuje na v10 — DÔLEŽITÉ ZISTENIE: súbory nahraté do tejto session
+(`index.html`, `Navbar.js`, `App.js`) NEZODPOVEDALI popisu v10 (stále
+obsahovali pôvodný Bootstrap `navbar-dark bg-primary` markup, žiadny
+`#theme-toggle`, žiadnu `bindThemeToggle()`). V10 zmeny buď neboli
+commitnuté, alebo AI_STATUS.md v10 popisoval stav, ktorý sa nedostal
+do repozitára. Táto session vychádza z reálne nahratých súborov.
+
+### Rozhodnutia autorky (2026-08-16)
+- Nav obsah: **Atlas / Galéria / Diagnostický expert / Téma** (4 položky,
+  bez samostatného "Domov" — kliknutie na logo "VetPara Atlas" vedie na
+  Home) a bez "Nastavenia".
+- Karta na Home "Databáza" premenovaná na "Atlas" (rovnaký `data-route="atlas"`).
+- Bootstrap definitívne odstránený z `index.html` (CSS aj JS), header
+  prerobený na vlastný `.site-header`/`.site-nav` markup.
+- Theme toggle logika (`bindThemeToggle()`) pridaná rovno v tejto session.
+- `Navbar.js` potvrdene mŕtvy kód (nikdy neimportovaný) — **TODO: presunúť
+  do `_archive/`** podľa precedensu z `11_SESSION_LOG.md` bodu 3. Zatiaľ
+  nepresunuté, súbor stále leží na pôvodnom mieste
+  `src/components/Navbar.js` — čaká na vykonanie.
+
+### Vykonané zmeny
+1. `index.html` — Bootstrap CDN odstránený, header prepísaný, nav =
+   Atlas/Galéria/Diagnostický expert + tlačidlo Téma, `<header>` dostal
+   triedu `site-header`.
+2. `src/css/layout.css` — nové pravidlá `.site-header`, `.site-nav`,
+   `.site-brand`, `.site-nav-links`, `.theme-toggle-btn`; doplnené
+   `.site-header a, .site-header button { font-family: var(--font-sans); }`
+   (oprava nekonzistentného fontu v nav položkách, nahlásené autorkou po
+   nasadení v11).
+3. `src/css/variables.css` — doplnené `--transition-fast`,
+   `--container-max-width` (chýbali, layout.css ich referencoval).
+4. `src/app/App.js` — karta "Databáza" → "Atlas"; nová metóda
+   `bindThemeToggle()`, volaná v `start()`.
+
+### Stále NEOVERENÉ
+- Skutočné vykreslenie v prehliadači po v11 (header farba, font, funkčnosť
+  theme toggle) — **čaká sa na test autorkou**, výsledok zatiaľ nenahlásený.
+- `--font-family-base`, `--color-background`, `--color-heading` —
+  `reset.css`/`typography.css` neboli v tejto session nahraté, ich stav
+  voči týmto premenným nepotvrdený.
+
+### Otvorené TODO (poradie: 3 hotové, 2 hotové/TODO zapísané → čaká sa na 1, potom 4, 5)
+- **Bod 1 (test v prehliadači)** — autorka testuje, výsledok sa nahlási
+  v ďalšej session/správe.
+- **Bod 4 (hamburger menu pre mobil)** — odložené, čaká na výsledok bodu 1.
+  `04_UI_UX_SPECIFICATION.md` §6 ho vyžaduje.
+- **`Navbar.js` → presun do `_archive/`** — TODO, zatiaľ nevykonané.
+
+### Súbory na stiahnutie a nahradenie v repozitári (v11)
+- `index.html`
+- `src/css/layout.css`
+- `src/css/variables.css`
+- `src/app/App.js`
+
+Aktualizované: 2026-08-16 (v11)
+Branch: develop
+
+## 1c. Zmena 2026-08-16 (v10): Header, font-fix, funkčný theme toggle
+
+Nadväzuje na v9 (blokované chyby #1 a #3). Súbory `index.html`,
+`Navbar.js`, `layout.css`, `typography.css`, `reset.css`, `main.js` boli
+nahraté a skontrolované.
+
+### Zistenia
+- **`Navbar.js` je mŕtvy kód** — nikdy nebol importovaný (`main.js`
+  importuje iba `App.js`). Header bol vždy natvrdo napísaný priamo v
+  `index.html`, s Bootstrap `navbar navbar-dark bg-primary` markupom —
+  to bol zdroj svetlomodrej farby headeru (chyba #1 z v9).
+- **`reset.css`/`typography.css`/`layout.css` odkazovali na CSS premenné,
+  ktoré vo `variables.css` neexistovali** (`--font-family-base`,
+  `--color-background`, `--color-heading`, `--transition-fast`,
+  `--container-max-width`) — rovnaký typ problému, aký sa riešil pre
+  `atlas.css` vo v8/v9, teraz pre zvyšné súbory (chyba #2 z v9).
+- **Nezrovnalosť medzi screenshotom (nav: Domov/Databáza/Téma) a nahratým
+  `index.html` (nav: Domov/Atlas/Galéria/Diagnostický expert/Nastavenia)**
+  — flagnuté, opravy urobené podľa nahratého `index.html` (5 položiek +
+  nové tlačidlo Téma), keďže iný zdroj nebol dodaný.
+
+### Vykonané zmeny
+1. **`index.html`** — Bootstrap CDN (CSS aj JS) odstránený. Header
+   prepísaný z Bootstrap `navbar` markupu na vlastný `.site-header`/
+   `.site-nav`/`.site-nav-links` + nové tlačidlo `#theme-toggle`
+   ("Téma"). Bootstrap toggler (hamburger pre mobil) bol súčasťou
+   odstráneného markupu a **nebol nahradený** — nové TODO (bod nižšie).
+2. **`src/css/variables.css`** — doplnené mostíkové aliasy:
+   `--font-family-base`, `--color-background`, `--color-heading`,
+   `--transition-fast`, `--container-max-width`. Nič sa nepremenovalo,
+   iba doplnilo (rovnaký prístup ako aliasy z v8).
+3. **`src/css/layout.css`** — nové štýly `.site-header`/`.site-nav`/
+   `.site-brand`/`.site-nav-links`/`.theme-toggle-btn`, využívajú už
+   existujúce (doteraz nepoužité) premenné `--color-bg-header`,
+   `--color-nav-text`, `--color-nav-text-active` z `variables.css`.
+4. **`src/app/App.js`** — nová metóda `bindThemeToggle()`, volaná raz v
+   `start()`. Klikom na `#theme-toggle` sa prepína
+   `document.body.classList.toggle("dark-mode")`.
+   **Rozsah potvrdený autorkou 2026-08-16: iba Home.** Na
+   Databáze/Detaile zostáva svetlý režim zamknutý cez existujúce
+   `!important` pravidlá vo `variables.css` (`#database-view`,
+   `#detail-view`) — tie sa touto zmenou nedotkli, takže tlačidlo tam
+   nemá viditeľný efekt bez potreby ho špeciálne skrývať. Home route
+   naďalej pri každom vstupe force-nastavuje `dark-mode` (nezmenené) —
+   tlačidlo umožňuje návštevníkovi to po príchode manuálne prepnúť.
+
+### Stále NEOVERENÉ
+- Skutočné vykreslenie v prehliadači (font, farba headeru, funkčnosť
+  toggle) — v tomto prostredí nebolo možné spustiť DOM.
+
+### Nové TODO
+- **Hamburger menu pre mobil chýba** — bolo súčasťou odstráneného
+  Bootstrap togglera, vlastná náhrada nebola vytvorená (nebolo
+  zadané, `04_UI_UX_SPECIFICATION.md` §6 ju vyžaduje).
+- **`Navbar.js` zostáva mŕtvy kód** — buď ho reálne zapojiť (nahradiť
+  natvrdo písaný header v `index.html`), alebo presunúť do `_archive/`
+  podľa precedensu z `11_SESSION_LOG.md` bodu 3.
+- **Nezrovnalosť screenshot vs. index.html** (3 vs. 5 nav položiek) —
+  nepotvrdené, ktorá verzia je zamýšľaná; ak treba redukovať nav na
+  Domov/Databáza/Téma, treba to explicitne zadať.
+
+### Súbory na stiahnutie a nahradenie v repozitári (v10)
+- `index.html`
+- `src/css/variables.css`
+- `src/css/layout.css`
+- `src/app/App.js`
+
+`Navbar.js`, `reset.css`, `typography.css`, `main.js` — **nezmenené**
+(iba prečítané kvôli diagnostike).
+
+
+
+
 Aktualizované: 2026-08-16 (v9)
 Branch: develop
 Git: working tree clean (pred touto zmenou — nezabudni commitnúť

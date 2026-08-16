@@ -52,7 +52,7 @@ const App = {
         this.registerRoutes();
 
         this.bindThemeToggle();
-
+        this.bindNavToggle();
         Router.start();
 
         console.info("Application ready.");
@@ -77,6 +77,37 @@ const App = {
 
     },
 
+    bindNavToggle() {
+
+    const toggleButton = document.getElementById("nav-toggle");
+    const navLinks = document.getElementById("site-nav-links");
+
+    if (!toggleButton || !navLinks) {
+
+        return;
+
+    }
+
+    toggleButton.addEventListener("click", () => {
+
+        const isOpen = navLinks.classList.toggle("is-open");
+
+        toggleButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+
+    });
+
+    navLinks.querySelectorAll("a, button").forEach(el => {
+
+        el.addEventListener("click", () => {
+
+            navLinks.classList.remove("is-open");
+            toggleButton.setAttribute("aria-expanded", "false");
+
+        });
+
+    });
+
+},
     registerRoutes() {
 
         Router.register("home", () => {

@@ -98,6 +98,71 @@ main {
     color: var(--color-nav-text-active);
     border-color: var(--color-nav-text-active);
 }
+.nav-toggle-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-xs);
+}
+
+.nav-toggle-icon,
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--color-nav-text-active);
+    border-radius: 1px;
+}
+
+.nav-toggle-icon {
+    position: relative;
+}
+
+.nav-toggle-icon::before,
+.nav-toggle-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.nav-toggle-icon::before {
+    top: -7px;
+}
+
+.nav-toggle-icon::after {
+    top: 7px;
+}
+
+@media (max-width: 768px) {
+
+    .nav-toggle-btn {
+        display: block;
+    }
+
+    .site-nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+        background-color: var(--color-bg-header);
+        padding: var(--space-md);
+        display: none;
+    }
+
+    .site-nav-links.is-open {
+        display: flex;
+    }
+
+    .site-nav {
+        position: relative;
+    }
+
+}
 
 footer {
     margin-top: auto;
