@@ -1,5 +1,94 @@
 # VetPara Atlas – AI STATUS
 
+## 1e. NEDOKONČENÉ 2026-08-16 (v11 pokračovanie): Hamburger menu — klik nefunguje, príčina NEZNÁMA
+
+### Stav
+Hamburger menu (bod 4 z dohodnutého poradia 3,2,1,4,5) bolo implementované
+(index.html, layout.css, App.js — viď v11 nižšie), ale **po kliknutí na
+hamburger sa navigácia nezobrazí**. Toto NIE JE vyriešené, dlhá diagnostika
+v tejto session nenašla koreňovú príčinu.
+
+### Čo bolo overené a FUNGUJE správne:
+- HTML: `#nav-toggle` a `#site-nav-links` existujú so správnymi ID
+  (potvrdené cez `document.getElementById`).
+- CSS sa načítava správne z `http://127.0.0.1:5500/VetPara-Atlas/src/css/layout.css`
+  (potvrdené cez `fetch()` — obsahuje `@media (max-width: 768px)` aj
+  `.site-nav-links.is-open`).
+- CSSOM potvrdzuje správnu štruktúru pravidiel:
+  - GLOBAL: `.site-nav-links { display: flex }`
+  - IN MEDIA (max-width: 768px): `.site-nav-links { display: none }`
+  - IN MEDIA (max-width: 768px): `.site-nav-links.is-open { display: flex }`
+- Pri šírke okna 578px (`window.matchMedia("(max-width: 768px)").matches`
+  = `true`) je `getComputedStyle(...).display` = `'none'` — SPRÁVNE.
+- `atlas.css`, `reset.css`, `typography.css` boli skontrolované — neobsahujú
+  žiadne konfliktné pravidlo cielené na `nav`/`site-nav-links`, ani
+  `!important` na `display`.
+- Service Worker NIE je zaregistrovaný pre stránku (overené v Application
+  → Service Workers).
+- Žiadny inline `style` atribút na `#site-nav-links`
+  (`getAttribute("style")` vrátilo `null`).
+- Žiadne chyby v Console pri načítaní ani pri kliknutí.
+- **Manuálne** spustenie `document.getElementById("site-nav-links").classList.add("is-open")`
+  cez Console TIEŽ nezobrazilo navigáciu vizuálne (v jednom z testov) —
+  toto je dôležitá stopa, nasvedčuje že problém nie je len v event listeneri,
+  ale možno aj v samotnom zobrazení/CSS aplikovaní triedy `is-open` v
+  reálnom čase v prehliadači (hoci CSSOM report vyzerá korektne).
+- Theme toggle (`#theme-toggle`) funguje bez problémov v tom istom
+  prostredí (potvrdzuje, že App.js/main.js sa načítava a spúšťa správne,
+  vrátane `bindNavToggle()`, ktorá je volaná hneď po `bindThemeToggle()`
+  synchrónne bez chyby medzi nimi).
+
+### Posledný neuzavretý test
+Pri šírke 578px (matches768: true), reálne kliknutie myšou na hamburger →
+`document.getElementById("site-nav-links").className` ostáva `'site-nav-links'`
+(bez `is-open`) — **listener sa buď nespúšťa pri reálnom kliku myšou, alebo
+niečo triedu okamžite odstraňuje.**
+
+### Nasledujúce diagnostické kroky (odporúčané na ďalšiu session)
+1. Pridať `console.log("nav toggle clicked")` priamo do `bindNavToggle()`
+   click handlera v `App.js` a overiť, či sa vôbec vypíše pri reálnom
+   kliknutí myšou (odlíši JS-listener problém od CSS-timing problému).
+2. Skontrolovať, či nie je `bindNavToggle()` volaná viackrát (napr. cez
+   HMR/live-reload duplicitne registrujúci listenery) — pridať
+   `console.count("bindNavToggle called")` na začiatok metódy.
+3. Skontrolovať `main.js` a `Router.js` (NEBOLI v tejto session nahraté) —
+   možné, že `Router.start()` alebo iná časť re-renderuje/manipuluje DOM
+   spôsobom, ktorý odstraňuje pridanú triedu tesne po kliknutí.
+4. Skúsiť `getEventListeners(document.getElementById("nav-toggle"))`
+   v Console (funguje len keď je element aktuálne vybraný v Elements
+   tabe, alebo cez `$0` po kliknutí naň v Elements) — over počet
+   pripojených listenerov.
+5. Live Server (`127.0.0.1:5500`) má "Live reload enabled" — over, že sa
+   medzi testami nespúšťa reload, ktorý mätie stav.
+
+### Súbory potrebné pre pokračovanie (ešte nenahraté v tejto session)
+- `src/js/main.js`
+- `src/app/Router.js`
+
+### Aktuálny stav súborov (v11, funkčné, NEMENIŤ kým sa nevyrieši hamburger bug)
+- `index.html` — Bootstrap odstránený, header/nav Atlas/Galéria/Diagnostický
+  expert/Téma, hamburger markup pridaný — DORUČENÉ, funguje vizuálne
+  (font, farby, theme toggle potvrdené OK).
+- `src/css/layout.css` — obsahuje malý kozmetický duplicitný blok
+  `.site-header { background-color: var(--color-bg-header); }` (dvakrát
+  po sebe) — NEŠKODNÉ, ale odporúča sa vyčistiť pri ďalšej úprave súboru.
+- `src/css/variables.css` — `--transition-fast`, `--container-max-width`
+  doplnené — OK.
+- `src/app/App.js` — `bindThemeToggle()` OK (potvrdené funkčné),
+  `bindNavToggle()` implementovaná, ale VIZUÁLNE NEFUNGUJE (viď vyššie).
+
+### Otvorené TODO (poradie 3,2,1,4,5)
+- Bod 3 (nav obsah) — ✅ hotovo
+- Bod 2 (Navbar.js) — TODO presun do `_archive/`, zatiaľ nevykonané
+- Bod 1 (test v prehliadači) — ✅ potvrdené pre header/font/theme toggle;
+  ❌ hamburger klik NEFUNGUJE (táto session)
+- Bod 4 (hamburger menu) — ČIASTOČNE hotové (markup+CSS OK), FUNKČNOSŤ
+  NEDORIEŠENÁ — pokračovať v ďalšej session s `main.js`/`Router.js`
+- Bod 5 — čaká
+
+Aktualizované: 2026-08-16 (v11, nedokončené)
+Branch: develop
+
 ### Stále NEOVERENÉ
 -- Skutočné vykreslenie v prehliadači po v11 (header farba, font, funkčnosť
 -  theme toggle) — **čaká sa na test autorkou**, výsledok zatiaľ nenahlásený.
