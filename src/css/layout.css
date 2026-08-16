@@ -43,7 +43,14 @@ main {
 .site-header {
     background-color: var(--color-bg-header);
 }
+.site-header {
+    background-color: var(--color-bg-header);
+}
 
+.site-header a,
+.site-header button {
+    font-family: var(--font-sans);
+}
 .site-nav {
     display: flex;
     align-items: center;
