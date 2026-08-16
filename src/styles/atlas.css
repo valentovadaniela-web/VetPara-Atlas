@@ -887,30 +887,3 @@ button {
     }
 
 }
-
-
-/* Homepage header and navigation */
-#home-view { min-height:100vh; background:#10283d; color:#fff; display:flex; flex-direction:column; }
-#home-view .site-header { height:70px; padding:0 clamp(24px,15.8vw,285px); background:rgba(9,31,50,.96); display:flex; align-items:center; justify-content:space-between; position:relative; z-index:2; }
-.site-brand { color:#fff; text-decoration:none; font:700 25px Georgia,serif; }
-.site-nav { display:flex; align-self:stretch; gap:30px; }
-.site-nav-link { border:0; border-bottom:3px solid transparent; background:transparent; color:#fff; padding:0 2px; font:500 16px var(--font-sans,Inter,sans-serif); cursor:pointer; }
-.site-nav-link.is-active,.site-nav-link:hover { border-bottom-color:#277bd1; }
-.mobile-menu-button { display:none; background:none; border:0; color:#fff; font-size:26px; }
-#home-view .home-main { flex:1; }
-#home-view .hero-home { min-height:620px; padding:0 24px; background-image:linear-gradient(rgba(18,48,71,.18),rgba(15,42,64,.52)),url('../../public/images/home-hero.png'); background-size:cover; background-position:center; }
-#home-view .hero-home-container { max-width:1000px; justify-content:center; }
-#home-view .hero-home-content { text-align:center; }
-#home-view .hero-home-title { color:#09233b; font:700 clamp(54px,5vw,82px) Georgia,serif; margin:0 0 16px; }
-#home-view .hero-home-subtitle,#home-view .hero-home-lead { color:#122b42; max-width:none; margin:0 auto 10px; font:400 23px/1.45 var(--font-sans,Inter,sans-serif); }
-#home-view .hero-home-lead { font-size:20px; }
-.home-search { max-width:1040px; height:80px; margin:34px auto 0; background:#fff; border-radius:28px; box-shadow:0 7px 20px rgba(0,0,0,.18); display:flex; align-items:center; padding:0 14px 0 28px; }
-.home-search input { flex:1; min-width:0; border:0; outline:0; padding:0 18px; color:#334155; font-size:21px; background:transparent; }
-.home-search button { width:72px; height:58px; border:0; border-radius:18px; background:#2875b8; color:#fff; font-size:34px; cursor:pointer; }
-#home-view .home-cards-grid { max-width:1080px; margin:-42px auto 28px; padding:0 20px; position:relative; z-index:1; gap:18px; }
-#home-view .home-cards-grid .card { min-height:150px; padding:25px 32px; background:#102b45; border:1px solid rgba(255,255,255,.08); border-radius:20px; box-shadow:0 8px 20px rgba(0,0,0,.22); display:flex; flex-direction:row; align-items:flex-start; gap:20px; }
-.home-card-icon { color:#2786e4; font-size:42px; line-height:1; }
-#home-view .home-card-title { display:block; color:#fff; font:700 22px Georgia,serif; }
-#home-view .home-card-text { display:block; color:#fff; font-size:16px; line-height:1.55; margin-top:16px; max-width:260px; }
-.site-footer { padding:20px; text-align:center; color:#fff; background:#10283d; font-size:14px; }
-@media (max-width:760px) { #home-view .site-header{padding:0 20px}.site-nav{display:none}.mobile-menu-button{display:block}#home-view .hero-home{min-height:560px}#home-view .hero-home-subtitle,#home-view .hero-home-lead{font-size:16px}.home-search{height:64px;border-radius:20px}.home-search input{font-size:14px;padding:0 8px}.home-search button{width:54px;height:48px}#home-view .home-cards-grid{grid-template-columns:1fr;margin-top:-28px} }
