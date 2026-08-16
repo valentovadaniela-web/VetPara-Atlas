@@ -51,9 +51,29 @@ const App = {
 
         this.registerRoutes();
 
+        this.bindThemeToggle();
+
         Router.start();
 
         console.info("Application ready.");
+
+    },
+
+    bindThemeToggle() {
+
+        const toggleButton = document.getElementById("theme-toggle");
+
+        if (!toggleButton) {
+
+            return;
+
+        }
+
+        toggleButton.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark-mode");
+
+        });
 
     },
 
@@ -110,7 +130,7 @@ const App = {
                             data-route="atlas"
                         >
 
-                            <h3 class="home-card-title">Databáza</h3>
+                            <h3 class="home-card-title">Atlas</h3>
 
                             <p class="home-card-text">
                                 Komplexná databáza diagnostických objektov.
