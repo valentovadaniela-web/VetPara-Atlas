@@ -1,22 +1,90 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-15 (v7)
+Aktualizované: 2026-08-15 (v8)
 Branch: develop
-Git: working tree clean (pred touto zmenou — nezabudni commitnúť nový
-`database/dog.migrated.json` (38 záznamov, dáta zmenené/opravené/zlúčené) z
-predchádzajúcej session; `atlas.css` a `AtlasPage.js` z session 2026-08-14
-(v4) zatiaľ podľa predchádzajúceho zápisu ešte neboli commitnuté — over.
-**Táto session (v7) je iba PLÁNOVACIA — žiadny súbor kódu ani databázy nebol
-zmenený, iba rozhodnutia zaznamenané nižšie.**
+Git: working tree clean (pred touto zmenou — nezabudni commitnúť
+`database/dog.migrated.json` z predchádzajúcej databázovej session (v6) AJ
+štyri súbory z tejto session (v8): `src/css/variables.css`, `src/app/App.js`,
+`src/pages/AtlasPage.js`, `src/styles/atlas.css` — pozri sekciu 1a nižšie.
 
 ## 1. Milestone
-Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → UI dobieha dáta
-(diagnosticSigns, taxonomy) + rozšírené filtre (Úlohy.txt) + CSS pre v2 triedy
-+ DATABÁZA: mikrometria a taxonómia doplnená/opravená pre psa (38 záznamov).
-**Práve začína Milestone 2 – Vizuálny redizajn (nový dizajnový systém podľa
-mockupu/master-promptu tretej strany, zatiaľ vo fáze PLÁNOVANIA, implementácia
-neodsúhlasená/nezačatá)**
+Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → hotové.
+**Milestone 2 – Vizuálny redizajn: IMPLEMENTOVANÉ (v8), zatiaľ NEOVERENÉ
+vizuálne v prehliadači.** Kód napísaný a syntakticky skontrolovaný
+(`node --check`), ale beh v reálnom DOM (checkboxy, výsledky, detail layout,
+responzivita) nebol v tomto prostredí overený — nutný funkčný test po
+nasadení.
 
-## 0. PLÁNOVACIA SESSION 2026-08-15 (v7) — Vizuálny redizajn, zatiaľ NEIMPLEMENTOVANÉ
+## 1a. POSLEDNÁ VYKONANÁ ZMENA — 2026-08-15 (v8): Implementácia vizuálneho reskinu
+
+Nadväzuje na plánovaciu session v7 (nižšie, teraz historická). Rozdiel oproti
+pôvodnému plánu z v7: **autorka sa počas session rozhodla proti dual-range
+sliderom pre veľkostný filter — pôvodné 4 number inputy (dĺžka/šírka od-do)
+boli ZACHOVANÉ bez zmeny logiky**, iba vizuálne prestylované do nového
+`.filter-section` obalu. Zvyšok plánu z v7 implementovaný podľa dohody.
+
+### 1a.1 Zmenené súbory (4× kompletná nová verzia, nie diff)
+
+| Súbor | Rozsah zmeny |
+|---|---|
+| `src/css/variables.css` | Pridané mostíkové aliasy (`--font-size-*`, `--color-surface`, `--color-surface-alt`, `--color-warning`, `--color-text`) — pôvodný obsah od autorky nezmenený |
+| `src/app/App.js` | Home route kompletne prepísaná: Bootstrap triedy zrušené, nahradené `.hero-home`/`.home-cards-grid`/`.btn-open-atlas` markupom; pridaný wrapper `id="home-view"`; pridaná dark-mode toggle logika (`document.body.classList`) vo všetkých registrovaných routes; `atlas` route wrapuje výstup s `id="database-view"` (cez `AtlasPage.render()`) |
+| `src/pages/AtlasPage.js` | `host`/`sample` filtre: `<select multiple>` → skupina checkboxov (`CHECKBOX_FIELDS`), rovnaká OR logika. `shape`/`colour`: zachované ako `<select multiple>` (`MULTI_SELECT_FIELDS`). Veľkostný filter: **beze zmeny logiky**, len obal. Karta v zozname: nový stručný `.specimen-row-card` (názov + host/materiál/veľkosť v jednom riadku) namiesto plnej karty — plný obsah presunutý do Detailu. Detail: nový `.quad-grid` (Veľkosť/Tvar/Farba/Obal), `.morphology-card-main` (✓ namiesto ⚡, rovnaké dáta `diagnosticSigns`), `.taxonomy-table` (BEZ riadku "Doména" — nie je v DB schéme). `render()`/`showDetail()` teraz vracajú koreňový element s `id="database-view"`/`id="detail-view"`. Odstránené mŕtve staré metódy (`diagnosticSignsList`, `taxonomyBlock`, `taxonomyExternalLinks`, `diagnosticSignsSection`, `taxonomySection`) — nahradené novými (`morphologyCard`, `taxonomyTable`, `taxonomyExternalLinksButtons`, `miniBox`, `quadBox`) |
+| `src/styles/atlas.css` | **Kompletne nový súbor** (nie patch pôvodného). Obsahuje: základnú `.card` komponentu (mockup ju nikde nedefinoval, len prepisy farieb — doplnené tu), Home štýly bez Bootstrapu, `.database-layout`/`.filter-sidebar`/`.checkbox-group` pre nové filtre, zachovaný `.atlas-filter-multi`/`.atlas-size-row` pre shape/colour a veľkosť, `.detail-layout`/`.quad-grid`/`.morphology-card-main`/`.taxonomy-table` pre detail, `.atlas-active-filters`/`.atlas-filter-tags` zachované funkčne beze zmeny |
+
+### 1a.2 Overené (staticky, v tomto prostredí)
+
+- `node --check` prešiel na `App.js` aj `AtlasPage.js` bez chyby.
+- CSS zátvorky vyvážené (123 `{` / 123 `}` v `atlas.css`).
+- Všetky triedy použité v novom markupe `AtlasPage.js`/`App.js` majú
+  zodpovedajúce pravidlo v `atlas.css` (manuálne prekontrolované krížovo).
+- Filtrovacia logika (`matchesSizeRange`, `matchesFulltext`, `renderRecords`
+  filter chain) sa nezmenila — iba widget typ pre `host`/`sample`.
+
+### 1a.3 NEOVERENÉ / otvorené TODO
+
+1. **Skutočný beh v prehliadači nebol testovaný** (žiaden DOM v tomto
+   prostredí) — nutné otestovať checkboxy, karty, detail, responzivitu na
+   mobile aj desktope po nasadení.
+2. **Chýbajúci obrázok pre Home hero pozadie.** `atlas.css` odkazuje na
+   `../../public/images/home-hero.png` (relatívna cesta z
+   `src/styles/atlas.css` do `public/images/`, podľa `štruktúra.txt`) — tento
+   súbor **neexistuje**, treba ho dodať. Bez neho bude hero sekcia na Home
+   len s farbou pozadia (fallback), nie s obrázkom parazitov z pôvodného
+   mockupu (`image_C05HpU.png`, ktorý tiež nebol nahraný).
+3. **`00_PROJECT_CONTEXT.md` §12 a `05_TECHNICAL_ARCHITECTURE.md` §4 ešte
+   NEBOLI aktualizované** — stále tam je zapísaný Bootstrap 5 ako súčasť
+   stacku, hoci kód ho už nepoužíva. Treba opraviť, aby dokumentácia
+   zodpovedala realite (`09_MASTER_PROMPT.md` §5, §7).
+4. **Riadok „Doména" v taxonómii** — potvrdené vynechaný (nie je v DB
+   schéme). Ak by ho autorka predsa chcela, treba najprv rozšíriť
+   `02_DATABASE_SPECIFICATION.md` a zdokumentovať v `10_CHANGELOG.md`.
+5. Nav/header (`.site-header`, `.theme-toggle` tlačidlo z mockupu) **nebol
+   implementovaný** — `App.js` ho nikdy neobsahoval a `index.html`/
+   `Navbar.js` neboli v tejto session nahraté, takže dark-mode toggle beží
+   iba automaticky podľa route (Home = tmavý, všetko ostatné = svetlý), bez
+   manuálneho prepínača pre používateľa.
+6. Gallery/Expert/Settings routes stále iba `console.log(...)` placeholder —
+   nedotknuté touto zmenou, teraz majú navyše `dark-mode` cleanup pre
+   konzistenciu.
+
+### 1a.4 Súbory na stiahnutie a nahradenie v repozitári
+
+- `src/css/variables.css`
+- `src/app/App.js`
+- `src/pages/AtlasPage.js`
+- `src/styles/atlas.css`
+
+`dog.json`, `dog.migrated.json`, `Repository.js`, `DatabaseService.js`,
+`Router.js`, `ApplicationState.js` — **NEBOLI touto zmenou dotknuté.**
+
+---
+
+## 2a. PLÁNOVACIA SESSION 2026-08-15 (v7) — teraz historická, implementované vyššie (1a)
+
+**Poznámka:** obsah tejto sekcie je pôvodný plán z v7. Časť rozhodnutí bola
+počas implementácie (v8) upravená — konkrétne veľkostný filter zostal pri
+pôvodných number inputoch namiesto plánovaných dual-range sliderov (viď 1a
+vyššie). Sekcia ponechaná pre históriu rozhodovania.
 
 ### 0.1 Kontext a zdroj podnetu
 
@@ -163,7 +231,7 @@ navrhnutý vizuálny systém, ktorý autorka chce do projektu zaviesť.**
 
 ---
 
-## 2. Posledná vykonaná zmena (predchádzajúca session, 2026-08-15 v6 — databázový import, kód nemenený)
+## 2b. Posledná databázová zmena (2026-08-15 v6 — databázový import, kód nemenený)
 
 **Import mikrometrie a taxonómie z `Mikrometria_doplnená__opravená.xlsx` do
 `database/dog.migrated.json`.** Toto je zmena DÁT, nie kódu — nedotýka sa

@@ -63,32 +63,34 @@ const App = {
 
             const app = document.getElementById("app");
 
+            // Home je jediná stránka, ktorá smie byť v dark-mode
+            // (viď variables.css: ".dark-mode #home-view" a
+            // "#database-view, #detail-view" natvrdo blokujú dark-mode).
+            document.body.classList.add("dark-mode");
+
             app.innerHTML = `
 
-                <section class="hero">
+                <div id="home-view" class="view-page active-view">
 
-                    <div class="container">
+                    <section class="hero-home">
 
-                        <div class="row align-items-center py-5">
+                        <div class="hero-home-container">
 
-                            <div class="col-lg-7">
+                            <div class="hero-home-content">
 
-                                <h1 class="display-4 fw-bold">
+                                <h1 class="hero-home-title">
                                     VetPara Atlas
                                 </h1>
 
-                                <p class="lead">
-                                    Moderný diagnostický atlas veterinárnej parazitológie.
-                                </p>
-
-                                <p>
-                                    Projekt určený pre veterinárne laboratóriá,
+                                <p class="hero-home-subtitle">
+                                    Moderný diagnostický atlas veterinárnej
+                                    parazitológie určený pre laboratóriá,
                                     diagnostikov, univerzity a študentov.
                                 </p>
 
                                 <button
                                     type="button"
-                                    class="btn btn-primary btn-lg"
+                                    class="btn-open-atlas"
                                     data-route="atlas"
                                 >
                                     Otvoriť atlas
@@ -96,94 +98,58 @@ const App = {
 
                             </div>
 
-                            <div class="col-lg-5 text-center">
-
-                                <img
-                                    src="public/images/logo.svg"
-                                    alt="VetPara Atlas"
-                                    class="img-fluid"
-                                    style="max-width:320px;"
-                                >
-
-                            </div>
-
                         </div>
+
+                    </section>
+
+                    <div class="home-cards-grid">
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="atlas"
+                        >
+
+                            <h3 class="home-card-title">Databáza</h3>
+
+                            <p class="home-card-text">
+                                Komplexná databáza diagnostických objektov.
+                            </p>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="gallery"
+                        >
+
+                            <h3 class="home-card-title">Galéria</h3>
+
+                            <p class="home-card-text">
+                                Fotografie s odbornými metadátami.
+                            </p>
+
+                        </button>
+
+                        <button
+                            type="button"
+                            class="card home-card-button"
+                            data-route="expert"
+                        >
+
+                            <h3 class="home-card-title">Diagnostický expert</h3>
+
+                            <p class="home-card-text">
+                                Budúci inteligentný systém diferenciálnej
+                                diagnostiky.
+                            </p>
+
+                        </button>
 
                     </div>
 
-                </section>
-
-                <section>
-
-                    <div class="container py-5">
-
-                        <div class="row g-4">
-
-                            <div class="col-md-4">
-
-                                <button
-                                    type="button"
-                                    class="card h-100 shadow-sm text-start w-100 border-0"
-                                    data-route="atlas"
-                                >
-                                    <div class="card-body">
-
-                                        <h3>Databáza</h3>
-
-                                        <p>
-                                            Komplexná databáza diagnostických objektov.
-                                        </p>
-
-                                    </div>
-                                </button>
-
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <button
-                                    type="button"
-                                    class="card h-100 shadow-sm text-start w-100 border-0"
-                                    data-route="gallery"
-                                >
-                                    <div class="card-body">
-
-                                        <h3>Galéria</h3>
-
-                                        <p>
-                                            Fotografie s odbornými metadátami.
-                                        </p>
-
-                                    </div>
-                                </button>
-
-                            </div>
-
-                            <div class="col-md-4">
-
-                                <button
-                                    type="button"
-                                    class="card h-100 shadow-sm text-start w-100 border-0"
-                                    data-route="expert"
-                                >
-                                    <div class="card-body">
-
-                                        <h3>Diagnostický expert</h3>
-
-                                        <p>
-                                            Budúci inteligentný systém diferenciálnej diagnostiky.
-                                        </p>
-
-                                    </div>
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </section>
+                </div>
 
             `;
 
@@ -205,6 +171,9 @@ const App = {
 
             const app = document.getElementById("app");
 
+            // Databáza a Detail sú natvrdo vo svetlom režime (viď variables.css).
+            document.body.classList.remove("dark-mode");
+
             app.innerHTML = AtlasPage.render();
 
             AtlasPage.init();
@@ -213,17 +182,23 @@ const App = {
 
         Router.register("gallery", () => {
 
+            document.body.classList.remove("dark-mode");
+
             console.log("Gallery page");
 
         });
 
         Router.register("expert", () => {
 
+            document.body.classList.remove("dark-mode");
+
             console.log("Expert page");
 
         });
 
         Router.register("settings", () => {
+
+            document.body.classList.remove("dark-mode");
 
             console.log("Settings page");
 
