@@ -91,7 +91,7 @@ Architektúra musí byť:
 
 - HTML5
 - CSS3
-- Bootstrap 5
+- Vlastný CSS dizajnový systém (CSS Custom Properties, bez frameworku)
 - JavaScript ES6+
 
 ## Dáta
@@ -107,6 +107,15 @@ Architektúra musí byť:
 ## Nasadenie
 
 - GitHub Pages
+
+**Aktualizácia 2026-08-16:** Pôvodne bol vo Frontend zozname uvedený
+Bootstrap 5. Počas vizuálneho redizajnu (`AI_STATUS.md` v8) bol Bootstrap
+z celej aplikácie odstránený a nahradený vlastným CSS dizajnovým systémom
+postaveným na CSS Custom Properties (`src/css/variables.css` +
+`src/styles/atlas.css`), aby Home, Databáza aj Detail používali jeden
+konzistentný štýlovací systém namiesto dvoch paralelných. Zoznam vyššie už
+odráža aktuálny stav; pozri aj `00_PROJECT_CONTEXT.md` §12 (rovnaká zmena)
+a `10_CHANGELOG.md`.
 
 ---
 

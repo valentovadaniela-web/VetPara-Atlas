@@ -35,6 +35,18 @@
     border: 0;
 }
 
+/* Obranné pravidlo (2026-08-16): vynucuje jednotný font Inter na všetkých
+   troch pohľadoch spravovaných touto stránkou/CSS, bez ohľadu na to, čo
+   definuje src/css/typography.css alebo reset.css (tie súbory som nevidel —
+   pozri AI_STATUS.md v9, bod o chýbajúcich súboroch). Ak globálny reset
+   font-family už nastavuje rovnako, toto pravidlo je no-op; ak nie, opravuje
+   nekonzistentnosť (napr. predtým .hero-home-title používal Merriweather). */
+#home-view,
+#database-view,
+#detail-view {
+    font-family: var(--font-sans);
+}
+
 button {
     font-family: inherit;
 }
@@ -104,7 +116,7 @@ button {
 }
 
 .hero-home-title {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
     font-size: var(--fs-2xl);
     font-weight: var(--fw-bold);
     color: var(--color-hero-title);

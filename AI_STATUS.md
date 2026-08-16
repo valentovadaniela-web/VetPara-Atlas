@@ -1,20 +1,109 @@
 # VetPara Atlas – AI STATUS
-Aktualizované: 2026-08-15 (v8)
+Aktualizované: 2026-08-16 (v9)
 Branch: develop
 Git: working tree clean (pred touto zmenou — nezabudni commitnúť
-`database/dog.migrated.json` z predchádzajúcej databázovej session (v6) AJ
-štyri súbory z tejto session (v8): `src/css/variables.css`, `src/app/App.js`,
-`src/pages/AtlasPage.js`, `src/styles/atlas.css` — pozri sekciu 1a nižšie.
+`database/dog.migrated.json` z v6, štyri súbory `src/*` z v8 (ak ešte neboli),
+AJ upravené `src/styles/atlas.css` a dokumenty `00_PROJECT_CONTEXT.md`,
+`05_TECHNICAL_ARCHITECTURE.md` z tejto session (v9).
 
 ## 1. Milestone
-Milestone 1 – Core Foundation (Atlas + databáza + migrácia) → hotové.
-**Milestone 2 – Vizuálny redizajn: IMPLEMENTOVANÉ (v8), zatiaľ NEOVERENÉ
-vizuálne v prehliadači.** Kód napísaný a syntakticky skontrolovaný
-(`node --check`), ale beh v reálnom DOM (checkboxy, výsledky, detail layout,
-responzivita) nebol v tomto prostredí overený — nutný funkčný test po
-nasadení.
+Milestone 1 – Core Foundation → hotové. Milestone 2 – Vizuálny redizajn:
+implementované (v8), **teraz prvý reálny vizuálny test od autorky (v9,
+screenshot Home stránky) — časť chýb opravená, časť BLOKOVANÁ chýbajúcimi
+súbormi (index.html / Navbar.js / layout.css / typography.css / reset.css —
+nikdy neboli nahraté do tejto konverzácie).**
 
-## 1a. POSLEDNÁ VYKONANÁ ZMENA — 2026-08-15 (v8): Implementácia vizuálneho reskinu
+## 1b. POSLEDNÁ VYKONANÁ ZMENA — 2026-08-16 (v9): Vizuálny bug-report z prehliadača + čiastočná oprava
+
+Autorka nahrala screenshot reálne vykreslenej Home stránky a nahlásila 3 chyby.
+
+### 1b.1 Nahlásené chyby a stav
+
+| # | Chyba (ako nahlásená) | Stav | Root cause (hypotéza) |
+|---|---|---|---|
+| 1 | Horný pás (header/nav) má byť vo farbe pozadia, je svetlomodrý | **BLOKOVANÉ** — potrebujem `index.html` / `Navbar.js` | Header s logom "VetPara Atlas" a nav odkazmi ("Domov", "Databáza", "Téma") viditeľný na screenshote **nebol nikdy súčasťou `App.js`** (potvrdené už v `AI_STATUS.md` v8, bod 1a.3 #5). Musí byť statický v `index.html` alebo v `src/components/Navbar.js` — ani jeden súbor som doteraz nevidel. Svetlomodrá farba je pravdepodobne zvyšok pôvodného Bootstrap `.navbar`/CDN linku, ktorý som nemal ako odstrániť, keďže som ho nikdy nevidel. |
+| 2 | Nejednotný font, chce Inter Sans všade | **ČIASTOČNE OPRAVENÉ** v `atlas.css` (viď 1b.2) | `.hero-home-title` používal `var(--font-serif)` (Merriweather) podľa pôvodného zámeru z master-promptu ("Inter pre dáta / Merriweather pre titulky") — autorka teraz explicitne chce jednu rodinu všade. Opravené v rámci súborov, ktoré kontrolujem. **Nemôžem zaručiť dôsledky mimo `atlas.css`** — ak `typography.css`/`reset.css`/`index.html` nastavujú/načítavajú iný font (alebo Merriweather/Inter vôbec nie je pripojený cez `<link>`/CDN), zostane nekonzistentné. |
+| 3 | Prepínanie režimov (svetlý/tmavý) nefunguje | **BLOKOVANÉ** — potrebujem `index.html` / `Navbar.js` | V `App.js` existuje iba automatické prepínanie podľa route (Home = tmavý, všetko ostatné = svetlý) — **žiadne manuálne tlačidlo/toggle som nikdy nevytvoril** (viď v8, bod 1a.3 #5). Nav na screenshote má odkaz "Téma" — ak je to zamýšľané ako prepínač, musí byť v súbore, ktorý nemám, a nie je napojený na žiadnu JS logiku, ktorú poznám. |
+
+### 1b.2 Čo bolo opravené (v rámci súborov, ktoré mám)
+
+**`src/styles/atlas.css`:**
+- `.hero-home-title`: `font-family: var(--font-serif)` → `var(--font-sans)` (Inter namiesto Merriweather).
+- Pridané obranné pravidlo:
+  ```css
+  #home-view, #database-view, #detail-view {
+      font-family: var(--font-sans);
+  }
+  ```
+  Vynucuje Inter na všetkých troch pohľadoch, ktoré spravuje táto stránka/CSS,
+  bez ohľadu na to, čo (ne)nastavuje neznámy globálny reset. Ak je globálny
+  reset už rovnaký, pravidlo je no-op; ak nie, opravuje nekonzistentnosť.
+- **`--font-serif` v `variables.css` NEBOL odstránený** (autorka ho tam mala,
+  mohol by byť použitý inde, mimo môjho pohľadu) — iba `atlas.css` ho už
+  nepoužíva. Ak sa ukáže, že sa nepoužíva nikde inak, môže sa v budúcnosti
+  vymazať z `variables.css` úplne.
+
+**Dokumentácia (dlžné z v8, dokončené teraz):**
+- `00_PROJECT_CONTEXT.md` §12 — Bootstrap 5 nahradený „Vlastný CSS dizajnový
+  systém (CSS Custom Properties, bez frameworku)", pridaná poznámka o zmene
+  s dátumom a dôvodom.
+- `05_TECHNICAL_ARCHITECTURE.md` §4 — rovnaká zmena, rovnaká poznámka.
+- Oba súbory majú CRLF (Windows) konce riadkov — zachované pri úprave.
+
+### 1b.3 Čo BLOKUJE dokončenie (potrebujem tieto súbory v ďalšom chate)
+
+Aby som mohol opraviť header/nav farbu a funkčné prepínanie režimov, potrebujem:
+
+1. **`index.html`** (koreňový súbor projektu) — na overenie, či header/nav je
+   tam natvrdo napísaný, či je ešte pripojený Bootstrap CDN `<link>`, a či sú
+   pripojené webfonty (Google Fonts Inter/Merriweather — bez `<link>` fonty
+   nefungujú, aj keď `variables.css` na ne odkazuje).
+2. **`src/components/Navbar.js`** (ak existuje a je reálne použitý — v
+   `štruktúra.txt` je uvedený, ale `App.js` ho v žiadnej verzii, ktorú som
+   robil, neimportoval — treba overiť, kade sa do stránky reálne dostáva).
+3. **`src/css/layout.css`**, **`src/css/typography.css`**,
+   **`src/css/reset.css`** — na zistenie, čo tieto súbory už nastavujú
+   (font-family, farby headeru), aby som nevytváral duplicitné/konfliktné
+   pravidlá.
+4. **`src/js/main.js`** — entry point, na overenie poradia načítania CSS/JS
+   a toho, čo presne sa spúšťa pri štarte appky.
+
+**Bez týchto súborov nemôžem opraviť header (bod 1) ani theme toggle (bod 3)
+— znamenalo by to hádať obsah súborov, ktoré som nikdy nevidel, čo je proti
+pravidlám tejto konverzácie ("nikdy nevytváraj odborné/technické údaje bez
+podloženia zdrojom").**
+
+### 1b.4 Pokyny pre ďalší chat
+
+1. Nahraj `index.html`, `src/components/Navbar.js` (ak existuje),
+   `src/css/layout.css`, `src/css/typography.css`, `src/css/reset.css`,
+   `src/js/main.js`.
+2. Priložiť nový screenshot (alebo ten istý) pre porovnanie po oprave.
+3. Skontrolovať, či je Bootstrap CDN `<link>` v `index.html` — ak áno, treba
+   ho odstrániť (nadväzuje na `AI_STATUS.md` v8 rozhodnutie zrušiť Bootstrap
+   všade).
+4. Skontrolovať, či sú pripojené webfonty pre Inter (Google Fonts `<link>`
+   alebo lokálne `@font-face`) — bez toho `var(--font-sans)` padá na systémový
+   fallback, čo môže byť ešte jeden zdroj nekonzistentného vzhľadu.
+5. Zistiť, kde má byť definovaná logika prepínania témy (Navbar.js tlačidlo
+   „Téma"?) a prepojiť ju s `document.body.classList.toggle("dark-mode")`
+   (rovnaký mechanizmus, aký už `App.js` používa pri routing).
+6. Znovu vizuálne overiť Home stránku a v prípade zhody s priloženým mockup
+   screenshotom aktualizovať `AI_STATUS.md` na v10 (Milestone 2 → hotové
+   a vizuálne overené).
+
+### 1b.5 Súbory na stiahnutie a nahradenie v repozitári (táto session, v9)
+
+- `src/styles/atlas.css` (font fix)
+- `00_PROJECT_CONTEXT.md` (Bootstrap odstránený zo zoznamu)
+- `05_TECHNICAL_ARCHITECTURE.md` (rovnaká zmena)
+
+`variables.css`, `App.js`, `AtlasPage.js` — **nezmenené touto session**
+(zostávajú platné z v8).
+
+---
+
+## 1a. Predchádzajúca zmena (2026-08-15 v8): Implementácia vizuálneho reskinu
 
 Nadväzuje na plánovaciu session v7 (nižšie, teraz historická). Rozdiel oproti
 pôvodnému plánu z v7: **autorka sa počas session rozhodla proti dual-range
