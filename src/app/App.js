@@ -135,8 +135,8 @@ const App = {
 
                                 <p class="hero-home-subtitle">
                                     Moderný diagnostický atlas veterinárnej
-                                    parazitológie určený pre laboratóriá,
-                                    diagnostikov, univerzity a študentov.
+                                    parazitológie určený pre laboratóriá a
+                                    diagnostikov.
                                 </p>
 
                                 <button
@@ -164,7 +164,7 @@ const App = {
                             <h3 class="home-card-title">Atlas</h3>
 
                             <p class="home-card-text">
-                                Komplexná databáza diagnostických objektov.
+                                Kompletná štruktúrovanádatabáza diagnostických objektov s možnosťou filtrovania.
                             </p>
 
                         </button>
@@ -192,8 +192,7 @@ const App = {
                             <h3 class="home-card-title">Diagnostický expert</h3>
 
                             <p class="home-card-text">
-                                Budúci inteligentný systém diferenciálnej
-                                diagnostiky.
+                                Budúci inteligentný systém pre rýchlu diferenciálnu diagnostiku.                              diagnostiky.
                             </p>
 
                         </button>
