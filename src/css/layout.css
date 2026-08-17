@@ -61,8 +61,15 @@ main {
 .site-brand {
     font-weight: var(--fw-bold);
     font-size: var(--fs-lg);
-    color: var(--color-nav-text-active);
     text-decoration: none;
+}
+
+.brand-vetpara {
+    color: #ffffff;  /* Toto je biela (#ffffff) */
+}
+
+.brand-atlas {
+    color: #4a9eff; /* Toto je modrá (#4a9eff) */
 }
 
 .site-nav-links {
