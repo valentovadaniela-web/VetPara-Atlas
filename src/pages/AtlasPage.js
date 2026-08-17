@@ -483,7 +483,9 @@ const AtlasPage = {
             return "";
         }
 
-        return hosts.join(", ");
+        // OPRAVA (2026-08-17): oddeľovač zmenený z ", " na " / " podľa
+        // schváleného referenčného obrázka (autorka, 2026-08-17).
+        return hosts.join(" / ");
 
     },
 
@@ -1125,63 +1127,125 @@ renderHostFilterSection(hosts) {
         const app =
             document.getElementById("app");
 
-        // Layout podľa mockupu (2026-08-15): detail-layout > .card hlavný panel
+        // OPRAVA (2026-08-17): vrátené na triedy zo skutočného atlas.css
+        // (specimen-title / side-boxes / findings-card / img-placeholder-box /
+        // quad-grid / morphology-card-main / taxonomy-table). Predchádzajúca
+        // (medzi-session) verzia používala iné názvy tried (detail-title,
+        // detail-grid, back-button, morphology-card...), ktoré v atlas.css
+        // vôbec neexistujú → stránka sa zobrazovala prakticky bez štýlov.
+        // Vizuál teraz zodpovedá schválenému referenčnému obrázku
+        // (autorka potvrdila 2026-08-17).
         app.innerHTML = `
-            <div id="detail-view" class="view-page active-view detail-layout">
-                <button id="atlas-back" class="back-button">← Späť na Atlas</button>
 
-                <div class="detail-card card">
-                    <h1 class="detail-title">${this.escapeHtml(record.latinName ?? record.id)}</h1>
-                    <p class="detail-subtitle">${this.escapeHtml([record.group, record.taxonomy?.family].filter(Boolean).join(" • ") || `ID: ${record.id}`)}</p>
+            <div id="detail-view" class="view-page active-view">
 
-                    <div class="detail-grid">
-                        ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
-                        ${this.miniBox("Materiál", record.sample)}
-                        ${this.miniBox("Štádium", record.stage)}
-                    </div>
+                <button
+                    type="button"
+                    id="atlas-back"
+                    class="atlas-back"
+                >
+                    ← Späť na Atlas
+                </button>
 
-                    <div class="detail-image-placeholder">
-                        ${record.images && record.images.length > 0
-                            ? "[ Fotografia zatiaľ nie je pripojená v databáze ]"
-                            : "[ Fotografia zatiaľ nie je k dispozícii ]"
-                        }
-                    </div>
+                <div class="detail-layout">
 
-                    <div class="detail-quad-grid">
-                        ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
-                        ${this.quadBox("Tvar", record.morphology?.shape)}
-                        ${this.quadBox("Farba", record.morphology?.colour)}
-                        ${this.quadBox("Obal", record.morphology?.shell)}
-                    </div>
+                    <main class="card">
 
-                    ${this.morphologyCard(record.diagnosticSigns)}
-                    ${this.detailField("Poznámka", record.notes)}
+                        <h2 class="specimen-title">
+                            ${this.escapeHtml(record.latinName ?? record.id)}
+                        </h2>
 
-                    <div class="detail-external-links">
-                        ${this.taxonomyExternalLinksButtons(record.latinName)}
-                    </div>
+                        <div class="specimen-sub">
+                            ${this.escapeHtml(
+                                [record.group, record.taxonomy?.family]
+                                    .filter(Boolean)
+                                    .join(" • ")
+                                || `ID: ${record.id}`
+                            )}
+                        </div>
 
-                    <h3 class="taxonomy-heading">Taxonomické zaradenie</h3>
-                    ${this.taxonomyTable(record.taxonomy)}
+                        <div class="detail-main-split">
+
+                            <div class="side-boxes">
+
+                                ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
+
+                                ${this.miniBox("Materiál", record.sample)}
+
+                                ${this.miniBox("Štádium", record.stage)}
+
+                            </div>
+
+                            <div class="findings-card card">
+
+                                <div class="img-placeholder-box">
+                                    [ Dynamický mikroskopický nález ]
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="quad-grid">
+
+                            ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
+
+                            ${this.quadBox("Tvar", record.morphology?.shape)}
+
+                            ${this.quadBox("Farba", record.morphology?.colour)}
+
+                            ${this.quadBox("Obal", record.morphology?.shell)}
+
+                        </div>
+
+                        ${this.morphologyCard(record.diagnosticSigns)}
+
+                        ${this.detailField("Poznámka", record.notes)}
+
+                        <div class="actions-container">
+
+                            ${this.taxonomyExternalLinksButtons(record.latinName)}
+
+                        </div>
+
+                    </main>
+
+                    <aside class="card">
+
+                        <h3 class="taxonomy-title">Taxonomické zaradenie</h3>
+
+                        ${this.taxonomyTable(record.taxonomy)}
+
+                    </aside>
+
                 </div>
+
             </div>
+
         `;
 
-        document.getElementById("atlas-back").addEventListener("click", () => {
-            app.innerHTML = this.render();
-            this.init();
-        });
+        document
+            .getElementById("atlas-back")
+            .addEventListener("click", () => {
+
+                app.innerHTML = this.render();
+
+                this.init();
+
+            });
 
     },
 
     // ------------------------------------------------------------------
-    // Pomocné bloky pre nový detail layout (2026-08-15)
+    // Pomocné bloky pre detail layout (triedy podľa atlas.css)
     // ------------------------------------------------------------------
 
     miniBox(label, value) {
 
         if (!value || String(value).trim() === "") {
+
             return "";
+
         }
 
         return `
@@ -1205,49 +1269,66 @@ renderHostFilterSection(hosts) {
     },
 
     /**
-     * Nahrádza pôvodný ⚡ zoznam diagnostických znakov (diagnosticSignsList)
-     * novým vizuálom s ✓ (morphology-card-main z mockupu). Rovnaké dáta
-     * (record.diagnosticSigns), iný vizuál.
+     * OPRAVA (2026-08-17): nadpis zmenený z "Diagnostické znaky" na
+     * "Morfológia" (podľa schváleného referenčného obrázka, autorka
+     * 2026-08-17). Dáta (record.diagnosticSigns) sa nemenili.
      */
     morphologyCard(signs) {
 
         if (!Array.isArray(signs) || signs.length === 0) {
+
             return "";
+
         }
 
         return `
-            <div class="morphology-card">
-                <h3 class="morphology-title">Diagnostické znaky</h3>
-                <div class="morphology-list">
+            <div class="morphology-card-main">
+
+                <div class="morph-main-header">Morfológia</div>
+
+                <div class="morph-main-content">
+
                     ${signs.map(sign => `
                         <div class="morph-list-item">
                             <span class="morph-checkmark" aria-hidden="true">✓</span>
                             <span>${this.escapeHtml(sign)}</span>
                         </div>
                     `).join("")}
+
                 </div>
+
             </div>
         `;
 
     },
 
     /**
-     * Taxonómia v tabuľkovom formáte (mockup .taxonomy-table). Riadok
-     * "Doména" z mockupu je ZÁMERNE VYNECHANÝ — pole neexistuje v
-     * 02_DATABASE_SPECIFICATION.md schéme (taxonomy má len kingdom→species).
-     * Pozri AI_STATUS.md v7 bod 0.2.6.
+     * Taxonómia v tabuľkovom formáte (mockup .taxonomy-table).
+     *
+     * OPRAVA (2026-08-17): riadok "Doména" DOPLNENÝ na explicitnú žiadosť
+     * autorky (referenčný obrázok, 2026-08-17) — čaká sa pole
+     * `taxonomy.domain`. POZOR: nepotvrdené, či toto pole reálne existuje
+     * v `02_DATABASE_SPECIFICATION.md`/dátach (nemám k dispozícii ani
+     * schému, ani zdrojové JSON súbory) — hodnota sa NEVYMÝŠĽA, riadok sa
+     * (rovnako ako ostatné) zobrazí len ak `taxonomy.domain` v dátach
+     * skutočne existuje. Ak je kľúč v schéme pomenovaný inak, treba mi to
+     * povedať a upravím len tento jeden riadok v poli `ranks`.
      */
     taxonomyTable(taxonomy) {
 
         if (!taxonomy || Object.keys(taxonomy).length === 0) {
+
             return `
                 <p class="atlas-size-hint">
-                    Taxonomické zaradenie nie je pre tento objekt zatiaľ vyplnené.
+                    Taxonomické zaradenie nie je pre tento objekt zatiaľ
+                    vyplnené.
                 </p>
             `;
+
         }
 
         const ranks = [
+            ["domain", "Doména"],
             ["kingdom", "Ríša"],
             ["phylum", "Kmeň"],
             ["class", "Trieda"],
@@ -1258,30 +1339,35 @@ renderHostFilterSection(hosts) {
         ];
 
         const rows = ranks
-            .map(([key, label]) => {
-                const value = taxonomy[key];
-                if (!value) return null;
-                return `
-                    <tr>
-                        <th>${label}</th>
-                        <td>${this.escapeHtml(value)}</td>
-                    </tr>
-                `;
-            })
-            .filter(Boolean)
+            .filter(([key]) =>
+                taxonomy[key] !== null &&
+                taxonomy[key] !== undefined &&
+                String(taxonomy[key]).trim() !== ""
+            )
+            .map(([key, label]) => `
+                <tr>
+                    <td class="tax-row-label">${label}</td>
+                    <td>${this.escapeHtml(taxonomy[key])}</td>
+                </tr>
+            `)
             .join("");
 
         if (!rows) {
+
             return `
                 <p class="atlas-size-hint">
-                    Taxonomické zaradenie nie je pre tento objekt zatiaľ vyplnené.
+                    Taxonomické zaradenie nie je pre tento objekt zatiaľ
+                    vyplnené.
                 </p>
             `;
+
         }
 
         return `
             <table class="taxonomy-table">
-                <tbody>${rows}</tbody>
+                <tbody>
+                    ${rows}
+                </tbody>
             </table>
         `;
 

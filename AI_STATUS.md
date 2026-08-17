@@ -1,8 +1,8 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-**Dátum poslednej aktualizácie:** 2026-08-17 (session: oprava pádu appky + filtrov)
+**Dátum poslednej aktualizácie:** 2026-08-17 (session: oprava pádu appky, filtrov a detailu parazita)
 **Branch:** develop
-**Verzia projektu:** v14 (host-filter accordion pripojený + 3 opravy chýb po nasadení)
+**Verzia projektu:** v15 (host-filter accordion pripojený + 4 opravy chýb po nasadení, vrátane detail-view)
 
 ---
 
@@ -50,6 +50,33 @@ známy (nebol k dispozícii žiadny log/diff k nej) — táto sekcia popisuje le
     `<option>`, ktorý potlačí natívne správanie a položku prepne (toggle)
     manuálne — jedno kliknutie teda vždy len pridá/odoberie tú jednu položku,
     ostatné vybrané položky ostanú nedotknuté. Vizuál `<select>` sa nemenil.
+- **Bug 4 (Detail parazita — nesúlad tried CSS/JS + chýbajúci 2-stĺpcový layout):**
+  ✅ **Overené autorkou ako funkčné (2026-08-17).**
+  - *Príčina:* `showDetail()` (z tej istej neznámej medzi-session zmeny)
+    používal iné názvy tried (`detail-title`, `detail-grid`, `back-button`,
+    `morphology-card`, `detail-image-placeholder`...), ktoré **v `atlas.css`
+    vôbec neexistujú** (0 zhôd pri kontrole). Navyše mal tabuľku taxonómie
+    zlúčenú do JEDNÉHO obalového bloku spolu so zvyškom obsahu namiesto
+    samostatného `<aside>` — takže aj keby triedy sedeli, `.detail-layout`
+    (2-stĺpcový grid od `min-width: 992px` v `atlas.css`) nemal čo rozdeliť
+    do stĺpcov → **na počítači sa všetko zobrazovalo pod sebou ako na mobile**,
+    nezávisle od šírky obrazovky.
+  - *Riešenie:* `showDetail()` a pomocné funkcie (`miniBox`, `quadBox`,
+    `morphologyCard`, `taxonomyTable`) vrátené na pôvodné, v `atlas.css`
+    reálne definované triedy (`specimen-title`, `side-boxes`, `findings-card`,
+    `img-placeholder-box`, `quad-grid`, `morphology-card-main`,
+    `taxonomy-table`) a štruktúra `<main class="card">` + `<aside class="card">`
+    ako dvaja súrodenci v `.detail-layout` — grid teraz funguje.
+  - *Zároveň upravené podľa schváleného referenčného obrázka (autorka, 2026-08-17):*
+    - nadpis "Diagnostické znaky" → **"Morfológia"**,
+    - placeholder fotografie zjednotený na **"[ Dynamický mikroskopický nález ]"**,
+    - zoznam hostiteľov: oddeľovač `", "` → **`" / "`** (`formatHosts()`),
+    - do `taxonomyTable()` doplnený riadok **"Doména"** (kľúč `taxonomy.domain`)
+      — ⚠️ **defenzívne**: zobrazí sa len ak dáta toto pole reálne majú (rovnaká
+      logika ako pri ostatných riadkoch), hodnota sa nikde nevymýšľa. Kľúč
+      `domain` je odhad podľa konvencie ostatných polí (`kingdom`, `phylum`...) —
+      nebol overený voči `02_DATABASE_SPECIFICATION.md` (súbor nebol
+      k dispozícii v tejto session).
 - **Čo sa NEMENILO:** `Repository.js`, `DatabaseService.js`, `index.html`,
   `src/styles/atlas.css` (CSS pre `.host-accordion` a pod. bolo už správne
   pripravené, len JS ho nevedel bezpečne naplniť dátami), filtre Hostiteľ
