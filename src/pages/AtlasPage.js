@@ -29,19 +29,18 @@
  *  - koreňový element `render()` má teraz `id="database-view"`,
  *    `showDetail()` `id="detail-view"` (kvôli CSS selektorom vo variables.css).
  *
- * Filtrovacia logika zostáva zámerne lokálne v tejto stránke (rovnaký prístup
- * ako doteraz) — Repository.js naďalej slúži iba ako prístup k dátam, bez
- * vlastnej filtračnej logiky. Prepojenie na ApplicationState.filters je
- * samostatná plánovaná úloha (AI_STATUS.md bod 6.7), touto zmenou sa nerieši.
+ * POZNÁMKA (2026-08-17): Implementované hierarchické zoskupovanie hostiteľov.
+ * Top-level položky tvoria mix rozbaľovacích skupín (vypočítaných prechodom hore
+ * cez host_hierarchy.json) a samostatných hostiteľov stojacich mimo slovníka.
  ******************************************************************************/
 
 import Repository from "../services/Repository.js";
+import hostHierarchy from "../../database/dictionary/host_hierarchy.json" with { type: "json" };
 
-// Checkboxové filtre (2026-08-15 reskin) — OR logika v rámci poľa, rovnaká
-// ako predtým pri <select multiple>.
+// Checkboxové filtre — OR logika v rámci poľa.
 const CHECKBOX_FIELDS = ["host", "sample"];
 
-// Ostávajú ako <select multiple>, na želanie autorky (AI_STATUS.md v7, bod 0.3).
+// Ostávajú ako <select multiple> na explicitné želanie autorky.
 const MULTI_SELECT_FIELDS = ["shape", "colour"];
 
 const AtlasPage = {
@@ -77,11 +76,7 @@ const AtlasPage = {
 
                         </div>
 
-                        ${this.renderCheckboxFilter(
-                            "host",
-                            "Hostiteľ",
-                            this.getHostValues()
-                        )}
+                        ${this.renderHostFilterSection(this.getHostValues())}
 
                         ${this.renderCheckboxFilter(
                             "sample",
@@ -155,9 +150,7 @@ const AtlasPage = {
     },
 
     // ------------------------------------------------------------------
-    // Sekcia veľkostného filtra — pôvodné number inputy (min/max), zachované
-    // na želanie autorky. Iba obal zmenený na .filter-section kvôli
-    // vizuálnej konzistencii s ostatnými filtrami v sidebar-i.
+    // Sekcia veľkostného filtra — pôvodné number inputy (min/max)
     // ------------------------------------------------------------------
 
     renderSizeFilterSection() {
@@ -330,7 +323,9 @@ const AtlasPage = {
     getHostValues() {
 
         const values = Repository.getAll()
-            .flatMap(record => Array.isArray(record.host) ? record.host : [])
+            .flatMap(record =>
+                Array.isArray(record.host) ? record.host : []
+            )
             .filter(value =>
                 value !== undefined &&
                 value !== null &&
@@ -344,6 +339,20 @@ const AtlasPage = {
 
     },
 
+    getTopLevelGroup(hostName) {
+
+        let current = hostName;
+        let parent = hostHierarchy[current];
+
+        while (parent) {
+            current = parent;
+            parent = hostHierarchy[current];
+        }
+
+        return current !== hostName ? current : null;
+
+    },
+
     // ------------------------------------------------------------------
     // Formátovanie mikrometrie a hostiteľov na zobrazenie
     // ------------------------------------------------------------------
@@ -351,9 +360,7 @@ const AtlasPage = {
     formatSize(micrometry) {
 
         if (!micrometry) {
-
             return "";
-
         }
 
         const {
@@ -371,21 +378,15 @@ const AtlasPage = {
             widthMax !== null && widthMax !== undefined;
 
         if (!hasLength && !hasWidth) {
-
             return "";
-
         }
 
         const lengthPart = hasLength
-            ? (lengthMin === lengthMax
-                ? `${lengthMin}`
-                : `${lengthMin}–${lengthMax}`)
+            ? (lengthMin === lengthMax ? `${lengthMin}` : `${lengthMin}–${lengthMax}`)
             : "?";
 
         const widthPart = hasWidth
-            ? (widthMin === widthMax
-                ? `${widthMin}`
-                : `${widthMin}–${widthMax}`)
+            ? (widthMin === widthMax ? `${widthMin}` : `${widthMin}–${widthMax}`)
             : null;
 
         const unitLabel = unit || "µm";
@@ -399,9 +400,7 @@ const AtlasPage = {
     formatHosts(hosts) {
 
         if (!Array.isArray(hosts) || hosts.length === 0) {
-
             return "";
-
         }
 
         return hosts.join(", ");
@@ -409,42 +408,95 @@ const AtlasPage = {
     },
 
     // ------------------------------------------------------------------
-    // Checkboxové filtre (host / sample) — 2026-08-15 reskin
-    // Rovnaká OR logika ako predtým pri <select multiple>, iný widget.
+    // Hierarchické zobrazenie filtra hostiteľov (2026-08-17)
+    // ------------------------------------------------------------------
+
+    renderHostFilterSection(hosts) {
+
+        if (hosts.length === 0) {
+            return "";
+        }
+
+        const groups = {};
+        const standaloneHosts = [];
+
+        hosts.forEach(host => {
+            const topParent = this.getTopLevelGroup(host);
+            if (topParent) {
+                if (!groups[topParent]) {
+                    groups[topParent] = [];
+                }
+                groups[topParent].push(host);
+            } else {
+                standaloneHosts.push(host);
+            }
+        });
+
+        return `
+            <div class="filter-section">
+                <fieldset id="atlas-filter-host">
+                    <legend class="filter-title">Hostiteľ</legend>
+                    
+                    ${Object.entries(groups).map(([groupName, childHosts]) => {
+                        const isAnyChecked = childHosts.some(h => this.state.host.includes(h));
+                        return `
+                            <details class="host-accordion" ${isAnyChecked ? "open" : ""}>
+                                <summary class="host-accordion-summary">
+                                    <span class="accordion-title">${this.escapeHtml(groupName)}</span>
+                                    <span class="accordion-badge">(${childHosts.length})</span>
+                                </summary>
+                                <div class="checkbox-group accordion-content">
+                                    ${childHosts.map(host => `
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" value="${this.escapeHtml(host)}" data-field="host"
+                                                ${this.state.host.includes(host) ? "checked" : ""}>
+                                            ${this.escapeHtml(host)}
+                                        </label>
+                                    `).join("")}
+                                </div>
+                            </details>
+                        `;
+                    }).join("")}
+
+                    <div class="checkbox-group standalone-group">
+                        ${standaloneHosts.map(host => `
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="${this.escapeHtml(host)}" data-field="host"
+                                    ${this.state.host.includes(host) ? "checked" : ""}>
+                                ${this.escapeHtml(host)}
+                            </label>
+                        `).join("")}
+                    </div>
+                </fieldset>
+            </div>
+        `;
+
+    },
+
+    // ------------------------------------------------------------------
+    // Všeobecný checkboxový filter (použitý pre sample / materiál)
     // ------------------------------------------------------------------
 
     renderCheckboxFilter(field, label, values) {
 
         if (values.length === 0) {
-
             return "";
-
         }
 
         return `
             <div class="filter-section">
-
-                <div class="filter-title">${label}</div>
-
-                <div class="checkbox-group" id="atlas-filter-${field}">
-
-                    ${values.map(value => `
-                        <label class="checkbox-label">
-
-                            <input
-                                type="checkbox"
-                                value="${this.escapeHtml(value)}"
-                                data-field="${field}"
-                                ${this.state[field].includes(value) ? "checked" : ""}
-                            >
-
-                            ${this.escapeHtml(value)}
-
-                        </label>
-                    `).join("")}
-
-                </div>
-
+                <fieldset id="atlas-filter-${field}">
+                    <legend class="filter-title">${label}</legend>
+                    <div class="checkbox-group">
+                        ${values.map(value => `
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="${this.escapeHtml(value)}"
+                                    ${this.state[field].includes(value) ? "checked" : ""}>
+                                ${this.escapeHtml(value)}
+                            </label>
+                        `).join("")}
+                    </div>
+                </fieldset>
             </div>
         `;
 
@@ -456,9 +508,7 @@ const AtlasPage = {
             document.getElementById(`atlas-filter-${field}`);
 
         if (!group) {
-
             return;
-
         }
 
         group.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
@@ -466,9 +516,8 @@ const AtlasPage = {
             checkbox.addEventListener("change", () => {
 
                 this.state[field] =
-                    Array.from(
-                        group.querySelectorAll("input[type=checkbox]:checked")
-                    ).map(input => input.value);
+                    Array.from(group.querySelectorAll("input[type=checkbox]:checked"))
+                        .map(input => input.value);
 
                 this.renderRecords();
 
@@ -485,40 +534,22 @@ const AtlasPage = {
     renderMultiFilter(field, label, values) {
 
         if (values.length === 0) {
-
             return "";
-
         }
 
         const size = Math.min(6, Math.max(3, values.length));
 
         return `
-            <div class="filter-section atlas-filter-multi">
-
-                <label for="atlas-filter-${field}" class="filter-title">
-                    ${label}
-                    <span class="atlas-filter-hint">
-                        (viac možností naraz)
-                    </span>
-                    <span class="atlas-filter-hint atlas-filter-hint-desktop">
-                        — na výber viacerých podrž Ctrl (Windows) / Cmd (Mac)
-                    </span>
-                </label>
-
-                <select
-                    id="atlas-filter-${field}"
-                    multiple
-                    size="${size}"
-                >
-
+            <div class="filter-section">
+                <label for="atlas-filter-${field}" class="filter-title">${label}</label>
+                <select id="atlas-filter-${field}" multiple size="${size}">
                     ${values.map(value => `
-                        <option value="${this.escapeHtml(value)}">
+                        <option value="${this.escapeHtml(value)}"
+                            ${this.state[field].includes(value) ? "selected" : ""}>
                             ${this.escapeHtml(value)}
                         </option>
                     `).join("")}
-
                 </select>
-
             </div>
         `;
 
@@ -530,16 +561,12 @@ const AtlasPage = {
             document.getElementById(`atlas-filter-${field}`);
 
         if (!select) {
-
             return;
-
         }
 
         Array.from(select.options).forEach(option => {
-
             option.selected =
                 this.state[field].includes(option.value);
-
         });
 
         select.addEventListener("change", () => {
@@ -555,7 +582,7 @@ const AtlasPage = {
     },
 
     // ------------------------------------------------------------------
-    // Filter podľa veľkosti (rozsah dĺžka/šírka) — pôvodná logika, zachovaná
+    // Filter podľa veľkosti (rozsah dĺžka/šírka) — pôvodná logika
     // ------------------------------------------------------------------
 
     bindSizeFilter(field) {
@@ -564,9 +591,7 @@ const AtlasPage = {
             document.getElementById(`atlas-filter-${field}`);
 
         if (!input) {
-
             return;
-
         }
 
         input.value = this.state[field];
@@ -574,53 +599,32 @@ const AtlasPage = {
         input.addEventListener("input", (event) => {
 
             this.state[field] = event.target.value;
-
             this.renderRecords();
 
         });
 
     },
 
-    /**
-     * Prekryvová zhoda rozsahu.
-     *
-     * Zobrazí objekt, ak sa jeho nameraný rozsah [recordMin, recordMax]
-     * prekrýva so zadaným hľadaným rozsahom [queryMin, queryMax].
-     *
-     * Ak používateľ zadal iba jednu hranicu, kontroluje sa iba tá.
-     * Ak objekt nemá pre daný rozmer namerané hodnoty vôbec, pri aktívnom
-     * filtri tohto rozmeru sa nezobrazí (nevieme potvrdiť zhodu).
-     */
     matchesSizeRange(recordMin, recordMax, queryMin, queryMax) {
 
         const hasQuery =
             queryMin !== "" || queryMax !== "";
 
         if (!hasQuery) {
-
             return true;
-
         }
 
-        if (
-            recordMin === null || recordMin === undefined ||
-            recordMax === null || recordMax === undefined
-        ) {
-
+        if (recordMin === null || recordMin === undefined ||
+            recordMax === null || recordMax === undefined) {
             return false;
-
         }
 
         if (queryMin !== "" && recordMax < Number(queryMin)) {
-
             return false;
-
         }
 
         if (queryMax !== "" && recordMin > Number(queryMax)) {
-
             return false;
-
         }
 
         return true;
@@ -629,47 +633,28 @@ const AtlasPage = {
 
     // ------------------------------------------------------------------
     // Vykreslenie zoznamu záznamov
-    //
-    // POZNÁMKA (2026-08-15): pôvodné diagnosticSignsList()/taxonomyBlock()/
-    // taxonomyExternalLinks() (⚡-zoznam, .parasite-taxonomy div-y) boli
-    // nahradené novými metódami morphologyCard()/taxonomyTable()/
-    // taxonomyExternalLinksButtons() vyššie (rovnaké dáta, nový vizuál podľa
-    // mockupu). Staré metódy odstránené, aby nevznikalo mŕtve/duplicitné CSS.
     // ------------------------------------------------------------------
 
     matchesFulltext(record, search) {
 
         if (!search) {
-
             return true;
-
         }
 
         const haystackParts = [
-
             record.latinName,
-
             record.slovakName,
-
             record.notes,
-
             record.morphology?.shape,
-
             record.morphology?.colour,
-
             record.morphology?.shell,
-
             ...(Array.isArray(record.diagnosticSigns)
                 ? record.diagnosticSigns
                 : [])
-
         ];
 
         const haystack =
-            haystackParts
-                .filter(Boolean)
-                .join(" ")
-                .toLowerCase();
+            haystackParts.filter(Boolean).join(" ").toLowerCase();
 
         return haystack.includes(search);
 
@@ -687,9 +672,7 @@ const AtlasPage = {
             document.getElementById("atlas-active-filters");
 
         if (!container || !count) {
-
             return;
-
         }
 
         const records = Repository.getAll();
@@ -751,22 +734,15 @@ const AtlasPage = {
             `Zobrazené záznamy: ${filtered.length} / ${records.length}`;
 
         if (activeFilters) {
-
             activeFilters.innerHTML =
                 this.renderActiveFilters();
-
         }
 
         if (filtered.length === 0) {
 
             container.innerHTML = `
-                <div class="atlas-empty">
-
-                    <p>
-                        Žiadny záznam nevyhovuje zadaným
-                        kritériám.
-                    </p>
-
+                <div class="no-results">
+                    Žiadny záznam nevyhovuje zadaným kritériám.
                 </div>
             `;
 
@@ -774,42 +750,21 @@ const AtlasPage = {
 
         }
 
-        // Karta v zozname je zámerne stručná (rýchle skenovanie výsledkov) —
-        // plný obsah (diagnostické znaky, morfológia, taxonómia, poznámky) je
-        // v Detaile (showDetail). Mockup: .specimen-row-card (2026-08-15).
         container.innerHTML = filtered.map(record => `
-
-            <article
-                class="specimen-row-card card"
-                data-id="${this.escapeHtml(record.id)}"
-                tabindex="0"
-                role="button"
-                aria-label="Otvoriť detail: ${this.escapeHtml(record.latinName ?? record.id)}"
-            >
-
-                <h3>
-                    ${this.escapeHtml(record.latinName ?? record.id)}
-                </h3>
-
-                <div class="specimen-meta-inline">
+            <div class="specimen-row-card" data-id="${this.escapeHtml(record.id)}" role="button" tabindex="0">
+                <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
+                <p>
                     <strong>Hostiteľ:</strong>
                     ${this.escapeHtml(this.formatHosts(record.host) || "—")}
                     |
                     <strong>Materiál:</strong>
                     ${this.escapeHtml(record.sample || "—")}
-                    ${record.micrometry ? `
-                        |
-                        <strong>Veľkosť:</strong>
-                        ${this.escapeHtml(this.formatSize(record.micrometry) || "—")}
-                    ` : ""}
-                </div>
-
-            </article>
-
+                    ${record.micrometry ? `| <strong>Veľkosť:</strong> ${this.escapeHtml(this.formatSize(record.micrometry) || "—")}` : ""}
+                </p>
+            </div>
         `).join("");
 
         this.bindCards();
-
         this.bindActiveFilterButtons();
 
     },
@@ -819,13 +774,11 @@ const AtlasPage = {
         const filters = [];
 
         if (this.state.search.trim()) {
-
             filters.push({
                 key: "search",
                 label: "Hľadanie",
                 value: this.state.search.trim()
             });
-
         }
 
         [...CHECKBOX_FIELDS, ...MULTI_SELECT_FIELDS].forEach(field => {
@@ -838,75 +791,50 @@ const AtlasPage = {
             };
 
             this.state[field].forEach(value => {
-
                 filters.push({
                     key: field,
                     label: labels[field],
                     value,
                     multiValue: value
                 });
-
             });
 
         });
 
         if (this.state.lengthMin !== "" || this.state.lengthMax !== "") {
-
             filters.push({
                 key: "length",
                 label: "Dĺžka",
-                value:
-                    `${this.state.lengthMin || "…"}–${this.state.lengthMax || "…"} µm`
+                value: `${this.state.lengthMin || "…"}–${this.state.lengthMax || "…"} µm`
             });
-
         }
 
         if (this.state.widthMin !== "" || this.state.widthMax !== "") {
-
             filters.push({
                 key: "width",
                 label: "Šírka",
-                value:
-                    `${this.state.widthMin || "…"}–${this.state.widthMax || "…"} µm`
+                value: `${this.state.widthMin || "…"}–${this.state.widthMax || "…"} µm`
             });
-
         }
 
         if (filters.length === 0) {
-
             return "";
-
         }
 
         return `
-
-            <div class="atlas-active-filters-title">
-                Aktívne filtre:
-            </div>
-
-            <div class="atlas-filter-tags">
-
-                ${filters.map(filter => `
-
-                    <button
-                        type="button"
-                        class="atlas-filter-tag"
-                        data-filter-key="${filter.key}"
-                        data-filter-value="${filter.multiValue ? this.escapeHtml(filter.multiValue) : ""}"
-                        aria-label="Odstrániť filter ${filter.label}: ${this.escapeHtml(filter.value)}"
-                    >
-
-                        ${filter.label}:
-                        ${this.escapeHtml(filter.value)}
-
-                        <span aria-hidden="true">×</span>
-
-                    </button>
-
-                `).join("")}
-
-            </div>
-
+            <span class="filter-tag-label">Aktívne filtre:</span>
+            ${filters.map(filter => `
+                <button
+                    type="button"
+                    class="atlas-filter-tag"
+                    data-filter-key="${filter.key}"
+                    data-filter-value="${filter.multiValue ? this.escapeHtml(filter.multiValue) : ""}"
+                    aria-label="Odstrániť filter ${filter.label}: ${this.escapeHtml(filter.value)}"
+                >
+                    ${filter.label}: ${this.escapeHtml(filter.value)}
+                    <span aria-hidden="true">×</span>
+                </button>
+            `).join("")}
         `;
 
     },
@@ -924,9 +852,7 @@ const AtlasPage = {
                     button.dataset.filterKey;
 
                 if (!key) {
-
                     return;
-
                 }
 
                 if (CHECKBOX_FIELDS.includes(key) || MULTI_SELECT_FIELDS.includes(key)) {
@@ -937,27 +863,23 @@ const AtlasPage = {
                     this.state[key] =
                         this.state[key].filter(v => v !== value);
 
-                }
-                else if (key === "length") {
+                } else if (key === "length") {
 
                     this.state.lengthMin = "";
                     this.state.lengthMax = "";
 
-                }
-                else if (key === "width") {
+                } else if (key === "width") {
 
                     this.state.widthMin = "";
                     this.state.widthMax = "";
 
-                }
-                else {
+                } else {
 
                     this.state[key] = "";
 
                 }
 
                 this.syncControls();
-
                 this.renderRecords();
 
             });
@@ -972,9 +894,7 @@ const AtlasPage = {
             document.getElementById("atlas-search-input");
 
         if (input) {
-
             input.value = this.state.search;
-
         }
 
         CHECKBOX_FIELDS.forEach(field => {
@@ -985,10 +905,8 @@ const AtlasPage = {
             if (group) {
 
                 group.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
-
                     checkbox.checked =
                         this.state[field].includes(checkbox.value);
-
                 });
 
             }
@@ -1003,10 +921,8 @@ const AtlasPage = {
             if (select) {
 
                 Array.from(select.options).forEach(option => {
-
                     option.selected =
                         this.state[field].includes(option.value);
-
                 });
 
             }
@@ -1019,9 +935,7 @@ const AtlasPage = {
                 document.getElementById(`atlas-filter-${field}`);
 
             if (input) {
-
                 input.value = this.state[field];
-
             }
 
         });
@@ -1041,7 +955,6 @@ const AtlasPage = {
         this.state.widthMax = "";
 
         this.syncControls();
-
         this.renderRecords();
 
     },
@@ -1054,20 +967,15 @@ const AtlasPage = {
         cards.forEach(card => {
 
             card.addEventListener("click", () => {
-
                 this.showDetail(card.dataset.id);
-
             });
 
             card.addEventListener("keydown", (event) => {
 
-                if (
-                    event.key === "Enter" ||
-                    event.key === " "
-                ) {
+                if (event.key === "Enter" ||
+                    event.key === " ") {
 
                     event.preventDefault();
-
                     this.showDetail(card.dataset.id);
 
                 }
@@ -1083,118 +991,58 @@ const AtlasPage = {
         const record = Repository.getById(id);
 
         if (!record) {
-
             return;
-
         }
 
         const app =
             document.getElementById("app");
 
-        // Layout podľa mockupu (2026-08-15): detail-layout > .card hlavný
-        // panel (side-boxes + findings-card + quad-grid + morphology-card-main
-        // + actions) a bočný .card panel s taxonomy-table. Wrapper id
-        // "detail-view" kvôli CSS vo variables.css (natvrdo svetlý režim).
+        // Layout podľa mockupu (2026-08-15): detail-layout > .card hlavný panel
         app.innerHTML = `
+            <div id="detail-view" class="view-page active-view detail-layout">
+                <button id="atlas-back" class="back-button">← Späť na Atlas</button>
 
-            <div id="detail-view" class="view-page active-view">
+                <div class="detail-card card">
+                    <h1 class="detail-title">${this.escapeHtml(record.latinName ?? record.id)}</h1>
+                    <p class="detail-subtitle">${this.escapeHtml([record.group, record.taxonomy?.family].filter(Boolean).join(" • ") || `ID: ${record.id}`)}</p>
 
-                <button
-                    type="button"
-                    id="atlas-back"
-                    class="atlas-back"
-                >
-                    ← Späť na Atlas
-                </button>
+                    <div class="detail-grid">
+                        ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
+                        ${this.miniBox("Materiál", record.sample)}
+                        ${this.miniBox("Štádium", record.stage)}
+                    </div>
 
-                <div class="detail-layout">
+                    <div class="detail-image-placeholder">
+                        ${record.images && record.images.length > 0
+                            ? "[ Fotografia zatiaľ nie je pripojená v databáze ]"
+                            : "[ Fotografia zatiaľ nie je k dispozícii ]"
+                        }
+                    </div>
 
-                    <main class="card">
+                    <div class="detail-quad-grid">
+                        ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
+                        ${this.quadBox("Tvar", record.morphology?.shape)}
+                        ${this.quadBox("Farba", record.morphology?.colour)}
+                        ${this.quadBox("Obal", record.morphology?.shell)}
+                    </div>
 
-                        <h2 class="specimen-title">
-                            ${this.escapeHtml(record.latinName ?? record.id)}
-                        </h2>
+                    ${this.morphologyCard(record.diagnosticSigns)}
+                    ${this.detailField("Poznámka", record.notes)}
 
-                        <div class="specimen-sub">
-                            ${this.escapeHtml(
-                                [record.group, record.taxonomy?.family]
-                                    .filter(Boolean)
-                                    .join(" • ")
-                                || `ID: ${record.id}`
-                            )}
-                        </div>
+                    <div class="detail-external-links">
+                        ${this.taxonomyExternalLinksButtons(record.latinName)}
+                    </div>
 
-                        <div class="detail-main-split">
-
-                            <div class="side-boxes">
-
-                                ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
-
-                                ${this.miniBox("Materiál", record.sample)}
-
-                                ${this.miniBox("Štádium", record.stage)}
-
-                            </div>
-
-                            <div class="findings-card card">
-
-                                <div class="img-placeholder-box">
-                                    ${record.images && record.images.length > 0
-                                        ? "[ Fotografia zatiaľ nie je pripojená v databáze ]"
-                                        : "[ Fotografia zatiaľ nie je k dispozícii ]"}
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="quad-grid">
-
-                            ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
-
-                            ${this.quadBox("Tvar", record.morphology?.shape)}
-
-                            ${this.quadBox("Farba", record.morphology?.colour)}
-
-                            ${this.quadBox("Obal", record.morphology?.shell)}
-
-                        </div>
-
-                        ${this.morphologyCard(record.diagnosticSigns)}
-
-                        ${this.detailField("Poznámka", record.notes)}
-
-                        <div class="actions-container">
-
-                            ${this.taxonomyExternalLinksButtons(record.latinName)}
-
-                        </div>
-
-                    </main>
-
-                    <aside class="card">
-
-                        <h3 class="taxonomy-title">Taxonomické zaradenie</h3>
-
-                        ${this.taxonomyTable(record.taxonomy)}
-
-                    </aside>
-
+                    <h3 class="taxonomy-heading">Taxonomické zaradenie</h3>
+                    ${this.taxonomyTable(record.taxonomy)}
                 </div>
-
             </div>
-
         `;
 
-        document
-            .getElementById("atlas-back")
-            .addEventListener("click", () => {
-
-                app.innerHTML = this.render();
-
-                this.init();
-
-            });
+        document.getElementById("atlas-back").addEventListener("click", () => {
+            app.innerHTML = this.render();
+            this.init();
+        });
 
     },
 
@@ -1205,9 +1053,7 @@ const AtlasPage = {
     miniBox(label, value) {
 
         if (!value || String(value).trim() === "") {
-
             return "";
-
         }
 
         return `
@@ -1238,27 +1084,20 @@ const AtlasPage = {
     morphologyCard(signs) {
 
         if (!Array.isArray(signs) || signs.length === 0) {
-
             return "";
-
         }
 
         return `
-            <div class="morphology-card-main">
-
-                <div class="morph-main-header">Diagnostické znaky</div>
-
-                <div class="morph-main-content">
-
+            <div class="morphology-card">
+                <h3 class="morphology-title">Diagnostické znaky</h3>
+                <div class="morphology-list">
                     ${signs.map(sign => `
                         <div class="morph-list-item">
                             <span class="morph-checkmark" aria-hidden="true">✓</span>
                             <span>${this.escapeHtml(sign)}</span>
                         </div>
                     `).join("")}
-
                 </div>
-
             </div>
         `;
 
@@ -1273,14 +1112,11 @@ const AtlasPage = {
     taxonomyTable(taxonomy) {
 
         if (!taxonomy || Object.keys(taxonomy).length === 0) {
-
             return `
                 <p class="atlas-size-hint">
-                    Taxonomické zaradenie nie je pre tento objekt zatiaľ
-                    vyplnené.
+                    Taxonomické zaradenie nie je pre tento objekt zatiaľ vyplnené.
                 </p>
             `;
-
         }
 
         const ranks = [
@@ -1294,35 +1130,30 @@ const AtlasPage = {
         ];
 
         const rows = ranks
-            .filter(([key]) =>
-                taxonomy[key] !== null &&
-                taxonomy[key] !== undefined &&
-                String(taxonomy[key]).trim() !== ""
-            )
-            .map(([key, label]) => `
-                <tr>
-                    <td class="tax-row-label">${label}</td>
-                    <td>${this.escapeHtml(taxonomy[key])}</td>
-                </tr>
-            `)
+            .map(([key, label]) => {
+                const value = taxonomy[key];
+                if (!value) return null;
+                return `
+                    <tr>
+                        <th>${label}</th>
+                        <td>${this.escapeHtml(value)}</td>
+                    </tr>
+                `;
+            })
+            .filter(Boolean)
             .join("");
 
         if (!rows) {
-
             return `
                 <p class="atlas-size-hint">
-                    Taxonomické zaradenie nie je pre tento objekt zatiaľ
-                    vyplnené.
+                    Taxonomické zaradenie nie je pre tento objekt zatiaľ vyplnené.
                 </p>
             `;
-
         }
 
         return `
             <table class="taxonomy-table">
-                <tbody>
-                    ${rows}
-                </tbody>
+                <tbody>${rows}</tbody>
             </table>
         `;
 
@@ -1331,36 +1162,18 @@ const AtlasPage = {
     taxonomyExternalLinksButtons(latinName) {
 
         if (!latinName) {
-
             return "";
-
         }
 
-        const query =
-            encodeURIComponent(latinName);
-
-        const colUrl =
-            `https://www.catalogueoflife.org/data/search?q=${query}`;
-
-        const wormsUrl =
-            `https://www.marinespecies.org/aphia.php?p=search&tName=${query}`;
+        const query = encodeURIComponent(latinName);
+        const colUrl = `https://catalogueoflife.org/taxon/${query}`;
+        const wormsUrl = `https://marinespecies.org/aphia.php?p=taxlist&tName=${query}`;
 
         return `
-            <a
-                href="${colUrl}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-primary"
-            >
+            <a href="${colUrl}" target="_blank" rel="noopener noreferrer" class="external-link-btn">
                 Catalogue of Life ↗
             </a>
-
-            <a
-                href="${wormsUrl}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="btn btn-outline"
-            >
+            <a href="${wormsUrl}" target="_blank" rel="noopener noreferrer" class="external-link-btn">
                 WoRMS ↗
             </a>
         `;
@@ -1369,25 +1182,16 @@ const AtlasPage = {
 
     detailField(label, value) {
 
-        if (
-            value === undefined ||
+        if (value === undefined ||
             value === null ||
-            String(value).trim() === ""
-        ) {
-
+            String(value).trim() === "") {
             return "";
-
         }
 
         return `
-            <div class="parasite-detail-field">
-
-                <h2>${label}</h2>
-
-                <p>
-                    ${this.escapeHtml(value)}
-                </p>
-
+            <div class="detail-field">
+                <h4>${label}</h4>
+                <p>${this.escapeHtml(value)}</p>
             </div>
         `;
 
@@ -1395,25 +1199,16 @@ const AtlasPage = {
 
     field(label, value) {
 
-        if (
-            value === undefined ||
+        if (value === undefined ||
             value === null ||
-            String(value).trim() === ""
-        ) {
-
+            String(value).trim() === "") {
             return "";
-
         }
 
         return `
-            <div class="parasite-field">
-
+            <div class="field-row">
                 <strong>${label}:</strong>
-
-                <span>
-                    ${this.escapeHtml(value)}
-                </span>
-
+                ${this.escapeHtml(value)}
             </div>
         `;
 
@@ -1426,7 +1221,7 @@ const AtlasPage = {
             .replaceAll("<", "&lt;")
             .replaceAll(">", "&gt;")
             .replaceAll('"', "&quot;")
-            .replaceAll("'", "&#039;");
+            .replaceAll("'", "&#39;");
 
     }
 
