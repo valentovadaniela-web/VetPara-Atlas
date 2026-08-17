@@ -411,7 +411,7 @@ const AtlasPage = {
     // Hierarchické zobrazenie filtra hostiteľov (2026-08-17)
     // ------------------------------------------------------------------
 
-    renderHostFilterSection(hosts) {
+renderHostFilterSection(hosts) {
 
         if (hosts.length === 0) {
             return "";
@@ -420,14 +420,37 @@ const AtlasPage = {
         const groups = {};
         const standaloneHosts = [];
 
+        // 1. KROK: Najprv zistíme všetky unikátne názvy skupín, ktoré v tejto várke vzniknú
+        const detectedTopGroups = new Set();
         hosts.forEach(host => {
             const topParent = this.getTopLevelGroup(host);
             if (topParent) {
+                detectedTopGroups.add(topParent);
+            }
+        });
+
+        // 2. KROK: Samotné rozradenie s ochranou proti duplicite
+        hosts.forEach(host => {
+            const topParent = this.getTopLevelGroup(host);
+            
+            if (topParent) {
+                // Ak má predka, ide do príslušného accordionu
                 if (!groups[topParent]) {
                     groups[topParent] = [];
                 }
                 groups[topParent].push(host);
             } else {
+                // OCHRANA: Ak sa samotný hostiteľ volá presne tak ako celá skupina (napr. "Hlodavce"),
+                // preskočíme jeho pridanie do samostatných položiek, pretože skupina už existuje.
+                if (detectedTopGroups.has(host)) {
+                    // Voliteľne: Ak chceme mať možnosť zaškrtnúť všeobecné "Hlodavce" priamo vnútri accordionu,
+                    // odkomentujte nasledujúce 4 riadky. Inak sa len skryje duplicita:
+                    // if (!groups[host]) { groups[host] = []; }
+                    // if (!groups[host].includes(host)) { groups[host].push(host); }
+                    return; 
+                }
+                
+                // Ak to nie je skupina ani nemá predka (pes, mačka), ide na hlavnú úroveň
                 standaloneHosts.push(host);
             }
         });
@@ -490,7 +513,7 @@ const AtlasPage = {
                     <div class="checkbox-group">
                         ${values.map(value => `
                             <label class="checkbox-label">
-                                <input type="checkbox" value="${this.escapeHtml(value)}"
+                                <input type="checkbox" value="${this.escapeHtml(value)}" data-field="${field}"
                                     ${this.state[field].includes(value) ? "checked" : ""}>
                                 ${this.escapeHtml(value)}
                             </label>
@@ -531,7 +554,7 @@ const AtlasPage = {
     // Multi-select filtre (shape / colour) — ZACHOVANÉ na želanie autorky
     // ------------------------------------------------------------------
 
-    renderMultiFilter(field, label, values) {
+  renderMultiFilter(field, label, values) {
 
         if (values.length === 0) {
             return "";
@@ -540,7 +563,7 @@ const AtlasPage = {
         const size = Math.min(6, Math.max(3, values.length));
 
         return `
-            <div class="filter-section">
+            <div class="filter-section atlas-filter-multi">
                 <label for="atlas-filter-${field}" class="filter-title">${label}</label>
                 <select id="atlas-filter-${field}" multiple size="${size}">
                     ${values.map(value => `
@@ -553,7 +576,7 @@ const AtlasPage = {
             </div>
         `;
 
-    },
+    },  
 
     bindMultiFilter(field) {
 
