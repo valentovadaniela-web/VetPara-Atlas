@@ -30,7 +30,7 @@ Vylúčené zo zdroja:
 
 ## Rozšírenie architektúry (schválené autorkou)
 1. **Nová sústava host-súborov** nad rámec pôvodných 7 v `02_DATABASE_SPECIFICATION.md`:
-   `rabbit.json` (Králik + Zajac spojené ako Zajacovité), `hedgehog.json`, `rodents.json`,
+   `rabbit.json` (Králik + Zajac spojené ako Zajace, králiky), `hedgehog.json`, `rodents.json`,
    `reptiles.json`, `fish.json`, `molluscs.json`, `wild_ruminants.json`.
 2. **`dictionary/host_hierarchy.json`** (nový, prídavný slovník, 67 mapovaní) – mapuje
    konkrétneho hostiteľa na nadradenú kategóriu (napr. `"Varan": "Jaštery"`,

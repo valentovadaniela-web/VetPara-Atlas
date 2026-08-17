@@ -36,8 +36,8 @@
   "Veverica": "Hlodavce",
   "Svišť": "Hlodavce",
   "Urzon": "Hlodavce",
-  "Zajac": "Zajacovité",
-  "Králik": "Zajacovité",
+  "Zajac": "Zajace, králiky",
+  "Králik": "Zajace, králiky",
   "Jeleň": "Voľne žijúce prežúvavce",
   "Srnec": "Voľne žijúce prežúvavce",
   "Daniel": "Voľne žijúce prežúvavce",
@@ -67,5 +67,14 @@
   "Hydina": "Vtáky",
   "Kaprovité": "Ryby",
   "Holub": "Vtáky",
-  "Morča": "Hlodavce"
+  "Morča": "Hlodavce",
+  "Pes": "Mäsožravce",
+  "Mačka": "Mäsožravce",
+  "Hovädzí dobytok": "Domáce prežúvavce",
+  "Ovca": "Domáce prežúvavce",
+  "Koza": "Domáce prežúvavce",
+  "Ježko": "Hmyzožravce",
+  "Ošípaná": "Ošípané, diviaky",
+  "Kôň": "Nepárnokopytníky",
+  "Slimáky": "Bezstavovce"
 }
