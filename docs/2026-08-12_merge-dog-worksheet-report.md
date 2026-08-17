@@ -131,6 +131,6 @@ s pravidlom "AI nesmie dopĺňať odborné údaje odhadom".
 List **„Psy"** v tomto súbore obsahuje v podstate rovnaké údaje, aké už boli spracované do
 `dog.json`/`dog_worksheet.xlsx` (35 pôvodných druhov, rovnaké rozmery/tvary/farby). Neslúžil
 teda ako nový zdroj dát pre psa — jeho hodnota je v ostatných 15 hárkoch pre **budúcich
-hostiteľov** (Mačky, HD, Kone, Ošípané, Vtáky, Zoo zvieratá, Plazy, Ryby, Slimáky, Ježkovia,
+hostiteľov** (Mačky, HD, Kone, Ošípaná, Vtáky, Zoo zvieratá, Plazy, Ryby, Slimáky, Ježkovia,
 Fretky, Hlodavce, Králiky/zajace, Voľne žijúce prežúvavce, Ovce/kozy) — pripravené na Etapu 2
 (rozšírenie o ďalších hostiteľov, `01_PROJECT_SPECIFICATION.md`, kap. 3).
