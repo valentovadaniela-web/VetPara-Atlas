@@ -146,6 +146,8 @@ main {
         top: 100%;
         left: 0;
         right: 0;
+        width: 100%;
+        z-index: 1000;
         flex-direction: column;
         align-items: flex-start;
         gap: var(--space-md);
