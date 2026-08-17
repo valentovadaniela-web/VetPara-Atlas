@@ -1,0 +1,1314 @@
+[
+  {
+    "id": "giardia_intestinalis_cyst",
+    "latinName": "Giardia intestinalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Metamonada",
+      "class": "Trepomonadea",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Giardia",
+      "species": "Giardia intestinalis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Cysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 8,
+      "lengthMax": 12,
+      "widthMin": 7,
+      "widthMax": 10,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Zelenkastý",
+      "shell": "Hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Polmesiačikovitá cytoplazma excentricky"
+  },
+  {
+    "id": "eimeria_leuckarti_oocyst",
+    "latinName": "Eimeria leuckarti",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria leuckarti"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 55,
+      "lengthMax": 85,
+      "widthMin": 38,
+      "widthMax": 63,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "fascioloides_magna_adult",
+    "latinName": "Fascioloides magna",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Fasciolidae",
+      "genus": "Fascioloides",
+      "species": "Fascioloides magna"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Pečeň",
+    "stage": "Dospelý jedinec",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 40000,
+      "lengthMax": 100000,
+      "widthMin": 20000,
+      "widthMax": 35000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Listovitý",
+      "colour": "Bezfarebný",
+      "shell": "S operculom"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Patogén v pečeni"
+  },
+  {
+    "id": "echinococcus_granulosus_larva",
+    "latinName": "Echinococcus granulosus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Echinococcus",
+      "species": "Echinococcus granulosus"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Pečeň",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50000,
+      "lengthMax": 300000,
+      "widthMin": 30,
+      "widthMax": 37,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vnútri tekutina a piesok"
+  },
+  {
+    "id": "echinococcus_multilocularis_larva",
+    "latinName": "Echinococcus multilocularis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Echinococcus",
+      "species": "Echinococcus multilocularis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Pečeň",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 33,
+      "lengthMax": 39,
+      "widthMin": 26,
+      "widthMax": 33,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá, radiálne pruhovaná"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Mnohokomorový"
+  },
+  {
+    "id": "anoplocephala_perfoliata_egg",
+    "latinName": "Anoplocephala perfoliata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Anoplocephala",
+      "species": "Anoplocephala perfoliata"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 65,
+      "lengthMax": 80,
+      "widthMin": 65,
+      "widthMax": 80,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Sivastý",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Embryo 16"
+  },
+  {
+    "id": "anoplocephala_magna_egg",
+    "latinName": "Anoplocephala magna",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Anoplocephala",
+      "species": "Anoplocephala magna"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 60,
+      "widthMin": 50,
+      "widthMax": 60,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Sivastý",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Embryo 8"
+  },
+  {
+    "id": "paranoplocephala_mamillana_egg",
+    "latinName": "Paranoplocephala mamillana",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Paranoplocephala",
+      "species": "Paranoplocephala mamillana"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 60,
+      "widthMin": 50,
+      "widthMax": 60,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Sivastý",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Málo patogénna"
+  },
+  {
+    "id": "habronema_sp_egg",
+    "latinName": "Habronema sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Habronematidae",
+      "genus": "Habronema",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 40,
+      "lengthMax": 55,
+      "widthMin": 8,
+      "widthMax": 16,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vnútri larva"
+  },
+  {
+    "id": "strongylus_sp_egg",
+    "latinName": "Strongylus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongylidae",
+      "genus": "Strongylus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 72,
+      "lengthMax": 93,
+      "widthMin": 41,
+      "widthMax": 54,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Veľké strongylidy"
+  },
+  {
+    "id": "triodontophorus_sp_egg",
+    "latinName": "Triodontophorus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongylidae",
+      "genus": "Triodontophorus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 130,
+      "lengthMax": 140,
+      "widthMin": 55,
+      "widthMax": 65,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Malé strongylidy"
+  },
+  {
+    "id": "cyathostomum_sp_egg",
+    "latinName": "Cyathostomum sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongylidae",
+      "genus": "Cyathostomum",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 100,
+      "lengthMax": 110,
+      "widthMin": 40,
+      "widthMax": 45,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Malé strongylidy"
+  },
+  {
+    "id": "trichostrongylus_axei_egg",
+    "latinName": "Trichostrongylus axei",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Trichostrongylidae",
+      "genus": "Trichostrongylus",
+      "species": "Trichostrongylus axei"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 108,
+      "widthMin": 30,
+      "widthMax": 48,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "16-32 blastomér"
+  },
+  {
+    "id": "dictyocaulus_arnfieldi_larva",
+    "latinName": "Dictyocaulus arnfieldi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Dictyocaulus",
+      "species": "Dictyocaulus arnfieldi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 420,
+      "lengthMax": 480,
+      "widthMin": 420,
+      "widthMax": 480,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Bez čreva"
+  },
+  {
+    "id": "strongyloides_westeri_egg",
+    "latinName": "Strongyloides westeri",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "Strongyloides westeri"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 45,
+      "lengthMax": 54,
+      "widthMin": 25,
+      "widthMax": 33,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Larva stočená do tvaru U"
+  },
+  {
+    "id": "strongyloides_westeri_larva",
+    "latinName": "Strongyloides westeri",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "Strongyloides westeri"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 230,
+      "lengthMax": 350,
+      "widthMin": 32,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "L1 - veľké genit. promodium"
+  },
+  {
+    "id": "parascaris_equorum_egg",
+    "latinName": "Parascaris equorum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Ascarididae",
+      "genus": "Parascaris",
+      "species": "Parascaris equorum"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 80,
+      "lengthMax": 100,
+      "widthMin": 80,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Tmavohnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "oxyuris_equi_egg",
+    "latinName": "Oxyuris equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Oxyuridae",
+      "genus": "Oxyuris",
+      "species": "Oxyuris equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 85,
+      "lengthMax": 95,
+      "widthMin": 40,
+      "widthMax": 45,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Asymetrický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "So zátkou"
+  },
+  {
+    "id": "sarcoptes_equi_adult",
+    "latinName": "Sarcoptes equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Sarcoptidae",
+      "genus": "Sarcoptes",
+      "species": "Sarcoptes equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 250,
+      "lengthMax": 430,
+      "widthMin": 200,
+      "widthMax": 350,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
+      "shell": "Mäkký, priečne pruhovaný, s ostňami"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vzácne"
+  },
+  {
+    "id": "psoroptes_equi_adult",
+    "latinName": "Psoroptes equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Psoroptidae",
+      "genus": "Psoroptes",
+      "species": "Psoroptes equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 400,
+      "lengthMax": 750,
+      "widthMin": 250,
+      "widthMax": 450,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Mäkký, s dlhými končatinami"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hriva"
+  },
+  {
+    "id": "chorioptes_equi_adult",
+    "latinName": "Chorioptes equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Psoroptidae",
+      "genus": "Chorioptes",
+      "species": "Chorioptes equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 300,
+      "lengthMax": 500,
+      "widthMin": 200,
+      "widthMax": 350,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Mäkký, s krátkymi končatinami"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Končatiny"
+  },
+  {
+    "id": "demodex_equi_adult",
+    "latinName": "Demodex equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 179,
+      "lengthMax": 236,
+      "widthMin": 40,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Cigarovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Telo"
+  },
+  {
+    "id": "demodex_caballi_adult",
+    "latinName": "Demodex caballi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex caballi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 264,
+      "lengthMax": 453,
+      "widthMin": 40,
+      "widthMax": 55,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Cigarovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Nozdry"
+  },
+  {
+    "id": "damalinia_equi_adult",
+    "latinName": "Damalinia equi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Psocodea",
+      "family": "Trichodectidae",
+      "genus": "Werneckiella",
+      "species": "Damalinia equi"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 2000,
+      "widthMin": 300,
+      "widthMax": 600,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Chitínový exoskelet"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Najmä v zime"
+  },
+  {
+    "id": "haematopinus_asini_adult",
+    "latinName": "Haematopinus asini",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Psocodea",
+      "family": "Haematopinidae",
+      "genus": "Haematopinus",
+      "species": "Haematopinus asini"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 2000,
+      "lengthMax": 4000,
+      "widthMin": 2000,
+      "widthMax": 4000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Najmä v zime"
+  },
+  {
+    "id": "trombicula_autumnalis_larva",
+    "latinName": "Trombicula autumnalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Trombiculidae",
+      "genus": "Neotrombicula",
+      "species": "Trombicula autumnalis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Larva",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 200,
+      "lengthMax": 400,
+      "widthMin": 200,
+      "widthMax": 400,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Oranžový",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Koniec leta"
+  },
+  {
+    "id": "dermanyssus_gallinae_adult",
+    "latinName": "Dermanyssus gallinae",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Mesostigmata",
+      "family": "Dermanyssidae",
+      "genus": "Dermanyssus",
+      "species": "Dermanyssus gallinae"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 600,
+      "lengthMax": 1000,
+      "widthMin": 600,
+      "widthMax": 1000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Pri kontakte s vtákmi"
+  },
+  {
+    "id": "ixodes_ricinus_adult",
+    "latinName": "Ixodes ricinus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Ixodida",
+      "family": "Ixodidae",
+      "genus": "Ixodes",
+      "species": "Ixodes ricinus"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 2500,
+      "lengthMax": 4000,
+      "widthMin": 1500,
+      "widthMax": 2500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Hnedočervený",
+      "shell": "Tvrdý chitínový štít"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "gastrophilus_intestinalis_larva",
+    "latinName": "Gastrophilus intestinalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Oestridae",
+      "genus": "Gasterophilus",
+      "species": "Gastrophilus intestinalis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Larva",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 127000,
+      "lengthMax": 19100,
+      "widthMin": 4000,
+      "widthMax": 7000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Dvojitý rad ostňov"
+  },
+  {
+    "id": "gastrophilus_nasalis_larva",
+    "latinName": "Gastrophilus nasalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Oestridae",
+      "genus": "Gasterophilus",
+      "species": "Gastrophilus nasalis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Larva",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 127000,
+      "lengthMax": 19100,
+      "widthMin": 4000,
+      "widthMax": 7000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Jeden rad ostňov"
+  },
+  {
+    "id": "gastrophilus_haemorrhoidalis_larva",
+    "latinName": "Gastrophilus haemorrhoidalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Oestridae",
+      "genus": "Gasterophilus",
+      "species": "Gastrophilus haemorrhoidalis"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Larva",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 127000,
+      "lengthMax": 19100,
+      "widthMin": 4000,
+      "widthMax": 7000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Dvojitý rad ostňov"
+  },
+  {
+    "id": "hippobosca_equina_adult",
+    "latinName": "Hippobosca equina",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Hippoboscidae",
+      "genus": "Hippobosca",
+      "species": "Hippobosca equina"
+    },
+    "host": [
+      "Kôň"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 4500,
+      "lengthMax": 8000,
+      "widthMin": 2500,
+      "widthMax": 4000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Široký",
+      "colour": "Žltohnedý",
+      "shell": "Chitínový exoskelet"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  }
+]

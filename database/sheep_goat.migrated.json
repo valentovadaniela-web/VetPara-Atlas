@@ -1,0 +1,2216 @@
+[
+  {
+    "id": "giardia_intestinalis_cyst",
+    "latinName": "Giardia intestinalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Metamonada",
+      "class": "Trepomonadea",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Giardia",
+      "species": "Giardia intestinalis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Cysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 8,
+      "lengthMax": 12,
+      "widthMin": 7,
+      "widthMax": 10,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Zelenkastý",
+      "shell": "Hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Polmesiačikovitá cytoplazma excentricky"
+  },
+  {
+    "id": "eimeria_parva_oocyst",
+    "latinName": "Eimeria parva",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria parva"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 10,
+      "lengthMax": 22,
+      "widthMin": 10,
+      "widthMax": 19,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Žltobiely",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
+  },
+  {
+    "id": "eimeria_ninaekohljakimovae_oocyst",
+    "latinName": "Eimeria ninaekohljakimovae",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria ninaekohljakimovae"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 20,
+      "lengthMax": 28,
+      "widthMin": 15,
+      "widthMax": 22,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
+  },
+  {
+    "id": "eimeria_arloingi_oocyst",
+    "latinName": "Eimeria arloingi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria arloingi"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 17,
+      "lengthMax": 42,
+      "widthMin": 13,
+      "widthMax": 27,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Sivý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_caprina_oocyst",
+    "latinName": "Eimeria caprina",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria caprina"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 27,
+      "lengthMax": 40,
+      "widthMin": 19.5,
+      "widthMax": 26,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Tmavohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_caprovina_oocyst",
+    "latinName": "Eimeria caprovina",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria caprovina"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 26,
+      "lengthMax": 36,
+      "widthMin": 23,
+      "widthMax": 28,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Tmavohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_christenseni_oocyst",
+    "latinName": "Eimeria christenseni",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria christenseni"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 38,
+      "lengthMax": 38,
+      "widthMin": 25,
+      "widthMax": 25,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "U kôz"
+  },
+  {
+    "id": "eimeria_hirci_oocyst",
+    "latinName": "Eimeria hirci",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria hirci"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 21,
+      "lengthMax": 23,
+      "widthMin": 16,
+      "widthMax": 19,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "U kôz"
+  },
+  {
+    "id": "eimeria_aspheronica_oocyst",
+    "latinName": "Eimeria aspheronica",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria aspheronica"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 31,
+      "lengthMax": 31,
+      "widthMin": 23,
+      "widthMax": 23,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "eimeria_alijevi_oocyst",
+    "latinName": "Eimeria alijevi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria alijevi"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 16,
+      "lengthMax": 17,
+      "widthMin": 14,
+      "widthMax": 15,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "U kôz"
+  },
+  {
+    "id": "eimeria_jolchijevi_oocyst",
+    "latinName": "Eimeria jolchijevi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria jolchijevi"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 31,
+      "lengthMax": 31,
+      "widthMin": 22,
+      "widthMax": 22,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "eimeria_ahsata_oocyst",
+    "latinName": "Eimeria ahsata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria ahsata"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 29,
+      "lengthMax": 44,
+      "widthMin": 17,
+      "widthMax": 28,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Žltobiely",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_bakuensis_oocyst",
+    "latinName": "Eimeria bakuensis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria bakuensis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 23,
+      "lengthMax": 36,
+      "widthMin": 15,
+      "widthMax": 24,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Žltobiely",
+      "shell": "Paralelné"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_crandalis_oocyst",
+    "latinName": "Eimeria crandalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria crandalis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 17,
+      "lengthMax": 28,
+      "widthMin": 17,
+      "widthMax": 22,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_granulosa_oocyst",
+    "latinName": "Eimeria granulosa",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria granulosa"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 22,
+      "lengthMax": 37,
+      "widthMin": 17,
+      "widthMax": 26,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Žltobiely",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_intricata_oocyst",
+    "latinName": "Eimeria intricata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria intricata"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 40,
+      "lengthMax": 56,
+      "widthMin": 30,
+      "widthMax": 41,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_marsica_oocyst",
+    "latinName": "Eimeria marsica",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria marsica"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 15,
+      "lengthMax": 22,
+      "widthMin": 11,
+      "widthMax": 14,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_punctata_oocyst",
+    "latinName": "Eimeria punctata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria punctata"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 18,
+      "lengthMax": 28,
+      "widthMin": 16,
+      "widthMax": 21,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_weybridgensis_oocyst",
+    "latinName": "Eimeria weybridgensis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria weybridgensis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 17,
+      "lengthMax": 31,
+      "widthMin": 14,
+      "widthMax": 19,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Má mikropyle"
+  },
+  {
+    "id": "eimeria_ovis_oocyst",
+    "latinName": "Eimeria ovis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria ovis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 25,
+      "lengthMax": 37,
+      "widthMin": 19,
+      "widthMax": 27,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Svetlohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
+  },
+  {
+    "id": "eimeria_ovinoidalis_oocyst",
+    "latinName": "Eimeria ovinoidalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria ovinoidalis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 17,
+      "lengthMax": 28,
+      "widthMin": 12,
+      "widthMax": 23,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
+  },
+  {
+    "id": "eimeria_pallida_oocyst",
+    "latinName": "Eimeria pallida",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria pallida"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 12,
+      "lengthMax": 20,
+      "widthMin": 8,
+      "widthMax": 15,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
+  },
+  {
+    "id": "cryptosporidium_parvum_oocyst",
+    "latinName": "Cryptosporidium parvum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Cryptosporidiidae",
+      "genus": "Cryptosporidium",
+      "species": "Cryptosporidium parvum"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 4,
+      "lengthMax": 5,
+      "widthMin": 4,
+      "widthMax": 5,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
+      "shell": "Tenká, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Nemá mikropyle"
+  },
+  {
+    "id": "fasciola_hepatica_egg",
+    "latinName": "Fasciola hepatica",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Fasciolidae",
+      "genus": "Fasciola",
+      "species": "Fasciola hepatica"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 130,
+      "lengthMax": 150,
+      "widthMin": 60,
+      "widthMax": 90,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Žltohnedý",
+      "shell": "Dvojvrstvová, s viečkom"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Granulovaný obsah vypĺňa skoro celé vajíčko."
+  },
+  {
+    "id": "fascioloides_magna_adult",
+    "latinName": "Fascioloides magna",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Fasciolidae",
+      "genus": "Fascioloides",
+      "species": "Fascioloides magna"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Pečeň",
+    "stage": "Dospelý jedinec",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 40000,
+      "lengthMax": 100000,
+      "widthMin": 20000,
+      "widthMax": 35000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Listovitý",
+      "colour": "Bezfarebný",
+      "shell": "S operculom"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Patogén v pečeni"
+  },
+  {
+    "id": "dicrocoelium_dendriticum_egg",
+    "latinName": "Dicrocoelium dendriticum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Dicrocoeliidae",
+      "genus": "Dicrocoelium",
+      "species": "Dicrocoelium dendriticum"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 36,
+      "lengthMax": 45,
+      "widthMin": 20,
+      "widthMax": 30,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Asymetrický",
+      "colour": "Tmavohnedý",
+      "shell": "Dvojvrstvová, s viečkom"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "2 \"očká\""
+  },
+  {
+    "id": "cysticercus_bovis_larva",
+    "latinName": "Cysticercus bovis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Cysticercus bovis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Sval",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 5000,
+      "lengthMax": 15000,
+      "widthMin": 3000,
+      "widthMax": 8000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Zriedkavo"
+  },
+  {
+    "id": "cysticercus_cellulosae_larva",
+    "latinName": "Cysticercus cellulosae",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Cysticercus cellulosae"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Sval",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 5000,
+      "lengthMax": 15000,
+      "widthMin": 3000,
+      "widthMax": 8000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Zriedkavo"
+  },
+  {
+    "id": "cysticercus_tenuicollis_larva",
+    "latinName": "Cysticercus tenuicollis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Cysticercus tenuicollis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Mezentérium",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 20000,
+      "lengthMax": 100000,
+      "widthMin": 20000,
+      "widthMax": 100000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Priehľadná"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Číra tekutina"
+  },
+  {
+    "id": "coenurus_cerebralis_larva",
+    "latinName": "Coenurus cerebralis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Coenurus cerebralis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Mozog",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 5000,
+      "lengthMax": 100000,
+      "widthMin": 5000,
+      "widthMax": 100000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Veľa scolexov"
+  },
+  {
+    "id": "coenurus_serialis_larva",
+    "latinName": "Coenurus serialis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Coenurus serialis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Podkožie",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50000,
+      "lengthMax": 100000,
+      "widthMin": 5000,
+      "widthMax": 100000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Veľa scolexov v línii"
+  },
+  {
+    "id": "cysticercus_ovis_larva",
+    "latinName": "Cysticercus ovis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Cysticercus ovis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Sval",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 3500,
+      "lengthMax": 9000,
+      "widthMin": 2000,
+      "widthMax": 4000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "echinococcus_granulosus_larva",
+    "latinName": "Echinococcus granulosus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Echinococcus",
+      "species": "Echinococcus granulosus"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Pečeň",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50000,
+      "lengthMax": 300000,
+      "widthMin": 30,
+      "widthMax": 37,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vnútri tekutina a piesok"
+  },
+  {
+    "id": "echinococcus_multilocularis_larva",
+    "latinName": "Echinococcus multilocularis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Echinococcus",
+      "species": "Echinococcus multilocularis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Pečeň",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 33,
+      "lengthMax": 39,
+      "widthMin": 26,
+      "widthMax": 33,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá, radiálne pruhovaná"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Mnohokomorový"
+  },
+  {
+    "id": "moniezia_expanza_egg",
+    "latinName": "Moniezia expanza",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Moniezia",
+      "species": "Moniezia expanza"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 75,
+      "widthMin": 50,
+      "widthMax": 75,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hruškovitá onkosféra"
+  },
+  {
+    "id": "moniezia_benedeni_egg",
+    "latinName": "Moniezia benedeni",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Moniezia",
+      "species": "Moniezia benedeni"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 80,
+      "lengthMax": 85,
+      "widthMin": 80,
+      "widthMax": 85,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vnútri hruškovitá onkosféra"
+  },
+  {
+    "id": "chabertia_ovina_egg",
+    "latinName": "Chabertia ovina",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongylidae",
+      "genus": "Chabertia",
+      "species": "Chabertia ovina"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 90,
+      "lengthMax": 105,
+      "widthMin": 50,
+      "widthMax": 55,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V 90-100% chovov"
+  },
+  {
+    "id": "oesophagostomum_sp_egg",
+    "latinName": "Oesophagostomum sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongylidae",
+      "genus": "Oesophagostomum",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 73,
+      "lengthMax": 89,
+      "widthMin": 34,
+      "widthMax": 45,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "8-16 blastomér"
+  },
+  {
+    "id": "bunostomum_sp_egg",
+    "latinName": "Bunostomum sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Ancylostomatidae",
+      "genus": "Bunostomum",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 80,
+      "lengthMax": 97,
+      "widthMin": 45,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Tmavohnedý",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "4-8 blastomér"
+  },
+  {
+    "id": "trichostrongylus_sp_egg",
+    "latinName": "Trichostrongylus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Trichostrongylidae",
+      "genus": "Trichostrongylus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 108,
+      "widthMin": 30,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "haemonchus_sp_egg",
+    "latinName": "Haemonchus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Trichostrongylidae",
+      "genus": "Haemonchus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 85,
+      "widthMin": 41,
+      "widthMax": 48,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "16-32 blastomér"
+  },
+  {
+    "id": "ostertagia_sp_egg",
+    "latinName": "Ostertagia sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Trichostrongylidae",
+      "genus": "Ostertagia",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 90,
+      "lengthMax": 110,
+      "widthMin": 30,
+      "widthMax": 60,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Paralelné"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "cooperia_sp_egg",
+    "latinName": "Cooperia sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Trichostrongylidae",
+      "genus": "Cooperia",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 65,
+      "lengthMax": 100,
+      "widthMin": 34,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "nematodirus_sp_egg",
+    "latinName": "Nematodirus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Molineidae",
+      "genus": "Nematodirus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 140,
+      "lengthMax": 230,
+      "widthMin": 70,
+      "widthMax": 130,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "6-8 blastomér"
+  },
+  {
+    "id": "dictyocaulus_filaria_larva",
+    "latinName": "Dictyocaulus filaria",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Dictyocaulus",
+      "species": "Dictyocaulus filaria"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 550,
+      "lengthMax": 585,
+      "widthMin": 550,
+      "widthMax": 585,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Gombík vpredu"
+  },
+  {
+    "id": "protostrongylus_rufescens_larva",
+    "latinName": "Protostrongylus rufescens",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Protostrongylus",
+      "species": "Protostrongylus rufescens"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 300,
+      "lengthMax": 410,
+      "widthMin": 300,
+      "widthMax": 410,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chvost ostrý bez tŕňov"
+  },
+  {
+    "id": "protostrongylus_brevispiculum_larva",
+    "latinName": "Protostrongylus brevispiculum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Protostrongylus",
+      "species": "Protostrongylus brevispiculum"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 240,
+      "lengthMax": 310,
+      "widthMin": 240,
+      "widthMax": 310,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Chvost ostrý bez tŕňov"
+  },
+  {
+    "id": "muellerius_capillaris_larva",
+    "latinName": "Muellerius capillaris",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Muellerius",
+      "species": "Muellerius capillaris"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 250,
+      "lengthMax": 280,
+      "widthMin": 250,
+      "widthMax": 280,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Stočený chvost s tŕňom"
+  },
+  {
+    "id": "cystocaulus_ocreatus_larva",
+    "latinName": "Cystocaulus ocreatus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Cystocaulus",
+      "species": "Cystocaulus ocreatus"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 340,
+      "lengthMax": 480,
+      "widthMin": 340,
+      "widthMax": 480,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Stočený chvost s tŕňom"
+  },
+  {
+    "id": "strongyloides_sp_egg",
+    "latinName": "Strongyloides sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 45,
+      "lengthMax": 54,
+      "widthMin": 25,
+      "widthMax": 33,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Larva stočená do tvaru U"
+  },
+  {
+    "id": "strongyloides_sp_larva",
+    "latinName": "Strongyloides sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 230,
+      "lengthMax": 350,
+      "widthMin": 32,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "L1 - veľké genit. promodium"
+  },
+  {
+    "id": "skrjabinema_ovis_egg",
+    "latinName": "Skrjabinema ovis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Oxyuridae",
+      "genus": "Skrjabinema",
+      "species": "Skrjabinema ovis"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 51,
+      "lengthMax": 59,
+      "widthMin": 27,
+      "widthMax": 34,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "skrjabinema_caprae_egg",
+    "latinName": "Skrjabinema caprae",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Oxyuridae",
+      "genus": "Skrjabinema",
+      "species": "Skrjabinema caprae"
+    },
+    "host": [
+      "Koza"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 51,
+      "lengthMax": 59,
+      "widthMin": 27,
+      "widthMax": 35,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "trichuris_sp_egg",
+    "latinName": "Trichuris sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Trichuridae",
+      "genus": "Trichuris",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ovca"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 60,
+      "lengthMax": 80,
+      "widthMin": 30,
+      "widthMax": 42,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Hnedý",
+      "shell": "Zátky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  }
+]

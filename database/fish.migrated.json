@@ -1,0 +1,330 @@
+[
+  {
+    "id": "trichodina_sp_trophozoite",
+    "latinName": "Trichodina sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Sarcomastigophora",
+      "class": "Mastigophora",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Trichodina",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 50,
+      "widthMin": 50,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
+      "shell": "Hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "ichthyophthirius_multifiliis_trophozoite",
+    "latinName": "Ichthyophthirius multifiliis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Ciliophora",
+      "class": "Oligohymenophorea",
+      "order": "Hymenostomatida",
+      "family": "Ichthyophthiriidae",
+      "genus": "Ichthyophthirius",
+      "species": "Ichthyophthirius multifiliis"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 40,
+      "lengthMax": 100,
+      "widthMin": 40,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Tmavohnedý",
+      "shell": "Hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "capillaria_aerophyla_egg",
+    "latinName": "Eucoleus aerophilus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Capillariidae",
+      "genus": "Eucoleus",
+      "species": "Eucoleus aerophilus"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 48,
+      "lengthMax": 62,
+      "widthMin": 21,
+      "widthMax": 30,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Žltobiely",
+      "shell": "Zátky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "ergasilus_sieboldi_adult",
+    "latinName": "Ergasilus sieboldi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Copepoda",
+      "order": "Cyclopoida",
+      "family": "Ergasilidae",
+      "genus": "Ergasilus",
+      "species": "Ergasilus sieboldi"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Crustacea",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 1500,
+      "widthMin": 1000,
+      "widthMax": 1500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hákovité tykadlá"
+  },
+  {
+    "id": "lernaea_cyprinacea_adult",
+    "latinName": "Lernaea cyprinacea",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Copepoda",
+      "order": "Cyclopoida",
+      "family": "Lernaeidae",
+      "genus": "Lernaea",
+      "species": "Lernaea cyprinacea"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Crustacea",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 1000,
+      "widthMin": 1000,
+      "widthMax": 1000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hviezdica"
+  },
+  {
+    "id": "dactylogyrus_sp_adult",
+    "latinName": "Dactylogyrus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Monogenea",
+      "order": "Dactylogyridea",
+      "family": "Dactylogyridae",
+      "genus": "Dactylogyrus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Monogenea",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1500,
+      "lengthMax": 1500,
+      "widthMin": 1500,
+      "widthMax": 1500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "4 laloky"
+  },
+  {
+    "id": "gyrodactylus_sp_adult",
+    "latinName": "Gyrodactylus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Monogenea",
+      "order": "Gyrodactylidea",
+      "family": "Gyrodactylidae",
+      "genus": "Gyrodactylus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Ryby"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Monogenea",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 500,
+      "lengthMax": 1000,
+      "widthMin": 500,
+      "widthMax": 1000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "2 laloky"
+  },
+  {
+    "id": "ligula_intestinalis_plerocercoid",
+    "latinName": "Ligula intestinalis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Diphyllobothriidea",
+      "family": "Diphyllobothriidae",
+      "genus": "Ligula",
+      "species": "Ligula intestinalis"
+    },
+    "host": [
+      "Kaprovité"
+    ],
+    "sample": "Brušná dutina",
+    "stage": "Plerocerkoid",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 200000,
+      "lengthMax": 400000,
+      "widthMin": 5000,
+      "widthMax": 18000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "2 bothrie"
+  }
+]
