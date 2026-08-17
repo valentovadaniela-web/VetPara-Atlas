@@ -15,7 +15,7 @@ const App = {
 
         try {
 
-            const database = await DatabaseService.loadDogDatabase();
+            const database = await DatabaseService.loadAllHostDatabases();
 
             ApplicationState.database = database;
             ApplicationState.ready = true;

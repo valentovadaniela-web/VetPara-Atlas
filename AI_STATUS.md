@@ -2,16 +2,40 @@
 
 **Dátum poslednej aktualizácie:** 2026-08-17
 **Branch:** develop
-**Verzia projektu:** v12 (po importe ďalších hostiteľov)
+**Verzia projektu:** v13 (napojenie všetkých 14 host-databáz do aplikácie)
 
 ---
 
 ## 1. SÚHRN AKTUÁLNEHO STAVU (2026-08-17)
 
 Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza obsahuje
-**všetkých 14 hostiteľských súborov** naimportovaných z `Mikrometria_doplnená__opravená.xlsx`:
-- `dog.migrated.json` (38 záznamov) – **aktualizovaný 2026-08-17** podľa aktuálnej tabuľky
+**všetkých 14 hostiteľských súborov** naimportovaných z `Mikrometria_doplnená__opravená.xlsx`,
+a od tejto verzie sú **všetky reálne aj načítané a zobrazované v Atlase** (predtým bol
+natvrdo pripojený len `dog.migrated.json`):
+- `dog.migrated.json` (38 záznamov)
 - 13 ďalších host-súborov (spolu 529 záznamov) – pozri 1.2
+
+### 1.3 Vyriešená Priorita 2.2 – Napojenie všetkých host-databáz (2026-08-17)
+- **Problém:** Atlas zobrazoval iba psa. `DatabaseService.js` vedel načítať len jeden
+  súbor (`loadDogDatabase()` → `dog.migrated.json`) a `App.js` volal iba túto metódu.
+  Ostatných 13 súborov v `database/` existovalo, ale aplikácia ich fyzicky nenačítavala.
+- **Riešenie:**
+  - V `src/services/DatabaseService.js` pridaná nová metóda `loadAllHostDatabases()`,
+    ktorá načíta všetkých 14 súborov (`dog` + 13 ostatných) paralelne cez `Promise.all`,
+    zlúči ich do jedného poľa (`flat()`) a uloží do `this.currentDatabase`.
+  - Pôvodná metóda `loadDogDatabase()` **zostala nezmenená** (zachovaná pre prípadné
+    budúce použitie/debug).
+  - V `src/app/App.js` (metóda `loadDatabase()`) zmenené volanie
+    z `DatabaseService.loadDogDatabase()` na `DatabaseService.loadAllHostDatabases()`.
+  - `Repository.js` a `AtlasPage.js` **neboli menené** – obe vrstvy boli od začiatku
+    nezávislé na tom, koľko súborov je zdrojom dát, takže zmena je neinvazívna
+    (v súlade s pravidlom „nemeniť architektúru bez súhlasu").
+- **Overenie duplicitných `id`:** Autorka potvrdila (2026-08-17), že kolízie `id`
+  naprieč hostiteľmi sú vyriešené — zlúčenie polí (`flat()`) v `getRecordById()`
+  (cez `Repository.getById()`) preto nehrozí stratou záznamov.
+- **Očakávaný výsledok po nasadení:** `Repository.count()` by mal hlásiť **567 záznamov**
+  (38 pes + 529 ostatní hostitelia) namiesto pôvodných 38.
+- 📄 Log zmeny: `docs/2026-08-17_priorita2.2-multi-host-loading.md`
 
 ### 1.2 Vyriešená Priorita 2 – Import ďalších hostiteľov (2026-08-17)
 - ✅ Naimportovaných **529 diagnostických objektov** z `Mikrometria_doplnená__opravená.xlsx`
@@ -38,17 +62,16 @@ Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza
   - *Riešenie:* HTML rozdelené na `<span class="brand-vetpara">` a `<span class="brand-atlas">`, CSS farby nastavené v `layout.css`.
 - ✅ **Aktívny stav v menu:** Pri kliknutí na odkaz sa správne zobrazí biely text s modrým podčiarknutím (vďaka JavaScriptu v `main.js`/`App.js` a CSS v `layout.css`).
 
-### 1.2 Vyriešená Priorita 1 – Vyčistenie architektúry (2026-08-17)
+### 1.2b Vyriešená Priorita 1 – Vyčistenie architektúry (2026-08-17)
 - ✅ **`Navbar.js` (mŕtvy kód):** Overené (`App.js`, `Router.js`), že sa nikde neimportuje – header je natvrdo v `index.html`, routing beží cez `App.registerRoutes()`.
   - *Akcia:* Presunutý `src/components/Navbar.js` → `_archive/Navbar.js`. Obsah nezmenený.
 - ✅ **CSS čistenie:** Odstránené duplicitné pravidlo `.site-header { background-color: var(--color-bg-header); }` (bolo dvakrát po sebe) v `src/css/layout.css`.
 - 📄 Log zmeny: `docs/2026-08-17_priorita1-cleanup.md`
 
-### 1.3 Čo bolo dokončené v predchádzajúcich fázach
+### 1.3b Čo bolo dokončené v predchádzajúcich fázach
 - **Databáza (`dog.migrated.json`):**
-  - **AKTUALIZOVANÉ 2026-08-17:** Súbor bol pregenerovaný podľa aktuálnej verzie
-    `Mikrometria_doplnená__opravená.xlsx`, aby korešpondoval s ostatnými 13 hostiteľmi.
-  - Pôvodný súbor bol zastaralý a nekolidoval s novými dátami.
+  - Súbor bol pregenerovaný podľa aktuálnej verzie `Mikrometria_doplnená__opravená.xlsx`,
+    aby korešpondoval s ostatnými 13 hostiteľmi.
   - Obsahuje 38 záznamov pre psa, validovaných voči schéme.
 - **Vizuálny redizajn (Milestone 2):**
   - Bootstrap definitívne odstránený z projektu (nahradený vlastným CSS dizajnovým systémom cez `variables.css`).
@@ -71,12 +94,19 @@ Ak príde nový AI asistent, musí vedieť, čo má robiť ďalej. Tu sú **konk
 ### 2.2 Priorita č. 2: Etapa 2 – Import ďalších hostiteľov — ✅ DOKONČENÉ (2026-08-17)
 Pozri sekciu 1.2 a `docs/2026-08-17_priorita2-import-hostitelia.md`.
 
-**Čo môže nový AI ešte skontrolovať:**
+### 2.2b Priorita č. 2.2: Napojenie všetkých host-databáz do aplikácie — ✅ DOKONČENÉ (2026-08-17)
+Pozri sekciu 1.3 a `docs/2026-08-17_priorita2.2-multi-host-loading.md`.
+
+**Čo môže nový AI ešte skontrolovať/dokončiť:**
+- **Overiť v prehliadači/konzole**, že `Repository.count()` po nasadení skutočne
+  hlási 567 záznamov a že Atlas zobrazuje všetky druhy hostiteľov (nielen psa).
 - `dictionary/host_hierarchy.json` je zatiaľ len navrhnutý slovník – neoverené,
   či ho `AtlasPage.js`/`DatabaseService.js` reálne používajú na filtrovanie.
   Treba prepojiť s UI, ak sa má hierarchia zobrazovať vo filtroch.
-- `DatabaseService.js` momentálne (podľa `App.js`) načítava len `loadDogDatabase()`.
-  Treba rozšíriť o načítanie nových 13 súborov (a aktualizovaného `dog.migrated.json`).
+- Zvážiť, či `DatabaseService.load()` (jednotlivé `fetch` na súbor) nemá byť
+  doplnené o robustnejšie spracovanie chyby, ak by jeden z 14 súborov chýbal
+  alebo mal chybný formát (momentálne `Promise.all` zlyhá celé, ak zlyhá čo i len
+  jeden `fetch`).
 
 ### 2.3 Priorita č. 3: Chýbajúce stránky (UI)
 - **Gallery page** (momentálne placeholder – `console.log("Gallery page")` v `App.js`).
@@ -99,16 +129,19 @@ Nový AI by mal mať v repozitári tieto kľúčové súbory (sú aktuálne):
 - **`src/css/layout.css`** – Štýly pre header, navigáciu a responzivitu (hamburger opravený, duplicita odstránená).
 - **`src/css/variables.css`** – Všetky CSS premenné (farby, fonty, rozostupy).
 - **`src/css/atlas.css`** – Štýly pre Home, filtre, databázu a detaily záznamov.
-- **`src/app/App.js`** – Hlavná logika aplikácie (routing, bindovanie theme toggle a nav toggle).
+- **`src/app/App.js`** – Hlavná logika aplikácie (routing, bindovanie theme toggle a nav toggle). **Aktualizované 2026-08-17:** `loadDatabase()` teraz volá `DatabaseService.loadAllHostDatabases()` namiesto `loadDogDatabase()`.
 - **`src/app/Router.js`** – Jednoduchý hash router (bez zmien).
-- **`src/pages/AtlasPage.js`** – Logika pre filtre, vykreslenie zoznamu a detailov.
+- **`src/services/DatabaseService.js`** – **Aktualizované 2026-08-17:** pridaná metóda `loadAllHostDatabases()`, ktorá načíta a zlúči všetkých 14 host-súborov. Pôvodná `loadDogDatabase()` zachovaná bez zmeny.
+- **`src/services/Repository.js`** – Prístupová vrstva k dátam (bez zmien, nezávislá od počtu zdrojových súborov).
+- **`src/pages/AtlasPage.js`** – Logika pre filtre, vykreslenie zoznamu a detailov (bez zmien).
 - **`src/js/main.js`** – Entry point aplikácie.
-- **`database/dog.migrated.json`** – **AKTUALIZOVANÁ** databáza pre psa (38 záznamov, zvalidovaná, v súlade s ostatnými hostiteľmi).
-- **`database/{cat,horse,cattle,pig,sheep_goat,rabbit,hedgehog,rodents,reptiles,fish,molluscs,wild_ruminants,birds}.migrated.json`** – 13 nových host-súborov (529 záznamov spolu), naimportovaných 2026-08-17.
-- **`database/dictionary/host_hierarchy.json`** – Nový slovník hierarchie hostiteľov (67 mapovaní).
+- **`database/dog.migrated.json`** – databáza pre psa (38 záznamov, zvalidovaná, v súlade s ostatnými hostiteľmi).
+- **`database/{cat,horse,cattle,pig,sheep_goat,rabbit,hedgehog,rodents,reptiles,fish,molluscs,wild_ruminants,birds}.migrated.json`** – 13 host-súborov (529 záznamov spolu), naimportovaných 2026-08-17. **Od tejto verzie reálne napojených do Atlasu.**
+- **`database/dictionary/host_hierarchy.json`** – Slovník hierarchie hostiteľov (67 mapovaní), zatiaľ nenapojený na UI filtre.
 - **`_archive/Navbar.js`** – Archivovaný mŕtvy kód (nepoužívať, len referencia).
 - **`docs/2026-08-17_priorita1-cleanup.md`** – Log Priority 1 (čistenie architektúry).
 - **`docs/2026-08-17_priorita2-import-hostitelia.md`** – Log Priority 2 (import hostiteľov).
+- **`docs/2026-08-17_priorita2.2-multi-host-loading.md`** – Log napojenia všetkých host-databáz do aplikácie (nová zmena).
 - **`docs/2026-08-15_micrometry-taxonomy-import.md`** – Detailný záznam o importe a opravách dát.
 
 ---
@@ -117,8 +150,8 @@ Nový AI by mal mať v repozitári tieto kľúčové súbory (sú aktuálne):
 
 1. **Databáza:** Nikdy neprepisovať `dog.json` (len `dog.migrated.json`). Pri importe nových hostiteľov vždy vytvárať nové JSON súbory.
 2. **Dáta:** Nikdy nedopĺňať odborné údaje (taxonómia, mikrometria) odhadom. Výnimkou sú len explicitné inštrukcie autorky priamo v chate (napr. normalizácia `Animalia/Protozoa/Chromista`).
-3. **Architektúra:** `App.js` a `Router.js` sú stabilné. Nemeniť ich bez explicitného súhlasu autorky.
+3. **Architektúra:** `App.js` a `Router.js` sú stabilné. Zmeny sa robia len minimálne a cielene (napr. zmena jedného volania metódy), nie prepisovaním logiky. Nemeniť ich rozsiahlejšie bez explicitného súhlasu autorky.
 4. **Zdroj pravdy:** Projektový repozitár (súbory na disku) je vždy hlavným zdrojom pravdy, nie text tejto konverzácie. Vždy si pred zmenou načítať aktuálne súbory.
-5. **Logovanie:** Každú významnú zmenu (najmä pri importe dát) treba zdokumentovať do samostatného `.md` súboru v priečinku `docs/`.
+5. **Logovanie:** Každú významnú zmenu (najmä pri importe dát alebo napájaní databáz) treba zdokumentovať do samostatného `.md` súboru v priečinku `docs/`.
 
 ---

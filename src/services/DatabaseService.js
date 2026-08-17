@@ -46,6 +46,37 @@ async loadDogDatabase() {
 
 }
 
+async loadAllHostDatabases() {
+
+    const files = [
+        "dog.migrated.json",
+        "cat.migrated.json",
+        "horse.migrated.json",
+        "cattle.migrated.json",
+        "pig.migrated.json",
+        "sheep_goat.migrated.json",
+        "rabbit.migrated.json",
+        "hedgehog.migrated.json",
+        "rodents.migrated.json",
+        "reptiles.migrated.json",
+        "fish.migrated.json",
+        "molluscs.migrated.json",
+        "wild_ruminants.migrated.json",
+        "birds.migrated.json"
+    ];
+
+    const datasets = await Promise.all(
+        files.map(file => this.load(file))
+    );
+
+    const merged = datasets.flat();
+
+    this.currentDatabase = merged;
+
+    return merged;
+
+}
+
 isLoaded() {
 
     return this.currentDatabase != null;
