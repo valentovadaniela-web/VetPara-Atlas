@@ -1373,23 +1373,16 @@ renderHostFilterSection(hosts) {
 
     },
 
-    taxonomyExternalLinksButtons(latinName) {
+     taxonomyExternalLinksButtons(latinName) {
 
         if (!latinName) {
             return "";
         }
 
-        const query = encodeURIComponent(latinName);
-        const colUrl = `https://catalogueoflife.org/taxon/${query}`;
-        const wormsUrl = `https://marinespecies.org/aphia.php?p=taxlist&tName=${query}`;
-
+        // Vráti skrytý element, ktorý zachová HTML štruktúru, 
+        // ale odkazy na obrazovke úplne zmiznú
         return `
-            <a href="${colUrl}" target="_blank" rel="noopener noreferrer" class="external-link-btn">
-                Catalogue of Life ↗
-            </a>
-            <a href="${wormsUrl}" target="_blank" rel="noopener noreferrer" class="external-link-btn">
-                WoRMS ↗
-            </a>
+            <div style="display: none;"></div>
         `;
 
     },
