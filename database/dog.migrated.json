@@ -1,13 +1,12 @@
 [
   {
-    "id": "giardia_intestinalis",
-    "legacyId": "DOG-0001",
+    "id": "giardia_intestinalis_cyst",
     "latinName": "Giardia intestinalis",
-    "slovakName": null,
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Metamonada",
-      "class": "Fornicata",
+      "class": "Trepomonadea",
       "order": "Diplomonadida",
       "family": "Hexamitidae",
       "genus": "Giardia",
@@ -21,36 +20,30 @@
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 8.0,
-      "lengthMax": 12.0,
+      "lengthMin": 8,
+      "lengthMax": 12,
       "widthMin": 7,
       "widthMax": 10,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Nazelenalá",
-      "shell": "Nevýrazná",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Zelenkastý",
+      "shell": "Hladká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "polmesiačikovitá cytoplazma excentricky Giardia intestinalis je synonymum názvu Giardia duodenalis.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Polmesiačikovitá cytoplazma excentricky"
   },
   {
-    "id": "isospora_canis",
-    "legacyId": "DOG-0002",
-    "latinName": "Isospora canis",
-    "slovakName": null,
+    "id": "isospora_canis_oocyst",
+    "latinName": "Cystoisospora canis",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -64,40 +57,34 @@
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 35.0,
-      "lengthMax": 42.0,
+      "lengthMin": 35,
+      "lengthMax": 42,
       "widthMin": 27,
       "widthMax": 33,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Vajcovitý",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "Cystoisospora canis je synonymom pre Isospora canis.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": ""
   },
   {
-    "id": "isospora_ohioensis",
-    "legacyId": "DOG-0003",
-    "latinName": "Isospora ohioensis",
-    "slovakName": null,
+    "id": "isospora_ohioensis_oocyst",
+    "latinName": "Cystoisospora ohioensis",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -105,46 +92,40 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Cystoisospora",
-      "species": "Isospora ohioensis"
+      "species": "Cystoisospora ohioensis"
     },
     "host": [
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 19.0,
-      "lengthMax": 27.0,
+      "lengthMin": 19,
+      "lengthMax": 27,
       "widthMin": 18,
       "widthMax": 23,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Vajcovitý",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Patrí do I. ohioensis komplex"
   },
   {
-    "id": "isospora_burrowsi",
-    "legacyId": "DOG-0004",
-    "latinName": "Isospora burrowsi",
-    "slovakName": null,
+    "id": "isospora_burrowsi_oocyst",
+    "latinName": "Cystoisospora burrowsi",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -152,46 +133,40 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Cystoisospora",
-      "species": "Isospora burrowsi"
+      "species": "Cystoisospora burrowsi"
     },
     "host": [
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 16.0,
-      "lengthMax": 22.0,
+      "lengthMin": 16,
+      "lengthMax": 22,
       "widthMin": 16,
       "widthMax": 19,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Vajcovitý",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Patrí do I. ohioensis komplex"
   },
   {
-    "id": "isospora_neorivolta",
-    "legacyId": "DOG-0005",
-    "latinName": "Isospora neorivolta",
-    "slovakName": null,
+    "id": "isospora_neorivolta_oocyst",
+    "latinName": "Cystoisospora neorivolta",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -199,49 +174,43 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Cystoisospora",
-      "species": "Isospora neorivolta"
+      "species": "Cystoisospora neorivolta"
     },
     "host": [
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 17.0,
-      "lengthMax": 24.0,
+      "lengthMin": 17,
+      "lengthMax": 24,
       "widthMin": 16,
       "widthMax": 22,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "patrí do I. ohioensis komplex Patrí medzi malé druhy rodu Cystoisospora (súčasť komplexu C. ohioensis).",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Patrí do I. ohioensis komplex"
   },
   {
-    "id": "cryptosporidium_parvum",
-    "legacyId": "DOG-0006",
+    "id": "cryptosporidium_parvum_oocyst",
     "latinName": "Cryptosporidium parvum",
-    "slovakName": null,
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
+      "phylum": "Myzozoa",
       "class": "Conoidasida",
       "order": "Eucoccidiorida",
       "family": "Cryptosporidiidae",
@@ -252,40 +221,34 @@
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 4.0,
-      "lengthMax": 5.0,
+      "lengthMin": 4,
+      "lengthMax": 5,
       "widthMin": 4,
       "widthMax": 5,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T01:00:00.000000+00:00",
-    "version": "1.3.0"
+    "notes": "Nemá mikropyle"
   },
   {
-    "id": "hammondia_heydornii",
-    "legacyId": "DOG-0007",
-    "latinName": "Hammondia heydornii",
-    "slovakName": null,
+    "id": "hammondia_heydornii_oocyst",
+    "latinName": "Hammondia heydorni",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -299,40 +262,34 @@
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 12.0,
-      "lengthMax": 14.0,
+      "lengthMin": 12,
+      "lengthMax": 14,
       "widthMin": 10,
       "widthMax": 11,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "nepatogén Morfologicky neodlíšiteľné od Neospora canis.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Nepatogén"
   },
   {
-    "id": "sarcocystis_spp",
-    "legacyId": "DOG-0008",
-    "latinName": "Sarcocystis spp.",
-    "slovakName": null,
+    "id": "sarcocystis_sp_oocyst",
+    "latinName": "Sarcocystis sp.",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -340,46 +297,40 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Sarcocystis",
-      "species": "Sarcocystis sp."
+      "species": "neurčené do druhu"
     },
     "host": [
       "Pes"
     ],
     "sample": "Trus",
-    "stage": "Cysta",
+    "stage": "Oocysta",
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 8.0,
-      "lengthMax": 13.0,
+      "lengthMin": 8,
+      "lengthMax": 13,
       "widthMin": 6,
       "widthMax": 11,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "vnútri 4 rohlíkovité sporozoity, nepatogén",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Vnútri 4 rohlíkovité sporozoity"
   },
   {
-    "id": "balantioides_predtym_balantidium_coli",
-    "legacyId": "DOG-0009",
-    "latinName": "Balantioides (predtým Balantidium) coli",
-    "slovakName": null,
+    "id": "balantioides_coli_cyst",
+    "latinName": "Balantioides coli",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Ciliophora",
@@ -397,36 +348,30 @@
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 40.0,
-      "lengthMax": 60.0,
+      "lengthMin": 40,
+      "lengthMax": 60,
       "widthMin": 40,
       "widthMax": 60,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
-      "colour": "Bezfarebná",
-      "shell": "Hladká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "vnútri vakuola",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Vnútri vakuola"
   },
   {
-    "id": "fasciola_hepatica",
-    "legacyId": "DOG-0010",
+    "id": "fasciola_hepatica_egg",
     "latinName": "Fasciola hepatica",
-    "slovakName": null,
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -444,36 +389,30 @@
     "group": "Trematoda",
     "methods": [],
     "micrometry": {
-      "lengthMin": 110.0,
-      "lengthMax": 150.0,
-      "widthMin": 55,
-      "widthMax": 65,
+      "lengthMin": 130,
+      "lengthMax": 150,
+      "widthMin": 60,
+      "widthMax": 90,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Žltohnedá",
-      "shell": "Hladká s viečkom",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Žltohnedý",
+      "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "vzácne u pastierskych psov",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Vzácne u pastierskych psov"
   },
   {
     "id": "alaria_alata_egg",
-    "legacyId": "DOG-0011",
     "latinName": "Alaria alata",
-    "slovakName": null,
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -491,1258 +430,71 @@
     "group": "Trematoda",
     "methods": [],
     "micrometry": {
-      "lengthMin": 98.0,
-      "lengthMax": 134.0,
-      "widthMin": 62.0,
-      "widthMax": 70.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Zelenožltá",
-      "shell": "Viečko nevýrazné",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "alaria_alata_adult",
-    "legacyId": "DOG-0011",
-    "latinName": "Alaria alata",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Diplostomida",
-      "family": "Diplostomidae",
-      "genus": "Alaria",
-      "species": "Alaria alata"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Dospelý jedinec",
-    "group": "Trematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 2500.0,
-      "lengthMax": 6000.0,
-      "widthMin": 500.0,
-      "widthMax": 2000.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Listovitý",
-      "colour": "Belavá",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "dosp: predok plochý, zadok kužeľovitý",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "dipylidium_caninum",
-    "legacyId": "DOG-0012",
-    "latinName": "Dipylidium caninum",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Dipylidiidae",
-      "genus": "Dipylidium",
-      "species": "Dipylidium caninum"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 35.0,
-      "lengthMax": 60.0,
-      "widthMin": 35.0,
-      "widthMax": 60.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Sivobiely",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "v kokónoch, viditeľné háčiky vo vajíčkach V kokónoch (120–200 μm)",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "taenia_sp_egg",
-    "legacyId": "DOG-0013",
-    "latinName": "Taenia sp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Taeniidae",
-      "genus": "Taenia",
-      "species": "Taenia sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 34.0,
-      "lengthMax": 39.0,
-      "widthMin": 31,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedá",
-      "shell": "Hrubá",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "Vajíčka Taenia a Echinococcus sú morfologicky nerozoznateľné, udávame vajíčka taeniového typu.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "echinococcus_sp_egg",
-    "legacyId": "DOG-0013",
-    "latinName": "Echinococcus sp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Taeniidae",
-      "genus": "Echinococcus",
-      "species": "Echinococcus sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 34.0,
-      "lengthMax": 39.0,
-      "widthMin": 31,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedá",
-      "shell": "Hrubá",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "Vajíčka Taenia a Echinococcus sú morfologicky nerozoznateľné, udávame vajíčka taeniového typu.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "mesocestoides_spp",
-    "legacyId": "DOG-0014",
-    "latinName": "Mesocestoides spp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Mesocestoididae",
-      "genus": "Mesocestoides",
-      "species": "Mesocestoides sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "methods": [],
-    "micrometry": {
-      "unit": "µm",
-      "lengthMin": 30.0,
-      "lengthMax": 50.0,
-      "widthMin": 39.0,
-      "widthMax": 50.0
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "embryo so 6 háčikmi",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "toxocara_canis",
-    "legacyId": "DOG-0016",
-    "latinName": "Toxocara canis",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Toxocaridae",
-      "genus": "Toxocara",
-      "species": "Toxocara canis"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 75.0,
-      "lengthMax": 90.0,
-      "widthMin": 75.0,
-      "widthMax": 75.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedá",
-      "shell": "Žltá, hrubá, ako povraz, jamkovitý povrch",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "hrubšia stena ako u T.cati",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "toxascaris_leonina",
-    "legacyId": "DOG-0017",
-    "latinName": "Toxascaris leonina",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Ascarididae",
-      "genus": "Toxascaris",
-      "species": "Toxascaris leonina"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 75.0,
-      "lengthMax": 85.0,
-      "widthMin": 75.0,
-      "widthMax": 85,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Žltohnedá",
-      "shell": "Žltá, hrubá, vnútorný lem, hladký povrch",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "ancylostoma_caninum",
-    "legacyId": "DOG-0018",
-    "latinName": "Ancylostoma caninum",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Ancylostomatidae",
-      "genus": "Ancylostoma",
-      "species": "Ancylostoma caninum"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 53.0,
-      "lengthMax": 69.0,
-      "widthMin": 35,
-      "widthMax": 54,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "uncinaria_stenocephala",
-    "legacyId": "DOG-0019",
-    "latinName": "Uncinaria stenocephala",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Ancylostomatidae",
-      "genus": "Uncinaria",
-      "species": "Uncinaria stenocephala"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 75.0,
-      "lengthMax": 85.0,
-      "widthMin": 40,
-      "widthMax": 45,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "angiostrongylus_vasorum",
-    "legacyId": "DOG-0020",
-    "latinName": "Angiostrongylus vasorum",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Metastrongylidae",
-      "genus": "Angiostrongylus",
-      "species": "Angiostrongylus vasorum"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 310.0,
-      "lengthMax": 400.0,
-      "widthMin": 20,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "výrastok na chvoste",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "crenosoma_vulpis",
-    "legacyId": "DOG-0021",
-    "latinName": "Crenosoma vulpis",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Crenosomatidae",
-      "genus": "Crenosoma",
-      "species": "Crenosoma vulpis"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 265.0,
-      "lengthMax": 330.0,
-      "widthMin": 20,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "kopijovitý koniec chvosta",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "oslerus_filaroides_osleri",
-    "legacyId": "DOG-0022",
-    "latinName": "Oslerus (Filaroides) osleri",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Filaroididae",
-      "genus": "Oslerus",
-      "species": "Oslerus osleri"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "unit": "µm",
-      "lengthMin": 300.0,
-      "lengthMax": 300.0,
-      "widthMin": 15.0,
-      "widthMax": 20.0
-    },
-    "morphology": {
-      "shape": null,
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "výrazne stenčený konček chvosta, zriedkavo",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "physaloptera_spp",
-    "legacyId": "DOG-0023",
-    "latinName": "Physaloptera spp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Physalopteridae",
-      "genus": "Physaloptera",
-      "species": "Physaloptera sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 32.0,
-      "lengthMax": 55.0,
-      "widthMin": 32.0,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "vnútri larva",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "spirocerca_lupi",
-    "legacyId": "DOG-0024",
-    "latinName": "Spirocerca lupi",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Spirocercidae",
-      "genus": "Spirocerca",
-      "species": "Spirocerca lupi"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 30.0,
-      "lengthMax": 40.0,
-      "widthMin": 11,
-      "widthMax": 15,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "najmä trópy, JV USA",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "dirofilaria_immitis",
-    "legacyId": "DOG-0025",
-    "latinName": "Dirofilaria immitis",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Onchocercidae",
-      "genus": "Dirofilaria",
-      "species": "Dirofilaria immitis"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Krv",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "unit": "µm",
-      "lengthMin": 300.0,
-      "lengthMax": 300.0,
-      "widthMin": 6.0,
-      "widthMax": 7.0
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "dirofilaria_repens",
-    "legacyId": "DOG-0026",
-    "latinName": "Dirofilaria repens",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Onchocercidae",
-      "genus": "Dirofilaria",
-      "species": "Dirofilaria repens"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Krv",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 280.0,
-      "lengthMax": 360.0,
-      "widthMin": 6.0,
-      "widthMax": 8.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "strongyloides_spp_egg",
-    "legacyId": "DOG-0027",
-    "latinName": "Strongyloides spp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Strongyloididae",
-      "genus": "Strongyloides",
-      "species": "Strongyloides sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 62.0,
-      "lengthMax": 64.0,
-      "widthMin": 32.0,
-      "widthMax": 36.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": "Tenká",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "strongyloides_spp_larva",
-    "legacyId": "DOG-0027",
-    "latinName": "Strongyloides spp.",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Strongyloididae",
-      "genus": "Strongyloides",
-      "species": "Strongyloides sp."
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 230.0,
-      "lengthMax": 350.0,
-      "widthMin": 30.0,
-      "widthMax": 40.0,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "larva stočená do tvaru U, larva L1 - veľké genit. promodium, L3 dlhý ezofágus",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "dioctophyme_renale",
-    "legacyId": "DOG-0028",
-    "latinName": "Dioctophyme renale",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Dioctophymatida",
-      "family": "Dioctophymatidae",
-      "genus": "Dioctophyme",
-      "species": "Dioctophyme renale"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Moč",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 71.0,
-      "lengthMax": 84.0,
-      "widthMin": 46,
-      "widthMax": 52,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedá",
-      "shell": "Hrboľatý, pórovitý povrch",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "v močovom sedimente",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "trichuris_vulpis",
-    "legacyId": "DOG-0029",
-    "latinName": "Trichuris vulpis",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Trichuridae",
-      "genus": "Trichuris",
-      "species": "Trichuris vulpis"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 70.0,
-      "lengthMax": 85.0,
-      "widthMin": 36,
-      "widthMax": 40,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedá",
-      "shell": "Zátky vypuklé",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "pearsonema_capillaria_plica",
-    "legacyId": "DOG-0030",
-    "latinName": "Pearsonema (Capillaria) plica",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Pearsonema",
-      "species": "Pearsonema plica"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Moč",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 55.0,
-      "lengthMax": 67.0,
-      "widthMin": 26,
-      "widthMax": 29,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedá",
-      "shell": "Zátky rovné",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "v močovom sedimente",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "eucoleus_boehmi",
-    "legacyId": "DOG-0031",
-    "latinName": "Eucoleus boehmi",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Eucoleus",
-      "species": "Eucoleus boehmi"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 55.0,
-      "lengthMax": 67.0,
-      "widthMin": 26,
-      "widthMax": 34,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedá",
-      "shell": "Vnútri morula",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "v nose, vajíčka sa dostanú sa aj do trusu",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "eucoleus_aerophilus_capillaria_aerophila",
-    "legacyId": "DOG-0032",
-    "latinName": "Eucoleus aerophilus (= Capillaria aerophila)",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Eucoleus",
-      "species": "Eucoleus aerophilus"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 55.0,
-      "lengthMax": 67.0,
-      "widthMin": 26,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedá",
-      "shell": "Zátky rovné, sieťovaný povrch",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "v truse",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "linguatula_serrata",
-    "legacyId": "DOG-0033",
-    "latinName": "Linguatula serrata",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Pentastomida",
-      "order": "Porocephalida",
-      "family": "Linguatulidae",
-      "genus": "Linguatula",
-      "species": "Linguatula serrata"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Trus",
-    "stage": "Dospelý jedinec",
-    "group": "Pentastomida (mimo hlavných skupín — overiť zaradenie)",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 90.0,
-      "lengthMax": 90.0,
-      "widthMin": 70,
+      "lengthMin": 98,
+      "lengthMax": 134,
+      "widthMin": 62,
       "widthMax": 70,
       "unit": "µm"
     },
     "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Žltozelený",
+      "shell": "Dvojvrstvová, s viečkom"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Nevýrazné viečko"
+  },
+  {
+    "id": "alaria_alata_adult",
+    "latinName": "Alaria alata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Diplostomida",
+      "family": "Diplostomidae",
+      "genus": "Alaria",
+      "species": "Alaria alata"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Dospelý jedinec",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 2500,
+      "lengthMax": 6000,
+      "widthMin": 500,
+      "widthMax": 2000,
+      "unit": "µm"
+    },
+    "morphology": {
       "shape": "Listovitý",
-      "colour": "Žltá",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "nosový výtok, trus, vajíčko obsahuje embryo",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
+    "notes": "Predok plochý"
   },
   {
-    "id": "demodex_canis",
-    "legacyId": "DOG-0034",
-    "latinName": "Demodex canis",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Trombidiformes",
-      "family": "Demodicidae",
-      "genus": "Demodex",
-      "species": "Demodex canis"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arthropoda (Acari)",
-    "methods": [],
-    "micrometry": {
-      "unit": "µm",
-      "lengthMin": 165.0,
-      "lengthMax": 300.0,
-      "widthMin": 33.0,
-      "widthMax": 43.0
-    },
-    "morphology": {
-      "shape": "Cigarovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": null,
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "demodex_injai",
-    "legacyId": "DOG-0035",
-    "latinName": "Demodex injai",
-    "slovakName": null,
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Trombidiformes",
-      "family": "Demodicidae",
-      "genus": "Demodex",
-      "species": "Demodex injai"
-    },
-    "host": [
-      "Pes"
-    ],
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arthropoda (Acari)",
-    "methods": [],
-    "micrometry": {
-      "unit": "µm",
-      "lengthMin": 282.0,
-      "lengthMax": 411.0,
-      "widthMin": 40.0,
-      "widthMax": 48.0
-    },
-    "morphology": {
-      "shape": "Cigarovitý",
-      "colour": "Bezfarebná",
-      "shell": null,
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "zoonosis": null,
-    "images": [],
-    "references": [],
-    "notes": "dlhý, predĺžený koniec",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T00:00:00.000000+00:00",
-    "version": "1.2.0"
-  },
-  {
-    "id": "dibothriocephalus_latus_egg",
-    "legacyId": "DOG-0015",
+    "id": "Dibothriocephalus_latus_egg",
     "latinName": "Dibothriocephalus latus",
-    "slovakName": null,
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -1760,29 +512,1049 @@
     "group": "Cestoda",
     "methods": [],
     "micrometry": {
-      "lengthMin": 67.0,
-      "lengthMax": 73.0,
-      "widthMin": 45,
+      "lengthMin": 67,
+      "lengthMax": 73,
+      "widthMin": 40,
       "widthMax": 51,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Žltá",
-      "shell": "Operculum s výčnelkom",
-      "operculum": null,
-      "contents": null,
-      "texture": null,
-      "remarks": null
+      "shape": "Oválny",
+      "colour": "Žltohnedý",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "zoonosis": null,
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
     "images": [],
     "references": [],
-    "notes": "rybožravé zvieratá. Diphyllobothrium latum je starší (synonymný) názov pre aktuálne platný názov Dibothriocephalus latus.",
-    "created": "2026-08-10T17:49:33.389Z",
-    "modified": "2026-08-15T01:00:00.000000+00:00",
-    "version": "1.3.0"
+    "notes": "Operculum, v kokónoch, rybožravé zvieratá"
+  },
+  {
+    "id": "taenia_sp_egg",
+    "latinName": "Taenia sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 25,
+      "lengthMax": 40,
+      "widthMin": 25,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "mesocestoides_sp_egg",
+    "latinName": "Mesocestoides sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Mesocestoididae",
+      "genus": "Mesocestoides",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 30,
+      "lengthMax": 50,
+      "widthMin": 39,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Embryo so 6 háčikmi"
+  },
+  {
+    "id": "toxocara_canis_egg",
+    "latinName": "Toxocara canis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Toxocaridae",
+      "genus": "Toxocara",
+      "species": "Toxocara canis"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 75,
+      "lengthMax": 90,
+      "widthMin": 75,
+      "widthMax": 75,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hrubšia stena ako u T.cati"
+  },
+  {
+    "id": "toxascaris_leonina_egg",
+    "latinName": "Toxascaris leonina",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Ascarididae",
+      "genus": "Toxascaris",
+      "species": "Toxascaris leonina"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 75,
+      "lengthMax": 85,
+      "widthMin": 75,
+      "widthMax": 85,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Svetlohnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "ancylostoma_caninum_egg",
+    "latinName": "Ancylostoma caninum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Ancylostomatidae",
+      "genus": "Ancylostoma",
+      "species": "Ancylostoma caninum"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 53,
+      "lengthMax": 69,
+      "widthMin": 35,
+      "widthMax": 54,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "uncinaria_stenocephala_egg",
+    "latinName": "Uncinaria stenocephala",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Ancylostomatidae",
+      "genus": "Uncinaria",
+      "species": "Uncinaria stenocephala"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 75,
+      "lengthMax": 85,
+      "widthMin": 40,
+      "widthMax": 45,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "angiostrongylus_vasorum_larva",
+    "latinName": "Angiostrongylus vasorum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Metastrongylidae",
+      "genus": "Angiostrongylus",
+      "species": "Angiostrongylus vasorum"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 310,
+      "lengthMax": 400,
+      "widthMin": 20,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Výrastok na chvoste"
+  },
+  {
+    "id": "crenosoma_vulpis_larva",
+    "latinName": "Crenosoma vulpis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Crenosomatidae",
+      "genus": "Crenosoma",
+      "species": "Crenosoma vulpis"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 265,
+      "lengthMax": 330,
+      "widthMin": 20,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Kopijovitý koniec chvosta"
+  },
+  {
+    "id": "oslerus_osleri_larva",
+    "latinName": "Oslerus osleri",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Filaroididae",
+      "genus": "Oslerus",
+      "species": "Oslerus osleri"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 300,
+      "lengthMax": 300,
+      "widthMin": 15,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Výrazne stenčený konček chvosta"
+  },
+  {
+    "id": "physaloptera_sp_egg",
+    "latinName": "Physaloptera sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Physalopteridae",
+      "genus": "Physaloptera",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 32,
+      "lengthMax": 55,
+      "widthMin": 32,
+      "widthMax": 55,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Vnútri larva"
+  },
+  {
+    "id": "spirocerca_lupi_egg",
+    "latinName": "Spirocerca lupi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Spirocercidae",
+      "genus": "Spirocerca",
+      "species": "Spirocerca lupi"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 30,
+      "lengthMax": 40,
+      "widthMin": 11,
+      "widthMax": 15,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Najmä trópy"
+  },
+  {
+    "id": "dirofilaria_immitis_larva",
+    "latinName": "Dirofilaria immitis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Onchocercidae",
+      "genus": "Dirofilaria",
+      "species": "Dirofilaria immitis"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Krv",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 300,
+      "lengthMax": 300,
+      "widthMin": 6,
+      "widthMax": 7,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "dirofilaria_repens_larva",
+    "latinName": "Dirofilaria repens",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Onchocercidae",
+      "genus": "Dirofilaria",
+      "species": "Dirofilaria repens"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Krv",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 280,
+      "lengthMax": 360,
+      "widthMin": 6,
+      "widthMax": 8,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "strongyloides_sp_egg",
+    "latinName": "Strongyloides sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 45,
+      "lengthMax": 54,
+      "widthMin": 25,
+      "widthMax": 33,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Larva stočená do tvaru U"
+  },
+  {
+    "id": "strongyloides_sp_larva",
+    "latinName": "Strongyloides sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Strongyloididae",
+      "genus": "Strongyloides",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 230,
+      "lengthMax": 350,
+      "widthMin": 32,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "L1 - veľké genit. promodium"
+  },
+  {
+    "id": "dioctophyme_renale_egg",
+    "latinName": "Dioctophyme renale",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Dioctophymatida",
+      "family": "Dioctophymatidae",
+      "genus": "Dioctophyme",
+      "species": "Dioctophyme renale"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Moč",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 71,
+      "lengthMax": 84,
+      "widthMin": 46,
+      "widthMax": 52,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Žltohnedý",
+      "shell": "Vrásčitá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V močovom sedimente"
+  },
+  {
+    "id": "trichuris_vulpis_egg",
+    "latinName": "Trichuris vulpis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Trichuridae",
+      "genus": "Trichuris",
+      "species": "Trichuris vulpis"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 85,
+      "widthMin": 36,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Hnedý",
+      "shell": "Zátky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "pearsonema_plica_egg",
+    "latinName": "Pearsonema plica",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Trichuridae",
+      "genus": "Pearsonema",
+      "species": "Pearsonema plica"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Moč",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 55,
+      "lengthMax": 67,
+      "widthMin": 26,
+      "widthMax": 29,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Žltohnedý",
+      "shell": "Zátky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V močovom sedimente"
+  },
+  {
+    "id": "eucoleus_boehmi_egg",
+    "latinName": "Eucoleus boehmi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Capillariidae",
+      "genus": "Eucoleus",
+      "species": "Eucoleus boehmi"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 55,
+      "lengthMax": 67,
+      "widthMin": 26,
+      "widthMax": 34,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Žltohnedý",
+      "shell": "Hrubá, s polárnymi zátkami"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V nose"
+  },
+  {
+    "id": "eucoleus_aerophilus_egg",
+    "latinName": "Eucoleus aerophilus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Enoplea",
+      "order": "Trichinellida",
+      "family": "Capillariidae",
+      "genus": "Eucoleus",
+      "species": "Eucoleus aerophilus"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 55,
+      "lengthMax": 67,
+      "widthMin": 26,
+      "widthMax": 35,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Citrónovitý",
+      "colour": "Žltohnedý",
+      "shell": "Sieťovaná"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Syn. Capillaria aerophila. Zátky rovné"
+  },
+  {
+    "id": "linguattula_serrata_egg",
+    "latinName": "Linguatula serrata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Pentastomida",
+      "order": "Porocephalida",
+      "family": "Linguatulidae",
+      "genus": "Linguatula",
+      "species": "Linguatula serrata"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Pentastomida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 90,
+      "lengthMax": 90,
+      "widthMin": 70,
+      "widthMax": 70,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Listovitý",
+      "colour": "Žltobiely",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Nosový výtok"
+  },
+  {
+    "id": "demodex_canis_adult",
+    "latinName": "Demodex canis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex canis"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 165,
+      "lengthMax": 300,
+      "widthMin": 33,
+      "widthMax": 43,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Cigarovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "demodex_injai_adult",
+    "latinName": "Demodex injai",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex injai"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 282,
+      "lengthMax": 411,
+      "widthMin": 40,
+      "widthMax": 48,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Predĺžený",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Dlhý"
+  },
+  {
+    "id": "echinococcus_sp_egg",
+    "latinName": "Echinococcus sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Echinococcus",
+      "species": "neurčené do druhu"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 34,
+      "lengthMax": 39,
+      "widthMin": 31,
+      "widthMax": 35,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "dipylidium_caninum_egg",
+    "latinName": "Dipylidium caninum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Dipylidiidae",
+      "genus": "Dipylidium",
+      "species": "Dipylidium caninum"
+    },
+    "host": [
+      "Pes"
+    ],
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 35,
+      "lengthMax": 60,
+      "widthMin": 35,
+      "widthMax": 60,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Sivobiely",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V kokónoch (120–200 μm)"
   }
 ]
