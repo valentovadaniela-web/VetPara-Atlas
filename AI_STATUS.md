@@ -2,13 +2,29 @@
 
 **Dátum poslednej aktualizácie:** 2026-08-17
 **Branch:** develop
-**Verzia projektu:** v11 (po vyriešení hamburger menu, loga a čistení architektúry)
+**Verzia projektu:** v12 (po importe ďalších hostiteľov)
 
 ---
 
 ## 1. SÚHRN AKTUÁLNEHO STAVU (2026-08-17)
 
-Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza pre psa (38 záznamov) je naimportovaná, ošetrená, funkčná a zvalidovaná voči `02_DATABASE_SPECIFICATION.md` (bez chýb). Priorita 1 (vyčistenie architektúry) je dokončená.
+Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza obsahuje
+psa (38 záznamov, `dog.migrated.json`) a **13 ďalších host-súborov s 529 záznamami**
+(pozri 1.2). Priority 1 a 2 sú dokončené.
+
+### 1.2 Vyriešená Priorita 2 – Import ďalších hostiteľov (2026-08-17)
+- ✅ Naimportovaných **529 diagnostických objektov** z `Mikrometria_doplnená__opravená.xlsx`
+  do 13 nových súborov: `cat`, `horse`, `cattle`, `pig`, `sheep_goat`, `rabbit`,
+  `hedgehog`, `rodents`, `reptiles`, `fish`, `molluscs`, `wild_ruminants`, `birds`
+  (všetky `*.migrated.json` v `database/`).
+- ✅ Vytvorený nový slovník `dictionary/host_hierarchy.json` (67 mapovaní) –
+  zoskupuje konkrétnych hostiteľov pod nadradené kategórie (napr. Varan → Jaštery
+  → Plazy) bez zmeny existujúcej schémy `host: []`.
+- ✅ Architektúra rozšírená nad rámec pôvodných 7 host-súborov zo
+  `02_DATABASE_SPECIFICATION.md` – schválené autorkou priamo v chate.
+- ✅ Všetky sporné prípady (duplicitné `id` naprieč hostiteľmi s odlišnými dátami)
+  vyriešené s autorkou a zdokumentované.
+- 📄 Log importu: `docs/2026-08-17_priorita2-import-hostitelia.md`
 
 ### 1.1 Vyriešené blokujúce problémy (2026-08-17)
 - ✅ **Hamburger menu (mobil):** Kliknutie na hamburger teraz spoľahlivo zobrazí navigáciu.
@@ -48,10 +64,15 @@ Ak príde nový AI asistent, musí vedieť, čo má robiť ďalej. Tu sú **konk
 
 ### 2.1 Priorita č. 1: Vyčistenie architektúry — ✅ DOKONČENÉ (2026-08-17)
 
-### 2.2 Priorita č. 2: Etapa 2 – Import ďalších hostiteľov (DÁTA)
-- V zdrojovej tabuľke `Mikrometria_doplnená__opravená.xlsx` sa nachádza **530 riadkov pre ďalších 14 hostiteľov** (mimo psa).
-  - *Akcia:* Spracovať tieto dáta, validovať ich proti schéme (`02_DATABASE_SPECIFICATION.md`) a vytvoriť nové JSON súbory pre jednotlivých hostiteľov (napr. `cat.migrated.json`, atď.).
-  - *Poznámka:* Pri importe treba dávať pozor na prípadné chybné údaje (ako pri `Dibothriocephalus_latus_egg`).
+### 2.2 Priorita č. 2: Etapa 2 – Import ďalších hostiteľov — ✅ DOKONČENÉ (2026-08-17)
+Pozri sekciu 1.2 a `docs/2026-08-17_priorita2-import-hostitelia.md`.
+
+**Čo môže nový AI ešte skontrolovať:**
+- `dictionary/host_hierarchy.json` je zatiaľ len navrhnutý slovník – neoverené,
+  či ho `AtlasPage.js`/`DatabaseService.js` reálne používajú na filtrovanie.
+  Treba prepojiť s UI, ak sa má hierarchia zobrazovať vo filtroch.
+- `DatabaseService.js` momentálne (podľa `App.js`) načítava len `loadDogDatabase()`.
+  Treba rozšíriť o načítanie nových 13 súborov.
 
 ### 2.3 Priorita č. 3: Chýbajúce stránky (UI)
 - **Gallery page** (momentálne placeholder – `console.log("Gallery page")` v `App.js`).
@@ -79,8 +100,11 @@ Nový AI by mal mať v repozitári tieto kľúčové súbory (sú aktuálne):
 - **`src/pages/AtlasPage.js`** – Logika pre filtre, vykreslenie zoznamu a detailov.
 - **`src/js/main.js`** – Entry point aplikácie.
 - **`database/dog.migrated.json`** – Finálna databáza pre psa (38 záznamov, zvalidovaná).
+- **`database/{cat,horse,cattle,pig,sheep_goat,rabbit,hedgehog,rodents,reptiles,fish,molluscs,wild_ruminants,birds}.migrated.json`** – 13 nových host-súborov (529 záznamov spolu), naimportovaných 2026-08-17.
+- **`database/dictionary/host_hierarchy.json`** – Nový slovník hierarchie hostiteľov (67 mapovaní).
 - **`_archive/Navbar.js`** – Archivovaný mŕtvy kód (nepoužívať, len referencia).
-- **`docs/2026-08-17_priorita1-cleanup.md`** – Log dnešnej zmeny (Priorita 1).
+- **`docs/2026-08-17_priorita1-cleanup.md`** – Log Priority 1 (čistenie architektúry).
+- **`docs/2026-08-17_priorita2-import-hostitelia.md`** – Log Priority 2 (import hostiteľov).
 - **`docs/2026-08-15_micrometry-taxonomy-import.md`** – Detailný záznam o importe a opravách dát.
 
 ---

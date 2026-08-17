@@ -1,0 +1,494 @@
+[
+  {
+    "id": "trichomonas_limacis_trophozoite",
+    "latinName": "Trichomonas limacis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Metamonada",
+      "class": "Parabasalia",
+      "order": "Trichomonadida",
+      "family": "Trichomonadidae",
+      "genus": "Trichomonas",
+      "species": "Trichomonas limacis"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Trus",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 4,
+      "lengthMax": 32,
+      "widthMin": 2.4,
+      "widthMax": 14,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "cryptobia_helicis_trophozoite",
+    "latinName": "Cryptobia helicis",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Sarcomastigophora",
+      "class": "Mastigophora",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Cryptobia",
+      "species": "Cryptobia helicis"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Trus",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 11.25,
+      "lengthMax": 27,
+      "widthMin": 1.25,
+      "widthMax": 2.25,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vretenovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "colpoda_steinii_trophozoite",
+    "latinName": "Colpoda steinii",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Ciliophora",
+      "class": "Colpodea",
+      "order": "Colpodida",
+      "family": "Colpodidae",
+      "genus": "Colpoda",
+      "species": "Colpoda steinii"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Trus",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 20,
+      "lengthMax": 40,
+      "widthMin": 15,
+      "widthMax": 30,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Fazuľovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "isospora_sp_oocyst",
+    "latinName": "Isospora sp.",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Myzozoa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Sarcocystidae",
+      "genus": "Isospora",
+      "species": "Isospora felis"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 10,
+      "lengthMax": 40,
+      "widthMin": 10,
+      "widthMax": 35,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "alloionema_appendiculatum_larva",
+    "latinName": "Alloionema appendiculatum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Alloionematidae",
+      "genus": "Alloionema",
+      "species": "Alloionema appendiculatum"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Sval",
+    "stage": "Larva",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 1500,
+      "widthMin": 1000,
+      "widthMax": 1500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Červovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "angiostoma_aspersae_adult",
+    "latinName": "Angiostoma aspersae",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Angiostomatidae",
+      "genus": "Angiostoma",
+      "species": "Angiostoma aspersae"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Pľúca",
+    "stage": "Dospelý jedinec",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 2000,
+      "lengthMax": 4000,
+      "widthMin": 2000,
+      "widthMax": 4000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "nemhelix_bakeri_adult",
+    "latinName": "Nemhelix bakeri",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Cosmocercidae",
+      "genus": "Nemhelix",
+      "species": "Nemhelix bakeri"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Pohlavné orgány",
+    "stage": "Dospelý jedinec",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 2000,
+      "lengthMax": 2000,
+      "widthMin": 2000,
+      "widthMax": 2000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "rhabditis_gracilicaudata_adult",
+    "latinName": "Rhabditis gracilicaudata",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Choriorhabditis",
+      "species": "Choriorhabditis gracilicauda"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Pľúca",
+    "stage": "Dospelý jedinec",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 2500,
+      "widthMin": 50,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vretenovitý",
+      "colour": "Bezfarebný",
+      "shell": "Pružná kutikula"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "phasmarhabditis_hermaphrodita_adult",
+    "latinName": "Phasmarhabditis hermaphrodita",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Pellioditis",
+      "species": "Pellioditis hermaphrodita"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Podkožie",
+    "stage": "Dospelý jedinec",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 1000,
+      "widthMin": 1000,
+      "widthMax": 1000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "riccardoella_limacum_adult",
+    "latinName": "Riccardoella limacum",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Ereynetidae",
+      "genus": "Riccardoella",
+      "species": "Riccardoella limacum"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Plášťová dutina",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 500,
+      "lengthMax": 500,
+      "widthMin": 500,
+      "widthMax": 500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "riccardoella_oudemansi_adult",
+    "latinName": "Riccardoella oudemansi",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Ereynetidae",
+      "genus": "Riccardoella",
+      "species": "Riccardoella oudemansi"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Plášťová dutina",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 500,
+      "lengthMax": 500,
+      "widthMin": 500,
+      "widthMax": 500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "stratiolaelaps_scimitus_adult",
+    "latinName": "Stratiolaelaps scimitus",
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Mesostigmata",
+      "family": "Laelapidae",
+      "genus": "Stratiolaelaps",
+      "species": "Stratiolaelaps scimitus"
+    },
+    "host": [
+      "Slimáky"
+    ],
+    "sample": "Plášťová dutina",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 500,
+      "lengthMax": 500,
+      "widthMin": 500,
+      "widthMax": 500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Hnedý",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Predátor"
+  }
+]
