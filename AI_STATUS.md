@@ -9,14 +9,18 @@
 ## 1. SÚHRN AKTUÁLNEHO STAVU (2026-08-17)
 
 Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza obsahuje
-psa (38 záznamov, `dog.migrated.json`) a **13 ďalších host-súborov s 529 záznamami**
-(pozri 1.2). Priority 1 a 2 sú dokončené.
+**všetkých 14 hostiteľských súborov** naimportovaných z `Mikrometria_doplnená__opravená.xlsx`:
+- `dog.migrated.json` (38 záznamov) – **aktualizovaný 2026-08-17** podľa aktuálnej tabuľky
+- 13 ďalších host-súborov (spolu 529 záznamov) – pozri 1.2
 
 ### 1.2 Vyriešená Priorita 2 – Import ďalších hostiteľov (2026-08-17)
 - ✅ Naimportovaných **529 diagnostických objektov** z `Mikrometria_doplnená__opravená.xlsx`
   do 13 nových súborov: `cat`, `horse`, `cattle`, `pig`, `sheep_goat`, `rabbit`,
   `hedgehog`, `rodents`, `reptiles`, `fish`, `molluscs`, `wild_ruminants`, `birds`
   (všetky `*.migrated.json` v `database/`).
+- ✅ **`dog.migrated.json` bol aktualizovaný** – pôvodný súbor bol zastaralý a nekolidoval
+  s novými dátami. Bol pregenerovaný podľa rovnakej zdrojovej tabuľky
+  `Mikrometria_doplnená__opravená.xlsx` ako ostatní hostitelia.
 - ✅ Vytvorený nový slovník `dictionary/host_hierarchy.json` (67 mapovaní) –
   zoskupuje konkrétnych hostiteľov pod nadradené kategórie (napr. Varan → Jaštery
   → Plazy) bez zmeny existujúcej schémy `host: []`.
@@ -42,10 +46,10 @@ psa (38 záznamov, `dog.migrated.json`) a **13 ďalších host-súborov s 529 z�
 
 ### 1.3 Čo bolo dokončené v predchádzajúcich fázach
 - **Databáza (`dog.migrated.json`):**
-  - Importovaných 38 záznamov pre psa z `Mikrometria_doplnená__opravená.xlsx`.
-  - Ošetrené duplicity (zlúčenie `diphyllobothrium_latum` → `dibothriocephalus_latus_egg`), opravené `kingdom`/`phylum`.
-  - 37 záznamov upravených (micrometry, taxonomy, notes).
-  - Zvalidované 2026-08-17 voči schéme z `02_DATABASE_SPECIFICATION.md`: 0 chýb (povinné polia, duplicitné ID, jednotky, zakázané placeholder hodnoty).
+  - **AKTUALIZOVANÉ 2026-08-17:** Súbor bol pregenerovaný podľa aktuálnej verzie
+    `Mikrometria_doplnená__opravená.xlsx`, aby korešpondoval s ostatnými 13 hostiteľmi.
+  - Pôvodný súbor bol zastaralý a nekolidoval s novými dátami.
+  - Obsahuje 38 záznamov pre psa, validovaných voči schéme.
 - **Vizuálny redizajn (Milestone 2):**
   - Bootstrap definitívne odstránený z projektu (nahradený vlastným CSS dizajnovým systémom cez `variables.css`).
   - Home stránka, filtre (host, sample, shape, colour), veľkostný filter, detail záznamu a taxonómia sú plne funkcionalizované a prestylované.
@@ -72,7 +76,7 @@ Pozri sekciu 1.2 a `docs/2026-08-17_priorita2-import-hostitelia.md`.
   či ho `AtlasPage.js`/`DatabaseService.js` reálne používajú na filtrovanie.
   Treba prepojiť s UI, ak sa má hierarchia zobrazovať vo filtroch.
 - `DatabaseService.js` momentálne (podľa `App.js`) načítava len `loadDogDatabase()`.
-  Treba rozšíriť o načítanie nových 13 súborov.
+  Treba rozšíriť o načítanie nových 13 súborov (a aktualizovaného `dog.migrated.json`).
 
 ### 2.3 Priorita č. 3: Chýbajúce stránky (UI)
 - **Gallery page** (momentálne placeholder – `console.log("Gallery page")` v `App.js`).
@@ -99,7 +103,7 @@ Nový AI by mal mať v repozitári tieto kľúčové súbory (sú aktuálne):
 - **`src/app/Router.js`** – Jednoduchý hash router (bez zmien).
 - **`src/pages/AtlasPage.js`** – Logika pre filtre, vykreslenie zoznamu a detailov.
 - **`src/js/main.js`** – Entry point aplikácie.
-- **`database/dog.migrated.json`** – Finálna databáza pre psa (38 záznamov, zvalidovaná).
+- **`database/dog.migrated.json`** – **AKTUALIZOVANÁ** databáza pre psa (38 záznamov, zvalidovaná, v súlade s ostatnými hostiteľmi).
 - **`database/{cat,horse,cattle,pig,sheep_goat,rabbit,hedgehog,rodents,reptiles,fish,molluscs,wild_ruminants,birds}.migrated.json`** – 13 nových host-súborov (529 záznamov spolu), naimportovaných 2026-08-17.
 - **`database/dictionary/host_hierarchy.json`** – Nový slovník hierarchie hostiteľov (67 mapovaní).
 - **`_archive/Navbar.js`** – Archivovaný mŕtvy kód (nepoužívať, len referencia).
