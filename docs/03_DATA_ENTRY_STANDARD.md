@@ -401,7 +401,7 @@ Oválny
 
 Elipsovitý
 
-Valcovitý
+Vajcovitý
 
 Hruškovitý
 

@@ -35,13 +35,25 @@
  ******************************************************************************/
 
 import Repository from "../services/Repository.js";
-import hostHierarchy from "../../database/dictionary/host_hierarchy.json" with { type: "json" };
+import DatabaseService from "../services/DatabaseService.js";
+
+// OPRAVA (2026-08-17, bug: pád celej appky): pôvodný statický
+// `import hostHierarchy from ".../host_hierarchy.json" with { type: "json" }`
+// je za behu krehký — ak prehliadač/server nepodporí import attributes
+// alebo súbor 404-uje/zlú MIME hlavičku, ZLYHÁ CELÝ MODUL AtlasPage.js pri
+// parsovaní a appka spadne (presne toto sa stalo). Nahradené bezpečným
+// async fetchom cez DatabaseService.load() (rovnaká konvencia ako pre
+// ostatných 14 databázových súborov) s try/catch fallbackom — pozri
+// loadHostHierarchy() nižšie.
+const HOST_HIERARCHY_FILE = "dictionary/host_hierarchy.json";
 
 // Checkboxové filtre — OR logika v rámci poľa.
-const CHECKBOX_FIELDS = ["host", "sample"];
+const CHECKBOX_FIELDS = ["host"];
 
-// Ostávajú ako <select multiple> na explicitné želanie autorky.
-const MULTI_SELECT_FIELDS = ["shape", "colour"];
+// select-multiple, na explicitné želanie autorky (2026-08-17: "sample" sem
+// preradený na jej výslovnú žiadosť — Materiál má vyzerať a fungovať ako
+// Tvar/Farba).
+const MULTI_SELECT_FIELDS = ["sample", "shape", "colour"];
 
 const AtlasPage = {
 
@@ -56,6 +68,15 @@ const AtlasPage = {
         widthMin: "",
         widthMax: ""
     },
+
+    // OPRAVA (2026-08-17): nahrádza pôvodný statický `import ... with { type: "json" }`.
+    // hostHierarchy je {} kým sa async fetch nedokončí — dovtedy
+    // getTopLevelGroup() vráti pre každého hostiteľa null, takže render()
+    // ukáže bezpečný fallback (všetci hostitelia ako "standalone", bez
+    // skupín) namiesto pádu appky. Po dokončení loadHostHierarchy() sa
+    // filter hostiteľov prekreslí so skupinami.
+    hostHierarchy: {},
+    hostHierarchyLoaded: false,
 
     render() {
 
@@ -78,7 +99,7 @@ const AtlasPage = {
 
                         ${this.renderHostFilterSection(this.getHostValues())}
 
-                        ${this.renderCheckboxFilter(
+                        ${this.renderMultiFilter(
                             "sample",
                             "Materiál (vzorka)",
                             this.getValues("sample")
@@ -88,7 +109,7 @@ const AtlasPage = {
                             "shape",
                             "Tvar",
                             this.getValues("morphology.shape")
-                        )}
+                        )}             
 
                         ${this.renderMultiFilter(
                             "colour",
@@ -256,6 +277,12 @@ const AtlasPage = {
 
         });
 
+        // OPRAVA (2026-08-17): async načítanie slovníka skupín, nahrádza
+        // pôvodný statický import, ktorý padal (pozri poznámku pri
+        // HOST_HIERARCHY_FILE). Prekreslí a znovu nabindí len sekciu
+        // filtra hostiteľov, keď fetch doletí.
+        this.loadHostHierarchy();
+
         MULTI_SELECT_FIELDS.forEach(field => {
 
             this.bindMultiFilter(field);
@@ -342,14 +369,67 @@ const AtlasPage = {
     getTopLevelGroup(hostName) {
 
         let current = hostName;
-        let parent = hostHierarchy[current];
+        let parent = this.hostHierarchy[current];
 
         while (parent) {
             current = parent;
-            parent = hostHierarchy[current];
+            parent = this.hostHierarchy[current];
         }
 
         return current !== hostName ? current : null;
+
+    },
+
+    /**
+     * Bezpečné async načítanie host_hierarchy.json cez DatabaseService.load()
+     * (rovnaká konvencia ako pre 14 databázových súborov v database/). Ak
+     * fetch zlyhá, appka nepadne — hostHierarchy ostane {} a filter
+     * hostiteľov sa jednoducho zobrazí bez skupín (všetko "standalone").
+     */
+    async loadHostHierarchy() {
+
+        try {
+
+            this.hostHierarchy =
+                await DatabaseService.load(HOST_HIERARCHY_FILE);
+
+        }
+        catch (error) {
+
+            console.warn(
+                "VetPara Atlas: host_hierarchy.json sa nepodarilo načítať, " +
+                "hostiteľský filter zostáva bez skupín.",
+                error
+            );
+
+            this.hostHierarchy = {};
+
+        }
+
+        this.hostHierarchyLoaded = true;
+        this.refreshHostFilterSection();
+
+    },
+
+    /**
+     * Prekreslí IBA sekciu filtra hostiteľov (po dokončení
+     * loadHostHierarchy()) a znovu ju nabinduje. Zvyšok stránky sa nemení.
+     */
+    refreshHostFilterSection() {
+
+        const fieldset =
+            document.getElementById("atlas-filter-host");
+
+        const wrapper =
+            fieldset ? fieldset.closest(".filter-section") : null;
+
+        if (!wrapper) {
+            return;
+        }
+
+        wrapper.outerHTML = this.renderHostFilterSection(this.getHostValues());
+
+        this.bindCheckboxFilter("host");
 
     },
 
@@ -588,8 +668,32 @@ renderHostFilterSection(hosts) {
         }
 
         Array.from(select.options).forEach(option => {
+
             option.selected =
                 this.state[field].includes(option.value);
+
+            // OPRAVA (2026-08-17): natívne <select multiple> vyžaduje na
+            // výber VIACERÝCH položiek podržanie Ctrl/Cmd — bez toho
+            // klik vždy vybral len jednu a ostatné odznačil (nahlásený
+            // problém). Zachytávame mousedown (nie "click" — na <option>
+            // sa v niektorých prehliadačoch nespúšťa spoľahlivo),
+            // potlačíme predvolené správanie a položku prepneme (toggle)
+            // manuálne. Jedno kliknutie tak vždy len pridá/odoberie TÚ
+            // JEDNU položku, ostatné vybrané položky ostanú nedotknuté —
+            // rovnaké správanie ako pri checkboxoch, vizuál <select>
+            // sa nemení.
+            option.addEventListener("mousedown", event => {
+
+                event.preventDefault();
+
+                option.selected = !option.selected;
+
+                select.focus();
+
+                select.dispatchEvent(new Event("change"));
+
+            });
+
         });
 
         select.addEventListener("change", () => {
@@ -925,7 +1029,8 @@ renderHostFilterSection(hosts) {
             const group =
                 document.getElementById(`atlas-filter-${field}`);
 
-            if (group) {
+            // Doplnená poistka group.querySelectorAll, ak by element pre materiál už nebol typu fieldset/checkbox
+            if (group && typeof group.querySelectorAll === "function") {
 
                 group.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
                     checkbox.checked =
@@ -934,7 +1039,7 @@ renderHostFilterSection(hosts) {
 
             }
 
-        });
+        });   
 
         MULTI_SELECT_FIELDS.forEach(field => {
 
