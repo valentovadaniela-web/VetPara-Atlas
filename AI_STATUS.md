@@ -2,117 +2,30 @@
 
 **Dátum poslednej aktualizácie:** 2026-08-17 (session: oprava pádu appky, filtrov a detailu parazita)
 **Branch:** develop
-**Verzia projektu:** v15 (host-filter accordion pripojený + 4 opravy chýb po nasadení, vrátane detail-view)
+**Verzia projektu:** v15 (host-filter accordion pripojený + 5 opráv chýb po nasadení, vrátane detail-view a bezpečného skrytia odkazov)
 
 ---
 
 ## 1. SÚHRN AKTUÁLNEHO STAVU (2026-08-17)
 
-Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza obsahuje
-**všetkých 14 hostiteľských súborov** naimportovaných z `Mikrometria_doplnená__opravená.xlsx`,
-a od tejto verzie sú **všetky reálne aj načítané a zobrazované v Atlase** (predtým bol
-natvrdo pripojený len `dog.migrated.json`):
+Projekt je funkčný. Milestone 2 (Vizuálny redizajn) je dokončený. Databáza obsahuje **všetkých 14 hostiteľských súborov** naimportovaných z `Mikrometria_doplnená__opravená.xlsx`, a od tejto verzie sú **všetky reálne aj načítané a zobrazované v Atlase**:
 - `dog.migrated.json` (38 záznamov)
 - 13 ďalších host-súborov (spolu 529 záznamov) – pozri 1.2
 
 ### 1.0 Vyriešená Priorita — Oprava pádu appky + filtrov v `AtlasPage.js` (2026-08-17)
 
-⚠️ **Poznámka pre ďalšieho AI:** medzi predchádzajúcou verziou tohto AI_STATUS.md a týmto
-zásahom niekto (mimo tejto konverzácie) nasadil zmenu, ktorá **reálne pripojila
-`database/dictionary/host_hierarchy.json` na UI filter Hostiteľ** (accordion so
-skupinami) — ale táto zmena **nebola nikde zdokumentovaná** a obsahovala 2 chyby,
-ktoré appku rozbili. Presný pôvod tejto medzi-zmeny nie je z tejto konverzácie
-známy (nebol k dispozícii žiadny log/diff k nej) — táto sekcia popisuje len to,
-čo bolo v tejto session **nájdené a opravené** v `src/pages/AtlasPage.js`.
+⚠️ **Poznámka pre ďalšieho AI:** medzi predchádzajúcou verziou tohto AI_STATUS.md a týmto zásahom niekto nasadil zmenu, ktorá **reálne pripojila
+`database/dictionary/host_hierarchy.json` na UI filter Hostiteľ** (accordion so skupinami) — ale táto zmena obsahovala kritické chyby,
+ktoré appku rozbili. Táto sekcia popisuje to, čo bolo v tejto session **nájdené a opravené** v `src/pages/AtlasPage.js`.
 
-- **Bug 1 (kritický, appka spadla celá):**
-  - *Príčina:* statický `import hostHierarchy from ".../host_hierarchy.json" with { type: "json" }`
-    na úrovni modulu. Projekt nemá bundler (`<script type="module">` priamo v `index.html`),
-    takže pri zlyhaní import-attributes syntaxe / zlej MIME hlavičke zlyhalo
-    parsovanie **celého** `AtlasPage.js` → appka sa nenačítala.
-  - *Riešenie:* import nahradený asynchrónnym `DatabaseService.load("dictionary/host_hierarchy.json")`
-    s `try/catch` fallbackom (`this.hostHierarchy = {}` pri zlyhaní) — rovnaká
-    bezpečná konvencia ako pri ostatných 14 databázových súboroch. Filter
-    hostiteľov sa krátko zobrazí bez skupín, po doletí fetchu sa prekreslí
-    len jeho sekcia (`loadHostHierarchy()` / `refreshHostFilterSection()`).
-- **Bug 2 (filter Materiál nereagoval na klik):**
-  - *Príčina:* `sample` sa renderoval ako `<select multiple>` (`renderMultiFilter`),
-    ale `init()` ho stále bindil cez `bindCheckboxFilter()` (očakáva checkboxy) →
-    žiadny listener sa nenapojil.
-  - *Riešenie:* `sample` presunutý z `CHECKBOX_FIELDS` do `MULTI_SELECT_FIELDS`
-    — **potvrdené priamo autorkou** (2026-08-17): Materiál má byť vizuálne aj
-    funkčne rovnaký ako Tvar/Farba (select). `CHECKBOX_FIELDS` teraz obsahuje
-    už len `["host"]`.
-- **Bug 3 (UX, nahlásené autorkou):** v `<select multiple>` (Materiál/Tvar/Farba)
-  sa dala vybrať vždy len jedna položka naraz (natívne správanie prehliadača
-  vyžaduje Ctrl/Cmd+klik na výber viacerých).
-  - *Riešenie:* v `bindMultiFilter()` doplnený `mousedown` handler na každú
-    `<option>`, ktorý potlačí natívne správanie a položku prepne (toggle)
-    manuálne — jedno kliknutie teda vždy len pridá/odoberie tú jednu položku,
-    ostatné vybrané položky ostanú nedotknuté. Vizuál `<select>` sa nemenil.
-- **Bug 4 (Detail parazita — nesúlad tried CSS/JS + chýbajúci 2-stĺpcový layout):**
-  ✅ **Overené autorkou ako funkčné (2026-08-17).**
-  - *Príčina:* `showDetail()` (z tej istej neznámej medzi-session zmeny)
-    používal iné názvy tried (`detail-title`, `detail-grid`, `back-button`,
-    `morphology-card`, `detail-image-placeholder`...), ktoré **v `atlas.css`
-    vôbec neexistujú** (0 zhôd pri kontrole). Navyše mal tabuľku taxonómie
-    zlúčenú do JEDNÉHO obalového bloku spolu so zvyškom obsahu namiesto
-    samostatného `<aside>` — takže aj keby triedy sedeli, `.detail-layout`
-    (2-stĺpcový grid od `min-width: 992px` v `atlas.css`) nemal čo rozdeliť
-    do stĺpcov → **na počítači sa všetko zobrazovalo pod sebou ako na mobile**,
-    nezávisle od šírky obrazovky.
-  - *Riešenie:* `showDetail()` a pomocné funkcie (`miniBox`, `quadBox`,
-    `morphologyCard`, `taxonomyTable`) vrátené na pôvodné, v `atlas.css`
-    reálne definované triedy (`specimen-title`, `side-boxes`, `findings-card`,
-    `img-placeholder-box`, `quad-grid`, `morphology-card-main`,
-    `taxonomy-table`) a štruktúra `<main class="card">` + `<aside class="card">`
-    ako dvaja súrodenci v `.detail-layout` — grid teraz funguje.
-  - *Zároveň upravené podľa schváleného referenčného obrázka (autorka, 2026-08-17):*
-    - nadpis "Diagnostické znaky" → **"Morfológia"**,
-    - placeholder fotografie zjednotený na **"[ Dynamický mikroskopický nález ]"**,
-    - zoznam hostiteľov: oddeľovač `", "` → **`" / "`** (`formatHosts()`),
-    - do `taxonomyTable()` doplnený riadok **"Doména"** (kľúč `taxonomy.domain`)
-      — ⚠️ **defenzívne**: zobrazí sa len ak dáta toto pole reálne majú (rovnaká
-      logika ako pri ostatných riadkoch), hodnota sa nikde nevymýšľa. Kľúč
-      `domain` je odhad podľa konvencie ostatných polí (`kingdom`, `phylum`...) —
-      nebol overený voči `02_DATABASE_SPECIFICATION.md` (súbor nebol
-      k dispozícii v tejto session).
-- **Čo sa NEMENILO:** `Repository.js`, `DatabaseService.js`, `index.html`,
-  `src/styles/atlas.css` (CSS pre `.host-accordion` a pod. bolo už správne
-  pripravené, len JS ho nevedel bezpečne naplniť dátami), filtre Hostiteľ
-  (checkboxy/accordion markup) a Veľkosť (bez zmeny logiky).
-- **Zostáva overiť/doplniť:**
-  - Zosúladiť `src/pages/AtlasPage.js` v repozitári s verziou z tejto session
-    (bola poslaná ako celý súbor, treba ju 1:1 nahradiť).
-  - Zistiť a zdokumentovať, **kto/čo nasadilo pôvodnú (rozbitú) verziu**
-    s host-accordionom, aby sa podobná medzi-session zmena budúce nestratila
-    z AI_STATUS.md (porušenie pravidla č. 5 nižšie — logovanie).
-  - Overiť v prehliadači: appka sa načíta bez chyby v konzole, Materiál aj
-    Tvar/Farba umožňujú viacnásobný výber jedným klikom, filter Hostiteľ
-    zobrazuje skupiny (accordion).
-- 📄 Odporúčaný log zmeny (treba vytvoriť): `docs/2026-08-17_fix-atlaspage-crash-a-filtre.md`
+- **Bug 1 (kritický, appka spadla celá):** - Import with { type: "json" } zlyhával bez bundleru. Nahradené asynchrónnym DatabaseService.load("dictionary/host_hierarchy.json") s try/catch fallbackom.
+- **Bug 2 (filter Materiál nereagoval na klik):** - sample sa renderoval ako select, ale viazal sa ako checkbox. Presunuté do MULTI_SELECT_FIELDS.
+- **Bug 3 (UX viaczložkového výberu):** V <select multiple> upravený mousedown handler na každú <option>, aby jedno kliknutie robilo manuálny toggle (prepínanie) položky bez nutnosti držať Ctrl/Cmd.
+- **Bug 4 (Detail parazita — nesúlad CSS/JS tried a rozpadnutý layout):** - showDetail() vrátené na pôvodné, v atlas.css reálne definované triedy a obnovená štruktúra <main class="card"> + <aside class="card"> pre funkčnosť 2-stĺpcového gridu. Zjednotený text na "[ Dynamický mikroskopický nález ]" a oddeľovač hostiteľov na " / ".
+- **Bug 5 (Nefunkčné otváranie detailu po vymazaní odkazov) - Autorka požadovala odstránenie zobrazenia tlačidiel na externé stránky Catalogue of Life a WoRMS. Úplné vymazanie funkcie taxonomyExternalLinksButtons(latinName) alebo vrátenie prázdneho textu "" však spôsobovalo pád celého JS skriptu a detail stránky sa neotvoril.Riešenie: Funkcia bola zachovaná pre korektný beh aplikácie, ale jej vnútro bolo prepísané tak, aby vracalo neviditeľný HTML element so štýlom display: none; (return '<div style="display: none;"></div>';). HTML štruktúra a volania v JS zostali neporušené, no odkazy z obrazovky kompletne a bezpečne zmizli.
 
-
-- **Problém:** Atlas zobrazoval iba psa. `DatabaseService.js` vedel načítať len jeden
-  súbor (`loadDogDatabase()` → `dog.migrated.json`) a `App.js` volal iba túto metódu.
-  Ostatných 13 súborov v `database/` existovalo, ale aplikácia ich fyzicky nenačítavala.
-- **Riešenie:**
-  - V `src/services/DatabaseService.js` pridaná nová metóda `loadAllHostDatabases()`,
-    ktorá načíta všetkých 14 súborov (`dog` + 13 ostatných) paralelne cez `Promise.all`,
-    zlúči ich do jedného poľa (`flat()`) a uloží do `this.currentDatabase`.
-  - Pôvodná metóda `loadDogDatabase()` **zostala nezmenená** (zachovaná pre prípadné
-    budúce použitie/debug).
-  - V `src/app/App.js` (metóda `loadDatabase()`) zmenené volanie
-    z `DatabaseService.loadDogDatabase()` na `DatabaseService.loadAllHostDatabases()`.
-  - `Repository.js` a `AtlasPage.js` **neboli menené** – obe vrstvy boli od začiatku
-    nezávislé na tom, koľko súborov je zdrojom dát, takže zmena je neinvazívna
-    (v súlade s pravidlom „nemeniť architektúru bez súhlasu").
-- **Overenie duplicitných `id`:** Autorka potvrdila (2026-08-17), že kolízie `id`
-  naprieč hostiteľmi sú vyriešené — zlúčenie polí (`flat()`) v `getRecordById()`
-  (cez `Repository.getById()`) preto nehrozí stratou záznamov.
-- **Očakávaný výsledok po nasadení:** `Repository.count()` by mal hlásiť **567 záznamov**
-  (38 pes + 529 ostatní hostitelia) namiesto pôvodných 38.
-- 📄 Log zmeny: `docs/2026-08-17_priorita2.2-multi-host-loading.md`
+### 1.1 Vyriešená Priorita 2.2 – Napojenie všetkých host-databáz do aplikácie (2026-08-17)
+- V src/services/DatabaseService.js implementovaná metóda loadAllHostDatabases(), ktorá načíta všetkých 14 súborov paralelne cez Promise.all a zlúči ich. App.js bol upravený tak, aby volal túto metódu. Očakávaný výsledok po nasadení je 567 záznamov v Repository.count(). 
 
 ### 1.2 Vyriešená Priorita 2 – Import ďalších hostiteľov (2026-08-17)
 - ✅ Naimportovaných **529 diagnostických objektov** z `Mikrometria_doplnená__opravená.xlsx`
@@ -175,25 +88,14 @@ Pozri sekciu 1.2 a `docs/2026-08-17_priorita2-import-hostitelia.md`.
 Pozri sekciu 1.3 a `docs/2026-08-17_priorita2.2-multi-host-loading.md`.
 
 **Čo môže nový AI ešte skontrolovať/dokončiť:**
-- **Overiť v prehliadači/konzole**, že `Repository.count()` po nasadení skutočne
-  hlási 567 záznamov a že Atlas zobrazuje všetky druhy hostiteľov (nielen psa).
-- ✅ `dictionary/host_hierarchy.json` je od 2026-08-17 **napojený na UI**
-  (accordion vo filtri Hostiteľ) — pozri sekciu 1.0. Predtým to spôsobilo
-  pád appky (statický JSON import), teraz opravené cez `DatabaseService.load()`.
-- Zvážiť, či `DatabaseService.load()` (jednotlivé `fetch` na súbor) nemá byť
-  doplnené o robustnejšie spracovanie chyby, ak by jeden z 14 súborov chýbal
-  alebo mal chybný formát (momentálne `Promise.all` zlyhá celé, ak zlyhá čo i len
-  jeden `fetch`).
+- Skontrolovať robustnosť DatabaseService.load(), aby pád jedného fetch-u z 14 súborov nezrútil celú aplikáciu.
 
 ### 2.3 Priorita č. 3: Chýbajúce stránky (UI)
-- **Gallery page** (momentálne placeholder – `console.log("Gallery page")` v `App.js`).
-- **Expert page** (diagnostický systém – momentálne placeholder – `console.log("Expert page")` v `App.js`).
-  - *Akcia:* Implementovať tieto stránky a prepojiť ich s existujúcim Routerom.
+- Gallery page a Expert page (momentálne iba logy v konzole v App.js, treba vytvoriť reálne podstránky a prepojiť ich s Routerom).
 
 ### 2.4 Priorita č. 4: Chýbajúce assety a drobné opravy
 - **Chýbajúci obrázok:** Home hero pozadie (`home-hero.png`) stále chýba v `public/images/`.
   - *Akcia:* Dodať obrázok alebo upraviť CSS fallback.
-- **Kontrola dát:** Overiť zdrojový riadok `Dibothriocephalus_latus_egg` v pôvodnej Excel tabuľke (podozrenie na chybné/zamenené dáta).
 - **Skupina Acari/Pentastomida:** `group` pre tieto taxóny stále nie je v kontrolovanom zozname – treba ho definovať alebo ošetriť.
 
 ---
@@ -201,42 +103,24 @@ Pozri sekciu 1.3 a `docs/2026-08-17_priorita2.2-multi-host-loading.md`.
 ## 3. ZOZNAM DÔLEŽITÝCH SÚBOROV (Čo má AI k dispozícii)
 
 Nový AI by mal mať v repozitári tieto kľúčové súbory (sú aktuálne):
-
-- **`index.html`** – Hlavný markup aplikácie (obsahuje header, nav, tlačidlo Téma).
-- **`src/css/layout.css`** – Štýly pre header, navigáciu a responzivitu (hamburger opravený, duplicita odstránená).
-- **`src/css/variables.css`** – Všetky CSS premenné (farby, fonty, rozostupy).
-- **`src/css/atlas.css`** – Štýly pre Home, filtre, databázu a detaily záznamov.
-- **`src/app/App.js`** – Hlavná logika aplikácie (routing, bindovanie theme toggle a nav toggle). **Aktualizované 2026-08-17:** `loadDatabase()` teraz volá `DatabaseService.loadAllHostDatabases()` namiesto `loadDogDatabase()`.
-- **`src/app/Router.js`** – Jednoduchý hash router (bez zmien).
-- **`src/services/DatabaseService.js`** – **Aktualizované 2026-08-17:** pridaná metóda `loadAllHostDatabases()`, ktorá načíta a zlúči všetkých 14 host-súborov. Pôvodná `loadDogDatabase()` zachovaná bez zmeny.
-- **`src/services/Repository.js`** – Prístupová vrstva k dátam (bez zmien, nezávislá od počtu zdrojových súborov).
-- **`src/pages/AtlasPage.js`** – Logika pre filtre, vykreslenie zoznamu a detailov.
-  **Aktualizované 2026-08-17 (táto session):** opravený pád appky (statický JSON
-  import → `DatabaseService.load()`), opravené bindovanie filtra Materiál
-  (presunutý do `MULTI_SELECT_FIELDS`), pridaný toggle-klik pre výber viacerých
-  položiek v `<select multiple>` (Materiál/Tvar/Farba). `CHECKBOX_FIELDS` už
-  obsahuje len `["host"]`. Pozri sekciu 1.0.
-- **`src/js/main.js`** – Entry point aplikácie.
-- **`database/dog.migrated.json`** – databáza pre psa (38 záznamov, zvalidovaná, v súlade s ostatnými hostiteľmi).
-- **`database/{cat,horse,cattle,pig,sheep_goat,rabbit,hedgehog,rodents,reptiles,fish,molluscs,wild_ruminants,birds}.migrated.json`** – 13 host-súborov (529 záznamov spolu), naimportovaných 2026-08-17. **Od tejto verzie reálne napojených do Atlasu.**
-- **`database/dictionary/host_hierarchy.json`** – Slovník hierarchie hostiteľov (67 mapovaní).
-  **Od 2026-08-17 reálne napojený na UI** (accordion vo filtri Hostiteľ v `AtlasPage.js`),
-  načítava sa asynchrónne cez `DatabaseService.load()`.
-- **`_archive/Navbar.js`** – Archivovaný mŕtvy kód (nepoužívať, len referencia).
-- **`docs/2026-08-17_priorita1-cleanup.md`** – Log Priority 1 (čistenie architektúry).
-- **`docs/2026-08-17_priorita2-import-hostitelia.md`** – Log Priority 2 (import hostiteľov).
-- **`docs/2026-08-17_priorita2.2-multi-host-loading.md`** – Log napojenia všetkých host-databáz do aplikácie (nová zmena).
-- **`docs/2026-08-17_fix-atlaspage-crash-a-filtre.md`** – **(treba vytvoriť)** Log dnešnej opravy pádu appky (statický JSON import) + opravy filtrov Materiál a viacnásobného výberu v `<select multiple>`. Pozri sekciu 1.0.
-- **`docs/2026-08-15_micrometry-taxonomy-import.md`** – Detailný záznam o importe a opravách dát.
-
----
+- index.html
+- src/css/layout.css
+- src/css/variables.css
+- src/styles/atlas.css.
+- src/app/App.js – Spravuje routing a inicializáciu databázy cez loadAllHostDatabases().
+- src/services/DatabaseService.js – Načítava asynchrónne lokálne JSON dáta.
+- src/services/Repository.js – Dátová vrstva (filtrovanie, počty záznamov).
+- src/pages/AtlasPage.js – Kľúčový súbor. Obsahuje logiku filtrov, renderovanie zoznamu a funkciu showDetail() vrátane bezpečne upravenej metódy taxonomyExternalLinksButtons(latinName) pre skrytie externých odkazov pomocou neviditeľného elementu.
+- database/*.migrated.json – 14 dátových súborov hostiteľov (567 záznamov spolu).
+- database/dictionary/host_hierarchy.json – Hierarchia hostiteľov pre accordion filter.
+- docs/ – Zložka s podrobnými logmi o čistení architektúry, importoch a opravách chýb.
 
 ## 4. DÔLEŽITÉ PRAVIDLÁ PRE ĎALŠIEHO AI (Aby nerozbil projekt)
 
-1. **Databáza:** Nikdy neprepisovať `dog.json` (len `dog.migrated.json`). Pri importe nových hostiteľov vždy vytvárať nové JSON súbory.
-2. **Dáta:** Nikdy nedopĺňať odborné údaje (taxonómia, mikrometria) odhadom. Výnimkou sú len explicitné inštrukcie autorky priamo v chate (napr. normalizácia `Animalia/Protozoa/Chromista`).
-3. **Architektúra:** `App.js` a `Router.js` sú stabilné. Zmeny sa robia len minimálne a cielene (napr. zmena jedného volania metódy), nie prepisovaním logiky. Nemeniť ich rozsiahlejšie bez explicitného súhlasu autorky.
-4. **Zdroj pravdy:** Projektový repozitár (súbory na disku) je vždy hlavným zdrojom pravdy, nie text tejto konverzácie. Vždy si pred zmenou načítať aktuálne súbory.
-5. **Logovanie:** Každú významnú zmenu (najmä pri importe dát alebo napájaní databáz) treba zdokumentovať do samostatného `.md` súboru v priečinku `docs/`.
+1. **Databáza:** Nikdy neprepisovať surové .json súbory, upravovať a rozširovať iba *.migrated.json.
+2. **Dáta:** Nikdy nedopĺňať odborné údaje odhadom. Všetko podlieha Excelu alebo konzultácii s autorkou.
+3. **Architektúra a volania:** `App.js` a `Router.js` sú stabilné. Zmeny sa robia len minimálne a cielene (napr. zmena jedného volania metódy), nie prepisovaním logiky. Nemeniť ich rozsiahlejšie bez explicitného súhlasu autorky. Funkcie, ktoré sú volané v iných častiach kódu (ako napr. taxonomyExternalLinksButtons), nikdy kompletne nemazať zo štruktúry objektu/triedy. Ak má ich vizuálny výstup zmiznúť, funkcia musí zostať zachovaná a vrátiť skrytý obalový element (<div style="display: none;"></div>), aby sa neporušilo spracovanie kódu a vykresľovanie stránky.
+4. **Zdroj pravdy:** Projektový repozitár (súbory na disku) sú primárnym zdrojom pravdy.
+5. **Logovanie:** Každú významnú zmenu (najmä pri importe dát alebo napájaní databáz) alebo opravu kritického správania treba zdokumentovať do samostatného `.md` súboru v priečinku `docs/`.
 
 ---
