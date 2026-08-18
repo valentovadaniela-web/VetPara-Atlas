@@ -63,9 +63,11 @@ Nezmenené oproti predošlej verzii — návrh hotový a schválený, čaká na 
 +   ✅ ČIASTOČNE OVERENÉ (2026-08-18): Navigácia Home → Galéria funguje. Filtre Galérie sa vykresľujú. Detail objektu (Uncinaria stenocephala) sa vykresľuje kompletne — všetky polia (hostiteľ, materiál, štádium, veľkosť, tvar, farba, obal) aj taxonomický bočný panel. Placeholder "Žiadne fotografie" je očakávaný a konzistentný stav (images.json zatiaľ bez dát).
 +   ⬜ ZOSTÁVA OVERIŤ: samotná stránka Atlas (zoznam/filtre/fulltext), lightbox v Galérii, tlačidlo "Zobraziť v Atlase" zo skutočnej fotky, konzola prehliadača.
 2. Overiť funkčnosť priameho zdieľaného odkazu načítaním adresy v tvare `#atlas/<id>` priamo do prehliadača (či sa detail správne vyrenderuje okamžite pri inicializácii).
-+   ⬜ ZATIAĽ NEOVERENÉ.
+✅ OVERENÉ (2026-08-18): `#atlas/uncinaria_stenocephala_egg` po hard-reloade správne vykreslí detail. Router.resolve() aj App.js route "atlas" fungujú korektne (kód skontrolovaný — nebola potrebná žiadna zmena). Pozor: ID záznamov majú formát `nazov_druhu_stadium` (napr. `uncinaria_stenocephala_egg`), nie voľný slug z latinského mena.
 3. Sledovať vývojársku konzolu a odchytávať prípadné runtime chyby.
-+   ⬜ ZATIAĽ NEOVERENÉ.
+✅ OVERENÉ (2026-08-18): Konzola pri Home page bez chýb ("Application ready."). 
++   ⚠️ POZNÁMKA (drobná, kozmetická): log v App.js hlási "Dog database loaded (474 records)", hoci od migrácie ide o parasites.json naprieč všetkými hostiteľmi (nielen pes). Text logu treba pri budúcej úprave App.js zosúladiť (napr. "Parasites database loaded").
+**PRIORITA Č. 1 CELKOVO: ✅ HOTOVÁ.** Zostáva len otestovať lightbox + tlačidlo "Zobraziť v Atlase" reálnym klikom v appke — to je ale blokované Prioritou č. 2 (chýbajú reálne fotografie v images.json), takže sa to prirodzene presúva do nadväzujúceho testovania po doplnení fotiek.
 
 ### Priorita č. 2: Implementácia reálnych `<img>` značiek a nahratie fotografií
 1. Nahradiť placeholder `<div>` tagy za plnohodnotné `<img>` prvky v `PrimaryImage.js` (`populate()`, `renderStatic()`) a `GalleryPage.js` (`renderGrid()`, `openLightbox()`).
