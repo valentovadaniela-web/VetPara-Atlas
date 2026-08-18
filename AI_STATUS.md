@@ -70,6 +70,71 @@ Nezmenené oproti predošlej verzii — návrh hotový a schválený, čaká na 
 **PRIORITA Č. 1 CELKOVO: ✅ HOTOVÁ.** Zostáva len otestovať lightbox + tlačidlo "Zobraziť v Atlase" reálnym klikom v appke — to je ale blokované Prioritou č. 2 (chýbajú reálne fotografie v images.json), takže sa to prirodzene presúva do nadväzujúceho testovania po doplnení fotiek.
 
 ### Priorita č. 2: Implementácia reálnych `<img>` značiek a nahratie fotografií
+**Upresnenie zadania (2026-08-18, od autorky):**
+- Náhľady fotiek majú byť vo formáte **WebP** kvôli rýchlosti načítania stránky.
+- Po kliknutí na náhľad sa má fotka zväčšiť (lightbox / zväčšený náhľad).
+- Jeden parazit môže mať **viacero fotiek** → súbory sa nemôžu volať rovnako ako názov druhu, potrebný jednoznačný systém pomenovania súborov, ktorý sa napriek tomu dá priradiť k správnemu `objectId`.
+- Fotka musí byť priraditeľná aj k **hostiteľovi**: pole hostiteľa má byť voliteľné — ak sa pri fotke hostiteľ nezadá, fotka sa má zobrazovať pri všetkých hostiteľoch, ktorých daný parazit má (t.j. dedí zoznam hostiteľov zo záznamu parazita).
+
+✅ **KONVENCIA NAVRHNUTÁ A SCHVÁLENÁ (2026-08-18)** — na základe preverenia `images.json` (aktuálne `[]`), `PrimaryImage.js`, `GalleryPage.js` a `docs/02_DATABASE_SPECIFICATION.md` §9.
+
+ #### ⚠️ Zistený bug (súčasť opravy v rámci Priority č. 2, nie len konvencia)
+ V `GalleryPage.js` funkcia `getFilteredImages()` obsahuje:
+ ```js
+ if (matchingHosts && matchingHosts.length > 0) {
+     if (!img.host) return false;   // ⚠️ CHYBA
+     ...
+ }
+ ```
+ Toto pri filtrovaní podľa hostiteľa **vylúči** fotky s prázdnym `host` — presný opak požadovaného správania (prázdny `host` = fotka platí pre všetkých hostiteľov daného parazita). Treba opraviť pri implementácii `<img>` tagov.
+
+ #### Schéma záznamu v `images.json` (rozšírenie oproti §9 v `02_DATABASE_SPECIFICATION.md`)
+ Pridané polia oproti písanej špecifikácii, ktoré kód už reálne používa (`isPrimary`, `sortOrder`) alebo je potrebné pridať pre WebP náhľady (`thumbnail`):
+ ```json
+ {
+   "id": "uncinaria_stenocephala_egg_01",
+   "objectId": "uncinaria_stenocephala_egg",
+   "host": "",
+   "author": "",
+   "laboratory": "",
+   "year": "",
+   "sample": "Trus",
+   "stage": "Vajíčko",
+   "method": "Flotácia",
+   "objective": "",
+   "magnification": "",
+   "filename": parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01_full.webp",
+   "thumbnail": parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01.webp",
+   "isPrimary": true,
+   "sortOrder": 1,
+   "description": ""
+ }
+ ```
+ - `host` zostáva **string** (nie pole), zhodné s pôvodnou špecifikáciou. Prázdny reťazec `""` = fotka sa zobrazí pri všetkých hostiteľoch daného parazita (po oprave bugu vyššie).
+ - `objectId` musí presne zodpovedať `id` záznamu v `parasites.json` (referenčná integrita, žiadne odvodzovanie).
+
+ #### Konvencia pomenovania súborov
+ ```
+ public/images/parasites/<objectId>/<objectId>_<poradie>.webp          ← náhľad (thumbnail)
+ public/images/parasites/<objectId>/<objectId>_<poradie>_full.webp     ← zväčšená fotka (filename)
+ ```
+ `<poradie>` = `01`, `02`, `03`... zaisťuje unikátnosť pri viacerých fotkách toho istého parazita. `id` záznamu v `images.json` sa odvodzuje ako `<objectId>_<poradie>` (napr. `uncinaria_stenocephala_egg_01`).
+
+ #### Rozmery a formát
+ | Typ | Formát | Max rozmer (dlhšia strana) | Kvalita | Účel |
+ |---|---|---|---|---|
+ | Náhľad (`thumbnail`) | WebP | 480 px | ~75–80 | Karta v Galérii/Atlase |
+ | Zväčšená (`filename`) | WebP | 1600 px | ~82–85 | Lightbox po kliknutí |
+
+ Neorezávať originálny obsah fotky kvôli zarovnaniu v mriežke — riešiť cez CSS (`object-fit: cover`), keďže pri mikroskopických snímkach môžu okraje niesť diagnostickú informáciu.
+
+ #### Zostávajúce kroky implementácie (kód)
+ 1. `PrimaryImage.js` + `GalleryPage.js` — nahradiť emoji placeholdery skutočnými `<img>` tagmi (`thumbnail` v gridoch/kartách, `filename` v lightboxe/detaile).
+ 2. `GalleryPage.js` — opraviť logiku `getFilteredImages()` pre prázdne `host` (bug vyššie).
+ 3. `docs/02_DATABASE_SPECIFICATION.md` §9 — formálne doplniť polia `isPrimary`, `sortOrder`, `thumbnail` do písanej schémy (zatiaľ ich obsahuje len kód, nie dokument).
+ 4. Autorka postupne dodáva reálne súbory fotiek do `public/images/parasites/<objectId>/` podľa konvencie vyššie a zodpovedajúce záznamy do `images.json`.
+
+
 1. Nahradiť placeholder `<div>` tagy za plnohodnotné `<img>` prvky v `PrimaryImage.js` (`populate()`, `renderStatic()`) a `GalleryPage.js` (`renderGrid()`, `openLightbox()`).
 2. Doplniť fyzické súbory fotiek do zložky `public/images/`.
 3. Validovať rozsah a formát hodnôt v poli `filename` vnútri `images.json`.
