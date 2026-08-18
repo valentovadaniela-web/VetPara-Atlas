@@ -1,12 +1,6 @@
 /******************************************************************************
  * VetPara Atlas
  * Galéria – stránka pre prehliadanie fotografií
- *
- * Samostatná stránka, ktorá filtruje fotografie podľa objectId (diagnostický
- * objekt) a voliteľne podľa host (hostiteľ).
- *
- * Vizuálny jazyk nadväzuje na atlas.css, ale používa vlastné CSS triedy
- * (gallery-*) aby nedošlo ku konfliktom.
  ******************************************************************************/
 
 import DatabaseService from "../services/DatabaseService.js";
@@ -83,7 +77,7 @@ const GalleryPage = {
           </main>
         </div>
 
-        <!-- Lightbox pre detail fotografie -->
+        <!-- Lightbox -->
         <div id="gallery-lightbox" class="gallery-lightbox" style="display: none;">
           <div class="gallery-lightbox-content card">
             <button
@@ -104,7 +98,6 @@ const GalleryPage = {
     this.bindEvents();
     this.renderGrid();
 
-    // Po načítaní host_hierarchy aktualizovať zoznam hostiteľov
     await Repository.loadHostHierarchy();
     this.populateHostDatalist();
     this.populateObjectDatalist();
@@ -132,7 +125,6 @@ const GalleryPage = {
         this.state.filterObjectId = objectInput.value.trim();
         this.renderGrid();
       });
-      // Po výbere z datalistu
       objectInput.addEventListener("change", () => {
         this.state.filterObjectId = objectInput.value.trim();
         this.renderGrid();
@@ -167,7 +159,6 @@ const GalleryPage = {
       });
     }
 
-    // Zatvorenie lightboxu kliknutím mimo obsah
     lightbox.addEventListener("click", (e) => {
       if (e.target === lightbox) {
         lightbox.style.display = "none";
@@ -175,7 +166,6 @@ const GalleryPage = {
       }
     });
 
-    // Esc pre zatvorenie lightboxu
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape" && lightbox.style.display !== "none") {
         lightbox.style.display = "none";
@@ -189,7 +179,6 @@ const GalleryPage = {
 
     if (!images || images.length === 0) return [];
 
-    // Získať všetky objectId, ktoré matchujú filterObjectId (podľa latinského názvu)
     let matchingObjectIds = null;
     if (filterObjectId) {
       const search = filterObjectId.toLowerCase();
@@ -202,7 +191,6 @@ const GalleryPage = {
         .map((r) => r.id);
     }
 
-    // Získať všetky hostiteľov, ktorí matchujú filterHost
     let matchingHosts = null;
     if (filterHost) {
       const search = filterHost.toLowerCase();
@@ -213,14 +201,13 @@ const GalleryPage = {
     }
 
     return images.filter((img) => {
-      // Filter podľa objectId
       if (matchingObjectIds && !matchingObjectIds.includes(img.objectId)) {
         return false;
       }
 
-      // Filter podľa hostiteľa
+      // FIX BUG: prázdny host = fotka patrí všetkým hostiteľom
       if (matchingHosts && matchingHosts.length > 0) {
-        if (!img.host) return false;
+        if (!img.host) return true;
         if (!matchingHosts.some((h) => img.host.includes(h))) return false;
       }
 
@@ -261,7 +248,6 @@ const GalleryPage = {
 
     container.innerHTML = filtered
       .sort((a, b) => {
-        // Primárne fotografie najskôr, potom podľa sortOrder
         if (a.isPrimary && !b.isPrimary) return -1;
         if (!a.isPrimary && b.isPrimary) return 1;
         return (a.sortOrder || 0) - (b.sortOrder || 0);
@@ -273,12 +259,14 @@ const GalleryPage = {
         return `
           <div class="gallery-item card" data-image-id="${this.escapeHtml(img.id)}">
             <div class="gallery-item-thumb">
-              <div class="gallery-thumb-placeholder">
-                <span class="gallery-thumb-icon">🔬</span>
-                <span class="gallery-thumb-label">Fotka</span>
-              </div>
+              <img 
+               src="/public/images/${img.thumbnail}" 
+               alt="${this.escapeHtml(latinName)}"
+               class="gallery-thumb-img"
+              >
               ${img.isPrimary ? `<span class="gallery-badge-primary">Hlavná</span>` : ""}
             </div>
+
             <div class="gallery-item-info">
               <div class="gallery-item-title">${this.escapeHtml(latinName)}</div>
               <div class="gallery-item-meta">
@@ -292,7 +280,6 @@ const GalleryPage = {
       })
       .join("");
 
-    // Bind klik na položky – otvorenie lightboxu
     container.querySelectorAll(".gallery-item").forEach((el) => {
       const imageId = el.dataset.imageId;
       const image = this.state.images.find((img) => img.id === imageId);
@@ -322,26 +309,29 @@ const GalleryPage = {
 
     body.innerHTML = `
       <div class="gallery-lightbox-image">
-        <div class="gallery-lightbox-placeholder">
-          <span class="gallery-lightbox-icon">🔬</span>
-          <span>Fotografia: ${this.escapeHtml(image.filename || "bez názvu")}</span>
-        </div>
+        <img 
+          src="/public/images/${image.filename}" 
+          alt="${this.escapeHtml(record?.latinName || image.objectId)}"
+          class="gallery-lightbox-img"
+        >
       </div>
+
       <div class="gallery-lightbox-info">
-        <h3>${this.escapeHtml(record?.latinName || image.objectId || "Neznámy objekt")}</h3>
+        <h3>${this.escapeHtml(record?.latinName || image.objectId)}</h3>
+
         ${record?.slovakName ? `<p><strong>Slovenský názov:</strong> ${this.escapeHtml(record.slovakName)}</p>` : ""}
+
         <div class="gallery-lightbox-details">
-          ${image.host ? `<div class="gallery-lightbox-detail"><strong>Hostiteľ:</strong> ${this.escapeHtml(image.host)}</div>` : ""}
-          ${image.sample ? `<div class="gallery-lightbox-detail"><strong>Vzorka:</strong> ${this.escapeHtml(image.sample)}</div>` : ""}
-          ${image.stage ? `<div class="gallery-lightbox-detail"><strong>Štádium:</strong> ${this.escapeHtml(image.stage)}</div>` : ""}
-          ${image.method ? `<div class="gallery-lightbox-detail"><strong>Metóda:</strong> ${this.escapeHtml(image.method)}</div>` : ""}
-          ${image.objective || image.magnification ? `<div class="gallery-lightbox-detail"><strong>Zväčšenie:</strong> ${[image.objective, image.magnification].filter(Boolean).join(" / ")}</div>` : ""}
-          ${image.author ? `<div class="gallery-lightbox-detail"><strong>Autor:</strong> ${this.escapeHtml(image.author)}</div>` : ""}
-          ${image.laboratory ? `<div class="gallery-lightbox-detail"><strong>Laboratórium:</strong> ${this.escapeHtml(image.laboratory)}</div>` : ""}
-          ${image.year ? `<div class="gallery-lightbox-detail"><strong>Rok:</strong> ${this.escapeHtml(image.year)}</div>` : ""}
-          ${image.license ? `<div class="gallery-lightbox-detail"><strong>Licencia:</strong> ${this.escapeHtml(image.license)}</div>` : ""}
-          ${image.description ? `<div class="gallery-lightbox-detail"><strong>Popis:</strong> ${this.escapeHtml(image.description)}</div>` : ""}
+          ${image.host ? `<div><strong>Hostiteľ:</strong> ${this.escapeHtml(image.host)}</div>` : ""}
+          ${image.sample ? `<div><strong>Vzorka:</strong> ${this.escapeHtml(image.sample)}</div>` : ""}
+          ${image.stage ? `<div><strong>Štádium:</strong> ${this.escapeHtml(image.stage)}</div>` : ""}
+          ${image.method ? `<div><strong>Metóda:</strong> ${this.escapeHtml(image.method)}</div>` : ""}
+          ${image.objective || image.magnification ? `<div><strong>Zväčšenie:</strong> ${[image.objective, image.magnification].filter(Boolean).join(" / ")}</div>` : ""}
+          ${image.author ? `<div><strong>Autor:</strong> © ${this.escapeHtml(image.author)}</div>` : ""}
+          ${image.year ? `<div><strong>Rok:</strong> ${this.escapeHtml(image.year)}</div>` : ""}
+          ${image.description ? `<div><strong>Popis:</strong> ${this.escapeHtml(image.description)}</div>` : ""}
         </div>
+
         ${record ? `
           <div class="gallery-lightbox-actions">
             <button
@@ -356,7 +346,6 @@ const GalleryPage = {
       </div>
     `;
 
-    // Bind na tlačidlo "Zobraziť v Atlase"
     body.querySelector(".gallery-lightbox-btn")?.addEventListener("click", () => {
       const objectId = body.querySelector(".gallery-lightbox-btn")?.dataset.objectId;
       if (objectId && typeof window.showAtlasDetail === "function") {
