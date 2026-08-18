@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$comment": "Návrh schémy pre database/images.json – verzia 1.0 (2026-08-18)",
+  "title": "Schéma fotografie pre VetPara Atlas",
+  "description": "Každý záznam predstavuje jednu fotografiu diagnostického objektu.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "objectId",
+      "author",
+      "filename",
+      "license"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unikátny identifikátor fotografie (napr. 'giardia_intestinalis_cyst_01')",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "objectId": {
+        "type": "string",
+        "description": "Referencia na diagnostický objekt v parasites.json (pole 'id')",
+        "pattern": "^[a-z0-9_]+$"
+      },
+      "isPrimary": {
+        "type": "boolean",
+        "default": false,
+        "description": "Ak true, táto fotka sa zobrazí ako hlavná v detaile objektu (max 1 na objectId)"
+      },
+      "sortOrder": {
+        "type": "integer",
+        "minimum": 0,
+        "default": 0,
+        "description": "Poradie v galérii (0 = prvá)"
+      },
+      "author": {
+        "type": "string",
+        "description": "Autor fotografie (meno a priezvisko, prípadne inštitúcia)"
+      },
+      "laboratory": {
+        "type": "string",
+        "description": "Laboratórium, kde bola fotografia zhotovená"
+      },
+      "year": {
+        "type": "string",
+        "description": "Rok zhotovenia (formát YYYY alebo YYYY-MM-DD)",
+        "pattern": "^[0-9]{4}(-[0-9]{2}-[0-9]{2})?$"
+      },
+      "host": {
+        "type": "string",
+        "description": "Hostiteľ, z ktorého bola fotografia zhotovená (nepovinné, doplňujúca informácia)"
+      },
+      "sample": {
+        "type": "string",
+        "description": "Typ vzorky (nepovinné)"
+      },
+      "stage": {
+        "type": "string",
+        "description": "Diagnostické štádium (nepovinné)"
+      },
+      "method": {
+        "type": "string",
+        "description": "Použitá diagnostická/laboratórna metóda (nepovinné)"
+      },
+      "objective": {
+        "type": "string",
+        "description": "Objektív (napr. '10x', '40x')"
+      },
+      "magnification": {
+        "type": "string",
+        "description": "Celkové zväčšenie (napr. '400x')"
+      },
+      "license": {
+        "type": "string",
+        "enum": ["CC-BY", "CC-BY-SA", "CC-BY-ND", "CC-BY-NC", "CC-BY-NC-SA", "CC-BY-NC-ND", "Public Domain", "All Rights Reserved"],
+        "description": "Licencia, pod ktorou je fotografia zverejnená"
+      },
+      "filename": {
+        "type": "string",
+        "description": "Názov súboru (napr. 'giardia_intestinalis_cyst_01.jpg')"
+      },
+      "description": {
+        "type": "string",
+        "description": "Slovný popis fotografie (nepovinné)"
+      },
+      "width": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Šírka fotografie v pixeloch (nepovinné, technický údaj)"
+      },
+      "height": {
+        "type": "integer",
+        "minimum": 1,
+        "description": "Výška fotografie v pixeloch (nepovinné, technický údaj)"
+      }
+    },
+    "additionalProperties": false
+  },
+  "examples": [
+    {
+      "id": "giardia_intestinalis_cyst_01",
+      "objectId": "giardia_intestinalis_cyst",
+      "isPrimary": true,
+      "sortOrder": 0,
+      "author": "Ing. Jana Nováková",
+      "laboratory": "Klinika infekčných chorôb, UVLF",
+      "year": "2024",
+      "host": "Pes",
+      "sample": "Trus",
+      "stage": "Cysta",
+      "method": "Flotácia",
+      "objective": "40x",
+      "magnification": "400x",
+      "license": "CC-BY",
+      "filename": "giardia_intestinalis_cyst_01.jpg",
+      "description": "Giardia intestinalis cysta v truse psa, flotácia, zväčšenie 400x. Viditeľná polmesiačikovitá cytoplazma.",
+      "width": 1200,
+      "height": 900
+    },
+    {
+      "id": "giardia_intestinalis_cyst_02",
+      "objectId": "giardia_intestinalis_cyst",
+      "isPrimary": false,
+      "sortOrder": 1,
+      "author": "Ing. Jana Nováková",
+      "laboratory": "Klinika infekčných chorôb, UVLF",
+      "year": "2024",
+      "host": "Mačka",
+      "sample": "Trus",
+      "stage": "Cysta",
+      "method": "Flotácia",
+      "objective": "60x",
+      "magnification": "600x",
+      "license": "CC-BY",
+      "filename": "giardia_intestinalis_cyst_02.jpg",
+      "description": "Giardia intestinalis cysta v truse mačky, detail, zväčšenie 600x.",
+      "width": 1200,
+      "height": 900
+    }
+  ],
+  "_note": "⚠️ Pole 'objectId' je referenciou na 'id' v database/parasites.json. V staršej komunikácii sa spomínalo aj 'parasiteId' – pred implementáciou potvrdiť, ktorý názov sa použije v reálnych dátach."
+}

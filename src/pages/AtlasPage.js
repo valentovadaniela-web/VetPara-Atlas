@@ -36,6 +36,7 @@
 
 import Repository from "../services/Repository.js";
 import DatabaseService from "../services/DatabaseService.js";
+import PrimaryImage from "../components/PrimaryImage.js";
 
 // OPRAVA (2026-08-17, bug: pád celej appky): pôvodný statický
 // `import hostHierarchy from ".../host_hierarchy.json" with { type: "json" }`
@@ -349,10 +350,15 @@ const AtlasPage = {
 
     getHostValues() {
 
+        // OPRAVA (2026-08-18, deduplikácia databázy): `record.host` nahradené
+        // `Repository.resolveHosts(record)`, ktoré zjednotí explicitné
+        // `record.hosts` s rozbaleným `record.hostGroups` (cez
+        // dictionary/host_hierarchy.json). Kým sa hierarchia nenačíta, správa
+        // sa to ako predtým pre záznamy s `hosts` a vynechá tie, ktoré majú
+        // len `hostGroups` — po doletení slovníka renderRecords()/
+        // refreshHostFilterSection() prekreslí znova (pozri loadHostHierarchy()).
         const values = Repository.getAll()
-            .flatMap(record =>
-                Array.isArray(record.host) ? record.host : []
-            )
+            .flatMap(record => Repository.resolveHosts(record))
             .filter(value =>
                 value !== undefined &&
                 value !== null &&
@@ -406,8 +412,20 @@ const AtlasPage = {
 
         }
 
+        // OPRAVA (2026-08-18, deduplikácia databázy): záznamy majú teraz
+        // `hostGroups`/`hosts` namiesto plochého `host`. Repository.resolveHosts()
+        // potrebuje ten istý slovník na rozbalenie hostGroups → konkrétnych
+        // hostiteľov. DatabaseService.load() cachuje podľa súboru, takže toto
+        // nespôsobí druhý sieťový fetch — len sa slovník sprístupní aj tam.
+        await Repository.loadHostHierarchy();
+
         this.hostHierarchyLoaded = true;
         this.refreshHostFilterSection();
+
+        // Kým sa slovník nenačítal, záznamy priradené len cez `hostGroups`
+        // (bez explicitných `hosts`) sa vo filtri/zozname javili ako "bez
+        // hostiteľa" — po doletení slovníka treba zoznam prekresliť.
+        this.renderRecords();
 
     },
 
@@ -779,6 +797,12 @@ renderHostFilterSection(hosts) {
             record.morphology?.shell,
             ...(Array.isArray(record.diagnosticSigns)
                 ? record.diagnosticSigns
+                : []),
+            // OPRAVA (2026-08-18, deduplikácia databázy): nové pole
+            // `synonyms` (iné vedecké názvy, napr. "Giardia lamblia" pre
+            // "Giardia intestinalis") — pozri AI_STATUS.md sekcia 0.2.
+            ...(Array.isArray(record.synonyms)
+                ? record.synonyms
                 : [])
         ];
 
@@ -814,10 +838,13 @@ renderHostFilterSection(hosts) {
             const matchesSearch =
                 this.matchesFulltext(record, search);
 
+            // OPRAVA (2026-08-18, deduplikácia databázy): `record.host`
+            // nahradené `Repository.resolveHosts(record)` (union explicitných
+            // `hosts` a rozbaleného `hostGroups`). Filtrovacia OR logika v
+            // rámci poľa ostáva identická.
             const matchesHost =
                 this.state.host.length === 0 ||
-                (Array.isArray(record.host) &&
-                    record.host.some(h => this.state.host.includes(h)));
+                Repository.resolveHosts(record).some(h => this.state.host.includes(h));
 
             const matchesSample =
                 this.state.sample.length === 0 ||
@@ -884,7 +911,7 @@ renderHostFilterSection(hosts) {
                 <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
                 <p>
                     <strong>Hostiteľ:</strong>
-                    ${this.escapeHtml(this.formatHosts(record.host) || "—")}
+                    ${this.escapeHtml(this.formatHosts(Repository.resolveHosts(record)) || "—")}
                     |
                     <strong>Materiál:</strong>
                     ${this.escapeHtml(record.sample || "—")}
@@ -1168,7 +1195,7 @@ renderHostFilterSection(hosts) {
 
                             <div class="side-boxes">
 
-                                ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
+                                ${this.miniBox("Hostiteľ", this.formatHosts(Repository.resolveHosts(record)))}
 
                                 ${this.miniBox("Materiál", record.sample)}
 
@@ -1178,9 +1205,7 @@ renderHostFilterSection(hosts) {
 
                             <div class="findings-card card">
 
-                                <div class="img-placeholder-box">
-                                    [ Dynamický mikroskopický nález ]
-                                </div>
+                                ${PrimaryImage.render(record, { showLabel: true, size: "large" })}
 
                             </div>
 
@@ -1233,7 +1258,8 @@ renderHostFilterSection(hosts) {
                 this.init();
 
             });
-
+        // Doplní reálnu (alebo placeholder) fotku do práve vykresleného detailu
+         PrimaryImage.populate("#detail-view");
     },
 
     // ------------------------------------------------------------------

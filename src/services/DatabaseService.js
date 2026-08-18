@@ -36,44 +36,21 @@ class DatabaseService {
         return json;
 
     }
-async loadDogDatabase() {
 
-    const database = await this.load("dog.migrated.json");
+// OPRAVA (2026-08-18, deduplikácia databázy): loadDogDatabase() a
+// loadAllHostDatabases() (14x fetch + merge) NAHRADENÉ jedným load() zo
+// súboru "parasites.json" — ten teraz obsahuje všetky diagnostické objekty
+// naprieč všetkými hostiteľmi (pozri AI_STATUS.md sekcia 0 a
+// docs/2026-08-18_parasites-dedup-migration.md). Staré 14 *.migrated.json
+// súborov ostávajú v database/ ako záložný zdroj pravdy, appka ich už ale
+// nenačítava.
+async loadDatabase() {
+
+    const database = await this.load("parasites.json");
 
     this.currentDatabase = database;
 
     return database;
-
-}
-
-async loadAllHostDatabases() {
-
-    const files = [
-        "dog.migrated.json",
-        "cat.migrated.json",
-        "horse.migrated.json",
-        "cattle.migrated.json",
-        "pig.migrated.json",
-        "sheep_goat.migrated.json",
-        "rabbit.migrated.json",
-        "hedgehog.migrated.json",
-        "rodents.migrated.json",
-        "reptiles.migrated.json",
-        "fish.migrated.json",
-        "molluscs.migrated.json",
-        "wild_ruminants.migrated.json",
-        "birds.migrated.json"
-    ];
-
-    const datasets = await Promise.all(
-        files.map(file => this.load(file))
-    );
-
-    const merged = datasets.flat();
-
-    this.currentDatabase = merged;
-
-    return merged;
 
 }
 

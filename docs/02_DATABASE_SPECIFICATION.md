@@ -4,7 +4,7 @@
 >
 > **Dokument:** Databázová špecifikácia
 >
-> **Verzia:** 1.0
+> **Verzia:** 1.1
 >
 > **Status:** Living document
 >
@@ -106,42 +106,40 @@ Nové druhy nesmú vyžadovať zmenu databázovej štruktúry.
 
 # 3. Databázová architektúra
 
+> **Zmena od v1.1 (2026-08-18):** pôvodná architektúra "jeden súbor na hostiteľa"
+> (`dog.json`, `cat.json`, `horse.json` ...) bola nahradená jedným zlúčeným
+> a deduplikovaným súborom `database/parasites.json`. Pôvodné súbory
+> `*.migrated.json` zostávajú dočasne zachované ako záložný zdroj pravdy
+> (pozri `AI_STATUS.md` §0), kým nie je kódová migrácia plne overená
+> v prehliadači — potom sa presunú do `_archive/`. Nové diagnostické objekty
+> sa odteraz zapisujú **iba** do `parasites.json`.
+
 ```text
 database/
 
-schema.json
+parasites.json         ← jediný zdroj diagnostických objektov (nahrádza dog.json,
+                          cat.json, horse.json, cattle.json, pig.json,
+                          sheep_goat.json, birds.json a ďalšie host-súbory)
 
-dog.json
-
-cat.json
-
-horse.json
-
-cattle.json
-
-pig.json
-
-sheep_goat.json
-
-birds.json
+images.json             ← jediný zdroj metadát fotografií (pozri sekciu 9)
 
 dictionary/
 
-hosts.json
+  host_hierarchy.json    ← stromová/reťaziteľná hierarchia hostiteľských skupín
+                            (napr. Plazy → Jaštery → Varan), zdroj pre rozbaľovanie
+                            poľa hostGroups na konkrétnych hostiteľov
+  samples.json
+  methods.json
+  stages.json
+  taxonomy.json
+  shapes.json
+  colours.json
+  shells.json
 
-samples.json
+_archive/
 
-methods.json
-
-stages.json
-
-taxonomy.json
-
-shapes.json
-
-colours.json
-
-shells.json
+  dog.migrated.json, cat.migrated.json, ... (14×)   ← staré host-súbory,
+                            zachované len do overenia migrácie, NEPOUŽÍVAJÚ SA appkou
 ```
 
 ---
@@ -174,7 +172,8 @@ Obsahuje kompletné informácie.
 
 ## Hostiteľ
 
-Jednotný zoznam hostiteľov.
+Jednotný zoznam hostiteľov, usporiadaný do hierarchie skupín
+(`dictionary/host_hierarchy.json`) — pozri sekciu 8, `hostGroups`/`hosts`.
 
 ## Vzorka
 
@@ -186,7 +185,7 @@ Jednotný zoznam laboratórnych metód.
 
 ## Fotografia
 
-Každý obrázok je samostatný objekt.
+Každý obrázok je samostatný objekt, uložený v `database/images.json`.
 
 ## Literatúra
 
@@ -212,6 +211,48 @@ Príklad
   "Hovädzí dobytok"
 ]
 ```
+
+---
+
+## host_hierarchy.json
+
+> **Nové od v1.1.** Nahrádza plochý `hosts.json` tam, kde je potrebné vyjadriť
+> vzťah nadradenej skupiny a konkrétnych hostiteľov (napr. pri objektoch,
+> ktoré sa diagnostikujú rovnako naprieč celou skupinou hostiteľov).
+>
+> ⚠️ **Opravené 2026-08-18 (kontrola kódu):** táto sekcia predtým (v1.1,
+> prvý zápis) popisovala nesprávnu štruktúru (`{"Skupina": ["dieťa1",
+> "dieťa2"]}`). Po nahliadnutí do skutočnej implementácie
+> (`Repository.isHostInGroup()`, `AtlasPage.getTopLevelGroup()`) je zjavné,
+> že kód očakáva **plochú mapu dieťa → rodič**, nie mapu rodič → [deti].
+> Príklad nižšie je opravený podľa kódu. **Samotný `host_hierarchy.json`
+> nebol tomuto AI nikdy nahraný** — štruktúra je odvodená z toho, ako s ním
+> pracuje kód, nie potvrdená priamo zo súboru. Pred ďalšou zmenou pošli
+> reálny obsah súboru na overenie.
+
+Každý kľúč je meno hostiteľa alebo podskupiny, hodnota je meno jeho
+**priamej nadradenej skupiny** (reťazí sa cez viacero úrovní smerom nahor,
+až kým sa nenarazí na meno, ktoré už v slovníku ako kľúč nie je):
+
+```json
+{
+  "Pes": "Mäsožravce",
+  "Mačka": "Mäsožravce",
+  "Varan": "Jaštery",
+  "Leguán": "Jaštery",
+  "Gekon": "Jaštery",
+  "Jaštery": "Plazy",
+  "Hady": "Plazy",
+  "Korytnačky": "Plazy"
+}
+```
+
+Rozbaľovanie skupiny na konkrétnych hostiteľov (napr. `Plazy` → `Varan`,
+`Leguán`, `Gekon`, `Hady`, `Korytnačky`) prechádza **všetky kľúče** slovníka
+a pre každý testuje, či sa pri postupnom prechode reťazcom rodičov narazí na
+hľadanú skupinu (`Repository.isHostInGroup()`). Toto je vecou aplikačnej
+logiky (`Repository.resolveHosts()`), nie dátovej štruktúry — slovník iba
+definuje vzťahy dieťa→rodič.
 
 ---
 
@@ -266,13 +307,21 @@ Príklad
 
 Každý diagnostický objekt používa jednotnú schému.
 
+> **Zmena od v1.1 (2026-08-18):** pole `host: []` bolo nahradené trojicou
+> `hostGroups`/`hosts`/`hostNotes` (pozri sekciu 8) a bolo pridané pole
+> `synonyms`. Toto je zmena významu existujúceho poľa v zmysle
+> `03_DATA_ENTRY_STANDARD.md` §20 — zapísaná aj v `10_CHANGELOG.md`.
+
 ```json
 {
   "id": "",
   "latinName": "",
+  "synonyms": [],
   "slovakName": "",
   "taxonomy": {},
-  "host": [],
+  "hostGroups": [],
+  "hosts": [],
+  "hostNotes": {},
   "sample": "",
   "stage": "",
   "group": "",
@@ -324,6 +373,27 @@ Toxocara canis
 
 ---
 
+## synonyms
+
+> **Nové pole od v1.1.**
+
+Pole alternatívnych/synonymných latinských názvov diagnostického objektu
+(napr. staršie taxonomické označenie). Používa sa aj vo fulltextovom
+vyhľadávaní (`AtlasPage.matchesFulltext()`), aby sa objekt našiel aj pod
+starším názvom.
+
+Príklad
+
+```json
+["Diphyllobothrium latum"]
+```
+
+pre objekt s `id: "dibothriocephalus_latus_egg"`.
+
+Ak objekt nemá synonymá, pole ostáva prázdne `[]` — nie `null`.
+
+---
+
 ## slovakName
 
 Oficiálny slovenský názov.
@@ -346,15 +416,65 @@ Obsahuje
 
 ---
 
-## host
+## hostGroups
 
-Pole hostiteľov.
+> **Nové pole od v1.1. Nahrádza časť pôvodnej funkcie poľa `host`.**
+
+Pole názvov hostiteľských **skupín** z `dictionary/host_hierarchy.json`
+(napr. `"Mäsožravce"`, `"Plazy"`). Skupina sa pri zobrazení dynamicky
+rozbaľuje na konkrétnych hostiteľov cez `Repository.resolveHosts()`.
+
+Príklad
+
+```json
+["Mäsožravce"]
+```
+
+**Pravidlo:** `hostGroups` sa smie použiť **iba** vtedy, keď je diagnostický
+nález identický u všetkých členov skupiny, a to len po explicitnom
+potvrdení autorkou projektu alebo na základe silného dôkazu (identické
+zdrojové dáta naprieč celou skupinou). Toto pole sa **nikdy nesmie
+automaticky odvodiť** — pozri `AI_STATUS.md` §0.4. Vo väčšine prípadov
+ostáva prázdne `[]` a hostitelia sa uvádzajú explicitne v poli `hosts`.
+
+---
+
+## hosts
+
+> **Zmenené od v1.1** — predtým `host`.
+
+Pole konkrétnych, explicitne vymenovaných hostiteľov (nie skupín).
 
 ```json
 [
   "Pes"
 ]
 ```
+
+Ak má objekt priradenú aspoň jednu hodnotu v `hostGroups`, výsledný zoznam
+hostiteľov zobrazovaný v UI je **zjednotenie** (union) rozbaleného
+`hostGroups` a explicitného `hosts` (funkcia `resolveHosts()`) — nie iba
+jedno z nich.
+
+---
+
+## hostNotes
+
+> **Nové pole od v1.1.**
+
+Objekt (mapa) s poznámkami špecifickými pre jedného konkrétneho hostiteľa
+z `hosts`/rozbaleného `hostGroups` — napr. odchýlka v mikrometrii alebo
+klinickom priebehu u daného druhu.
+
+```json
+{
+  "Mačka": "U mačky mierne menšie rozmery cysty ako uvádza priemer."
+}
+```
+
+Kľúč musí byť názov hostiteľa presne podľa `dictionary/host_hierarchy.json`
+alebo `hosts.json`. Ak nie sú žiadne poznámky, pole ostáva prázdny objekt
+`{}`.
 
 ---
 
@@ -441,7 +561,7 @@ Pole podobných objektov.
 
 ## images
 
-Pole ID obrázkov.
+Pole ID obrázkov (referencie na `database/images.json`).
 
 Nie názvy súborov.
 
@@ -460,6 +580,19 @@ Lokálne poznámky.
 ---
 
 # 9. Metadáta fotografií
+
+> **Zmena od v1.1:** fotografie sa ukladajú do samostatného súboru
+> `database/images.json` (zatiaľ prázdna kostra `[]` — appka doteraz
+> nemala žiadne reálne fotografie). Schéma jednotlivého záznamu ostáva
+> nezmenená oproti v1.0. Plánovaná stránka Galéria filtruje podľa
+> `objectId` (referencia na diagnostický objekt v `parasites.json`) a
+> voliteľne podľa `host`.
+>
+> ⚠️ **Otvorená otázka, neoverené:** v komunikácii o Galérii bol použitý aj
+> názov poľa `parasiteId` namiesto `objectId`. Keďže `images.json` v tejto
+> session nebol nahraný, ponechávam pôvodný, už zdokumentovaný názov
+> `objectId` — pred implementáciou stránky Galéria potvrď, ktorý názov poľa
+> sa má reálne použiť, aby nedošlo k nesúladu medzi kódom a dátami.
 
 Každý obrázok obsahuje.
 
@@ -612,7 +745,7 @@ Bez potreby meniť základnú štruktúru databázy.
 
 Táto špecifikácia opisuje **logický model databázy**, nie jej fyzickú implementáciu.
 
-Konkrétne súbory (`dog.json`, `hosts.json`, `methods.json` atď.) musia vždy rešpektovať pravidlá definované v tomto dokumente. V prípade potreby nových polí sa databáza rozširuje spätne kompatibilným spôsobom, aby zostali funkčné existujúce importy, exporty aj aplikácia.
+Konkrétny súbor (`parasites.json`) musí vždy rešpektovať pravidlá definované v tomto dokumente. V prípade potreby nových polí sa databáza rozširuje spätne kompatibilným spôsobom, aby zostali funkčné existujúce importy, exporty aj aplikácia.
 
 ---
 **Koniec dokumentu**

@@ -1,0 +1,90 @@
+--- orig/AtlasPage.js	2026-08-18 11:00:07.644452459 +0000
++++ new/AtlasPage.js	2026-08-18 11:01:30.185073089 +0000
+@@ -349,10 +349,15 @@
+ 
+     getHostValues() {
+ 
++        // OPRAVA (2026-08-18, deduplikácia databázy): `record.host` nahradené
++        // `Repository.resolveHosts(record)`, ktoré zjednotí explicitné
++        // `record.hosts` s rozbaleným `record.hostGroups` (cez
++        // dictionary/host_hierarchy.json). Kým sa hierarchia nenačíta, správa
++        // sa to ako predtým pre záznamy s `hosts` a vynechá tie, ktoré majú
++        // len `hostGroups` — po doletení slovníka renderRecords()/
++        // refreshHostFilterSection() prekreslí znova (pozri loadHostHierarchy()).
+         const values = Repository.getAll()
+-            .flatMap(record =>
+-                Array.isArray(record.host) ? record.host : []
+-            )
++            .flatMap(record => Repository.resolveHosts(record))
+             .filter(value =>
+                 value !== undefined &&
+                 value !== null &&
+@@ -406,9 +411,21 @@
+ 
+         }
+ 
++        // OPRAVA (2026-08-18, deduplikácia databázy): záznamy majú teraz
++        // `hostGroups`/`hosts` namiesto plochého `host`. Repository.resolveHosts()
++        // potrebuje ten istý slovník na rozbalenie hostGroups → konkrétnych
++        // hostiteľov. DatabaseService.load() cachuje podľa súboru, takže toto
++        // nespôsobí druhý sieťový fetch — len sa slovník sprístupní aj tam.
++        await Repository.loadHostHierarchy();
++
+         this.hostHierarchyLoaded = true;
+         this.refreshHostFilterSection();
+ 
++        // Kým sa slovník nenačítal, záznamy priradené len cez `hostGroups`
++        // (bez explicitných `hosts`) sa vo filtri/zozname javili ako "bez
++        // hostiteľa" — po doletení slovníka treba zoznam prekresliť.
++        this.renderRecords();
++
+     },
+ 
+     /**
+@@ -779,6 +796,12 @@
+             record.morphology?.shell,
+             ...(Array.isArray(record.diagnosticSigns)
+                 ? record.diagnosticSigns
++                : []),
++            // OPRAVA (2026-08-18, deduplikácia databázy): nové pole
++            // `synonyms` (iné vedecké názvy, napr. "Giardia lamblia" pre
++            // "Giardia intestinalis") — pozri AI_STATUS.md sekcia 0.2.
++            ...(Array.isArray(record.synonyms)
++                ? record.synonyms
+                 : [])
+         ];
+ 
+@@ -814,10 +837,13 @@
+             const matchesSearch =
+                 this.matchesFulltext(record, search);
+ 
++            // OPRAVA (2026-08-18, deduplikácia databázy): `record.host`
++            // nahradené `Repository.resolveHosts(record)` (union explicitných
++            // `hosts` a rozbaleného `hostGroups`). Filtrovacia OR logika v
++            // rámci poľa ostáva identická.
+             const matchesHost =
+                 this.state.host.length === 0 ||
+-                (Array.isArray(record.host) &&
+-                    record.host.some(h => this.state.host.includes(h)));
++                Repository.resolveHosts(record).some(h => this.state.host.includes(h));
+ 
+             const matchesSample =
+                 this.state.sample.length === 0 ||
+@@ -884,7 +910,7 @@
+                 <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
+                 <p>
+                     <strong>Hostiteľ:</strong>
+-                    ${this.escapeHtml(this.formatHosts(record.host) || "—")}
++                    ${this.escapeHtml(this.formatHosts(Repository.resolveHosts(record)) || "—")}
+                     |
+                     <strong>Materiál:</strong>
+                     ${this.escapeHtml(record.sample || "—")}
+@@ -1168,7 +1194,7 @@
+ 
+                             <div class="side-boxes">
+ 
+-                                ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
++                                ${this.miniBox("Hostiteľ", this.formatHosts(Repository.resolveHosts(record)))}
+ 
+                                 ${this.miniBox("Materiál", record.sample)}
+ 

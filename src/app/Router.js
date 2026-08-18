@@ -17,9 +17,10 @@ class Router {
 
     }
 
-    navigate(route) {
+    
+    navigate(route, param = null) {
 
-        window.location.hash = route;
+        window.location.hash = param ? `${route}/${param}` : route;
 
     }
 
@@ -37,12 +38,15 @@ class Router {
 
     resolve() {
 
-        const route =
-            window.location.hash.replace("#", "") || "home";
+        const hash =
+          window.location.hash.replace("#", "") || "home";
+
+        const [route, ...rest] = hash.split("/");
+        const param = rest.length > 0 ? rest.join("/") : null;
 
         if (this.routes.has(route)) {
 
-            this.routes.get(route)();
+            this.routes.get(route)(param);
 
             return;
 

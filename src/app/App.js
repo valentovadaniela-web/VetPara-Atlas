@@ -4,6 +4,7 @@
  ******************************************************************************/
 
 import AtlasPage from "../pages/AtlasPage.js";
+import GalleryPage from "../pages/GalleryPage.js";
 import Router from "./Router.js";
 import ApplicationState from "./ApplicationState.js";
 import DatabaseService from "../services/DatabaseService.js";
@@ -15,7 +16,7 @@ const App = {
 
         try {
 
-            const database = await DatabaseService.loadAllHostDatabases();
+            const database = await DatabaseService.loadDatabase()
 
             ApplicationState.database = database;
             ApplicationState.ready = true;
@@ -109,6 +110,13 @@ const App = {
 
 },
     registerRoutes() {
+
+        // Globálny helper volaný z GalleryPage.js (lightbox, tlačidlo
+        // "Zobraziť v Atlase"). Presmeruje na Atlas s ID objektu v hashi;
+        // Router.resolve() ho odovzdá route callbacku "atlas" nižšie.
+        window.showAtlasDetail = (objectId) => {
+            Router.navigate("atlas", objectId);
+        };
 
         Router.register("home", () => {
 
@@ -217,7 +225,7 @@ const App = {
 
         });
 
-        Router.register("atlas", () => {
+        Router.register("atlas", (objectId) => {
 
             const app = document.getElementById("app");
 
@@ -228,13 +236,19 @@ const App = {
 
             AtlasPage.init();
 
+            if (objectId) {
+                AtlasPage.showDetail(objectId);
+            }
+
         });
 
         Router.register("gallery", () => {
 
             document.body.classList.remove("dark-mode");
 
-            console.log("Gallery page");
+            const app = document.getElementById("app");
+            app.innerHTML = GalleryPage.render();
+            GalleryPage.init();
 
         });
 
