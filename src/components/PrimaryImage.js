@@ -120,7 +120,7 @@ const PrimaryImage = {
       if (image) {
         container.innerHTML = `
           <img 
-            src="/public/images/${image.filename}" 
+            src="public/images/${image.filename}" 
             alt="${this.escapeHtml(objectId)}"
             class="primary-image-img"
           >
@@ -161,7 +161,7 @@ const PrimaryImage = {
 
     return `
       <img 
-        src="/public/images/${image.filename}" 
+        src="public/images/${image.filename}" 
         alt="${this.escapeHtml(record.id)}"
         class="primary-image-img"
       >

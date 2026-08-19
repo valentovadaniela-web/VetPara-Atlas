@@ -260,7 +260,7 @@ const GalleryPage = {
           <div class="gallery-item card" data-image-id="${this.escapeHtml(img.id)}">
             <div class="gallery-item-thumb">
               <img 
-               src="/public/images/${img.thumbnail}" 
+               src="public/images/${img.thumbnail}" 
                alt="${this.escapeHtml(latinName)}"
                class="gallery-thumb-img"
               >
@@ -310,7 +310,7 @@ const GalleryPage = {
     body.innerHTML = `
       <div class="gallery-lightbox-image">
         <img 
-          src="/public/images/${image.filename}" 
+          src="public/images/${image.filename}" 
           alt="${this.escapeHtml(record?.latinName || image.objectId)}"
           class="gallery-lightbox-img"
         >
