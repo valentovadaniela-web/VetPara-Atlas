@@ -803,7 +803,15 @@ renderHostFilterSection(hosts) {
             // "Giardia intestinalis") — pozri AI_STATUS.md sekcia 0.2.
             ...(Array.isArray(record.synonyms)
                 ? record.synonyms
-                : [])
+                : []),
+            // OPRAVA (2026-08-19, na žiadosť autorky): fulltext rozšírený
+            // aj o hostiteľov. Použité Repository.resolveHosts(record) —
+            // rovnaká funkcia ako pri filtri hostiteľov nižšie (matchesHost)
+            // — takže sa hľadá v ZJEDNOTENÍ explicitných `hosts` a
+            // rozbaleného `hostGroups`, nie len v plochom `record.hosts`.
+            // Vďaka tomu sa objekt nájde aj vtedy, keď má hostiteľa
+            // priradeného iba cez skupinu (napr. "Vtáky").
+            ...Repository.resolveHosts(record)
         ];
 
         const haystack =

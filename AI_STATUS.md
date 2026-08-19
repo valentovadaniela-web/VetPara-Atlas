@@ -50,9 +50,42 @@ Autorka chce user-friendly formulár na **jednotlivé** dopĺňanie/úpravy dát
 
 Kvôli tomu, že appka je nasadená staticky (GitHub Pages, žiadny server), treba pred návrhom vyjasniť **spôsob výstupu** a **miesto behu nástroja**. Otázky boli položené autorke v chate (viď nasledujúca správa) — odpovede doplniť sem po rozhodnutí.
 
-### Stav: 🔵 ČAKÁ NA ROZHODNUTIE AUTORKY o architektúre nástroja (lokálny nástroj vs. skrytá stránka appky; sťahované súbory vs. File System Access API; Excel cez SheetJS (`xlsx`, už v `node_modules`) vs. iný spôsob).
+### Architektonické rozhodnutia (potvrdené autorkou 2026-08-19)
 
-**Nič sa zatiaľ neimplementovalo.** Žiadne súbory v `src/` ani `tools/` neboli menené.
+| Otázka | Rozhodnutie |
+| --- | --- |
+| Kde nástroj beží | Samostatný lokálny nástroj (navrhnuté `tools/admin/index.html`, mimo appky — odôvodnenie: appka je na GitHub Pages verejná, `#admin` v rámci nej by bol technicky prístupný komukoľvek) — **čaká na finálne potvrdenie autorky po prečítaní odôvodnenia** |
+| Výstup | Sťahovanie `.zip` s aktualizovanými JSON súbormi + premenovanými obrázkami + `README.txt` s návodom, čo kam nahradiť |
+| Excel round-trip | `.xlsx` cez SheetJS (`xlsx`, už v `node_modules`) — autorke čitateľnejší ako CSV |
+
+**Plná špecifikácia:** `docs/2026-08-19_admin-formular-specifikacia.md` (pripravená, ešte neschválená do detailu — chýbajú podklady, pozri nižšie).
+
+### Stav (2026-08-19, aktualizované): Schéma polí POTVRDENÁ
+
+`database/parasites.json` (474 záznamov, reálny obsah nahraný a skontrolovaný), `docs/02_DATABASE_SPECIFICATION.md`, `docs/03_DATA_ENTRY_STANDARD.md` a `dictionary/host_hierarchy.json` (162 kľúčov) boli nahraté a analyzované. Sekcia 4 špecifikácie formulára (presné polia, kontrolované slovníky, validačné pravidlá) je teraz doplnená v `docs/2026-08-19_admin-formular-specifikacia.md`.
+
+**Zistené nezrovnalosti dokumentácia vs. realita** (zapísané do špecifikácie formulára, riešiť pri Priorite č. 3 nižšie):
+- `images.json` pole `license` je v dokumentácii, v reálnych dátach sa nepoužíva.
+- `thumbnail`, `isPrimary`, `sortOrder` reálne existujú a používa ich kód, dokumentácia ich neuvádza.
+- `03_DATA_ENTRY_STANDARD.md` §14 označuje `host` pri fotke ako povinný, realita (kód + dáta) ho berie ako voliteľný ("prázdny = platí pre všetkých"). Formulár sa bude riadiť realitou.
+- Kontrolované slovníky `samples.json`, `methods.json`, `stages.json`, `shapes.json`, `colours.json`, `shells.json` spomínané v §6 `02_DATABASE_SPECIFICATION.md` **fyzicky v projekte neexistujú** — hodnoty sú zatiaľ len príklady v dokumentácii. Pri implementácii formulára doplním reálne použité hodnoty priamo z `parasites.json`.
+
+**Ešte čaká:** potvrdenie architektúry nástroja autorkou (umiestnenie `tools/admin/`), potom implementácia.
+
+**Nič sa v `src/` ani `tools/` zatiaľ nemenilo.**
+
+---
+
+## ✅ ĎALŠIA ÚLOHA — VYRIEŠENÉ (2026-08-19) — Fulltext vyhľadávanie v Atlase teraz zahŕňa hostiteľov
+
+`src/pages/AtlasPage.js` nahraný, analyzovaný, upravená funkcia `matchesFulltext()`:
+- Doplnené `...Repository.resolveHosts(record)` do `haystackParts` — fulltext teraz hľadá aj v **zjednotenom** zozname hostiteľov (explicitné `hosts` + rozbalené `hostGroups`), rovnako ako existujúci filter hostiteľov (`matchesHost` v `renderRecords()`), takže logika je konzistentná naprieč appkou.
+- `Repository` bol v súbore už importovaný, žiadny nový import netreba.
+- Žiadna iná časť súboru sa nemenila.
+
+✅ Príklad z zadania: "pe" nájde "Pes" (poznámka: "Prepelica"/"Papagáj pestrý" boli len ilustračný príklad autorky, v `host_hierarchy.json` reálne nie sú a netreba ich dopĺňať).
+
+**Stav:** ✅ HOTOVÉ, upravený súbor odovzdaný autorke na nahradenie v `src/pages/AtlasPage.js`. Čaká na naživo overenie autorkou (Live Server).
 
 ---
 
@@ -134,9 +167,9 @@ Staré súbory `dog.json`, `dog.migrated.json` ... `wild_ruminants.migrated.json
 
 ## 1. ĎALŠIE KROKY (zoradené podľa priority, aktualizované 2026-08-19)
 
-### ⭐ Priorita č. 1: Admin formulár na správu databázy (NOVÉ, aktuálne v štádiu návrhu)
+### ⭐ Priorita č. 1: Admin formulár na správu databázy (v štádiu návrhu, polia potvrdené)
 
-Pozri sekciu "NOVÁ ÚLOHA" vyššie. Čaká sa na odpovede autorky ohľadom architektúry (lokálny nástroj vs. súčasť appky, spôsob výstupu súborov, Excel round-trip).
+Pozri sekciu "NOVÁ ÚLOHA — Admin formulár" vyššie. Schéma polí je potvrdená (`docs/2026-08-19_admin-formular-specifikacia.md`). Čaká sa na potvrdenie architektúry nástroja (umiestnenie mimo appky, `tools/admin/`).
 
 ### ⭐ Priorita č. 2: Doplniť reálne fotografie a `host` hodnoty pre zostávajúce diagnostické objekty
 
