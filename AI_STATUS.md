@@ -1,6 +1,23 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.2 Aktuálny stav — doplnené (2026‑08‑18, session: oprava načítania obrázkov, nový bug – filter hostiteľov v Galérii)
+🔥 0.3 Aktuálny stav — doplnené (2026‑08‑19, session: oprava ciest k obrázkom pre GitHub Pages)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-19)
+
+### Obrázky sa nezobrazovali po nasadení na GitHub Pages — VYRIEŠENÉ, autorka potvrdila naživo
+
+**Príčina:** Appka beží na GitHub Pages ako projektová stránka (`https://<username>.github.io/VetPara-Atlas/`), nie na koreni domény. Cesty k obrázkom v kóde začínali absolútnou lomkou (`/public/images/...`), ktorá sa vždy vyhodnotí voči koreňu domény (`https://<username>.github.io/public/images/...`) — chýbal segment `/VetPara-Atlas/`. Lokálne cez Live Server to fungovalo, lebo appka tam beží priamo na koreni.
+
+**Prečo stačí relatívna cesta bez `./` alebo base-path riešenia:** `Router.js` používa výhradne `window.location.hash` (žiadny `history.pushState`), takže skutočná cesta dokumentu (`index.html`) sa pri navigácii medzi routami nikdy nemení. Relatívna cesta bez úvodnej lomky sa preto vždy vyhodnotí správne voči koreňu appky — lokálne aj na GitHub Pages — na všetkých routách (`#home`, `#atlas`, `#atlas/objectId`, `#gallery`).
+
+**Oprava (hotová, nasadená a naživo overená autorkou na GitHub Pages):**
+Vo všetkých 4 miestach, kde sa vykresľuje `<img src="...">`, zmenené `/public/images/${...}` → `public/images/${...}` (odstránená úvodná lomka):
+- `PrimaryImage.js` → `populate()`
+- `PrimaryImage.js` → `renderStatic()`
+- `GalleryPage.js` → `renderGrid()` (thumbnaily v mriežke)
+- `GalleryPage.js` → `openLightbox()` (zväčšená fotka v lightboxe)
+
+✅ **Potvrdené naživo (2026-08-19):** Obrázky sa zobrazujú správne lokálne (Live Server) aj na produkcii (GitHub Pages).
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSION
 
@@ -67,15 +84,17 @@ Predošlé sessions sa nazdávali, že príčina 404 je nesprávny `<base href="
 
 | Súbor | Zmena | Stav |
 | --- | --- | --- |
-| `PrimaryImage.js` | Cesty `/images/...` → `/public/images/...` v `populate()` a `renderStatic()` | ✅ Hotové a naživo overené |
-| `GalleryPage.js` | Cesty `/images/...` → `/public/images/...` v `renderGrid()` a `openLightbox()` | ✅ Hotové a naživo overené |
+| `PrimaryImage.js` | Cesty `/images/...` → `/public/images/...` v `populate()` a `renderStatic()` | ✅ Hotové a naživo overené (Live Server) |
+| `GalleryPage.js` | Cesty `/images/...` → `/public/images/...` v `renderGrid()` a `openLightbox()` | ✅ Hotové a naživo overené (Live Server) |
 | `GalleryPage.js` | Bug `if (!img.host) return false` → `return true` | ✅ Už bolo opravené v predošlej session, potvrdené |
 | `images.json` | Overený proti fyzickým súborom, všetky položky sú validné | ✅ Hotové |
 | Štruktúra projektu | Presun z dvojitého koreňa do jedného | ✅ Hotové |
+| `PrimaryImage.js` | Cesty `/public/images/...` → `public/images/...` (bez úvodnej lomky) v `populate()` a `renderStatic()` — oprava pre GitHub Pages | ✅ Hotové a naživo overené (Live Server aj GitHub Pages) |
+| `GalleryPage.js` | Cesty `/public/images/...` → `public/images/...` v `renderGrid()` a `openLightbox()` — oprava pre GitHub Pages | ✅ Hotové a naživo overené (Live Server aj GitHub Pages) |
 
-**Dátum aktualizácie:** 2026-08-18 (session: oprava ciest k obrázkom v `PrimaryImage.js` a `GalleryPage.js`, naživo overené v prehliadači; zistený nový bug — filter hostiteľov v Galérii nemá efekt)
+**Dátum aktualizácie:** 2026-08-19 (session: oprava ciest k obrázkom pre GitHub Pages — odstránená úvodná lomka z `/public/images/...` na `public/images/...` vo všetkých 4 miestach v `PrimaryImage.js` a `GalleryPage.js`; overené, že `Router.js` používa výhradne hash routing, takže relatívne cesty sú bezpečné; naživo overené autorkou na GitHub Pages aj lokálne)
 **Branch:** develop
-**Verzia projektu:** v17-in-progress (obrázky HOTOVÉ a naživo overené, filter podľa objektu HOTOVÝ a overený, filter podľa hostiteľa NEFUNKČNÝ — čaká na debug)
+**Verzia projektu:** v17-in-progress (obrázky HOTOVÉ a naživo overené lokálne aj na GitHub Pages, filter podľa objektu HOTOVÝ a overený, filter podľa hostiteľa NEFUNKČNÝ — čaká na debug, je to teraz Priorita č. 1)
 
 ---
 
@@ -145,12 +164,12 @@ Autorka postupne dodáva fotky + zápisy do `images.json` podľa tejto konvencie
 
 - `database/parasites.json` — **HOTOVÝ**, 474 záznamov, nahrádza 14 host-súborov.
 - `database/images.json` — štruktúra hotová a funkčná, obsahuje reálne dáta pre 3 objekty (33 fotiek), čaká na doplnenie zvyšných 471.
-- `src/components/PrimaryImage.js` — **HOTOVÝ A NAŽIVO OVERENÝ**, cesty k obrázkom opravené (`/public/images/...`).
-- `src/pages/GalleryPage.js` — **ČIASTOČNE HOTOVÝ**: cesty k obrázkom a filter objektov fungujú a sú overené; **filter hostiteľov nefunguje** (pozri Priorita č. 1).
-- `src/services/Repository.js` — **NEBOL v tejto session analyzovaný ani nahraný** — potrebný pre debug filtra hostiteľov (funkcia `resolveHosts()`).
-- `index.html` — overený, používa relatívne cesty konzistentné s Live Server (koreň = koreň projektu).
+- `src/components/PrimaryImage.js` — **HOTOVÝ A NAŽIVO OVERENÝ** (Live Server aj GitHub Pages), cesty k obrázkom relatívne (`public/images/...`, bez úvodnej lomky).
+- `src/pages/GalleryPage.js` — **ČIASTOČNE HOTOVÝ**: cesty k obrázkom (relatívne, GitHub Pages OK) a filter objektov fungujú a sú overené; **filter hostiteľov nefunguje** (pozri Priorita č. 1).
+- `src/services/Repository.js` — **NEBOL ešte analyzovaný ani nahraný** — potrebný pre debug filtra hostiteľov (funkcia `resolveHosts()`).
+- `index.html` — overený, používa relatívne cesty konzistentné s Live Server aj GitHub Pages (koreň = koreň projektu, hash routing nemení cestu dokumentu).
 - `App.js` — **OVERENÝ**: správne sekvenovanie, obsahuje plne funkčné `window.showAtlasDetail`.
-- `Router.js` — **OVERENÝ**: plná podpora pre voliteľný parameter vetvy.
+- `Router.js` — **OVERENÝ (2026-08-19)**: plná podpora pre voliteľný parameter vetvy; používa výhradne `window.location.hash`, žiadny `history.pushState` — dôležité pre platnosť relatívnych ciest k obrázkom na všetkých routách.
 - `AtlasPage.js` — **OVERENÉ**: prepojenia a render fungujú podľa plánu.
 - Staré `database/*.migrated.json` (14×) — zatiaľ zachované, nemazať.
 
