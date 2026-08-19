@@ -1,14 +1,68 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.3 Aktuálny stav — doplnené (2026‑08‑19, session: oprava ciest k obrázkom pre GitHub Pages)
+🔥 0.4 Aktuálny stav — doplnené (2026‑08‑19, session: diagnóza filtra hostiteľov v Galérii + príprava admin formulára)
 
-## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-19)
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-19, session 3)
+
+### Filter hostiteľa v Galérii — PRÍČINA POTVRDENÁ, KÓD ZATIAĽ NEZMENENÝ (rozhodnutie autorky)
+
+**Analyzované súbory:** `database/images.json` (nahraný, skontrolovaný celý obsah), `src/services/Repository.js` (nahraný, prvýkrát analyzovaný), `src/pages/GalleryPage.js` (nahraný znova pre kontext).
+
+**Potvrdená príčina (= Hypotéza č. 1 z minulej session):**
+Všetkých **33 fotografických záznamov** v `database/images.json` (objekty `aelurostrongylus_abstrusus_larva`, `alaria_alata_egg`, `toxascaris_leonina_egg`) má pole `"host": ""` — úplne prázdne, bez výnimky.
+
+V `GalleryPage.js` → `getFilteredImages()`:
+```js
+if (matchingHosts && matchingHosts.length > 0) {
+  if (!img.host) return true;   // vždy zasiahne, lebo VŠETKY fotky majú host: ""
+  if (!matchingHosts.some((h) => img.host.includes(h))) return false;
+}
+```
+Keďže `img.host` je pre každú fotku prázdny reťazec, `!img.host` je vždy `true` → **každá fotka prejde filtrom bez ohľadu na zvoleného hostiteľa**. Riadok s `matchingHosts.some(...)` sa nikdy nevykoná.
+
+**Záver: NIE JE to bug v kóde.** Kód robí presne to, čo hovorí komentár `// FIX BUG: prázdny host = fotka patrí všetkým hostiteľom` — zámerná konvencia (pozri §0.3 nižšie). Problém je čisto **dátový**: kým fotky nemajú vyplnené `host`, filter nemá čo odfiltrovať, takže vizuálne "nič nerobí". Autorka v konzole potvrdila, že `getFilteredImages().length` sa pri zmene `filterHost` skutočne nemení — presne zodpovedá tejto diagnóze.
+
+`Repository.resolveHosts()` je funkčný a nesúvisí s problémom — slúži len na naplnenie `datalist` hodnôt (zoznam hostiteľov na výber), tie sa čerpajú z `parasites.json`, nie z `images.json`.
+
+**Rozhodnutie autorky (2026-08-19):** Kód sa **zatiaľ nemení**. Filter začne reálne fungovať, až keď budú fotky mať vyplnené `host` (Priorita č. 2 — postupné dopĺňanie fotografií). Voliteľná možnosť "dočasne vyplniť testovacie `host` hodnoty pre overenie funkčnosti filtra" bola ponúknutá, ale zatiaľ nevyužitá — ostáva otvorená ako rýchla voľba, ak si to autorka bude chcieť overiť skôr.
+
+➡️ **Priorita č. 1 je týmto UZAVRETÁ ako diagnostikovaná** (nie je to bug). Presúva sa do kategórie "čaká na dáta" — pozri §0.2 a Prioritu č. 2 nižšie. Nie je potrebný ďalší debug, kým nepribudnú reálne `host` hodnoty vo fotkách.
+
+---
+
+## 🆕 NOVÁ ÚLOHA (začatá 2026-08-19) — Admin formulár na správu databázy
+
+Autorka chce user-friendly formulár na **jednotlivé** dopĺňanie/úpravy dát (na rozdiel od hromadných zmien cez tabuľku — pozri nižšie). Toto je **nová funkcia appky**, zatiaľ len v štádiu **plánovania/špecifikácie** — žiadny kód ešte nebol napísaný ani schválený. Podľa pravidla č. 8 (nemeniť architektúru bez explicitného súhlasu) najprv pripravujem návrh a čakám na potvrdenie autorky.
+
+### Požiadavky zozbierané od autorky (2026-08-19):
+
+1. **Pridanie nového parazita** (diagnostického objektu) — s kontrolou duplicity ID.
+2. **Pridanie nového hostiteľa** — s kontrolou duplicity.
+3. **Pridanie sady obrázkov naraz** (2 dohodnuté formáty/veľkosti, názvy podľa `<objectId>_<poradie>.webp` / `_full.webp`) — s kontrolou duplicity.
+4. **Doplnenie ďalších obrázkov k už existujúcemu objektu** (nielen vytvorenie nového).
+5. **Editovateľné polia** (okrem existujúceho ID): hostiteľ, materiál (sample), štádium (stage), veľkosť, tvar, farba, obal, poznámky.
+6. **Pri fotkách:** možnosť nastaviť metadáta ručne, ALEBO automaticky prevziať hostiteľa podľa ID parazita (t.j. z `parasites.json` daného objektu).
+7. **Export do tabuľky** (Excel/CSV) — pre rýchly prehľad autorky.
+8. **Spätný import tabuľky** — na aplikovanie hromadných zmien (bulk workflow, alternatíva k jednotlivému formuláru).
+9. Po odoslaní formulára sa majú **vygenerovať príslušné ovplyvnené súbory**, ktoré si autorka sama nahradí/doplní v repozitári (t.j. appka beží na GitHub Pages ako statický web bez backendu — nemôže priamo zapisovať na disk/do repozitára).
+
+### Otvorené otázky pred návrhom (čakajú na odpoveď autorky):
+
+Kvôli tomu, že appka je nasadená staticky (GitHub Pages, žiadny server), treba pred návrhom vyjasniť **spôsob výstupu** a **miesto behu nástroja**. Otázky boli položené autorke v chate (viď nasledujúca správa) — odpovede doplniť sem po rozhodnutí.
+
+### Stav: 🔵 ČAKÁ NA ROZHODNUTIE AUTORKY o architektúre nástroja (lokálny nástroj vs. skrytá stránka appky; sťahované súbory vs. File System Access API; Excel cez SheetJS (`xlsx`, už v `node_modules`) vs. iný spôsob).
+
+**Nič sa zatiaľ neimplementovalo.** Žiadne súbory v `src/` ani `tools/` neboli menené.
+
+---
+
+## ✅ ČO SA VYRIEŠILO V PREDOŠLÝCH SESSIONS (2026-08-19, session: oprava ciest k obrázkom pre GitHub Pages)
 
 ### Obrázky sa nezobrazovali po nasadení na GitHub Pages — VYRIEŠENÉ, autorka potvrdila naživo
 
-**Príčina:** Appka beží na GitHub Pages ako projektová stránka (`https://<username>.github.io/VetPara-Atlas/`), nie na koreni domény. Cesty k obrázkom v kóde začínali absolútnou lomkou (`/public/images/...`), ktorá sa vždy vyhodnotí voči koreňu domény (`https://<username>.github.io/public/images/...`) — chýbal segment `/VetPara-Atlas/`. Lokálne cez Live Server to fungovalo, lebo appka tam beží priamo na koreni.
+**Príčina:** Appka beží na GitHub Pages ako projektová stránka (`https://<username>.github.io/VetPara-Atlas/`), nie na koreni domény. Cesty k obrázkom v kóde začínali absolútnou lomkou (`/public/images/...`), ktorá sa vždy vyhodnotí voči koreňu domény — chýbal segment `/VetPara-Atlas/`. Lokálne cez Live Server to fungovalo, lebo appka tam beží priamo na koreni.
 
-**Prečo stačí relatívna cesta bez `./` alebo base-path riešenia:** `Router.js` používa výhradne `window.location.hash` (žiadny `history.pushState`), takže skutočná cesta dokumentu (`index.html`) sa pri navigácii medzi routami nikdy nemení. Relatívna cesta bez úvodnej lomky sa preto vždy vyhodnotí správne voči koreňu appky — lokálne aj na GitHub Pages — na všetkých routách (`#home`, `#atlas`, `#atlas/objectId`, `#gallery`).
+**Prečo stačí relatívna cesta bez `./` alebo base-path riešenia:** `Router.js` používa výhradne `window.location.hash` (žiadny `history.pushState`), takže skutočná cesta dokumentu (`index.html`) sa pri navigácii medzi routami nikdy nemení. Relatívna cesta bez úvodnej lomky sa preto vždy vyhodnotí správne voči koreňu appky — lokálne aj na GitHub Pages.
 
 **Oprava (hotová, nasadená a naživo overená autorkou na GitHub Pages):**
 Vo všetkých 4 miestach, kde sa vykresľuje `<img src="...">`, zmenené `/public/images/${...}` → `public/images/${...}` (odstránená úvodná lomka):
@@ -19,12 +73,11 @@ Vo všetkých 4 miestach, kde sa vykresľuje `<img src="...">`, zmenené `/publi
 
 ✅ **Potvrdené naživo (2026-08-19):** Obrázky sa zobrazujú správne lokálne (Live Server) aj na produkcii (GitHub Pages).
 
-## ✅ ČO SA VYRIEŠILO V TEJTO SESSION
+## ✅ ČO SA VYRIEŠILO SKÔR
 
-### Priorita č. 1 (obrázky sa nenačítavali) — VYRIEŠENÉ, appka bola priamo overená naživo
+### Priorita (obrázky sa nenačítavali) — VYRIEŠENÉ, appka bola priamo overená naživo
 
-**Skutočná príčina (nie tá, ktorú predpokladal predošlý AI):**
-Problém nebol v `<base href="/">` ani v tom, z akého koreňa beží server. Projekt sa spúšťa cez **VS Code Live Server**, ktorý servuje súbory presne tak, ako ležia na disku — nerobí žiadne "public ako webroot" mapovanie (na rozdiel od Vite / CRA).
+**Skutočná príčina:** Problém nebol v `<base href="/">` ani v tom, z akého koreňa beží server. Projekt sa spúšťa cez **VS Code Live Server**, ktorý servuje súbory presne tak, ako ležia na disku — nerobí žiadne "public ako webroot" mapovanie.
 
 Fyzicky sú fotky uložené v:
 ```
@@ -32,69 +85,11 @@ public/images/parasites/<objectId>/<objectId>_<poradie>.webp        (thumbnail)
 public/images/parasites/<objectId>/<objectId>_<poradie>_full.webp   (zväčšená)
 ```
 
-Ale kód (`PrimaryImage.js`, `GalleryPage.js`) na ne odkazoval ako `/images/...` — chýbal segment `public/`. `index.html` mimochodom tento segment správne používal (`href="public/favicon.ico"`), takže nekonzistencia bola len v komponentoch obrázkov.
-
-**Oprava (hotová, nasadená a naživo overená):**
-Vo všetkých 4 miestach, kde sa vykresľuje `<img src="...">`, zmenené `/images/${...}` → `/public/images/${...}`:
-- `PrimaryImage.js` → `populate()` (dynamické načítanie v Atlase)
-- `PrimaryImage.js` → `renderStatic()` (statické vykreslenie v Atlase)
-- `GalleryPage.js` → `renderGrid()` (thumbnaily v mriežke Galérie)
-- `GalleryPage.js` → `openLightbox()` (zväčšená fotka v lightboxe)
-
-✅ **Potvrdené naživo (2026-08-18):** Fotky sa v Galérii aj v Atlase (`PrimaryImage`) zobrazujú správne pre všetky 3 objekty, ktoré majú v `public/images/parasites/` reálne súbory:
-- `aelurostrongylus_abstrusus_larva`
-- `alaria_alata_egg`
-- `toxascaris_leonina_egg`
+Oprava: `/images/...` → `/public/images/...` vo všetkých 4 miestach v `PrimaryImage.js` a `GalleryPage.js`. Neskôr (session vyššie) upravené znova na relatívne cesty bez úvodnej lomky kvôli GitHub Pages.
 
 ✅ **Filter podľa diagnostického objektu v Galérii funguje správne.**
 
-⚠️ **Bug z Priority č. 2 (`getFilteredImages()` — prázdny `host` mal vracať `true`, nie `false`) bol už v kóde opravený** (obsahuje komentár `// FIX BUG: prázdny host = fotka patrí všetkým hostiteľom`) — nebolo potrebné nič meniť, len potvrdené v kóde.
-
----
-
-## 🆕 NOVÝ BLOKUJÚCI PROBLÉM — filter podľa hostiteľa v Galérii nefunguje
-
-**Popis:** Vo filteroch Galérie funguje vyhľadávanie podľa diagnostického objektu (`gallery-filter-object`), ale filter podľa hostiteľa (`gallery-filter-host`) **nemá žiadny viditeľný efekt** — výsledky sa nezmenia bez ohľadu na to, aký hostiteľ sa zadá/vyberie.
-
-**Zatiaľ NEOVERENÉ (úloha na zajtra) — pravdepodobné hypotézy, zoradené podľa pravdepodobnosti:**
-
-1. **Najpravdepodobnejšia príčina:** Všetky fotky, ktoré sú momentálne v `database/images.json`, majú pole `host` prázdne (`""`) — čo je podľa dohodnutej konvencie správne pre "fotka platí pre všetkých hostiteľov", ALE má to nežiaduci vedľajší efekt: keď je `img.host` prázdny, `getFilteredImages()` fotku **vždy prepustí** (`if (!img.host) return true;`), takže výber ľubovoľného hostiteľa vizuálne nič nezmení — všetky fotky prejdú filtrom vždy. Toto môže byť "correct by design", ale z pohľadu užívateľa to vypadá ako "filter nefunguje", pretože nikdy nič neodfiltruje.
-   → **Treba overiť:** otvoriť `database/images.json` a skontrolovať, či majú existujúce 3 fotografické objekty vyplnené `host` (napr. `"pes"`, `"mačka"`) alebo je pole prázdne u všetkých.
-
-2. **Alternatívna príčina:** `Repository.resolveHosts(record)` (volaná v `getFilteredImages()` aj `populateHostDatalist()`) môže vracať formát hostiteľov, ktorý sa nezhoduje s tým, čo je uložené v `img.host` (napr. rôzne veľké/malé písmená, diakritika, plurál/singulár, alebo kód vs. slovenský názov typu `"dog"` vs. `"pes"`). Porovnanie `img.host.includes(h)` je case-sensitive a nerobí normalizáciu.
-   → **Treba overiť:** obsah `Repository.js`, konkrétne `resolveHosts()`, a porovnať výstupné stringy s hodnotami `host` v `images.json`.
-
-3. **Menej pravdepodobné:** event listener na `gallery-filter-host` inpute sa nespúšťa alebo `datalist` (`gallery-host-list`) sa nenaplní žiadnymi hodnotami, takže užívateľ fakticky nemá z čoho vyberať a text, ktorý napíše, sa nezhoduje s ničím v `matchingHosts` (čo by ale znamenalo filtered.length === 0, nie "žiadny efekt" — treba overiť, čo presne užívateľ vidí: nezmenia sa výsledky vôbec, alebo zmenia sa na prázdny zoznam?).
-
-**Súbory, ktoré bude na debugovanie potrebné znova otvoriť:**
-- `database/images.json` (obsah `host` poľa u reálnych záznamov)
-- `src/services/Repository.js` (funkcia `resolveHosts()`) — **tento súbor ešte neboli v tejto session nahraný ani analyzovaný**
-- `src/pages/GalleryPage.js` (`getFilteredImages()`, `populateHostDatalist()`) — už analyzované, kód vyzerá logicky OK, podozrenie smeruje k dátam alebo k `Repository.resolveHosts()`
-
-**Odporúčaný prvý krok na zajtra:** Otvoriť DevTools konzolu, do Galérie zadať `console.log(GalleryPage.state.images.map(i => i.host))` a `console.log(GalleryPage.getFilteredImages().length)` s vyplneným aj prázdnym `filterHost`, aby sa hneď zistilo, či ide o dátový problém (hypotéza 1) alebo o nezhodu stringov (hypotéza 2).
-
----
-
-## 🔧 Historické zistenia (predošlé sessions, kontext k pôvodnému image-loading bugu — už vyriešené, zachované pre históriu)
-
-Projekt bol presunutý z dvojitého koreňa VetParaAtlas/VetPara-Atlas do jedného koreňa.
-Štruktúra je teraz správna, server sa spúšťa z koreňa projektu (VS Code Live Server).
-
-Predošlé sessions sa nazdávali, že príčina 404 je nesprávny `<base href="/">` alebo že server beží z podadresára. Toto sa **NEPOTVRDILO**. Skutočná príčina bola nekonzistencia ciest medzi kódom (`/images/...`) a fyzickým umiestnením (`public/images/...`) — pozri vyriešenú sekciu vyššie.
-
-| Súbor | Zmena | Stav |
-| --- | --- | --- |
-| `PrimaryImage.js` | Cesty `/images/...` → `/public/images/...` v `populate()` a `renderStatic()` | ✅ Hotové a naživo overené (Live Server) |
-| `GalleryPage.js` | Cesty `/images/...` → `/public/images/...` v `renderGrid()` a `openLightbox()` | ✅ Hotové a naživo overené (Live Server) |
-| `GalleryPage.js` | Bug `if (!img.host) return false` → `return true` | ✅ Už bolo opravené v predošlej session, potvrdené |
-| `images.json` | Overený proti fyzickým súborom, všetky položky sú validné | ✅ Hotové |
-| Štruktúra projektu | Presun z dvojitého koreňa do jedného | ✅ Hotové |
-| `PrimaryImage.js` | Cesty `/public/images/...` → `public/images/...` (bez úvodnej lomky) v `populate()` a `renderStatic()` — oprava pre GitHub Pages | ✅ Hotové a naživo overené (Live Server aj GitHub Pages) |
-| `GalleryPage.js` | Cesty `/public/images/...` → `public/images/...` v `renderGrid()` a `openLightbox()` — oprava pre GitHub Pages | ✅ Hotové a naživo overené (Live Server aj GitHub Pages) |
-
-**Dátum aktualizácie:** 2026-08-19 (session: oprava ciest k obrázkom pre GitHub Pages — odstránená úvodná lomka z `/public/images/...` na `public/images/...` vo všetkých 4 miestach v `PrimaryImage.js` a `GalleryPage.js`; overené, že `Router.js` používa výhradne hash routing, takže relatívne cesty sú bezpečné; naživo overené autorkou na GitHub Pages aj lokálne)
-**Branch:** develop
-**Verzia projektu:** v17-in-progress (obrázky HOTOVÉ a naživo overené lokálne aj na GitHub Pages, filter podľa objektu HOTOVÝ a overený, filter podľa hostiteľa NEFUNKČNÝ — čaká na debug, je to teraz Priorita č. 1)
+⚠️ Bug z Priority č. 2 (`getFilteredImages()` — prázdny `host` mal vracať `true`, nie `false`) bol už v kóde opravený (komentár `// FIX BUG: prázdny host = fotka patrí všetkým hostiteľom`).
 
 ---
 
@@ -102,7 +97,7 @@ Predošlé sessions sa nazdávali, že príčina 404 je nesprávny `<base href="
 
 **Toto je najdôležitejšia sekcia tohto dokumentu. Prečítaj ju PRED akoukoľvek prácou na databáze.**
 
-### 0.1 Čo je HOTOVÉ (2026-08-18, predošlé sessions)
+### 0.1 Čo je HOTOVÉ
 
 1. ✅ Autorka rozhodla o všetkých 6 pôvodne otvorených konfliktoch a 11 pôvodných pes/mačka konfliktoch.
 2. ✅ `database/parasites.json` vygenerovaný — 474 diagnostických objektov, nahrádza všetkých 14 pôvodných `*.migrated.json` súborov.
@@ -112,64 +107,64 @@ Predošlé sessions sa nazdávali, že príčina 404 je nesprávny `<base href="
 
 Staré súbory `dog.json`, `dog.migrated.json` ... `wild_ruminants.migrated.json` sa NEMAZALI — zostávajú ako záložný zdroj pravdy, kým nie je appka overená naživo v prehliadači.
 
-### 0.2 Aktuálny stav obrázkov (aktualizované 2026-08-18)
+### 0.2 Aktuálny stav obrázkov
 
 ✅ **Reálne fotografie nahraté a fungujúce pre 3 diagnostické objekty:**
 - `aelurostrongylus_abstrusus_larva` (9 fotiek)
 - `alaria_alata_egg` (9 fotiek)
 - `toxascaris_leonina_egg` (15 fotiek)
 
-⬜ **Zostávajúce diagnostické objekty (471 z 474)** ešte nemajú reálne fotografie — autorka ich postupne dopĺňa podľa schválenej konvencie (§0.2 nižšie v pôvodnej sekcii Priority č. 2).
+⚠️ **Všetky tieto fotky majú prázdne pole `host: ""`** — preto filter hostiteľa v Galérii momentálne nemá viditeľný efekt (pozri diagnostiku vyššie). Toto sa vyrieši prirodzene s dopĺňaním `host` hodnôt (Priorita č. 2) — buď ručne, alebo cez pripravovaný admin formulár.
 
-✅ **`<img>` implementácia v `PrimaryImage.js` a `GalleryPage.js` je HOTOVÁ** (emoji placeholdery nahradené reálnymi `<img>` tagmi, cesty opravené, naživo overené).
+⬜ **Zostávajúce diagnostické objekty (471 z 474)** ešte nemajú reálne fotografie — autorka ich postupne dopĺňa podľa schválenej konvencie.
+
+✅ **`<img>` implementácia v `PrimaryImage.js` a `GalleryPage.js` je HOTOVÁ.**
 
 ⬜ **Stránka Expert** — stále neimplementovaná (iba `console.log`).
 
-⬜ **Presun starých `*.migrated.json` do `_archive/`** — až PO plnom overení appky naživo v prehliadači (blokuje ho ešte nedoriešený filter hostiteľov).
+⬜ **Presun starých `*.migrated.json` do `_archive/`** — až PO plnom overení appky naživo v prehliadači.
 
 ### 0.3 Dôležité pravidlo (nezmenené)
 
 **Nikdy automaticky nepovyšuj `host` na `hostGroups`** bez explicitného potvrdenia autorkou alebo silného dôkazu. V `parasites.json` je toto pravidlo striktne dodržané.
 
+**Konvencia prázdneho `host` u fotiek:** `host: ""` znamená "fotka platí pre všetkých hostiteľov" — toto je zámerné a zakódované v `GalleryPage.getFilteredImages()`. Neplánovať zmenu tejto logiky bez potvrdenia autorkou.
+
 ---
 
-## 1. ĎALŠIE KROKY (zoradené podľa priority, aktualizované 2026-08-18)
+## 1. ĎALŠIE KROKY (zoradené podľa priority, aktualizované 2026-08-19)
 
-### ⭐ Priorita č. 1: Opraviť filter hostiteľov v Galérii (NOVÉ, kritické pre dokončenie Galérie)
+### ⭐ Priorita č. 1: Admin formulár na správu databázy (NOVÉ, aktuálne v štádiu návrhu)
 
-Pozri detailnú diagnostiku vyššie v sekcii "NOVÝ BLOKUJÚCI PROBLÉM". Skrátený checklist na zajtra:
+Pozri sekciu "NOVÁ ÚLOHA" vyššie. Čaká sa na odpovede autorky ohľadom architektúry (lokálny nástroj vs. súčasť appky, spôsob výstupu súborov, Excel round-trip).
 
-1. Otvoriť `database/images.json`, skontrolovať hodnoty poľa `host` pre 3 existujúce fotografické objekty.
-2. Nahrať/skontrolovať `src/services/Repository.js`, konkrétne `resolveHosts()` — porovnať formát výstupu s hodnotami v `images.json`.
-3. V DevTools konzole overiť `GalleryPage.state.images` a výstup `getFilteredImages()` s a bez `filterHost`.
-4. Podľa zistenia oprava buď v dátach (`images.json`), alebo v `Repository.resolveHosts()`, alebo v porovnávacej logike `getFilteredImages()`.
+### ⭐ Priorita č. 2: Doplniť reálne fotografie a `host` hodnoty pre zostávajúce diagnostické objekty
 
-### ⭐ Priorita č. 2: Doplniť reálne fotografie pre zostávajúce diagnostické objekty
-
-Konvencia je schválená a funkčná (WebP, thumbnail 480px / plná 1600px, `<objectId>_<poradie>.webp` a `_full.webp`, cesty `public/images/parasites/<objectId>/...`, cesty v kóde `/public/images/...`).
-Autorka postupne dodáva fotky + zápisy do `images.json` podľa tejto konvencie pre zostávajúcich 471 objektov.
+Konvencia je schválená a funkčná (WebP, thumbnail 480px / plná 1600px, `<objectId>_<poradie>.webp` a `_full.webp`, cesty `public/images/parasites/<objectId>/...`). Autorka postupne dodáva fotky + zápisy do `images.json`. Vyplnenie `host` je teraz o niečo dôležitejšie, keďže od neho priamo závisí funkčnosť filtra v Galérii.
 
 ### ⭐ Priorita č. 3: Dokumentačné úpravy
 
 - Doplniť `thumbnail`, `isPrimary`, `sortOrder` do `docs/02_DATABASE_SPECIFICATION.md` §9 (zatiaľ len v kóde).
 - Odstrániť staré termíny `parasiteId` zo špecifikácie (kód jednotne používa `objectId`).
 
-### ⭐ Priorita č. 4: Implementovať formulár na správu záznamov (sekcia 0.5, nezmenené)
+### ⭐ Priorita č. 4: Chýbajúca stránka Expert
 
-### ⭐ Priorita č. 5: Chýbajúca stránka Expert
+### ⭐ Priorita č. 5: Presun starých `*.migrated.json` do `_archive/`
+
+Po plnom naživo-overení appky (vrátane funkčného filtra hostiteľov, ktorý teraz čaká na dáta, nie na kód).
 
 ---
 
 ## 2. ZOZNAM DÔLEŽITÝCH SÚBOROV
 
 - `database/parasites.json` — **HOTOVÝ**, 474 záznamov, nahrádza 14 host-súborov.
-- `database/images.json` — štruktúra hotová a funkčná, obsahuje reálne dáta pre 3 objekty (33 fotiek), čaká na doplnenie zvyšných 471.
-- `src/components/PrimaryImage.js` — **HOTOVÝ A NAŽIVO OVERENÝ** (Live Server aj GitHub Pages), cesty k obrázkom relatívne (`public/images/...`, bez úvodnej lomky).
-- `src/pages/GalleryPage.js` — **ČIASTOČNE HOTOVÝ**: cesty k obrázkom (relatívne, GitHub Pages OK) a filter objektov fungujú a sú overené; **filter hostiteľov nefunguje** (pozri Priorita č. 1).
-- `src/services/Repository.js` — **NEBOL ešte analyzovaný ani nahraný** — potrebný pre debug filtra hostiteľov (funkcia `resolveHosts()`).
-- `index.html` — overený, používa relatívne cesty konzistentné s Live Server aj GitHub Pages (koreň = koreň projektu, hash routing nemení cestu dokumentu).
-- `App.js` — **OVERENÝ**: správne sekvenovanie, obsahuje plne funkčné `window.showAtlasDetail`.
-- `Router.js` — **OVERENÝ (2026-08-19)**: plná podpora pre voliteľný parameter vetvy; používa výhradne `window.location.hash`, žiadny `history.pushState` — dôležité pre platnosť relatívnych ciest k obrázkom na všetkých routách.
+- `database/images.json` — štruktúra hotová a funkčná, obsahuje reálne dáta pre 3 objekty (33 fotiek, všetky s `host: ""`), čaká na doplnenie zvyšných 471 + vyplnenie `host`.
+- `src/components/PrimaryImage.js` — **HOTOVÝ A NAŽIVO OVERENÝ**, cesty k obrázkom relatívne (`public/images/...`).
+- `src/pages/GalleryPage.js` — **ČIASTOČNE HOTOVÝ**: cesty k obrázkom a filter objektov fungujú a sú overené; filter hostiteľov **diagnostikovaný, čaká na dáta** (nie je to bug v kóde).
+- `src/services/Repository.js` — **ANALYZOVANÝ (2026-08-19)**: `resolveHosts()` funguje správne, slúži na `datalist` a nesúvisí s problémom filtra fotiek.
+- `index.html` — overený, relatívne cesty konzistentné s Live Server aj GitHub Pages.
+- `App.js` — **OVERENÝ**: správne sekvenovanie, funkčné `window.showAtlasDetail`.
+- `Router.js` — **OVERENÝ**: hash routing, relatívne cesty bezpečné na všetkých routách.
 - `AtlasPage.js` — **OVERENÉ**: prepojenia a render fungujú podľa plánu.
 - Staré `database/*.migrated.json` (14×) — zatiaľ zachované, nemazať.
 
@@ -179,8 +174,10 @@ Autorka postupne dodáva fotky + zápisy do `images.json` podľa tejto konvencie
 
 1. Nikdy automaticky nepovyšuj `host`/`hosts` na `hostGroups` bez explicitného potvrdenia autorkou.
 2. Rozdielna `micrometry`/`sample`/`stage` pri rovnakom ID naprieč hostiteľmi znamená dva rôzne diagnostické objekty.
-3. Staré `*.migrated.json` súbory sa NEMAŽÚ, kým nie je appka naživo plne overená v prehliadači (vrátane funkčného filtra hostiteľov).
+3. Staré `*.migrated.json` súbory sa NEMAŽÚ, kým nie je appka naživo plne overená v prehliadači.
 4. Pred úpravou akéhokoľvek zdrojového súboru si VŽDY vyžiadaj jeho aktuálny obsah — nikdy nehádaj implementáciu.
-5. **Projekt sa spúšťa cez VS Code Live Server**, ktorý servuje súbory presne podľa fyzickej štruktúry na disku (žiadne "public ako webroot" mapovanie). Všetky odkazy na statické súbory z `public/` musia v kóde obsahovať prefix `/public/...`.
+5. **Projekt sa spúšťa cez VS Code Live Server** — všetky odkazy na statické súbory z `public/` musia v kóde obsahovať prefix `public/...` (relatívne, bez úvodnej lomky — dôležité aj pre GitHub Pages).
+6. **Appka je nasadená staticky na GitHub Pages — žiadny backend/server.** Akýkoľvek nový nástroj (napr. admin formulár) musí s týmto obmedzením počítať: nemôže priamo zapisovať do repozitára, musí generovať výstup, ktorý autorka manuálne nahrá/skopíruje.
+7. Filter hostiteľa v Galérii NIE JE bug — je to funkcia čakajúca na dáta (`host` hodnoty vo fotkách). Nemeniť túto logiku bez potvrdenia autorkou.
 
 ---
