@@ -1,5 +1,35 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.7 Aktuálny stav — doplnené (2026‑08‑20, session: code review implementácie Tab 1 admin nástroja — DOKONČENÉ, chýbajúce referenčné súbory doručené a rozhodnutia autorky zapísané)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-20, pokračovanie reviewu)
+
+### Kontext
+
+Autorka dodatočne nahrala všetky predtým chýbajúce referenčné súbory: `02_DATABASE_SPECIFICATION.md`, `database/parasites.json` (474 záznamov), `database/images.json` (33 záznamov), `dictionary/host_hierarchy.json` (78 kľúčov). Review implementácie Tab 1 je týmto **dokončený** — nižšie sú finálne zistenia a rozhodnutia autorky. Stále platí: **žiadny kód sa zatiaľ nezapisoval do repozitára**, súbory zostávajú len nahraté v chate.
+
+### 🔴→✅ Nezrovnalosť `methods`/`morphology.operculum` — ROZHODNUTÉ AUTORKOU
+
+Kontrolou `02_DATABASE_SPECIFICATION.md` §8 sa potvrdilo, že `morphology.operculum` **je** oficiálne v schéme (spolu s `contents`, `texture`, `remarks` — teda 7 polí, nie 3 ako v aktuálnej implementácii formulára). Odôvodnenie v sprievodnej správe iného AI ("operculum nie je v schéme") bolo teda **nesprávne**. Zároveň sa v reálnych dátach potvrdilo: `operculum`/`contents`/`texture`/`remarks` sa nepoužívajú **0×/474**, rovnako ako `methods` **0×/474**. Situácia `operculum` a `methods` je teda identická.
+
+**Rozhodnutie autorky (2026-08-20):** Polia `methods`, `morphology.operculum`, `morphology.contents`, `morphology.texture`, `morphology.remarks` a `images.json.license` sa **formálne vynechávajú úplne** — z formulára aj zo schémy. Nie je to dočasné, je to konečné zjednodušenie. Dôsledky:
+- Implementácia `parasiteForm.js` (vynechanie `methods` a `operculum`) je tým **spätne schválená ako správna**, aj keď pôvodné odôvodnenie autora kódu bolo pre `operculum` nesprávne (mal tvrdiť "nepoužíva sa v dátach", nie "nie je v schéme").
+- **`docs/02_DATABASE_SPECIFICATION.md` treba upraviť** — zo schémy v §7/§8 odstrániť `morphology.contents/texture/remarks/operculum` (ponechať len `shape/colour/shell`) a z §9 (metadáta fotografií) odstrániť `license`. Toto sa premietne aj do `docs/03_DATA_ENTRY_STANDARD.md`, ak tam boli tieto polia tiež spomenuté (nebol nahraný v tejto session, treba overiť pri budúcej príležitosti).
+- `docs/2026-08-19_admin-formular-specifikacia.md` (špecifikácia formulára) treba tiež upraviť — pôvodne žiadala `methods` ako multi-select a `operculum` ako voliteľné pole (§4), toto už neplatí.
+- Priorita č. 3 (dokumentačné úpravy, pozri nižšie) je rozšírená o toto vypustenie.
+
+### ✅ Ostatné potvrdené v tejto sesii
+
+- `dictionary/host_hierarchy.json` — reálna štruktúra (78 kľúčov, výhradne string hodnoty dieťa→rodič, 8 z nich je zároveň vnorená skupina) presne zodpovedá oprave v §6 `02_DATABASE_SPECIFICATION.md` aj tomu, ako s ním pracuje `getAllHostGroups()` v `admin.js`. Nič sa tu meniť nemusí.
+- `objectId` (nie `parasiteId`) je potvrdený ako správny názov poľa — 33/33 záznamov v `images.json` ho tak reálne používa. Otvorená otázka zo `Správa pre Claude...md` (§4.5, čaká na overenie) je vyriešená.
+- Žiadne duplicitné `id` v 474 záznamoch, `hostGroups` naozaj len 4×/474, `zoonosis` vždy boolean.
+
+### 🟡 Stále otvorené (nezávislé od tejto session)
+
+Funkčné chyby v `admin.js` nájdené v predchádzajúcom kole reviewu (kontrola duplicity ID ignoruje `state.pendingChanges`, mŕtvy `state.workingCopy`, nespracované `delete` v ňom, chybný badge pre zmazanie v sidebari, statický `extractUniqueValues()` datalist) **ostávajú v platnosti** — nesúviseli s chýbajúcimi referenčnými súbormi a treba ich opraviť bez ohľadu na rozhodnutie o `methods`/`operculum`. Pozri sekciu nižšie (pôvodne §0.6).
+
+---
+
 🔥 0.6 Aktuálny stav — doplnené (2026‑08‑20, session: code review implementácie Tab 1 admin nástroja, doručenej externe/iným AI)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-20, session: review admin nástroja)
@@ -10,13 +40,13 @@ Autorka nahrala kompletnú implementáciu Tab 1 (`tools/admin/`) admin nástroja
 
 **Nahraté a skontrolované súbory:** `index.html`, `admin.css`, `admin.js` (kompletný, doplnený až v druhom kole — pôvodne nahratý len ako čiastočný diff s jedinou funkciou `generateId()`), `forms/parasiteForm.js`, `forms/hostForm.js` (placeholder), `forms/imageForm.js` (placeholder), `forms/bulkExcel.js` (placeholder), `diff.js`, `zipExport.js`.
 
-**Zatiaľ NEnahraté** (potrebné na dokončenie reviewu, pozri nižšie): `docs/02_DATABASE_SPECIFICATION.md`, `database/parasites.json`, `database/images.json`, `dictionary/host_hierarchy.json`.
+**Zatiaľ NEnahraté** (potrebné na dokončenie reviewu, pozri nižšie): `docs/02_DATABASE_SPECIFICATION.md`, `database/parasites.json`, `database/images.json`, `dictionary/host_hierarchy.json` — ✅ **doplnené, pozri §0.7 vyššie.**
 
 ### 🔴 Nájdené nezrovnalosti oproti schválenej špecifikácii (vyžadujú rozhodnutie autorky)
 
-1. **`methods` pole úplne vynechané z formulára.** Schválená špecifikácia (`2026-08-19_admin-formular-specifikacia.md`, §4 riadok 90 a §4.2) výslovne hovorí, že formulár má pole `methods` **ponúknuť ako multi-select**, aj keď v reálnych dátach (474/474) je zatiaľ vždy prázdne. Implementácia (`parasiteForm.js`) ho namiesto toho úplne odstránila z UI aj z `collectFormData()` (natvrdo `methods: []`), s odôvodnením v sprievodnej správe "nepoužíva sa v reálnych dátach" — čo je v rozpore s tým, čo špecifikácia priamo žiada.
-2. **`morphology.operculum` úplne vynechané.** Špecifikácia (§4, riadok 90) ho výslovne uvádza medzi poľami, ktoré "formulár musí pokrývať" (voliteľné true/false). Implementácia ho vynechala s odôvodnením "nie je v schéme" — toto tvrdenie zatiaľ neviem overiť, lebo nemám `docs/02_DATABASE_SPECIFICATION.md`.
-3. ➡️ **Čaká na rozhodnutie autorky:** buď (a) doplniť `methods` a `morphology.operculum` do formulára podľa pôvodnej schválenej špecifikácie, alebo (b) formálne schváliť ich vynechanie a upraviť samotnú špecifikáciu, aby sedela s kódom. Nerozhodovať to sám (pravidlo č. 8).
+1. **`methods` pole úplne vynechané z formulára.** ✅ **VYRIEŠENÉ v §0.7** — autorka formálne schválila vynechanie, špecifikácia sa opraví.
+2. **`morphology.operculum` úplne vynechané.** ✅ **VYRIEŠENÉ v §0.7** — spolu s `contents`/`texture`/`remarks` a `images.json.license` formálne vynechané na základe rozhodnutia autorky, nezávisle od pôvodne (nesprávneho) odôvodnenia "nie je v schéme".
+3. ~~➡️ Čaká na rozhodnutie autorky~~ — rozhodnuté, pozri §0.7.
 
 ### 🔴 Nájdené funkčné chyby v kompletnom `admin.js` (doručenom v tejto session)
 
@@ -247,7 +277,8 @@ Konvencia je schválená a funkčná (WebP, thumbnail 480px / plná 1600px, `<ob
 ### ⭐ Priorita č. 3: Dokumentačné úpravy
 
 - Doplniť `thumbnail`, `isPrimary`, `sortOrder` do `docs/02_DATABASE_SPECIFICATION.md` §9 (zatiaľ len v kóde).
-- Odstrániť staré termíny `parasiteId` zo špecifikácie (kód jednotne používa `objectId`).
+- Odstrániť staré termíny `parasiteId` zo špecifikácie (kód jednotne používa `objectId`) — potvrdené v §0.7.
+- **Nové (rozhodnuté 2026-08-20, §0.7):** z `docs/02_DATABASE_SPECIFICATION.md` odstrániť zo schémy `morphology` polia `operculum`, `contents`, `texture`, `remarks` (ponechať len `shape`/`colour`/`shell`) a z metadát fotografií (§9) odstrániť `license`. Rovnaká úprava potrebná v `docs/2026-08-19_admin-formular-specifikacia.md` (§4) — odstrániť požiadavku na `methods` multi-select aj `operculum`. Overiť aj `docs/03_DATA_ENTRY_STANDARD.md`, ak tieto polia spomína (nebol nahraný v tejto session).
 
 ### ⭐ Priorita č. 4: Chýbajúca stránka Expert
 
