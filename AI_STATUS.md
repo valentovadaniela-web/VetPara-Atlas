@@ -1,5 +1,32 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.5 Aktuálny stav — doplnené (2026‑08‑20, session: finalizácia špecifikácie admin formulára, príprava implementácie)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-20)
+
+### Admin formulár — architektúra POTVRDENÁ, špecifikácia DOPLNENÁ reálnymi dátami
+
+**Analyzované súbory (nahraté a priamo skontrolované):** `database/parasites.json` (474 záznamov, plný obsah), `database/images.json` (33 záznamov, plný obsah), `dictionary/host_hierarchy.json` (81 kľúčov, plný obsah), `docs/02_DATABASE_SPECIFICATION.md`, `docs/03_DATA_ENTRY_STANDARD.md`, `docs/2026-08-19_admin-formular-specifikacia.md`, `src/services/Repository.js` (znovu, na overenie zhody s formulárom).
+
+**Architektúra potvrdená autorkou:** `tools/admin/index.html`, samostatný lokálny nástroj mimo appky, mimo GitHub Pages nasadenia. Odôvodnenie (statický hosting appky = žiadna route v nej nemôže byť súkromná) zostáva zdokumentované v špecifikácii §1.1.
+
+**Rozhodnutie o synchronizácii `parasites.json[].images`:** formulár bude toto pole aktívne udržiavať (doplní ID fotky pri každom pridaní obrázka), hoci appka toto pole momentálne nikde nečíta — prepojenie funguje opačne, cez `images.json.objectId`. Potvrdené 0/474 záznamov malo `images` vyplnené pred touto session.
+
+**Sekcia 4 špecifikácie (`docs/2026-08-19_admin-formular-specifikacia.md`) doplnená reálnymi hodnotami z dát:**
+- Kontrolované zoznamy `sample` (20 hodnôt), `stage` (9), `group` (11) — presné zoznamy priamo v špecifikácii.
+- `morphology.shape/colour/shell` (24/24/30 hodnôt) — príliš veľké a variabilné na striktný select → rozhodnuté ako **combobox s datalist** (voľné dopĺňanie + našepkávanie).
+- `micrometry.unit` — vždy `"µm"` vo všetkých 474 záznamoch → formulár ho predvyplní a uzamkne.
+- `methods` — **prekvapenie:** vo všetkých 474 záznamoch prázdne, kontrolovaný zoznam z `03_DATA_ENTRY_STANDARD.md` nemá zatiaľ oporu v dátach. Formulár ho napriek tomu ponúkne (pole je pripravené v schéme).
+- `hostGroups` — použité len 4×/474 → formulár pri výbere zobrazí varovanie a vyžiada extra potvrdenie (pravidlo §0.3/0.4).
+- Kvalita dát potvrdená: 0 zakázaných placeholder hodnôt, 0 nesprávnych formátov `id`, `zoonosis` vždy boolean.
+- `images.json`: štruktúra polí konzistentná vo všetkých 33 záznamoch, `isPrimary` práve 1×/objectId, `sortOrder` súvislý rad bez medzier → formulár bude vedieť bezpečne navrhnúť ďalšie `sortOrder` a automaticky prepnúť `isPrimary` pri novom primárnom obrázku.
+
+**Stav špecifikácie:** 🟢 SCHVÁLENÁ, pripravená na implementáciu. Ďalší krok: návrh konkrétnej štruktúry `tools/admin/index.html` (sekcie formulára) na schválenie autorkou, potom samotný kód.
+
+**Nič sa v `src/` ani `tools/` zatiaľ nemenilo — implementácia ešte nezačala.**
+
+---
+
 🔥 0.4 Aktuálny stav — doplnené (2026‑08‑19, session: diagnóza filtra hostiteľov v Galérii + príprava admin formulára)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-19, session 3)
@@ -167,9 +194,9 @@ Staré súbory `dog.json`, `dog.migrated.json` ... `wild_ruminants.migrated.json
 
 ## 1. ĎALŠIE KROKY (zoradené podľa priority, aktualizované 2026-08-19)
 
-### ⭐ Priorita č. 1: Admin formulár na správu databázy (v štádiu návrhu, polia potvrdené)
+### ⭐ Priorita č. 1: Admin formulár na správu databázy (špecifikácia HOTOVÁ, čaká sa na implementáciu)
 
-Pozri sekciu "NOVÁ ÚLOHA — Admin formulár" vyššie. Schéma polí je potvrdená (`docs/2026-08-19_admin-formular-specifikacia.md`). Čaká sa na potvrdenie architektúry nástroja (umiestnenie mimo appky, `tools/admin/`).
+Pozri sekciu "NOVÁ ÚLOHA — Admin formulár" a session 2026-08-20 vyššie. Architektúra aj schéma polí sú potvrdené (`docs/2026-08-19_admin-formular-specifikacia.md`, stav 🟢 SCHVÁLENÉ). Ďalší krok: návrh konkrétnej štruktúry `tools/admin/index.html` na schválenie, potom implementácia.
 
 ### ⭐ Priorita č. 2: Doplniť reálne fotografie a `host` hodnoty pre zostávajúce diagnostické objekty
 

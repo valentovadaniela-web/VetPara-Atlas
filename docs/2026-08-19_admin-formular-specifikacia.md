@@ -1,7 +1,7 @@
 # VetPara Atlas — Špecifikácia: Admin formulár na správu databázy
 
-**Dátum:** 2026-08-19
-**Stav:** 🔵 NÁVRH — čaká na schválenie autorky a doplnenie chýbajúcich súborov (pozri sekciu 6)
+**Dátum:** 2026-08-19 (aktualizované 2026-08-20)
+**Stav:** 🟢 SCHVÁLENÉ — architektúra aj schéma polí potvrdené, pripravené na implementáciu
 **Súvisiace:** `AI_STATUS.md` §"NOVÁ ÚLOHA — Admin formulár na správu databázy"
 
 ---
@@ -10,9 +10,10 @@
 
 | Otázka | Rozhodnutie |
 | --- | --- |
-| Kde nástroj beží | **Samostatný lokálny nástroj**, mimo hlavnej appky (odporúčanie nižšie, čaká na finálne potvrdenie) |
+| Kde nástroj beží | **Samostatný lokálny nástroj**, mimo hlavnej appky — `tools/admin/index.html` — ✅ **finálne potvrdené autorkou 2026-08-20** |
 | Ako odovzdáva výstup | **Sťahovanie súborov (.zip)** — žiadny priamy zápis na disk |
 | Formát tabuľky pre bulk zmeny | **Excel (.xlsx)** cez knižnicu SheetJS (`xlsx`), ktorá je už v `node_modules` |
+| Synchronizácia `parasites.json[].images` | ✅ **Potvrdené 2026-08-20:** formulár pri pridaní/úprave fotky doplní ID fotky aj do `images` poľa príslušného diagnostického objektu (dosiaľ sa toto pole nepoužívalo — 0/474 záznamov ho malo vyplnené, appka číta prepojenie opačným smerom cez `images.json.objectId`; formulár ho odteraz udržiava pre budúcu konzistenciu). |
 
 ### 1.1 Odôvodnenie: samostatný nástroj, nie súčasť appky
 
@@ -23,7 +24,7 @@ Odporúčam `tools/admin/index.html` (+ pomocné JS súbory v `tools/admin/`) ak
 - Samostatný nástroj sa nemusí riadiť routovaním, štýlmi ani stavom hlavnej appky — jednoduchšie sa bude vyvíjať a nehrozí, že pokazí produkčný web.
 - Bude sa spúšťať rovnako ako appka — cez Live Server, len z iného súboru (`tools/admin/index.html` namiesto `index.html`).
 
-➡️ Ak s týmto odôvodnením súhlasíš, potvrď a beriem to ako finálne rozhodnutie. Ak chceš radšej `#admin` v rámci appky (napr. kvôli zdieľanému vzhľadu/štýlom), daj vedieť — dá sa to prerobiť, len s vyššie uvedeným rizikom verejnej dostupnosti.
+✅ **Potvrdené autorkou 2026-08-20.** Toto je finálne architektonické rozhodnutie — `tools/admin/index.html`, mimo appky, mimo GitHub Pages nasadenia.
 
 ---
 
@@ -94,9 +95,25 @@ Mapovanie zadania autorky na skutočné polia:
 - `hostGroups`: multi-select zo skupinových názvov, s varovaním a vyžiadaním potvrdenia (pravidlo §0.3/0.4).
 - `hostNotes`: mapa {hostiteľ: poznámka}, len pre vybraných hostiteľov.
 
-### 4.2 Kontrolované slovníky (samostatné súbory zatiaľ neexistujú v projekte)
+### 4.2 Kontrolované slovníky — reálne hodnoty z `parasites.json` (474 záznamov, overené 2026-08-20)
 
-`samples.json`, `methods.json`, `stages.json`, `shapes.json`, `colours.json`, `shells.json` z §6 dokumentácie zatiaľ fyzicky neexistujú. Formulár preto použije hodnoty z dokumentácie ako predvolený zoznam + možnosť pridať novú hodnotu. Pri implementácii doplním reálne použité hodnoty priamo z `parasites.json` (474 záznamov).
+`samples.json`, `methods.json`, `stages.json`, `shapes.json`, `colours.json`, `shells.json` z §6 dokumentácie zatiaľ fyzicky neexistujú. Formulár použije nasledujúce reálne použité hodnoty ako predvolený zoznam (select) + možnosť pridať novú hodnotu (formulár ju v tom prípade zapíše priamo do záznamu; samostatné dictionary súbory sa zatiaľ nezakladajú — mimo rozsahu tejto úlohy, pozri Prioritu č. 3 v `AI_STATUS.md`).
+
+**`sample`** (20 hodnôt, select s možnosťou pridať): Trus, Koža, Žlčník, Moč, Pečeň, Sval, Pľúca, Plášťová dutina, Nozdry, Krv, Črevo, Podkožie, Brušná dutina, Mezentérium, Peritoneum, Mozog, Vzdušné vaky, Pohlavné orgány, Žalúdok, Ústna dutina.
+
+**`stage`** (9 hodnôt, select s možnosťou pridať): Vajíčko, Oocysta, Dospelý jedinec, Larva, Cysta, Trofozoit, Plerocerkoid, Kvasinka, Mesocerkária.
+
+**`group`** (11 hodnôt, select s možnosťou pridať): Protozoa, Nematoda, Cestoda, Arachnida, Insecta, Trematoda, Acanthocephala, Crustacea, Monogenea, Fungi, Pentastomida.
+
+**`morphology.shape`** (24 hodnôt), **`.colour`** (24 hodnôt), **`.shell`** (30 hodnôt): vysoký počet variantov vrátane kombinovaných formulácií (napr. "Okrúhly až oválny", "Bezfarebný až svetlo hnedý", "Hrubá, embryofor s radiálnym pruhovaním") → tieto tri polia budú **combobox s voľným dopĺňaním** (datalist), nie striktný uzavretý select — kontrolovaný zoznam slúži len ako našepkávač, autorka môže vždy zapísať vlastnú kombináciu. Presné zoznamy hodnôt doplním priamo do kódu pri implementácii (sú príliš dlhé na túto špecifikáciu).
+
+**`micrometry.unit`**: vo všetkých 474 záznamoch výhradne `"µm"` → formulár toto pole **predvyplní a uzamkne** (needituje sa, eliminuje riziko preklepu), s možnosťou odomknúť len ak by v budúcnosti pribudla iná jednotka.
+
+**`methods`**: prekvapivé zistenie — vo všetkých 474 záznamoch je pole **prázdne** (`[]`). Kontrolovaný zoznam zo `03_DATA_ENTRY_STANDARD.md` §9 (Flotácia, Sedimentácia, Baermannova metóda, Knottov test, PCR, ELISA, Mikroskopia, IFAT, MAT) sa v reálnych dátach zatiaľ nikde nepoužíva. Formulár ho napriek tomu ponúkne ako multi-select podľa dokumentácie (pole v schéme existuje a je pripravené na budúce použitie), len na vedomie, že zatiaľ nemá oporu v žiadnom existujúcom zázname.
+
+**`hostGroups`**: použité len v **4 zo 474** záznamov (`strongyloides_sp_egg`, `strongyloides_sp_larva`, `taenia_sp_egg`, `giardia_intestinalis_cyst`). Formulár pri zaškrtnutí/výbere akejkoľvek hodnoty v `hostGroups` zobrazí explicitné varovanie s odkazom na pravidlo §0.3/0.4 (`AI_STATUS.md`) a vyžiada dodatočné potvrdenie — ide o výnimku, nie normu.
+
+**Kvalita dát (potvrdené, žiadny zásah netreba):** 0 záznamov so zakázanými placeholder hodnotami, 0 nesprávnych formátov `id`, `zoonosis` je vo všetkých záznamoch typu boolean.
 
 ### 4.3 Validačné pravidlá
 
@@ -116,14 +133,64 @@ Mapovanie zadania autorky na skutočné polia:
 
 Formulár pre fotky: nahratie súborov (kontrola, že každá fotka má presne 2 varianty — thumbnail aj `_full`), výber `objectId`, automatické predvyplnenie `host` cez `resolveHosts()` (3.2), ostatné polia voliteľné.
 
+**Overené na reálnych 33 záznamoch (3 objekty, 2026-08-20):** štruktúra polí je vo všetkých záznamoch identická (žiadne chýbajúce/navyše kľúče), `isPrimary: true` sa vyskytuje **presne raz na `objectId`**, `sortOrder` tvorí súvislý rad `1..N` bez medzier. Formulár pri "doplnení ďalších obrázkov" k existujúcemu `objectId`:
+- navrhne ďalšie `sortOrder` ako `max(existujúce sortOrder pre daný objectId) + 1`,
+- ak autorka označí novú fotku ako `isPrimary: true`, formulár automaticky nastaví `isPrimary: false` na predošlej primárnej fotke toho istého `objectId` (nikdy nesmú byť dve primárne súčasne — pred zápisom zobrazí v "pred/po" náhľade aj túto vedľajšiu zmenu, pozri 3.4),
+- doplní ID novej fotky do `parasites.json[objectId].images` (pozri potvrdenie v sekcii 1).
+
 ---
 
 ## 5. Formát Excel exportu/importu
 
-- Jeden hárok = `parasites.json` (jeden riadok = jeden diagnostický objekt, stĺpce = polia záznamu).
-- Druhý hárok = `images.json` (jeden riadok = jedna fotka).
-- Prvý stĺpec vždy `id` — needitovateľný vizuálne odlíšený (napr. sivé podfarbenie), aby autorka omylom nezmenila ID pri hromadných úpravách.
-- Pri importe: nástroj páruje riadky podľa `id`. Nové riadky (ID, ktoré ešte neexistuje) = návrh na vytvorenie nového záznamu. Zmenené riadky = návrh na úpravu. Chýbajúce riadky (boli v appke, chýbajú v Exceli) sa **nemažú automaticky** — len sa upozorní, že chýbajú, a autorka rozhodne.
+Zošit má **3 hárky**:
+
+### Hárok 1 — "Parazity" (`parasites.json`, 1 riadok = 1 diagnostický objekt)
+
+Vnorené polia sa rozbaľujú do samostatných stĺpcov, zoznamy sa zapisujú ako text oddelený `;`:
+
+| Stĺpec | Zdrojové pole | Formát |
+| --- | --- | --- |
+| `id` | `id` | needitovateľný (podfarbený), pri novom riadku prázdny |
+| `latinName` | `latinName` | text |
+| `synonyms` | `synonyms` | `;`-zoznam |
+| `slovakName` | `slovakName` | text |
+| `taxonomy.kingdom` … `taxonomy.species` | `taxonomy` | 7 samostatných stĺpcov |
+| `hostGroups` | `hostGroups` | `;`-zoznam, stĺpec vizuálne zvýraznený (výnimočné pole, pozri §0.3/0.4) |
+| `hosts` | `hosts` | `;`-zoznam |
+| `hostNotes` | `hostNotes` | `Hostiteľ: poznámka; Hostiteľ2: poznámka2` |
+| `sample`, `stage`, `group` | — | text |
+| `methods` | `methods` | `;`-zoznam |
+| `micrometry.lengthMin/Max`, `widthMin/Max` | `micrometry` | 4 číselné stĺpce |
+| `micrometry.unit` | — | needitovateľný, vždy `µm` |
+| `morphology.shape/colour/shell` | `morphology` | 3 stĺpce |
+| `diagnosticSigns`, `differentialDiagnosis`, `references` | — | `;`-zoznam |
+| `lifeCycle`, `pathology`, `notes` | — | voľný text |
+| `zoonosis` | — | `TRUE`/`FALSE` |
+| `images` | — | `;`-zoznam ID fotiek, **needitovateľný** — spravuje sa výhradne cez hárok "Fotografie" alebo Tab 3, nie ručne tu |
+
+### Hárok 2 — "Fotografie" (`images.json`, 1 riadok = 1 fotka)
+
+Stĺpce: `id`, `objectId`, `host`, `author`, `laboratory`, `year`, `sample`, `stage`, `method`, `objective`, `magnification`, `filename`, `thumbnail`, `isPrimary` (`TRUE`/`FALSE`), `sortOrder` (číslo), `description`. `id` needitovateľný rovnako ako v hárku 1.
+
+### Hárok 3 — "Hostitelia" (`dictionary/host_hierarchy.json`, 1 riadok = 1 kľúč hierarchie) — nové, doplnené 2026-08-20
+
+Plochá mapa dieťa→rodič sa premietne priamo do dvoch stĺpcov:
+
+| Stĺpec | Význam |
+| --- | --- |
+| `nazov` | kľúč zo slovníka (konkrétny hostiteľ **alebo** skupina — pozri §4.1, v tejto štruktúre niet medzi nimi rozdielu) |
+| `nadradena_skupina` | hodnota (priamy rodič); prázdne = najvyššia úroveň. V reálnych dátach (78 kľúčov, overené 2026-08-20) existuje **12 najvyšších skupín, ktoré samy nemajú rodiča** a teda nie sú kľúčom v súbore, len hodnotou v stĺpci `nadradena_skupina` iných riadkov: `Vtáky`, `Plazy`, `Mäsožravce`, `Hlodavce`, `Domáce prežúvavce`, `Voľne žijúce prežúvavce`, `Zajace, králiky`, `Ošípané, diviaky`, `Nepárnokopytníky`, `Hmyzožravce`, `Ryby`, `Bezstavovce`. Tieto sa v Exceli **nezobrazujú ako vlastný riadok** (nie sú kľúčom), pokiaľ ich autorka sama nezadá ako nový riadok s vlastným `nadradena_skupina` (napr. `Cicavce`). |
+
+Autorka mení/dopĺňa zriedkavo — hárok slúži hlavne na **prehľad** celej hierarchie na jednom mieste (namiesto prechádzania Tab 2 formulárom po jednom zázname) a na hromadnú opravu, ak by bolo treba prekvalifikovať viac hostiteľov naraz (napr. presun skupiny hostiteľov pod iného rodiča).
+
+**Validácia pri importe:** ak `nadradena_skupina` odkazuje na hodnotu, ktorá nie je ani existujúcim kľúčom, ani novým riadkom v tom istom importe, nástroj to nahlási ako chybu (visiaci odkaz na neexistujúcu skupinu) a import pre daný riadok odmietne, kým sa neopraví.
+
+### Spoločné pravidlá pre všetky 3 hárky
+
+- Prvý stĺpec `id` (hárky 1–2) / `nazov` (hárok 3) je vždy needitovateľný, vizuálne odlíšený (sivé podfarbenie).
+- **Detekcia nového záznamu:** prázdny `id`/`nazov` pri importe = návrh na vytvorenie. Pre hárky 1–2 sa `id` vygeneruje automaticky (rovnaká logika ako v Tab 1/3 formulári — `latinName`+`stage`, resp. `<objectId>_<ďalšie voľné číslo>`); pre hárok 3 je `nazov` vždy zadaný autorkou priamo (skupiny/hostitelia nemajú automaticky generovaný názov).
+- **Ochrana pred omylom premenovaným `id`:** pri exporte sa do každého hárku pridá skrytý pomocný stĺpec s pôvodnou hodnotou `id`/`nazov`. Ak sa pri importe viditeľná hodnota u riadku, ktorý predtým mal `id`/`nazov` vyplnené, líši od skrytej pôvodnej hodnoty, nástroj to **nevyhodnotí ticho ako "zmizol starý + pribudol nový"** — označí to ako podozrivú zmenu vyžadujúcu explicitné potvrdenie v diff náhľade.
+- Zmenené riadky = návrh na úpravu (diff pred/po). Chýbajúce riadky (boli v appke, chýbajú v Exceli) sa **nemažú automaticky** — len sa upozorní, autorka rozhodne.
 
 ---
 
