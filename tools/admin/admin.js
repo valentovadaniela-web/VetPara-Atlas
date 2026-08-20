@@ -38,7 +38,7 @@ export async function loadData() {
                 if (!r.ok) throw new Error('HTTP ' + r.status);
                 return r.json();
             }),
-            fetch('../../dictionary/host_hierarchy.json').then(r => {
+            fetch('../../database/dictionary/host_hierarchy.json').then(r => {
                 if (!r.ok) throw new Error('HTTP ' + r.status);
                 return r.json();
             }),
