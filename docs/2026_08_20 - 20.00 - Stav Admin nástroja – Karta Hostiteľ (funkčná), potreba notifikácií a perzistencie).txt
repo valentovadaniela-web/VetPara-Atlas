@@ -1,0 +1,29 @@
+Predmet: Stav Admin nástroja – Karta Hostiteľ (funkčná), potreba notifikácií a perzistencie
+
+Ahoj,
+
+dnes sme úspešne dokončili implementáciu karty Hostiteľ v Admin nástroji. Tu je zhrnutie aktuálneho stavu a čo treba riešiť ďalej:
+
+Čo už funguje:
+
+Pridávanie hostiteľov: Funkcia addPendingChange v admin.js správne rozlišuje medzi zmenami pre parazitov a hostiteľov. Pri pridaní nového hostiteľa (napr. "Lev") sa záznam okamžite pridá do state.hostHierarchy, do state.pendingChanges a do state.sessionNewHostEntries.
+
+Okamžitá odozva UI: Po pridaní sa zoznam hostiteľov v ľavom stĺpci okamžite obnoví (vďaka window.__refreshHostTab) a aktualizuje sa aj počítadlo "Čakajúce zmeny".
+
+Načítanie dát: Cesty k JSON súborom sú opravené, takže nedochádza k chybe 404.
+
+Čo momentálne nefunguje / je potrebné opraviť:
+
+Chýbajúca notifikácia: Zelená správa ("✅ Hostiteľ bol pridaný...") sa nezobrazuje. Kód ju síce nastavuje, ale vzápätí sa celý HTML formulára obnoví funkciou renderHostTab(), čo správu vymaže. Riešenie: Implementovať plávajúce notifikácie (toast) mimo formulára.
+
+Perzistencia údajov: Po obnovení stránky (F5) pridaný hostiteľ zmizne a počítadlo vynuluje, pretože zmeny sú len v pamäti prehliadača. Riešenie: Otestovať a zdokumentovať proces exportu a následného prepísania JSON súborov na disku.
+
+Čo treba spraviť v ďalšom kroku (priorita):
+
+Implementovať notifikácie (Toast): Pridať do admin.js (alebo samostatného modulu) funkciu showToast(message, type) a nahradiť ňou priame vypisovanie do msgBox v hostForm.js. Toast by mal byť umiestnený v rohu obrazovky a sám zmiznúť po cca 3 sekundách.
+
+Doriešiť export a perzistenciu: Overiť, že tlačidlo "Stiahnuť výstup" správne generuje ZIP, ktorý obsahuje aktualizovaný host_hierarchy.json so všetkými pendingChanges, a že prepísanie súboru na disku (manuálne) vedie k trvalému uloženiu dát.
+
+Poznámka k mazaniu: Pri mazaní hostiteľov (zatiaľ len simulované) sme sa dohodli, že keď sa bude implementovať reálne mazanie, malo by sa používateľa opýtať, čo má urobiť s podriadenými hostiteľmi (presunúť o úroveň vyššie, do skupiny Nezaradení, alebo ich vymazať).
+
+Prosím, pri pokračovaní nadviaž na tomto bode a najprv implementuj notifikácie.

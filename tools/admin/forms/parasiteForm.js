@@ -135,14 +135,14 @@ function renderForm(record) {
                 ${idExists ? '<div class="error-msg">⚠️ Toto ID už existuje (vrátane čakajúcich zmien)!</div>' : ''}
             </div>
             <div class="form-group" style="flex: 1 1 300px;">
-                <label>Latinské meno <span class="required">*</span></label>
+                <label>Latinský názov <span class="required">*</span></label>
                 <input type="text" id="f-latinName" value="${escHtml(data.latinName)}" />
             </div>
         </div>
 
         <div class="form-row">
             <div class="form-group" style="flex: 1 1 300px;">
-                <label>Slovenské meno</label>
+                <label>Slovenský názov</label>
                 <input type="text" id="f-slovakName" value="${escHtml(data.slovakName)}" />
             </div>
         </div>
@@ -163,13 +163,13 @@ function renderForm(record) {
         </div>
 
         <div class="form-row" style="border-top:1px solid #ecf0f1;padding-top:1rem;margin-top:0.5rem;">
-            <div class="form-group"><label>Kmeň (Kingdom)</label><input type="text" id="f-kingdom" value="${escHtml(data.taxonomy.kingdom)}" /></div>
-            <div class="form-group"><label>Phylum</label><input type="text" id="f-phylum" value="${escHtml(data.taxonomy.phylum)}" /></div>
-            <div class="form-group"><label>Class</label><input type="text" id="f-class" value="${escHtml(data.taxonomy.class)}" /></div>
-            <div class="form-group"><label>Order</label><input type="text" id="f-order" value="${escHtml(data.taxonomy.order)}" /></div>
-            <div class="form-group"><label>Family</label><input type="text" id="f-family" value="${escHtml(data.taxonomy.family)}" /></div>
-            <div class="form-group"><label>Genus</label><input type="text" id="f-genus" value="${escHtml(data.taxonomy.genus)}" /></div>
-            <div class="form-group"><label>Species</label><input type="text" id="f-species" value="${escHtml(data.taxonomy.species)}" /></div>
+            <div class="form-group"><label>Ríša (Kingdom)</label><input type="text" id="f-kingdom" value="${escHtml(data.taxonomy.kingdom)}" /></div>
+            <div class="form-group"><label>Kmeň (Phylum)</label><input type="text" id="f-phylum" value="${escHtml(data.taxonomy.phylum)}" /></div>
+            <div class="form-group"><label>Trieda (Class)</label><input type="text" id="f-class" value="${escHtml(data.taxonomy.class)}" /></div>
+            <div class="form-group"><label>Rad (Order)</label><input type="text" id="f-order" value="${escHtml(data.taxonomy.order)}" /></div>
+            <div class="form-group"><label>Čeľaď (Family)</label><input type="text" id="f-family" value="${escHtml(data.taxonomy.family)}" /></div>
+            <div class="form-group"><label>Rod (Genus)</label><input type="text" id="f-genus" value="${escHtml(data.taxonomy.genus)}" /></div>
+            <div class="form-group"><label>Druh (Species)</label><input type="text" id="f-species" value="${escHtml(data.taxonomy.species)}" /></div>
         </div>
 
         <div class="form-row">

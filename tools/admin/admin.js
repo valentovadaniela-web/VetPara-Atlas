@@ -132,8 +132,16 @@ function initTabs() {
 export function addPendingChange(change) {
     state.pendingChanges.push(change);
     updatePendingUI();
-    // Aktualizovať working copy
-    applyChangeToWorkingCopy(change);
+
+    // Ak ide o hostiteľa, obnovíme zoznam hostiteľov, aby sme to videli hneď
+    if (change.type === 'host') {
+        if (typeof window.__refreshHostTab === 'function') {
+            window.__refreshHostTab();
+        }
+    } else {
+        // Pôvodná logika pre parazitov (working copy)
+        applyChangeToWorkingCopy(change);
+    }
 }
 
 export function removePendingChange(index) {
@@ -425,3 +433,7 @@ export function getAllHostGroups() {
     }
     return Array.from(groups).sort((a, b) => a.localeCompare(b));
 }
+
+// --- SPRÍSTUPNENIE PRE HOST FORM ---
+// Toto zaručí, že funkcia renderHostTab z hostForm.js sa dá zavolať z admin.js
+window.__refreshHostTab = renderHostTab;

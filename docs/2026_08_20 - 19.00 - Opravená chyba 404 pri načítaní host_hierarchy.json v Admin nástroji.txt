@@ -1,0 +1,60 @@
+Predmet: Opravená chyba 404 pri načítaní host_hierarchy.json v Admin nástroji
+
+Ahoj Claude,
+
+Podarilo sa nám vyriešiť problém s HTTP 404, ktorý sa objavoval v konzole pri spustení Admin nástroja (tools/admin/index.html) cez Live Server.
+
+Príčina problému:
+Admin nástroj (ktorý beží v adresári tools/admin/) mal v súbore admin.js natvrdo zadanú cestu k súboru host_hierarchy.json. Pôvodná cesta fetch('../../dictionary/host_hierarchy.json') nebola správna, pretože koreňový adresár projektu neobsahuje priečinok dictionary/, ale ten sa nachádza až vo vnútri database/.
+
+Vykonané opravy:
+
+V tools/admin/admin.js (oprava pre Admin rozhranie):
+Na riadku 24 (v časti loadData()) bola cesta k host_hierarchy.json zmenená na správnu:
+
+javascript
+fetch('../../database/dictionary/host_hierarchy.json')
+(Pôvodne tam bolo: '../../dictionary/host_hierarchy.json')
+
+V src/services/Repository.js a DatabaseService.js (pre hlavnú aplikáciu):
+Uistili sme sa, že cesty sú správne aj pre hlavnú stránku (ktorá beží z root adresára):
+
+V Repository.js je cesta: const HOST_HIERARCHY_FILE = "dictionary/host_hierarchy.json";
+
+V DatabaseService.js metóda load(file) používa fetch: await fetch(file); (bez automatického pridávania prefixu database/, aby sa cesty mohli definovať relatívne podľa kontextu spustenia).
+
+Výsledok:
+Po týchto úpravách a reštarte Live Servera sa JSON súbory načítavajú správne v oboch prostrediach (v root adresári aj v admin zložke). V konzole už nehlási chybu 404 a Admin nástroj sa inicializuje bez problémov.
+
+
+redmet: Hotovo – Implementované reálne pridávanie hostiteľov v Admin nástroji
+
+Ahoj Claude,
+
+Dokončili sme ďalší krok v správe hostiteľov v Admin nástroji. Po vyriešení chyby 404 sme úspešne rozbehli funkcionalitu karty Hostiteľ.
+
+Čo bolo implementované:
+
+Opravený admin.js: Funkcia addPendingChange teraz rozlišuje medzi zmenami pre parazitov (change.type === 'parasite') a zmenami pre hostiteľov (change.type === 'host'). Ak ide o hostiteľa, okamžite sa zavolá funkcia window.__refreshHostTab, ktorá nanovo vykreslí zoznam hostiteľov bez nutnosti obnoviť celú stránku.
+
+Prepísaný hostForm.js: Karta Hostiteľ už nie je len placeholder. Obsahuje:
+
+Zoznam hostiteľov na ľavej strane, ktorý sa dynamicky aktualizuje.
+
+Formulár na pridanie nového hostiteľa s možnosťou zvoliť mu nadradenú skupinu.
+
+Reálne ukladanie do pamäte: Po pridaní hostiteľa sa:
+
+Záznam okamžite pridá do state.hostHierarchy.
+
+Vytvorí sa záznam v state.pendingChanges (typ host, akcia create).
+
+Záznam sa pridá do state.sessionNewHostEntries (pre datalisty v iných formulároch).
+
+Okamžitá odozva: Po kliknutí na tlačidlo "Pridať hostiteľa" sa nový záznam okamžite zobrazí v zozname vľavo a aktualizuje sa aj počítadlo "Čakajúce zmeny" v hlavičke.
+
+Stav mazania a presunu:
+Funkcia "Zmazať" pri hostiteľoch je zatiaľ len simulovaná (alert). Plánujeme do budúcnosti implementovať inteligentné mazanie, ktoré sa používateľa opýta, čo má urobiť s podriadenými hostiteľmi (presunúť o úroveň vyššie, presunúť do skupiny "Nezaradení", alebo vymazať kaskádovo).
+
+Čo nasleduje (voliteľné):
+Aktuálne sú karty Fotografie a Excel bulk stále prázdne (placeholdery). Ak chceš, môžeme v ďalšom kroku rozbehať jednu z nich.
