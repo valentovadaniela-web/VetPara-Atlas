@@ -1,4 +1,4 @@
-import { state, addPendingChange, getAllHostKeys, getAllHostGroups } from '../admin.js';
+import { state, addPendingChange, getAllHostKeys, getAllHostGroups, showToast } from '../admin.js';
 
 // Túto funkciu vystavíme globálne, aby ju admin.js mohol zavolať pri zmene
 export function renderHostTab() {
@@ -47,11 +47,28 @@ export function renderHostTab() {
         </div>
     `;
 
-    // 3. Udalosť pre mazanie (zatiaľ len varovanie)
+    // 3. Udalosť pre mazanie (NAOZJAJ)
     document.querySelectorAll('.delete-host-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
             const hostToDelete = e.target.dataset.host;
-            alert(`Zatiaľ len simulácia: "${hostToDelete}" by sa zmazal.`);
+            
+            // 1. Potvrdenie od používateľa (stačí jednoduchý confirm)
+            if (!confirm(`Naozaj chcete natrvalo vymazať hostiteľa "${hostToDelete}"?`)) {
+                return;
+            }
+
+            // 2. Vymazanie z pamäte
+            delete state.hostHierarchy[hostToDelete];
+
+            // 3. Pridanie do pendingChanges
+            addPendingChange({
+                type: 'host',
+                action: 'delete',
+                key: hostToDelete
+            });
+
+            // 4. Notifikácia
+            showToast(`🗑️ Hostiteľ "${hostToDelete}" bol označený na vymazanie.`, 'error');
         });
     });
 
@@ -89,10 +106,9 @@ export function renderHostTab() {
 
         state.sessionNewHostEntries.push(name);
 
-        // Zobrazíme správu
-        msgBox.textContent = `✅ Hostiteľ "${name}" bol pridaný do zoznamu a čaká na export!`;
-        msgBox.style.border = "2px solid red";
-        msgBox.style.color = '#27ae60';
+        // ... (vo vnútri submit event listenera, kde bola správa) ...
+
+        showToast(`✅ Hostiteľ "${name}" bol pridaný do zoznamu a čaká na export!`, 'success');
         
         // Reset formulára
         document.getElementById('new-host-name').value = '';

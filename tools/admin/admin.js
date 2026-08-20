@@ -437,3 +437,26 @@ export function getAllHostGroups() {
 // --- SPRÍSTUPNENIE PRE HOST FORM ---
 // Toto zaručí, že funkcia renderHostTab z hostForm.js sa dá zavolať z admin.js
 window.__refreshHostTab = renderHostTab;
+// --- TOAST NOTIFIKÁCIE ---
+export function showToast(message, type = 'success') {
+    // Ak kontajner neexistuje, vytvoríme ho
+    let container = document.getElementById('toast-container');
+    if (!container) {
+        container = document.createElement('div');
+        container.id = 'toast-container';
+        document.body.appendChild(container);
+    }
+
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.textContent = message;
+    container.appendChild(toast);
+
+    // Po 3 sekundách notifikáciu odstrániť
+    setTimeout(() => {
+        toast.style.animation = 'slideIn 0.3s ease-out reverse';
+        setTimeout(() => {
+            if (toast.parentNode) toast.remove();
+        }, 300);
+    }, 3000);
+}
