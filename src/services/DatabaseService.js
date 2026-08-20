@@ -7,11 +7,11 @@ class DatabaseService {
 
     constructor() {
 
-    this.cache = new Map();
+        this.cache = new Map();
 
-    this.currentDatabase = null;
+        this.currentDatabase = null;
 
-}
+    }
 
     async load(file) {
 
@@ -21,7 +21,16 @@ class DatabaseService {
 
         }
 
-        const response = await fetch(`/database/${file}`); 
+        // --- DYNAMICKÁ CESTA PRE GITHUB PAGES ---
+        // Zistíme, či bežíme na GitHub Pages (detekcia podľa URL).
+        const isGitHub = window.location.hostname.includes('github.io');
+        
+        // Ak sme na GitHube, cesta začína názvom repozitára.
+        // Ak sme lokálne, cesta začína priamo /database/.
+        const basePath = isGitHub ? '/VetParaAtlas/database/' : '/database/';
+
+        const response = await fetch(`${basePath}${file}`);
+        // -------------------------------------------
 
         if (!response.ok) {
 
