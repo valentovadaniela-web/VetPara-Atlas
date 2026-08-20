@@ -8,23 +8,34 @@ export async function exportZip() {
 
     try {
         // FIX #2: Použiť workingCopy namiesto skladania odznova
-        // workingCopy už obsahuje všetky aplikované zmeny
+        // workingCopy už obsahuje všetky aplikované zmeny pre parazitov
         const finalParasites = JSON.parse(JSON.stringify(state.workingCopy));
 
-        // Vytvorenie ZIP
+        // --- NOVÉ: Spracovanie hostiteľov ---
+        // Vytvoríme kópiu aktuálnej hostHierarchy
+        const finalHostHierarchy = JSON.parse(JSON.stringify(state.hostHierarchy));
+
+        // --- Vytvorenie ZIP ---
         const zip = new JSZip();
 
-        // parasites.json
+        // 1. Pridanie parasites.json
         zip.file('database/parasites.json', JSON.stringify(finalParasites, null, 2));
 
-        // README
+        // 2. Pridanie host_hierarchy.json (NOVÉ)
+        zip.file('database/dictionary/host_hierarchy.json', JSON.stringify(finalHostHierarchy, null, 2));
+
+        // 3. README s podrobným logom zmien
         const changeLog = state.pendingChanges.map(ch => {
             if (ch.type === 'parasite') {
-                if (ch.action === 'create') return `🆕 CREATE: ${ch.id}`;
-                if (ch.action === 'update') return `✏️ UPDATE: ${ch.id}`;
-                if (ch.action === 'delete') return `🗑 DELETE: ${ch.id}`;
+                if (ch.action === 'create') return `🆕 PARASITE CREATE: ${ch.id}`;
+                if (ch.action === 'update') return `✏️ PARASITE UPDATE: ${ch.id}`;
+                if (ch.action === 'delete') return `🗑️ PARASITE DELETE: ${ch.id}`;
             }
-            return `❓ ${ch.type}: ${ch.action} ${ch.id}`;
+            if (ch.type === 'host') {
+                if (ch.action === 'create') return `🆕 HOST CREATE: ${ch.key} (parent: ${ch.parent || 'žiadny'})`;
+                if (ch.action === 'delete') return `🗑️ HOST DELETE: ${ch.key}`;
+            }
+            return `❓ ${ch.type}: ${ch.action} ${ch.id || ch.key}`;
         }).join('\n');
 
         const readme = `# VetPara Atlas — Export zmien\n
@@ -36,8 +47,9 @@ ${changeLog}
 
 Inštrukcie:
 1. Nahraď súbor database/parasites.json v repozitári týmto súborom.
-2. Skontroluj, či všetky zmeny vyzerajú správne.
-3. Commitni a pushni do repozitára.
+2. Nahraď súbor database/dictionary/host_hierarchy.json v repozitári týmto súborom (ak obsahuje zmeny hostiteľov).
+3. Skontroluj, či všetky zmeny vyzerajú správne.
+4. Commitni a pushni do repozitára.
 `;
 
         zip.file('README.txt', readme);
