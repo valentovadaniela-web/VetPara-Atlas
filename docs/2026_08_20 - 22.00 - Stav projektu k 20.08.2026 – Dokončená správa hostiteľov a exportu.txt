@@ -1,0 +1,30 @@
+Predmet: Stav projektu k 20.08.2026 – Dokončená správa hostiteľov a exportu
+
+Ahoj,
+
+dnes sme úspešne dokončili a vyladili jadro Admin nástroja. Tu je presný aktuálny stav:
+
+Čo je plne funkčné:
+
+Karta 2. Hostiteľ: Pridávanie hostiteľov (napr. "Lev", "Tiger") do slovníka funguje vrátane okamžitej aktualizácie zoznamu a zelených toast notifikácií.
+
+Dynamické členenie: Ak je parazit (napr. Giardia) priradený do skupiny Mäsožravce (v karte 1), a do slovníka sa pridá "Lev": "Mäsožravce", hlavná aplikácia to automaticky rozpozná a priradí Leva k danému parazitovi.
+
+Karta 1. Parazit: Ukladanie nových hostiteľov priamo do záznamu parazita funguje. Viacjazyčné názvy polí boli upravené (napr. Class → Trieda).
+
+Export zmien: Súbor tools/admin/zipExport.js bol rozšírený. Teraz pri exporte generuje ZIP obsahujúci oba súbory: database/parasites.json aj database/dictionary/host_hierarchy.json. README v ZIPe obsahuje log zmien pre oba typy (parazity aj hostiteľov).
+
+Prístup k Adminu: Do hlavného index.html bol pridaný odkaz na Admin nástroj (<a href="tools/admin/index.html">), čo umožňuje rýchly prístup bez hľadania cesty v prieskumníkovi.
+
+Čo ostáva na dokončenie (Ďalšie kroky):
+
+Karta 3. Fotografie: Aktuálne je len prázdny placeholder. Bude potrebné implementovať správu obrázkov (nahrávanie, priraďovanie k parazitom).
+
+Karta 4. Excel bulk: Prázdny placeholder. Bude potrebné implementovať nahrávanie Excel súborov s využitím knižnice xlsx (ktorá už je v projekte nainštalovaná) a ich konverziu do JSON formátu.
+
+Mazanie hostiteľov: V karte Hostiteľ je mazanie zatiaľ len simulované (alert). V budúcnosti bude potrebné implementovať inteligentné dialógové okno, ktoré sa pri mazaní skupiny opýta používateľa, čo má robiť s podriadenými hostiteľmi (presunúť o úroveň vyššie, do skupiny Nezaradení, alebo zmazať kaskádovo).
+
+Technická poznámka: Všetky cesty v index.html (pre hlavnú stránku) aj v Admin nástroji sú aktuálne správne nastavené. Live Server na porte 5500 funguje bez chýb 404.
+
+Pri pokračovaní nadviaž na tomto bode a začni implementáciou karty Fotografie (alebo Excel bulk). Daj vedieť, ktorá priorita.
+
