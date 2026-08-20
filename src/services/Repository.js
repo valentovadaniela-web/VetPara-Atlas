@@ -12,7 +12,7 @@ import DatabaseService from "./DatabaseService.js";
 // zjednotí oboje do jedného poľa konkrétnych mien hostiteľov, aby filter
 // v AtlasPage.js fungoval identicky ako predtým na `record.host`. Pozri
 // AI_STATUS.md sekcia 0.3.
-const HOST_HIERARCHY_FILE = "dictionary/host_hierarchy.json";
+const HOST_HIERARCHY_FILE = "database/dictionary/host_hierarchy.json";
 
 class Repository {
 
