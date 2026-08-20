@@ -87,7 +87,9 @@ Mapovanie zadania autorky na skutočné polia:
 | obal | `morphology.shell` | select/combobox |
 | poznámky | `notes` | voľný text |
 
-Ďalšie polia, ktoré formulár musí pokrývať, aby vytvoril kompletný validný objekt: `latinName`, `synonyms`, `slovakName`, `taxonomy` (7 úrovní), `group`, `methods`, `morphology.operculum` (voliteľné true/false), `diagnosticSigns`, `differentialDiagnosis`, `lifeCycle`, `pathology`, `zoonosis` (checkbox), `references`. Needitovateľné: `id`, `images` (spravuje sa cez formulár na obrázky).
+Ďalšie polia, ktoré formulár musí pokrývať, aby vytvoril kompletný validný objekt: `latinName`, `synonyms`, `slovakName`, `taxonomy` (7 úrovní), `group`, `diagnosticSigns`, `differentialDiagnosis`, `lifeCycle`, `pathology`, `zoonosis` (checkbox), `references`. Needitovateľné: `id`, `images` (spravuje sa cez formulár na obrázky).
+
+> **Vypustené (2026-08-20, rozhodnutie autorky, `AI_STATUS.md` §0.7):** `methods` a `morphology.operculum` (spolu s `contents`/`texture`/`remarks`) sa formálne nezahŕňajú do formulára ani do schémy — konečné zjednodušenie, nie dočasný stav. Implementácia `parasiteForm.js`, ktorá tieto polia už vynechávala, je tým spätne schválená ako správna.
 
 ### 4.1 Hostiteľ — logika
 
@@ -109,7 +111,7 @@ Mapovanie zadania autorky na skutočné polia:
 
 **`micrometry.unit`**: vo všetkých 474 záznamoch výhradne `"µm"` → formulár toto pole **predvyplní a uzamkne** (needituje sa, eliminuje riziko preklepu), s možnosťou odomknúť len ak by v budúcnosti pribudla iná jednotka.
 
-**`methods`**: prekvapivé zistenie — vo všetkých 474 záznamoch je pole **prázdne** (`[]`). Kontrolovaný zoznam zo `03_DATA_ENTRY_STANDARD.md` §9 (Flotácia, Sedimentácia, Baermannova metóda, Knottov test, PCR, ELISA, Mikroskopia, IFAT, MAT) sa v reálnych dátach zatiaľ nikde nepoužíva. Formulár ho napriek tomu ponúkne ako multi-select podľa dokumentácie (pole v schéme existuje a je pripravené na budúce použitie), len na vedomie, že zatiaľ nemá oporu v žiadnom existujúcom zázname.
+**`methods`**: vo všetkých 474 záznamoch bolo pole prázdne (`[]`). **Rozhodnutie autorky (2026-08-20, `AI_STATUS.md` §0.7):** pole sa formálne vypúšťa zo schémy aj z formulára — nebude ponúkané ako multi-select. Konečné zjednodušenie, nie dočasný stav.
 
 **`hostGroups`**: použité len v **4 zo 474** záznamov (`strongyloides_sp_egg`, `strongyloides_sp_larva`, `taenia_sp_egg`, `giardia_intestinalis_cyst`). Formulár pri zaškrtnutí/výbere akejkoľvek hodnoty v `hostGroups` zobrazí explicitné varovanie s odkazom na pravidlo §0.3/0.4 (`AI_STATUS.md`) a vyžiada dodatočné potvrdenie — ide o výnimku, nie normu.
 
@@ -126,10 +128,10 @@ Mapovanie zadania autorky na skutočné polia:
 
 `id`, `objectId`, `author`, `laboratory`, `year`, `host`, `sample`, `stage`, `method`, `objective`, `magnification`, `filename`, `thumbnail`, `isPrimary`, `sortOrder`, `description`.
 
-⚠️ **Nezrovnalosti dokumentácia vs. realita** (na vedomie, netreba riešiť teraz):
-- `license` je v dokumentácii, v reálnych dátach sa nepoužíva.
-- `thumbnail`, `isPrimary`, `sortOrder` reálne existujú, dokumentácia ich neuvádza (Priorita č. 3 v `AI_STATUS.md`).
-- Dokumentácia označuje `host` pri fotke ako povinný, realita (kód aj dáta) ho berie ako voliteľný s konvenciou "prázdny = platí pre všetkých". Formulár sa riadi realitou (kódom), nie touto časťou dokumentácie.
+✅ **Vyriešené (2026-08-20, Priorita č. 3):** `02_DATABASE_SPECIFICATION.md` §9 bol upravený — `license` odstránené zo schémy, `thumbnail`/`isPrimary`/`sortOrder` doplnené. Dokumentácia teraz zodpovedá realite (kódu aj dátam).
+
+⚠️ **Stále na vedomie:**
+- Dokumentácia (pred touto úpravou) označovala `host` pri fotke ako povinný, realita (kód aj dáta) ho berie ako voliteľný s konvenciou "prázdny = platí pre všetkých". Formulár sa riadi realitou (kódom). Túto poznámku treba overiť aj v `03_DATA_ENTRY_STANDARD.md` §14 (nebol nahraný v tejto session).
 
 Formulár pre fotky: nahratie súborov (kontrola, že každá fotka má presne 2 varianty — thumbnail aj `_full`), výber `objectId`, automatické predvyplnenie `host` cez `resolveHosts()` (3.2), ostatné polia voliteľné.
 
@@ -159,7 +161,6 @@ Vnorené polia sa rozbaľujú do samostatných stĺpcov, zoznamy sa zapisujú ak
 | `hosts` | `hosts` | `;`-zoznam |
 | `hostNotes` | `hostNotes` | `Hostiteľ: poznámka; Hostiteľ2: poznámka2` |
 | `sample`, `stage`, `group` | — | text |
-| `methods` | `methods` | `;`-zoznam |
 | `micrometry.lengthMin/Max`, `widthMin/Max` | `micrometry` | 4 číselné stĺpce |
 | `micrometry.unit` | — | needitovateľný, vždy `µm` |
 | `morphology.shape/colour/shell` | `morphology` | 3 stĺpce |

@@ -325,7 +325,6 @@ Každý diagnostický objekt používa jednotnú schému.
   "sample": "",
   "stage": "",
   "group": "",
-  "methods": [],
   "micrometry": {},
   "morphology": {},
   "diagnosticSigns": [],
@@ -504,16 +503,9 @@ Vajíčko
 
 ## methods
 
-Pole odporúčaných metód.
-
-Príklad
-
-```json
-[
-  "Flotácia",
-  "PCR"
-]
-```
+> **Vypustené od v1.1 (2026-08-20, rozhodnutie autorky, `AI_STATUS.md` §0.7):**
+> pole sa formálne vynecháva zo schémy aj z formulára (0/474 reálnych
+> záznamov ho malo vyplnené). Konečné zjednodušenie, nie dočasný stav.
 
 ---
 
@@ -533,15 +525,16 @@ Príklad
 
 ## morphology
 
+> **Zmena od v1.1 (2026-08-20, rozhodnutie autorky, `AI_STATUS.md` §0.7):**
+> polia `operculum`, `contents`, `texture`, `remarks` boli formálne
+> vypustené zo schémy (nepoužívali sa v žiadnom z 474 reálnych záznamov).
+> Nie je to dočasné — konečné zjednodušenie.
+
 Obsahuje
 
 - shape
 - colour
 - shell
-- operculum
-- contents
-- texture
-- remarks
 
 ---
 
@@ -594,6 +587,18 @@ Lokálne poznámky.
 > `objectId` — pred implementáciou stránky Galéria potvrď, ktorý názov poľa
 > sa má reálne použiť, aby nedošlo k nesúladu medzi kódom a dátami.
 
+> **Zmena od v1.1 (2026-08-20, `AI_STATUS.md` §0.7 / Priorita č. 3):**
+> `license` bolo v dokumentácii, ale nepoužívalo sa v žiadnom z 33 reálnych
+> záznamov — vypustené zo schémy (rozhodnutie autorky). Naopak `thumbnail`,
+> `isPrimary`, `sortOrder` reálne existujú vo všetkých 33 záznamoch a
+> používa ich appka (`GalleryPage.js`, `PrimaryImage.js`) aj admin
+> formulár — doplnené do schémy nižšie.
+>
+> Pole `host` je v praxi **voliteľné**, nie povinné: prázdny reťazec
+> znamená "fotka platí pre všetkých hostiteľov objektu" — zámerná
+> konvencia zakódovaná v `GalleryPage.getFilteredImages()`
+> (pozri `AI_STATUS.md` §0.3).
+
 Každý obrázok obsahuje.
 
 ```json
@@ -609,8 +614,10 @@ Každý obrázok obsahuje.
     "method":"",
     "objective":"",
     "magnification":"",
-    "license":"",
     "filename":"",
+    "thumbnail":"",
+    "isPrimary":false,
+    "sortOrder":0,
     "description":""
 }
 ```

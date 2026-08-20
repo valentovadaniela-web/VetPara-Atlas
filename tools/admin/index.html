@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VetPara Atlas — Admin nástroj</title>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+    <header>
+        <h1>🧬 VetPara Atlas — Admin nástroj</h1>
+        <div id="status-bar">
+            <span id="data-status">Načítavanie dát...</span>
+            <span id="pending-count">Čakajúce zmeny: 0</span>
+            <button id="export-btn" disabled>⬇ Stiahnuť výstup</button>
+        </div>
+    </header>
+
+    <nav id="tab-nav">
+        <button class="tab-btn active" data-tab="parasite">1. Parazit</button>
+        <button class="tab-btn" data-tab="host">2. Hostiteľ</button>
+        <button class="tab-btn" data-tab="image">3. Fotografie</button>
+        <button class="tab-btn" data-tab="bulk">4. Excel bulk</button>
+    </nav>
+
+    <main>
+        <section id="tab-parasite" class="tab-content active"></section>
+        <section id="tab-host" class="tab-content"></section>
+        <section id="tab-image" class="tab-content"></section>
+        <section id="tab-bulk" class="tab-content"></section>
+    </main>
+
+    <!-- Diff panel (vrstva) -->
+    <div id="diff-overlay" style="display:none;">
+        <div id="diff-panel">
+            <h2>📋 Náhľad zmien</h2>
+            <div id="diff-content"></div>
+            <div class="diff-actions">
+                <button id="diff-confirm">✅ Potvrdiť zmenu</button>
+                <button id="diff-cancel">❌ Zrušiť</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Postranný panel čakajúcich zmien -->
+    <aside id="pending-sidebar">
+        <h3>📦 Čakajúce zmeny (<span id="pending-sidebar-count">0</span>)</h3>
+        <ul id="pending-list"></ul>
+    </aside>
+
+    <script type="module">
+        // Hlavný vstupný bod
+        import './admin.js';
+    </script>
+</body>
+</html>

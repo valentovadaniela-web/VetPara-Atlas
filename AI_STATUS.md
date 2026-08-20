@@ -1,6 +1,36 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.7 Aktuálny stav — doplnené (2026‑08‑20, session: code review implementácie Tab 1 admin nástroja — DOKONČENÉ, chýbajúce referenčné súbory doručené a rozhodnutia autorky zapísané)
+🔥 0.8 Aktuálny stav — doplnené (2026‑08‑20, session: dokumentačné úpravy podľa §0.7 — časť Priority č. 3 DOKONČENÁ)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-20, pokračovanie — dokumentačný cleanup)
+
+### Kontext
+
+Nová session, nová konverzácia (bez pamäti predošlých session). Autorka nahrala `AI_STATUS.md`, `02_DATABASE_SPECIFICATION.md` a `2026-08-19_admin-formular-specifikacia.md`. Súbory `database/parasites.json`, `database/images.json`, `dictionary/host_hierarchy.json` ani implementačné súbory nástroja (`admin.js`, `parasiteForm.js`, `index.html`, ...) **neboli v tejto session nahraté** — preto sa táto session obmedzila len na tú časť Priority č. 3, ktorá sa dala spraviť výhradne z dvoch nahraných dokumentov.
+
+### ✅ Priorita č. 3 — čiastočne DOKONČENÁ (dokumentačné úpravy z §0.7)
+
+Upravené a autorke odovzdané na nahradenie v repozitári:
+
+**`docs/02_DATABASE_SPECIFICATION.md`:**
+- §8 `morphology` — odstránené `operculum`, `contents`, `texture`, `remarks` (ostáva `shape`/`colour`/`shell`), doplnená poznámka o rozhodnutí autorky.
+- §8 `methods` — pole odstránené zo schémy (poznámka o vypustení namiesto pôvodného popisu), odstránené aj z JSON kostry v §7.
+- §9 metadáta fotografií — odstránené `license`, doplnené `thumbnail`, `isPrimary`, `sortOrder` (chýbali, kód a dáta ich reálne používajú), doplnená poznámka že `host` je voliteľné pole (konvencia "prázdne = platí pre všetkých").
+
+**`docs/2026-08-19_admin-formular-specifikacia.md`:**
+- §4 — odstránené `methods` a `morphology.operculum` zo zoznamu polí formulára.
+- §4.2 — poznámka o `methods` prepísaná na finálne rozhodnutie o vypustení (namiesto "ponúkne sa napriek tomu").
+- §4.4 — poznámka o `license`/`thumbnail`/`isPrimary`/`sortOrder` označená ako vyriešená.
+- §5 (Excel hárok 1) — odstránený riadok `methods` z tabuľky stĺpcov.
+
+**Nevyriešené v rámci Priority č. 3:** `docs/03_DATA_ENTRY_STANDARD.md` nebol v tejto session nahraný — treba ho ešte skontrolovať/upraviť, ak tam boli `methods`/`operculum`/`license` tiež spomenuté (pôvodne zapísané ako otvorené v §0.7).
+
+### 🟡 Stále otvorené (nezmenené oproti §0.7/§0.6, nezávislé od tejto session)
+
+- Funkčné chyby v `admin.js` z predchádzajúceho code review (kontrola duplicity ID ignoruje `pendingChanges`, mŕtvy `workingCopy`, nespracované `delete`, chybný badge zmazania, statický `extractUniqueValues()`) — **neboli v tejto session riešené**, keďže `admin.js` ani ostatné implementačné súbory neboli nahraté. Potrebné nahrať pri ďalšom kroku, ak má pokračovať oprava kódu.
+- `docs/03_DATA_ENTRY_STANDARD.md` — treba overiť/upraviť kvôli `methods`/`operculum`/`license`.
+
+---
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-20, pokračovanie reviewu)
 
@@ -276,9 +306,11 @@ Konvencia je schválená a funkčná (WebP, thumbnail 480px / plná 1600px, `<ob
 
 ### ⭐ Priorita č. 3: Dokumentačné úpravy
 
-- Doplniť `thumbnail`, `isPrimary`, `sortOrder` do `docs/02_DATABASE_SPECIFICATION.md` §9 (zatiaľ len v kóde).
-- Odstrániť staré termíny `parasiteId` zo špecifikácie (kód jednotne používa `objectId`) — potvrdené v §0.7.
-- **Nové (rozhodnuté 2026-08-20, §0.7):** z `docs/02_DATABASE_SPECIFICATION.md` odstrániť zo schémy `morphology` polia `operculum`, `contents`, `texture`, `remarks` (ponechať len `shape`/`colour`/`shell`) a z metadát fotografií (§9) odstrániť `license`. Rovnaká úprava potrebná v `docs/2026-08-19_admin-formular-specifikacia.md` (§4) — odstrániť požiadavku na `methods` multi-select aj `operculum`. Overiť aj `docs/03_DATA_ENTRY_STANDARD.md`, ak tieto polia spomína (nebol nahraný v tejto session).
+- ✅ Doplniť `thumbnail`, `isPrimary`, `sortOrder` do `docs/02_DATABASE_SPECIFICATION.md` §9 — **HOTOVÉ (§0.8)**.
+- ⬜ Odstrániť staré termíny `parasiteId` zo špecifikácie (kód jednotne používa `objectId`) — potvrdené v §0.7, **fyzicky ešte neskontrolované/neodstránené** v nahratých dokumentoch (v tejto session sa taký výskyt nenašiel priamo v texte, ale treba prejsť aj iné dokumenty mimo tejto session, napr. `03_DATA_ENTRY_STANDARD.md`).
+- ✅ Z `docs/02_DATABASE_SPECIFICATION.md` odstrániť zo schémy `morphology` polia `operculum`, `contents`, `texture`, `remarks` (ponechať len `shape`/`colour`/`shell`), odstrániť `methods`, a z metadát fotografií (§9) odstrániť `license` — **HOTOVÉ (§0.8)**.
+- ✅ Z `docs/2026-08-19_admin-formular-specifikacia.md` (§4) odstrániť požiadavku na `methods` multi-select aj `operculum` — **HOTOVÉ (§0.8)**.
+- ⬜ Overiť aj `docs/03_DATA_ENTRY_STANDARD.md`, ak tieto polia spomína — **nebol nahraný v žiadnej session doteraz, stále otvorené.**
 
 ### ⭐ Priorita č. 4: Chýbajúca stránka Expert
 
