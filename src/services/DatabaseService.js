@@ -20,9 +20,12 @@ class DatabaseService {
 
         // --- GITHUB PAGES FIX ---
         // Ak sme na GitHub Pages, použijeme relatívnu cestu bez lomítka.
-        // Ak sme lokálne, funguje to tiež.
+        // Ak sme lokálne, použijeme cestu s lomítkom (Live Server root).
         const isGitHub = window.location.hostname.includes('github.io');
-        const basePath = isGitHub ? '' : '/database/';
+        
+        // Pre GitHub: hľadáme priamo database/...
+        // Pre lokálne: hľadáme /database/...
+        const basePath = isGitHub ? 'database/' : '/database/';
         
         const response = await fetch(`${basePath}${file}`);
         // -------------------------
