@@ -1,5 +1,47 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.6 Aktuálny stav — doplnené (2026‑08‑20, session: code review implementácie Tab 1 admin nástroja, doručenej externe/iným AI)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-20, session: review admin nástroja)
+
+### Kontext
+
+Autorka nahrala kompletnú implementáciu Tab 1 (`tools/admin/`) admin nástroja, pripravenú externe (iné AI), spolu so sprievodnou správou `Správa_pre_Claude___Implementácia_Admin_nástroja_VetPara_Atlas.md`. Táto session je **len code review** podľa schválenej špecifikácie `docs/2026-08-19_admin-formular-specifikacia.md` — **žiadny kód sa zatiaľ nezapisoval do repozitára**, súbory zostávajú zatiaľ len nahraté v chate.
+
+**Nahraté a skontrolované súbory:** `index.html`, `admin.css`, `admin.js` (kompletný, doplnený až v druhom kole — pôvodne nahratý len ako čiastočný diff s jedinou funkciou `generateId()`), `forms/parasiteForm.js`, `forms/hostForm.js` (placeholder), `forms/imageForm.js` (placeholder), `forms/bulkExcel.js` (placeholder), `diff.js`, `zipExport.js`.
+
+**Zatiaľ NEnahraté** (potrebné na dokončenie reviewu, pozri nižšie): `docs/02_DATABASE_SPECIFICATION.md`, `database/parasites.json`, `database/images.json`, `dictionary/host_hierarchy.json`.
+
+### 🔴 Nájdené nezrovnalosti oproti schválenej špecifikácii (vyžadujú rozhodnutie autorky)
+
+1. **`methods` pole úplne vynechané z formulára.** Schválená špecifikácia (`2026-08-19_admin-formular-specifikacia.md`, §4 riadok 90 a §4.2) výslovne hovorí, že formulár má pole `methods` **ponúknuť ako multi-select**, aj keď v reálnych dátach (474/474) je zatiaľ vždy prázdne. Implementácia (`parasiteForm.js`) ho namiesto toho úplne odstránila z UI aj z `collectFormData()` (natvrdo `methods: []`), s odôvodnením v sprievodnej správe "nepoužíva sa v reálnych dátach" — čo je v rozpore s tým, čo špecifikácia priamo žiada.
+2. **`morphology.operculum` úplne vynechané.** Špecifikácia (§4, riadok 90) ho výslovne uvádza medzi poľami, ktoré "formulár musí pokrývať" (voliteľné true/false). Implementácia ho vynechala s odôvodnením "nie je v schéme" — toto tvrdenie zatiaľ neviem overiť, lebo nemám `docs/02_DATABASE_SPECIFICATION.md`.
+3. ➡️ **Čaká na rozhodnutie autorky:** buď (a) doplniť `methods` a `morphology.operculum` do formulára podľa pôvodnej schválenej špecifikácie, alebo (b) formálne schváliť ich vynechanie a upraviť samotnú špecifikáciu, aby sedela s kódom. Nerozhodovať to sám (pravidlo č. 8).
+
+### 🔴 Nájdené funkčné chyby v kompletnom `admin.js` (doručenom v tejto session)
+
+1. **Kontrola duplicity ID nezohľadňuje čakajúce zmeny.** V `parasiteForm.js` sa duplicita nového ID kontroluje len voči `state.parasites` (pôvodné dáta), nikdy voči `state.pendingChanges`/`state.workingCopy`. Ak si autorka v jednej session pripraví dva nové záznamy s rovnakým vygenerovaným ID (napr. rovnaké `latinName`+`stage`), nástroj to pri druhom zázname nezachytí ako duplicitu. Toto bola presne otvorená otázka č. 4 zo sprievodnej správy ("Over: Či kontroluje duplicitu voči state.parasites + state.pendingChanges") — odpoveď: **momentálne nie, treba opraviť.**
+2. **`state.workingCopy` je fakticky mŕtvy kód.** Je pripravený a aktualizovaný pri `addPendingChange()`/`removePendingChange()`, ale nikde sa nepoužíva — ani na kontrolu duplicity, ani v `zipExport.js` (ten si finálne dáta skladá znova nezávisle priamo zo `state.parasites` + `state.pendingChanges`). Buď ho napojiť na kontrolu duplicity (viď bod vyššie), alebo odstrániť, aby nezavádzal.
+3. **Zmazanie (`delete`) záznamu sa v `state.workingCopy` vôbec nespracuje.** `applyChangeToWorkingCopy()` aj `rebuildWorkingCopy()` riešia len `create`/`update`, nie `delete` — súvisí s bodom vyššie (keďže `workingCopy` sa aj tak nikde nepoužíva, zatiaľ to nespôsobuje viditeľnú chybu, ale treba to doplniť, ak sa `workingCopy` bude reálne využívať).
+4. **Bočný panel čakajúcich zmien nesprávne označuje zmazania.** `updatePendingUI()` rozlišuje len `create` (🆕 Nový) vs. hocičo iné (✏️ Úprava) — zmazanie záznamu (`action: 'delete'`) sa tak v paneli zobrazí ako "✏️ Úprava", nie ako zmazanie. Pri deštruktívnej akcii je to zavádzajúce a treba opraviť (pridať samostatný badge, napr. 🗑 Zmazanie).
+5. **Tvrdenie v sprievodnej správe o dynamických datalistoch nie je celkom presné.** Správa tvrdí, že nové hodnoty `shape`/`colour`/`shell` pridané počas session sa "automaticky objavia v návrhoch" (datalist). V skutočnosti `extractUniqueValues()` číta len zo `state.parasites` (pôvodné dáta), nie zo `state.pendingChanges`/`workingCopy` — nová hodnota zadaná v ešte neexportovanom zázname sa v datalist nenavrhne, kým sa dáta znova nenačítajú. Netreba nutne opravovať (nie je to kritické), ale treba to buď opraviť, alebo aspoň opraviť tvrdenie v dokumentácii.
+
+### 🟡 Čaká na overenie (chýbajú referenčné súbory)
+
+Bez `docs/02_DATABASE_SPECIFICATION.md`, `database/parasites.json`, `database/images.json` a `dictionary/host_hierarchy.json` (autorka ich pošle v ďalšom kroku) zatiaľ nemôžem nezávisle overiť:
+- či `morphology.operculum` naozaj nie je v oficiálnej schéme (bod vyššie),
+- či `getAllHostGroups()` v `admin.js` správne parsuje reálnu štruktúru `host_hierarchy.json` (kód počíta s tým, že hodnoty môžu byť buď string, alebo pole — spec §5 hárok 3 ale opisuje čisto plochú mapu dieťa→rodič so string hodnotou; treba overiť, ktorý prípad je reálny),
+- generovanie ID (`generateId`) voči reálnym 474 záznamom,
+- zoznamy `sample`/`stage`/`group` generované cez `extractUniqueValues` voči reálnym dátam.
+
+### Odpovede na otvorené otázky zo sprievodnej správy (návrhy, čaká sa na potvrdenie autorkou)
+
+Bez zmeny oproti predchádzajúcemu zhrnutiu — pozri nižšie v tomto dokumente (staršia session 2026-08-20 vyššie v histórii bola pred touto). Zhrnuté: ID pre "Dospelý jedinec" bez prípony odporúčam ponechať; front po exporte odporúčam ponechať nevyprázdnený + doplniť tlačidlo na ručné vyčistenie; `sessionNewHostEntries` formát `{key, value}` vyzerá rozumne, ale čaká na `host_hierarchy.json` na finálne potvrdenie.
+
+**Nič sa zatiaľ nezapisovalo do `tools/` ani `src/` — toto je stále len review, žiadny súbor nebol autorke odovzdaný ako finálny/schválený.**
+
+---
+
 🔥 0.5 Aktuálny stav — doplnené (2026‑08‑20, session: finalizácia špecifikácie admin formulára, príprava implementácie)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSION (2026-08-20)
