@@ -1,0 +1,81 @@
+📋 SÚHRNNÁ SPRÁVA O STAVE PROJEKTU – VetPara Atlas (21.08.2026)
+Predmet: Kompletná správa o implementácii a vylepšení admin nástroja, integrácii fotografií, exportu a oprave chýb v hlavnej aplikácii.
+
+1. HLAVNÁ APLIKÁCIA – ÚPRAVY A OPRAVY
+Oprava ciest k súborom (404):
+
+Opravené cesty v src/services/DatabaseService.js a src/services/Repository.js.
+
+Pridaná dynamická logika pre GitHub Pages (isGitHub detekcia), ktorá automaticky nastaví správny basePath (/VetParaAtlas/database/ na GitHube, /database/ lokálne).
+
+Opravená cesta v tools/admin/admin.js – správne načítanie host_hierarchy.json z ../../database/dictionary/host_hierarchy.json.
+
+Integrácia fotografií:
+
+V DatabaseService.js pridané načítanie images.json a funkcia getImages().
+
+V Repository.js pridané loadImages() a getImagesForParasite(id) pre nový formát parasiteId + url.
+
+V App.js pridané volanie await Repository.loadImages(); po načítaní databázy.
+
+V AtlasPage.js pridaná logika na zobrazenie fotografií v detaile, s "galériou" náhľadov pod hlavným obrázkom.
+
+V GalleryPage.js prepísaná logika na nový formát fotografií (url namiesto thumbnail, parasiteId namiesto objectId).
+
+2. ADMIN NÁSTROJ – FUNKCIONALITA
+Karta 1. Parazit:
+
+Ukladanie nových hostiteľov priamo do záznamu parazita funguje.
+
+Viacjazyčné názvy polí boli upravené (napr. Class → Trieda).
+
+Karta 2. Hostiteľ:
+
+Pridávanie hostiteľov (napr. Lev, Tiger) funguje vrátane okamžitej aktualizácie zoznamu a zelených toast notifikácií.
+
+Dynamické členenie – ak je parazit priradený do skupiny (napr. Mäsožravce), automaticky sa k nemu priradia aj všetci podriadení hostitelia.
+
+Karta 3. Fotografie:
+
+Implementovaná kompletná správa fotografií.
+
+Pridávanie obrázkov cez URL alebo cez súbor (hromadne).
+
+Automatické generovanie images.json (nový formát parasiteId + url).
+
+Opravená perzistencia: Pridaný riadok state.workingCopy = JSON.parse(JSON.stringify(state.parasites)); v imageForm.js, aby sa nové obrázky vždy dostali do exportu.
+
+Karta 4. Excel bulk:
+
+Implementované hromadné nahrávanie a import parazitov z Excelu cez knižnicu xlsx.
+
+Stiahnutie šablóny so všetkými stĺpcami (latinName, taxonomy, hosts, micrometry, morphology, atď.).
+
+Spracovanie súboru a konverzia do správneho JSON formátu (vrátane id generovania, kontroly duplicity).
+
+3. EXPORT ZMIEN (ZIP)
+V tools/admin/zipExport.js bola pridaná logika, ktorá pri exporte generuje kompletný ZIP obsahujúci:
+
+database/parasites.json
+
+database/dictionary/host_hierarchy.json
+
+database/images.json (automaticky aj obrázky, ktoré sú priamo v parasites.json).
+
+README v ZIPe obsahuje log zmien pre všetky typy (parazity, hostitelia, obrázky).
+
+4. ČO EŠTE OSTÁVA (BUDÚCE KROKY)
+Mazanie hostiteľov: V karte Hostiteľ je mazanie zatiaľ len simulované. V budúcnosti implementovať inteligentné dialógové okno, ktoré sa pri mazaní skupiny opýta používateľa, čo má urobiť s podriadenými hostiteľmi (presunúť o úroveň vyššie, do skupiny Nezaradení, alebo zmazať kaskádovo).
+
+Vylepšenie UI/UX: Prípadné doladenie vizuálu Galérie a filtračných prvkov podľa potrieb používateľa.
+
+GitHub Pages: Overiť, či všetky nové súbory a zmeny fungujú aj na produkčnom nasadení (GitHub Pages).
+
+5. TECHNICKÝ STAV
+Live Server: Beží bez chýb 404 na porte 5500.
+
+GitHub Pages: Po nasadení projektu a aktualizácii .js súborov funguje, ak je povolená správna basePath logika.
+
+Nový formát images.json: Obsahuje parasiteId + url, je kompatibilný s novým Repository.js a GalleryPage.js.
+
+Súhrnná správa pripravená dňa 21.08.2026.
