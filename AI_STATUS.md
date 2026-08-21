@@ -1,5 +1,85 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.10 Aktuálny stav — doplnené (2026‑08‑21, session: oprava zobrazovania fotografií — absolútne cesty v `images.json` + `PrimaryImage.js` nekompatibilný so `parasiteId`/`url` formátom)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-21, pokračovanie po §0.9)
+
+### Kontext
+
+Po oprave `basePath` z §0.9 (nahratá a funkčná — `parasites.json` aj `host_hierarchy.json` sa na GitHub Pages načítavajú správne, `Repository ready: 475 records`) autorka nahlásila nové 404 chyby, tentoraz na obrázky (`.webp` súbory). Skontrolované a opravené: `GalleryPage.js`, `PrimaryImage.js`, `index.html` (len na overenie — bez zmeny).
+
+### 🔴→✅ Príčina 404 na obrázky — NÁJDENÁ A OPRAVENÁ
+
+**Príčina:** Pole `url` v `database/images.json` obsahuje cestu s úvodnou lomkou, napr. `/public/images/parasites/.../subor.webp`. Úvodná `/` robí z cesty **absolútnu cestu od koreňa domény**, nie relatívnu k aktuálnej stránke.
+
+- Na **GitHub Pages** appka beží v podadresári `https://valentovadaniela-web.github.io/VetPara-Atlas/`, takže `/public/images/...` sa vyhodnotí ako `https://valentovadaniela-web.github.io/public/images/...` — bez `VetPara-Atlas` v ceste → 404.
+- Lokálne cez **Live Server** appka beží v koreni servera, takže `/public/...` od koreňa vyzerá byť správne — preto sa problém lokálne neprejavil.
+
+V `index.html` sa žiadny `<base>` tag nenachádza (overené) — problém je čisto v tom, že sa `img.url` / `image.url` používalo priamo ako `src` bez normalizácie.
+
+**Oprava (vykonaná, odovzdaná autorke, aplikovaná v oboch súboroch):** pridaná pomocná metóda, ktorá odstráni úvodnú lomku/lomky, a jej použitie všade, kde sa hodnota `url` reálne posiela do `src="..."`:
+
+```js
+resolveImageUrl(url) {
+  if (!url) return "";
+  return url.replace(/^\/+/, "");
+},
+```
+
+- `src/pages/GalleryPage.js` — pridaná metóda `resolveImageUrl`, použitá v `renderGrid()` (`<img src="${this.resolveImageUrl(img.url)}">`) a v `openLightbox()` (`<img src="${this.resolveImageUrl(image.url)}">`).
+  - **Zámerne NEZMENENÉ:** `data-image-url="${this.escapeHtml(img.url)}"` a `this.state.images.find((img) => img.url === url)` — obe zostávajú na pôvodnej (nenormalizovanej) hodnote `url`, keďže slúžia len na párovanie kliknutého elementu s objektom v `state.images`, nie na reálne vykreslenie `src`. Normalizácia sa aplikuje výhradne pri vykresľovaní `src`.
+- `src/components/PrimaryImage.js` — rovnaká metóda `resolveImageUrl` pridaná vedľa `escapeHtml`, použitá v `populate()` a `renderStatic()`.
+
+**Stav: hotové, aplikované v oboch súboroch, čaká na finálne otestovanie autorkou naživo (GitHub Pages aj Live Server).**
+
+### 🔴→✅ `PrimaryImage.js` bol celý nekompatibilný so súčasným formátom `images.json` — OPRAVENÉ
+
+Nezávisle od problému s cestami sa zistilo, že `PrimaryImage.js` **nebol nikdy prepísaný** na aktuálny formát `images.json` (na rozdiel od toho, čo tvrdilo predchádzajúce zhrnutie v §0.9 — tam bol `PrimaryImage.js` označený ako "žiadna zmena potrebná", čo bolo nesprávne, keďže sa vtedy neoveroval priamo tento súbor). Používal výhradne staré názvy polí, ktoré v reálnych dátach už neexistujú:
+
+| Používané v kóde (staré, nefunkčné) | Skutočný formát `images.json` |
+| --- | --- |
+| `img.objectId` | `img.parasiteId` |
+| `img.isPrimary` | — pole neexistuje |
+| `img.sortOrder` | — pole neexistuje |
+| `img.filename` (+ natvrdo `public/images/${filename}`) | `img.url` (hotová relatívna cesta) |
+
+**Dôsledok pred opravou:** `findPrimaryImage()`, `populate()` aj `renderStatic()` filtrovali podľa `img.objectId === record.id` — keďže `objectId` v dátach vôbec nie je, filter vždy vrátil prázdne pole → **hlavná fotografia sa nezobrazovala nikde v appke**, nezávisle od problému s cestami vyššie.
+
+**Oprava (vykonaná vo všetkých 3 miestach v `PrimaryImage.js`):**
+```diff
+    const candidates = images
+-     .filter((img) => img.objectId === record.id)
+-     .sort((a, b) => {
+-       if (a.isPrimary && !b.isPrimary) return -1;
+-       if (!a.isPrimary && b.isPrimary) return 1;
+-       return (a.sortOrder || 0) - (b.sortOrder || 0);
+-     });
++     .filter((img) => img.parasiteId === record.id)
++     .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
+```
+(analogicky v `findPrimaryImage()` a `populate()`, plus `src="public/images/${image.filename}"` → `src="${this.resolveImageUrl(image.url)}"`)
+
+Keďže nový formát `images.json` neobsahuje `isPrimary`/`sortOrder`, ako náhrada za "hlavnú" fotografiu sa použije zoradenie podľa `dateAdded` (najstaršia nahratá fotka = prvá/hlavná). **Ak by autorka v budúcnosti chcela explicitné určenie hlavnej fotky, treba pole `isPrimary` (alebo ekvivalent) doplniť späť do schémy `images.json` a admin formulára — momentálne to nie je implementované ani požadované.**
+
+**Stav: hotové, aplikované, čaká na otestovanie naživo.**
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/GalleryPage.js` | pridaná `resolveImageUrl()`, použitá v `renderGrid()` a `openLightbox()` pri `<img src>` | ✅ hotové |
+| `src/components/PrimaryImage.js` | pridaná `resolveImageUrl()`; `objectId`/`isPrimary`/`sortOrder`/`filename` → `parasiteId`/`dateAdded`-sort/`url` vo `findPrimaryImage()`, `populate()`, `renderStatic()` | ✅ hotové |
+| `index.html` | skontrolovaný (žiadny `<base>` tag, žiadna zmena potrebná) | — bez zmeny |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Overiť naživo v prehliadači** (GitHub Pages aj Live Server), že sa fotografie v Galérii a hlavné fotografie na Atlase reálne zobrazujú po tejto oprave — session skončila pred týmto krokom.
+2. ⚠️ **Dôležité pre ďalšie AI:** predchádzajúce zhrnutie (§0.9) mylne označilo `PrimaryImage.js` ako plne kompatibilný s novým formátom bez toho, aby bol súbor v tej session priamo skontrolovaný. Ukazuje sa, že **"overené priamou kontrolou kódu" v predchádzajúcich zápisoch treba brať s rezervou, ak sa netýkalo súboru, ktorý sa reálne otváral v danej session** — vždy si radšej vyžiadaj aktuálny obsah súboru nanovo, aj keď staršia session tvrdí, že je hotový.
+3. Zvážiť, či doplniť explicitné `isPrimary`/poradie fotiek do formátu `images.json` (momentálne nahradené triedením podľa `dateAdded`) — nie je to priorita, len poznámka pre budúcu session.
+4. Ostatné otvorené body z §0.9 (pole `host` v Galérii, `manifest.json`, `docs/03_DATA_ENTRY_STANDARD.md`, chyby v `admin.js`) zostávajú nezmenené a neriešené v tejto session — pozri §0.9 nižšie.
+
+---
+
 🔥 0.9 Aktuálny stav — doplnené (2026‑08‑21, session: oprava GitHub Pages 404 + zosúladenie `images.json` formátu s admin formulárom)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-21)
