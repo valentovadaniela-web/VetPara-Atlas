@@ -20959,5 +20959,49 @@
     "images": [],
     "references": [],
     "notes": "ornamentovaný štít, Suché oblasti"
+  },
+  {
+    "id": "babesia_canis_trophozoite",
+    "latinName": "Babesia canis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Aconoidasida",
+      "order": "Piroplasmida",
+      "family": "Babesiidae",
+      "genus": "Babesia",
+      "species": "Babesia canis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Pes"
+    ],
+    "hostNotes": {},
+    "sample": "Krv",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 5,
+      "lengthMax": 5,
+      "widthMin": 2,
+      "widthMax": 3,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V červenej krvinke sa často nachádzajú v pároch. Dva hruškovité organizmy sa dotýkajú svojimi špicatými koncami a zvierajú medzi sebou ostrý uhol (\"čerešne\")"
   }
 ]
