@@ -1,5 +1,107 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.9 Aktuálny stav — doplnené (2026‑08‑21, session: oprava GitHub Pages 404 + zosúladenie `images.json` formátu s admin formulárom)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-21)
+
+### Kontext
+
+Autorka nahlásila, že appka funguje lokálne cez VS Code Live Server, ale na GitHub Pages sa nezobrazuje správne (404 na `database/parasites.json` a `database/dictionary/host_hierarchy.json`, syntax error na `manifest.json`). V priebehu session boli nahraté a priamo skontrolované: `DatabaseService.js`, `Repository.js`, `index.html`, `manifest.json`, následne aj `AtlasPage.js`, `GalleryPage.js`, `tools/admin/forms/imageForm.js`, `tools/admin/zipExport.js` a reálny `database/images.json`.
+
+### 🔴→✅ Príčina 404 na GitHub Pages — NÁJDENÁ A OPRAVENÁ
+
+**Príčina:** `DatabaseService.js` mal v `load()` natvrdo zapísaný basePath pre GitHub Pages ako `/VetParaAtlas/database/` (bez spojovníka), ale skutočný názov repozitára je **`VetPara-Atlas`** (so spojovníkom) — `https://github.com/valentovadaniela-web/VetPara-Atlas`. Prehliadač sa preto na produkcii pýtal na neexistujúcu cestu → 404 na `parasites.json` aj `dictionary/host_hierarchy.json`. Lokálne (Live Server) to fungovalo, lebo tam sa použije vetva `isGitHub === false` → `/database/`.
+
+**Oprava (vykonaná, súbor odovzdaný autorke na nahradenie):**
+```diff
+- const basePath = isGitHub ? '/VetParaAtlas/database/' : '/database/';
++ const basePath = isGitHub ? '/VetPara-Atlas/database/' : '/database/';
+```
+Súbor: `src/services/DatabaseService.js`. **Stav: hotové, čaká na nahradenie v repozitári a push.**
+
+### 🔴→✅ Formát `database/images.json` sa zmenil — `Repository.js` bol dočasne nesynchronizovaný, teraz OPRAVENÝ
+
+Priebeh (dôležité zdokumentovať kvôli budúcim session):
+
+1. Na začiatku session bol `Repository.getImagesForParasite()` opravený z `img.parasiteId` na `img.objectId` — **správne vzhľadom na vtedy platný stav `images.json`** (starý formát, 33 záznamov, polia `objectId`/`thumbnail`/`isPrimary`/`sortOrder`, potvrdené v §0.7/§0.8 predchádzajúcich session).
+2. Autorka následne upozornila, že admin nástroj (`tools/admin/forms/imageForm.js` + `tools/admin/zipExport.js`) už generuje **nový formát**: `parasiteId` (nie `objectId`) + `url` (nie `thumbnail`/`filename`) + `alt`/`caption`/`credit`/`dateAdded`.
+3. Priama kontrola reálneho nahratého `database/images.json` toto potvrdila — súbor bol už prepísaný do nového formátu (parasiteId + url), starý formát s `objectId` už na disku nie je.
+4. **`Repository.js` bol preto vrátený späť** na `img.parasiteId`:
+
+```diff
+  getImagesForParasite(id) {
+-     return this.images.filter(img => img.objectId === id);
++     return this.images.filter(img => img.parasiteId === id);
+  }
+```
+
+**Overené priamou kontrolou kódu (netreba meniť):**
+- `GalleryPage.js` — `getFilteredImages()`, `getRecordForImage()`, `renderGrid()`, `openLightbox()` už dôsledne používajú `img.parasiteId` a `img.url`. Nikde sa nepoužíva `objectId`/`thumbnail`/`filename`. **Už je kompatibilný s novým formátom.**
+- `AtlasPage.js` (riadky ~1270–1289, ~1478–1479) — `Repository.getImagesForParasite(id)` + vykresľovanie `img.url` priamo do `<img src>`. **Už je kompatibilný s novým formátom.**
+
+**Aktuálny záväzný formát `database/images.json` (potvrdené admin nástrojom aj reálnymi dátami):**
+```json
+{
+  "parasiteId": "id_parazita",
+  "url": "/public/images/parasites/.../subor.webp",
+  "alt": "",
+  "caption": "",
+  "credit": "",
+  "dateAdded": "2026-08-21T10:00:00.000Z"
+}
+```
+Staré polia `objectId`, `thumbnail`, `isPrimary`, `sortOrder`, `host` (pozri nižšie) **v tomto formáte už neexistujú.**
+
+⚠️ **Pre ďalšie AI:** ak niekedy v budúcnosti príde požiadavka znova zmeniť/opraviť `Repository.getImagesForParasite()`, VŽDY si najprv vyžiadaj aktuálny reálny `database/images.json` priamo z disku/repozitára — formát sa už raz zmenil bez toho, aby to bolo vopred zdokumentované tu, a mohol by sa zmeniť znova.
+
+### 🔴 NOVÝ NÁJDENÝ PROBLÉM — Filter hostiteľa v Galérii je teraz funkčne MŔTVY (nie len "čaká na dáta")
+
+V predchádzajúcich session (§0.2–§0.4 nižšie) bolo diagnostikované, že filter hostiteľa v Galérii nemá viditeľný efekt, lebo všetky fotky mali `host: ""` (prázdny reťazec) — a to bolo popísané ako dočasný stav, ktorý sa vyrieši, keď fotky dostanú vyplnené `host` hodnoty.
+
+**Toto už NEPLATÍ.** Nový formát `images.json` generovaný admin formulárom (`parasiteId`/`url`/`alt`/`caption`/`credit`/`dateAdded`) **pole `host` vôbec neobsahuje** — nie je prázdne, jednoducho v schéme chýba. Priamo v `GalleryPage.js` → `getFilteredImages()` je to aj priznané v kóde:
+
+```js
+// FIX BUG: prázdny host = fotka patrí všetkým hostiteľom
+if (matchingHosts && matchingHosts.length > 0) {
+  return true; // V novom formáte nemáme "host" – vždy zobrazíme
+}
+```
+
+**Dôsledok:** filter hostiteľa v Galérii je momentálne **vždy no-op** pre všetky obrázky pridané cez nový admin formulár (t.j. pre všetky obrázky vôbec, keďže formulár je teraz jediná cesta, ako sa obrázky do `images.json` dostávajú). Nejde už o chýbajúce dáta v existujúcom poli — chýba samotné pole v štruktúre.
+
+**Riešenie (odsúhlasené autorkou, zatiaľ NEIMPLEMENTOVANÉ, NIE JE PRIORITA):** doplniť pole `host` do formátu `images.json` — t.j. rozšíriť:
+- schému v `docs/02_DATABASE_SPECIFICATION.md` §9,
+- `tools/admin/forms/imageForm.js` (pridať `host` pri vytváraní nového `pendingChange`, ideálne s možnosťou prevziať automaticky z `parasites.json` daného parazita — pozri pôvodnú požiadavku autorky v §0.5, bod 6),
+- `tools/admin/zipExport.js` (premietnuť `host` aj pri skladaní `finalImages`),
+- `GalleryPage.js` → `getFilteredImages()` (vrátiť reálnu filtrovaciu logiku namiesto `return true`).
+
+Autorka toto vedome odkladá — **nie je to aktuálna priorita**, len zdokumentovaný stav pre budúcu session.
+
+### 🟡 `manifest.json` — rozhodnutie autorky: NECHAŤ PRÁZDNY/NERIEŠIŤ TERAZ
+
+Nahratý `manifest.json` je prázdny (0 bajtov), čo spôsobuje kozmetický `Syntax error` v konzole — nič nerozbíja funkčnosť appky. Autorka potvrdila: súbor bol založený pri prvotnej štruktúre projektu, momentálne nie je jasné, či je vôbec potrebný.
+
+**Rozhodnutie:** ak by v budúcnosti autorka chcela appku "inštalovať" na mobil/plochu (PWA funkcia), bude treba doplniť minimálny obsah (`name`, `short_name`, `start_url`, `icons`, `theme_color`) a skontrolovať `<link rel="manifest">` v `index.html`. **Momentálne to NIE JE priorita**, súbor sa nechá tak, ako je. Ak sa doplní obsah, zapísať zmenu sem.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/services/DatabaseService.js` | `basePath` GitHub Pages: `/VetParaAtlas/` → `/VetPara-Atlas/` | ✅ hotové, odovzdané na nahradenie |
+| `src/services/Repository.js` | `getImagesForParasite()`: `img.objectId` → `img.parasiteId` (finálny, overený stav) | ✅ hotové, odovzdané na nahradenie |
+| `src/pages/GalleryPage.js` | žiadna zmena potrebná — už kompatibilný s novým formátom | — bez zmeny |
+| `src/pages/AtlasPage.js` | žiadna zmena potrebná — už kompatibilný s novým formátom | — bez zmeny |
+| `manifest.json` | žiadna zmena — vedomé rozhodnutie autorky nechať zatiaľ tak | — bez zmeny, nízka priorita do budúcna |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Doplniť pole `host` do formátu `images.json`** (viď vyššie) — obnoví reálnu funkčnosť filtra hostiteľa v Galérii. Nie je to priorita, autorka ju odložila.
+2. **`manifest.json`** — doplniť minimálny obsah, len ak/keď bude aktuálna potreba PWA inštalácie. Nie je to priorita.
+3. Stále nevyriešené z predchádzajúcich session (pozri §0.7/§0.8 nižšie): `docs/03_DATA_ENTRY_STANDARD.md` neoverený kvôli `methods`/`operculum`/`license`; funkčné chyby v `admin.js` (kontrola duplicity ID voči `pendingChanges`, mŕtvy `workingCopy`, nespracované `delete`, chybný badge zmazania, statický `extractUniqueValues()`) — **stále neopravené**, nesúviseli s touto session.
+4. Autorka avizovala, že sa k bodu "overiť, ktorá metóda (`getImages()` vs `getImagesForParasite()`) sa reálne používa" (pôvodne položené v predchádzajúcej správe) vráti neskôr — v tejto session sa to už fakticky zodpovedalo priamou kontrolou `AtlasPage.js`: používa sa výhradne `Repository.getImagesForParasite()`, `DatabaseService.getImages()` sa v `AtlasPage.js`/`GalleryPage.js` nikde nevolá (môže byť mŕtvy kód — netreba riešiť teraz, len poznámka).
+
+---
+
 🔥 0.8 Aktuálny stav — doplnené (2026‑08‑20, session: dokumentačné úpravy podľa §0.7 — časť Priority č. 3 DOKONČENÁ)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-20, pokračovanie — dokumentačný cleanup)
