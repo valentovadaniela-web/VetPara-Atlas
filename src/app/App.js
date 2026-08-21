@@ -25,6 +25,9 @@ const App = {
                 `Dog database loaded (${Repository.count()} records)`
             );
 
+            // --- NOVÉ: Načítanie obrázkov ---
+            await Repository.loadImages();
+
         }
 
         catch (error) {

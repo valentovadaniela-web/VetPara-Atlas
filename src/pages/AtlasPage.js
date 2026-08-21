@@ -1266,8 +1266,27 @@ renderHostFilterSection(hosts) {
                 this.init();
 
             });
-        // Doplní reálnu (alebo placeholder) fotku do práve vykresleného detailu
-         PrimaryImage.populate("#detail-view");
+
+           // --- NOVÉ: Zobrazenie obrázkov z images.json ---
+        const parasiteImages = Repository.getImagesForParasite(id);
+        const mainImageContainer = document.querySelector(".findings-card");
+        
+        // Ak existujú obrázky, zobrazíme prvý a zvyšok pridáme ako galériu
+        if (parasiteImages.length > 0) {
+            const firstImageUrl = parasiteImages[0].url;
+            mainImageContainer.innerHTML = `
+                <img src="${firstImageUrl}" class="main-image" alt="${parasiteImages[0].alt || record.latinName}" style="width:100%; height:auto; border-radius:8px;">
+                <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
+                    ${parasiteImages.slice(1).map(img => `
+                        <img src="${img.url}" alt="${img.alt || ''}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;" 
+                             onclick="this.parentElement.parentElement.querySelector('.main-image').src = this.src;">
+                    `).join('')}
+                </div>
+            `;
+        } else {
+            // Ak nie sú žiadne obrázky, zavolá sa pôvodná funkcia
+            PrimaryImage.populate("#detail-view");
+        }
     },
 
     // ------------------------------------------------------------------
@@ -1453,6 +1472,11 @@ renderHostFilterSection(hosts) {
             </div>
         `;
 
+    },
+    
+    // --- NOVÉ: Načítanie a zobrazenie všetkých obrázkov pre daný záznam ---
+    getImages(recordId) {
+        return Repository.getImagesForParasite(recordId);
     },
 
     escapeHtml(value) {

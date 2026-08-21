@@ -20,16 +20,34 @@ class Repository {
 
         this.hostHierarchy = {};
         this.hostHierarchyLoaded = false;
+        this.images = []; // Nové pole pre obrázky
 
     }
 
-    /**
-     * Bezpečné async načítanie host_hierarchy.json (rovnaká konvencia ako
-     * ostatné databázové súbory — cez DatabaseService.load() s try/catch
-     * fallbackom). Ak fetch zlyhá, hostHierarchy ostane {} a resolveHosts()
-     * jednoducho vráti len explicitné `hosts`, bez rozbalenia skupín —
-     * appka nepadne.
-     */
+    // --- OBRÁZKY ---
+    async loadImages() {
+
+        try {
+
+            this.images = await DatabaseService.load("images.json");
+
+        }
+        catch (error) {
+
+            this.images = [];
+            console.warn("VetPara Atlas: images.json sa nepodarilo načítať, obrázky sa nezobrazia.");
+
+        }
+
+    }
+
+    getImagesForParasite(id) {
+
+        return this.images.filter(img => img.parasiteId === id);
+
+    }
+
+    // --- HOST HIERARCHY ---
     async loadHostHierarchy() {
 
         try {
@@ -56,10 +74,7 @@ class Repository {
 
     }
 
-    /**
-     * Zistí, či `host` patrí (priamo alebo transitívne, cez ľubovoľný počet
-     * úrovní) pod skupinu `groupName` v host_hierarchy.json.
-     */
+    // --- OSTATNÉ ---
     isHostInGroup(host, groupName) {
 
         let current = host;
@@ -78,12 +93,6 @@ class Repository {
 
     }
 
-    /**
-     * Vráti kompletný zoznam konkrétnych hostiteľov pre záznam — union
-     * `record.hosts` (explicitné výnimky) a rozbaleného `record.hostGroups`
-     * (všetky mená z host_hierarchy.json, ktorých predok v hierarchii je
-     * niektorá z uvedených skupín). Nahrádza pôvodné `record.host`.
-     */
     resolveHosts(record) {
 
         const explicitHosts =
@@ -128,39 +137,41 @@ class Repository {
         return this.getById(id) !== null;
 
     }
-getByField(field, value) {
 
-    return this.getAll().filter(record => record[field] === value);
+    getByField(field, value) {
 
-}
+        return this.getAll().filter(record => record[field] === value);
 
-contains(field, value) {
+    }
 
-    const search = String(value).toLowerCase();
+    contains(field, value) {
 
-    return this.getAll().filter(record => {
+        const search = String(value).toLowerCase();
 
-        const text = String(record[field] ?? "").toLowerCase();
+        return this.getAll().filter(record => {
 
-        return text.includes(search);
+            const text = String(record[field] ?? "").toLowerCase();
 
-    });
+            return text.includes(search);
 
-}
+        });
 
-sortBy(field) {
+    }
 
-    return [...this.getAll()].sort((a, b) => {
+    sortBy(field) {
 
-        const left = String(a[field] ?? "");
+        return [...this.getAll()].sort((a, b) => {
 
-        const right = String(b[field] ?? "");
+            const left = String(a[field] ?? "");
 
-        return left.localeCompare(right);
+            const right = String(b[field] ?? "");
 
-    });
+            return left.localeCompare(right);
 
-}
+        });
+
+    }
+
     find(predicate) {
 
         return this.getAll().filter(predicate);
@@ -181,16 +192,18 @@ sortBy(field) {
 
     }
 
-filter(callback) {
+    filter(callback) {
 
-    return this.getAll().filter(callback);
+        return this.getAll().filter(callback);
 
-}
-refresh() {
+    }
 
-    return this.getAll();
+    refresh() {
 
-}
+        return this.getAll();
+
+    }
+
 }
 
 export default new Repository();

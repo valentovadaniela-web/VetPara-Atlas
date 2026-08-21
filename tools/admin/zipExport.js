@@ -15,6 +15,30 @@ export async function exportZip() {
         // Vytvoríme kópiu aktuálnej hostHierarchy
         const finalHostHierarchy = JSON.parse(JSON.stringify(state.hostHierarchy));
 
+        // --- NOVÉ: Spracovanie obrázkov ---
+        // 1. Zoberieme všetky existujúce obrázky z state.images
+        let finalImages = state.images ? JSON.parse(JSON.stringify(state.images)) : [];
+
+        // 2. Vytiahneme aj obrázky, ktoré sú priamo v záznamoch parazitov (v poli "images")
+        for (const parasite of finalParasites) {
+            if (parasite.images && Array.isArray(parasite.images) && parasite.images.length > 0) {
+                for (const url of parasite.images) {
+                    // Ak tento obrázok ešte nie je v finalImages, pridáme ho
+                    const existing = finalImages.find(img => img.url === url && img.parasiteId === parasite.id);
+                    if (!existing) {
+                        finalImages.push({
+                            parasiteId: parasite.id,
+                            url: url,
+                            alt: '',
+                            caption: '',
+                            credit: '',
+                            dateAdded: new Date().toISOString(),
+                        });
+                    }
+                }
+            }
+        }
+
         // --- Vytvorenie ZIP ---
         const zip = new JSZip();
 
@@ -24,7 +48,12 @@ export async function exportZip() {
         // 2. Pridanie host_hierarchy.json (NOVÉ)
         zip.file('database/dictionary/host_hierarchy.json', JSON.stringify(finalHostHierarchy, null, 2));
 
-        // 3. README s podrobným logom zmien
+        // 3. Pridanie images.json (NOVÉ - automaticky obsahuje aj obrázky z parasites.json)
+        if (finalImages.length > 0) {
+            zip.file('database/images.json', JSON.stringify(finalImages, null, 2));
+        }
+
+        // 4. README s podrobným logom zmien
         const changeLog = state.pendingChanges.map(ch => {
             if (ch.type === 'parasite') {
                 if (ch.action === 'create') return `🆕 PARASITE CREATE: ${ch.id}`;
@@ -34,6 +63,10 @@ export async function exportZip() {
             if (ch.type === 'host') {
                 if (ch.action === 'create') return `🆕 HOST CREATE: ${ch.key} (parent: ${ch.parent || 'žiadny'})`;
                 if (ch.action === 'delete') return `🗑️ HOST DELETE: ${ch.key}`;
+            }
+            if (ch.type === 'image') {
+                if (ch.action === 'create') return `🆕 IMAGE CREATE: ${ch.id}`;
+                if (ch.action === 'delete') return `🗑️ IMAGE DELETE: ${ch.id}`;
             }
             return `❓ ${ch.type}: ${ch.action} ${ch.id || ch.key}`;
         }).join('\n');
@@ -48,8 +81,9 @@ ${changeLog}
 Inštrukcie:
 1. Nahraď súbor database/parasites.json v repozitári týmto súborom.
 2. Nahraď súbor database/dictionary/host_hierarchy.json v repozitári týmto súborom (ak obsahuje zmeny hostiteľov).
-3. Skontroluj, či všetky zmeny vyzerajú správne.
-4. Commitni a pushni do repozitára.
+3. Nahraď súbor database/images.json v repozitári týmto súborom (ak obsahuje zmeny obrázkov).
+4. Skontroluj, či všetky zmeny vyzerajú správne.
+5. Commitni a pushni do repozitára.
 `;
 
         zip.file('README.txt', readme);

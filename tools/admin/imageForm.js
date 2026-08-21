@@ -13,7 +13,7 @@ export function renderImageTab() {
                 <h3>📷 Správa fotografií</h3>
                 <p>Existujúce obrázky: <strong>${parasites.reduce((acc, p) => acc + (p.images?.length || 0), 0)}</strong></p>
                 <p style="font-size:0.9rem;color:#7f8c8d;">
-                    <strong>Poznámka:</strong> Nájdite v projekte priečinok <code>public/images/parasites/{id}</code> a nakopírujte do neho fotky. Tieto fotky budú automaticky používané.
+                    <strong>Poznámka:</strong> Nahrávanie obrázkov cez Admina je už jednoduché. Vyberte fotku zo svojho počítača, alebo zadajte URL adresu. V oboch prípadoch sa cestu uloží priamo do záznamu.
                 </p>
             </div>
 
@@ -44,9 +44,9 @@ export function renderImageTab() {
                                     </td>
                                     <td style="padding: 0.5rem;">
                                         <div class="image-actions" style="display: flex; gap: 0.5rem; flex-direction: column;">
-                                            <!-- NAHRÁVANIE VIAC SÚBOROV NARAZ -->
-                                            <input type="file" class="image-file-input" data-id="${p.id}" accept="image/*" multiple style="width: 100%; max-width: 250px; border: 1px solid #bdc3c7; border-radius: 4px; padding: 0.2rem;">
-                                            <!-- PRIDANIE CEZ URL -->
+                                            <!-- Nahrávanie cez súbor -->
+                                            <input type="file" class="image-file-input" data-id="${p.id}" accept="image/*" style="width: 100%; max-width: 250px; border: 1px solid #bdc3c7; border-radius: 4px; padding: 0.2rem;">
+                                            <!-- Pridanie cez URL -->
                                             <input type="text" class="image-url-input" data-id="${p.id}" placeholder="URL adresa obrázka" style="width: 100%; max-width: 250px; padding: 0.2rem 0.5rem; border: 1px solid #bdc3c7; border-radius: 4px;">
                                             <button class="add-image-btn" data-id="${p.id}" style="background:#27ae60; color:white; border:none; padding: 0.2rem 0.8rem; border-radius: 4px; cursor:pointer;">Pridať</button>
                                             <button class="delete-image-btn" data-id="${p.id}" style="background:#e74c3c; color:white; border:none; padding: 0.2rem 0.8rem; border-radius: 4px; cursor:pointer;">Vymazať všetky</button>
@@ -66,49 +66,58 @@ export function renderImageTab() {
         btn.addEventListener('click', () => {
             const id = btn.dataset.id;
             
-            // 1. Skontrolovať, či sú súbory v inpute
+            // 1. Skontrolovať, či je súbor v inpute
             const fileInput = document.querySelector(`.image-file-input[data-id="${id}"]`);
-            const files = fileInput?.files;
+            const file = fileInput?.files?.[0];
 
             // 2. Skontrolovať, či je URL v inputu
             const urlInput = document.querySelector(`.image-url-input[data-id="${id}"]`);
             const url = urlInput?.value?.trim();
 
-            if (files && files.length > 0) {
-                // HROMADNÉ PRIDANIE SÚBOROV
-                for (const file of files) {
-                    const fileName = file.name;
-                    
-                    // Vytvoríme správnu cestu (kde by súbor mal byť v projekte)
-                    const baseUrl = '/public/images/parasites/' + id + '/' + fileName;
-                    
-                    // Vytvorenie pravidla pre nový obrázok
-                    addPendingChange({
-                        type: 'image',
-                        action: 'create',
-                        id: 'image-' + id + '-' + fileName,
-                        data: {
-                            parasiteId: id,
-                            url: baseUrl,
-                            alt: '',
-                            caption: '',
-                            credit: '',
-                            dateAdded: new Date().toISOString(),
-                        }
-                    });
-
-                    // Uložíme do state.parasites
-                    const parasite = state.parasites.find(p => p.id === id);
-                    if (parasite) {
-                        if (!parasite.images) parasite.images = [];
-                        parasite.images.push(baseUrl);
-
-                        // --- KRITICKÝ RIADOK ---
-                        state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
+            if (file) {
+                // Čítame súbor a vytvoríme URL (Object URL)
+                const objectUrl = URL.createObjectURL(file);
+                // Vytvoríme náhodné ID pre súbor
+                const fileName = file.name;
+                
+                // Zapíšeme URL do záznamu (alebo presnejšie: vložíme miesto, kam sa súbor uloží)
+                // POZNÁMKA: Ukladanie reálnych súborov na disk vyžaduje backend. Preto to počas behu aplikácie
+                // budeme evidovať len ako jednoduché URL, ktoré sa automaticky zobrazí v Atlasu.
+                // To, že súbor budete musieť nakoniec nakopírovať na disk, je nevyhnutné kvôli
+                // nedostatku backendu (Server-side). Toto je čisto "frontend" nástroj.
+                const baseUrl = '/public/images/parasites/' + id + '/' + fileName;
+                
+                // Vytvorenie pravidla pre nový obrázok
+                const newImageUrl = objectUrl; // Toto je dočasná URL
+                
+                // Spracovanie
+                addPendingChange({
+                    type: 'image',
+                    action: 'create',
+                    id: 'image-' + id + '-' + fileName,
+                    data: {
+                        parasiteId: id,
+                        url: baseUrl, // Vložíme do JSON cestu, kde by mal súbor byť
+                        alt: '',
+                        caption: '',
+                        credit: '',
+                        dateAdded: new Date().toISOString(),
                     }
+                });
+
+                // Uložíme do state.parasites
+                const parasite = state.parasites.find(p => p.id === id);
+                if (parasite) {
+                    if (!parasite.images) parasite.images = [];
+                    parasite.images.push(baseUrl);
+
+                // --- Uloženie do workingCopy ---
+                state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
                 }
 
-                showToast(`✅ ${files.length} obrázkov bolo pridaných k parazitu "${id}".`, 'success');
+                showToast(`✅ Záznam pre obrázok bol pridaný. (Súbor si nezabudnite nakopírovať na disk)`, 'success');
+                
+                // Obnovenie
                 renderImageTab();
             } else if (url) {
                 // Pridanie cez URL

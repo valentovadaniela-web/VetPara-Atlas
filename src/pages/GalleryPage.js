@@ -201,14 +201,14 @@ const GalleryPage = {
     }
 
     return images.filter((img) => {
-      if (matchingObjectIds && !matchingObjectIds.includes(img.objectId)) {
+      // Nový formát: používa parasiteId
+      if (matchingObjectIds && !matchingObjectIds.includes(img.parasiteId)) {
         return false;
       }
 
       // FIX BUG: prázdny host = fotka patrí všetkým hostiteľom
       if (matchingHosts && matchingHosts.length > 0) {
-        if (!img.host) return true;
-        if (!matchingHosts.some((h) => img.host.includes(h))) return false;
+        return true; // V novom formáte nemáme "host" – vždy zobrazíme
       }
 
       return true;
@@ -216,7 +216,8 @@ const GalleryPage = {
   },
 
   getRecordForImage(image) {
-    return this.state.records.find((r) => r.id === image.objectId) || null;
+    // Nový formát: používa parasiteId
+    return this.state.records.find((r) => r.id === image.parasiteId) || null;
   },
 
   renderGrid() {
@@ -247,32 +248,26 @@ const GalleryPage = {
     }
 
     container.innerHTML = filtered
-      .sort((a, b) => {
-        if (a.isPrimary && !b.isPrimary) return -1;
-        if (!a.isPrimary && b.isPrimary) return 1;
-        return (a.sortOrder || 0) - (b.sortOrder || 0);
-      })
       .map((img) => {
         const record = this.getRecordForImage(img);
-        const latinName = record?.latinName || img.objectId || "Neznámy objekt";
+        const latinName = record?.latinName || img.parasiteId || "Neznámy objekt";
 
+        // Nový formát: url je kompletná cesta
         return `
-          <div class="gallery-item card" data-image-id="${this.escapeHtml(img.id)}">
+          <div class="gallery-item card" data-image-url="${this.escapeHtml(img.url)}">
             <div class="gallery-item-thumb">
               <img 
-               src="public/images/${img.thumbnail}" 
+               src="${img.url}" 
                alt="${this.escapeHtml(latinName)}"
                class="gallery-thumb-img"
               >
-              ${img.isPrimary ? `<span class="gallery-badge-primary">Hlavná</span>` : ""}
             </div>
 
             <div class="gallery-item-info">
               <div class="gallery-item-title">${this.escapeHtml(latinName)}</div>
               <div class="gallery-item-meta">
-                ${img.host ? `<span>${this.escapeHtml(img.host)}</span>` : ""}
-                ${img.author ? `<span>© ${this.escapeHtml(img.author)}</span>` : ""}
-                ${img.year ? `<span>${this.escapeHtml(img.year)}</span>` : ""}
+                ${img.caption ? `<span>${this.escapeHtml(img.caption)}</span>` : ""}
+                ${img.dateAdded ? `<span>${this.escapeHtml(img.dateAdded.split("T")[0])}</span>` : ""}
               </div>
             </div>
           </div>
@@ -281,8 +276,8 @@ const GalleryPage = {
       .join("");
 
     container.querySelectorAll(".gallery-item").forEach((el) => {
-      const imageId = el.dataset.imageId;
-      const image = this.state.images.find((img) => img.id === imageId);
+      const url = el.dataset.imageUrl;
+      const image = this.state.images.find((img) => img.url === url);
       if (image) {
         el.addEventListener("click", () => {
           this.openLightbox(image);
@@ -310,26 +305,21 @@ const GalleryPage = {
     body.innerHTML = `
       <div class="gallery-lightbox-image">
         <img 
-          src="public/images/${image.filename}" 
-          alt="${this.escapeHtml(record?.latinName || image.objectId)}"
+          src="${image.url}" 
+          alt="${this.escapeHtml(record?.latinName || image.parasiteId)}"
           class="gallery-lightbox-img"
         >
       </div>
 
       <div class="gallery-lightbox-info">
-        <h3>${this.escapeHtml(record?.latinName || image.objectId)}</h3>
+        <h3>${this.escapeHtml(record?.latinName || image.parasiteId)}</h3>
 
         ${record?.slovakName ? `<p><strong>Slovenský názov:</strong> ${this.escapeHtml(record.slovakName)}</p>` : ""}
 
         <div class="gallery-lightbox-details">
-          ${image.host ? `<div><strong>Hostiteľ:</strong> ${this.escapeHtml(image.host)}</div>` : ""}
-          ${image.sample ? `<div><strong>Vzorka:</strong> ${this.escapeHtml(image.sample)}</div>` : ""}
-          ${image.stage ? `<div><strong>Štádium:</strong> ${this.escapeHtml(image.stage)}</div>` : ""}
-          ${image.method ? `<div><strong>Metóda:</strong> ${this.escapeHtml(image.method)}</div>` : ""}
-          ${image.objective || image.magnification ? `<div><strong>Zväčšenie:</strong> ${[image.objective, image.magnification].filter(Boolean).join(" / ")}</div>` : ""}
-          ${image.author ? `<div><strong>Autor:</strong> © ${this.escapeHtml(image.author)}</div>` : ""}
-          ${image.year ? `<div><strong>Rok:</strong> ${this.escapeHtml(image.year)}</div>` : ""}
-          ${image.description ? `<div><strong>Popis:</strong> ${this.escapeHtml(image.description)}</div>` : ""}
+          ${image.alt ? `<div><strong>Popis:</strong> ${this.escapeHtml(image.alt)}</div>` : ""}
+          ${image.caption ? `<div><strong>Popis:</strong> ${this.escapeHtml(image.caption)}</div>` : ""}
+          ${image.dateAdded ? `<div><strong>Dátum:</strong> ${this.escapeHtml(image.dateAdded.split("T")[0])}</div>` : ""}
         </div>
 
         ${record ? `

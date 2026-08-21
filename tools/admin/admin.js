@@ -49,6 +49,29 @@ export async function loadData() {
         state.hostHierarchy = hostHierarchy;
         state.workingCopy = JSON.parse(JSON.stringify(parasites));
 
+        // --- NOVÉ: Rozbalenie obrázkov priamo z parasites.json do state.images ---
+        // Toto zabezpečí, že obrázky, ktoré sú priamo v záznamoch (v poli "images"),
+        // sú vždy súčasťou state.images, a teda budú automaticky zahrnuté
+        // aj v budúcich exportoch cez zipExport.js.
+        for (const parasite of state.parasites) {
+            if (parasite.images && Array.isArray(parasite.images) && parasite.images.length > 0) {
+                for (const url of parasite.images) {
+                    // Skontrolujeme, či už tento obrázok neexistuje v state.images
+                    const existing = state.images.find(img => img.url === url && img.parasiteId === parasite.id);
+                    if (!existing) {
+                        state.images.push({
+                            parasiteId: parasite.id,
+                            url: url,
+                            alt: '',
+                            caption: '',
+                            credit: '',
+                            dateAdded: new Date().toISOString(),
+                        });
+                    }
+                }
+            }
+        }
+
         statusEl.textContent = `✅ Načítané: ${parasites.length} parazitov, ${Object.keys(hostHierarchy).length} hostiteľov`;
         statusEl.style.background = '#27ae60';
 
