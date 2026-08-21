@@ -29,7 +29,7 @@ class DatabaseService {
         
         // Ak sme na GitHube, cesta začína názvom repozitára.
         // Ak sme lokálne, cesta začína priamo /database/.
-        const basePath = isGitHub ? '/VetParaAtlas/database/' : '/database/';
+        const basePath = isGitHub ? '/VetPara-Atlas/database/' : '/database/';
 
         const response = await fetch(`${basePath}${file}`);
         // -------------------------------------------
