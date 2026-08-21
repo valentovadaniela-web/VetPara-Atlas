@@ -36,12 +36,8 @@ const PrimaryImage = {
     if (!allImages || allImages.length === 0) return null;
 
     const candidate = allImages
-      .filter((img) => img.objectId === record.id)
-      .sort((a, b) => {
-        if (a.isPrimary && !b.isPrimary) return -1;
-        if (!a.isPrimary && b.isPrimary) return 1;
-        return (a.sortOrder || 0) - (b.sortOrder || 0);
-      });
+      .filter((img) => img.parasiteId === record.id)
+      .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
 
     return candidate.length > 0 ? candidate[0] : null;
   },
@@ -108,19 +104,14 @@ const PrimaryImage = {
       if (!objectId) return;
 
       const candidates = images
-        .filter((img) => img.objectId === objectId)
-        .sort((a, b) => {
-          if (a.isPrimary && !b.isPrimary) return -1;
-          if (!a.isPrimary && b.isPrimary) return 1;
-          return (a.sortOrder || 0) - (b.sortOrder || 0);
-        });
-
+      .filter((img) => img.parasiteId === objectId)
+      .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
       const image = candidates.length > 0 ? candidates[0] : null;
 
       if (image) {
         container.innerHTML = `
           <img 
-            src="public/images/${image.filename}" 
+            src="${this.resolveImageUrl(image.url)}" 
             alt="${this.escapeHtml(objectId)}"
             class="primary-image-img"
           >
@@ -146,12 +137,8 @@ const PrimaryImage = {
     }
 
     const candidates = images
-      .filter((img) => img.objectId === record.id)
-      .sort((a, b) => {
-        if (a.isPrimary && !b.isPrimary) return -1;
-        if (!a.isPrimary && b.isPrimary) return 1;
-        return (a.sortOrder || 0) - (b.sortOrder || 0);
-      });
+.filter((img) => img.parasiteId === record.id)
+     .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
 
     const image = candidates.length > 0 ? candidates[0] : null;
 
@@ -161,7 +148,7 @@ const PrimaryImage = {
 
     return `
       <img 
-        src="public/images/${image.filename}" 
+        src="${this.resolveImageUrl(image.url)}" 
         alt="${this.escapeHtml(record.id)}"
         class="primary-image-img"
       >
@@ -176,6 +163,11 @@ const PrimaryImage = {
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
   },
+
+ resolveImageUrl(url) {
+    if (!url) return "";
+    return url.replace(/^\/+/, "");
+  }, 
 };
 
 export default PrimaryImage;

@@ -257,7 +257,7 @@ const GalleryPage = {
           <div class="gallery-item card" data-image-url="${this.escapeHtml(img.url)}">
             <div class="gallery-item-thumb">
               <img 
-               src="${img.url}" 
+               src="${this.resolveImageUrl(img.url)}" 
                alt="${this.escapeHtml(latinName)}"
                class="gallery-thumb-img"
               >
@@ -305,7 +305,7 @@ const GalleryPage = {
     body.innerHTML = `
       <div class="gallery-lightbox-image">
         <img 
-          src="${image.url}" 
+          src="${this.resolveImageUrl(image.url)}" 
           alt="${this.escapeHtml(record?.latinName || image.parasiteId)}"
           class="gallery-lightbox-img"
         >
@@ -390,6 +390,10 @@ const GalleryPage = {
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
+  },
+  resolveImageUrl(url) {
+    if (!url) return "";
+    return url.replace(/^\/+/, "");
   },
 };
 
