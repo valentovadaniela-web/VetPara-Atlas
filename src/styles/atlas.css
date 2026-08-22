@@ -716,7 +716,27 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 500px;
     min-height: 200px;
+    overflow: hidden;
+}
+
+/* Fotografia (PrimaryImage.js) sa musi prisposobit ploche kontajnera,
+   nie zobrazovat v prirodzenej pixelovej velkosti - inak vznika velky
+   biely priestor okolo mikroskopickej fotky (min-height/grid stretch
+   robi kontajner vyssi, ako je prirodzena velkost obrazka). */
+.primary-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.primary-image-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-md);
 }
 
 .img-placeholder-box {
