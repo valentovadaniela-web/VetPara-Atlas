@@ -1,5 +1,32 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.17 Aktuálny stav — doplnené (2026‑08‑22, session: lightbox v Galérii teraz zobrazuje `_full.webp` verziu namiesto thumbnailu)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje na §0.16 (po doplnení chýbajúceho `<link>` na `gallery.css` sa lightbox už vizuálne zobrazuje ako prekrývajúci panel). Zostávajúci nedostatok: lightbox v `openLightbox()` používal na zväčšenú fotku rovnaké `image.url`, aké sa použije aj pre náhľad v mriežke — teda **thumbnail** (480px), nie plnú (1600px) verziu. `images.json` má v poli `url` uloženú iba thumbnail cestu (`<objectId>_<poradie>.webp`), nie plnú.
+
+### 🔴→✅ Oprava (`GalleryPage.js`)
+
+Pridaná nová metóda `resolveFullImageUrl(url)`, ktorá plnú cestu **odvodí** zo schválenej konvencie pomenovania (Priorita č. 2 v §1: `<objectId>_<poradie>.webp` = thumbnail, `<objectId>_<poradie>_full.webp` = plná/zväčšená verzia) — nahradí príponu `.webp` za `_full.webp` (s ochranou proti zdvojeniu `_full`, ak by už v budúcnosti dáta obsahovali plnú cestu priamo).
+
+`openLightbox()` teraz pre `<img src="...">` v `.gallery-lightbox-image` volá `this.resolveFullImageUrl(image.url)` namiesto `this.resolveImageUrl(image.url)`. Náhľad v mriežke (`renderGrid()`) zostáva bezo zmeny — naďalej `resolveImageUrl(img.url)` (thumbnail).
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/GalleryPage.js` | pridaná `resolveFullImageUrl()`; `openLightbox()` použije `_full.webp` verziu pre zväčšenú fotku | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť v prehliadači**, že lightbox skutočne načíta `_full.webp` súbor (a nie 404), pre všetky 3 diagnostické objekty s reálnymi fotkami (`aelurostrongylus_abstrusus_larva`, `alaria_alata_egg`, `toxascaris_leonina_egg`) — teda že kýmkoľvek nahratým `*_full.webp` naozaj existuje párový thumbnail (a naopak) na disku/v `public/images/parasites/<objectId>/`.
+2. Zvážiť (nepotvrdené autorkou, nemeniť bez schválenia), či `resolveFullImageUrl()` potrebuje `onerror` fallback späť na thumbnail pre prípad, že by pre niektorú fotku `_full` súbor chýbal — zatiaľ sa spolieha na to, že konvencia (thumbnail + full vždy spolu) je dodržaná pri každom nahratí.
+
+---
+
 🔥 0.16 Aktuálny stav — doplnené (2026‑08‑22, session: potvrdená a opravená skutočná príčina bodov 1–2 z §0.15 — chýbajúci `<link>` na `gallery.css`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII

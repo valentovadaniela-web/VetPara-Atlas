@@ -412,7 +412,7 @@ const GalleryPage = {
     body.innerHTML = `
       <div class="gallery-lightbox-image">
         <img 
-          src="${this.resolveImageUrl(image.url)}" 
+          src="${this.resolveFullImageUrl(image.url)}" 
           alt="${this.escapeHtml(record?.latinName || image.parasiteId)}"
           class="gallery-lightbox-img"
         >
@@ -484,6 +484,21 @@ const GalleryPage = {
   resolveImageUrl(url) {
     if (!url) return "";
     return url.replace(/^\/+/, "");
+  },
+
+  /**
+   * images.json obsahuje v `url` iba thumbnail cestu
+   * (`<objectId>_<poradie>.webp`). Zväčšená verzia pre lightbox podľa
+   * schválenej konvencie (AI_STATUS.md, Priorita č. 2) má rovnaký názov
+   * s príponou `_full` pred `.webp` (`<objectId>_<poradie>_full.webp`),
+   * takže sa odvodí, nie číta z dát.
+   */
+  resolveFullImageUrl(url) {
+    const resolved = this.resolveImageUrl(url);
+    if (!resolved) return "";
+    // Ak by už niekedy prišla plná cesta priamo z dát, neduplikovať "_full".
+    if (/_full\.webp$/i.test(resolved)) return resolved;
+    return resolved.replace(/\.webp$/i, "_full.webp");
   },
 };
 
