@@ -1,3 +1,63 @@
+🔥 0.11 Aktuálny stav — doplnené (2026‑08‑22, session: viacúrovňové rozbaľovanie filtra hostiteľov + hromadný výber celej kategórie v `AtlasPage.js`/`atlas.css`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-22)
+
+### Kontext
+
+Autorka nahlásila, že filter "Hostiteľ" v Atlase (zavedený v §0.9 ako hierarchické zoskupovanie) je aj tak veľmi dlhý — top-level accordion (napr. "Plazy (28)") sa síce dal rozbaliť/zbaliť ako celok, ale VŠETKY medziľahlé úrovne (Jaštery, Chameleóny, Korytnačky, Suchozemské korytnačky, Hady...) sa vykresľovali naplocho vnútri neho, bez vlastného rozbaľovania. V priebehu session boli nahraté a priamo skontrolované: `AtlasPage.js`, `dictionary/host_hierarchy.json`, následne aj `atlas.css`.
+
+### 🔴→✅ Vec č. 1: iba najvyššia úroveň bola rozbaľovacia — OPRAVENÉ (viacúrovňové vnáranie)
+
+**Príčina:** pôvodná `renderHostFilterSection()` (§0.9) počítala pre každého hostiteľa iba `getTopLevelGroup()` — prešla stromom `host_hierarchy.json` až po koreň a všetky medziľahlé úrovne zbalila do jedného plochého `checkbox-group` pod jediným `<details>`.
+
+**Oprava:** `renderHostFilterSection()` prepísaná na skutočný rekurzívny prechod celého stromu:
+- `buildHostChildrenMap()` — invertuje `host_hierarchy.json` (formát `{dieťa: rodič}`) na mapu `rodič → [deti]`.
+- `getHostHierarchyRoots()` — nájde korene stromu (uzly bez rodiča, napr. "Plazy", "Mäsožravce", "Ťavy, lamy"...).
+- `renderHostNode(node, childrenMap, hostsInUse)` — rekurzívne vykreslí KAŽDÚ úroveň (nielen koreň) ako samostatný `<details class="host-accordion">`, ktorý sa dá rozbaľovať/zbaľovať nezávisle. Vracia aj zoznam `matched` (skutočne použité hodnoty `host` pod danou vetvou) kvôli počítadlu `(N)` pri názve a kvôli veci č. 2 nižšie.
+- Ak je samotný názov skupiny (napr. "Jaštery") priamo použitý ako hodnota `host` pri nejakom zázname (bez konkrétneho druhu), zobrazí sa navyše ako checkbox `"Jaštery (všeobecne)"` v hornej časti obsahu danej skupiny.
+- Hostitelia úplne mimo `host_hierarchy.json` (nemajú predka ani potomkov) zostávajú ako predtým — samostatné položky mimo accordionov (`standalone-group`).
+- Overené simuláciou v Node.js nad reálnym `host_hierarchy.json` (bez prehliadača): pre testovaciu množinu hostiteľov sa správne vygenerovalo `Plazy (28)` → `Jaštery (18)` → vnorené `Chameleóny (9)`, `Korytnačky (7)` → vnorené `Suchozemské korytnačky (5)`, `Hady (3)` — presne požadovaná viacúrovňová štruktúra.
+
+### 🔴→✅ Vec č. 2: výber celej kategórie jedným klikom — DOPLNENÉ
+
+Autorka následne požiadala o možnosť odfiltrovať celú kategóriu (napr. "Mäsožravce") bez ručného vyklikávania všetkých potomkov.
+
+**Riešenie:** do hlavičky (`<summary>`) každej skupiny/podskupiny pribudol samostatný checkbox `"vybrať skupinu"`:
+- Zaškrtnutím sa naraz zaškrtnú/odškrtnú VŠETCI hostitelia v danej vetve vrátane vnorených podskupín (zoznam nesie atribút `data-hosts` s presnými hodnotami z `matched`).
+- Klik naň nemá otvoriť/zavrieť `<details>` (`onclick="event.stopPropagation()"` priamo v markupe) — rozbaľovanie/zbaľovanie naďalej vyvolá iba klik na text/šípku.
+- Ak je zaškrtnutá len časť potomkov, checkbox skupiny sa zobrazí ako čiastočne zaškrtnutý (`indeterminate`) — nastavuje sa dynamicky cez JS, keďže HTML `indeterminate` atribút neexistuje.
+- Zmena sa prejavuje aj smerom nahor: zaškrtnutie celej "Jaštery" spôsobí prepočet stavu nadradených "Plazy" (plne/čiastočne/vôbec).
+- Nové funkcie `bindHostGroupSelectors()` a `updateHostGroupSelectStates(fieldset)` v `AtlasPage.js`, volané z `init()` aj z `refreshHostFilterSection()` (po doletení `host_hierarchy.json`).
+- **Dôležitá súvisiaca oprava:** `bindCheckboxFilter(field)` predtým selektoval `input[type=checkbox]` bez ohľadu na `data-field` — po pridaní `.host-group-select` checkboxov (ktoré zámerne NEMAJÚ `data-field`) by sa inak dostali do `state.host` ako neplatná hodnota `"on"`. Selektor zúžený na `input[type="checkbox"][data-field="${field}"]`.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | `renderHostFilterSection()` prepísaná na rekurzívny strom (`buildHostChildrenMap`, `getHostHierarchyRoots`, `renderHostNode`) namiesto plochého zoskupovania cez `getTopLevelGroup()` | ✅ hotové |
+| `src/pages/AtlasPage.js` | pridaný checkbox "vybrať skupinu" do `<summary>` každej úrovne (`data-hosts`, `onclick="event.stopPropagation()"`) | ✅ hotové |
+| `src/pages/AtlasPage.js` | nové funkcie `bindHostGroupSelectors()`, `updateHostGroupSelectStates()`; napojené v `init()` a `refreshHostFilterSection()` | ✅ hotové |
+| `src/pages/AtlasPage.js` | `bindCheckboxFilter()` — selektor zúžený na `[data-field="${field}"]`, aby sa doň nedostali nové skupinové checkboxy | ✅ hotové |
+| `atlas.css` | `.host-accordion-summary` upravený layout (checkbox + `.accordion-title-wrap` namiesto priameho `justify-content: space-between` na dvoch spans) | ✅ hotové |
+| `atlas.css` | nové pravidlá `.host-group-select-label`, `.accordion-title-wrap`, `.accordion-content.host-subgroups` (odsadenie vnorených úrovní), `.host-subgroups .host-accordion` (ľavý okraj) | ✅ hotové |
+| `getTopLevelGroup(hostName)` | ponechaná v kóde bez zmeny, ale už sa nikde nepoužíva (nahradená stromovým prechodom) — neškodné, možno neskôr odstrániť | ⬜ voliteľný cleanup |
+
+**Testovanie vykonané:** syntax-check cez Node.js (`new Function(...)` nad celým súborom bez importov), diff oproti pôvodným súborom (zmeny izolované len na dotknuté sekcie), simulovaný render `renderHostFilterSection()` nad reálnym `host_hierarchy.json` s overením `data-hosts` atribútov pre vnorené skupiny (Jaštery vs. Plazy).
+
+**NEVYKONANÉ (dôležité pre ďalšiu session):** **žiadne naživo overenie v prehliadači** (ani Live Server, ani GitHub Pages) — všetko overené iba simulačne v Node.js mimo DOM. Treba potvrdiť, že:
+1. Vnorené `<details>` sa v reálnom prehliadači rozbaľujú/zbaľujú nezávisle a `open` atribút sa správne prejavuje pri už zaškrtnutých hostiteľoch po znovunačítaní stránky.
+2. Checkbox "vybrať skupinu" reálne nespôsobuje otvorenie/zatvorenie `<details>` vo všetkých bežných prehliadačoch (test `stopPropagation` cez `onclick` atribút v stringovom markupe, nie cez `addEventListener` — malo by fungovať, ale nebolo overené naživo).
+3. `CSS.escape()` použité v selektoroch (`updateHostGroupSelectStates`, `bindHostGroupSelectors`) — dostupné vo všetkých moderných prehliadačoch, ale neoverené v cieľovom prostredí autorky.
+4. Vizuálne odsadenie vnorených skupín (`.host-subgroups`) v skutočnom layoute sidebaru — CSS premenné (`--space-lg`, `--color-secondary` a pod.) neboli overované vizuálne, len skontrolované, že v `atlas.css` existujú a používajú sa konzistentne s okolitým kódom.
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Overiť naživo v prehliadači** (Live Server aj GitHub Pages) celý filter hostiteľov — vnorenie, otváranie/zatváranie, hromadný výber, indeterminate stav, aj v kombinácii s existujúcim vyhľadávaním a ostatnými filtrami.
+2. Zvážiť odstránenie nepoužívanej `getTopLevelGroup()` (nahradená stromovým riešením, ale ponechaná bez zmeny kvôli minimalizácii rozsahu úprav v tejto session).
+3. Ostatné otvorené body z §0.10 a §0.9 (naživo-overenie fotografií, `manifest.json`, `docs/03_DATA_ENTRY_STANDARD.md`, admin formulár, chýbajúca stránka Expert) zostávajú nezmenené a neriešené v tejto session.
+
+---
+
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
 🔥 0.10 Aktuálny stav — doplnené (2026‑08‑21, session: oprava zobrazovania fotografií — absolútne cesty v `images.json` + `PrimaryImage.js` nekompatibilný so `parasiteId`/`url` formátom)
