@@ -278,6 +278,12 @@ const AtlasPage = {
 
         });
 
+        // OPRAVA (2026-08-22): naviaže hromadné "vybrať skupinu" checkboxy
+        // (funguje aj pri prvotnom renderi bez hierarchie — jednoducho
+        // nenájde žiadne ".host-group-select" a nič sa nestane; po
+        // loadHostHierarchy()/refreshHostFilterSection() sa naviaže znova).
+        this.bindHostGroupSelectors();
+
         // OPRAVA (2026-08-17): async načítanie slovníka skupín, nahrádza
         // pôvodný statický import, ktorý padal (pozri poznámku pri
         // HOST_HIERARCHY_FILE). Prekreslí a znovu nabindí len sekciu
@@ -448,6 +454,7 @@ const AtlasPage = {
         wrapper.outerHTML = this.renderHostFilterSection(this.getHostValues());
 
         this.bindCheckboxFilter("host");
+        this.bindHostGroupSelectors();
 
     },
 
@@ -509,87 +516,255 @@ const AtlasPage = {
 
     // ------------------------------------------------------------------
     // Hierarchické zobrazenie filtra hostiteľov (2026-08-17)
+    //
+    // OPRAVA (2026-08-22, viacúrovňové rozbaľovanie): pôvodná verzia
+    // vypočítala pre každého hostiteľa iba NAJVYŠŠIU úroveň predka
+    // (getTopLevelGroup — ide až po koreň stromu) a všetky medziľahlé
+    // úrovne (napr. "Jaštery", "Chameleóny", "Korytnačky",
+    // "Suchozemské korytnačky") zbalila do jedného plochého zoznamu pod
+    // jediným accordionom ("Plazy"). Preto bol filter aj tak veľmi dlhý.
+    //
+    // Nahradené rekurzívnym prechodom CELÉHO stromu z host_hierarchy.json:
+    // každá úroveň (nielen koreň) je teraz samostatný <details>, ktorý sa
+    // dá zvlášť rozbaliť/zbaliť. Filtrovacia logika (state.host,
+    // data-field="host", OR v rámci poľa) sa nemenila — mení sa iba
+    // vnorenie markupu.
     // ------------------------------------------------------------------
 
-renderHostFilterSection(hosts) {
+    /**
+     * Postaví mapu parent -> [deti] invertovaním host_hierarchy.json
+     * (súbor je vo formáte {dieťa: rodič}).
+     */
+    buildHostChildrenMap() {
+
+        const childrenMap = {};
+
+        Object.entries(this.hostHierarchy).forEach(([child, parent]) => {
+
+            if (!parent) {
+                return;
+            }
+
+            if (!childrenMap[parent]) {
+                childrenMap[parent] = [];
+            }
+
+            childrenMap[parent].push(child);
+
+        });
+
+        return childrenMap;
+
+    },
+
+    /**
+     * Korene stromu = uzly (kľúče aj hodnoty v hostHierarchy), ktoré samy
+     * nemajú predka.
+     */
+    getHostHierarchyRoots() {
+
+        const allNodes = new Set([
+            ...Object.keys(this.hostHierarchy),
+            ...Object.values(this.hostHierarchy).filter(Boolean)
+        ]);
+
+        return [...allNodes].filter(node => !this.hostHierarchy[node]);
+
+    },
+
+    /**
+     * Rekurzívne postaví jednu úroveň stromu (skupinu alebo podskupinu)
+     * ako samostatný rozbaľovací <details> blok. Vracia:
+     *  - html: markup tejto úrovne (alebo "", ak pod ňou nie je nič na
+     *    zobrazenie),
+     *  - count: počet reálne použitých hostiteľov v tejto úrovni vrátane
+     *    všetkých podskupín (číslo v zátvorke pri názve),
+     *  - anyChecked: či je niektorý z potomkov aktuálne zaškrtnutý (aby sa
+     *    <details> otvoril automaticky),
+     *  - matched: zoznam mien hostiteľov, ktoré sa "spotrebovali" v tejto
+     *    vetve (aby ich vyššia úroveň nezarátala druhýkrát a aby sa
+     *    nedostali medzi "samostatné" položky mimo stromu).
+     */
+    renderHostNode(node, childrenMap, hostsInUse) {
+
+        const children = childrenMap[node] || [];
+        const leaves = [];
+        const subGroups = [];
+        let anyChecked = false;
+        const matched = [];
+
+        // Ak je samotný názov skupiny zároveň reálnou hodnotou `host`
+        // priradenou priamo k nejakému záznamu (napr. objekt priradený
+        // priamo ku "Chameleóny" bez konkrétneho druhu), zobrazí sa ako
+        // vlastný checkbox na začiatku obsahu tejto skupiny.
+        if (hostsInUse.has(node)) {
+
+            const checked = this.state.host.includes(node);
+
+            if (checked) {
+                anyChecked = true;
+            }
+
+            leaves.push({
+                name: node,
+                html: `
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="${this.escapeHtml(node)}" data-field="host"
+                            ${checked ? "checked" : ""}>
+                        ${this.escapeHtml(node)} (všeobecne)
+                    </label>
+                `
+            });
+
+            matched.push(node);
+
+        }
+
+        children.forEach(child => {
+
+            if (childrenMap[child] && childrenMap[child].length > 0) {
+
+                // Dieťa má vlastné potomstvo → vnorená podskupina, ktorá sa
+                // dá rozbaľovať nezávisle od tejto úrovne.
+                const sub = this.renderHostNode(child, childrenMap, hostsInUse);
+
+                if (sub.html) {
+                    subGroups.push({ name: child, html: sub.html, count: sub.count });
+                    matched.push(...sub.matched);
+                    if (sub.anyChecked) {
+                        anyChecked = true;
+                    }
+                }
+
+            }
+            else if (hostsInUse.has(child)) {
+
+                const checked = this.state.host.includes(child);
+
+                if (checked) {
+                    anyChecked = true;
+                }
+
+                leaves.push({
+                    name: child,
+                    html: `
+                        <label class="checkbox-label">
+                            <input type="checkbox" value="${this.escapeHtml(child)}" data-field="host"
+                                ${checked ? "checked" : ""}>
+                            ${this.escapeHtml(child)}
+                        </label>
+                    `
+                });
+
+                matched.push(child);
+
+            }
+
+        });
+
+        const count = leaves.length +
+            subGroups.reduce((sum, group) => sum + group.count, 0);
+
+        if (count === 0) {
+            return { html: "", count: 0, anyChecked: false, matched: [] };
+        }
+
+        leaves.sort((a, b) => a.name.localeCompare(b.name, "sk"));
+        subGroups.sort((a, b) => a.name.localeCompare(b.name, "sk"));
+
+        // OPRAVA (2026-08-22, výber celej kategórie jedným klikom): checkbox
+        // "vybrať všetko" v hlavičke skupiny. Klik naň NEMÁ prepínať
+        // otvorenie/zatvorenie <details> (preto stopPropagation priamo v
+        // markupe) — iba klik na text/šípku naďalej rozbaľuje/zbaľuje.
+        // `data-hosts` nesie presný zoznam hostiteľov (vrátane vnorených
+        // podskupín), ktoré sa majú zaškrtnúť/odškrtnúť — viaže sa naň
+        // bindHostGroupSelectors()/updateHostGroupSelectStates().
+        const groupHostsAttr = matched
+            .map(host => this.escapeHtml(host))
+            .join("|");
+
+        const html = `
+            <details class="host-accordion" ${anyChecked ? "open" : ""}>
+                <summary class="host-accordion-summary">
+                    <label class="host-group-select-label" onclick="event.stopPropagation()">
+                        <input
+                            type="checkbox"
+                            class="host-group-select"
+                            data-hosts="${groupHostsAttr}"
+                            aria-label="Vybrať všetkých hostiteľov v skupine ${this.escapeHtml(node)}"
+                        >
+                    </label>
+                    <span class="accordion-title-wrap">
+                        <span class="accordion-title">${this.escapeHtml(node)}</span>
+                        <span class="accordion-badge">(${count})</span>
+                    </span>
+                </summary>
+                ${leaves.length > 0 ? `
+                    <div class="checkbox-group accordion-content">
+                        ${leaves.map(leaf => leaf.html).join("")}
+                    </div>
+                ` : ""}
+                ${subGroups.length > 0 ? `
+                    <div class="accordion-content host-subgroups">
+                        ${subGroups.map(group => group.html).join("")}
+                    </div>
+                ` : ""}
+            </details>
+        `;
+
+        return { html, count, anyChecked, matched };
+
+    },
+
+    renderHostFilterSection(hosts) {
 
         if (hosts.length === 0) {
             return "";
         }
 
-        const groups = {};
-        const standaloneHosts = [];
+        const hostsInUse = new Set(hosts);
+        const childrenMap = this.buildHostChildrenMap();
+        const roots = this.getHostHierarchyRoots();
 
-        // 1. KROK: Najprv zistíme všetky unikátne názvy skupín, ktoré v tejto várke vzniknú
-        const detectedTopGroups = new Set();
-        hosts.forEach(host => {
-            const topParent = this.getTopLevelGroup(host);
-            if (topParent) {
-                detectedTopGroups.add(topParent);
+        const matchedOverall = new Set();
+        const rootBlocks = [];
+
+        roots.forEach(root => {
+
+            const result = this.renderHostNode(root, childrenMap, hostsInUse);
+
+            if (result.html) {
+                rootBlocks.push({ name: root, html: result.html });
+                result.matched.forEach(host => matchedOverall.add(host));
             }
+
         });
 
-        // 2. KROK: Samotné rozradenie s ochranou proti duplicite
-        hosts.forEach(host => {
-            const topParent = this.getTopLevelGroup(host);
-            
-            if (topParent) {
-                // Ak má predka, ide do príslušného accordionu
-                if (!groups[topParent]) {
-                    groups[topParent] = [];
-                }
-                groups[topParent].push(host);
-            } else {
-                // OCHRANA: Ak sa samotný hostiteľ volá presne tak ako celá skupina (napr. "Hlodavce"),
-                // preskočíme jeho pridanie do samostatných položiek, pretože skupina už existuje.
-                if (detectedTopGroups.has(host)) {
-                    // Voliteľne: Ak chceme mať možnosť zaškrtnúť všeobecné "Hlodavce" priamo vnútri accordionu,
-                    // odkomentujte nasledujúce 4 riadky. Inak sa len skryje duplicita:
-                    // if (!groups[host]) { groups[host] = []; }
-                    // if (!groups[host].includes(host)) { groups[host].push(host); }
-                    return; 
-                }
-                
-                // Ak to nie je skupina ani nemá predka (pes, mačka), ide na hlavnú úroveň
-                standaloneHosts.push(host);
-            }
-        });
+        rootBlocks.sort((a, b) => a.name.localeCompare(b.name, "sk"));
+
+        // Hostitelia, ktorí sa vôbec nenachádzajú v host_hierarchy.json
+        // (nemajú predka ani potomkov) → samostatné položky mimo
+        // accordionov, rovnako ako doteraz.
+        const standaloneHosts = hosts.filter(host => !matchedOverall.has(host));
 
         return `
             <div class="filter-section">
                 <fieldset id="atlas-filter-host">
                     <legend class="filter-title">Hostiteľ</legend>
-                    
-                    ${Object.entries(groups).map(([groupName, childHosts]) => {
-                        const isAnyChecked = childHosts.some(h => this.state.host.includes(h));
-                        return `
-                            <details class="host-accordion" ${isAnyChecked ? "open" : ""}>
-                                <summary class="host-accordion-summary">
-                                    <span class="accordion-title">${this.escapeHtml(groupName)}</span>
-                                    <span class="accordion-badge">(${childHosts.length})</span>
-                                </summary>
-                                <div class="checkbox-group accordion-content">
-                                    ${childHosts.map(host => `
-                                        <label class="checkbox-label">
-                                            <input type="checkbox" value="${this.escapeHtml(host)}" data-field="host"
-                                                ${this.state.host.includes(host) ? "checked" : ""}>
-                                            ${this.escapeHtml(host)}
-                                        </label>
-                                    `).join("")}
-                                </div>
-                            </details>
-                        `;
-                    }).join("")}
 
-                    <div class="checkbox-group standalone-group">
-                        ${standaloneHosts.map(host => `
-                            <label class="checkbox-label">
-                                <input type="checkbox" value="${this.escapeHtml(host)}" data-field="host"
-                                    ${this.state.host.includes(host) ? "checked" : ""}>
-                                ${this.escapeHtml(host)}
-                            </label>
-                        `).join("")}
-                    </div>
+                    ${rootBlocks.map(block => block.html).join("")}
+
+                    ${standaloneHosts.length > 0 ? `
+                        <div class="checkbox-group standalone-group">
+                            ${standaloneHosts.map(host => `
+                                <label class="checkbox-label">
+                                    <input type="checkbox" value="${this.escapeHtml(host)}" data-field="host"
+                                        ${this.state.host.includes(host) ? "checked" : ""}>
+                                    ${this.escapeHtml(host)}
+                                </label>
+                            `).join("")}
+                        </div>
+                    ` : ""}
                 </fieldset>
             </div>
         `;
@@ -634,17 +809,135 @@ renderHostFilterSection(hosts) {
             return;
         }
 
-        group.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
+        // OPRAVA (2026-08-22): selektor zúžený na `[data-field="${field}"]`,
+        // aby sa do state.host nezarátali aj nové ".host-group-select"
+        // checkboxy ("vybrať celú skupinu"), ktoré nemajú data-field a
+        // slúžia len ako hromadný prepínač nad viacerými input[data-field].
+        const selector = `input[type="checkbox"][data-field="${field}"]`;
+
+        group.querySelectorAll(selector).forEach(checkbox => {
 
             checkbox.addEventListener("change", () => {
 
                 this.state[field] =
-                    Array.from(group.querySelectorAll("input[type=checkbox]:checked"))
+                    Array.from(group.querySelectorAll(`${selector}:checked`))
                         .map(input => input.value);
+
+                if (field === "host") {
+
+                    // Ručné (od)zaškrtnutie jedného hostiteľa musí prekresliť
+                    // aj stav nadradených "vybrať skupinu" checkboxov
+                    // (zaškrtnuté / čiastočne / vôbec).
+                    this.updateHostGroupSelectStates(group);
+
+                }
 
                 this.renderRecords();
 
             });
+
+        });
+
+    },
+
+    // ------------------------------------------------------------------
+    // "Vybrať celú kategóriu" — hromadný checkbox v hlavičke accordionu
+    // (2026-08-22, na želanie autorky: jedno kliknutie namiesto ručného
+    // vyklikávania všetkých potomkov danej skupiny/podskupiny).
+    // ------------------------------------------------------------------
+
+    bindHostGroupSelectors() {
+
+        const fieldset =
+            document.getElementById("atlas-filter-host");
+
+        if (!fieldset) {
+            return;
+        }
+
+        fieldset.querySelectorAll(".host-group-select").forEach(groupCheckbox => {
+
+            groupCheckbox.addEventListener("change", () => {
+
+                const hosts = (groupCheckbox.dataset.hosts || "")
+                    .split("|")
+                    .filter(Boolean);
+
+                const shouldCheck = groupCheckbox.checked;
+
+                hosts.forEach(host => {
+
+                    const target = fieldset.querySelector(
+                        `input[type="checkbox"][data-field="host"][value="${CSS.escape(host)}"]`
+                    );
+
+                    if (target) {
+                        target.checked = shouldCheck;
+                    }
+
+                });
+
+                this.state.host = Array.from(
+                    fieldset.querySelectorAll('input[type="checkbox"][data-field="host"]:checked')
+                ).map(input => input.value);
+
+                // Zaškrtnutie/odškrtnutie tejto skupiny mohlo zmeniť aj stav
+                // jej rodičovskej skupiny (napr. zaškrtnutím všetkých potomkov
+                // "Jaštery" sa čiastočne "naplní" aj "Plazy") — prepočíta sa
+                // úplne všetko, nielen táto jedna úroveň.
+                this.updateHostGroupSelectStates(fieldset);
+
+                this.renderRecords();
+
+            });
+
+        });
+
+        // Počiatočný stav (napr. po znovunačítaní hierarchie) — zväčša
+        // všetko nezaškrtnuté, ale nech je to vždy konzistentné so
+        // state.host.
+        this.updateHostGroupSelectStates(fieldset);
+
+    },
+
+    /**
+     * Prepočíta zaškrtnutie/indeterminate stav všetkých ".host-group-select"
+     * checkboxov podľa toho, koľko z ich `data-hosts` potomkov je práve
+     * zaškrtnutých v skutočnom filtri. Volá sa po každej zmene v strome
+     * hostiteľov (jednotlivý checkbox aj hromadný "vybrať skupinu"), aby
+     * hlavičky accordionov vždy zodpovedali reálnemu stavu filtra.
+     */
+    updateHostGroupSelectStates(fieldset) {
+
+        if (!fieldset) {
+            return;
+        }
+
+        fieldset.querySelectorAll(".host-group-select").forEach(groupCheckbox => {
+
+            const hosts = (groupCheckbox.dataset.hosts || "")
+                .split("|")
+                .filter(Boolean);
+
+            if (hosts.length === 0) {
+                groupCheckbox.checked = false;
+                groupCheckbox.indeterminate = false;
+                return;
+            }
+
+            const checkedCount = hosts.filter(host => {
+
+                const target = fieldset.querySelector(
+                    `input[type="checkbox"][data-field="host"][value="${CSS.escape(host)}"]`
+                );
+
+                return target && target.checked;
+
+            }).length;
+
+            groupCheckbox.checked = checkedCount === hosts.length;
+            groupCheckbox.indeterminate =
+                checkedCount > 0 && checkedCount < hosts.length;
 
         });
 
