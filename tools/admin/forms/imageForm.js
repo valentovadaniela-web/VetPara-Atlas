@@ -1,17 +1,47 @@
 import { state, addPendingChange, showToast } from '../admin.js';
 
+// FIX: doteraz sa fotky brali len z p.images (embednuté priamo v parasites.json).
+// Skutočný zdroj fotiek je ale database/images.json (state.images) — pri loadData()
+// sa síce p.images kopírujú DO state.images, ale nie naopak, takže fotky, ktoré žijú
+// len v images.json, sa v tomto tabe vôbec nezobrazili. Táto funkcia zlúči oba zdroje.
+function getImagesForParasite(parasiteId) {
+    const urls = new Set();
+    for (const img of state.images || []) {
+        if (img.parasiteId === parasiteId && img.url) urls.add(img.url);
+    }
+    const parasite = state.parasites.find(p => p.id === parasiteId);
+    if (parasite?.images) {
+        for (const url of parasite.images) urls.add(url);
+    }
+    return Array.from(urls);
+}
+
+// FIX: súbory typu "xxx_full.webp" sú sprievodný "zväčšovací" variant k
+// "xxx.webp" — podľa existujúcej konvencie v projekte (fotky pridané pred
+// zavedením hromadného uploadu) sa nikdy nezapisovali ako vlastný záznam
+// v images.json, frontend si "_full" verziu dopočítaval sám podľa názvu.
+// Bez tejto kontroly hromadný výber oboch súborov (thumb + full) vytvoril
+// dva duplicitné záznamy pre tú istú fotku.
+function isFullVariantFileName(fileName) {
+    return /_full\.[a-z0-9]+$/i.test(fileName);
+}
+
 export function renderImageTab() {
     const container = document.getElementById('tab-image');
     if (!container) return;
 
     // Získať všetkých parazitov
     const parasites = state.parasites || [];
+    // FIX: zoznam obrázkov na parazita počítame raz (zlúčené state.images + p.images)
+    // a znovu použijeme pri vykreslení riadkov aj pri súčte v hlavičke.
+    const imagesByParasite = new Map(parasites.map(p => [p.id, getImagesForParasite(p.id)]));
+    const totalImages = Array.from(imagesByParasite.values()).reduce((acc, arr) => acc + arr.length, 0);
 
     container.innerHTML = `
         <div class="image-admin">
             <div class="image-header">
                 <h3>📷 Správa fotografií</h3>
-                <p>Existujúce obrázky: <strong>${parasites.reduce((acc, p) => acc + (p.images?.length || 0), 0)}</strong></p>
+                <p>Existujúce obrázky: <strong>${totalImages}</strong></p>
                 <p style="font-size:0.9rem;color:#7f8c8d;">
                     <strong>Poznámka:</strong> Nájdite v projekte priečinok <code>public/images/parasites/{id}</code> a nakopírujte do neho fotky. Tieto fotky budú automaticky používané.
                 </p>
@@ -29,7 +59,7 @@ export function renderImageTab() {
                     </thead>
                     <tbody>
                         ${parasites.map(p => {
-                            const imageUrls = p.images || [];
+                            const imageUrls = imagesByParasite.get(p.id) || [];
                             return `
                                 <tr style="border-bottom: 1px solid #ecf0f1;">
                                     <td style="padding: 0.5rem; font-family: monospace; font-size: 0.8rem;">${p.id}</td>
@@ -76,8 +106,21 @@ export function renderImageTab() {
 
             if (files && files.length > 0) {
                 // HROMADNÉ PRIDANIE SÚBOROV
+                // FIX: súbory s "_full" v názve sú sprievodný variant k base
+                // fotke (na zväčšenie), nie samostatná fotka — preskočíme ich,
+                // aby nevznikol duplicitný záznam. Fyzicky ich aj tak treba
+                // nakopírovať na disk vedľa base súboru (frontend si ich
+                // dopočíta podľa názvu), len nedostanú vlastný riadok v JSON.
+                let addedCount = 0;
+                let skippedFullCount = 0;
+
                 for (const file of files) {
                     const fileName = file.name;
+
+                    if (isFullVariantFileName(fileName)) {
+                        skippedFullCount++;
+                        continue;
+                    }
                     
                     // Vytvoríme správnu cestu (kde by súbor mal byť v projekte)
                     const baseUrl = '/public/images/parasites/' + id + '/' + fileName;
@@ -106,9 +149,31 @@ export function renderImageTab() {
                         // --- KRITICKÝ RIADOK ---
                         state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
                     }
+
+                    // FIX: aj state.images musí vedieť o novej fotke, inak sa po
+                    // opätovnom vykreslení tabu (alebo pri exporte) nezobrazí/nezapíše.
+                    if (!state.images.find(img => img.url === baseUrl && img.parasiteId === id)) {
+                        state.images.push({
+                            parasiteId: id,
+                            url: baseUrl,
+                            alt: '',
+                            caption: '',
+                            credit: '',
+                            dateAdded: new Date().toISOString(),
+                        });
+                    }
+
+                    addedCount++;
                 }
 
-                showToast(`✅ ${files.length} obrázkov bolo pridaných k parazitu "${id}".`, 'success');
+                if (addedCount > 0) {
+                    const skippedNote = skippedFullCount > 0
+                        ? ` (${skippedFullCount}× "_full" variant preskočený — nepotrebuje vlastný záznam, len ho nezabudni nakopírovať na disk vedľa base súboru)`
+                        : '';
+                    showToast(`✅ ${addedCount} obrázkov bolo pridaných k parazitu "${id}".${skippedNote}`, 'success');
+                } else {
+                    showToast(`❌ Vybrané súbory boli len "_full" varianty — tie sa nezapisujú ako samostatný záznam. Vyber aj base súbor (bez "_full").`, 'error');
+                }
                 renderImageTab();
             } else if (url) {
                 // Pridanie cez URL
@@ -133,6 +198,22 @@ export function renderImageTab() {
                 if (parasite) {
                     if (!parasite.images) parasite.images = [];
                     parasite.images.push(newImageUrl);
+
+                    // FIX: chýbal rebuild workingCopy pre vetvu "pridanie cez URL"
+                    // (multi-file vetva to robila, táto nie — nekonzistentné so zvyškom appky)
+                    state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
+                }
+
+                // FIX: aj state.images musí vedieť o novej fotke
+                if (!state.images.find(img => img.url === newImageUrl && img.parasiteId === id)) {
+                    state.images.push({
+                        parasiteId: id,
+                        url: newImageUrl,
+                        alt: '',
+                        caption: '',
+                        credit: '',
+                        dateAdded: new Date().toISOString(),
+                    });
                 }
 
                 showToast(`✅ Obrázok cez URL bol pridaný.`, 'success');
@@ -158,7 +239,15 @@ export function renderImageTab() {
             const parasite = state.parasites.find(p => p.id === id);
             if (parasite) {
                 parasite.images = [];
+                // FIX: bez tohto sa zmazanie neprejavilo v exporte, lebo zipExport.js
+                // sťahuje dáta zo state.workingCopy, nie zo state.parasites priamo.
+                state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
             }
+
+            // FIX: state.images (zdroj pre database/images.json pri exporte) doteraz
+            // nebol pri mazaní vôbec upravený — fotka by sa "zmazala" len vizuálne
+            // v tomto tabe, ale reálne by prežila v exportovanom images.json.
+            state.images = (state.images || []).filter(img => img.parasiteId !== id);
 
             // Pridanie záznamu k čakajúcim zmenám
             addPendingChange({

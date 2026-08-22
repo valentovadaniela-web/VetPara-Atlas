@@ -270,8 +270,10 @@ export function updatePendingUI() {
             badge = '🗑️';
             label = 'Zmazanie';
         }
+        // FIX #6: hostiteľské zmeny majú "key" namiesto "id" — bez tohto sa v sidebari zobrazovalo "?"
+        const displayLabel = ch.id || ch.key || '?';
         li.innerHTML = `
-            <span><span class="badge-${ch.action}">${badge} ${label}</span> ${ch.id || '?'}</span>
+            <span><span class="badge-${ch.action}">${badge} ${label}</span> ${displayLabel}</span>
             <button class="remove-pending" data-index="${idx}">✕</button>
         `;
         li.querySelector('.remove-pending').addEventListener('click', () => {

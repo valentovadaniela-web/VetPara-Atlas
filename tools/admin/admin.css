@@ -484,6 +484,10 @@ header h1 {
     color: #2980b9;
     font-weight: 600;
 }
+#pending-list li .badge-delete {
+    color: #e74c3c;
+    font-weight: 600;
+}
 
 /* Toggle pre sidebar */
 #sidebar-toggle {

@@ -1,5 +1,62 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.21 Aktuálny stav — doplnené (2026‑08‑22, session: admin nástroj — sidebar badge zmazania, tab Fotografie nezobrazoval fotky, duplicitné _full záznamy, mazanie v tools/captions)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje na §0.6 (otvorené funkčné chyby v `admin.js` z code reviewu, bod 4 — chybný badge pri mazaní) a §0.15/§0.19 (`tools/captions/index.html`). Autorka nahrala `admin.js`, `admin.css`, `imageForm.js`, `hostForm.js`, `bulkExcel.js`, `diff.js`, `index.html`, `zipExport.js`, neskôr aj `tools/captions/index.html` a výpis z `database/images.json`. Žiadny kód sa v tejto session nezapisoval priamo do repozitára — všetko odovzdané ako súbory na stiahnutie v chate.
+
+### 🔴→✅ Bug 1: Sidebar čakajúcich zmien stále vizuálne nekonzistentný pri mazaní (dokončenie §0.6 bodu 4)
+
+Textový label ("🗑️ Zmazanie") sa v nahratom `admin.js` už zobrazoval správne (`FIX #4` bol implementovaný), zvyšné dve nekonzistencie ale ostali:
+
+- `admin.css` nemala definovanú triedu `.badge-delete` (len `.badge-create`/`.badge-update`) → badge bez farebného odlíšenia.
+- `updatePendingUI()` vypisoval `${ch.id || '?'}` — zmeny hostiteľov (`type:'host'`) ale nesú pole `key`, nie `id`, takže sa pri pridaní/zmazaní hostiteľa v sidebari zobrazovalo `🆕 Nový ?` / `🗑️ Zmazanie ?` namiesto mena.
+
+**Oprava:** pridaná `.badge-delete { color:#e74c3c; font-weight:600; }` do `admin.css`; `updatePendingUI()` teraz použije `ch.id || ch.key || '?'`.
+
+### 🔴→✅ Bug 2: Tab "3. Fotografie" nezobrazoval existujúce fotky
+
+`renderImageTab()` v `imageForm.js` čítal fotky výhradne z `p.images` (pole embednuté priamo v zázname parazita v `parasites.json`). Skutočný zdroj fotiek je ale `database/images.json` → `state.images`. Pri `loadData()` sa `p.images` kopírujú DO `state.images` (jednosmerne), nikdy naopak — fotky, ktoré existujú len v `images.json` (bez duplicity v `parasites.json.images`), sa v tabe vôbec nezobrazili, hoci `fetch` prebehol v poriadku (zelený status hore).
+
+**Oprava:** nová funkcia `getImagesForParasite(parasiteId)` zlučuje `state.images` (filtrované podľa `parasiteId`) a `p.images`, deduplikuje podľa URL; použitá aj pre hlavičkové počítadlo, aj pre riadky tabuľky. Popri tom opravené súvisiace nekonzistencie:
+
+- vetva "pridanie cez URL" nerobila rebuild `state.workingCopy` (multi-file vetva áno) — doplnené,
+- pridanie fotky (obe vetvy) teraz zapisuje aj do `state.images`, nielen do `p.images`,
+- "Vymazať všetky" mazalo `p.images` na `state.parasites`, nie na `state.workingCopy` (ktorý reálne exportuje `zipExport.js`), a vôbec nemazalo zo `state.images` → zmazanie by sa vizuálne prejavilo, ale pri exporte by fotka "ožila" naspäť. Opravené: maže z oboch a rebuilduje `workingCopy`.
+
+### 🔴→✅ Bug 3: Duplicitné fotky v galérii (`_full` varianty ako samostatné záznamy)
+
+Autorka nahlásila, že v galérii vidí tú istú fotku 2×. Porovnaním `dateAdded` v poskytnutom výpise `images.json`: staré fotky (2026‑08‑21) majú vždy jeden záznam na fotku; nové (`alaria_alata_adult`, `dateAdded` `2026‑08‑22T15:16:42.607Z`, zhodný pre každý pár) majú pre každú fotku dva záznamy — napr. `alaria_alata_adult_01.webp` aj `alaria_alata_adult_01_full.webp`. Príčina: hromadný (multi-file) upload v `imageForm.js` vytvorí jeden záznam v `images.json` na každý vybraný súbor bez rozlíšenia, že `_full` varianty sú len sprievodný "zväčšovací" súbor k base fotke — podľa existujúcej konvencie z 21.8. sa `_full` nikdy nezapisoval ako vlastný záznam, frontend si ho dopočítaval podľa názvu.
+
+**Oprava:** nová funkcia `isFullVariantFileName()` (regex `/_full\.[a-z0-9]+$/i`) — pri hromadnom výbere súborov sa `_full` súbory automaticky preskočia (nezapíšu sa ako záznam), toast informuje o počte preskočených a pripomína nakopírovať ich fyzicky na disk (databázový záznam nepotrebujú). Ak by boli vybrané výhradne `_full` súbory bez base páru, zobrazí sa chybová hláška namiesto tichého nepridania ničoho.
+
+**Existujúcich 5 duplicitných záznamov (`alaria_alata_adult_0{1..5}_full.webp`) treba vyčistiť ručne** — pozri Bug 4 nižšie (nový nástroj na mazanie).
+
+### 🔴→✅ Bug 4 (pôvodne bod 2. zo zadania autorky): `tools/captions/index.html` neponúkal mazanie fotiek
+
+Nástroj dovoľoval len úpravu `caption`/`alt`/`credit`, mazanie záznamu bolo treba robiť ručne priamo v súbore. Pridané tlačidlo "🗑 Zmazať fotku" ku každému riadku — po potvrdení (s náhľadom URL a upozornením, že fyzický súbor treba zmazať ručne z disku, vrátane prípadného `_thumb`/`_full` variantu) odstráni záznam z poľa `images`; zmena sa prejaví až po stiahnutí a nahradení `database/images.json` (rovnaký princíp ako doteraz pri úprave popiskov).
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/admin.css` | pridaná `.badge-delete` | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/admin.js` | `updatePendingUI()` používa `ch.id \|\| ch.key \|\| '?'` | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/forms/imageForm.js` | `getImagesForParasite()` zlučuje `state.images`+`p.images`; sync `state.images`/`workingCopy` pri pridaní aj mazaní; `isFullVariantFileName()` preskakuje `_full` súbory pri hromadnom uploade | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/captions/index.html` | pridané tlačidlo "Zmazať fotku" + `.btn-danger`/`.btn-sm` štýly | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Naživo overiť všetky 4 opravy v prehliadači (žiadny kód sa ešte nezapisoval do repozitára, len odovzdaný v chate).
+2. **Ručne vyčistiť 5 existujúcich duplicitných `_full` záznamov** pre `alaria_alata_adult` v `database/images.json` cez nové tlačidlo "Zmazať fotku" v `tools/captions/index.html`, stiahnuť a nahradiť súbor v repozitári.
+3. Skontrolovať, či sa podobná `_full` duplicita nevyskytuje aj pri iných objektoch v `images.json` — v tejto session bol nahraný len čiastočný výpis (nie celý súbor), takže nie je vylúčené, že existujú aj inde.
+4. §0.6 body 1 (kontrola duplicity ID voči `pendingChanges`), 2 (`workingCopy` napojený/nie) a 5 (statický `extractUniqueValues`) — v aktuálne nahratom `admin.js` **už vyzerajú opravené** (komentáre `FIX #1`–`FIX #5` priamo v kóde), no nebolo to v tejto session explicitne nezávisle overené/otestované naživo — pri ďalšej príležitosti prejsť a formálne zavrieť v AI_STATUS, ak sa potvrdí funkčnosť.
+
+---
+
 🔥 0.20 Aktuálny stav — doplnené (2026‑08‑22, session: detail parazita — doplnené chýbajúce polia zo schémy + zjednotený vizuál s Morfológiou)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII

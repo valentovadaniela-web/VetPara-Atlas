@@ -102,6 +102,18 @@
   .btn:hover { background: var(--color-secondary-hover); }
   .btn:disabled { background: #94a3b8; cursor: not-allowed; }
 
+  .btn-danger {
+    background: #b91c1c;
+  }
+  .btn-danger:hover { background: #7f1d1d; }
+
+  .btn-sm {
+    min-height: 34px;
+    padding: var(--space-xs) var(--space-md);
+    font-size: 0.8rem;
+    align-self: flex-start;
+  }
+
   .btn-outline {
     background: transparent;
     color: var(--color-text-main);
@@ -334,8 +346,11 @@
   /**
    * Dátový model: pole objektov presne v tvare, ako ho očakáva
    * database/images.json (parasiteId/url/alt/caption/credit/dateAdded).
-   * Nástroj nemení štruktúru ani nepridáva/nemaže polia — iba prepisuje
-   * caption/alt/credit hodnoty podľa toho, čo autorka vyplní.
+   * Nástroj nemení štruktúru polí — iba prepisuje caption/alt/credit
+   * hodnoty podľa toho, čo autorka vyplní, prípadne umožňuje celý
+   * záznam zmazať (tlačidlo "Zmazať fotku"). Zmazanie sa prejaví až
+   * po stiahnutí a nahradení database/images.json — fyzický súbor na
+   * disku (vrátane _thumb/_full variantu) treba zmazať ručne.
    */
   let images = [];
   let originalFileName = "images.json";
@@ -541,6 +556,10 @@
                 <input type="text" id="credit-${realIndex}" data-field="credit" data-index="${realIndex}"
                   value="${escapeHtml(img.credit)}" placeholder="Meno / pracovisko">
               </div>
+
+              <button type="button" class="btn btn-danger btn-sm btn-delete-image" data-index="${realIndex}">
+                🗑 Zmazať fotku
+              </button>
             </div>
           </div>
         `;
@@ -561,6 +580,28 @@
           input.closest(".image-row")?.classList.add("is-dirty");
           updateDirtyCount();
         }
+      });
+    });
+
+    imageList.querySelectorAll(".btn-delete-image").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const index = Number(btn.dataset.index);
+        const record = images[index];
+        if (!record) return;
+
+        const label = record.parasiteId ? `parazita "${record.parasiteId}"` : "tento záznam";
+        const confirmed = confirm(
+          `Naozaj chceš zmazať fotku pre ${label}?\n\n` +
+          `${record.url || "(bez URL)"}\n\n` +
+          `Toto zmaže len záznam v images.json po stiahnutí. Fyzický súbor ` +
+          `(napr. aj jeho _thumb/_full variant) treba potom ešte ručne zmazať ` +
+          `z priečinka public/images/parasites/.`
+        );
+        if (!confirmed) return;
+
+        images.splice(index, 1);
+        setStatus("Fotka bola odstránená zo zoznamu — nezabudni stiahnuť upravený súbor.", true);
+        renderList();
       });
     });
 
