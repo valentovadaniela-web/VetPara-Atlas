@@ -121,6 +121,15 @@ const App = {
             Router.navigate("atlas", objectId);
         };
 
+        // Globálny helper volaný z AtlasPage.js (klik na fotku v detaile
+        // parazita). Presmeruje do Galérie s ID objektu v hashi; Router
+        // ho odovzdá route callbacku "gallery" nižšie, ktorý ho pošle do
+        // GalleryPage.init(objectId) a filter sa predvyplní na tohto
+        // parazita — tak sú vidieť aj jeho ostatné fotky.
+        window.showGalleryForParasite = (objectId) => {
+            Router.navigate("gallery", objectId);
+        };
+
         Router.register("home", () => {
 
             const app = document.getElementById("app");
@@ -245,13 +254,13 @@ const App = {
 
         });
 
-        Router.register("gallery", () => {
+        Router.register("gallery", (objectId) => {
 
             document.body.classList.remove("dark-mode");
 
             const app = document.getElementById("app");
             app.innerHTML = GalleryPage.render();
-            GalleryPage.init();
+            GalleryPage.init(objectId);
 
         });
 

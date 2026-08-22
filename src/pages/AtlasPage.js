@@ -1298,18 +1298,31 @@ const AtlasPage = {
         const parasiteImages = Repository.getImagesForParasite(id);
         const mainImageContainer = document.querySelector(".findings-card");
         
-        // Ak existujú obrázky, zobrazíme prvý a zvyšok pridáme ako galériu
+        // Ak existujú obrázky, zobrazíme prvý a zvyšok pridáme ako galériu.
+        // OPRAVA (2026-08-22): klik na ktorúkoľvek fotku (hlavnú aj
+        // miniatúru) predtým iba prehodil náhľad v rámci tejto stránky
+        // (this.parentElement...src = this.src). Na želanie autorky teraz
+        // namiesto toho prejde do Galérie s filtrom nastaveným na tohto
+        // parazita (window.showGalleryForParasite), kde sú vidieť
+        // všetky jeho fotky pohromade a dajú sa otvoriť v origináli.
         if (parasiteImages.length > 0) {
             const firstImageUrl = parasiteImages[0].url;
             mainImageContainer.innerHTML = `
-                <img src="${firstImageUrl}" class="main-image" alt="${parasiteImages[0].alt || record.latinName}" style="width:100%; height:auto; border-radius:8px;">
+                <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(parasiteImages[0].alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
                 <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
                     ${parasiteImages.slice(1).map(img => `
-                        <img src="${img.url}" alt="${img.alt || ''}" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;" 
-                             onclick="this.parentElement.parentElement.querySelector('.main-image').src = this.src;">
+                        <img src="${img.url}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
                     `).join('')}
                 </div>
             `;
+
+            mainImageContainer.querySelectorAll("img").forEach(imgEl => {
+                imgEl.addEventListener("click", () => {
+                    if (typeof window.showGalleryForParasite === "function") {
+                        window.showGalleryForParasite(id);
+                    }
+                });
+            });
         } else {
             // Ak nie sú žiadne obrázky, zavolá sa pôvodná funkcia
             PrimaryImage.populate("#detail-view");

@@ -114,9 +114,29 @@ const GalleryPage = {
     `;
   },
 
-  async init() {
+  /**
+   * @param {string|null} objectId - ak je zadané (napr. prechod z detailu
+   * parazita cez window.showGalleryForParasite), textový filter objektu sa
+   * predvyplní na latinský názov tohto parazita, takže sa hneď zobrazia
+   * všetky jeho fotky (nielen tá, na ktorú sa kliklo).
+   */
+  async init(objectId = null) {
     await this.loadData();
+
+    if (objectId) {
+      const record = this.state.records.find((r) => r.id === objectId);
+      if (record) {
+        this.state.filterObjectId = record.latinName || record.id;
+      }
+    }
+
     this.bindEvents();
+
+    const objectInput = document.getElementById("gallery-filter-object");
+    if (objectInput && this.state.filterObjectId) {
+      objectInput.value = this.state.filterObjectId;
+    }
+
     this.renderGrid();
 
     // Rovnaký async načítavací vzor ako AtlasPage.loadHostHierarchy():

@@ -1,5 +1,209 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.16 Aktuálny stav — doplnené (2026‑08‑22, session: potvrdená a opravená skutočná príčina bodov 1–2 z §0.15 — chýbajúci `<link>` na `gallery.css`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje priamo na §0.15 (podozrenie na CSS cesty pri bodoch 1–2 zo zadania §0.13). Autorka nahrala `index.html`.
+
+### 🔴→✅ Skutočná príčina — NÁJDENÁ (hypotéza z §0.15 bola nesprávna)
+
+Hypotéza o absolútnych cestách na CSS **nebola potvrdená** — všetky `<link>` cesty v `index.html` sú relatívne a v poriadku (`src/styles/atlas.css`, `src/css/variables.css`, `src/css/reset.css`, `src/css/typography.css`, `src/css/layout.css`).
+
+**Skutočná príčina je oveľa jednoduchšia:** `<head>` v `index.html` **vôbec neobsahoval `<link>` na `gallery.css`**. Boli tam linknuté `atlas.css`, `variables.css`, `reset.css`, `typography.css`, `layout.css`, ale nie `gallery.css` — súbor teda nikdy nebol súčasťou stránky, bez ohľadu na to, čo v ňom je. To presne vysvetľuje nahlásený vzorec zo screenshotu:
+- Bod 1 (layout) — `.gallery-layout`/`.gallery-grid` (grid, stĺpce, sidebar) sa nikdy neaplikovali → filter aj fotky padli do obyčajného blokového toku na celú šírku.
+- Bod 2 (lightbox) — `.gallery-lightbox` (vrátane `position: fixed`, ktoré ho robí prekrývajúcim panelom) sa nikdy neaplikovalo → kliknutie na fotku síce spustilo JS (`lightbox.style.display = "flex"`), ale bez CSS to vizuálne nepôsobilo ako "zväčšenie fotky".
+- Bod 3 (JS prepojenie detail → Galéria) fungoval, lebo je to čisto JS/import logika, nezávislá od `<link>` tagov.
+
+**Oprava (`index.html`):** pridaný chýbajúci riadok:
+```html
+<link rel="stylesheet" href="src/styles/atlas.css">
+<link rel="stylesheet" href="src/styles/gallery.css">
+```
+
+Žiadny iný súbor sa v tejto session nemenil — `gallery.css` samotný už bol opravený a hotový z §0.14 (max. 2 stĺpce fotiek, `object-fit: contain` v lightboxe), iba sa doteraz nikdy reálne nenačítal.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `index.html` | doplnený chýbajúci `<link rel="stylesheet" href="src/styles/gallery.css">` v `<head>` | ✅ hotové |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť v prehliadači** (po tejto oprave), že sa body 1 a 2 zo zadania §0.13 teraz reálne prejavujú: filter v ľavom sidebari, fotky v 1–2 stĺpcoch, fotka po kliknutí zväčšená v origináli (bez orezania).
+2. Naživo umiestniť a overiť `tools/captions/index.html` z §0.15 (auto-fetch aj manuálne nahratie súboru neboli testované mimo simulácie kódu).
+3. Bod 4 zo zadania §0.13 (kontrola mobilu) — stále čaká na autorku.
+4. Všeobecné poučenie pre ďalšie session: pri pridávaní nového `*.css` súboru pre novú stránku vždy skontrolovať, že je aj reálne nalinkovaný v `index.html` — v tejto appke `<head>` linkuje CSS súbory ručne (žiadny bundler), takže chýbajúci `<link>` je ľahká a ťažko postrehnuteľná chyba (kód aj markup vyzerajú správne, iba sa CSS nikdy nenačíta).
+
+---
+
+🔥 0.15 Aktuálny stav — doplnené (2026‑08‑22, session: prvá naživo spätná väzba k §0.14 + vytvorený `tools/captions/index.html`)
+
+## ✅ / 🔴 ČO SA ZISTILO V TEJTO SESSII
+
+Autorka po nasadení zmien z §0.14 prvýkrát otestovala appku naživo a poslala screenshot Galérie. Spätná väzba k jednotlivým bodom:
+
+1. 🔴 **NEOPRAVENÉ** — layout je stále rovnaký ako predtým: filter je roztiahnutý na celú šírku stránky (nie v ľavom sidebari) a fotky sú pod ním v jednom stĺpci na celú šírku.
+2. 🔴 **NEOPRAVENÉ** — kliknutím na fotku v Galérii sa nič nezväčší (lightbox sa nezobrazuje / neotvorí v origináli).
+3. ✅ **funguje korektne** — prepojenie detail parazita → Galéria s filtrom na toho parazita (§0.14 bod 3).
+4. ⬜ zatiaľ neskontrolované autorkou (mobil).
+5. 🔴 `tools/captions/index.html` z §0.14 **neexistoval** — v §0.14 bol iba navrhnutý slovom v tomto dokumente, nebol reálne vytvorený ako súbor. **Opravené v tejto session (pozri nižšie).**
+
+### 🔴→🟡 Podozrenie na príčinu bodov 1 a 2 (zatiaľ NEPOTVRDENÉ, čaká na `index.html`)
+
+Body 1 a 2 sú výhradne CSS zmeny (`gallery.css`, hotové už v §0.14). Bod 3 je výhradne JS zmena (`App.js`/`GalleryPage.js`/`AtlasPage.js`, tiež §0.14) a funguje. Zo screenshotu je navyše vidno, že sa neaplikuje ani základné `.card` orámovanie (definované v `layout.css`, malo by platiť globálne) — vyzerá to, akoby sa na stránke Galérie nenačítaval takmer žiadny vlastný CSS súbor.
+
+**Pracovná hypotéza:** `index.html` pravdepodobne linkuje CSS súbory absolútnou cestou (začínajúcou `/`). Appka beží na GitHub Pages pod podcestou `/VetPara-Atlas/...` (rovnaký problém, kvôli ktorému má `DatabaseService.js` už dynamický `basePath` pre `database/...` a prečo pravidlo §3.5 vyžaduje relatívne cesty bez úvodnej lomky pre `public/...`). Ak `<link>` na CSS používa absolútnu cestu, na GitHub Pages by to spôsobilo 404 na CSS súboroch, zatiaľ čo relatívne JS `import`y (`main.js` → `App.js` → ...) fungujú ďalej normálne — presne vzorec, ktorý autorka nahlásila (JS OK, CSS OK vôbec neaplikované).
+
+**Ďalší krok (blokované, čaká sa na súbor):** vyžiadaný `index.html` od autorky, aby sa dalo overiť/opraviť. **V tejto session ešte nedodaný — treba dourobiť v ďalšej session ako prvé, predtým než sa čokoľvek ďalšie mení v `gallery.css`/`atlas.css`.**
+
+### ✅ Vytvorený `tools/captions/index.html` (bod 5 zo zadania v §0.13/§0.14)
+
+Samostatná statická HTML stránka, presne podľa návrhu z §0.14 ("najjednoduchšie" riešenie) — beží celá v prehliadači, žiadny backend, žiadny zápis do repozitára (v súlade s pravidlom §3.6):
+
+- **Načítanie:** skúsi automaticky nájsť `database/images.json` cez relatívny `fetch()` (funguje pri spustení cez Live Server/GitHub Pages, ak súbor zostane v `tools/captions/`); ak to zlyhá (napr. otvorené priamo cez `file://`, kde prehliadače `fetch()` na lokálne súbory blokujú), autorka použije tlačidlo "Vybrať súbor ručne…" (`<input type="file">`, číta sa cez `FileReader`, nikam sa needuploaduje).
+- **Editácia:** zoznam všetkých fotiek s náhľadom (rovnaké `resolveImageUrl()` pravidlo ako `PrimaryImage.js`/`GalleryPage.js` — odstráni úvodnú lomku), pre každú editovateľné polia `caption` / `alt` / `credit`; textové hľadanie podľa ID objektu/popisu/alt textu; upravené riadky sú vizuálne odlíšené (modré orámovanie) a spočítané v spodnej lište.
+- **Export:** tlačidlo "Stiahnuť upravený images.json" vygeneruje JSON v presne rovnakej štruktúre ako originál (žiadne pridané/odobraté polia, iba prepísané `caption`/`alt`/`credit`) a stiahne ho pod pôvodným názvom súboru — autorka ho ručne nahradí v `database/images.json` (rovnaký manuálny krok ako pri nahrávaní fotiek).
+- Vlastný CSS priamo v súbore (žiadna závislosť na `atlas.css`/`gallery.css`), farby/písmo zladené s vizuálom appky (`--color-primary`, `--color-secondary` atď. prevzaté z `variables.css`), min. 44px dotykové ciele, `focus-visible` outline.
+
+Overené: extrahovaný `<script>` blok syntax-checknutý cez `node --check` — bez chýb. **NEVYKONANÉ:** naživo overenie v prehliadači (auto-fetch cesty ani manuálne nahratie súboru neboli testované mimo simulácie kódu).
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session, v poradí priority)
+
+1. **Vyžiadať a skontrolovať `index.html`** — potvrdiť/vyvrátiť hypotézu o absolútnych cestách na CSS, opraviť podľa nálezu. Toto je teraz blokujúci krok pre body 1 a 2 zo zadania v §0.13.
+2. Po oprave CSS ciest naživo overiť v prehliadači, že sa filter presunul do ľavého sidebaru, fotky sú v 1–2 stĺpcoch a lightbox zobrazuje fotku v origináli bez orezania.
+3. Naživo overiť `tools/captions/index.html` (auto-fetch aj manuálne nahratie súboru), umiestniť ho do repozitára do `tools/captions/`.
+4. Bod 4 zo zadania (kontrola mobilu) — čaká na autorku.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/captions/index.html` | **nový súbor** — samostatný editor popiskov fotiek (caption/alt/credit) bez potreby VS Code, žiadny backend | ✅ hotové (kód), ⬜ naživo neoverené |
+| `gallery.css`, `App.js`, `GalleryPage.js`, `AtlasPage.js` | bezo zmeny v tejto session — čaká sa na `index.html`, aby sa dala potvrdiť/vyvrátiť príčina bodov 1–2 | — bez zmeny |
+
+---
+
+🔥 0.14 Aktuálny stav — doplnené (2026‑08‑22, session: layout Galérie, lightbox v origináli, prepojenie detail parazita → Galéria, kontrola mobilu, návrh zadávania popiskov)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+Nadväzuje na §0.13 (nové zadanie, 5 bodov). Nahraté a upravené súbory: `GalleryPage.js`, `AtlasPage.js`, `App.js`, `gallery.css`. `Repository.js`, `HostFilterTree.js`, `Router.js`, `ApplicationState.js`, `PrimaryImage.js`, `DatabaseService.js`, `atlas.css` a základné CSS (`layout.css`, `reset.css`, `typography.css`, `variables.css`) boli tiež nahraté a skontrolované, ale bezo zmeny.
+
+### 1. ✅ Layout Galérie — filter vľavo, fotky max. 2 stĺpce (`gallery.css`)
+
+**Zistenie:** filter už bol v `GalleryPage.js`/`gallery.css` umiestnený v ľavom sidebari rovnako ako v Atlase (`.gallery-layout { grid-template-columns: 280px 1fr }` od 992px) — to už bolo hotové z predošlej session. Skutočný problém bol `.gallery-grid { grid-template-columns: repeat(auto-fill, minmax(260px/280px, 1fr)) }`, ktorý pri širokom pravom paneli (~1080px na desktope) vytváral **3 stĺpce** úzkych kariet namiesto 1–2, čo pôsobilo ako "veľa prázdneho miesta" okolo drobných kariet.
+
+**Oprava:** `.gallery-grid` prepísaný na pevný počet stĺpcov (rovnaká filozofia ako `.grid-results` v Atlase): 1 stĺpec do 480px šírky, **presne 2 stĺpce** od 480px vyššie (vrátane desktopu) — žiadny auto-fill, žiadne 3+ stĺpce. Staré prepisy v `@media (min-width:992px)` a `@media (max-width:700px)` boli odstránené, keďže sú teraz nadbytočné.
+
+### 2. ✅ Fotka v Galérii po kliknutí — originálna veľkosť (`gallery.css`)
+
+**Príčina:** `.gallery-lightbox-image` mala natvrdo `aspect-ratio: 4/3` + `overflow: hidden` → fotka sa reálne **orezávala** na 4:3 box, ak mal originál iný pomer strán (napr. na výšku).
+
+**Oprava:** box sa teraz prispôsobí obsahu (bez vynúteného pomeru strán, bez orezania). Nová trieda `.gallery-lightbox-img` (v `GalleryPage.js` sa už používala, len nemala štýl) nastavuje `max-width:100%; max-height:75vh; object-fit:contain` — fotka sa zobrazí v origináli, zmenší sa iba natoľko, aby sa zmestila na obrazovku (nikdy sa neorezáva ani nedeformuje). Mimochodom doplnená aj chýbajúca `.gallery-thumb-img` (predtým bez akéhokoľvek CSS, teraz `object-fit:cover` pre úhľadné miniatúry v karte).
+
+### 3. ✅ Prepojenie: klik na fotku v detaile parazita → Galéria s filtrom na toho parazita
+
+**Predtým:** klik na miniatúru v detaile (`AtlasPage.showDetail()`) iba prehodil `src` hlavného náhľadu **v rámci tej istej stránky** (`this.parentElement...src = this.src`) — do Galérie sa vôbec neprechádzalo.
+
+**Riešenie (rovnaký vzor ako existujúci `window.showAtlasDetail`):**
+- **`App.js`** — pridaný nový globálny helper `window.showGalleryForParasite(objectId)`, ktorý zavolá `Router.navigate("gallery", objectId)`. Route `"gallery"` teraz prijíma `objectId` a posiela ho do `GalleryPage.init(objectId)`.
+- **`GalleryPage.js`** — `init(objectId = null)`: ak je `objectId` zadané, nájde príslušný záznam a predvyplní `state.filterObjectId` jeho `latinName` (fallback `id`) ešte pred prvým `renderGrid()`; textový filter v sidebari sa zároveň predvyplní tou istou hodnotou (`#gallery-filter-object`).
+- **`AtlasPage.js`** — klik na hlavnú fotku aj ktorúkoľvek miniatúru v detaile parazita teraz volá `window.showGalleryForParasite(id)` namiesto pôvodného lokálneho prehadzovania náhľadu — používateľ sa dostane priamo do Galérie, kde vidí všetky fotky daného parazita pohromade a môže ich otvoriť v origináli (bod 2 vyššie).
+
+Overené simuláciou v Node.js (bez DOM/prehliadača): `filterObjectId` sa správne nastaví z `record.latinName` pri platnom ID, ostáva prázdne pri `objectId = null` aj pri neexistujúcom ID (žiadny pád).
+
+### 4. ✅ Kontrola vhodnosti pre mobil
+
+Skontrolované: `.gallery-layout` sa na mobile/tablete (`<992px`) rovnako ako Atlas skladá do jedného stĺpca (filter hore, fotky dole) — to je zámerne konzistentné so správaním Atlasu (`.database-layout`), ktorý žiadny osobitný "skryť filter" prepínač na mobile nemá. Hierarchický strom hostiteľov je defaultne zbalený (`<details>` bez `open`, kým nie je nič zaškrtnuté) — nezaberá veľa miesta pri prvom zobrazení. Kontrolné body (dotykové ciele checkboxov 44px, zatváracie tlačidlo lightboxu 44×44px) už boli v poriadku z predošlej session.
+
+**Doplnené v tejto session:** nová 2-stĺpcová (namiesto 3-stĺpcovej) mriežka fotiek a `object-fit` na miniatúrach/lightboxe (body 1–2) zároveň zlepšujú aj mobilné/tabletové zobrazenie — predtým sa na užších desktop/tablet šírkach mohli objaviť veľmi úzke karty.
+
+⚠️ **NEVYKONANÉ:** naživo overenie v reálnom prehliadači (mobil aj desktop) — len statická kontrola CSS/JS a simulácia v Node.js.
+
+### 5. 🟡 Návrh riešenia — zadávanie popiskov k fotkám bez VS Code (zatiaľ NEIMPLEMENTOVANÉ)
+
+Appka beží staticky na GitHub Pages bez backendu (pravidlo §3.6) — akýkoľvek nástroj preto nemôže zapisovať priamo do `images.json` v repozitári, iba vygenerovať výstup, ktorý si autorka manuálne skopíruje/nahradí. Navrhované riešenie, ktoré s týmto počíta a nadväzuje na už schválený Admin formulár (Priorita č. 1, `docs/2026-08-19_admin-formular-specifikacia.md`):
+
+- **Najjednoduchšie (odporúčané ako prvý krok):** samostatná statická HTML stránka `tools/captions/index.html` (rovnaký vzor ako plánovaný `tools/admin/index.html`) — autorka do nej vloží/vyberie aktuálny `images.json` (napr. cez `<input type="file">`, číta sa lokálne v prehliadači, nikam sa needuploaduje), pre každú fotku sa zobrazí náhľad + editovateľné polia `caption`/`alt`/`credit`, a tlačidlo "Stiahnuť upravený images.json" vygeneruje nový súbor na stiahnutie — ten potom autorka nahradí v `database/images.json` (rovnaký manuálny krok ako pri fotkách samotných).
+- **Dlhodobo:** zjednotiť s pripravovaným Admin formulárom — pri nahrávaní/zázname fotky rovno v tom istom formulári vyplniť aj `caption`, nie ako samostatný nástroj.
+
+**Otvorené pre ďalšiu session:** potvrdiť s autorkou, či chce najprv rýchly samostatný nástroj (`tools/captions`), alebo počkať a spraviť to rovno v rámci Admin formulára (Priorita č. 1) — od toho sa odvíja, čo sa implementuje ďalej.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `gallery.css` | `.gallery-grid` prepísaný z auto-fill na pevné 1/2 stĺpce; `.gallery-lightbox-image`/`.gallery-lightbox-img` prerobené z orezávajúceho 4:3 boxu na `object-fit:contain` (originál, bez orezania); doplnená chýbajúca `.gallery-thumb-img` | ✅ hotové |
+| `App.js` | nový globálny helper `window.showGalleryForParasite(objectId)`; route `"gallery"` prijíma `objectId` a posiela ho do `GalleryPage.init()` | ✅ hotové |
+| `GalleryPage.js` | `init(objectId)` predvyplní textový filter objektu latinským názvom parazita pri prechode z detailu | ✅ hotové |
+| `AtlasPage.js` | klik na fotku v detaile parazita presmeruje do Galérie (`window.showGalleryForParasite`) namiesto pôvodného lokálneho prehadzovania náhľadu | ✅ hotové |
+| — | Bod 5 (zadávanie popiskov) — iba návrh, zatiaľ neimplementované, čaká na rozhodnutie autorky | 🟡 otvorené |
+
+⚠️ **Dôležité pre ďalšiu session:** rovnako ako v §0.13, žiadny z bodov vyššie nebol naživo overený v prehliadači — iba statickou kontrolou kódu a simuláciou v Node.js.
+
+---
+
+🔥 0.13 Aktuálny stav — doplnené (2026‑08‑22, session: oprava nefunkčného filtra hostiteľa v Galérii + zdieľaná komponenta `HostFilterTree.js`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Filter hostiteľa v Galérii nefungoval. Predošlý predpoklad v tomto dokumente (§0.2, §2, §3 bod 7) — že ide iba o čakanie na doplnenie `host` hodnôt do `images.json` — **bol nesprávny a je týmto nahradený**. Skutočná príčina je štrukturálna.
+
+### 🔴→✅ Príčina — NÁJDENÁ A OPRAVENÁ
+
+`images.json` v novom formáte **nikdy nemalo pole `host`** — záznam fotky obsahuje len `parasiteId/url/alt/caption/credit/dateAdded`. Informáciu o hostiteľovi nesie samotný parazit (`hostGroups`/`hosts` v `parasites.json`), nie fotka. Pôvodný filter v Galérii preto porovnával pole, ktoré v dátach neexistuje.
+
+**Oprava:**
+- **Nový zdieľaný súbor `src/components/HostFilterTree.js`** — obsahuje presne tú istú rekurzívnu logiku viacúrovňového rozbaľovacieho stromu, akú mal doteraz iba `AtlasPage.js` (accordiony, hromadný výber celej kategórie, indeterminate stav). Čisto funkčný modul (render + bind cez callback), znovupoužiteľný z ktorejkoľvek stránky.
+- **`AtlasPage.js`** — pôvodná stromová logika (`buildHostChildrenMap`, `getHostHierarchyRoots`, `renderHostNode`, `bindHostGroupSelectors`, `updateHostGroupSelectStates`) odstránená a nahradená delegovaním na `HostFilterTree.js`. Výstupný markup aj správanie zostávajú 1:1 identické.
+- **`GalleryPage.js`** — filter hostiteľa prerobený z textového inputu na rovnaký accordion strom ako v Atlase:
+  - `state.filterHost` (string) → `state.filterHosts` (pole vybraných hostiteľov)
+  - pridané `loadHostHierarchy()` (rovnaký bezpečný fetch vzor ako v Atlase)
+  - `getFilteredImages()` teraz nájde záznam parazita cez `img.parasiteId` a porovná `Repository.resolveHosts(record)` voči vybraným hostiteľom — **toto je skutočná oprava**
+  - filter umiestnený v ľavom sidebari, presne tam kde bol pôvodný textový filter
+- **`gallery.css`** — pridané len ID-scoped rozloženie `#gallery-filter-host`; vizuálne štýly accordionu (`.host-accordion`, `.checkbox-group`...) sa preberajú z `atlas.css`, keďže sú globálne a neprefixované — netreba ich duplikovať.
+
+### Overenie
+
+Skontrolované `Repository.js` proti predpokladom a spustená end-to-end simulácia s reálnym `Repository.js` + `HostFilterTree.js`:
+- `Repository.getAll()`, `Repository.loadHostHierarchy()`, `Repository.resolveHosts(record)` majú presne také signatúry a správanie, aké boli predpokladané.
+- `resolveHosts()` číta internú kópiu `this.hostHierarchy`, naplnenú výhradne cez `Repository.loadHostHierarchy()` — v `GalleryPage.init()` sa táto metóda volá (`await Repository.loadHostHierarchy();`) pred akýmkoľvek pokusom o rozbaľovanie hostiteľov, poradie volaní je správne.
+- Simulácia (syntetické dáta, nezmenený reálny `Repository.js`): `resolveHosts(p1, hostGroups:["Plazy"])` → `['Jašterica','Gekon','Jaštery','Korytnačka']`; `resolveHosts(p2, hosts:["Pes"])` → `['Pes']`. Filter so zvoleným hostiteľom "Jašterica" (list vnorený pod Plazy → Jaštery) správne vrátil iba fotku p1 — filter teraz funguje aj pre záznamy priradené len cez skupinu, nielen cez explicitné `hosts`.
+- Vedľajší postreh (nie regresia): v testovacom `host_hierarchy.json` kľúč `"Pes": null` spôsobí, že sa "Pes" zobrazí ako vlastný jednopoložkový accordion namiesto medzi samostatnými hostiteľmi — rovnaké správanie ako v pôvodnom `AtlasPage.js` (algoritmus je 1:1 prevzatý); v reálnych dátach sa netýka, keďže samostatní hostitelia sa v `host_hierarchy.json` ako kľúče nevyskytujú.
+
+**Záver:** `HostFilterTree.js`, upravený `AtlasPage.js` a `GalleryPage.js` sú plne kompatibilné s reálnym `Repository.js` bez akýchkoľvek úprav.
+
+⚠️ **NEVYKONANÉ (dôležité pre ďalšiu session):** žiadne naživo overenie v prehliadači (Live Server/GitHub Pages) — iba simulácia v Node.js.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/components/HostFilterTree.js` | **nový súbor** — zdieľaná rekurzívna logika viacúrovňového filtra hostiteľa (accordiony, hromadný výber, indeterminate) | ✅ hotové |
+| `src/pages/AtlasPage.js` | pôvodná stromová logika nahradená delegovaním na `HostFilterTree.js`; markup/správanie nezmenené | ✅ hotové |
+| `src/pages/GalleryPage.js` | filter hostiteľa prerobený z textového inputu na accordion strom (`state.filterHosts`, `loadHostHierarchy()`, filtrovanie cez `parasiteId` → `Repository.resolveHosts()`) | ✅ hotové |
+| `gallery.css` | pridané ID-scoped rozloženie `#gallery-filter-host`, vizuálne štýly zdieľané z `atlas.css` | ✅ hotové |
+
+### ⚠️ Dôležitá zmena oproti predošlému stavu dokumentu
+
+Poznámky nižšie v tomto dokumente (§0.2 "filter hostiteľa v Galérii momentálne nemá viditeľný efekt... vyrieši sa prirodzene s dopĺňaním `host` hodnôt", §2 riadok o `GalleryPage.js`, §3 bod 7 "Filter hostiteľa v Galérii NIE JE bug — je to funkcia čakajúca na dáta") **sú zastarané**. Skutočná príčina bola štrukturálna (chýbajúce pole `host` v novom formáte `images.json`, treba čerpať z `parasites.json` cez `parasiteId`), nie chýbajúce dáta. Ponechané v dokumente pre históriu, ale ďalší AI by sa nimi nemal riadiť.
+
+### 🟡 Nové zadanie od autorky (pre ďalšiu session)
+
+1. **Layout Galérie** — fotky momentálne nie sú v prehliadači pod filtrom, je tam veľa zbytočného miesta. Filter dať na ľavú stranu (rovnako ako v Atlase) a fotky napravo do 1–2 stĺpcov.
+2. **Zväčšenie fotky** — po kliknutí na fotku v Galérii zobraziť ju v originálnej veľkosti (lightbox/modal).
+3. **Prepojenie detail parazita → Galéria** — po kliknutí na fotku v detaile parazita prejsť do Galérie s filtrom nastaveným na daného parazita, tak aby boli vidieť aj ostatné jeho fotky.
+4. **Mobilné zobrazenie** — skontrolovať vhodnosť zobrazenia Galérie (vrátane nového filtra a layoutu) pre mobil, prípadne upraviť.
+5. **Zadávanie popisov k fotkám** — vymyslieť spôsob, ako zadávať popisky fotografií bez nutnosti upravovať `images.json` priamo cez VS Code (súvisí s pripravovaným admin formulárom, Priorita č. 1 nižšie).
+
+---
+
 🔥 0.12 Aktuálny stav — doplnené (2026‑08‑22, session: zobrazenie hostiteľov v detaile parazita a v karte zoznamu skrátené na najvyššiu priradenú kategóriu v `AtlasPage.js`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-22, pokračovanie po §0.11)

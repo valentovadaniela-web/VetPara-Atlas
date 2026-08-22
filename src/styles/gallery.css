@@ -160,8 +160,18 @@
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  /* 2026-08-22: pevne max. 2 stĺpce (nie auto-fill), rovnaká logika ako
+     .grid-results v Atlase (atlas.css, min-width:992px). Predtým auto-fill
+     s minmax(260px,1fr) vytváral pri širokom hlavnom paneli (>=992px) až
+     3 stĺpce fotiek a veľa prázdneho priestoru okolo úzkych kariet. */
+  grid-template-columns: 1fr;
   gap: var(--space-md);
+}
+
+@media (min-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .gallery-loading {
@@ -216,6 +226,12 @@
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
   min-height: 120px;
+}
+
+.gallery-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .gallery-thumb-placeholder {
@@ -346,16 +362,30 @@
 }
 
 .gallery-lightbox-image {
+  /* 2026-08-22: predtým malo pevný aspect-ratio:4/3 + overflow:hidden, čo
+     fotku orezávalo na štvorec/obdĺžnik podľa toho, aký mala reálny pomer
+     strán. Teraz sa box prispôsobí obsahu (fotka v origináli/vlastnom
+     pomere strán, nič sa neoreže) — .gallery-lightbox-img nižšie ju len
+     zmenší, ak by sa nezmestila na obrazovku. */
   width: 100%;
-  aspect-ratio: 4 / 3;
   background: var(--color-surface-alt);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   border: 1px solid var(--color-border);
   min-height: 200px;
+}
+
+.gallery-lightbox-img {
+  /* Fotka v origináli — zmenší sa len toľko, aby sa zmestila do dostupného
+     priestoru (šírka kontajnera / 75% výšky okna), nikdy sa neoreže ani
+     nedeformuje (object-fit: contain). */
+  max-width: 100%;
+  max-height: 75vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .gallery-lightbox-placeholder {
@@ -450,9 +480,9 @@
     grid-template-columns: 280px 1fr;
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  }
+  /* Fotky napravo od filtra zostávajú max. na 2 stĺpce (pravidlo vyššie,
+     @media min-width:480px) — rovnaká logika ako .grid-results v Atlase.
+     Žiadny ďalší prepis tu netreba. */
 }
 
 @media (max-width: 700px) {
@@ -460,9 +490,8 @@
     padding: 0 var(--space-sm);
   }
 
-  .gallery-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  }
+  /* Pod 480px platí základné pravidlo .gallery-grid (1 stĺpec) — netreba
+     samostatný prepis, karta má vždy plnú šírku obrazovky. */
 
   .gallery-item-title {
     font-size: var(--fs-sm);
