@@ -678,6 +678,77 @@ button {
     margin-bottom: var(--space-lg);
 }
 
+.specimen-synonyms {
+    font-size: var(--fs-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-bottom: var(--space-sm);
+}
+
+.zoonosis-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    margin-bottom: var(--space-lg);
+    border: 1px solid var(--color-warning);
+    border-radius: var(--radius-md);
+    color: var(--color-warning);
+    font-size: var(--fs-sm);
+    font-weight: 700;
+}
+
+/* Zivotny cyklus / Patologia / Diferencialna diagnostika / Poznamky
+   k hostitelom / Poznamka (detailField()/diagnosisListField()/
+   hostNotesField() v AtlasPage.js) - rovnaky format ako Morfologia
+   (.morphology-card-main / .morph-main-header / .morph-main-content):
+   oramovany box, modry header s nazvom pola, padding na obsah. Zelene
+   fajky (.morph-checkmark) su zamerne pouzite iba v morphologyCard(),
+   tu sa nepouzivaju. */
+.detail-field {
+    overflow: hidden;
+    margin-bottom: var(--space-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+.detail-field h4 {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: var(--space-md);
+    margin: 0;
+    font-weight: 700;
+    font-size: var(--fs-md);
+}
+
+.detail-field-content {
+    padding: var(--space-md);
+}
+
+.detail-field-content p {
+    margin: 0;
+    font-size: var(--fs-sm);
+    color: var(--color-text-main);
+    line-height: 1.5;
+    /* lifeCycle/notes casto obsahuju rucne \n zalomenia riadkov (viď
+       parasites.json) - bez tohto by sa cely dlhy text zlial do jedneho
+       odstavca. */
+    white-space: pre-line;
+}
+
+.detail-field-content ul {
+    list-style: disc;
+    padding-left: var(--space-lg);
+    margin: 0;
+}
+
+.detail-field-content li {
+    font-size: var(--fs-sm);
+    color: var(--color-text-main);
+    margin-bottom: var(--space-xs);
+    line-height: 1.5;
+}
+
 .detail-main-split {
     display: grid;
     grid-template-columns: 1fr;

@@ -1217,6 +1217,8 @@ const AtlasPage = {
                             ${this.escapeHtml(record.latinName ?? record.id)}
                         </h2>
 
+                        ${this.synonymsLine(record.synonyms)}
+
                         <div class="specimen-sub">
                             ${this.escapeHtml(
                                 [record.group, record.taxonomy?.family]
@@ -1225,6 +1227,8 @@ const AtlasPage = {
                                 || `ID: ${record.id}`
                             )}
                         </div>
+
+                        ${this.zoonosisBadge(record.zoonosis)}
 
                         <div class="detail-main-split">
 
@@ -1259,6 +1263,14 @@ const AtlasPage = {
                         </div>
 
                         ${this.morphologyCard(record.diagnosticSigns)}
+
+                        ${this.detailField("Životný cyklus", record.lifeCycle)}
+
+                        ${this.detailField("Patológia", record.pathology)}
+
+                        ${this.diagnosisListField("Diferenciálna diagnostika", record.differentialDiagnosis)}
+
+                        ${this.hostNotesField(record.hostNotes)}
 
                         ${this.detailField("Poznámka", record.notes)}
 
@@ -1480,6 +1492,103 @@ const AtlasPage = {
 
     },
 
+    /**
+     * Zobrazí sa iba ak je record.zoonosis === true (zaškrtnuté v admin
+     * formulári) — pri false/undefined sa nič nevykresľuje, žiadny
+     * negatívny badge ("nie je zoonóza") sa zámerne nezobrazuje.
+     */
+    zoonosisBadge(zoonosis) {
+
+        if (zoonosis !== true) {
+            return "";
+        }
+
+        return `
+            <div class="zoonosis-badge">
+                ⚠️ Zoonóza — prenosné na človeka
+            </div>
+        `;
+
+    },
+
+    /**
+     * Rovnaký typ poľa ako detailField(), ale pre pole reťazcov
+     * (differentialDiagnosis) namiesto jedného textu — vypíše sa ako
+     * odrážkový zoznam. Prázdne/undefined pole sa nezobrazí vôbec.
+     */
+    diagnosisListField(label, items) {
+
+        if (!Array.isArray(items) || items.length === 0) {
+            return "";
+        }
+
+        return `
+            <div class="detail-field">
+                <h4>${label}</h4>
+                <div class="detail-field-content">
+                    <ul>
+                        ${items.map((item) => `<li>${this.escapeHtml(item)}</li>`).join("")}
+                    </ul>
+                </div>
+            </div>
+        `;
+
+    },
+
+    /**
+     * Alternatívne/synonymné latinské názvy (napr. staršie taxonomické
+     * označenie) — pole `synonyms` sa doteraz používalo iba vo fulltext
+     * vyhľadávaní (matchesFulltext()), v detaile sa nikdy nevypisovalo.
+     * Prázdne pole (bežný prípad) sa nezobrazí vôbec.
+     */
+    synonymsLine(synonyms) {
+
+        if (!Array.isArray(synonyms) || synonyms.length === 0) {
+            return "";
+        }
+
+        return `
+            <div class="specimen-synonyms">
+                Synonymá: ${synonyms.map((name) => `<em>${this.escapeHtml(name)}</em>`).join(", ")}
+            </div>
+        `;
+
+    },
+
+    /**
+     * Poznámky špecifické pre jedného konkrétneho hostiteľa (napr.
+     * odchýlka v mikrometrii u daného druhu) — mapa hostiteľ → text.
+     * Kľúče bez neprázdnej hodnoty sa vynechajú; prázdny objekt {}
+     * (bežný prípad) sa nezobrazí vôbec.
+     */
+    hostNotesField(hostNotes) {
+
+        if (!hostNotes || typeof hostNotes !== "object") {
+            return "";
+        }
+
+        const entries = Object.entries(hostNotes)
+            .filter(([, note]) => note !== undefined && note !== null && String(note).trim() !== "");
+
+        if (entries.length === 0) {
+            return "";
+        }
+
+        return `
+            <div class="detail-field">
+                <h4>Poznámky k hostiteľom</h4>
+                <div class="detail-field-content">
+                    <ul>
+                        ${entries.map(([host, note]) => `
+                            <li><strong>${this.escapeHtml(host)}:</strong> ${this.escapeHtml(note)}</li>
+                        `).join("")}
+                    </ul>
+                </div>
+            </div>
+        `;
+
+    },
+
     detailField(label, value) {
 
         if (value === undefined ||
@@ -1491,7 +1600,9 @@ const AtlasPage = {
         return `
             <div class="detail-field">
                 <h4>${label}</h4>
-                <p>${this.escapeHtml(value)}</p>
+                <div class="detail-field-content">
+                    <p>${this.escapeHtml(value)}</p>
+                </div>
             </div>
         `;
 

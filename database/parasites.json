@@ -13,11 +13,11 @@
       "genus": "Alaria",
       "species": "Alaria alata"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Pes",
-      "Mačka"
+    "hostGroups": [
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -32,17 +32,20 @@
     },
     "morphology": {
       "shape": "Vajcovitý",
-      "colour": "Žltozelený",
+      "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, s viečkom"
     },
-    "diagnosticSigns": [],
+    "diagnosticSigns": [
+      "Niekedy nevýrazné viečko",
+      "V čase vylúčenia čerstvým trusom je neembryonované (obsahuje nediferencovanú zoskupenú masu buniek/žĺtkové bunky"
+    ],
     "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
+    "zoonosis": true,
     "images": [],
     "references": [],
-    "notes": "Nevýrazné viečko"
+    "notes": "Na diagnostiku je lepšia sedimentačná metóda."
   },
   {
     "id": "toxascaris_leonina_egg",
@@ -7462,12 +7465,14 @@
       "genus": "Alaria",
       "species": "Alaria alata"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Pes"
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {},
-    "sample": "Trus",
+    "sample": "Črevo",
     "stage": "Dospelý jedinec",
     "group": "Trematoda",
     "methods": [],
@@ -7483,14 +7488,28 @@
       "colour": "Sivobiely",
       "shell": "Bez schránky"
     },
-    "diagnosticSigns": [],
+    "diagnosticSigns": [
+      "Telo je rozdelené na dve časti – predná je rozšírená, pohárikovitá až dvjlaločnatá, zadná časť je valcovitá a dlhšia.",
+      "V prednej časti sa nachádza ústna prísavka a špecifické prídavné orgány na prichytenie k sliznici čreva."
+    ],
     "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "images": [],
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
+    "zoonosis": true,
+    "images": [
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01_full.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02_full.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03_full.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04_full.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05.webp",
+      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05_full.webp"
+    ],
     "references": [],
-    "notes": "Predok plochý"
+    "notes": ""
   },
   {
     "id": "mesocestoides_sp_egg",
@@ -11378,10 +11397,11 @@
       "genus": "Alaria",
       "species": "Alaria alata"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Ošípaná"
+    "hostGroups": [
+      "Obojživelníky",
+      "Ošípané, diviaky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Mesocerkária",
@@ -11401,9 +11421,9 @@
     },
     "diagnosticSigns": [],
     "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka",
+    "zoonosis": true,
     "images": [],
     "references": [],
     "notes": "V svalovine a priľahlom tuku"

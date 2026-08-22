@@ -1,5 +1,89 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.20 Aktuálny stav — doplnené (2026‑08‑22, session: detail parazita — doplnené chýbajúce polia zo schémy + zjednotený vizuál s Morfológiou)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že detail parazita nezobrazuje všetko, čo sa vyplní v admin formulári — konkrétne spomenula Patológiu, Životný cyklus a zaškrtnutie zoonózy. Nahrané a skontrolované súbory: `AtlasPage.js`, `parasites.json`, `02_DATABASE_SPECIFICATION.md`.
+
+### 🔴→✅ Príčina — polia existovali v dátach, ale `showDetail()` ich nikdy nevykresľoval
+
+`AtlasPage.js` mal detail rozdelený do pomocných blokov (`miniBox`, `quadBox`, `morphologyCard`, `detailField`...), no nikde nevolal `record.pathology`, `record.lifeCycle`, `record.zoonosis`, `record.differentialDiagnosis`, `record.hostNotes` ani `record.synonyms` — hoci v `parasites.json` reálne sú (overené na `alaria_alata_egg`, ktorý má vyplnený dlhý `lifeCycle` text s ručnými zalomeniami riadkov). Nešlo teda o chybu v ukladaní dát z admin formulára, iba v tom, čo sa vypisuje do HTML detailu.
+
+### ✅ Doplnené polia do `showDetail()` (v poradí na stránke)
+
+1. **Synonymá** (`record.synonyms`) — nový riadok kurzívou hneď pod latinským názvom (`synonymsLine()`). Prázdne pole (bežný prípad) sa nezobrazí.
+2. **Zoonóza** (`record.zoonosis`) — nový badge pod `.specimen-sub` (`zoonosisBadge()`), zobrazí sa **iba** ak je `zoonosis === true`; pri false/undefined nič (žiadny "nie je zoonóza" text).
+3. **Životný cyklus** a **Patológia** (`record.lifeCycle`, `record.pathology`) — cez existujúci `detailField()` helper, za `morphologyCard()`.
+4. **Diferenciálna diagnostika** (`record.differentialDiagnosis`) — nová funkcia `diagnosisListField()` (rovnaký vzor ako `detailField`, ale pre pole reťazcov, vypíše odrážkový zoznam).
+5. **Poznámky k hostiteľom** (`record.hostNotes`) — nová funkcia `hostNotesField()`, mapa hostiteľ→text sa vypíše ako zoznam `Hostiteľ: text`; kľúče s prázdnou hodnotou sa preskočia.
+
+Všetky nové bloky sa pri prázdnych/chýbajúcich dátach vôbec nevykreslia (rovnaký vzor ako existujúce `miniBox`/`detailField`).
+
+### ✅ Zjednotený vizuál — `Životný cyklus`/`Patológia`/`Poznámka` (+ Diferenciálna diagnostika a Poznámky k hostiteľom) teraz vyzerajú ako Morfológia
+
+Na žiadosť autorky (modré pole s nadpisom, veľkosť fontu, orámovanie — rovnaký formát ako `Morfológia`, zelené fajočky ale **iba** pre Morfológiu): `.detail-field` v `atlas.css` prerobené na rovnaký box ako `.morphology-card-main`/`.morph-main-header`/`.morph-main-content` — orámovaný box, modrý header (`--color-primary`, biely text), padding na obsah (`.detail-field-content`). Zelené fajočky (`.morph-checkmark`) ostávajú definované a použité výhradne v `morphologyCard()`.
+
+Keďže `diagnosisListField()` aj `hostNotesField()` používajú tú istú triedu `.detail-field` (kvôli vizuálnej konzistencii), zmena formátu sa preniesla aj na Diferenciálnu diagnostiku a Poznámky k hostiteľom, nielen na pôvodne spomenuté tri polia — autorka o tom bola informovaná, čaká sa jej potvrdenie/pripomienka.
+
+**Bonusová oprava (súvisiaca):** `record.lifeCycle`/`record.notes` v dátach často obsahujú ručné `\n` zalomenia riadkov — bez CSS úpravy by sa dlhý text zlial do jedného odstavca. Pridané `white-space: pre-line` na `.detail-field-content p`.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | doplnené volania `synonymsLine()`, `zoonosisBadge()`, `detailField("Životný cyklus"...)`, `detailField("Patológia"...)`, `diagnosisListField()`, `hostNotesField()` do `showDetail()`; pridané 4 nové pomocné funkcie | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/styles/atlas.css` | `.detail-field` prerobené na orámovaný box s modrým headerom (rovnaký vzor ako Morfológia); pridané `.detail-field h4`, `.detail-field-content` (+ `p`/`ul`/`li`), `.zoonosis-badge`, `.specimen-synonyms` | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť v prehliadači**, že sa všetkých 6 nových polí zobrazuje správne pri objektoch, ktoré majú dáta vyplnené (napr. `alaria_alata_egg` pre Životný cyklus), a že sa nevykresľujú (nie prázdny box) pri objektoch, kde dáta chýbajú.
+2. Potvrdiť s autorkou, či jej vyhovuje, že Diferenciálna diagnostika a Poznámky k hostiteľom teraz majú rovnaký "modrý box" formát ako Morfológia/Životný cyklus/Patológia/Poznámka (zdieľajú triedu `.detail-field`), alebo ich má mať inak.
+3. Overiť vizuálne zalomenie dlhého `lifeCycle` textu (`white-space: pre-line`) na reálnych dátach v prehliadači — najmä dlhý text pri `alaria_alata_egg`.
+
+---
+
+🔥 0.19 Aktuálny stav — doplnené (2026‑08‑22, session: `tools/captions/index.html` — oprava cesty k fotkám + odkaz z hlavného menu)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje na §0.15 (vytvorenie `tools/captions/index.html`, naživo neoverené). Autorka prvýkrát otestovala nástroj naživo: JSON dáta (a teda aj popisky) sa načítali, ale náhľady fotiek nie. Nahrané a skontrolované súbory v tejto session: `tools/captions/index.html`, `App.js`, `Router.js`, `index.html` (koreňový).
+
+### 🔴→✅ Príčina a oprava — `tools/captions/index.html`
+
+`resolveImageUrl()` v nástroji odstraňoval len úvodnú lomku (rovnaká konvencia ako `PrimaryImage.js`/`GalleryPage.js`) — to ale funguje len appke, ktorá beží z koreňa repozitára. `tools/captions/index.html` je vnorený o dva priečinky nižšie, takže cesta `public/images/parasites/...` sa prehliadaču vyhodnotila ako `tools/captions/public/images/parasites/...` → 404. JSON sa načítal normálne, lebo `tryAutoLoad()` už mal explicitne správnu relatívnu cestu (`../../database/images.json`).
+
+**Oprava:** pridaná premenná `imageBasePath` (predvolene `"../../"`), ktorá sa v `tryAutoLoad()` prepíše presne podľa toho, ktorá kandidátna cesta k `images.json` reálne zabrala (`path.replace(/database\/images\.json$/, "")`) — takže prefix pre fotky vždy zodpovedá skutočnému umiestneniu, nielen predpokladu. `resolveImageUrl()` teraz vráti `imageBasePath + cleaned`.
+
+Poznámka: pri manuálnom nahratí súboru cez "Vybrať súbor ručne…" ostáva `imageBasePath` na predvolenej hodnote `"../../"` (FileReader nevie zistiť adresár, z ktorého bola stránka otvorená) — zodpovedá zdokumentovanému umiestneniu nástroja.
+
+### ✅ Pridaný odkaz na nástroj do hlavného menu (koreňový `index.html`)
+
+Vedľa existujúceho odkazu na Admin pridaný rovnaký typ odkazu:
+```html
+<a class="nav-link" href="tools/captions/index.html" target="_blank">📝 Popisky fotiek</a>
+```
+Rovnaký vzor ako Admin — `target="_blank"`, relatívna cesta bez úvodnej lomky, mimo hash routingu appky (nie je to route v `Router.js`/`App.js`, tie sa nemenili).
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/captions/index.html` | pridaná `imageBasePath`, odvodzovaná z úspešnej kandidátnej cesty v `tryAutoLoad()`; `resolveImageUrl()` ju použije ako prefix | ✅ hotové (kód), ⬜ naživo neoverené |
+| `index.html` (koreňový) | pridaný nav odkaz „📝 Popisky fotiek" na `tools/captions/index.html` vedľa Admin odkazu | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť**, že sa po tejto oprave fotky v `tools/captions/index.html` reálne načítajú (cez auto-load aj cez manuálny výber súboru).
+2. Naživo overiť, že nový odkaz „📝 Popisky fotiek" v hlavnom menu funguje a otvára nástroj v novej karte.
+3. Bod z §0.15 stále otvorený: umiestniť `tools/captions/index.html` reálne do `tools/captions/` v repozitári (ak sa tak ešte nestalo).
+
+---
+
 🔥 0.18 Aktuálny stav — doplnené (2026‑08‑22, session: oprava „biely priestor okolo fotky" v detaile parazita — `.findings-card`/`.primary-image-*` v `atlas.css`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
