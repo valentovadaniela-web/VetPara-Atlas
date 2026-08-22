@@ -1,5 +1,41 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.23 Aktuálny stav — doplnené (2026‑08‑22, session: Detail parazita na mobile — otváral sa v strede stránky namiesto na začiatku + fotka mala veľký prázdny rám nad/pod)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila dva samostatné mobilné problémy v Detaile parazita: (1) fotka je vo veľkom ráme s veľa zbytočným priestorom nad a pod; (2) stránka sa po otvorení detailu neotvára na začiatku, ale scrollnutá niekde medzi Životný cyklus a Patológiu. Nahraté a skontrolované súbory: `AtlasPage.js`, `atlas.css`.
+
+### 🔴→✅ Bug 1: Detail sa neotváral na začiatku stránky
+
+Príčina: appka je SPA — `showDetail()` iba prepíše `app.innerHTML`, žiadny skutočný page-load. Prehliadač si preto po prekreslení ponechá **starú scroll pozíciu** z toho, ako veľmi bol odscrollovaný zoznam v Atlase pred kliknutím na záznam. Nešlo teda o poradie polí v detaile (Životný cyklus/Patológia boli len náhodou v zornom poli) — miesto otvorenia bolo čisto dôsledkom predchádzajúceho scrollu.
+
+**Oprava:** `window.scrollTo(0, 0)` pridaný hneď po vykreslení detailu v `showDetail()`.
+
+### 🔴→✅ Bug 2: Fotka vo veľkom ráme na mobile
+
+Príčina: `.findings-card` v `atlas.css` má pevnú `height: 500px` nezávisle od šírky obrazovky. Na desktope (`.detail-main-split` v pomere `1fr 2fr` od `min-width: 768px`) je karta široká a `object-fit: contain` fotku pekne vyplní takmer celých 500px. Pod 768px sa `.detail-main-split` zlomí na jeden stĺpec → karta je úzka, obmedzujúcim rozmerom pre `object-fit: contain` sa stane šírka, fotka sa zmenší podľa nej — ale rám ostáva pevných 500px vysoký → veľký prázdny priestor nad/pod. (Presne ten jav, ktorému sa mal pôvodne zabrániť komentár nad `.primary-image-container`, len počítal iba s desktop layoutom.)
+
+**Oprava:** do existujúceho bloku "12. Mobile doladenie" (`@media (max-width: 700px)`) pridaná výnimka pre `.findings-card`: `height: auto; aspect-ratio: 4/3; min-height: 200px;` — na mobile sa výška karty prispôsobí pomeru strán namiesto pevnej hodnoty.
+
+**⚠️ Pomer `4/3` je odhad** (predpoklad, že mikroskopické fotky sú väčšinou štvorcové/mierne na šírku) — ak by po nahratí sedelo lepšie `1/1` alebo iný pomer, stačí zmeniť jednu hodnotu v `atlas.css`.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | `window.scrollTo(0, 0)` pridaný do `showDetail()` po vykreslení | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/pages/atlas.css` (alebo príslušný CSS súbor) | `.findings-card` dostala mobilnú výnimku (`height: auto; aspect-ratio: 4/3`) v `@media (max-width: 700px)` | ✅ hotové (kód), ⬜ naživo neoverené — pomer strán 4/3 treba vizuálne skontrolovať |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Naživo overiť na mobile (GitHub Pages): detail sa otvára hore, fotka nemá zbytočný prázdny priestor.
+2. Ak pomer strán `4/3` nesedí vizuálne s reálnymi fotkami, doladiť hodnotu `aspect-ratio` v `.findings-card` (mobile media query, `atlas.css`).
+
+---
+
 🔥 0.22 Aktuálny stav — doplnené (2026‑08‑22, session: fotky v Detaile parazita sa nezobrazovali na GitHub Pages — 404 kvôli obídenej `resolveImageUrl()`) — ✅ OPRAVENÉ A NAŽIVO OVERENÉ
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
