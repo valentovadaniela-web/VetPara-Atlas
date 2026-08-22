@@ -502,6 +502,29 @@ const AtlasPage = {
 
     },
 
+    /**
+     * OPRAVA (2026-08-22, na žiadosť autorky): zoznam hostiteľov pre
+     * ZOBRAZENIE (detail parazita, karta v zozname) — NA ROZDIEL od
+     * `Repository.resolveHosts()` (ktorá zámerne rozbaľuje `hostGroups`
+     * na všetky konkrétne druhy kvôli filtrovaniu a fulltextu) tu sa
+     * skupiny NEROZBAĽUJÚ. Ak je záznam priradený napr. k `hostGroups:
+     * ["Plazy"]`, v zobrazení sa má ukázať len "Plazy" — nie všetkých 28
+     * konkrétnych druhov plazov, ktoré pod ňu patria. Konkrétny druh sa
+     * má zobraziť iba vtedy, keď sa parazit skutočne týka LEN jeho — teda
+     * keď je uvedený v `record.hosts` (mimo skupinovej logiky).
+     */
+    getDisplayHosts(record) {
+
+        const groups =
+            Array.isArray(record?.hostGroups) ? record.hostGroups : [];
+
+        const explicitHosts =
+            Array.isArray(record?.hosts) ? record.hosts : [];
+
+        return [...new Set([...groups, ...explicitHosts])];
+
+    },
+
     formatHosts(hosts) {
 
         if (!Array.isArray(hosts) || hosts.length === 0) {
@@ -1212,7 +1235,7 @@ const AtlasPage = {
                 <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
                 <p>
                     <strong>Hostiteľ:</strong>
-                    ${this.escapeHtml(this.formatHosts(Repository.resolveHosts(record)) || "—")}
+                    ${this.escapeHtml(this.formatHosts(this.getDisplayHosts(record)) || "—")}
                     |
                     <strong>Materiál:</strong>
                     ${this.escapeHtml(record.sample || "—")}
@@ -1496,7 +1519,7 @@ const AtlasPage = {
 
                             <div class="side-boxes">
 
-                                ${this.miniBox("Hostiteľ", this.formatHosts(Repository.resolveHosts(record)))}
+                                ${this.miniBox("Hostiteľ", this.formatHosts(this.getDisplayHosts(record)))}
 
                                 ${this.miniBox("Materiál", record.sample)}
 

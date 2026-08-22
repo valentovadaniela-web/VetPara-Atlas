@@ -608,23 +608,16 @@
     },
     "hostGroups": [
       "Domáce prežúvavce",
-      "Dravce",
-      "Hady",
       "Hlodavce",
       "Hmyzožravce",
-      "Chameleóny",
-      "Jaštery",
-      "Korytnačky",
-      "Kurovité",
       "Mäsožravce",
       "Nepárnokopytníky",
+      "Ostatné ZOO zvieratá",
       "Ošípané, diviaky",
       "Plazy",
-      "Spevavce",
-      "Vodné vtáky",
       "Voľne žijúce prežúvavce",
       "Vtáky",
-      "Zajace, králiky"
+      "ZOO prežúvavce"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -644,7 +637,10 @@
       "colour": "Zelenkastý",
       "shell": "Hladká"
     },
-    "diagnosticSigns": [],
+    "diagnosticSigns": [
+      "po centrifugácii cytoplazma v tvare polmesiaca",
+      "stena takmer neviditeľná"
+    ],
     "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
