@@ -136,6 +136,25 @@
 }
 
 /* ==========================================================================
+   2b. Hierarchický filter hostiteľov (viacúrovňový accordion)
+   --------------------------------------------------------------------------
+   Rovnaká logika/markup ako v Atlase — pozri
+   src/components/HostFilterTree.js. Samotné vizuálne štýly (.host-accordion,
+   .host-accordion-summary, .checkbox-group, .checkbox-label,
+   .standalone-group, .host-group-select-label, .accordion-* ...) sú
+   definované v atlas.css a platia globálne pre celú appku, takže sa tu
+   zámerne NEDUPLIKUJÚ. Tu je iba rozloženie kontajnera so samotným
+   #gallery-filter-host fieldsetom (ID-scoped pravidlo, analogické
+   #atlas-filter-host v atlas.css).
+   ========================================================================== */
+
+#gallery-filter-host {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+/* ==========================================================================
    3. Grid výsledkov
    ========================================================================== */
 

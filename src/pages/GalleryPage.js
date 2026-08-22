@@ -1,21 +1,50 @@
 /******************************************************************************
  * VetPara Atlas
  * Galéria – stránka pre prehliadanie fotografií
+ *
+ * OPRAVA (2026-08-22): Filter hostiteľa bol doteraz funkčne mŕtvy — hľadal
+ * hodnotu `img.host`, ktorú nový formát `images.json` (parasiteId/url/alt/
+ * caption/credit/dateAdded) vôbec neobsahuje (pozri AI_STATUS.md §0.9).
+ * Fotografia sama o sebe hostiteľa nepozná — hostiteľa má priradeného až
+ * diagnostický objekt (parasites.json record, cez `hostGroups`/`hosts`),
+ * ku ktorému fotka patrí (`img.parasiteId`).
+ *
+ * Oprava: filter teraz vôbec nečíta `img.host`. Namiesto toho sa pre každú
+ * fotku dohľadá jej záznam (getRecordForImage) a porovná sa
+ * `Repository.resolveHosts(record)` voči vybraným hostiteľom — presne
+ * rovnaká logika, akú už používa Atlas (`matchesHost` v AtlasPage.js).
+ *
+ * Zároveň bol filter prerobený z voľného textového vyhľadávania na
+ * rovnaký viacúrovňový rozbaľovací (accordion) strom hostiteľov ako v
+ * Atlase — vrátane hromadného výberu celej kategórie jedným klikom.
+ * Samotná stromová logika (render + bind) je zdieľaná s Atlasom cez
+ * src/components/HostFilterTree.js, aby sa nič neduplikovalo.
  ******************************************************************************/
 
 import DatabaseService from "../services/DatabaseService.js";
 import Repository from "../services/Repository.js";
+import HostFilterTree from "../components/HostFilterTree.js";
 
 const IMAGES_FILE = "images.json";
+const HOST_HIERARCHY_FILE = "dictionary/host_hierarchy.json";
 
 const GalleryPage = {
   state: {
     images: [],
     records: [],
     filterObjectId: "",
-    filterHost: "",
+    // Pole vybraných hostiteľov (checkboxy v hierarchickom strome) —
+    // nahrádza pôvodné voľné textové filterHost.
+    filterHosts: [],
     selectedImage: null,
   },
+
+  // Rovnaká konvencia ako v AtlasPage.js: hostHierarchy je {} kým sa
+  // async fetch host_hierarchy.json nedokončí — dovtedy sa filter zobrazí
+  // bez skupín (prípadne sa vôbec nevykreslí, kým nedoletia dáta), po
+  // dokončení loadHostHierarchy() sa prekreslí so skupinami.
+  hostHierarchy: {},
+  hostHierarchyLoaded: false,
 
   render() {
     return `
@@ -42,18 +71,10 @@ const GalleryPage = {
                 <datalist id="gallery-object-list"></datalist>
               </div>
 
-              <div class="filter-section">
-                <label for="gallery-filter-host" class="filter-title">
-                  Hostiteľ
-                </label>
-                <input
-                  id="gallery-filter-host"
-                  type="text"
-                  list="gallery-host-list"
-                  placeholder="Vyhľadať hostiteľa..."
-                  autocomplete="off"
-                >
-                <datalist id="gallery-host-list"></datalist>
+              <div id="gallery-host-filter-container">
+                <!-- Hierarchický strom hostiteľov sa vykreslí po načítaní
+                     dát (init() -> renderHostFilterSection()), rovnako ako
+                     v Atlase. -->
               </div>
 
               <button
@@ -98,8 +119,14 @@ const GalleryPage = {
     this.bindEvents();
     this.renderGrid();
 
+    // Rovnaký async načítavací vzor ako AtlasPage.loadHostHierarchy():
+    // Repository.loadHostHierarchy() zabezpečí, že Repository.resolveHosts()
+    // vie správne rozbaliť hostGroups; DatabaseService.load() navyše
+    // cachuje podľa súboru, takže vlastný fetch host_hierarchy.json tu
+    // nespôsobí druhý sieťový request.
     await Repository.loadHostHierarchy();
-    this.populateHostDatalist();
+    await this.loadHostHierarchy();
+
     this.populateObjectDatalist();
   },
 
@@ -113,9 +140,78 @@ const GalleryPage = {
     }
   },
 
+  /**
+   * Async načítanie dictionary/host_hierarchy.json (rovnaký bezpečný
+   * try/catch vzor ako AtlasPage.loadHostHierarchy() — ak fetch zlyhá,
+   * appka nepadne, filter hostiteľov sa zobrazí bez skupín).
+   */
+  async loadHostHierarchy() {
+    try {
+      this.hostHierarchy = await DatabaseService.load(HOST_HIERARCHY_FILE);
+    } catch (error) {
+      console.warn(
+        "Galéria: host_hierarchy.json sa nepodarilo načítať, hostiteľský filter zostáva bez skupín.",
+        error
+      );
+      this.hostHierarchy = {};
+    }
+
+    this.hostHierarchyLoaded = true;
+    this.renderHostFilterSection();
+    this.renderGrid();
+  },
+
+  /**
+   * Zoznam všetkých hostiteľov naprieč diagnostickými objektmi (rovnaká
+   * logika ako AtlasPage.getHostValues() — union explicitných `hosts` a
+   * rozbaleného `hostGroups`).
+   */
+  getHostValues() {
+    const values = this.state.records
+      .flatMap((record) => Repository.resolveHosts(record))
+      .filter((value) => value !== undefined && value !== null && String(value).trim() !== "")
+      .map((value) => String(value).trim());
+
+    return [...new Set(values)].sort((a, b) => a.localeCompare(b, "sk"));
+  },
+
+  /**
+   * Vykreslí (alebo prekreslí) sekciu filtra hostiteľov do
+   * #gallery-host-filter-container a znovu naviaže jej event listenery.
+   */
+  renderHostFilterSection() {
+    const container = document.getElementById("gallery-host-filter-container");
+    if (!container) return;
+
+    container.innerHTML = HostFilterTree.renderFilterSection({
+      fieldsetId: "gallery-filter-host",
+      legend: "Hostiteľ",
+      hosts: this.getHostValues(),
+      hostHierarchy: this.hostHierarchy,
+      selectedHosts: this.state.filterHosts,
+      fieldName: "host",
+    });
+
+    this.bindHostFilterEvents();
+  },
+
+  bindHostFilterEvents() {
+    const fieldset = document.getElementById("gallery-filter-host");
+    if (!fieldset) return;
+
+    HostFilterTree.bindCheckboxes(fieldset, "host", (selected) => {
+      this.state.filterHosts = selected;
+      this.renderGrid();
+    });
+
+    HostFilterTree.bindGroupSelectors(fieldset, "host", (selected) => {
+      this.state.filterHosts = selected;
+      this.renderGrid();
+    });
+  },
+
   bindEvents() {
     const objectInput = document.getElementById("gallery-filter-object");
-    const hostInput = document.getElementById("gallery-filter-host");
     const clearButton = document.getElementById("gallery-clear-filters");
     const lightbox = document.getElementById("gallery-lightbox");
     const closeButton = document.getElementById("gallery-lightbox-close");
@@ -131,23 +227,16 @@ const GalleryPage = {
       });
     }
 
-    if (hostInput) {
-      hostInput.addEventListener("input", () => {
-        this.state.filterHost = hostInput.value.trim();
-        this.renderGrid();
-      });
-      hostInput.addEventListener("change", () => {
-        this.state.filterHost = hostInput.value.trim();
-        this.renderGrid();
-      });
-    }
-
     if (clearButton) {
       clearButton.addEventListener("click", () => {
         if (objectInput) objectInput.value = "";
-        if (hostInput) hostInput.value = "";
         this.state.filterObjectId = "";
-        this.state.filterHost = "";
+        this.state.filterHosts = [];
+        // Checkboxy sú reálne DOM elementy so svojím vlastným "checked"
+        // stavom — najjednoduchší spoľahlivý spôsob, ako ich všetky
+        // odškrtnúť (vrátane vnorených skupinových checkboxov a ich
+        // indeterminate stavu), je sekciu jednoducho prekresliť odznova.
+        this.renderHostFilterSection();
         this.renderGrid();
       });
     }
@@ -175,14 +264,14 @@ const GalleryPage = {
   },
 
   getFilteredImages() {
-    const { images, records, filterObjectId, filterHost } = this.state;
+    const { images, filterObjectId, filterHosts } = this.state;
 
     if (!images || images.length === 0) return [];
 
     let matchingObjectIds = null;
     if (filterObjectId) {
       const search = filterObjectId.toLowerCase();
-      matchingObjectIds = records
+      matchingObjectIds = this.state.records
         .filter((r) =>
           (r.latinName || "").toLowerCase().includes(search) ||
           (r.slovakName || "").toLowerCase().includes(search) ||
@@ -191,24 +280,22 @@ const GalleryPage = {
         .map((r) => r.id);
     }
 
-    let matchingHosts = null;
-    if (filterHost) {
-      const search = filterHost.toLowerCase();
-      matchingHosts = records
-        .flatMap((r) => Repository.resolveHosts(r))
-        .filter((h) => h && h.toLowerCase().includes(search));
-      matchingHosts = [...new Set(matchingHosts)];
-    }
-
     return images.filter((img) => {
       // Nový formát: používa parasiteId
       if (matchingObjectIds && !matchingObjectIds.includes(img.parasiteId)) {
         return false;
       }
 
-      // FIX BUG: prázdny host = fotka patrí všetkým hostiteľom
-      if (matchingHosts && matchingHosts.length > 0) {
-        return true; // V novom formáte nemáme "host" – vždy zobrazíme
+      // OPRAVA (2026-08-22): fotka sama hostiteľa nepozná (images.json
+      // nemá pole `host`) — hostiteľa má priradený diagnostický objekt,
+      // ku ktorému fotka patrí. Rovnaká OR-logika ako v Atlase
+      // (Repository.resolveHosts(record).some(...)).
+      if (filterHosts && filterHosts.length > 0) {
+        const record = this.getRecordForImage(img);
+        if (!record) return false;
+
+        const recordHosts = Repository.resolveHosts(record);
+        if (!recordHosts.some((h) => filterHosts.includes(h))) return false;
       }
 
       return true;
@@ -363,23 +450,6 @@ const GalleryPage = {
 
     datalist.innerHTML = options
       .map((opt) => `<option value="${this.escapeHtml(opt.value)}" data-id="${this.escapeHtml(opt.id)}">`)
-      .join("");
-  },
-
-  populateHostDatalist() {
-    const datalist = document.getElementById("gallery-host-list");
-    if (!datalist) return;
-
-    const hosts = new Set();
-    this.state.records.forEach((record) => {
-      Repository.resolveHosts(record).forEach((h) => {
-        if (h) hosts.add(h);
-      });
-    });
-
-    datalist.innerHTML = Array.from(hosts)
-      .sort((a, b) => a.localeCompare(b, "sk"))
-      .map((h) => `<option value="${this.escapeHtml(h)}">`)
       .join("");
   },
 
