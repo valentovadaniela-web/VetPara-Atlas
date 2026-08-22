@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VetPara Atlas — Popisky fotografií</title>
+<style>
+  :root {
+    --color-primary: #002d62;
+    --color-secondary: #163e75;
+    --color-secondary-hover: #0d284f;
+    --color-bg-main: #f4f7fa;
+    --color-bg-card: #ffffff;
+    --color-text-main: #1e293b;
+    --color-text-muted: #64748b;
+    --color-border: #e2e8f0;
+    --color-focus: #3b82f6;
+    --color-ok: #15803d;
+    --color-ok-bg: #f0fdf4;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--color-bg-main);
+    color: var(--color-text-main);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  header {
+    background: #0a192f;
+    color: #ffffff;
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  header h1 {
+    margin: 0 0 var(--space-xs) 0;
+    font-size: 1.4rem;
+  }
+
+  header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    max-width: 70ch;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg) var(--space-md) var(--space-xl);
+  }
+
+  .card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+  }
+
+  .load-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    min-height: 44px;
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--color-secondary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .btn:hover { background: var(--color-secondary-hover); }
+  .btn:disabled { background: #94a3b8; cursor: not-allowed; }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--color-text-main);
+    border: 1px solid var(--color-border);
+  }
+
+  .btn-outline:hover { background: var(--color-bg-main); }
+
+  input[type="file"] { display: none; }
+
+  #status-line {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  #status-line.ok { color: var(--color-ok); }
+
+  .toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-md);
+  }
+
+  .toolbar input[type="text"] {
+    flex: 1;
+    min-width: 220px;
+    min-height: 42px;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-family: inherit;
+  }
+
+  #summary {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+  }
+
+  #image-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .image-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: var(--space-lg);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+  }
+
+  .image-row.is-dirty {
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 0 1px var(--color-secondary);
+  }
+
+  .image-thumb {
+    width: 140px;
+    height: 140px;
+    border-radius: var(--radius-sm);
+    background: var(--color-bg-main);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border);
+  }
+
+  .image-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .image-thumb .no-img {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    padding: var(--space-sm);
+  }
+
+  .image-fields {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .image-meta-line {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+  }
+
+  .image-meta-line strong {
+    color: var(--color-text-main);
+    font-weight: 600;
+  }
+
+  .field-group {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: var(--space-sm);
+    align-items: center;
+  }
+
+  .field-group label {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+  }
+
+  .field-group input[type="text"] {
+    min-height: 40px;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    font-size: 0.9rem;
+    font-family: inherit;
+    width: 100%;
+  }
+
+  .field-group input[type="text"]:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 1px;
+  }
+
+  .empty-state {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: var(--space-xl);
+  }
+
+  .download-bar {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-md);
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+    margin-top: var(--space-lg);
+    flex-wrap: wrap;
+  }
+
+  #dirty-count {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  #dirty-count.has-changes {
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+
+  @media (max-width: 640px) {
+    .image-row {
+      grid-template-columns: 1fr;
+    }
+    .image-thumb {
+      width: 100%;
+      height: 200px;
+    }
+    .field-group {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>VetPara Atlas — Popisky fotografií</h1>
+  <p>
+    Samostatný nástroj na doplnenie popiskov k fotkám bez úpravy súboru priamo vo VS Code.
+    Beží celý v prehliadači — nič sa nikam neposiela. Načítaj <code>images.json</code>,
+    doplň popisky a stiahni upravený súbor späť na svoj počítač.
+  </p>
+</header>
+
+<main>
+
+  <section class="card" id="load-card">
+    <h2>1. Načítať images.json</h2>
+    <div class="load-row">
+      <button type="button" class="btn" id="btn-auto-load">Skúsiť načítať z projektu</button>
+      <label class="btn btn-outline" for="file-input">Vybrať súbor ručne…</label>
+      <input type="file" id="file-input" accept="application/json,.json">
+      <span id="status-line">Zatiaľ nič nie je načítané.</span>
+    </div>
+  </section>
+
+  <section id="editor-section" style="display:none;">
+
+    <section class="card">
+      <div class="toolbar">
+        <input type="text" id="search-input" placeholder="Hľadať podľa ID objektu, popisu alebo alt textu…">
+        <span id="summary"></span>
+      </div>
+    </section>
+
+    <div id="image-list"></div>
+
+    <div class="download-bar">
+      <span id="dirty-count">Žiadne neuložené zmeny.</span>
+      <button type="button" class="btn" id="btn-download">Stiahnuť upravený images.json</button>
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  /**
+   * Dátový model: pole objektov presne v tvare, ako ho očakáva
+   * database/images.json (parasiteId/url/alt/caption/credit/dateAdded).
+   * Nástroj nemení štruktúru ani nepridáva/nemaže polia — iba prepisuje
+   * caption/alt/credit hodnoty podľa toho, čo autorka vyplní.
+   */
+  let images = [];
+  let originalFileName = "images.json";
+  // Cesty vo `images.json` sú relatívne k "public/" v koreni repozitára.
+  // Tento nástroj ale nesídli v koreni, ale v tools/captions/ — takže na
+  // rozdiel od PrimaryImage.js/GalleryPage.js (ktoré bežia z koreňa)
+  // treba pred cestu doplniť "../../", aby ukazovala späť do koreňa.
+  // Predvolená hodnota zodpovedá zdokumentovanému umiestneniu nástroja
+  // (AI_STATUS.md, Pravidlo 5) — tryAutoLoad() ju nižšie prepíše presnou
+  // hodnotou podľa toho, ktorá kandidátna cesta k images.json reálne
+  // zabrala, takže funguje aj vtedy, ak by nástroj niekedy sídlil inde.
+  let imageBasePath = "../../";
+
+  const statusLine = document.getElementById("status-line");
+  const editorSection = document.getElementById("editor-section");
+  const imageList = document.getElementById("image-list");
+  const searchInput = document.getElementById("search-input");
+  const summaryEl = document.getElementById("summary");
+  const dirtyCountEl = document.getElementById("dirty-count");
+  const fileInput = document.getElementById("file-input");
+  const btnAutoLoad = document.getElementById("btn-auto-load");
+  const btnDownload = document.getElementById("btn-download");
+
+  function setStatus(message, isOk) {
+    statusLine.textContent = message;
+    statusLine.className = isOk ? "ok" : "";
+  }
+
+  function resolveImageUrl(url) {
+    if (!url) return "";
+    // Rovnaká konvencia ako PrimaryImage.js/GalleryPage.js — cesty v
+    // images.json sú relatívne k "public/" v koreni repozitára, preto
+    // najprv odstránime prípadnú úvodnú lomku. NA ROZDIEL od appky
+    // (ktorá sa spúšťa z koreňa) je ale tento nástroj vnorený v
+    // tools/captions/, takže navyše treba doplniť imageBasePath, aby
+    // cesta smerovala späť do koreňa — inak prehliadač hľadá fotky pod
+    // tools/captions/public/... a dostane 404.
+    const cleaned = String(url).replace(/^\/+/, "");
+    return imageBasePath + cleaned;
+  }
+
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
+  /**
+   * Pokus o automatické načítanie z relatívnej cesty voči tomuto súboru
+   * (funguje, ak nástroj leží v tools/captions/ v rámci repozitára a
+   * beží cez Live Server / GitHub Pages — vtedy nie je treba nič ručne
+   * vyberať). Ak zlyhá (napr. otvorené priamo cez file://, kde fetch()
+   * na lokálne súbory prehliadač blokuje), autorka jednoducho použije
+   * tlačidlo "Vybrať súbor ručne…".
+   */
+  async function tryAutoLoad() {
+    const candidatePaths = [
+      "../../database/images.json",
+      "../../../database/images.json",
+      "/database/images.json"
+    ];
+
+    for (const path of candidatePaths) {
+      try {
+        const response = await fetch(path);
+        if (response.ok) {
+          const data = await response.json();
+          // Odvodiť prefix pre fotky z presne tej cesty, ktorá zabrala
+          // pre images.json (namiesto spoliehania sa na predvolený
+          // odhad "../../") — napr. "../../database/images.json" dá
+          // imageBasePath "../../", "../../../database/images.json" dá
+          // "../../../". Tretia kandidátna cesta ("/database/images.json",
+          // absolútna od koreňa domény) je zámerne len núdzová záloha —
+          // podľa AI_STATUS Pravidla 5 sa appka nemá spoliehať na
+          // absolútne cesty (na GitHub Pages pod podcestou /VetPara-Atlas/
+          // by to spôsobilo rovnaké 404, akému sa má tento prefix vyhnúť).
+          imageBasePath = path.replace(/database\/images\.json$/, "");
+          loadImages(data, "images.json");
+          setStatus(`Načítané automaticky z "${path}" (${images.length} fotiek).`, true);
+          return;
+        }
+      } catch (error) {
+        // Skúsi ďalšiu cestu / skončí tichým zlyhaním nižšie.
+      }
+    }
+
+    setStatus(
+      "Automatické načítanie sa nepodarilo (bežné napr. pri otvorení súboru priamo cez file://). " +
+      "Použi tlačidlo \"Vybrať súbor ručne…\" a nahraj database/images.json zo svojho počítača.",
+      false
+    );
+  }
+
+  function loadImages(data, fileName) {
+    if (!Array.isArray(data)) {
+      setStatus("Súbor sa nepodarilo spracovať — očakávané je pole záznamov (rovnaké ako images.json).", false);
+      return;
+    }
+
+    images = data.map((img) => ({
+      ...img,
+      _dirty: false
+    }));
+
+    originalFileName = fileName || "images.json";
+    editorSection.style.display = "";
+    renderList();
+  }
+
+  fileInput.addEventListener("change", () => {
+    const file = fileInput.files && fileInput.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result);
+        loadImages(data, file.name);
+        setStatus(`Načítané zo súboru "${file.name}" (${images.length} fotiek).`, true);
+      } catch (error) {
+        setStatus("Súbor sa nepodarilo prečítať ako platný JSON.", false);
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  btnAutoLoad.addEventListener("click", () => {
+    setStatus("Skúšam nájsť images.json v projekte…", false);
+    tryAutoLoad();
+  });
+
+  searchInput.addEventListener("input", renderList);
+
+  function matchesSearch(img, query) {
+    if (!query) return true;
+    const haystack = [img.parasiteId, img.caption, img.alt, img.credit]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase();
+    return haystack.includes(query.toLowerCase());
+  }
+
+  function updateDirtyCount() {
+    const dirtyCount = images.filter((img) => img._dirty).length;
+    if (dirtyCount === 0) {
+      dirtyCountEl.textContent = "Žiadne neuložené zmeny.";
+      dirtyCountEl.classList.remove("has-changes");
+    } else {
+      dirtyCountEl.textContent =
+        `Upravených fotiek: ${dirtyCount} — nezabudni stiahnuť a nahradiť súbor v database/images.json.`;
+      dirtyCountEl.classList.add("has-changes");
+    }
+  }
+
+  function renderList() {
+    const query = searchInput.value.trim();
+    const filtered = images.filter((img) => matchesSearch(img, query));
+
+    summaryEl.textContent = `Zobrazené: ${filtered.length} / ${images.length}`;
+
+    if (filtered.length === 0) {
+      imageList.innerHTML = `<div class="card empty-state">Žiadna fotka nevyhovuje hľadanému výrazu.</div>`;
+      updateDirtyCount();
+      return;
+    }
+
+    imageList.innerHTML = filtered
+      .map((img, filteredIndex) => {
+        const realIndex = images.indexOf(img);
+        const thumbUrl = resolveImageUrl(img.url);
+
+        return `
+          <div class="image-row ${img._dirty ? "is-dirty" : ""}" data-index="${realIndex}">
+            <div class="image-thumb">
+              ${thumbUrl
+                ? `<img src="${escapeHtml(thumbUrl)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-img',textContent:'Fotka sa nenačítala'}))">`
+                : `<div class="no-img">Bez URL</div>`}
+            </div>
+
+            <div class="image-fields">
+              <div class="image-meta-line">
+                <span><strong>ID objektu:</strong> ${escapeHtml(img.parasiteId || "—")}</span>
+                ${img.dateAdded ? `<span><strong>Pridané:</strong> ${escapeHtml(String(img.dateAdded).split("T")[0])}</span>` : ""}
+              </div>
+
+              <div class="field-group">
+                <label for="caption-${realIndex}">Popis</label>
+                <input type="text" id="caption-${realIndex}" data-field="caption" data-index="${realIndex}"
+                  value="${escapeHtml(img.caption)}" placeholder="Napr. Vajíčko, faza embryonácie, 400×">
+              </div>
+
+              <div class="field-group">
+                <label for="alt-${realIndex}">Alt text</label>
+                <input type="text" id="alt-${realIndex}" data-field="alt" data-index="${realIndex}"
+                  value="${escapeHtml(img.alt)}" placeholder="Krátky opis fotky pre nevidiacich používateľov">
+              </div>
+
+              <div class="field-group">
+                <label for="credit-${realIndex}">Autor</label>
+                <input type="text" id="credit-${realIndex}" data-field="credit" data-index="${realIndex}"
+                  value="${escapeHtml(img.credit)}" placeholder="Meno / pracovisko">
+              </div>
+            </div>
+          </div>
+        `;
+      })
+      .join("");
+
+    imageList.querySelectorAll("input[data-field]").forEach((input) => {
+      input.addEventListener("input", () => {
+        const index = Number(input.dataset.index);
+        const field = input.dataset.field;
+        const record = images[index];
+
+        if (!record) return;
+
+        if (record[field] !== input.value) {
+          record[field] = input.value;
+          record._dirty = true;
+          input.closest(".image-row")?.classList.add("is-dirty");
+          updateDirtyCount();
+        }
+      });
+    });
+
+    updateDirtyCount();
+  }
+
+  btnDownload.addEventListener("click", () => {
+    // Odstráni interný pomocný príznak _dirty pred exportom — výstupný
+    // JSON musí mať presne rovnaký tvar záznamov ako pôvodný images.json.
+    const exportData = images.map(({ _dirty, ...rest }) => rest);
+    const json = JSON.stringify(exportData, null, 2);
+    const blob = new Blob([json], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = originalFileName || "images.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+
+    images.forEach((img) => { img._dirty = false; });
+    renderList();
+  });
+
+  // Pri otvorení skúsime rovno automatické načítanie, aby autorka v
+  // najlepšom prípade nemusela nič ručne vyberať.
+  tryAutoLoad();
+})();
+</script>
+
+</body>
+</html>
