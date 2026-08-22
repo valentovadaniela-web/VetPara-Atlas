@@ -1,5 +1,61 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.18 Aktuálny stav — doplnené (2026‑08‑22, session: oprava „biely priestor okolo fotky" v detaile parazita — `.findings-card`/`.primary-image-*` v `atlas.css`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila (screenshot detailu `Alaria alata`): fotka sa v detaile parazita nezobrazuje na celú plochu bielej karty — okolo mikroskopickej fotky je veľký prázdny biely priestor (hore aj dole). Nahrané a skontrolované súbory: `atlas.css`, `PrimaryImage.js`.
+
+### 🔴→✅ Skutočná príčina — v dvoch krokoch
+
+**1. krok (čiastočná diagnóza):** `atlas.css` neobsahoval **žiadne** pravidlá pre triedy, ktoré generuje `PrimaryImage.js` (`.primary-image-container`, `.primary-image-img`) — obrázok sa preto vykresľoval v prirodzenej pixelovej veľkosti, kým `.findings-card` (obalový kontajner v detaile) sa naťahoval na výšku susedného stĺpca v `.detail-main-split` grid layoute. Pridané pravidlá `width/height: 100%` + `object-fit: contain`.
+
+**2. krok — autorka nahlásila, že sa nič nezmenilo.** Skutočná príčina: `.findings-card` mal iba `min-height: 200px`, nie skutočnú `height`. Percentuálna výška (`height: 100%`) na potomkovi (`.primary-image-container`/`.primary-image-img`) sa podľa CSS špecifikácie **ignoruje**, ak rodič nemá explicitne definovanú (nie len minimálnu) výšku — takže pravidlá z 1. kroku nemali na čo nadviazať.
+
+**Finálna oprava (`atlas.css`, sekcia „7. DETAIL"):**
+```css
+.findings-card {
+    padding: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.primary-image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.primary-image-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: var(--radius-md);
+}
+```
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/styles/atlas.css` | `.findings-card` dostal explicitnú `height: 500px` (namiesto len `min-height`) a `overflow: hidden`; pridané chýbajúce pravidlá `.primary-image-container` a `.primary-image-img` (`object-fit: contain`) | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť v prehliadači** (ideálne s tvrdým refreshom / vyprázdnenou cache), že sa fotka v detaile teraz naozaj prispôsobuje ploche karty bez veľkého bieleho priestoru.
+2. Ak sa aj po tejto oprave nič vizuálne nezmení, je vysoko pravdepodobné, že `AtlasPage.js` odovzdáva `PrimaryImage.render()`/`renderStatic()` iný `containerClass` než `findings-card` (alebo obaľuje komponent inak) — treba vyžiadať a skontrolovať `AtlasPage.js`, než sa robí čokoľvek ďalšie s `atlas.css`.
+3. Keďže `.primary-image-container`/`.primary-image-img` sú zdieľané triedy naprieč appkou (generuje ich `PrimaryImage.js`), skontrolovať aj ostatné miesta, kde sa `PrimaryImage` používa (napr. karty v zozname/databáze), či im nová pevná `height: 100%`/`object-fit: contain` logika nezmenila vzhľad neželaným spôsobom — zatiaľ overené len pre `.findings-card` v detaile.
+4. Pevná hodnota `height: 500px` na `.findings-card` je zatiaľ odhad podľa screenshotu — ak autorka bude chcieť inú výšku karty s fotkou, treba ju doladiť (prípadne cez media queries pre mobil, kde môže byť 500px príliš veľa — pozri sekciu „12. Mobile doladenie").
+
+---
+
 🔥 0.17 Aktuálny stav — doplnené (2026‑08‑22, session: lightbox v Galérii teraz zobrazuje `_full.webp` verziu namiesto thumbnailu)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
