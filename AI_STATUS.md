@@ -1,3 +1,61 @@
+# VetPara Atlas – AI STATUS (kompletný stav projektu)
+
+🔥 0.12 Aktuálny stav — doplnené (2026‑08‑22, session: zobrazenie hostiteľov v detaile parazita a v karte zoznamu skrátené na najvyššiu priradenú kategóriu v `AtlasPage.js`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-22, pokračovanie po §0.11)
+
+### Kontext
+
+Autorka poslala screenshot detailu parazita "Giardia intestinalis" — pole "HOSTITEĽ" vypisovalo cez 25 konkrétnych druhov plazov (Varan, Gekon, Jašterice, Agamy...) namiesto jednoducho "Plazy", čím zbytočne naťahovalo náhľad (rovnaký problém sa týkal aj karty záznamu v zozname výsledkov Atlasu). Požiadavka: ak je parazit priradený k celej kategórii (napr. "Plazy" cez `hostGroups`), stačí zobraziť názov kategórie; konkrétny druh sa má vypísať iba vtedy, ak sa parazit týka len jeho.
+
+V priebehu session bol nahraný a priamo skontrolovaný `src/services/Repository.js` (predtým nebol k dispozícii) — potvrdil presnú štruktúru dát.
+
+### 🔴→✅ Príčina — NÁJDENÁ A OPRAVENÁ
+
+**Príčina:** `record.hostGroups` (napr. `["Plazy"]`) sa na zobrazenie posielal cez `Repository.resolveHosts(record)`, ktorá ho **zámerne rozbaľuje** na všetky konkrétne druhy z `dictionary/host_hierarchy.json` (potrebné pre filtrovanie a fulltext, pozri §0.9/`Repository.isHostInGroup()`). Presne tá istá rozbalená hodnota sa ale používala aj priamo na vykreslenie poľa "Hostiteľ" — v detaile (`miniBox("Hostiteľ", ...)`) aj v karte záznamu (`<strong>Hostiteľ:</strong> ...`).
+
+**Oprava (`src/pages/AtlasPage.js`):** pridaná nová metóda `getDisplayHosts(record)`, ktorá na rozdiel od `Repository.resolveHosts()` **nerozbaľuje** `hostGroups` — vráti presne `record.hostGroups` (názvy kategórií tak, ako sú v dátach) zjednotené s `record.hosts` (konkrétni hostitelia mimo skupinovej logiky):
+
+```js
+getDisplayHosts(record) {
+    const groups = Array.isArray(record?.hostGroups) ? record.hostGroups : [];
+    const explicitHosts = Array.isArray(record?.hosts) ? record.hosts : [];
+    return [...new Set([...groups, ...explicitHosts])];
+}
+```
+
+Použitá na 2 miestach, kde sa nahradilo `this.formatHosts(Repository.resolveHosts(record))` za `this.formatHosts(this.getDisplayHosts(record))`:
+- detail parazita — `miniBox("Hostiteľ", ...)`
+- karta záznamu v zozname — riadok `<strong>Hostiteľ:</strong> ...`
+
+**Zámerne NEZMENENÉ (`Repository.resolveHosts(record)` ponechané bezo zmeny na 3 miestach):**
+- `getHostValues()` — zoznam hodnôt pre checkboxy vo filtri (musí poznať konkrétne druhy, aby sa dali jednotlivo vyklikávať)
+- fulltext vyhľadávanie (`haystackParts`) — aby sa "Giardia intestinalis" našla aj pri zadaní "Gekon", nielen "Plazy"
+- samotná filtrovacia OR-logika (`matchesHost`) — porovnáva zaškrtnuté hodnoty voči rozbalenému zoznamu
+
+Overené v Node.js na 5 scenároch (skupina samotná, konkrétny druh samotný, kombinácia skupina+druh, viacero skupín, žiadny hostiteľ) — výstup zodpovedá očakávaniu, napr. `hostGroups: ["Plazy"], hosts: []` → zobrazí sa **"Plazy"** (namiesto 28 vymenovaných druhov).
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | nová metóda `getDisplayHosts(record)` — vráti `hostGroups` + `hosts` bez rozbaľovania cez `host_hierarchy.json` | ✅ hotové |
+| `src/pages/AtlasPage.js` | detail parazita (`miniBox("Hostiteľ", ...)`) prepnutý z `Repository.resolveHosts(record)` na `this.getDisplayHosts(record)` | ✅ hotové |
+| `src/pages/AtlasPage.js` | karta záznamu v zozname (`<strong>Hostiteľ:</strong>`) prepnutá rovnako | ✅ hotové |
+| `src/services/Repository.js` | bezo zmeny — iba nahraný a skontrolovaný kvôli overeniu presnej štruktúry `hosts`/`hostGroups`/`resolveHosts()` | — bez zmeny |
+
+**Testovanie vykonané:** syntax-check cez Node.js, diff oproti predošlej verzii (zmena izolovaná na 3 miesta), simulácia `getDisplayHosts()` nad 5 testovacími záznamami priamo v Node.js.
+
+**NEVYKONANÉ (dôležité pre ďalšiu session):** **žiadne naživo overenie v prehliadači** — nepozreté, ako presne vyzerá detail "Giardia intestinalis" po tejto oprave reálne v appke (Live Server/GitHub Pages), ani ako to pôsobí vizuálne v karte záznamu pri parazitoch s viacerými kombinovanými skupinami naraz (napr. `hostGroups: ["Plazy", "Vtáky"]`).
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Overiť naživo v prehliadači**, že sa "Giardia intestinalis" a ďalšie parazity priradené k celým kategóriám teraz zobrazujú skrátene (napr. "Plazy" namiesto všetkých druhov) — v detaile aj v karte zoznamu.
+2. Zvážiť, či by autorka chcela rovnaké skrátené zobrazenie kategórie aj v Galérii (`GalleryPage.js`) — nebolo súčasťou tejto session, `GalleryPage.js` nebol v tejto session nahraný ani kontrolovaný.
+3. Ostatné otvorené body z §0.11, §0.10 a §0.9 (naživo-overenie filtra hostiteľov, fotografie, `manifest.json`, `docs/03_DATA_ENTRY_STANDARD.md`, admin formulár, chýbajúca stránka Expert) zostávajú nezmenené a neriešené v tejto session.
+
+---
+
 🔥 0.11 Aktuálny stav — doplnené (2026‑08‑22, session: viacúrovňové rozbaľovanie filtra hostiteľov + hromadný výber celej kategórie v `AtlasPage.js`/`atlas.css`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII (2026-08-22)
@@ -57,8 +115,6 @@ Autorka následne požiadala o možnosť odfiltrovať celú kategóriu (napr. "M
 3. Ostatné otvorené body z §0.10 a §0.9 (naživo-overenie fotografií, `manifest.json`, `docs/03_DATA_ENTRY_STANDARD.md`, admin formulár, chýbajúca stránka Expert) zostávajú nezmenené a neriešené v tejto session.
 
 ---
-
-# VetPara Atlas – AI STATUS (kompletný stav projektu)
 
 🔥 0.10 Aktuálny stav — doplnené (2026‑08‑21, session: oprava zobrazovania fotografií — absolútne cesty v `images.json` + `PrimaryImage.js` nekompatibilný so `parasiteId`/`url` formátom)
 
