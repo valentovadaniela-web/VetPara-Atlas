@@ -1318,12 +1318,12 @@ const AtlasPage = {
         // parazita (window.showGalleryForParasite), kde sú vidieť
         // všetky jeho fotky pohromade a dajú sa otvoriť v origináli.
         if (parasiteImages.length > 0) {
-            const firstImageUrl = parasiteImages[0].url;
+            const firstImageUrl = PrimaryImage.resolveImageUrl(parasiteImages[0].url);
             mainImageContainer.innerHTML = `
                 <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(parasiteImages[0].alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
                 <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
                     ${parasiteImages.slice(1).map(img => `
-                        <img src="${img.url}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                        <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
                     `).join('')}
                 </div>
             `;
