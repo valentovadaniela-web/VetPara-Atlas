@@ -1080,6 +1080,18 @@ button {
         min-height: 100px;
     }
 
+    /* OPRAVA (2026-08-22): .findings-card mala pevnú height:500px, ktorá
+       sa počítala s desktop layoutom (.detail-main-split 1fr 2fr, karta
+       široká). Pod 768px sa layout zlomí na jeden stĺpec -> karta je úzka,
+       object-fit:contain zmenší fotku podľa šírky, ale rám ostal 500px
+       vysoký -> veľký prázdny priestor nad/pod fotkou. Na mobile výška
+       podľa pomeru strán namiesto pevnej hodnoty. */
+    .findings-card {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        min-height: 200px;
+    }
+
 }
 
 

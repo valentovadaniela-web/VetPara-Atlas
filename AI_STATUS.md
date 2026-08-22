@@ -1,6 +1,35 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.21 Aktuálny stav — doplnené (2026‑08‑22, session: admin nástroj — sidebar badge zmazania, tab Fotografie nezobrazoval fotky, duplicitné _full záznamy, mazanie v tools/captions)
+🔥 0.22 Aktuálny stav — doplnené (2026‑08‑22, session: fotky v Detaile parazita sa nezobrazovali na GitHub Pages — 404 kvôli obídenej `resolveImageUrl()`) — ✅ OPRAVENÉ A NAŽIVO OVERENÉ
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila: fotky sa v Detaile parazita nezobrazujú na GitHub Pages (prepojenie z fotky do Galérie fungovalo, v Galérii samotnej boli fotky viditeľné). Nahraté a skontrolované súbory: `AI_STATUS.md`, `AtlasPage.js`, `GalleryPage.js`, `PrimaryImage.js`. Console log z GitHub Pages ukazoval 404 na `.webp` súbory.
+
+### 🔴→✅ Príčina — dva paralelné mechanizmy vykreslenia fotky v Detaile, ten novší obchádzal `resolveImageUrl()`
+
+V `AtlasPage.js` (`showDetail()`) existuje blok `// --- NOVÉ: Zobrazenie obrázkov z images.json ---` (pridaný v predchádzajúcej session, značený `OPRAVA (2026-08-22)`), ktorý po vykreslení detailu prepíše obsah `.findings-card` — kam predtým `PrimaryImage.render()` vložil len placeholder. Na rozdiel od `PrimaryImage`, tento blok použil `img.url` priamo, bez `resolveImageUrl()`. Keďže `img.url` v `images.json` je absolútna cesta (`/public/images/...`), na GitHub Pages (podcesta `/VetPara-Atlas/`) sa vyhodnotila od koreňa domény → 404. `PrimaryImage.populate()` sa mimochodom volal len vo vetve `else` (keď fotky NIE SÚ) — teda presne vtedy, keď to bolo zbytočné.
+
+Galéria fungovala, lebo `GalleryPage.js` má vlastnú (správnu) `resolveImageUrl()`, ktorá sa reálne používala.
+
+**Oprava (najjednoduchšia možná, bez duplikovania logiky):** na oboch miestach, kde sa v `AtlasPage.js` vypisuje `img.url` (hlavná fotka aj miniatúry), sa teraz volá existujúca, už otestovaná `PrimaryImage.resolveImageUrl(img.url)`. Vetva `else` s `PrimaryImage.populate("#detail-view")` ostala bez zmeny (je vecne zbytočná, ale to je samostatný, menej naliehavý problém — nerobené na žiadosť autorky).
+
+**✅ Autorka potvrdila naživo na GitHub Pages: fotky v Detaile sa teraz zobrazujú správne.**
+
+### Zhrnutie vykonanej zmeny kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | `firstImageUrl` a URL miniatúr v `showDetail()` teraz idú cez `PrimaryImage.resolveImageUrl()` namiesto priameho `img.url` | ✅ hotové, ✅ **naživo overené autorkou na GitHub Pages** |
+
+### 🟡 Otvorené (nezmenené, mimo rozsahu tejto session)
+
+- Vetva `else { PrimaryImage.populate("#detail-view"); }` v `showDetail()` je logicky mŕtva (spustí sa len keď fotky neexistujú, čiže nikdy nič nezobrazí) — kozmetický nedostatok, neriešené na želanie autorky, ponechať ako je, kým nebude explicitne požadované upratať.
+- Ostatné otvorené úlohy zo session 0.21 (viď nižšie) zostávajú v platnosti.
+
+---
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
 

@@ -1296,6 +1296,12 @@ const AtlasPage = {
 
         `;
 
+        // OPRAVA (2026-08-22): appka je SPA, prehliadač si pri prepísaní
+        // app.innerHTML ponecháva predchádzajúcu scroll pozíciu zo zoznamu
+        // Atlasu -> detail sa "otváral" niekde v strede stránky namiesto
+        // na začiatku. Vynútený reset scrollu hneď po vykreslení detailu.
+        window.scrollTo(0, 0);
+
         document
             .getElementById("atlas-back")
             .addEventListener("click", () => {
