@@ -16,6 +16,37 @@ function getImagesForParasite(parasiteId) {
     return Array.from(urls);
 }
 
+// NOVÉ (2026-08-22): filter podľa ID/latinského názvu na karte "Fotografie",
+// aby nebolo treba prehľadávať 475 riadkov cez Ctrl+F. Hodnota filtra sa drží
+// mimo renderImageTab(), lebo tá sa volá znova po každom pridaní/vymazaní
+// fotky (inak by sa filter pri každej akcii vynuloval).
+let imageFilterValue = '';
+
+function normalizeForFilter(value) {
+    return String(value || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, ''); // odstráni diakritiku
+}
+
+function applyImageFilter() {
+    const needle = normalizeForFilter(imageFilterValue).trim();
+    const rows = document.querySelectorAll('#tab-image tbody tr[data-filter-text]');
+    let visibleCount = 0;
+
+    rows.forEach((row) => {
+        const haystack = row.dataset.filterText || '';
+        const matches = needle === '' || haystack.includes(needle);
+        row.style.display = matches ? '' : 'none';
+        if (matches) visibleCount++;
+    });
+
+    const emptyNotice = document.getElementById('image-filter-empty');
+    if (emptyNotice) {
+        emptyNotice.style.display = visibleCount === 0 ? '' : 'none';
+    }
+}
+
 // FIX: súbory typu "xxx_full.webp" sú sprievodný "zväčšovací" variant k
 // "xxx.webp" — podľa existujúcej konvencie v projekte (fotky pridané pred
 // zavedením hromadného uploadu) sa nikdy nezapisovali ako vlastný záznam
@@ -47,6 +78,21 @@ export function renderImageTab() {
                 </p>
             </div>
 
+            <div class="image-filter-bar" style="margin: 0.75rem 0; display:flex; align-items:center; gap:0.5rem;">
+                <label for="image-filter-input" style="font-weight:600; white-space:nowrap;">🔍 Filter:</label>
+                <input
+                    type="text"
+                    id="image-filter-input"
+                    placeholder="Hľadať podľa ID alebo latinského názvu..."
+                    autocomplete="off"
+                    value="${imageFilterValue.replace(/"/g, '&quot;')}"
+                    style="flex:1; max-width:400px; padding:0.4rem 0.6rem; border:1px solid #bdc3c7; border-radius:4px;"
+                >
+            </div>
+            <p id="image-filter-empty" style="display:none; color:#e74c3c; font-size:0.9rem;">
+                Žiadny parazit nezodpovedá filtru.
+            </p>
+
             <div class="image-list" style="max-height: 600px; overflow-y: auto; margin-top: 1rem;">
                 <table class="table" style="width: 100%; border-collapse: collapse;">
                     <thead style="background: #ecf0f1;">
@@ -60,8 +106,9 @@ export function renderImageTab() {
                     <tbody>
                         ${parasites.map(p => {
                             const imageUrls = imagesByParasite.get(p.id) || [];
+                            const filterText = normalizeForFilter(`${p.id} ${p.latinName || ''}`);
                             return `
-                                <tr style="border-bottom: 1px solid #ecf0f1;">
+                                <tr style="border-bottom: 1px solid #ecf0f1;" data-filter-text="${filterText.replace(/"/g, '&quot;')}">
                                     <td style="padding: 0.5rem; font-family: monospace; font-size: 0.8rem;">${p.id}</td>
                                     <td style="padding: 0.5rem; font-size: 0.9rem;">${p.latinName || ''}</td>
                                     <td style="padding: 0.5rem; font-size: 0.9rem;">
@@ -90,6 +137,20 @@ export function renderImageTab() {
             </div>
         </div>
     `;
+
+    // NOVÉ: filter — vyplní sa pri každom stlačení klávesy, stav sa uloží
+    // do imageFilterValue, aby prežil ďalšie renderImageTab() volania.
+    const filterInput = document.getElementById('image-filter-input');
+    if (filterInput) {
+        filterInput.addEventListener('input', () => {
+            imageFilterValue = filterInput.value;
+            applyImageFilter();
+        });
+        // po každom (re)rendri kurzor rovno vo filtri, nech sa dá hneď písať ďalej
+        filterInput.focus();
+        filterInput.setSelectionRange(filterInput.value.length, filterInput.value.length);
+    }
+    applyImageFilter();
 
     // Udalosť pre pridanie obrázka
     document.querySelectorAll('.add-image-btn').forEach(btn => {

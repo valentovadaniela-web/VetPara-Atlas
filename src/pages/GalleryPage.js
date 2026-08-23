@@ -56,6 +56,24 @@ const GalleryPage = {
               <p>Fotografie parazitov</p>
             </div>
 
+            <button
+              type="button"
+              id="gallery-clear-filters"
+              class="gallery-clear-filters"
+            >
+              Zrušiť filtre
+            </button>
+
+            <div
+              id="gallery-active-filters"
+              class="gallery-active-filters atlas-active-filters"
+              aria-live="polite"
+            ></div>
+
+            <div id="gallery-stats" class="gallery-stats" aria-live="polite">
+              Načítavanie...
+            </div>
+
             <div class="gallery-filters">
               <div class="filter-section">
                 <label for="gallery-filter-object" class="filter-title">
@@ -76,18 +94,6 @@ const GalleryPage = {
                      dát (init() -> renderHostFilterSection()), rovnako ako
                      v Atlase. -->
               </div>
-
-              <button
-                type="button"
-                id="gallery-clear-filters"
-                class="gallery-clear-filters"
-              >
-                Zrušiť filtre
-              </button>
-            </div>
-
-            <div id="gallery-stats" class="gallery-stats" aria-live="polite">
-              Načítavanie...
             </div>
           </aside>
 
@@ -327,11 +333,85 @@ const GalleryPage = {
     return this.state.records.find((r) => r.id === image.parasiteId) || null;
   },
 
+  /**
+   * NOVÉ (2026-08-22): chip-tagy vybratých filtrov, rovnaký princíp ako
+   * AtlasPage.renderActiveFilters() (autorka nahlásila, že Galéria toto
+   * doteraz vôbec neukazovala, na rozdiel od Atlasu). Vypisuje sa do
+   * #gallery-active-filters, volané z renderGrid() -> teda po každej
+   * zmene filtra (search input, host checkboxy, Zrušiť filtre).
+   */
+  renderActiveFilters() {
+    const container = document.getElementById("gallery-active-filters");
+    if (!container) return;
+
+    const filters = [];
+
+    if (this.state.filterObjectId.trim()) {
+      filters.push({
+        key: "object",
+        label: "Objekt",
+        value: this.state.filterObjectId.trim(),
+      });
+    }
+
+    (this.state.filterHosts || []).forEach((host) => {
+      filters.push({
+        key: "host",
+        label: "Hostiteľ",
+        value: host,
+      });
+    });
+
+    if (filters.length === 0) {
+      container.innerHTML = "";
+      return;
+    }
+
+    container.innerHTML = `
+      <span class="filter-tag-label">Aktívne filtre:</span>
+      ${filters.map((filter) => `
+        <button
+          type="button"
+          class="atlas-filter-tag gallery-filter-tag"
+          data-filter-key="${filter.key}"
+          data-filter-value="${this.escapeHtml(filter.value)}"
+          aria-label="Odstrániť filter ${filter.label}: ${this.escapeHtml(filter.value)}"
+        >
+          ${filter.label}: ${this.escapeHtml(filter.value)}
+          <span aria-hidden="true">×</span>
+        </button>
+      `).join("")}
+    `;
+
+    container.querySelectorAll(".gallery-filter-tag").forEach((button) => {
+      button.addEventListener("click", () => {
+        const key = button.dataset.filterKey;
+        const value = button.dataset.filterValue;
+
+        if (key === "object") {
+          this.state.filterObjectId = "";
+          const objectInput = document.getElementById("gallery-filter-object");
+          if (objectInput) objectInput.value = "";
+        } else if (key === "host") {
+          this.state.filterHosts = this.state.filterHosts.filter((h) => h !== value);
+          // rovnaký dôvod ako pri "Zrušiť filtre": checkboxy majú vlastný
+          // DOM "checked" stav (vrátane indeterminate pri skupinách),
+          // najspoľahlivejšie je sekciu prekresliť odznova.
+          this.renderHostFilterSection();
+        }
+
+        this.renderGrid();
+      });
+    });
+  },
+
   renderGrid() {
     const container = document.getElementById("gallery-grid");
     const stats = document.getElementById("gallery-stats");
 
     if (!container) return;
+
+    this.renderActiveFilters();
 
     const filtered = this.getFilteredImages();
     const total = this.state.images?.length || 0;

@@ -99,6 +99,20 @@ const AtlasPage = {
 
                         </div>
 
+                        <div
+                            id="atlas-active-filters"
+                            class="atlas-active-filters"
+                            aria-live="polite"
+                        ></div>
+
+                        <button
+                            type="button"
+                            id="atlas-clear-filters"
+                            class="atlas-clear-filters"
+                        >
+                            Zrušiť všetky filtre
+                        </button>
+
                         ${this.renderHostFilterSection(this.getHostValues())}
 
                         ${this.renderMultiFilter(
@@ -120,20 +134,6 @@ const AtlasPage = {
                         )}
 
                         ${this.renderSizeFilterSection()}
-
-                        <div
-                            id="atlas-active-filters"
-                            class="atlas-active-filters"
-                            aria-live="polite"
-                        ></div>
-
-                        <button
-                            type="button"
-                            id="atlas-clear-filters"
-                            class="atlas-clear-filters"
-                        >
-                            Zrušiť všetky filtre
-                        </button>
 
                     </aside>
 
