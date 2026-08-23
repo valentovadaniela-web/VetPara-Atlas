@@ -1,5 +1,44 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.24 Aktuálny stav — doplnené (2026‑08‑22, session: presun "Zrušiť filtre" + stavu filtrov hore v Atlase/Galérii, chýbajúce chip-tagy aktívnych filtrov v Galérii, filter na karte "Fotografie" v admin nástroji)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka požiadala o tri veci: (1) filter na karte "Pridať fotografie" v admin nástroji, aby nemusela hľadať cez Ctrl+F; (2) presun tlačidla "Zrušiť filtre" (+ stavu, čo je vybraté) v Atlase a Galérii hore, aby nemusela rolovať; následne nahlásila, že (3) Galéria neukazuje aktívne filtre, hoci Atlas ich ukazuje korektne. Nahraté a upravené súbory: `imageForm.js`, `index.html` (admin, bez zmeny), `AtlasPage.js`, `GalleryPage.js`.
+
+### ✅ Bod 1: Filter na karte "Fotografie" (`tools/admin/forms/imageForm.js`)
+
+Pridané textové pole `#image-filter-input` hneď pod hlavičku "Správa fotografií" (nad tabuľkou 475 riadkov). Filtruje podľa ID parazita aj latinského názvu, bez rozlišovania veľkosti písmen a diakritiky (`normalizeForFilter()` — `NFD` + odstránenie diakritických znamienok). Riadky sa skrývajú cez `style.display`, nie prerenderujú — tlačidlá Pridať/Vymazať v skrytých riadkoch ostávajú funkčné. Hodnota filtra sa drží v module-level premennej `imageFilterValue` mimo `renderImageTab()`, aby **prežila prekreslenie** po pridaní/vymazaní fotky (inak by sa pri každej akcii vynulovala). Po prekreslení sa fokus aj kurzor vrátia do poľa filtra. Prázdny výsledok zobrazí hlášku "Žiadny parazit nezodpovedá filtru."
+
+### ✅ Bod 2: "Zrušiť filtre" + stav filtrov presunuté hore (Atlas, Galéria)
+
+**Atlas (`AtlasPage.js`):** `#atlas-active-filters` (chip-tagy vybratých filtrov) a tlačidlo "Zrušiť všetky filtre" presunuté z konca bočného panelu hneď pod nadpis, pred sekcie Hostiteľ/Materiál/Tvar/Farba/Veľkosť. Žiadne `id` sa nezmenili — len poradie v HTML, JS zapájanie (`getElementById`) bez zmeny.
+
+**Galéria (`GalleryPage.js`):** tlačidlo "Zrušiť filtre" a `#gallery-stats` presunuté hneď pod nadpis, pred textové pole a strom hostiteľov.
+
+### 🔴→✅ Bod 3: Galéria neukazovala aktívne filtre (nahlásené po bode 2)
+
+Príčina: nešlo o regresiu spôsobenú presunom v bode 2, ale o **chýbajúcu funkciu od začiatku** — `GalleryPage.js` mal iba číselný súhrn (`#gallery-stats`: "Zobrazené: X / Y"), žiadny ekvivalent `AtlasPage.renderActiveFilters()`/`#atlas-active-filters`.
+
+**Oprava:** pridaná nová `GalleryPage.renderActiveFilters()` (rovnaký princíp ako v Atlase) — vypisuje chip-tagy do nového `#gallery-active-filters` (umiestnený hneď pod tlačidlo "Zrušiť filtre", nad `#gallery-stats`): jeden chip pre textové vyhľadávanie ("Objekt: ..."), po jednom pre každého vybraného hostiteľa ("Hostiteľ: ..."). Kliknutie na chip (×) zruší daný filter jednotlivo. Zámerne znovupoužité triedy `.atlas-filter-tag`/`.atlas-active-filters`, aby sa chipy vizuálne zhodovali s Atlasom bez nutnosti dopisovať nové CSS (existujúce štýly v `atlas.css` platia pre obe stránky). `renderActiveFilters()` sa volá vnútri `renderGrid()`, ktorá sa už aj tak spúšťa po každej zmene filtra (search input, host checkboxy, Zrušiť filtre) — netreba pridávať volania na viacero miest.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/forms/imageForm.js` | pridaný filter `#image-filter-input` (ID/latinský názov, bez diakritiky), stav prežíva `renderImageTab()` | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/pages/AtlasPage.js` | `#atlas-active-filters` + tlačidlo "Zrušiť všetky filtre" presunuté hore | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/pages/GalleryPage.js` | tlačidlo "Zrušiť filtre" + `#gallery-stats` presunuté hore; nová `renderActiveFilters()` + `#gallery-active-filters` (chip-tagy aktívnych filtrov, doteraz chýbali) | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Naživo overiť na GitHub Pages: filter na karte "Fotografie" (vrátane správania pri Pridať/Vymazať pri aktívnom filtri), presun "Zrušiť filtre" v Atlase aj Galérii, nové chip-tagy aktívnych filtrov v Galérii (vrátane odstránenia jednotlivého filtra kliknutím na ×).
+2. Súvisiaca poznámka pre autorku (bez zmeny kódu): pri pridávaní fotiek je odporúčaný postup najprv fyzicky nakopírovať súbor do `public/images/parasites/{id}/` a až potom ho vybrať cez formulár (nie naopak) — formulár berie len názov súboru, neuploaduje ho, takže opačné poradie zvyšuje riziko nepovšimnutého 404 (chýbajúci fyzický súbor pri "úspešne" pridanom zázname).
+
+---
+
 🔥 0.23 Aktuálny stav — doplnené (2026‑08‑22, session: Detail parazita na mobile — otváral sa v strede stránky namiesto na začiatku + fotka mala veľký prázdny rám nad/pod)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
