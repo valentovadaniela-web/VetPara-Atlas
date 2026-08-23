@@ -1,5 +1,49 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.25 Aktuálny stav — doplnené (2026‑08‑23, session: Excel round-trip pre bulk import — update existujúcich záznamov podľa `id`, plný round-trip všetkých polí, odstránenie mŕtvych polí `methods`/`references` z bulkExcel.js)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje na §0.9 (predchádzajúci code review `admin.js`) a plánovaný bod "Excel round-trip" z plánu ďalších krokov. Autorka nahrala `admin.js` (kompletný, so všetkými predtým nahlásenými FIXmi), `diff.js` a `bulkExcel.js` (dovtedy podporoval iba `action: 'create'`, nikdy `'update'`). Cieľom bolo: (1) stiahnutie aktuálneho stavu databázy ako vyplnenej tabuľky vrátane fotiek, (2) spätný import tej istej tabuľky, ktorý podľa stĺpca `id` rozlíši nový záznam od aktualizácie existujúceho.
+
+### ✅ Bod 1: Overenie formátu `admin.js`/`diff.js` pred implementáciou
+
+Potvrdené: `addPendingChange({type:'parasite', action:'create'|'update'|'delete', id, data})` očakáva v `data` **kompletný nový objekt záznamu** (nie diff) — `applyChangeToWorkingCopy()` robí plné prepísanie `state.workingCopy[idx] = change.data`. Všetkých 6 chýb nahlásených v predchádzajúcom code review (§0.9) je už opravených priamo v nahratom `admin.js` (komentáre `FIX #1`–`#6`): kontrola duplicity ID zohľadňuje `pendingChanges`/`workingCopy`, `workingCopy` sa reálne používa (`getAllIds()`, `generateId()`), `delete` sa v ňom spracúva, badge pri mazaní je správny, `extractUniqueValues()` číta aj `workingCopy`.
+
+### 🔴→✅ Bod 2: Kritické zistenie pred implementáciou — chýbajúce polia v pôvodnom Exceli by pri update ticho vynulovali dáta
+
+Pôvodný `bulkExcel.js` exportoval/importoval len časť polí parazita — chýbali `lifeCycle`, `pathology`, `hostNotes`, `synonyms`, `diagnosticSigns`, `differentialDiagnosis`; `zoonosis` sa exportoval len ako text bez spätného importu. Keďže dohodnuté pravidlo pre update je "kompletné prepísanie záznamu podľa riadku", chýbajúce stĺpce by pri update ticho vynulovali existujúce dáta vo všetkých aktualizovaných z 474 záznamov. Autorka rozhodla: rozšíriť Excel o všetky polia (plný round-trip) namiesto obmedzovania update logiky.
+
+### ✅ Bod 3: Implementácia plného round-tripu + update podľa `id` (`tools/admin/forms/bulkExcel.js`)
+
+- Export "Aktuálny stav" teraz číta zo `state.workingCopy` (nie `state.parasites`), takže zahŕňa aj čakajúce zmeny z tejto session.
+- Šablóna aj export majú identickú sadu stĺpcov (konštanta `COLUMNS`), vrátane `hostNotes` (formát bunky: `"Pes: poznámka | Mačka: iná poznámka"`, oddeľovač zvislá čiara) a `zoonosis` (`áno`/`nie`).
+- Import: stĺpec `id` prázdny → `create` (nové ID cez `generateId()`, ktorý si sám rieši duplicitu voči `state.parasites` aj `state.workingCopy`, vrátane už spracovaných riadkov v tom istom importe); `id` vyplnený a nájdený vo `workingCopy` → `update` (kompletné prepísanie polí podľa riadku, okrem `images`, ktoré sa vždy preberú z pôvodného záznamu); `id` vyplnený a nenájdený → riadok sa preskočí a nahlási sa ako chyba ("neznáme ID").
+- Riadky, kde by update nezmenil žiadnu hodnotu (`deepEqual()` porovnanie voči existujúcemu záznamu, nezávislé od poradia kľúčov v objekte), sa nepridávajú do `state.pendingChanges` — iba sa započítajú, aby sidebar "Čakajúce zmeny" nebol zahltený no-op položkami.
+- Report po dokončení importu: "X nových / Y aktualizovaných / Z bez zmeny" + samostatné počty pre neznáme ID a neplatné riadky (chýbajúce `latinName`/`stage`).
+- Stĺpce `imagesCount`/`imageUrls` v exporte sú čisto informatívne — import ich nikdy nečíta; fotky sa naďalej menia výhradne cez kartu "Fotografie".
+
+### ✅ Bod 4: Odstránenie polí `methods` a `references` z `bulkExcel.js` (na žiadosť autorky)
+
+Odstránené z celej dátovej cesty (stĺpce, `buildFieldsFromRow()`, export, vzorový riadok šablóny). `methods` bolo už predtým odstránené zo schémy podľa §0.7/§0.8 — bez rizika. **`references` sa doteraz v kóde explicitne zachovávalo pri update** (rovnako ako `images`, cez `references: existing.references || []`) — po tomto odstránení sa už nezachováva vôbec, teda ak by niektorý reálny záznam mal `references` vyplnené, bulk update by mu ho odteraz vynuloval. Toto je zámerné, autorkou potvrdené rozhodnutie (nie prehliadnutá chyba) — no treba o tom vedieť, ak sa v budúcnosti zistí, že `references` má predsa len niekde reálne dáta.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/forms/bulkExcel.js` | Export "Aktuálny stav" číta z `workingCopy`; pridané všetky chýbajúce polia (`lifeCycle`, `pathology`, `hostNotes`, `synonyms`, `diagnosticSigns`, `differentialDiagnosis`, boolean `zoonosis`); import podporuje `create` aj `update` podľa stĺpca `id`; `deepEqual()` detekcia no-op zmien; odstránené polia `methods`, `references` | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Naživo overiť plný round-trip: stiahnuť "Aktuálny stav", upraviť pár hodnôt priamo v Exceli (vrátane `hostNotes` a `zoonosis`), naimportovať späť, skontrolovať v "Čakajúcich zmenách" (create aj update), až potom pustiť na všetkých 474 záznamoch.
+2. Overiť formát `hostNotes` (`"Host: poznámka | Host2: poznámka2"`) na reálnom zázname s viacerými hostiteľmi — najmä či oddeľovač `|` nekoliduje s obsahom niektorej poznámky.
+3. Potvrdiť/zdokumentovať, či pole `references` je v reálnych 474 záznamoch skutočne všade prázdne — ak nie, treba do `bulkExcel.js` vrátiť jeho zachovávanie pri update.
+4. Otvorené úlohy z §0.24 (naživo overenie filtra na karte "Fotografie", presun "Zrušiť filtre" v Atlase/Galérii, nové chip-tagy v Galérii) zostávajú nezmenené — pozri nižšie.
+
+---
+
 🔥 0.24 Aktuálny stav — doplnené (2026‑08‑22, session: presun "Zrušiť filtre" + stavu filtrov hore v Atlase/Galérii, chýbajúce chip-tagy aktívnych filtrov v Galérii, filter na karte "Fotografie" v admin nástroji)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
