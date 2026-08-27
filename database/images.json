@@ -81,30 +81,6 @@
   },
   {
     "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_03.webp",
-    "alt": "",
-    "caption": "400x zväčšenie (pes)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
     "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_05.webp",
     "alt": "",
     "caption": "",
@@ -113,23 +89,7 @@
   },
   {
     "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
     "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_08.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -146,14 +106,6 @@
   {
     "parasiteId": "toxascaris_leonina_egg",
     "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -185,73 +137,9 @@
   },
   {
     "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_06.webp",
-    "alt": "",
-    "caption": "Vajíčko, fáza embryonácie, 400 x (pes)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
     "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_07.webp",
     "alt": "",
     "caption": "Vajíčko, fáza embryonácie, 400 x (pes)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_08.webp",
-    "alt": "",
-    "caption": "Vajíčko, fáza embryonácie, 640 x (pes)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_12.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_13.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_14.webp",
-    "alt": "",
-    "caption": "",
     "credit": "",
     "dateAdded": "2026-08-21T10:00:00.000Z"
   },
@@ -266,38 +154,6 @@
   {
     "parasiteId": "amidostomum_anseris_egg",
     "url": "/public/images/parasites/amidostomum_anseris_egg/amidostomum_anseris_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "amidostomum_anseris_egg",
-    "url": "/public/images/parasites/amidostomum_anseris_egg/amidostomum_anseris_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "amidostomum_anseris_egg",
-    "url": "/public/images/parasites/amidostomum_anseris_egg/amidostomum_anseris_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "amidostomum_anseris_egg",
-    "url": "/public/images/parasites/amidostomum_anseris_egg/amidostomum_anseris_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "amidostomum_anseris_egg",
-    "url": "/public/images/parasites/amidostomum_anseris_egg/amidostomum_anseris_egg_05.webp",
     "alt": "",
     "caption": "",
     "credit": "",
