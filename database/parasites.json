@@ -147,7 +147,12 @@
     "zoonosis": false,
     "notes": "Vnútri 4 rohlíkovité sporozoity",
     "id": "sarcocystis_sp_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_01.webp",
+      "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_02.webp",
+      "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_03.webp",
+      "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Eucoleus aerophilus",
@@ -202,7 +207,12 @@
     "zoonosis": false,
     "notes": "Zátky rovné",
     "id": "eucoleus_aerophilus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_01.webp",
+      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_02.webp",
+      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
+      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_04.webp"
+    ]
   },
   {
     "latinName": "Strongyloides sp.",
@@ -301,7 +311,10 @@
     "zoonosis": false,
     "notes": "L1 - veľké genit. promodium",
     "id": "strongyloides_sp_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
+      "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_02.webp"
+    ]
   },
   {
     "latinName": "Dibothriocephalus latus",
@@ -353,7 +366,12 @@
     "zoonosis": true,
     "notes": "Operculum, v kokónoch, rybožravé zvieratá",
     "id": "dibothriocephalus_latus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_01.webp",
+      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_02.webp",
+      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_03.webp",
+      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_04.webp"
+    ]
   },
   {
     "latinName": "Crenosoma vulpis",
@@ -399,7 +417,11 @@
     "zoonosis": false,
     "notes": "Kopijovitý koniec chvosta",
     "id": "crenosoma_vulpis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_01.webp",
+      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_02.webp",
+      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_03.webp"
+    ]
   },
   {
     "latinName": "Taenia sp.",
@@ -447,7 +469,11 @@
     "zoonosis": false,
     "notes": "",
     "id": "taenia_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_01.webp",
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_02.webp",
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_03.webp"
+    ]
   },
   {
     "latinName": "Dipylidium caninum",
@@ -493,7 +519,24 @@
     "zoonosis": true,
     "notes": "V kokónoch (120–200 μm)",
     "id": "dipylidium_caninum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_01.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_02.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_03.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_04.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_05.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_06.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_07.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_08.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_09.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_10.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_11.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_12.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_13.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_14.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_15.webp",
+      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_16.webp"
+    ]
   },
   {
     "latinName": "Uncinaria stenocephala",
@@ -543,7 +586,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "uncinaria_stenocephala_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01.webp"
+    ]
   },
   {
     "latinName": "Dirofilaria immitis",
@@ -594,7 +639,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "dirofilaria_immitis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_01.webp",
+      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_02.webp",
+      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_03.webp",
+      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_04.webp"
+    ]
   },
   {
     "latinName": "Dirofilaria repens",
@@ -642,7 +692,22 @@
     "zoonosis": false,
     "notes": "",
     "id": "dirofilaria_repens_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_01.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_02.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_03.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_04.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_05.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_06.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_07.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_08.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_09.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_10.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_11.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_12.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_13.webp",
+      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_14.webp"
+    ]
   },
   {
     "latinName": "Giardia duodenalis",
@@ -711,7 +776,11 @@
     "zoonosis": false,
     "notes": "Navrhovaná revízia názvoslovia\r\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\r\n\r\nGiardia duodenalis* – asambláž AI,\r\nGiardia intestinalis* – asambláž AII,\r\nGiardia enterica* – asambláž B,\r\nGiardia canis* – asambláž C,\r\nGiardia lupus* – asambláž D,\r\nGiardia bovis* – asambláž E,\r\nGiardia cati* – asambláž F,\r\nGiardia simoni* – asambláž G.\r\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre. ",
     "id": "giardia_intestinalis_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_01.webp",
+      "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_02.webp",
+      "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_03.webp"
+    ]
   },
   {
     "latinName": "Isospora sp.",
@@ -761,7 +830,10 @@
     "zoonosis": false,
     "notes": "Rozdiely v mikrometrii medzi hostiteľmi budú doplnené pri fotografiách.",
     "id": "isospora_sp_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_01.webp",
+      "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Ligula intestinalis",
@@ -893,7 +965,26 @@
     "zoonosis": false,
     "notes": "",
     "id": "capillaria_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_02.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_03.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_04.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_05.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_06.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_08.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_09.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_11.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_12.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_13.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_14.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_15.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_16.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_17.webp",
+      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_18.webp"
+    ]
   },
   {
     "latinName": "Balantioides coli",
@@ -941,7 +1032,11 @@
     "zoonosis": false,
     "notes": "Vnútri vakuola. Oportúnny patogén.",
     "id": "balantioides_coli_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_01.webp",
+      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_02.webp",
+      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_03.webp"
+    ]
   },
   {
     "latinName": "Cyniclomyces guttulatus",
@@ -994,7 +1089,10 @@
     "zoonosis": false,
     "notes": "Symbiotická kvasinka",
     "id": "cyniclomyces_guttulatus_yeast",
-    "images": []
+    "images": [
+      "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_01.webp",
+      "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_02.webp"
+    ]
   },
   {
     "latinName": "Nematodirus sp.",
@@ -1043,7 +1141,9 @@
     "zoonosis": false,
     "notes": "6-8 blastomér",
     "id": "nematodirus_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Ostertagia sp.",
