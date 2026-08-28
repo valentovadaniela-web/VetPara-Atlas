@@ -85,11 +85,11 @@
     },
     "diagnosticSigns": [
       "Guľovité až oválne",
-      "hladká (nie mamilovaná) tenšia škrupina v porovnaní s Toxocara; nesegmentované",
-      "svetlejšie."
+      "Hladká a tenšia stena v porovnaní s Toxocara; vnútorný lem steny zvlnený.",
+      "Svetlejšie."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Toxocara canis/cati hladkým povrchom škrupiny (bez jamkovania) a elipsoidnejším tvarom."
+      "Odlíšiť od Toxocara canis/cati hladkým povrchom obalu (bez jamkovania) a elipsoidnejším tvarom."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -8197,7 +8197,6 @@
       "species": "Alaria alata"
     },
     "hostGroups": [
-      "Domáce prežúvavce",
       "Mačkovité mäsožravce",
       "Psovité mäsožravce"
     ],
