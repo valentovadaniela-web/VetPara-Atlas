@@ -1,0 +1,609 @@
+PS H:\Dana\_ Robota\VetParaAtlas> tree /F
+Folder PATH listing for volume HDD - moje dáta
+Volume serial number is 7E5C-211E
+H:.
+│   .gitignore
+│   AI_STATUS.md
+│   index.html
+│   LICENSE
+│   manifest.json
+│   package-lock.json
+│   package.json
+│   README.md
+│   sw.js
+│   
+├───.github
+│   └───workflows
+│           .gitkeep
+│           
+├───config
+│       config.json
+│       
+├───database
+│   │   birds.migrated.json
+│   │   cat.migrated.json
+│   │   cattle.migrated.json
+│   │   dog.json
+│   │   dog.migrated.json
+│   │   dog.migration-report.json
+│   │   dog_v2_draft.json
+│   │   fish.migrated.json
+│   │   hedgehog.migrated.json
+│   │   horse.migrated.json
+│   │   images.json
+│   │   images.schema-proposal.json
+│   │   molluscs.migrated.json
+│   │   parasites.json
+│   │   pig.migrated.json
+│   │   rabbit.migrated.json
+│   │   reptiles.migrated.json
+│   │   rodents.migrated.json
+│   │   sheep_goat.migrated.json
+│   │   wild_ruminants.migrated.json
+│   │   
+│   └───dictionary
+│           host_hierarchy.json
+│           
+├───docs
+│       00_PROJECT_CONTEXT.md
+│       01_PROJECT_SPECIFICATION.md
+│       02_DATABASE_SPECIFICATION.md
+│       03_DATA_ENTRY_STANDARD.md
+│       04_UI_UX_SPECIFICATION.md
+│       05_TECHNICAL_ARCHITECTURE.md
+│       06_IMPORT_AND_EXPORT.md
+│       07_AI_ROADMAP.md
+│       08_DEVELOPER_GUIDE.md
+│       09_MASTER_PROMPT.md
+│       10_CHANGELOG.md
+│       2026-08-12_merge-dog-worksheet-report.md
+│       2026-08-13_atlaspage-v2-filters-and-detail.md
+│       2026-08-13_taxonomy-import-report.md
+│       2026-08-15_micrometry-taxonomy-import.md
+│       2026-08-17_priorita1-cleanup.md
+│       2026-08-17_priorita2-import-hostitelia.md
+│       2026-08-18_gallery-session-report.md
+│       2026-08-18_parasites-dedup-migration.md
+│       2026-08-19_admin-formular-specifikacia.md
+│       2026_08_20 - 19.00 - Opravená chyba 404 pri načítaní host_hierarchy.json v Admin nástroji.txt
+│       2026_08_20 - 20.00 - Stav Admin nástroja – Karta Hostiteľ (funkčná), potreba notifikácií a perzistencie).txt
+│       2026_08_20 - 22.00 - Stav projektu k 20.08.2026 – Dokončená správa hostiteľov a exportu.txt
+│       Atlaspage detail fix.md
+│       Atlaspage multiselect.md
+│       AtlasPage.diff
+│       Atlaspagefix.md
+│       DatabaseService.diff
+│       migration_report.md
+│       Repository.diff
+│       VetPara Atlas - chat gpt príručka.docx
+│       
+├───node_modules
+│   │   .package-lock.json
+│   │   
+│   ├───.bin
+│   │       crc32
+│   │       crc32.cmd
+│   │       crc32.ps1
+│   │       xlsx
+│   │       xlsx.cmd
+│   │       xlsx.ps1
+│   │       
+│   ├───adler-32
+│   │   │   adler32.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           tslint.json
+│   │           
+│   ├───cfb
+│   │   │   cfb.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   xlscfb.flow.js
+│   │   │   
+│   │   ├───dist
+│   │   │       cfb.js
+│   │   │       cfb.min.js
+│   │   │       cfb.min.map
+│   │   │       LICENSE
+│   │   │       xlscfb.js
+│   │   │       
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           
+│   ├───codepage
+│   │   │   cptable.js
+│   │   │   cputils.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   
+│   │   ├───bits
+│   │   │       10000.js
+│   │   │       10001.js
+│   │   │       10002.js
+│   │   │       10003.js
+│   │   │       10004.js
+│   │   │       10005.js
+│   │   │       10006.js
+│   │   │       10007.js
+│   │   │       10008.js
+│   │   │       10010.js
+│   │   │       10017.js
+│   │   │       10021.js
+│   │   │       10029.js
+│   │   │       10079.js
+│   │   │       10081.js
+│   │   │       10082.js
+│   │   │       1010.js
+│   │   │       1026.js
+│   │   │       1047.js
+│   │   │       1132.js
+│   │   │       1140.js
+│   │   │       1141.js
+│   │   │       1142.js
+│   │   │       1143.js
+│   │   │       1144.js
+│   │   │       1145.js
+│   │   │       1146.js
+│   │   │       1147.js
+│   │   │       1148.js
+│   │   │       1149.js
+│   │   │       1250.js
+│   │   │       1251.js
+│   │   │       1252.js
+│   │   │       1253.js
+│   │   │       1254.js
+│   │   │       1255.js
+│   │   │       1256.js
+│   │   │       1257.js
+│   │   │       1258.js
+│   │   │       1361.js
+│   │   │       20000.js
+│   │   │       20001.js
+│   │   │       20002.js
+│   │   │       20003.js
+│   │   │       20004.js
+│   │   │       20005.js
+│   │   │       20105.js
+│   │   │       20106.js
+│   │   │       20107.js
+│   │   │       20108.js
+│   │   │       20261.js
+│   │   │       20269.js
+│   │   │       20273.js
+│   │   │       20277.js
+│   │   │       20278.js
+│   │   │       20280.js
+│   │   │       20284.js
+│   │   │       20285.js
+│   │   │       20290.js
+│   │   │       20297.js
+│   │   │       20420.js
+│   │   │       20423.js
+│   │   │       20424.js
+│   │   │       20833.js
+│   │   │       20838.js
+│   │   │       20866.js
+│   │   │       20871.js
+│   │   │       20880.js
+│   │   │       20905.js
+│   │   │       20924.js
+│   │   │       20932.js
+│   │   │       20936.js
+│   │   │       20949.js
+│   │   │       21025.js
+│   │   │       21027.js
+│   │   │       21866.js
+│   │   │       28591.js
+│   │   │       28592.js
+│   │   │       28593.js
+│   │   │       28594.js
+│   │   │       28595.js
+│   │   │       28596.js
+│   │   │       28597.js
+│   │   │       28598.js
+│   │   │       28599.js
+│   │   │       28600.js
+│   │   │       28601.js
+│   │   │       28603.js
+│   │   │       28604.js
+│   │   │       28605.js
+│   │   │       28606.js
+│   │   │       29001.js
+│   │   │       37.js
+│   │   │       38598.js
+│   │   │       437.js
+│   │   │       47451.js
+│   │   │       500.js
+│   │   │       50220.js
+│   │   │       50221.js
+│   │   │       50222.js
+│   │   │       50225.js
+│   │   │       50227.js
+│   │   │       51932.js
+│   │   │       51936.js
+│   │   │       51949.js
+│   │   │       52936.js
+│   │   │       54936.js
+│   │   │       57002.js
+│   │   │       57003.js
+│   │   │       57004.js
+│   │   │       57005.js
+│   │   │       57006.js
+│   │   │       57007.js
+│   │   │       57008.js
+│   │   │       57009.js
+│   │   │       57010.js
+│   │   │       57011.js
+│   │   │       620.js
+│   │   │       708.js
+│   │   │       720.js
+│   │   │       737.js
+│   │   │       775.js
+│   │   │       808.js
+│   │   │       850.js
+│   │   │       852.js
+│   │   │       855.js
+│   │   │       857.js
+│   │   │       858.js
+│   │   │       860.js
+│   │   │       861.js
+│   │   │       862.js
+│   │   │       863.js
+│   │   │       864.js
+│   │   │       865.js
+│   │   │       866.js
+│   │   │       869.js
+│   │   │       870.js
+│   │   │       872.js
+│   │   │       874.js
+│   │   │       875.js
+│   │   │       895.js
+│   │   │       932.js
+│   │   │       936.js
+│   │   │       949.js
+│   │   │       950.js
+│   │   │       
+│   │   ├───dist
+│   │   │       cpexcel.full.js
+│   │   │       sbcs.full.js
+│   │   │       
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           tslint.json
+│   │           
+│   ├───crc-32
+│   │   │   crc32.js
+│   │   │   crc32c.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   
+│   │   ├───bin
+│   │   │       crc32.njs
+│   │   │       
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           tslint.json
+│   │           
+│   ├───frac
+│   │   │   frac.js
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   
+│   │   ├───dist
+│   │   │       frac.js
+│   │   │       frac.min.js
+│   │   │       frac.min.map
+│   │   │       LICENSE
+│   │   │       
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           tslint.json
+│   │           
+│   ├───ssf
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   ssf.flow.js
+│   │   │   ssf.js
+│   │   │   
+│   │   └───types
+│   │           index.d.ts
+│   │           tsconfig.json
+│   │           
+│   ├───wmf
+│   │   │   LICENSE
+│   │   │   package.json
+│   │   │   README.md
+│   │   │   
+│   │   └───dist
+│   │           wmf.js
+│   │           wmf.js.map
+│   │           wmf.node.js
+│   │           wmf.node.js.map
+│   │           
+│   ├───word
+│   │       CONTRIBUTING.md
+│   │       LICENSE
+│   │       package.json
+│   │       README.md
+│   │       word.js
+│   │       
+│   └───xlsx
+│       │   bower.json
+│       │   CHANGELOG.md
+│       │   formats.png
+│       │   legend.png
+│       │   LICENSE
+│       │   package.json
+│       │   README.md
+│       │   xlsx.js
+│       │   xlsx.mjs
+│       │   xlsxworker.js
+│       │   
+│       ├───bin
+│       │       xlsx.njs
+│       │       
+│       ├───dist
+│       │       cpexcel.full.mjs
+│       │       cpexcel.js
+│       │       LICENSE
+│       │       shim.min.js
+│       │       xlsx.core.min.js
+│       │       xlsx.core.min.map
+│       │       xlsx.extendscript.js
+│       │       xlsx.full.min.js
+│       │       xlsx.full.min.map
+│       │       xlsx.mini.min.js
+│       │       xlsx.mini.min.map
+│       │       xlsx.zahl.js
+│       │       xlsx.zahl.mjs
+│       │       
+│       └───types
+│               index.d.ts
+│               tsconfig.json
+│               
+├───public
+│   │   favicon.ico
+│   │   
+│   ├───fonts
+│   │       .gitkeep
+│   │       
+│   ├───icons
+│   │       .gitkeep
+│   │       
+│   └───images
+│       │   home-hero.png
+│       │   logo.svg
+│       │   
+│       └───parasites
+│           ├───aelurostrongylus_abstrusus_larva
+│           │       aelurostrongylus_abstrusus_larva_01.webp
+│           │       aelurostrongylus_abstrusus_larva_01_full.webp
+│           │       aelurostrongylus_abstrusus_larva_02.webp
+│           │       aelurostrongylus_abstrusus_larva_02_full.webp
+│           │       aelurostrongylus_abstrusus_larva_03.webp
+│           │       aelurostrongylus_abstrusus_larva_03_full.webp
+│           │       aelurostrongylus_abstrusus_larva_04.webp
+│           │       aelurostrongylus_abstrusus_larva_04_full.webp
+│           │       aelurostrongylus_abstrusus_larva_05.webp
+│           │       aelurostrongylus_abstrusus_larva_05_full.webp
+│           │       aelurostrongylus_abstrusus_larva_06.webp
+│           │       aelurostrongylus_abstrusus_larva_06_full.webp
+│           │       aelurostrongylus_abstrusus_larva_07.webp
+│           │       aelurostrongylus_abstrusus_larva_07_full.webp
+│           │       aelurostrongylus_abstrusus_larva_08.webp
+│           │       aelurostrongylus_abstrusus_larva_08_full.webp
+│           │       aelurostrongylus_abstrusus_larva_09.webp
+│           │       aelurostrongylus_abstrusus_larva_09_full.webp
+│           │       
+│           ├───alaria_alata_egg
+│           │       alaria_alata_egg_01.webp
+│           │       alaria_alata_egg_01_full.webp
+│           │       alaria_alata_egg_02.webp
+│           │       alaria_alata_egg_02_full.webp
+│           │       alaria_alata_egg_03.webp
+│           │       alaria_alata_egg_03_full.webp
+│           │       alaria_alata_egg_04.webp
+│           │       alaria_alata_egg_04_full.webp
+│           │       alaria_alata_egg_05.webp
+│           │       alaria_alata_egg_05_full.webp
+│           │       alaria_alata_egg_06.webp
+│           │       alaria_alata_egg_06_full.webp
+│           │       alaria_alata_egg_07.webp
+│           │       alaria_alata_egg_07_full.webp
+│           │       alaria_alata_egg_08.webp
+│           │       alaria_alata_egg_08_full.webp
+│           │       alaria_alata_egg_09.webp
+│           │       alaria_alata_egg_09_full.webp
+│           │       
+│           ├───amidostomum_anseris_egg
+│           │       amidostomum_anseris_egg_01.webp
+│           │       amidostomum_anseris_egg_01_full.webp
+│           │       amidostomum_anseris_egg_02.webp
+│           │       amidostomum_anseris_egg_02_full.webp
+│           │       amidostomum_anseris_egg_03.webp
+│           │       amidostomum_anseris_egg_03_full.webp
+│           │       amidostomum_anseris_egg_04.webp
+│           │       amidostomum_anseris_egg_04_full.webp
+│           │       amidostomum_anseris_egg_05.webp
+│           │       amidostomum_anseris_egg_05_full.webp
+│           │       
+│           └───toxascaris_leonina_egg
+│                   toxascaris_leonina_egg_01.webp
+│                   toxascaris_leonina_egg_01_full.webp
+│                   toxascaris_leonina_egg_02.webp
+│                   toxascaris_leonina_egg_02_full.webp
+│                   toxascaris_leonina_egg_03.webp
+│                   toxascaris_leonina_egg_03_full.webp
+│                   toxascaris_leonina_egg_04.webp
+│                   toxascaris_leonina_egg_04_full.webp
+│                   toxascaris_leonina_egg_05.webp
+│                   toxascaris_leonina_egg_05_full.webp
+│                   toxascaris_leonina_egg_06.webp
+│                   toxascaris_leonina_egg_06_full.webp
+│                   toxascaris_leonina_egg_07.webp
+│                   toxascaris_leonina_egg_07_full.webp
+│                   toxascaris_leonina_egg_08.webp
+│                   toxascaris_leonina_egg_08_full.webp
+│                   toxascaris_leonina_egg_09.webp
+│                   toxascaris_leonina_egg_09_full.webp
+│                   toxascaris_leonina_egg_10.webp
+│                   toxascaris_leonina_egg_10_full.webp
+│                   toxascaris_leonina_egg_11.webp
+│                   toxascaris_leonina_egg_11_full.webp
+│                   toxascaris_leonina_egg_12.webp
+│                   toxascaris_leonina_egg_12_full.webp
+│                   toxascaris_leonina_egg_13.webp
+│                   toxascaris_leonina_egg_13_full.webp
+│                   toxascaris_leonina_egg_14.webp
+│                   toxascaris_leonina_egg_14_full.webp
+│                   toxascaris_leonina_egg_15.webp
+│                   toxascaris_leonina_egg_15_full.webp
+│                   
+├───resources
+│       dog_worksheet.xlsx
+│       Mikrometria - parazity.xls
+│       
+├───Spracovanie_foto
+│   └───ORIGINALY
+│       ├───aelurostrongylus_abstrusus_larva
+│       │       Aelurostrongylus abstrusus 160x - macka.jpg
+│       │       Aelurostrongylus abstrusus 400x - macka.jpg
+│       │       Aelurostrongylus abstrusus 640x - macka (1).jpg
+│       │       Aelurostrongylus abstrusus 640x - macka.jpg
+│       │       IMG_20200207_124617.jpg
+│       │       IMG_20200207_124652.jpg
+│       │       IMG_20200207_125000.jpg
+│       │       IMG_20200207_125156.jpg
+│       │       IMG_20200207_125455.jpg
+│       │       
+│       ├───alaria_alata_adult
+│       │       Alaria alata - líska (1).jpg
+│       │       Alaria alata - líska (2).jpg
+│       │       Alaria alata - líska (3).jpg
+│       │       Alaria alata - líska (4).jpg
+│       │       Alaria alata - líska.jpg
+│       │       
+│       ├───alaria_alata_egg
+│       │       Alaria alata - 400x pes (4).jpg
+│       │       Alaria alata - 400x pes s mierami vyrez.jpg
+│       │       Alaria alata - 400x pes s mierami.jpg
+│       │       Alaria alata - 400x pes vyrez.jpg
+│       │       Alaria alata 400x - pes (1).jpg
+│       │       Alaria alata 400x - pes (2).jpg
+│       │       Alaria alata 400x - pes (3).jpg
+│       │       Alaria alata 400x - pes.jpg
+│       │       Alaria alata100x - pes.jpg
+│       │       
+│       ├───amidostomum_anseris_egg
+│       │       Amidostomum anseris - hus.jpg
+│       │       Amidostomum anseris 40x - hus s mierami.jpg
+│       │       Amidostomum anseris 40x - hus.jpg
+│       │       Amidostomum anseris s mierami - hus.jpg
+│       │       IMG_20190328_101915.jpg
+│       │       
+│       ├───baylisascaris_transfuga_egg
+│       │       Bayliascaris transfuga 400x - medvedica CP2572 (1).jpg│       │       Bayliascaris transfuga 400x - medvedica CP2572 (2).jpg│       │       Bayliascaris transfuga 400x - medvedica CP2572.jpg
+│       │       
+│       └───toxascaris_leonina_egg
+│               IMG_20200618_122050.jpg
+│               IMG_20200618_122120.jpg
+│               IMG_20200618_122200.jpg
+│               IMG_20200618_122331.jpg
+│               IMG_20200618_122417.jpg
+│               Toxascaris leonina 400x - pes (1).jpg
+│               Toxascaris leonina 400x - pes (2).jpg
+│               Toxascaris leonina 400x - pes.jpg
+│               Toxascaris leonina 400x s mierami.jpg
+│               Toxascaris leonina 400x.jpg
+│               Toxascaris leonina 40x-2 s mierami.jpg
+│               Toxascaris leonina 40x-2.jpg
+│               Toxascaris leonina 40x-3.jpg
+│               Toxascaris leonina 40x.jpg
+│               Toxascaris leonina 640x.jpg
+│               
+├───src
+│   ├───app
+│   │       App.js
+│   │       ApplicationState.js
+│   │       Router.js
+│   │       
+│   ├───components
+│   │       PrimaryImage.js
+│   │       
+│   ├───css
+│   │       layout.css
+│   │       reset.css
+│   │       typography.css
+│   │       variables.css
+│   │       
+│   ├───js
+│   │       main.js
+│   │       
+│   ├───locales
+│   │       .gitkeep
+│   │       
+│   ├───pages
+│   │       AtlasPage.js
+│   │       GalleryPage.js
+│   │       
+│   ├───services
+│   │       DatabaseService.js
+│   │       Repository.js
+│   │       ThemeService.js
+│   │       
+│   ├───styles
+│   │       atlas.css
+│   │       gallery.css
+│   │       
+│   └───utils
+│           .gitkeep
+│           
+├───tests
+│       .gitkeep
+│       
+├───tools
+│   │   excel-to-json.js
+│   │   migrate-dog-json.js
+│   │   migrate.py
+│   │   
+│   └───admin
+│       │   admin.css
+│       │   admin.js
+│       │   diff.js
+│       │   imageForm.js
+│       │   index.html
+│       │   zipExport.js
+│       │   
+│       └───forms
+│               bulkExcel.js
+│               hostForm.js
+│               imageForm.js
+│               parasiteForm.js
+│               
+├───_ai_prompts
+│       ⭐  claude_master_prompt (pre tandem s Copilotom).txt
+│       ⭐ CHATGPT IMPLEMENTÉR MASTER PROMPT.txt
+│       ⭐ DEEPSEEK MASTER PROMPT (DeepSeek = IMPLEMENTÉR).txt
+│       
+└───_archive
+        app.js
+        config.js
+        Navbar.js
+        router.js
+        utils.js
+        
+PS H:\Dana\_ Robota\VetParaAtlas> 

@@ -1,0 +1,17 @@
+Príkazy vo VS studio termináli:
+
+Presun do podadresára VetPara-Atlas
+cd "H:\Dana\_ Robota\VetParaAtlas\VetPara-Atlas"
+
+
+Zobrazenie celej štruktúry:
+tree /F
+
+
+Vrátenie súboru k stavu pred posledným Commitom:
+git restore "názov súboru aj s príponou"
+
+
+
+Vrátenie všetkých súborov k stavu pred posledným Commitom:
+git restore .

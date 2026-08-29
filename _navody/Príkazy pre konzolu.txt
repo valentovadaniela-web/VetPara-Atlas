@@ -1,0 +1,3 @@
+Otvorenie konzoly: CTRL + SHIFT + I
+
+Umožnenie kopírovať: 
