@@ -355,6 +355,24 @@
 
   </section>
 
+  <section class="card" id="cleanup-card">
+    <h2>2. Nájsť nepoužité fotky na disku (upratovanie)</h2>
+    <p style="font-size:0.85rem;color:var(--color-text-muted);margin-top:0;">
+      Porovná súbory v priečinku <code>public/images/parasites/</code> s tým, čo je
+      reálne použité v načítanom <code>images.json</code> (krok 1). Vypíše súbory,
+      ktoré tam po zmazaní záznamov zbytočne zostali. Súbory <code>_full.webp</code>,
+      ktoré sú sprievodný variant k použitej fotke, sa počítajú ako použité — tie sa
+      hlásiť nebudú. Nič sa nemaže automaticky — vygeneruje sa zoznam a voliteľne
+      skript, ktorý si sama skontroluješ a spustíš.
+    </p>
+    <div class="load-row">
+      <label class="btn btn-outline" for="folder-input">📁 Vybrať priečinok public/images/parasites…</label>
+      <input type="file" id="folder-input" webkitdirectory directory multiple>
+      <span id="cleanup-status">Zatiaľ nič neporovnané.</span>
+    </div>
+    <div id="cleanup-results" style="margin-top: var(--space-md);"></div>
+  </section>
+
 </main>
 
 <script>
@@ -703,6 +721,187 @@
 
     images.forEach((img) => { img._dirty = false; });
     renderList();
+  });
+
+  // ------------------------------------------------------------------
+  // 2. Nájsť nepoužité fotky na disku (upratovanie)
+  // ------------------------------------------------------------------
+
+  const cleanupStatus = document.getElementById("cleanup-status");
+  const cleanupResults = document.getElementById("cleanup-results");
+  const folderInput = document.getElementById("folder-input");
+
+  /**
+   * Z ľubovoľnej cesty vytiahne časť za "parasites/" — napr. z
+   * "/public/images/parasites/<id>/<subor>.webp" aj z
+   * "parasites/<id>/<subor>.webp" (webkitRelativePath vybraného
+   * priečinka) dostaneme rovnaký kľúč "<id>/<subor>.webp", nezávisle od
+   * toho, či autorka vybrala priečinok "parasites", "images" alebo
+   * "public" — hľadá sa len posledný výskyt "parasites/" v ceste.
+   */
+  function extractParasitesRelativeKey(pathStr) {
+    const normalized = String(pathStr || "").replace(/\\/g, "/");
+    const marker = "parasites/";
+    const idx = normalized.lastIndexOf(marker);
+    if (idx === -1) return null;
+    return normalized.slice(idx + marker.length);
+  }
+
+  function isFullVariantKey(key) {
+    return /_full\.[a-z0-9]+$/i.test(key);
+  }
+
+  function baseKeyFromFullVariant(key) {
+    return key.replace(/_full(\.[a-z0-9]+)$/i, "$1");
+  }
+
+  function renderCleanupResults(unused, missingOnDisk, scannedCount, ignoredCount) {
+    if (unused.length === 0) {
+      cleanupStatus.textContent =
+        `Skontrolovaných súborov: ${scannedCount}. Nič nepoužité sa nenašlo — priečinok je čistý. 🎉`;
+    } else {
+      cleanupStatus.textContent =
+        `Skontrolovaných súborov: ${scannedCount}. Nepoužitých: ${unused.length}` +
+        (ignoredCount > 0 ? ` (${ignoredCount} súborov mimo "parasites/" ignorovaných).` : ".");
+    }
+
+    const unusedListHtml = unused.length === 0 ? "" : `
+      <div class="card" style="background: var(--color-bg-main); margin-bottom: var(--space-md);">
+        <div style="display:flex; justify-content:space-between; flex-wrap:wrap; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+          <strong>${unused.length} nepoužitých súborov v public/images/parasites/</strong>
+          <div style="display:flex; gap: var(--space-sm); flex-wrap: wrap;">
+            <button type="button" class="btn btn-outline btn-sm" id="btn-copy-unused">📋 Kopírovať zoznam ciest</button>
+            <button type="button" class="btn btn-sm" id="btn-download-ps1">⬇ Stiahnuť PowerShell skript na zmazanie</button>
+          </div>
+        </div>
+        <div style="max-height: 300px; overflow-y:auto; font-family: monospace; font-size: 0.8rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: var(--space-sm);">
+          ${unused.map((k) => `<div>${escapeHtml(k)}</div>`).join("")}
+        </div>
+      </div>
+    `;
+
+    const missingListHtml = missingOnDisk.length === 0 ? "" : `
+      <div class="card" style="background: #fef2f2; margin-bottom: 0;">
+        <strong>⚠ Bonus nález: ${missingOnDisk.length} záznamov v images.json, ku ktorým sa vo vybranom priečinku nenašiel súbor</strong>
+        <p style="font-size:0.8rem;color:var(--color-text-muted);">
+          Buď si vybrala nesprávny/neúplný priečinok, alebo ide o rozbitý odkaz (fotka bola premenovaná/zmazaná z disku, ale záznam v databáze ostal).
+        </p>
+        <div style="max-height: 200px; overflow-y:auto; font-family: monospace; font-size: 0.8rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: var(--space-sm);">
+          ${missingOnDisk.map((k) => `<div>${escapeHtml(k)}</div>`).join("")}
+        </div>
+      </div>
+    `;
+
+    cleanupResults.innerHTML = unusedListHtml + missingListHtml;
+
+    const copyBtn = document.getElementById("btn-copy-unused");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        try {
+          await navigator.clipboard.writeText(unused.join("\n"));
+          cleanupStatus.textContent = "Zoznam ciest skopírovaný do schránky.";
+        } catch (error) {
+          cleanupStatus.textContent = "Kopírovanie zlyhalo — skopíruj zoznam ručne z výpisu nižšie.";
+        }
+      });
+    }
+
+    const downloadBtn = document.getElementById("btn-download-ps1");
+    if (downloadBtn) {
+      downloadBtn.addEventListener("click", () => {
+        const scriptLines = [
+          "# VetPara Atlas — skript na zmazanie nepouzitych fotiek",
+          "# Vygenerovane nastrojom tools/captions/index.html.",
+          "# POZOR: skript maze subory NATRVALO. Pred spustenim si zoznam nizsie skontroluj.",
+          "# Spusti z korena repozitara (priecinok, ktory priamo obsahuje priecinok 'public').",
+          "",
+          "$files = @(",
+          ...unused.map((k) => '    "public/images/parasites/' + k.replace(/"/g, '`"') + '"'),
+          ")",
+          "",
+          "foreach ($f in $files) {",
+          "    if (Test-Path $f) {",
+          "        Remove-Item $f -Verbose",
+          "    } else {",
+          "        Write-Warning \"Nenajdene (uz zmazane?): $f\"",
+          "    }",
+          "}",
+          ""
+        ];
+        const blob = new Blob([scriptLines.join("\r\n")], { type: "text/plain" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "zmazat-nepouzite-fotky.ps1";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      });
+    }
+  }
+
+  folderInput.addEventListener("change", () => {
+    if (images.length === 0) {
+      cleanupStatus.textContent = "Najprv načítaj images.json (krok 1 vyššie).";
+      folderInput.value = "";
+      return;
+    }
+
+    const files = Array.from(folderInput.files || []);
+    if (files.length === 0) {
+      cleanupStatus.textContent = "Nevybrala si žiadny priečinok.";
+      return;
+    }
+
+    // Množina kľúčov "<id>/<subor>.webp" reálne použitých v images.json
+    // (case-insensitive, kvôli rôznej veľkosti písmen v systémových
+    // súboroch na Windows).
+    const usedKeys = new Set();
+    images.forEach((img) => {
+      const key = extractParasitesRelativeKey(String(img.url || "").replace(/^\/+/, ""));
+      if (key) usedKeys.add(key.toLowerCase());
+    });
+
+    const diskKeys = new Set();
+    const unused = [];
+    let scannedCount = 0;
+    let ignoredCount = 0;
+
+    files.forEach((file) => {
+      const key = extractParasitesRelativeKey(file.webkitRelativePath || file.name);
+      if (!key) {
+        ignoredCount++;
+        return;
+      }
+      scannedCount++;
+      const lowerKey = key.toLowerCase();
+      diskKeys.add(lowerKey);
+
+      if (usedKeys.has(lowerKey)) return; // priamo použitá fotka
+
+      if (isFullVariantKey(lowerKey)) {
+        const baseKey = baseKeyFromFullVariant(lowerKey);
+        if (usedKeys.has(baseKey)) return; // legitímny "_full" spoločník k použitej fotke
+      }
+
+      unused.push(key);
+    });
+
+    unused.sort();
+
+    // Bonus: záznamy v images.json, ku ktorým sa vo vybranom priečinku
+    // nenašiel zodpovedajúci súbor (rozbitý odkaz alebo neúplný výber).
+    const missingOnDisk = [];
+    images.forEach((img) => {
+      const key = extractParasitesRelativeKey(String(img.url || "").replace(/^\/+/, ""));
+      if (key && !diskKeys.has(key.toLowerCase())) {
+        missingOnDisk.push(`${img.parasiteId || "?"} → ${key}`);
+      }
+    });
+    missingOnDisk.sort();
+
+    renderCleanupResults(unused, missingOnDisk, scannedCount, ignoredCount);
   });
 
   // Pri otvorení skúsime rovno automatické načítanie, aby autorka v

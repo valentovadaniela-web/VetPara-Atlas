@@ -446,7 +446,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:40.108Z"
+    "dateAdded": "2026-08-28T20:00:40.108Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
@@ -454,8 +455,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:40.113Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-28T20:00:40.113Z"
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
