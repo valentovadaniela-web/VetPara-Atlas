@@ -31,6 +31,10 @@ function isFullVariantFileName(fileName) {
 // (napr. po pridaní/zmazaní fotky) tíško vypol.
 let showOnlyMissing = false;
 
+// Perzistentný stav zoradenia podľa abecedy (rovnaký dôvod ako vyššie —
+// bez toho by sa voľba pri každom prekreslení tabu tíško resetovala).
+let sortAlphabetically = false;
+
 export function renderImageTab() {
     const container = document.getElementById('tab-image');
     if (!container) return;
@@ -55,9 +59,19 @@ export function renderImageTab() {
     // zoznamu (nie z už vyfiltrovaného), aby číslo v popise checkboxu
     // zostalo správne aj keď je filter práve zapnutý.
     const missingCount = parasites.filter(p => (imagesByParasite.get(p.id) || []).length === 0).length;
-    const visibleParasites = showOnlyMissing
+    let visibleParasites = showOnlyMissing
         ? parasites.filter(p => (imagesByParasite.get(p.id) || []).length === 0)
         : parasites;
+
+    // FIX: zoradenie podľa abecedy — triedime kópiu poľa (nie state.parasites
+    // priamo), aby sa nezmenilo poradie použité inde v appke (napr. export).
+    // Radíme podľa latinského názvu (to je to, čo sa v hlavičke karty vidí
+    // ako prvé), s fallbackom na ID pre prípad chýbajúceho latinName.
+    if (sortAlphabetically) {
+        visibleParasites = [...visibleParasites].sort((a, b) =>
+            (a.latinName || a.id).localeCompare(b.latinName || b.id, 'sk', { sensitivity: 'base' })
+        );
+    }
 
     container.innerHTML = `
         <div class="image-admin">
@@ -67,10 +81,16 @@ export function renderImageTab() {
                 <p style="font-size:0.9rem;color:#7f8c8d;">
                     <strong>Poznámka:</strong> Nájdite v projekte priečinok <code>public/images/parasites/{id}</code> a nakopírujte do neho fotky. Tieto fotky budú automaticky používané.
                 </p>
-                <label style="display:inline-flex; align-items:center; gap:0.4rem; margin-top:0.4rem; font-size:0.9rem; cursor:pointer;">
-                    <input type="checkbox" id="filter-missing-images" ${showOnlyMissing ? 'checked' : ''}>
-                    Zobraziť len parazitov bez fotografie (${missingCount})
-                </label>
+                <div style="display:flex; flex-wrap:wrap; gap:1.2rem; margin-top:0.4rem;">
+                    <label style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.9rem; cursor:pointer;">
+                        <input type="checkbox" id="filter-missing-images" ${showOnlyMissing ? 'checked' : ''}>
+                        Zobraziť len parazitov bez fotografie (${missingCount})
+                    </label>
+                    <label style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.9rem; cursor:pointer;">
+                        <input type="checkbox" id="sort-alphabetically" ${sortAlphabetically ? 'checked' : ''}>
+                        Zoradiť podľa abecedy (latinský názov)
+                    </label>
+                </div>
             </div>
 
             <div class="image-list" style="max-height: 700px; overflow-y: auto; margin-top: 1rem;">
@@ -126,6 +146,15 @@ export function renderImageTab() {
     if (filterCheckbox) {
         filterCheckbox.addEventListener('change', () => {
             showOnlyMissing = filterCheckbox.checked;
+            renderImageTab();
+        });
+    }
+
+    // Udalosť pre zoradenie podľa abecedy
+    const sortCheckbox = document.getElementById('sort-alphabetically');
+    if (sortCheckbox) {
+        sortCheckbox.addEventListener('change', () => {
+            sortAlphabetically = sortCheckbox.checked;
             renderImageTab();
         });
     }
