@@ -1,154 +1,71 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.25 Aktuálny stav — doplnené (2026‑08‑23, session: Excel round-trip pre bulk import — update existujúcich záznamov podľa `id`, plný round-trip všetkých polí, odstránenie mŕtvych polí `methods`/`references` z bulkExcel.js)
+🔥 0.22 Aktuálny stav — doplnené (2026‑08‑22/23, session: 404 na fotky v Detaile parazita, výber hlavnej fotky (isPrimary), upratovací nástroj na nepoužité súbory, scroll + filter v tabe Fotografie)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
 
 ### Kontext
 
-Nadväzuje na §0.9 (predchádzajúci code review `admin.js`) a plánovaný bod "Excel round-trip" z plánu ďalších krokov. Autorka nahrala `admin.js` (kompletný, so všetkými predtým nahlásenými FIXmi), `diff.js` a `bulkExcel.js` (dovtedy podporoval iba `action: 'create'`, nikdy `'update'`). Cieľom bolo: (1) stiahnutie aktuálneho stavu databázy ako vyplnenej tabuľky vrátane fotiek, (2) spätný import tej istej tabuľky, ktorý podľa stĺpca `id` rozlíši nový záznam od aktualizácie existujúceho.
+Nadväzuje na §0.21. Autorka ručne vyčistila 5 duplicitných `_full` záznamov z §0.21 (potvrdené, žiadne ďalšie duplicity). Nahlásila nový problém: Detail parazita nezobrazoval fotky (404 v konzole), hoci Galéria aj prepojenie z fotky fungovali. Následne v tej istej session požiadala o možnosť explicitne určiť hlavnú fotku, o upratovací nástroj na nepoužité súbory v `public/images/parasites/`, a napokon (táto správa) o opravu scroll-pozície pri pridávaní fotky v Admin nástroji + filter na parazitov bez fotky.
 
-### ✅ Bod 1: Overenie formátu `admin.js`/`diff.js` pred implementáciou
+### 🔴→✅ Bug: Detail parazita — 404 na fotky (Galéria fungovala, Detail nie)
 
-Potvrdené: `addPendingChange({type:'parasite', action:'create'|'update'|'delete', id, data})` očakáva v `data` **kompletný nový objekt záznamu** (nie diff) — `applyChangeToWorkingCopy()` robí plné prepísanie `state.workingCopy[idx] = change.data`. Všetkých 6 chýb nahlásených v predchádzajúcom code review (§0.9) je už opravených priamo v nahratom `admin.js` (komentáre `FIX #1`–`#6`): kontrola duplicity ID zohľadňuje `pendingChanges`/`workingCopy`, `workingCopy` sa reálne používa (`getAllIds()`, `generateId()`), `delete` sa v ňom spracúva, badge pri mazaní je správny, `extractUniqueValues()` číta aj `workingCopy`.
+**Príčina:** V `AtlasPage.js` existujú dve paralelné vetvy na vykreslenie fotiek v Detaile — `PrimaryImage.render()`/`PrimaryImage.populate()` (má `resolveImageUrl()`, ktorá odstráni úvodnú lomku) a novší blok (`// --- NOVÉ: Zobrazenie obrázkov z images.json ---`, pridaný pri predchádzajúcej úprave klik-správania na fotkách), ktorý ale používal `img.url`/`firstImageUrl` **priamo, bez normalizácie**. `PrimaryImage.populate()` sa navyše volal iba v `else` vetve (keď fotky NEEXISTUJÚ) — teda presne vtedy, keď to je zbytočné. Keďže `img.url` v `images.json` je absolútna cesta (`/public/images/...`) a appka na GitHub Pages beží pod podcestou (`/VetPara-Atlas/`), táto vetva spôsobovala 404 presne podľa vzoru už zdokumentovaného v §0.9/§0.10 pre Galériu — len táto konkrétna vetva vtedy ešte neexistovala/nebola opravená.
 
-### 🔴→✅ Bod 2: Kritické zistenie pred implementáciou — chýbajúce polia v pôvodnom Exceli by pri update ticho vynulovali dáta
+**Oprava:** oba výskyty (`firstImageUrl`, `img.url` v miniatúrach) teraz idú cez `PrimaryImage.resolveImageUrl()` (existujúca, už otestovaná funkcia — nič sa neduplikovalo).
 
-Pôvodný `bulkExcel.js` exportoval/importoval len časť polí parazita — chýbali `lifeCycle`, `pathology`, `hostNotes`, `synonyms`, `diagnosticSigns`, `differentialDiagnosis`; `zoonosis` sa exportoval len ako text bez spätného importu. Keďže dohodnuté pravidlo pre update je "kompletné prepísanie záznamu podľa riadku", chýbajúce stĺpce by pri update ticho vynulovali existujúce dáta vo všetkých aktualizovaných z 474 záznamov. Autorka rozhodla: rozšíriť Excel o všetky polia (plný round-trip) namiesto obmedzovania update logiky.
+### ✅ Nová funkcia: explicitný výber hlavnej fotky (`isPrimary`)
 
-### ✅ Bod 3: Implementácia plného round-tripu + update podľa `id` (`tools/admin/forms/bulkExcel.js`)
+Autorka chcela vedieť/vedieť ovplyvniť, ktorá fotka z galérie sa ukáže ako hlavná v Atlase. Zistené: `Repository.getImagesForParasite()` netriedi vôbec — vracia záznamy v poradí, v akom sú zapísané v `images.json` (documented already v §0.10, riadok s diffom `getImagesForParasite`). `PrimaryImage.js` má vlastné (nepoužívané pre parazitov s fotkami) triedenie podľa najstaršieho `dateAdded`.
 
-- Export "Aktuálny stav" teraz číta zo `state.workingCopy` (nie `state.parasites`), takže zahŕňa aj čakajúce zmeny z tejto session.
-- Šablóna aj export majú identickú sadu stĺpcov (konštanta `COLUMNS`), vrátane `hostNotes` (formát bunky: `"Pes: poznámka | Mačka: iná poznámka"`, oddeľovač zvislá čiara) a `zoonosis` (`áno`/`nie`).
-- Import: stĺpec `id` prázdny → `create` (nové ID cez `generateId()`, ktorý si sám rieši duplicitu voči `state.parasites` aj `state.workingCopy`, vrátane už spracovaných riadkov v tom istom importe); `id` vyplnený a nájdený vo `workingCopy` → `update` (kompletné prepísanie polí podľa riadku, okrem `images`, ktoré sa vždy preberú z pôvodného záznamu); `id` vyplnený a nenájdený → riadok sa preskočí a nahlási sa ako chyba ("neznáme ID").
-- Riadky, kde by update nezmenil žiadnu hodnotu (`deepEqual()` porovnanie voči existujúcemu záznamu, nezávislé od poradia kľúčov v objekte), sa nepridávajú do `state.pendingChanges` — iba sa započítajú, aby sidebar "Čakajúce zmeny" nebol zahltený no-op položkami.
-- Report po dokončení importu: "X nových / Y aktualizovaných / Z bez zmeny" + samostatné počty pre neznáme ID a neplatné riadky (chýbajúce `latinName`/`stage`).
-- Stĺpce `imagesCount`/`imageUrls` v exporte sú čisto informatívne — import ich nikdy nečíta; fotky sa naďalej menia výhradne cez kartu "Fotografie".
+**Riešenie (schválené autorkou spomedzi 4 ponúknutých variantov):** nové voliteľné pole `isPrimary: true` v `images.json`, nastaviteľné v `tools/captions/index.html`.
 
-### ✅ Bod 4: Odstránenie polí `methods` a `references` z `bulkExcel.js` (na žiadosť autorky)
+- **`src/components/PrimaryImage.js`** — nová zdieľaná funkcia `pickPrimary(imagesForParasite)`: uprednostní záznam s `isPrimary:true`, inak spätne kompatibilný fallback na najstarší `dateAdded`. Použitá vo `findPrimaryImage()`, `populate()`, `renderStatic()`.
+- **`src/pages/AtlasPage.js`** — Detail teraz volá `PrimaryImage.pickPrimary(parasiteImages)` namiesto natvrdo `parasiteImages[0]`; zvolená hlavná fotka sa vyradí zo zoznamu miniatúr pod ňou (`thumbnailImages = parasiteImages.filter(img => img !== mainImage)`), aby sa nezobrazovala 2×.
+- **`tools/captions/index.html`** — pri každej fotke buď odznak „★ Hlavná fotka" (aj s poznámkou „(predvolená — najskoršia v poradí)", ak nič nie je explicitne označené — aby bolo vidno aktuálny efektívny stav aj bez zásahu), alebo tlačidlo „☆ Nastaviť ako hlavnú". Klik nastaví `isPrimary:true` na vybranej fotke a **odstráni** (nie `false`, kvôli minimálnemu diffu) toto pole zo všetkých ostatných fotiek toho istého `parasiteId` — vždy platí najviac jedna hlavná fotka na objekt, dá sa kedykoľvek prehodiť na inú.
 
-Odstránené z celej dátovej cesty (stĺpce, `buildFieldsFromRow()`, export, vzorový riadok šablóny). `methods` bolo už predtým odstránené zo schémy podľa §0.7/§0.8 — bez rizika. **`references` sa doteraz v kóde explicitne zachovávalo pri update** (rovnako ako `images`, cez `references: existing.references || []`) — po tomto odstránení sa už nezachováva vôbec, teda ak by niektorý reálny záznam mal `references` vyplnené, bulk update by mu ho odteraz vynuloval. Toto je zámerné, autorkou potvrdené rozhodnutie (nie prehliadnutá chyba) — no treba o tom vedieť, ak sa v budúcnosti zistí, že `references` má predsa len niekde reálne dáta.
+**Pozor pre ďalšiu session:** `PrimaryImage.js`/`AtlasPage.js` sú jediné dva zdroje potvrdené v tejto session ako "spotrebitelia" obrázka pre jeden objekt — ak by niekde inde v appke (napr. budúci card/list náhľad v Atlase) pribudol ďalší mechanizmus výberu "reprezentatívnej" fotky, treba ho tiež napojiť na `PrimaryImage.pickPrimary()`, inak bude nekonzistentný s tým, čo si autorka nastaví v `tools/captions`.
+
+### ✅ Nová funkcia: nástroj na nájdenie nepoužitých fotiek na disku
+
+Po mazaní záznamov cez `tools/captions/index.html` (§0.21) fyzické súbory na disku ostávajú (nástroj beží v prehliadači, nemôže mazať z disku — rovnaké obmedzenie ako všade v projekte, pravidlo §3.6). Autorka chcela vedieť, ktoré súbory v `public/images/parasites/` už nič nepoužíva.
+
+**Implementácia (`tools/captions/index.html`, nová sekcia „2. Nájsť nepoužité fotky na disku"):**
+- `<input type="file" webkitdirectory directory multiple>` — autorka vyberie priečinok (`parasites`, `images` alebo `public`, nástroj hľadá posledný výskyt `"parasites/"` v ceste, takže je jedno, ktorý z nich vyberie).
+- Porovná zoznam vybraných súborov s `parasiteId`+súbor odvodeným z `img.url` v načítanom `images.json`.
+- **Dôležitá poistka:** súbory `..._full.webp` sa nepočítajú ako nepoužité, pokiaľ je ich "base" (`...webp` bez `_full`) v databáze použité — inak by nástroj falošne nahlásil všetky legitímne zväčšovacie varianty ako nepoužité (presne tie, čo mali podľa §0.21 zostať iba na disku, nie v JSON).
+- Bonus: opačný smer — záznam v `images.json`, ku ktorému sa vo vybranom priečinku nenašiel súbor (rozbitý odkaz / neúplný výber priečinka).
+- Výstup: zoznam ciest na obrazovke, tlačidlo „Kopírovať zoznam ciest" (do schránky) a tlačidlo „Stiahnuť PowerShell skript na zmazanie" — vygeneruje `.ps1` s `Remove-Item` pre každú cestu (`-Verbose`, `Test-Path` kontrola pred mazaním). **Nič sa nemaže automaticky z prehliadača** — autorka skript stiahne, skontroluje a sama spustí (vysvetlené aj `Unblock-File`/`-ExecutionPolicy Bypass`, keďže Windows blokuje stiahnuté `.ps1` defaultne).
+
+### 🟡 Zadané v tejto správe, čaká na vyriešenie (pozri nižšie „Otvorené úlohy")
+
+Autorka nahlásila v Admin nástroji (`tools/admin/forms/imageForm.js`, tab „3. Fotografie"):
+1. Po kliknutí na „Pridať" (pridanie fotky k parazitovi) sa stránka/zoznam vráti navrch — treba sa potom znova rolovať na pôvodné miesto. Žiaduce: zachovať pozíciu scrollovania cez `renderImageTab()`.
+2. Chce filter/prepínač „zobraziť len parazitov bez fotografie", aby vedela, kde ešte treba fotky doplniť.
+
+Riešenie týchto dvoch bodov je popísané a odovzdané v tej istej správe, kde vznikla táto sekcia AI_STATUS — pozri commit správu / diff nižšie v tabuľke zmien, prípadne priamo v chate.
 
 ### Zhrnutie vykonaných zmien kódu v tejto session
 
 | Súbor | Zmena | Stav |
 | --- | --- | --- |
-| `tools/admin/forms/bulkExcel.js` | Export "Aktuálny stav" číta z `workingCopy`; pridané všetky chýbajúce polia (`lifeCycle`, `pathology`, `hostNotes`, `synonyms`, `diagnosticSigns`, `differentialDiagnosis`, boolean `zoonosis`); import podporuje `create` aj `update` podľa stĺpca `id`; `deepEqual()` detekcia no-op zmien; odstránené polia `methods`, `references` | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/pages/AtlasPage.js` | `firstImageUrl`/`img.url` v Detaile idú cez `PrimaryImage.resolveImageUrl()` (oprava 404 na GitHub Pages); hlavná fotka sa vyberá cez `PrimaryImage.pickPrimary()`, vyradená z miniatúr | ✅ hotové (kód), ⬜ naživo neoverené |
+| `src/components/PrimaryImage.js` | nová `pickPrimary()` (isPrimary → fallback najstarší dateAdded), použitá v `findPrimaryImage()`/`populate()`/`renderStatic()` | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/captions/index.html` | tlačidlo „Nastaviť ako hlavnú" (`isPrimary`), sekcia „Nájsť nepoužité fotky na disku" (výber priečinka, porovnanie, kopírovanie zoznamu, generovanie `.ps1`) | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/forms/imageForm.js` | zachovanie scroll pozície v `renderImageTab()` + filter „len bez fotografie" | ✅ hotové (kód) — pozri zvyšok tejto správy, ⬜ naživo neoverené |
 
 ### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
 
-1. Naživo overiť plný round-trip: stiahnuť "Aktuálny stav", upraviť pár hodnôt priamo v Exceli (vrátane `hostNotes` a `zoonosis`), naimportovať späť, skontrolovať v "Čakajúcich zmenách" (create aj update), až potom pustiť na všetkých 474 záznamoch.
-2. Overiť formát `hostNotes` (`"Host: poznámka | Host2: poznámka2"`) na reálnom zázname s viacerými hostiteľmi — najmä či oddeľovač `|` nekoliduje s obsahom niektorej poznámky.
-3. Potvrdiť/zdokumentovať, či pole `references` je v reálnych 474 záznamoch skutočne všade prázdne — ak nie, treba do `bulkExcel.js` vrátiť jeho zachovávanie pri update.
-4. Otvorené úlohy z §0.24 (naživo overenie filtra na karte "Fotografie", presun "Zrušiť filtre" v Atlase/Galérii, nové chip-tagy v Galérii) zostávajú nezmenené — pozri nižšie.
+1. **Naživo overiť všetko vyššie** — žiadna z týchto zmien (§0.21 aj §0.22) ešte nebola potvrdená autorkou naživo v prehliadači/GitHub Pages, iba odovzdaná ako súbory v chate.
+2. Konkrétne otestovať Detail parazita na GitHub Pages po nasadení opravy — potvrdiť, že fotky sa už načítavajú (predtým 404).
+3. Vyskúšať „Nastaviť ako hlavnú" pri aspoň jednom parazitovi s viacerými fotkami a overiť, že sa v Detaile skutočne zobrazí zvolená fotka (nie prvá v poradí).
+4. Vyskúšať nástroj na nepoužité súbory na reálnom `public/images/parasites/` priečinku — najmä overiť, že `_full` súbory k použitým fotkám sa naozaj nehlásia ako nepoužité, a že vygenerovaný `.ps1` skript funguje (autorka používa Windows/PowerShell podľa `tree.txt`).
+5. Zvážiť doplnenie `isPrimary` do `docs/02_DATABASE_SPECIFICATION.md` §9 (zatiaľ len v kóde a tu, nie v oficiálnej schéme dokumentácie) — nie je priorita, len poznámka.
+6. §0.6 body 1, 2, 5 (viď §0.21, bod 4 otvorených úloh) — stále formálne nezavreté, len vizuálne overené komentármi `FIX #1–#5` v kóde.
 
 ---
 
-🔥 0.24 Aktuálny stav — doplnené (2026‑08‑22, session: presun "Zrušiť filtre" + stavu filtrov hore v Atlase/Galérii, chýbajúce chip-tagy aktívnych filtrov v Galérii, filter na karte "Fotografie" v admin nástroji)
-
-## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
-
-### Kontext
-
-Autorka požiadala o tri veci: (1) filter na karte "Pridať fotografie" v admin nástroji, aby nemusela hľadať cez Ctrl+F; (2) presun tlačidla "Zrušiť filtre" (+ stavu, čo je vybraté) v Atlase a Galérii hore, aby nemusela rolovať; následne nahlásila, že (3) Galéria neukazuje aktívne filtre, hoci Atlas ich ukazuje korektne. Nahraté a upravené súbory: `imageForm.js`, `index.html` (admin, bez zmeny), `AtlasPage.js`, `GalleryPage.js`.
-
-### ✅ Bod 1: Filter na karte "Fotografie" (`tools/admin/forms/imageForm.js`)
-
-Pridané textové pole `#image-filter-input` hneď pod hlavičku "Správa fotografií" (nad tabuľkou 475 riadkov). Filtruje podľa ID parazita aj latinského názvu, bez rozlišovania veľkosti písmen a diakritiky (`normalizeForFilter()` — `NFD` + odstránenie diakritických znamienok). Riadky sa skrývajú cez `style.display`, nie prerenderujú — tlačidlá Pridať/Vymazať v skrytých riadkoch ostávajú funkčné. Hodnota filtra sa drží v module-level premennej `imageFilterValue` mimo `renderImageTab()`, aby **prežila prekreslenie** po pridaní/vymazaní fotky (inak by sa pri každej akcii vynulovala). Po prekreslení sa fokus aj kurzor vrátia do poľa filtra. Prázdny výsledok zobrazí hlášku "Žiadny parazit nezodpovedá filtru."
-
-### ✅ Bod 2: "Zrušiť filtre" + stav filtrov presunuté hore (Atlas, Galéria)
-
-**Atlas (`AtlasPage.js`):** `#atlas-active-filters` (chip-tagy vybratých filtrov) a tlačidlo "Zrušiť všetky filtre" presunuté z konca bočného panelu hneď pod nadpis, pred sekcie Hostiteľ/Materiál/Tvar/Farba/Veľkosť. Žiadne `id` sa nezmenili — len poradie v HTML, JS zapájanie (`getElementById`) bez zmeny.
-
-**Galéria (`GalleryPage.js`):** tlačidlo "Zrušiť filtre" a `#gallery-stats` presunuté hneď pod nadpis, pred textové pole a strom hostiteľov.
-
-### 🔴→✅ Bod 3: Galéria neukazovala aktívne filtre (nahlásené po bode 2)
-
-Príčina: nešlo o regresiu spôsobenú presunom v bode 2, ale o **chýbajúcu funkciu od začiatku** — `GalleryPage.js` mal iba číselný súhrn (`#gallery-stats`: "Zobrazené: X / Y"), žiadny ekvivalent `AtlasPage.renderActiveFilters()`/`#atlas-active-filters`.
-
-**Oprava:** pridaná nová `GalleryPage.renderActiveFilters()` (rovnaký princíp ako v Atlase) — vypisuje chip-tagy do nového `#gallery-active-filters` (umiestnený hneď pod tlačidlo "Zrušiť filtre", nad `#gallery-stats`): jeden chip pre textové vyhľadávanie ("Objekt: ..."), po jednom pre každého vybraného hostiteľa ("Hostiteľ: ..."). Kliknutie na chip (×) zruší daný filter jednotlivo. Zámerne znovupoužité triedy `.atlas-filter-tag`/`.atlas-active-filters`, aby sa chipy vizuálne zhodovali s Atlasom bez nutnosti dopisovať nové CSS (existujúce štýly v `atlas.css` platia pre obe stránky). `renderActiveFilters()` sa volá vnútri `renderGrid()`, ktorá sa už aj tak spúšťa po každej zmene filtra (search input, host checkboxy, Zrušiť filtre) — netreba pridávať volania na viacero miest.
-
-### Zhrnutie vykonaných zmien kódu v tejto session
-
-| Súbor | Zmena | Stav |
-| --- | --- | --- |
-| `tools/admin/forms/imageForm.js` | pridaný filter `#image-filter-input` (ID/latinský názov, bez diakritiky), stav prežíva `renderImageTab()` | ✅ hotové (kód), ⬜ naživo neoverené |
-| `src/pages/AtlasPage.js` | `#atlas-active-filters` + tlačidlo "Zrušiť všetky filtre" presunuté hore | ✅ hotové (kód), ⬜ naživo neoverené |
-| `src/pages/GalleryPage.js` | tlačidlo "Zrušiť filtre" + `#gallery-stats` presunuté hore; nová `renderActiveFilters()` + `#gallery-active-filters` (chip-tagy aktívnych filtrov, doteraz chýbali) | ✅ hotové (kód), ⬜ naživo neoverené |
-
-### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
-
-1. Naživo overiť na GitHub Pages: filter na karte "Fotografie" (vrátane správania pri Pridať/Vymazať pri aktívnom filtri), presun "Zrušiť filtre" v Atlase aj Galérii, nové chip-tagy aktívnych filtrov v Galérii (vrátane odstránenia jednotlivého filtra kliknutím na ×).
-2. Súvisiaca poznámka pre autorku (bez zmeny kódu): pri pridávaní fotiek je odporúčaný postup najprv fyzicky nakopírovať súbor do `public/images/parasites/{id}/` a až potom ho vybrať cez formulár (nie naopak) — formulár berie len názov súboru, neuploaduje ho, takže opačné poradie zvyšuje riziko nepovšimnutého 404 (chýbajúci fyzický súbor pri "úspešne" pridanom zázname).
-
----
-
-🔥 0.23 Aktuálny stav — doplnené (2026‑08‑22, session: Detail parazita na mobile — otváral sa v strede stránky namiesto na začiatku + fotka mala veľký prázdny rám nad/pod)
-
-## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
-
-### Kontext
-
-Autorka nahlásila dva samostatné mobilné problémy v Detaile parazita: (1) fotka je vo veľkom ráme s veľa zbytočným priestorom nad a pod; (2) stránka sa po otvorení detailu neotvára na začiatku, ale scrollnutá niekde medzi Životný cyklus a Patológiu. Nahraté a skontrolované súbory: `AtlasPage.js`, `atlas.css`.
-
-### 🔴→✅ Bug 1: Detail sa neotváral na začiatku stránky
-
-Príčina: appka je SPA — `showDetail()` iba prepíše `app.innerHTML`, žiadny skutočný page-load. Prehliadač si preto po prekreslení ponechá **starú scroll pozíciu** z toho, ako veľmi bol odscrollovaný zoznam v Atlase pred kliknutím na záznam. Nešlo teda o poradie polí v detaile (Životný cyklus/Patológia boli len náhodou v zornom poli) — miesto otvorenia bolo čisto dôsledkom predchádzajúceho scrollu.
-
-**Oprava:** `window.scrollTo(0, 0)` pridaný hneď po vykreslení detailu v `showDetail()`.
-
-### 🔴→✅ Bug 2: Fotka vo veľkom ráme na mobile
-
-Príčina: `.findings-card` v `atlas.css` má pevnú `height: 500px` nezávisle od šírky obrazovky. Na desktope (`.detail-main-split` v pomere `1fr 2fr` od `min-width: 768px`) je karta široká a `object-fit: contain` fotku pekne vyplní takmer celých 500px. Pod 768px sa `.detail-main-split` zlomí na jeden stĺpec → karta je úzka, obmedzujúcim rozmerom pre `object-fit: contain` sa stane šírka, fotka sa zmenší podľa nej — ale rám ostáva pevných 500px vysoký → veľký prázdny priestor nad/pod. (Presne ten jav, ktorému sa mal pôvodne zabrániť komentár nad `.primary-image-container`, len počítal iba s desktop layoutom.)
-
-**Oprava:** do existujúceho bloku "12. Mobile doladenie" (`@media (max-width: 700px)`) pridaná výnimka pre `.findings-card`: `height: auto; aspect-ratio: 4/3; min-height: 200px;` — na mobile sa výška karty prispôsobí pomeru strán namiesto pevnej hodnoty.
-
-**⚠️ Pomer `4/3` je odhad** (predpoklad, že mikroskopické fotky sú väčšinou štvorcové/mierne na šírku) — ak by po nahratí sedelo lepšie `1/1` alebo iný pomer, stačí zmeniť jednu hodnotu v `atlas.css`.
-
-### Zhrnutie vykonaných zmien kódu v tejto session
-
-| Súbor | Zmena | Stav |
-| --- | --- | --- |
-| `src/pages/AtlasPage.js` | `window.scrollTo(0, 0)` pridaný do `showDetail()` po vykreslení | ✅ hotové (kód), ⬜ naživo neoverené |
-| `src/pages/atlas.css` (alebo príslušný CSS súbor) | `.findings-card` dostala mobilnú výnimku (`height: auto; aspect-ratio: 4/3`) v `@media (max-width: 700px)` | ✅ hotové (kód), ⬜ naživo neoverené — pomer strán 4/3 treba vizuálne skontrolovať |
-
-### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
-
-1. Naživo overiť na mobile (GitHub Pages): detail sa otvára hore, fotka nemá zbytočný prázdny priestor.
-2. Ak pomer strán `4/3` nesedí vizuálne s reálnymi fotkami, doladiť hodnotu `aspect-ratio` v `.findings-card` (mobile media query, `atlas.css`).
-
----
-
-🔥 0.22 Aktuálny stav — doplnené (2026‑08‑22, session: fotky v Detaile parazita sa nezobrazovali na GitHub Pages — 404 kvôli obídenej `resolveImageUrl()`) — ✅ OPRAVENÉ A NAŽIVO OVERENÉ
-
-## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
-
-### Kontext
-
-Autorka nahlásila: fotky sa v Detaile parazita nezobrazujú na GitHub Pages (prepojenie z fotky do Galérie fungovalo, v Galérii samotnej boli fotky viditeľné). Nahraté a skontrolované súbory: `AI_STATUS.md`, `AtlasPage.js`, `GalleryPage.js`, `PrimaryImage.js`. Console log z GitHub Pages ukazoval 404 na `.webp` súbory.
-
-### 🔴→✅ Príčina — dva paralelné mechanizmy vykreslenia fotky v Detaile, ten novší obchádzal `resolveImageUrl()`
-
-V `AtlasPage.js` (`showDetail()`) existuje blok `// --- NOVÉ: Zobrazenie obrázkov z images.json ---` (pridaný v predchádzajúcej session, značený `OPRAVA (2026-08-22)`), ktorý po vykreslení detailu prepíše obsah `.findings-card` — kam predtým `PrimaryImage.render()` vložil len placeholder. Na rozdiel od `PrimaryImage`, tento blok použil `img.url` priamo, bez `resolveImageUrl()`. Keďže `img.url` v `images.json` je absolútna cesta (`/public/images/...`), na GitHub Pages (podcesta `/VetPara-Atlas/`) sa vyhodnotila od koreňa domény → 404. `PrimaryImage.populate()` sa mimochodom volal len vo vetve `else` (keď fotky NIE SÚ) — teda presne vtedy, keď to bolo zbytočné.
-
-Galéria fungovala, lebo `GalleryPage.js` má vlastnú (správnu) `resolveImageUrl()`, ktorá sa reálne používala.
-
-**Oprava (najjednoduchšia možná, bez duplikovania logiky):** na oboch miestach, kde sa v `AtlasPage.js` vypisuje `img.url` (hlavná fotka aj miniatúry), sa teraz volá existujúca, už otestovaná `PrimaryImage.resolveImageUrl(img.url)`. Vetva `else` s `PrimaryImage.populate("#detail-view")` ostala bez zmeny (je vecne zbytočná, ale to je samostatný, menej naliehavý problém — nerobené na žiadosť autorky).
-
-**✅ Autorka potvrdila naživo na GitHub Pages: fotky v Detaile sa teraz zobrazujú správne.**
-
-### Zhrnutie vykonanej zmeny kódu v tejto session
-
-| Súbor | Zmena | Stav |
-| --- | --- | --- |
-| `src/pages/AtlasPage.js` | `firstImageUrl` a URL miniatúr v `showDetail()` teraz idú cez `PrimaryImage.resolveImageUrl()` namiesto priameho `img.url` | ✅ hotové, ✅ **naživo overené autorkou na GitHub Pages** |
-
-### 🟡 Otvorené (nezmenené, mimo rozsahu tejto session)
-
-- Vetva `else { PrimaryImage.populate("#detail-view"); }` v `showDetail()` je logicky mŕtva (spustí sa len keď fotky neexistujú, čiže nikdy nič nezobrazí) — kozmetický nedostatok, neriešené na želanie autorky, ponechať ako je, kým nebude explicitne požadované upratať.
-- Ostatné otvorené úlohy zo session 0.21 (viď nižšie) zostávajú v platnosti.
-
----
+🔥 0.21 Aktuálny stav — doplnené (2026‑08‑22, session: admin nástroj — sidebar badge zmazania, tab Fotografie nezobrazoval fotky, duplicitné _full záznamy, mazanie v tools/captions)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
 

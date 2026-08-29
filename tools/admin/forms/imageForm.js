@@ -16,37 +16,6 @@ function getImagesForParasite(parasiteId) {
     return Array.from(urls);
 }
 
-// NOVÉ (2026-08-22): filter podľa ID/latinského názvu na karte "Fotografie",
-// aby nebolo treba prehľadávať 475 riadkov cez Ctrl+F. Hodnota filtra sa drží
-// mimo renderImageTab(), lebo tá sa volá znova po každom pridaní/vymazaní
-// fotky (inak by sa filter pri každej akcii vynuloval).
-let imageFilterValue = '';
-
-function normalizeForFilter(value) {
-    return String(value || '')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, ''); // odstráni diakritiku
-}
-
-function applyImageFilter() {
-    const needle = normalizeForFilter(imageFilterValue).trim();
-    const rows = document.querySelectorAll('#tab-image tbody tr[data-filter-text]');
-    let visibleCount = 0;
-
-    rows.forEach((row) => {
-        const haystack = row.dataset.filterText || '';
-        const matches = needle === '' || haystack.includes(needle);
-        row.style.display = matches ? '' : 'none';
-        if (matches) visibleCount++;
-    });
-
-    const emptyNotice = document.getElementById('image-filter-empty');
-    if (emptyNotice) {
-        emptyNotice.style.display = visibleCount === 0 ? '' : 'none';
-    }
-}
-
 // FIX: súbory typu "xxx_full.webp" sú sprievodný "zväčšovací" variant k
 // "xxx.webp" — podľa existujúcej konvencie v projekte (fotky pridané pred
 // zavedením hromadného uploadu) sa nikdy nezapisovali ako vlastný záznam
@@ -57,9 +26,23 @@ function isFullVariantFileName(fileName) {
     return /_full\.[a-z0-9]+$/i.test(fileName);
 }
 
+// FIX: perzistentný stav filtra naprieč prekresleniami tabu (kým sa
+// nenačíta stránka znova) — bez tohto by sa filter pri každom renderImageTab()
+// (napr. po pridaní/zmazaní fotky) tíško vypol.
+let showOnlyMissing = false;
+
 export function renderImageTab() {
     const container = document.getElementById('tab-image');
     if (!container) return;
+
+    // FIX: pri prekreslení tabu (napr. po kliknutí na "Pridať") sa doteraz
+    // celý obsah #tab-image nahradil odznova, takže vnútorný scrollovateľný
+    // zoznam `.image-list` aj okno stránky skočili naspäť na začiatok —
+    // autorka sa musela znova rolovať na pôvodné miesto. Pozíciu si tu
+    // zapamätáme pred prekreslením a na konci funkcie ju obnovíme.
+    const previousListEl = container.querySelector('.image-list');
+    const previousListScrollTop = previousListEl ? previousListEl.scrollTop : 0;
+    const previousWindowScrollY = window.scrollY;
 
     // Získať všetkých parazitov
     const parasites = state.parasites || [];
@@ -67,6 +50,14 @@ export function renderImageTab() {
     // a znovu použijeme pri vykreslení riadkov aj pri súčte v hlavičke.
     const imagesByParasite = new Map(parasites.map(p => [p.id, getImagesForParasite(p.id)]));
     const totalImages = Array.from(imagesByParasite.values()).reduce((acc, arr) => acc + arr.length, 0);
+
+    // FIX: počet parazitov bez fotografie sa počíta vždy z KOMPLETNÉHO
+    // zoznamu (nie z už vyfiltrovaného), aby číslo v popise checkboxu
+    // zostalo správne aj keď je filter práve zapnutý.
+    const missingCount = parasites.filter(p => (imagesByParasite.get(p.id) || []).length === 0).length;
+    const visibleParasites = showOnlyMissing
+        ? parasites.filter(p => (imagesByParasite.get(p.id) || []).length === 0)
+        : parasites;
 
     container.innerHTML = `
         <div class="image-admin">
@@ -76,22 +67,11 @@ export function renderImageTab() {
                 <p style="font-size:0.9rem;color:#7f8c8d;">
                     <strong>Poznámka:</strong> Nájdite v projekte priečinok <code>public/images/parasites/{id}</code> a nakopírujte do neho fotky. Tieto fotky budú automaticky používané.
                 </p>
+                <label style="display:inline-flex; align-items:center; gap:0.4rem; margin-top:0.4rem; font-size:0.9rem; cursor:pointer;">
+                    <input type="checkbox" id="filter-missing-images" ${showOnlyMissing ? 'checked' : ''}>
+                    Zobraziť len parazitov bez fotografie (${missingCount})
+                </label>
             </div>
-
-            <div class="image-filter-bar" style="margin: 0.75rem 0; display:flex; align-items:center; gap:0.5rem;">
-                <label for="image-filter-input" style="font-weight:600; white-space:nowrap;">🔍 Filter:</label>
-                <input
-                    type="text"
-                    id="image-filter-input"
-                    placeholder="Hľadať podľa ID alebo latinského názvu..."
-                    autocomplete="off"
-                    value="${imageFilterValue.replace(/"/g, '&quot;')}"
-                    style="flex:1; max-width:400px; padding:0.4rem 0.6rem; border:1px solid #bdc3c7; border-radius:4px;"
-                >
-            </div>
-            <p id="image-filter-empty" style="display:none; color:#e74c3c; font-size:0.9rem;">
-                Žiadny parazit nezodpovedá filtru.
-            </p>
 
             <div class="image-list" style="max-height: 600px; overflow-y: auto; margin-top: 1rem;">
                 <table class="table" style="width: 100%; border-collapse: collapse;">
@@ -104,11 +84,16 @@ export function renderImageTab() {
                         </tr>
                     </thead>
                     <tbody>
-                        ${parasites.map(p => {
+                        ${visibleParasites.length === 0 ? `
+                            <tr>
+                                <td colspan="4" style="padding: 1rem; text-align: center; color: #7f8c8d;">
+                                    Žiadny parazit nevyhovuje filtru — všetci majú aspoň jednu fotografiu. 🎉
+                                </td>
+                            </tr>
+                        ` : visibleParasites.map(p => {
                             const imageUrls = imagesByParasite.get(p.id) || [];
-                            const filterText = normalizeForFilter(`${p.id} ${p.latinName || ''}`);
                             return `
-                                <tr style="border-bottom: 1px solid #ecf0f1;" data-filter-text="${filterText.replace(/"/g, '&quot;')}">
+                                <tr style="border-bottom: 1px solid #ecf0f1;">
                                     <td style="padding: 0.5rem; font-family: monospace; font-size: 0.8rem;">${p.id}</td>
                                     <td style="padding: 0.5rem; font-size: 0.9rem;">${p.latinName || ''}</td>
                                     <td style="padding: 0.5rem; font-size: 0.9rem;">
@@ -138,19 +123,20 @@ export function renderImageTab() {
         </div>
     `;
 
-    // NOVÉ: filter — vyplní sa pri každom stlačení klávesy, stav sa uloží
-    // do imageFilterValue, aby prežil ďalšie renderImageTab() volania.
-    const filterInput = document.getElementById('image-filter-input');
-    if (filterInput) {
-        filterInput.addEventListener('input', () => {
-            imageFilterValue = filterInput.value;
-            applyImageFilter();
+    // Udalosť pre filter "len bez fotografie"
+    const filterCheckbox = document.getElementById('filter-missing-images');
+    if (filterCheckbox) {
+        filterCheckbox.addEventListener('change', () => {
+            showOnlyMissing = filterCheckbox.checked;
+            renderImageTab();
         });
-        // po každom (re)rendri kurzor rovno vo filtri, nech sa dá hneď písať ďalej
-        filterInput.focus();
-        filterInput.setSelectionRange(filterInput.value.length, filterInput.value.length);
     }
-    applyImageFilter();
+
+    // FIX: obnovenie scroll pozície (pozri poznámku na začiatku funkcie) —
+    // až po vložení nového obsahu do DOM, aby scrollTop mal na čom platiť.
+    const newListEl = container.querySelector('.image-list');
+    if (newListEl) newListEl.scrollTop = previousListScrollTop;
+    window.scrollTo({ top: previousWindowScrollY, behavior: 'auto' });
 
     // Udalosť pre pridanie obrázka
     document.querySelectorAll('.add-image-btn').forEach(btn => {
