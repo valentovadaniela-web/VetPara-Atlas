@@ -99,20 +99,6 @@ const AtlasPage = {
 
                         </div>
 
-                        <div
-                            id="atlas-active-filters"
-                            class="atlas-active-filters"
-                            aria-live="polite"
-                        ></div>
-
-                        <button
-                            type="button"
-                            id="atlas-clear-filters"
-                            class="atlas-clear-filters"
-                        >
-                            Zrušiť všetky filtre
-                        </button>
-
                         ${this.renderHostFilterSection(this.getHostValues())}
 
                         ${this.renderMultiFilter(
@@ -134,6 +120,20 @@ const AtlasPage = {
                         )}
 
                         ${this.renderSizeFilterSection()}
+
+                        <div
+                            id="atlas-active-filters"
+                            class="atlas-active-filters"
+                            aria-live="polite"
+                        ></div>
+
+                        <button
+                            type="button"
+                            id="atlas-clear-filters"
+                            class="atlas-clear-filters"
+                        >
+                            Zrušiť všetky filtre
+                        </button>
 
                     </aside>
 
@@ -1296,12 +1296,6 @@ const AtlasPage = {
 
         `;
 
-        // OPRAVA (2026-08-22): appka je SPA, prehliadač si pri prepísaní
-        // app.innerHTML ponecháva predchádzajúcu scroll pozíciu zo zoznamu
-        // Atlasu -> detail sa "otváral" niekde v strede stránky namiesto
-        // na začiatku. Vynútený reset scrollu hneď po vykreslení detailu.
-        window.scrollTo(0, 0);
-
         document
             .getElementById("atlas-back")
             .addEventListener("click", () => {
@@ -1324,11 +1318,27 @@ const AtlasPage = {
         // parazita (window.showGalleryForParasite), kde sú vidieť
         // všetky jeho fotky pohromade a dajú sa otvoriť v origináli.
         if (parasiteImages.length > 0) {
-            const firstImageUrl = PrimaryImage.resolveImageUrl(parasiteImages[0].url);
+            // FIX (2026-08-22): predtým sa hlavná fotka určovala vždy ako
+            // parasiteImages[0] (prvá v poradí zápisu v images.json), bez
+            // možnosti autorky vybrať inú. Teraz sa použije rovnaký zdieľaný
+            // výber ako v PrimaryImage.js (pickPrimary) — uprednostní
+            // fotku s isPrimary:true (nastaviteľné v tools/captions), inak
+            // padne späť na pôvodné správanie (prvá v poradí súboru).
+            const mainImage = PrimaryImage.pickPrimary(parasiteImages);
+            const thumbnailImages = parasiteImages.filter((img) => img !== mainImage);
+
+            // FIX (2026-08-22): `img.url`/`firstImageUrl` z images.json je absolútna
+            // cesta ("/public/images/..."). Na GitHub Pages appka beží pod podcestou
+            // (napr. "/VetPara-Atlas/"), takže absolútna cesta sa vyhodnotí od koreňa
+            // domény a spôsobí 404 (presne ako v Galérii/PrimaryImage predtým — pozri
+            // AI_STATUS §0.9/§0.10). Tento blok predtým používal `img.url` priamo, bez
+            // normalizácie — Galéria aj PrimaryImage už normalizáciu majú
+            // (resolveImageUrl), tak ju tu len opätovne použijeme namiesto duplikovania.
+            const firstImageUrl = PrimaryImage.resolveImageUrl(mainImage.url);
             mainImageContainer.innerHTML = `
-                <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(parasiteImages[0].alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
+                <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(mainImage.alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
                 <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
-                    ${parasiteImages.slice(1).map(img => `
+                    ${thumbnailImages.map(img => `
                         <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
                     `).join('')}
                 </div>

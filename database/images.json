@@ -21,7 +21,8 @@
     "alt": "",
     "caption": "640x zväčšenie (mačka)",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
+    "dateAdded": "2026-08-21T10:00:00.000Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "aelurostrongylus_abstrusus_larva",
@@ -85,7 +86,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
+    "dateAdded": "2026-08-21T10:00:00.000Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "alaria_alata_egg",
@@ -141,7 +143,8 @@
     "alt": "",
     "caption": "Vajíčko, fáza embryonácie, 400 x (pes)",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
+    "dateAdded": "2026-08-21T10:00:00.000Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "toxascaris_leonina_egg",
@@ -165,31 +168,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
+    "dateAdded": "2026-08-21T10:00:00.000Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "alaria_alata_adult",
@@ -197,7 +177,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
+    "dateAdded": "2026-08-22T15:16:42.607Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "alaria_alata_adult",
@@ -232,22 +213,6 @@
     "dateAdded": "2026-08-28T18:46:29.273Z"
   },
   {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T18:46:29.273Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T18:46:29.273Z"
-  },
-  {
     "parasiteId": "sarcocystis_sp_oocyst",
     "url": "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_01.webp",
     "alt": "",
@@ -261,7 +226,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T19:55:42.082Z"
+    "dateAdded": "2026-08-28T19:55:42.082Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "sarcocystis_sp_oocyst",
@@ -294,14 +260,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T19:56:27.388Z"
-  },
-  {
-    "parasiteId": "eucoleus_aerophilus_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T19:56:27.393Z"
   },
   {
     "parasiteId": "eucoleus_aerophilus_egg",
@@ -341,7 +299,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T19:58:53.583Z"
+    "dateAdded": "2026-08-28T19:58:53.583Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "dibothriocephalus_latus_egg",
@@ -381,7 +340,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T19:59:13.241Z"
+    "dateAdded": "2026-08-28T19:59:13.241Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "taenia_sp_egg",
@@ -405,7 +365,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:02.718Z"
+    "dateAdded": "2026-08-28T20:00:02.718Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
@@ -493,7 +454,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:40.113Z"
+    "dateAdded": "2026-08-28T20:00:40.113Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
@@ -685,7 +647,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.051Z"
+    "dateAdded": "2026-08-28T20:02:17.051Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "giardia_intestinalis_cyst",
@@ -709,7 +672,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:02:46.774Z"
+    "dateAdded": "2026-08-28T20:02:46.774Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "isospora_sp_oocyst",
@@ -729,19 +693,12 @@
   },
   {
     "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.320Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
     "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.328Z"
+    "dateAdded": "2026-08-28T20:06:00.328Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "capillaria_sp_egg",
@@ -777,14 +734,6 @@
   },
   {
     "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.356Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
     "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_08.webp",
     "alt": "",
     "caption": "",
@@ -798,14 +747,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:06:00.367Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.372Z"
   },
   {
     "parasiteId": "capillaria_sp_egg",
@@ -909,7 +850,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:07:04.436Z"
+    "dateAdded": "2026-08-28T20:07:04.436Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "nematodirus_sp_egg",

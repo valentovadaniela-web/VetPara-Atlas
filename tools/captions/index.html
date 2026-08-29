@@ -178,6 +178,24 @@
     box-shadow: 0 0 0 1px var(--color-secondary);
   }
 
+  .image-row.is-primary {
+    border-color: #ca8a04;
+    box-shadow: 0 0 0 1px #ca8a04;
+  }
+
+  .primary-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    align-self: flex-start;
+    padding: var(--space-xs) var(--space-md);
+    background: #fef9c3;
+    color: #854d0e;
+    border-radius: var(--radius-md);
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+
   .image-thumb {
     width: 140px;
     height: 140px;
@@ -345,12 +363,16 @@
 
   /**
    * Dátový model: pole objektov presne v tvare, ako ho očakáva
-   * database/images.json (parasiteId/url/alt/caption/credit/dateAdded).
-   * Nástroj nemení štruktúru polí — iba prepisuje caption/alt/credit
-   * hodnoty podľa toho, čo autorka vyplní, prípadne umožňuje celý
-   * záznam zmazať (tlačidlo "Zmazať fotku"). Zmazanie sa prejaví až
-   * po stiahnutí a nahradení database/images.json — fyzický súbor na
-   * disku (vrátane _thumb/_full variantu) treba zmazať ručne.
+   * database/images.json (parasiteId/url/alt/caption/credit/dateAdded,
+   * voliteľne isPrimary). Nástroj nemení štruktúru polí — iba prepisuje
+   * caption/alt/credit hodnoty podľa toho, čo autorka vyplní, umožňuje
+   * celý záznam zmazať (tlačidlo "Zmazať fotku") a označiť ako hlavnú
+   * fotku daného parazita (tlačidlo "Nastaviť ako hlavnú" — nastaví
+   * isPrimary:true na vybranom zázname a odstráni ho zo všetkých
+   * ostatných záznamov s rovnakým parasiteId, takže vždy platí najviac
+   * jedna hlavná fotka na objekt). Zmeny sa prejavia až po stiahnutí a
+   * nahradení database/images.json — fyzický súbor na disku (vrátane
+   * _thumb/_full variantu) treba pri mazaní zmazať ručne.
    */
   let images = [];
   let originalFileName = "images.json";
@@ -508,9 +530,29 @@
     }
   }
 
+  /**
+   * Určí, ktorá fotka je pre daný parasiteId aktuálne "hlavná" — teda tá,
+   * ktorú AtlasPage.js/PrimaryImage.js reálne zobrazia v Detaile.
+   * Priorita: 1) explicitne označená `isPrimary: true`, 2) ak nič nie je
+   * explicitne označené, prvý záznam v poradí súboru (súčasné správanie
+   * Repository.getImagesForParasite() — bez isPrimary sa nič netriedi).
+   */
+  function computeEffectivePrimaryIndexByParasite() {
+    const fallback = new Map();
+    const explicit = new Map();
+    images.forEach((img, idx) => {
+      if (!img.parasiteId) return;
+      if (!fallback.has(img.parasiteId)) fallback.set(img.parasiteId, idx);
+      if (img.isPrimary) explicit.set(img.parasiteId, idx);
+    });
+    for (const [parasiteId, idx] of explicit) fallback.set(parasiteId, idx);
+    return fallback;
+  }
+
   function renderList() {
     const query = searchInput.value.trim();
     const filtered = images.filter((img) => matchesSearch(img, query));
+    const effectivePrimary = computeEffectivePrimaryIndexByParasite();
 
     summaryEl.textContent = `Zobrazené: ${filtered.length} / ${images.length}`;
 
@@ -524,9 +566,10 @@
       .map((img, filteredIndex) => {
         const realIndex = images.indexOf(img);
         const thumbUrl = resolveImageUrl(img.url);
+        const isEffectivePrimary = img.parasiteId && effectivePrimary.get(img.parasiteId) === realIndex;
 
         return `
-          <div class="image-row ${img._dirty ? "is-dirty" : ""}" data-index="${realIndex}">
+          <div class="image-row ${img._dirty ? "is-dirty" : ""} ${isEffectivePrimary ? "is-primary" : ""}" data-index="${realIndex}">
             <div class="image-thumb">
               ${thumbUrl
                 ? `<img src="${escapeHtml(thumbUrl)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'no-img',textContent:'Fotka sa nenačítala'}))">`
@@ -557,6 +600,12 @@
                   value="${escapeHtml(img.credit)}" placeholder="Meno / pracovisko">
               </div>
 
+              ${isEffectivePrimary
+                ? `<span class="primary-badge">★ Hlavná fotka${img.isPrimary ? "" : " (predvolená — najskoršia v poradí)"}</span>`
+                : img.parasiteId
+                  ? `<button type="button" class="btn btn-outline btn-sm btn-set-primary" data-index="${realIndex}">☆ Nastaviť ako hlavnú</button>`
+                  : ""}
+
               <button type="button" class="btn btn-danger btn-sm btn-delete-image" data-index="${realIndex}">
                 🗑 Zmazať fotku
               </button>
@@ -580,6 +629,34 @@
           input.closest(".image-row")?.classList.add("is-dirty");
           updateDirtyCount();
         }
+      });
+    });
+
+    imageList.querySelectorAll(".btn-set-primary").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const index = Number(btn.dataset.index);
+        const record = images[index];
+        if (!record || !record.parasiteId) return;
+
+        // Presne jedna hlavná fotka na parasiteId: novej nastavíme
+        // isPrimary:true, predošlej (ak bola explicitne označená) pole
+        // úplne odstránime — nechceme do zvyšku 470+ záznamov zbytočne
+        // dopisovať "isPrimary": false.
+        images.forEach((img) => {
+          if (img.parasiteId !== record.parasiteId) return;
+          if (img === record) {
+            if (img.isPrimary !== true) {
+              img.isPrimary = true;
+              img._dirty = true;
+            }
+          } else if (img.isPrimary) {
+            delete img.isPrimary;
+            img._dirty = true;
+          }
+        });
+
+        setStatus(`"${record.parasiteId}" má novú hlavnú fotku — nezabudni stiahnuť a nahradiť súbor.`, true);
+        renderList();
       });
     });
 

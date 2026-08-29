@@ -11,6 +11,25 @@ let imagesCache = null;
 let loadPromise = null;
 
 const PrimaryImage = {
+  /**
+   * Vyberie hlavnú fotku zo zoznamu fotiek už vyfiltrovaných pre jeden
+   * objekt. Priorita: 1) explicitne označená isPrimary:true (nastaviteľné
+   * v tools/captions/index.html), 2) ak nič nie je explicitne označené,
+   * najstaršia podľa dateAdded (pôvodné/predvolené správanie, zachované
+   * kvôli spätnej kompatibilite so záznamami bez isPrimary).
+   */
+  pickPrimary(imagesForParasite) {
+    if (!imagesForParasite || imagesForParasite.length === 0) return null;
+
+    const explicit = imagesForParasite.find((img) => img.isPrimary);
+    if (explicit) return explicit;
+
+    const sorted = [...imagesForParasite].sort(
+      (a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || "")
+    );
+    return sorted[0] || null;
+  },
+
   async loadImages() {
     if (imagesCache !== null) return imagesCache;
     if (loadPromise) return loadPromise;
@@ -35,11 +54,8 @@ const PrimaryImage = {
     const allImages = images || await this.loadImages();
     if (!allImages || allImages.length === 0) return null;
 
-    const candidate = allImages
-      .filter((img) => img.parasiteId === record.id)
-      .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
-
-    return candidate.length > 0 ? candidate[0] : null;
+    const candidate = allImages.filter((img) => img.parasiteId === record.id);
+    return this.pickPrimary(candidate);
   },
 
   render(record, options = {}) {
@@ -103,10 +119,8 @@ const PrimaryImage = {
       const objectId = container.dataset.objectId;
       if (!objectId) return;
 
-      const candidates = images
-      .filter((img) => img.parasiteId === objectId)
-      .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
-      const image = candidates.length > 0 ? candidates[0] : null;
+      const candidates = images.filter((img) => img.parasiteId === objectId);
+      const image = this.pickPrimary(candidates);
 
       if (image) {
         container.innerHTML = `
@@ -136,11 +150,8 @@ const PrimaryImage = {
       return this.renderPlaceholder("Žiadne fotografie");
     }
 
-    const candidates = images
-.filter((img) => img.parasiteId === record.id)
-     .sort((a, b) => (a.dateAdded || "").localeCompare(b.dateAdded || ""));
-
-    const image = candidates.length > 0 ? candidates[0] : null;
+    const candidates = images.filter((img) => img.parasiteId === record.id);
+    const image = this.pickPrimary(candidates);
 
     if (!image) {
       return this.renderPlaceholder("Žiadna fotografia pre tento objekt");
