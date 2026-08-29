@@ -1,5 +1,51 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.24 Aktuálny stav — doplnené (2026‑08‑29, session: favicon/PWA ikony pre mobil — orezanie loga, sada ikon, manifest.json, index.html)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že favicon sa po pridaní stránky na plochu mobilu zobrazuje starý a rozmazaný, hoci na Windows/desktope je aktuálny; vymazanie cache prehliadača nepomohlo. Súvisí s otvoreným bodom z §0.9–§0.11 (`manifest.json` bol vedomé rozhodnuté nechať prázdny/nedoriešený — **toto rozhodnutie je touto session nahradené**, keďže sa objavila reálna potreba).
+
+### 🟡→✅ Zistená príčina
+
+Ikona na ploche mobilu sa neberie z klasického `<link rel="icon">` (ten sa dá refreshnúť), ale z `manifest.json` (Android, pole `icons`) a z `<link rel="apple-touch-icon">` (iOS). Keďže `manifest.json` bol prázdny (0 bajtov) a `apple-touch-icon` chýbal, mobil používal vlastný fallback, ktorý sa navyše cachuje mimo bežnej cache prehliadača (preto nepomohlo jej vymazanie).
+
+### ✅ Vygenerovaná kompletná sada ikon zo zdrojového loga (dodané autorkou ako `favicon.png`, 1254×1254 px)
+
+- `favicon.ico`, `favicon-16.png`, `favicon-32.png`, `favicon-48.png` — pre záložku prehliadača (desktop).
+- `apple-touch-icon.png` (180×180) — pre iOS „Pridať na plochu".
+- `icon-192.png`, `icon-512.png` — pre Android/manifest.
+- `icon-192-maskable.png`, `icon-512-maskable.png` — verzie s vnútorným safe-zone paddingom (~14 %), aby Android pri kruhovej/zaoblenej systémovej maske neorezal logo.
+- Zdrojové logo malo veľký biely okraj → pred generovaním orezané na tesný bounding box obsahu (doplnené na štvorec), inak bolo „V" pri 16/32 px príliš drobné a takmer neviditeľné.
+- Na žiadosť autorky doplnené zaoblené rohy **iba** pre `favicon.ico`/`favicon-16/32/48.png` (browser si ich sám neorezáva). `apple-touch-icon` a `icon-192`/`icon-512` zámerne **ostali bez zaoblenia** — iOS aj Android si na tieto ikony aplikujú vlastnú masku sami (na to slúžia už spomenuté maskable verzie); predom zaoblené rohy by mohli spôsobiť dvojité rohy/biele cípy.
+- Všetky súbory idú do `public/icons/` (zladené s pôvodným umiestnením `public/favicon.ico`).
+
+### ✅ `manifest.json` doplnený (predtým prázdny)
+
+Obsahuje `name`, `short_name`, `start_url`, `display: standalone`, `background_color: #ffffff`, `theme_color: #0d6efd` (zladené s existujúcim `<meta name="theme-color">` v `index.html`, nie s farbou loga) a pole `icons` odkazujúce na `public/icons/*`.
+
+### ✅ `index.html` — upravená `<head>` sekcia
+
+Pridané `<link rel="icon">` pre 32×32 a 16×16 PNG (popri existujúcom `.ico`), pridaný `<link rel="apple-touch-icon">`. Existujúci `<link rel="manifest" href="manifest.json">` a `<meta name="theme-color" content="#0d6efd">` ostali nezmenené — teraz už majú reálny obsah, na ktorý odkazujú.
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `public/icons/*` (9 súborov) | nová sada favicon/PWA ikon vygenerovaná zo zdrojového loga | ✅ hotové, odovzdané autorke na stiahnutie |
+| `manifest.json` | doplnený z prázdneho na plnohodnotný (name, icons, theme_color...) | ✅ hotové |
+| `index.html` | doplnené `<link rel="icon">` (32/16) a `<link rel="apple-touch-icon">` v `<head>` | ✅ hotové |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Autorka musí súbory reálne nahrať do repozitára a nasadiť na GitHub Pages — v tejto session boli len vygenerované a odovzdané, **live overenie na mobile ešte neprebehlo**.
+2. Po nasadení treba na mobile odstrániť starú ikonu z plochy, reštartovať prehliadač a znova pridať na plochu — obyčajné vymazanie cache prehliadača homescreen ikonu nerieši (viď zistená príčina vyššie).
+3. Zvážiť do budúcna „themed icons" (Android 13+, systém prefarbí ikonu podľa tapety) — nebolo v tejto session riešené, nie je to priorita.
+
+---
+
 🔥 0.23 Aktuálny stav — doplnené (2026‑08‑29, session: vizuálne oddelenie parazitov v tabe Fotografie — karty namiesto tabuľky, zoradenie podľa abecedy, nájdená duplicita `imageForm.js`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
