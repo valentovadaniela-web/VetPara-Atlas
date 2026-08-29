@@ -1,5 +1,39 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.23 Aktuálny stav — doplnené (2026‑08‑29, session: vizuálne oddelenie parazitov v tabe Fotografie — karty namiesto tabuľky)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje na §0.22 (Admin nástroj, tab „3. Fotografie"). Autorka nahlásila, že v tabuľkovom zobrazení fotiek boli jednotlivé riadky parazitov oddelené len tenkými čiarami — nebolo dobre vidno, ktorému ID patria ovládacie prvky (URL, Pridať, Vymazať, Vybrať súbory) pod ním.
+
+### 🟡→✅ Zmena: tabuľka nahradená kartami (`tools/admin/forms/imageForm.js`, `tools/admin/admin.css`)
+
+**Riešenie:** `renderImageTab()` už negeneruje `<table>`, ale zoznam ohraničených blokov `<section class="parasite-image-card">`, jeden na parazita:
+- **Hlavička karty** (tmavé pozadie `#2c3e50`) — ID parazita ako monospace odznak (`.pic-id`) + latinský názov (`.pic-latin`) + počet obrázkov ako odznak vpravo (`.pic-count`).
+- **Telo karty** — zoznam URL priradených obrázkov, alebo text „Nie sú priradené žiadne obrázky".
+- **Panel akcií** (svetlé pozadie, oddelené prerušovanou čiarou) — tri jasne popísané polia s vlastným `<label>`: „Vybrať súbory", „URL adresa", tlačidlá „➕ Pridať" / „🗑️ Vymazať všetky".
+- Parazit bez fotky (`isMissing`) dostal triedu `.is-missing` — oranžový ľavý okraj + oranžová hlavička namiesto tmavej, takže je vizuálne hneď vidno, kde treba doplniť fotky (funguje aj spolu s existujúcim filtrom „len bez fotografie" z §0.22).
+
+**Dôležité:** zmenil sa iba markup/štýl (`div`/`section` namiesto `table`/`tr`/`td`, inline `style` nahradené CSS triedami v `admin.css`). Logika sa nemenila — rovnaké CSS triedy pre event listenery (`.image-file-input`, `.image-url-input`, `.add-image-btn`, `.delete-image-btn`) aj rovnaké `data-id` atribúty, takže existujúce handlery v `imageForm.js` (pridanie cez súbory/URL, mazanie, filter „len bez fotografie", zachovanie scroll pozície z §0.22) fungujú bez zásahu.
+
+- **`tools/admin/admin.css`** — pridaná nová sekcia štýlov: `.parasite-image-card`, `.parasite-image-card-header`, `.pic-title`/`.pic-id`/`.pic-latin`/`.pic-count`, `.parasite-image-card-body`, `.image-urls`/`.image-url-item`/`.image-urls-empty`, `.parasite-image-card-actions`, `.action-field`, `.action-field-buttons`. Nič sa neodstránilo ani nepremenovalo z existujúcich tried.
+
+### Zhrnutie vykonaných zmien kódu v tejto session
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/forms/imageForm.js` | `renderImageTab()`: tabuľka → karty na parazita (hlavička ID+latinName+počet, telo so zoznamom URL, panel akcií s labelmi); `.is-missing` zvýraznenie pre parazitov bez fotky | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/admin.css` | nová sekcia štýlov pre `.parasite-image-card` a podprvky | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Naživo overiť** — nová štruktúra kariet ešte nebola potvrdená autorkou v prehliadači; skontrolovať najmä, že `.is-missing` zvýraznenie funguje spolu s filtrom „len bez fotografie" (§0.22) a že responzívne správanie (`admin.css` media query `@media (max-width: 768px)`) nerozbíja panel akcií na malej obrazovke.
+2. Diff súbory (`imageForm.diff`, `admin.diff`) boli odovzdané len v chate, autorka sa rozhodla neukladať ich do `docs/` — reálne zmeny sú priamo v `tools/admin/forms/imageForm.js` a `tools/admin/admin.css`.
+
+---
+
 🔥 0.22 Aktuálny stav — doplnené (2026‑08‑22/23, session: 404 na fotky v Detaile parazita, výber hlavnej fotky (isPrimary), upratovací nástroj na nepoužité súbory, scroll + filter v tabe Fotografie)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
