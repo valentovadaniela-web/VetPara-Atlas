@@ -1193,7 +1193,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "ostertagia_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/ostertagia_sp_egg/ostertagia_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Myocoptes musculinus",
@@ -1240,7 +1242,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "myocoptes_musculinus_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_01.webp"
+    ]
   },
   {
     "latinName": "Cysticercus tenuicollis",
@@ -1287,7 +1291,20 @@
     "zoonosis": false,
     "notes": "Číra tekutina",
     "id": "cysticercus_tenuicollis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_01.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_02.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_03.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_04.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_05.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_06.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_07.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_08.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_09.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_10.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_11.webp",
+      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_12.webp"
+    ]
   },
   {
     "latinName": "Cysticercus pisiformis",
@@ -1333,7 +1350,14 @@
     "zoonosis": false,
     "notes": "U králika lokalizácia v pečeni a peritoneálnej dutine.",
     "id": "cysticercus_pisiformis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_01.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_02.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_03.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_04.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_05.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_06.webp"
+    ]
   },
   {
     "latinName": "Coenurus serialis",
@@ -1434,7 +1458,10 @@
     "zoonosis": true,
     "notes": "Nemá mikropyle",
     "id": "cryptosporidium_parvum_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_01.webp",
+      "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Fasciola hepatica",
@@ -1492,7 +1519,10 @@
     "zoonosis": true,
     "notes": "Granulovaný obsah vypĺňa skoro celé vajíčko.",
     "id": "fasciola_hepatica_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_01.webp",
+      "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_02.webp"
+    ]
   },
   {
     "latinName": "Fascioloides magna",
@@ -1534,7 +1564,14 @@
     "zoonosis": false,
     "notes": "Patogén v pečeni",
     "id": "fascioloides_magna_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_01.webp",
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_02.webp",
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_03.webp",
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_04.webp",
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_05.webp",
+      "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_06.webp"
+    ]
   },
   {
     "latinName": "Paramphistomum cervi",
@@ -1581,7 +1618,12 @@
     "zoonosis": false,
     "notes": "Dospelé v bachore",
     "id": "paramphistomum_cervi_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_01.webp",
+      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_02.webp",
+      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_03.webp",
+      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_04.webp"
+    ]
   },
   {
     "latinName": "Dicrocoelium dendriticum",
@@ -1638,7 +1680,16 @@
     "zoonosis": false,
     "notes": "2 \"očká\"",
     "id": "dicrocoelium_dendriticum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_01.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_02.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_03.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_04.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_05.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_06.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_07.webp",
+      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_08.webp"
+    ]
   },
   {
     "latinName": "Cysticercus bovis",
@@ -1732,7 +1783,14 @@
     "zoonosis": true,
     "notes": "Vnútri tekutina a piesok",
     "id": "echinococcus_granulosus_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_01.webp",
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_02.webp",
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_03.webp",
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_04.webp",
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_05.webp",
+      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_06.webp"
+    ]
   },
   {
     "latinName": "Echinococcus multilocularis",
@@ -1823,7 +1881,9 @@
     "zoonosis": false,
     "notes": "Vnútri hruškovitá onkosféra",
     "id": "moniezia_expanza_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/moniezia_expanza_egg/moniezia_expanza_egg_01.webp"
+    ]
   },
   {
     "latinName": "Moniezia benedeni",
@@ -1921,7 +1981,10 @@
     "zoonosis": false,
     "notes": "16-32 blastomér",
     "id": "trichostrongylus_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_01.webp",
+      "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_02.webp"
+    ]
   },
   {
     "latinName": "Haemonchus sp.",
@@ -2119,7 +2182,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichuris_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trichuris_sp_egg/trichuris_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Ixodes ricinus",
@@ -2176,7 +2241,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "ixodes_ricinus_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/ixodes_ricinus_adult/ixodes_ricinus_adult_01.webp"
+    ]
   },
   {
     "latinName": "Cysticercus cellulosae",
@@ -2413,7 +2480,10 @@
     "zoonosis": false,
     "notes": "Gombík vpredu",
     "id": "dictyocaulus_filaria_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_01.webp",
+      "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_02.webp"
+    ]
   },
   {
     "latinName": "Histomonas meleagridis",
@@ -2459,7 +2529,12 @@
     "zoonosis": false,
     "notes": "Veľmi zriedkavo",
     "id": "histomonas_meleagridis_trophozoite",
-    "images": []
+    "images": [
+      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_01.webp",
+      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_02.webp",
+      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_03.webp",
+      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_04.webp"
+    ]
   },
   {
     "latinName": "Atoxoplasma sp.",
@@ -2861,7 +2936,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_tenella_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_tenella_oocyst/eimeria_tenella_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria mitis",
@@ -2965,7 +3042,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_acervulina_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_acervulina_oocyst/eimeria_acervulina_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria brunetti",
@@ -3018,7 +3097,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_brunetti_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria hagani",
@@ -3122,7 +3203,12 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_maxima_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_01.webp",
+      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_02.webp",
+      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_03.webp",
+      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Eimeria necatrix",
@@ -3780,7 +3866,14 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_truncata_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_01.webp",
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_02.webp",
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_03.webp",
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_04.webp",
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_05.webp",
+      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_07.webp"
+    ]
   },
   {
     "latinName": "Tyzzeria perniciosa",
@@ -3880,7 +3973,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_labbeana_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_labbeana_oocyst/eimeria_labbeana_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria columbarum",
@@ -3984,7 +4079,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_phasiani_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_phasiani_oocyst/eimeria_phasiani_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria dispersa",
@@ -4088,7 +4185,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_colchici_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_colchici_oocyst/eimeria_colchici_oocyst_01.webp",
+      "/public/images/parasites/eimeria_colchici_oocyst/eimeria_colchici_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria duodenalis",
@@ -4140,7 +4240,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_duodenalis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_01.webp",
+      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_02.webp",
+      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_03.webp",
+      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Caryospora kutzeri",
@@ -4188,7 +4293,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_kutzeri_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_02.webp",
+      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_03.webp",
+      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_04.webp",
+      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_05.webp"
+    ]
   },
   {
     "latinName": "Caryospora megafalconis",
@@ -4236,7 +4346,13 @@
     "zoonosis": false,
     "notes": "Väčšie ako C.k.",
     "id": "caryospora_megafalconis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_02.webp",
+      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_03.webp",
+      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_04.webp",
+      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_05.webp",
+      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_06.webp"
+    ]
   },
   {
     "latinName": "Caryospora neofalconis",
@@ -4283,7 +4399,11 @@
     "zoonosis": false,
     "notes": "Menšie ako C.k.",
     "id": "caryospora_neofalconis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_01.webp",
+      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_02.webp",
+      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Echinostoma sp.",
@@ -4337,7 +4457,12 @@
     "zoonosis": false,
     "notes": "Má viečko",
     "id": "echinostoma_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_01.webp",
+      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_02.webp",
+      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_03.webp",
+      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_04.webp"
+    ]
   },
   {
     "latinName": "Davainea proglottina",
@@ -4428,7 +4553,12 @@
     "zoonosis": false,
     "notes": "V kapsulách",
     "id": "raillietina_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/raillietina_sp_egg/raillietina_sp_egg_01.webp",
+      "/public/images/parasites/raillietina_sp_egg/raillietina_sp_egg_02.webp",
+      "/public/images/parasites/raillietina_sp_egg/raillietina_sp_egg_03.webp",
+      "/public/images/parasites/raillietina_sp_egg/raillietina_sp_egg_04.webp"
+    ]
   },
   {
     "latinName": "Amoebotaenia cuneata",
@@ -4558,7 +4688,11 @@
     "zoonosis": false,
     "notes": "",
     "id": "drepanidotaenia_lanceolata_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_01.webp",
+      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_02.webp",
+      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_03.webp"
+    ]
   },
   {
     "latinName": "Dicranotaenia coronula",
@@ -4689,7 +4823,11 @@
     "zoonosis": false,
     "notes": "",
     "id": "cyclophyllidea_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_01.webp",
+      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_02.webp",
+      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_03.webp"
+    ]
   },
   {
     "latinName": "Dispharynx nasuta",
@@ -4939,7 +5077,10 @@
     "zoonosis": false,
     "notes": "Viečka",
     "id": "syngamus_trachea_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/syngamus_trachea_egg/syngamus_trachea_egg_01.webp",
+      "/public/images/parasites/syngamus_trachea_egg/syngamus_trachea_egg_02.webp"
+    ]
   },
   {
     "latinName": "Cyathostoma bronchialis",
@@ -5272,7 +5413,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "ascaridia_galli_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/ascaridia_galli_egg/ascaridia_galli_egg_01.webp"
+    ]
   },
   {
     "latinName": "Ascaridia columbae",
@@ -5319,7 +5462,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "ascaridia_columbae_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/ascaridia_columbae_egg/ascaridia_columbae_egg_01.webp"
+    ]
   },
   {
     "latinName": "Ascaridia dissimilis",
@@ -5418,7 +5563,13 @@
     "zoonosis": false,
     "notes": "",
     "id": "heterakis_gallinarum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_02.webp",
+      "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_03.webp",
+      "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_04.webp",
+      "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_06.webp",
+      "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_07.webp"
+    ]
   },
   {
     "latinName": "Heterakis sp.",
@@ -5854,7 +6005,17 @@
     "zoonosis": false,
     "notes": "Podobné toxokarám",
     "id": "porrocaecum_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_01.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_02.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_03.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_04.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_05.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_06.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_07.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_08.webp",
+      "/public/images/parasites/porrocaecum_sp_egg/porrocaecum_sp_egg_09.webp"
+    ]
   },
   {
     "latinName": "Trichobilharzia sp.",
@@ -5995,7 +6156,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "isospora_felis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_01.webp",
+      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_02.webp",
+      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_03.webp",
+      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Cystoisospora rivolta",
@@ -6097,7 +6263,14 @@
     "zoonosis": false,
     "notes": "",
     "id": "toxoplasma_gondii_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_01.webp",
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_02.webp",
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_03.webp",
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_04.webp",
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_05.webp",
+      "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_06.webp"
+    ]
   },
   {
     "latinName": "Hammondia hammondi",
@@ -6197,7 +6370,12 @@
     "zoonosis": false,
     "notes": "Tenšia stena ako u T.canis",
     "id": "toxocara_cati_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_01.webp",
+      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_02.webp",
+      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_03.webp",
+      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_04.webp"
+    ]
   },
   {
     "latinName": "Ancylostoma tubaeforme",
@@ -6385,7 +6563,9 @@
     "zoonosis": false,
     "notes": "Len veľmi vzácne",
     "id": "trichuris_campanula_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trichuris_campanula_egg/trichuris_campanula_egg_01.webp"
+    ]
   },
   {
     "id": "capillaria_plica_egg",
@@ -6572,7 +6752,11 @@
     "zoonosis": false,
     "notes": "Krátky",
     "id": "demodex_gatoi_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_01.webp",
+      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_02.webp",
+      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_03.webp"
+    ]
   },
   {
     "latinName": "Buxtonella sulcata",

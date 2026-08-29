@@ -73,52 +73,50 @@ export function renderImageTab() {
                 </label>
             </div>
 
-            <div class="image-list" style="max-height: 600px; overflow-y: auto; margin-top: 1rem;">
-                <table class="table" style="width: 100%; border-collapse: collapse;">
-                    <thead style="background: #ecf0f1;">
-                        <tr>
-                            <th style="padding: 0.5rem; text-align: left;">ID parazita</th>
-                            <th style="padding: 0.5rem; text-align: left;">Latinský názov</th>
-                            <th style="padding: 0.5rem; text-align: left;">Zoznam obrázkov</th>
-                            <th style="padding: 0.5rem; text-align: left;">Pridanie obrázka</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${visibleParasites.length === 0 ? `
-                            <tr>
-                                <td colspan="4" style="padding: 1rem; text-align: center; color: #7f8c8d;">
-                                    Žiadny parazit nevyhovuje filtru — všetci majú aspoň jednu fotografiu. 🎉
-                                </td>
-                            </tr>
-                        ` : visibleParasites.map(p => {
-                            const imageUrls = imagesByParasite.get(p.id) || [];
-                            return `
-                                <tr style="border-bottom: 1px solid #ecf0f1;">
-                                    <td style="padding: 0.5rem; font-family: monospace; font-size: 0.8rem;">${p.id}</td>
-                                    <td style="padding: 0.5rem; font-size: 0.9rem;">${p.latinName || ''}</td>
-                                    <td style="padding: 0.5rem; font-size: 0.9rem;">
-                                        <div class="image-urls" style="max-width: 300px; overflow-wrap: break-word;">
-                                            ${imageUrls.length > 0 ? 
-                                                imageUrls.map(url => `<div style="margin-bottom:0.2rem;">${url}</div>`).join('') 
-                                                : '<span style="color:#95a5a6;">Nie sú priradené žiadne obrázky</span>'
-                                            }
-                                        </div>
-                                    </td>
-                                    <td style="padding: 0.5rem;">
-                                        <div class="image-actions" style="display: flex; gap: 0.5rem; flex-direction: column;">
-                                            <!-- NAHRÁVANIE VIAC SÚBOROV NARAZ -->
-                                            <input type="file" class="image-file-input" data-id="${p.id}" accept="image/*" multiple style="width: 100%; max-width: 250px; border: 1px solid #bdc3c7; border-radius: 4px; padding: 0.2rem;">
-                                            <!-- PRIDANIE CEZ URL -->
-                                            <input type="text" class="image-url-input" data-id="${p.id}" placeholder="URL adresa obrázka" style="width: 100%; max-width: 250px; padding: 0.2rem 0.5rem; border: 1px solid #bdc3c7; border-radius: 4px;">
-                                            <button class="add-image-btn" data-id="${p.id}" style="background:#27ae60; color:white; border:none; padding: 0.2rem 0.8rem; border-radius: 4px; cursor:pointer;">Pridať</button>
-                                            <button class="delete-image-btn" data-id="${p.id}" style="background:#e74c3c; color:white; border:none; padding: 0.2rem 0.8rem; border-radius: 4px; cursor:pointer;">Vymazať všetky</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                            `;
-                        }).join('')}
-                    </tbody>
-                </table>
+            <div class="image-list" style="max-height: 700px; overflow-y: auto; margin-top: 1rem;">
+                ${visibleParasites.length === 0 ? `
+                    <p style="padding: 1rem; text-align: center; color: #7f8c8d;">
+                        Žiadny parazit nevyhovuje filtru — všetci majú aspoň jednu fotografiu. 🎉
+                    </p>
+                ` : visibleParasites.map(p => {
+                    const imageUrls = imagesByParasite.get(p.id) || [];
+                    const isMissing = imageUrls.length === 0;
+                    return `
+                        <section class="parasite-image-card${isMissing ? ' is-missing' : ''}">
+                            <header class="parasite-image-card-header">
+                                <div class="pic-title">
+                                    <span class="pic-id">${p.id}</span>
+                                    <span class="pic-latin">${p.latinName || ''}</span>
+                                </div>
+                                <span class="pic-count">${imageUrls.length} ${imageUrls.length === 1 ? 'obrázok' : 'obrázkov'}</span>
+                            </header>
+
+                            <div class="parasite-image-card-body">
+                                <div class="image-urls">
+                                    ${imageUrls.length > 0 ?
+                                        imageUrls.map(url => `<div class="image-url-item">${url}</div>`).join('')
+                                        : '<span class="image-urls-empty">Nie sú priradené žiadne obrázky</span>'
+                                    }
+                                </div>
+                            </div>
+
+                            <div class="parasite-image-card-actions">
+                                <div class="action-field">
+                                    <label>Vybrať súbory</label>
+                                    <input type="file" class="image-file-input" data-id="${p.id}" accept="image/*" multiple>
+                                </div>
+                                <div class="action-field">
+                                    <label>URL adresa</label>
+                                    <input type="text" class="image-url-input" data-id="${p.id}" placeholder="https://...">
+                                </div>
+                                <div class="action-field action-field-buttons">
+                                    <button class="add-image-btn" data-id="${p.id}">➕ Pridať</button>
+                                    <button class="delete-image-btn" data-id="${p.id}">🗑️ Vymazať všetky</button>
+                                </div>
+                            </div>
+                        </section>
+                    `;
+                }).join('')}
             </div>
         </div>
     `;

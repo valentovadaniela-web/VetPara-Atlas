@@ -1,0 +1,141 @@
+--- /mnt/user-data/uploads/admin.css	2026-08-29 11:27:04.282620000 +0000
++++ admin.css	2026-08-29 11:28:24.810364506 +0000
+@@ -317,6 +317,138 @@
+     margin-right: 0.6rem;
+ }
+ 
++/* Karty fotografií (tab "3. Fotografie") — každý parazit má vlastný
++   ohraničený blok s výraznou hlavičkou, aby bolo jasné, kam patria
++   ovládacie prvky pod ňou (namiesto pôvodných tenkých čiar v tabuľke). */
++.parasite-image-card {
++    border: 1px solid #dfe4e6;
++    border-left: 4px solid #2c3e50;
++    border-radius: 8px;
++    margin-bottom: 1rem;
++    overflow: hidden;
++    background: #fff;
++    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
++}
++.parasite-image-card.is-missing {
++    border-left-color: #e67e22;
++}
++
++.parasite-image-card-header {
++    background: #2c3e50;
++    color: #fff;
++    padding: 0.6rem 1rem;
++    display: flex;
++    justify-content: space-between;
++    align-items: center;
++    flex-wrap: wrap;
++    gap: 0.5rem;
++}
++.parasite-image-card.is-missing .parasite-image-card-header {
++    background: #e67e22;
++}
++.pic-title {
++    display: flex;
++    align-items: baseline;
++    gap: 0.6rem;
++    flex-wrap: wrap;
++}
++.pic-id {
++    font-family: monospace;
++    font-weight: 700;
++    font-size: 0.9rem;
++    background: rgba(255,255,255,0.18);
++    padding: 0.15rem 0.5rem;
++    border-radius: 4px;
++}
++.pic-latin {
++    font-style: italic;
++    font-size: 0.9rem;
++    opacity: 0.9;
++}
++.pic-count {
++    font-size: 0.75rem;
++    font-weight: 600;
++    background: rgba(255,255,255,0.22);
++    padding: 0.15rem 0.7rem;
++    border-radius: 20px;
++    white-space: nowrap;
++}
++
++.parasite-image-card-body {
++    padding: 0.7rem 1rem;
++    border-bottom: 1px dashed #ecf0f1;
++}
++.image-urls {
++    font-size: 0.85rem;
++    overflow-wrap: break-word;
++}
++.image-url-item {
++    padding: 0.15rem 0;
++}
++.image-url-item:not(:last-child) {
++    border-bottom: 1px dotted #f0f0f0;
++}
++.image-urls-empty {
++    color: #95a5a6;
++    font-style: italic;
++    font-size: 0.85rem;
++}
++
++.parasite-image-card-actions {
++    background: #f8f9fa;
++    padding: 0.7rem 1rem;
++    display: flex;
++    flex-wrap: wrap;
++    gap: 0.8rem;
++    align-items: flex-end;
++}
++.parasite-image-card-actions .action-field {
++    display: flex;
++    flex-direction: column;
++    gap: 0.25rem;
++    flex: 1 1 200px;
++    min-width: 180px;
++}
++.parasite-image-card-actions .action-field label {
++    font-size: 0.72rem;
++    font-weight: 700;
++    text-transform: uppercase;
++    letter-spacing: 0.03em;
++    color: #7f8c8d;
++}
++.parasite-image-card-actions input[type="text"],
++.parasite-image-card-actions input[type="file"] {
++    padding: 0.35rem 0.5rem;
++    border: 1px solid #bdc3c7;
++    border-radius: 4px;
++    font-size: 0.85rem;
++    background: #fff;
++}
++.action-field-buttons {
++    flex: 0 0 auto;
++    flex-direction: row;
++    gap: 0.5rem;
++    align-self: flex-end;
++}
++.parasite-image-card-actions .add-image-btn,
++.parasite-image-card-actions .delete-image-btn {
++    border: none;
++    border-radius: 4px;
++    padding: 0.4rem 1rem;
++    cursor: pointer;
++    font-weight: 600;
++    font-size: 0.85rem;
++    white-space: nowrap;
++}
++.parasite-image-card-actions .add-image-btn {
++    background: #27ae60;
++    color: #fff;
++}
++.parasite-image-card-actions .delete-image-btn {
++    background: #e74c3c;
++    color: #fff;
++}
++
+ /* Akčné tlačidlá */
+ .form-actions {
+     display: flex;
