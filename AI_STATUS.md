@@ -1,14 +1,14 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
-🔥 0.23 Aktuálny stav — doplnené (2026‑08‑29, session: vizuálne oddelenie parazitov v tabe Fotografie — karty namiesto tabuľky)
+🔥 0.23 Aktuálny stav — doplnené (2026‑08‑29, session: vizuálne oddelenie parazitov v tabe Fotografie — karty namiesto tabuľky, zoradenie podľa abecedy, nájdená duplicita `imageForm.js`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
 
 ### Kontext
 
-Nadväzuje na §0.22 (Admin nástroj, tab „3. Fotografie"). Autorka nahlásila, že v tabuľkovom zobrazení fotiek boli jednotlivé riadky parazitov oddelené len tenkými čiarami — nebolo dobre vidno, ktorému ID patria ovládacie prvky (URL, Pridať, Vymazať, Vybrať súbory) pod ním.
+Nadväzuje na §0.22 (Admin nástroj, tab „3. Fotografie"). Autorka nahlásila, že v tabuľkovom zobrazení fotiek boli jednotlivé riadky parazitov oddelené len tenkými čiarami — nebolo dobre vidno, ktorému ID patria ovládacie prvky (URL, Pridať, Vymazať, Vybrať súbory) pod ním. V tej istej session následne požiadala aj o možnosť zoradiť zoznam podľa abecedy.
 
-### 🟡→✅ Zmena: tabuľka nahradená kartami (`tools/admin/forms/imageForm.js`, `tools/admin/admin.css`)
+### 🟡→✅ Zmena 1: tabuľka nahradená kartami (`tools/admin/forms/imageForm.js`, `tools/admin/admin.css`)
 
 **Riešenie:** `renderImageTab()` už negeneruje `<table>`, ale zoznam ohraničených blokov `<section class="parasite-image-card">`, jeden na parazita:
 - **Hlavička karty** (tmavé pozadie `#2c3e50`) — ID parazita ako monospace odznak (`.pic-id`) + latinský názov (`.pic-latin`) + počet obrázkov ako odznak vpravo (`.pic-count`).
@@ -20,17 +20,33 @@ Nadväzuje na §0.22 (Admin nástroj, tab „3. Fotografie"). Autorka nahlásila
 
 - **`tools/admin/admin.css`** — pridaná nová sekcia štýlov: `.parasite-image-card`, `.parasite-image-card-header`, `.pic-title`/`.pic-id`/`.pic-latin`/`.pic-count`, `.parasite-image-card-body`, `.image-urls`/`.image-url-item`/`.image-urls-empty`, `.parasite-image-card-actions`, `.action-field`, `.action-field-buttons`. Nič sa neodstránilo ani nepremenovalo z existujúcich tried.
 
+### 🟡→✅ Zmena 2: zoradenie podľa abecedy (`tools/admin/forms/imageForm.js`)
+
+**Riešenie:** pridaný druhý checkbox v hlavičke „📷 Správa fotografií" vedľa „Zobraziť len parazitov bez fotografie": **„Zoradiť podľa abecedy (latinský názov)"**.
+- Nový perzistentný modulový stav `sortAlphabetically` (rovnaký vzor ako `showOnlyMissing`).
+- Pri zapnutí sa `visibleParasites` zoradia cez `.sort()` na **kópii** poľa (nie `state.parasites` priamo, aby sa nezmenilo poradie použité inde v appke, napr. pri exporte) podľa `p.latinName || p.id`, cez `localeCompare(..., 'sk', { sensitivity: 'base' })` (správne zoradí aj diakritiku).
+- Funguje spolu s existujúcim filtrom „len bez fotografie" (filter aj zoradenie sa aplikujú nezávisle na `visibleParasites`).
+
+### 🔴→✅ Nájdená a opravená príčina, prečo sa zmeny v `imageForm.js` dlho neprejavovali naživo
+
+Autorka nahlásila, že po nahradení `imageForm.js` sa nová funkcia (zoradenie) v prehliadači vôbec neobjavila — ani po hard refresh, disable cache, inkognito okne. Dlhšie hľadanie príčiny (Network tab → Response, porovnanie obsahu súboru) ukázalo, že **v projekte existovali DVA súbory `imageForm.js`** — jeden v `tools/admin/forms/imageForm.js` (ten, ktorý sa upravoval) a druhý priamo v `tools/admin/imageForm.js` (starý, bez úprav). Admin nástroj importoval ten druhý, takže sa reálne vždy servírovala stará verzia bez ohľadu na to, čo sa menilo/ukladalo v `forms/imageForm.js`.
+
+**Oprava:** duplicitný súbor `tools/admin/imageForm.js` (mimo `forms/`) bol vymazaný, zostal iba `tools/admin/forms/imageForm.js` ako jediný zdroj pravdy. Po tomto kroku sa karty aj zoradenie podľa abecedy naživo potvrdili ako funkčné.
+
+**⚠️ Pozor pre ďalšiu session:** ak sa nabudúce zmena v ktoromkoľvek `tools/admin/**` súbore znova neprejaví naživo aj po hard refresh/inkognito, over si HNEĎ na začiatku (cez VS Code Ctrl+Shift+F vyhľadanie naprieč projektom, alebo Ctrl+P), či neexistuje duplicitná kópia toho istého súboru inde v `tools/admin/` stromovej štruktúre — toto bola koreňová príčina v tejto session.
+
 ### Zhrnutie vykonaných zmien kódu v tejto session
 
 | Súbor | Zmena | Stav |
 | --- | --- | --- |
-| `tools/admin/forms/imageForm.js` | `renderImageTab()`: tabuľka → karty na parazita (hlavička ID+latinName+počet, telo so zoznamom URL, panel akcií s labelmi); `.is-missing` zvýraznenie pre parazitov bez fotky | ✅ hotové (kód), ⬜ naživo neoverené |
-| `tools/admin/admin.css` | nová sekcia štýlov pre `.parasite-image-card` a podprvky | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/forms/imageForm.js` | `renderImageTab()`: tabuľka → karty na parazita (hlavička ID+latinName+počet, telo so zoznamom URL, panel akcií s labelmi); `.is-missing` zvýraznenie pre parazitov bez fotky; nový checkbox + logika zoradenia podľa abecedy (`sortAlphabetically`) | ✅ hotové (kód), ✅ naživo overené autorkou |
+| `tools/admin/admin.css` | nová sekcia štýlov pre `.parasite-image-card` a podprvky | ✅ hotové (kód), ✅ naživo overené autorkou |
+| `tools/admin/imageForm.js` (duplicitný súbor mimo `forms/`) | **vymazaný** — bol príčinou, že sa zmeny v `forms/imageForm.js` neprejavovali naživo | ✅ vyriešené |
 
 ### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
 
-1. **Naživo overiť** — nová štruktúra kariet ešte nebola potvrdená autorkou v prehliadači; skontrolovať najmä, že `.is-missing` zvýraznenie funguje spolu s filtrom „len bez fotografie" (§0.22) a že responzívne správanie (`admin.css` media query `@media (max-width: 768px)`) nerozbíja panel akcií na malej obrazovke.
-2. Diff súbory (`imageForm.diff`, `admin.diff`) boli odovzdané len v chate, autorka sa rozhodla neukladať ich do `docs/` — reálne zmeny sú priamo v `tools/admin/forms/imageForm.js` a `tools/admin/admin.css`.
+1. Responzívne správanie panelu akcií (`admin.css` media query `@media (max-width: 768px)`) na malej obrazovke — ešte nebolo cielene otestované s novým card layoutom.
+2. Diff súbory (`imageForm.diff`, `admin.diff`, `imageForm-sort.diff`) boli odovzdané len v chate, autorka sa rozhodla neukladať ich do `docs/` — reálne zmeny sú priamo v `tools/admin/forms/imageForm.js` a `tools/admin/admin.css`.
 
 ---
 
