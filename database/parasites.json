@@ -42,8 +42,8 @@
     "differentialDiagnosis": [
       "Odlíšiť od vajíčka Fasciola hepatica: F. hepatica je väčšie (130–150×60–90 µm) a má hustú žĺtkovú masu vypĺňajúcu takmer celé vajíčko; u A. alata je pri vylúčení obsah nediferencovaný (zhluk buniek) a viečko býva nevýrazné."
     ],
-    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
-    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
     "zoonosis": true,
     "notes": "Na diagnostiku je lepšia sedimentačná metóda.",
     "id": "alaria_alata_egg",
@@ -170,7 +170,7 @@
       "species": "Eucoleus aerophilus"
     },
     "hostGroups": [
-      "Ryby"
+      "Sladkovodné ryby"
     ],
     "hosts": [
       "Mačka",
@@ -774,7 +774,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Navrhovaná revízia názvoslovia\r\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\r\n\r\nGiardia duodenalis* – asambláž AI,\r\nGiardia intestinalis* – asambláž AII,\r\nGiardia enterica* – asambláž B,\r\nGiardia canis* – asambláž C,\r\nGiardia lupus* – asambláž D,\r\nGiardia bovis* – asambláž E,\r\nGiardia cati* – asambláž F,\r\nGiardia simoni* – asambláž G.\r\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre. ",
+    "notes": "Navrhovaná revízia názvoslovia\r\r\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\r\r\n\r\r\nGiardia duodenalis* – asambláž AI,\r\r\nGiardia intestinalis* – asambláž AII,\r\r\nGiardia enterica* – asambláž B,\r\r\nGiardia canis* – asambláž C,\r\r\nGiardia lupus* – asambláž D,\r\r\nGiardia bovis* – asambláž E,\r\r\nGiardia cati* – asambláž F,\r\r\nGiardia simoni* – asambláž G.\r\r\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre. ",
     "id": "giardia_intestinalis_cyst",
     "images": [
       "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_01.webp",
@@ -850,7 +850,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Črevo",
@@ -934,7 +934,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hydina",
+      "Hrabavá hydina",
       "Hovädzí dobytok",
       "Plazy"
     ],
@@ -1085,7 +1085,7 @@
     ],
     "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "U psov môže byť prítomná aj u klinicky zdravých zvierat, ale vo veľkom počte sa často nachádza pri chronickej hnačke; v jednej štúdii boli zistené u 14 zo 63 klinicky zdravých psov, teda u 22,2%. U psa, prípadne mačky, samotný nález C. guttulatus* ešte automaticky neznamená kauzálnu mykotickú enteropatiu, pretože môže ísť o prechodný alebo komenzálny nález. Význam má najmä množstvo kvasiniek, klinické príznaky a súčasný nález iných enteropatogénov. U králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.\r\n\r\n",
+    "pathology": "U psov môže byť prítomná aj u klinicky zdravých zvierat, ale vo veľkom počte sa často nachádza pri chronickej hnačke; v jednej štúdii boli zistené u 14 zo 63 klinicky zdravých psov, teda u 22,2%. U psa, prípadne mačky, samotný nález C. guttulatus* ešte automaticky neznamená kauzálnu mykotickú enteropatiu, pretože môže ísť o prechodný alebo komenzálny nález. Význam má najmä množstvo kvasiniek, klinické príznaky a súčasný nález iných enteropatogénov. U králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.\r\r\n\r\r\n",
     "zoonosis": false,
     "notes": "Symbiotická kvasinka",
     "id": "cyniclomyces_guttulatus_yeast",
@@ -1648,7 +1648,7 @@
       "Kôň",
       "Králik",
       "Pes",
-      "Osípaná",
+      "Ošípaná",
       "Človek"
     ],
     "hostNotes": {},
@@ -2749,7 +2749,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hydina"
+      "Hrabavá hydina"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -2849,7 +2849,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -2899,7 +2899,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -2955,7 +2955,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3007,7 +3007,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3061,7 +3061,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3116,7 +3116,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3168,7 +3168,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3225,7 +3225,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3277,7 +3277,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3329,7 +3329,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -3378,7 +3378,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4424,7 +4424,7 @@
       "Človek"
     ],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4479,7 +4479,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4528,7 +4528,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4575,7 +4575,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4619,7 +4619,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4753,7 +4753,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4896,7 +4896,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4949,8 +4949,8 @@
     "hostGroups": [],
     "hosts": [
       "Kačica",
-      "hus",
-      "labuť"
+      "Hus",
+      "Labuť"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4998,7 +4998,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5046,7 +5046,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hydina",
+      "Hrabavá hydina",
       "Spevavce"
     ],
     "hostNotes": {},
@@ -5383,7 +5383,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité"
+      "Sliepka"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5528,7 +5528,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Kurovité",
+      "Sliepka",
       "Hus"
     ],
     "hostNotes": {},
@@ -5734,7 +5734,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hydina"
+      "Hrabavá hydina"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5833,7 +5833,7 @@
       "species": "Porrocaecum crassum"
     },
     "hostGroups": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -5880,7 +5880,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5930,7 +5930,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -6032,7 +6032,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Vodné vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -6078,7 +6078,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hydina"
+      "Hrabavá hydina"
     ],
     "hostNotes": {},
     "sample": "Vzdušné vaky",
@@ -6473,7 +6473,6 @@
     "images": []
   },
   {
-    "id": "dioctophyma_renale_egg",
     "latinName": "Dioctophyme renale",
     "synonyms": [],
     "slovakName": "",
@@ -6494,7 +6493,6 @@
     "sample": "Moč",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 60,
       "lengthMax": 70,
@@ -6512,9 +6510,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "dioctophyma_renale_egg",
+    "images": []
   },
   {
     "latinName": "Trichuris campanula",
@@ -6568,7 +6566,6 @@
     ]
   },
   {
-    "id": "capillaria_plica_egg",
     "latinName": "Pearsonema plica",
     "synonyms": [],
     "slovakName": "",
@@ -6589,7 +6586,6 @@
     "sample": "Moč",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 55,
       "lengthMax": 67,
@@ -6607,9 +6603,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "capillaria_plica_egg",
+    "images": []
   },
   {
     "latinName": "Aonchotheca putorii",
@@ -8588,8 +8584,8 @@
       "Diferenciálne podľa morfológie dospelca",
       "hostiteľa a lokalizácie; pri kryptických druhoch odporúčané molekulové potvrdenie."
     ],
-    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
-    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
     "zoonosis": true,
     "notes": "",
     "id": "alaria_alata_adult",
@@ -9461,7 +9457,6 @@
     ]
   },
   {
-    "id": "capillaria_aerophyla_egg",
     "latinName": "Eucoleus aerophilus",
     "synonyms": [],
     "slovakName": "",
@@ -9482,7 +9477,6 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 48,
       "lengthMax": 62,
@@ -9500,14 +9494,14 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
+    "notes": "",
+    "id": "capillaria_aerophyla_egg",
     "images": [
       "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_01.webp",
       "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_02.webp",
       "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_03.webp",
       "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_04.webp"
-    ],
-    "references": [],
-    "notes": ""
+    ]
   },
   {
     "latinName": "Ergasilus sieboldi",
@@ -9706,7 +9700,6 @@
     ]
   },
   {
-    "id": "eimeria_sp_oocyst",
     "latinName": "Eimeria sp.",
     "synonyms": [],
     "slovakName": "",
@@ -9727,7 +9720,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 10,
       "lengthMax": 40,
@@ -9745,9 +9737,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "eimeria_sp_oocyst",
+    "images": []
   },
   {
     "latinName": "Cystoisospora rastegaivae",
@@ -10414,7 +10406,6 @@
     "images": []
   },
   {
-    "id": "sarcoptes_sp_adult",
     "latinName": "Sarcoptes sp.",
     "synonyms": [],
     "slovakName": "",
@@ -10435,7 +10426,6 @@
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
-    "methods": [],
     "micrometry": {
       "lengthMin": 250,
       "lengthMax": 430,
@@ -10453,9 +10443,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "sarcoptes_sp_adult",
+    "images": []
   },
   {
     "latinName": "Notoedres cati",
@@ -11189,7 +11179,6 @@
     "images": []
   },
   {
-    "id": "sarcoptes_equi_adult",
     "latinName": "Sarcoptes equi",
     "synonyms": [],
     "slovakName": "",
@@ -11210,7 +11199,6 @@
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
-    "methods": [],
     "micrometry": {
       "lengthMin": 250,
       "lengthMax": 430,
@@ -11228,9 +11216,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Vzácne"
+    "notes": "Vzácne",
+    "id": "sarcoptes_equi_adult",
+    "images": []
   },
   {
     "latinName": "Psoroptes equi",
@@ -12250,7 +12238,6 @@
     "images": []
   },
   {
-    "id": "stratiolaelaps_scimitus_adult",
     "latinName": "Stratiolaelaps scimitus",
     "synonyms": [],
     "slovakName": "",
@@ -12271,7 +12258,6 @@
     "sample": "Plášťová dutina",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
-    "methods": [],
     "micrometry": {
       "lengthMin": 500,
       "lengthMax": 500,
@@ -12289,9 +12275,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Predátor"
+    "notes": "Predátor",
+    "id": "stratiolaelaps_scimitus_adult",
+    "images": []
   },
   {
     "latinName": "Eimeria debliecki",
@@ -12907,8 +12893,8 @@
       "Diferenciálne podľa morfológie dospelca",
       "hostiteľa a lokalizácie; pri kryptických druhoch odporúčané molekulové potvrdenie."
     ],
-    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
-    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka",
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka",
     "zoonosis": true,
     "notes": "V svalovine a priľahlom tuku",
     "id": "alaria_alata_mesocercaria",
@@ -15663,7 +15649,7 @@
     "hostGroups": [],
     "hosts": [
       "Vretenica",
-      "slepúch"
+      "Slepúch"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -18780,7 +18766,6 @@
     "images": []
   },
   {
-    "id": "strobilocercus_fasciolaris_larva",
     "latinName": "Strobilocercus fasciolaris",
     "synonyms": [],
     "slovakName": "",
@@ -18801,7 +18786,6 @@
     "sample": "Pečeň",
     "stage": "Larva",
     "group": "Cestoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 3000,
       "lengthMax": 8000,
@@ -18819,9 +18803,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Larválne štádium Taenia taeniformis"
+    "notes": "Larválne štádium Taenia taeniformis",
+    "id": "strobilocercus_fasciolaris_larva",
+    "images": []
   },
   {
     "latinName": "Hymenolepis diminuta",
@@ -23362,7 +23346,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Jeleňovité"
+      "Jeleň"
     ],
     "hostNotes": {},
     "sample": "Nozdry",
