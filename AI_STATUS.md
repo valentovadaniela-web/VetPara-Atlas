@@ -1,5 +1,86 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.26 Aktuálny stav — doplnené (2026‑08‑31, session: grafický redizajn Atlasu, Galérie a detailu parazita — farebné hlavičky kariet, 3D tiene, hover nadvih)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že stránky Atlas a Galéria pôsobia neprofesionálne — príliš „čisto bielo" a ploché. Zároveň odmietla tmavý štýl Home stránky (zle čitateľné pre hustú vedeckú dátovú tabuľku). Pred implementáciou boli cez Visualizer ukázané dva grafické smery (Variant A: tmavý pás v hlavičke bočného panela; Variant B: farebná hlavička na každej karte zvlášť). Autorka si vybrala Variant B a následne dožiadala jemný 3D tieň s hover-nadvihom kariet. Po implementácii pre Atlas a Galériu požiadala o zjednotenie aj detailu parazita.
+
+### ✅ 1. Atlas — zoznam parazitov (`AtlasPage.js`, `atlas.css`)
+
+- Karta v zozname (`.specimen-row-card`) rozdelená na `.specimen-row-header` (tmavomodrý pás `--color-secondary`, biely kurzívový názov druhu) a `.specimen-row-body` (údaje hostiteľ/materiál/veľkosť + náhľad fotky vpravo).
+- Dvojvrstvový box-shadow (kontaktný + difúzny) na každej karte; pri hoveri `translateY(-3px)` + silnejší tieň (plynulý prechod 0.18s cez existujúcu `var(--transition-base)`).
+- Doplnené zaoblenie a okraj karty (predtým nemala `border-radius` ani `border` vôbec — vizuálna medzera oproti zvyšku appky).
+- Bočný panel filtrov (`.filter-sidebar`) dostal tónované pozadie `#eef2f7` namiesto bieleho — vyžiadalo si to selektor s vyššou špecifickosťou (`#database-view .filter-sidebar.card`) + `!important`, keďže `variables.css` natvrdo zamyká `#database-view .card` na bielu.
+
+### ✅ 2. Galéria (`GalleryPage.js`, `gallery.css`)
+
+- Rovnaká logika ako v Atlase: názov parazita presunutý z textu pod fotkou do novej `.gallery-item-header` (tmavomodrý pás nad náhľadom fotky).
+- Rovnaký dvojvrstvový tieň + hover-nadvih na `.gallery-item` ako pri Atlase.
+- `.gallery-sidebar` dostal rovnaké tónované pozadie `#eef2f7` (tu bez `!important` battle — `#gallery-view` nemá vo `variables.css` žiadny natvrdo zamknutý light-mode blok).
+
+### ✅ 3. Detail parazita (`atlas.css`, zdieľaný s Atlasom)
+
+- Farebné hlavičky vnorených blokov (`.detail-field h4` — Životný cyklus/Patológia/Poznámky, `.morph-main-header` — Morfológia) zjednotené z `--color-primary` na `--color-secondary`, aby ladili s novou farbou hlavičiek v Atlase/Galérii.
+- Hlavné bloky stránky (`main.card` s údajmi parazita + bočný `aside.card` s taxonómiou, cez nové pravidlo `.detail-layout > .card`) dostali rovnaký dvojvrstvový tieň ako karty v zozname — **bez hover-nadvihu**, keďže nejde o klikateľnú položku zoznamu.
+- Jemný jednoduchý tieň doplnený aj na vnorené boxy (`.findings-card` s fotkou, `.detail-field`, `.morphology-card-main`), aby vizuálne „vystupovali" z bielej hlavnej karty namiesto splynutia s ňou.
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `AtlasPage.js` | markup karty rozdelený na `.specimen-row-header`/`.specimen-row-body` | ✅ hotové, odovzdané autorke |
+| `atlas.css` | header band + tieň + hover na karte zoznamu, tónovaný sidebar, zjednotená farba a tiene na detaile parazita | ✅ hotové, odovzdané autorke |
+| `GalleryPage.js` | markup položky rozdelený — nová `.gallery-item-header` s názvom | ✅ hotové, odovzdané autorke |
+| `gallery.css` | header band + tieň + hover na položke galérie, tónovaný sidebar | ✅ hotové, odovzdané autorke |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Autorka musí všetky štyri súbory reálne nahradiť v repozitári a nasadiť — v tejto session boli len upravené a odovzdané na stiahnutie, **live overenie v prehliadači (Atlas, Galéria, detail parazita, desktop aj mobil) ešte neprebehlo**.
+2. Hover-nadvih na `.specimen-row-card` má v `variables.css` natvrdo zamknutú `border-color` cez `!important` (light-mode lock pre `#database-view .specimen-row-card`) — samotný `border-color` sa preto pri hoveri vizuálne nezmení (tieň a nadvih fungujú normálne). Ak by autorka chcela aj farbu okraja meniacu sa pri hoveri, treba upraviť tento lock priamo vo `variables.css`.
+3. Rovnaký farebný header-band štýl (Variant B) zatiaľ nebol aplikovaný na Home stránku ani inde v appke mimo Atlasu/Galérie/detailu — ak by autorka chcela vizuálnu konzistenciu aj tam, treba to riešiť samostatne (Home má vlastný dark-mode systém, pozri `variables.css` sekciu `.dark-mode`).
+
+---
+
+🔥 0.25 Aktuálny stav — doplnené (2026‑08‑31, session: náhľady fotiek v zozname Atlasu + presun "Zrušiť filtre"/"Aktívne filtre" hore)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka poslala screenshot stránky Atlas a požiadala o dve zmeny: 1) v zozname kariet (`.specimen-row-card`) chýbal zmenšený náhľad fotky parazita, 2) tlačidlo „Zrušiť všetky filtre" a blok „Aktívne filtre" boli až na konci bočného panela filtrov (pod hostiteľom/materiálom/tvarom/farbou/veľkosťou), takže bolo treba rolovať cez celý panel, aby sa k nim dostala.
+
+### ✅ 1. Náhľady fotiek v zozname Atlasu
+
+- Nová metóda `AtlasPage.renderRowThumbnail(record)` — pre daný záznam získa fotky cez `Repository.getImagesForParasite(record.id)`, vyberie hlavnú fotku cez `PrimaryImage.pickPrimary()` (rovnaká logika ako v detaile — priorita `isPrimary:true`, inak najstaršia podľa `dateAdded`) a cestu vyrieši cez `PrimaryImage.resolveImageUrl()` (funguje rovnako lokálne aj na GitHub Pages).
+- Ak záznam nemá žiadnu fotku, vráti prázdny `div.specimen-row-thumb-empty` rovnakej veľkosti ako skutočný náhľad, aby karty v mriežke nemenili výšku riadku.
+- `renderRecords()` upravený: obsah karty (nadpis + `<p>` s hostiteľom/materiálom/veľkosťou) zabalený do `.specimen-row-content`, náhľad pridaný vedľa cez `${this.renderRowThumbnail(record)}`.
+- CSS (`atlas.css`): `.specimen-row-card` zmenené na `display: flex` (obsah vľavo, náhľad vpravo), nové triedy `.specimen-row-content` (flex: 1 1 auto, min-width: 0) a `.specimen-row-thumb` / `.specimen-row-thumb-empty`.
+
+### ✅ 2. Zväčšenie náhľadov
+
+Na žiadosť autorky zväčšené z pôvodných 84×84 px na **140×140 px** (desktop/tablet). Doplnená media query `@media (max-width: 767px)`, ktorá náhľady na mobile zmenší na **64×64 px**, aby sa karty pri jednom stĺpci (`.grid-results` pod 768px) príliš nestlačili.
+
+### ✅ 3. Presun „Zrušiť všetky filtre" a „Aktívne filtre" na vrch bočného panela
+
+V `AtlasPage.render()` presunutý blok `#atlas-active-filters` + tlačidlo `#atlas-clear-filters` z konca `<aside class="filter-sidebar card">` (za `renderSizeFilterSection()`) hneď pod `.atlas-header`, pred `renderHostFilterSection()`. Logika/ID/event listenery (`bindActiveFilterButtons()`, `clearFilters()`) sa nemenili — iba poradie v markupe. V `atlas.css` doplnený `margin-bottom` na `.atlas-clear-filters`, aby malo tlačidlo odstup od filtra Hostiteľ pod ním.
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `AtlasPage.js` | nová `renderRowThumbnail()`, úprava `renderRecords()` markupu, presun bloku aktívnych filtrov + tlačidla hore v `render()` | ✅ hotové, odovzdané autorke |
+| `atlas.css` | `.specimen-row-card` na flex, nové `.specimen-row-content`/`.specimen-row-thumb`/`.specimen-row-thumb-empty` (140px, mobil 64px), `margin-bottom` na `.atlas-clear-filters` | ✅ hotové, odovzdané autorke |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Autorka musí súbory reálne nahradiť v repozitári a nasadiť — v tejto session boli len upravené a odovzdané na stiahnutie, **live overenie v prehliadači (desktop aj mobil) ešte neprebehlo**.
+2. Layout náhľadov (140px/64px) je odhad podľa požiadavky „väčšie" — ak autorke veľkosť po naživo-overení nesadne, stačí upraviť `width`/`height` v `.specimen-row-thumb` (+ mobilnú media query).
+
+---
+
 🔥 0.24 Aktuálny stav — doplnené (2026‑08‑29, session: favicon/PWA ikony pre mobil — orezanie loga, sada ikon, manifest.json, index.html)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII

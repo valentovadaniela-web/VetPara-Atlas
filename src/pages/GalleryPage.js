@@ -442,6 +442,10 @@ const GalleryPage = {
         // Nový formát: url je kompletná cesta
         return `
           <div class="gallery-item card" data-image-url="${this.escapeHtml(img.url)}">
+            <div class="gallery-item-header">
+              <div class="gallery-item-title">${this.escapeHtml(latinName)}</div>
+            </div>
+
             <div class="gallery-item-thumb">
               <img 
                src="${this.resolveImageUrl(img.url)}" 
@@ -451,7 +455,6 @@ const GalleryPage = {
             </div>
 
             <div class="gallery-item-info">
-              <div class="gallery-item-title">${this.escapeHtml(latinName)}</div>
               <div class="gallery-item-meta">
                 ${img.caption ? `<span>${this.escapeHtml(img.caption)}</span>` : ""}
                 ${img.dateAdded ? `<span>${this.escapeHtml(img.dateAdded.split("T")[0])}</span>` : ""}

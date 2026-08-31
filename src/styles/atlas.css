@@ -210,6 +210,15 @@ button {
     height: fit-content;
 }
 
+/* OPRAVA (grafický redizajn): mierne tónované pozadie panela filtrov
+   namiesto čisto bieleho — vyžaduje vyššiu špecifickosť + !important,
+   pretože variables.css natvrdo zamyká `#database-view .card`
+   (id + 1 trieda) na bielu; tento selektor (id + 2 triedy) má vyššiu
+   špecifickosť, takže vyhráva. */
+#database-view .filter-sidebar.card {
+    background-color: #eef2f7 !important;
+}
+
 .atlas-header {
     margin-bottom: var(--space-md);
 }
@@ -276,6 +285,7 @@ button {
     width: 100%;
     min-height: 44px;
     margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
     padding: var(--space-sm) var(--space-md);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
@@ -549,13 +559,20 @@ button {
 }
 
 .specimen-row-card {
-    padding: var(--space-md);
+    padding: 0;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
     cursor: pointer;
-    transition: border-color var(--transition-base);
+    background: var(--color-bg-card);
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.10), 0 1px 2px rgba(15, 23, 42, 0.06);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .specimen-row-card:hover {
     border-color: var(--color-secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 18px rgba(15, 23, 42, 0.14), 0 3px 6px rgba(15, 23, 42, 0.08);
 }
 
 .specimen-row-card:focus-visible {
@@ -563,11 +580,58 @@ button {
     outline-offset: 2px;
 }
 
-.specimen-row-card h3 {
+.specimen-row-header {
+    background: var(--color-secondary);
+    padding: var(--space-sm) var(--space-md);
+}
+
+.specimen-row-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-md);
+}
+
+.specimen-row-content {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.specimen-row-meta {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.specimen-row-header h3 {
     font-size: var(--fs-md);
     font-style: italic;
-    color: var(--color-secondary);
-    margin-bottom: 4px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.specimen-row-thumb {
+    flex: 0 0 auto;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-alt, #f4f4f4);
+}
+
+.specimen-row-thumb-empty {
+    background: var(--color-surface-alt, #f4f4f4);
+}
+
+@media (max-width: 767px) {
+
+    .specimen-row-thumb,
+    .specimen-row-thumb-empty {
+        width: 64px;
+        height: 64px;
+    }
+
 }
 
 .specimen-meta-inline {
@@ -664,6 +728,13 @@ button {
     gap: var(--space-lg);
 }
 
+/* OPRAVA (grafický redizajn): rovnaký dvojvrstvový tieň ako karty
+   v Atlase/Galérii, aby detail parazita pôsobil vizuálne jednotne.
+   Bez hover-nadvihu — nejde o klikateľnú položku zoznamu. */
+.detail-layout > .card {
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.10), 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
 .specimen-title {
     font-size: var(--fs-2xl);
     color: var(--color-secondary);
@@ -710,10 +781,11 @@ button {
     margin-bottom: var(--space-lg);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
 }
 
 .detail-field h4 {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: #ffffff;
     padding: var(--space-md);
     margin: 0;
@@ -790,6 +862,7 @@ button {
     height: 500px;
     min-height: 200px;
     overflow: hidden;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.10), 0 1px 2px rgba(15, 23, 42, 0.06);
 }
 
 /* Fotografia (PrimaryImage.js) sa musi prisposobit ploche kontajnera,
@@ -869,10 +942,11 @@ button {
     margin-bottom: var(--space-lg);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
 }
 
 .morph-main-header {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: #ffffff;
     padding: var(--space-md);
     font-weight: 700;

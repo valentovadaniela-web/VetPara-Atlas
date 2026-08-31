@@ -99,6 +99,20 @@ const AtlasPage = {
 
                         </div>
 
+                        <div
+                            id="atlas-active-filters"
+                            class="atlas-active-filters"
+                            aria-live="polite"
+                        ></div>
+
+                        <button
+                            type="button"
+                            id="atlas-clear-filters"
+                            class="atlas-clear-filters"
+                        >
+                            Zrušiť všetky filtre
+                        </button>
+
                         ${this.renderHostFilterSection(this.getHostValues())}
 
                         ${this.renderMultiFilter(
@@ -120,20 +134,6 @@ const AtlasPage = {
                         )}
 
                         ${this.renderSizeFilterSection()}
-
-                        <div
-                            id="atlas-active-filters"
-                            class="atlas-active-filters"
-                            aria-live="polite"
-                        ></div>
-
-                        <button
-                            type="button"
-                            id="atlas-clear-filters"
-                            class="atlas-clear-filters"
-                        >
-                            Zrušiť všetky filtre
-                        </button>
 
                     </aside>
 
@@ -848,6 +848,34 @@ const AtlasPage = {
 
     },
 
+    // OPRAVA (náhľady fotiek v zozname Atlasu): vracia HTML pre malý
+    // náhľad hlavnej fotky záznamu (rovnaká logika výberu ako v detaile
+    // a PrimaryImage.js — pickPrimary() + resolveImageUrl()). Ak záznam
+    // nemá žiadnu fotku, vráti prázdny placeholder rovnakej veľkosti,
+    // aby si karty v mriežke zachovali rovnakú výšku.
+    renderRowThumbnail(record) {
+
+        const images =
+            Repository.getImagesForParasite(record.id);
+
+        const primary =
+            PrimaryImage.pickPrimary(images);
+
+        if (!primary) {
+            return `<div class="specimen-row-thumb specimen-row-thumb-empty" aria-hidden="true"></div>`;
+        }
+
+        return `
+            <img
+                src="${PrimaryImage.resolveImageUrl(primary.url)}"
+                alt="${this.escapeHtml(record.latinName ?? record.id)}"
+                class="specimen-row-thumb"
+                loading="lazy"
+            >
+        `;
+
+    },
+
     renderRecords() {
 
         const container =
@@ -943,15 +971,20 @@ const AtlasPage = {
 
         container.innerHTML = filtered.map(record => `
             <div class="specimen-row-card" data-id="${this.escapeHtml(record.id)}" role="button" tabindex="0">
-                <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
-                <p>
-                    <strong>Hostiteľ:</strong>
-                    ${this.escapeHtml(this.formatHosts(this.getDisplayHosts(record)) || "—")}
-                    |
-                    <strong>Materiál:</strong>
-                    ${this.escapeHtml(record.sample || "—")}
-                    ${record.micrometry ? `| <strong>Veľkosť:</strong> ${this.escapeHtml(this.formatSize(record.micrometry) || "—")}` : ""}
-                </p>
+                <div class="specimen-row-header">
+                    <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
+                </div>
+                <div class="specimen-row-body">
+                    <p class="specimen-row-meta">
+                        <strong>Hostiteľ:</strong>
+                        ${this.escapeHtml(this.formatHosts(this.getDisplayHosts(record)) || "—")}
+                        |
+                        <strong>Materiál:</strong>
+                        ${this.escapeHtml(record.sample || "—")}
+                        ${record.micrometry ? `| <strong>Veľkosť:</strong> ${this.escapeHtml(this.formatSize(record.micrometry) || "—")}` : ""}
+                    </p>
+                    ${this.renderRowThumbnail(record)}
+                </div>
             </div>
         `).join("");
 
