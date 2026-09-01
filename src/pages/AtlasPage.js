@@ -1297,11 +1297,11 @@ const AtlasPage = {
 
                         ${this.morphologyCard(record.diagnosticSigns)}
 
+                        ${this.diagnosisListField("Diferenciálna diagnostika", record.differentialDiagnosis)}
+
                         ${this.detailField("Životný cyklus", record.lifeCycle)}
 
                         ${this.detailField("Patológia", record.pathology)}
-
-                        ${this.diagnosisListField("Diferenciálna diagnostika", record.differentialDiagnosis)}
 
                         ${this.hostNotesField(record.hostNotes)}
 
@@ -1576,7 +1576,7 @@ const AtlasPage = {
                 <h4>${label}</h4>
                 <div class="detail-field-content">
                     <ul>
-                        ${items.map((item) => `<li>${this.escapeHtml(item)}</li>`).join("")}
+                        ${items.map((item) => `<li>${this.formatRichText(item)}</li>`).join("")}
                     </ul>
                 </div>
             </div>
@@ -1629,7 +1629,7 @@ const AtlasPage = {
                 <div class="detail-field-content">
                     <ul>
                         ${entries.map(([host, note]) => `
-                            <li><strong>${this.escapeHtml(host)}:</strong> ${this.escapeHtml(note)}</li>
+                            <li><strong>${this.escapeHtml(host)}:</strong> ${this.formatRichText(note)}</li>
                         `).join("")}
                     </ul>
                 </div>
@@ -1650,7 +1650,7 @@ const AtlasPage = {
             <div class="detail-field">
                 <h4>${label}</h4>
                 <div class="detail-field-content">
-                    <p>${this.escapeHtml(value)}</p>
+                    <p>${this.formatRichText(value)}</p>
                 </div>
             </div>
         `;
@@ -1687,6 +1687,26 @@ const AtlasPage = {
             .replaceAll(">", "&gt;")
             .replaceAll('"', "&quot;")
             .replaceAll("'", "&#39;");
+
+    },
+
+    /**
+     * Pre voľný text písaný autorkou (lifeCycle, pathology, notes,
+     * differentialDiagnosis, poznámky k hostiteľom...) — najprv bezpečne
+     * escapuje HTML, potom povolí jednoduché "markdown-like" značky:
+     *   \n        -> <br>            (nový riadok)
+     *   **text**  -> <strong>text</strong>  (tučné)
+     *   _text_    -> <em>text</em>          (kurzíva)
+     * Poradie replace() volaní je dôležité — escapeHtml musí byť prvý,
+     * \n pred ** alebo _ (aby sa nezamieňali so vzormi), ** pred _ (aby sa
+     * nekrížili).
+     */
+    formatRichText(value) {
+
+        return this.escapeHtml(value)
+            .replace(/\n/g, "<br>")
+            .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+            .replace(/_(.+?)_/g, "<em>$1</em>");
 
     }
 

@@ -11511,17 +11511,15 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 72,
-      "lengthMax": 280,
-      "widthMin": 41,
+      "lengthMin": 75,
+      "lengthMax": 95,
+      "widthMin": 47,
       "widthMax": 54,
       "unit": "µm"
     },
@@ -11532,15 +11530,15 @@
     },
     "diagnosticSigns": [
       "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Tenká hladká bezfarebná stena",
+      "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
+      "Pomer dĺžka:šírka je 1,7 až 1,9"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Strongylus môže byť potrebná molekulová identifikácia."
-    ],
+  "Veľké strongyly (Strongylus) majú relatívne robustnejšie vajíčka, zatiaľ čo typické malé strongyly (Cyathostomum) majú vajíčka dlhšie a užšie.",
+  "Rozlíšenie podľa pomeru dĺžka/šírka vajíčka: Strongylus 1,7-1,9 vs Cyathostomum 2,0 - 2,5.",
+  "Dĺžka/Šírka je samostatný vypočítaný parameter, ale nepoužívať ako absolútnu hranicu na automatické určenie druhu. Napríklad:\n80 × 45 → L/W 1,78 → silná podpora Strongylus\n93 × 43 → L/W 2,16 → silná podpora Cyathostomum\n88 × 45 → L/W 1,96 → prekryv, neurčovať.\nToto je vedecky obhájiteľnejšie než pravidlo „L/W > 2 = Cyathostomum“. Aj odborné zdroje upozorňujú, že vajíčka veľkých a malých strongylov môžu byť na úrovni jednotlivého vajíčka nerozlíšiteľné."
+],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -11627,7 +11625,7 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 100,
+      "lengthMin": 90,
       "lengthMax": 110,
       "widthMin": 40,
       "widthMax": 45,
@@ -11640,17 +11638,19 @@
     },
     "diagnosticSigns": [
       "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Tenká hladká bezfarebná stena",
+      "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
+      "Pomer dĺžka:šírka je 2,0 až 2,5"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Cyathostomum môže byť potrebná molekulová identifikácia."
+  "Veľké strongyly (Strongylus) majú relatívne robustnejšie vajíčka, zatiaľ čo typické malé strongyly (Cyathostomum) majú vajíčka dlhšie a užšie.",
+  "Rozlíšenie podľa pomeru dĺžka/šírka vajíčka: Strongylus 1,7-1,9 vs Cyathostomum 2,0 - 2,5.",
+  "Dĺžka/Šírka je samostatný vypočítaný parameter, ale nepoužívať ako absolútnu hranicu na automatické určenie druhu. Napríklad:\n80 × 45 → L/W 1,78 → silná podpora Strongylus\n93 × 43 → L/W 2,16 → silná podpora Cyathostomum\n88 × 45 → L/W 1,96 → prekryv, neurčovať.\nToto je vedecky obhájiteľnejšie než pravidlo „L/W > 2 = Cyathostomum“. Aj odborné zdroje upozorňujú, že vajíčka veľkých a malých strongylov môžu byť na úrovni jednotlivého vajíčka nerozlíšiteľné."
+],
+    "lifeCycle": [
+    "Životný cyklus cyathostomum (malých strongylov) je priamy a prebieha bez medzihostiteľa:\n **V prostredí:** Dospelé červy v hrubom čreve koňa kladú vajíčka, ktoré odchádzajú trusom. Na pastvine sa z nich vyvinú infekčné larvy (L3), ktoré kôň zožerie s trávou. \n V tele koňa: Larvy prejdú do hrubého čreva a zavŕtajú sa do jeho steny (sliznice). \n Hypobióza: Na jeseň a v zime sa tu vývoj lariev zastaví („zimný spánok“), vďaka čomu prežijú v stene čreva aj mesiace. \n Dospievanie: Po prebudení larvy opustia stenu čreva, vracajú sa do vnútra čreva a dospievajú na červy, ktoré znova kladú vajíčka (bežný cyklus trvá 6 až 12 týždňov)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "pathology": "Hlavné riziko: Ak sa na jar zo steny čreva masívne vyvalia milióny lariev naraz, poškodia sliznicu a spôsobia vážne ochorenie (larválnu kyatostomózu) s hnačkami a kolikami.",
     "zoonosis": false,
     "notes": "Malé strongylidy",
     "id": "cyathostomum_sp_egg",
@@ -11696,7 +11696,7 @@
     },
     "diagnosticSigns": [
       "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
+      "Tenká hladká bezfarebná škrupina",
       "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
       "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
     ],
@@ -11778,9 +11778,7 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -11829,9 +11827,7 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",

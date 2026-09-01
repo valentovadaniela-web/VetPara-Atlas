@@ -184,7 +184,7 @@ const App = {
                             <h3 class="home-card-title">Atlas</h3>
 
                             <p class="home-card-text">
-                                Kompletná štruktúrovanádatabáza diagnostických objektov s možnosťou filtrovania.
+                                Kompletná štruktúrovaná databáza diagnostických objektov s možnosťou filtrovania.
                             </p>
 
                         </button>
@@ -212,7 +212,7 @@ const App = {
                             <h3 class="home-card-title">Diagnostický expert</h3>
 
                             <p class="home-card-text">
-                                Budúci inteligentný systém pre rýchlu diferenciálnu diagnostiku.                              diagnostiky.
+                                Budúci inteligentný systém pre rýchlu diferenciálnu diagnostiku.
                             </p>
 
                         </button>
