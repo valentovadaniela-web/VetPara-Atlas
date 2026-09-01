@@ -973,6 +973,7 @@ const AtlasPage = {
             <div class="specimen-row-card" data-id="${this.escapeHtml(record.id)}" role="button" tabindex="0">
                 <div class="specimen-row-header">
                     <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
+                    ${record.stage ? `<span class="specimen-row-stage">${this.escapeHtml(record.stage)}</span>` : ""}
                 </div>
                 <div class="specimen-row-body">
                     <p class="specimen-row-meta">

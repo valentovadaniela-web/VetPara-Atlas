@@ -772,14 +772,14 @@
       "Ošípané a diviaky": "Asambláž E",
       "Nepárnokopytníky": "Asambláž E",
       "Mačkovité mäsožravce": "Asambláž F",
-      "Hlodavcece": "Asambláž G"
+      "Hlodavce": "Asambláž G"
     },
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 8,
-      "lengthMax": 12,
+      "lengthMax": 14,
       "widthMin": 7,
       "widthMax": 10,
       "unit": "µm"
@@ -790,17 +790,20 @@
       "shell": "Hladká"
     },
     "diagnosticSigns": [
-      "Polmesiačikovitá cytoplazma excentricky"
+      "Oválny až elipsoidný útvar s priemernou veľkosťou 8 – 14 μm na dĺžku a 7 – 10 μm na šírku.",
+      "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (polmesiačikovitú cytoplazmu umiestnenú excentricky"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Navrhovaná revízia názvoslovia\r\r\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\r\r\n\r\r\nGiardia duodenalis* – asambláž AI,\r\r\nGiardia intestinalis* – asambláž AII,\r\r\nGiardia enterica* – asambláž B,\r\r\nGiardia canis* – asambláž C,\r\r\nGiardia lupus* – asambláž D,\r\r\nGiardia bovis* – asambláž E,\r\r\nGiardia cati* – asambláž F,\r\r\nGiardia simoni* – asambláž G.\r\r\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre. ",
+      "_Giardia duodenalis_: Cysty: oválne (8–12 µm), 4 jadrá, vnútorné štruktúry. Trofozoity: hruškovité, 2 jadrá, padajúci pohyb. Pozitívny copro-antigén ELISA alebo PCR.",
+      "_Cryptosporidium spp._: Cysty sú podstatne menšie oocysty (4–6 µm), guľaté, acidorezistentné (farbenie podľa Ziehl-Neelsena – červené na modrom pozadí).", 
+      "_Tritrichomonas foetus_: Bičíkovec (častý u mačiek). Netvorí cysty. Trofozoity majú zvlnenú membránu, trhavý pohyb vpred a jedno jadro. Na Giardia ELISA / PCR nereaguje.", 
+      "_Entamoeba histolytica_: Cysty sú guľaté (10–15 µm), zrelé majú 4 jadrá a tyčinkovité chromatoidné telieska. Trofozoity majú meňavkovitý pohyb (pseudopódie), bez bičíkov.", 
+      "_Cystoisospora spp._ (kokcídie): Tvarovo odlišné, podstatne väčšie oocysty (zvyčajne >20 µm) obsahujúce 1 alebo 2 sporocysty."
+   ],
+    "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha v tenkom čreve hostiteľa. \n **Ingescia (infekcia)**: Hostiteľ sa nakazí prijatím zrelých cýst kontaminovanou vodou, potravou alebo zo špinavých rúk/labiek (fekálno-orálna cesta). \n **Excystácia**: V kyslom prostredí žalúdka a následne v dvanástniku (duodene) dochádza k narušeniu steny cysty. Z každej cysty sa uvoľnia dva trofozoity. \n **Kolonizácia a množenie**: Trofozoity sa prichytávajú na povrch enterocytov (buniek tenkého čreva) pomocou prísavného disku. Množia sa pozdĺžnym binárnym delením. Neprenikajú hlboko do tkaniva, ale mechanicky a toxicky poškodzujú mikroklky čreva, čo vedie k malabsorpcii (poruche vstrebávania živín a tukov). \n **Encystácia**: Ako sa trofozoity posúvajú hrubým črevom ďalej, dehydratácia obsahu a prítomnosť žlčových solí stimuluje tvorbu cystovej steny – menia sa späť na cysty. \n **Eliminácia**: Cysty (v sformovanej stolici) a niekedy aj nestabilné trofozoity (pri hnačkách) odchádzajú stolicou do vonkajšieho prostredia. Cysty sú okamžite infekčné.",
+    "pathology": "Giardia duodenalis postihuje najmä mladé zvieratá (šteňatá, mačatá, teľatá, žriebätá). Hoci parazit nepreniká hlboko do tkaniva čreva (neinvaduje sliznicu), jeho masívne pomnoženie vyvoláva závažné funkčné a štrukturálne zmeny v tenkom čreve. \n 1.Patomechanizmus \n**Mechanická bariéra:** Trofozoity sa prísavnými diskami masívne prichytia na povrch enterocytov (buniek čreva). Pri silných infekciách vytvoria súvislý „koberec“, ktorý fyzicky blokuje kontakt živín so sliznicou. \n **Poškodenie mikroklkov (atrofia):** Prítomnosť parazita a jeho produktov vedie k skracovaniu a vyhladzovaniu mikroklkov (kefkového lemu enterocytov). Tým sa drasticky zmenšuje absorpčná plocha čreva. \n **Enzýmová insuficiencia:** Dochádza k deštrukcii bunkových enzýmov (najmä disacharidáz ako maltáza a sacharáza). Zviera nedokáže správne rozkladať a vstrebávať cukry. \n **Narušenie tesných spojov:** Giardie produkujú proteázy a toxíny, ktoré narúšajú prepojenie medzi bunkami čreva. To zvyšuje priepustnosť sliznice, dochádza k úniku tekutín do lúmenu čreva a k rozvoju zápalu (enteritídy). \n **Malabsorpcia tukov:** Giardie narúšajú metabolizmus žlčových kyselín, čo vedie k zlému emulgovaniu a vstrebávaniu tukov. \n 2. Klinicko-patologické prejavy \n Následkom vyššie uvedených procesov vzniká syndróm malabsorpcie a maldigescie (porucha trávenia a vstrebávania): \n **Steatorea (tuková hnačka):** Stolica je objemná, svetlá (bledožltá až sivastá), kašovitá, často s prímesou hlienu a má výrazný zápach kvôli nestrávenému tuku. Krv sa v nej zvyčajne nenachádza (keďže nedochádza k hlbokej ulcerácii). \n **Profúzne hnačky:** Môžu byť akútne, ale pre giardiózu sú typické najmä chronické alebo prerušované (intermitentné) hnačky, ktoré sa striedajú s normálnou stolicou. \n **Chudnutie a kachexia:** Zvieratá majú napriek zachovanému (alebo dokonca zvýšenému) apetítu permanentný nedostatok živín, chudnú a zaostávajú v raste. \n **Flatulencia a plynatosť:** Nestrávené sacharidy v čreve fermentujú pôsobením baktérií, čo spôsobuje tvorbu plynov a kŕče (koliky). \n **Dehydratácia a zlá kvalita srsti:** Srsť býva matná, naježená a suchá v dôsledku nedostatku esenciálnych mastných kyselín a vitamínov rozpustných v tukoch (A, D, E, K).",
+    "zoonosis": true,
+    "notes": "Navrhovaná revízia názvoslovia\r\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\n Giardia duodenalis* – asambláž AI,\r\nGiardia intestinalis* – asambláž AII,\r\nGiardia enterica* – asambláž B,\r\nGiardia canis* – asambláž C,\r\nGiardia lupus* – asambláž D,\r\nGiardia bovis* – asambláž E,\r\nGiardia cati* – asambláž F,\r\nGiardia simoni* – asambláž G.\r\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre. ",
     "id": "giardia_intestinalis_cyst",
     "images": [
       "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_01.webp",
@@ -11533,14 +11536,14 @@
       "Tenká hladká bezfarebná stena",
       "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
       "Pomer dĺžka:šírka je 1,7 až 1,9"
-    ],
+  ],
     "differentialDiagnosis": [
   "Veľké strongyly (Strongylus) majú relatívne robustnejšie vajíčka, zatiaľ čo typické malé strongyly (Cyathostomum) majú vajíčka dlhšie a užšie.",
   "Rozlíšenie podľa pomeru dĺžka/šírka vajíčka: Strongylus 1,7-1,9 vs Cyathostomum 2,0 - 2,5.",
   "Dĺžka/Šírka je samostatný vypočítaný parameter, ale nepoužívať ako absolútnu hranicu na automatické určenie druhu. Napríklad:\n80 × 45 → L/W 1,78 → silná podpora Strongylus\n93 × 43 → L/W 2,16 → silná podpora Cyathostomum\n88 × 45 → L/W 1,96 → prekryv, neurčovať.\nToto je vedecky obhájiteľnejšie než pravidlo „L/W > 2 = Cyathostomum“. Aj odborné zdroje upozorňujú, že vajíčka veľkých a malých strongylov môžu byť na úrovni jednotlivého vajíčka nerozlíšiteľné."
 ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus Strongylus sp. (veľkých strongylov) je priamy, no na rozdiel od malých strongylov ich larvy vykonávajú zložitú migráciu cez orgány a cievy koňa. \n **Na pastvine**: Vajíčka odchádzajú trusom. Vyvinú sa z nich infekčné larvy (L3), ktoré kôň zožerie s trávou. \n **V tele koňa (migrácia)**: Larvy sa v čreve zavŕtajú do steny a prenikajú do cievneho systému. Podľa druhu migrujú: \n _S. vulgaris_ (najnebezpečnejší): Migruje do nástenných artérií čreva (najmä arteria mesenteric anterior), kde poškodzuje cievy. \n _S. edentatus_ a _S. equinus_: Migrujú cez pečeň, pobrušnicu a pankreas.",
+    "pathology": "**Trombózy a aneuryzmy** (_S. vulgaris_): Larvy poškodzujú steny veľkých artérií, čo vedie k vzniku krvných zrazenín (trombov) a vydutiu ciev (aneuryziem).\n **Tromboembolická kolika**: Ak sa zrazenina uvoľní a upchá cievu vyživujúcu črevo, dochádza k odumretiu (nekróze) časti čreva, čo spôsobuje fatálne koliky. \n **Poškodenie orgánov**: Larvy ostatných druhov mechanicky ničia tkanivo pečene a vyvolávajú zápaly pobrušnice (peritonitídu). \n **Pôsobenie dospelých červov**: V čreve sa fixujú na sliznicu a sajú krv, čo spôsobuje anémiu (chudokrvnosť), stratu bielkovín, chudnutie a slabosť.",
     "zoonosis": false,
     "notes": "Veľké strongylidy",
     "id": "strongylus_sp_egg",
@@ -25711,62 +25714,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "chaunocephalus_ferox_egg",
-    "images": []
-  },
-  {
-    "latinName": "Balantioides coli",
-    "synonyms": [
-      "Balantidium coli (aktuálne neplatný názov pre cicavce)"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Ciliophora",
-      "class": "Litostomatea",
-      "order": "Vestibuliferida",
-      "family": "Balantidiidae",
-      "genus": "Balantioides",
-      "species": "Balantioides coli"
-    },
-    "hostGroups": [
-      "Ošípané a diviaky",
-      "Ťavy, lamy",
-      "Primáty",
-      "Nepárnokopytníky",
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Trofozoit",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 300,
-      "widthMin": 30,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Zelenkastý",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Trofozoity sú oválne až hruškovité",
-      "celé pokryté riasinkami. V oboch štádiách býva prítomný predĺžený alebo fazuľovitý makronukleus a mikronukleus často nebýva dobre viditeľný"
-    ],
-    "differentialDiagnosis": [
-      "Od väčšiny iných črevných protozoí pomáha B. coli odlíšiť najmä veľká veľkosť",
-      "riasinkový povrch a nápadný makronukleus"
-    ],
-    "lifeCycle": "Cyklus je priamy (monoxénny) a prebieha fekálno-orálnou cestou: Hostiteľ prehltne infekčné cysty z kontaminovanej vody, potravy alebo prostredia znečisteného trusom ošípaných. V tenkom čreve sa z cysty uvoľní aktívne štádium – trofozoit.  Trofozoity migrujú do hrubého čreva, kde žijú v lúmene čreva a množia sa nepohlavne (priečnym delením) alebo pohlavne (konjugáciou). V dolnej časti hrubého čreva trofozoity strácajú vodu, vytvárajú pevnú stenu a menia sa späť na odolné cysty, ktoré odchádzajú s trusom do prostredi.",
-    "pathology": "Balantioides coli je primárne patogénom pre človeka a primáty (napr. šimpanzy, orangutany, makaky) a zároveň pre morčatá. Väčšina nákaz je asymptomatická. Ak však dôjde k oslabeniu hostiteľa alebo premnoženiu parazita, trofozoity začnú pomocou proteolytických enzýmov (hyaluronidázy) aktívne narúšať a invadovať do sliznice hrubého čreva.Lézie: Vytvárajú hlboké, kráterovité vredy na sliznici čreva (ulceratívna patológia).Prejavy: Spôsobuje balantidiovú dizentériu – ťažké hnačky s prímesou krvi a hlienu, kŕče v bruchu, vracanie a stratu hmotnosti.Komplikácie: V extrémnych prípadoch hrozí perforácia (prasknutie) čreva, zápal pobrušnice (peritonitída) alebo prienik parazita krvou do pečene a pľúc.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "balantioides_coli_trophozoite_1",
     "images": []
   },
   {

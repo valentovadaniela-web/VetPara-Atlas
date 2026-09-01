@@ -33,6 +33,14 @@ const GalleryPage = {
     images: [],
     records: [],
     filterObjectId: "",
+    // OPRAVA (bug: klik na fotku v detaile parazita otváral aj fotky
+    // iných rodov, napr. Strongylus sp. -> Trichostrongylus/Metastrongylus).
+    // filterObjectId je voľný text a filtruje sa cez .includes() (fuzzy,
+    // zámerné pre ručné písanie do poľa). filterExactId je presné ID
+    // záznamu, nastavuje sa iba pri prechode z detailu (init(objectId))
+    // a v getFilteredImages() má prednosť pred fuzzy textovým hľadaním.
+    // Akékoľvek ručné písanie/mazanie vo filtri ho zruší (pozri bindEvents).
+    filterExactId: null,
     // Pole vybraných hostiteľov (checkboxy v hierarchickom strome) —
     // nahrádza pôvodné voľné textové filterHost.
     filterHosts: [],
@@ -132,7 +140,11 @@ const GalleryPage = {
     if (objectId) {
       const record = this.state.records.find((r) => r.id === objectId);
       if (record) {
+        // filterObjectId je len na zobrazenie v textovom poli (nech
+        // používateľ vidí latinský názov) — reálne filtrovanie robí
+        // filterExactId, ktorý je presné ID, nie substring-matchovaný text.
         this.state.filterObjectId = record.latinName || record.id;
+        this.state.filterExactId = record.id;
       }
     }
 
@@ -245,10 +257,14 @@ const GalleryPage = {
     if (objectInput) {
       objectInput.addEventListener("input", () => {
         this.state.filterObjectId = objectInput.value.trim();
+        // Používateľ píše ručne -> zrušiť presný filter z detailu,
+        // nech znova prevezme kontrolu fuzzy textové vyhľadávanie.
+        this.state.filterExactId = null;
         this.renderGrid();
       });
       objectInput.addEventListener("change", () => {
         this.state.filterObjectId = objectInput.value.trim();
+        this.state.filterExactId = null;
         this.renderGrid();
       });
     }
@@ -257,6 +273,7 @@ const GalleryPage = {
       clearButton.addEventListener("click", () => {
         if (objectInput) objectInput.value = "";
         this.state.filterObjectId = "";
+        this.state.filterExactId = null;
         this.state.filterHosts = [];
         // Checkboxy sú reálne DOM elementy so svojím vlastným "checked"
         // stavom — najjednoduchší spoľahlivý spôsob, ako ich všetky
@@ -290,12 +307,18 @@ const GalleryPage = {
   },
 
   getFilteredImages() {
-    const { images, filterObjectId, filterHosts } = this.state;
+    const { images, filterObjectId, filterExactId, filterHosts } = this.state;
 
     if (!images || images.length === 0) return [];
 
     let matchingObjectIds = null;
-    if (filterObjectId) {
+    if (filterExactId) {
+      // Presná zhoda (klik na fotku v detaile parazita) — nesmie sa
+      // spustiť fuzzy substring hľadanie, ktoré by napr. pre
+      // "Strongylus sp." nesprávne zachytilo aj "Trichostrongylus sp."
+      // a "Metastrongylus sp." (bug hlásený autorkou).
+      matchingObjectIds = [filterExactId];
+    } else if (filterObjectId) {
       const search = filterObjectId.toLowerCase();
       matchingObjectIds = this.state.records
         .filter((r) =>
@@ -390,6 +413,7 @@ const GalleryPage = {
 
         if (key === "object") {
           this.state.filterObjectId = "";
+          this.state.filterExactId = null;
           const objectInput = document.getElementById("gallery-filter-object");
           if (objectInput) objectInput.value = "";
         } else if (key === "host") {

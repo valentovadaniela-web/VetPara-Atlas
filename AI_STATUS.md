@@ -1,5 +1,96 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.28 Aktuálny stav — doplnené (2026‑09‑01, session: presná zhoda filtra pri prechode z detailu do Galérie + vizuálne odlíšenie duplicitných záznamov podľa `stage` v Atlase)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila dva samostatné problémy. 1) V detaile parazita klik na fotku pri zázname `Strongylus sp.` otváral v Galérii aj fotky úplne iných rodov (`Trichostrongylus sp.`, `Metastrongylus sp.`), lebo predvyplnený textový filter sa v `GalleryPage.getFilteredImages()` vyhodnocoval cez `.includes()` (substring match), a `"strongylus sp."` je podreťazcom oboch ostatných názvov. 2) V Atlase sa pri rovnakom `latinName` (napr. `Balantioides coli` — trofozoit aj cysta ako dva samostatné záznamy) zobrazovali dve vizuálne nerozlíšené karty, čo pôsobilo ako duplicitný/chybný záznam.
+
+### ✅ 1. Presný filter pri prechode z detailu (`GalleryPage.js`)
+
+- Pridané nové pole `state.filterExactId` (vedľa pôvodného textového `state.filterObjectId`).
+- `init(objectId)` pri prechode z Atlasu (`window.showGalleryForParasite`) teraz nastavuje `filterExactId = record.id` (presné ID) namiesto spoliehania sa na text v `filterObjectId`, ktorý slúži už len na zobrazenie v textovom poli.
+- `getFilteredImages()` dostal vetvu s prioritou: ak je `filterExactId` nastavené, filtruje sa presne naň (`=== `), fuzzy `.includes()` logika sa použije len keď `filterExactId` nie je nastavené (t.j. pri ručnom písaní do poľa — táto fuzzy logika ostáva zámerne nezmenená, je to funkcia, nie bug).
+- `filterExactId` sa nuluje pri každej manuálnej interakcii s textovým filtrom (`input`/`change` na `#gallery-filter-object`), pri tlačidle „Zrušiť filtre“ a pri odstránení filter-tagu „Objekt“ — takže sa fuzzy vyhľadávanie vždy korektne vráti do hry.
+- Syntax overená cez `node --check` (import/export dočasne odstránené pre účely kontroly, appka sama beží ako ES modul).
+
+### ✅ 2. Štítok štádia v Atlase (`AtlasPage.js`, `atlas.css`)
+
+- V `renderRecords()` doplnený `record.stage` ako malý štítok (`<span class="specimen-row-stage">`) v hlavičke karty, vedľa `<h3>` s latinským názvom — zobrazí sa len ak `record.stage` existuje (žiadny efekt na záznamy bez tohto poľa).
+- `.specimen-row-header` prepnutá na `display: flex; justify-content: space-between;` — názov ostáva vľavo, štítok sa pritiahne k pravému okraju hlavičky (autorka si po prvom pokuse, keď bol štítok hneď vedľa nadpisu, vyžiadala tento layout).
+- `.specimen-row-stage` — poloпriehľadná biela "pilulka" (`rgba(255,255,255,0.18)` pozadie, `rgba(255,255,255,0.35)` border) na existujúcom tmavomodrom `--color-secondary` pozadí hlavičky, čitateľná bez zásahu do farebnej schémy.
+- Medzera medzi nadpisom a štítkom riešená kombináciou `gap: 10px` na flex kontajneri + `margin-left: 4px` priamo na štítku (poistka nezávislá od hodnoty `--space-xs` vo `variables.css`, ktorá bola v prvom pokuse príliš malá).
+
+### ⬜ Diskutované, ale NEIMPLEMENTOVANÉ v tejto session
+
+Autorka sa pýtala, ako umožniť otvorenie stránky pravým klikom myši (napr. „Otvoriť v novej karte“). Poradené: `gallery-item`/`home-card-button` (a podobné klikateľné `<div>`/`<button>` s JS `onclick`) treba zmeniť na skutočné `<a href="...">` elementy (s `preventDefault()` v `click` handleri pre normálny ľavý klik), keďže prehliadač vie ponúknuť kontextové menu len na elementoch so skutočným `href`. Pre routing cez hash (`#atlas/<id>`) bolo navrhnuté overiť, či to `Router.js` vie parsovať priamo z `location.hash` — **`Router.js` nebol v tejto session nahraný, žiadna zmena kódu sa nevykonala, čaká sa na ďalšiu session.**
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `GalleryPage.js` | nové `state.filterExactId`, prioritná presná zhoda v `getFilteredImages()`, nulovanie pri manuálnej interakcii | ✅ hotové, odovzdané autorke |
+| `AtlasPage.js` | štítok `record.stage` v hlavičke karty zoznamu | ✅ hotové, odovzdané autorke |
+| `atlas.css` | `.specimen-row-header` flex + `space-between`, nová `.specimen-row-stage`, doladenie medzery | ✅ hotové, odovzdané autorke |
+| `Router.js` | (diskutované) podpora priameho parsovania `location.hash` pre pravý klik / otvorenie v novej karte | ⬜ neriešené, čaká na súbor a ďalšiu session |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Autorka musí všetky tri upravené súbory (`GalleryPage.js`, `AtlasPage.js`, `atlas.css`) reálne nahradiť v repozitári a nasadiť — v tejto session boli len upravené a odovzdané na stiahnutie, **live overenie v prehliadači ešte neprebehlo** (najmä scenár: klik na fotku pri zázname s podreťazcovo kolidujúcim názvom, napr. `Strongylus sp.`).
+2. Ak bude autorka chcieť pravý klik / „Otvoriť v novej karte“ implementovať naozaj, treba nahrať `Router.js` a rozhodnúť sa medzi (a) zmenou klikateľných prvkov na `<a href>` s `preventDefault()`, alebo (b) plnou podporou `location.hash` routingu — momentálne len navrhnuté v konverzácii, nie v kóde.
+3. Zvážiť, či `record.stage` treba doplniť aj do `docs/03_DATA_ENTRY_STANDARD.md` alebo `02_DATABASE_SPECIFICATION.md` ako odporúčané pole vždy, keď existuje viac záznamov s rovnakým `latinName` (predíde sa budúcim nahláseniam "duplicitných" záznamov).
+
+---
+
+🔥 0.27 Aktuálny stav — doplnené (2026‑09‑01, session: formátovanie voľného textu (\n/tučné/kurzíva) v detaile parazita + zmena poradia polí)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka narazila na dva problémy pri práci s `database/parasites.json`: 1) skutočný Enter vnútri JSON reťazca rozbíja parser (`Unexpected end of string`), a aj po náprave na `\n` sa text nezalamoval vo výstupe, lebo `\n` sa v HTML bez explicitného spracovania kolabuje do medzery; 2) chýbala možnosť zvýrazniť časť textu (tučné/kurzíva) v poliach ako `lifeCycle`, `pathology`, `notes`, `differentialDiagnosis`, poznámky k hostiteľom. Následne autorka požiadala aj o zmenu poradia polí v detaile parazita — presun „Diferenciálna diagnostika" medzi „Morfológia" a „Životný cyklus".
+
+### ✅ 1. Nová funkcia `formatRichText()` (`AtlasPage.js`)
+
+- Pridaná pomocná funkcia hneď za `escapeHtml()`, ktorá reťazí: `escapeHtml()` (bezpečnostné escapovanie) → `\n` → `<br>` → `**text**` → `<strong>text</strong>` → `_text_` → `<em>text</em>`. Poradie replace() volaní je zámerné (escapovanie prvé, `\n` pred `**`/`_`, `**` pred `_`), aby sa vzory navzájom nekrížili.
+- Nahradila pôvodné samostatné `.replace()` reťazenie priamo v `diagnosisListField()` — teraz centralizované na jednom mieste.
+- Autorka píše zvýraznenie v JSON-e priamo ako markdown-like značky: `\n` pre nový riadok (doslovné dva znaky, nie skutočný Enter v editore), `**text**` pre tučné, `_text_` pre kurzívu.
+
+### ✅ 2. Nasadenie `formatRichText()` do troch polí s voľným textom
+
+| Funkcia | Pole(-á) | Zmena |
+| --- | --- | --- |
+| `diagnosisListField()` | `differentialDiagnosis` | `escapeHtml(item)` reťaz → `this.formatRichText(item)` |
+| `detailField()` | `lifeCycle`, `pathology`, `notes` | `escapeHtml(value)` → `this.formatRichText(value)` |
+| `hostNotesField()` | poznámka v `hostNotes` (nie meno hostiteľa — to ostalo na `escapeHtml`, je to krátky label) | `escapeHtml(note)` → `this.formatRichText(note)` |
+
+Funkcia `field()` (nepoužívaná nikde v súbore) ponechaná bez zmeny — ak sa v budúcnosti začne používať pre voľný text, treba rovnaké nahradenie.
+
+### ✅ 3. Poradie polí v detaile parazita (`AtlasPage.js`, hlavný render blok)
+
+Zmenené z: Morfológia → Životný cyklus → Patológia → Diferenciálna diagnostika → Poznámky k hostiteľom → Poznámka
+Na: **Morfológia → Diferenciálna diagnostika → Životný cyklus → Patológia → Poznámky k hostiteľom → Poznámka**
+
+### ⚠️ Chyba nájdená a opravená v rámci session
+
+Pri prvom pokuse o pridanie `formatRichText()` obsahoval JSDoc komentár funkcie omylom sekvenciu `**/_`, ktorá obsahuje `*/` a predčasne ukončila blokový komentár — spôsobilo to desiatky nadväzujúcich TS/JS syntax chýb (`',' expected`, `Unterminated regular expression literal` atď.) v celom zvyšku súboru. Opravené preformulovaním komentára tak, aby sa sekvencia `*/` v texte nevyskytovala. Overené cez `node --check` (syntax OK).
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `AtlasPage.js` | nová `formatRichText()`, nasadená v `diagnosisListField()`/`detailField()`/`hostNotesField()`, zmenené poradie polí v detaile parazita | ✅ hotové, odovzdané autorke |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Autorka musí súbor reálne nahradiť v repozitári a nasadiť — v tejto session bol len upravený a odovzdaný na stiahnutie, **live overenie v prehliadači (formátovanie textu aj nové poradie polí, desktop aj mobil) ešte neprebehlo**.
+2. Existujúce záznamy v `parasites.json` (napr. `strongylus_sp_egg` — pole `differentialDiagnosis`) obsahujú text s `\n`/`**`, ktorý autorka postupne dolaďovala počas tejto session priamo v JSON-e — treba skontrolovať, či v nich nezostal duplicitný text (bol identifikovaný a opravovaný manuálne počas session, ale nie je overené, či finálna verzia v repozitári je už bez duplikácie).
+3. Konvencia `\n`/`**text**`/`_text_` v JSON poliach nie je zatiaľ nikde zdokumentovaná mimo tejto session — zvážiť doplnenie do `docs/03_DATA_ENTRY_STANDARD.md` (viď aj otvorený bod z §0.26 o inej neoverenej pasáži v tom istom dokumente), aby to bolo jasné pri budúcom zapisovaní dát.
+
+---
+
 🔥 0.26 Aktuálny stav — doplnené (2026‑08‑31, session: grafický redizajn Atlasu, Galérie a detailu parazita — farebné hlavičky kariet, 3D tiene, hover nadvih)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
