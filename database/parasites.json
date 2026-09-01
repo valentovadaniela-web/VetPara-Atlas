@@ -764,7 +764,7 @@
       "Človek"
     ],
     "hostNotes": {
-      "Človek": "Asambláž B",
+      "Človek": "Asambláž A a B \n Väčšina prípadov giardiózy u ľudí je spôsobená prenosom z človeka na človeka (fekálno-orálnou cestou v škôlkach, rodinách) alebo pitím kontaminovanej vody. Riziko od zvierat sa delí podľa dvoch hlavných kategórií: \n Domáce zvieratá (psy a mačky): Väčšina psov a mačiek má svoje vlastné asambláže (C, D, F), ktoré na človeka neprejdú. Avšak malé percento domácich miláčikov môže byť infikované zoonotickou asamblážou A alebo B (často ju získajú práve od človeka). Ak zviera vylučuje tieto asambláže, prenos na majiteľa je možný, najmä pri zlej hygiene. \n Voľne žijúca zver a hospodárske zvieratá: Riziko spočíva najmä v kontaminácii životného prostredia. Napríklad bobry alebo hovädzí dobytok môžu infikovať vodné toky (rieky, studne) asamblážami A a B. Človek sa potom nakazí vypitím neprevarenej vody v prírode.",
       "Psovité mäsožravce": "Asambláž C a D",
       "Domáce prežúvavce": "Asambláž E",
       "Voľne žijúce prežúvavce": "Asambláž E",
@@ -772,7 +772,7 @@
       "Ošípané a diviaky": "Asambláž E",
       "Nepárnokopytníky": "Asambláž E",
       "Mačkovité mäsožravce": "Asambláž F",
-      "Hlodavce": "Asambláž G"
+      "Hlodavce": "Asambláž G",
     },
     "sample": "Trus",
     "stage": "Cysta",
