@@ -90,22 +90,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "alaria_alata_egg",
-    "url": "/public/images/parasites/alaria_alata_egg/alaria_alata_egg_09.webp",
-    "alt": "",
-    "caption": "100x zväčšenie (pes)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
     "parasiteId": "toxascaris_leonina_egg",
     "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_01.webp",
     "alt": "",
@@ -269,8 +253,8 @@
     "dateAdded": "2026-08-28T19:56:27.397Z"
   },
   {
-    "parasiteId": "strongyloides_sp_larva",
-    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
+    "parasiteId": "strongyloides_sp_egg",
+    "url": "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -278,11 +262,19 @@
   },
   {
     "parasiteId": "strongyloides_sp_larva",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
+    "alt": "",
+    "caption": "Larvy štádia L3 majú dlhý cylindrický pažerák, ktorý zaberá až polovicu tela.",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:58:24.939Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_larva",
     "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_02.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Typicky rozštiepený chvost larvy štádia L3 vykrojený do tvaru písmena V. Tieto larvy sa nachádzajú v staršom niekoľkodňovom truse",
     "credit": "",
-    "dateAdded": "2026-08-28T19:58:24.947Z"
+    "dateAdded": ""
   },
   {
     "parasiteId": "dibothriocephalus_latus_egg",
@@ -858,15 +850,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:07:44.317Z"
-  },
-  {
-    "parasiteId": "eucoleus_aerophilus_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.061Z",
-    "isPrimary": true
   },
   {
     "parasiteId": "capillaria_sp_egg",

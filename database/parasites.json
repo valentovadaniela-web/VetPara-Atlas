@@ -36,11 +36,13 @@
     },
     "diagnosticSigns": [
       "Oválne",
-      "tenkostenné vajíčko s nevýrazným vekom (operkulom); pri vylúčení čerstvým trusom neembryonované",
-      "obsahuje nediferencovanú zhluk žĺtkových buniek."
+      "Nevýrazné operkulum",
+      "Neembryonované",
+      "Obsahuje nediferencovaný zhluk žĺtkových buniek."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od vajíčka Fasciola hepatica: F. hepatica je väčšie (130–150×60–90 µm) a má hustú žĺtkovú masu vypĺňajúcu takmer celé vajíčko; u A. alata je pri vylúčení obsah nediferencovaný (zhluk buniek) a viečko býva nevýrazné."
+      "Vajíčka _Fasciola hepatica_ sú väčšie (130–150×60–90 µm) a viečko býva ešte menej výrazné.",
+      "U psovitých mäsožravcov sa _F. hepatica_ nevyskytuje."
     ],
     "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \r\r\nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\r\r\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\r\r\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\r\r\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
     "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\r\r\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
@@ -73,7 +75,7 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 75,
-      "lengthMax": 280,
+      "lengthMax": 85,
       "widthMin": 75,
       "widthMax": 85,
       "unit": "µm"
@@ -86,13 +88,13 @@
     "diagnosticSigns": [
       "Guľovité až oválne",
       "Hladká a tenšia stena v porovnaní s Toxocara; vnútorný lem steny zvlnený.",
-      "Svetlejšie."
+      "Svetlá."
     ],
     "differentialDiagnosis": [
       "Odlíšiť od Toxocara canis/cati hladkým povrchom obalu (bez jamkovania) a elipsoidnejším tvarom."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_T. leonina_ má priamy a jednoduchý vývoj **bez migrácie lariev cez orgány** (pľúca či pečeň): \n Infekčné vajíčka odchádzajú trusom hostiteľa a v prostredí dozrejú za 3 až 6 dní. \n Zviera sa nakazí zožratím infekčných vajíčok alebo paratenického hostiteľa (napr. myši, v ktorej svaloch sú zapuzdrené larvy). \n Larvy sa vyliahnu v čreve, preniknú výhradne do sliznice tenkého čreva, kde sa vyvíjajú, a následne sa vracajú do črevného lúmenu, kde dospievajú. Neprebieha tu **žiadny prenos z matky na mláďatá** (cez placentu ani mlieko).",
+    "pathology": "Vzhľadom na absenciu pľúcnej migrácie je patogenita _T. leonina_ výrazne nižšia ako u rodu Toxocara. \n Poškodenie čreva: Larvy v sliznici a dospelé červy v lúmene čreva spôsobujú katarlny zápal čreva (enteritídu), mechanické dráždenie a odoberanie živín hostiteľovi. \n Klinické prejavy: Mierne infekcie sú bez príznakov. Pri masívnom začervení sa objavujú hnačky, striedanie chuti do jedla, chradnutie, zhoršená kvalita srsti a typické „červivé“, nafúknuté brucho (najmä u mladých zvierat). Vo výnimočných prípadoch môže klbko červov spôsobiť mechanické upchatie (obštrukciu) alebo perforáciu čreva.",
     "zoonosis": false,
     "notes": "",
     "id": "toxascaris_leonina_egg",
@@ -117,15 +119,19 @@
       "Plazy"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Pes": "Nález sarcocýst v truse psa predstavuje riziko najmä pre hovädzí dobytok, ovce, kozy a raticovú zver (napr. S. cruzi, S. tenella). Kontaminácia krmiva a pasienkov pozitívnym trusom psa vyvoláva u dobytka akútne ochorenie, masívne potraty a úhyn. Pre človeka v SR riziko nepredstavuje.",
+      "Mačka": "Nález v truse mačky predstavuje riziko pre ošípané, ovce a hlodavce (napr. S. porcifelis, S. gigantea). Spôsobuje znehodnotenie mäsa oviec cystami a nervové/obehové problémy ošípaných.",
+      "Dravce": "Nález v truse dravých vtákov predstavuje riziko výhradne pre drobné hlodavce a vtáky (ich korisť). Ide o prirodzený cyklus v prírode, pre človeka a domáce zvieratá je nález bezpečný.!"
+    },
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
+      "lengthMin": 10,
+      "lengthMax": 15,
+      "widthMin": 7,
+      "widthMax": 10,
       "unit": "µm"
     },
     "morphology": {
@@ -134,18 +140,19 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (obsahuje 2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa často rozpadá a v truse sa nachádzajú voľné sporocysty."
+      "Tenkostenná oválna až elipsovitá oocysta",
+      "Pri vylúčení už sporulovaná (obsahuje 2 sporocysty, každá so 4 sporozoitmi), oocysta sa často rozpadá a v truse sa nachádzajú voľné sporocysty.",
+      "Vo vnútri každej sporocysty sa nachádzajú 4 rožkovité sporozoity a tmavé, zrnité reziduálne teleso (zvyšok po delení)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
+      "Cysty Giardia: Sú oválne, merajú okolo 8 – 12 µm (podobná veľkosť ako Sarcocystis), ale majú tenkú stenu a vo vnútri 2 až 4 jadrá a viditeľné zvyšky bičíkov (axonémy). Na rozdiel od Sarcocystis neobsahujú banánovité sporozoity ani zrnité reziduálne teleso.",
+      "Klasické kokcídie odchádzajú sú v čerstvom truse nezrelé (nevysporulované) - vidno len stenu oocysty a v nej jednu guľatú nečlenenú hmotu. V staršom truse majú klasické kokcídie pevnú stenu, takže v truse sa nachádzajú celé oocysty. Sarcocystis odchádza z tela vždy už plne dozretá (vysporulovaná). Sarcocystis má stenu oocysty extrémne krehkú, tá praská už v čreve, a preto v truse nachádzame takmer výhradne uvoľnené samostatné sporocysty (polovice pôvodnej oocysty).",
+      "Pomocou svetelnej mikroskopie nie je možné určiť konkrétny druh rodu Sarcocystis (napr. či ide o S. hominis alebo S. suihominis u človeka). Pre presnú druhovú identifikáciu je nutné použiť molekulárne metódy, najmä PCR.!"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Sarcocystis je povinne dvojhostiteľský parazit (strieda mäsožravca a bylinožravca/všežravca):Definitívny hostiteľ (mäsožravec/predátor): Nakazí sa zožratím syrového mäsa s cystami. V jeho čreve prebehne pohlavné rozmnožovanie, pričom trusom vylučuje už zrelé (vysporulované) sporocysty.Medzihostiteľ (bylinožravec/korisť): Nakazí sa prehltnutím sporocýt z prostredia (kontaminované krmivo, voda). V jeho tele parazit najskôr migruje cez cievy a následne tvorí sarkocysty (svalovky) vo svalovom tkanive.",
+    "pathology": "Vplyv na hostiteľa závisí od jeho pozície v cykle: \n U definitívneho hostiteľa (v čreve): Patogenita je veľmi nízka. Infekcia prebieha takmer vždy bez príznakov (asymptomaticky), výnimočne sa objaví mierna hnačka alebo plynatosť. \n U medzihostiteľa (vo svaloch a cievach): Patogenita môže byť vysoká. Počas migrácie lariev cievami vzniká horúčka, anémia, opuchy a poškodenie ciev (akútna sarkocystóza). Prítomnosť cýst vo svaloch (chronická fáza) spôsobuje zápal svalov (myozitídu), slabosť a pri masívnom napadnutí srdca alebo bránice môže nastať úhyn.",
     "zoonosis": false,
-    "notes": "Vnútri 4 rohlíkovité sporozoity",
+    "notes": "Nebezpečnú svalovú (muskulárnu) sarkocystózu u ľudí spôsobuje _S.nesbitti_  ktorý sa ale vyskytuje v JV Ázii a prenášajú ho hady, na Slovensku sa človek môže nakaziť druhom _Sarcocystis hominis_ (z hovädziny) a _Sarcocystis suihominis_ (z bravčoviny) - spôsobujú črevnú (intestinálnu) formu. Táto infekcia je vo väčšine prípadov asymptomatická alebo prebieha len ako mierna až stredne ťažká črevná viróza. Infekcia z bravčového mäsa býva klinicky výrazne ostrejšia a nepríjemnejšia než z hovädzieho mäsa, pričom spôsobuje silnejšie bolesti brucha, hnačky, vracanie a dehydratáciu.",
     "id": "sarcocystis_sp_oocyst",
     "images": [
       "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_01.webp",
@@ -194,22 +201,21 @@
       "shell": "Sieťovaná"
     },
     "diagnosticSigns": [
-      "stena vajíčka E. aerophilus sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými",
-      "navzájom sa spájajúcimi hrebeňmi",
-      "zátky neprominujúce a bez zhrubnutia na báze"
+      "Obal vajíčka sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými navzájom sa spájajúcimi ryhami",
+      "Jedno- až dvojbunkové embryo vypĺňa celé vajíčko",
+      "Široko asymetrický, robustný súdokovitý tvar vajíčka",
+      "Zátky neprominujúce, ploché a bez prstencovitého zhrubnutia na báze"
     ],
     "differentialDiagnosis": [
-      "E. boehmi je trochu menšie",
-      "má síce tiež hustú sieť",
-      "ale s jemnými očkami",
-      "ktoré obklopujú malé jamky",
-      "kvôli čomu je jeho povrch celkovo jemne jamkovaný. Vajíčka Trichuris vulpis sú výrazne väčšie a majú úplne hladký povrch vajíčka bez akejkoľvek siete alebo jamiek. Embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor",
-      "zatiaľ čo u E. aerophilus je vajíčko úplne vyplnené jedno- alebo dvojbunkovým embryom."
+      "_Trichuris vulpis_ vs. _Eucoleus aerophilus_: Vajíčka Trichuris sú viditeľne väčšie, majú výraznejšie vystupujúce bipolárne zátky s prstencovitým zhrubnutím na báze a ich stena je dokonale hladká a tmavohnedá.Vajíčka E. aerophilus sú menšie, svetlejšie, mierne asymetrické a ich zátky sú ploššie.",
+      "_Eucoleus boehmi_ vs. _Eucoleus aerophilus_: Tieto dva druhy sa prekrývajú vo veľkosti. Rozhoduje povrch (ornamentácia): _E. aerophilus_ má sieťovú štruktúru (ryhy), zatiaľ čo _E. boehmi_ má drobné jamky (ako povrch golfovej loptičky). Vo vnútri čerstvého vajíčka _E. boehmi_ je už pokročilejšie rozdelené embryo, okolo ktorého je vidieť voľné miesto, zatiaľ čo u _E. aerophilus_ je vajíčko úplne vyplnené.",
+      "V truse kontaminovanom močom sa môžu objaviť vajíčka _Pearsonema plica_ (u psov) alebo _Pearsonema felis cati_ (u mačiek) – močových kapilárií, ktoré vyzerajú takmer identicky, no parazitujú v močovom mechúre.",
+      "Po zožratí vtáčieho trusu môže trus obsahovať vtáčie kapilárie, ktoré sú ale menšie a užšie (48 – 56 × 21 – 24 μm), symetrickejšie a hladké. Ich viečka sú viac vystúpené."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eucoleus aerophilus_ má zväčša priamy životný cyklus, ale môžu v ňom figurovať aj pomocní hostitelia. \n**Uvoľňovanie vajíčok:** Dospelé červy žijú v epiteli dýchacích ciest (priedušnica, priedušky), kde samičky kladú vajíčka. Tie hostiteľ vykašle, prehltne a následne odídu z tela von trusom (stolicou). \n**Dozrievanie v prostredí:** Vajíčka sa stávajú infekčnými na vonkajšom prostredí približne za 30 až 50 dní. \n**Nákaza:** Zviera sa nakazí buď priamym zožratím infekčných vajíčok z prostredia alebo zožratím dážďovky, ktorá slúži ako nepriamy či parazitný hostiteľ. \n**Migrácia v tele:** Larvy sa vyliahnu v tenkom čreve, preniknú do cievneho systému a migrujú cez krvný obeh až do pľúc a dýchacích ciest, kde dospievajú.",
+    "pathology": "Mierne infekcie prebiehajú u zvierat často bez klinických príznakov. Pri stredne ťažkom až závažnom priebehu sa však objavujú: Chronický suchý a piskľavý kašeľ, výtok z nosa a časté kýchanie, sťažené dýchanie (dyspnoe), nechutenstvo (anorexia) a celková slabosť či chradnutieV najťažších prípadoch môže ochorenie prejsť až do bronchopneumónie alebo viesť k sekundárnym bakteriálnym infekciám.",
     "zoonosis": false,
-    "notes": "Zátky rovné asymetrické a bez prstencov",
+    "notes": "",
     "id": "eucoleus_aerophilus_egg",
     "images": [
       "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_01.webp",
@@ -238,13 +244,15 @@
       "Voľne žijúce prežúvavce"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 45,
-      "lengthMax": 54,
+      "lengthMin": 40,
+      "lengthMax": 60,
       "widthMin": 25,
       "widthMax": 33,
       "unit": "µm"
@@ -252,23 +260,26 @@
     "morphology": {
       "shape": "Oválny",
       "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
+      "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "veľmi tenká hladká priehľadná škrupina",
-      "pri vylúčení už obsahuje vyvinutú larvu (embryonované)."
+      "Vajíčka rodu Strongyloides (háďatká) sa v čerstvom truse vyskytujú veľmi zriedkavo (u mäsožravcov a človeka takmer vôbec, hľadajú sa larvy). Ak sa vo vzorke objavia (typické pre prežúvavce, ošípané a kone), majú tieto znaky:",
+      "Štádium zrelosti: Sú larvované – vo vnútri sa nachádza už kompletne vyvinutá, stočená larva L1, ktorá sa často hýbe.",
+      "Tvar a obal: Majú pravidelný oválny tvar s typicky s veľmi tenkou, hladkou a bezfarebnou stenou.",
+      "Veľkosť: Sú malé, približne 40 – 60 µm (menšie ako vajíčka ankylostom či škrkaviek)."
     ],
     "differentialDiagnosis": [
-      "Vajíčko obsahuje už vyvinutú larvu (na rozdiel od väčšiny ostatných nematód GIT) - v čerstvom truse možno nájsť už aj voľné L1 larvy; odlíšiť od 'strongyle-type' vajec tenšou",
-      "priesvitnou škrupinou."
+      "Strongylidy / Trichostrongylidy (Strongylida): Ich vajíčka sú väčšie (70 – 90 µm) a v čerstvom truse obsahujú iba deliacu sa morulu (zhluk buniek), nie hotovú larvu.",
+      "Machovce (Ancylostoma, Uncinaria): V čerstvom truse sú takisto v štádiu moruly a majú hrubšiu stenu. Larvujú sa až pri starom truse, no sú viditeľne väčšie."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Larva stočená do tvaru U",
+    "lifeCycle": "Strongyloides má jedinečný a komplikovaný cyklus, ktorý kombinuje parazitickú a voľne žijúcu generáciu: \n Parazitická fáza (len samičky): V tenkom čreve žijú iba partenogenetické samičky (množia sa bez samcov). Kladú vajíčka, z ktorých sa v čreve (u psov/človeka) alebo ihneď v prostredí vyliahnu larvy L1. \n Vývoj v prostredí: Larvy sa v pôde môžu vyvinúť buď priamo na infekčné larvy L3 (filariformné), alebo prejdú na voľne žijúcu generáciu (v pôde žijú samce aj samičky, ktoré sa normálne pária a množia). \n Cesta do hostiteľa: Infekčné larvy L3 prenikajú do hostiteľa aktívne cez kožu (perkutánne) alebo prehltnutím. \n Migrácia (Entero-pľúcny cyklus): Larvy putujú krvou do pľúc, sú vykašľané, prehltnuté a dospievajú v čreve. Významný je prenos materským mliekom (transmamárne) na mláďatá. U psov a ľudí dochádza aj k autoinfekcii (larvy sa vyliahnu priamo v čreve a hneď migrujú cez stenu späť do tela).",
+    "pathology": "Patologické zmeny závisia od miesta, kde sa parazit práve nachádza: \n Kožná forma: V mieste prieniku lariev cez kožu vzniká zápal, začervenanie a silné svrbenie (dermatitída). \n Pľúcna forma: Počas migrácie lariev pľúcnymi alveolami dochádza k mechanickému poškodeniu tkaniva, čo vyvoláva kašeľ, krvácaniny a zápaly pľúc (pneumóniu). \n Črevná forma: Dospelé červy sa zavrtávajú hlboko do sliznice tenkého čreva. Spôsobujú katarálny až hemoragický zápal čreva (enteritídu). \n Klinické príznaky: Prejavuje sa to vodnatými až krvavými hnačkami, dehydratáciou, chradnutím a u mláďat môže masívna infekcia viesť k náhlemu úhynu. Pri autoinfekcii (najmä u oslabených jedincov) hrozí hyperinfekčný syndróm a celková sepsa.",
+    "zoonosis": true,
+    "notes": "Riziko pre človeka predstavuje najmä druh _Strongyloides stercoralis_, ktorý sa prenáša zo psov a mačiek. Infekčné larvy v truse alebo v pôde aktívne prevŕtajú neporušenú kožu človeka, migrujú cez pľúca a usadia sa v čreve. Pre zdravého človeka infekcia znamená kožné zápaly, kašeľ a hnačky. U imunitne oslabených ľudí je však parazit smrteľne nebezpečný, pretože v tele spúšťa nekontrolovateľné samonakazovanie (autoinfekciu) vedúce k celkovej sepse. Druhy z hospodárskych zvierat (kone, hovädzí dobytok) spôsobujú u človeka len prechodné, lokálne svrbenie kože.",
     "id": "strongyloides_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Strongyloides sp.",
@@ -290,15 +301,17 @@
       "Voľne žijúce prežúvavce"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
+    },
     "sample": "Trus",
     "stage": "Larva",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 230,
-      "lengthMax": 280,
-      "widthMin": 32,
-      "widthMax": 40,
+      "lengthMin": 130,
+      "lengthMax": 600,
+      "widthMin": 14,
+      "widthMax": 20,
       "unit": "µm"
     },
     "morphology": {
@@ -307,17 +320,21 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Rabditoidná larva s dvojbulbovým pažerákom."
+      "Sú pretiahnuté, ohybné a v čerstvom truse často vykazujú veľmi aktívny pohyb.", 
+      "Ústna dutina je charakteristicky krátka a úzka (krátky kanálik na prednom konci tela).",
+      "Pažerák (Rabditiformný ezofágus): Tvorí zhruba 1/3 až 1/2 dĺžky tela. Má typické trojdielne členenie: predný širší svalový útvar (corpus), zúžený kŕčok (isthmus) a zadný kyjakovitý koniec s chlopňou (bulbus).",
+      "Genitálne primordium: V strednej časti tela (vedľa čreva) sa nachádza veľký, dobre viditeľný a nápadný zhluk buniek (základ budúcich pohlavných orgánov).",
+      "Zadný koniec: Chvostík larvy L1 je štíhly a ostro zahrotený.",
+      "Ak vzorka trusu stojí v prostredí niekoľko dní, larvy Strongyloides sa transformujú na infekčné filariformné larvy (L3). Tie sú dlhšie (okolo 500 – 600 µm), ich dlhý cylindrický pažerák zaberá až polovicu tela a ich chvost nie je ostrý, ale typicky rozštiepený (vykrojený do tvaru písmena V)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Strongyloides môže byť potrebná molekulová identifikácia."
+      "Larva Strongyloides spp. (L1) sa v truse nachádza ihneď po vylúčení čerstvej vzorky, nakoľko k liahnutiu dochádza už priamo v čreve hostiteľa. Pod mikroskopom ju spoznáme podľa veľmi krátkej ústnej dutiny (krátky vstupný kanálik na prednom konci) a podľa veľkého, nápadného genitálneho primordia, čo je zreteľný zhluk zárodočných buniek v strednej časti jej tela.",
+      "Larva mechovca (Ancylostoma spp. L1) sa naopak objavuje až v staršom, odstátom truse, ktorý bol nejaký čas vystavený teplému vonkajšiemu prostrediu, pretože jej vajíčka potrebujú čas na vyliahnutie. Od Strongyloides sa líši výrazne dlhou ústnou dutinou, ktorá tvorí prázdny kanálik pred začiatkom pažeráka, a jej genitálne primordium je veľmi malé a pod svetelným mikroskopom sotva viditeľné. V staršom truse majú larvy Strongyloides sp. (L3) charakteristickú vidličku na konci."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "L1 - veľké genit. promodium",
+    "lifeCycle": "Strongyloides má jedinečný a komplikovaný cyklus, ktorý kombinuje parazitickú a voľne žijúcu generáciu: \n Parazitická fáza (len samičky): V tenkom čreve žijú iba partenogenetické samičky (množia sa bez samcov). Kladú vajíčka, z ktorých sa v čreve (u psov/človeka) alebo ihneď v prostredí vyliahnu larvy L1. \n Vývoj v prostredí: Larvy sa v pôde môžu vyvinúť buď priamo na infekčné larvy L3 (filariformné), alebo prejdú na voľne žijúcu generáciu (v pôde žijú samce aj samičky, ktoré sa normálne pária a množia). \n Cesta do hostiteľa: Infekčné larvy L3 prenikajú do hostiteľa aktívne cez kožu (perkutánne) alebo prehltnutím. \n Migrácia (Entero-pľúcny cyklus): Larvy putujú krvou do pľúc, sú vykašľané, prehltnuté a dospievajú v čreve. Významný je prenos materským mliekom (transmamárne) na mláďatá. U psov a ľudí dochádza aj k autoinfekcii (larvy sa vyliahnu priamo v čreve a hneď migrujú cez stenu späť do tela).",
+    "pathology": "Patologické zmeny závisia od miesta, kde sa parazit práve nachádza: \n Kožná forma: V mieste prieniku lariev cez kožu vzniká zápal, začervenanie a silné svrbenie (dermatitída). \n Pľúcna forma: Počas migrácie lariev pľúcnymi alveolami dochádza k mechanickému poškodeniu tkaniva, čo vyvoláva kašeľ, krvácaniny a zápaly pľúc (pneumóniu). \n Črevná forma: Dospelé červy sa zavrtávajú hlboko do sliznice tenkého čreva. Spôsobujú katarálny až hemoragický zápal čreva (enteritídu). \n Klinické príznaky: Prejavuje sa to vodnatými až krvavými hnačkami, dehydratáciou, chradnutím a u mláďat môže masívna infekcia viesť k náhlemu úhynu. Pri autoinfekcii (najmä u oslabených jedincov) hrozí hyperinfekčný syndróm a celková sepsa.",
+    "zoonosis": true,
+    "notes": "Riziko pre človeka predstavuje najmä druh _Strongyloides stercoralis_, ktorý sa prenáša zo psov a mačiek. Infekčné larvy v truse alebo v pôde aktívne prevŕtajú neporušenú kožu človeka, migrujú cez pľúca a usadia sa v čreve. Pre zdravého človeka infekcia znamená kožné zápaly, kašeľ a hnačky. U imunitne oslabených ľudí je však parazit smrteľne nebezpečný, pretože v tele spúšťa nekontrolovateľné samonakazovanie (autoinfekciu) vedúce k celkovej sepse. Druhy z hospodárskych zvierat (kone, hovädzí dobytok) spôsobujú u človeka len prechodné, lokálne svrbenie kože.",
     "id": "strongyloides_sp_larva",
     "images": [
       "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
@@ -1604,9 +1621,9 @@
     },
     "diagnosticSigns": [
       "Veľké",
-      "oválne",
-      "žltohnedé vajíčko s vekom (operkulom); nesegmentované",
-      "obsahuje žĺtkové bunky pri vylúčení."
+      "Oválne",
+      "Zlatožlté vajíčko s veľmi nevýrazným operkulom", 
+      "Vnútorný obsah nediferencovaný (zhluk buniek)."
     ],
     "differentialDiagnosis": [
       "Odlíšiť od Paramphistomum cervi (podobná veľkosť",
