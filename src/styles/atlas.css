@@ -883,12 +883,30 @@ button {
 .findings-card {
     padding: var(--space-md);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 500px;
     min-height: 200px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(15, 23, 42, 0.10), 0 1px 2px rgba(15, 23, 42, 0.06);
+}
+
+/* OPRAVA (2026-09-03, mobilné zobrazenie hlavnej fotky v detaile):
+   .findings-card bola flex row (default smer), takže hlavná fotka
+   (.main-image, vkladaná v AtlasPage.js) a rad miniatúr pod ňou boli
+   súrodenci VEDĽA SEBA, nie pod sebou. Na desktope (široká 2fr karta
+   v .detail-main-split) to nebolo badateľné, na mobile (úzka karta,
+   aj height:auto/aspect-ratio nižšie) sa hlavná fotka so
+   width:100%;height:auto stláčala flexboxom v prospech radu
+   pevných 80x80px miniatúr -> zobrazovali sa len malé fotky.
+   flex-direction: column zaisťuje hlavnú fotku hore na celú šírku
+   a miniatúry pod ňou, rovnako na desktope aj mobile. */
+.findings-card .main-image {
+    flex-shrink: 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Fotografia (PrimaryImage.js) sa musi prisposobit ploche kontajnera,
