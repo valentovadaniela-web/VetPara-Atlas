@@ -99,41 +99,60 @@ const AtlasPage = {
 
                         </div>
 
-                        <div
-                            id="atlas-active-filters"
-                            class="atlas-active-filters"
-                            aria-live="polite"
-                        ></div>
-
+                        <!-- OPRAVA (2026-09-03): tlačidlo na zbalenie/rozbalenie
+                             filtrov na mobile — mimo mobilnej mediaquery je
+                             skryté (atlas.css), takže na desktope nemá žiadny
+                             vizuálny vplyv. -->
                         <button
                             type="button"
-                            id="atlas-clear-filters"
-                            class="atlas-clear-filters"
+                            id="atlas-filters-toggle"
+                            class="atlas-filters-toggle"
+                            aria-expanded="false"
+                            aria-controls="atlas-filters-panel"
                         >
-                            Zrušiť všetky filtre
+                            <span id="atlas-filters-toggle-label">Zobraziť filtre</span>
+                            <span class="atlas-filters-toggle-icon" aria-hidden="true">▾</span>
                         </button>
 
-                        ${this.renderHostFilterSection(this.getHostValues())}
+                        <div id="atlas-filters-panel" class="atlas-filters-panel">
 
-                        ${this.renderMultiFilter(
-                            "sample",
-                            "Materiál (vzorka)",
-                            this.getValues("sample")
-                        )}
+                            <div
+                                id="atlas-active-filters"
+                                class="atlas-active-filters"
+                                aria-live="polite"
+                            ></div>
 
-                        ${this.renderMultiFilter(
-                            "shape",
-                            "Tvar",
-                            this.getValues("morphology.shape")
-                        )}             
+                            <button
+                                type="button"
+                                id="atlas-clear-filters"
+                                class="atlas-clear-filters"
+                            >
+                                Zrušiť všetky filtre
+                            </button>
 
-                        ${this.renderMultiFilter(
-                            "colour",
-                            "Farba",
-                            this.getValues("morphology.colour")
-                        )}
+                            ${this.renderHostFilterSection(this.getHostValues())}
 
-                        ${this.renderSizeFilterSection()}
+                            ${this.renderMultiFilter(
+                                "sample",
+                                "Materiál (vzorka)",
+                                this.getValues("sample")
+                            )}
+
+                            ${this.renderMultiFilter(
+                                "shape",
+                                "Tvar",
+                                this.getValues("morphology.shape")
+                            )}             
+
+                            ${this.renderMultiFilter(
+                                "colour",
+                                "Farba",
+                                this.getValues("morphology.colour")
+                            )}
+
+                            ${this.renderSizeFilterSection()}
+
+                        </div>
 
                     </aside>
 
@@ -255,6 +274,34 @@ const AtlasPage = {
     },
 
     init() {
+
+        // OPRAVA (2026-09-03): tlačidlo "Zobraziť/Skryť filtre" — mimo
+        // mobilnej mediaquery je skryté cez CSS a panel je vždy
+        // display:block, takže na desktope tento kód nemá žiadny
+        // pozorovateľný efekt (panel je aj tak stále vidno).
+        const filtersToggle =
+            document.getElementById("atlas-filters-toggle");
+        const filtersPanel =
+            document.getElementById("atlas-filters-panel");
+        const filtersToggleLabel =
+            document.getElementById("atlas-filters-toggle-label");
+
+        if (filtersToggle && filtersPanel) {
+
+            filtersToggle.addEventListener("click", () => {
+
+                const isOpen = filtersPanel.classList.toggle("is-open");
+
+                filtersToggle.setAttribute("aria-expanded", String(isOpen));
+
+                if (filtersToggleLabel) {
+                    filtersToggleLabel.textContent =
+                        isOpen ? "Skryť filtre" : "Zobraziť filtre";
+                }
+
+            });
+
+        }
 
         const input =
             document.getElementById("atlas-search-input");

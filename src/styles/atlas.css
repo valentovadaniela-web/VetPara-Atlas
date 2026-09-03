@@ -210,6 +210,20 @@ button {
     height: fit-content;
 }
 
+/* Tlačidlo "Zobraziť/Skryť filtre" — na desktope (≥992px) sa nikdy
+   nezobrazí (filtre sú tam vždy vidno vedľa výsledkov), zobrazí sa
+   len v mobilnej mediaquery nižšie. */
+.atlas-filters-toggle {
+    display: none;
+}
+
+/* Panel s obsahom filtrov (aktívne filtre, tlačidlo "Zrušiť", host strom,
+   materiál, tvar, farba, veľkosť) — na desktope vždy vidno normálne,
+   zbaľovanie/skrývanie sa aplikuje až v mobilnej mediaquery nižšie. */
+.atlas-filters-panel {
+    display: block;
+}
+
 /* OPRAVA (grafický redizajn): mierne tónované pozadie panela filtrov
    namiesto čisto bieleho — vyžaduje vyššiu špecifickosť + !important,
    pretože variables.css natvrdo zamyká `#database-view .card`
@@ -1161,23 +1175,6 @@ button {
 
 }
 
-/* OPRAVA (2026-09-03, vyhľadávanie na mobile "naspodu"): pod 992px je
-   .database-layout jednostĺpcová mriežka (grid-template-columns: 1fr),
-   takže sa obsah skladá presne v poradí z HTML — najprv celý <aside>
-   s filtrami (host strom, materiál, tvar, farba, veľkosť), až potom
-   <main> s vyhľadávacím poľom a výsledkami. Na desktope (≥992px, o pár
-   riadkov nižšie) sú oba vedľa seba, takže tam vyhľadávanie pôsobí
-   "hore". Na mobile/tablete teraz <main> preradíme pred <aside> cez
-   CSS order (bez zásahu do HTML), aby bolo vyhľadávacie pole aj
-   výsledky vidieť hneď navrchu a filtre nasledovali až pod nimi. */
-@media (max-width: 991px) {
-
-    .database-layout > main {
-        order: -1;
-    }
-
-}
-
 @media (min-width: 992px) {
 
     .database-layout {
@@ -1216,6 +1213,57 @@ button {
 
     .filter-sidebar {
         margin-bottom: var(--space-md);
+    }
+
+    /* OPRAVA (2026-09-03, prístup k filtrom na mobile bez dlhého
+       rolovania): predošlý pokus (preradenie <main> pred <aside> cez
+       CSS order) presunul vyhľadávanie hore, ale filtre sa tým odsunuli
+       AŽ ZA celú (dlhú, fotkami plnú) mriežku výsledkov — aby sa k nim
+       autorka dostala, musela rolovať rovnako dlho, len iným smerom.
+       Namiesto toho teraz zostáva prirodzené poradie z HTML (<aside>
+       s filtrami first, <main> s vyhľadávaním a výsledkami potom), ale
+       obsah filtrov (.atlas-filters-panel) je na mobile/tablete
+       defaultne ZBALENÝ — vidno len krátku hlavičku "Atlas parazitov"
+       a tlačidlo "Zobraziť filtre". Vyhľadávacie pole je tak prakticky
+       hneď navrchu (za pár riadkov textu, nie za celým dlhým zoznamom
+       filtrov) a k filtrom sa dá kedykoľvek dostať jedným ťuknutím na
+       tlačidlo, bez rolovania k nemu. */
+    .atlas-filters-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 44px;
+        margin-top: var(--space-sm);
+        padding: var(--space-sm) var(--space-md);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        background: var(--color-surface);
+        color: var(--color-text-main);
+        font-size: var(--fs-sm);
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .atlas-filters-toggle:hover {
+        background: var(--color-surface-alt);
+    }
+
+    .atlas-filters-toggle-icon {
+        transition: transform 0.15s ease;
+    }
+
+    .atlas-filters-toggle[aria-expanded="true"] .atlas-filters-toggle-icon {
+        transform: rotate(180deg);
+    }
+
+    .atlas-filters-panel {
+        display: none;
+        margin-top: var(--space-md);
+    }
+
+    .atlas-filters-panel.is-open {
+        display: block;
     }
 
     /* OPRAVA (2026-09-03, orezané fotky v detaile na mobile): detail
