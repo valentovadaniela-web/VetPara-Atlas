@@ -1161,6 +1161,23 @@ button {
 
 }
 
+/* OPRAVA (2026-09-03, vyhľadávanie na mobile "naspodu"): pod 992px je
+   .database-layout jednostĺpcová mriežka (grid-template-columns: 1fr),
+   takže sa obsah skladá presne v poradí z HTML — najprv celý <aside>
+   s filtrami (host strom, materiál, tvar, farba, veľkosť), až potom
+   <main> s vyhľadávacím poľom a výsledkami. Na desktope (≥992px, o pár
+   riadkov nižšie) sú oba vedľa seba, takže tam vyhľadávanie pôsobí
+   "hore". Na mobile/tablete teraz <main> preradíme pred <aside> cez
+   CSS order (bez zásahu do HTML), aby bolo vyhľadávacie pole aj
+   výsledky vidieť hneď navrchu a filtre nasledovali až pod nimi. */
+@media (max-width: 991px) {
+
+    .database-layout > main {
+        order: -1;
+    }
+
+}
+
 @media (min-width: 992px) {
 
     .database-layout {
