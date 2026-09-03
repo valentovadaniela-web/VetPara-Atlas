@@ -1,5 +1,58 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.29 Aktuálny stav — doplnené (2026‑09‑03, session: mobilné úpravy detailu parazita (orezané fotky) a filtrov v Atlase (priveľa rolovania))
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka postupne (screenshotmi z reálneho mobilu) nahlásila štyri súvisiace problémy s mobilným zobrazením Atlasu, na ktoré appka predtým nebola cielene doladená (dovtedy testovaná/ladená prevažne cez desktopový prehliadač): 1) v detaile parazita sa namiesto hlavnej fotky zobrazovalo viac malých fotiek; 2) filter „Hostiteľ" (dlhý zoznam koreňových kategórií) zaberal na mobile priveľa vertikálneho priestoru; 3) po prvej oprave sa fotky v detaile na mobile orezávali; 4) po druhej oprave (presunutie vyhľadávania nad filter) bolo treba dlho rolovať cez výsledky (fotky), aby sa autorka dostala k filtrom. Riešenie 4. problému si vyžiadalo vrátenie čiastočného predošlého zásahu a nahradenie kvalitatívne iným prístupom (zbaliteľný panel filtrov) namiesto ďalšieho doťahovania CSS poradia.
+
+### ✅ 1. Hlavná fotka v detaile sa na mobile nezobrazovala (`atlas.css`)
+
+- Príčina: `.findings-card` (kontajner hlavnej fotky + radu miniatúr pod ňou v `AtlasPage.js`) mala `display: flex` **bez** `flex-direction`, čiže default `row` — hlavná fotka a rad miniatúr boli flex-položky VEDĽA SEBA, nie pod sebou. Na desktope (široký kontajner) to nebolo badateľné, na mobile (úzky kontajner + `overflow: hidden` + obmedzená výška) flexbox stláčal/orezával hlavnú fotku v prospech radu pevných 80×80px miniatúr.
+- Oprava: `.findings-card { flex-direction: column; }` + doplnené `.findings-card .main-image { flex-shrink: 0; width: 100%; max-height: 100%; object-fit: contain; }`, aby sa hlavná fotka nezmenšovala flexboxom.
+
+### ✅ 2. Filter „Hostiteľ" zaberal na mobile priveľa miesta (`atlas.css`)
+
+- Koreňové kategórie hostiteľov (`.host-accordion` položky priamo v `#atlas-filter-host`) aj ploché checkbox-filtre priamo vo fieldsete (napr. „Materiál") sa na mobile (`≤700px`) skladajú do **2 stĺpcov** namiesto jedného (`display: grid; grid-template-columns: 1fr 1fr;`).
+- Rozbalená (`[open]`) kategória hostiteľa naďalej zaberá celú šírku (`grid-column: 1 / -1`), aby sa jej vnorený obsah nezhrnul do polovičného stĺpca.
+- Zámerne scopnuté len na priamych potomkov `#atlas-filter-host`/`#gallery-filter-host` a na `.checkbox-group`, ktorý je priamym potomkom `<fieldset>` — vnorené `.checkbox-group.accordion-content` (leaf zoznamy vo vnútri rozbalenej kategórie) nie sú zasiahnuté.
+- ⚠️ Overené autorkou naživo — funguje.
+
+### ✅ 3. Fotky v detaile sa na mobile orezávali (`AtlasPage.js`, `atlas.css`)
+
+- Po oprave č. 1 zostal problém: `.findings-card` má na mobile fixnú `aspect-ratio: 4/3` a `overflow: hidden` — pri viacerých fotkách sa miniatúry orezávali alebo tlačili hlavnú fotku na menší priestor.
+- Riešenie: na mobile (`≤700px`) sa rad miniatúr (nová trieda `.detail-thumbnail-row`, predtým bez triedy — pridaná v `AtlasPage.js` pre CSS cielenie) úplne **skryje** (`display: none !important`), zostáva len hlavná fotka. Namiesto miniatúr sa zobrazí odkaz `.detail-more-photos-hint` „Zobraziť všetky fotografie (N) →", ktorý (rovnako ako klik na fotku) otvorí Galériu filtrovanú na daný objekt (`window.showGalleryForParasite`).
+- Na desktope bez zmeny — miniatúry aj naďalej vidno vedľa/pod hlavnou fotkou.
+
+### ✅ 4. Vyhľadávanie „naspodu" na mobile → zbaliteľný panel filtrov (`AtlasPage.js`, `atlas.css`)
+
+- Prvý pokus (v tejto session): `.database-layout > main { order: -1; }` pod `991px`, aby sa `<main>` (vyhľadávanie + výsledky) v jednostĺpcovom mobilnom layoute zobrazovalo pred `<aside>` (filtre). Fungovalo — vyhľadávanie bolo hore — ale vytvorilo to nový problém: filtre sa tým odsunuli AŽ ZA celú (dlhú, fotkami plnú) mriežku výsledkov, takže sa k nim muselo rovnako dlho rolovať, len opačným smerom.
+- **Finálne riešenie** (nahrádza vyššie, `order` pravidlo odstránené): prirodzené poradie z HTML zostáva (`<aside>` s filtrami prvý, `<main>` s vyhľadávaním druhý), ale obsah filtrov je teraz obalený v novom `<div id="atlas-filters-panel">` a pred ním je nové tlačidlo `<button id="atlas-filters-toggle">Zobraziť filtre</button>`. Na mobile/tablete (`≤991px`) je panel **defaultne zbalený** (`display: none`, rozbalí sa pridaním triedy `.is-open` po kliku) — vidno len krátku hlavičku „Atlas parazitov" + tlačidlo, hneď za tým nasleduje vyhľadávanie a výsledky. Klik na tlačidlo panel rozbalí na mieste (text sa mení „Zobraziť filtre" ↔ „Skryť filtre", `aria-expanded`, šípka sa otočí).
+- Na desktope (`≥992px`) tlačidlo skryté, panel vždy `display: block` — vizuálne aj funkčne bez zmeny oproti stavu pred touto session.
+- Syntax `AtlasPage.js` overená cez `node --check` po oboch úpravách (pridanie tried k miniatúram/odkazu, aj pridanie toggle tlačidla a panelu).
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `atlas.css` | `.findings-card` `flex-direction: column` + `.main-image` doladenie | ✅ hotové, odovzdané |
+| `atlas.css` | 2-stĺpcový mobilný layout pre `#atlas-filter-host` a ploché `.checkbox-group` filtre | ✅ hotové, **overené autorkou naživo — funguje** |
+| `AtlasPage.js` | trieda `detail-thumbnail-row` na rad miniatúr + nový `.detail-more-photos-hint` odkaz | ✅ hotové, odovzdané |
+| `atlas.css` | skrytie `.detail-thumbnail-row` a zobrazenie `.detail-more-photos-hint` na mobile | ✅ hotové, odovzdané |
+| `atlas.css` | pokus s `.database-layout > main { order: -1; }` | ❌ zavrhnuté, odstránené v rámci tej istej session (spôsobovalo nový problém) |
+| `AtlasPage.js` | nové `#atlas-filters-toggle` tlačidlo + obalenie filtrov do `#atlas-filters-panel` | ✅ hotové, odovzdané |
+| `atlas.css` | zbaliteľný `.atlas-filters-panel` (defaultne zatvorený ≤991px), styling tlačidla | ✅ hotové, odovzdané |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Live overenie ešte neprebehlo** pre body 1, 3 a 4 (hlavná fotka v detaile na mobile, skrytie miniatúr + odkaz do Galérie, zbaliteľný panel filtrov s tlačidlom „Zobraziť filtre") — autorka musí `AtlasPage.js` aj `atlas.css` reálne nahradiť v repozitári, nasadiť a otvoriť na mobile (ideálne s vyčistenou cache/hard refresh — v tejto session sa už raz stalo, že autorka testovala nenasadenú/cachovanú verziu CSS, čo viedlo k zbytočnému kolu diagnostiky). Bod 2 (2-stĺpcový filter) je jediný z tejto session **potvrdene funkčný naživo**.
+2. Overiť správanie zbaliteľného panelu filtrov aj na tablet šírkach okolo breakpointu `991px`/`992px` (hranica, kde `.database-layout` prepína z 1 na 2 stĺpce) — v tejto session testované len na telefóne.
+3. Zvážiť rovnaké `detail-thumbnail-row`/`detail-more-photos-hint` riešenie aj pre prípadné iné miesta v appke, kde sa zobrazuje hlavná fotka + miniatúry rovnakým vzorom (ak také existujú mimo `AtlasPage.js` detailu — nebolo v tejto session skúmané).
+
+---
+
 🔥 0.28 Aktuálny stav — doplnené (2026‑09‑01, session: presná zhoda filtra pri prechode z detailu do Galérie + vizuálne odlíšenie duplicitných záznamov podľa `stage` v Atlase)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
