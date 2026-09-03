@@ -1194,6 +1194,42 @@ button {
         margin-bottom: var(--space-md);
     }
 
+    /* OPRAVA (2026-09-03, kompaktnejšie filtre na mobile): koreňové
+       kategórie hostiteľov (Bezstavovce, Domáce prežúvavce, Hlodavce...)
+       aj ploché checkbox-filtre (napr. "Materiál") sa doteraz skladali
+       jeden pod druhým na celú šírku -> pri ~20-30 koreňových kategóriách
+       vznikal veľmi dlhý zoznam, ktorý bolo treba prerolovať ešte predtým,
+       než sa použili filtre alebo sa dostalo k záznamom. Na mobile sa
+       teraz skladajú do 2 stĺpcov, čo zaberie približne polovicu výšky.
+       Rozbalená (open) kategória hostiteľa aj tak zaberie celú šírku,
+       aby sa jej vnorený obsah (podskupiny/checkboxy) nezhrnul do
+       polovičného stĺpca. Vnorené checkbox-group vo vnútri accordionu
+       (.accordion-content) zámerne NIE sú zasiahnuté (selektor cieli len
+       na priamych potomkov #atlas-filter-host / #gallery-filter-host a
+       na checkbox-group, ktorý je priamym potomkom fieldsetu). */
+    #atlas-filter-host,
+    #gallery-filter-host {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xs) var(--space-sm);
+    }
+
+    #atlas-filter-host > .host-accordion,
+    #gallery-filter-host > .host-accordion {
+        margin-bottom: 0;
+    }
+
+    #atlas-filter-host > .host-accordion[open],
+    #gallery-filter-host > .host-accordion[open] {
+        grid-column: 1 / -1;
+    }
+
+    .filter-section > fieldset > .checkbox-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-xs) var(--space-sm);
+    }
+
     .atlas-filter-multi select[multiple] {
         min-height: 100px;
     }
