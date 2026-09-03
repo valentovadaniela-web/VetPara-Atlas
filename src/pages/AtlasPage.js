@@ -1371,14 +1371,17 @@ const AtlasPage = {
             const firstImageUrl = PrimaryImage.resolveImageUrl(mainImage.url);
             mainImageContainer.innerHTML = `
                 <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(mainImage.alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
-                <div style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
-                    ${thumbnailImages.map(img => `
-                        <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
-                    `).join('')}
-                </div>
+                ${thumbnailImages.length > 0 ? `
+                    <div class="detail-thumbnail-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
+                        ${thumbnailImages.map(img => `
+                            <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                        `).join('')}
+                    </div>
+                    <div class="detail-more-photos-hint">Zobraziť všetky fotografie (${parasiteImages.length}) →</div>
+                ` : ""}
             `;
 
-            mainImageContainer.querySelectorAll("img").forEach(imgEl => {
+            mainImageContainer.querySelectorAll("img, .detail-more-photos-hint").forEach(imgEl => {
                 imgEl.addEventListener("click", () => {
                     if (typeof window.showGalleryForParasite === "function") {
                         window.showGalleryForParasite(id);

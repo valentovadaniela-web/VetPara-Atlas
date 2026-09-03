@@ -909,6 +909,13 @@ button {
     object-fit: contain;
 }
 
+/* Odkaz "Zobraziť všetky fotografie" pod primárnou fotkou v detaile —
+   mimo mobilu je zbytočný (miniatúry sú vidno priamo), zobrazuje sa
+   len v mobilnej mediaquery nižšie (12. Mobile doladenie). */
+.detail-more-photos-hint {
+    display: none;
+}
+
 /* Fotografia (PrimaryImage.js) sa musi prisposobit ploche kontajnera,
    nie zobrazovat v prirodzenej pixelovej velkosti - inak vznika velky
    biely priestor okolo mikroskopickej fotky (min-height/grid stretch
@@ -1192,6 +1199,29 @@ button {
 
     .filter-sidebar {
         margin-bottom: var(--space-md);
+    }
+
+    /* OPRAVA (2026-09-03, orezané fotky v detaile na mobile): detail
+       parazita zobrazoval primárnu fotku + rad miniatúr pod ňou vo
+       vnútri .findings-card, ktorá má na mobile fixnú aspect-ratio 4/3
+       a overflow:hidden. Pri viacerých fotkách sa miniatúry buď
+       orezali, alebo tlačili primárnu fotku na menší priestor. Na
+       mobile teraz zostáva len primárna fotka (miniatúry sú zbytočné —
+       všetky fotky vrátane primárnej sú aj tak dostupné v Galérii cez
+       klik na fotku) a namiesto miniatúr sa zobrazí krátky odkaz
+       "Zobraziť všetky fotografie", aby bolo jasné, že ich je viac. */
+    .detail-thumbnail-row {
+        display: none !important;
+    }
+
+    .detail-more-photos-hint {
+        display: block;
+        margin-top: var(--space-sm);
+        text-align: center;
+        font-size: var(--fs-sm);
+        font-weight: 600;
+        color: var(--color-secondary);
+        cursor: pointer;
     }
 
     /* OPRAVA (2026-09-03, kompaktnejšie filtre na mobile): koreňové
