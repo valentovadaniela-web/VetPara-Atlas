@@ -358,8 +358,7 @@
     },
     "hostGroups": [
       "Psovité mäsožravce",
-      "Mačkovité mäsožravce",
-      "Človek"
+      "Mačkovité mäsožravce"
     ],
     "hosts": [
       "Mačka",
@@ -1363,7 +1362,7 @@
       "species": "Cysticercus tenuicollis"
     },
     "hostGroups": [
-      "Domíce prežúvavce",
+      "Domáce prežúvavce",
       "Voľne žijúce prežúvavce"
     ],
     "hosts": [],
@@ -1487,8 +1486,7 @@
       "species": "Coenurus serialis"
     },
     "hostGroups": [
-      "Zajace",
-      "králiky"
+      "Zajace, králiky"
     ],
     "hosts": [
       "Ovca"
@@ -1775,8 +1773,7 @@
       "Ošípané a diviaky",
       "Koňovité",
       "Zajace, králiky",
-      "Hlodavce",
-      "Človek"
+      "Hlodavce"
     ],
     "hosts": [
       "Hovädzí dobytok",
@@ -2919,7 +2916,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Sova"
+      "Sovy"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4682,11 +4679,12 @@
     },
     "hostGroups": [
       "Hlodavce",
-      "Mäsožravce",
-      "Človek"
+      "Mäsožravce"
+    
     ],
     "hosts": [
-      "Vodné voľne žijúce vtáky"
+      "Vodné voľne žijúce vtáky",
+      "Človek"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5748,7 +5746,7 @@
     },
     "hostGroups": [
       "Hrabavá hydina",
-      "Vodná Hydina"
+      "Vodná hydina"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -15430,8 +15428,7 @@
       "species": "Anoplocephalidae"
     },
     "hostGroups": [
-      "Zajace",
-      "králiky"
+      "Zajace, králiky"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -25447,7 +25444,7 @@
       "Primáty",
       "Nepárnokopytníky",
       "Hlodavce",
-      "Ťavy,lamy"
+      "Ťavy, lamy"
     ],
     "hosts": [
       "Ovca"
@@ -25694,11 +25691,10 @@
       "genus": "Cathaemasia",
       "species": "Cathaemasia hians"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Bocian čierny",
-      "Bocian biely"
+    "hostGroups": [
+      "Bociany"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
