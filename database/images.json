@@ -78,7 +78,8 @@
     "alt": "",
     "caption": "400x zväčšenie (pes)",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
+    "dateAdded": "2026-08-21T10:00:00.000Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "alaria_alata_egg",
@@ -86,8 +87,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-21T10:00:00.000Z"
   },
   {
     "parasiteId": "toxascaris_leonina_egg",
@@ -297,7 +297,7 @@
     "parasiteId": "dibothriocephalus_latus_egg",
     "url": "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_03.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Vajíčo má výrazné viečko, na protiľahlom póle môže byť aboperculárny hrbolček",
     "credit": "",
     "dateAdded": "2026-08-28T19:58:53.587Z"
   },
@@ -329,7 +329,7 @@
     "parasiteId": "crenosoma_vulpis_larva",
     "url": "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_03.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Chvost je charakteristicky zakončený dorzálnym zárezom/zakrivením („dorsal spine“)",
     "credit": "",
     "dateAdded": "2026-08-28T19:59:13.241Z",
     "isPrimary": true
@@ -4905,5 +4905,29 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-30T11:26:20.972Z"
+  },
+  {
+    "parasiteId": "eucoleus_aerophilus_egg",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-04T17:48:56.560Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_egg",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-04T17:48:56.560Z"
+  },
+  {
+    "parasiteId": "cyathostomum_sp_egg",
+    "url": "/public/images/parasites/cyathostomum_sp_egg/cyathostomum_sp_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-04T17:48:56.565Z"
   }
 ]
