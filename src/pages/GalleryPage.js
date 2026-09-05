@@ -64,43 +64,63 @@ const GalleryPage = {
               <p>Fotografie parazitov</p>
             </div>
 
+            <!-- NOVÉ (2026-09-05): rovnaký zbaliteľný panel filtrov ako
+                 v Atlase (§0.29 bod 4) — tlačidlo "Zobraziť/Skryť filtre"
+                 je vidno len na mobile/tablete (≤700px, CSS z atlas.css,
+                 triedy .atlas-filters-toggle/.atlas-filters-panel sú
+                 globálne, nič nové v CSS netreba). Na desktope zostáva
+                 panel vždy display:block a tlačidlo skryté, presne ako
+                 v Atlase. -->
             <button
               type="button"
-              id="gallery-clear-filters"
-              class="gallery-clear-filters"
+              id="gallery-filters-toggle"
+              class="atlas-filters-toggle"
+              aria-expanded="false"
+              aria-controls="gallery-filters-panel"
             >
-              Zrušiť filtre
+              <span>Zobraziť filtre</span>
+              <span class="atlas-filters-toggle-icon" aria-hidden="true">▾</span>
             </button>
 
-            <div
-              id="gallery-active-filters"
-              class="gallery-active-filters atlas-active-filters"
-              aria-live="polite"
-            ></div>
+            <div id="gallery-filters-panel" class="atlas-filters-panel">
+              <button
+                type="button"
+                id="gallery-clear-filters"
+                class="gallery-clear-filters"
+              >
+                Zrušiť filtre
+              </button>
 
-            <div id="gallery-stats" class="gallery-stats" aria-live="polite">
-              Načítavanie...
-            </div>
+              <div
+                id="gallery-active-filters"
+                class="gallery-active-filters atlas-active-filters"
+                aria-live="polite"
+              ></div>
 
-            <div class="gallery-filters">
-              <div class="filter-section">
-                <label for="gallery-filter-object" class="filter-title">
-                  Diagnostický objekt
-                </label>
-                <input
-                  id="gallery-filter-object"
-                  type="text"
-                  list="gallery-object-list"
-                  placeholder="Vyhľadať podľa latinského názvu..."
-                  autocomplete="off"
-                >
-                <datalist id="gallery-object-list"></datalist>
+              <div id="gallery-stats" class="gallery-stats" aria-live="polite">
+                Načítavanie...
               </div>
 
-              <div id="gallery-host-filter-container">
-                <!-- Hierarchický strom hostiteľov sa vykreslí po načítaní
-                     dát (init() -> renderHostFilterSection()), rovnako ako
-                     v Atlase. -->
+              <div class="gallery-filters">
+                <div class="filter-section">
+                  <label for="gallery-filter-object" class="filter-title">
+                    Diagnostický objekt
+                  </label>
+                  <input
+                    id="gallery-filter-object"
+                    type="text"
+                    list="gallery-object-list"
+                    placeholder="Vyhľadať podľa latinského názvu..."
+                    autocomplete="off"
+                  >
+                  <datalist id="gallery-object-list"></datalist>
+                </div>
+
+                <div id="gallery-host-filter-container">
+                  <!-- Hierarchický strom hostiteľov sa vykreslí po načítaní
+                       dát (init() -> renderHostFilterSection()), rovnako ako
+                       v Atlase. -->
+                </div>
               </div>
             </div>
           </aside>
@@ -233,6 +253,28 @@ const GalleryPage = {
     this.bindHostFilterEvents();
   },
 
+  /**
+   * NOVÉ (2026-09-05): naviazanie tlačidla "Zobraziť/Skryť filtre" na
+   * mobile/tablete — rovnaký princíp ako Atlas (§0.29 bod 4). Samotné
+   * skrývanie/zobrazovanie robí CSS (.atlas-filters-panel.is-open) z
+   * atlas.css, tu sa iba prepína trieda + text tlačidla + aria-expanded.
+   * Na desktope (≥992px) je tlačidlo cez CSS skryté, takže tento listener
+   * jednoducho nikdy nedostane klik.
+   */
+  bindFiltersToggle() {
+    const toggle = document.getElementById("gallery-filters-toggle");
+    const panel = document.getElementById("gallery-filters-panel");
+    if (!toggle || !panel) return;
+
+    toggle.addEventListener("click", () => {
+      const isOpen = panel.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", String(isOpen));
+      toggle.querySelector("span").textContent = isOpen
+        ? "Skryť filtre"
+        : "Zobraziť filtre";
+    });
+  },
+
   bindHostFilterEvents() {
     const fieldset = document.getElementById("gallery-filter-host");
     if (!fieldset) return;
@@ -253,6 +295,8 @@ const GalleryPage = {
     const clearButton = document.getElementById("gallery-clear-filters");
     const lightbox = document.getElementById("gallery-lightbox");
     const closeButton = document.getElementById("gallery-lightbox-close");
+
+    this.bindFiltersToggle();
 
     if (objectInput) {
       objectInput.addEventListener("input", () => {
