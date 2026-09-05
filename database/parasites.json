@@ -734,9 +734,10 @@
     "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)"
   },
   {
+    "id": "dirofilaria_repens_larva",
     "latinName": "Dirofilaria repens",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Vlasovec podkožný (podkožná dirofilária)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -747,18 +748,27 @@
       "species": "Dirofilaria repens"
     },
     "hostGroups": [
-      "Psovité mäsožravce",
-      "Mačkovité mäsožravce"
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Človek",
+      "Fretka",
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Človek": "Človek sa nemôže nakaziť od psa, iba od komára. Je náhodný hostiteľ – D. repens je najčastejšou príčinou humánnej dirofilariózy v Európe; u človeka sa tvoria podkožné noduly, často v oblasti oka (periokulárne), tváre alebo podkožia, larvy zvyčajne nedospievajú a neprodukujú mikrofilárie.",
+      "Fretka": "Popísané ojedinelé prípady infekcie, mikrofilarémia zriedkavá.",
+      "Mačka": "Mačka je definitívny hostiteľ len výnimočne, mikrofilarémia je zvyčajne veľmi slabá alebo chýba."
+    },
     "sample": "Krv",
     "stage": "Larva",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 280,
-      "lengthMax": 360,
-      "widthMin": 6,
+      "lengthMin": 350,
+      "lengthMax": 380,
+      "widthMin": 7,
       "widthMax": 8,
       "unit": "µm"
     },
@@ -768,17 +778,19 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Histochemicky sa farbí 1 otvor."
+      "Telo je štíhle s tupým zaobleným zadným koncom.",
+      "Cefalický priestor (hlavový koniec): dlhý a výrazný, zvyčajne 10–15 µm.",
+      "Chvostový koniec: jemne zahrotený alebo inak tvarovaný, posledné jadro môže byť inak uložené než pri D. immitis (nie tak plynulo splývajúce s koncom tela)",
+      "V čerstvom preparáte je pohyb serpentiformný (vlnivý), skôr stacionárny, t.j. nepohybuje sa vopred",
+      "Pri histochemickom farbení sa farbí iba análny pór (zadný otvor), exkrečný pór sa nefarbí – \"1 červená bodka\""
     ],
     "differentialDiagnosis": [
-      "Mikrofilárie odlíšiť od D. immitis vlnitým/zahnutým chvostom a mierne väčšou dĺžkou. Odlíšiť D. immitis od D. repens podľa tvaru hlavového a kaudálneho konca mikrofilárie",
-      "dĺžky a prítomnosti/charakteru cephalic hook; pri nejasnosti PCR."
+      "Dirofilaria immitis (srdcová filária): mikrofilárie má kratšie (290–330 µm) a užšie (5–7 µm) ako D. repens. D. immitis: krátky, nevýrazný cefalický priestor (1–2 µm) oproti dlhému u D. repens. Chvostový koniec D. immitis je bez terminálneho háčika, plynule sa zužujúci. Kľúčový rozdiel: u D. repens sa histochemicky farbí iba análny pór, u D. immitis oba (análny aj exkrečný).",
+      "Acanthocheilonema reconditum (syn. Dipetalonema reconditum): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Kratšie mikrofilárie (250–300 µm) ako D. repens. Chvostový koniec často výrazne zahrotený, niekedy s malým háčikom. Pohyb je rýchly, progresívny (aktívne sa posúva dopredu), na rozdiel od skôr stacionárneho vlnenia D. repens."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\n\nDefinitívny hostiteľ (DH): pes/mačka/líška – dospelé samičky uložené v podkoží produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú a vyvíjajú sa cez L4 na L5 (juvenilné dospelé jedince), ktoré zostávajú lokalizované v podkoží a podkožnom väzive (na rozdiel od D. immitis, ktorá migruje do pľúcnych artérií a srdca).\nPredpatentná perióda: približne 6–9 mesiacov (approx. 200–230 dní) od infekcie do produkcie mikrofilárií.",
+    "pathology": "Dospelé D. repens sa lokalizujú v podkoží a podkožnom väzive, kde spôsobujú prevažne mierne, lokálne zmeny:\n\nTvorba podkožných nodulov (uzlíkov) v mieste výskytu dospelých červov,\nMierny lokálny zápal a fibróza okolo červov,\nPri masívnejšej infekcii svrbenie a dermatitída.\n\nKlinické príznaky u psov:\n\nVäčšinou asymptomatický alebo mierny priebeh,\nPodkožné uzlíky, niekedy migrujúce opuchy,\nSvrbenie kože, alopécia v mieste lézií,\nSystémové príznaky (kašeľ, kardiovaskulárne zlyhanie) sa na rozdiel od D. immitis prakticky nevyskytujú.\n\nU mačiek je infekcia zvyčajne mierna až asymptomatická, prejavuje sa najmä kožnými zmenami.\n\nMikrofilárie samotné sú zvyčajne nepatogénne, klinický význam majú predovšetkým dospelé jedince v podkoží.",
     "zoonosis": false,
-    "notes": "",
-    "id": "dirofilaria_repens_larva",
     "images": [
       "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_01.webp",
       "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_02.webp",
@@ -794,7 +806,9 @@
       "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_12.webp",
       "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_13.webp",
       "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_14.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, najmä dlhý cefalický priestor – kľúčové pre odlíšenie od D. immitis.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblasti análneho a exkrečného póru – u D. repens sa farbí iba análny pór.\nAntigénový test: komerčné antigénové testy sú vyrábané pre D. immitis; na D. repens sa štandardne nevyrábajú, diagnostika sa preto opiera predovšetkým o mikroskopiu (morfometria, histochemické farbenie) a PCR."
   },
   {
     "latinName": "Giardia duodenalis",
@@ -874,61 +888,6 @@
       "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_01.webp",
       "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_02.webp",
       "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_03.webp"
-    ]
-  },
-  {
-    "latinName": "Isospora sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Isospora",
-      "species": "Isospora sp."
-    },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Krkavec",
-      "Slimáky",
-      "Plazy"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 2 sporocysty x 4 sporozoity (vzor 2x4",
-      "odlišuje rod Isospora/Cystoisospora od Eimeria)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Cystoisospora podľa 2 sporocýst so 4 sporozoitmi",
-      "prítomnosti/typu Stiedovej štruktúry a hostiteľa; pri avian Isospora je vhodné molekulové potvrdenie pri nejasných nálezoch."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Rozdiely v mikrometrii medzi hostiteľmi budú doplnené pri fotografiách.",
-    "id": "isospora_sp_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_01.webp",
-      "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_02.webp"
     ]
   },
   {

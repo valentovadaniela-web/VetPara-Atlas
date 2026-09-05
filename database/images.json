@@ -586,14 +586,6 @@
   },
   {
     "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.021Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
     "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_09.webp",
     "alt": "",
     "caption": "",
@@ -610,35 +602,11 @@
   },
   {
     "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.037Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_12.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.042Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
     "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_13.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.047Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_14.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:02:17.051Z",
+    "dateAdded": "2026-08-28T20:02:17.047Z",
     "isPrimary": true
   },
   {
@@ -665,22 +633,6 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:02:46.774Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "isospora_sp_oocyst",
-    "url": "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:03:29.986Z"
-  },
-  {
-    "parasiteId": "isospora_sp_oocyst",
-    "url": "/public/images/parasites/isospora_sp_oocyst/isospora_sp_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:03:29.995Z"
   },
   {
     "parasiteId": "capillaria_sp_egg",
