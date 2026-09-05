@@ -1,5 +1,44 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.30 Aktuálny stav — doplnené (2026‑09‑05, session: oprava mobilného filtra hostiteľov v Galérii + zbaliteľný panel filtrov aj pre Galériu)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje priamo na §0.29 — autorka predpokladala (a AI pri kontrole kódu potvrdil), že 2-stĺpcové mobilné zmenšenie filtra „Hostiteľ" (bod 2 z §0.29) automaticky platí aj v Galérii, keďže CSS selektor v `atlas.css` bol už vtedy napísaný ako `#atlas-filter-host, #gallery-filter-host`. Autorka priložila screenshot z reálneho mobilu, kde filter „Hostiteľ" v Galérii aj naďalej zaberal celú šírku (žiadne 2 stĺpce) — teoretická kontrola kódu teda nestačila, live screenshot odhalil skutočný CSS konflikt. Následne autorka požiadala aj o pridanie zbaliteľného panelu filtrov (§0.29 bod 4) aj do Galérie, keďže tam doteraz chýbal.
+
+### ✅ 1. Filter „Hostiteľ" v Galérii sa na mobile aj tak neskladal do 2 stĺpcov (`gallery.css`)
+
+- **Príčina:** `gallery.css` obsahoval pravidlo `#gallery-filter-host { display: flex; flex-direction: column; gap: var(--space-xs); }` **bez media query**, teda platné za každých okolností vrátane mobilu. Toto pravidlo má rovnakú špecifickosť (jeden ID selektor) ako mobilné pravidlo `#gallery-filter-host { display: grid; ... }` v `atlas.css` (`@media max-width:700px`). Keď majú dve CSS pravidlá rovnakú špecifickosť a obe reálne platia súčasne, rozhoduje poradie v dokumente — vyhráva posledné. `index.html` linkuje `atlas.css` **pred** `gallery.css`, takže pravidlo z `gallery.css` vždy prebilo mobilné `display: grid` z `atlas.css`, bez ohľadu na to, že to druhé bolo v media query.
+- **Oprava:** základné pravidlo v `gallery.css` obalené do `@media (min-width: 701px)`, aby platilo len na desktope/tablete a na mobile (`≤700px`) nechalo priestor pravidlu z `atlas.css` (rovnaká hranica 700px na oboch miestach).
+- ⚠️ Zatiaľ len teoreticky odovzdané, **live overenie na reálnom mobile ešte neprebehlo** — treba nahradiť `gallery.css`, nasadiť a otestovať s hard refresh (rovnaký typ chyby s cachovaným CSS sa už raz stal v §0.29).
+
+### ✅ 2. Zbaliteľný panel filtrov pridaný aj do Galérie (`GalleryPage.js`)
+
+- Autorka poukázala na to, že zbaliteľný panel filtrov s tlačidlom „Zobraziť/Skryť filtre" (implementovaný v §0.29 bod 4) bol vtedy urobený výhradne pre `AtlasPage.js`/`atlas.css` — Galéria ho nemala vôbec, filter tam bol na mobile natvrdo vždy rozbalený.
+- **Riešenie:** v `GalleryPage.render()` je obsah filtrov (tlačidlo „Zrušiť filtre", aktívne filtre, štatistika, textový filter objektu, strom hostiteľov) teraz obalený v novom `<div id="gallery-filters-panel" class="atlas-filters-panel">`, pred ním nové tlačidlo `<button id="gallery-filters-toggle" class="atlas-filters-toggle">`. Hlavička „Galéria" zostáva mimo panelu, vždy viditeľná — 1:1 rovnaká štruktúra ako `AtlasPage.js`.
+- Pridaná nová metóda `bindFiltersToggle()` (volaná z `bindEvents()`) — po kliku prepne triedu `.is-open` na paneli, `aria-expanded` na tlačidle a jeho text („Zobraziť filtre" ↔ „Skryť filtre").
+- **Žiadna zmena v CSS nebola potrebná** — triedy `.atlas-filters-toggle`/`.atlas-filters-panel` v `atlas.css` sú globálne (nie ID-scoped na `#atlas-filters-panel`), takže fungujú okamžite aj na nových ID `#gallery-filters-toggle`/`#gallery-filters-panel` rovnako ako v Atlase (na desktope skryté/vždy zobrazené, na mobile `≤700px` defaultne zbalené).
+- Syntax `GalleryPage.js` overená cez `node --check` (import/export dočasne odstránené pre účely kontroly, appka sama beží ako ES modul).
+- ⚠️ **Live overenie na reálnom mobile ešte neprebehlo.**
+
+### Zhrnutie vykonaných zmien
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `gallery.css` | `#gallery-filter-host` base pravidlo obalené do `@media (min-width: 701px)`, aby neprebíjalo mobilné `display:grid` z `atlas.css` | ✅ hotové, odovzdané, ⬜ naživo neoverené |
+| `GalleryPage.js` | nový `#gallery-filters-toggle` + obalenie filtrov do `#gallery-filters-panel` (rovnaké CSS triedy ako Atlas) | ✅ hotové, odovzdané, ⬜ naživo neoverené |
+| `GalleryPage.js` | nová metóda `bindFiltersToggle()`, volaná z `bindEvents()` | ✅ hotové, odovzdané, ⬜ naživo neoverené |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Live overenie ešte neprebehlo** pre obe zmeny — autorka musí `gallery.css` aj `GalleryPage.js` reálne nahradiť v repozitári, nasadiť a otvoriť Galériu na mobile (ideálne s vyčisteným/hard-refreshnutým cache, viď opakovaný problém z §0.29).
+2. Po live overení skontrolovať aj tablet šírky okolo `700px`/`701px` hranice (rovnaká poznámka ako v §0.29 bod 2 pre Atlas, tam ešte tiež neoverené).
+3. Zvážiť, či podobný CSS konflikt (pravidlo bez media query s rovnakou špecifickosťou ako niečo v `atlas.css`, ale načítané neskôr v `gallery.css`) nehrozí aj na iných miestach `gallery.css` — v tejto session sa preverilo len `#gallery-filter-host`, nebol to systematický audit celého súboru.
+
+---
+
 🔥 0.29 Aktuálny stav — doplnené (2026‑09‑03, session: mobilné úpravy detailu parazita (orezané fotky) a filtrov v Atlase (priveľa rolovania))
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
