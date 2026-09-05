@@ -535,9 +535,10 @@
     "notes": "Nález potvrdzuje infekciu Taeniidae, ale nerozlíši Taenia od Echinococcus"
   },
   {
+    "id": "dipylidium_caninum_egg",
     "latinName": "Dipylidium caninum",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Pásomnica psia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -548,14 +549,19 @@
       "species": "Dipylidium caninum"
     },
     "hostGroups": [
-      "Psovité mäsožravce",
-      "Mačkovité mäsožravce"
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Človek"
+    ],
+    "hostNotes": {
+      "Človek": " Človek (najmä deti) je len príležitostný definitívny hostiteľ - po náhodnom požití infikovanej blchy"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 35,
       "lengthMax": 60,
@@ -569,19 +575,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Vajíčka nie sú vylučované jednotlivo",
-      "ale v kapsulách (obaloch) obsahujúcich 5-30 vajíčok; jednotlivé vajíčko obsahuje šesťháčikový onkosféru."
+      "Vajíčka nie sú vylučované jednotlivo, ale v kapsulách (obaloch).",
+      "Vaječné balíčky jú okrúhle až oválne útvary s priemerom cca 120–200 µm a obsahujúce 5–30 (často ~25) vajíčok v jednom balíčku.",
+      "Jednotlivé vajíčka sú okrúhle až oválne, 35–60 µm (často uvádzané 35–50 µm), s tenkou stenou a hexakantným embryom (onkosféra) so 6 háčikmi.",
+      "Proglotidy (články) v truse: pohyblivé, tvarovo pripomínajú semienko uhorky/tekvice, dĺžka cca 10–12 mm, šírka ~2–3 mm, s dvoma genitálnymi pórmi (po jednom na každom bočnom okraji)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dipylidium môže byť potrebná molekulová identifikácia."
+      "Vajíčka Taenia / Echinococcus:  Vajíčka jednotlivé, nie v balíčkoch; často s viditeľnou embryonálnou štruktúrou, veľkosť podobná, ale chýbajú typické „packety“.  Proglotidy majú iný tvar a usporiadanie genitálnych pórov (nie dva póry na bočných okrajoch ako pri Dipylidium). V praxi je pre D. caninum rozhodujúci nález vaječných balíčkov a typických dvoj-pórových, „uhorkovitých“ proglotidov"
     ],
-    "lifeCycle": "Medzihostiteľ blchy (Ctenocephalides spp.) a v menšej miere vši.",
-    "pathology": "",
+    "lifeCycle": "Definitívny hostiteľ (DH): pes/mačka – dospelá pásomnica v tenkom čreve produkuje gravidné proglotidy.\n\nGravidné proglotidy sa aktívne alebo pasívne vylučujú s trusom alebo vyliezajú z perianálnej oblasti a rozpadávajú sa v prostredí, čím uvoľňujú vaječné balíčky.\n\nIntermediárny hostiteľ (IH): larvy hmyzu – najmä blchy (Ctenocephalides canis, C. felis) a zriedkavo švoly (Trichodectes canis).\n\nLarvy hmyzu v prostredí požierajú vajíčka/balíčky; vo vnútri sa vyvíja cysticerkoid (metacestódne štádium).\n\nInfekcia definitívneho hostiteľa: pes/mačka sa infikuje požitím infikovanej blchy/švoly (napr. pri olizovaní srsti).\n\nV tenkom čreve sa z cysticerkoidu vyvinie dospelá pásomnica, ktorá sa uchytí na črevnú stenu a začne produkovať nové články.",
+    "pathology": "Väčšina infekcií je mierneho priebehu; dospelé pásomnice sú relatívne málo patogénne.\n\nPri silnejších infekciách sa môžu vyskytnúť:\n\nAbdominálne ťažkosti: bolesť brucha, nechutenstvo, neprosperita.\n\nTráviace poruchy: hnačky alebo zápcha, zriedkavo až intestinálna obštrukcia pri masívnej infekcii.\n\nČastým klinickým prejavom je perianálne podráždenie spôsobené migráciou gravidných proglotidov:\n\nZviera vykazuje svrbenie v oblasti konečníka, olizuje si túto oblasť, „tlačí zadok o zem, sánkuje“ (tzv. „sleighing“).\n\nSekundárne môže dochádzať k dermatitíde v perianálnej oblasti v dôsledku mechanického dráždenia a olizovania.",
     "zoonosis": true,
-    "notes": "V kokónoch (120–200 μm)",
-    "id": "dipylidium_caninum_egg",
     "images": [
       "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_01.webp",
       "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_02.webp",
@@ -599,12 +603,15 @@
       "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_14.webp",
       "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_15.webp",
       "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_16.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Diagnosticky postačuje makroskopické nájdenie pohyblivých proglotidov v truse alebo okolo análneho otvoru; mikroskopicky sa potvrdzuje rozdrvením článku vo vode/fyziologickom roztoku a vyhľadaním vaječných balíčkov."
   },
   {
+    "id": "uncinaria_stenocephala_egg",
     "latinName": "Uncinaria stenocephala",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Machovec líščí",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -618,11 +625,16 @@
       "Mačkovité mäsožravce",
       "Psovité mäsožravce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Mačka": "U mačiek len výnimočne"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 77.6,
       "lengthMax": 83.5,
@@ -637,27 +649,28 @@
     },
     "diagnosticSigns": [
       "8-16 blastomér",
-      "oválne",
-      "tenká hladká škrupina",
-      "segmentované; väčšie a s viac elipsovitým tvarom než Ancylostoma."
+      "Vajíčka: oválne, tenkostenné, hladké, silne pripomínajúce „strongylidný typ“",
+      "Rozmery vajíčok: uvádzané v rozmedzí 65–90 µm × 35–60 µm (často ~70–90 × 40–50 µm; napr. ~75 × 45 µm).",
+      "Obsah vajíčka pri vylúčení: čerstvo vylúčené vajíčka obsahujú morulu (zhluk niekoľkých buniek, typicky 4–16 blastomérov), nie ešte larvu."
     ],
     "differentialDiagnosis": [
       "Vajíčko väčšie a s menším počtom blastomér ako u Ancylostoma spp. pri vylúčení; nezoonotický (v porovnaní s A. caninum) význam nižší",
-      "ale možná kožná iritácia (larva currens). Vajíčka U. stenocephala sú konzistentne väčšie ako vajíčka A. caninum aj A. tubaeforme."
+      "Ancylostoma:  Vajíčka sú morfologicky veľmi podobné (oválne, tenkostenné, morulované), ale menšie (Ancylostoma cca 60 x 40 µm, Uncinaria cca 83 x 46 µm).  Rozmery sa čiastočne prekrývajú, takže v oblastiach, kde sa vyskytujú oba rody, nie je vždy možná spoľahlivá diferenciácia len podľa veľkosti; v takých prípadoch je potrebný PCR test."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je priamy (monoxénny) – bez intermediárneho hostiteľa.\nDefinitívny hostiteľ vylučuje vajíčka s trusom do prostredia.\nVo vlhkej pôde/truse sa z vajíčok liahnu larvy, ktoré sa vyvíjajú cez L1 → L2 → infekčné L3 (zvyčajne v priebehu 2–10 dní v závislosti od teploty a vlhkosti).\nInfekcia definitívneho hostiteľa:\nHlavná cesta: perorálna – požitie L3 lariev z kontaminovanej pôdy, vody, potravy alebo pri olizovaní srsti.\nĎalšia cesta: perkutánna – L3 larvy môžu preniknúť cez kožu (najmä pri kontakte s kontaminovanou pôdou).\nPo vstupe do hostiteľa nasleduje migrácia (vrátane pľúcnej fázy) a dospelé jedince sa usadzujú v tenkom čreve, kde začnú produkovať vajíčka.\nPredpatentná perióda: približne 13–21 dní od infekcie do vylučovania vajíčok.",
+    "pathology": "U. stenocephala je vo všeobecnosti považovaná za mierne patogénnu, ale pri vysokých infekčných dávkach môže spôsobovať významné lézie.\nDospelé červy sa zahryzávajú do črevnej mukózy a „odsávajú“ zátky tkaniva (plug-feeding), čo môže viesť k:\n- Strate bielkovín cez črevo,\n- Hlienovitým hnačkám, prípadne tmavej, dechtovej stolici (meléna),\n- Chudnutiu, neprosperite, zhoršeniu kvality srsti.\n- Pri ťažkých infekciách sa môže objaviť anémia (bledé sliznice), dehydratácia a celkové oslabenie, najmä u šteniat.\n- Dermatitída: migrujúce larvy môžu spôsobovať ventrálnu dermatitídu a kožné lézie; v takých prípadoch možno larvy nájsť v koži (hĺbkový škrab, biopsia).",
     "zoonosis": false,
-    "notes": "rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako Ancylostomatidae alebo Ancylostoma/Uncinaria bez určenia druhu",
-    "id": "uncinaria_stenocephala_egg",
     "images": [
       "/public/images/parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako Ancylostomatidae alebo Ancylostoma/Uncinaria bez určenia druhu"
   },
   {
+    "id": "dirofilaria_immitis_larva",
     "latinName": "Dirofilaria immitis",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Vlasovec psí (srdcový červ)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -668,18 +681,27 @@
       "species": "Dirofilaria immitis"
     },
     "hostGroups": [
-      "Psovité mäsožravce",
-      "Mačkovité mäsožravce"
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Človek",
+      "Fretka",
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Človek": "Človek na nemôže nakaziť od psa, iba od komára. Je náhodný hostiteľ, v ktorom larvy zvyčajne nedospievajú na dospelé jedince a neprodukujú mikrofilárie; u človeka sa skôr tvoria noduly v pľúcach, podkoží alebo oku.",
+      "Fretka": "Fretka je definitívny hostiteľ len veľmi výnimočne a mikrofilarémia je len veľmi slabá (málo mikrofilárií)",
+      "Mačka": "Mačka je definitívny hostiteľ len výnimočne a mikrofilarémia je len veľmi slabá (málo mikrofilárií)"
+    },
     "sample": "Krv",
     "stage": "Larva",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 300,
-      "lengthMax": 300,
-      "widthMin": 6,
+      "lengthMin": 290,
+      "lengthMax": 330,
+      "widthMin": 5,
       "widthMax": 7,
       "unit": "µm"
     },
@@ -689,26 +711,27 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Mikrofilária s rovným (nezakriveným) telom",
-      "voľný priestor na hlavovom konci; histochemicky sa farbia 2 otvory (excretory pór a anus)."
+      "Telo je štíhle, rovnomerné, s tupým, zaobleným zadným koncom (nie špicatý).",
+      "Cefalický priestor (hlavový koniec): krátky, zvyčajne 1–2 µm dlhý, pomerne nevýrazný.",
+      "Chvostový koniec: bez terminálneho háčika, postupne sa zužujúci, posledné jadro nie je výrazne oddelené od konca tela.",
+      "V čerstvom preparáte je pohyb serpentiformný (vlnivý) a skôr stacionárny – mikrofilária sa vlní, ale neposúva dopredu",
+      "Pri histochemickom farbení sa farbia oba póry (análny a exkrečný): v preparáte sú \"2 červené bodky)"
     ],
     "differentialDiagnosis": [
-      "Mikrofilárie odlíšiť od Dirofilaria repens (D. immitis má rovný",
-      "tupo zakončený chvost",
-      "D. repens má zahnutý/vlnitý chvost). Odlíšiť D. immitis od D. repens podľa tvaru hlavového a kaudálneho konca mikrofilárie",
-      "dĺžky a prítomnosti/charakteru cephalic hook; pri nejasnosti PCR."
+      "Dirofilaria repens (podkožná filária) Veľkosť mikrofilárií: dlhšie (350–380 µm) a širšie (7–8 µm) ako D. immitis.  D. repens: dlhší a výraznejší cefalický priestor (často ~10–15 µm), čo je jeden z najspoľahlivejších rozlišovacích znakov.  Chvostový koniec:  D. repens: často s jemne zahroteným alebo inak tvarovaným koncom, posledné jadro môže byť inak uložené.  Kľúčový rozdiel:  u **D. immitis sa histochemicky farbia oba otvory, u D. repens iba zadný (análny)**.",
+      "Acanthocheilonema reconditum (syn. Dipetalonema reconditum): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Dĺžka mikrofilárií (dĺžka 250–300 µm) podobné alebo kratšia ako D. immitis. Chvostový koniec: A. reconditum často s výrazne zahroteným alebo inak tvarovaným koncom, niekedy s malým háčikom.  Pohyb A. reconditum je rýchly, progresívny – mikrofilária sa aktívne posúva dopredu, na rozdiel od skôr stacionárneho vlnenia D. immitis."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\n\nDefinitívny hostiteľ (DH): pes/mačka – dospelé samičky produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (tento vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú cez podkožie a svaly, vyvíjajú sa na L4 a následne na L5 (juvenilné dospelé jedince), ktoré migrujú do pľúcnych artérií a pravej časti srdca, kde dospievajú.\nPredpatentná perióda: približne 6–9 mesiacov (180–270 dní) od infekcie do produkcie mikrofilárií.",
+    "pathology": "Dospelé D. immitis spôsobujú mechanické a zápalové lézie v pľúcnych artériách a pravej časti srdca:\n- Endarteritída a proliferácia intimy pľúcnych artérií,\n- Trombózy a zhrubnutie cievnej steny,\n- Pľúcna hypertenzia a následné pravostranné srdcové zlyhanie.\n\nKlinické príznaky u psov:\n- Kašeľ, dyspnoe, znížená tolerancia záťaže,\n- Ascites, opuchy, hepatomegália (pri pravostrannom zlyhaní),\n- Chudnutie, neprosperita, v ťažkých prípadoch kolaps a náhly úhyn.\n- Caval syndróm (ťažká forma): Masívna infekcia s veľkým počtom dospelých červov v pravej predsieni a komore, vedúca k akútnemu pravostrannému zlyhaniu, hemolytickej anémii a často rýchlemu úhynu.\n\nU mačiek je infekcia často miernejšia, ale môže spôsobiť HARD (Heartworm Associated Respiratory Disease) – chronickú bronchitídu a pľúcne lézie, niekedy s náhlym úhynom.\n\nMikrofilárie samotné sú zvyčajne málo patogénne, ale môžu prispievať k imunologickým reakciám a v niektorých prípadoch k poškodeniu obličiek (glomerulonefritída).",
     "zoonosis": false,
-    "notes": "",
-    "id": "dirofilaria_immitis_larva",
     "images": [
       "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_01.webp",
       "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_02.webp",
       "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_03.webp",
       "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_04.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)"
   },
   {
     "latinName": "Dirofilaria repens",
@@ -836,6 +859,7 @@
     ],
     "differentialDiagnosis": [
       "_Giardia duodenalis_: Cysty: oválne (8–12 µm), 4 jadrá, vnútorné štruktúry. Trofozoity: hruškovité, 2 jadrá, padajúci pohyb. Pozitívny copro-antigén ELISA alebo PCR.",
+      "Cysty komenzálnych monád: Najmä v truse bylinožravcov bývajú cysty, ktoré majú tiež cytoplazmu po centrifugácii asymetricky ako Giardia, ale majú rôzne rozmery a sú viac guľaté",
       "_Cryptosporidium spp._: Cysty sú podstatne menšie oocysty (4–6 µm), guľaté, acidorezistentné (farbenie podľa Ziehl-Neelsena – červené na modrom pozadí).",
       "_Tritrichomonas foetus_: Bičíkovec (častý u mačiek). Netvorí cysty. Trofozoity majú zvlnenú membránu, trhavý pohyb vpred a jedno jadro. Na Giardia ELISA / PCR nereaguje.",
       "_Entamoeba histolytica_: Cysty sú guľaté (10–15 µm), zrelé majú 4 jadrá a tyčinkovité chromatoidné telieska. Trofozoity majú meňavkovitý pohyb (pseudopódie), bez bičíkov.",
@@ -7814,7 +7838,7 @@
   {
     "latinName": "Bunostomum phlebotomum",
     "synonyms": [],
-    "slovakName": "Mechovec hovädzí",
+    "slovakName": "Machovec hovädzí",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
