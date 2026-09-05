@@ -1,5 +1,69 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.31 Aktuálny stav — doplnené (2026‑09‑05, session: obsahová diskusia o stránke „Diagnostický expert" — Priorita č. 4, zatiaľ bez kódu)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Stránka „Diagnostický expert" (Priorita č. 4) bola doteraz v `AI_STATUS.md` zapísaná len ako holý fakt — „stále neimplementovaná, iba `console.log`" — bez akejkoľvek špecifikácie, čo má robiť. Autorka dohľadala pôvodné zadanie z prvotných diskusií (mimo tohto dokumentu) a poslala ho na spracovanie. Táto session bola čisto **rozhodovacia/plánovacia**, žiadny kód sa nemenil.
+
+### Pôvodné zadanie (dohľadané autorkou, predtým nezapísané v AI_STATUS.md)
+
+Rámcový plán zo skorších diskusií:
+- **Sprint 3 – Diagnostický expert:** hlavná konkurenčná výhoda appky. Namiesto vyhľadávania podľa názvu laborant odpovedá na otázky (vzorka, metóda, veľkosť, tvar, farba, obal, viečko, pohyblivosť) a systém vypočíta pravdepodobnosť jednotlivých druhov.
+- **Sprint 4 – Rozšírenie hostiteľov:** postupné pridanie mačky, hovädzieho dobytka, ovce, kozy, koňa, ošípaných, hydiny, exotík — architektúra beze zmeny.
+- **Sprint 5 – Pokročilé funkcie:** porovnanie dvoch druhov vedľa seba, mikrometrické pravítko, osobné poznámky laboranta, obľúbené položky, štatistiky, PWA, offline režim.
+- **Sprint 6 – AI modul (nadstavba):** rozpoznávanie objektov z fotografie, automatické meranie, návrh diagnózy, tvorba testov pre študentov, podpora školení.
+
+### 🔴→✅ Konfrontácia pôvodného zadania s reálnym stavom databázy
+
+Kontrolou `parasites.json`/schémy (podľa zistení z §0.5/§0.7 nižšie v tomto dokumente) vyšlo najavo, že **polovica pôvodne plánovaných otázok Sprintu 3 nemá oporu v aktuálnych dátach**:
+
+| Pôvodná otázka | Stav poľa v `parasites.json` |
+| --- | --- |
+| Aká je vzorka? | `sample` — existuje, 20 kontrolovaných hodnôt |
+| Aká bola použitá metóda? | `methods` — **formálne vyradené zo schémy** (0/474, rozhodnutie autorky z 20.8.2026, §0.7) |
+| Aká je veľkosť? | `micrometry` — existuje, jednotka vždy µm |
+| Aký má tvar? | `morphology.shape` — existuje, 24 hodnôt |
+| Akú má farbu? | `morphology.colour` — existuje, 24 hodnôt |
+| Aký je obal? | `morphology.shell` — existuje, 30 hodnôt |
+| Obsahuje viečko? | `operculum` — **formálne vyradené zo schémy** (0/474, rovnaké rozhodnutie) |
+| Je pohyblivý? | pole nikdy neexistovalo v schéme |
+
+**Rozhodnutie autorky:** `methods`, `operculum` a „pohyblivosť" sa nebudú do databázy vracať — Expert sa postaví na 6 poliach, ktoré reálne existujú (`sample`, `micrometry`, `shape`, `colour`, `shell`, hostiteľ).
+
+### 🔴→✅ Zamietnutý smer: pevný lineárny dotazník ako samostatná stránka
+
+Pôvodná predstava (8 otázok jedna za druhou, na konci vypočítaná "pravdepodobnosť") bola zavrhnutá z dvoch dôvodov:
+1. **Duplicita s Atlasom.** Atlas už má funkčný fazetový filter nad tými istými poľami (hostiteľ, materiál, veľkosť...) — samostatný dotazník by len duplikoval existujúcu filtrovaciu logiku (`Repository`, `HostFilterTree`) iným UI.
+2. **"Pravdepodobnosť" by bola zavádzajúca** — na skutočný výpočet pravdepodobnosti by boli treba epidemiologické dáta o výskyte druhov u daného hostiteľa, ktoré appka nemá. Čestne sa dá ukázať len "koľko zo zadaných kritérií sedí", nie pravdepodobnosť v štatistickom zmysle.
+
+### ✅ Zvolený smer: voľný textový vstup s lokálnym fuzzy-matchovaním na kontrolované hodnoty
+
+Namiesto samostatného dotazníka bude Expert fungovať ako **inteligentnejší vstupný bod do existujúceho filtra**:
+
+1. Laborant napíše jednu vetu voľným textom (napr. "vajíčko, hnedé, oválne, hrubá škrupina, cca 70×40 µm, trus psa").
+2. Text sa rozparsuje **lokálne v prehliadači** (žiadne LLM/API volanie) — pre každé kontrolované pole (`shape`, `colour`, `shell`, `sample`) sa vopred pripraví slovník bežných synoným/alternatívnych zápisov, proti ktorému sa text porovná fuzzy algoritmom (napr. Levenshtein distance), veľkosť sa vyťahuje regulárnym výrazom (`70×40`/`70x40`/`70 na 40 µm`...), hostiteľ sa porovná proti už existujúcemu `host_hierarchy.json`.
+3. Rozpoznané hodnoty sa **nezapoja rovno do výsledkov**, ale predvyplnia ako editovateľné checkboxy v existujúcom accordion filtri — laborant vidí "Rozpoznané: tvar=oválny, farba=hnedá, hostiteľ=Pes" a môže to jedným klikom opraviť, kým sa reálne aplikuje filter.
+4. Samotné filtrovanie beží nad **rovnakou existujúcou logikou** ako dnes v Atlase — žiadna nová filtrovacia vetva, len nový spôsob napĺňania vstupu.
+
+**Explicitne zamietnutý alternatívny smer:** skutočné volanie LLM (Claude/OpenAI/...) na parsovanie voľného textu. Dôvod: appka je zámerne static-hosted na GitHub Pages bez backendu (pravidlo §3 bod 6 nižšie); reálne LLM volanie potrebuje API kľúč, ktorý sa nesmie posielať z prehliadača, teda by si vyžiadalo aspoň malú serverless funkciu (Cloudflare Worker/Netlify/Vercel) plus priebežné náklady na tokeny a riziko zneužitia verejne dostupnej appky bez prihlasovania. **Autorka to explicitne odmietla ("nechcem nič platené")** — zvolený smer je preto čisto lokálne, bezplatné fuzzy-matchovanie, žiadna zmena v "žiadny backend" architektúre appky.
+
+### 🟡 Odložené na neskôr (Sprint 6, zatiaľ predčasné)
+
+- **Rozpoznávanie objektov z fotografie / automatické meranie** — appka má reálne fotky len pre 3 zo 474 diagnostických objektov (Priorita č. 2 stále prebieha); na akékoľvek zmysluplné porovnávanie/rozpoznávanie z fotiek chýba dátový základ. Odložené, kým sa nezaplní podstatná časť fotografií.
+- Zvažovaná (nie rozhodnutá) myšlienka na neskôr: keď fazetové zúženie dôjde na 2-3 kandidátov, nechať voliteľne LLM vygenerovať jednu vetu zhrňujúcu ich rozdiel na základe existujúceho textu v databáze (`morphology`, `differentialDiagnosis`) — narazí na rovnaký problém backendu/nákladov ako vyššie, zatiaľ len nápad, nie plán.
+- Zvažovaná (nie rozhodnutá) myšlienka: dynamické poradie otázok pri fazetovom zužovaní podľa toho, ktoré kritérium aktuálne najviac odlišuje zvyšných kandidátov (namiesto pevného poradia) — dá sa spraviť bez AI, len ako vylepšenie existujúcej filtrovacej logiky, zatiaľ nešpecifikované do detailu.
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Potrebné reálne dáta na zostavenie slovníkov synoným** — treba `parasites.json` (aspoň výpis unikátnych hodnôt `morphology.shape`/`colour`/`shell` a `sample`), aby sa slovníky stavali na reálnych hodnotách, nie vymyslené naslepo. Zatiaľ nedodané.
+2. Žiadny kód (parser, slovníky synoným, prepojenie na `Repository`/`HostFilterTree`) sa v tejto session nepísal — čisto rozhodovacia session.
+3. Priorita č. 4 v zozname ďalších krokov (nižšie v dokumente) zostáva formálne nezmenená — treba ju pri implementácii nahradiť odkazom na túto sekciu.
+
+---
+
 🔥 0.30 Aktuálny stav — doplnené (2026‑09‑05, session: oprava mobilného filtra hostiteľov v Galérii + zbaliteľný panel filtrov aj pre Galériu)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
@@ -1464,6 +1528,8 @@ Konvencia je schválená a funkčná (WebP, thumbnail 480px / plná 1600px, `<ob
 - ⬜ Overiť aj `docs/03_DATA_ENTRY_STANDARD.md`, ak tieto polia spomína — **nebol nahraný v žiadnej session doteraz, stále otvorené.**
 
 ### ⭐ Priorita č. 4: Chýbajúca stránka Expert
+
+Obsahová koncepcia rozhodnutá v §0.31 (2026-09-05, zatiaľ bez kódu): voľný textový vstup + lokálne fuzzy-matchovanie (bez LLM/API) na kontrolované hodnoty (`sample`, `micrometry`, `shape`, `colour`, `shell`, hostiteľ), predvyplnenie existujúceho fazetového filtra namiesto samostatného lineárneho dotazníka. `methods`, `operculum` a "pohyblivosť" sa do Expertu nezahŕňajú (nemajú oporu v dátach, pozri §0.31). Čaká sa na `parasites.json` (výpis unikátnych hodnôt polí) na zostavenie slovníkov synoným, potom na samotnú implementáciu.
 
 ### ⭐ Priorita č. 5: Presun starých `*.migrated.json` do `_archive/`
 
