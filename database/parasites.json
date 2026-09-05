@@ -87,11 +87,11 @@
     },
     "diagnosticSigns": [
       "Guľovité až oválne",
-      "Hladká a tenšia stena v porovnaní s Toxocara; vnútorný lem steny zvlnený.",
-      "Svetlá."
+      "Hladká a tenšia stena v porovnaní s Toxocara; vnútorný lem steny zvlnený",
+      "Svetlá"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Toxocara canis/cati hladkým povrchom obalu (bez jamkovania) a elipsoidnejším tvarom."
+      "Odlíšiť od Toxocara canis/cati typickým zvlneným vnútorným povrchom obalu vajíčka, hladkým povrchom obalu (bez jamkovania) a elipsoidnejším tvarom."
     ],
     "lifeCycle": "_T. leonina_ má priamy a jednoduchý vývoj **bez migrácie lariev cez orgány** (pľúca či pečeň): \n Infekčné vajíčka odchádzajú trusom hostiteľa a v prostredí dozrejú za 3 až 6 dní. \n Zviera sa nakazí zožratím infekčných vajíčok alebo paratenického hostiteľa (napr. myši, v ktorej svaloch sú zapuzdrené larvy). \n Larvy sa vyliahnu v čreve, preniknú výhradne do sliznice tenkého čreva, kde sa vyvíjajú, a následne sa vracajú do črevného lúmenu, kde dospievajú. Neprebieha tu **žiadny prenos z matky na mláďatá** (cez placentu ani mlieko).",
     "pathology": "Vzhľadom na absenciu pľúcnej migrácie je patogenita _T. leonina_ výrazne nižšia ako u rodu Toxocara. \n Poškodenie čreva: Larvy v sliznici a dospelé červy v lúmene čreva spôsobujú katarlny zápal čreva (enteritídu), mechanické dráždenie a odoberanie živín hostiteľovi. \n Klinické prejavy: Mierne infekcie sú bez príznakov. Pri masívnom začervení sa objavujú hnačky, striedanie chuti do jedla, chradnutie, zhoršená kvalita srsti a typické „červivé“, nafúknuté brucho (najmä u mladých zvierat). Vo výnimočných prípadoch môže klbko červov spôsobiť mechanické upchatie (obštrukciu) alebo perforáciu čreva.",
@@ -6821,8 +6821,7 @@
       "jemnejšia jamkovaná (mamilovaná) škrupina; nesegmentované pri vylúčení."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Toxocara canis (mierne menšie rozmery",
-      "hostiteľ) a od Toxascaris leonina (hladká vs. jamkovaná škrupina)."
+      "Odlíšiť od Toxocara canis (mierne menšie rozmery, hostiteľ) a od Toxascaris leonina (hladká vs. jamkovaná škrupina)."
     ],
     "lifeCycle": "",
     "pathology": "",
