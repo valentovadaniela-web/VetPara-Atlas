@@ -1013,6 +1013,7 @@
     "notes": "Parazitárna kastrácia. Ligula intestinalis dokáže ovplyvniť produkciu hormónov hypofýzy u svojho medzihostiteľa tak, že ryba nerastie a nikdy nedosiahne pohlavnú dospelosť, aby sa tak ľahšie stala korisťou rybožravých vtákov, ktorí sú hostiteľmi posledného štádia tohto parazita."
   },
   {
+    "id": "capillaria_sp_egg",
     "latinName": "Capillaria sp.",
     "synonyms": [],
     "slovakName": "",
@@ -1029,14 +1030,19 @@
       "Domáce prežúvavce"
     ],
     "hosts": [
-      "Hrabavá hydina",
       "Hovädzí dobytok",
+      "Hrabavá hydina",
       "Plazy"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Hrabavá hydina": "",
+      "Hovädzí dobytok": "",
+      "Plazy": ""
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 48,
       "lengthMax": 62,
@@ -1050,20 +1056,17 @@
       "shell": "Hrubá, s polárnymi zátkami"
     },
     "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "jemne bodkovaná až sieťovaná škrupina",
-      "zátky menej výrazné ako pri Trichuris."
+      "Súdkovitý až citrónovitý tvar",
+      "Povrch často jemne bodkovaný / priečne pruhovaný (najspoľahlivejší znak pod vyšším zväčšením/fázovým kontrastom)",
+      "Zátky menej výrazné, ale pri vtáčích druhoch niekedy prominujú.",
+      "Často asymetrické zátky"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Capillaria môže byť potrebná molekulová identifikácia."
+      "Trichuris: vždy hladký povrch, tmavšie, vypuklé steny, zátky vyčnievajú a sú symetrické"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "1. Priamy (monoxénny) cyklus - typický napr. pre niektoré druhy parazitujúce v čreve hydiny:\n Dospelé samice v hostiteľovi (čreve, pečeni, dýchacích cestách) kladú nezrelé vajíčka.\nVajíčka sa dostávajú von trusom (prípadne, pri C. hepatica, zostávajú v pečeni až do rozkladu tela hostiteľa).\nV vonkajšom prostredí (pôda, vlhko, teplo) dochádza k dozretiu vajíčka na infekčné štádium obsahujúce larvu (L1).\nNový hostiteľ sa nakazí perorálne – prehltnutím infekčného vajíčka (napr. s kontaminovanou potravou, vodou, pôdou).\nV čreve sa larva vyliahne, migruje do cieľového orgánu (sliznica čreva, pečeň, priedušnica) a dozrieva na dospelého jedinca.\n\n 2. Nepriamy (heteroxénny) cyklus - typický pre druhy parazitujúce v močovom mechúre alebo dýchacích cestách mäsožravcov: \nVajíčka sa dostanú do prostredia trusom alebo močom.\nVajíčko musí byť pozreté dážďovkou (Lumbricidae), ktorá slúži ako medzihostiteľ (paratenický alebo skutočný).\nV tele dážďovky sa larva ďalej vyvíja do infekčného štádia.\nDefinitívny hostiteľ (napr. pes, líška, mačka) sa nakazí zjedením infikovanej dážďovky.\nLarva sa v tele definitívneho hostiteľa dostane do cieľového orgánu a dozreje na dospelého jedinca.",
+    "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická crop-capillariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami",
     "zoonosis": false,
-    "notes": "",
-    "id": "capillaria_sp_egg",
     "images": [
       "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
       "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_02.webp",
@@ -1083,7 +1086,9 @@
       "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_16.webp",
       "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_17.webp",
       "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_18.webp"
-    ]
+    ],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Balantioides coli",

@@ -644,14 +644,6 @@
   },
   {
     "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.333Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
     "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_04.webp",
     "alt": "",
     "caption": "",
@@ -692,14 +684,6 @@
   },
   {
     "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.377Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
     "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_12.webp",
     "alt": "",
     "caption": "",
@@ -721,14 +705,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:06:00.391Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_15.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.398Z"
   },
   {
     "parasiteId": "capillaria_sp_egg",
@@ -802,31 +778,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:07:44.317Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z",
-    "isPrimary": true
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z"
   },
   {
     "parasiteId": "alaria_alata_adult",
