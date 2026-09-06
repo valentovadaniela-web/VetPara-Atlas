@@ -1129,20 +1129,19 @@
     "morphology": {
       "shape": "Okrúhly",
       "colour": "Zelenkastý",
-      "shell": "Tenká"
+      "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Najväčšia cysta prvoka u cicavcov; Cysty sú guľaté alebo mierne oválne",
-      "hrubostenné. V oboch štádiách býva prítomný predĺžený alebo fazuľovitý makronukleus a mikronukleus často nebýva dobre viditeľný"
+      "Cysty sú guľaté alebo mierne oválne",
+      "V oboch štádiách býva prítomný predĺžený alebo fazuľovitý makronukleus (mikronukleus často nebýva dobre viditeľný)"
     ],
     "differentialDiagnosis": [
-      "Od väčšiny iných črevných protozoí pomáha B. coli odlíšiť najmä veľká veľkosť",
-      "riasinkový povrch a nápadný makronukleus"
+      "Od väčšiny iných črevných protozoí pomáha B. coli odlíšiť najmä veľká veľkosť a nápadný makronukleus"
     ],
     "lifeCycle": "Cyklus je priamy (monoxénny) a prebieha fekálno-orálnou cestou: Hostiteľ prehltne infekčné cysty z kontaminovanej vody, potravy alebo prostredia znečisteného trusom ošípaných. V tenkom čreve sa z cysty uvoľní aktívne štádium – trofozoit.  Trofozoity migrujú do hrubého čreva, kde žijú v lúmene čreva a množia sa nepohlavne (priečnym delením) alebo pohlavne (konjugáciou). V dolnej časti hrubého čreva trofozoity strácajú vodu, vytvárajú pevnú stenu a menia sa späť na odolné cysty, ktoré odchádzajú s trusom do prostredi.",
     "pathology": "Balantioides coli je primárne patogénom pre človeka a primáty (napr. šimpanzy, orangutany, makaky) a zároveň pre morčatá. Väčšina nákaz je asymptomatická. Ak však dôjde k oslabeniu hostiteľa alebo premnoženiu parazita, trofozoity začnú pomocou proteolytických enzýmov (hyaluronidázy) aktívne narúšať a invadovať do sliznice hrubého čreva.Lézie: Vytvárajú hlboké, kráterovité vredy na sliznici čreva (ulceratívna patológia).Prejavy: Spôsobuje balantidiovú dizentériu – ťažké hnačky s prímesou krvi a hlienu, kŕče v bruchu, vracanie a stratu hmotnosti.Komplikácie: V extrémnych prípadoch hrozí perforácia (prasknutie) čreva, zápal pobrušnice (peritonitída) alebo prienik parazita krvou do pečene a pľúc.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Najväčšia cysta prvoka u cicavcov.",
     "id": "balantioides_coli_cyst",
     "images": [
       "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_01.webp",
@@ -1196,8 +1195,7 @@
       "shell": "Paralelné"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "súdkovité (valcovité) kvasinkové bunky s charakteristickým dvojitým obrysom",
+      "Súdkovité (valcovité) kvasinkové bunky s charakteristickým dvojitým obrysom",
       "často v reťazcoch."
     ],
     "differentialDiagnosis": [
