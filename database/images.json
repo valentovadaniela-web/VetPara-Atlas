@@ -4913,5 +4913,46 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-06T10:53:54.960Z"
+  },
+  {
+    "parasiteId": "ligula_intestinalis_plerocercoid",
+    "url": "/public/images/parasites/ligula_intestinalis_plerocercoid/ligula_intestinalis_plerocercoid_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T15:08:19.000Z"
+  },
+  {
+    "parasiteId": "ligula_intestinalis_plerocercoid",
+    "url": "/public/images/parasites/ligula_intestinalis_plerocercoid/ligula_intestinalis_plerocercoid_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T15:08:19.007Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "ligula_intestinalis_plerocercoid",
+    "url": "/public/images/parasites/ligula_intestinalis_plerocercoid/ligula_intestinalis_plerocercoid_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T15:08:19.015Z"
+  },
+  {
+    "parasiteId": "ligula_intestinalis_egg",
+    "url": "/public/images/parasites/ligula_intestinalis_egg/ligula_intestinalis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T15:59:46.216Z"
+  },
+  {
+    "parasiteId": "ligula_intestinalis_egg",
+    "url": "/public/images/parasites/ligula_intestinalis_egg/ligula_intestinalis_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T15:59:46.224Z"
   }
 ]
