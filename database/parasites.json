@@ -891,9 +891,10 @@
     ]
   },
   {
+    "id": "ligula_intestinalis_adult",
     "latinName": "Ligula intestinalis",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Škáravec vtáčí (pásomnica vtáčia)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -904,49 +905,55 @@
       "species": "Ligula intestinalis"
     },
     "hostGroups": [
-      "Vtáky"
+      "Vodné voľne žijúce vtáky"
     ],
     "hosts": [
       "Vodné voľne žijúce vtáky"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Vodné voľne žijúce vtáky": ""
+    },
     "sample": "Črevo",
     "stage": "Dospelý jedinec",
     "group": "Cestoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 200000,
-      "lengthMax": 600000,
+      "lengthMin": 100000,
+      "lengthMax": 1000000,
       "widthMin": 5000,
       "widthMax": 15000,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
+      "colour": "Žltobiely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: podlhovastý."
+      "Telo ploché, stužkovité, biele až krémové",
+      "Nečlánkované, ale s vonkajšími priečnymi ryhami (pseudočlánky)",
+      "Scolex bez háčikov, s dvoma pozdĺžnymi bothriami (typické pre Pseudophyllidea)",
+      "Polyzoický charakter – pohlavné orgány (mnohonásobne opakované semenníky a vaječníky) po celej dĺžke tela",
+      "Vajíčka operkulárne (s viečkom)"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ligula môže byť potrebná molekulová identifikácia."
+      "Schistocephalus solidus (dospelec u vtáka) morfologicky veľmi podobný, tiež z čeľade Pseudophyllidea/Diphyllobothriidea odlíšenie: S. solidus je výrazne menší a užší, scolex je jemne trojhranný/oválny s plytkými bothriami, telo je menej mohutné než u Ligula definitívnym hostiteľom sú tiež vodné vtáky, ale rybím medzihostiteľom sú typicky pichľavky siné (Gasterosteus aculeatus).",
+      "Dibothriocephalus latus - podobná stavba tela (bothrie, polyzoický charakter, operkulárne vajíčka), ale: iné pomery šírky ku dĺžke článkov, iný tvar scolexu (mandľovitý, s hlbšími bothriami), typicky parazituje aj u cicavcov vrátane človeka → dôležitý epidemiologický rozdiel makroskopicky sa dá zameniť, definitívne odlíšenie vyžaduje mikroskopiu vajíčok a stavby strobily.",
+      "Eubothrium a iné pseudofylidné cestódy vtákov rôzne rody s podobným \"stužkovitým\" habitom, odlišujú sa detailmi stavby scolexu, počtom a usporiadaním semenníkov/vaječníkov v priereze",
+      "Iné pásomnice bez vzťahu k Pseudophyllidea (treba vylúčiť pri makroskopickom náleze) Hymenolepididae (napr. Hymenolepis) – rozdiel: tenšie, s pravými článkami (proglotidmi), scolex so 4 prísavkami a väčšinou háčikmi, Dilepididae – tiež s prísavkami a háčikmi, výrazne článkované telo → tieto sa od Ligula ľahko odlíšia už podľa absencie pravej segmentácie a prísaviek u Ligula (má len bothrie, žiadne háčiky)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelec v čreve vtáka produkuje vajíčka → trus → voda.\nZ vajíčka sa vyliahne koracídium s riasinkami.\nKoracídium zožerie kôrovec → v jeho telesnej dutine vzniká procerkoid.\nKôrovca s procerkoidom zožerie ryba → larva prenikne cez črevnú stenu do telesnej dutiny → vyvinie sa plerocerkoid.\nRybu s plerocerkoidom skonzumuje rybožravý vták → larva sa v jeho čreve v priebehu niekoľkých dní vyvinie na pohlavne dospelého jedinca.",
+    "pathology": "U definitívneho hostiteľa (vtáka): Pri bežnej intenzite väčšinou málo výrazné klinické príznaky.\nMechanické dráždenie a zápal črevnej sliznice\nPri masívnej invázii možná obštrukcia čreva a chudnutie.",
     "zoonosis": false,
-    "notes": "2 bothrie",
-    "id": "ligula_intestinalis_adult",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
+    "id": "ligula_intestinalis_plerocercoid",
     "latinName": "Ligula intestinalis",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Škárovec vtáčí (pásomnica vtáčia)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -960,41 +967,46 @@
       "Ryby"
     ],
     "hosts": [
-      "Sladkovodné ryby"
+      "Kaprovité"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Kaprovité": ""
+    },
     "sample": "Brušná dutina",
     "stage": "Plerocerkoid",
     "group": "Cestoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 200000,
+      "lengthMin": 10000,
       "lengthMax": 400000,
-      "widthMin": 5000,
-      "widthMax": 18000,
+      "widthMin": 300,
+      "widthMax": 1000,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
+      "colour": "Biely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: podlhovastý."
+      "Veľká, biela, nesegmentovaná larva",
+      "Skolex s náznakom bothrií",
+      "Voľný v telesnej dutine ryby",
+      "Veľmi pohyblivý"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ligula môže byť potrebná molekulová identifikácia."
+      "Schistocephalus solidus (plerocerkoid) najbližšie príbuzný a najčastejšie zamieňaný druh odlíšenie: výrazne menší a užší než plerocerkoid Ligula, typicky sa nachádza u pichľaviek (Gasterosteus aculeatus) a iných malých rýb, zatiaľ čo Ligula preferuje kaprovité ryby telo je jemnejšie, menej hrubé, s náznakom priečneho zvrásnenia podobným ako u Ligula, ale v menšom rozsahu",
+      "Dibothriocephalus latus (plerocerkoid, tzv. \"sparganum\") podobný habitus – biely, stužkovitý, voľne uložený v telovej dutine alebo vo svalovine odlíšenie: plerocerkoidy Diphyllobothrium bývajú častejšie lokalizované aj v svalovine a vnútornostiach (nielen voľne v dutine brušnej), sú spravidla menšie a užšie, scolex má hlbšie a užšie bothrie epidemiologicky kľúčový rozdiel: Diphyllobothrium je zoonózny (človek ako definitívny hostiteľ pri konzumácii surovej ryby), Ligula nie",
+      "Triaenophorus spp. (napr. T. nodulosus, T. crassus) plerocerkoidy sa nachádzajú v pečeni a svalovine sladkovodných rýb (šťuka ako definitívny hostiteľ dospelca) odlíšenie: väčšinou zapuzdrené (opuzdrený plerocerkoid, na rozdiel od voľne uloženého u Ligula), menšie rozmery, scolex so 4 háčikovitými výbežkami (charakteristický rod v rámci Pseudophyllidea s hákmi)",
+      "Larvy iných helmintov v telesnej dutine rýb (treba vylúčiť pri makroskopickom náleze) Metacerkárie väčších trematódov alebo larvy Acanthocephala – zvyčajne výrazne menšie, cystické alebo vakovité, nie stužkovité",
+      "Larvy Anisakidae (u sladkovodných rýb menej časté) – tenké, stočené do špirály, nie ploché stužkovité telo."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelec v čreve vtáka produkuje vajíčka → trus → voda\nZ vajíčka sa vyliahne riasinkami opatrené koracídium\nKoracídium pozrie buchanka → v jej telesnej dutine vzniká procerkoid\nBuchanku so procerkoidom pozrie ryba → larva prenikne cez črevnú stenu do telesnej dutiny → vyvinie sa plerocerkoid\nRybu s plerocerkoidom skonzumuje rybožravý vták → larva sa v jeho čreve v priebehu niekoľkých dní vyvinie na pohlavne dospelého jedinca",
+    "pathology": "U hostiteľov plerocerkoidu (ryby) – \"ligulóza\":\n\nvýrazné vzdutie brušnej dutiny tlakom rastúceho parazita\natrofia gonád – tzv. parazitická kastrácia, ryba stráca reprodukčnú schopnosť\nútlak ostatných vnútorných orgánov, zníženie kondície\nzmena správania – nakazené ryby sa zdržiavajú bližšie k hladine, sú menej ostražité → zvýšené riziko predácie vtákmi (parazitická manipulácia hostiteľa uľahčujúca prenos na definitívneho hostiteľa)\npri veľmi silnej invázii môže dôjsť až k prasknutiu telesnej steny a úhynu ryby\nhospodársky význam v rybničnom chove (kapor, plotica)",
     "zoonosis": false,
-    "notes": "2 bothrie",
-    "id": "ligula_intestinalis_plerocercoid",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Parazitárna kastrácia. Ligula intestinalis dokáže ovplyvniť produkciu hormónov hypofýzy u svojho medzihostiteľa tak, že ryba nerastie a nikdy nedosiahne pohlavnú dospelosť, aby sa tak ľahšie stala korisťou rybožravých vtákov, ktorí sú hostiteľmi posledného štádia tohto parazita."
   },
   {
     "latinName": "Capillaria sp.",
