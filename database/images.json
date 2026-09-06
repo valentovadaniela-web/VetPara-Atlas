@@ -764,8 +764,8 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "nematodirus_sp_egg",
-    "url": "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_01.webp",
+    "parasiteId": "nematodirus_battus_egg",
+    "url": "/public/images/parasites/nematodirus_battus_egg/nematodirus_battus_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4897,5 +4897,61 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-06T15:59:46.224Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_11.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillaria_sp_egg",
+    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_15.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "balantioides_coli_cyst",
+    "url": "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.419Z"
   }
 ]

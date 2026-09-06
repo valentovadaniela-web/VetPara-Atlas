@@ -1150,6 +1150,7 @@
     ]
   },
   {
+    "id": "cyniclomyces_guttulatus_yeast",
     "latinName": "Cyniclomyces guttulatus",
     "synonyms": [
       "Saccharomyces guttulatus",
@@ -1167,26 +1168,35 @@
       "species": "Cyniclomyces guttulatus"
     },
     "hostGroups": [
-      "Psovité mäsožravce",
       "Mačkovité mäsožravce",
-      "Zajace, králiky",
-      "Hlodavce"
+      "Psovité mäsožravce",
+      "Zajace, králiky"
     ],
     "hosts": [
+      "Činčila",
       "Králik",
-      "Hlodavce",
+      "Mačka",
+      "Morča",
       "Pes",
-      "Mačka"
+      "Zajac"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Činčila": "Bežný komenzál tráviaceho traktu",
+      "Králik": "Najčastejší a fyziologický nález; súčasť normálnej mikroflóry céka.",
+      "Mačka": "Vzácnejšie",
+      "Morča": "Bežný komenzál tráviaceho traktu",
+      "Pes": "Nález v truse alebo vo zvratkoch často u zvierat s chronickými GIT ťažkosťami.",
+      "Zajac": "Najčastejší a fyziologický nález; súčasť normálnej mikroflóry céka."
+    },
     "sample": "Trus",
     "stage": "Kvasinka",
     "group": "Fungi",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 20,
+      "lengthMin": 8,
       "lengthMax": 20,
       "widthMin": 5,
-      "widthMax": 7,
+      "widthMax": 10,
       "unit": "µm"
     },
     "morphology": {
@@ -1196,25 +1206,29 @@
     },
     "diagnosticSigns": [
       "Súdkovité (valcovité) kvasinkové bunky s charakteristickým dvojitým obrysom",
-      "často v reťazcoch."
+      "Charakteristická dvojkontúrovaná (dvojitá) bunková stena",
+      "Viditeľné veľké vakuoly/granuly vo vnútri",
+      "Bunky sa často spájajú do reťazcov pripomínajúcich \"zrnká ryže\" alebo článkovanú štruktúru (podobné sacharomycetám)",
+      "Monopolárne pučanie na jednom póle bunky"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Cyniclomyces môže byť potrebná molekulová identifikácia."
+      "Candida spp. – menšie bunky, tvoria pseudohýfy/hýfy.",
+      "Saccharomyces spp. a iné environmentálne kvasinky – menšie, bez charakteristického dvojitého obrysu.",
+      "Cysty Giardia spp. – odlišný tvar (oválne, s vnútornými štruktúrami – axonémy, jadrá)"
     ],
-    "lifeCycle": "",
-    "pathology": "U psov môže byť prítomná aj u klinicky zdravých zvierat, ale vo veľkom počte sa často nachádza pri chronickej hnačke; v jednej štúdii boli zistené u 14 zo 63 klinicky zdravých psov, teda u 22,2%. U psa, prípadne mačky, samotný nález C. guttulatus* ešte automaticky neznamená kauzálnu mykotickú enteropatiu, pretože môže ísť o prechodný alebo komenzálny nález. Význam má najmä množstvo kvasiniek, klinické príznaky a súčasný nález iných enteropatogénov. U králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.\r\r\n\r\r\n",
+    "lifeCycle": "Kvasinka je súčasťou normálnej mikroflóry GIT (najmä u králikov, hlodavcov), odkiaľ sa fekálno-orálnou cestou prenáša na ďalšie jedince alebo do prostredia.\nAskospóry aj vegetatívne bunky môžu určitý čas prežívať v prostredí (trus, kontaminovaná krmivo/podstielka) a slúžiť ako zdroj infekcie/kolonizácie nového hostiteľa.\n\nHlavné cesty prenosu\nKonzumácia trusu hlodavcov/králikov (koprofágia) - Najčastejší a najpravdepodobnejší spôsob – psy majú tendenciu očuchávať a konzumovať trus iných zvierat. Ak má domácnosť/farma aj králiky, morčatá, činčily alebo sa pes pohybuje v prostredí s voľne žijúcimi hlodavcami (myši, potkany), riziko expozície stúpa.\n\nKontakt s kontaminovaným prostredím - Podstielka, klietky, výbehy alebo pastviny, kde sa predtým pohybovali králiky/hlodavce. Kvasinka (vrátane odolnejších askospór) môže istý čas prežívať v prostredí.\n\nKonzumácia surového mäsa/krmiva (BARF diéta) - Suroviny obsahujúce časti tráviaceho traktu králikov alebo hlodavcov (napr. celé koristi, drobky) môžu byť zdrojom kvasinky.\n\nPriamy kontakt medzi zvieratami - Spoločné bývanie psa s králikmi/morčatami v jednej domácnosti.\n\nKontaminovaná voda alebo krmivo - Menej časté, ale možné pri zdieľanom prostredí s hlodavcami.",
+    "pathology": "U psa nejde o fyziologickú súčasť mikroflóry (na rozdiel od králikov, morčiat a činčíl, kde je bežným komenzálom céka). Nález u psa sa najčastejšie spája s poruchou tráviaceho traktu spojenou so zmenenou GIT motilitou, pH alebo maldigesciou/malabsorpciou – typicky pri exokrinnej pankreatickej insuficiencii (EPI), chronickej enteropatii (IBD) alebo inej príčine chronických GIT ťažkostí (vracanie, hnačka, chudnutie). V malom množstve môže byť prítomná aj u zdravých psov. U zdravého psa so správnou GIT motilitou a normálnym pH žalúdka sa kvasinka väčšinou nezachytí trvalo alebo je prítomná len v malom množstve bez klinického významu. Premnoženie nastáva sekundárne – pri už existujúcej poruche trávenia (napr. EPI, znížená žalúdočná kyslosť, spomalená pasáž, IBD), ktorá vytvorí priaznivé podmienky pre pomnoženie kvasinky. Preto pri náleze u psa je vždy dôležitejšia otázka \"prečo sa premnožila\" než samotný spôsob \"nákazy\".\n\nU králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.",
     "zoonosis": false,
-    "notes": "Symbiotická kvasinka",
-    "id": "cyniclomyces_guttulatus_yeast",
     "images": [
       "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_01.webp",
       "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_02.webp"
-    ]
+    ],
+    "references": [],
+    "notes": ""
   },
   {
-    "latinName": "Nematodirus sp.",
+    "id": "nematodirus_battus_egg",
+    "latinName": "Nematodirus battus",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -1227,21 +1241,23 @@
       "species": "neurčené do druhu"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Bezstavovce"
     ],
     "hosts": [
-      "Ovca",
-      "Voľne žijúce prežúvavce"
+      "Ovca"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Ovca": "Najcitlivejšia kategória: mladé jahňatá po začiatku pasenia; klinické prípady sa opisujú približne vo veku 8–20 týždňov"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 140,
-      "lengthMax": 280,
-      "widthMin": 70,
-      "widthMax": 130,
+      "lengthMin": 180,
+      "lengthMax": 230,
+      "widthMin": 100,
+      "widthMax": 120,
       "unit": "µm"
     },
     "morphology": {
@@ -1251,20 +1267,19 @@
     },
     "diagnosticSigns": [
       "Veľké elipsovité vajíčko s niekoľkými veľkými blastomérami",
-      "typický znak rodu Nematodirus."
+      "Skôr pretiahnutý/strongylidný obrys než typicky oválny tvar iných druhov rodu Nematodirus"
     ],
     "differentialDiagnosis": [
-      "Vajíčko veľké s málopočetnými blastomérami",
-      "ľahko odlíšiteľné od ostatných trichostrongylidov."
+      "Vajíčka N. battus môžu byť v truse zamenené za vajíčka komplexu gastrointestinálnych strongylidov, napríklad Haemonchus, Trichostrongylus, Teladorsagia, Ostertagia, Cooperia alebo Oesophagostomum. Vajíčko N. battus je odlíšiteľné svojou veľkosťou a málopočetnými blastomérami."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vajíčko sa vylučuje trusom už v štádiu s niekoľkými blastomérami\nZvláštnosť rodu: vývoj L1 → L2 → L3 prebieha vo vnútri vajíčka (na rozdiel od väčšiny trichostrongylidov, kde sa larva liahne skoro a vyvíja sa voľne v prostredí)\nVyliahnutie infekčnej L3 z vajíčka vyžaduje špecifické podmienky – u N. battus je typická potreba obdobia chladu (prezimovanie) a následné jarné otepľovanie, čo vedie k synchronizovanému hromadnému liahnutiu lariev na jar.\nTáto synchronizácia spôsobuje typický jarnú \"nematodirovú explóziu\" – masovú infekciu najmä u jahniat na paši\nPo pozretí hostiteľom: exystácia v tenkom čreve, vývoj L3 → L4 → dospelec priamo v sliznici, bez hlbokej migrácie do tkanív\nPrepatentná perióda: cca 2–3 týždne",
+    "pathology": "Postihnuté je najmä jejunum\nPatogénne pôsobia predovšetkým larválne štádiá (L4), ktoré poškodzujú črevné klky a spôsobujú:\nkatarálnu až hemoragickú enteritídu\natrofiu klkov, malabsorpciu\nprofúznu hnačku, dehydratáciu\nstratu hmotnosti, spomalenie rastu\nPri masívnej jarnej infekcii u jahniat môže dôjsť k akútnej klinickej nematodiróze s vysokou mortalitou ešte pred tým, než sa vôbec objavia vajíčka v truse (patológia predbieha prepatentné vylučovanie vajíčok – dôležité pre diagnostiku, keďže koprologické vyšetrenie môže byť v čase klinických príznakov ešte negatívne)\nDospelé jedince samotné sú menej patogénne než larválne štádiá",
     "zoonosis": false,
-    "notes": "6-8 blastomér",
-    "id": "nematodirus_sp_egg",
     "images": [
-      "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_01.webp"
-    ]
+      "/public/images/parasites/nematodirus_battus_egg/nematodirus_battus_egg_01.webp"
+    ],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Ostertagia sp.",
@@ -8040,20 +8055,19 @@
       "species": "Nematodirus filicollis"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Domáce prežúvavce",
+      "ZOO prežúvavce"
     ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 130,
-      "lengthMax": 280,
+      "lengthMin": 140,
+      "lengthMax": 165,
       "widthMin": 70,
-      "widthMax": 90,
+      "widthMax": 85,
       "unit": "µm"
     },
     "morphology": {
@@ -8101,10 +8115,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 175,
-      "lengthMax": 280,
-      "widthMin": 106,
-      "widthMax": 110,
+      "lengthMin": 180,
+      "lengthMax": 210,
+      "widthMin": 90,
+      "widthMax": 105,
       "unit": "µm"
     },
     "morphology": {
