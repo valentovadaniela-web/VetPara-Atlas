@@ -41,7 +41,10 @@ function doSearch() {
         return;
     }
 
-    const results = state.parasites.filter(p =>
+    // OPRAVA: predtým state.parasites (pôvodné, nezmenené dáta) — po uložení
+    // zmeny v Admin nástroji sa vyhľadávanie tváriace ako "nezmenené" ukazovalo
+    // starú hodnotu, lebo zmeny pribúdajú len do state.workingCopy.
+    const results = state.workingCopy.filter(p =>
         p.id.toLowerCase().includes(query) ||
         p.latinName.toLowerCase().includes(query)
     );
@@ -63,7 +66,7 @@ function doSearch() {
     resultsContainer.querySelectorAll('.result-item').forEach(el => {
         el.addEventListener('click', () => {
             const id = el.dataset.id;
-            const record = state.parasites.find(p => p.id === id);
+            const record = state.workingCopy.find(p => p.id === id);
             if (record) {
                 currentEditingId = id;
                 currentRecord = JSON.parse(JSON.stringify(record));
