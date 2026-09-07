@@ -1022,6 +1022,7 @@ const AtlasPage = {
                     <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
                     ${record.stage ? `<span class="specimen-row-stage">${this.escapeHtml(record.stage)}</span>` : ""}
                 </div>
+                ${record.slovakName ? `<p class="specimen-row-slovak-name">${this.escapeHtml(record.slovakName)}</p>` : ""}
                 <div class="specimen-row-body">
                     <p class="specimen-row-meta">
                         <strong>Hostiteľ:</strong>
@@ -1305,6 +1306,8 @@ const AtlasPage = {
                         <h2 class="specimen-title">
                             ${this.escapeHtml(record.latinName ?? record.id)}
                         </h2>
+
+                        ${record.slovakName ? `<p class="specimen-slovak-name">${this.escapeHtml(record.slovakName)}</p>` : ""}
 
                         ${this.synonymsLine(record.synonyms)}
 
