@@ -1017,7 +1017,7 @@ const AtlasPage = {
         }
 
         container.innerHTML = filtered.map(record => `
-            <div class="specimen-row-card" data-id="${this.escapeHtml(record.id)}" role="button" tabindex="0">
+            <a class="specimen-row-card" href="#atlas/${this.escapeHtml(record.id)}" data-id="${this.escapeHtml(record.id)}">
                 <div class="specimen-row-header">
                     <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
                     ${record.stage ? `<span class="specimen-row-stage">${this.escapeHtml(record.stage)}</span>` : ""}
@@ -1033,7 +1033,7 @@ const AtlasPage = {
                     </p>
                     ${this.renderRowThumbnail(record)}
                 </div>
-            </div>
+            </a>
         `).join("");
 
         this.bindCards();
@@ -1239,19 +1239,27 @@ const AtlasPage = {
 
         cards.forEach(card => {
 
-            card.addEventListener("click", () => {
-                this.showDetail(card.dataset.id);
-            });
+            // OPRAVA (2026-09-07): karta je teraz skutočný <a href="#atlas/...">
+            // (viď renderRecords()), takže stredné tlačidlo myši, Ctrl/Cmd-klik
+            // aj "Otvoriť na novej karte" z kontextového menu fungujú natívne
+            // v prehliadači bez akéhokoľvek JS. Vlastný click handler tu
+            // zostáva len pre BEŽNÝ ľavý klik, kde namiesto natívnej navigácie
+            // (čo by prekreslilo celý zoznam cez Router) rovno zavoláme
+            // showDetail() — rýchlejšie a zachováva pôvodné správanie.
+            // Ak ide o klik s modifikátorom alebo iné tlačidlo myši,
+            // preventDefault() sa NEVOLÁ a prehliadač spracuje href sám.
+            card.addEventListener("click", (event) => {
 
-            card.addEventListener("keydown", (event) => {
-
-                if (event.key === "Enter" ||
-                    event.key === " ") {
-
-                    event.preventDefault();
-                    this.showDetail(card.dataset.id);
-
+                if (event.button !== 0 ||
+                    event.ctrlKey ||
+                    event.metaKey ||
+                    event.shiftKey ||
+                    event.altKey) {
+                    return;
                 }
+
+                event.preventDefault();
+                this.showDetail(card.dataset.id);
 
             });
 
@@ -1416,23 +1424,47 @@ const AtlasPage = {
             // normalizácie — Galéria aj PrimaryImage už normalizáciu majú
             // (resolveImageUrl), tak ju tu len opätovne použijeme namiesto duplikovania.
             const firstImageUrl = PrimaryImage.resolveImageUrl(mainImage.url);
+            const galleryHref = `#gallery/${this.escapeHtml(id)}`;
+            const photoLinkStyle = "display:block; color:inherit; text-decoration:none;";
             mainImageContainer.innerHTML = `
-                <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(mainImage.alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
+                <a href="${galleryHref}" class="detail-photo-link" style="${photoLinkStyle}">
+                    <img src="${firstImageUrl}" class="main-image" alt="${this.escapeHtml(mainImage.alt || record.latinName)}" style="width:100%; height:auto; border-radius:8px; cursor:pointer;">
+                </a>
                 ${thumbnailImages.length > 0 ? `
                     <div class="detail-thumbnail-row" style="margin-top: 8px; display: flex; gap: 8px; flex-wrap: wrap;">
                         ${thumbnailImages.map(img => `
-                            <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                            <a href="${galleryHref}" class="detail-photo-link" style="display:inline-block; color:inherit; text-decoration:none;">
+                                <img src="${PrimaryImage.resolveImageUrl(img.url)}" alt="${this.escapeHtml(img.alt || '')}" class="detail-thumb-image" style="width: 80px; height: 80px; object-fit: cover; border-radius: 4px; cursor: pointer;">
+                            </a>
                         `).join('')}
                     </div>
-                    <div class="detail-more-photos-hint">Zobraziť všetky fotografie (${parasiteImages.length}) →</div>
+                    <div class="detail-more-photos-hint"><a href="${galleryHref}" class="detail-photo-link" style="color:inherit; text-decoration:none;">Zobraziť všetky fotografie (${parasiteImages.length}) →</a></div>
                 ` : ""}
             `;
 
-            mainImageContainer.querySelectorAll("img, .detail-more-photos-hint").forEach(imgEl => {
-                imgEl.addEventListener("click", () => {
+            // OPRAVA (2026-09-07): odkazy na fotky sú teraz skutočné
+            // <a href="#gallery/...">, takže stredné tlačidlo/Ctrl-klik
+            // otvoria Galériu na novej karte natívne. Bežný ľavý klik
+            // zachytíme a rovno zavoláme window.showGalleryForParasite()
+            // ako doteraz (rýchlejšie, bez zbytočného hashchange), klik
+            // s modifikátorom necháme spracovať prehliadač.
+            mainImageContainer.querySelectorAll(".detail-photo-link").forEach(linkEl => {
+                linkEl.addEventListener("click", (event) => {
+
+                    if (event.button !== 0 ||
+                        event.ctrlKey ||
+                        event.metaKey ||
+                        event.shiftKey ||
+                        event.altKey) {
+                        return;
+                    }
+
+                    event.preventDefault();
+
                     if (typeof window.showGalleryForParasite === "function") {
                         window.showGalleryForParasite(id);
                     }
+
                 });
             });
         } else {

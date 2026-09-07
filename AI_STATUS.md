@@ -1,5 +1,40 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.32 Aktuálny stav — doplnené (2026‑09‑07, session: podpora stredného tlačidla myši / otvárania na novej karte v Atlase)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že kliknutie kolieskom myši (stredné tlačidlo) na kartu záznamu v Atlase, ani na fotku v detaile parazita, neotvorí obsah na novej karte prehliadača — bežné očakávané správanie pre odkazy. Následne overené aj na Galérii, kde sa ukázalo, že tam táto funkcia nie je potrebná (fotky sa zväčšujú priamo na stránke cez lightbox, nie presmerovaním).
+
+### 🔴→✅ Príčina: karty a fotky boli `<div>`/`<img>` s JS `onClick`, nie skutočné odkazy
+
+- **Karta záznamu v Atlase** (`specimen-row-card`, `AtlasPage.js`) bola `<div role="button" tabindex="0">` s ručným `click`/`keydown` handlerom volajúcim `showDetail()` priamo. Bez skutočného `href` nemá prehliadač na čo reagovať stredným tlačidlom, Ctrl/Cmd-klikom ani cez „Otvoriť na novej karte" v kontextovom menu.
+- **Fotka v detaile parazita** (hlavná aj miniatúry, presmerovanie do Galérie cez `window.showGalleryForParasite()`) mala rovnaký problém — `<img>` s `click` handlerom, žiadny reálny odkaz.
+- Zistené pri tejto príležitosti: appka **už mala hotovú hash-routu pre detail** (`#atlas/<id>`, registrovaná v `App.js`/`Router.js` cez `Router.register("atlas", ...)`), len sa na ňu nikde priamo neodkazovalo — chýbal `<a href>`.
+
+### ✅ Riešenie: karty a fotky prerobené na skutočné `<a href>`, zachované pôvodné správanie pri obyčajnom kliku
+
+- `AtlasPage.js`:
+  - `specimen-row-card`: `<div>` → `<a href="#atlas/<id>">`. Bežný ľavý klik naďalej rovno volá `showDetail()` (rýchle, bez prekreslenia celého zoznamu) — **iba** ak nejde o stredné tlačidlo / Ctrl / Cmd / Shift / Alt-klik. V tom prípade sa `preventDefault()` nevolá a prehliadač spracuje `href` sám (nová karta/okno).
+  - Fotka v detaile (hlavná, miniatúry, „Zobraziť všetky fotografie") obalená do `<a href="#gallery/<id>">` s rovnakou logikou (bežný klik → priamo `window.showGalleryForParasite()`, modifikátor/stredné tlačidlo → necháva sa na prehliadač).
+  - Starý `keydown` handler na Enter/Space odstránený — skutočný `<a>` element rieši klávesnicu natívne.
+- `atlas.css`:
+  - `.specimen-row-card` doplnené o `color: inherit; text-decoration: none;` (reset predvoleného vzhľadu odkazu — inak by text bez vlastnej farby, napr. `.specimen-row-meta`, zdedil štandardnú modrú/podčiarknutú farbu prehliadača) a `display: block;` ako poistka mimo `.grid-results` (vnútri `.grid-results`, ktorá je `display: grid`, sa child prvky aj tak automaticky "blokujú" bez ohľadu na vlastný `display` anchoru).
+  - `.detail-more-photos-hint` bez zmeny — farba (`var(--color-secondary)`) je na rodičovskom `div`, nový vnorený `<a>` ju korektne preberá cez `color: inherit`.
+
+### ✅ Overené autorkou naživo
+
+- Atlas: ľavý klik na kartu aj na fotku funguje presne ako predtým, stredné tlačidlo/Ctrl-klik/„Otvoriť na novej karte" teraz otvára detail na novej karte — **potvrdené autorkou, funguje v poriadku.**
+- Galéria: klik na fotku zväčšuje priamo na stránke (lightbox) — **toto je zámerné správanie, netreba meniť**, autorka to nepotrebuje inak.
+
+### 🟡 Poznámka pre budúcu session
+
+Ak by v budúcnosti autorka chcela aj v Galérii možnosť otvoriť fotku vo veľkom na novej karte (popri existujúcom lightboxe), treba doplniť samostatnú "veľkú" URL/routu pre jednotlivú fotku — momentálne žiadna neexistuje (lightbox je čisto JS-overlay bez zmeny hashu). Zatiaľ nerozhodnuté/nepožadované — len námet, nie plán.
+
+---
+
 🔥 0.31 Aktuálny stav — doplnené (2026‑09‑05, session: obsahová diskusia o stránke „Diagnostický expert" — Priorita č. 4, zatiaľ bez kódu)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
