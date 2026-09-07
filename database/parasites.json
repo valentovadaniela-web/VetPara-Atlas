@@ -347,7 +347,7 @@
     "synonyms": [
       "Diphyllobothrium latum"
     ],
-    "slovakName": "Škárovec široký",
+    "slovakName": "Škáravec široký",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -953,7 +953,7 @@
     "id": "ligula_intestinalis_plerocercoid",
     "latinName": "Ligula intestinalis",
     "synonyms": [],
-    "slovakName": "Škárovec vtáčí (pásomnica vtáčia)",
+    "slovakName": "Škáravec vtáčí (pásomnica vtáčia)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -10484,11 +10484,12 @@
     ]
   },
   {
+    "id": "isospora_erinacei_oocyst",
     "latinName": "Cystoisospora erinacei",
     "synonyms": [
       "Isospora erinacei"
     ],
-    "slovakName": "Cystoisospora erinacei",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -10502,10 +10503,13 @@
     "hosts": [
       "Jež"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Jež": ""
+    },
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
+    "methods": [],
     "micrometry": {
       "lengthMin": 28.1,
       "lengthMax": 34.2,
@@ -10529,9 +10533,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "",
-    "id": "isospora_erinacei_oocyst",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Cystoisospora schmaltzi",
@@ -13775,11 +13779,12 @@
     "images": []
   },
   {
+    "id": "isospora_neyrai_oocyst",
     "latinName": "Cystoisospora neyrai",
     "synonyms": [
       "Isospora neyrai"
     ],
-    "slovakName": "Cystoisospora neyrai",
+    "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -13795,10 +13800,13 @@
     "hosts": [
       "Ošípaná"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Ošípaná": ""
+    },
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
+    "methods": [],
     "micrometry": {
       "lengthMin": 12.9,
       "lengthMax": 12.9,
@@ -13822,9 +13830,9 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
-    "id": "isospora_neyrai_oocyst",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Chýba mikropyle"
   },
   {
     "latinName": "Alaria alata",
