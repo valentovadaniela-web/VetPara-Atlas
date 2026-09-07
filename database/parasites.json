@@ -59,7 +59,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Toxascaris",
       "species": "Toxascaris leonina"
@@ -423,7 +423,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Crenosomatidae",
       "genus": "Crenosoma",
       "species": "Crenosoma vulpis"
@@ -616,7 +616,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Uncinaria",
       "species": "Uncinaria stenocephala"
@@ -675,7 +675,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Onchocercidae",
       "genus": "Dirofilaria",
       "species": "Dirofilaria immitis"
@@ -742,7 +742,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Onchocercidae",
       "genus": "Dirofilaria",
       "species": "Dirofilaria repens"
@@ -1235,7 +1235,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Molineidae",
       "genus": "Nematodirus",
       "species": "neurčené do druhu"
@@ -1289,7 +1289,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Ostertagia",
       "species": "neurčené do druhu"
@@ -1329,7 +1329,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "ostertagia_sp_egg",
     "images": [
       "/public/images/parasites/ostertagia_sp_egg/ostertagia_sp_egg_01.webp"
@@ -2142,7 +2142,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Trichostrongylus",
       "species": "neurčené do druhu"
@@ -2185,7 +2185,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "trichostrongylus_sp_egg",
     "images": [
       "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_01.webp",
@@ -2200,7 +2200,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Haemonchus",
       "species": "Haemonchus contortus"
@@ -2246,7 +2246,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "haemonchus_sp_egg",
     "images": []
   },
@@ -2258,7 +2258,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
       "species": "Strongyloides papillosus"
@@ -2581,7 +2581,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Chabertiidae",
       "genus": "Chabertia",
       "species": "Chabertia ovina"
@@ -2621,7 +2621,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "chabertia_ovina_egg",
     "images": []
   },
@@ -2633,7 +2633,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Chabertiidae",
       "genus": "Oesophagostomum",
       "species": "neurčené do druhu"
@@ -2675,7 +2675,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "oesophagostomum_sp_egg",
     "images": []
   },
@@ -2687,7 +2687,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Dictyocaulidae",
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus filaria"
@@ -5205,7 +5205,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Acuariidae",
       "genus": "Dispharynx",
       "species": "Dispharynx nasuta"
@@ -5257,7 +5257,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Acuariidae",
       "genus": "Echinuria",
       "species": "Echinuria uncinata"
@@ -5423,7 +5423,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Syngamidae",
       "genus": "Syngamus",
       "species": "Syngamus trachea"
@@ -5474,7 +5474,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Syngamidae",
       "genus": "Cyathostoma",
       "species": "Cyathostoma bronchialis"
@@ -5523,7 +5523,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Trichostrongylus",
       "species": "Trichostrongylus tenuis"
@@ -5572,7 +5572,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Amidostomatidae",
       "genus": "Amidostomum",
       "species": "Amidostomum anseris"
@@ -5623,7 +5623,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Amidostomatidae",
       "genus": "Amidostomum",
       "species": "neurčené do druhu"
@@ -5674,7 +5674,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Epomidiostomum",
       "species": "Epomidiostomum uncinatum"
@@ -5727,7 +5727,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Epomidiostomum",
       "species": "neurčené do druhu"
@@ -5780,7 +5780,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascaridiidae",
       "genus": "Ascaridia",
       "species": "Ascaridia galli"
@@ -5834,7 +5834,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascaridiidae",
       "genus": "Ascaridia",
       "species": "Ascaridia columbae"
@@ -5873,7 +5873,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny). Dospelé samičky kladú hrubostenné vajíčka, ktoré odchádzajú s trusom. V prostredí sa vo vajíčku vyvinie infekčná larva. Holub sa nakazí prehltnutím týchto infekčných vajíčok z kontaminovanej potravy alebo vody. Larvy sa vyliahnu v čreve, krátko migrujú do črevnej sliznice (histotrofné štádium) a následne sa vracajú do lumenu čreva, kde dospievajú.",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 7 cm. Larvy počas poškodzujú sliznicu čreva, čo spôsobuje katarálny zápal čriev (enteritídu) a krvácanie. Vtáky strácajú kondíciu, chradnú, majú matné perie, hnačky a anémiu.Mechanické upchatie: Pri masívnom premnožení môžu klbká červov mechanicky upchať črevo (obštrukciu), čo vedie k jeho perforácii (prasknutiu) a smrti vtáka, najmä u mladých holubiat. Nakaziť sa môžu aj iné vtáky, najmä papagáje a iné exotické vtáctvo chované vo voliérach. ",
     "zoonosis": false,
-    "notes": "Vajíčka Ascaridia galli a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách.  Prípadne Vajíčka radu Rhabditida (Ascaridia/Heterakis).",
+    "notes": "Vajíčka Ascaridia galli a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách.  Prípadne Vajíčka radu Ascaridida (Ascaridia/Heterakis).",
     "id": "ascaridia_columbae_egg",
     "images": [
       "/public/images/parasites/ascaridia_columbae_egg/ascaridia_columbae_egg_01.webp"
@@ -5887,7 +5887,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascaridiidae",
       "genus": "Ascaridia",
       "species": "Ascaridia dissimilis"
@@ -5937,7 +5937,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Heterakidae",
       "genus": "Heterakis",
       "species": "Heterakis gallinarum"
@@ -5997,7 +5997,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Heterakidae",
       "genus": "Heterakis",
       "species": "neurčené do druhu"
@@ -6047,7 +6047,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Heterakidae",
       "genus": "Heterakis",
       "species": "Heterakis dispar"
@@ -6198,7 +6198,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Anisakidae",
       "genus": "Contracaecum",
       "species": "neurčené do druhu"
@@ -6251,7 +6251,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ascarididae",
       "genus": "Porrocaecum",
       "species": "Porrocaecum crassum"
@@ -6407,7 +6407,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ascarididae",
       "genus": "Porrocaecum",
       "species": "neurčené do druhu"
@@ -6783,7 +6783,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Toxocaridae",
       "genus": "Toxocara",
       "species": "Toxocara cati"
@@ -6836,7 +6836,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Ancylostoma",
       "species": "Ancylostoma tubaeforme"
@@ -6888,7 +6888,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Angiostrongylidae",
       "genus": "Aelurostrongylus",
       "species": "Aelurostrongylus abstrusus"
@@ -7781,7 +7781,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Chabertiidae",
       "genus": "Oesophagostomum",
       "species": "Oesophagostomum radiatum"
@@ -7820,7 +7820,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "oesophagostomum_radiatum_egg",
     "images": [
       "/public/images/parasites/oesophagostomum_radiatum_egg/oesophagostomum_radiatum_egg_01.webp",
@@ -7835,7 +7835,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Bunostomum",
       "species": "Bunostomum phlebotomum"
@@ -7877,7 +7877,7 @@
     "lifeCycle": "Cyklus je priamy (monoxénny), bez medzihostiteľa, no zahŕňa unikátnu schopnosť lariev prenikať cez kožu:Vylučovanie vajíčok: Dospelé samičky v čreve kladú vajíčka, ktoré odchádzajú s trusom do vonkajšieho prostredia.Vývoj lariev: V truse a pôde sa z vajíčka vyliahne larva L1, ktorá sa dvakrát zvlieka na infekčnú larvu L3. Tento proces vyžaduje teplo a vlhko.Infekcia (Dva spôsoby prenosu):Perkutánne (Cez kožu): Infekčné larvy L3 aktívne prevŕtajú kožu hostiteľa (najčastejšie na končatinách alebo bruchu, keď zviera leží). Krvným obehom putujú do pľúc, odtiaľ sú vykašľané, prehltnuté a končia v tenkom čreve.Perorálne (Prehltnutím): Zvieratá zožerú larvy L3 s kontaminovanou trávou alebo vodou. Tieto larvy putujú priamo do čreva bez pľúcnej migrácie.Dospievanie: V tenkom čreve sa larvy dvakrát zvlečú (L4, L5) a dospelé červy sa pomocou silnej ústnej kapsuly prichytia na sliznicu. Prepatentná perióda (čas od nákazy po prvé vajíčka v truse) trvá okolo 30 až 60 dní.",
     "pathology": "Patrí k najškodlivejším črevným parazitom dobytka, pretože ide o hematofágneho parazita (živí sa krvou). Na sliznici čreva neustále mení miesta prisatia, pričom rany po ňom kvôli vylučovaným antikoagulanciám (látkam proti zrážaniu krvi) dlho krvácajú. Anémia,  Hypoproteinémia a Edémy - typický podsánkový edém (tzv. bottle jaw – fľašková čelusť) a opuchy na spodnej strane brucha, Tmavé až dechtovité hnačky (meléna) z natrávenej krvi, V mieste masívneho prieniku lariev cez kožu na nohách vzniká svrbenie, zápaly (dermatitídy) a rany, kvôli čomu zvieratá prešľapujú a nepokojne kopú.Celkové chradnutie. Pri neliečení hrozí úhyn (najmä u teliat a mladého dobytka).",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "bunostomum_phlebotomum_egg",
     "images": []
   },
@@ -7889,7 +7889,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Cooperia",
       "species": "neurčené do druhu"
@@ -7935,7 +7935,7 @@
     "lifeCycle": "Vývinový cyklus: priamy, bez medzihostiteľa. Vajíčka odchádzajú trusom → v prostredí sa z nich vyvíjajú larvy L1 → L2 → infekčná L3 → hostiteľ ich prijme potravou/pastvou → L3 sa dostanú do tenkého čreva, kde sa vyvíjajú na dospelce → vajíčka opäť odchádzajú trusom.",
     "pathology": "Parazitujú najmä v tenkom čreve prežúvavcov. Poškodzujú črevnú sliznicu a môžu spôsobovať enteritídu, hnačku, znížený príjem krmiva, spomalený rast a úbytok hmotnosti. Pri silnej infekcii môže dôjsť k výraznejšiemu poškodeniu čreva a produkčným stratám.",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "cooperia_oncophora_egg",
     "images": [
       "/public/images/parasites/cooperia_oncophora_egg/cooperia_oncophora_egg_01.webp"
@@ -7949,7 +7949,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Cooperia",
       "species": "Cooperia punctata"
@@ -7991,57 +7991,6 @@
     "images": []
   },
   {
-    "latinName": "Ostertagia ostertagi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Trichostrongylidae",
-      "genus": "Ostertagia",
-      "species": "Ostertagia ostertagi"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 74,
-      "lengthMax": 280,
-      "widthMin": 38,
-      "widthMax": 44,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Zvlnená vnútorná membrána",
-    "id": "ostertagia_ostertagi_egg",
-    "images": []
-  },
-  {
     "latinName": "Nematodirus filicollis",
     "synonyms": [],
     "slovakName": "",
@@ -8049,7 +7998,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Molineidae",
       "genus": "Nematodirus",
       "species": "Nematodirus filicollis"
@@ -8099,7 +8048,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Molineidae",
       "genus": "Nematodirus",
       "species": "Nematodirus spathiger"
@@ -8149,7 +8098,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Molineidae",
       "genus": "Nematodirus",
       "species": "Nematodirus helvetianus"
@@ -8202,7 +8151,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Dictyocaulidae",
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus viviparus"
@@ -8251,7 +8200,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Toxocaridae",
       "genus": "Toxocara",
       "species": "Toxocara vitulorum"
@@ -9288,7 +9237,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Toxocaridae",
       "genus": "Toxocara",
       "species": "Toxocara canis"
@@ -9343,7 +9292,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Ancylostoma",
       "species": "Ancylostoma caninum"
@@ -9397,7 +9346,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Angiostrongylidae",
       "genus": "Angiostrongylus",
       "species": "Angiostrongylus vasorum"
@@ -9447,7 +9396,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Filaroididae",
       "genus": "Oslerus",
       "species": "Oslerus osleri"
@@ -9496,7 +9445,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Physalopteridae",
       "genus": "Physaloptera",
       "species": "neurčené do druhu"
@@ -9549,7 +9498,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Spirocercidae",
       "genus": "Spirocerca",
       "species": "Spirocerca lupi"
@@ -10746,7 +10695,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Crenosomatidae",
       "genus": "Crenosoma",
       "species": "Crenosoma striatum"
@@ -10895,7 +10844,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Physalopteridae",
       "genus": "Physaloptera",
       "species": "Physaloptera clausa"
@@ -10946,7 +10895,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Gongylonematidae",
       "genus": "Gongylonema",
       "species": "Gongylonema mucronatum"
@@ -11507,7 +11456,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Habronematidae",
       "genus": "Habronema",
       "species": "neurčené do druhu"
@@ -11559,7 +11508,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Strongylus",
       "species": "neurčené do druhu"
@@ -11612,7 +11561,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Triodontophorus",
       "species": "neurčené do druhu"
@@ -11665,7 +11614,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Cyathostomum",
       "species": "neurčené do druhu"
@@ -11723,7 +11672,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Trichostrongylus",
       "species": "Trichostrongylus axei"
@@ -11776,7 +11725,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Dictyocaulidae",
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus arnfieldi"
@@ -11925,7 +11874,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Parascaris",
       "species": "Parascaris equorum"
@@ -11979,7 +11928,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Oxyuris",
       "species": "Oxyuris equi"
@@ -13994,7 +13943,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Chabertiidae",
       "genus": "Oesophagostomum",
       "species": "Oesophagostomum dentatum"
@@ -14033,7 +13982,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "oesophagostomum_dentatum_egg",
     "images": [
       "/public/images/parasites/oesophagostomum_dentatum_egg/oesophagostomum_dentatum_egg_01.webp"
@@ -14047,7 +13996,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Hyostrongylus",
       "species": "Hyostrongylus rubidus"
@@ -14098,7 +14047,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Globocephalus",
       "species": "neurčené do druhu"
@@ -14150,7 +14099,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Metastrongylidae",
       "genus": "Metastrongylus",
       "species": "neurčené do druhu"
@@ -14208,7 +14157,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Spirurida",
       "family": "Spirocercidae",
       "genus": "Ascarops",
       "species": "Ascarops strongylina"
@@ -14259,7 +14208,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
       "species": "Strongyloides ransomi"
@@ -14360,7 +14309,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Ascaris",
       "species": "Ascaris suum"
@@ -14464,7 +14413,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Stephanuridae",
       "genus": "Stephanurus",
       "species": "Stephanurus dentatus"
@@ -15508,7 +15457,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Trichostrongylus",
       "species": "Trichostrongylus retortaeformis"
@@ -15562,7 +15511,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Graphidium",
       "species": "Graphidium strigosum"
@@ -15613,7 +15562,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Protostrongylus",
       "species": "Protostrongylus commutatus"
@@ -15667,7 +15616,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Oxyuridae",
       "genus": "Passalurus",
       "species": "Passalurus ambiguus"
@@ -17269,7 +17218,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Pharyngodonidae",
       "genus": "neurčený rod",
       "species": "neurčený druh"
@@ -17330,7 +17279,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Pharyngodonidae",
       "genus": "Mehdiela",
       "species": "neurčené do druhu"
@@ -17373,56 +17322,6 @@
     "images": []
   },
   {
-    "latinName": "Labiduris sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Atractidae",
-      "genus": "Labiduris",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Geochelone"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 90,
-      "lengthMax": 110,
-      "widthMin": 45,
-      "widthMax": 60,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až subsférický",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubšia škrupina",
-      "typický oxyuridný typ vajíčka; parazit korytnačiek (čeľaď Atractidae)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Labiduris môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "labiduris_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Angusticaecum holopterum",
     "synonyms": [],
     "slovakName": "",
@@ -17430,7 +17329,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Angusticaecum",
       "species": "Angusticaecum holopterum"
@@ -17532,7 +17431,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Pharyngodonidae",
       "genus": "Tachygonetria",
       "species": "neurčené do druhu"
@@ -17583,7 +17482,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Hexametra",
       "species": "neurčené do druhu"
@@ -17634,7 +17533,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Orneoascaris",
       "species": "neurčené do druhu"
@@ -17684,7 +17583,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Ophidascaris",
       "species": "neurčené do druhu"
@@ -17736,7 +17635,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Polydelphis",
       "species": "neurčené do druhu"
@@ -17788,7 +17687,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Anisakidae",
       "genus": "Terranova",
       "species": "neurčené do druhu"
@@ -17840,7 +17739,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Heterocheilidae",
       "genus": "Dujardinascaris",
       "species": "neurčené do druhu"
@@ -17888,7 +17787,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Heterocheilidae",
       "genus": "Multicaecum",
       "species": "neurčené do druhu"
@@ -17938,7 +17837,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "neurčená čeľaď",
       "genus": "neurčený rod",
       "species": "neurčený druh"
@@ -17985,7 +17884,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "neurčená čeľaď",
       "genus": "neurčený rod",
       "species": "neurčený druh"
@@ -18032,7 +17931,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Diaphanocephalidae",
       "genus": "Kalicephalus",
       "species": "neurčené do druhu"
@@ -18752,8 +18651,8 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Pharyngodoniade",
+      "order": "Oxyurida",
+      "family": "Pharyngodonidae",
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
@@ -20447,7 +20346,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Heligmosomidae",
       "genus": "Nippostrongylus",
       "species": "Nippostrongylus brasiliensis"
@@ -20498,7 +20397,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Trichostrongylus",
       "species": "Trichostrongylus calcaratus"
@@ -20749,7 +20648,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Heteroxynematidae",
       "genus": "Aspiculuris",
       "species": "Aspiculuris tetraptera"
@@ -20804,7 +20703,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Syphacia",
       "species": "Syphacia obvelata"
@@ -20858,7 +20757,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Syphacia",
       "species": "Syphacia muris"
@@ -20912,7 +20811,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Trypanoxyuris",
       "species": "Trypanoxyuris sciuri"
@@ -20966,7 +20865,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Citellina",
       "species": "Citellina alpina"
@@ -21017,7 +20916,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Wellcomia",
       "species": "Wellcomia evoluta"
@@ -21068,7 +20967,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Heteroxynematidae",
       "genus": "Dentostomella",
       "species": "Dentostomella translucida"
@@ -21375,7 +21274,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Aspidoderidae",
       "genus": "Paraspidodera",
       "species": "Paraspidodera uncinata"
@@ -21432,7 +21331,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Baylisascaris",
       "species": "Baylisascaris laevis"
@@ -21521,55 +21420,6 @@
     "zoonosis": false,
     "notes": "Vzácne",
     "id": "fasciola_gigantica_egg",
-    "images": []
-  },
-  {
-    "latinName": "Graphidioides mazzai",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Trichostrongylidae",
-      "genus": "Graphidioides",
-      "species": "Graphidioides mazzai"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Morča"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 90,
-      "lengthMax": 110,
-      "widthMin": 45,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: oválny."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Vzácne",
-    "id": "graphidioides_mazzai_egg",
     "images": []
   },
   {
@@ -23417,7 +23267,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Bunostomum",
       "species": "neurčené do druhu"
@@ -23470,7 +23320,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Cooperia",
       "species": "neurčené do druhu"
@@ -23509,7 +23359,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "cooperia_sp_egg",
     "images": []
   },
@@ -23521,7 +23371,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Protostrongylus",
       "species": "Protostrongylus rufescens"
@@ -23573,7 +23423,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Protostrongylus",
       "species": "Protostrongylus brevispiculatum"
@@ -23624,7 +23474,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Enoplea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Muellerius",
       "species": "Muellerius capillaris"
@@ -23675,7 +23525,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Cystocaulus",
       "species": "Cystocaulus ocreatus"
@@ -23725,7 +23575,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Skrjabinema",
       "species": "Skrjabinema ovis"
@@ -23777,7 +23627,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Oxyurida",
       "family": "Oxyuridae",
       "genus": "Skrjabinema",
       "species": "Skrjabinema caprae"
@@ -24662,7 +24512,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Dictyocaulidae",
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus noerneri"
@@ -24715,7 +24565,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Varestrongylus",
       "species": "Varestrongylus sagittatus"
@@ -24768,7 +24618,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Varestrongylus",
       "species": "Varestrongylus capreoli"
@@ -24818,7 +24668,7 @@
       "kingdom": "Animalia",
       "phylum": "Nematoda",
       "class": "Chromadorea",
-      "order": "Rhabditida",
+      "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Elaphostrongylus",
       "species": "Elaphostrongylus cervi"
