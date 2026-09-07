@@ -1,5 +1,49 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.33 Aktuálny stav — doplnené (2026‑09‑07, session: slovenský názov sa nezobrazoval v Atlase a nezdal sa uložený v Admin nástroji)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila dva na prvý pohľad súvisiace problémy: (1) Atlas — Detail parazita nezobrazuje slovenský názov (`slovakName`), (2) zmeny v slovenskom názve (cez VS Code aj cez Admin nástroj Parazit) sa „nezmenia" a pri exporte sa stiahne pôvodné pole bez vykonanej zmeny. Postupným code review (`AtlasPage.js`, `parasiteForm.js`, `zipExport.js`, `admin.js`) sa ukázalo, že išlo v skutočnosti o dva nezávislé bugy, nie jeden.
+
+### 🔴→✅ Bug 1: `slovakName` sa v Atlase nikde nevykresľoval
+
+**Príčina:** pole `record.slovakName` sa v `AtlasPage.js` používalo **iba** v `matchesFulltext()` (fulltextové vyhľadávanie) — nikde sa nevykresľovalo do HTML. Ani riadková karta v zozname (`renderRecords()`), ani Detail parazita (`showDetail()`) ho nikdy nezobrazovali. Nešlo teda o regresiu, ale o chýbajúci render od začiatku.
+
+**Riešenie:** doplnený render `record.slovakName` ako podnadpis pod latinským názvom v Detaile parazita (`showDetail()`, nová trieda `.specimen-slovak-name`, pred `synonymsLine()`). V riadkovej karte zoznamu (`renderRecords()`) sa slovenský názov **zámerne nezobrazuje** — autorka potvrdila, že v náhľadoch je zbytočný, stačí len v detaile (pôvodne pridaná trieda `.specimen-row-slovak-name` bola preto odstránená).
+
+⚠️ **`.specimen-slovak-name` zatiaľ nemá vlastný štýl v `atlas.css`** — bez definície sa zobrazuje ako obyčajný text. Ak autorka bude chcieť konkrétny vzhľad (menšie písmo, farba, kurzíva...), treba doplniť pravidlo priamo do `atlas.css` (súbor zatiaľ nebol v tejto session nahraný).
+
+### 🔴→✅ Bug 2: Admin nástroj — `doSearch()` čítal zo starého zdroja dát
+
+**Príčina:** `parasiteForm.js` → `doSearch()` (vyhľadávanie parazita v Admin nástroji) filtrovalo a načítavalo záznam z **`state.parasites`** — pôvodné, nezmenené dáta načítané pri štarte appky. Uložené zmeny (po kliknutí „Uložiť") ale pribúdajú len do **`state.workingCopy`** (presne to isté pole, ktoré `zipExport.js` exportuje). Takže: úprava `slovakName` sa síce správne uložila do `workingCopy`, ale pri opätovnom vyhľadaní toho istého parazita v Admin nástroji sa ukázala stará hodnota z `state.parasites` — vyzeralo to, akoby sa zmena vôbec neuložila. Rovnaký vzorec bugu (dva paralelné zdroje dát, jeden nepoužívaný) ako už raz zdokumentovaný v §0.5/§0.22.
+
+**Riešenie:** obe miesta v `doSearch()` (filter aj find po kliku na výsledok) prepnuté zo `state.parasites` na `state.workingCopy`.
+
+**Export (`zipExport.js`) sám osebe bol v poriadku** — číta `state.workingCopy` priamo bez ďalšieho filtrovania. Aj `addPendingChange()`/`applyChangeToWorkingCopy()`/`rebuildWorkingCopy()` v `admin.js` boli pri code review skontrolované a sú správne (pri `action: 'update'` sa záznam vo `workingCopy` kompletne nahradí `change.data`; pole `id` je pri úprave existujúceho záznamu `readonly`, takže nehrozí ani nesúlad ID). Reálny bug bol teda iba v `doSearch()` — po oprave autorka **naživo potvrdila, že export teraz prebieha korektne**.
+
+### ✅ Overené autorkou naživo
+
+- Export zo zmeneným slovenským názvom sa po oprave `doSearch()` sťahuje korektne (potvrdené priamym overením `database/parasites.json` v stiahnutom ZIP-e).
+- Zobrazenie v Detaile parazita zatiaľ naživo neoverené (kód pripravený, čaká na nasadenie/test).
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | doplnený render `record.slovakName` v `showDetail()` (`.specimen-slovak-name`); v `renderRecords()` sa slovenský názov zámerne NEpridáva | ✅ hotové (kód), ⬜ naživo neoverené |
+| `tools/admin/forms/parasiteForm.js` | `doSearch()`: `state.parasites` → `state.workingCopy` (2 miesta: filter výsledkov, find po kliku) | ✅ hotové (kód), ✅ naživo overené autorkou (export) |
+| `tools/admin/zipExport.js` | bez zmeny — pri review potvrdené ako správne (číta `state.workingCopy` priamo) | ✅ overené, nezmenené |
+| `tools/admin/admin.js` | bez zmeny — `addPendingChange`/`applyChangeToWorkingCopy`/`rebuildWorkingCopy` pri review potvrdené ako správne | ✅ overené, nezmenené |
+
+### 🟡 Poznámka pre budúcu session
+
+Ak autorka bude chcieť vlastný vizuálny štýl pre `.specimen-slovak-name` v Detaile (namiesto obyčajného textu), treba nahrať aktuálny `atlas.css` a doplniť doň pravidlo.
+
+---
+
 🔥 0.32 Aktuálny stav — doplnené (2026‑09‑07, session: podpora stredného tlačidla myši / otvárania na novej karte v Atlase)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
