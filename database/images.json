@@ -829,6 +829,31 @@
     "dateAdded": "2026-08-29T11:34:29.873Z"
   },
   {
+    "parasiteId": "myocoptes_musculinus_egg",
+    "url": "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:29.873Z",
+     "isPrimary": true
+  },
+    {
+    "parasiteId": "myocoptes_musculinus_egg",
+    "url": "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:29.873Z"
+  },
+    {
+    "parasiteId": "myocoptes_musculinus_egg",
+    "url": "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:29.873Z"
+  },
+  {
     "parasiteId": "cryptosporidium_parvum_oocyst",
     "url": "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_01.webp",
     "alt": "",

@@ -1336,9 +1336,10 @@
     ]
   },
   {
+    "id": "myocoptes_musculinus_adult",
     "latinName": "Myocoptes musculinus",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Svrabovec myší (Zákožka myšia)",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -1348,24 +1349,22 @@
       "genus": "Myocoptes",
       "species": "Myocoptes musculinus"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Myš",
-      "Plazy"
+      "Myš"
     ],
     "hostNotes": {
-      "Plazy": "Pseudoparazit – nález v truse, pôvod pravdepodobne z koristi (hlodavce)."
+      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
     },
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 150,
+      "lengthMin": 175,
       "lengthMax": 400,
-      "widthMin": 120,
-      "widthMax": 150,
+      "widthMin": 130,
+      "widthMax": 135,
       "unit": "µm"
     },
     "morphology": {
@@ -1374,21 +1373,83 @@
       "shell": "Mäkký, priečne pruhovaný"
     },
     "diagnosticSigns": [
-      "Kožný roztoč hlodavcov s výrazne zväčšenými poslednými pármi nôh u samcov."
+      "Telo hladké, pretiahnuté (elongované), oválne – na rozdiel od Myobia a Radfordia, ktoré majú telo skôr širšie/hranatejšie s menej výraznou chitinizáciou nôh.",
+      "Pohyblivý, aktívny roztoč žijúci na povrchu kože medzi chlpmi (nie v koži)",
+      "Živí sa kožnými šupinami a debris, nie krvou/lymfou (na rozdiel od Myobia musculi) → menej silná imunitná senzibilizácia hostiteľa",
+      "III. a IV. pár nôh je silne chitinizovaný a modifikovaný na uchytávanie chlpu (u samcov tvoria \"úchopové\" štruktúry používané aj pri kopulácii so samičkou/nymfou)",
+      "Pri masívnej infestácii môžu tieto zosilnené nohy dávať srsti bielych zvierat oranžovo-žltkastý nádych"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Myocoptes môže byť potrebná molekulová identifikácia."
+      "Myobia musculi - Telo menej hladké, nohy menej chitinizované, saje lymfu/tkanivový mok, závažnejšie lézie (hlava, krk, ramená)",
+      "Radfordia affinis / R. ensifera\t- Morfologicky podobné Myobia, hostiteľ (R. ensifera – potkan)",
+      "Polyplax serrata (voš) - Hmyz (6 nôh v dospelosti, iná morfológia hlavy s bodavo-sacím ústrojenstvom), nie roztoč"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+    "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
     "zoonosis": false,
-    "notes": "",
-    "id": "myocoptes_musculinus_adult",
     "images": [
       "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_01.webp"
-    ]
+    ],
+    "references": [],
+    "notes": ""
+  },
+    {
+    "id": "myocoptes_musculinus_egg",
+    "latinName": "Myocoptes musculinus",
+    "synonyms": [],
+    "slovakName": "Svrabovec myší (Zákožka myšia)",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Myocoptidae",
+      "genus": "Myocoptes",
+      "species": "Myocoptes musculinus"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Myš"
+    ],
+    "hostNotes": {
+      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
+    },
+    "sample": "Koža",
+    "stage": "Vajíčko",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 175,
+      "lengthMax": 400,
+      "widthMin": 130,
+      "widthMax": 135,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká, hladká"
+    },
+    "diagnosticSigns": [
+      "Telo hladké, pretiahnuté (elongované), oválne – na rozdiel od Myobia a Radfordia, ktoré majú telo skôr širšie/hranatejšie s menej výraznou chitinizáciou nôh.",
+      "Pohyblivý, aktívny roztoč žijúci na povrchu kože medzi chlpmi (nie v koži)",
+      "Živí sa kožnými šupinami a debris, nie krvou/lymfou (na rozdiel od Myobia musculi) → menej silná imunitná senzibilizácia hostiteľa",
+      "III. a IV. pár nôh je silne chitinizovaný a modifikovaný na uchytávanie chlpu (u samcov tvoria \"úchopové\" štruktúry používané aj pri kopulácii so samičkou/nymfou)",
+      "Pri masívnej infestácii môžu tieto zosilnené nohy dávať srsti bielych zvierat oranžovo-žltkastý nádych"
+    ],
+    "differentialDiagnosis": [
+      "Myobia musculi - Telo menej hladké, nohy menej chitinizované, saje lymfu/tkanivový mok, závažnejšie lézie (hlava, krk, ramená)",
+      "Radfordia affinis / R. ensifera\t- Morfologicky podobné Myobia, hostiteľ (R. ensifera – potkan)",
+      "Polyplax serrata (voš) - Hmyz (6 nôh v dospelosti, iná morfológia hlavy s bodavo-sacím ústrojenstvom), nie roztoč"
+    ],
+    "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+    "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
+    "zoonosis": false,
+    "images": [
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp"
+    ],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Cysticercus tenuicollis",
