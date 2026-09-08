@@ -1319,12 +1319,12 @@
     },
     "diagnosticSigns": [
       "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Tenká hladká bezfarebná škrupina",
+      "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
+      "Morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
     ],
     "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
+      "Vajíčko morfologicky nerozlíšiteľné od ostatných strongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -1393,7 +1393,7 @@
     "references": [],
     "notes": ""
   },
-    {
+  {
     "id": "myocoptes_musculinus_egg",
     "latinName": "Myocoptes musculinus",
     "synonyms": [],
@@ -1419,28 +1419,80 @@
     "group": "Arachnida",
     "methods": [],
     "micrometry": {
-      "lengthMin": 175,
-      "lengthMax": 400,
-      "widthMin": 130,
-      "widthMax": 135,
+      "lengthMin": 150,
+      "lengthMax": 200,
+      "widthMin": 70,
+      "widthMax": 100,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
+      "shape": "Eliptický",
       "colour": "Bezfarebný",
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Vajíčko je oválneho tvaru, pevne prichytené k spodnej časti chlpu, často v blízkosti pokožky",
-      "Pri masívnej infestácii môžu tieto zosilnené nohy dávať srsti bielych zvierat oranžovo-žltkastý nádych"
+      "Vajíčko je oválneho tvaru, pevne prichytené k spodnej časti chlpu, často v blízkosti pokožky"
     ],
     "differentialDiagnosis": [
-      "Myobia musculi - Telo menej hladké, nohy menej chitinizované, saje lymfu/tkanivový mok, závažnejšie lézie (hlava, krk, ramená)",
-      "Radfordia affinis / R. ensifera\t- Morfologicky podobné Myobia, hostiteľ (R. ensifera – potkan)",
-      "Polyplax serrata (voš) - Hmyz (6 nôh v dospelosti, iná morfológia hlavy s bodavo-sacím ústrojenstvom), nie roztoč"
+      "Pre M. musculinus je typická distálnejšia poloha na vlasovom/chlpovom stvole, v porovnaní s Myobia musculi, ktorej vajíčka sa nachádzajú skôr proximálne",
+      "Samotné vajíčko nie je vhodné na spoľahlivú druhovú identifikáciu, pretože vajíčka bežných myších kožných roztočov sú si morfologicky veľmi podobné. Druhovú identifikáciu treba potvrdiť nálezom dospelca alebo nymfy."
     ],
     "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
     "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
+    "zoonosis": false,
+    "images": [
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp",
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_02.webp",
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_03.webp"
+    ],
+    "references": [],
+    "notes": ""
+  },
+   {
+    "id": "myocoptes_musculinus_egg",
+    "latinName": "Myocoptes musculinus",
+    "synonyms": [],
+    "slovakName": "Svrabovec myší (Zákožka myšia)",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Myocoptidae",
+      "genus": "Myocoptes",
+      "species": "Myocoptes musculinus"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Plazy"
+    ],
+    "hostNotes": {
+      "Plazy": "V truse ako pasívne prehltnutý ektoparazit koristi."
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Arachnida",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 150,
+      "lengthMax": 200,
+      "widthMin": 70,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká, hladká"
+    },
+    "diagnosticSigns": [
+      "Vajíčko je oválneho tvaru, pevne prichytené k spodnej časti chlpu, často v blízkosti pokožky"
+    ],
+    "differentialDiagnosis": [
+      "Samotné vajíčko nie je vhodné na spoľahlivú druhovú identifikáciu, pretože vajíčka bežných myších kožných roztočov sú si morfologicky veľmi podobné. Druhovú identifikáciu treba potvrdiť nálezom dospelca alebo nymfy."
+    ],
+    "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+    "pathology": "Nie je to parazit plazov, do trusu sa dostáva pasívne prehltnutím ektoparazita koristi. V truse plazov sa môže objaviť ako náhodný nález.",
     "zoonosis": false,
     "images": [
       "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp",
@@ -21633,9 +21685,8 @@
       "Kožný roztoč hlodavcov s charakteristicky zahnutými pazúrikmi na 1. a 2. páre nôh."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Myobia môže byť potrebná molekulová identifikácia."
+      "Pre M. musculinus je typická distálnejšia poloha na vlasovom/chlpovom stvole, v porovnaní s Myobia musculi, ktorej vajíčka sa nachádzajú skôr proximálne",
+      "Samotné vajíčko nie je vhodné na spoľahlivú druhovú identifikáciu, pretože vajíčka bežných myších kožných roztočov sú si morfologicky veľmi podobné. Druhovú identifikáciu treba potvrdiť nálezom dospelca alebo nymfy."
     ],
     "lifeCycle": "",
     "pathology": "",
