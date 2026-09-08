@@ -821,6 +821,23 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "alaria_alata_mesocercaria",
+    "url": "/public/images/parasites/alaria_alata_mesocercaria/alaria_alata_mesocercaria_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:32:00.062Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "alaria_alata_mesocercaria",
+    "url": "/public/images/parasites/alaria_alata_mesocercaria/alaria_alata_mesocercaria_02.webp",
+    "alt": "",
+    "caption": "Jedna encystované a jedna voľná mesocercária",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:32:00.062Z"
+  },
+  {
     "parasiteId": "ostertagia_sp_egg",
     "url": "/public/images/parasites/ostertagia_sp_egg/ostertagia_sp_egg_01.webp",
     "alt": "",
