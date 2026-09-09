@@ -340,7 +340,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:02.705Z"
+    "dateAdded": "2026-08-28T20:00:02.705Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "taenia_sp_egg",
@@ -364,8 +365,15 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:00:02.705Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-28T20:00:02.705Z"
+  },
+  {
+    "parasiteId": "taenia_sp_egg",
+    "url": "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:00:02.705Z"
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
@@ -772,12 +780,29 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "nematodirus_battus_egg",
-    "url": "/public/images/parasites/nematodirus_battus_egg/nematodirus_battus_egg_01.webp",
+    "parasiteId": "nematodirus_sp_egg",
+    "url": "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:07:44.317Z"
+  },
+  {
+    "parasiteId": "nematodirus_sp_egg",
+    "url": "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:07:44.317Z"
+  },
+   {
+    "parasiteId": "nematodirus_sp_egg",
+    "url": "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:07:44.317Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "alaria_alata_adult",
@@ -838,8 +863,33 @@
     "dateAdded": "2026-08-29T11:32:00.062Z"
   },
   {
-    "parasiteId": "ostertagia_sp_egg",
-    "url": "/public/images/parasites/ostertagia_sp_egg/ostertagia_sp_egg_01.webp",
+    "parasiteId": "strongylida_egg",
+    "url": "/public/images/parasites/strongylida_egg/strongylida_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:09.538Z"
+  },
+  {
+    "parasiteId": "strongylida_egg",
+    "url": "/public/images/parasites/strongylida_egg/strongylida_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:09.538Z"
+  },
+  {
+    "parasiteId": "strongylida_egg",
+    "url": "/public/images/parasites/strongylida_egg/strongylida_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:09.538Z",
+     "isPrimary": true
+  },
+  {
+    "parasiteId": "strongylida_egg",
+    "url": "/public/images/parasites/strongylida_egg/strongylida_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -896,14 +946,6 @@
   },
   {
     "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.657Z"
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
     "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_02.webp",
     "alt": "",
     "caption": "",
@@ -932,7 +974,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.697Z"
+    "dateAdded": "2026-08-29T11:35:13.697Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "cysticercus_tenuicollis_larva",
@@ -941,47 +984,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:35:13.706Z"
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.716Z"
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.725Z"
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.735Z"
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.743Z",
-    "isPrimary": true
-  },
-  {
-    "parasiteId": "cysticercus_tenuicollis_larva",
-    "url": "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:35:13.752Z"
   },
   {
     "parasiteId": "cysticercus_tenuicollis_larva",
@@ -1013,8 +1015,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:35:27.121Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-29T11:35:27.121Z"
   },
   {
     "parasiteId": "cysticercus_pisiformis_larva",
@@ -1039,6 +1040,23 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:35:27.146Z"
+  },
+   {
+    "parasiteId": "cysticercus_pisiformis_larva",
+    "url": "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_07.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.146Z"
+  },
+   {
+    "parasiteId": "cysticercus_pisiformis_larva",
+    "url": "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_08.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.146Z",
+     "isPrimary": true
   },
   {
     "parasiteId": "fasciola_hepatica_egg",
@@ -1258,23 +1276,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:38:02.954Z"
-  },
-  {
-    "parasiteId": "trichostrongylus_sp_egg",
-    "url": "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:38:37.314Z"
-  },
-  {
-    "parasiteId": "trichostrongylus_sp_egg",
-    "url": "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:38:37.328Z",
-    "isPrimary": true
   },
   {
     "parasiteId": "trichuris_sp_egg",
@@ -2185,14 +2186,6 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:51:54.246Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "cooperia_oncophora_egg",
-    "url": "/public/images/parasites/cooperia_oncophora_egg/cooperia_oncophora_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:53:11.379Z"
   },
   {
     "parasiteId": "crenosoma_striatum_larva",
@@ -3712,30 +3705,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "nematodirus_helvetianus_egg",
-    "url": "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:25:22.725Z"
-  },
-  {
-    "parasiteId": "nematodirus_helvetianus_egg",
-    "url": "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:25:22.743Z"
-  },
-  {
-    "parasiteId": "nematodirus_helvetianus_egg",
-    "url": "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:25:22.758Z"
-  },
-  {
     "parasiteId": "notoedres_muris_adult",
     "url": "/public/images/parasites/notoedres_muris_adult/notoedres_muris_adult_01.webp",
     "alt": "",
@@ -3839,22 +3808,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:27:31.998Z"
-  },
-  {
-    "parasiteId": "oesophagostomum_radiatum_egg",
-    "url": "/public/images/parasites/oesophagostomum_radiatum_egg/oesophagostomum_radiatum_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:27:46.581Z"
-  },
-  {
-    "parasiteId": "oesophagostomum_radiatum_egg",
-    "url": "/public/images/parasites/oesophagostomum_radiatum_egg/oesophagostomum_radiatum_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:27:46.595Z"
   },
   {
     "parasiteId": "parascaris_equorum_egg",

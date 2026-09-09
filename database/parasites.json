@@ -529,7 +529,9 @@
     "images": [
       "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_01.webp",
       "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_02.webp",
-      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_03.webp"
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_03.webp",
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_04.webp",
+      "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_05.webp"
     ],
     "references": [],
     "notes": "Nález potvrdzuje infekciu Taeniidae, ale nerozlíši Taenia od Echinococcus"
@@ -664,7 +666,7 @@
       "/public/images/parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01.webp"
     ],
     "references": [],
-    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako Ancylostomatidae alebo Ancylostoma/Uncinaria bez určenia druhu"
+    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu"
   },
   {
     "id": "dirofilaria_immitis_larva",
@@ -1227,8 +1229,8 @@
     "notes": ""
   },
   {
-    "id": "nematodirus_battus_egg",
-    "latinName": "Nematodirus battus",
+    "id": "nematodirus_sp_egg",
+    "latinName": "Nematodirus sp.",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -1241,7 +1243,9 @@
       "species": "neurčené do druhu"
     },
     "hostGroups": [
-      "Bezstavovce"
+      "Domáce prežúvavce",
+      "ZOO prežúvavce",
+      "Voľne žijúce prežúvavce"
     ],
     "hosts": [
       "Ovca"
@@ -1254,10 +1258,10 @@
     "group": "Nematoda",
     "methods": [],
     "micrometry": {
-      "lengthMin": 180,
-      "lengthMax": 230,
-      "widthMin": 100,
-      "widthMax": 120,
+      "lengthMin": 150,
+      "lengthMax": 260,
+      "widthMin": 65,
+      "widthMax": 110,
       "unit": "µm"
     },
     "morphology": {
@@ -1266,23 +1270,24 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Veľké elipsovité vajíčko s niekoľkými veľkými blastomérami",
-      "Skôr pretiahnutý/strongylidný obrys než typicky oválny tvar iných druhov rodu Nematodirus"
+      "Veľké elipsovité vajíčko s 4-8 veľkými blastomérami"
     ],
     "differentialDiagnosis": [
-      "Vajíčka N. battus môžu byť v truse zamenené za vajíčka komplexu gastrointestinálnych strongylidov, napríklad Haemonchus, Trichostrongylus, Teladorsagia, Ostertagia, Cooperia alebo Oesophagostomum. Vajíčko N. battus je odlíšiteľné svojou veľkosťou a málopočetnými blastomérami."
+      "Vajíčka iných rodov radu Strongylida (napríklad Haemonchus, Trichostrongylus, Ostertagia, Cooperia alebo Oesophagostomum) sú menšie a majú viac zárodočnýchbuniek."
     ],
     "lifeCycle": "Vajíčko sa vylučuje trusom už v štádiu s niekoľkými blastomérami\nZvláštnosť rodu: vývoj L1 → L2 → L3 prebieha vo vnútri vajíčka (na rozdiel od väčšiny trichostrongylidov, kde sa larva liahne skoro a vyvíja sa voľne v prostredí)\nVyliahnutie infekčnej L3 z vajíčka vyžaduje špecifické podmienky – u N. battus je typická potreba obdobia chladu (prezimovanie) a následné jarné otepľovanie, čo vedie k synchronizovanému hromadnému liahnutiu lariev na jar.\nTáto synchronizácia spôsobuje typický jarnú \"nematodirovú explóziu\" – masovú infekciu najmä u jahniat na paši\nPo pozretí hostiteľom: exystácia v tenkom čreve, vývoj L3 → L4 → dospelec priamo v sliznici, bez hlbokej migrácie do tkanív\nPrepatentná perióda: cca 2–3 týždne",
     "pathology": "Postihnuté je najmä jejunum\nPatogénne pôsobia predovšetkým larválne štádiá (L4), ktoré poškodzujú črevné klky a spôsobujú:\nkatarálnu až hemoragickú enteritídu\natrofiu klkov, malabsorpciu\nprofúznu hnačku, dehydratáciu\nstratu hmotnosti, spomalenie rastu\nPri masívnej jarnej infekcii u jahniat môže dôjsť k akútnej klinickej nematodiróze s vysokou mortalitou ešte pred tým, než sa vôbec objavia vajíčka v truse (patológia predbieha prepatentné vylučovanie vajíčok – dôležité pre diagnostiku, keďže koprologické vyšetrenie môže byť v čase klinických príznakov ešte negatívne)\nDospelé jedince samotné sú menej patogénne než larválne štádiá",
     "zoonosis": false,
     "images": [
-      "/public/images/parasites/nematodirus_battus_egg/nematodirus_battus_egg_01.webp"
+      "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_01.webp",
+      "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_02.webp",
+      "/public/images/parasites/nematodirus_sp_egg/nematodirus_sp_egg_03.webp"
     ],
     "references": [],
     "notes": ""
   },
-  {
-    "latinName": "Ostertagia sp.",
+   {
+    "latinName": "Strongylida",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -1290,24 +1295,23 @@
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Ostertagia",
+      "family": "neurčené do čeľade",
+      "genus": "neurčený rod",
       "species": "neurčené do druhu"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Domáce prežúvavce",
+       "ZOO prežúvavce",
+       "Voľne žijúce prežúvavce"
     ],
-    "hosts": [
-      "Ovca",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 90,
-      "lengthMax": 280,
+      "lengthMin": 70,
+      "lengthMax": 120,
       "widthMin": 30,
       "widthMax": 60,
       "unit": "µm"
@@ -1319,20 +1323,22 @@
     },
     "diagnosticSigns": [
       "Oválne až elipsovité",
-      "Tenká hladká bezfarebná škrupina",
-      "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "Morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Tenká hladká bezfarebná stena",
+      "Bez viečka (opekula) a bez polarnej zátky",
+      "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylidný' typ vajíčka"
     ],
     "differentialDiagnosis": [
-      "Vajíčko morfologicky nerozlíšiteľné od ostatných strongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
+      "Vajíčka parazitov z radu Strongylida (kam patria Bunostomum, Chabertia, Cooperia, Haemonchus, Nematodirus, Oesophagostomum, Ostertagia, Trichostrongylus) sú morfologicky veľmi podobné a mikroskopicky nerozlíšiteľné. (Rozmery vajíčok sa medzi rodmi mierne prekrývajú – napr. Haemonchus ~70–85 × 35–50 µm, Trichostrongylus ~80–100 × 40–50 µm, Oesophagostomum/Chabertia bývajú na hornej hranici až cca 100–105 × 50–60 µm – diferenciácia podľa veľkosti nie je spoľahlivá.) Druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR.",
+      "Nematodirus sp. – tiež z radu Strongylida, vajíčko je väčšie, s hrubšou škrupinou a obsahuje menej blastomér (zvyčajne 4–8)",
+      "Pri dlhšom státí trusu (teplo) sa vo vajíčku môže už vyvinúť larva – vtedy hrozí zámena s Strongyloides, ich vajíčka sú ale menšie"
     ],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "ostertagia_sp_egg",
+    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: **Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida**.",
+    "id": "strongylida_egg",
     "images": [
-      "/public/images/parasites/ostertagia_sp_egg/ostertagia_sp_egg_01.webp"
+      "/public/images/parasites/strongylida_egg/strongylida_egg_01.webp"
     ]
   },
   {
@@ -1552,17 +1558,11 @@
     "notes": "Číra tekutina",
     "id": "cysticercus_tenuicollis_larva",
     "images": [
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_01.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_02.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_03.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_04.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_05.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_06.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_07.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_08.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_09.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_10.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_11.webp",
       "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_12.webp"
     ]
   },
@@ -1623,7 +1623,9 @@
       "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_03.webp",
       "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_04.webp",
       "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_05.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_06.webp"
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_06.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_07.webp",
+      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_08.webp"
     ]
   },
   {
@@ -2261,7 +2263,8 @@
     },
     "hostGroups": [
       "Domáce prežúvavce",
-      "Ošípané a diviaky"
+      "Ošípané a diviaky",
+      "ZOO prežúvavce"
     ],
     "hosts": [
       "Hovädzí dobytok",
@@ -2303,64 +2306,6 @@
       "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_01.webp",
       "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_02.webp"
     ]
-  },
-  {
-    "latinName": "Haemonchus contortus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Haemonchus",
-      "species": "Haemonchus contortus"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Ovca",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 80,
-      "widthMin": 45,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "pravidelne elipsovité",
-      "symetrické",
-      "tenká hladká škrupina",
-      "viac blastomér (často 16 až 32 buniek)",
-      "veľmi tenká stena",
-      "bunky vypĺňajú takmer celý priestor"
-    ],
-    "differentialDiagnosis": [
-      "Vajíčka parazitov z radu Strongylida (kam patria Bunostomum",
-      "Haemonchus",
-      "Cooperia",
-      "Ostertagia či Trichostrongylus) sú si vizuálne podobné."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "haemonchus_sp_egg",
-    "images": []
   },
   {
     "latinName": "Strongyloides papillosus",
@@ -2683,112 +2628,6 @@
     "zoonosis": true,
     "notes": "",
     "id": "coenurus_cerebralis_larva",
-    "images": []
-  },
-  {
-    "latinName": "Chabertia ovina",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Chabertiidae",
-      "genus": "Chabertia",
-      "species": "Chabertia ovina"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 90,
-      "lengthMax": 105,
-      "widthMin": 50,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčka morfologicky nerozlíšiteľné od iných strongylidných vajec (tzv. 'strongyle-type egg') - nutná larválna kultivácia (koprokultúra) na druhové určenie."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "chabertia_ovina_egg",
-    "images": []
-  },
-  {
-    "latinName": "Oesophagostomum sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Chabertiidae",
-      "genus": "Oesophagostomum",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 73,
-      "lengthMax": 280,
-      "widthMin": 34,
-      "widthMax": 45,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Oesophagostomum môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "oesophagostomum_sp_egg",
     "images": []
   },
   {
@@ -6988,7 +6827,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny) a veľmi podobný druhu A. caninum. Infekčné larvy (L3) sa vyvíjajú v pôde, odkiaľ sa mačka nakazí buď prehltnutím lariev, ich aktívnym prevŕtaním cez kožu, alebo zožratím paratenického hostiteľa (napríklad hlodavca, ktorý v sebe larvy prechováva).",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa prichytávajú na sliznicu a cicajú krv. Infekcia spôsobuje zápaly čreva, stratu hmotnosti, hnačky a anémiu (chudokrvnosť), hoci v porovnaní s psím machovcom býva strata krvi o niečo nižšia a klinické príznaky sú u dospelých mačiek často miernejšie.  Na rozdiel od psieho machovca sa u A. tubaeforme nepotvrdil prenos materským mliekom z mačky na mačiatka. Podobne ako u psieho machovca ide o zoonózu, takže larvy môžu preniknúť aj do kože človeka.",
     "zoonosis": true,
-    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako Ancylostomatidae alebo Ancylostoma/Uncinaria bez určenia druhu",
+    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu",
     "id": "ancylostoma_tubaeforme_egg",
     "images": []
   },
@@ -7149,7 +6988,7 @@
     ]
   },
   {
-    "latinName": "Pearsonema plica",
+    "latinName": "Pearsonema feliscati",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -7159,7 +6998,7 @@
       "order": "Trichinellida",
       "family": "Capillariidae",
       "genus": "Pearsonema",
-      "species": "Pearsonema plica"
+      "species": "Pearsonema feliscati"
     },
     "hostGroups": [
       "Mačkovité mäsožravce"
@@ -7198,7 +7037,7 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "capillaria_plica_egg",
+    "id": "pearsonema_feliscati_egg",
     "images": []
   },
   {
@@ -7883,376 +7722,6 @@
       "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_07.webp",
       "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_08.webp",
       "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_09.webp"
-    ]
-  },
-  {
-    "latinName": "Oesophagostomum radiatum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Chabertiidae",
-      "genus": "Oesophagostomum",
-      "species": "Oesophagostomum radiatum"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 75,
-      "lengthMax": 280,
-      "widthMin": 46,
-      "widthMax": 54,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - nerozlíšiteľné od Cooperia/Trichostrongylus/Haemonchus u hovädzieho dobytka bez koprokultúry."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "oesophagostomum_radiatum_egg",
-    "images": [
-      "/public/images/parasites/oesophagostomum_radiatum_egg/oesophagostomum_radiatum_egg_01.webp",
-      "/public/images/parasites/oesophagostomum_radiatum_egg/oesophagostomum_radiatum_egg_02.webp"
-    ]
-  },
-  {
-    "latinName": "Bunostomum phlebotomum",
-    "synonyms": [],
-    "slovakName": "Machovec hovädzí",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Ancylostomatidae",
-      "genus": "Bunostomum",
-      "species": "Bunostomum phlebotomum"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 75,
-      "lengthMax": 100,
-      "widthMin": 45,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "výrazne tupé",
-      "zaoblené až \"hranaté\"",
-      "tenká hladká škrupina",
-      "menej blastomér (4 až 8 veľkých tmavých buniek)",
-      "veľmi tenká stena",
-      "medzi bunkami a stenou je veľký voľný priestor"
-    ],
-    "differentialDiagnosis": [
-      "Vajíčka parazitov z radu Strongylida (kam patria Bunostomum",
-      "Haemonchus",
-      "Cooperia",
-      "Ostertagia či Trichostrongylus) sú si vizuálne podobné."
-    ],
-    "lifeCycle": "Cyklus je priamy (monoxénny), bez medzihostiteľa, no zahŕňa unikátnu schopnosť lariev prenikať cez kožu:Vylučovanie vajíčok: Dospelé samičky v čreve kladú vajíčka, ktoré odchádzajú s trusom do vonkajšieho prostredia.Vývoj lariev: V truse a pôde sa z vajíčka vyliahne larva L1, ktorá sa dvakrát zvlieka na infekčnú larvu L3. Tento proces vyžaduje teplo a vlhko.Infekcia (Dva spôsoby prenosu):Perkutánne (Cez kožu): Infekčné larvy L3 aktívne prevŕtajú kožu hostiteľa (najčastejšie na končatinách alebo bruchu, keď zviera leží). Krvným obehom putujú do pľúc, odtiaľ sú vykašľané, prehltnuté a končia v tenkom čreve.Perorálne (Prehltnutím): Zvieratá zožerú larvy L3 s kontaminovanou trávou alebo vodou. Tieto larvy putujú priamo do čreva bez pľúcnej migrácie.Dospievanie: V tenkom čreve sa larvy dvakrát zvlečú (L4, L5) a dospelé červy sa pomocou silnej ústnej kapsuly prichytia na sliznicu. Prepatentná perióda (čas od nákazy po prvé vajíčka v truse) trvá okolo 30 až 60 dní.",
-    "pathology": "Patrí k najškodlivejším črevným parazitom dobytka, pretože ide o hematofágneho parazita (živí sa krvou). Na sliznici čreva neustále mení miesta prisatia, pričom rany po ňom kvôli vylučovaným antikoagulanciám (látkam proti zrážaniu krvi) dlho krvácajú. Anémia,  Hypoproteinémia a Edémy - typický podsánkový edém (tzv. bottle jaw – fľašková čelusť) a opuchy na spodnej strane brucha, Tmavé až dechtovité hnačky (meléna) z natrávenej krvi, V mieste masívneho prieniku lariev cez kožu na nohách vzniká svrbenie, zápaly (dermatitídy) a rany, kvôli čomu zvieratá prešľapujú a nepokojne kopú.Celkové chradnutie. Pri neliečení hrozí úhyn (najmä u teliat a mladého dobytka).",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "bunostomum_phlebotomum_egg",
-    "images": []
-  },
-  {
-    "latinName": "Cooperia sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Cooperia",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Ovca"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 80,
-      "widthMin": 36,
-      "widthMax": 44,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "oválne až elipsovité",
-      "viac pretiahnuté",
-      "asymetrické bočné steny",
-      "tenká hladká bezfarebná stena",
-      "steny sú takmer rovnobežné",
-      "pokročilé brázdenie (často už morula",
-      ">32 buniek)"
-    ],
-    "differentialDiagnosis": [
-      "Vajíčka parazitov z radu Strongylida (kam patria Bunostomum",
-      "Haemonchus",
-      "Cooperia",
-      "Ostertagia či Trichostrongylus) sú si vizuálne podobné."
-    ],
-    "lifeCycle": "Vývinový cyklus: priamy, bez medzihostiteľa. Vajíčka odchádzajú trusom → v prostredí sa z nich vyvíjajú larvy L1 → L2 → infekčná L3 → hostiteľ ich prijme potravou/pastvou → L3 sa dostanú do tenkého čreva, kde sa vyvíjajú na dospelce → vajíčka opäť odchádzajú trusom.",
-    "pathology": "Parazitujú najmä v tenkom čreve prežúvavcov. Poškodzujú črevnú sliznicu a môžu spôsobovať enteritídu, hnačku, znížený príjem krmiva, spomalený rast a úbytok hmotnosti. Pri silnej infekcii môže dôjsť k výraznejšiemu poškodeniu čreva a produkčným stratám.",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "cooperia_oncophora_egg",
-    "images": [
-      "/public/images/parasites/cooperia_oncophora_egg/cooperia_oncophora_egg_01.webp"
-    ]
-  },
-  {
-    "latinName": "Cooperia punctata",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Cooperia",
-      "species": "Cooperia punctata"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 69,
-      "lengthMax": 83,
-      "widthMin": 29,
-      "widthMax": 34,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Steny rovnobežné",
-    "id": "cooperia_punctata_egg",
-    "images": []
-  },
-  {
-    "latinName": "Nematodirus filicollis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Molineidae",
-      "genus": "Nematodirus",
-      "species": "Nematodirus filicollis"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "ZOO prežúvavce"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 140,
-      "lengthMax": 165,
-      "widthMin": 70,
-      "widthMax": 85,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Veľké elipsovité vajíčko s tenkou škrupinou a niekoľkými veľkými blastomérami",
-      "typické pre rod Nematodirus."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko výrazne väčšie než u ostatných trichostrongylidov (typicky >160 µm)",
-      "s málopočetnými",
-      "veľkými blastomérami - ľahko odlíšiteľné makromorfologicky."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "2-8 veľkých blastomér",
-    "id": "nematodirus_filicollis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Nematodirus spathiger",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Molineidae",
-      "genus": "Nematodirus",
-      "species": "Nematodirus spathiger"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 180,
-      "lengthMax": 210,
-      "widthMin": 90,
-      "widthMax": 105,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Veľké elipsovité vajíčko s niekoľkými veľkými blastomérami",
-      "typický znak rodu Nematodirus."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko veľké s málopočetnými blastomérami",
-      "ľahko odlíšiteľné od ostatných trichostrongylidov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "2-8 veľkých blastomér",
-    "id": "nematodirus_spathinger_egg",
-    "images": []
-  },
-  {
-    "latinName": "Nematodirus helvetianus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Molineidae",
-      "genus": "Nematodirus",
-      "species": "Nematodirus helvetianus"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 160,
-      "lengthMax": 280,
-      "widthMin": 87,
-      "widthMax": 121,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Veľké elipsovité vajíčko s tenkou hladkou škrupinou; obsahuje len niekoľko veľkých blastomér (typický znak rodu Nematodirus",
-      "odlišuje ho od bežných strongylíd s jemnou morulou)."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko výrazne väčšie než u ostatných trichostrongylidov - ľahko odlíšiteľné od Cooperia/Ostertagia/Haemonchus bez koprokultúry."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "2-8 veľkých blastomér",
-    "id": "nematodirus_helvetianus_egg",
-    "images": [
-      "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_01.webp",
-      "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_02.webp",
-      "/public/images/parasites/nematodirus_helvetianus_egg/nematodirus_helvetianus_egg_03.webp"
     ]
   },
   {
@@ -9444,7 +8913,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny) a zahŕňa viacero ciest nákazy. Infekčné larvy (L3) sa vyvíjajú v pôde z vajíčok z trusu. Hostiteľ sa nakazí buď prehltnutím lariev (z prostredia či materského mlieka suky), alebo ich aktívnym prevŕtaním cez kožu (najčastejšie na labkách). Po preniknutí cez kožu larvy migrujú krvou cez pľúca do tenkého čreva, kde dospievajú",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa ostrými zubami prisávajú na sliznicu a aktívne cicajú krv. Spôsobujú vážne zápalové zmeny čriev, hnačky a ťažkú anémiu (chudokrvnosť), ktorá býva pre mladé šteňatá často smrteľná. U ľudí larvy putujú pod kožou a spôsobujú silne svrbiace ochorenie larva migrans cutanea",
     "zoonosis": true,
-    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako Ancylostomatidae alebo Ancylostoma/Uncinaria bez určenia druhu",
+    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu",
     "id": "ancylostoma_caninum_egg",
     "images": [
       "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_02.webp"
@@ -23433,57 +22902,6 @@
     "zoonosis": false,
     "notes": "4-8 blastomér",
     "id": "bunostomum_sp_egg",
-    "images": []
-  },
-  {
-    "latinName": "Cooperia sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Cooperia",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 65,
-      "lengthMax": 100,
-      "widthMin": 34,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "cooperia_sp_egg",
     "images": []
   },
   {
