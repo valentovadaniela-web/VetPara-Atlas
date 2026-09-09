@@ -1523,7 +1523,9 @@
     },
     "hostGroups": [
       "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
+      "Voľne žijúce prežúvavce",
+      "ZOO prežúvavce",
+      "Ošípané a diviaky"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -1543,17 +1545,21 @@
       "shell": "Priehľadná"
     },
     "diagnosticSigns": [
-      "Veľký",
-      "tenkokrký mechúrikovitý útvar s jedným skolexom s háčikmi",
-      "typicky v dutine brušnej."
+      "Tenkostenný mechúrik (vezikula) vyplnený čírou tekutinou, tvar guľovitý až oválny",
+      "Jediný scolex s háčikmi a prísavkami",
+      "Charakteristický je dlhý tenký krček (odtiaľ názov tenuicollis = tenký krk), ktorý spája scolex s mechúrikom – krček môže dosahovať dĺžku niekoľkých centimetrov",
+      "Bežne 5–8 cm v priemere, pri väčšom náraste tekutiny opisované aj cysty do 10–12 cm",
+      "Lokalizácia najčastejšie na seróznych povrchoch – omentum, mezentérium, peritoneum, pečeň, pľúca, perikardium, pleura",
+      "Voľne visí alebo je pripojený stopkou k seróze"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Taenia môže byť potrebná molekulová identifikácia."
+      "Cysticercus cellulosae (T. solium) scolex bez dlhého krčka, uložený vo svalovine (ošípané)",
+      "Cysticercus bovis (T. saginata) v priečne pruhovanom svale hovädzieho dobytka, bez krčka",
+      "Echinococcus granulosus (hydatídová cysta) hrubšia viacvrstvová stena (germinatívna + laminárna membrána), mnohopočetné protoskolexy, bez krčka, pomalý rast, v pečeni/pľúcach",
+      "Coenurus cerebralis (Multiceps multiceps) jedna membrána s mnohopočetnými scolexmi, lokalizácia v CNS"
     ],
-    "lifeCycle": "Označenie larvy patriacej k Taenia hydatigena,  definitívny hostiteľ pes/líška",
-    "pathology": "",
+    "lifeCycle": "Označenie larvy patriacej k Taenia hydatigena, definitívny hostiteľ pes/líška. \n\n Definitívny hostiteľ (pes/líška) vylučuje s trusom články/vajíčka T. hydatigena \n Medzihostiteľ (ovca, koza, ošípaná) požije vajíčka spolu s kontaminovanou pastvou/krmivom \n Onkosféra sa uvoľní v čreve, prenikne stenou čreva do krvného obehu \n Migruje parenchýmom pečene (trvá cca 2–4 týždne) – tu spôsobuje najväčšie poškodenie \n Prerazí puzdro pečene do brušnej dutiny, prichytí sa na seróznych povrchoch (omentum, mezentérium) \n Vyvinie sa do štádia Cysticercus tenuicollis (infekčný pre definitívneho hostiteľa cca po 2–3 mesiacoch) \n Definitívny hostiteľ sa nakazí požitím vnútorností (pečeň, omentum) s cysticerkami – napr. mäsiarsky odpad, uhynuté zvieratá \n V tenkom čreve sa z jednotlivého scolexu vyvinie dospelá pásomnica (cca 6–10 týždňov)",
+    "pathology": "**Migračná fáza v pečeni:** traumatická hepatitída – hemoragické dráhy, fibrinózne povlaky, drobné belavé ložiská podobné mliečnym škvrnám (ktoré sú typické po migrácii Ascaris/Fasciola) \n **Akútna forma (najmä u jahniat, kozliat, prasiatok pri masívnej infekcii):** traumatická hepatitída s krvácaním do brušnej dutiny, hemoragická peritonitída, v ťažkých prípadoch šok a úhyn \n **Chronická forma:** zvyčajne asymptomatická, cysty nachádzané náhodne pri veterinárnej prehliadke jatočných tiel \n **Ekonomický význam:** konfiškácia postihnutých pečení na bitúnkoch, straty v chove",
     "zoonosis": false,
     "notes": "Číra tekutina",
     "id": "cysticercus_tenuicollis_larva",
@@ -1583,10 +1589,7 @@
       "Zajace, králiky",
       "Hlodavce"
     ],
-    "hosts": [
-      "Králik",
-      "Hlodavce"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Peritoneum",
     "stage": "Larva",
@@ -1604,18 +1607,20 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Predĺžená mechúrikovitá larva s jedným skolexom s háčikmi",
-      "typicky na peritoneu."
+      "Malé oválne cysty s jedným scolexom na krátkom krčku",
+      "Lokalizácia typicky na omente, mezenteriu a pod puzdrom pečene (podobne ako C. tenuicollis, ale u iného hostiteľa a menších rozmerov)",
+      "Často vo veľkom počte (mnohopočetná infekcia) – typický je nález desiatok až stoviek cýst v brušnej dutine jedného zajaca/králika",
+      "Vzhľadovo pripomína zhluk hráškov na seróznych blanách"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Taenia môže byť potrebná molekulová identifikácia."
+      "Cysticercus tenuicollis - väčší (do 5–8 cm), dlhý tenký krček, hostiteľ prežúvavce/ošípané",
+      "Coenurus serialis (Taenia serialis) - u zajaca/králika, ale viacpočetné scolexy v jednej cyste (na rozdiel od jedného scolexu u C. pisiformis), lokalizácia hlavne v podkoží a intermuskulárnom väzive",
+      "Cysticercus cellulosae/bovis - iný hostiteľ (ošípaná/hovädzí dobytok), lokalizácia vo svalovine"
     ],
-    "lifeCycle": "Označenie larvy patriacej k Taenia pisiformis, definitívny hostiteľ pes/líška.",
-    "pathology": "",
+    "lifeCycle": "Označenie larvy patriacej k Taenia pisiformis, definitívny hostiteľ pes/líška. \n Definitívny hostiteľ (pes/líška) vylučuje trusom vajíčka/články T. pisiformis\n Zajac alebo králik požije vajíčka spolu s kontaminovanou pastvou\n Onkosféra prenikne stenou čreva, migruje krvným obehom do pečene\n Migračná fáza v pečeňovom parenchýme (cca 2–4 týždne) – poškodzuje pečeňové tkanivo\n Larva prerazí puzdro pečene do brušnej dutiny, prichytáva sa na omente a mezenteriu\n Vyvinie sa do infekčného štádia Cysticercus pisiformis (cca za 2–3 mesiace)\n Definitívny hostiteľ (pes) sa nakazí požitím vnútorností uloveného zajaca/králika s cysticerkami\n V tenkom čreve psa sa vyvinie dospelá T. pisiformis (za cca 1,5–2 mesiace)",
+    "pathology": "**Migračná fáza v pečeni:** traumatická hepatitída, hemoragické dráhy podobné mliečnym škvrnám, fibrinózne pruhy na povrchu pečene\n **Pri masívnej infekcii u mláďat zajacov/králikov:** môže spôsobiť ťažké poškodenie pečene, celkovú slabosť, chudnutie, v ťažkých prípadoch aj úhyn\n **Chronická forma:** cysty na omente a mezenteriu bývajú väčšinou asymptomatické, nález často náhodný pri veterinárnej prehliadke alebo pitve\n Význam najmä v chovoch králikov (komerčné farmy) – ekonomické straty pri vysokej intenzite infekcie",
     "zoonosis": false,
-    "notes": "U králika lokalizácia v pečeni a peritoneálnej dutine.",
+    "notes": "",
     "id": "cysticercus_pisiformis_larva",
     "images": [
       "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_01.webp",
@@ -1644,9 +1649,7 @@
     "hostGroups": [
       "Zajace, králiky"
     ],
-    "hosts": [
-      "Ovca"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Podkožie",
     "stage": "Larva",
@@ -1664,22 +1667,83 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Mechúrikovitý útvar s mnohými skolexami usporiadanými v radoch; typicky v podkoží. Ide o tenkostennú mechúrikovitú cystu naplnenú tekutinou",
-      "ktorá dosahuje veľkosť od niekoľkých centimetrov až po veľkosť slepačieho vajca. Charakteristickým znakom je",
-      "že z vnútornej zárodočnej vrstvy (germinálna membrána) vyrastajú skupiny invaginovaných scolexov (hlavičiek) usporiadané v líniách alebo radoch (odtiaľ názov serialis)."
+      "Mnohopočetné scolexy (desiatky až stovky) usporiadané v skupinkách (radoch) na vnútornej stene jedinej cysty – odtiaľ názov serialis (radený, sériový)",
+      "Tenká membrána vypĺňajúca celý mechúrik čírou tekutinou",
+      "Lokalizácia typicky v podkoží a intermuskulárnom väzive (najmä v oblasti chrbta, slabín, končatín), na rozdiel od cysticerkov, ktoré sú v brušnej dutine.",
+      "Cysta rastie pomaly, vytvára laločnaté, mnohokomorové útvary!"
     ],
     "differentialDiagnosis": [
-      "Coenurus cerebralis (Taenia multiceps): Cysty sú lokalizované takmer výlučne v centrálnom nervovom systéme (mozog",
-      "miecha) prežúvavcov",
-      "pričom scolexy sú v cyste usporiadané v nepravidelných zhlukoch (nie v radoch).Echinococcus granulosus (hydatida): Obsahuje dcérske mechúriky a voľný hydatidový piesok (scolexy)",
-      "pričom stena cysty je hrubá a vrstvená.Cysticercus pisiformis: Je podstatne menší a obsahuje iba jeden jediný scolex vo vnútri mechúrika."
+      "Cysticercus pisiformis -jediný scolex na krátkom krčku, lokalizácia na omente/mezenteriu, ten istý hostiteľ (zajac/králik)",
+      "Coenurus cerebralis (Multiceps multiceps) - tiež mnohopočetné scolexy, ale lokalizácia v CNS (mozog, miecha) prežúvavcov",
+      "Echinococcus granulosus (hydatídová cysta) - mnohopočetné protoskolexy, ale hrubšia laminárna + germinatívna membrána, lokalizácia v pečeni/pľúcach."
     ],
-    "lifeCycle": "Coenurus serialis je larválne štádium druhu Taenia serialis (definitívny hostiteľ pes/líška). Definitívny hostiteľ (pes) vylučuje trusom zrelé články pásomnice plné vajíčok do vonkajšieho prostredia.Medzihostiteľ (zajac) sa nakazí ingesciou (zožratím) vajíčok kontaminovanou potravou alebo vodou.V čreve medzihostiteľa sa z vajíčka uvoľní larva (onkosféra), ktorá preniká cez črevnú stenu do krvného obehu.Krvou je zanesená najmä do podkožného tkaniva a medzisvalového spojiva, kde sa vyvinie na larválne štádium – coenurus.Cyklus sa uzavrie, keď definitívny hostiteľ zožerie medzihostiteľa (alebo jeho tkanivá) s inváziuschopnými cystami.",
-    "pathology": "U medzihostiteľov: Cysty sa tvoria primárne v podkoží, kostrovom svalstve a niekedy za okom (retrobulbárne). Tlakom rastúcej cysty dochádza k mechanickej atrofii okolitých svalov a tkanív. Navonok sú viditeľné ako podkožné uzly. Masívna infekcia môže zvieraťu obmedzovať pohyb, spôsobovať krívanie alebo exoftalmus (vystúpenie oka z očnice).U definitívnych hostiteľov: Dospelé pásomnice v čreve psov zväčša nespôsobujú vážne lézie, prejavujú sa len miernou enteritídou (zápalom čreva) alebo prechodnými tráviacimi ťažkosťami pri masívnom začervení.",
-    "zoonosis": true,
+    "lifeCycle": "Definitívny hostiteľ (pes/líška) vylučuje trusom vajíčka/články T. serialis. \n Zajac/králik požije vajíčka s kontaminovanou potravou\n Onkosféra prenikne stenou čreva, krvným obehom sa dostáva do tkanív\n Migruje predovšetkým do podkožného a intermuskulárneho väziva (na rozdiel od pečeňovej migrácie u T. pisiformis/T. hydatigena)\n Vyvíja sa pomaly do štádia Coenurus serialis s mnohopočetnými scolexmi (proces trvá niekoľko mesiacov)\n Definitívny hostiteľ (pes) sa nakazí požitím tkanív infikovaného zajaca/králika s coenurom\n V tenkom čreve psa sa z každého scolexu vyvinie samostatná dospelá pásomnica T. serialis – pri jednej infekcii teda môže vzniknúť veľké množstvo dospelých jedincov naraz (dôsledok mnohopočetnosti scolexov)",
+    "pathology": "Cysta v podkoží/väzive spôsobuje postupne rastúcu, nebolestivú vyklenutú masu (podobne ako nádor alebo absces)\n Pri väčších cystách môže dôjsť k mechanickému obmedzeniu pohybu (pri lokalizácii v oblasti končatín, chrbta)\n Zriedkavo môže dôjsť k sekundárnej bakteriálnej infekcii cysty\n Vo všeobecnosti nízka akútna patogenita, skôr chronický, priestorovo obmedzujúci účinok\n Ekonomický význam hlavne pri chove králikov (znehodnotenie jatočného tela, zníženie úžitkovosti).",
+    "zoonosis": false,
     "notes": "",
     "id": "coenurus_serialis_larva",
-    "images": []
+    "images": [
+    "/public/images/parasites/coenurus_serialis_larva/coenurus_serialis_larva_01.webp"
+    ]
+  },
+  {
+    "latinName": "Coenurus cerebralis",
+    "synonyms": [
+      "Multiceps multiceps"
+    ],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Taeniidae",
+      "genus": "Taenia",
+      "species": "Coenurus serialis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Ovca",
+      "Koza",
+      "Hovädzí dobytok",
+      "Kôň"
+    ],
+    "hostNotes": {},
+    "sample": "Mozog",
+    "stage": "Larva",
+    "group": "Cestoda",
+    "micrometry": {
+      "lengthMin": 20000,
+      "lengthMax": 60000,
+      "widthMin": 20000,
+      "widthMax": 60000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Mechúrik",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Mnohopočetné scolexy (desiatky až stovky) usporiadané v skupinkách na vnútornej stene cysty – rovnaký typ ako Coenurus serialis, ale iná lokalizácia a iný medzihostiteľ",
+      "Tenká priehľadná membrána, dobre viditeľné scolexy voľným okom ako biele bodky na vnútornej stene",
+      "Výhradná lokalizácia v CNS – mozog (najčastejšie), zriedkavejšie miecha",
+      "Cysta rastie pomaly (mesiace), postupne utláča okolité nervové tkanivo"
+
+    ],
+    "differentialDiagnosis": [
+      "Coenurus serialis - mnohopočetné scolexy, ale lokalizácia v podkoží/intermuskulárnom väzive zajaca/králika",
+      "Echinococcus granulosus - (hydatídová cysta) - mnohopočetné protoskolexy, hrubšia laminárna membrána, lokalizácia v pečeni/pľúcach, nie v CNS",
+      "Cysticercus tenuicollis - 1 scolex na dlhom krčku, lokalizácia v brušnej dutine (omentum, pečeň), nie v CNS"
+     ],
+    "lifeCycle": "Definitívny hostiteľ (pes/líška) vylučuje trusom vajíčka/články T. multiceps. \n Ovca/koza požije vajíčka spolu s kontaminovanou pastvou\n Onkosféra prenikne stenou čreva, krvným obehom preniká cez hematoencefalickú bariéru do CNS\n Migruje a vyvíja sa priamo v mozgovom/miechovom tkanive (na rozdiel od T. hydatigena a T. pisiformis, ktoré migrujú cez pečeň)\n Postupný vývoj cysty s mnohopočetnými scolexmi trvá cca 2–8 mesiacov v závislosti od štádia a klinických prejavov (pozri nižšie – akútna vs. chronická forma)\n Definitívny hostiteľ (pes) sa nakazí konzumáciou mozgu/miechy uhynutej alebo zabitej ovce s coenurom\n V tenkom čreve psa sa z každého scolexu vyvinie samostatná dospelá pásomnica – opäť mnohopočetná infekcia z jednej cysty",
+    "pathology": "Ochorenie sa označuje ako cenuróza (coenurosis), ľudovo vrtohlavosť. \n Akútna forma (primárna migrácia)\n Vzniká krátko po infekcii (1.–3. týždeň) v dôsledku migrácie väčšieho počtu onkosfér mozgovým tkanivom\n Nešpecifické neurologické príznaky: horúčka, excitácia, kŕče, niekedy úhyn v priebehu niekoľkých dní\n Často sa prehliadne alebo zamení za iné neurologické ochorenie\n \n Chronická forma (klasická vrtohlavosť)\n Vzniká za 2–8 mesiacov, keď cysta dorastie do veľkosti spôsobujúcej útlak mozgového tkaniva\n Typický klinický príznak: kruhovité, otáčavé pohyby smerom k strane postihnutej hemisféry mozgu \n Ďalšie príznaky: porucha koordinácie, slepota (pri lokalizácii v okcipitálnej oblasti), abnormálne držanie hlavy, kŕče, paralýza pri lokalizácii v mieche\n Neliečené vedie k progresívnemu zhoršovaniu, chudnutiu a úhynu\n Ekonomicky veľmi významné ochorenie v chovoch oviec, najmä v regiónoch s vysokým výskytom voľne pohybujúcich sa psov (pastierske psy, poľovnícke oblasti)\n \n Zoonotický potenciál\n Taenia multiceps má preukázaný, aj keď zriedkavý zoonotický potenciál. V odbornej literatúre sú zdokumentované prípady humánnej cenurózy, kde larva napadá:\n CNS (mozog, miecha) – najzávažnejšia forma, s podobnými príznakmi ako u oviec (neurologické deficity, zvýšený vnútrolebečný tlak)\n Oko (okulárna cenuróza)\n Podkožie a svalstvo (subkutánna/intramuskulárna forma)",
+    "zoonosis": true,
+    "notes": "",
+    "id": "coenurus_cerebralis_larva",
+    "images": [
+    "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp"
+    ]
   },
   {
     "latinName": "Cryptosporidium parvum",

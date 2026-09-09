@@ -1049,7 +1049,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:35:27.146Z"
   },
-   {
+  {
     "parasiteId": "cysticercus_pisiformis_larva",
     "url": "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_08.webp",
     "alt": "",
@@ -1057,6 +1057,22 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:35:27.146Z",
      "isPrimary": true
+  },
+  {
+    "parasiteId": "coenurus_serialis_larva",
+    "url": "/public/images/parasites/coenurus_serialis_larva/coenurus_serialis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.146Z"
+  },
+  {
+    "parasiteId": "coenurus_cerebralis_larva",
+    "url": "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.146Z"
   },
   {
     "parasiteId": "fasciola_hepatica_egg",
