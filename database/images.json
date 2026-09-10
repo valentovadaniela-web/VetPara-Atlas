@@ -1,14 +1,6 @@
 [
   {
     "parasiteId": "aelurostrongylus_abstrusus_larva",
-    "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_01.webp",
-    "alt": "",
-    "caption": "160x zväčšenie (mačka)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "aelurostrongylus_abstrusus_larva",
     "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_02.webp",
     "alt": "",
     "caption": "400x zväčšenie (mačka)",
@@ -39,31 +31,7 @@
     "caption": "Histologický preparát (HE farbenie)",
     "credit": "",
     "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "aelurostrongylus_abstrusus_larva",
-    "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_06.webp",
-    "alt": "",
-    "caption": "Histologický preparát (HE farbenie)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "aelurostrongylus_abstrusus_larva",
-    "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_07.webp",
-    "alt": "",
-    "caption": "Histologický preparát (HE farbenie)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "aelurostrongylus_abstrusus_larva",
-    "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_08.webp",
-    "alt": "",
-    "caption": "Histologický preparát (HE farbenie)",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
+  }, 
   {
     "parasiteId": "aelurostrongylus_abstrusus_larva",
     "url": "/public/images/parasites/aelurostrongylus_abstrusus_larva/aelurostrongylus_abstrusus_larva_09.webp",
@@ -100,14 +68,6 @@
   {
     "parasiteId": "toxascaris_leonina_egg",
     "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-21T10:00:00.000Z"
-  },
-  {
-    "parasiteId": "toxascaris_leonina_egg",
-    "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -156,46 +116,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-22T15:16:42.607Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T18:46:29.273Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T18:46:29.273Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T18:46:29.273Z"
-  },
-  {
     "parasiteId": "sarcocystis_sp_oocyst",
     "url": "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_01.webp",
     "alt": "",
@@ -221,12 +141,29 @@
     "dateAdded": "2026-08-28T19:55:42.086Z"
   },
   {
-    "parasiteId": "sarcocystis_sp_oocyst",
-    "url": "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_04.webp",
+    "parasiteId": "eucoleus_boehmi_egg",
+    "url": "/public/images/parasites/eucoleus_boehmi_egg/eucoleus_boehmi_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T19:55:42.090Z"
+    "dateAdded": "2026-08-28T19:56:27.388Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "eucoleus_boehmi_egg",
+    "url": "/public/images/parasites/eucoleus_boehmi_egg/eucoleus_boehmi_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:56:27.388Z"
+  },
+  {
+    "parasiteId": "eucoleus_boehmi_egg",
+    "url": "/public/images/parasites/eucoleus_boehmi_egg/eucoleus_boehmi_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:56:27.388Z"
   },
   {
     "parasiteId": "eucoleus_aerophilus_egg",
@@ -242,11 +179,28 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T19:56:27.388Z"
+    "dateAdded": "2026-08-28T19:56:27.388Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "eucoleus_aerophilus_egg",
     "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:56:27.397Z"
+  },
+    {
+    "parasiteId": "eucoleus_aerophilus_egg",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:56:27.397Z"
+  },
+  {
+    "parasiteId": "eucoleus_aerophilus_egg",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_06.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -803,30 +757,6 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:07:44.317Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:32:00.062Z"
   },
   {
     "parasiteId": "alaria_alata_adult",
@@ -1634,6 +1564,14 @@
     "dateAdded": "2026-08-29T11:53:24.500Z"
   },
   {
+    "parasiteId": "physaloptera_sp_egg",
+    "url": "/public/images/parasites/physaloptera_sp_egg/physaloptera_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:54:16.043Z"
+  },
+  {
     "parasiteId": "syngamus_trachea_egg",
     "url": "/public/images/parasites/syngamus_trachea_egg/syngamus_trachea_egg_01.webp",
     "alt": "",
@@ -2125,6 +2063,30 @@
   {
     "parasiteId": "babesia_canis_trophozoite",
     "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_15.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:50:22.549Z"
+  },
+  {
+    "parasiteId": "spirocerca_lupi_egg",
+    "url": "/public/images/parasites/spirocerca_lupi_egg/spirocerca_lupi_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:50:22.549Z"
+  },
+   {
+    "parasiteId": "spirocerca_lupi_egg",
+    "url": "/public/images/parasites/spirocerca_lupi_egg/spirocerca_lupi_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:50:22.549Z"
+  },
+   {
+    "parasiteId": "spirocerca_lupi_egg",
+    "url": "/public/images/parasites/spirocerca_lupi_egg/spirocerca_lupi_egg_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4581,38 +4543,6 @@
     "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
     "parasiteId": "chorioptes_equi_adult",
     "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_01.webp",
     "alt": "",
@@ -4623,6 +4553,14 @@
   {
     "parasiteId": "ascaris_suum_egg",
     "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.971Z"
+  },
+  {
+    "parasiteId": "linguatula_serrata_egg",
+    "url": "/public/images/parasites/linguatula_serrata_egg/linguatula_serrata_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4821,14 +4759,6 @@
     "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
-    "parasiteId": "eucoleus_aerophilus_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-04T17:48:56.560Z"
-  },
-  {
     "parasiteId": "strongyloides_sp_egg",
     "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_egg_01.webp",
     "alt": "",
@@ -4916,6 +4846,63 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-06T15:59:46.224Z"
+  },
+  {
+    "parasiteId": "aonchotheca_putorii_egg",
+    "url": "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "aonchotheca_putorii_egg",
+    "url": "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "calodium_hepaticum_egg",
+    "url": "/public/images/parasites/calodium_hepaticum_egg/calodium_hepaticum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "calodium_hepaticum_egg",
+    "url": "/public/images/parasites/calodium_hepaticum_egg/calodium_hepaticum_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "pearsonema_plica_egg",
+    "url": "/public/images/parasites/pearsonema_plica_egg/pearsonema_plica_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "pearsonema_plica_egg",
+    "url": "/public/images/parasites/pearsonema_plica_egg/pearsonema_plica_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "pearsonema_plica_egg",
+    "url": "/public/images/parasites/pearsonema_plica_egg/pearsonema_plica_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
     "parasiteId": "capillaria_sp_egg",

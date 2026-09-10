@@ -217,12 +217,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eucoleus_aerophilus_egg",
-    "images": [
-      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_01.webp",
-      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_02.webp",
-      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_03.webp",
-      "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Strongyloides sp.",
@@ -7075,10 +7070,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 67,
-      "widthMin": 26,
-      "widthMax": 29,
+      "lengthMin": 51,
+      "lengthMax": 58,
+      "widthMin": 24,
+      "widthMax": 26,
       "unit": "µm"
     },
     "morphology": {
@@ -7087,15 +7082,11 @@
       "shell": "Zátky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: citrónovitý."
+      "Jemnný, málo výrazne jamkovitý/hladší povrch",
+      "Zátky málo výrazné, symetrické"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Pearsonema môže byť potrebná molekulová identifikácia."
+      "Pearsonema plica - mierne väčšie, ~63–68 μm,výrazne jamkovitý povrch s veľkými priehlbinami, väčšie rozmery vajíčka, zátky mierne vyčnievajúce. asymetrické"
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -7158,7 +7149,7 @@
     "pathology": "Parazituje v žalúdku a tenkom čreve, najmä v oblasti vrátnika (pylorus). U divých zvierat často prebieha bez príznakov, no u mačiek môže vyvolať chronický zápal žalúdka (gastritídu), žalúdočné vredy, vracanie krvi a v dôsledku straty krvi aj sekundárnu anémiu (chudokrvnosť).",
     "zoonosis": false,
     "notes": "",
-    "id": "eucoleus_putorii_egg",
+    "id": "aonchotheca_putorii_egg",
     "images": []
   },
   {
@@ -9320,10 +9311,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 280,
-      "widthMin": 26,
-      "widthMax": 29,
+      "lengthMin": 63,
+      "lengthMax": 68,
+      "widthMin": 24,
+      "widthMax": 27,
       "unit": "µm"
     },
     "morphology": {
@@ -9333,12 +9324,11 @@
     },
     "diagnosticSigns": [
       "Citrónovitý tvar",
-      "škrupina s bodkovaným povrchom; nachádza sa v moči (parazit močového mechúra)."
+      "Výrazne jamkovitý povrch s veľkými priehlbinami (bodkami)",
+      "Zátky mierne vyčnievajúce, asymetrické"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Pearsonema feliscati (mačka) a od Trichuris vulpis (Pearsonema má tenšiu",
-      "menej nápadnú škrupinu a je lokalizovaná v moči",
-      "nie v truse hrubého čreva)."
+      "P. feliscati - vajíčka sú menšie (dĺžka 51-58 µm, šírka 24-26 µm) a majú hladký povrch; zátky sú symetrické a mierne vyčnievajúce."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -9387,15 +9377,14 @@
       "shell": "Sieťovaná"
     },
     "diagnosticSigns": [
-      "citrónovitý tvar",
-      "stena vajíčka: jemná sieťová štruktúra obkolesujúca nepravidelne rozmiestnené malé jamky",
-      "čo vytvára porézny vzhľad s jemným",
-      "hustým bodkovaním; zátky neprominujúce a bez zhrubnutia na báze"
+      "Citrónovitý tvar",
+      "Stena vajíčka je jemná sieťová štruktúra obkolesujúca nepravidelne rozmiestnené malé jamky, čo vytvára porézny vzhľad s jemným hustým bodkovaním",
+      "Zátky neprominujúce a bez zhrubnutia na báze",
+      "Embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor"
     ],
     "differentialDiagnosis": [
-      "Druh E. aerophilus je mierne vačší sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými",
-      "navzájom sa spájajúcimi hrebeňmi. Vajíčka Trichuris vulpis sú výrazne väčšie a majú úplne hladký povrch vajíčka bez akejkoľvek siete alebo jamiek. Embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor",
-      "zatiaľ čo u E. aerophilus je vajíčko úplne vyplnené jedno- alebo dvojbunkovým embryom"
+      "Druh E. aerophilus je mierne vačší sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými, navzájom sa spájajúcimi hrebeňmi. Zzatiaľ čo u E. aerophilus je vajíčko úplne vyplnené jedno- alebo dvojbunkovým embryom, embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor",
+      "Vajíčka Trichuris vulpis sú výrazne väčšie a majú úplne hladký povrch vajíčka bez akejkoľvek siete alebo jamiek."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -9454,8 +9443,10 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "Nosový výtok",
-    "id": "linguattula_serrata_egg",
-    "images": []
+    "id": "linguatula_serrata_egg",
+    "images": [
+      "/public/images/parasites/linguatula_serrata_egg/linguatula_serrata_egg_01.webp"
+    ]
   },
   {
     "latinName": "Demodex canis",
@@ -20920,7 +20911,7 @@
     "pathology": "Patologické zmeny sú vyvolané najmä prítomnosťou dospelých červov, ich pohybom a masívnym kladením vajíčok do pečene.Akútna fáza: Migrácia lariev a dospelých jedincov vyvoláva akútnu hepatitídu, nekrózu hepatocytov a výraznú zápalovú infiltráciu s vysokým podielom eozinofilov.Chronická fáza: Dospelé červy po spárení a nakladení vajíčok v pečeni umierajú. Okolo odumretých červov a nahromadených vajíčok sa vytvárajú granulómy. Tento proces vedie k masívnej fibrotizácii pečene a v závažných prípadoch až k obrazu pečeňovej cirhózy a zlyhaniu pečene. Zdrojom nákazy je pôda, voda alebo zelenina kontaminovaná dospelými (embryonovanými) vajíčkami.Tieto vajíčka sa dostali do pôdy tak, že infikovaný hlodavec uhynul a rozložil sa, alebo ho zožrala napríklad mačka/pes a vajíčka vylúčila trusom.Vajíčka museli následne stráviť niekoľko týždňov v pôde, aby dozreli na infekčné štádium.Človek sa nakazí najčastejšie tak, že zje neumytú zeleninu, pije kontaminovanú vodu, alebo si strčí do úst špinavé ruky od hliny (typické u malých detí).",
     "zoonosis": true,
     "notes": "Vzácne",
-    "id": "capillaria_hepatica_egg",
+    "id": "calodium_hepaticum_egg",
     "images": []
   },
   {
