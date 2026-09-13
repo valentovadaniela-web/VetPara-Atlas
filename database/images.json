@@ -4772,7 +4772,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-09-04T17:48:56.560Z"
+    "dateAdded": "2026-09-04T17:48:56.560Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "cyathostomum_sp_egg",

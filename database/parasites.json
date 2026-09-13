@@ -273,7 +273,8 @@
     "notes": "Riziko pre človeka predstavuje najmä druh _Strongyloides stercoralis_, ktorý sa prenáša zo psov a mačiek. Infekčné larvy v truse alebo v pôde aktívne prevŕtajú neporušenú kožu človeka, migrujú cez pľúca a usadia sa v čreve. Pre zdravého človeka infekcia znamená kožné zápaly, kašeľ a hnačky. U imunitne oslabených ľudí je však parazit smrteľne nebezpečný, pretože v tele spúšťa nekontrolovateľné samonakazovanie (autoinfekciu) vedúce k celkovej sepse. Druhy z hospodárskych zvierat (kone, hovädzí dobytok) spôsobujú u človeka len prechodné, lokálne svrbenie kože.",
     "id": "strongyloides_sp_egg",
     "images": [
-      "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_egg_01.webp"
+      "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_01.webp",
+      "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_02.webp"
     ]
   },
   {
@@ -10929,7 +10930,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_leuckarti_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_leuckarti_oocyst/eimeria_leuckarti_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Anoplocephala perfoliata",
