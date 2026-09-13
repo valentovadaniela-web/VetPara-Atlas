@@ -207,14 +207,6 @@
     "dateAdded": "2026-08-28T19:56:27.397Z"
   },
   {
-    "parasiteId": "strongyloides_sp_egg",
-    "url": "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T19:58:24.939Z"
-  },
-  {
     "parasiteId": "strongyloides_sp_larva",
     "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
     "alt": "",
@@ -1371,6 +1363,14 @@
   {
     "parasiteId": "eimeria_labbeana_oocyst",
     "url": "/public/images/parasites/eimeria_labbeana_oocyst/eimeria_labbeana_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:44:35.552Z"
+  },
+  {
+    "parasiteId": "eimeria_leuckarti_oocyst",
+    "url": "/public/images/parasites/eimeria_leuckarti_oocyst/eimeria_leuckarti_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4760,7 +4760,15 @@
   },
   {
     "parasiteId": "strongyloides_sp_egg",
-    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_egg_01.webp",
+    "url": "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-04T17:48:56.560Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_egg",
+    "url": "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
