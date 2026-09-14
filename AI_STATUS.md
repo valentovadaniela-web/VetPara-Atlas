@@ -1,5 +1,37 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.34 Aktuálny stav — doplnené (2026‑09‑14, session: abecedné zoradenie parazitov v Atlase)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že zoznam parazitov v Atlase sa zobrazuje v poradí, v akom sú záznamy zapísané v `parasites.json` — chcela abecedné zoradenie.
+
+### 🔴→✅ Zoradenie zoznamu podľa `latinName`
+
+**Príčina:** `renderRecords()` v `AtlasPage.js` filtroval `Repository.getAll()` (výsledok filtra/vyhľadávania), ale výsledný zoznam `filtered` sa nikdy netriedil — poradie zostávalo presne také, ako je poradie objektov v `parasites.json`.
+
+**Riešenie:** hneď po `.filter(...)` v `renderRecords()` doplnené `filtered.sort(...)`, ktoré zoraďuje podľa `record.latinName` (presne to pole, ktoré karta zobrazuje ako titulok — `record.latinName ?? record.id`) pomocou `localeCompare(..., "sk")` (správne poradie slovenskej/latinskej diakritiky). Zoraďuje sa **výsledok filtrovania**, takže poradie ostáva abecedné pri akejkoľvek kombinácii filtrov/vyhľadávania, nielen pri neaktívnych filtroch.
+
+Žiadna iná logika (filtrovanie, počítanie výsledkov, aktívne filtre) sa nemenila.
+
+### ✅ Overené autorkou naživo
+
+- ⬜ Zatiaľ naživo neoverené (kód pripravený, čaká na nasadenie/test).
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | `renderRecords()`: doplnené `filtered.sort(...)` podľa `latinName` (`localeCompare`, `"sk"`) hneď po filtrovaní | ✅ hotové (kód), ⬜ naživo neoverené |
+
+### 🟡 Poznámka pre budúcu session
+
+Ak by autorka v budúcnosti chcela zoraďovať podľa iného poľa (napr. `slovakName`, ak/keď bude vyplnené pre všetky záznamy), treba zmeniť len jeden riadok v `renderRecords()` (kľúč v `.sort(...)`).
+
+---
+
 🔥 0.33 Aktuálny stav — doplnené (2026‑09‑07, session: slovenský názov sa nezobrazoval v Atlase a nezdal sa uložený v Admin nástroji)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII

@@ -996,6 +996,13 @@ const AtlasPage = {
 
         });
 
+        // OPRAVA (2026-09-14): zoradenie zobrazených záznamov podľa latinName
+        // (abecedne, sk lokalizácia) — predtým sa zachovávalo poradie z
+        // parasites.json.
+        filtered.sort((a, b) =>
+            (a.latinName ?? "").localeCompare(b.latinName ?? "", "sk")
+        );
+
         count.textContent =
             `Zobrazené záznamy: ${filtered.length} / ${records.length}`;
 

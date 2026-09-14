@@ -456,6 +456,15 @@
     "alt": "",
     "caption": "",
     "credit": "",
+    "dateAdded": "2026-08-28T20:01:05.393Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "uncinaria_stenocephala_egg",
+    "url": "/public/images/parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
     "dateAdded": "2026-08-28T20:01:05.393Z"
   },
   {
@@ -1850,7 +1859,23 @@
   },
   {
     "parasiteId": "ancylostoma_caninum_egg",
-    "url": "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_02.webp",
+    "url": "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:47:45.911Z"
+  },
+  {
+    "parasiteId": "ancylostoma_caninum_egg",
+    "url": "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:47:45.911Z"
+  },
+  {
+    "parasiteId": "ancylostoma_caninum_egg",
+    "url": "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
