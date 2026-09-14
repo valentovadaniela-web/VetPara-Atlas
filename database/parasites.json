@@ -1281,7 +1281,7 @@
     "references": [],
     "notes": ""
   },
-   {
+  {
     "latinName": "Strongylida",
     "synonyms": [],
     "slovakName": "",
@@ -1296,8 +1296,8 @@
     },
     "hostGroups": [
       "Domáce prežúvavce",
-       "ZOO prežúvavce",
-       "Voľne žijúce prežúvavce"
+      "ZOO prežúvavce",
+      "Voľne žijúce prežúvavce"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -1449,7 +1449,7 @@
     "references": [],
     "notes": ""
   },
-   {
+  {
     "id": "myocoptes_musculinus_egg",
     "latinName": "Myocoptes musculinus",
     "synonyms": [],
@@ -1678,7 +1678,7 @@
     "notes": "",
     "id": "coenurus_serialis_larva",
     "images": [
-    "/public/images/parasites/coenurus_serialis_larva/coenurus_serialis_larva_01.webp"
+      "/public/images/parasites/coenurus_serialis_larva/coenurus_serialis_larva_01.webp"
     ]
   },
   {
@@ -1724,23 +1724,23 @@
       "Tenká priehľadná membrána, dobre viditeľné scolexy voľným okom ako biele bodky na vnútornej stene",
       "Výhradná lokalizácia v CNS – mozog (najčastejšie), zriedkavejšie miecha",
       "Cysta rastie pomaly (mesiace), postupne utláča okolité nervové tkanivo"
-
     ],
     "differentialDiagnosis": [
       "Coenurus serialis - mnohopočetné scolexy, ale lokalizácia v podkoží/intermuskulárnom väzive zajaca/králika",
       "Echinococcus granulosus - (hydatídová cysta) - mnohopočetné protoskolexy, hrubšia laminárna membrána, lokalizácia v pečeni/pľúcach, nie v CNS",
       "Cysticercus tenuicollis - 1 scolex na dlhom krčku, lokalizácia v brušnej dutine (omentum, pečeň), nie v CNS"
-     ],
+    ],
     "lifeCycle": "Definitívny hostiteľ (pes/líška) vylučuje trusom vajíčka/články T. multiceps. \n Ovca/koza požije vajíčka spolu s kontaminovanou pastvou\n Onkosféra prenikne stenou čreva, krvným obehom preniká cez hematoencefalickú bariéru do CNS\n Migruje a vyvíja sa priamo v mozgovom/miechovom tkanive (na rozdiel od T. hydatigena a T. pisiformis, ktoré migrujú cez pečeň)\n Postupný vývoj cysty s mnohopočetnými scolexmi trvá cca 2–8 mesiacov v závislosti od štádia a klinických prejavov (pozri nižšie – akútna vs. chronická forma)\n Definitívny hostiteľ (pes) sa nakazí konzumáciou mozgu/miechy uhynutej alebo zabitej ovce s coenurom\n V tenkom čreve psa sa z každého scolexu vyvinie samostatná dospelá pásomnica – opäť mnohopočetná infekcia z jednej cysty",
     "pathology": "Ochorenie sa označuje ako cenuróza (coenurosis), ľudovo vrtohlavosť. \n Akútna forma (primárna migrácia)\n Vzniká krátko po infekcii (1.–3. týždeň) v dôsledku migrácie väčšieho počtu onkosfér mozgovým tkanivom\n Nešpecifické neurologické príznaky: horúčka, excitácia, kŕče, niekedy úhyn v priebehu niekoľkých dní\n Často sa prehliadne alebo zamení za iné neurologické ochorenie\n \n Chronická forma (klasická vrtohlavosť)\n Vzniká za 2–8 mesiacov, keď cysta dorastie do veľkosti spôsobujúcej útlak mozgového tkaniva\n Typický klinický príznak: kruhovité, otáčavé pohyby smerom k strane postihnutej hemisféry mozgu \n Ďalšie príznaky: porucha koordinácie, slepota (pri lokalizácii v okcipitálnej oblasti), abnormálne držanie hlavy, kŕče, paralýza pri lokalizácii v mieche\n Neliečené vedie k progresívnemu zhoršovaniu, chudnutiu a úhynu\n Ekonomicky veľmi významné ochorenie v chovoch oviec, najmä v regiónoch s vysokým výskytom voľne pohybujúcich sa psov (pastierske psy, poľovnícke oblasti)\n \n Zoonotický potenciál\n Taenia multiceps má preukázaný, aj keď zriedkavý zoonotický potenciál. V odbornej literatúre sú zdokumentované prípady humánnej cenurózy, kde larva napadá:\n CNS (mozog, miecha) – najzávažnejšia forma, s podobnými príznakmi ako u oviec (neurologické deficity, zvýšený vnútrolebečný tlak)\n Oko (okulárna cenuróza)\n Podkožie a svalstvo (subkutánna/intramuskulárna forma)",
     "zoonosis": true,
     "notes": "",
     "id": "coenurus_cerebralis_larva",
     "images": [
-    "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp"
+      "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp"
     ]
   },
   {
+    "id": "cryptosporidium_parvum_oocyst",
     "latinName": "Cryptosporidium parvum",
     "synonyms": [],
     "slovakName": "",
@@ -1754,20 +1754,29 @@
       "species": "Cryptosporidium parvum"
     },
     "hostGroups": [
-      "Mäsožravce",
       "Domáce prežúvavce",
+      "Mäsožravce",
       "Voľne žijúce prežúvavce",
       "ZOO prežúvavce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Hovädzí dobytok",
+      "Mačka",
+      "Pes"
+    ],
+    "hostNotes": {
+      "Hovädzí dobytok": " Najohrozenejšie sú teľatá vo veku 1 až 3 týždňov. Staršie zvieratá už majú vyvinutejšiu imunitu a zvyčajne sú bez príznakov (no môžu byť prenášačmi). Typická je žltkastá, profúzna vodnatá hnačka (bez prímesi krvi).",
+      "Mačka": "Cryptosporidium parvum (zoonotický druh typický pre hovädzí dobytok) sa u mačiek vyskytuje iba zriedkavo.",
+      "Pes": "Cryptosporidium parvum (zoonotický druh typický pre hovädzí dobytok) sa u psov vyskytuje iba zriedkavo."
+    },
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 4,
-      "lengthMax": 5,
-      "widthMin": 4,
+      "lengthMin": 4.5,
+      "lengthMax": 5.5,
+      "widthMin": 4.2,
       "widthMax": 5,
       "unit": "µm"
     },
@@ -1777,27 +1786,29 @@
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Malá guľovitá oocysta",
-      "pri vylúčení už sporulovaná (obsahuje 4 sporozoity); acidorezistentná (pozitívna farbenie modifikovaným Ziehl-Neelsenom)."
+      "Malá veľkosť (4–5 µm) – najmenšie oocysty medzi bežne diagnostikovanými kokcídiami. Oocysty sú veľmi malé, ľahko sa prehliadnu pri bežnom mikroskopickom vyšetrení.",
+      "Pri modifikovanom Ziehl-Neelsenovom farbení: acidorezistentné ružovo-červené guľôčky."
     ],
     "differentialDiagnosis": [
       "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
+      "Kvasinky majú podobnú veľkosť, ale nie sú acidorezistentné (nefarebia sa mZ-N metódou) a majú variabilnejší tvar, často pučia.",
+      "Artefakty (vzduchové bubliny, tukové kvapky) – nemajú vnútornú štruktúru a nie sú acidorezistentné."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Monoxénny, priamy, prebieha celý v enterocytoch tenkého čreva (intracelulárne, ale extracytoplazmaticky – v apikálnej membránovej väčšine, tzv. \"epicelulárna\" lokalizácia). \nPo zožratí sporulovanej oocysty sa uvoľňujú 4 sporozoity, ktoré invadujú enterocyty → trofozoit → merogónia (typ I a typ II merontov) → gamogónia (mikro- a makrogaméty) → fertilizácia → tvorba oocýst. \nVznikajú dva typy oocýst: tenkostenné (autoinfekcia v hostiteľovi) a hrubostenné (vylučované do prostredia, odolné). \nCelý cyklus trvá cca 12–14 dní od infekcie po vylučovanie oocýst (prepatentná perióda cca 2–7 dní u teliat).",
+    "pathology": "Poškodenie klkov tenkého čreva (atrofia, skrátenie klkov, hyperplázia krýpt) → malabsorpcia, osmotická a sekrečná hnačka. Klinicky sa prejavuje profúznou vodnatou hnačkou, dehydratáciou, anorexiou, u teliat najčastejšie v 1.–3. týždni života. Vysoká morbidita, mortalita zvyčajne nízka, ale v kombinácii s inými patogénmi (rotavírusy, E. coli, Giardia) môže byť závažná.",
     "zoonosis": true,
-    "notes": "Nemá mikropyle",
-    "id": "cryptosporidium_parvum_oocyst",
     "images": [
       "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_01.webp",
       "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_02.webp"
-    ]
+    ],
+    "references": [],
+    "notes": ""
   },
   {
+    "id": "fasciola_hepatica_egg",
     "latinName": "Fasciola hepatica",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Motolica pečeňová",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -1812,14 +1823,23 @@
       "Voľne žijúce prežúvavce"
     ],
     "hosts": [
-      "Pes",
+      "Človek",
+      "Diviak",
       "Kôň",
-      "Morča"
+      "Pes",
+      "Zajac"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Človek": " je pre tohto parazita náhodným (akcesorickým) hostiteľom. K infekcii človeka dochádza najčastejšie skonzumovaním divo rastúceho vodného rastlinstva (napr. potočnice lekárskej) kontaminovaného zapuzdrenými larvami (metacerkáriami). ",
+      "Diviak": "",
+      "Kôň": "",
+      "Pes": "Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie).V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam.",
+      "Zajac": ""
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Trematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 130,
       "lengthMax": 150,
@@ -1833,32 +1853,29 @@
       "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [
-      "Veľké",
-      "Oválne",
-      "Zlatožlté vajíčko s veľmi nevýrazným operkulom",
-      "Vnútorný obsah nediferencovaný (zhluk buniek)."
+      "Veľké žltohnedé operkulované vajíčka (130–150 × 60–90 µm) – jedny z najväčších helmintích vajíčok diagnostikovaných v koprológii.",
+      "Obsahujú veľký počet žĺtkových buniek (vitelínové bunky) vyplňujúcich takmer celý priestor okolo zygoty – vajíčko pri vylúčení nie je embryonované.",
+      "Sedimentačná metóda (nie flotácia!) – vajíčka sú ťažké a flotačné roztoky s nízkou hustotou ich nezachytia."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Paramphistomum cervi (podobná veľkosť",
-      "ale sivozelené/bezfarebné",
-      "tenšia stena",
-      "viečko menej nápadné) a od Fasciola gigantica (väčšie",
-      "cca 160–190×80–100 µm)."
+      "Fascioloides magna (veľká motolica jelenia) – morfologicky prakticky nerozlíšiteľné, rozdiel len v hostiteľskom spektre a lokalizácii (F. magna často v pečeňovom parenchýme, nie žlčových cestách; hostiteľ najčastejšie jelenia zver).",
+      "Paramphistomum spp. (črevná motolica) – tieto majú bezfarebnú (nie žltohnedú) škrupinu a operkulum je menej výrazné, hostiteľská lokalizácia je bachor/dvanástnik."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Heteroxénny (digenetický), nutný medzihostiteľ – vodný slimák.\n\nDospelec v žlčových cestách definitívneho hostiteľa produkuje vajíčka → vylučované žlčou do čreva → stolicou do prostredia.\nVo vode sa vyvíja miracídium (za 9–14 dní pri optimálnej teplote), ktoré aktívne vyhľadáva a penetruje medzihostiteľa (Galba truncatula).\nV slimáku: sporocysta → rediá (1–2 generácie) → cerkárie (celý vývoj v slimáku trvá cca 4–7 týždňov).\nCerkárie opúšťajú slimáka, encystujú sa na vodných rastlinách alebo vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje požitím metacerkárií (pastva, kontaminovaná voda/tráva).\nV čreve sa uvoľňuje juvenilná motolica, penetruje črevnou stenou do peritoneálnej dutiny → migruje do pečene → prenikne pečeňovým parenchýmom (migračná fáza, cca 6–8 týždňov) → dostáva sa do žlčových ciest, kde dospieva a začína klásť vajíčka.\nCelý cyklus (od vajíčka po vajíčko) trvá cca 4–5 mesiacov.",
+    "pathology": "Akútna fasciolóza (migračná fáza larvy v pečeňovom parenchýme): traumatická hepatitída, krvácanie, nekrózy, u oviec môže viesť k náhlemu úhynu (hlavne pri masívnej infekcii).\nChronická fasciolóza (dospelci v žlčových cestách): cholangitída, fibróza a zhrubnutie stien žlčových ciest (\"pipe-stem liver\" – klinicky typický nález pri pitve), cholestáza, anémia (hemofágia parazita), hypoalbuminémia, chudnutie, znížená produkcia mlieka/mäsa/vlny.\nSekundárne riziko: uľahčuje vznik \"black disease\" (infekčná nekrotická hepatitída spôsobená Clostridium novyi type B) v dôsledku poškodenia pečeňového tkaniva.",
     "zoonosis": true,
-    "notes": "Granulovaný obsah vypĺňa skoro celé vajíčko.",
-    "id": "fasciola_hepatica_egg",
     "images": [
       "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_01.webp",
       "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_02.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Vhodná metóda: sedimentačná technika, nie flotácia.\nKoprologické vyšetrenie môže byť falošne negatívne pri akútnej fáze (larvy migrujú v pečeňovom parenchýme, dospelci ešte nekladú vajíčka) – prepatentná perióda cca 8–12 týždňov.\nPri podozrení na akútnu fázu (bez vajíčok v stolici) odporučiť sérologické vyšetrenie (ELISA), pretože koprológia je v tomto štádiu negatívna."
   },
   {
+    "id": "fascioloides_magna_adult",
     "latinName": "Fascioloides magna",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Motolica jelenia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -1871,11 +1888,24 @@
     "hostGroups": [
       "Voľne žijúce prežúvavce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Hovädzí dobytok",
+      "Koza",
+      "Kôň",
+      "Ošípaná",
+      "Ovca"
+    ],
+    "hostNotes": {
+      "Hovädzí dobytok": "Aberantní (náhodní) hostitelia: u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Koza": "Aberantní (náhodní) hostitelia: u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Kôň": "Aberantní (náhodní) hostitelia: u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Ošípaná": "Aberantní (náhodní) hostitelia: u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Ovca": "Aberantní (náhodní) hostitelia: u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom."
+    },
     "sample": "Pečeň",
     "stage": "Dospelý jedinec",
     "group": "Trematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 40000,
       "lengthMax": 100000,
@@ -1884,26 +1914,22 @@
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Listovitý",
-      "colour": "Bezfarebný",
-      "shell": "S operculom"
+      "shape": "Oválny",
+      "colour": "Sivobéžová až tmavohnedá",
+      "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: listovitý."
+      "Tvar masívny, ovalný až elipsovitý (na rozdiel od listovitého tvaru F. hepatica s výrazným prednym kužeľom – u F. magna je predný kónus menej výrazný, telo je celkovo hrubšie a robustnejšie).",
+      "U definitívneho hostiteľa (jeleň) sú dospelci opuzdrení v hrubostenných fibróznych cystách/púzdrach v pečeni (\"black cysts\", tmavé pigmentované puzdrá s hematínom), vajíčka sa hromadia v cystách alebo sa vylučujú stolicou.",
+      "Pri pitve: veľké, tmavé, nekrotické tunely a cysty v pečeňovom parenchýme vyplnené čokoládovohnedým exsudátom (dôsledok migrácie a hemoragickej nekrózy)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Fascioloides môže byť potrebná molekulová identifikácia."
+      "Morfológia dospelca: F. magna je väčšia, hrubšia, menej listovitá ako F. hepatica.",
+      "Odlíšenie od abscesov/nekróz inej etiológie (bakteriálne abscesy pečene) – potrebný nález parazitov alebo vajíčok v léziách."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\n\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+    "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
     "zoonosis": false,
-    "notes": "Patogén v pečeni",
-    "id": "fascioloides_magna_adult",
     "images": [
       "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_01.webp",
       "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_02.webp",
@@ -1911,12 +1937,15 @@
       "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_04.webp",
       "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_05.webp",
       "/public/images/parasites/fascioloides_magna_adult/fascioloides_magna_adult_06.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Významný pôvodne severoamerický parazit, do Európy zavlečený s dovozom jelenej zveri (vysoký výskyt napr. v Českej republike, na južnej Morave, v Poľsku) – v SR a ČR sledovaný najmä u jelenej zveri vo voľnej prírode a v chovoch, epidemiologicky relevantný pre pastvu dobytka v endemických oblastiach.\nPri podozrení na infekciu u dobytka/oviec v endemickej oblasti (výskyt jelenej zveri) odporučiť histopatologické vyšetrenie pečene alebo PCR z tkaniva/lézií."
   },
   {
+    "id": "paramphistomum_cervi_egg",
     "latinName": "Paramphistomum cervi",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Motolica bachorová",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -1927,47 +1956,50 @@
       "species": "Paramphistomum cervi"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce",
+      "ZOO prežúvavce"
     ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Trematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 125,
-      "lengthMax": 186,
-      "widthMin": 62,
-      "widthMax": 114,
+      "lengthMax": 165,
+      "widthMin": 70,
+      "widthMax": 95,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
-      "colour": "Sivozelený",
+      "shape": "Vajcovitý až oválny",
+      "colour": "Sivastý",
       "shell": "S operculom"
     },
     "diagnosticSigns": [
-      "Veľké",
-      "oválne",
-      "sivasté až bezfarebné (nie žltohnedé ako Fasciola) tenkostenné operkulované vajíčko",
-      "nesegmentované."
+      "Tvar: ovoidný, symetrickejší než u Fasciola.",
+      "Bezfarebné až slabo sivasté/priezračné (NIE žltohnedé – kľúčový diferenciálny znak od Fasciola).",
+      "Sivasté až bezfarebné (nie žltohnedé ako Fasciola) tenkostenné operkulované vajíčko",
+      "Stena tenká, hladká, s malým, nenápadným operkulom na jednom póle; obsahuje veľkú priezračnú blastomeru a menej výrazné žĺtkové bunky než Fasciola; neembryonované pri vylúčení."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Paramphistomum môže byť potrebná molekulová identifikácia."
+      "Bezfarebné (nie žltohnedé) veľké operkulované vajíčka – hlavný rozlišovací znak od podobne veľkých vajíčok Fasciola.",
+      "Vnútorný obsah vajíčka je svetlejší, s menším množstvom žĺtkových granúl, blastomera je zreteľnejšia a väčšia relatívne k veľkosti vajíčka.",
+      "Detekcia sedimentačnou metódou (podobne ako Fasciola – vajíčka sú ťažké, flotácia nevhodná)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu Fasciola, ale s odlišnou lokalizáciou dospelcov a juvenilných štádií:\n\nDospelci v bachore/predžalúdku produkujú vajíčka → vylučované stolicou.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie.\nCerkárie encystujú na vodných rastlinách/vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje pri pastve/pití vody s metacerkáriami.\nPo excystácii v čreve juvenilné motolice NEmigrujú pečeňou (na rozdiel od Fasciola) – prichytávajú sa priamo na slizniciu dvanástnika a prednej časti tenkého čreva, kde spôsobujú najväčšie poškodenie (patogénne štádium!).\nPo niekoľkých týždňoch juvenilné motolice migrujú retrográdne (proti smeru toku tráviaceho obsahu) do bachora/predžalúdka, kde dospievajú a kladú vajíčka (relatívne apatogénne štádium v tejto lokalizácii).\nPrepatentná perióda cca 7–10 týždňov.",
+    "pathology": "Hlavná patogenita spôsobená juvenilnými (nezrelými) motolicami v dvanástniku/tenkom čreve, nie dospelcami v bachore (tie sú relatívne apatogénne, iba mechanicky dráždia).\nAkútna paramfistomóza: ťažká enteritída, hemoragicko-nekrotická duodenitída, profúzna hnačka (často fetídna, niekedy s krvou), dehydratácia, hypoproteinémia, edémy (submandibulárny edém – \"bottle jaw\" podobne ako pri iných parazitózach s proteínovou stratou).\nVysoká morbidita/mortalita u mladých zvierat pri masívnej infekcii, najmä pri prvom výraznom nástupe migrácie juvenilných štádií z čreva do predžalúdka.\nChronická infekcia dospelcami v bachore je väčšinou subklinická, tolerovaná.",
     "zoonosis": false,
-    "notes": "Dospelé v bachore",
-    "id": "paramphistomum_cervi_egg",
     "images": [
       "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_01.webp",
       "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_02.webp",
       "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_03.webp",
       "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_04.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "Dôležité klinické upozornenie: pozitívny koprologický nález (vajíčka z dospelcov v bachore) NEKORELUJE s aktuálnou klinickou patológiou, ktorú spôsobujú juvenilné štádiá v čreve – teda \"ťažká\" koprologická infekcia nemusí znamenať klinické ochorenie, a naopak, akútna klinická paramfistomóza (spôsobená juvenilnými motolicami) môže byť koprologicky NEGATÍVNA (vajíčka sa ešte nekladú)."
   },
   {
     "latinName": "Dicrocoelium dendriticum",
@@ -13511,7 +13543,7 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Oválna až typicky pyriformná/pretiahnuto hruškovitá larva, s prednou ústnou prísavkom a acetabulom", 
+      "Oválna až typicky pyriformná/pretiahnuto hruškovitá larva, s prednou ústnou prísavkom a acetabulom",
       "Maximálne okolo 0,5 mm, s jemnými paralelnými líniami na povrchu",
       "Má ústny otvor a brušnú prísavku.",
       "V čerstvom tkanive vykazujú charakteristický pohyb (využíva sa pri diagnostike migračnou metódou)",
@@ -23990,9 +24022,10 @@
     "images": []
   },
   {
+    "id": "fascioloides_magna_egg",
     "latinName": "Fascioloides magna",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Motolica jelenia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -24005,18 +24038,29 @@
     "hostGroups": [
       "Voľne žijúce prežúvavce"
     ],
-    "hosts": [],
+    "hosts": [
+      "Hovädzí dobytok",
+      "Koza",
+      "Kôň",
+      "Ošípaná",
+      "Ovca"
+    ],
     "hostNotes": {
-      "Domáce prežúvavce": "infekcia zväčša nepatentná, vajíčka sa u nich prakticky nevylučujú"
+      "Hovädzí dobytok": "Aberantní (náhodní) hostitelia – u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Koza": "Aberantní (náhodní) hostitelia – u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Kôň": "Aberantní (náhodní) hostitelia – u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Ošípaná": "Aberantní (náhodní) hostitelia – u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom.",
+      "Ovca": "Aberantní (náhodní) hostitelia – u týchto dochádza k ťažkej, často fatálnej patológii, pretože parazit nedokáže dokončiť vývoj a voľne migruje pečeňovým parenchýmom."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Trematoda",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 120,
-      "lengthMax": 185,
-      "widthMin": 70,
-      "widthMax": 90,
+      "lengthMin": 110,
+      "lengthMax": 168,
+      "widthMin": 65,
+      "widthMax": 98,
       "unit": "µm"
     },
     "morphology": {
@@ -24025,21 +24069,17 @@
       "shell": "S operculom"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "žltohnedé",
-      "operkulované vajíčko",
-      "morfologicky podobné Fasciola spp."
+      "Tvar ovoidný, morfologicky prakticky identický s F. hepatica.",
+      "Žltohnedé",
+      "Operkulované vajíčko",
+      "Vajíčka (ak sú prítomné v stolici) sa detegujú sedimentačnou metódou."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Fasciola hepatica: F. magna nemá typický list/ramená Fasciola spp.",
-      "je väčšia",
-      "dospelec je uzavretý vo väzivovom puzdre v pečeni hostiteľa."
+      "Hlavné odlíšenie od Fasciola hepatica: vajíčka sú mikroskopicky prakticky nerozlíšiteľné (prekrývajúce sa rozmery) – rozhodujúce je epidemiologické kontextové posúdenie (prítomnosť jelenej zveri v danej oblasti, druh hostiteľa) a lokalizácia lézií pri pitve (F. magna vytvára rozsiahle čierne nekrotické tunely v parenchýme, nie fibrózu žlčových ciest ako F. hepatica)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\n\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+    "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
     "zoonosis": false,
-    "notes": "",
-    "id": "fascioloides_magna_egg",
     "images": [
       "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_01.webp",
       "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_02.webp",
@@ -24049,7 +24089,9 @@
       "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_06.webp",
       "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_07.webp",
       "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_08.webp"
-    ]
+    ],
+    "references": [],
+    "notes": "U aberantných hostiteľov (dobytok, ovce) parazit zvyčajne NEKLADIE vajíčka do žlčových ciest (lebo sa nedostane do žlčových ciest, migruje voľne v parenchýme) → koprologické vyšetrenie je typicky negatívne aj pri ťažkej infekcii – diagnóza je väčšinou post mortem."
   },
   {
     "latinName": "Cysticercus cervi",
