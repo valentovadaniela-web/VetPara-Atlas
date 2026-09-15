@@ -196,6 +196,14 @@
     "dateAdded": "2026-08-21T10:00:00.000Z",
     "isPrimary": true
   },
+   {
+    "parasiteId": "amoebotaenia_cuneata_egg",
+    "url": "/public/images/parasites/amoebotaenia_cuneata_egg/amoebotaenia_cuneata_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:47:45.911Z"
+  },
   {
     "parasiteId": "ancylostoma_caninum_egg",
     "url": "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_01.webp",

@@ -326,7 +326,12 @@
   },
   {
     "latinName": "Amidostomum anseris",
-    "synonyms": [],
+    "synonyms": [
+      "Strongylus anseris",
+      "Strongylus nodulosum",
+      "Ascaris mucronatum",
+      "Amidostomum leucopareiae"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -347,26 +352,23 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 85,
-      "lengthMax": 110,
-      "widthMin": 50,
-      "widthMax": 82,
+      "lengthMax": 90,
+      "widthMin": 45,
+      "widthMax": 50,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
+      "shape": "Vajcovitý až oválny",
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
+      "Ovoidné, tenkostenné, strongyloidného typu (podobné vajíčkam trichostrongylidov)", 
+      "V čerstvom trusu obsahuje morulu (viacbunkové štádium)",
+      "Obal je hladký, bezfarebný až sivobiely"
+     ], 
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Amidostomum môže byť potrebná molekulová identifikácia."
+      "Ascaridia, Heterakis gallinarum majú hrubšiu, dvojvrstvovú škrupinu a sú väčšie"
     ],
     "lifeCycle": "Voľne žijúci druh spájaný s hnijúcimi slizniakmi a pôdou. Životný cyklus je priamy bez medzihostiteľa, kedy vtáky na pastve alebo vo vode prehltnú infekčné larvy (L3) vylúčené trusom. Tieto larvy putujú do žalúdka, kde sa zavŕtajú pod jeho výstelku a do troch týždňov dospejú.",
     "pathology": "Parazituje pod zrohovatenou vrstvou svalnatého žalúdka, kde cicia krv, poškodzuje tkanivo a spôsobuje ťažké zápaly, vredy a nekrózu. Prejavy infekcie zahŕňajú chradnutie, výraznú anémiu (chudokrvnosť) a u mladých húsat masívna nákaza končí smrťou.",
@@ -376,59 +378,11 @@
     "images": []
   },
   {
-    "latinName": "Amidostomum sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Amidostomatidae",
-      "genus": "Amidostomum",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Labuť"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 100,
-      "lengthMax": 110,
-      "widthMin": 50,
-      "widthMax": 60,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Amidostomum môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "amidostomum_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Amoebotaenia cuneata",
-    "synonyms": [],
+    "synonyms": [
+      "Amoebotaenia sphenoides",
+      "Taenia cuneata"
+  ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -448,30 +402,31 @@
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 47,
+      "lengthMin": 35,
       "lengthMax": 47,
-      "widthMin": 42,
+      "widthMin": 35,
       "widthMax": 42,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Nepravidelný",
       "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Hrubá, radiálne pruhovaná"
+      "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Voľné vajíčka; uterinné kapsuly sa netvoria",
+      "Obsahuje onkosféru s 3 pármi háčikov",
+      "Vajíčko v granulovanej vrstve."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od vajíčok Choanotaenia infundibulum a Raillietina sp. (tiež Kurovité): A. cuneata má typický trojuholníkový (klinovitý) tvar onkosféry a je najmenšie z bežných dilepidid hydiny; Choanotaenia a Raillietina majú vajíčka uzavreté vo väčších obaloch/kapsulách."
+      "Raillietina spp. – podobná veľkosť, ale vajíčka sú vylučované po 4-12 ks v kapsuliach",
+      "Davainea proglottina - vajíčka v kapsuliach po jednom",
+      "Choanotaenia infundibulum: vajíčka tiež nie sú v kapsuli, ale majú 2 zreteľné predĺžené filamenty na oboch koncoch obalu vajíčka."
     ],
     "lifeCycle": "Životný cyklus je nepriamy (heteroxénny) a vyžaduje medzihostiteľa, ktorým sú dážďovky. Dážďovka zožerie vajíčka vylúčené trusom vtákov a v jej tele sa vyvinie infekčné štádium (cystizerkoid); vtáky sa následne nakazia vyzobaním týchto infikovaných dážďoviek.",
     "pathology": "Parazituje v dvanástniku a tenkom čreve vtákov. Pri slabých nákazách je neškodná, no pri masívnom premožení vyvoláva katarálny až hemoragický zápal čriev (enteritídu), chradnutie a pokles znášky vajec.",
     "zoonosis": false,
-    "notes": "Trojuholníkový",
+    "notes": "Vajíčka viacerých vtáčích Cyclophyllidea sú si veľmi podobné. Preto môže byť pri rutinnom parazitologickom vyšetrení uvedené – **vajíčka pásomníc z radu Cyclophyllidea**.",
     "id": "amoebotaenia_cuneata_egg",
     "images": []
   },
@@ -499,10 +454,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 61.5,
-      "lengthMax": 66.3,
-      "widthMin": 39.1,
-      "widthMax": 41.3,
+      "lengthMin": 55,
+      "lengthMax": 75,
+      "widthMin": 35,
+      "widthMax": 45,
       "unit": "µm"
     },
     "morphology": {
@@ -511,19 +466,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení segmentované (4-16 blastomér)",
-      "voľné konce zaoblené."
-    ],
+      "Vajíčko je oválne až elipsovité",
+      "Obsah tvorí morula s oddelenými blastomérami",
+      "Pri bežnej mikroskopii ho nemožno vždy spoľahlivo odlíšiť od vajíčka Uncinaria stenocephala"
+      ],
     "differentialDiagnosis": [
-      "Diferenciácia vajíčok Ancylostoma caninum a Uncinaria stenocephala na základe mikroskopickej morfológie je obmedzená prekrývaním rozmerov a tvarov",
-      "hoci morfometrické merania poskytujú určitú rozlišovaciu schopnosť. Vajíčka U. stenocephala sú konzistentne väčšie ako vajíčka A. caninum aj A. tubaeforme."
+      "Uncinaria stenocephala vajíčka sú morfologicky veľmi podobné, ale zvyčajne väčšie a širšie (70–90 × 40–50 µm) než vajíčka A. caninum."
     ],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny) a zahŕňa viacero ciest nákazy. Infekčné larvy (L3) sa vyvíjajú v pôde z vajíčok z trusu. Hostiteľ sa nakazí buď prehltnutím lariev (z prostredia či materského mlieka suky), alebo ich aktívnym prevŕtaním cez kožu (najčastejšie na labkách). Po preniknutí cez kožu larvy migrujú krvou cez pľúca do tenkého čreva, kde dospievajú",
-    "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa ostrými zubami prisávajú na sliznicu a aktívne cicajú krv. Spôsobujú vážne zápalové zmeny čriev, hnačky a ťažkú anémiu (chudokrvnosť), ktorá býva pre mladé šteňatá často smrteľná. U ľudí larvy putujú pod kožou a spôsobujú silne svrbiace ochorenie larva migrans cutanea",
+    "lifeCycle": "Cyklus je priamy. Dospelé jedince žijú v tenkom čreve, kde sa živia krvou a tkanivovým mokom. Vajíčka odchádzajú trusom do vonkajšieho prostredia. Za vhodnej vlhkosti a teploty sa v nich vyvíja larva L1, ktorá sa následne liahne a cez L2 vyvíja na infekčnú larvu L3. L3 preniká do definitívneho hostiteľa perorálne alebo cez kožu. Po perkutánnom preniknutí larvy migrujú cez krvný obeh a pľúca, následne sú vykašľané, prehltnuté a dostávajú sa do tenkého čreva. U súk môžu hypobiotické larvy pretrvávať v tkanivách a reaktivovať sa počas gravidity; následne sa môžu preniesť na šteňatá mliekom. Prepatentné obdobie je približne 14–21 dní.",
+    "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa ostrými zubami prisávajú na sliznicu a aktívne cicajú krv. Spôsobujú vážne zápalové zmeny čriev, hnačky a ťažkú anémiu (chudokrvnosť), ktorá býva pre mladé šteňatá často smrteľná. **Dospelé parazity môžu po terapii znovu osídliť črevo v dôsledku reaktivácie hypobiotických lariev.** \n U ľudí larvy putujú pod kožou a spôsobujú silne svrbiace ochorenie larva migrans cutanea.",
     "zoonosis": true,
-    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu",
+    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu.",
     "id": "ancylostoma_caninum_egg",
     "images": [
       "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_02.webp"
@@ -25243,7 +25196,7 @@
       "/public/images/parasites/uncinaria_stenocephala_egg/uncinaria_stenocephala_egg_01.webp"
     ],
     "references": [],
-    "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu"
+    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu."
   },
   {
     "latinName": "Varestrongylus capreoli",
