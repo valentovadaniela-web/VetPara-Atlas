@@ -295,7 +295,7 @@
     "stage": "Larva",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 500,
+      "lengthMin": 300,
       "lengthMax": 660,
       "widthMin": 25,
       "widthMax": 42,
@@ -307,17 +307,20 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Rabditoidná larva s krátkym dvojbulbovým pažerákom"
+      "Rabditoidná larva s krátkym dvojbulbovým pažerákom",
+      "Nález larvy priamo v nohovej svalovine slimáka (typická lokalizácia)",
+      "Uzavretý ústny/análny otvor + kolabované črevo = typický obraz neaktívnej, neživiacej sa dauer larvy",
+      "Stoma (bukálna dutina) u dauer larvy relatívne dlhšia v porovnaní s telom",
+      "Dauer larva Alloionema je neaktívna, nepohyblivá alebo málo pohyblivá, neživiaca sa (uzavretý ústny/análny otvor, kolabovaný intestín) – ide o diapauzné, prežívajúce štádium"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Alloionema môže byť potrebná molekulová identifikácia."
+      "U dauer larvy sú na rozdiel od dospelých jedincov prítomné laterálne polia (v podobe jedného výrazného laterálneho hrebienka) – u dospelých chýbajú",
+      "Pľúcne červy mäsožravcov: pažerák jednoduchý, bez bulbusu; chvost zalomený (S-tvar), často s dorzálnym tŕňom (A. vasorum, A. abstrusus); ústny otvor funkčný, otvorený"
     ],
     "lifeCycle": "Strieda dve fázy života. Infekčné larvy prenikajú do svalnatej nohy slimáka, kde sa zapuzdrujú, dospelce  žijú voľne v pôde a živia sa baktériami.",
     "pathology": "Síce poškodzuje svalové tkanivo slimáka, no v prirodzených podmienkach je jej vplyv na úmrtnosť hostiteľa veľmi slabý. Kvôli nízkej patogenite na dospelé slizniaky sa nepoužíva na biologický boj proti škodcom tak úspešne ako iné parazitické hlístice.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Pri každom náleze larvy v tkanivách mäkkýša po umelej digescii z mäkkýša alebo pri Baermannovom vyšetrení treba vždy skontrolovať typ pažeráka (prítomnosť/absencia bulbusu) ako prvý a najspoľahlivejší krok – to okamžite oddelí neškodné rabditoidné/nekromenické hlísty (napr. Alloionema, Phasmarhabditis) od skutočných metastrongyloidných patogénov, u ktorých sa až následne hodnotí presný tvar chvosta na druhovú identifikáciu.",
     "id": "alloionema_appendiculatum_larva",
     "images": []
   },
