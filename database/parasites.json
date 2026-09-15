@@ -15097,14 +15097,12 @@
       "Človek",
       "Diviak",
       "Kôň",
-      "Pes",
       "Zajac"
     ],
     "hostNotes": {
       "Človek": " je pre tohto parazita náhodným (akcesorickým) hostiteľom. K infekcii človeka dochádza najčastejšie skonzumovaním divo rastúceho vodného rastlinstva (napr. potočnice lekárskej) kontaminovaného zapuzdrenými larvami (metacerkáriami). ",
       "Diviak": "",
       "Kôň": "",
-      "Pes": "Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie).V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam.",
       "Zajac": ""
     },
     "sample": "Trus",
@@ -15140,7 +15138,7 @@
       "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_02.webp"
     ],
     "references": [],
-    "notes": "Vhodná metóda: sedimentačná technika, nie flotácia.\nKoprologické vyšetrenie môže byť falošne negatívne pri akútnej fáze (larvy migrujú v pečeňovom parenchýme, dospelci ešte nekladú vajíčka) – prepatentná perióda cca 8–12 týždňov.\nPri podozrení na akútnu fázu (bez vajíčok v stolici) odporučiť sérologické vyšetrenie (ELISA), pretože koprológia je v tomto štádiu negatívna."
+    "notes": "Vhodná metóda: sedimentačná technika, nie flotácia.\nKoprologické vyšetrenie môže byť falošne negatívne pri akútnej fáze (larvy migrujú v pečeňovom parenchýme, dospelci ešte nekladú vajíčka) – prepatentná perióda cca 8–12 týždňov.\nPri podozrení na akútnu fázu (bez vajíčok v stolici) odporučiť sérologické vyšetrenie (ELISA), pretože koprológia je v tomto štádiu negatívna.\n Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie).V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam."
   },
   {
     "id": "fascioloides_magna_adult",
