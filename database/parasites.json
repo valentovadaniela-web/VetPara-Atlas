@@ -478,13 +478,61 @@
     "zoonosis": true,
     "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu.",
     "id": "ancylostoma_caninum_egg",
-    "images": [
-      "/public/images/parasites/ancylostoma_caninum_egg/ancylostoma_caninum_egg_02.webp"
-    ]
+    "images": []
+  },
+    {
+    "latinName": "Ancylostoma sp.",
+    "synonyms": [],
+    "slovakName": "Machovec",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Ancylostomatidae",
+      "genus": "Ancylostoma",
+      "species": "Ancylostoma caninum"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Medveď"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "micrometry": {
+      "lengthMin": 55,
+      "lengthMax": 75,
+      "widthMin": 35,
+      "widthMax": 45,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [
+      "Vajíčko je oválne až elipsovité",
+      "Obsah tvorí morula s oddelenými blastomérami",
+      "Pri bežnej mikroskopii ho nemožno vždy spoľahlivo odlíšiť od vajíčka Uncinaria stenocephala"
+      ],
+    "differentialDiagnosis": [
+      "Uncinaria stenocephala vajíčka sú morfologicky veľmi podobné, ale zvyčajne väčšie a širšie (70–90 × 40–50 µm) než vajíčka Ancylostoma."
+    ],
+    "lifeCycle": "Cyklus je priamy. Dospelé jedince žijú v tenkom čreve, kde sa živia krvou a tkanivovým mokom. Vajíčka odchádzajú trusom do vonkajšieho prostredia. Za vhodnej vlhkosti a teploty sa v nich vyvíja larva L1, ktorá sa následne liahne a cez L2 vyvíja na infekčnú larvu L3. L3 preniká do definitívneho hostiteľa perorálne alebo cez kožu. Po perkutánnom preniknutí larvy migrujú cez krvný obeh a pľúca, následne sú vykašľané, prehltnuté a dostávajú sa do tenkého čreva. U súk môžu hypobiotické larvy pretrvávať v tkanivách a reaktivovať sa počas gravidity; následne sa môžu preniesť na mláďatá mliekom. Prepatentné obdobie je približne 14–21 dní.",
+    "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa ostrými zubami prisávajú na sliznicu a aktívne cicajú krv. Spôsobujú vážne zápalové zmeny čriev, hnačky a ťažkú anémiu (chudokrvnosť), ktorá býva pre mladé zvieratá často smrteľná. **Dospelé parazity môžu po terapii znovu osídliť črevo v dôsledku reaktivácie hypobiotických lariev.** \n U ľudí larvy putujú pod kožou a spôsobujú silne svrbiace ochorenie larva migrans cutanea.",
+    "zoonosis": true,
+    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu.",
+    "id": "ancylostoma_sp_egg",
+    "images": []
   },
   {
     "latinName": "Ancylostoma tubaeforme",
-    "synonyms": [],
+    "synonyms": [
+      "Dochmius tubaeformis"
+    ],
     "slovakName": "Machovec mačací",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -506,10 +554,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 61.4,
-      "lengthMax": 66.3,
-      "widthMin": 39.1,
-      "widthMax": 41.3,
+      "lengthMin": 58,
+      "lengthMax": 64.5,
+      "widthMin": 37.5,
+      "widthMax": 40.5,
       "unit": "µm"
     },
     "morphology": {
@@ -518,16 +566,13 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení segmentované (4-16 blastomér)",
-      "voľné konce zaoblené."
+      "V čerstvom truse je typicky morulované, s niekoľkými blastomérami",
+      "Obsah je od steny oddelený charakteristickým perivitelinným priestorom"
     ],
     "differentialDiagnosis": [
-      "Diferenciácia vajíčok Ancylostoma tubaeforme a Uncinaria stenocephala na základe mikroskopickej morfológie je obmedzená prekrývaním rozmerov a tvarov",
-      "hoci morfometrické merania poskytujú určitú rozlišovaciu schopnosť. Vajíčka U. stenocephala sú konzistentne väčšie ako vajíčka A. caninum aj A. tubaeforme."
+      "Vajíčka U. stenocephala sú konzistentne väčšie (71-92 x 35-58) a u mačiek sa väčšinou nevyskytujú."
     ],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny) a veľmi podobný druhu A. caninum. Infekčné larvy (L3) sa vyvíjajú v pôde, odkiaľ sa mačka nakazí buď prehltnutím lariev, ich aktívnym prevŕtaním cez kožu, alebo zožratím paratenického hostiteľa (napríklad hlodavca, ktorý v sebe larvy prechováva).",
+    "lifeCycle": "Životný cyklus je priamy (monoxénny) a veľmi podobný druhu A. caninum. Infekčné larvy (L3) sa vyvíjajú v pôde, odkiaľ sa mačka nakazí buď prehltnutím lariev, ich aktívnym prevŕtaním cez kožu, alebo zožratím paratenického hostiteľa (napríklad hlodavca, ktorý v sebe larvy prechováva). Dôležité: A. tubaeforme sa u mačiek **neprenáša transmamárne na mačiatka**; infekcia sa získava po narodení z prostredia.",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa prichytávajú na sliznicu a cicajú krv. Infekcia spôsobuje zápaly čreva, stratu hmotnosti, hnačky a anémiu (chudokrvnosť), hoci v porovnaní s psím machovcom býva strata krvi o niečo nižšia a klinické príznaky sú u dospelých mačiek často miernejšie.  Na rozdiel od psieho machovca sa u A. tubaeforme nepotvrdil prenos materským mliekom z mačky na mačiatka. Podobne ako u psieho machovca ide o zoonózu, takže larvy môžu preniknúť aj do kože človeka.",
     "zoonosis": true,
     "notes": "Rutinná koproskopická metóda flotácie nedovoľuje isté druhové rozlíšenie a vzorky sa často hlásia len ako **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu",
