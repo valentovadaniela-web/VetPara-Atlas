@@ -200,18 +200,7 @@
     "zoonosis": true,
     "notes": "",
     "id": "alaria_alata_adult",
-    "images": [
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01_full.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02_full.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03_full.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04_full.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05.webp",
-      "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05_full.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Alaria alata",
@@ -266,10 +255,7 @@
     "zoonosis": true,
     "notes": "Lokalizácia v tkanive: voľne v spojivovom a tukovom tkanive (medzisvalové väzivo, bránica, podkožné tuky), často v blízkosti drobných cievok – nasvedčuje hematogénnemu šíreniu.",
     "id": "alaria_alata_mesocercaria",
-    "images": [
-      "/public/images/parasites/alaria_alata_mesocercaria/alaria_alata_mesocercaria_01.webp",
-      "/public/images/parasites/alaria_alata_mesocercaria/alaria_alata_mesocercaria_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Alloionema appendiculatum",
@@ -613,21 +599,22 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Vláknité",
-      "tenké telo; parazit pľúc slimákov a ulitníkov."
+      "Relatívne veľký, štíhly nematód",
+      "Telo sa zužuje smerom k obom koncom",
+      "Samica je ovoviviparná – v uteroch sa nachádzajú vajíčka aj L1."
     ],
     "differentialDiagnosis": [],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha bez medzihostiteľa priamo v tele ulitníka.  Dospelé samičky žijúce v pľúcnej dutine slimáka rodia živé larvy 1. štádia (L1), ktoré opúšťajú dýchací otvor hostiteľa. Tieto larvy sa držia na povrchu tela slimáka, konkrétne v štrbine medzi telom a ulitou, kde sa postupne vyvíjajú a dvakrát zvliekajú. Akonáhle dosiahnu infekčné štádium larvy L3, migrujú cez dýchací otvor späť do pľúcnej dutiny slimáka, kde dospievajú na pohlavne aktívne jedince a cyklus sa uzatvára.",
+    "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha bez medzihostiteľa priamo v tele ulitníka.  Dospelé samičky žijúce **v pľúcnej dutine** slimáka rodia živé larvy 1. štádia (L1), ktoré opúšťajú dýchací otvor hostiteľa. Tieto larvy sa držia na povrchu tela slimáka, konkrétne v štrbine medzi telom a ulitou, kde sa postupne vyvíjajú a dvakrát zvliekajú. Akonáhle dosiahnu infekčné štádium larvy L3, migrujú cez dýchací otvor späť do pľúcnej dutiny slimáka, kde dospievajú na pohlavne aktívne jedince a cyklus sa uzatvára.",
     "pathology": "Tento parazit vykazuje voči svojmu hostiteľovi veľmi nízku patogenitu: Keďže dospelé červy kolonizujú výhradne pľúcnu dutinu a tkanivá priamo neničia (neživia sa krvou ani svalovinou), ich prítomnosť hostiteľa výrazne neoslabuje. Dokonca ani pri masívnejšom výskyte nespôsobujú slimákom vážne anatomické poškodenia, nekrózy ani úmrtnosť, kvôli čomu sa považujú skôr za dobre adaptovaného, mierneho parazita.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Pri náleze podobných nematód je vhodné v protokole formulovať napr.: Nález nematód zodpovedajúcich čeľadi Angiostomatidae",
     "id": "angiostoma_aspersae_adult",
     "images": []
   },
   {
     "latinName": "Angiostrongylus vasorum",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Pľúcny červ psov - Francúzsky srdcový červ",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -648,8 +635,8 @@
     "micrometry": {
       "lengthMin": 310,
       "lengthMax": 400,
-      "widthMin": 20,
-      "widthMax": 20,
+      "widthMin": 14,
+      "widthMax": 16,
       "unit": "µm"
     },
     "morphology": {
@@ -658,12 +645,13 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s typickým S-tvarovaným (esovitým) zahnutím a dorzálnym tŕňovitým výrastkom na konci chvosta."
+      "L1 larva s typickým S-tvarovaným (esovitým) zahnutím a dorzálnym tŕňovitým výrastkom na konci chvosta. Pod tŕňom je typický zárez.",
+      "Nerhabditoidný pažerák, približne 1/3–1/2 dĺžky larvy",
+      "Na prednom konci cefalický gombík"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Angiostrongylus môže byť potrebná molekulová identifikácia."
+      "Crenosoma vulpis - špicatý, rovný chvost, bez dorzálneho tŕňa",
+      "Strongyloides stercoralis - špicatý, rovný; rabditoidný pažerák"
     ],
     "lifeCycle": "Cyklus je nepriamy. Larvy prvé štádia (L1) vykašľané a prehltnuté hostiteľom odchádzajú v truse. V tele slimáka sa vyvinú na infekčné larvy (L3). Pes sa nakazí zožratím infikovaného slimáka (alebo žaby/vtáka ako paratenického hostiteľa). Larvy migrujú cez črevo a lymfatické uzliny krvou do pravej srdcovej predsiene a pľúcnych tepien, kde dospievajú. Nepriame riziko: Chrobák alebo dážďovka síce v sebe larvy A. vasorum neprechovávajú vo svojich tkanivách, ale ak pes zožerie chrobáka, ktorý práve požiera uhynutého infikovaného slizniaka, môže sa teoreticky nakaziť mechanickým prenosom (larvy sú na povrchu chrobáka alebo v jeho tráviacom trakte).",
     "pathology": "Dospelé červy parazitujú v pľúcnych cievach a pravom srdci. Spôsobujú vážne pľúcne zmeny (kašeľ, sťažené dýchanie, uzlíky), srdcové zlyhávanie a typické poruchy zrážania krvi, ktoré vedú k masívnemu vnútornému krvácaniu. Neliečená infekcia končí pre psa smrťou.",

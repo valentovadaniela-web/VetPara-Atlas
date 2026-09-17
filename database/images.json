@@ -261,6 +261,29 @@
     "dateAdded": "2026-08-29T12:47:45.911Z"
   },
   {
+    "parasiteId": "angiostoma_aspersae_adult",
+    "url": "/public/images/parasites/angiostoma_aspersae_adult/angiostoma_aspersae_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:08.861Z"
+  },
+   {
+    "parasiteId": "angiostoma_aspersae_adult",
+    "url": "/public/images/parasites/angiostoma_aspersae_adult/angiostoma_aspersae_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:08.861Z"
+  }, {
+    "parasiteId": "angiostoma_aspersae_adult",
+    "url": "/public/images/parasites/angiostoma_aspersae_adult/angiostoma_aspersae_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:08.861Z"
+  },
+  {
     "parasiteId": "angiostrongylus_vasorum_larva",
     "url": "/public/images/parasites/angiostrongylus_vasorum_larva/angiostrongylus_vasorum_larva_02.webp",
     "alt": "",
@@ -4251,6 +4274,30 @@
   {
     "parasiteId": "pharyngodoniade_egg",
     "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_10.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.971Z"
+  },
+  {
+    "parasiteId": "phasmarhabditis_hermaphrodita_adult",
+    "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.971Z"
+  },
+    {
+    "parasiteId": "phasmarhabditis_hermaphrodita_adult",
+    "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.971Z"
+  },
+    {
+    "parasiteId": "phasmarhabditis_hermaphrodita_adult",
+    "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
