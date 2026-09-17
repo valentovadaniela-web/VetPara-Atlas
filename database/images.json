@@ -292,6 +292,23 @@
     "dateAdded": "2026-08-29T12:48:08.861Z"
   },
   {
+    "parasiteId": "angusticaecum_holopterum_egg",
+    "url": "/public/images/parasites/angusticaecum_holopterum_egg/angusticaecum_holopterum_egg_01.webp",
+    "alt": "",
+    "caption": "Vajíčka mrlí čeľade Pharyngodonidae (A) a škrkaviek A. holopterum (B)",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:08.861Z"
+  },
+  {
+    "parasiteId": "angusticaecum_holopterum_egg",
+    "url": "/public/images/parasites/angusticaecum_holopterum_egg/angusticaecum_holopterum_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:08.861Z",
+    "isPrimary": true
+  },
+  {
     "parasiteId": "anoplocephala_perfoliata_egg",
     "url": "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_01.webp",
     "alt": "",

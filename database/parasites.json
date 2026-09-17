@@ -664,8 +664,11 @@
   },
   {
     "latinName": "Angusticaecum holopterum",
-    "synonyms": [],
-    "slovakName": "",
+    "synonyms": [
+      "Ascaris holoptera",
+      "Angusticaecum brevispiculum"
+    ],
+    "slovakName": "Škrkavka korytnačiek",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -684,31 +687,31 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 80,
-      "lengthMax": 100,
-      "widthMin": 60,
-      "widthMax": 80,
+      "lengthMin": 114,
+      "lengthMax": 142,
+      "widthMin": 71,
+      "widthMax": 85,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedý",
-      "shell": "Tenká až stredne hrubá"
+      "shape": "Oválny až subsférický",
+      "colour": "Žltohnedý",
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Guľovité až subguľovité",
-      "hrubšia mierne zrnitá stena",
-      "typický ascaridný typ vajíčka"
+      "Relatívne veľké, oválne askaridové vajíčko",
+      "Hrubý, viacvrstvový obal",
+      "Hladký vonkajší povrch",
+      "Často hnedasté sfarbenie",
+      "Pri zrelých vajíčkach môže byť dobre viditeľná larva L1"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Angusticaecum môže byť potrebná molekulová identifikácia."
+      "Vajíčka mrlí (Oxyuridae/Pharyngodonidae) sú spravidla menšie a asymetrické, často s jednou stranou výraznejšie konvexnou/plochou."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny) a zahŕňa migráciu lariev cez orgány. Korytnačka sa nakazí prehltnutím infekčných vajíčok z kontaminovaného prostredia (pôdy či krmiva). Larvy sa vyliahnu v trakte, migrujú cez vnútorné orgány hostiteľa, následne sa vracajú späť do tráviacej sústavy a dospievajú v žalúdku a čreve, kde samičky kladú vysoko odolné, trojvrstvové vajíčka vylučované trusom.",
     "pathology": "Na rozdiel od iných bežných červov korytnačiek (napr. tenkohlvostov / oxyuridov) je Angusticaecum holopterum vysoko patogénny druh. Migrácia lariev poškodzuje tkanivá a dospelé červy mechanicky dráždia alebo upchávajú črevo. Infekcia spôsobuje anorexiu (nechutenstvo), vracanie, výraznú exsikózu (dehydratáciu), stratu hmotnosti a pri masívnom premnožení vedie k nepriechodnosti čriev a smrti korytnačky.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka Angusticaecum sú mimoriadne odolné a vonkajšia lepkavá vrstva podporuje ich priľnutie k prostrediu; preto má nález význam aj z hľadiska hygieny chovu a reinfekcie. Bežná dezinfekcia nemusí byť dostatočná na ich elimináciu",
     "id": "angusticaecum_holopterum_egg",
     "images": []
   },
