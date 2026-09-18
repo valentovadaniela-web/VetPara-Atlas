@@ -1,0 +1,470 @@
+--- parasites.json	2026-09-18 18:05:05.155828123 +0000
++++ parasites_v3.json	2026-09-18 18:18:47.566993872 +0000
+@@ -2243,7 +2243,6 @@
+     "images": []
+   },
+   {
+-    "id": "capillaria_sp_egg",
+     "latinName": "Capillaria sp.",
+     "synonyms": [],
+     "slovakName": "",
+@@ -2298,6 +2297,7 @@
+     "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická crop-capillariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami",
+     "zoonosis": false,
+     "notes": "",
++    "id": "capillaria_sp_egg",
+     "images": []
+   },
+   {
+@@ -3864,56 +3864,6 @@
+     "images": []
+   },
+   {
+-    "latinName": "Coenurus cerebralis",
+-    "synonyms": [],
+-    "slovakName": "",
+-    "taxonomy": {
+-      "kingdom": "Animalia",
+-      "phylum": "Platyhelminthes",
+-      "class": "Cestoda",
+-      "order": "Cyclophyllidea",
+-      "family": "Taeniidae",
+-      "genus": "Taenia",
+-      "species": "Coenurus cerebralis"
+-    },
+-    "hostGroups": [],
+-    "hosts": [
+-      "Domáce prežúvavce",
+-      "Voľne žijúce prežúvavce"
+-    ],
+-    "hostNotes": {},
+-    "sample": "Mozog",
+-    "stage": "Larva",
+-    "group": "Cestoda",
+-    "micrometry": {
+-      "lengthMin": 50000,
+-      "lengthMax": 100000,
+-      "widthMin": 50000,
+-      "widthMax": 100000,
+-      "unit": "µm"
+-    },
+-    "morphology": {
+-      "shape": "Mechúrik",
+-      "colour": "Sivobiely",
+-      "shell": "Tenká"
+-    },
+-    "diagnosticSigns": [
+-      "Veľká tenkostenná cysta s mnohými (desiatky až stovky). Cysta naplnená čírou tekutinou a na vnútornej stene pripojenými malými skolexami (typicky s prísavkami a vencom háčikov) – druhová identifikácia je viazaná najmä na morfologiu skolexu.  Typicky v mozgu."
+-    ],
+-    "differentialDiagnosis": [
+-      "Coenurus cerebralis (Taenia multiceps): Cysty sú lokalizované takmer výlučne v centrálnom nervovom systéme (mozog",
+-      "miecha) prežúvavcov",
+-      "pričom scolexy sú v cyste usporiadané v nepravidelných zhlukoch (nie v radoch).Echinococcus granulosus (hydatida): Obsahuje dcérske mechúriky a voľný hydatidový piesok (scolexy)",
+-      "pričom stena cysty je hrubá a vrstvená.Cysticercus pisiformis: Je podstatne menší a obsahuje iba jeden jediný scolex vo vnútri mechúrika."
+-    ],
+-    "lifeCycle": "Coenurus cerebralis je larválne (metacestódové) štádium druhu Taenia multiceps (definitívny hostiteľ pes/líška). Akútna forma súvisí s migráciou onkosfér, chronická s dozrievaním cýst a tlakovou atrofiou ",
+-    "pathology": "Akútna forma súvisí s migráciou onkosfér, chronická s dozrievaním cýst a tlakovou atrofiou.",
+-    "zoonosis": true,
+-    "notes": "",
+-    "id": "coenurus_cerebralis_larva",
+-    "images": []
+-  },
+-  {
+     "latinName": "Coenurus serialis",
+     "synonyms": [],
+     "slovakName": "",
+@@ -4418,7 +4368,6 @@
+     "images": []
+   },
+   {
+-    "id": "cryptosporidium_parvum_oocyst",
+     "latinName": "Cryptosporidium parvum",
+     "synonyms": [],
+     "slovakName": "",
+@@ -4475,9 +4424,9 @@
+     "lifeCycle": "Monoxénny, priamy, prebieha celý v enterocytoch tenkého čreva (intracelulárne, ale extracytoplazmaticky – v apikálnej membránovej väčšine, tzv. \"epicelulárna\" lokalizácia). \nPo zožratí sporulovanej oocysty sa uvoľňujú 4 sporozoity, ktoré invadujú enterocyty → trofozoit → merogónia (typ I a typ II merontov) → gamogónia (mikro- a makrogaméty) → fertilizácia → tvorba oocýst. \nVznikajú dva typy oocýst: tenkostenné (autoinfekcia v hostiteľovi) a hrubostenné (vylučované do prostredia, odolné). \nCelý cyklus trvá cca 12–14 dní od infekcie po vylučovanie oocýst (prepatentná perióda cca 2–7 dní u teliat).",
+     "pathology": "Poškodenie klkov tenkého čreva (atrofia, skrátenie klkov, hyperplázia krýpt) → malabsorpcia, osmotická a sekrečná hnačka. Klinicky sa prejavuje profúznou vodnatou hnačkou, dehydratáciou, anorexiou, u teliat najčastejšie v 1.–3. týždni života. Vysoká morbidita, mortalita zvyčajne nízka, ale v kombinácii s inými patogénmi (rotavírusy, E. coli, Giardia) môže byť závažná.",
+     "zoonosis": true,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "notes": "",
++    "id": "cryptosporidium_parvum_oocyst",
++    "images": []
+   },
+   {
+     "latinName": "Cryptosporidium saurophilum",
+@@ -4930,7 +4879,6 @@
+     "images": []
+   },
+   {
+-    "id": "cyniclomyces_guttulatus_yeast",
+     "latinName": "Cyniclomyces guttulatus",
+     "synonyms": [
+       "Saccharomyces guttulatus",
+@@ -4999,9 +4947,9 @@
+     "lifeCycle": "Kvasinka je súčasťou normálnej mikroflóry GIT (najmä u králikov, hlodavcov), odkiaľ sa fekálno-orálnou cestou prenáša na ďalšie jedince alebo do prostredia.\nAskospóry aj vegetatívne bunky môžu určitý čas prežívať v prostredí (trus, kontaminovaná krmivo/podstielka) a slúžiť ako zdroj infekcie/kolonizácie nového hostiteľa.\n\nHlavné cesty prenosu\nKonzumácia trusu hlodavcov/králikov (koprofágia) - Najčastejší a najpravdepodobnejší spôsob – psy majú tendenciu očuchávať a konzumovať trus iných zvierat. Ak má domácnosť/farma aj králiky, morčatá, činčily alebo sa pes pohybuje v prostredí s voľne žijúcimi hlodavcami (myši, potkany), riziko expozície stúpa.\n\nKontakt s kontaminovaným prostredím - Podstielka, klietky, výbehy alebo pastviny, kde sa predtým pohybovali králiky/hlodavce. Kvasinka (vrátane odolnejších askospór) môže istý čas prežívať v prostredí.\n\nKonzumácia surového mäsa/krmiva (BARF diéta) - Suroviny obsahujúce časti tráviaceho traktu králikov alebo hlodavcov (napr. celé koristi, drobky) môžu byť zdrojom kvasinky.\n\nPriamy kontakt medzi zvieratami - Spoločné bývanie psa s králikmi/morčatami v jednej domácnosti.\n\nKontaminovaná voda alebo krmivo - Menej časté, ale možné pri zdieľanom prostredí s hlodavcami.",
+     "pathology": "U psa nejde o fyziologickú súčasť mikroflóry (na rozdiel od králikov, morčiat a činčíl, kde je bežným komenzálom céka). Nález u psa sa najčastejšie spája s poruchou tráviaceho traktu spojenou so zmenenou GIT motilitou, pH alebo maldigesciou/malabsorpciou – typicky pri exokrinnej pankreatickej insuficiencii (EPI), chronickej enteropatii (IBD) alebo inej príčine chronických GIT ťažkostí (vracanie, hnačka, chudnutie). V malom množstve môže byť prítomná aj u zdravých psov. U zdravého psa so správnou GIT motilitou a normálnym pH žalúdka sa kvasinka väčšinou nezachytí trvalo alebo je prítomná len v malom množstve bez klinického významu. Premnoženie nastáva sekundárne – pri už existujúcej poruche trávenia (napr. EPI, znížená žalúdočná kyslosť, spomalená pasáž, IBD), ktorá vytvorí priaznivé podmienky pre pomnoženie kvasinky. Preto pri náleze u psa je vždy dôležitejšia otázka \"prečo sa premnožila\" než samotný spôsob \"nákazy\".\n\nU králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "notes": "",
++    "id": "cyniclomyces_guttulatus_yeast",
++    "images": []
+   },
+   {
+     "latinName": "Cysticercus bovis",
+@@ -5572,7 +5520,6 @@
+     "images": []
+   },
+   {
+-    "id": "isospora_erinacei_oocyst",
+     "latinName": "Cystoisospora erinacei",
+     "synonyms": [
+       "Isospora erinacei"
+@@ -5621,7 +5568,8 @@
+     "lifeCycle": "",
+     "pathology": "",
+     "zoonosis": false,
+-     "notes": "",
++    "notes": "",
++    "id": "isospora_erinacei_oocyst",
+     "images": []
+   },
+   {
+@@ -5725,7 +5673,6 @@
+     "images": []
+   },
+   {
+-    "id": "isospora_neyrai_oocyst",
+     "latinName": "Cystoisospora neyrai",
+     "synonyms": [
+       "Isospora neyrai"
+@@ -5776,8 +5723,9 @@
+     "lifeCycle": "",
+     "pathology": "",
+     "zoonosis": false,
+-     "notes": "Chýba mikropyle",
+-     "images": []
++    "notes": "Chýba mikropyle",
++    "id": "isospora_neyrai_oocyst",
++    "images": []
+   },
+   {
+     "latinName": "Cystoisospora ohioensis komplex",
+@@ -6905,7 +6853,6 @@
+     "images": []
+   },
+   {
+-    "id": "dibothriocephalus_latus_egg",
+     "latinName": "Dibothriocephalus latus",
+     "synonyms": [
+       "Diphyllobothrium latum"
+@@ -6969,6 +6916,7 @@
+     "pathology": "Patológia u definitívnych hostiteľov:\nVäčšinou asymptomatická alebo mierna infekcia. Dospelce v tenkom čreve spôsobujú mechanické dráždenie a lokálne poškodenie sliznice. Pri silnej infekcii katarálna enteritída, hnačka, nechutenstvo, abdominálny diskomfort a chudnutie; zriedkavo poruchy črevnej pasáže až obštrukcia.",
+     "zoonosis": true,
+     "notes": "",
++    "id": "dibothriocephalus_latus_egg",
+     "images": []
+   },
+   {
+@@ -7402,7 +7350,6 @@
+     "images": []
+   },
+   {
+-    "id": "dipylidium_caninum_egg",
+     "latinName": "Dipylidium caninum",
+     "synonyms": [],
+     "slovakName": "Pásomnica psia",
+@@ -7453,12 +7400,11 @@
+     "lifeCycle": "Definitívny hostiteľ (DH): pes/mačka – dospelá pásomnica v tenkom čreve produkuje gravidné proglotidy.\n\nGravidné proglotidy sa aktívne alebo pasívne vylučujú s trusom alebo vyliezajú z perianálnej oblasti a rozpadávajú sa v prostredí, čím uvoľňujú vaječné balíčky.\n\nIntermediárny hostiteľ (IH): larvy hmyzu – najmä blchy (Ctenocephalides canis, C. felis) a zriedkavo švoly (Trichodectes canis).\n\nLarvy hmyzu v prostredí požierajú vajíčka/balíčky; vo vnútri sa vyvíja cysticerkoid (metacestódne štádium).\n\nInfekcia definitívneho hostiteľa: pes/mačka sa infikuje požitím infikovanej blchy/švoly (napr. pri olizovaní srsti).\n\nV tenkom čreve sa z cysticerkoidu vyvinie dospelá pásomnica, ktorá sa uchytí na črevnú stenu a začne produkovať nové články.",
+     "pathology": "Väčšina infekcií je mierneho priebehu; dospelé pásomnice sú relatívne málo patogénne.\n\nPri silnejších infekciách sa môžu vyskytnúť:\n\nAbdominálne ťažkosti: bolesť brucha, nechutenstvo, neprosperita.\n\nTráviace poruchy: hnačky alebo zápcha, zriedkavo až intestinálna obštrukcia pri masívnej infekcii.\n\nČastým klinickým prejavom je perianálne podráždenie spôsobené migráciou gravidných proglotidov:\n\nZviera vykazuje svrbenie v oblasti konečníka, olizuje si túto oblasť, „tlačí zadok o zem, sánkuje“ (tzv. „sleighing“).\n\nSekundárne môže dochádzať k dermatitíde v perianálnej oblasti v dôsledku mechanického dráždenia a olizovania.",
+     "zoonosis": true,
+-    "images": [],
+-    "references": [],
+-    "notes": "Diagnosticky postačuje makroskopické nájdenie pohyblivých proglotidov v truse alebo okolo análneho otvoru; mikroskopicky sa potvrdzuje rozdrvením článku vo vode/fyziologickom roztoku a vyhľadaním vaječných balíčkov."
++    "notes": "Diagnosticky postačuje makroskopické nájdenie pohyblivých proglotidov v truse alebo okolo análneho otvoru; mikroskopicky sa potvrdzuje rozdrvením článku vo vode/fyziologickom roztoku a vyhľadaním vaječných balíčkov.",
++    "id": "dipylidium_caninum_egg",
++    "images": []
+   },
+   {
+-    "id": "dirofilaria_immitis_larva",
+     "latinName": "Dirofilaria immitis",
+     "synonyms": [],
+     "slovakName": "Vlasovec psí (srdcový červ)",
+@@ -7516,10 +7462,10 @@
+     "pathology": "Dospelé D. immitis spôsobujú mechanické a zápalové lézie v pľúcnych artériách a pravej časti srdca:\n- Endarteritída a proliferácia intimy pľúcnych artérií,\n- Trombózy a zhrubnutie cievnej steny,\n- Pľúcna hypertenzia a následné pravostranné srdcové zlyhanie.\n\nKlinické príznaky u psov:\n- Kašeľ, dyspnoe, znížená tolerancia záťaže,\n- Ascites, opuchy, hepatomegália (pri pravostrannom zlyhaní),\n- Chudnutie, neprosperita, v ťažkých prípadoch kolaps a náhly úhyn.\n- Caval syndróm (ťažká forma): Masívna infekcia s veľkým počtom dospelých červov v pravej predsieni a komore, vedúca k akútnemu pravostrannému zlyhaniu, hemolytickej anémii a často rýchlemu úhynu.\n\nU mačiek je infekcia často miernejšia, ale môže spôsobiť HARD (Heartworm Associated Respiratory Disease) – chronickú bronchitídu a pľúcne lézie, niekedy s náhlym úhynom.\n\nMikrofilárie samotné sú zvyčajne málo patogénne, ale môžu prispievať k imunologickým reakciám a v niektorých prípadoch k poškodeniu obličiek (glomerulonefritída).",
+     "zoonosis": false,
+     "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)",
++    "id": "dirofilaria_immitis_larva",
+     "images": []
+   },
+   {
+-    "id": "dirofilaria_repens_larva",
+     "latinName": "Dirofilaria repens",
+     "synonyms": [],
+     "slovakName": "Vlasovec podkožný (podkožná dirofilária)",
+@@ -7577,6 +7523,7 @@
+     "pathology": "Dospelé D. repens sa lokalizujú v podkoží a podkožnom väzive, kde spôsobujú prevažne mierne, lokálne zmeny:\n\nTvorba podkožných nodulov (uzlíkov) v mieste výskytu dospelých červov,\nMierny lokálny zápal a fibróza okolo červov,\nPri masívnejšej infekcii svrbenie a dermatitída.\n\nKlinické príznaky u psov:\n\nVäčšinou asymptomatický alebo mierny priebeh,\nPodkožné uzlíky, niekedy migrujúce opuchy,\nSvrbenie kože, alopécia v mieste lézií,\nSystémové príznaky (kašeľ, kardiovaskulárne zlyhanie) sa na rozdiel od D. immitis prakticky nevyskytujú.\n\nU mačiek je infekcia zvyčajne mierna až asymptomatická, prejavuje sa najmä kožnými zmenami.\n\nMikrofilárie samotné sú zvyčajne nepatogénne, klinický význam majú predovšetkým dospelé jedince v podkoží.",
+     "zoonosis": false,
+     "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, najmä dlhý cefalický priestor – kľúčové pre odlíšenie od D. immitis.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblasti análneho a exkrečného póru – u D. repens sa farbí iba análny pór.\nAntigénový test: komerčné antigénové testy sú vyrábané pre D. immitis; na D. repens sa štandardne nevyrábajú, diagnostika sa preto opiera predovšetkým o mikroskopiu (morfometria, histochemické farbenie) a PCR.",
++    "id": "dirofilaria_repens_larva",
+     "images": []
+   },
+   {
+@@ -14684,7 +14631,6 @@
+     "images": []
+   },
+   {
+-    "id": "fasciola_hepatica_egg",
+     "latinName": "Fasciola hepatica",
+     "synonyms": [],
+     "slovakName": "Motolica pečeňová",
+@@ -14741,12 +14687,11 @@
+     "lifeCycle": "Heteroxénny (digenetický), nutný medzihostiteľ – vodný slimák.\n\nDospelec v žlčových cestách definitívneho hostiteľa produkuje vajíčka → vylučované žlčou do čreva → stolicou do prostredia.\nVo vode sa vyvíja miracídium (za 9–14 dní pri optimálnej teplote), ktoré aktívne vyhľadáva a penetruje medzihostiteľa (Galba truncatula).\nV slimáku: sporocysta → rediá (1–2 generácie) → cerkárie (celý vývoj v slimáku trvá cca 4–7 týždňov).\nCerkárie opúšťajú slimáka, encystujú sa na vodných rastlinách alebo vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje požitím metacerkárií (pastva, kontaminovaná voda/tráva).\nV čreve sa uvoľňuje juvenilná motolica, penetruje črevnou stenou do peritoneálnej dutiny → migruje do pečene → prenikne pečeňovým parenchýmom (migračná fáza, cca 6–8 týždňov) → dostáva sa do žlčových ciest, kde dospieva a začína klásť vajíčka.\nCelý cyklus (od vajíčka po vajíčko) trvá cca 4–5 mesiacov.",
+     "pathology": "Akútna fasciolóza (migračná fáza larvy v pečeňovom parenchýme): traumatická hepatitída, krvácanie, nekrózy, u oviec môže viesť k náhlemu úhynu (hlavne pri masívnej infekcii).\nChronická fasciolóza (dospelci v žlčových cestách): cholangitída, fibróza a zhrubnutie stien žlčových ciest (\"pipe-stem liver\" – klinicky typický nález pri pitve), cholestáza, anémia (hemofágia parazita), hypoalbuminémia, chudnutie, znížená produkcia mlieka/mäsa/vlny.\nSekundárne riziko: uľahčuje vznik \"black disease\" (infekčná nekrotická hepatitída spôsobená Clostridium novyi type B) v dôsledku poškodenia pečeňového tkaniva.",
+     "zoonosis": true,
+-    "images": [],
+-    "references": [],
+-    "notes": "Vhodná metóda: sedimentačná technika, nie flotácia.\nKoprologické vyšetrenie môže byť falošne negatívne pri akútnej fáze (larvy migrujú v pečeňovom parenchýme, dospelci ešte nekladú vajíčka) – prepatentná perióda cca 8–12 týždňov.\nPri podozrení na akútnu fázu (bez vajíčok v stolici) odporučiť sérologické vyšetrenie (ELISA), pretože koprológia je v tomto štádiu negatívna.\n Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie).V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam."
++    "notes": "Vhodná metóda: sedimentačná technika, nie flotácia.\nKoprologické vyšetrenie môže byť falošne negatívne pri akútnej fáze (larvy migrujú v pečeňovom parenchýme, dospelci ešte nekladú vajíčka) – prepatentná perióda cca 8–12 týždňov.\nPri podozrení na akútnu fázu (bez vajíčok v stolici) odporučiť sérologické vyšetrenie (ELISA), pretože koprológia je v tomto štádiu negatívna.\n Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie).V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam.",
++    "id": "fasciola_hepatica_egg",
++    "images": []
+   },
+   {
+-    "id": "fascioloides_magna_adult",
+     "latinName": "Fascioloides magna",
+     "synonyms": [],
+     "slovakName": "Motolica jelenia",
+@@ -14804,12 +14749,11 @@
+     "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\n\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+     "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": "Významný pôvodne severoamerický parazit, do Európy zavlečený s dovozom jelenej zveri (vysoký výskyt napr. v Českej republike, na južnej Morave, v Poľsku) – v SR a ČR sledovaný najmä u jelenej zveri vo voľnej prírode a v chovoch, epidemiologicky relevantný pre pastvu dobytka v endemických oblastiach.\nPri podozrení na infekciu u dobytka/oviec v endemickej oblasti (výskyt jelenej zveri) odporučiť histopatologické vyšetrenie pečene alebo PCR z tkaniva/lézií."
++    "notes": "Významný pôvodne severoamerický parazit, do Európy zavlečený s dovozom jelenej zveri (vysoký výskyt napr. v Českej republike, na južnej Morave, v Poľsku) – v SR a ČR sledovaný najmä u jelenej zveri vo voľnej prírode a v chovoch, epidemiologicky relevantný pre pastvu dobytka v endemických oblastiach.\nPri podozrení na infekciu u dobytka/oviec v endemickej oblasti (výskyt jelenej zveri) odporučiť histopatologické vyšetrenie pečene alebo PCR z tkaniva/lézií.",
++    "id": "fascioloides_magna_adult",
++    "images": []
+   },
+   {
+-    "id": "fascioloides_magna_egg",
+     "latinName": "Fascioloides magna",
+     "synonyms": [],
+     "slovakName": "Motolica jelenia",
+@@ -14867,9 +14811,9 @@
+     "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\n\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+     "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": "U aberantných hostiteľov (dobytok, ovce) parazit zvyčajne NEKLADIE vajíčka do žlčových ciest (lebo sa nedostane do žlčových ciest, migruje voľne v parenchýme) → koprologické vyšetrenie je typicky negatívne aj pri ťažkej infekcii – diagnóza je väčšinou post mortem."
++    "notes": "U aberantných hostiteľov (dobytok, ovce) parazit zvyčajne NEKLADIE vajíčka do žlčových ciest (lebo sa nedostane do žlčových ciest, migruje voľne v parenchýme) → koprologické vyšetrenie je typicky negatívne aj pri ťažkej infekcii – diagnóza je väčšinou post mortem.",
++    "id": "fascioloides_magna_egg",
++    "images": []
+   },
+   {
+     "latinName": "Filicollis anatis",
+@@ -17108,7 +17052,6 @@
+     "images": []
+   },
+   {
+-    "id": "ligula_intestinalis_egg",
+     "latinName": "Ligula intestinalis",
+     "synonyms": [],
+     "slovakName": "Škáravec vtáčí (pásomnica vtáčia)",
+@@ -17159,12 +17102,11 @@
+     "lifeCycle": "Dospelec v čreve vtáka produkuje vajíčka → trus → voda.\nZ vajíčka sa vyliahne koracídium s riasinkami.\nKoracídium zožerie kôrovec → v jeho telesnej dutine vzniká procerkoid.\nKôrovca s procerkoidom zožerie ryba → larva prenikne cez črevnú stenu do telesnej dutiny → vyvinie sa plerocerkoid.\nRybu s plerocerkoidom skonzumuje rybožravý vták → larva sa v jeho čreve v priebehu niekoľkých dní vyvinie na pohlavne dospelého jedinca.",
+     "pathology": "U definitívneho hostiteľa (vtáka): Pri bežnej intenzite väčšinou málo výrazné klinické príznaky.\nMechanické dráždenie a zápal črevnej sliznice\nPri masívnej invázii možná obštrukcia čreva a chudnutie.",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "notes": "",
++    "id": "ligula_intestinalis_egg",
++    "images": []
+   },
+   {
+-    "id": "ligula_intestinalis_plerocercoid",
+     "latinName": "Ligula intestinalis",
+     "synonyms": [],
+     "slovakName": "Škáravec vtáčí (pásomnica vtáčia)",
+@@ -17218,9 +17160,9 @@
+     "lifeCycle": "Dospelec v čreve vtáka produkuje vajíčka → trus → voda\nZ vajíčka sa vyliahne riasinkami opatrené koracídium\nKoracídium pozrie buchanka → v jej telesnej dutine vzniká procerkoid\nBuchanku so procerkoidom pozrie ryba → larva prenikne cez črevnú stenu do telesnej dutiny → vyvinie sa plerocerkoid\nRybu s plerocerkoidom skonzumuje rybožravý vták → larva sa v jeho čreve v priebehu niekoľkých dní vyvinie na pohlavne dospelého jedinca",
+     "pathology": "U hostiteľov plerocerkoidu (ryby) – \"ligulóza\":\n\nvýrazné vzdutie brušnej dutiny tlakom rastúceho parazita\natrofia gonád – tzv. parazitická kastrácia, ryba stráca reprodukčnú schopnosť\nútlak ostatných vnútorných orgánov, zníženie kondície\nzmena správania – nakazené ryby sa zdržiavajú bližšie k hladine, sú menej ostražité → zvýšené riziko predácie vtákmi (parazitická manipulácia hostiteľa uľahčujúca prenos na definitívneho hostiteľa)\npri veľmi silnej invázii môže dôjsť až k prasknutiu telesnej steny a úhynu ryby\nhospodársky význam v rybničnom chove (kapor, plotica)",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": "Parazitárna kastrácia. Ligula intestinalis dokáže ovplyvniť produkciu hormónov hypofýzy u svojho medzihostiteľa tak, že ryba nerastie a nikdy nedosiahne pohlavnú dospelosť, aby sa tak ľahšie stala korisťou rybožravých vtákov, ktorí sú hostiteľmi posledného štádia tohto parazita."
++    "notes": "Parazitárna kastrácia. Ligula intestinalis dokáže ovplyvniť produkciu hormónov hypofýzy u svojho medzihostiteľa tak, že ryba nerastie a nikdy nedosiahne pohlavnú dospelosť, aby sa tak ľahšie stala korisťou rybožravých vtákov, ktorí sú hostiteľmi posledného štádia tohto parazita.",
++    "id": "ligula_intestinalis_plerocercoid",
++    "images": []
+   },
+   {
+     "latinName": "Linguatula serrata",
+@@ -17934,7 +17876,6 @@
+     "images": []
+   },
+   {
+-    "id": "myocoptes_musculinus_adult",
+     "latinName": "Myocoptes musculinus",
+     "synonyms": [],
+     "slovakName": "Svrabovec myší (Zákožka myšia)",
+@@ -17985,12 +17926,11 @@
+     "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+     "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "notes": "",
++    "id": "myocoptes_musculinus_adult",
++    "images": []
+   },
+   {
+-    "id": "myocoptes_musculinus_egg",
+     "latinName": "Myocoptes musculinus",
+     "synonyms": [],
+     "slovakName": "Svrabovec myší (Zákožka myšia)",
+@@ -18036,62 +17976,11 @@
+     "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+     "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
+-  },
+-  {
++    "notes": "",
+     "id": "myocoptes_musculinus_egg",
+-    "latinName": "Myocoptes musculinus",
+-    "synonyms": [],
+-    "slovakName": "Svrabovec myší (Zákožka myšia)",
+-    "taxonomy": {
+-      "kingdom": "Animalia",
+-      "phylum": "Arthropoda",
+-      "class": "Arachnida",
+-      "order": "Sarcoptiformes",
+-      "family": "Myocoptidae",
+-      "genus": "Myocoptes",
+-      "species": "Myocoptes musculinus"
+-    },
+-    "hostGroups": [],
+-    "hosts": [
+-      "Plazy"
+-    ],
+-    "hostNotes": {
+-      "Plazy": "V truse ako pasívne prehltnutý ektoparazit koristi."
+-    },
+-    "sample": "Trus",
+-    "stage": "Vajíčko",
+-    "group": "Arachnida",
+-    "methods": [],
+-    "micrometry": {
+-      "lengthMin": 150,
+-      "lengthMax": 200,
+-      "widthMin": 70,
+-      "widthMax": 100,
+-      "unit": "µm"
+-    },
+-    "morphology": {
+-      "shape": "Eliptický",
+-      "colour": "Bezfarebný",
+-      "shell": "Tenká, hladká"
+-    },
+-    "diagnosticSigns": [
+-      "Vajíčko je oválneho tvaru, pevne prichytené k spodnej časti chlpu, často v blízkosti pokožky"
+-    ],
+-    "differentialDiagnosis": [
+-      "Samotné vajíčko nie je vhodné na spoľahlivú druhovú identifikáciu, pretože vajíčka bežných myších kožných roztočov sú si morfologicky veľmi podobné. Druhovú identifikáciu treba potvrdiť nálezom dospelca alebo nymfy."
+-    ],
+-    "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
+-    "pathology": "Nie je to parazit plazov, do trusu sa dostáva pasívne prehltnutím ektoparazita koristi. V truse plazov sa môže objaviť ako náhodný nález.",
+-    "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "images": []
+   },
+   {
+-    "id": "nematodirus_sp_egg",
+     "latinName": "Nematodirus sp.",
+     "synonyms": [],
+     "slovakName": "",
+@@ -18140,9 +18029,9 @@
+     "lifeCycle": "Vajíčko sa vylučuje trusom už v štádiu s niekoľkými blastomérami\nZvláštnosť rodu: vývoj L1 → L2 → L3 prebieha vo vnútri vajíčka (na rozdiel od väčšiny trichostrongylidov, kde sa larva liahne skoro a vyvíja sa voľne v prostredí)\nVyliahnutie infekčnej L3 z vajíčka vyžaduje špecifické podmienky – u N. battus je typická potreba obdobia chladu (prezimovanie) a následné jarné otepľovanie, čo vedie k synchronizovanému hromadnému liahnutiu lariev na jar.\nTáto synchronizácia spôsobuje typický jarnú \"nematodirovú explóziu\" – masovú infekciu najmä u jahniat na paši\nPo pozretí hostiteľom: exystácia v tenkom čreve, vývoj L3 → L4 → dospelec priamo v sliznici, bez hlbokej migrácie do tkanív\nPrepatentná perióda: cca 2–3 týždne",
+     "pathology": "Postihnuté je najmä jejunum\nPatogénne pôsobia predovšetkým larválne štádiá (L4), ktoré poškodzujú črevné klky a spôsobujú:\nkatarálnu až hemoragickú enteritídu\natrofiu klkov, malabsorpciu\nprofúznu hnačku, dehydratáciu\nstratu hmotnosti, spomalenie rastu\nPri masívnej jarnej infekcii u jahniat môže dôjsť k akútnej klinickej nematodiróze s vysokou mortalitou ešte pred tým, než sa vôbec objavia vajíčka v truse (patológia predbieha prepatentné vylučovanie vajíčok – dôležité pre diagnostiku, keďže koprologické vyšetrenie môže byť v čase klinických príznakov ešte negatívne)\nDospelé jedince samotné sú menej patogénne než larválne štádiá",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": ""
++    "notes": "",
++    "id": "nematodirus_sp_egg",
++    "images": []
+   },
+   {
+     "latinName": "Nemhelix bakeri",
+@@ -19067,7 +18956,6 @@
+     "images": []
+   },
+   {
+-    "id": "paramphistomum_cervi_egg",
+     "latinName": "Paramphistomum cervi",
+     "synonyms": [],
+     "slovakName": "Motolica bachorová",
+@@ -19117,9 +19005,9 @@
+     "lifeCycle": "Heteroxénny (digenetický), analogický cyklu Fasciola, ale s odlišnou lokalizáciou dospelcov a juvenilných štádií:\n\nDospelci v bachore/predžalúdku produkujú vajíčka → vylučované stolicou.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie.\nCerkárie encystujú na vodných rastlinách/vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje pri pastve/pití vody s metacerkáriami.\nPo excystácii v čreve juvenilné motolice NEmigrujú pečeňou (na rozdiel od Fasciola) – prichytávajú sa priamo na slizniciu dvanástnika a prednej časti tenkého čreva, kde spôsobujú najväčšie poškodenie (patogénne štádium!).\nPo niekoľkých týždňoch juvenilné motolice migrujú retrográdne (proti smeru toku tráviaceho obsahu) do bachora/predžalúdka, kde dospievajú a kladú vajíčka (relatívne apatogénne štádium v tejto lokalizácii).\nPrepatentná perióda cca 7–10 týždňov.",
+     "pathology": "Hlavná patogenita spôsobená juvenilnými (nezrelými) motolicami v dvanástniku/tenkom čreve, nie dospelcami v bachore (tie sú relatívne apatogénne, iba mechanicky dráždia).\nAkútna paramfistomóza: ťažká enteritída, hemoragicko-nekrotická duodenitída, profúzna hnačka (často fetídna, niekedy s krvou), dehydratácia, hypoproteinémia, edémy (submandibulárny edém – \"bottle jaw\" podobne ako pri iných parazitózach s proteínovou stratou).\nVysoká morbidita/mortalita u mladých zvierat pri masívnej infekcii, najmä pri prvom výraznom nástupe migrácie juvenilných štádií z čreva do predžalúdka.\nChronická infekcia dospelcami v bachore je väčšinou subklinická, tolerovaná.",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": "Dôležité klinické upozornenie: pozitívny koprologický nález (vajíčka z dospelcov v bachore) NEKORELUJE s aktuálnou klinickou patológiou, ktorú spôsobujú juvenilné štádiá v čreve – teda \"ťažká\" koprologická infekcia nemusí znamenať klinické ochorenie, a naopak, akútna klinická paramfistomóza (spôsobená juvenilnými motolicami) môže byť koprologicky NEGATÍVNA (vajíčka sa ešte nekladú)."
++    "notes": "Dôležité klinické upozornenie: pozitívny koprologický nález (vajíčka z dospelcov v bachore) NEKORELUJE s aktuálnou klinickou patológiou, ktorú spôsobujú juvenilné štádiá v čreve – teda \"ťažká\" koprologická infekcia nemusí znamenať klinické ochorenie, a naopak, akútna klinická paramfistomóza (spôsobená juvenilnými motolicami) môže byť koprologicky NEGATÍVNA (vajíčka sa ešte nekladú).",
++    "id": "paramphistomum_cervi_egg",
++    "images": []
+   },
+   {
+     "latinName": "Paranoplocephala mamillana",
+@@ -22944,7 +22832,6 @@
+     "images": []
+   },
+   {
+-    "id": "taenia_sp_egg",
+     "latinName": "Taenia sp.",
+     "synonyms": [],
+     "slovakName": "",
+@@ -23001,9 +22888,9 @@
+     "lifeCycle": "Pri _Taenia_ spp. je životný cyklus typicky nepriamy – s definitívnym a intermediárnym hostiteľom.\n\n1. Dospelá pásomnica – definitívny hostiteľ\nDospelá Taenia žije najmä v tenkom čreve definitívneho hostiteľa (mäsožravec alebo človek – závisí od konkrétneho druhu). Zrelé články (proglotidy) obsahujú veľké množstvo vajíčok. Vajíčka sa dostávajú do prostredia trusom.\n\n2. Vajíčko v prostredí\nVajíčko obsahuje hexakantné embryo (onkosféru) so 6 háčikmi. Je veľmi odolné voči vonkajšiemu prostrediu. Mikroskopicky ide o typické vajíčko taeniového typu. Samotné vajíčko spravidla neumožňuje rozlíšiť jednotlivé druhy Taenia ani spoľahlivo od Echinococcus.\n\n3. Pozretie vajíčka intermediárnym hostiteľom (medzihostiteľom)\nIntermediárny hostiteľ prijme vajíčka napr. kontaminovanou potravou, vodou alebo vegetáciou. V čreve sa z vajíčka uvoľní onkosféra. Pomocou 6 háčikov prenikne cez črevnú stenu a dostane sa do krvného/lymfatického obehu.\n\n4. Vývoj larvy v tkanivách\nOnkosféra migruje do cieľových tkanív, najmä svalov alebo orgánov. Vyvíja sa na metacestóda – podľa druhu napr.  cysticercus (_T. solium, T. saginata_), iné typy metacestód pri ďalších druhoch.\nInfekčné larválne štádium teda nie je vajíčko, ale metacestóda v tkanive intermediárneho hostiteľa.\n\n5. Definitívny hostiteľ požerie infikované tkanivo\nDefinitívny hostiteľ sa nakazí konzumáciou surového alebo nedostatočne tepelne opracovaného mäsa/tkaniva s metacestódami. Metacestóda sa v tenkom čreve aktivuje. Skolex sa vysunie a prichytí na črevnú sliznicu.\n\n6. Dospelá pásomnica\nSkolex zostáva prichytený v tenkom čreve. Z krčka postupne vznikajú nové proglotidy (články). Pásomnica dorastá, články dozrievajú a nakoniec opäť uvoľňujú vajíčka.",
+     "pathology": "U definitívnych hostiteľov, najmä psov, mačiek a človeka podľa druhu Taenia, je infekcia dospelými pásomnicami väčšinou mierna až subklinická.\n\nLokalizácia: dospelé cestódy v tenkom čreve.\nMechanické poškodenie: prichytenie skolexu k črevnej sliznici pomocou prísaviek a prípadne háčikov spôsobuje lokálne dráždenie a povrchové poškodenie sliznice.\nZápal: pri vyššej intenzite infekcie môže vzniknúť katarálny enteritický zápal.\nKlinické príznaky: často bez príznakov; pri silnejšej infekcii hnačka, mäkká stolica, nechutenstvo, abdominálny diskomfort a chudnutie.\nPerianálne prejavy: u niektorých druhov môžu odchádzajúce proglotidy spôsobovať svrbenie v oblasti anu, prípadne je možné články vidieť vo výkaloch alebo na srsti.\nVýživové straty: pri masívnej infekcii môže dochádzať ku konkurencii o živiny, ale klinicky významná malnutrícia je skôr zriedkavá.\nKomplikácie: pri veľmi silnej infekcii zriedkavo črevná obštrukcia.\n\nDôležité rozlíšenie: u definitívneho hostiteľa _Taenia_ spp. spôsobuje črevnú taeniózu, zatiaľ čo závažné tkanivové lézie vznikajú pri larválnych štádiách (metacestódoch) v medzihostiteľoch – napr. cysticerkóza pri _T. solium_.",
+     "zoonosis": true,
+-    "images": [],
+-    "references": [],
+-    "notes": "Nález potvrdzuje infekciu Taeniidae, ale nerozlíši Taenia od Echinococcus"
++    "notes": "Nález potvrdzuje infekciu Taeniidae, ale nerozlíši Taenia od Echinococcus",
++    "id": "taenia_sp_egg",
++    "images": []
+   },
+   {
+     "latinName": "Terranova sp.",
+@@ -24429,7 +24316,6 @@
+     "images": []
+   },
+   {
+-    "id": "uncinaria_stenocephala_egg",
+     "latinName": "Uncinaria stenocephala",
+     "synonyms": [],
+     "slovakName": "Machovec líščí",
+@@ -24481,9 +24367,9 @@
+     "lifeCycle": "Cyklus je priamy (monoxénny) – bez intermediárneho hostiteľa.\nDefinitívny hostiteľ vylučuje vajíčka s trusom do prostredia.\nVo vlhkej pôde/truse sa z vajíčok liahnu larvy, ktoré sa vyvíjajú cez L1 → L2 → infekčné L3 (zvyčajne v priebehu 2–10 dní v závislosti od teploty a vlhkosti).\nInfekcia definitívneho hostiteľa:\nHlavná cesta: perorálna – požitie L3 lariev z kontaminovanej pôdy, vody, potravy alebo pri olizovaní srsti.\nĎalšia cesta: perkutánna – L3 larvy môžu preniknúť cez kožu (najmä pri kontakte s kontaminovanou pôdou).\nPo vstupe do hostiteľa nasleduje migrácia (vrátane pľúcnej fázy) a dospelé jedince sa usadzujú v tenkom čreve, kde začnú produkovať vajíčka.\nPredpatentná perióda: približne 13–21 dní od infekcie do vylučovania vajíčok.",
+     "pathology": "U. stenocephala je vo všeobecnosti považovaná za mierne patogénnu, ale pri vysokých infekčných dávkach môže spôsobovať významné lézie.\nDospelé červy sa zahryzávajú do črevnej mukózy a „odsávajú“ zátky tkaniva (plug-feeding), čo môže viesť k:\n- Strate bielkovín cez črevo,\n- Hlienovitým hnačkám, prípadne tmavej, dechtovej stolici (meléna),\n- Chudnutiu, neprosperite, zhoršeniu kvality srsti.\n- Pri ťažkých infekciách sa môže objaviť anémia (bledé sliznice), dehydratácia a celkové oslabenie, najmä u šteniat.\n- Dermatitída: migrujúce larvy môžu spôsobovať ventrálnu dermatitídu a kožné lézie; v takých prípadoch možno larvy nájsť v koži (hĺbkový škrab, biopsia).",
+     "zoonosis": false,
+-    "images": [],
+-    "references": [],
+-    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu."
++    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu.",
++    "id": "uncinaria_stenocephala_egg",
++    "images": []
+   },
+   {
+     "latinName": "Varestrongylus capreoli",

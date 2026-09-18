@@ -1,5 +1,99 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.36 Aktuálny stav — doplnené (2026‐09‐18, session: odstránenie duplicitných id, pole references, zjednotenie poradia poľí v parasites.json)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Nadväzuje priamo na §0.35 (vyprázdnenie `images` v `parasites.json`). Autorka medzitým sama lokálne odstránila 2 nájdené duplicitné záznamy (`coenurus_cerebralis_larva`, `myocoptes_musculinus_egg`) a požiadala o ďalšie dve úprav práv na `database/parasites.json`: (1) odstrániť nepotrebné pole `"references": []`, (2) zjednotiť poradie posledných poľí v každom zázname na `lifeCycle, pathology, zoonosis, notes, id, images`.
+
+### ✅ 1. Duplicitné id (mirroring autorkinej lokálnej zmeny)
+
+Znovu overené, že oba páry duplicít boli bit-presne identické záznamy (potvrdené už v §0.35). Odstránená druhá (neskoršia) kópia každého páru — `coenurus_cerebralis_larva`, `myocoptes_musculinus_egg`. **474 → 472 záznamov.**
+
+### ✅ 2. Pole `references` odstránené
+
+Pole `"references": []` existovalo v **15 z 474** pôvodných záznamov (vždy prázdne pole — nikdy nemalo reálny obsah). Odstránené zo všetkých (14 po odpočítaní jedného z odstránených duplikátov, ktorý toto pole tiež mal). Pole nie je definované v `02_DATABASE_SPECIFICATION.md`, takto sa neide o zmenu schémy, len o vyčistenie datového súmúru.
+
+### ✅ 3. Zjednotené poradie posledných 6 poľí vo všetkých záznamoch
+
+Pôvodne existovali v súbore **3 rôzne poradia** posledných poľí naprieč záznamami (nekonzistentné kvôli hádanie/ručnému prepracávaniu v predchádzajúcich sessionách). Všetky záznamy teraz končia jednotne v poradí:
+
+```
+"lifeCycle": ...,
+"pathology": ...,
+"zoonosis": ...,
+"notes": ...,
+"id": "...",
+"images": []
+```
+
+Zmena poradia sa dotkla **20 záznamov** (tých, kde `id` bolo pôvodne prvé pole namiesto posledného, a/alebo mali `notes`/`images` v inom poradí). Ostatných 452 záznamov už malo toto poradie spárávne — tie sa v súbore vôbec nedotkli (diff je čisto cielený, žiadny formatátovací šum).
+
+### ⚠️ Vedľajší nález z §0.35, stále otvorený — pole `methods`
+
+Pri tejto úprave som si všimol, že **21 záznamov** stále obsahuje pole `"methods"` (napr. `capillaria_sp_egg`, `fasciola_hepatica_egg`, `taenia_sp_egg`...), hoci `02_DATABASE_SPECIFICATION.md` (§0.8, predchádzajúce session) uvádza, že toto pole bolo zo schémy odstránené. **Nezasahoval som doňho** — autorka o ňom nepožiadala a nie je to súčasť tejto zádavky. Ak sa má odstrániť, treba explicitné potvrdenie.
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `database/parasites.json` | odstránené 2 duplicitné záznamy (474→472); odstránené pole `references` (15→14 výskytov, jeden zanikol s duplikátom); zjednotené poradie posledných 6 poľí (`lifeCycle, pathology, zoonosis, notes, id, images`) vo všetkých záznamoch (20 záznamov reálne zmenených) | ✅ hotové (súbor priložený v chate), ⏳ čaká na manuálne nahradenie v repozitári autorkou |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Rozhodnúť, či sa má z 21 záznamov odstrániť aj zabudnuté pole `methods` (mimo tejto zadania, viď vyššie).
+2. Po nahratení opraveného `parasites.json` do repozitára overť naive v Atlase aj admin nástroji, že 472 záznamov (namiesto 474) sa zobrazuje správne a žiadny odkaz na odstránené duplikáty nezostal (napr. `database/images.json` — skontrolované v §0.35, oba duplikáty mali fotky už zrkadlené v `images.json` pod rovnakým `parasiteId`, takže odstránenie druhého záznamu v `parasites.json` sa `images.json` netýka).
+
+---
+
+🔥 0.35 Aktuálny stav — doplnené (2026‐09‐18, session: vypraznenie redundantného poľa images v parasites.json + nález duplicitných id)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka sa pýtala, či pole `"images": [...]` v `parasites.json` (plné relatívne cesty k fotkám, 73 z 474 záznamov) je potrebné, alebo či stačí všade `"images": []` — vždy nahratené: `parasites.json`, `database/images.json`, `tools/admin/forms/imageForm.js`, neskôr aj `Repository.js`, `PrimaryImage.js`, `AtlasPage.js`, `GalleryPage.js`, `DatabaseService.js` (v predchádzajúcej session).
+
+### 🔍 Analýza — kde sa `p.images` skutočne používa
+
+- **Živá apka (`src/`)**: `Repository.js`, `PrimaryImage.js`, `GalleryPage.js`, `AtlasPage.js`, `DatabaseService.js` — pole `record.images`/`p.images` sa **nikde nečíta**. Fotky idú výhradne cez `database/images.json` (`getImagesForParasite(id)` v `Repository.js`, filtruje podľa `parasiteId`).
+- **Admin nástroj (`tools/admin/forms/imageForm.js`)**: pole `p.images` sa **aktívne používa** — `getImagesForParasite()` zlučúje `state.images` (z `images.json`) a `p.images` (z `parasites.json`) dedup podľa URL; pri pridaní/mazaní fotky sa zapisuje do oboch zdrojov súčasne (viď už zdokumentované v §0.21).
+
+### ✅ Overenie pred zmenou (kritérium bezpečnosti)
+
+Automatizovane skrížené všetkých 73 záznamov s neprázdnym `parasites.json.images` proti `database/images.json`: **všetky URL adresy zo všetkých 73 záznamov už existujú aj v `images.json`** pod rovnakým `parasiteId`. Vyprázdnenie `p.images` teda **nespôsobí stratu viditeľnosti fotiek** — ani v živej apke (tam sa `p.images` nikdy nepoužívalo), ani v admin nástroji (ten ich stále nájde cez `state.images`).
+
+### ✅ Zmena vykonaná
+
+`database/parasites.json`: pole `"images"` vyprázdnené na `[]` pri 73 záznamoch (predtým obsahovali plné relatívne cesty k fotkám, duplicitné voč `images.json`). Zmena vykonaná cieleným textovým nahradením len hodnoty `"images"` v každom dotknutom zázname (nie plným re-serializovaním JSON), aby diff obsahoval **iba** týchto 73 hunkov a žiadne iné formátovacie zmeny v súbore.
+
+- **Žiadna zmena schémy** — pole `images` ostáva v každom zázname (ako prázdne pole), nie odstránené. Dôvod: admin nástroj (`imageForm.js`) s polím `p.images` počíta pri `loadData()`/renderovaní, odstránenie kľúča by bolo riskantnejšie a vyžadovalo by aj zmenu `02_DATABASE_SPECIFICATION.md` (pravidlo č. 8).
+- `database/images.json` sa **nemenil** — zostáva jediným remečnou zdrojom pravdy pre fotky.
+
+### ⚠️ Vedľajší nález — duplicitné `id` v `parasites.json` (NEOPRAVENÉ, mimo rozsahu tejto žiadosti)
+
+Pri kontrole súboru zistené dva páry **úplné identických** záznamov s rovnakým `id`:
+
+- `coenurus_cerebralis_larva` — 2× (oba `"images": []`)
+- `myocoptes_musculinus_egg` — 2× (oba s rovnakými 3 URL fotkami)
+
+Keďže `id` je primárny kľúč (routing `#atlas/<id>`, `images.json.parasiteId`), duplicita môže spôsobiť nejednoznačné správanie. **Autorka o náleze informovaná, zatiaľ nerozhodnuté, či sa má riešiť v tejto alebo ďalej session.**
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `database/parasites.json` | 73 záznamov: `"images": [...]` → `"images": []` (dedup voči `images.json`, overýbané automaticky) | ✅ hotové (súbor priloený v chate), ⏳ čaká na manuálne nahradenie v repozitári autorkou |
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Duplicitné `id`** (`coenurus_cerebralis_larva`, `myocoptes_musculinus_egg`) — rozhodnúť s autorkou, ktorý z páru záznamov odstrániť (sú identické, nie je rozdiel v obsahu na rozhodovanie).
+2. Po nahratení opraveného `parasites.json` do repozitára overť naive v admin nástroji (tab Fotografie), že sa všetkých 73 objektov stále zobrazuje s pôvodným počtom fotiek (cez `state.images`).
+
+---
+
 🔥 0.34 Aktuálny stav — doplnené (2026‑09‑14, session: abecedné zoradenie parazitov v Atlase)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
