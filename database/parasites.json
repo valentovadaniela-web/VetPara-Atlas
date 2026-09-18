@@ -17890,14 +17890,10 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Myš",
-      "Hady",
-      "Jaštery"
+      "Myš"
     ],
     "hostNotes": {
-      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé.",
-      "Hady": "V truse mäsožravých plazov ako pasívne prehltnutý ektoparazit koristi.",
-      "Jaštery": "Nie je to parazit plazov, do trusu sa dostáva pasívne prehltnutím ektoparazita koristi. V truse plazov sa môže objaviť ako náhodný nález."
+    "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
     },
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -17949,10 +17945,14 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Myš"
+      "Myš",
+      "Hady",
+      "Jaštery"
     ],
     "hostNotes": {
-      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
+      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé.",
+      "Hady": "V truse mäsožravých plazov len ako pasívne prehltnutý ektoparazit koristi, nie je to parazit hadov.",
+      "Jaštery": "Nie je to parazit plazov, do trusu sa dostáva pasívne prehltnutím ektoparazita koristi. V truse plazov sa môže objaviť ako náhodný nález."
     },
     "sample": "Koža",
     "stage": "Vajíčko",
