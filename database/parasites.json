@@ -658,9 +658,7 @@
     "zoonosis": false,
     "notes": "Výrastok na chvoste",
     "id": "angiostrongylus_vasorum_larva",
-    "images": [
-      "/public/images/parasites/angiostrongylus_vasorum_larva/angiostrongylus_vasorum_larva_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Angusticaecum holopterum",
@@ -1121,9 +1119,7 @@
     "zoonosis": false,
     "notes": "Vajíčka Ascaridia galli a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách.  Prípadne Vajíčka radu Ascaridida (Ascaridia/Heterakis).",
     "id": "ascaridia_columbae_egg",
-    "images": [
-      "/public/images/parasites/ascaridia_columbae_egg/ascaridia_columbae_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Ascaridia dissimilis",
@@ -1225,9 +1221,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "ascaridia_galli_egg",
-    "images": [
-      "/public/images/parasites/ascaridia_galli_egg/ascaridia_galli_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Ascaris suum",
@@ -1275,12 +1269,7 @@
     "zoonosis": true,
     "notes": "Taxonomický status ľudskej A. lumbricoides a A. suum je dlhodobo sporný, pričom dôkazy z morfológie aj genetiky naznačujú, že ide o jeden druh. ",
     "id": "ascaris_suum_egg",
-    "images": [
-      "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_01.webp",
-      "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_02.webp",
-      "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_03.webp",
-      "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Ascarops strongylina",
@@ -1382,11 +1371,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "aspiculuris_tetraptera_egg",
-    "images": [
-      "/public/images/parasites/aspiculuris_tetraptera_egg/aspiculuris_tetraptera_egg_01.webp",
-      "/public/images/parasites/aspiculuris_tetraptera_egg/aspiculuris_tetraptera_egg_02.webp",
-      "/public/images/parasites/aspiculuris_tetraptera_egg/aspiculuris_tetraptera_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Atoxoplasma sp.",
@@ -1495,23 +1480,7 @@
     "zoonosis": false,
     "notes": "V červenej krvinke sa často nachádzajú v pároch. Dva hruškovité organizmy sa dotýkajú svojimi špicatými koncami a zvierajú medzi sebou ostrý uhol (\"čerešne\")",
     "id": "babesia_canis_trophozoite",
-    "images": [
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_01.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_02.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_03.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_04.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_05.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_06.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_07.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_08.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_09.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_10.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_11.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_12.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_13.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_14.webp",
-      "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_15.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Balantidium sp.",
@@ -1615,11 +1584,7 @@
     "zoonosis": false,
     "notes": "Najväčšia cysta prvoka u cicavcov.",
     "id": "balantioides_coli_cyst",
-    "images": [
-      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_01.webp",
-      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_02.webp",
-      "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Balantioides coli",
@@ -1826,12 +1791,7 @@
     "zoonosis": false,
     "notes": "Sezónnosť: Najmasívnejší výskyt sa zaznamenáva v zimných a skorých jarných mesiacoch, kedy má dobytok hustú srsť a zvieratá sú ustajnené tesne vedľa seba. V lete ich počty prudko klesajú vplyvom slnečného žiarenia a vysokých teplôt kože.",
     "id": "damalinia_bovis_adult",
-    "images": [
-      "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_01.webp",
-      "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_02.webp",
-      "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_03.webp",
-      "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Bovicola longicornis",
@@ -2028,13 +1988,7 @@
     "zoonosis": false,
     "notes": "Vnútri vakuola, nepatogén",
     "id": "buxtonella_sulcata_cyst",
-    "images": [
-      "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_01.webp",
-      "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_02.webp",
-      "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_03.webp",
-      "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_04.webp",
-      "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_05.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Buxtonella sulcata",
@@ -2343,9 +2297,8 @@
     "lifeCycle": "1. Priamy (monoxénny) cyklus - typický napr. pre niektoré druhy parazitujúce v čreve hydiny:\n Dospelé samice v hostiteľovi (čreve, pečeni, dýchacích cestách) kladú nezrelé vajíčka.\nVajíčka sa dostávajú von trusom (prípadne, pri C. hepatica, zostávajú v pečeni až do rozkladu tela hostiteľa).\nV vonkajšom prostredí (pôda, vlhko, teplo) dochádza k dozretiu vajíčka na infekčné štádium obsahujúce larvu (L1).\nNový hostiteľ sa nakazí perorálne – prehltnutím infekčného vajíčka (napr. s kontaminovanou potravou, vodou, pôdou).\nV čreve sa larva vyliahne, migruje do cieľového orgánu (sliznica čreva, pečeň, priedušnica) a dozrieva na dospelého jedinca.\n\n 2. Nepriamy (heteroxénny) cyklus - typický pre druhy parazitujúce v močovom mechúre alebo dýchacích cestách mäsožravcov: \nVajíčka sa dostanú do prostredia trusom alebo močom.\nVajíčko musí byť pozreté dážďovkou (Lumbricidae), ktorá slúži ako medzihostiteľ (paratenický alebo skutočný).\nV tele dážďovky sa larva ďalej vyvíja do infekčného štádia.\nDefinitívny hostiteľ (napr. pes, líška, mačka) sa nakazí zjedením infikovanej dážďovky.\nLarva sa v tele definitívneho hostiteľa dostane do cieľového orgánu a dozreje na dospelého jedinca.",
     "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická crop-capillariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "images": []
   },
   {
     "latinName": "Caryospora cherrughi",
@@ -2581,12 +2534,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_kutzeri_oocyst",
-    "images": [
-      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_02.webp",
-      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_03.webp",
-      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_04.webp",
-      "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_05.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Caryospora megafalconis",
@@ -2634,13 +2582,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_megafalconis_oocyst",
-    "images": [
-      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_02.webp",
-      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_03.webp",
-      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_04.webp",
-      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_05.webp",
-      "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_06.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Caryospora neofalconis",
@@ -2687,11 +2629,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_neofalconis_oocyst",
-    "images": [
-      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_01.webp",
-      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_02.webp",
-      "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Caryospora simplex",
@@ -3712,18 +3650,7 @@
     "zoonosis": false,
     "notes": "Končatiny",
     "id": "chorioptes_equi_adult",
-    "images": [
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_01.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_03.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_04.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_05.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_06.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_07.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_08.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_09.webp",
-      "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_10.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Choriorhabditis gracilicauda",
@@ -3934,58 +3861,6 @@
     "zoonosis": true,
     "notes": "",
     "id": "coenurus_cerebralis_larva",
-    "images": [
-      "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp"
-    ]
-  },
-  {
-    "latinName": "Coenurus cerebralis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Taeniidae",
-      "genus": "Taenia",
-      "species": "Coenurus cerebralis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hostNotes": {},
-    "sample": "Mozog",
-    "stage": "Larva",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 50000,
-      "lengthMax": 100000,
-      "widthMin": 50000,
-      "widthMax": 100000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Mechúrik",
-      "colour": "Sivobiely",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Veľká tenkostenná cysta s mnohými (desiatky až stovky). Cysta naplnená čírou tekutinou a na vnútornej stene pripojenými malými skolexami (typicky s prísavkami a vencom háčikov) – druhová identifikácia je viazaná najmä na morfologiu skolexu.  Typicky v mozgu."
-    ],
-    "differentialDiagnosis": [
-      "Coenurus cerebralis (Taenia multiceps): Cysty sú lokalizované takmer výlučne v centrálnom nervovom systéme (mozog",
-      "miecha) prežúvavcov",
-      "pričom scolexy sú v cyste usporiadané v nepravidelných zhlukoch (nie v radoch).Echinococcus granulosus (hydatida): Obsahuje dcérske mechúriky a voľný hydatidový piesok (scolexy)",
-      "pričom stena cysty je hrubá a vrstvená.Cysticercus pisiformis: Je podstatne menší a obsahuje iba jeden jediný scolex vo vnútri mechúrika."
-    ],
-    "lifeCycle": "Coenurus cerebralis je larválne (metacestódové) štádium druhu Taenia multiceps (definitívny hostiteľ pes/líška). Akútna forma súvisí s migráciou onkosfér, chronická s dozrievaním cýst a tlakovou atrofiou ",
-    "pathology": "Akútna forma súvisí s migráciou onkosfér, chronická s dozrievaním cýst a tlakovou atrofiou.",
-    "zoonosis": true,
-    "notes": "",
-    "id": "coenurus_cerebralis_larva",
     "images": []
   },
   {
@@ -4037,9 +3912,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "coenurus_serialis_larva",
-    "images": [
-      "/public/images/parasites/coenurus_serialis_larva/coenurus_serialis_larva_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Colpoda sp.",
@@ -4189,11 +4062,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "crenosoma_striatum_larva",
-    "images": [
-      "/public/images/parasites/crenosoma_striatum_larva/crenosoma_striatum_larva_01.webp",
-      "/public/images/parasites/crenosoma_striatum_larva/crenosoma_striatum_larva_02.webp",
-      "/public/images/parasites/crenosoma_striatum_larva/crenosoma_striatum_larva_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Crenosoma vulpis",
@@ -4242,11 +4111,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "crenosoma_vulpis_larva",
-    "images": [
-      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_01.webp",
-      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_02.webp",
-      "/public/images/parasites/crenosoma_vulpis_larva/crenosoma_vulpis_larva_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cryptobia helicogenae",
@@ -4560,10 +4425,7 @@
     "lifeCycle": "Monoxénny, priamy, prebieha celý v enterocytoch tenkého čreva (intracelulárne, ale extracytoplazmaticky – v apikálnej membránovej väčšine, tzv. \"epicelulárna\" lokalizácia). \nPo zožratí sporulovanej oocysty sa uvoľňujú 4 sporozoity, ktoré invadujú enterocyty → trofozoit → merogónia (typ I a typ II merontov) → gamogónia (mikro- a makrogaméty) → fertilizácia → tvorba oocýst. \nVznikajú dva typy oocýst: tenkostenné (autoinfekcia v hostiteľovi) a hrubostenné (vylučované do prostredia, odolné). \nCelý cyklus trvá cca 12–14 dní od infekcie po vylučovanie oocýst (prepatentná perióda cca 2–7 dní u teliat).",
     "pathology": "Poškodenie klkov tenkého čreva (atrofia, skrátenie klkov, hyperplázia krýpt) → malabsorpcia, osmotická a sekrečná hnačka. Klinicky sa prejavuje profúznou vodnatou hnačkou, dehydratáciou, anorexiou, u teliat najčastejšie v 1.–3. týždni života. Vysoká morbidita, mortalita zvyčajne nízka, ale v kombinácii s inými patogénmi (rotavírusy, E. coli, Giardia) môže byť závažná.",
     "zoonosis": true,
-    "images": [
-      "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_01.webp",
-      "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_02.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": ""
   },
@@ -4761,13 +4623,7 @@
     "zoonosis": false,
     "notes": "Vzácne",
     "id": "ctenocephalides_felis_adult",
-    "images": [
-      "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_01.webp",
-      "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_02.webp",
-      "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_03.webp",
-      "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_04.webp",
-      "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_05.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Ctenotaenia marmotae",
@@ -4922,10 +4778,7 @@
     "zoonosis": false,
     "notes": "Malé strongylidy",
     "id": "cyathostomum_sp_egg",
-    "images": [
-      "/public/images/parasites/cyathostomum_sp_egg/cyathostomum_sp_egg_01.webp",
-      "/public/images/parasites/cyathostomum_sp_egg/cyathostomum_sp_egg_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cyclophyllidea",
@@ -4974,11 +4827,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "cyclophyllidea_egg",
-    "images": [
-      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_01.webp",
-      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_02.webp",
-      "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cyclospora sp.",
@@ -5100,10 +4949,7 @@
     "lifeCycle": "Kvasinka je súčasťou normálnej mikroflóry GIT (najmä u králikov, hlodavcov), odkiaľ sa fekálno-orálnou cestou prenáša na ďalšie jedince alebo do prostredia.\nAskospóry aj vegetatívne bunky môžu určitý čas prežívať v prostredí (trus, kontaminovaná krmivo/podstielka) a slúžiť ako zdroj infekcie/kolonizácie nového hostiteľa.\n\nHlavné cesty prenosu\nKonzumácia trusu hlodavcov/králikov (koprofágia) - Najčastejší a najpravdepodobnejší spôsob – psy majú tendenciu očuchávať a konzumovať trus iných zvierat. Ak má domácnosť/farma aj králiky, morčatá, činčily alebo sa pes pohybuje v prostredí s voľne žijúcimi hlodavcami (myši, potkany), riziko expozície stúpa.\n\nKontakt s kontaminovaným prostredím - Podstielka, klietky, výbehy alebo pastviny, kde sa predtým pohybovali králiky/hlodavce. Kvasinka (vrátane odolnejších askospór) môže istý čas prežívať v prostredí.\n\nKonzumácia surového mäsa/krmiva (BARF diéta) - Suroviny obsahujúce časti tráviaceho traktu králikov alebo hlodavcov (napr. celé koristi, drobky) môžu byť zdrojom kvasinky.\n\nPriamy kontakt medzi zvieratami - Spoločné bývanie psa s králikmi/morčatami v jednej domácnosti.\n\nKontaminovaná voda alebo krmivo - Menej časté, ale možné pri zdieľanom prostredí s hlodavcami.",
     "pathology": "U psa nejde o fyziologickú súčasť mikroflóry (na rozdiel od králikov, morčiat a činčíl, kde je bežným komenzálom céka). Nález u psa sa najčastejšie spája s poruchou tráviaceho traktu spojenou so zmenenou GIT motilitou, pH alebo maldigesciou/malabsorpciou – typicky pri exokrinnej pankreatickej insuficiencii (EPI), chronickej enteropatii (IBD) alebo inej príčine chronických GIT ťažkostí (vracanie, hnačka, chudnutie). V malom množstve môže byť prítomná aj u zdravých psov. U zdravého psa so správnou GIT motilitou a normálnym pH žalúdka sa kvasinka väčšinou nezachytí trvalo alebo je prítomná len v malom množstve bez klinického významu. Premnoženie nastáva sekundárne – pri už existujúcej poruche trávenia (napr. EPI, znížená žalúdočná kyslosť, spomalená pasáž, IBD), ktorá vytvorí priaznivé podmienky pre pomnoženie kvasinky. Preto pri náleze u psa je vždy dôležitejšia otázka \"prečo sa premnožila\" než samotný spôsob \"nákazy\".\n\nU králikov sa pri poškodení črevnej sliznice, napríklad pri kokcidióze, môže správať oportunisticky.",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_01.webp",
-      "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_02.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": ""
   },
@@ -5414,16 +5260,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "cysticercus_pisiformis_larva",
-    "images": [
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_01.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_02.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_03.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_04.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_05.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_06.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_07.webp",
-      "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_08.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cysticercus tenuicollis",
@@ -5480,14 +5317,7 @@
     "zoonosis": false,
     "notes": "Číra tekutina",
     "id": "cysticercus_tenuicollis_larva",
-    "images": [
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_02.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_03.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_04.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_05.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_06.webp",
-      "/public/images/parasites/cysticercus_tenuicollis_larva/cysticercus_tenuicollis_larva_12.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cystocaulus ocreatus",
@@ -5689,9 +5519,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "isospora_canis_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_canis_oocyst/isospora_canis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "id": "isospora_erinacei_oocyst",
@@ -5743,9 +5571,8 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+     "notes": "",
+    "images": []
   },
   {
     "latinName": "Cystoisospora felis",
@@ -5795,12 +5622,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "isospora_felis_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_01.webp",
-      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_02.webp",
-      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_03.webp",
-      "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cystoisospora neorivolta",
@@ -5850,9 +5672,7 @@
     "zoonosis": false,
     "notes": "Patrí do I. ohioensis komplex",
     "id": "isospora_neorivolta_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_neorivolta_oocyst/isospora_neorivolta_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "id": "isospora_neyrai_oocyst",
@@ -5906,9 +5726,8 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Chýba mikropyle"
+     "notes": "Chýba mikropyle",
+     "images": []
   },
   {
     "latinName": "Cystoisospora ohioensis komplex",
@@ -5958,9 +5777,7 @@
     "zoonosis": false,
     "notes": "Patrí do C. ohioensis komplex",
     "id": "isospora_ohioensis_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_ohioensis_oocyst/isospora_ohioensis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cystoisospora rastegaivae",
@@ -6010,10 +5827,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "isospora_rastegaivae_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_rastegaivae_oocyst/isospora_rastegaivae_oocyst_03.webp",
-      "/public/images/parasites/isospora_rastegaivae_oocyst/isospora_rastegaivae_oocyst_05.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cystoisospora rivolta",
@@ -6165,9 +5979,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "isospora_suis_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_suis_oocyst/isospora_suis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Cytodites nudus",
@@ -6269,17 +6081,7 @@
     "zoonosis": false,
     "notes": "4 laloky",
     "id": "dactylogyrus_sp_adult",
-    "images": [
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_01.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_02.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_03.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_04.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_05.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_06.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_07.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_08.webp",
-      "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_09.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Davainea proglottina",
@@ -6381,9 +6183,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "demodex_aurati_adult",
-    "images": [
-      "/public/images/parasites/demodex_aurati_adult/demodex_aurati_adult_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Demodex bovis",
@@ -6540,15 +6340,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "demodex_canis_adult",
-    "images": [
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_01.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_02.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_03.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_04.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_05.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_06.webp",
-      "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_07.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Demodex cati",
@@ -6806,11 +6598,7 @@
     "zoonosis": false,
     "notes": "Krátky",
     "id": "demodex_gatoi_adult",
-    "images": [
-      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_01.webp",
-      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_02.webp",
-      "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Demodex injai",
@@ -6861,9 +6649,7 @@
     "zoonosis": false,
     "notes": "Dlhý",
     "id": "demodex_injai_adult",
-    "images": [
-      "/public/images/parasites/demodex_injai_adult/demodex_injai_adult_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Demodex tauri",
@@ -7066,9 +6852,7 @@
     "zoonosis": false,
     "notes": "Pri kontakte s vtákmi",
     "id": "dermanyssus_gallinae_adult",
-    "images": [
-      "/public/images/parasites/dermanyssus_gallinae_adult/dermanyssus_gallinae_adult_01.webp"
-    ]
+    "images": []
   },
   {
     "id": "dibothriocephalus_latus_egg",
@@ -7134,14 +6918,8 @@
     "lifeCycle": "Dospelý D. latus žije v tenkom čreve definitívneho hostiteľa.\nVajíčka odchádzajú s trusom do vody.\nVo vode dozrievajú a uvoľní sa koracídium.\nKoracídium zožerie prvý medzihostiteľ – vodné kôrovce Copepoda.\nVyvinie sa procerkoid.\nKôrovca zožerie sladkovodná ryba → larva sa mení na plerocerkoid v tkanivách ryby.\nDefinitívny hostiteľ sa nakazí konzumáciou surovej alebo nedostatočne tepelne upravenej ryby.\nPlerocerkoid sa v čreve vyvinie na dospelca.",
     "pathology": "Patológia u definitívnych hostiteľov:\nVäčšinou asymptomatická alebo mierna infekcia. Dospelce v tenkom čreve spôsobujú mechanické dráždenie a lokálne poškodenie sliznice. Pri silnej infekcii katarálna enteritída, hnačka, nechutenstvo, abdominálny diskomfort a chudnutie; zriedkavo poruchy črevnej pasáže až obštrukcia.",
     "zoonosis": true,
-    "images": [
-      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_01.webp",
-      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_02.webp",
-      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_03.webp",
-      "/public/images/parasites/dibothriocephalus_latus_egg/dibothriocephalus_latus_egg_04.webp"
-    ],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "images": []
   },
   {
     "latinName": "Dicranotaenia coronula",
@@ -7264,16 +7042,7 @@
     "zoonosis": false,
     "notes": "2 \"očká\"",
     "id": "dicrocoelium_dendriticum_egg",
-    "images": [
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_01.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_02.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_03.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_04.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_05.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_06.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_07.webp",
-      "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_08.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Dictyocaulus arnfieldi",
@@ -7375,10 +7144,7 @@
     "zoonosis": false,
     "notes": "Gombík vpredu",
     "id": "dictyocaulus_filaria_larva",
-    "images": [
-      "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_01.webp",
-      "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Dictyocaulus noerneri",
@@ -7426,12 +7192,7 @@
     "zoonosis": false,
     "notes": "Bez čreva",
     "id": "dictyocaulus_noerneri_larva",
-    "images": [
-      "/public/images/parasites/dictyocaulus_noerneri_larva/dictyocaulus_noerneri_larva_01.webp",
-      "/public/images/parasites/dictyocaulus_noerneri_larva/dictyocaulus_noerneri_larva_02.webp",
-      "/public/images/parasites/dictyocaulus_noerneri_larva/dictyocaulus_noerneri_larva_03.webp",
-      "/public/images/parasites/dictyocaulus_noerneri_larva/dictyocaulus_noerneri_larva_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Dictyocaulus viviparus",
@@ -7642,24 +7403,7 @@
     "lifeCycle": "Definitívny hostiteľ (DH): pes/mačka – dospelá pásomnica v tenkom čreve produkuje gravidné proglotidy.\n\nGravidné proglotidy sa aktívne alebo pasívne vylučujú s trusom alebo vyliezajú z perianálnej oblasti a rozpadávajú sa v prostredí, čím uvoľňujú vaječné balíčky.\n\nIntermediárny hostiteľ (IH): larvy hmyzu – najmä blchy (Ctenocephalides canis, C. felis) a zriedkavo švoly (Trichodectes canis).\n\nLarvy hmyzu v prostredí požierajú vajíčka/balíčky; vo vnútri sa vyvíja cysticerkoid (metacestódne štádium).\n\nInfekcia definitívneho hostiteľa: pes/mačka sa infikuje požitím infikovanej blchy/švoly (napr. pri olizovaní srsti).\n\nV tenkom čreve sa z cysticerkoidu vyvinie dospelá pásomnica, ktorá sa uchytí na črevnú stenu a začne produkovať nové články.",
     "pathology": "Väčšina infekcií je mierneho priebehu; dospelé pásomnice sú relatívne málo patogénne.\n\nPri silnejších infekciách sa môžu vyskytnúť:\n\nAbdominálne ťažkosti: bolesť brucha, nechutenstvo, neprosperita.\n\nTráviace poruchy: hnačky alebo zápcha, zriedkavo až intestinálna obštrukcia pri masívnej infekcii.\n\nČastým klinickým prejavom je perianálne podráždenie spôsobené migráciou gravidných proglotidov:\n\nZviera vykazuje svrbenie v oblasti konečníka, olizuje si túto oblasť, „tlačí zadok o zem, sánkuje“ (tzv. „sleighing“).\n\nSekundárne môže dochádzať k dermatitíde v perianálnej oblasti v dôsledku mechanického dráždenia a olizovania.",
     "zoonosis": true,
-    "images": [
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_01.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_02.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_03.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_04.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_05.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_06.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_07.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_08.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_09.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_10.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_11.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_12.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_13.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_14.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_15.webp",
-      "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_16.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": "Diagnosticky postačuje makroskopické nájdenie pohyblivých proglotidov v truse alebo okolo análneho otvoru; mikroskopicky sa potvrdzuje rozdrvením článku vo vode/fyziologickom roztoku a vyhľadaním vaječných balíčkov."
   },
@@ -7721,14 +7465,8 @@
     "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\n\nDefinitívny hostiteľ (DH): pes/mačka – dospelé samičky produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (tento vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú cez podkožie a svaly, vyvíjajú sa na L4 a následne na L5 (juvenilné dospelé jedince), ktoré migrujú do pľúcnych artérií a pravej časti srdca, kde dospievajú.\nPredpatentná perióda: približne 6–9 mesiacov (180–270 dní) od infekcie do produkcie mikrofilárií.",
     "pathology": "Dospelé D. immitis spôsobujú mechanické a zápalové lézie v pľúcnych artériách a pravej časti srdca:\n- Endarteritída a proliferácia intimy pľúcnych artérií,\n- Trombózy a zhrubnutie cievnej steny,\n- Pľúcna hypertenzia a následné pravostranné srdcové zlyhanie.\n\nKlinické príznaky u psov:\n- Kašeľ, dyspnoe, znížená tolerancia záťaže,\n- Ascites, opuchy, hepatomegália (pri pravostrannom zlyhaní),\n- Chudnutie, neprosperita, v ťažkých prípadoch kolaps a náhly úhyn.\n- Caval syndróm (ťažká forma): Masívna infekcia s veľkým počtom dospelých červov v pravej predsieni a komore, vedúca k akútnemu pravostrannému zlyhaniu, hemolytickej anémii a často rýchlemu úhynu.\n\nU mačiek je infekcia často miernejšia, ale môže spôsobiť HARD (Heartworm Associated Respiratory Disease) – chronickú bronchitídu a pľúcne lézie, niekedy s náhlym úhynom.\n\nMikrofilárie samotné sú zvyčajne málo patogénne, ale môžu prispievať k imunologickým reakciám a v niektorých prípadoch k poškodeniu obličiek (glomerulonefritída).",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_01.webp",
-      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_02.webp",
-      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_03.webp",
-      "/public/images/parasites/dirofilaria_immitis_larva/dirofilaria_immitis_larva_04.webp"
-    ],
-    "references": [],
-    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)"
+    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)",
+    "images": []
   },
   {
     "id": "dirofilaria_repens_larva",
@@ -7788,24 +7526,8 @@
     "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\n\nDefinitívny hostiteľ (DH): pes/mačka/líška – dospelé samičky uložené v podkoží produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú a vyvíjajú sa cez L4 na L5 (juvenilné dospelé jedince), ktoré zostávajú lokalizované v podkoží a podkožnom väzive (na rozdiel od D. immitis, ktorá migruje do pľúcnych artérií a srdca).\nPredpatentná perióda: približne 6–9 mesiacov (approx. 200–230 dní) od infekcie do produkcie mikrofilárií.",
     "pathology": "Dospelé D. repens sa lokalizujú v podkoží a podkožnom väzive, kde spôsobujú prevažne mierne, lokálne zmeny:\n\nTvorba podkožných nodulov (uzlíkov) v mieste výskytu dospelých červov,\nMierny lokálny zápal a fibróza okolo červov,\nPri masívnejšej infekcii svrbenie a dermatitída.\n\nKlinické príznaky u psov:\n\nVäčšinou asymptomatický alebo mierny priebeh,\nPodkožné uzlíky, niekedy migrujúce opuchy,\nSvrbenie kože, alopécia v mieste lézií,\nSystémové príznaky (kašeľ, kardiovaskulárne zlyhanie) sa na rozdiel od D. immitis prakticky nevyskytujú.\n\nU mačiek je infekcia zvyčajne mierna až asymptomatická, prejavuje sa najmä kožnými zmenami.\n\nMikrofilárie samotné sú zvyčajne nepatogénne, klinický význam majú predovšetkým dospelé jedince v podkoží.",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_01.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_02.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_03.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_04.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_05.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_06.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_07.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_08.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_09.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_10.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_11.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_12.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_13.webp",
-      "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_14.webp"
-    ],
-    "references": [],
-    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, najmä dlhý cefalický priestor – kľúčové pre odlíšenie od D. immitis.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblasti análneho a exkrečného póru – u D. repens sa farbí iba análny pór.\nAntigénový test: komerčné antigénové testy sú vyrábané pre D. immitis; na D. repens sa štandardne nevyrábajú, diagnostika sa preto opiera predovšetkým o mikroskopiu (morfometria, histochemické farbenie) a PCR."
+    "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, najmä dlhý cefalický priestor – kľúčové pre odlíšenie od D. immitis.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblasti análneho a exkrečného póru – u D. repens sa farbí iba análny pór.\nAntigénový test: komerčné antigénové testy sú vyrábané pre D. immitis; na D. repens sa štandardne nevyrábajú, diagnostika sa preto opiera predovšetkým o mikroskopiu (morfometria, histochemické farbenie) a PCR.",
+    "images": []
   },
   {
     "latinName": "Dispharynx nasuta",
@@ -7912,11 +7634,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "drepanidotaenia_lanceolata_egg",
-    "images": [
-      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_01.webp",
-      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_02.webp",
-      "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Dujardinascaris sp.",
@@ -8017,14 +7735,7 @@
     "zoonosis": true,
     "notes": "Vnútri tekutina a piesok",
     "id": "echinococcus_granulosus_larva",
-    "images": [
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_01.webp",
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_02.webp",
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_03.webp",
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_04.webp",
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_05.webp",
-      "/public/images/parasites/echinococcus_granulosus_larva/echinococcus_granulosus_larva_06.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Echinococcus multilocularis",
@@ -8178,12 +7889,7 @@
     "zoonosis": false,
     "notes": "Má viečko",
     "id": "echinostoma_sp_egg",
-    "images": [
-      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_01.webp",
-      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_02.webp",
-      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_03.webp",
-      "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Echinuria uncinata",
@@ -8291,9 +7997,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_acervulina_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_acervulina_oocyst/eimeria_acervulina_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria adenoides",
@@ -8401,9 +8105,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_ahsata_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ahsata_oocyst/eimeria_ahsata_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria alabamensis",
@@ -8563,10 +8265,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_andrewsi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_andrewsi_oocyst/eimeria_andrewsi_oocyst_01.webp",
-      "/public/images/parasites/eimeria_andrewsi_oocyst/eimeria_andrewsi_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria anseris",
@@ -8727,10 +8426,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_arloingi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_arloingi_oocyst/eimeria_arloingi_oocyst_01.webp",
-      "/public/images/parasites/eimeria_arloingi_oocyst/eimeria_arloingi_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria aspheronica",
@@ -8784,9 +8480,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_aspheronica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_aspheronica_oocyst/eimeria_aspheronica_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria asymmetrica",
@@ -8840,9 +8534,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_asymmetrica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_asymmetrica_oocyst/eimeria_asymmetrica_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria auburnensis",
@@ -8896,12 +8588,7 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_auburnensis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp",
-      "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_03.webp",
-      "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria austriaca",
@@ -8955,9 +8642,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_austriaca_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_austriaca_oocyst/eimeria_austriaca_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria babatica",
@@ -9120,11 +8805,7 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_bovis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_02.webp",
-      "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria brunetti",
@@ -9179,9 +8860,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_brunetti_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria bukidnonensis",
@@ -9235,10 +8914,7 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_bukidnonensis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria capreoli",
@@ -9292,9 +8968,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_capreoli_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_capreoli_oocyst/eimeria_capreoli_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria caprina",
@@ -9454,10 +9128,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_caviae_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_caviae_oocyst/eimeria_caviae_oocyst_01.webp",
-      "/public/images/parasites/eimeria_caviae_oocyst/eimeria_caviae_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria cervi",
@@ -9617,10 +9288,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_colchici_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_colchici_oocyst/eimeria_colchici_oocyst_01.webp",
-      "/public/images/parasites/eimeria_colchici_oocyst/eimeria_colchici_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria columbarum",
@@ -9832,17 +9500,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_cylindrica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_01.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_02.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_03.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_04.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_05.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_06.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_07.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_08.webp",
-      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_09.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria debliecki",
@@ -10000,12 +9658,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_duodenalis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_02.webp",
-      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_03.webp",
-      "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria ellipsoidalis",
@@ -10059,12 +9712,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle. Najčastejšie u nás.",
     "id": "eimeria_ellipsoidalis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_02.webp",
-      "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_03.webp",
-      "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria europaea",
@@ -10118,9 +9766,7 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle",
     "id": "eimeria_europaea_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_europaea_oocyst/eimeria_europaea_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria exigua",
@@ -10174,9 +9820,7 @@
     "zoonosis": false,
     "notes": "Neviditeľné mikropyle",
     "id": "eimeria_exigua_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_exigua_oocyst/eimeria_exigua_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria falciformis",
@@ -10658,9 +10302,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_hungarica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_hungarica_oocyst/eimeria_hungarica_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria intricata",
@@ -10714,9 +10356,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_intricata_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_intricata_oocyst/eimeria_intricata_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria irresidua",
@@ -10770,9 +10410,7 @@
     "zoonosis": false,
     "notes": "Viditeľné",
     "id": "eimeria_irresidua_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_irresidua_oocyst/eimeria_irresidua_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria jolchijevi",
@@ -10987,9 +10625,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_labbeana_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_labbeana_oocyst/eimeria_labbeana_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria leporis",
@@ -11043,9 +10679,7 @@
     "zoonosis": false,
     "notes": "Málo výrazné mikropyle",
     "id": "eimeria_leporis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_leporis_oocyst/eimeria_leporis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria leuckarti",
@@ -11098,9 +10732,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_leuckarti_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_leuckarti_oocyst/eimeria_leuckarti_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria macrosculpta",
@@ -11208,9 +10840,7 @@
     "zoonosis": false,
     "notes": "Široké mikropyle s golierom",
     "id": "eimeria_magna_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_magna_oocyst/eimeria_magna_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria marmotae",
@@ -11370,12 +11000,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_maxima_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_01.webp",
-      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_02.webp",
-      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_03.webp",
-      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria media",
@@ -11429,9 +11054,7 @@
     "zoonosis": false,
     "notes": "Zrezaný vpredu",
     "id": "eimeria_media_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_media_oocyst/eimeria_media_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria meleagridis",
@@ -11591,11 +11214,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_mira_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_mira_oocyst/eimeria_mira_oocyst_01.webp",
-      "/public/images/parasites/eimeria_mira_oocyst/eimeria_mira_oocyst_02.webp",
-      "/public/images/parasites/eimeria_mira_oocyst/eimeria_mira_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria mitis",
@@ -11917,9 +11536,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_ninaekohljakimovae_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ninaekohljakimovae_oocyst/eimeria_ninaekohljakimovae_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria nocens",
@@ -12081,9 +11698,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_ovinoidalis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ovinoidalis_oocyst/eimeria_ovinoidalis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria ovis",
@@ -12137,9 +11752,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_ovis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ovis_oocyst/eimeria_ovis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria pallida",
@@ -12193,9 +11806,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_pallida_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_pallida_oocyst/eimeria_pallida_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria panda",
@@ -12249,9 +11860,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_panda_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_panda_oocyst/eimeria_panda_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria parva",
@@ -12305,9 +11914,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_parva_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_parva_oocyst/eimeria_parva_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria pellucida",
@@ -12413,9 +12020,7 @@
     "zoonosis": false,
     "notes": "Oba póly zaoblené rovnako",
     "id": "eimeria_perforans_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_perforans_oocyst/eimeria_perforans_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria perminuta",
@@ -12521,9 +12126,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_phasiani_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_phasiani_oocyst/eimeria_phasiani_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria piriformis",
@@ -12577,9 +12180,7 @@
     "zoonosis": false,
     "notes": "Viditeľné mikropyle",
     "id": "eimeria_piriformis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_piriformis_oocyst/eimeria_piriformis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria polita",
@@ -12687,11 +12288,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_ponderosa_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_ponderosa_oocyst/eimeria_ponderosa_oocyst_01.webp",
-      "/public/images/parasites/eimeria_ponderosa_oocyst/eimeria_ponderosa_oocyst_02.webp",
-      "/public/images/parasites/eimeria_ponderosa_oocyst/eimeria_ponderosa_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria porci",
@@ -12853,9 +12450,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_punctata_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_punctata_oocyst/eimeria_punctata_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria pythonis",
@@ -12907,12 +12502,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_pythonis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_01.webp",
-      "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_02.webp",
-      "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_03.webp",
-      "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria robertsoni",
@@ -13020,10 +12610,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_robusta_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_01.webp",
-      "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria rotunda",
@@ -13397,9 +12984,7 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle",
     "id": "eimeria_semisculpta_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_semisculpta_oocyst/eimeria_semisculpta_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria separata",
@@ -13453,10 +13038,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_separata_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_separata_oocyst/eimeria_separata_oocyst_01.webp",
-      "/public/images/parasites/eimeria_separata_oocyst/eimeria_separata_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria serbica",
@@ -13560,10 +13142,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_simonkingi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_simonkingi_oocyst/eimeria_simonkingi_oocyst_02.webp",
-      "/public/images/parasites/eimeria_simonkingi_oocyst/eimeria_simonkingi_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria sordida",
@@ -13831,9 +13410,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_spinosa_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_spinosa_oocyst/eimeria_spinosa_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria stefanskii",
@@ -13941,12 +13518,7 @@
     "zoonosis": false,
     "notes": "Vpredu zúžený",
     "id": "eimeria_stiedae_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_01.webp",
-      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_02.webp",
-      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_03.webp",
-      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria subspherica",
@@ -14000,10 +13572,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle. Nepatogén.",
     "id": "eimeria_subspherica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_02.webp",
-      "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria suis",
@@ -14167,9 +13736,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_tenella_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_tenella_oocyst/eimeria_tenella_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria townsendi",
@@ -14277,14 +13844,7 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_truncata_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_01.webp",
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_02.webp",
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_03.webp",
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_04.webp",
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_05.webp",
-      "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_07.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria vencesi",
@@ -14550,9 +14110,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle. Najčastejšie u nás.",
     "id": "eimeria_zuenii_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_zuenii_oocyst/eimeria_zuenii_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Elaphostrongylus cervi",
@@ -18246,12 +17804,7 @@
     "zoonosis": false,
     "notes": "Vajíčka v pároch",
     "id": "monoecocestus_sp_egg",
-    "images": [
-      "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_01.webp",
-      "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_02.webp",
-      "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_03.webp",
-      "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Monopsyllus sciurorum",
@@ -18533,6 +18086,7 @@
       "Myš"
     ],
     "hostNotes": {
+      "Plazy": "V truse len ako pasívne prehltnutý ektoparazit koristi.",
       "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
     },
     "sample": "Koža",
@@ -18561,67 +18115,12 @@
     "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
     "pathology": "Pruritus (svrbenie), samovoľné poškriabanie/autotrauma\nAlopécia, olupovanie kože, mierna dermatitída\nVo všeobecnosti miernejší priebeh ako pri Myobia musculi (tá spôsobuje ťažšie lézie, pretože saje tkanivový mok)",
     "zoonosis": false,
+    "notes": "",
     "images": [
       "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp",
       "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_02.webp",
       "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_03.webp"
-    ],
-    "references": [],
-    "notes": ""
-  },
-  {
-    "id": "myocoptes_musculinus_egg",
-    "latinName": "Myocoptes musculinus",
-    "synonyms": [],
-    "slovakName": "Svrabovec myší (Zákožka myšia)",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Myocoptidae",
-      "genus": "Myocoptes",
-      "species": "Myocoptes musculinus"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Plazy"
-    ],
-    "hostNotes": {
-      "Plazy": "V truse ako pasívne prehltnutý ektoparazit koristi."
-    },
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Arachnida",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 150,
-      "lengthMax": 200,
-      "widthMin": 70,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Bezfarebný",
-      "shell": "Tenká, hladká"
-    },
-    "diagnosticSigns": [
-      "Vajíčko je oválneho tvaru, pevne prichytené k spodnej časti chlpu, často v blízkosti pokožky"
-    ],
-    "differentialDiagnosis": [
-      "Samotné vajíčko nie je vhodné na spoľahlivú druhovú identifikáciu, pretože vajíčka bežných myších kožných roztočov sú si morfologicky veľmi podobné. Druhovú identifikáciu treba potvrdiť nálezom dospelca alebo nymfy."
-    ],
-    "lifeCycle": "Vajíčko → larva (6 nôh) → protonympha → deutonympha → dospelec (8 nôh) – celý cyklus prebieha priamo na hostiteľovi.\nDĺžka cyklu: cca 8–14 dní (v literatúre uvádzané rozpätie 8–25 dní, priemer okolo 14 dní), vajíčka sa liahnu približne po 5 dňoch.\nNovonarodené myšatá sa môžu infikovať už 4.–5. deň po narodení.\nPrenos: priamy kontakt medzi jedincami, kontaminovaná podstielka; nymfy aj vajíčka sú infekčné štádiá.",
-    "pathology": "Nie je to parazit plazov, do trusu sa dostáva pasívne prehltnutím ektoparazita koristi. V truse plazov sa môže objaviť ako náhodný nález.",
-    "zoonosis": false,
-    "images": [
-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_01.webp",
-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_02.webp",
-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_egg_03.webp"
-    ],
-    "references": [],
-    "notes": ""
+    ]
   },
   {
     "id": "nematodirus_sp_egg",
