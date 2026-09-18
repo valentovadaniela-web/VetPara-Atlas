@@ -717,7 +717,9 @@
   },
   {
     "latinName": "Anoplocephala magna",
-    "synonyms": [],
+    "synonyms": [
+      "Taenia magna"
+      ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -728,11 +730,10 @@
       "genus": "Anoplocephala",
       "species": "Anoplocephala magna"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Kôň",
-      "Somár"
-    ],
+    "hostGroups": [
+      "Koňovité"
+      ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -750,25 +751,27 @@
       "shell": "Hrubá, embryofor s radiálnym pruhovaním"
     },
     "diagnosticSigns": [
-      "Nepravidelný",
-      "hranatý tvar s hruškovitým (pyriformným) aparátom okolo onkosféry."
+      "Nepravidelný guľovitý až polygonálny tvar; môže byť hranatejší",
+      "Prítomnosť pyriformného aparátu vo vajíčku – typický znak pre celú čeľaď Anoplocephalidae",
+      "Zvyčajne menšia onkosféra, približne 10–17,5 µm, často okolo 15 µm",
+      "Obal hrubý cca 4 µm"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od A. perfoliata najmä podľa veľkosti (A. magna je menšie",
-      "~50–60 µm",
-      "pravidelnejšie okrúhle) a klinického významu (A. perfoliata sa viaže na ileocekálnu oblasť a koliky",
-      "A. magna skôr na tenké črevo). Oba druhy majú charakteristický pyriformný aparát okolo onkosféry."
+      "Anoplocephala perfoliata má väčšie vajíčka (65–80 µm), často D-tvaru, s výraznou onkosférou",
+      "Paranoplocephala mamillana má menšie vajíčka (37–51 µm), oválny alebo nepravidelný tvar, menšiu onkosféru"
     ],
     "lifeCycle": "Životný cyklus je nepriamy, pričom medzihostiteľmi sú drobné pôdne roztoče (Oribatida) žijúce na pastve. Kone sa nakazia náhodným prehltnutím týchto roztočov s trávou, v ktorých sa nachádza infekčné štádium (cysticerkoid).",
-    "pathology": "Parazituje v tenkom čreve, dosahuje dĺžku až 80 cm a hoci vyvoláva poruchy trávenia, chudnutie a anémiu, je pre koňa o niečo menej nebezpečnáako A. perfoliata.",
+    "pathology": "Parazituje v tenkom čreve, dosahuje dĺžku až 80 cm a hoci vyvoláva poruchy trávenia, chudnutie a anémiu, je pre koňa o niečo menej nebezpečná ako A. perfoliata.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vzhľadom na vyššiu hustotu vajíčka je vhodnejšia sedimentačná metóda než flotačná.",
     "id": "anoplocephala_magna_egg",
     "images": []
   },
   {
     "latinName": "Anoplocephala perfoliata",
-    "synonyms": [],
+    "synonyms": [
+      "Taenia perfoliata"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -779,11 +782,10 @@
       "genus": "Anoplocephala",
       "species": "Anoplocephala perfoliata"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Kôň",
-      "Somár"
-    ],
+    "hostGroups": [
+      "Koňovité"
+      ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -801,24 +803,21 @@
       "shell": "Hrubá, embryofor s radiálnym pruhovaním"
     },
     "diagnosticSigns": [
-      "Nepravidelne trojuholníkovitý tvar",
-      "vnútri onkosféra obklopená charakteristickým hruškovitým (pyriformným) aparátom."
+      "Guľovitý až typický tvar písmena D",
+      "Prítomnosť pyriformného aparátu vo vajíčku – typický znak pre celú čeľaď Anoplocephalidae",
+      "Onkosféra väčšia, približne 15–25 µm, typicky okolo 16 µm",
+      "Obal hrubý cca 8–10 µm"
     ],
     "differentialDiagnosis": [
-      "Pozri poznámku pri A. magna – odlíšenie hlavne podľa veľkosti vajíčka (A. perfoliata 65–96 µm v literatúre",
-      "v tabuľke 65–80 µm) a klinickej asociácie s ileocekálnymi kolikami."
+      "Anoplocephala magna má menšie vajíčka (50–60 µm), guľovitá až hranato guľovitá, obal tenší cca 4 µm a menej výrazná onkosféra",
+      "Paranoplocephala mamillana má menšie vajíčka (37–51 µm), oválny alebo nepravidelný tvar, menšiu onkosféru"
     ],
     "lifeCycle": "Životný cyklus je nepriamy, pričom medzihostiteľmi sú drobné pôdne roztoče (Oribatida) žijúce na pastve. Kone sa nakazia náhodným prehltnutím týchto roztočov s trávou, v ktorých sa nachádza infekčné štádium (cysticerkoid).",
     "pathology": "Parazituje na prechode tenkého čreva do slepého, kde spôsobuje ťažké zápaly, vredy, zhrubnutie sliznice a upchatie čreva, čo vedie k ťažkým, často smrteľným kolikám.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vzhľadom na vyššiu hustotu vajíčka je vhodnejšia sedimentačná metóda než flotačná.",
     "id": "anoplocephala_perfoliata_egg",
-    "images": [
-      "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_01.webp",
-      "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_02.webp",
-      "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_03.webp",
-      "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Anoplocephalidae",
@@ -2344,26 +2343,7 @@
     "lifeCycle": "1. Priamy (monoxénny) cyklus - typický napr. pre niektoré druhy parazitujúce v čreve hydiny:\n Dospelé samice v hostiteľovi (čreve, pečeni, dýchacích cestách) kladú nezrelé vajíčka.\nVajíčka sa dostávajú von trusom (prípadne, pri C. hepatica, zostávajú v pečeni až do rozkladu tela hostiteľa).\nV vonkajšom prostredí (pôda, vlhko, teplo) dochádza k dozretiu vajíčka na infekčné štádium obsahujúce larvu (L1).\nNový hostiteľ sa nakazí perorálne – prehltnutím infekčného vajíčka (napr. s kontaminovanou potravou, vodou, pôdou).\nV čreve sa larva vyliahne, migruje do cieľového orgánu (sliznica čreva, pečeň, priedušnica) a dozrieva na dospelého jedinca.\n\n 2. Nepriamy (heteroxénny) cyklus - typický pre druhy parazitujúce v močovom mechúre alebo dýchacích cestách mäsožravcov: \nVajíčka sa dostanú do prostredia trusom alebo močom.\nVajíčko musí byť pozreté dážďovkou (Lumbricidae), ktorá slúži ako medzihostiteľ (paratenický alebo skutočný).\nV tele dážďovky sa larva ďalej vyvíja do infekčného štádia.\nDefinitívny hostiteľ (napr. pes, líška, mačka) sa nakazí zjedením infikovanej dážďovky.\nLarva sa v tele definitívneho hostiteľa dostane do cieľového orgánu a dozreje na dospelého jedinca.",
     "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická crop-capillariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_02.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_03.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_04.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_05.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_06.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_08.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_09.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_11.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_12.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_13.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_14.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_15.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_16.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_17.webp",
-      "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_18.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": ""
   },
@@ -16867,12 +16847,7 @@
     "zoonosis": false,
     "notes": "Veľmi zriedkavo",
     "id": "histomonas_meleagridis_trophozoite",
-    "images": [
-      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_01.webp",
-      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_02.webp",
-      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_03.webp",
-      "/public/images/parasites/histomonas_meleagridis_trophozoite/histomonas_meleagridis_trophozoite_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Hymenolepis diminuta",
@@ -18061,21 +18036,7 @@
     "zoonosis": false,
     "notes": "Embryo so 6 háčikmi",
     "id": "mesocestoides_sp_egg",
-    "images": [
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_01.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_02.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_03.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_04.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_05.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_06.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_07.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_08.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_09.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_10.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_11.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_12.webp",
-      "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_13.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Metastrongylus sp.",
@@ -19709,18 +19670,16 @@
     "lifeCycle": "Heteroxénny (digenetický), analogický cyklu Fasciola, ale s odlišnou lokalizáciou dospelcov a juvenilných štádií:\n\nDospelci v bachore/predžalúdku produkujú vajíčka → vylučované stolicou.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie.\nCerkárie encystujú na vodných rastlinách/vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje pri pastve/pití vody s metacerkáriami.\nPo excystácii v čreve juvenilné motolice NEmigrujú pečeňou (na rozdiel od Fasciola) – prichytávajú sa priamo na slizniciu dvanástnika a prednej časti tenkého čreva, kde spôsobujú najväčšie poškodenie (patogénne štádium!).\nPo niekoľkých týždňoch juvenilné motolice migrujú retrográdne (proti smeru toku tráviaceho obsahu) do bachora/predžalúdka, kde dospievajú a kladú vajíčka (relatívne apatogénne štádium v tejto lokalizácii).\nPrepatentná perióda cca 7–10 týždňov.",
     "pathology": "Hlavná patogenita spôsobená juvenilnými (nezrelými) motolicami v dvanástniku/tenkom čreve, nie dospelcami v bachore (tie sú relatívne apatogénne, iba mechanicky dráždia).\nAkútna paramfistomóza: ťažká enteritída, hemoragicko-nekrotická duodenitída, profúzna hnačka (často fetídna, niekedy s krvou), dehydratácia, hypoproteinémia, edémy (submandibulárny edém – \"bottle jaw\" podobne ako pri iných parazitózach s proteínovou stratou).\nVysoká morbidita/mortalita u mladých zvierat pri masívnej infekcii, najmä pri prvom výraznom nástupe migrácie juvenilných štádií z čreva do predžalúdka.\nChronická infekcia dospelcami v bachore je väčšinou subklinická, tolerovaná.",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_01.webp",
-      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_02.webp",
-      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_03.webp",
-      "/public/images/parasites/paramphistomum_cervi_egg/paramphistomum_cervi_egg_04.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": "Dôležité klinické upozornenie: pozitívny koprologický nález (vajíčka z dospelcov v bachore) NEKORELUJE s aktuálnou klinickou patológiou, ktorú spôsobujú juvenilné štádiá v čreve – teda \"ťažká\" koprologická infekcia nemusí znamenať klinické ochorenie, a naopak, akútna klinická paramfistomóza (spôsobená juvenilnými motolicami) môže byť koprologicky NEGATÍVNA (vajíčka sa ešte nekladú)."
   },
   {
     "latinName": "Paranoplocephala mamillana",
-    "synonyms": [],
+    "synonyms": [
+      "Anoplocephaloides mamillana",
+      "Anoplocephala mamilliana"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -19732,7 +19691,7 @@
       "species": "Paranoplocephala mamillana"
     },
     "hostGroups": [
-      "Nepárnokopytníky"
+      "Koňovité"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -19740,30 +19699,27 @@
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 60,
-      "widthMin": 50,
+      "lengthMin": 37,
+      "lengthMax": 40,
+      "widthMin": 51,
       "widthMax": 60,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Nepravidelný",
       "colour": "Sivastý",
-      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+      "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Oválny, subsférický až nepravidelný tvar",
+      "Prítomnosť pyriformného aparátu vo vajíčku – typický znak pre celú čeľaď Anoplocephalidae, ktorý je ale menej nápadný alebo bez výrazných rohov."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Paranoplocephala môže byť potrebná molekulová identifikácia."
+      "Anoplocephala perfoliata má väčšie vajíčka (65–80 µm), D-tvar, výraznú onkosférou a hrubší obal (8-10 µm)",
+      "Anoplocephala magna má mierne väčšie vajíčka (50–60 µm), guľovitá až hranato guľovitý tvar, obal hrubší (cca 4 µm) a menej výrazná onkosféra"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelé pásomnice žijú najmä v tenkom čreve koňa a produkujú gravidné články alebo vajíčka.\n Vajíčka sa dostávajú trusom na pastvinu.\n Vajíčka požerú pôdne oribatidné roztoče.\n Onkosféra prenikne do telovej dutiny roztoča a vyvinie sa na infekčné cysticerkoidné štádium, približne za 1–4 mesiace.\n Kôň pri pasení náhodne požerie infikované roztoče.\n Cysticerkoidy sa v tenkom čreve uvoľnia, dospejú na dospelé pásomnice a začnú produkovať vajíčka; prepatentná perióda je približne 6 týždňov.",
+    "pathology": "Väčšinou ide o subklinickú alebo miernu infekciu. Dospelce sa prichytávajú na sliznicu tenkého čreva a môžu vyvolať lokálne podráždenie, katarálny zápal a drobné lézie v mieste prichytenia.\n Pri silnejšej infekcii sú možné mierne poruchy motility, trávenia, kondície alebo občasná kolika.\n V porovnaní s A. perfoliata sa P. mamillana spravidla nespája s typickou ťažkou ileocekálnou patológiou, intususcepciou ani obštrukciou.\n Dostupné zdroje ju opisujú ako druh nachádzaný skôr sporadicky a obyčajne bez významnej klinickej relevancie.",
     "zoonosis": false,
     "notes": "Málo patogénna",
     "id": "paranoplocephala_mamillana_egg",
@@ -19772,9 +19728,10 @@
   {
     "latinName": "Parascaris equorum",
     "synonyms": [
-      "Ascaris equorum; Ascaris megalocephala"
+      "Ascaris equorum",
+      "Ascaris megalocephala"
     ],
-    "slovakName": "",
+    "slovakName": "Škrkavka konská",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -23895,14 +23852,7 @@
     "zoonosis": false,
     "notes": "Hrubšia stena ako u T.cati",
     "id": "toxocara_canis_egg",
-    "images": [
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_01.webp",
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_02.webp",
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_03.webp",
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_04.webp",
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_05.webp",
-      "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_06.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Toxocara cati",
@@ -23952,12 +23902,7 @@
     "zoonosis": false,
     "notes": "Tenšia stena ako u T.canis",
     "id": "toxocara_cati_egg",
-    "images": [
-      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_01.webp",
-      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_02.webp",
-      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_03.webp",
-      "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_04.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Toxocara vitulorum",

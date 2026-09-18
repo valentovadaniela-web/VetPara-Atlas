@@ -309,6 +309,14 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "anoplocephala_magna_egg",
+    "url": "/public/images/parasites/anoplocephala_magna_egg/anoplocephala_magna_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:48:36.419Z"
+  },
+  {
     "parasiteId": "anoplocephala_perfoliata_egg",
     "url": "/public/images/parasites/anoplocephala_perfoliata_egg/anoplocephala_perfoliata_egg_01.webp",
     "alt": "",
@@ -3429,6 +3437,14 @@
     "dateAdded": "2026-08-29T11:40:44.224Z"
   },
   {
+    "parasiteId": "hymenolepis_diminuta_egg",
+    "url": "/public/images/parasites/hymenolepis_diminuta_egg/hymenolepis_diminuta_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:20:48.006Z"
+  },
+  {
     "parasiteId": "hypoderma_diana_larva",
     "url": "/public/images/parasites/hypoderma_diana_larva/hypoderma_diana_larva_01.webp",
     "alt": "",
@@ -4128,6 +4144,14 @@
     "dateAdded": "2026-08-29T11:36:36.397Z"
   },
   {
+    "parasiteId": "paranoplocephala_mamillana_egg",
+    "url": "/public/images/parasites/paranoplocephala_mamillana_egg/paranoplocephala_mamillana_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:36:36.397Z"
+  },
+  {
     "parasiteId": "parascaris_equorum_egg",
     "url": "/public/images/parasites/parascaris_equorum_egg/parascaris_equorum_egg_01.webp",
     "alt": "",
@@ -4562,7 +4586,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T13:33:20.761Z"
+    "dateAdded": "2026-08-29T13:33:20.761Z",
+     "isPrimary": true
   },
   {
     "parasiteId": "sarcocystis_sp_oocyst",
