@@ -1,90 +1,340 @@
---- orig/AtlasPage.js	2026-08-18 11:00:07.644452459 +0000
-+++ new/AtlasPage.js	2026-08-18 11:01:30.185073089 +0000
-@@ -349,10 +349,15 @@
+--- /mnt/user-data/uploads/AtlasPage.js	2026-09-19 16:00:57.832710000 +0000
++++ AtlasPage.js	2026-09-19 16:06:06.304194753 +0000
+@@ -57,6 +57,20 @@
+ // Tvar/Farba).
+ const MULTI_SELECT_FIELDS = ["sample", "shape", "colour"];
  
-     getHostValues() {
++// PRIDANÉ (2026-09-19, na žiadosť autorky): prepínač jednotiek veľkosti
++// (µm / mm / cm). Dáta v `parasites.json` (micrometry.lengthMin/Max,
++// widthMin/Max) sú VŽDY v µm — to sa NEMENÍ (02_DATABASE_SPECIFICATION.md,
++// potvrdené AI_STATUS.md: "micrometry.unit — vždy µm vo všetkých 474
++// záznamoch"). Táto konštanta hovorí, koľko µm je v jednej jednotke, a
++// slúži IBA na prepočet pri zobrazení/zadávaní vo filtri — nikdy sa
++// nezapisuje späť do databázy.
++const SIZE_UNITS = ["µm", "mm", "cm"];
++const SIZE_UNIT_FACTORS = {
++    "µm": 1,
++    "mm": 1000,
++    "cm": 10000
++};
++
+ const AtlasPage = {
  
-+        // OPRAVA (2026-08-18, deduplikácia databázy): `record.host` nahradené
-+        // `Repository.resolveHosts(record)`, ktoré zjednotí explicitné
-+        // `record.hosts` s rozbaleným `record.hostGroups` (cez
-+        // dictionary/host_hierarchy.json). Kým sa hierarchia nenačíta, správa
-+        // sa to ako predtým pre záznamy s `hosts` a vynechá tie, ktoré majú
-+        // len `hostGroups` — po doletení slovníka renderRecords()/
-+        // refreshHostFilterSection() prekreslí znova (pozri loadHostHierarchy()).
-         const values = Repository.getAll()
--            .flatMap(record =>
--                Array.isArray(record.host) ? record.host : []
--            )
-+            .flatMap(record => Repository.resolveHosts(record))
-             .filter(value =>
-                 value !== undefined &&
-                 value !== null &&
-@@ -406,9 +411,21 @@
+     state: {
+@@ -68,7 +82,14 @@
+         lengthMin: "",
+         lengthMax: "",
+         widthMin: "",
+-        widthMax: ""
++        widthMax: "",
++        // PRIDANÉ (2026-09-19): aktuálne zvolená zobrazovacia jednotka.
++        // lengthMin/Max/widthMin/Max nižšie sú aj naďalej vždy uložené
++        // v µm (rovnako ako dáta) — iba UI (input polia, štítky filtrov,
++        // formatSize()) ich pri zobrazení/zápise prepočítava podľa tejto
++        // hodnoty. Vďaka tomu sa nemusí meniť žiadna filtrovacia logika
++        // (matchesSizeRange porovnáva stále µm proti µm).
++        sizeUnit: "µm"
+     },
  
+     // OPRAVA (2026-08-17): nahrádza pôvodný statický `import ... with { type: "json" }`.
+@@ -202,7 +223,9 @@
+ 
+                 <fieldset>
+ 
+-                    <legend class="filter-title">Veľkosť (µm)</legend>
++                    <legend class="filter-title">Veľkosť</legend>
++
++                    ${this.renderSizeUnitToggle()}
+ 
+                     <div class="atlas-size-row">
+ 
+@@ -350,6 +373,24 @@
+ 
+         });
+ 
++        // PRIDANÉ (2026-09-19): prepínač jednotiek (µm/mm/cm) vo filtri
++        // veľkosti. Po zmene jednotky sa: (1) prekreslí aktívny stav
++        // tlačidiel, (2) prepočítajú hodnoty v input poliach filtra
++        // (syncControls), (3) prekreslí zoznam a štítky aktívnych filtrov
++        // (renderRecords) — filtrovacia logika sa nemení, stále pracuje s
++        // µm uloženými v stave.
++        this.bindSizeUnitToggles(() => {
++
++            document.querySelectorAll(".atlas-size-unit-toggle button").forEach(button => {
++                button.classList.toggle("active", button.dataset.unit === this.state.sizeUnit);
++                button.setAttribute("aria-pressed", String(button.dataset.unit === this.state.sizeUnit));
++            });
++
++            this.syncControls();
++            this.renderRecords();
++
++        });
++
+         const clearButton =
+             document.getElementById("atlas-clear-filters");
+ 
+@@ -510,7 +551,100 @@
+     // Formátovanie mikrometrie a hostiteľov na zobrazenie
+     // ------------------------------------------------------------------
+ 
+-    formatSize(micrometry) {
++    // ------------------------------------------------------------------
++    // PRIDANÉ (2026-09-19): prepočet µm ↔ zvolená jednotka (µm/mm/cm).
++    // Zdrojové dáta (record.micrometry) sú vždy v µm — tieto funkcie sa
++    // používajú IBA na zobrazenie a na prepis hodnôt zadaných do
++    // filtrovacích polí. `this.state.lengthMin/Max/widthMin/Max` ostávajú
++    // aj naďalej uložené v µm, aby matchesSizeRange() nemusela vedieť nič
++    // o zvolenej jednotke.
++    // ------------------------------------------------------------------
++
++    convertFromMicrons(valueInMicrons, unit) {
++
++        if (valueInMicrons === null || valueInMicrons === undefined || valueInMicrons === "") {
++            return "";
++        }
++
++        const factor = SIZE_UNIT_FACTORS[unit] || 1;
++
++        return Number(valueInMicrons) / factor;
++
++    },
++
++    convertToMicrons(valueInUnit, unit) {
++
++        if (valueInUnit === null || valueInUnit === undefined || valueInUnit === "") {
++            return "";
++        }
++
++        const factor = SIZE_UNIT_FACTORS[unit] || 1;
++
++        return Number(valueInUnit) * factor;
++
++    },
++
++    // Odstráni plávajúce desatinné "šumy" (napr. 2.9999999999996) a
++    // zbytočné koncové nuly, bez pevného počtu desatinných miest.
++    formatUnitNumber(value) {
++
++        if (value === "" || value === null || value === undefined || !isFinite(value)) {
++            return "";
++        }
++
++        const rounded = Math.round(Number(value) * 10000) / 10000;
++
++        return String(rounded);
++
++    },
++
++    // Kompaktný prepínač jednotiek (µm/mm/cm) — používaný vo filtri aj
++    // v detaile objektu. `compact` pridá menšiu variantu pre quad-box.
++    renderSizeUnitToggle(compact) {
++
++        return `
++            <div class="atlas-size-unit-toggle${compact ? " atlas-size-unit-toggle--compact" : ""}" role="group" aria-label="Jednotka veľkosti">
++                ${SIZE_UNITS.map(unit => `
++                    <button
++                        type="button"
++                        class="atlas-unit-btn${unit === this.state.sizeUnit ? " active" : ""}"
++                        data-unit="${unit}"
++                        aria-pressed="${unit === this.state.sizeUnit}"
++                    >${unit}</button>
++                `).join("")}
++            </div>
++        `;
++
++    },
++
++    // Naviaže VŠETKY prepínače jednotiek aktuálne v DOM (vo filtri aj
++    // v detaile naraz existuje vždy len jeden z nich). `onChange` sa
++    // zavolá až PO zmene `this.state.sizeUnit`.
++    bindSizeUnitToggles(onChange) {
++
++        document.querySelectorAll(".atlas-size-unit-toggle button").forEach(button => {
++
++            button.addEventListener("click", () => {
++
++                const unit = button.dataset.unit;
++
++                if (!unit || unit === this.state.sizeUnit) {
++                    return;
++                }
++
++                this.state.sizeUnit = unit;
++
++                if (typeof onChange === "function") {
++                    onChange();
++                }
++
++            });
++
++        });
++
++    },
++
++    formatSize(micrometry, unitOverride) {
+ 
+         if (!micrometry) {
+             return "";
+@@ -518,8 +652,7 @@
+ 
+         const {
+             lengthMin, lengthMax,
+-            widthMin, widthMax,
+-            unit
++            widthMin, widthMax
+         } = micrometry;
+ 
+         const hasLength =
+@@ -534,19 +667,25 @@
+             return "";
          }
  
-+        // OPRAVA (2026-08-18, deduplikácia databázy): záznamy majú teraz
-+        // `hostGroups`/`hosts` namiesto plochého `host`. Repository.resolveHosts()
-+        // potrebuje ten istý slovník na rozbalenie hostGroups → konkrétnych
-+        // hostiteľov. DatabaseService.load() cachuje podľa súboru, takže toto
-+        // nespôsobí druhý sieťový fetch — len sa slovník sprístupní aj tam.
-+        await Repository.loadHostHierarchy();
++        // OPRAVA (2026-09-19): zdroj (micrometry.unit) je vždy "µm"
++        // (potvrdené v celej databáze) — zobrazovacia jednotka sa teraz
++        // riadi prepínačom (this.state.sizeUnit), nie poľom zo záznamu.
++        const targetUnit = unitOverride || this.state.sizeUnit || "µm";
 +
-         this.hostHierarchyLoaded = true;
-         this.refreshHostFilterSection();
++        const conv = (value) =>
++            this.formatUnitNumber(this.convertFromMicrons(value, targetUnit));
++
+         const lengthPart = hasLength
+-            ? (lengthMin === lengthMax ? `${lengthMin}` : `${lengthMin}–${lengthMax}`)
++            ? (lengthMin === lengthMax ? `${conv(lengthMin)}` : `${conv(lengthMin)}–${conv(lengthMax)}`)
+             : "?";
  
-+        // Kým sa slovník nenačítal, záznamy priradené len cez `hostGroups`
-+        // (bez explicitných `hosts`) sa vo filtri/zozname javili ako "bez
-+        // hostiteľa" — po doletení slovníka treba zoznam prekresliť.
-+        this.renderRecords();
+         const widthPart = hasWidth
+-            ? (widthMin === widthMax ? `${widthMin}` : `${widthMin}–${widthMax}`)
++            ? (widthMin === widthMax ? `${conv(widthMin)}` : `${conv(widthMin)}–${conv(widthMax)}`)
+             : null;
+ 
+-        const unitLabel = unit || "µm";
+-
+         return widthPart
+-            ? `${lengthPart} × ${widthPart} ${unitLabel}`
+-            : `${lengthPart} ${unitLabel}`;
++            ? `${lengthPart} × ${widthPart} ${targetUnit}`
++            : `${lengthPart} ${targetUnit}`;
+ 
+     },
+ 
+@@ -815,11 +954,23 @@
+             return;
+         }
+ 
+-        input.value = this.state[field];
++        // OPRAVA (2026-09-19): `this.state[field]` je vždy v µm — input
++        // zobrazuje hodnotu prepočítanú do aktuálne zvolenej jednotky.
++        input.value = this.state[field] === ""
++            ? ""
++            : this.formatUnitNumber(this.convertFromMicrons(this.state[field], this.state.sizeUnit));
+ 
+         input.addEventListener("input", (event) => {
+ 
+-            this.state[field] = event.target.value;
++            const raw = event.target.value;
++
++            // Zadanú hodnotu (v aktuálnej jednotke) prevedieme naspäť na
++            // µm skôr, než sa uloží do stavu — matchesSizeRange() porovnáva
++            // vždy µm proti µm, takže sa nemusí meniť.
++            this.state[field] = raw === ""
++                ? ""
++                : String(this.convertToMicrons(Number(raw), this.state.sizeUnit));
++
+             this.renderRecords();
+ 
+         });
+@@ -1080,11 +1231,17 @@
+ 
+         });
+ 
++        // OPRAVA (2026-09-19): this.state.lengthMin/Max/widthMin/Max sú
++        // vždy v µm — v štítku aktívneho filtra sa zobrazujú prepočítané
++        // do aktuálne zvolenej jednotky (this.state.sizeUnit).
++        const displayLength = (value) =>
++            value === "" ? "…" : this.formatUnitNumber(this.convertFromMicrons(value, this.state.sizeUnit));
++
+         if (this.state.lengthMin !== "" || this.state.lengthMax !== "") {
+             filters.push({
+                 key: "length",
+                 label: "Dĺžka",
+-                value: `${this.state.lengthMin || "…"}–${this.state.lengthMax || "…"} µm`
++                value: `${displayLength(this.state.lengthMin)}–${displayLength(this.state.lengthMax)} ${this.state.sizeUnit}`
+             });
+         }
+ 
+@@ -1092,7 +1249,7 @@
+             filters.push({
+                 key: "width",
+                 label: "Šírka",
+-                value: `${this.state.widthMin || "…"}–${this.state.widthMax || "…"} µm`
++                value: `${displayLength(this.state.widthMin)}–${displayLength(this.state.widthMax)} ${this.state.sizeUnit}`
+             });
+         }
+ 
+@@ -1214,8 +1371,12 @@
+             const input =
+                 document.getElementById(`atlas-filter-${field}`);
+ 
++            // OPRAVA (2026-09-19): `this.state[field]` je vždy v µm,
++            // input zobrazuje prepočet do aktuálne zvolenej jednotky.
+             if (input) {
+-                input.value = this.state[field];
++                input.value = this.state[field] === ""
++                    ? ""
++                    : this.formatUnitNumber(this.convertFromMicrons(this.state[field], this.state.sizeUnit));
+             }
+ 
+         });
+@@ -1350,7 +1511,7 @@
+ 
+                         <div class="quad-grid">
+ 
+-                            ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
++                            ${this.sizeQuadBox(record)}
+ 
+                             ${this.quadBox("Tvar", record.morphology?.shape)}
+ 
+@@ -1404,6 +1565,18 @@
+ 
+             });
+ 
++        // PRIDANÉ (2026-09-19): prepínač jednotiek (µm/mm/cm) v quad-boxe
++        // "Veľkosť". Po zmene jednotky jednoducho znova zavoláme
++        // showDetail(id) — najjednoduchší spôsob, ako prekresliť celú
++        // stránku detailu s novo prepočítanou hodnotou (rovnaká hodnota
++        // this.state.sizeUnit sa potom prenesie aj do Atlasu/filtra, keďže
++        // je to jeden zdieľaný stav).
++        this.bindSizeUnitToggles(() => {
++
++            this.showDetail(id);
++
++        });
++
+            // --- NOVÉ: Zobrazenie obrázkov z images.json ---
+         const parasiteImages = Repository.getImagesForParasite(id);
+         const mainImageContainer = document.querySelector(".findings-card");
+@@ -1512,6 +1685,24 @@
+             </div>
+         `;
+ 
++    },
++
++    // PRIDANÉ (2026-09-19): quad-box pre "Veľkosť" s vlastným kompaktným
++    // prepínačom jednotiek (µm/mm/cm) — na rozdiel od ostatných quad-boxov
++    // (Tvar/Farba/Obal), kde prepínač nemá zmysel. Naviazanie tlačidiel
++    // (bindSizeUnitToggles) rieši showDetail() po vložení tohto markupu.
++    sizeQuadBox(record) {
++
++        const value = this.formatSize(record.micrometry);
++
++        return `
++            <div class="quad-box quad-box-size">
++                <div class="quad-label">Veľkosť</div>
++                <div class="quad-val">${value ? this.escapeHtml(value) : "—"}</div>
++                ${this.renderSizeUnitToggle(true)}
++            </div>
++        `;
 +
      },
  
      /**
-@@ -779,6 +796,12 @@
-             record.morphology?.shell,
-             ...(Array.isArray(record.diagnosticSigns)
-                 ? record.diagnosticSigns
-+                : []),
-+            // OPRAVA (2026-08-18, deduplikácia databázy): nové pole
-+            // `synonyms` (iné vedecké názvy, napr. "Giardia lamblia" pre
-+            // "Giardia intestinalis") — pozri AI_STATUS.md sekcia 0.2.
-+            ...(Array.isArray(record.synonyms)
-+                ? record.synonyms
-                 : [])
-         ];
- 
-@@ -814,10 +837,13 @@
-             const matchesSearch =
-                 this.matchesFulltext(record, search);
- 
-+            // OPRAVA (2026-08-18, deduplikácia databázy): `record.host`
-+            // nahradené `Repository.resolveHosts(record)` (union explicitných
-+            // `hosts` a rozbaleného `hostGroups`). Filtrovacia OR logika v
-+            // rámci poľa ostáva identická.
-             const matchesHost =
-                 this.state.host.length === 0 ||
--                (Array.isArray(record.host) &&
--                    record.host.some(h => this.state.host.includes(h)));
-+                Repository.resolveHosts(record).some(h => this.state.host.includes(h));
- 
-             const matchesSample =
-                 this.state.sample.length === 0 ||
-@@ -884,7 +910,7 @@
-                 <h3>${this.escapeHtml(record.latinName ?? record.id)}</h3>
-                 <p>
-                     <strong>Hostiteľ:</strong>
--                    ${this.escapeHtml(this.formatHosts(record.host) || "—")}
-+                    ${this.escapeHtml(this.formatHosts(Repository.resolveHosts(record)) || "—")}
-                     |
-                     <strong>Materiál:</strong>
-                     ${this.escapeHtml(record.sample || "—")}
-@@ -1168,7 +1194,7 @@
- 
-                             <div class="side-boxes">
- 
--                                ${this.miniBox("Hostiteľ", this.formatHosts(record.host))}
-+                                ${this.miniBox("Hostiteľ", this.formatHosts(Repository.resolveHosts(record)))}
- 
-                                 ${this.miniBox("Materiál", record.sample)}
- 

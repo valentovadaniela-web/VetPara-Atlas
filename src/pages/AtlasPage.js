@@ -57,6 +57,20 @@ const CHECKBOX_FIELDS = ["host"];
 // Tvar/Farba).
 const MULTI_SELECT_FIELDS = ["sample", "shape", "colour"];
 
+// PRIDANÉ (2026-09-19, na žiadosť autorky): prepínač jednotiek veľkosti
+// (µm / mm / cm). Dáta v `parasites.json` (micrometry.lengthMin/Max,
+// widthMin/Max) sú VŽDY v µm — to sa NEMENÍ (02_DATABASE_SPECIFICATION.md,
+// potvrdené AI_STATUS.md: "micrometry.unit — vždy µm vo všetkých 474
+// záznamoch"). Táto konštanta hovorí, koľko µm je v jednej jednotke, a
+// slúži IBA na prepočet pri zobrazení/zadávaní vo filtri — nikdy sa
+// nezapisuje späť do databázy.
+const SIZE_UNITS = ["µm", "mm", "cm"];
+const SIZE_UNIT_FACTORS = {
+    "µm": 1,
+    "mm": 1000,
+    "cm": 10000
+};
+
 const AtlasPage = {
 
     state: {
@@ -68,7 +82,14 @@ const AtlasPage = {
         lengthMin: "",
         lengthMax: "",
         widthMin: "",
-        widthMax: ""
+        widthMax: "",
+        // PRIDANÉ (2026-09-19): aktuálne zvolená zobrazovacia jednotka.
+        // lengthMin/Max/widthMin/Max nižšie sú aj naďalej vždy uložené
+        // v µm (rovnako ako dáta) — iba UI (input polia, štítky filtrov,
+        // formatSize()) ich pri zobrazení/zápise prepočítava podľa tejto
+        // hodnoty. Vďaka tomu sa nemusí meniť žiadna filtrovacia logika
+        // (matchesSizeRange porovnáva stále µm proti µm).
+        sizeUnit: "µm"
     },
 
     // OPRAVA (2026-08-17): nahrádza pôvodný statický `import ... with { type: "json" }`.
@@ -202,7 +223,9 @@ const AtlasPage = {
 
                 <fieldset>
 
-                    <legend class="filter-title">Veľkosť (µm)</legend>
+                    <legend class="filter-title">Veľkosť</legend>
+
+                    ${this.renderSizeUnitToggle()}
 
                     <div class="atlas-size-row">
 
@@ -347,6 +370,24 @@ const AtlasPage = {
         ["lengthMin", "lengthMax", "widthMin", "widthMax"].forEach(field => {
 
             this.bindSizeFilter(field);
+
+        });
+
+        // PRIDANÉ (2026-09-19): prepínač jednotiek (µm/mm/cm) vo filtri
+        // veľkosti. Po zmene jednotky sa: (1) prekreslí aktívny stav
+        // tlačidiel, (2) prepočítajú hodnoty v input poliach filtra
+        // (syncControls), (3) prekreslí zoznam a štítky aktívnych filtrov
+        // (renderRecords) — filtrovacia logika sa nemení, stále pracuje s
+        // µm uloženými v stave.
+        this.bindSizeUnitToggles(() => {
+
+            document.querySelectorAll(".atlas-size-unit-toggle button").forEach(button => {
+                button.classList.toggle("active", button.dataset.unit === this.state.sizeUnit);
+                button.setAttribute("aria-pressed", String(button.dataset.unit === this.state.sizeUnit));
+            });
+
+            this.syncControls();
+            this.renderRecords();
 
         });
 
@@ -510,7 +551,100 @@ const AtlasPage = {
     // Formátovanie mikrometrie a hostiteľov na zobrazenie
     // ------------------------------------------------------------------
 
-    formatSize(micrometry) {
+    // ------------------------------------------------------------------
+    // PRIDANÉ (2026-09-19): prepočet µm ↔ zvolená jednotka (µm/mm/cm).
+    // Zdrojové dáta (record.micrometry) sú vždy v µm — tieto funkcie sa
+    // používajú IBA na zobrazenie a na prepis hodnôt zadaných do
+    // filtrovacích polí. `this.state.lengthMin/Max/widthMin/Max` ostávajú
+    // aj naďalej uložené v µm, aby matchesSizeRange() nemusela vedieť nič
+    // o zvolenej jednotke.
+    // ------------------------------------------------------------------
+
+    convertFromMicrons(valueInMicrons, unit) {
+
+        if (valueInMicrons === null || valueInMicrons === undefined || valueInMicrons === "") {
+            return "";
+        }
+
+        const factor = SIZE_UNIT_FACTORS[unit] || 1;
+
+        return Number(valueInMicrons) / factor;
+
+    },
+
+    convertToMicrons(valueInUnit, unit) {
+
+        if (valueInUnit === null || valueInUnit === undefined || valueInUnit === "") {
+            return "";
+        }
+
+        const factor = SIZE_UNIT_FACTORS[unit] || 1;
+
+        return Number(valueInUnit) * factor;
+
+    },
+
+    // Odstráni plávajúce desatinné "šumy" (napr. 2.9999999999996) a
+    // zbytočné koncové nuly, bez pevného počtu desatinných miest.
+    formatUnitNumber(value) {
+
+        if (value === "" || value === null || value === undefined || !isFinite(value)) {
+            return "";
+        }
+
+        const rounded = Math.round(Number(value) * 10000) / 10000;
+
+        return String(rounded);
+
+    },
+
+    // Kompaktný prepínač jednotiek (µm/mm/cm) — používaný vo filtri aj
+    // v detaile objektu. `compact` pridá menšiu variantu pre quad-box.
+    renderSizeUnitToggle(compact) {
+
+        return `
+            <div class="atlas-size-unit-toggle${compact ? " atlas-size-unit-toggle--compact" : ""}" role="group" aria-label="Jednotka veľkosti">
+                ${SIZE_UNITS.map(unit => `
+                    <button
+                        type="button"
+                        class="atlas-unit-btn${unit === this.state.sizeUnit ? " active" : ""}"
+                        data-unit="${unit}"
+                        aria-pressed="${unit === this.state.sizeUnit}"
+                    >${unit}</button>
+                `).join("")}
+            </div>
+        `;
+
+    },
+
+    // Naviaže VŠETKY prepínače jednotiek aktuálne v DOM (vo filtri aj
+    // v detaile naraz existuje vždy len jeden z nich). `onChange` sa
+    // zavolá až PO zmene `this.state.sizeUnit`.
+    bindSizeUnitToggles(onChange) {
+
+        document.querySelectorAll(".atlas-size-unit-toggle button").forEach(button => {
+
+            button.addEventListener("click", () => {
+
+                const unit = button.dataset.unit;
+
+                if (!unit || unit === this.state.sizeUnit) {
+                    return;
+                }
+
+                this.state.sizeUnit = unit;
+
+                if (typeof onChange === "function") {
+                    onChange();
+                }
+
+            });
+
+        });
+
+    },
+
+    formatSize(micrometry, unitOverride) {
 
         if (!micrometry) {
             return "";
@@ -518,8 +652,7 @@ const AtlasPage = {
 
         const {
             lengthMin, lengthMax,
-            widthMin, widthMax,
-            unit
+            widthMin, widthMax
         } = micrometry;
 
         const hasLength =
@@ -534,19 +667,25 @@ const AtlasPage = {
             return "";
         }
 
+        // OPRAVA (2026-09-19): zdroj (micrometry.unit) je vždy "µm"
+        // (potvrdené v celej databáze) — zobrazovacia jednotka sa teraz
+        // riadi prepínačom (this.state.sizeUnit), nie poľom zo záznamu.
+        const targetUnit = unitOverride || this.state.sizeUnit || "µm";
+
+        const conv = (value) =>
+            this.formatUnitNumber(this.convertFromMicrons(value, targetUnit));
+
         const lengthPart = hasLength
-            ? (lengthMin === lengthMax ? `${lengthMin}` : `${lengthMin}–${lengthMax}`)
+            ? (lengthMin === lengthMax ? `${conv(lengthMin)}` : `${conv(lengthMin)}–${conv(lengthMax)}`)
             : "?";
 
         const widthPart = hasWidth
-            ? (widthMin === widthMax ? `${widthMin}` : `${widthMin}–${widthMax}`)
+            ? (widthMin === widthMax ? `${conv(widthMin)}` : `${conv(widthMin)}–${conv(widthMax)}`)
             : null;
 
-        const unitLabel = unit || "µm";
-
         return widthPart
-            ? `${lengthPart} × ${widthPart} ${unitLabel}`
-            : `${lengthPart} ${unitLabel}`;
+            ? `${lengthPart} × ${widthPart} ${targetUnit}`
+            : `${lengthPart} ${targetUnit}`;
 
     },
 
@@ -815,11 +954,23 @@ const AtlasPage = {
             return;
         }
 
-        input.value = this.state[field];
+        // OPRAVA (2026-09-19): `this.state[field]` je vždy v µm — input
+        // zobrazuje hodnotu prepočítanú do aktuálne zvolenej jednotky.
+        input.value = this.state[field] === ""
+            ? ""
+            : this.formatUnitNumber(this.convertFromMicrons(this.state[field], this.state.sizeUnit));
 
         input.addEventListener("input", (event) => {
 
-            this.state[field] = event.target.value;
+            const raw = event.target.value;
+
+            // Zadanú hodnotu (v aktuálnej jednotke) prevedieme naspäť na
+            // µm skôr, než sa uloží do stavu — matchesSizeRange() porovnáva
+            // vždy µm proti µm, takže sa nemusí meniť.
+            this.state[field] = raw === ""
+                ? ""
+                : String(this.convertToMicrons(Number(raw), this.state.sizeUnit));
+
             this.renderRecords();
 
         });
@@ -1080,11 +1231,17 @@ const AtlasPage = {
 
         });
 
+        // OPRAVA (2026-09-19): this.state.lengthMin/Max/widthMin/Max sú
+        // vždy v µm — v štítku aktívneho filtra sa zobrazujú prepočítané
+        // do aktuálne zvolenej jednotky (this.state.sizeUnit).
+        const displayLength = (value) =>
+            value === "" ? "…" : this.formatUnitNumber(this.convertFromMicrons(value, this.state.sizeUnit));
+
         if (this.state.lengthMin !== "" || this.state.lengthMax !== "") {
             filters.push({
                 key: "length",
                 label: "Dĺžka",
-                value: `${this.state.lengthMin || "…"}–${this.state.lengthMax || "…"} µm`
+                value: `${displayLength(this.state.lengthMin)}–${displayLength(this.state.lengthMax)} ${this.state.sizeUnit}`
             });
         }
 
@@ -1092,7 +1249,7 @@ const AtlasPage = {
             filters.push({
                 key: "width",
                 label: "Šírka",
-                value: `${this.state.widthMin || "…"}–${this.state.widthMax || "…"} µm`
+                value: `${displayLength(this.state.widthMin)}–${displayLength(this.state.widthMax)} ${this.state.sizeUnit}`
             });
         }
 
@@ -1214,8 +1371,12 @@ const AtlasPage = {
             const input =
                 document.getElementById(`atlas-filter-${field}`);
 
+            // OPRAVA (2026-09-19): `this.state[field]` je vždy v µm,
+            // input zobrazuje prepočet do aktuálne zvolenej jednotky.
             if (input) {
-                input.value = this.state[field];
+                input.value = this.state[field] === ""
+                    ? ""
+                    : this.formatUnitNumber(this.convertFromMicrons(this.state[field], this.state.sizeUnit));
             }
 
         });
@@ -1350,7 +1511,7 @@ const AtlasPage = {
 
                         <div class="quad-grid">
 
-                            ${this.quadBox("Veľkosť", this.formatSize(record.micrometry))}
+                            ${this.sizeQuadBox(record)}
 
                             ${this.quadBox("Tvar", record.morphology?.shape)}
 
@@ -1403,6 +1564,18 @@ const AtlasPage = {
                 this.init();
 
             });
+
+        // PRIDANÉ (2026-09-19): prepínač jednotiek (µm/mm/cm) v quad-boxe
+        // "Veľkosť". Po zmene jednotky jednoducho znova zavoláme
+        // showDetail(id) — najjednoduchší spôsob, ako prekresliť celú
+        // stránku detailu s novo prepočítanou hodnotou (rovnaká hodnota
+        // this.state.sizeUnit sa potom prenesie aj do Atlasu/filtra, keďže
+        // je to jeden zdieľaný stav).
+        this.bindSizeUnitToggles(() => {
+
+            this.showDetail(id);
+
+        });
 
            // --- NOVÉ: Zobrazenie obrázkov z images.json ---
         const parasiteImages = Repository.getImagesForParasite(id);
@@ -1509,6 +1682,24 @@ const AtlasPage = {
             <div class="quad-box">
                 <div class="quad-label">${this.escapeHtml(label)}</div>
                 <div class="quad-val">${value ? this.escapeHtml(value) : "—"}</div>
+            </div>
+        `;
+
+    },
+
+    // PRIDANÉ (2026-09-19): quad-box pre "Veľkosť" s vlastným kompaktným
+    // prepínačom jednotiek (µm/mm/cm) — na rozdiel od ostatných quad-boxov
+    // (Tvar/Farba/Obal), kde prepínač nemá zmysel. Naviazanie tlačidiel
+    // (bindSizeUnitToggles) rieši showDetail() po vložení tohto markupu.
+    sizeQuadBox(record) {
+
+        const value = this.formatSize(record.micrometry);
+
+        return `
+            <div class="quad-box quad-box-size">
+                <div class="quad-label">Veľkosť</div>
+                <div class="quad-val">${value ? this.escapeHtml(value) : "—"}</div>
+                ${this.renderSizeUnitToggle(true)}
             </div>
         `;
 
