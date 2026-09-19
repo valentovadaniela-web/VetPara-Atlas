@@ -890,7 +890,6 @@
       "Psovité mäsožravce"
     ],
     "hosts": [
-      "Diviak",
       "Jež"
     ],
     "hostNotes": {},
@@ -900,24 +899,26 @@
     "micrometry": {
       "lengthMin": 56,
       "lengthMax": 72,
-      "widthMin": 23,
+      "widthMin": 20,
       "widthMax": 32,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Citrónovitý",
       "colour": "Žltohnedý",
-      "shell": "Sieťovaná"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
       "Citrónovitý tvar",
-      "jemne bodkovaná škrupina",
-      "zátky menej nápadné."
+      "Paralelné steny",
+      "Typické hlboké pozdĺžne rebrá vytvárajúce sieťovitý vzhľad",
+      "Zátky sú relatívne výrazné",
+      "Vajíčko je často mierne asymetrické/šikmo uložené voči pólom"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Capillariidae/Trichuridae podľa veľkosti",
-      "tvaru a hrúbky škrupiny",
-      "charakteru bipolárnych zátok a povrchovej ornamentácie."
+      "Aonchotheca erinacei je u ježkov, má tenšiu stenu, nemá tak výrazne paralelné steny a má jemnozrnný (nie ryhovaný) povrch",
+      "Eucoleus aerophilus má odlišnú povrchovú ornamentáciu",
+      "Trichuris spp. - súdkovitý tvar, je robustnejšie, hladká stena, pólové zátky sú výrazne odlíšené od hrubej hladkej steny"
     ],
     "lifeCycle": "Životný cyklus môže byť priamy aj nepriamy. Vajíčka odchádzajú s trusom do prostredia, kde sa mačka alebo šelma nakazí buď prehltnutím infekčných vajíčok z kontaminovanej pôdy, alebo zožratím medzihostiteľa (dážďovky), v ktorej sa vyvinuli infekčné larvy. Dospelé červy následne žijú a migrujú v prednej časti tráviacej sústavy.",
     "pathology": "Parazituje v žalúdku a tenkom čreve, najmä v oblasti vrátnika (pylorus). U divých zvierat často prebieha bez príznakov, no u mačiek môže vyvolať chronický zápal žalúdka (gastritídu), žalúdočné vredy, vracanie krvi a v dôsledku straty krvi aj sekundárnu anémiu (chudokrvnosť).",
