@@ -986,7 +986,7 @@
   {
     "latinName": "Ascaridia columbae",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Škrkavka holubia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -998,15 +998,14 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Holubovité",
-      "Papagáje"
+      "Holubovité"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 65,
+      "lengthMin": 68,
       "lengthMax": 90,
       "widthMin": 40,
       "widthMax": 50,
@@ -1015,22 +1014,19 @@
     "morphology": {
       "shape": "Oválny",
       "colour": "Hnedý",
-      "shell": "Tenká až stredne hrubá"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubá škrupina",
-      "podobné A. galli",
-      "nesegmentované."
+      "Pravidelne eliptický, symetrický tvar",
+      "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "V rámci rodu Ascaridia môže byť potrebná molekulová identifikácia. Vajíčka A. galli a H. gallinarum sú takmer identické pri svetelnej mikroskopii",
-      "čo znemožňuje druhové určenie bežnou koproskopiou. Uncinaria stenocephala má zvyčajne väčšie vajíčka."
+      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny). Dospelé samičky kladú hrubostenné vajíčka, ktoré odchádzajú s trusom. V prostredí sa vo vajíčku vyvinie infekčná larva. Holub sa nakazí prehltnutím týchto infekčných vajíčok z kontaminovanej potravy alebo vody. Larvy sa vyliahnu v čreve, krátko migrujú do črevnej sliznice (histotrofné štádium) a následne sa vracajú do lumenu čreva, kde dospievajú.",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 7 cm. Larvy počas poškodzujú sliznicu čreva, čo spôsobuje katarálny zápal čriev (enteritídu) a krvácanie. Vtáky strácajú kondíciu, chradnú, majú matné perie, hnačky a anémiu.Mechanické upchatie: Pri masívnom premnožení môžu klbká červov mechanicky upchať črevo (obštrukciu), čo vedie k jeho perforácii (prasknutiu) a smrti vtáka, najmä u mladých holubiat. Nakaziť sa môžu aj iné vtáky, najmä papagáje a iné exotické vtáctvo chované vo voliérach. ",
     "zoonosis": false,
-    "notes": "Vajíčka Ascaridia galli a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách.  Prípadne Vajíčka radu Ascaridida (Ascaridia/Heterakis).",
+    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "ascaridia_columbae_egg",
     "images": []
   },
@@ -1068,19 +1064,16 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubá škrupina",
-      "podobné A. galli",
-      "nesegmentované."
+     "Pravidelne eliptický, symetrický tvar",
+     "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "V rámci rodu Ascaridia môže byť potrebná molekulová identifikácia. Vajíčka A. galli a H. gallinarum sú takmer identické pri svetelnej mikroskopii",
-      "čo znemožňuje druhové určenie bežnou koproskopiou. Uncinaria stenocephala má zvyčajne väčšie vajíčka."
+      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s Ascaridia"
     ],
     "lifeCycle": "Životný cyklus je priamy bez medzihostiteľa, kedy sa morka nakazí prehltnutím infekčných vajíčok z kontaminovanej podlahy alebo pôdy. Larvy sa vyliahnu v čreve, na čas sa zavŕtajú do sliznice a následne sa vracajú do lumenu čreva, kde do štyroch týždňov dospievajú.",
-    "pathology": "Z hľadiska patológie dospelé červy parazitujú v tenkom čreve, kde spôsobujú katarálny zápal čriev, hnačky a chudnutie. Pri mladých morčatách nákaza výrazne spomaľuje rast, znižuje imunitu a masívne premnoženie môže kvôli upchatiu čreva skončiť smrťou.",
+    "pathology": "Z hľadiska patológie dospelé červy parazitujú v tenkom čreve, kde spôsobujú katarálny zápal čriev, hnačky a chudnutie. Pri mladých morkách nákaza výrazne spomaľuje rast, znižuje imunitu a masívne premnoženie môže kvôli upchatiu čreva skončiť smrťou.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka Ascaridia dissimilis a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "ascaridia_dissimilis_egg",
     "images": []
   },
@@ -1108,7 +1101,7 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 73,
-      "lengthMax": 94,
+      "lengthMax": 92,
       "widthMin": 45,
       "widthMax": 57,
       "unit": "µm"
@@ -1119,20 +1112,16 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubá bezfarebná až sivastá škrupina",
-      "symetrické",
-      "nesegmentované pri vylúčení."
+      "Pravidelne eliptický, symetrický tvar",
+      "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ascaridia môže byť potrebná molekulová identifikácia."
+      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli"
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny), kedy sa hydina nakazí prehltnutím infekčných vajíčok z kontaminovanej podstielky, krmiva alebo výbehu. Po vyliahnutí v čreve prechádzajú larvy krátkou fázou zavŕtania sa do črevnej sliznice (histotrofné štádium) a následne sa vracajú do črevného lumenu, kde dospievajú za 5 až 8 týždňov.",
     "pathology": "Z hľadiska patológie dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 12 cm. Spôsobujú katarálny zápal čriev, anémiu, výrazný pokles znášky vajec a chradnutie, pričom u mladých kurčiat môže masívne klbko červov mechanicky upchať črevo a spôsobiť smrť.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "ascaridia_galli_egg",
     "images": []
   },
@@ -16012,31 +16001,28 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 63,
-      "lengthMax": 77,
-      "widthMin": 35,
+      "lengthMax": 75,
+      "widthMin": 36,
       "widthMax": 48,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Eliptický",
       "colour": "Hnedý",
-      "shell": "Tenká"
+      "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
       "Oválne",
-      "hladká hrubá symetrická škrupina",
-      "nesegmentované; morfologicky ťažko odlíšiteľné od Ascaridia bez merania."
+      "Mierne asymetrický (jedna strana býva plochejšia)",
+      "Mierne tenšia stena v porovnaní s Ascaridia"
     ],
     "differentialDiagnosis": [
-      "Vajíčko podobné Ascaridia galli",
-      "ale menšie a s hrubšou",
-      "hladkou škrupinou; klinicky významný ako vektor Histomonas meleagridis (histomonáza",
-      "'čierna hlava')."
+      "Ascaridia galli: väčšie vajíčka (cca 73–92 µm × 45–57 µm), pravidelne eliptický a symetrický tvar, veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "heterakis_gallinarum_egg",
     "images": []
   },
@@ -16086,7 +16072,7 @@
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "heterakis_sp_egg",
     "images": []
   },

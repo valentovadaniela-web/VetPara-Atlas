@@ -100,70 +100,6 @@
     "dateAdded": "2026-08-29T11:32:00.062Z"
   },
   {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_01_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_02_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_03_full.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
-    "parasiteId": "alaria_alata_adult",
-    "url": "/public/images/parasites/alaria_alata_adult/alaria_alata_adult_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
     "parasiteId": "alloionema_appendiculatum_larva",
     "url": "/public/images/parasites/alloionema_appendiculatum_larva/alloionema_appendiculatum_larva_01.webp",
     "alt": "",
@@ -405,6 +341,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:55:28.026Z"
   },
+    {
+    "parasiteId": "ascaridia_dissimilis_egg",
+    "url": "/public/images/parasites/ascaridia_dissimilis_egg/ascaridia_dissimilis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:55:28.026Z"
+  },
   {
     "parasiteId": "ascaridia_galli_egg",
     "url": "/public/images/parasites/ascaridia_galli_egg/ascaridia_galli_egg_01.webp",
@@ -437,14 +381,6 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:49:28.746Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "ascaris_suum_egg",
-    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
     "parasiteId": "aspiculuris_tetraptera_egg",
