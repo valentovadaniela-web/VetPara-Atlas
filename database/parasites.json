@@ -942,15 +942,17 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Jež"
+      "Jež",
+      "Pes",
+      "Mačka"
     ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Insecta",
     "micrometry": {
-      "lengthMin": 1500,
-      "lengthMax": 3000,
+      "lengthMin": 2000,
+      "lengthMax": 3500,
       "widthMin": 500,
       "widthMax": 1000,
       "unit": "µm"
@@ -961,14 +963,23 @@
       "shell": "Chitínový exoskelet"
     },
     "diagnosticSigns": [
-      "Bočne sploštené telo bez krídel; blcha ježkov",
-      "prítomné hrebienky (ktenídie)."
+      "Bočne sploštené telo bez krídel typické pre blchy",
+      "Laterálne sploštené telo, typické pre blchy",
+      "Genálny hrebeň redukovaný – 1–3 tŕne",
+      "Pronotálny hrebeň redukovaný",
+      "Chýba výrazný frontálny tuberkulus",
+      "Zaoblený predný okraj hlavy",
+      "Tri páry končatín, zadný pár skákací,"
     ],
-    "differentialDiagnosis": [],
+    "differentialDiagnosis": [
+      "Ctenocephalides felis (pri náleze na psovi, mačke alebo ježkovi): genálny hrebeň dobre vyvinutý - typicky 8 tŕňov, pronotálny hrebeň dobre vyvinutý, celkový vzhľad je robustnejší.",
+      "Ctenocephalides canis (pri náleze na psovi, mačke alebo ježkovi): genálny hrebeň dobre vyvinutý - typicky 8 tŕňov, pronotálny hrebeň dobre vyvinutý, pri pohľade zboku je hlava odlišne tvarovaná.",
+      "Pulex irritans: bez genálneho aj pronotálneho hrebeňa"
+    ],
     "lifeCycle": "Cyklus je priamy s kompletnou premenou (vajíčko, 3 štádiá lariev, kukla, dospelá blcha) a trvá približne 2 týždne až niekoľko mesiacov podľa teploty. Dospelé blchy žijú na ježovi, kde sajú krv a samičky kladú vajíčka. Tie vypadávajú do hniezda ježa, kde sa z nich liahnu larvy živiace sa organickým detritom, neskôr sa zakuklia a vyliahnuté dospelce čakajú na hostiteľa.",
-    "pathology": "Dospelé blchy mechanicky dráždia kožu ježa a spôsobujú silné svrbenie.U zdravých ježov je prítomnosť pár desiatok bĺch normálna a nespôsobuje vážne škody.Pri masívnom premnožení (u oslabených alebo chorých jedincov ich môžu byť stovky) vyvolávajú ťažkú anémiu (chudokrvnosť) a stratu kondície.U psov a mačiek môže ich pohryznutie vyvolať alergickú dermatitídu.Riziko prenosu chorôb: Tento druh blchy je preukázaným vektorom nebezpečných baktérií, ako sú Rickettsia felis, Rickettsia helvetica či Bartonella henselae (pôvodca choroby z mačacieho škrabnutia).",
+    "pathology": "Dospelé blchy mechanicky dráždia kožu ježa a spôsobujú silné svrbenie.U zdravých ježov je prítomnosť pár desiatok bĺch normálna a nespôsobuje vážne škody.Pri masívnom premnožení (u oslabených alebo chorých jedincov ich môžu byť stovky) vyvolávajú ťažkú anémiu (chudokrvnosť) a stratu kondície.U psov a mačiek môže ich pohryznutie vyvolať alergickú dermatitídu.Riziko prenosu chorôb: Tento druh blchy je preukázaným vektorom nebezpečných baktérií, ako sú Rickettsia felis, Rickettsia helvetica či Bartonella henselae (pôvodca choroby z mačacieho škrabnutia). \n Tento druh nie je striktne hostiteľsky špecifický, čo zvyšuje jeho epidemiologický význam",
     "zoonosis": true,
-    "notes": "",
+    "notes": "Je to jediná blcha, u ktorej bola preukázaná účasť na zoonotickom cykle stredomorskej škvrnitej horúčky (Boutonneuse fever), spôsobenej baktériou Rickettsia conorii. \n Môže príležitostne bodnúť aj človeka, hoci nie je jeho primárnym hostiteľom. \n Vzhľadom na jej výskyt spolu s kliešťami na ježkoch (často aj vektormi ďalších rickettsióz) je táto blcha sledovaná ako súčasť širšieho komplexu zoonotických rizík spájaných so synantropnými ježkami",
     "id": "archeopsylla_erinacei_adult",
     "images": []
   },
@@ -4528,6 +4539,61 @@
     "images": []
   },
   {
+    "latinName": "Ctenocephalides canis",
+    "synonyms": [],
+    "slovakName": "Blcha psia",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Siphonaptera",
+      "family": "Pulicidae",
+      "genus": "Ctenocephalides",
+      "species": "Ctenocephalides canis"
+    },
+    "hostGroups": [
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce",
+      "Hlodavce"
+    ],
+    "hosts": [
+      "Jež"
+    ],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Insecta",
+    "micrometry": {
+      "lengthMin": 1000,
+      "lengthMax": 3000,
+      "widthMin": 500,
+      "widthMax": 1000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Bočne sploštený",
+      "colour": "Hnedočervený",
+      "shell": "Chitínový exoskelet"
+    },
+    "diagnosticSigns": [
+      "Bočne sploštené telo bez krídel",
+      "Prítomné genálne aj pronotálne hrebene (ktenídie)",
+      "Hlava je celkovo kratšia a vyššia. Čelo je výrazne zaoblené, strmé a tupo zakončené. Predný profil hlavy zviera pri pohľade zboku takmer pravý až tupý uhol.",
+      "Prvý/predný tŕň genálneho ktenídia (hrebeňa na spodnom okraji hlavy) je o polovicu kratší ako druhý",
+      "Kľúčovým diagnostickým znakom samičiek je počet distálnych štetín na dorzálnom okraji tibie (holene) 3. páru končatín: V intervale medzi postmediálnymi a apikálnymi dlhými štetinami dorzálneho okraja zadnej tibie sú prítomné dve krátke, hrubé (robustné) štetiny."
+    ],
+    "differentialDiagnosis": [
+      "Ctenocephalides felis: Hlava je horizontálne predĺžená (jej dĺžka výrazne presahuje výšku). Čelo je nízke a ostro zašpicatené. Predný profil hlavy zviera výrazne ostrý uhol. Prvé dva tŕne genálneho hrebeňa sú rovnako dlhé. Na dorzálnom okraji zadnej tibie sa nachádza iba jedna krátka, hrubá štetina",
+      "Archaeopsylla erinacei: Genálny hrebeň je výrazne redukovaný (iba 1–3 krátke tŕne), pronotálny hrebeň redukovaný."
+    ],
+    "lifeCycle": "Zásadne rovnaký holometabolný cyklus ako u C. felis (vajíčko → 3 larválne štádiá → kukla → dospelec), s vývojom prevažne mimo hostiteľa v prostredí (podstielka, dvor, búda)\n Menej prispôsobená na dlhodobé prežívanie v domácom prostredí ako C. felis — v mnohých regiónoch je preto v domácnostiach v skutočnosti bežnejšia práve C. felis (aj na psoch), zatiaľ čo C. canis prevažuje skôr vo vidieckom/exteriérovom prostredí",
+    "pathology": "Spôsobuje svrbenie, podráždenie kože a môže vyvolať blšiu alergickú dermatitídu \n Je jedným z prototypových medzihostiteľov Dipylidium caninum (spolu s C. felis a Pulex irritans) — pričom sa ukázalo, že psí a mačací genotyp D. caninum sú geneticky odlišné a C. canis prenáša takmer výhradne psí genotyp. \n Pri masívnejšom zamorení hrozí anemizácia, najmä u šteniat",
+    "zoonosis": true,
+    "notes": "Zaznamenaný prenos/detekcia patogénov ako Rickettsia spp. a Bartonella spp., hoci jej vektorská kompetencia je vo všeobecnosti menej preštudovaná než u C. felis. \n Podobne ako C. felis môže príležitostne preniesť Dipylidium caninum na človeka (najmä deti) pri náhodnom požití infikovanej blchy. \n Celkovo sa považuje za epidemiologicky menej významnú než C. felis, ale nie zanedbateľnú, najmä vo vidieckych a menej rozvinutých oblastiach s voľne sa pohybujúcimi psami",
+    "id": "ctenocephalides_canis_adult",
+    "images": []
+  },
+  {
     "latinName": "Ctenocephalides felis",
     "synonyms": [],
     "slovakName": "Blcha mačacia",
@@ -4565,17 +4631,20 @@
       "shell": "Chitínový exoskelet"
     },
     "diagnosticSigns": [
-      "Bočne sploštené telo bez krídel; prítomné genálne aj pronotálne hrebienky (ktenídie) - odlišuje ho od iných blch."
+      "Bočne sploštené telo bez krídel",
+      "Prítomné genálne (typicky 8 tŕňov) aj pronotálne hrebene (ktenídie)",
+      "Hlava je horizontálne predĺžená (jej dĺžka výrazne presahuje výšku). Čelo je nízke, plocho skosené a ostro zašpicatené. Predný profil hlavy zviera výrazne ostrý uhol.",
+      "Prvé dva tŕne genálneho ktenídia (hrebeňa) sú takmer rovnako dlhé.",
+      "Kľúčovým diagnostickým znakom samičiek je počet distálnych štetín na dorzálnom okraji tibie (holene) 3. páru končatín: na dorzálnom okraji zadnej tibie sa nachádza iba jedna krátka, hrubá štetina."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ctenocephalides môže byť potrebná molekulová identifikácia."
+      "Ctenocephalides canis: Hlava je kratšia a vyššia. Čelo je výrazne zaoblené a strmé. Prvý/predný tŕň genálneho ktenídia je o polovicu kratší ako druhý. Medzi postmediálnymi a apikálnymi dlhými štetinami dorzálneho okraja zadnej tibie sú prítomné dve krátke štetiny",
+      "Archaeopsylla erinacei: Genálny hrebeň je výrazne redukovaný (iba 1–3 krátke tŕne), pronotálny hrebeň redukovaný."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Vzácne",
+    "lifeCycle": "Holometabolný cyklus: vajíčko → 3 larválne štádiá (L1–L3) → kukla → dospelec. \n Celý cyklus trvá bežne 30–75 dní, výrazne závisí od teploty a vlhkosti prostredia\n Samica kladie vajíčka priamo na srsť hostiteľa, tie však nie sú lepkavé a vypadávajú do prostredia (podstielka, koberce, škáry) — preto sa väčšina vývojového cyklu (vajíčko, larvy, kukla) odohráva mimo hostiteľa, v jeho prostredí\n Larvy sa živia organickým detritom vrátane nestrávenej krvi vylučovanej dospelými blchami \n Kukla môže v ochrannom kokóne prežívať v pokojovom štádiu (diapauza) týždne až mesiace, kým ju nevyburcuje vibrácia/CO₂ prítomnosti hostiteľa — vysvetľuje náhle masívne zamorenie po dlhšej neprítomnosti zvierat/ľudí v priestore\n Dospelec sa musí niekoľkokrát nasať krvi pred prvým kladením vajec",
+    "pathology": "Bodnutie spôsobuje lokálne svrbenie, podráždenie, u citlivých jedincov blšiu alergickú dermatitídu (FAD) — najčastejšie kožné ochorenie psov a mačiek spôsobené precitlivenosťou na sliny blchy\n Pri masívnom zamorení, najmä u mláďat, môže dôjsť k anemizácii z opakovaných krvných sání\n Slúži ako medzihostiteľ pásomnice Dipylidium caninum — zviera (aj človek) sa nakazí náhodným zjedením infikovanej blchy (nie priamym bodnutím)\n Sekundárne bakteriálne infekcie z rozškriabanej kože",
+    "zoonosis": true,
+    "notes": "Vektor murínového (endemického) týfusu (Rickettsia typhi) a blšej škvrnitej horúčky (Rickettsia felis)\n Prenáša Bartonella henselae (pôvodca choroby z mačacieho škrabnutia) a ďalšie druhy Bartonella (B. clarridgeiae, B. koehlerae)\n Zriedkavo (najmä u malých detí pri náhodnom zjedení infikovanej blchy) môže preniesť Dipylidium caninum aj na človeka — infekcia je väčšinou nepatogénna, ale môže spôsobiť anorexiu a chudnutie\n Historicky spájaný aj s prenosom moru (Yersinia pestis), hoci primárnym vektorom moru sú skôr blchy hlodavcov",
     "id": "ctenocephalides_felis_adult",
     "images": []
   },

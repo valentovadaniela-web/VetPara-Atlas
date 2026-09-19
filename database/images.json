@@ -1120,12 +1120,46 @@
     "dateAdded": "2026-08-29T11:34:50.577Z"
   },
   {
+    "parasiteId": "ctenocephalides_canis_adult",
+    "url": "/public/images/parasites/ctenocephalides_canis_adult/ctenocephalides_canis_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.460Z"
+  },
+  {
+    "parasiteId": "ctenocephalides_canis_adult",
+    "url": "/public/images/parasites/ctenocephalides_canis_adult/ctenocephalides_canis_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.460Z",
+      "isPrimary": true
+  },
+  {
+    "parasiteId": "ctenocephalides_canis_adult",
+    "url": "/public/images/parasites/ctenocephalides_canis_adult/ctenocephalides_canis_adult_03.webp",
+    "alt": "",
+    "caption": "Hlava je celkovo kratšia a vyššia. Čelo je výrazne zaoblené, strmé a tupo zakončené. Predný profil hlavy zviera pri pohľade zboku takmer pravý až tupý uhol. Prvý/predný tŕň genálneho ktenídia (hrebeňa na spodnom okraji hlavy) je o polovicu kratší ako druhý",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.460Z"
+  },
+  {
+    "parasiteId": "ctenocephalides_canis_adult",
+    "url": "/public/images/parasites/ctenocephalides_canis_adult/ctenocephalides_canis_adult_04.webp",
+    "alt": "",
+    "caption": "Kľúčovým diagnostickým znakom samičiek je počet distálnych štetín na dorzálnom okraji tibie (holene) 3. páru končatín: V intervale medzi postmediálnymi a apikálnymi dlhými štetinami dorzálneho okraja zadnej tibie sú prítomné dve krátke, hrubé (robustné) štetiny.",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.460Z"
+  },
+  {
     "parasiteId": "ctenocephalides_felis_adult",
     "url": "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T12:54:09.460Z"
+    "dateAdded": "2026-08-29T12:54:09.460Z",
+      "isPrimary": true
   },
   {
     "parasiteId": "ctenocephalides_felis_adult",
@@ -1141,8 +1175,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T12:54:09.483Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-29T12:54:09.483Z"
   },
   {
     "parasiteId": "ctenocephalides_felis_adult",
@@ -1157,6 +1190,30 @@
     "url": "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_05.webp",
     "alt": "",
     "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.510Z"
+  },
+  {
+    "parasiteId": "ctenocephalides_felis_adult",
+    "url": "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.510Z"
+  },
+  {
+    "parasiteId": "ctenocephalides_felis_adult",
+    "url": "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_07.webp",
+    "alt": "",
+    "caption": "Hlava je horizontálne predĺžená (jej dĺžka výrazne presahuje výšku). Čelo je nízke, plocho skosené a ostro zašpicatené. Predný profil hlavy zviera výrazne ostrý uhol. Prvé dva tŕne genálneho ktenídia (hrebeňa na spodnom okraji hlavy) sú takmer rovnako dlhé.",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:54:09.510Z"
+  },
+  {
+    "parasiteId": "ctenocephalides_felis_adult",
+    "url": "/public/images/parasites/ctenocephalides_felis_adult/ctenocephalides_felis_adult_08.webp",
+    "alt": "",
+    "caption": "Kľúčovým diagnostickým znakom samičiek je počet distálnych štetín na dorzálnom okraji tibie (holene) 3. páru končatín: na dorzálnom okraji zadnej tibie sa nachádza iba jedna krátka, hrubá štetina.",
     "credit": "",
     "dateAdded": "2026-08-29T12:54:09.510Z"
   },
