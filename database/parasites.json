@@ -50,9 +50,9 @@
   {
     "latinName": "Aelurostrongylus abstrusus",
     "synonyms": [
-      "Filaroides abstrusus (staršia synonymická kombinácia)", 
+      "Filaroides abstrusus (staršia synonymická kombinácia)",
       "Angiostrongylus abstrusus (staršie zaradenie)"
-      ],
+    ],
     "slovakName": "Pľúcny červ mačiek",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -349,10 +349,10 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Ovoidné, tenkostenné, strongyloidného typu (podobné vajíčkam trichostrongylidov)", 
+      "Ovoidné, tenkostenné, strongyloidného typu (podobné vajíčkam trichostrongylidov)",
       "V čerstvom trusu obsahuje morulu (viacbunkové štádium)",
       "Obal je hladký, bezfarebný až sivobiely"
-     ], 
+    ],
     "differentialDiagnosis": [
       "Ascaridia, Heterakis gallinarum majú hrubšiu, dvojvrstvovú škrupinu a sú väčšie"
     ],
@@ -368,7 +368,7 @@
     "synonyms": [
       "Amoebotaenia sphenoides",
       "Taenia cuneata"
-  ],
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -455,7 +455,7 @@
       "Vajíčko je oválne až elipsovité",
       "Obsah tvorí morula s oddelenými blastomérami",
       "Pri bežnej mikroskopii ho nemožno vždy spoľahlivo odlíšiť od vajíčka Uncinaria stenocephala"
-      ],
+    ],
     "differentialDiagnosis": [
       "Uncinaria stenocephala vajíčka sú morfologicky veľmi podobné, ale zvyčajne väčšie a širšie (70–90 × 40–50 µm) než vajíčka A. caninum."
     ],
@@ -466,7 +466,7 @@
     "id": "ancylostoma_caninum_egg",
     "images": []
   },
-    {
+  {
     "latinName": "Ancylostoma sp.",
     "synonyms": [],
     "slovakName": "Machovec",
@@ -503,7 +503,7 @@
       "Vajíčko je oválne až elipsovité",
       "Obsah tvorí morula s oddelenými blastomérami",
       "Pri bežnej mikroskopii ho nemožno vždy spoľahlivo odlíšiť od vajíčka Uncinaria stenocephala"
-      ],
+    ],
     "differentialDiagnosis": [
       "Uncinaria stenocephala vajíčka sú morfologicky veľmi podobné, ale zvyčajne väčšie a širšie (70–90 × 40–50 µm) než vajíčka Ancylostoma."
     ],
@@ -717,7 +717,7 @@
     "latinName": "Anoplocephala magna",
     "synonyms": [
       "Taenia magna"
-      ],
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -730,7 +730,7 @@
     },
     "hostGroups": [
       "Koňovité"
-      ],
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -782,7 +782,7 @@
     },
     "hostGroups": [
       "Koňovité"
-      ],
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -818,105 +818,6 @@
     "images": []
   },
   {
-    "latinName": "Anoplocephalidae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Anoplocephalidae",
-      "genus": "neurčený rod",
-      "species": "Anoplocephalidae"
-    },
-    "hostGroups": [
-      "Zajace, králiky"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 64,
-      "widthMin": 60,
-      "widthMax": 64,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Nepravidelný tvar s charakteristickým hruškovitým (pyriformným) aparátom okolo onkosféry."
-    ],
-    "differentialDiagnosis": [
-      "Charakteristický znak čeľade je pyriformný (hruškovitý) aparát obklopujúci onkosféru vo vajíčku",
-      "čo odlišuje Anoplocephalidae od Taeniidae (radiálne pruhovaný embryofor) a Hymenolepididae (bez pyriformného aparátu",
-      "s polárnymi vláknami u niektorých rodov)."
-    ],
-    "lifeCycle": "Životný cyklus je nepriamy, pričom medzihostiteľmi sú drobné pôdne roztoče (Oribatida) žijúce na pastve. Králiky a zajace sa nakazia náhodným prehltnutím týchto roztočov s trávou, v ktorých sa nachádza infekčné štádium (cysticerkoid).",
-    "pathology": " Tieto pásomnice žijú v tenkom čreve. U dospelých jedincov prebieha nákaza spravidla bez príznakov. Problémy (hnačky, chudnutie, nafúknuté brucho, nechutenstvo) vyvolávajú najmä u mláďat alebo pri masívnom premnožení, kedy môžu mechanicky upchať črevo.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "anoplocephalidae_egg",
-    "images": []
-  },
-  {
-    "latinName": "Aonchotheca annulosa",
-    "synonyms": [
-      "Calodium annulosum; Capillaria annulosa"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Aonchotheca",
-      "species": "Aonchotheca annulosa"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 51,
-      "lengthMax": 64,
-      "widthMin": 22,
-      "widthMax": 30,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "jemne bodkovaná škrupina."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Aonchotheca môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "Je nepriamy (heteroxénny), čo je typické pre väčšinu zástupcov rodu Aonchotheca. Vajíčka odchádzajú s trusom hlodavcov do vonkajšieho prostredia, kde ich zožerie medzihostiteľ – zvyčajne pôdny bezstavec (napr. dážďovka). V ňom sa vyvinie infekčná larva, a hlodavec sa nakazí po zožratí tohto medzihostiteľa.",
-    "pathology": "Dospelé červy parazitujú v tenkom čreve. Hlística sa tenkým predným koncom tela (stichozómom) zavrtáva do sliznice čreva, čo pri vyššej intenzite nákazy spôsobuje katarálny zápal čriev (enteritídu), lokálne poškodenie sliznice a poruchy vstrebávania živín, u divo žijúcich hlodavcov však málokedy vedie k priamej smrti",
-    "zoonosis": false,
-    "notes": "",
-    "id": "aonchthecca_annulosa_egg",
-    "images": []
-  },
-  {
     "latinName": "Aonchotheca erinacei",
     "synonyms": [
       "Capillaria erinacei"
@@ -940,10 +841,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 67,
-      "widthMin": 26,
-      "widthMax": 36,
+      "lengthMin": 52.7,
+      "lengthMax": 57.4,
+      "widthMin": 28,
+      "widthMax": 33.7,
       "unit": "µm"
     },
     "morphology": {
@@ -953,19 +854,19 @@
     },
     "diagnosticSigns": [
       "Citrónovitý tvar",
-      "jemne bodkovaná škrupina",
-      "zátky menej nápadné ako pri Trichuris."
+      "Na oboch póloch výrazné pólové zátky",
+      "Pomerne tenká stena",
+      "Povrch jemne zrnitý, nie výrazne sieťovito retikulovaný"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Aonchotheca môže byť potrebná molekulová identifikácia."
+      "Eucoleus aerophilus je respiračný capillariid, nie črevný A. erinacei. Jeho vajíčka bývajú väčšie, približne 59–83 × 26–40 µm, s výraznejšou hrubou sieťovitou ornamentáciou.",
+      "Aonchotheca putorii má väčšie vajíčka s paralelnejšími stenami a výraznejšou retikulárnou ornamentáciou."
     ],
-    "lifeCycle": "Životný cyklus tohto druhu je nepriamy (heteroxénny):Vajíčka s typickými polárnymi zátkami (pripomínajúce citrón) odchádzajú z tela ježa spolu s trusom.Vo vonkajšom prostredí vajíčka zožerie medzihostiteľ, ktorým je pôdny bezstavec (najčastejšie dážďovka), v ktorého tele sa vyvinie infekčná larva.Jež sa nakazí zožratím tejto infikovanej dážďovky. Larvy migrujú do čreva, kde dospievajú na pohlavne zrelé červy.",
-    "pathology": "Dospelé červy parazitujú v tenkom čreve ježov.Predným tenkým koncom tela sa zavrtávajú hlboko do črevnej sliznice, čo spôsobuje katarálny zápal čriev (enteritídu).Pri slabých infekciách u dospelých ježov prebieha nákaza takmer bezpríznakovo.Pri masívnom premnožení (často v kombinácii s pľúcnymi červami alebo v ježích záchranných staniciach) vyvoláva výrazné chudnutie, hnačky, dehydratáciu, stratu apetítu a anémiu. Pre oslabené jedince a mladé ježatá môže byť silná nákaza smrteľná.",
+    "lifeCycle": "Životný cyklus tohto druhu je nepriamy (heteroxénny):Vajíčka odchádzajú z tela ježa spolu s trusom. Vo vonkajšom prostredí vajíčka zožerie medzihostiteľ, ktorým je pôdny bezstavec (najčastejšie dážďovka), v ktorého tele sa vyvinie infekčná larva. Jež sa nakazí zožratím tejto infikovanej dážďovky. Larvy migrujú do čreva, kde dospievajú na pohlavne zrelé červy.",
+    "pathology": "Dospelé červy parazitujú v tenkom čreve ježov. Predným tenkým koncom tela sa zavrtávajú hlboko do črevnej sliznice, čo spôsobuje katarálny zápal čriev (enteritídu). Pri slabých infekciách u dospelých ježov prebieha nákaza takmer bezpríznakovo. Pri masívnom premnožení (často v kombinácii s pľúcnymi červami alebo v ježích záchranných staniciach) vyvoláva výrazné chudnutie, hnačky, dehydratáciu, stratu apetítu a anémiu. Pre oslabené jedince a mladé ježatá môže byť silná nákaza smrteľná.",
     "zoonosis": false,
-    "notes": "",
-    "id": "capillaria_erinacei_egg",
+    "notes": "Ak ide iba o vajíčko bez dostatočne typickej ornamentácie je možné uviesť ako vajíčka Capillariidae, morfologicky kompatibilné s rodom Aonchotheca.",
+    "id": "aonchotheca_erinacei_egg",
     "images": []
   },
   {
@@ -3752,6 +3653,59 @@
     "notes": "",
     "id": "citellina_alpina_egg",
     "images": []
+  },
+  {
+    "id": "cittotaenia_sp_egg",
+    "latinName": "Cittotaenia sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Cittotaenia",
+      "species": "neurčené do druhu"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Králik"
+    ],
+    "hostNotes": {
+      "Králik": "TYpický pre králiky divé. U domácich  králikov sa prakticky nevyskytuje."
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 72,
+      "lengthMax": 78,
+      "widthMin": 72,
+      "widthMax": 78,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Okrúhly až mierne sploštený tvar",
+      "Obsahuje onkosféru",
+      "Charakteristický pyriformný aparát",
+      "Vo vnútri hexakantné embryo – 6 háčikov"
+    ],
+    "differentialDiagnosis": [
+      "Mosgovoyia pectinata - hostiteľ je zajac"
+    ],
+    "lifeCycle": "Nepriamy.\n\nVajíčko → oribatidný roztoč → cysticerkoid → králik → dospelý cestód\n\nDospelý cestód žije v tenkom čreve králika.\nVajíčka sa dostávajú do vonkajšieho prostredia s trusom.\nVajíčko požije vhodný oribatidný roztoč.\nV jeho telovej dutine sa vyvíja cysticerkoid.\nKrálik prijme infikovaného roztoča spolu s potravou.\nCysticerkoid sa uvoľní v tráviacom trakte.\nV tenkom čreve sa vyvinie dospelý cestód.\n\nInfekčné štádium pre definitívneho hostiteľa: cysticerkoid.",
+    "pathology": "Infekcia Cittotaenia spp. u divých králikov býva často subklinická.\n\nPri vyššej intenzite infekcie môžu cestódy v tenkom čreve:\n\nmechanicky dráždiť črevnú sliznicu,\novplyvňovať absorpciu živín,\npri silnej infekcii prispievať k poruchám trávenia a zhoršeniu kondície.\n\nNie každý pozitívny nález však znamená klinické ochorenie. C. denticulata bola v populáciách divých králikov zaznamenávaná pomerne často, vrátane nálezov dospelých cestód pri pitve.\n\nLaboratórny nález preto nemožno automaticky interpretovať ako príčinu klinických tráviacich príznakov.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Cloacotaenia megalops",
@@ -17728,6 +17682,58 @@
     "id": "ceratophyllus_sciurorum_adult",
     "images": []
   },
+   {
+    "id": "mosgovoyia_pectinata_egg",
+    "latinName": "Mosgovoyia pectinata",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Anoplocephalidae",
+      "genus": "Mosgovoyia",
+      "species": "Mosgovoyia pectinata"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Zajac"
+    ],
+    "hostNotes": {
+      "Zajac": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 30,
+      "lengthMax": 40,
+      "widthMin": 30,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Typický je pyriformný aparát, ktorý je významným znakom anoplocefalidných cestód."
+    ],
+    "differentialDiagnosis": [
+      "Embryonálne háčiky v onkosfére",
+      "Hrubší vonkajší obal",
+      "Obsahuje onkosféru;"
+    ],
+    "lifeCycle": "Nepriamy.\n\nDospelý M. pectinata žije v tenkom čreve zajaca.\nGravidné články/vajíčka sa dostávajú do prostredia s trusom.\nVajcia prijme oribatidný roztoč.\nV jeho tele sa vyvíja larválne štádium – cysticerkoid.\nZajac sa nakazí pri prijatí infikovaných roztočov s potravou.\nCysticerkoid sa v tráviacom trakte uvoľní a následne sa vyvinie na dospelého cestóda.\n\nPre diagnostiku je dôležité, že vajíčko priamo infikuje medzihostiteľa, nie zajaca.",
+    "pathology": "M. pectinata je u zajacov pomerne bežná, ale klinický význam jednotlivých infekcií je variabilný.\n\nPri nízkej intenzite infekcie môže ísť o subklinický nález.\n\nPri silnej infekcii anoplocefalidnými cestódami sa môžu objaviť:\n\nkatarálna enteritída,\nporuchy trávenia,\nzhoršený nutričný stav,\npri veľmi vysokom počte parazitov mechanické poškodenie/obštrukcia čreva.\n\nTieto závažné prejavy však nie je vhodné automaticky pripisovať každému nálezu M. pectinata; význam závisí od intenzity infekcie a celkového zdravotného stavu hostiteľa.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
   {
     "latinName": "Muellerius capillaris",
     "synonyms": [],
@@ -17893,7 +17899,7 @@
       "Myš"
     ],
     "hostNotes": {
-    "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
+      "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé."
     },
     "sample": "Koža",
     "stage": "Dospelý jedinec",

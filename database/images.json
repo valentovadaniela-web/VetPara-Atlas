@@ -350,6 +350,22 @@
     "dateAdded": "2026-08-29T12:48:36.454Z"
   },
   {
+    "parasiteId": "aonchotheca_erinacei_egg",
+    "url": "/public/images/parasites/aonchotheca_erinacei_egg/aonchotheca_erinacei_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "aonchotheca_erinacei_egg",
+    "url": "/public/images/parasites/aonchotheca_erinacei_egg/aonchotheca_erinacei_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
     "parasiteId": "aonchotheca_putorii_egg",
     "url": "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_01.webp",
     "alt": "",
@@ -3908,16 +3924,16 @@
     "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
-    "parasiteId": "mosgovoyia_ pectinata_egg",
-    "url": "/public/images/parasites/mosgovoyia_ pectinata_egg/mosgovoyia_ pectinata_egg_01.webp",
+    "parasiteId": "mosgovoyia_pectinata_egg",
+    "url": "/public/images/parasites/mosgovoyia_pectinata_egg/mosgovoyia_pectinata_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
-    "parasiteId": "mosgovoyia_ pectinata_egg",
-    "url": "/public/images/parasites/mosgovoyia_ pectinata_egg/mosgovoyia_ pectinata_egg_02.webp",
+    "parasiteId": "mosgovoyia_pectinata_egg",
+    "url": "/public/images/parasites/mosgovoyia_pectinata_egg/mosgovoyia_pectinata_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
