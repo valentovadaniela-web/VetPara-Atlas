@@ -367,9 +367,17 @@
   },
   {
     "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_02.webp",
+    "alt": "",
+    "caption": "Vajíčko obsahujúce mŕtvu larvu",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
     "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_03.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Mŕtve vajíčko",
     "credit": "",
     "dateAdded": "2026-08-29T12:49:28.736Z"
   },
@@ -381,6 +389,46 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:49:28.746Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_05.webp",
+    "alt": "",
+    "caption": "Neoplodnené vajíčko",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_06.webp",
+    "alt": "",
+    "caption": "Oplodnené dekortikované vajíčko. Vonkajšia hrboľatá (tzv. mammilovaná alebo albuminózna) vrstva slúži ako ochranný obal. Nie je však so zvyškom obalu pevne zrastená chemickou väzbou. K jej odlúpeniu dochádza mechanicky - prechodom tráviacim traktom alebo pri spracovaní vzorky v laboratóriu",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_08.webp",
+    "alt": "",
+    "caption": "Neoplodnené vajíčka bývajú väčšie, podlhovastejšie a menej pravidelné než oplodnené.",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_09.webp",
+    "alt": "",
+    "caption": "Neoplodnené dekortikované vajíčko. Neoplodnené vajíčka bývajú väčšie, podlhovastejšie a menej pravidelné než oplodnené. Dekortikované vajíčko (bez typickej vonkajšej hrboľatej vrstvy) vyzerá pod mikroskopom úplne inak – má hladký, čistý, oválny povrch. Pre neskúseného laboranta je oveľa ťažšie ho identifikovať, pretože stráca svoj typický „vlnitý“ vzhľad a môže sa ľahko zameniť za iné druhy parazitov (napr. vajíčka mechovcov) alebo za obyčajné rastlinné či peľové zvyšky.",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
+  },
+  {
+    "parasiteId": "ascaris_suum_egg",
+    "url": "/public/images/parasites/ascaris_suum_egg/ascaris_suum_egg_10.webp",
+    "alt": "",
+    "caption": "Oplodnené vajíčko s larvou",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:49:28.715Z"
   },
   {
     "parasiteId": "aspiculuris_tetraptera_egg",

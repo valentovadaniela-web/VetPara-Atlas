@@ -1128,7 +1128,7 @@
   {
     "latinName": "Ascaris suum",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Škrkavka prasačia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -1147,29 +1147,30 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 65,
-      "lengthMax": 85,
+      "lengthMin": 50,
+      "lengthMax": 70,
       "widthMin": 40,
       "widthMax": 60,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Tmavohnedý",
+      "colour": "Zlatohnedý",
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
       "Oválne",
-      "hrubá hnedá mamilovaná škrupina (charakteristický nerovný povrch); nesegmentované."
+      "Hrubá hnedá hrboľatá stena",
+      "Fertilné (oplodnené) vajíčko: 50–70 x 40–60 µm. nefertilné (neoplodnené) vajíčko: dlhšie a užšie – 88–94 x 44 µm"
     ],
     "differentialDiagnosis": [
       "A. lumbricoides a A. suum sú morfologicky zhodné",
-      "s najväčšou pravdepodobnosťou ide o varianty jedného polytypického druhu"
+      "Potrebné odlíšiť od rastlinných peľových zŕn (napr. borovicový peľ), ktoré môžu mikroskopicky pripomínať vajíčka – nemajú typickú trojvrstvovú stenu ani granulárny obsah"
     ],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny) s povinnou migráciou cez orgány. Prasatá sa nakazia prehltnutím vysoko odolných infekčných vajíčok z kontaminovanej pôdy, podstielky alebo z kože mliečnej žľazy prasnice pri cicaní. Vyliahnuté larvy prenikajú stenou hrubého čreva do ciev, krvou migrujú cez pečeň do pľúc, kde sú vykašľané, prehltnuté a v tenkom čreve dospievajú.",
-    "pathology": "Z hľadiska patológie vyvoláva závažné lézie v dvoch fázach:Larválna fáza (pečeň a pľúca): Migrujúce larvy mechanicky poškodzujú pečeňové tkanivo, čo zanecháva typické biele väzivové jazvy známe ako „mliečne škvrny“ (milk spots). V pľúcach spôsobujú zápal (pneumóniu), kašeľ a sťažené dýchanie.Intestinálna fáza (črevo): Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 35 cm. Odčerpávajú živiny, čo vedie k zaostávaniu v raste a chradnutiu prasiat, pričom masívne klbká červov môžu spôsobiť upchatie (ileus) alebo prasknutie čreva a smrť. Ascaris suum, hlavný črevný parazit ošípaných, je schopný infikovať ľudí a dokončiť životný cyklus v ľudskom hostiteľovi, čím spôsobuje symptómy identické s A. lumbricoides.",
+    "lifeCycle": "Životný cyklus je priamy (monoxénny) s povinnou migráciou cez orgány. \nPrasatá sa nakazia prehltnutím vysoko odolných infekčných vajíčok z kontaminovanej pôdy, podstielky alebo z kože mliečnej žľazy prasnice pri cicaní. \nVyliahnuté larvy prenikajú stenou hrubého čreva do ciev, krvou migrujú **cez pečeň** do pľúc, kde sú vykašľané, prehltnuté a v tenkom čreve dospievajú.",
+    "pathology": "Z hľadiska patológie vyvoláva závažné lézie v dvoch fázach:\n\n Larválna fáza (pečeň a pľúca): Migrujúce larvy mechanicky poškodzujú pečeňové tkanivo, čo zanecháva typické biele väzivové jazvy známe ako „mliečne škvrny“ (milk spots). V pľúcach spôsobujú zápal (pneumóniu), kašeľ a sťažené dýchanie.\n\nIntestinálna fáza (črevo): Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 35 cm. Odčerpávajú živiny, čo vedie k zaostávaniu v raste a chradnutiu prasiat, pričom masívne klbká červov môžu spôsobiť upchatie (ileus) alebo prasknutie čreva a smrť. \nAscaris suum, hlavný črevný parazit ošípaných, je schopný infikovať ľudí a dokončiť životný cyklus v ľudskom hostiteľovi, čím spôsobuje symptómy identické s A. lumbricoides.",
     "zoonosis": true,
-    "notes": "Taxonomický status ľudskej A. lumbricoides a A. suum je dlhodobo sporný, pričom dôkazy z morfológie aj genetiky naznačujú, že ide o jeden druh. ",
+    "notes": "Taxonomický status ľudskej A. lumbricoides a A. suum je dlhodobo sporný, pričom dôkazy z morfológie aj genetiky naznačujú, že ide o jeden druh.",
     "id": "ascaris_suum_egg",
     "images": []
   },
