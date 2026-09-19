@@ -998,6 +998,14 @@
     "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
+    "parasiteId": "cittotaenia_sp_egg",
+    "url": "/public/images/parasites/cittotaenia_sp_egg/cittotaenia_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.146Z"
+  },
+  {
     "parasiteId": "coenurus_cerebralis_larva",
     "url": "/public/images/parasites/coenurus_cerebralis_larva/coenurus_cerebralis_larva_01.webp",
     "alt": "",
@@ -3894,6 +3902,22 @@
   {
     "parasiteId": "monoecocestus_sp_egg",
     "url": "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.972Z"
+  },
+  {
+    "parasiteId": "mosgovoyia_ pectinata_egg",
+    "url": "/public/images/parasites/mosgovoyia_ pectinata_egg/mosgovoyia_ pectinata_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-30T11:26:20.972Z"
+  },
+  {
+    "parasiteId": "mosgovoyia_ pectinata_egg",
+    "url": "/public/images/parasites/mosgovoyia_ pectinata_egg/mosgovoyia_ pectinata_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
