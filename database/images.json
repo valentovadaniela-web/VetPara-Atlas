@@ -4916,5 +4916,21 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-20T13:06:49.810Z"
+  },
+  {
+    "parasiteId": "choanotaenia_infundibulum_egg",
+    "url": "/public/images/parasites/choanotaenia_infundibulum_egg/choanotaenia_infundibulum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T13:59:04.991Z"
+  },
+  {
+    "parasiteId": "trichostrongylus_tenuis_egg",
+    "url": "/public/images/parasites/trichostrongylus_tenuis_egg/trichostrongylus_tenuis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T13:59:40.579Z"
   }
 ]

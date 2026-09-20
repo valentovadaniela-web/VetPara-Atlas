@@ -3067,7 +3067,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "choanotaenia_infundibulum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/choanotaenia_infundibulum_egg/choanotaenia_infundibulum_egg_01.webp"
+    ]
   },
   {
     "latinName": "Choleoeimeria allogamae",
@@ -23889,7 +23891,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichostrongylus_tenuis_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trichostrongylus_tenuis_egg/trichostrongylus_tenuis_egg_01.webp"
+    ]
   },
   {
     "latinName": "Trichuris campanula",
