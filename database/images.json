@@ -1,5 +1,5 @@
 [
-    {
+  {
     "parasiteId": "acanthotaenia_sp_egg",
     "url": "/public/images/parasites/acanthotaenia_sp_egg/acanthotaenia_sp_egg_01.webp",
     "alt": "",
@@ -132,7 +132,7 @@
     "dateAdded": "2026-08-21T10:00:00.000Z",
     "isPrimary": true
   },
-   {
+  {
     "parasiteId": "amoebotaenia_cuneata_egg",
     "url": "/public/images/parasites/amoebotaenia_cuneata_egg/amoebotaenia_cuneata_egg_01.webp",
     "alt": "",
@@ -204,14 +204,15 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:48:08.861Z"
   },
-   {
+  {
     "parasiteId": "angiostoma_aspersae_adult",
     "url": "/public/images/parasites/angiostoma_aspersae_adult/angiostoma_aspersae_adult_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:48:08.861Z"
-  }, {
+  },
+  {
     "parasiteId": "angiostoma_aspersae_adult",
     "url": "/public/images/parasites/angiostoma_aspersae_adult/angiostoma_aspersae_adult_03.webp",
     "alt": "",
@@ -341,7 +342,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:55:28.026Z"
   },
-    {
+  {
     "parasiteId": "ascaridia_dissimilis_egg",
     "url": "/public/images/parasites/ascaridia_dissimilis_egg/ascaridia_dissimilis_egg_01.webp",
     "alt": "",
@@ -902,14 +903,6 @@
     "dateAdded": "2026-08-29T13:21:35.633Z"
   },
   {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
     "parasiteId": "cittotaenia_sp_egg",
     "url": "/public/images/parasites/cittotaenia_sp_egg/cittotaenia_sp_egg_01.webp",
     "alt": "",
@@ -1014,7 +1007,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:54:09.460Z",
-      "isPrimary": true
+    "isPrimary": true
   },
   {
     "parasiteId": "ctenocephalides_canis_adult",
@@ -1039,7 +1032,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:54:09.460Z",
-      "isPrimary": true
+    "isPrimary": true
   },
   {
     "parasiteId": "ctenocephalides_felis_adult",
@@ -1104,14 +1097,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:54:39.681Z"
-  },
-  {
-    "parasiteId": "cyathostomum_sp_egg",
-    "url": "/public/images/parasites/cyathostomum_sp_egg/cyathostomum_sp_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-04T17:48:56.565Z"
   },
   {
     "parasiteId": "cyclophyllidea_egg",
@@ -1479,14 +1464,6 @@
     "dateAdded": "2026-08-29T12:58:14.010Z"
   },
   {
-    "parasiteId": "demodex_canis_adult",
-    "url": "/public/images/parasites/demodex_canis_adult/demodex_canis_adult_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "demodex_gatoi_adult",
     "url": "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_02.webp",
     "alt": "",
@@ -1502,14 +1479,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:00:37.396Z"
-  },
-  {
-    "parasiteId": "demodex_gatoi_adult",
-    "url": "/public/images/parasites/demodex_gatoi_adult/demodex_gatoi_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "demodex_injai_adult",
@@ -1917,38 +1886,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T10:53:54.959Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T10:53:54.960Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_12.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T10:53:54.960Z"
-  },
-  {
-    "parasiteId": "dirofilaria_repens_larva",
-    "url": "/public/images/parasites/dirofilaria_repens_larva/dirofilaria_repens_larva_14.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T10:53:54.960Z"
-  },
-  {
     "parasiteId": "drepanidotaenia_lanceolata_egg",
     "url": "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_01.webp",
     "alt": "",
@@ -1963,14 +1900,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:52:37.925Z"
-  },
-  {
-    "parasiteId": "drepanidotaenia_lanceolata_egg",
-    "url": "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "echinococcus_granulosus_larva",
@@ -2043,14 +1972,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:47:37.603Z"
-  },
-  {
-    "parasiteId": "echinostoma_sp_egg",
-    "url": "/public/images/parasites/echinostoma_sp_egg/echinostoma_sp_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "eimeria_acervulina_oocyst",
@@ -2139,14 +2060,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:02:32.572Z"
-  },
-  {
-    "parasiteId": "eimeria_auburnensis_oocyst",
-    "url": "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "eimeria_austriaca_oocyst",
@@ -2279,46 +2192,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "eimeria_duodenalis_oocyst",
     "url": "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_02.webp",
     "alt": "",
@@ -2336,22 +2209,6 @@
     "dateAdded": "2026-08-29T11:45:48.821Z"
   },
   {
-    "parasiteId": "eimeria_duodenalis_oocyst",
-    "url": "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
-  },
-  {
-    "parasiteId": "eimeria_duodenalis_oocyst",
-    "url": "/public/images/parasites/eimeria_duodenalis_oocyst/eimeria_duodenalis_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
-  },
-  {
     "parasiteId": "eimeria_ellipsoidalis_oocyst",
     "url": "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_01.webp",
     "alt": "",
@@ -2366,22 +2223,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:05:15.031Z"
-  },
-  {
-    "parasiteId": "eimeria_ellipsoidalis_oocyst",
-    "url": "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "eimeria_ellipsoidalis_oocyst",
-    "url": "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "eimeria_europaea_oocyst",
@@ -2481,14 +2322,6 @@
     "dateAdded": "2026-08-29T11:42:30.325Z"
   },
   {
-    "parasiteId": "eimeria_maxima_oocyst",
-    "url": "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
-  },
-  {
     "parasiteId": "eimeria_media_oocyst",
     "url": "/public/images/parasites/eimeria_media_oocyst/eimeria_media_oocyst_01.webp",
     "alt": "",
@@ -2511,14 +2344,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:08:18.572Z"
-  },
-  {
-    "parasiteId": "eimeria_mira_oocyst",
-    "url": "/public/images/parasites/eimeria_mira_oocyst/eimeria_mira_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
     "parasiteId": "eimeria_ninaekohljakimovae_oocyst",
@@ -2602,22 +2427,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "eimeria_ponderosa_oocyst",
-    "url": "/public/images/parasites/eimeria_ponderosa_oocyst/eimeria_ponderosa_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
-  },
-  {
-    "parasiteId": "eimeria_ponderosa_oocyst",
-    "url": "/public/images/parasites/eimeria_ponderosa_oocyst/eimeria_ponderosa_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
-  },
-  {
     "parasiteId": "eimeria_punctata_oocyst",
     "url": "/public/images/parasites/eimeria_punctata_oocyst/eimeria_punctata_oocyst_01.webp",
     "alt": "",
@@ -2642,36 +2451,12 @@
     "dateAdded": "2026-08-29T13:11:29.574Z"
   },
   {
-    "parasiteId": "eimeria_pythonis_oocyst",
-    "url": "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "eimeria_pythonis_oocyst",
-    "url": "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
     "parasiteId": "eimeria_robusta_oocyst",
     "url": "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:11:57.495Z"
-  },
-  {
-    "parasiteId": "eimeria_robusta_oocyst",
-    "url": "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
     "parasiteId": "eimeria_semisculpta_oocyst",
@@ -2706,14 +2491,6 @@
     "dateAdded": "2026-08-29T13:13:10.247Z"
   },
   {
-    "parasiteId": "eimeria_simonkingi_oocyst",
-    "url": "/public/images/parasites/eimeria_simonkingi_oocyst/eimeria_simonkingi_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
     "parasiteId": "eimeria_spinosa_oocyst",
     "url": "/public/images/parasites/eimeria_spinosa_oocyst/eimeria_spinosa_oocyst_01.webp",
     "alt": "",
@@ -2744,14 +2521,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:13:57.420Z"
-  },
-  {
-    "parasiteId": "eimeria_stiedae_oocyst",
-    "url": "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
     "parasiteId": "eimeria_subspherica_oocyst",
@@ -2809,22 +2578,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:44:17.093Z"
-  },
-  {
-    "parasiteId": "eimeria_truncata_oocyst",
-    "url": "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
-  },
-  {
-    "parasiteId": "eimeria_truncata_oocyst",
-    "url": "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
   },
   {
     "parasiteId": "eimeria_zuenii_oocyst",
@@ -2949,7 +2702,7 @@
   },
   {
     "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_01.webp",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -2957,7 +2710,7 @@
   },
   {
     "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_02.webp",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -2965,15 +2718,7 @@
   },
   {
     "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/capillaria_aerophyla_egg/eucoleus_aerophilus_egg_04.webp",
+    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -3118,22 +2863,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:17:42.804Z"
-  },
-  {
-    "parasiteId": "fascioloides_magna_egg",
-    "url": "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T18:08:46.483Z"
-  },
-  {
-    "parasiteId": "fascioloides_magna_egg",
-    "url": "/public/images/parasites/fascioloides_magna_egg/fascioloides_magna_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T18:08:46.483Z"
   },
   {
     "parasiteId": "giardia_intestinalis_cyst",
@@ -3358,28 +3087,12 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "heterakis_gallinarum_egg",
-    "url": "/public/images/parasites/heterakis_gallinarum_egg/heterakis_gallinarum_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "hexametra_sp_egg",
     "url": "/public/images/parasites/hexametra_sp_egg/hexametra_sp_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:20:12.882Z"
-  },
-  {
-    "parasiteId": "hexametra_sp_egg",
-    "url": "/public/images/parasites/hexametra_sp_egg/hexametra_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
     "parasiteId": "histomonas_meleagridis_trophozoite",
@@ -3542,14 +3255,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:21:49.737Z"
-  },
-  {
-    "parasiteId": "ichthyophthirius_multifiliis_trophozoite",
-    "url": "/public/images/parasites/ichthyophthirius_multifiliis_trophozoite/ichthyophthirius_multifiliis_trophozoite_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "isospora_amphiboluri_oocyst",
@@ -3788,14 +3493,6 @@
     "dateAdded": "2026-08-29T13:23:38.371Z"
   },
   {
-    "parasiteId": "mesocestoides_sp_egg",
-    "url": "/public/images/parasites/mesocestoides_sp_egg/mesocestoides_sp_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "metastrongylus_sp_egg",
     "url": "/public/images/parasites/metastrongylus_sp_egg/metastrongylus_sp_egg_01.webp",
     "alt": "",
@@ -3859,22 +3556,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:24:10.900Z"
-  },
-  {
-    "parasiteId": "monoecocestus_sp_egg",
-    "url": "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "monoecocestus_sp_egg",
-    "url": "/public/images/parasites/monoecocestus_sp_egg/monoecocestus_sp_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
     "parasiteId": "mosgovoyia_pectinata_egg",
@@ -4185,22 +3866,6 @@
     "dateAdded": "2026-08-29T13:29:00.482Z"
   },
   {
-    "parasiteId": "paraspidodera_uncinata_egg",
-    "url": "/public/images/parasites/paraspidodera_uncinata_egg/paraspidodera_uncinata_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
-  },
-  {
-    "parasiteId": "paraspidodera_uncinata_egg",
-    "url": "/public/images/parasites/paraspidodera_uncinata_egg/paraspidodera_uncinata_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
-  },
-  {
     "parasiteId": "passalurus_ambiguus_egg",
     "url": "/public/images/parasites/passalurus_ambiguus_egg/passalurus_ambiguus_egg_01.webp",
     "alt": "",
@@ -4250,70 +3915,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonide_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.971Z"
-  },
-  {
     "parasiteId": "phasmarhabditis_hermaphrodita_adult",
     "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_01.webp",
     "alt": "",
@@ -4321,7 +3922,7 @@
     "credit": "",
     "dateAdded": "2026-08-30T11:26:20.971Z"
   },
-    {
+  {
     "parasiteId": "phasmarhabditis_hermaphrodita_adult",
     "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_02.webp",
     "alt": "",
@@ -4329,7 +3930,7 @@
     "credit": "",
     "dateAdded": "2026-08-30T11:26:20.971Z"
   },
-    {
+  {
     "parasiteId": "phasmarhabditis_hermaphrodita_adult",
     "url": "/public/images/parasites/phasmarhabditis_hermaphrodita_adult/phasmarhabditis_hermaphrodita_adult_03.webp",
     "alt": "",
@@ -4580,7 +4181,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:33:20.761Z",
-     "isPrimary": true
+    "isPrimary": true
   },
   {
     "parasiteId": "sarcocystis_sp_oocyst",
@@ -4606,14 +4207,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T19:55:42.086Z"
-  },
-  {
-    "parasiteId": "sarcocystis_sp_oocyst",
-    "url": "/public/images/parasites/sarcocystis_sp_oocyst/sarcocystis_sp_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.828Z"
   },
   {
     "parasiteId": "skrjabinema_caprae_egg",
@@ -4886,38 +4479,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "toxocara_canis_egg",
-    "url": "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "toxocara_canis_egg",
-    "url": "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "toxocara_canis_egg",
-    "url": "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "toxocara_canis_egg",
-    "url": "/public/images/parasites/toxocara_canis_egg/toxocara_canis_egg_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "toxocara_cati_egg",
     "url": "/public/images/parasites/toxocara_cati_egg/toxocara_cati_egg_01.webp",
     "alt": "",
@@ -5097,22 +4658,6 @@
     "dateAdded": "2026-08-29T13:39:50.951Z"
   },
   {
-    "parasiteId": "trichostrongylus_sp_egg",
-    "url": "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
-    "parasiteId": "trichostrongylus_sp_egg",
-    "url": "/public/images/parasites/trichostrongylus_sp_egg/trichostrongylus_sp_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.829Z"
-  },
-  {
     "parasiteId": "trichuris_campanula_egg",
     "url": "/public/images/parasites/trichuris_campanula_egg/trichuris_campanula_egg_01.webp",
     "alt": "",
@@ -5185,14 +4730,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:41:12.563Z"
-  },
-  {
-    "parasiteId": "trypanoxyuris_sciuri_egg",
-    "url": "/public/images/parasites/trypanoxyuris_sciuri_egg/trypanoxyuris_sciuri_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.972Z"
   },
   {
     "parasiteId": "uncinaria_stenocephala_egg",

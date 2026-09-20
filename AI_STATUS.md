@@ -1,5 +1,42 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.37 Aktuálny stav — doplnené (2026‑09‑20, session: vyčistenie neplatných odkazov na fotky v images.json — "broken image" ikony)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila, že sa v Atlase pri niektorých diagnostických objektoch zobrazuje ikona "broken image" — v `database/images.json` zostali záznamy odkazujúce na fotky, ktoré v `public/images/parasites/` reálne neexistujú (boli lokálne zmazané, ale záznam v `images.json` nie). Autorka dodala aktuálny zoznam skutočne nahratých súborov (`tree /F` výstup z `public/images/parasites/`) na porovnanie proti `images.json`.
+
+### 🔍 Metodika overenia
+
+Automatizované porovnanie: pre každý zo 652 záznamov v `images.json` sa dvojica (priečinok, názov súboru) z poľa `url` skontrolovala proti reálnemu zoznamu súborov na disku. Nešlo o odhad ani sampling — porovnaných bolo všetkých 652 záznamov.
+
+### ✅ Výsledok — 3 kategórie záznamov
+
+1. **591 záznamov** — súbor na disku existuje, url sedí → **beze zmeny**.
+2. **58 záznamov trvalo odstránených** — žiadny zodpovedajúci súbor na disku (ani pod iným názvom/priečinkom). Týka sa 31 rôznych `parasiteId`, najviac `pharyngodoniade_egg` (8×, celý priečinok — na explicitnú žiadosť autorky, keďže skutočné fotky tohto objektu sú vedené pod `pharyngodon_egg`, ktorý má vlastné funkčné záznamy a ostáva nezmenený) a skupina `eimeria_*` druhov (spolu cca 20 záznamov naprieč viacerými druhmi — chýbajúce konkrétne poradové čísla fotiek).
+3. **3 záznamy opravené** (nie zmazané) — `parasiteId: "capillaria_aerophyla_egg"`, poradie 01/02/04: pôvodná `url` odkazovala na neexistujúci priečinok `capillaria_aerophyla_egg`, hoci názov súboru už bol `eucoleus_aerophilus_egg_0X.webp`. Autorka potvrdila, že `capillaria_aerophyla_egg` a `eucoleus_aerophilus_egg` sú synonymum toho istého objektu — `url` bola opravená na reálny priečinok `/public/images/parasites/eucoleus_aerophilus_egg/...`. Pole `parasiteId` som **zámerne nemenila** (ostáva `capillaria_aerophyla_egg`), keďže `parasites.json` nebol v tejto session k dispozícii a nie je isté, či má ísť o zlúčenie so záznamom `eucoleus_aerophilus_egg`, alebo `parasites.json` vedie oba ako samostatné objekty (synonymá). **Otvorené na potvrdenie v ďalšej session** (pozri nižšie).
+   - 4. záznam rovnakej skupiny (`capillaria_aerophyla_egg`, poradie 03 → `eucoleus_aerophilus_egg_03.webp`) zostal **odstránený** — táto konkrétna fotka v priečinku `eucoleus_aerophilus_egg` na disku reálne neexistuje (v priečinku sú len 01, 02, 04, 05, 06).
+
+**Výsledný počet záznamov: 652 → 594.**
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `database/images.json` | 58 záznamov odstránených (mŕtve odkazy na fotky); 3 záznamy `capillaria_aerophyla_egg` opravené (cesta → `eucoleus_aerophilus_egg`); 591 záznamov beze zmeny. 652 → 594 záznamov. | ✅ hotové (súbor priložený v chate), ⏳ čaká na manuálne nahradenie v repozitári autorkou |
+
+**Nezmenené súbory:** `database/parasites.json` (nebol v tejto session nahraný, nedotknutý), žiadny súbor v `src/`, žiadny fyzický súbor v `public/images/parasites/`.
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. **Rozhodnúť o `capillaria_aerophyla_egg` vs. `eucoleus_aerophilus_egg` v `parasites.json`** — autorka potvrdila, že ide o synonymum toho istého diagnostického objektu. Treba overiť v `parasites.json`, či existuje ako jeden záznam (pod ktorým `id`?) alebo ako dva — a podľa toho prípadne zjednotiť aj `parasiteId` v `images.json` (momentálne 5 záznamov `eucoleus_aerophilus_egg` + 3 opravené záznamy stále vedené pod `capillaria_aerophyla_egg`, spolu 8 záznamov pre ten istý objekt pod dvomi rôznymi `parasiteId`).
+2. Po nahratí opraveného `images.json` do repozitára overiť naživo v Atlase aj Galérii, že sa "broken image" ikony pre dotknutých 31 `parasiteId` už nezobrazujú a že zvyšné reálne fotky (594 záznamov) sa zobrazujú správne.
+3. Fotka `eucoleus_aerophilus_egg_03.webp` chýba fyzicky v `public/images/parasites/eucoleus_aerophilus_egg/` — ak mala existovať, treba ju dodatočne nahrať a znovu pridať záznam do `images.json`.
+
+---
+
 🔥 0.36 Aktuálny stav — doplnené (2026‐09‐18, session: odstránenie duplicitných id, pole references, zjednotenie poradia poľí v parasites.json)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
