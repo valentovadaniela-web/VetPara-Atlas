@@ -4925,5 +4925,29 @@
     "credit": "",
     "dateAdded": "2026-09-20T16:36:53.061Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "baylisascaris_procyonis_egg",
+    "url": "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T19:06:09.703Z"
+  },
+  {
+    "parasiteId": "baylisascaris_procyonis_egg",
+    "url": "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T19:06:09.714Z"
+  },
+  {
+    "parasiteId": "baylisascaris_transfuga_egg",
+    "url": "/public/images/parasites/baylisascaris_transfuga_egg/baylisascaris_transfuga_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T19:06:21.680Z"
   }
 ]

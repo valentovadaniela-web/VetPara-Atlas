@@ -1549,108 +1549,11 @@
     "images": []
   },
   {
-    "latinName": "Baruscapillaria rudolphii",
-    "synonyms": [
-      "Capillaria rudolphii"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Baruscapillaria",
-      "species": "Baruscapillaria rudolphii"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Kormorán"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 51,
-      "lengthMax": 51,
-      "widthMin": 24,
-      "widthMax": 24,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedý",
-      "shell": "Zátky"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "jemne bodkovaná škrupina."
-    ],
-    "differentialDiagnosis": [
-      "Vtáčia kapilaria pažeráka/hltana; odlíšiť od Eucoleus a Ornithocapillaria podľa hostiteľa a lokalizácie."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "baruscapillaria_rudolphii_egg",
-    "images": []
-  },
-  {
-    "latinName": "Baylisascaris laevis",
-    "synonyms": [
-      "Ascaris laevis"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Ascaridida",
-      "family": "Ascarididae",
-      "genus": "Baylisascaris",
-      "species": "Baylisascaris laevis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Svišť"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 65,
-      "lengthMax": 85,
-      "widthMin": 50,
-      "widthMax": 65,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Guľovité",
-      "hrubá mamilovaná škrupina podobná Toxocara",
-      "nesegmentované."
-    ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "ascaris_laevis_egg",
-    "images": []
-  },
-  {
     "latinName": "Bovicola bovis",
     "synonyms": [
       "Damalinia bovis"
     ],
-    "slovakName": "",
+    "slovakName": "Srstiarka (švola) hovädzia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -1697,51 +1600,6 @@
     "zoonosis": false,
     "notes": "Sezónnosť: Najmasívnejší výskyt sa zaznamenáva v zimných a skorých jarných mesiacoch, kedy má dobytok hustú srsť a zvieratá sú ustajnené tesne vedľa seba. V lete ich počty prudko klesajú vplyvom slnečného žiarenia a vysokých teplôt kože.",
     "id": "damalinia_bovis_adult",
-    "images": []
-  },
-  {
-    "latinName": "Bovicola longicornis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Insecta",
-      "order": "Psocodea",
-      "family": "Trichodectidae",
-      "genus": "Bovicola",
-      "species": "Bovicola longicornis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jeleň"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Insecta",
-    "micrometry": {
-      "lengthMin": 1500,
-      "lengthMax": 2500,
-      "widthMin": 600,
-      "widthMax": 1000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Predĺžený",
-      "colour": "Žltohnedý",
-      "shell": "Chitínový exoskelet"
-    },
-    "diagnosticSigns": [
-      "Švola so širokou hlavou",
-      "širšou než hrudník."
-    ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "Životný cyklus Bovicola longicornis prebieha celý na tele jeleňa a trvá 3 až 4 týždne. Samička prilepí vajíčka (hnidy) k chlpom, z ktorých sa po 7 – 12 dňoch liahnu nymfy. Tieto nymfy prejdú tromi štádiami zvliekania, kým dospejú. Vďaka partenogenéze (množeniu bez samcov) sa dokážu v hustej zimnej srsti hostiteľa masívne a rýchlo premnožiť.",
-    "pathology": "Je to prísne hostiteľsky špecifický parazit. Celý svoj životný kolobeh viaže výlučne na jelene. Na domáci hovädzí dobytok, ovce či človeka neprechádza, a ak aj na nich náhodne prelezie, nedokáže sa tam rozmnožovať a rýchlo hynie.",
-    "zoonosis": false,
-    "notes": "Sezónnosť: Populácia parazita prudko rastie v zimných a predjarných mesiacoch, kedy majú jelene hustú zimnú srsť a ich organizmus býva oslabený nedostatkom potravy. V lete, v dôsledku pĺznutia a vyšších teplôt pokožky (pôsobenie slnečného žiarenia), počty všeniek v srsti radikálne klesajú. K prenosu dochádza priamym kontaktom medzi zvieratami v stáde.",
-    "id": "bovicola_longicornis_adult",
     "images": []
   },
   {
@@ -24761,5 +24619,123 @@
     "notes": "Najmä v zime",
     "id": "damalinia_equi_adult",
     "images": []
+  },
+  {
+    "id": "baylisascaris_transfuga_egg",
+    "latinName": "Baylisascaris transfuga",
+    "synonyms": [
+      "Ascaris transfuga"
+    ],
+    "slovakName": "Škrkavka medvedia",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Ascaridida",
+      "family": "Ascarididae",
+      "genus": "Baylisascaris",
+      "species": "Baylisascaris transfuga"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Človek",
+      "Medveď"
+    ],
+    "hostNotes": {
+      "Človek": "Človek je nepravý, náhodný hostiteľ. Nákaza sa prejavuje ako syndróm Larva migrans visceralis (LMV) alebo syndróm Larva migrans ocularis (LMO).",
+      "Medveď": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 90,
+      "widthMin": 6075,
+      "widthMax": 70,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Hnedý",
+      "shell": "Hrubá, viacvrstvová"
+    },
+    "diagnosticSigns": [
+      "Hrubá stena s jemne jamkovaným, štruktúrovaným povrchom, ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
+    ],
+    "differentialDiagnosis": [
+      "Toxocara canis / Toxocara cati: Vajíčka sú menšie (cca 65 – 75 µm), majú o niečo hrubšiu alveolárnu (sieťovitú) štruktúru na povrchu. Tieto druhy sa však u medveďov bežne nevyskytujú, diferenciácia je dôležitá pri kontaminácii vzoriek trusom psovitých/mačkovitých šeliem.",
+      "Ascaris suum / Ascaris lumbricoides: Majú výrazne hrubší, hrbolčekovitý (mamilačný) povrch, nie jemne jamkovaný. Hostiteľom sú ošípané, diviaky / primáty.",
+      "Baylisascaris procyonis (škrkavka mývalia): Vajíčka sú veľmi podobné, ale menšie (65 – 70 µm × 50 – 65 µm). Hostiteľom sú medvedíky čistotné (mývaly)"
+    ],
+    "lifeCycle": "Cyklus môže prebiehať dvoma hlavnými spôsobmi (priamy a nepriamy):\n\nPriamy cyklus: \nMedveď zožerie infekčné vajíčko z prostredia (ktoré obsahuje vyvinutú larvu L2/L3). \nV čreve sa larva uvoľní, podstupuje entero-hepatálnu/pulmonálnu migráciu (cez pečeň a pľúca) alebo priamu migráciu v stene čreva, vracia sa do lumenu tenkého čreva a dospieva.\n\nNepriamy cyklus (s paratenickým hostiteľom): \nDrobné cicavce alebo vtáky zožerú infekčné vajíčka. \nLarvy sa vyliahnu v ich čreve, preniknú do steny a migrujú do tkanív (svaly, mozog, orgány), kde sa opuzdria (enkapsulujú) ako L3 larvy. \nMedveď sa nakazí predáciou (zožratím) tohto hostiteľa. Larvy v čreve medveďa rýchlo dospievajú bez ďalšej orgánovej migrácie.",
+    "pathology": "U definitívneho hostiteľa (medveď):Nízke infekcie prebiehajú asymptomaticky.Masívne infekcie spôsobujú mechanické podráždenie sliznice tenkého čreva, katarálny zápal čriev (enteritídu), podvýživu, stratu hmotnosti a v extrémnych prípadoch až obštrukciu (upchatie) alebo perforáciu (prederavenie) čreva dospelými červami (ktoré môžu dorastať do dĺžky 10 – 20 cm).\n\nU paratenických hostiteľov a človeka (Larva migrans):Ak vajíčko pozrie netypický hostiteľ (vrátane človeka), vyvíja sa syndróm Larva migrans visceralis (LMV) alebo Larva migrans ocularis (LMO).Larvy rodu Baylisascaris majú tendenciu rásť počas migrácie a majú afinitu k centrálnemu nervovému systému. Môžu spôsobiť závažnú neurologickú formu (Larva migrans neuralis – NLM), prejavujúcu sa zápalom mozgu (encefalitídou), poruchami koordinácie a smrťou paratenického hostiteľa. B. transfuga je však považovaná za o niečo menej neurotropnú než obávaná B. procyonis.",
+    "zoonosis": true,
+    "images": [
+      "/public/images/parasites/baylisascaris_transfuga_egg/baylisascaris_transfuga_egg_01.webp"
+    ],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "baylisascaris_procyonis_egg",
+    "latinName": "Baylisascaris procyonis",
+    "synonyms": [],
+    "slovakName": "Škrkavka mývalia",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Ascaridida",
+      "family": "Ascarididae",
+      "genus": "Baylisascaris",
+      "species": "Baylisascaris procyonis"
+    },
+    "hostGroups": [
+      "Medvedíkovité mäsožravce"
+    ],
+    "hosts": [
+      "Človek",
+      "Pes"
+    ],
+    "hostNotes": {
+      "Človek": "U ľudí môže mať infekcia fatálne neurologické následky.",
+      "Pes": "Príležitostne môže ako definitívny hostiteľ slúžiť aj pes, u ktorého červy dokážu dospieť v čreve a vylučovať vajíčka."
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 65,
+      "lengthMax": 70,
+      "widthMin": 50,
+      "widthMax": 65,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Hnedý",
+      "shell": "Hrubá, viacvrstvová"
+    },
+    "diagnosticSigns": [
+      "Príležitostne môže ako definitívny hostiteľ slúžiť aj pes domáci (Canis lupus familiaris), u ktorého červy dokážu dospieť v čreve a vylučovať vajíčka.",
+      "Sú mimoriadne odolné voči vonkajšiemu prostrediu (prežijú roky). Na povrchu majú o niečo hrubšiu zrnitosť ako vajíčka B. transfuga."
+    ],
+    "differentialDiagnosis": [
+      "Baylisascaris transfuga: Vajíčka sú väčšie (70 – 90 µm) a parazitujú u medveďov. Rozlíšenie je dôležité pri prekrývaní teritórií medveďov a mývalov.",
+      "Toxocara canis: Sú veľmi podobné tvarom aj tmavou farbou, ale vajíčka T. canis sú o niečo väčšie (cca 85 – 90 µm) a ich jamkovaný povrch pripomína golfovú loptičku (má hlbšie a zreteľnejšie preliačiny).",
+      "Ascaris suum: Vajíčka majú povrch pokrytý hrubými, nepravidelnými, makroskopicky viditeľnými hrbolčekmi, zatiaľ čo B. procyonis má povrch relatívne uniformne zrnitý. Parazit ošípaných a diviakov."
+    ],
+    "lifeCycle": "Má dva odlišné scenáre v závislosti od veku mývala alebo prítomnosti medzihostiteľa:\n\nPriamy cyklus (u mladých mývalov): \nMýval zožerie infekčné vajíčko z prostredia (ktoré dozrievalo na vzduchu 2–4 týždne). \nLarva sa vyliahne v čreve, podstúpi migráciu cez črevnú stenu a orgány a vráti sa dospieť do tenkého čreva.\n\nNepriamy cyklus (u dospelých mývalov – dominantný spôsob): \nStaršie mývaly sú voči priamej infekcii vajíčkami čiastočne imúnne. Nakazia sa predáciou paratenického hostiteľa (napr. hlodavca), ktorý mal v tkanivách zapuzdrené larvy L3. \nPo zožraní hostiteľa sa larvy uvoľnia v čreve mývala a dospievajú bez potreby migrovať tkanivami mývala.",
+    "pathology": "U definitívneho hostiteľa (mýval): \nV čreve mývala sa často nachádzajú desiatky dospelých červov (veľkosť 15–20 cm). Spôsobujú len minimálne tkanivové škody, pri masívnych inváziách však hrozí obštrukcia (upchatie) lumen čreva alebo mechanické narušenie trávenia.\nU paratenických hostiteľov a človeka (Extrémna nebezpečnosť): Po prehltnutí vajíčok človekom alebo zvieraťom sa larvy vyliahnu a začnú masívne migrovať telom (Larva migrans). Larvy B. procyonis sú veľmi veľké (dorastajú počas migrácie až do 1–2 mm) a vykazujú silný neurotropizmus (vysoká afinita k mozgovému tkanivu). Približne 5–7 % pozretých lariev preniká priamo do mozgu. V dôsledku ich veľkosti a agresívnej migrácie mechanicky ničia nervové dráhy a vyvolávajú ťažkú eozinofilnú meningoencefalitídu (zápal mozgu a blán). U ľudí (najmä detí, ktoré sa hrajú v piesku kontaminovanom trusom mývalov) ochorenie spôsobuje fatálne neurologické následky – trvalé poškodenie mozgu, slepotu (Larva migrans ocularis) alebo smrť.",
+    "zoonosis": true,
+    "images": [
+      "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_01.webp",
+      "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_02.webp"
+    ],
+    "references": [],
+    "notes": ""
   }
 ]
