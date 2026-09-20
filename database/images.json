@@ -593,14 +593,6 @@
     "dateAdded": "2026-08-28T20:06:33.739Z"
   },
   {
-    "parasiteId": "balantioides_coli_cyst",
-    "url": "/public/images/parasites/balantioides_coli_cyst/balantioides_coli_cyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.419Z"
-  },
-  {
     "parasiteId": "damalinia_bovis_adult",
     "url": "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_01.webp",
     "alt": "",
@@ -787,54 +779,6 @@
     "dateAdded": "2026-08-28T20:06:00.413Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_15.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
-  },
-  {
     "parasiteId": "caryospora_kutzeri_oocyst",
     "url": "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_04.webp",
     "alt": "",
@@ -850,22 +794,6 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:46:21.357Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "caryospora_kutzeri_oocyst",
-    "url": "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
-  },
-  {
-    "parasiteId": "caryospora_kutzeri_oocyst",
-    "url": "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.969Z"
   },
   {
     "parasiteId": "caryospora_megafalconis_oocyst",
@@ -885,30 +813,6 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "caryospora_megafalconis_oocyst",
-    "url": "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "caryospora_megafalconis_oocyst",
-    "url": "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
-    "parasiteId": "caryospora_megafalconis_oocyst",
-    "url": "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
-  },
-  {
     "parasiteId": "caryospora_neofalconis_oocyst",
     "url": "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_01.webp",
     "alt": "",
@@ -923,14 +827,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:47:04.763Z"
-  },
-  {
-    "parasiteId": "caryospora_neofalconis_oocyst",
-    "url": "/public/images/parasites/caryospora_neofalconis_oocyst/caryospora_neofalconis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-30T11:26:20.970Z"
   },
   {
     "parasiteId": "chorioptes_equi_adult",

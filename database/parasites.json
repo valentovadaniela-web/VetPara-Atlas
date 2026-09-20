@@ -1176,7 +1176,9 @@
   },
   {
     "latinName": "Ascarops strongylina",
-    "synonyms": [],
+    "synonyms": [
+      "Arduenna strongylina"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -1191,7 +1193,9 @@
       "Ošípané a diviaky"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+    "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
@@ -1209,19 +1213,16 @@
     },
     "diagnosticSigns": [
       "Malé",
-      "oválne",
-      "hrubostenné",
-      "hladké vajíčko obsahujúce už vyvinutú larvu pri vylúčení (embryonované); typické pre čeľaď Spirocercidae"
+      "Tvar oválny, zaoblený, s typickou hrubou a jemne zvlnenou vonkajšou vrstvou.",
+      "Hladké vajíčko obsahujúce už vyvinutú larvu pri vylúčení (embryonované); typické pre čeľaď Spirocercidae"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ascarops môže byť potrebná molekulová identifikácia."
+      "Physocephalus sexalatus má vajíčka mierne menšie a užšie (34–39 x 12–17 μm) a tvar výraznejšie valcovitý, pretiahnutý, s rovnejšími stenami."
     ],
     "lifeCycle": "Životný cyklus je nepriamy (heteroxénny) a vyžaduje medzihostiteľa. Vajíčka s vyvinutou larvou odchádzajú z tela ošípanej s trusom. Tieto vajíčka zožerú koprofágne chrobáky (najmä lačniaky / hovnivály), v ktorých tele sa vyliahne larva a vyvinie sa do infekčného štádia L3 (približne za 30 dní). Ošípaná sa nakazí zožratím týchto infikovaných chrobákov pri rytí v zemi. Larvy sa uvoľnia v žalúdku a dospievajú za 4 až 6 týždňov.",
     "pathology": "Dospelé červy parazitujú v žalúdku ošípaných, kde sa zavrtávajú do sliznice.Infekcia väčšinou prebieha bez viditeľných príznakov, no pri silnej nákaze spôsobuje katarálny zápal žalúdka (gastritídu).Sliznica žalúdka reaguje nadmernou tvorbou hlienu a zápalom. U mladých zvierat sa nákaza prejavuje nechutenstvom a redšou stolicou.",
     "zoonosis": false,
-    "notes": " V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi. Riziko však pretrváva v extenzívnych chovoch, na rodinných farmách s výbehmi alebo pri chove na pastve",
+    "notes": "",
     "id": "ascarops_strongylina_egg",
     "images": []
   },
@@ -19686,6 +19687,56 @@
     "zoonosis": false,
     "notes": "Vnútri larva",
     "id": "physaloptera_sp_egg",
+    "images": []
+  },
+    {
+    "latinName": "Physocephalus sexalatus",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Spirurida",
+      "family": "Spirocercidae",
+      "genus": "Physocephalus",
+      "species": "Physocephalus sexalatus"
+    },
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
+    "hosts": [],
+    "hostNotes": {
+    "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "micrometry": {
+      "lengthMin": 34,
+      "lengthMax": 40,
+      "widthMin": 18,
+      "widthMax": 22,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Malé vajíčka",
+      "Majú typický valcovitý (elipsovitý) tvar s hrubou, hladkou a bezfarebnou stenou. Na póloch môžu mať mierne sploštenie alebo viečka (operkulum)",
+      "Vajíčka odchádzajú z tela hostiteľa trusom a už v momente vylúčenia obsahujú plne vyvinutú, stočenú larvu (sú larvované)"
+    ],
+    "differentialDiagnosis": [
+     "Ascarops strongylina má vajíčka mierne väčšie a širšie (39–45 x 22–26 μm). Tvar vajíčok je viac oválny, zaoblený, s typickou hrubou a jemne zvlnenou vonkajšou vrstvou."
+    ],
+    "lifeCycle": "Cyklus je nepriamy (heteroxénny) a veľmi podobný rodu Ascarops: \n Vylučovanie: Dospelé samice v žalúdku prasaťa kladú vajíčka, ktoré odchádzajú s trusom do vonkajšieho prostredia. \n Medzihostiteľ: Vajíčka zožerú koprofágne chrobáky (lajniaky z čeľade Scarabaeidae alebo Tenebrionidae). V nich sa larva uvoľní a dvakrát sa zvlieka na infekčné štádium (L3), ktoré sa opuzdrí. \n Paratenický hostiteľ (voliteľný): Ak infikovaného chrobáka zožerie napr. vták, obojživelník alebo drobný cicavec, larvy sa v jeho tele opuzdria (enkystujú), ale ďalej sa nevyvíjajú. Prasa sa môže nakaziť aj zožratím tohto náhradného hostiteľa. \n Definitívny hostiteľ: Prasa sa nakazí zožratím infikovaného chrobáka (alebo paratenického hostiteľa). V žalúdku sa larvy uvoľnia, preniknú do žalúdočných žliaz a po poslednom leví dospievajú na povrchu sliznice. Prepatentná perióda (čas od nakazenia po vylučovanie vajíčok) trvá 4 až 6 týždňov.",
+    "pathology": "Lokalizácia: Červy žijú na sliznici žalúdka, najčastejšie pod vrstvou hlienu v oblasti pyloru (vrátnika) a fundusu. \n Poškodenie tkaniva: P. sexalatus sa zavrtáva do sliznice, čím spôsobuje mechanické dráždenie a chronický zápal žalúdka. Dochádza k hyperémii (prekrveniu), edému, nadmernej tvorbe hlienu a tvorbe drobných vredov či erózií. \n Klinické prejavy: Pri slabej invázii je infekcia bezpríznaková. Pri masívnej infekcii (najmä u odstavčiat a mladých ošípaných) sa prejavuje anémiou (chudokrvnosťou) v dôsledku straty krvi, zníženým príjmom krmiva a nechutenstvom, chudnutím, zaostávaním v raste, hnačkami alebo striedavou stolicou (niekedy s prímesou tmavej, natrávenej krvi – meléna).Zvieratá môžu prejavovať bolesti brucha a častejšie ryť.",
+    "zoonosis": false,
+    "notes": "",
+    "id": "physocephalus_sexalatus_egg",
     "images": []
   },
   {
