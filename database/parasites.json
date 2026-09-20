@@ -5148,56 +5148,6 @@
     "images": []
   },
   {
-    "latinName": "Cystoisospora burrowsi",
-    "synonyms": [
-      "Isospora burrowsi"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Cystoisospora",
-      "species": "Cystoisospora burrowsi"
-    },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 16,
-      "lengthMax": 22,
-      "widthMin": 16,
-      "widthMax": 19,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: pes."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Patrí do I. ohioensis komplex",
-    "id": "isospora_burrowsi_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Cystoisospora canis",
     "synonyms": [
       "Isospora canis"
@@ -5351,56 +5301,6 @@
     "images": []
   },
   {
-    "latinName": "Cystoisospora neorivolta",
-    "synonyms": [
-      "Isospora neorivolta"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Cystoisospora",
-      "species": "Cystoisospora neorivolta"
-    },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 17,
-      "lengthMax": 24,
-      "widthMin": 16,
-      "widthMax": 22,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: pes."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Patrí do I. ohioensis komplex",
-    "id": "isospora_neorivolta_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Cystoisospora neyrai",
     "synonyms": [
       "Isospora neyrai"
@@ -5457,9 +5357,7 @@
   },
   {
     "latinName": "Cystoisospora ohioensis komplex",
-    "synonyms": [
-      "Isospora ohioensis"
-    ],
+    "synonyms": [],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
@@ -5479,29 +5377,30 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 19,
+      "lengthMin": 11,
       "lengthMax": 27,
-      "widthMin": 18,
+      "widthMin": 11,
       "widthMax": 23,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Vajcovitý",
+      "shape": "Vajcovitý až oválny",
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Vajcovitá",
-      "hladká škrupina; po sporulácii 2 sporocysty x 4 sporozoity."
+      "Elipsoidný až široko oválny tvar. Konce oocýst môžu byť mierne zúžené alebo na jednom konci sploštené.",
+      "Nezrelá oocysta (v čerstvom truse): Obsahuje spravidla 1 nedelený celistvý útvar (tzv. sporoblast / sporont)",
+      "Zrelá (sporulovaná) oocysta: Obsahuje 2 sporocysty a v každej z nich sa nachádzajú 4 sporozoity (typická Isospora-štruktúra: 2 x 4)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora canis: Oocysty tohto komplexu patria medzi stredne veľké kokcídie psov (sú výrazne menšie než Cystoisospora canis)",
+      "Na rozdiel od Eimeria chýba mikropyle (otvor na póle), polárne granula aj zvyškové teleso oocysty (oocyst residuum)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je fakultatívne heteroxénny (môže prebehnúť priamo, ale aj cez medzihostiteľa). \n Exogénna fáza: Pes vylúči nezrelé oocysty v truse. Vo vonkajšom prostredí dochádza k ich dozretiu (sporulácii) v priebehu 12 až 48 hodín v závislosti od teploty. Dozretá oocysta je infekčná. \n Endogénna fáza u definitívneho hostiteľa: Po zožratí zrelej oocysty sa v tenkom čreve uvoľnia sporozoity, ktoré napádajú epitelové bunky (enterocyty) črevných klkov.\n Prebieha nepohlavné množenie (merogónia/schizogónia) vo viacerých generáciách, čo vedie k masívnemu ničeniu buniek.\n Nasleduje pohlavné množenie (gametogónia), vznik makrogamét a mikrogamét, ich splynutie a vytvorenie novej oocysty, ktorá odchádza s trusom. \n Úloha paratenického hostiteľa: Ak oocystu zožerie hlodavec, sporozoity preniknú cez črevo do jeho tkanív (pečeň, slezina, lymfatické uzliny), kde sa zapuzdria ako spiace štádia (bradyzoity / k单ozoity). Pes sa infikuje aj tým, že uloví a zožerie takto nakazeného hlodavca.",
+    "pathology": "Najcitlivejšie sú šteniatka (vo veku 2 týždňov až 4 mesiacov) a oslabené dospelé psy. \n Parazit likviduje enterocyty, čo spôsobuje stratu absorpčnej plochy čreva, zápal čriev (enteritídu) a malabsorpciu.\n Hlavným prejavom je vodnatý, hlienovitý, niekedy až krvavý hnačka.\n Sprievodnými znakmi sú dehydratácia, nechutenstvo, chradnutie, slabosť a u šteniat hrozí pri neliečení úhyn.",
     "zoonosis": false,
-    "notes": "Patrí do C. ohioensis komplex",
+    "notes": "Cystoisospora ohioensis komplex predstavuje skupinu tenkostenných črevných kokcídií psov, ktoré sú svetelnou mikroskopiou prakticky nerozlíšiteľné, preto sa v laboratórnej diagnostike určujú spoločne pod jedným názvom. \n \n Do Cystoisospora ohioensis komplexu u psov patria tieto tri druhy: \n Cystoisospora ohioensis (priemerný rozmer cca 20–24 µm × 15–20 µm).\n Cystoisospora burrowsi (priemerný rozmer cca 17–20 µm × 14–17 µm).\n Cystoisospora neorivolta (priemerný rozmer cca 11–14 µm × 11–13 µm) – najmenší zástupca",
     "id": "isospora_ohioensis_oocyst",
     "images": []
   },

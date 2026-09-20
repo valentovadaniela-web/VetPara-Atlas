@@ -1215,16 +1215,16 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "isospora_neorivolta_oocyst",
-    "url": "/public/images/parasites/isospora_neorivolta_oocyst/isospora_neorivolta_oocyst_01.webp",
+    "parasiteId": "isospora_ohioensis_oocyst",
+    "url": "/public/images/parasites/isospora_ohioensis_oocyst/isospora_ohioensis_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T12:55:52.891Z"
+    "dateAdded": "2026-08-29T12:56:13.203Z"
   },
-  {
+    {
     "parasiteId": "isospora_ohioensis_oocyst",
-    "url": "/public/images/parasites/isospora_ohioensis_oocyst/isospora_ohioensis_oocyst_01.webp",
+    "url": "/public/images/parasites/isospora_ohioensis_oocyst/isospora_ohioensis_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
