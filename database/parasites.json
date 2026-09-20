@@ -1233,7 +1233,7 @@
   {
     "latinName": "Aspiculuris tetraptera",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Mrľa myšia",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Nematoda",
@@ -1266,71 +1266,17 @@
     },
     "diagnosticSigns": [
       "Elipsovité",
-      "symetrické",
-      "na jednej strane mierne sploštené",
-      "tenká hladká škrupina"
+      "Symetrické, na jednej strane mierne sploštené",
+      "Pri vylúčení obsahuje nesegmentovaný zárodok"
     ],
     "differentialDiagnosis": [
-      "Pri vylúčení obsahuje nesegmentovaný zárodok (nie larvu",
-      "na rozdiel od Syphacia)"
+      "Syphacia pri vylúčení obsahuje larvu"
     ],
     "lifeCycle": "Životný cyklus je priamy bez migrácie cez orgány, kedy vajíčka odchádzajú s trusom do prostredia a po necelom týždni sú infekčné. Hlodavec sa nakazí prehltnutím vajíčok pri požieraní trusu alebo čistení srsti. Larvy dospievajú priamo v hrubom a slepom čreve do 25 dní.",
     "pathology": "Z hľadiska patológie má parazit nízku až strednú patogenitu a slabé nákazy prebiehajú bez príznakov. Pri masívnom premnožení spôsobuje zápaly čreva, hnačky, chudnutie a môže vyvolať až vypadnutie (prolaps) konečníka. V laboratóriách navyše skresľuje výsledky vedeckých pokusov kvôli ovplyvneniu imunity zvierat.",
     "zoonosis": false,
     "notes": "",
     "id": "aspiculuris_tetraptera_egg",
-    "images": []
-  },
-  {
-    "latinName": "Atoxoplasma sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Myzozoa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Atoxoplasma",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Spevavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 2 sporocysty x 4 sporozoity",
-      "podobne ako Isospora/Cystoisospora",
-      "ale merogónia prebieha vo vnútorných orgánoch (pečeň",
-      "slezina) hostiteľa",
-      "nielen v čreve - dôležité u malých spevavcov (atoxoplazmóza)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Atoxoplasma môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Podobné Isospora",
-    "id": "atoxoplasma_sp_oocyst",
     "images": []
   },
   {
@@ -1367,26 +1313,22 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Vnútroerytrocytárne hruškovité (piriformné) organizmy",
-      "typicky v pároch zvieraných pod ostrým uhlom (charakteristický 'diagnostický pár')."
+      "V erytrocytoch",
+      "Hruškovité (pyriformné) merozoity, typicky v pároch spojených ostrým uhlom",
+      "Pri farbení Giemsa sú fialové"
     ],
     "differentialDiagnosis": [
-      "V krvnom nátere odlíšiť od: Babesia gibsoni (výrazne menšie",
-      "okrúhle formy 1-3.2 µm",
-      "nie hruškovité páry)",
-      "Theileria spp. (menšie",
-      "rôzne tvary",
-      "bez typických párových hruškovitých foriem",
-      "gametocyty v lymfocytoch)",
-      "Hepatozoon canis (gamonty v cytoplazme neutrofilov/monocytov",
-      "nie voľne v erytrocytoch)",
-      "Cytauxzoon spp. (u mačiek). Druhovo Babesia canis",
-      "B. vogeli a B. rossi sú morfologicky nerozlíšiteľné – vyžaduje sa PCR."
+      "Babesia gibsoni (a iné malé babézie): výrazne menšie (1–2,5 µm), okrúhle formy 1-3.2 µm, nie hruškovité páry)",
+      "Hepatozoon canis: gamonty v cytoplazme neutrofilov/monocytov, nie voľne v erytrocytoch",
+      "Anaplasma phagocytophilum: moruly v neutrofiloch",
+      "Ehrlichia canis: moruly v monocytoch",
+      "Mycoplasma haemocanis: drobné tyčinkovité/reťazcovité útvary na povrchu erytrocytu, bez vnútornej štruktúry.",
+      "Artefakty: Howell-Jollyho telieska, Heinzove telieska, prekrytie doštičkou, zrážanie farbiva, refraktilné artefakty pri sušení"
     ],
-    "lifeCycle": "Životný cyklus je nepriamy, kedy kliešť pri satí krvi prenesie so slinami do psa infekčné sporozoity. Tieto štádiá prenikajú do červených krviniek (erytrocytov), kde sa nepohlavne množia a spôsobia ich rozpad, zatiaľ čo kliešť sa opätovne nakazí nasatím infikovanej krvi.",
+    "lifeCycle": "Cyklus prebieha medzi psom (medzihostiteľ) a kliešťom Dermacentor reticulatus (definitívny hostiteľ a vektor). \n U psa: Kliešť pri cicaní inokuluje slinami sporozoity (prenos nastáva až po približne 48–72 hodinách cicania). Sporozoity prenikajú priamo do erytrocytov, kde sa binárnym delením (merogónia) množia na dva hruškovité merozoity. Po ruptúre erytrocytu napádajú ďalšie červené krvinky, čím sa parazitémia šíri. Časť merozoitov sa nedelí a diferencuje sa na gamonty. \n V kliešťovi: Kliešť nasaje krv s gamontami, z ktorých sa v čreve vyvinú gaméty (tzv. žiarivé telieska) a po ich splynutí zygota. Zygota sa mení na pohyblivý ookinet, ktorý preniká črevnou stenou a hemolymfou sa šíri do orgánov kliešťa, kde prebieha sporogónia. Dôležitý je transovariálny prenos do vajíčok (nakazená je aj ďalšia generácia kliešťov) a transstadiálny prenos medzi vývojovými štádiami. Sporokinety nakoniec osídlia slinné žľazy, kde vznikajú infekčné sporozoity pripravené na prenos pri ďalšom cicaní.",
     "pathology": "Z hľadiska patológie vyvoláva masívny rozpad krviniek ťažkú hemolytickú anémiu (chudokrvnosť) a žltačku. Infekcia sa u psov prejavuje vysokými horúčkami, apatiou a typickým tmavohnedým močom, pričom bez rýchlej liečby dochádza k zlyhaniu obličiek a smrti zvieraťa ",
     "zoonosis": false,
-    "notes": "V červenej krvinke sa často nachádzajú v pároch. Dva hruškovité organizmy sa dotýkajú svojimi špicatými koncami a zvierajú medzi sebou ostrý uhol (\"čerešne\")",
+    "notes": "V strednej Európe (vrátane Slovenska) je klinicky najvýznamnejšia B. canis canis prenášaná Dermacentor reticulatus, s jarným a jesenným vrcholom výskytu.",
     "id": "babesia_canis_trophozoite",
     "images": []
   },
@@ -1425,19 +1367,71 @@
     },
     "diagnosticSigns": [
       "Guľovitá",
-      "hrubostenná cysta s viditeľnými riasinkami a fazuľovitým makronukleom."
+      "Hrubostenná cysta s viditeľnými riasinkami a fazuľovitým makronukleom."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Balantidium môže byť potrebná molekulová identifikácia."
+      "Nyctotherus sp. - cysty sú mierne sploštené s typickým viečkom (operkulom) na jednom póle"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Priamy cyklus bez medzihostiteľa. Plaz zožerie zrelú cystu z prostredia, v čreve dôjde k excystácii a uvoľnený trofozoit osídli hrubé črevo, kde sa množí priečnym delením a živí sa baktériami a rastlinným detritom. Pri posune obsahu čreva smerom k rektu dochádza k encystácii a hotové cysty sa vylučujú trusom, pričom sú okamžite infekčné pre ďalšieho hostiteľa.",
+    "pathology": "Za normálnych okolností ide o komenzála hrubého čreva bez klinických príznakov. Patogénny potenciál sa prejaví len sekundárne – pri masívnom premnožení, strese, nevhodných chovných podmienkach, zlej diéte alebo súbežnom poškodení sliznice iným agens. Vtedy vzniká katarálna až mierne erozívna kolitída s hnačkou (často so slizom), dehydratáciou a chudnutím. Na rozdiel od Entamoeba invadens chýbajú hlboká ulcerácia, nekróza steny čreva a extraintestinálne šírenie – prognóza je preto výrazne priaznivejšia.",
     "zoonosis": false,
-    "notes": "Vnútri vakuola",
+    "notes": "Hoci je Balantidium u mnohých plazov (leguány, korytnačky) prirodzenou súčasťou mikroflóry, za určitých okolností sa správa ako oportúnny patogén. U striktne mäsožravých plazov (napr. niektoré hady) je akýkoľvek nález tohto parazita považovaný za abnormálny.",
     "id": "balantidium_sp_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/balantidium_sp_cyst/balantidium_sp_cyst_01.webp"
+    ]
+  },
+  {
+    "latinName": "Balantidium sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Ciliophora",
+      "class": "Litostomatea",
+      "order": "Vestibuliferida",
+      "family": "Balantidiidae",
+      "genus": "Balantidium",
+      "species": "neurčené do druhu"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Herbivorné plazy"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 150,
+      "widthMin": 40,
+      "widthMax": 120,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý až oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [
+      "Obrovská, rýchlo rotujúca oválna bunka, vo vnútri ktorej presvitá veľký tmavý tieň v tvare obličky (makronukleus)",
+      "Ak bunka uhynie, pohyb bŕv ustane, no typický tvar jadra zostáva zachovaný",
+      "Veľký typický makronukleus v tvare fazule, obličky alebo rožka, ktoré sa intenzívne farbí a je dobre viditeľné aj bez farbenia.",
+      "V cytoplazme je prítomné veľké množstvo vakuóznych guličiek, ktoré obsahujú natrávenú potravu, a jedna alebo dve pulzujúce (kontraktilné) vakuoly zabezpečujúce reguláciu vody v tele prvoka"
+    ],
+    "differentialDiagnosis": [
+      "Nyctotherus sp. - Trofozoit Nyctotherus má na rozdiel od Balantidium charakteristický zárez (cytostom) prebiehajúci šikmo stredom tela."
+    ],
+    "lifeCycle": "Priamy cyklus bez medzihostiteľa. Plaz zožerie zrelú cystu z prostredia, v čreve dôjde k excystácii a uvoľnený trofozoit osídli hrubé črevo, kde sa množí priečnym delením a živí sa baktériami a rastlinným detritom. Pri posune obsahu čreva smerom k rektu dochádza k encystácii a hotové cysty sa vylučujú trusom, pričom sú okamžite infekčné pre ďalšieho hostiteľa.",
+    "pathology": "Za normálnych okolností ide o komenzála hrubého čreva bez klinických príznakov. Patogénny potenciál sa prejaví len sekundárne – pri masívnom premnožení, strese, nevhodných chovných podmienkach, zlej diéte alebo súbežnom poškodení sliznice iným agens. Vtedy vzniká katarálna až mierne erozívna kolitída s hnačkou (často so slizom), dehydratáciou a chudnutím. Na rozdiel od Entamoeba invadens chýbajú hlboká ulcerácia, nekróza steny čreva a extraintestinálne šírenie – prognóza je preto výrazne priaznivejšia.",
+    "zoonosis": false,
+    "notes": "Hoci je Balantidium u mnohých plazov (leguány, korytnačky) prirodzenou súčasťou mikroflóry, za určitých okolností sa správa ako oportúnny patogén. U striktne mäsožravých plazov (napr. niektoré hady) je akýkoľvek nález tohto parazita považovaný za abnormálny.",
+    "id": "balantidium_sp_trophozoite",
+    "images": [
+      "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_01.webp",
+      "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_02.webp"
+    ]
   },
   {
     "latinName": "Balantioides coli",

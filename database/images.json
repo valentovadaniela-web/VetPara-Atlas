@@ -483,38 +483,6 @@
   },
   {
     "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.429Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.442Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.452Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.464Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
     "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_08.webp",
     "alt": "",
     "caption": "",
@@ -523,59 +491,11 @@
   },
   {
     "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.489Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.500Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_11.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.511Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_12.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.520Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_13.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.529Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
     "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_14.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:50:22.538Z"
-  },
-  {
-    "parasiteId": "babesia_canis_trophozoite",
-    "url": "/public/images/parasites/babesia_canis_trophozoite/babesia_canis_trophozoite_15.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:50:22.549Z"
   },
   {
     "parasiteId": "balantioides_coli_cyst",
@@ -4932,5 +4852,29 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-20T13:59:40.579Z"
+  },
+  {
+    "parasiteId": "balantidium_sp_cyst",
+    "url": "/public/images/parasites/balantidium_sp_cyst/balantidium_sp_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T16:14:49.936Z"
+  },
+  {
+    "parasiteId": "balantidium_sp_trophozoite",
+    "url": "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T16:15:19.174Z"
+  },
+  {
+    "parasiteId": "balantidium_sp_trophozoite",
+    "url": "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T16:15:19.182Z"
   }
 ]
