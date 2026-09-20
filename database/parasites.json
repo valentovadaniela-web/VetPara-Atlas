@@ -925,7 +925,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "aonchotheca_putorii_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_03.webp"
+    ]
   },
   {
     "latinName": "Archaeopsylla erinacei",
@@ -1064,8 +1066,8 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-     "Pravidelne eliptický, symetrický tvar",
-     "Veľmi hrubá, hladká, dvojvrstvová stena"
+      "Pravidelne eliptický, symetrický tvar",
+      "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
       "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s Ascaridia"
@@ -1194,7 +1196,7 @@
     ],
     "hosts": [],
     "hostNotes": {
-    "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
+      "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -1224,7 +1226,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "ascarops_strongylina_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/ascarops_strongylina_egg/ascarops_strongylina_egg_01.webp"
+    ]
   },
   {
     "latinName": "Aspiculuris tetraptera",
@@ -17535,7 +17539,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "metastrongylus_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/metastrongylus_sp_egg/metastrongylus_sp_egg_06.webp",
+      "/public/images/parasites/metastrongylus_sp_egg/metastrongylus_sp_egg_07.webp"
+    ]
   },
   {
     "latinName": "Moniezia benedeni",
@@ -17740,7 +17747,7 @@
     "id": "ceratophyllus_sciurorum_adult",
     "images": []
   },
-   {
+  {
     "id": "mosgovoyia_pectinata_egg",
     "latinName": "Mosgovoyia pectinata",
     "synonyms": [],
@@ -19689,7 +19696,7 @@
     "id": "physaloptera_sp_egg",
     "images": []
   },
-    {
+  {
     "latinName": "Physocephalus sexalatus",
     "synonyms": [],
     "slovakName": "",
@@ -19707,7 +19714,7 @@
     ],
     "hosts": [],
     "hostNotes": {
-    "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
+      "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -19730,14 +19737,16 @@
       "Vajíčka odchádzajú z tela hostiteľa trusom a už v momente vylúčenia obsahujú plne vyvinutú, stočenú larvu (sú larvované)"
     ],
     "differentialDiagnosis": [
-     "Ascarops strongylina má vajíčka mierne väčšie a širšie (39–45 x 22–26 μm). Tvar vajíčok je viac oválny, zaoblený, s typickou hrubou a jemne zvlnenou vonkajšou vrstvou."
+      "Ascarops strongylina má vajíčka mierne väčšie a širšie (39–45 x 22–26 μm). Tvar vajíčok je viac oválny, zaoblený, s typickou hrubou a jemne zvlnenou vonkajšou vrstvou."
     ],
     "lifeCycle": "Cyklus je nepriamy (heteroxénny) a veľmi podobný rodu Ascarops: \n Vylučovanie: Dospelé samice v žalúdku prasaťa kladú vajíčka, ktoré odchádzajú s trusom do vonkajšieho prostredia. \n Medzihostiteľ: Vajíčka zožerú koprofágne chrobáky (lajniaky z čeľade Scarabaeidae alebo Tenebrionidae). V nich sa larva uvoľní a dvakrát sa zvlieka na infekčné štádium (L3), ktoré sa opuzdrí. \n Paratenický hostiteľ (voliteľný): Ak infikovaného chrobáka zožerie napr. vták, obojživelník alebo drobný cicavec, larvy sa v jeho tele opuzdria (enkystujú), ale ďalej sa nevyvíjajú. Prasa sa môže nakaziť aj zožratím tohto náhradného hostiteľa. \n Definitívny hostiteľ: Prasa sa nakazí zožratím infikovaného chrobáka (alebo paratenického hostiteľa). V žalúdku sa larvy uvoľnia, preniknú do žalúdočných žliaz a po poslednom leví dospievajú na povrchu sliznice. Prepatentná perióda (čas od nakazenia po vylučovanie vajíčok) trvá 4 až 6 týždňov.",
     "pathology": "Lokalizácia: Červy žijú na sliznici žalúdka, najčastejšie pod vrstvou hlienu v oblasti pyloru (vrátnika) a fundusu. \n Poškodenie tkaniva: P. sexalatus sa zavrtáva do sliznice, čím spôsobuje mechanické dráždenie a chronický zápal žalúdka. Dochádza k hyperémii (prekrveniu), edému, nadmernej tvorbe hlienu a tvorbe drobných vredov či erózií. \n Klinické prejavy: Pri slabej invázii je infekcia bezpríznaková. Pri masívnej infekcii (najmä u odstavčiat a mladých ošípaných) sa prejavuje anémiou (chudokrvnosťou) v dôsledku straty krvi, zníženým príjmom krmiva a nechutenstvom, chudnutím, zaostávaním v raste, hnačkami alebo striedavou stolicou (niekedy s prímesou tmavej, natrávenej krvi – meléna).Zvieratá môžu prejavovať bolesti brucha a častejšie ryť.",
     "zoonosis": false,
     "notes": "",
     "id": "physocephalus_sexalatus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/physocephalus_sexalatus_egg/physocephalus_sexalatus_egg_01.webp"
+    ]
   },
   {
     "latinName": "Polydelphis sp.",
@@ -21456,7 +21465,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "sarcoptes_sp_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_01.webp",
+      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_02.webp",
+      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_03.webp",
+      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_04.webp"
+    ]
   },
   {
     "latinName": "Skrjabinema caprae",
@@ -22286,7 +22300,9 @@
     "zoonosis": false,
     "notes": "L1 - veľké genit. promodium",
     "id": "strongyloides_ransomi_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/strongyloides_ransomi_larva/strongyloides_ransomi_egg_01.webp"
+    ]
   },
   {
     "latinName": "Strongyloides ratti",
@@ -24181,7 +24197,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichuris_suis_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trichuris_suis_egg/trichuris_suis_egg_01.webp"
+    ]
   },
   {
     "latinName": "Trichuris vulpis",
