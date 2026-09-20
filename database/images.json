@@ -319,6 +319,15 @@
     "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
+    "parasiteId": "aonchotheca_putorii_egg",
+    "url": "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-20T13:02:00.982Z",
+    "isPrimary": true
+  },
+  {
     "parasiteId": "archeopsylla_erinacei_adult",
     "url": "/public/images/parasites/archeopsylla_erinacei_adult/archeopsylla_erinacei_adult_01.webp",
     "alt": "",
@@ -1868,6 +1877,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:37:31.108Z"
+  },
+  {
+    "parasiteId": "echinococcus_sp_egg",
+    "url": "/public/images/parasites/echinococcus_sp_egg/echinococcus_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:47:37.568Z"
   },
   {
     "parasiteId": "echinostoma_sp_egg",
@@ -4748,14 +4765,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:42:14.330Z"
-  },
-  {
-    "parasiteId": "aonchotheca_putorii_egg",
-    "url": "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-20T13:02:00.982Z"
   },
   {
     "parasiteId": "ascarops_strongylina_egg",
