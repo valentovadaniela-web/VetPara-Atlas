@@ -1513,15 +1513,18 @@
     "hosts": [
       "Ovca"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Ošípaná": "Najčastejší zdroj. Väčšinou asymptomatické, patogénne pre mladé jedince",
+      "Primáty": "Pre človeka a rovnako aj primáty (šimpanzy, orangutany, makaky) je B. coli nebezpečným patogénom. Kým u zvierat žije väčšinou neškodne v obsahu čreva, v ľudskom organizme dokáže pomocou enzýmu hyaluronidáza aktívne rozrušovať sliznicu. Vyvoláva ochorenie balantidiózu, ktoré sa prejavuje ako ťažká, krvavá hnačka (balantidiová dyzentéria), bolesťami brucha a v najvážnejších prípadoch môže viesť až k perforácii (prasknutiu) hrubého čreva."
+    },
     "sample": "Trus",
     "stage": "Trofozoit",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 300,
-      "widthMin": 30,
-      "widthMax": 100,
+      "lengthMin": 50,
+      "lengthMax": 100,
+      "widthMin": 40,
+      "widthMax": 70,
       "unit": "µm"
     },
     "morphology": {
@@ -1531,14 +1534,15 @@
     },
     "diagnosticSigns": [
       "Trofozoity sú oválne až hruškovité",
-      "celé pokryté riasinkami. V oboch štádiách býva prítomný predĺžený alebo fazuľovitý makronukleus a mikronukleus často nebýva dobre viditeľný"
+      "Makronukleus: Najvýraznejší znak. Má charakteristický tvar obličky, fazule alebo rožka.",
+      "Celý povrch pokrytý špirálovito usporiadanými radmi riasiniek (cílií)",
+      "Rýchly, priamočiaro-rotačný pohyb v natívnom preparáte – nápadný a diagnosticky orientačný už pri malom zväčšení"
     ],
     "differentialDiagnosis": [
-      "Od väčšiny iných črevných protozoí pomáha B. coli odlíšiť najmä veľká veľkosť",
-      "riasinkový povrch a nápadný makronukleus"
+      "Od väčšiny iných črevných protozoí pomáha B. coli odlíšiť najmä veľká veľkosť, riasinkový povrch a nápadný makronukleus"
     ],
     "lifeCycle": "Cyklus je priamy (monoxénny) a prebieha fekálno-orálnou cestou: Hostiteľ prehltne infekčné cysty z kontaminovanej vody, potravy alebo prostredia znečisteného trusom ošípaných. V tenkom čreve sa z cysty uvoľní aktívne štádium – trofozoit.  Trofozoity migrujú do hrubého čreva, kde žijú v lúmene čreva a množia sa nepohlavne (priečnym delením) alebo pohlavne (konjugáciou). V dolnej časti hrubého čreva trofozoity strácajú vodu, vytvárajú pevnú stenu a menia sa späť na odolné cysty, ktoré odchádzajú s trusom do prostredi.",
-    "pathology": "Balantioides coli je primárne patogénom pre človeka a primáty (napr. šimpanzy, orangutany, makaky) a zároveň pre morčatá. Väčšina nákaz je asymptomatická. Ak však dôjde k oslabeniu hostiteľa alebo premnoženiu parazita, trofozoity začnú pomocou proteolytických enzýmov (hyaluronidázy) aktívne narúšať a invadovať do sliznice hrubého čreva.Lézie: Vytvárajú hlboké, kráterovité vredy na sliznici čreva (ulceratívna patológia).Prejavy: Spôsobuje balantidiovú dizentériu – ťažké hnačky s prímesou krvi a hlienu, kŕče v bruchu, vracanie a stratu hmotnosti.Komplikácie: V extrémnych prípadoch hrozí perforácia (prasknutie) čreva, zápal pobrušnice (peritonitída) alebo prienik parazita krvou do pečene a pľúc.",
+    "pathology": "Balantioides coli je primárne patogénom pre človeka a primáty (napr. šimpanzy, orangutany, makaky). Väčšina nákaz je asymptomatická. Ak však dôjde k oslabeniu hostiteľa alebo premnoženiu parazita, trofozoity začnú pomocou proteolytických enzýmov (hyaluronidázy) aktívne narúšať a invadovať do sliznice hrubého čreva.Lézie: Vytvárajú hlboké, kráterovité vredy na sliznici čreva (ulceratívna patológia).Prejavy: Spôsobuje balantidiovú dizentériu – ťažké hnačky s prímesou krvi a hlienu, kŕče v bruchu, vracanie a stratu hmotnosti.Komplikácie: V extrémnych prípadoch hrozí perforácia (prasknutie) čreva, zápal pobrušnice (peritonitída) alebo prienik parazita krvou do pečene a pľúc.",
     "zoonosis": false,
     "notes": "",
     "id": "balantioides_coli_trophozoite",
