@@ -1806,57 +1806,6 @@
     "images": []
   },
   {
-    "latinName": "Buxtonella sulcata",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Ciliophora",
-      "class": "Listomatea",
-      "order": "Vestibuliferida",
-      "family": "Pycnotrichidae",
-      "genus": "Buxtonella",
-      "species": "Buxtonella sulcata"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Trofozoit",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 140,
-      "widthMin": 50,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Zelenkastý",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Celé telo je pokryté hustými radmi bŕv (cílií) slúžiacich na pohyb. Výrazná",
-      "špirálovito stočená vestibulárna ryha (sulcus)",
-      "ktorá sa tiahne od predného konca tela smerom k zadnému. Obsahuje makronukleus (veľké jadro v tvare fazule/obličky) a mikronukleus"
-    ],
-    "differentialDiagnosis": [
-      "V mikroskopickom obraze trusu je Buxtonella sulcata takmer identická s iným dôležitým nálevníkom – Balantioides coli",
-      "ktorá ale parazituje primárne u ošípaných a má len kátku",
-      "lievikovitú vestibulárnu ryhu",
-      "umiestnenú len na prednom (koncovom) póle"
-    ],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne (prehltnutím) cýst kontaminovanou vodou, krmivom alebo lízaním znečisteného prostredia v maštali. V tenkom alebo hrubom čreve hostiteľa pôsobením tráviacich enzýmov stena cysty praskne a uvoľní sa z nej aktívny trofozoit. Trofozoity kolonizujú hrubé črevo (najmä slepé črevo a kolón). Živia sa baktériami a črevným obsahom. Množia sa priečnym binarickým delením (nepohlavne), občasne konjugáciou (pohlavný proces). Pri posune črevného obsahu smerom ku koncu traktu a v dôsledku dehydratácie výkalov trofozoity strácajú brvy, vylučujú ochrannú stenu a menia sa späť na cysty. Cysty odchádzajú s trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vysoko odolné voči nepriaznivým vplyvom počasia či dezinfekcii.",
-    "pathology": "Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
-    "zoonosis": false,
-    "notes": "Vnútri vakuola, nepatogén",
-    "id": "buxtonella_sulcata_trophozoite_1",
-    "images": []
-  },
-  {
     "latinName": "Calodium hepaticum",
     "synonyms": [
       "Capillaria hepatica; Hepaticola hepatica"
@@ -2075,7 +2024,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Caryospora",
-      "species": "Caryospora neofalconis"
+      "species": "Caryospora cherrughi"
     },
     "hostGroups": [],
     "hosts": [
@@ -2109,53 +2058,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_cherrughi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Caryospora cherrughi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Caryospora",
-      "species": "Caryospora neofalconis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Sokol"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29,
-      "lengthMax": 35,
-      "widthMin": 26,
-      "widthMax": 31.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov bola rovnaká generická hodnota ako pri viacerých iných nesúvisiacich druhoch v tabuľke - pravdepodobne placeholder",
-      "nie špecifické meranie C. neofalconis."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
-    ],
-    "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "caryospora_cherrughi_oocyst_1",
     "images": []
   },
   {
@@ -2508,7 +2410,7 @@
       "order": "Plagiorchiida",
       "family": "Echinostomatidae",
       "genus": "Cathaemasia",
-      "species": "Cathaemasia hians"
+      "species": "Cathaemasia longivitellata"
     },
     "hostGroups": [],
     "hosts": [
@@ -2767,57 +2669,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "cestoda_egg",
-    "images": []
-  },
-  {
-    "latinName": "Chaunocephalus ferox",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Echinostomatidae",
-      "genus": "Cathaemasia",
-      "species": "Cathaemasia hians"
-    },
-    "hostGroups": [
-      "Bociany"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 110,
-      "lengthMax": 120,
-      "widthMin": 70,
-      "widthMax": 80,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Svetložltý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká stena",
-      "Na jednom z pólov (koncov) sa nachádza typické viečko (operculum)",
-      "ktoré slúži na uvoľnenie larvy vo vode.Vnútorný obsah: Čerstvo vylúčené vajíčka už v maternici červov obsahujú plne vyvinuté",
-      "pohyblivé miracídium (larvu) s dobre viditeľnými očnými škvrnami."
-    ],
-    "differentialDiagnosis": [
-      "V koprologiologickom náleze trusu bocianov je nutné odlíšiť vajíčka Chaunocephalus ferox najmä od týchto dvoch motolíc:Cathaemasia longivitellata (motolica z bociana bieleho) a Cathaemasia hians (motolica z bociana čierneho): ich vajíčka sú výrazne menšie",
-      "tmavšie."
-    ],
-    "lifeCycle": "Životný cyklus je nepriamy (heteroxénny), viazaný na sladkovodné biotopy a zahŕňa dvoch medzihostiteľov:Uvoľnenie vajíčok: Dospelé motolice produkujú vajíčka, ktoré odchádzajú s trusom bociana do vody.Prvý medzihostiteľ (Ulitníky): Vo vode sa z vajíčka vyliahne larva (miracídium), ktorá aktívne vyhľadá a prenikne do vodného slimáka (napr. z čeľade Planorbidae alebo Lymnaeidae). V slimákovi parazit prechádza štádiami spórocysty, redie a mení sa na pohyblivé cerkárie.Druhý medzihostiteľ (Obojživelníky/Ryby): Cerkárie opúšťajú slimáka a plávajú vo vode. Preniknú do žubrienok, žiab alebo drobných sladkovodných rýb, kde sa zapuzdria do invázneho štádia – metacerkárie.Definitívny hostiteľ (Bocian): Bocian sa nakazí skonzumovaním infikovaných žiab alebo rýb. V čreve dravca sa larva uvoľní, prichytí sa na sliznicu a dospieva.",
-    "pathology": "Na rozdiel od Cathaemasia hians, ktorá žije v hltane, tento parazit preniká hlboko do steny čreva. Chaunocephalus ferox patrí medzi najnebezpečnejšie červy u bocianov a spôsobuje závažné, často smrteľné ochorenie (chaunocefalózu).Tvorba kryptových granulómov: Motolica sa neprichytáva len na povrch sliznice, ale zavrtáva sa hlboko do steny tenkého a hrubého čreva (submukózy). Okolo parazita sa vytvára hrubostenná kapsula – granulóm alebo krypta.Makroskopické zmeny: Pri pohľade na črevo zvonku (zo strany serózy) sú viditeľné veľké, tvrdé, uzlovité útvary (hrbolčeky) s priemerom až niekoľko milimetrov.Perforácia čreva: Ak je infekcia masívna, stena čreva sa v mieste granulómov extrémne oslabí, čo môže viesť k jej prederaveniu (perforácii). Obsah čreva následne vytečie do brušnej dutiny a vták hynie na ťažkú peritonitídu (zápal pobrušnice).Klinické príznaky: Nakazené vtáky trpia hemoragickou (krvavou) enteritídou, majú hnačky, odmietajú potravu, upadajú do apatie a rapídne chudnú (kachexia). Masívne hynú najmä mláďatá bocianov na hniezdach, pre ktoré je táto motolica kritickým rizikom.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "chaunocephalus_ferox_egg",
     "images": []
   },
   {
@@ -14357,48 +14208,6 @@
     "images": []
   },
   {
-    "latinName": "Eucoleus aerophilus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Eucoleus",
-      "species": "Eucoleus aerophilus"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Ryby"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 48,
-      "lengthMax": 62,
-      "widthMin": 21,
-      "widthMax": 30,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltobiely",
-      "shell": "Zátky"
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "capillaria_aerophyla_egg",
-    "images": []
-  },
-  {
     "latinName": "Eucoleus boehmi",
     "synonyms": [
       "Capillaria boehmi"
@@ -21163,59 +20972,6 @@
     "images": []
   },
   {
-    "latinName": "Sarcoptes equi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Sarcoptidae",
-      "genus": "Sarcoptes",
-      "species": "Sarcoptes equi"
-    },
-    "hostGroups": [
-      "Koňovité"
-    ],
-    "hosts": [
-      "Kôň"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 250,
-      "lengthMax": 430,
-      "widthMin": 200,
-      "widthMax": 350,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Mäkký, priečne pruhovaný, s ostňami"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Sarcoptes môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Vzácne",
-    "id": "sarcoptes_equi_adult",
-    "images": []
-  },
-  {
     "latinName": "Sarcoptes scabiei",
     "synonyms": [],
     "slovakName": "",
@@ -21226,7 +20982,7 @@
       "order": "Sarcoptiformes",
       "family": "Sarcoptidae",
       "genus": "Sarcoptes",
-      "species": "Sarcoptes bovis"
+      "species": "Sarcoptes scabiei"
     },
     "hostGroups": [
       "Domáce prežúvavce",
@@ -21271,64 +21027,8 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "Sarcoptes scabiei sa v súčasnosti chápe ako jeden variabilný druh s hostiteľsky viazanými varietami, nie samostatné druhy",
-    "id": "sarcoptes_bovis_adult",
+    "id": "sarcoptes_scabiei_adult",
     "images": []
-  },
-  {
-    "latinName": "Sarcoptes sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Sarcoptidae",
-      "genus": "Sarcoptes",
-      "species": "Sarcoptes bovis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 250,
-      "lengthMax": 430,
-      "widthMin": 200,
-      "widthMax": 350,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Mäkký, priečne pruhovaný, s ostňami"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Sarcoptes môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "sarcoptes_sp_adult",
-    "images": [
-      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_01.webp",
-      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_02.webp",
-      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_03.webp",
-      "/public/images/parasites/sarcoptes_sp_adult/sarcoptes_scabiei_adult_04.webp"
-    ]
   },
   {
     "latinName": "Skrjabinema caprae",
@@ -21822,7 +21522,8 @@
     "hostGroups": [
       "Domáce prežúvavce",
       "ZOO prežúvavce",
-      "Voľne žijúce prežúvavce"
+      "Voľne žijúce prežúvavce",
+      "Plazy"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -21857,100 +21558,6 @@
     "zoonosis": false,
     "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: **Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida**.",
     "id": "strongylida_egg",
-    "images": []
-  },
-  {
-    "latinName": "Strongylida",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "neurčená čeľaď",
-      "genus": "neurčený rod",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Gekon"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 280,
-      "widthMin": 25,
-      "widthMax": 25,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "strongylida_egg__gekon",
-    "images": []
-  },
-  {
-    "latinName": "Strongylida",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "neurčená čeľaď",
-      "genus": "neurčený rod",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hady"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 280,
-      "widthMin": 40,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "strongylida_egg__hady",
     "images": []
   },
   {
@@ -23878,7 +23485,7 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 75,
-      "lengthMax": 280,
+      "lengthMax": 90,
       "widthMin": 32,
       "widthMax": 49,
       "unit": "µm"
@@ -23901,58 +23508,7 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "trichuris_muris_large_egg",
-    "images": []
-  },
-  {
-    "latinName": "Trichuris muris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Trichuridae",
-      "genus": "Trichuris",
-      "species": "Trichuris muris"
-    },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Myš"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 52,
-      "lengthMax": 280,
-      "widthMin": 28,
-      "widthMax": 38,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Hnedý",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar so symetrickými bipolárnymi zátkami",
-      "hladká hnedá škrupina; menšia forma."
-    ],
-    "differentialDiagnosis": [
-      "Typický súdočkovitý (citrónovitý) tvar s dvoma symetrickými priehľadnými zátkami (operkulami) na póloch; odlíšiť od Capillaria/Eucoleus (menšie",
-      "asymetrickejšie zátky) a Trichosomoides (asymetrický",
-      "jednostranný operkulum)."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "trichuris_muris_small_egg",
+    "id": "trichuris_muris_egg",
     "images": []
   },
   {
