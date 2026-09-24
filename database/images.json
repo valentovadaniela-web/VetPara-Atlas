@@ -589,14 +589,6 @@
   },
   {
     "parasiteId": "buxtonella_sulcata_cyst",
-    "url": "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:51:54.226Z"
-  },
-  {
-    "parasiteId": "buxtonella_sulcata_cyst",
     "url": "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_04.webp",
     "alt": "",
     "caption": "",
@@ -606,6 +598,23 @@
   {
     "parasiteId": "buxtonella_sulcata_cyst",
     "url": "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:51:54.246Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "buxtonella_sulcata_trophozoite",
+    "url": "/public/images/parasites/buxtonella_sulcata_trophozoite/buxtonella_sulcata_trophozoite_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:51:54.246Z"
+  },
+  {
+    "parasiteId": "buxtonella_sulcata_trophozoite",
+    "url": "/public/images/parasites/buxtonella_sulcata_trophozoite/buxtonella_sulcata_trophozoite_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",

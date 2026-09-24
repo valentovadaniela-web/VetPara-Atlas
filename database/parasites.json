@@ -1674,9 +1674,9 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 55,
-      "lengthMax": 95,
+      "lengthMax": 115,
       "widthMin": 55,
-      "widthMax": 95,
+      "widthMax": 115,
       "unit": "µm"
     },
     "morphology": {
@@ -1685,16 +1685,14 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Obklopená hrubou",
-      "dvojvrstvovou",
-      "transparentnou (hyalínnou) stenou. Vo vnútri nezafarbenej cysty je často viditeľný zrnitý obsah a obrysy obličkovitého makronuklea."
+      "Guľovitá až oválna cysta",
+      "Vnútri zrnitá cytoplazma a veľké fazuľovité jadro – makronukleus, ktoré sa dobre zvýrazní Lugolovým roztokom. Môže byť viditeľný aj mikronukleus a vakuoly."
     ],
     "differentialDiagnosis": [
-      "V mikroskopickom obraze trusu je cysta Buxtonella sulcata identická s iným dôležitým nálevníkom – Balantioides coli (syn. Balantidium coli). Keďže B. coli je zoonóza (prenosná na človeka) a parazituje primárne u ošípaných",
-      "ich rozlíšenie je kľúčové"
+      "Balantioides coli: Menšia cysta (40–60 µm), hlavný hostiteľ je ošípaná, diviak alebo primáty. U dobytka ide o kontamináciu. V ZOO pozor na kontamináciu z výkalov primátov alebo svíň."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne (prehltnutím) cýst kontaminovanou vodou, krmivom alebo lízaním znečisteného prostredia v maštali. V tenkom alebo hrubom čreve hostiteľa pôsobením tráviacich enzýmov stena cysty praskne a uvoľní sa z nej aktívny trofozoit. Trofozoity kolonizujú hrubé črevo (najmä slepé črevo a kolón). Živia sa baktériami a črevným obsahom. Množia sa priečnym binarickým delením (nepohlavne), občasne konjugáciou (pohlavný proces). Pri posune črevného obsahu smerom ku koncu traktu a v dôsledku dehydratácie výkalov trofozoity strácajú brvy, vylučujú ochrannú stenu a menia sa späť na cysty. Cysty odchádzajú s trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vysoko odolné voči nepriaznivým vplyvom počasia či dezinfekcii.",
-    "pathology": "Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
+    "pathology": "Patogenita je sporná. Väčšinou ide o komenzála alebo oportúnneho patogéna, ktorý sa namnoží pri zmene prostredia v čreve (pH, imunosupresia, ostatné infekcie). \n Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
     "zoonosis": false,
     "notes": "Vnútri vakuola, nepatogén",
     "id": "buxtonella_sulcata_cyst",
@@ -1715,17 +1713,18 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Trofozoit",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 140,
+      "lengthMin": 70,
+      "lengthMax": 150,
       "widthMin": 50,
-      "widthMax": 100,
+      "widthMax": 80,
       "unit": "µm"
     },
     "morphology": {
@@ -1734,18 +1733,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Celé telo je pokryté hustými radmi bŕv (cílií) slúžiacich na pohyb. Výrazná",
-      "špirálovito stočená vestibulárna ryha (sulcus)",
-      "ktorá sa tiahne od predného konca tela smerom k zadnému. Obsahuje makronukleus (veľké jadro v tvare fazule/obličky) a mikronukleus"
+      "Celé telo je pokryté hustými radmi bŕv (cílií) slúžiacich na pohyb.",
+      "Výrazná špirálovito stočená vestibulárna ryha (sulcus), ktorá sa tiahne od predného konca tela smerom k zadnému.",
+      "Obsahuje makronukleus (veľké jadro v tvare fazule/obličky) a mikronukleus. Trofozoity mimo hostiteľa rýchlo hynú."
     ],
     "differentialDiagnosis": [
-      "V mikroskopickom obraze trusu je Buxtonella sulcata takmer identická s iným dôležitým nálevníkom – Balantioides coli",
-      "ktorá ale parazituje primárne u ošípaných a má len kátku",
-      "lievikovitú vestibulárnu ryhu",
-      "umiestnenú len na prednom (koncovom) póle"
+      "Balantioides coli: Výrazný lievikovitý peristóm. Hostiteľ je ošípaná, diviak a primáty.",
+      "Bachorové nálevníky (Entodinium, Diplodinium, Epidinium, Ophryoscolex): Majú adorálnu zónu bŕv a často tyčinkovitý makronukleus. V hnačkovom výkale sú zriedkavé a rýchlo hynú.",
+      "Voľne žijúce nálevníky (Paramecium, Colpoda, Tetrahymena, Vorticella): Kontaminanty z vody alebo pôdy. Majú iný cytostóm, často kontraktilné vakuoly."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne (prehltnutím) cýst kontaminovanou vodou, krmivom alebo lízaním znečisteného prostredia v maštali. V tenkom alebo hrubom čreve hostiteľa pôsobením tráviacich enzýmov stena cysty praskne a uvoľní sa z nej aktívny trofozoit. Trofozoity kolonizujú hrubé črevo (najmä slepé črevo a kolón). Živia sa baktériami a črevným obsahom. Množia sa priečnym binarickým delením (nepohlavne), občasne konjugáciou (pohlavný proces). Pri posune črevného obsahu smerom ku koncu traktu a v dôsledku dehydratácie výkalov trofozoity strácajú brvy, vylučujú ochrannú stenu a menia sa späť na cysty. Cysty odchádzajú s trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vysoko odolné voči nepriaznivým vplyvom počasia či dezinfekcii.",
-    "pathology": "Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
+    "pathology": "Patogenita je sporná. Väčšinou ide o komenzála alebo oportúnneho patogéna, ktorý sa namnoží pri zmene prostredia v čreve (pH, imunosupresia, ostatné infekcie). \n Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
     "zoonosis": false,
     "notes": "Vnútri vakuola, nepatogén",
     "id": "buxtonella_sulcata_trophozoite",
