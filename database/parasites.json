@@ -2350,7 +2350,7 @@
     "images": []
   },
   {
-    "latinName": "Cathaemasia longivitellata",
+    "latinName": "Cathaemasia hians",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -2399,7 +2399,7 @@
     "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
     "zoonosis": false,
     "notes": "",
-    "id": "cathaemasia_longivitellata_egg_1",
+    "id": "cathaemasia_hians",
     "images": []
   },
   {
@@ -6763,59 +6763,6 @@
     "zoonosis": false,
     "notes": "Bez čreva",
     "id": "dictyocaulus_viviparus_larva",
-    "images": []
-  },
-  {
-    "latinName": "Dioctophyme renale",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Dioctophymatida",
-      "family": "Dioctophymatidae",
-      "genus": "Dioctophyme",
-      "species": "Dioctophyme renale"
-    },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
-    "hosts": [
-      "Mačka"
-    ],
-    "hostNotes": {},
-    "sample": "Moč",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 70,
-      "widthMin": 39,
-      "widthMax": 46,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Hnedý",
-      "shell": "Vrásčitá"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: oválny."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dioctophyme môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "dioctophyma_renale_egg",
     "images": []
   },
   {
@@ -12717,57 +12664,6 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_sordida_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Myzozoa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria stiedai"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly až oválny."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Eimeria môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_sp_oocyst",
     "images": []
   },
   {
