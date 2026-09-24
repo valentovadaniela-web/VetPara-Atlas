@@ -1652,59 +1652,6 @@
     "images": []
   },
   {
-    "latinName": "Bunostomum sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Ancylostomatidae",
-      "genus": "Bunostomum",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 80,
-      "lengthMax": 97,
-      "widthMin": 45,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Tmavohnedý",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká hladká škrupina",
-      "segmentované",
-      "typický 'strongylný' typ vajíčka."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Bunostomum môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "4-8 blastomér",
-    "id": "bunostomum_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Buxtonella sulcata",
     "synonyms": [],
     "slovakName": "",
@@ -14984,7 +14931,7 @@
     ],
     "differentialDiagnosis": [
       "Odlíšiť od Hyostrongylus rubidus a Oesophagostomum dentatum u ošípaných (vajíčko typu 'strongyle egg'",
-      "nutná koprokultúra)."
+      "nutná koprokultúra). Korektný zápis do nálezu by mal vyzerať nasledovne: **Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida**."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -18130,7 +18077,7 @@
       "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
     ],
     "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - nerozlíšiteľné od Hyostrongylus rubidus u ošípaných bez koprokultúry."
+      "Vajíčko nerozlíšiteľné od Hyostrongylus rubidus u ošípaných bez koprokultúry. Korektný zápis do nálezu by mal vyzerať nasledovne: **Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida**."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -23103,62 +23050,6 @@
     "images": []
   },
   {
-    "latinName": "Trichostrongylus sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Trichostrongylus",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Ošípané a diviaky",
-      "ZOO prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Ošípaná",
-      "Ovca",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 280,
-      "widthMin": 30,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
-    "id": "trichostrongylus_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Trichostrongylus tenuis",
     "synonyms": [],
     "slovakName": "",
@@ -23205,9 +23096,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichostrongylus_tenuis_egg",
-    "images": [
-      "/public/images/parasites/trichostrongylus_tenuis_egg/trichostrongylus_tenuis_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Trichuris campanula",
