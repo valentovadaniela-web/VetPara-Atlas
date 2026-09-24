@@ -1586,14 +1586,12 @@
       "shell": "Chitínový exoskelet"
     },
     "diagnosticSigns": [
-      "Švola so širokou hlavou",
-      "širšou než hrudník."
+      "Švola so širokou hlavou, širšou než hrudník."
     ],
     "differentialDiagnosis": [
-      "Diferenciálne od iných vší podľa tvaru hlavy",
-      "tykadiel",
-      "tarsálnych pazúrikov",
-      "hrudných článkov a hostiteľskej špecificity."
+      "Haematopinus eurysternus: hlava užšia než hruď, väčšia (2–4 mm), tmavá, lokalizácia: hlava, krk, pysk",
+      "Linognathus vituli: predĺžená hlava, dlhší štíhly tvar, modrasté sfarbenie; lokalizácia: krk, plecia",
+      "Solenopotes capillatus: malá (1–1,5 mm), na tvári a hlave, vytvára zhluky"
     ],
     "lifeCycle": "Životný cyklus prebieha celý na tele hostiteľa (permanentný parazit) a trvá približne 3 až 4 týždne. Typická je pre ne partenogenéza (samičky dokážu klásť vajíčka aj bez párenia so samcami, čo vedie k raketovému nárastu populácie).Vajíčko (hnida): Samička prilepí vajíčka špeciálnym sekrétom pevne k báze chlpov hostiteľa, najčastejšie v oblasti krku, kohútika a chrbta. Vývoj vo vajíčku trvá 7 – 12 dní.Nymfa: Z vajíčka sa vyliahne nymfa, ktorá sa podobá na dospelého jedinca, len je menšia a svetlejšia. Prechádza 3 nymfálnymi štádiami, pričom každé štádium trvá niekoľko dní.Dospelý jedinec (Imágo): Po poslednom zvliekaní sa stáva dospelcom. Celková dĺžka života dospelého jedinca na hostiteľovi je okolo 2 až 3 týždňov. Mimo hostiteľa v prostredí dokáže prežiť maximálne 3 až 7 dní.",
     "pathology": "Prísne hostiteľsky špecifická. To znamená, že celý svoj život viaže na tento konkrétny druh a neprežíva ani sa nerozmnožuje na iných zvieratách alebo ľuďoch (na človeka môže preliezť pri manipulácii s dobytkom, ale rýchlo hynie). Bovicola bovis má hryzavé ústne ústrojenstvo. Na rozdiel od vší necicá krv, ale živí sa odumretými bunkami pokožky, kožným mazom, nečistotami a chlpmi. Napriek tomu spôsobuje hostiteľovi výrazné zdravotné a ekonomické problémy. Neustály pohyb tisícov všeniek po koži vyvoláva silné dráždenie nervových zakončení. Zvieratá sú nepokojné, prešľapujú, nežerú v pokoji. Dobytok sa v snahe uľaviť si od svrbenia intenzívne otiera o kŕmne stoly, ohrady, steny či stromy, prípadne sa hryzie.Kožné lézie: V dôsledku trenia dochádza k vypadávaniu srsti (alopécia), vzniku chrást, zhrubnutiu kože (lichenifikácia) a povrchovým ranám. Tieto rany sa môžu sekundárne infikovať baktériami. Výrazne klesá produkcia mlieka (až o 10 – 25 %) a znižujú sa prírastky na váhe u mäsového dobytka z dôvodu chronického stresu a nepokoja. Dochádza tiež k vážnemu znehodnoteniu surovej kože pre kožiarsky priemysel (tzv. \"light spots\" vady na spracovanej koži).",
@@ -1638,18 +1636,19 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Na jednom z pólov vajíčka sa nachádza slabo viditeľné viečko (operculum)",
-      "ktoré slúži na neskoršie vyliahnutie larvy (miracídia). Toto viečko býva pod svetelným mikroskopom veľmi jemné a vyžaduje presné doostrenie. Vajíčka odchádzajú z tela hostiteľa už plne embryonované. To znamená",
-      "že vo vnútri vajíčka neuvidíte neusporiadané brázdiace sa bunky",
-      "ale už vyvinutú",
-      "larválnu formu – miracídium (obrvenú larvu)."
+      "Na jednom z pólov vajíčka sa nachádza slabo viditeľné viečko (operculum), ktoré slúži na neskoršie vyliahnutie larvy (miracídia). Toto viečko býva pod svetelným mikroskopom veľmi jemné a vyžaduje presné doostrenie.",
+      "Vajíčko je pri vylúčení zaembryované, teda obsahuje hotový miracidium (nie len zhluk buniek). Nie je vyvinutá vajíčková larva vhodná na voľné vyliahnutie, miracidium sa uvoľňuje až po prehltnutí slimákom."
     ],
-    "differentialDiagnosis": [],
+    "differentialDiagnosis": [
+      "Physaloptera clausa: hrubá hladká stena, obsahuje larvu, bez operkula, väčšie (~40-55 × 30-35 µm) a hrubostennejšie",
+      "Eucoleus aerophilus: ~60-80 × 30-40 µm, súdkovité, dve polárne zátky, jamkovaná/sieťovaná stena",
+      "Aonchotheca (Capillaria) erinacei: ~50-60 × 22-30 µm, súdkovité, dve polárne zátky, jemne pozdĺžne ryhovaná stena"
+    ],
     "lifeCycle": "Prítomnosť Brachylaima erinacei je podmienená stravovacími návykmi našich ježov. Životný cyklus motolice totiž závisí od suchozemských slimákov a ulitníkov, ktorí fungujú ako medzihostitelia:Jež vylučuje vajíčka motolice trusom do prostredia.Slimáky sa nakazia požieraním kontaminovaného substrátu, pričom v ich tele vznikajú infekčné štádiá (metacerkárie).Jež sa nakazí zožratím infikovaného slimáka. Keďže mäkkýše tvoria významnú zložku potravy slovenských ježov, miera výskytu tohto parazita v ich populácii býva pomerne vysoká",
     "pathology": "Pri slabšej infekcii ježko nepociťuje vážnejšie problémy. Pri masívnom premnožení však motolice mechanicky a toxicky poškodzujú sliznicu čreva, čo vedie k:Chronickým hnačkám (často s prímesou krvi)Chradnutiu, slabosti a rapídnemu úbytku hmotnostiV najťažších prípadoch k celkovému vyčerpaniu a úhynu, najmä u mladých jedincov pred zimným spánkom.",
     "zoonosis": false,
     "notes": "",
-    "id": "brachylaemus_erinacei_egg",
+    "id": "brachylaima_erinacei_egg",
     "images": []
   },
   {

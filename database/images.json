@@ -522,6 +522,23 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:06:33.739Z"
   },
+    {
+    "parasiteId": "brachylaima_erinacei_egg",
+    "url": "/public/images/parasites/brachylaima_erinacei_egg/brachylaima_erinacei_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:06:33.739Z"
+  },
+  {
+    "parasiteId": "brachylaima_erinacei_egg",
+    "url": "/public/images/parasites/brachylaima_erinacei_egg/brachylaima_erinacei_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:06:33.739Z",
+    "isPrimary": true
+  },
   {
     "parasiteId": "damalinia_bovis_adult",
     "url": "/public/images/parasites/damalinia_bovis_adult/damalinia_bovis_adult_01.webp",
