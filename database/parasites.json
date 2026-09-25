@@ -1918,53 +1918,6 @@
     "images": []
   },
   {
-    "latinName": "Caryospora cherrughi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Caryospora",
-      "species": "Caryospora cherrughi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Sokol"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29,
-      "lengthMax": 35,
-      "widthMin": 26,
-      "widthMax": 31.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov bola rovnaká generická hodnota ako pri viacerých iných nesúvisiacich druhoch v tabuľke - pravdepodobne placeholder",
-      "nie špecifické meranie C. neofalconis."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
-    ],
-    "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "caryospora_cherrughi_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Caryospora falconis",
     "synonyms": [],
     "slovakName": "",
@@ -2005,10 +1958,57 @@
       "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_falconis_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Caryospora cherrughi",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Caryospora",
+      "species": "Caryospora cherrughi"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Sokol"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 29,
+      "lengthMax": 35,
+      "widthMin": 26,
+      "widthMax": 31.5,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov bola rovnaká generická hodnota ako pri viacerých iných nesúvisiacich druhoch v tabuľke - pravdepodobne placeholder",
+      "nie špecifické meranie C. neofalconis."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
+    ],
+    "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
+    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "zoonosis": false,
+    "notes": "",
+    "id": "caryospora_cherrughi_oocyst",
     "images": []
   },
   {
@@ -2053,7 +2053,7 @@
       "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_kutzeri_oocyst",
@@ -2101,7 +2101,7 @@
       "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_megafalconis_oocyst",
@@ -2148,7 +2148,7 @@
       "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.Celkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_neofalconis_oocyst",
