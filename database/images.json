@@ -627,7 +627,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-09-06T18:29:43.418Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "calodium_hepaticum_egg",
@@ -635,104 +636,113 @@
     "alt": "",
     "caption": "",
     "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "calodium_hepaticum_egg",
+    "url": "/public/images/parasites/calodium_hepaticum_egg/calodium_hepaticum_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "calodium_hepaticum_egg",
+    "url": "/public/images/parasites/calodium_hepaticum_egg/calodium_hepaticum_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "calodium_hepaticum_egg",
+    "url": "/public/images/parasites/calodium_hepaticum_egg/calodium_hepaticum_egg_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "caparinia_tripilis_adult",
+    "url": "/public/images/parasites/caparinia_tripilis_adult/caparinia_tripilis_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
     "dateAdded": "2026-09-06T18:29:43.418Z",
     "isPrimary": true
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_02.webp",
+    "parasiteId": "caparinia_tripilis_adult",
+    "url": "/public/images/parasites/caparinia_tripilis_adult/caparinia_tripilis_adult_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.328Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_04.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.338Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_05.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.345Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_06.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_05.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.350Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_08.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_06.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.361Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_09.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_08.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.367Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_12.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_12.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.381Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+    {
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_13.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z",
+   "isPrimary": true
   },
   {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_13.webp",
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_18.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.386Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_14.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.391Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_16.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.403Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_17.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.407Z"
-  },
-  {
-    "parasiteId": "capillaria_sp_egg",
-    "url": "/public/images/parasites/capillaria_sp_egg/capillaria_sp_egg_18.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:06:00.413Z"
+    "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
     "parasiteId": "caryospora_kutzeri_oocyst",

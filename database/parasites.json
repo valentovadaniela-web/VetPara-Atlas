@@ -885,14 +885,17 @@
       "species": "Aonchotheca putorii"
     },
     "hostGroups": [
-      "Mačkovité mäsožravce",
-      "Lasicovité mäsožravce",
-      "Psovité mäsožravce"
+      "Lasicovité mäsožravce"
     ],
     "hosts": [
-      "Jež"
+      "Jež",
+      "Mačka",
+      "Pes"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Mačka": "U mačiek len výnimočne",
+      "Pes": "Len zriedkavo"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
@@ -1766,9 +1769,17 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hlodavce"
+      "Hlodavce",
+      "Zajace, králiky",
+      "Mäsožravce",
+      "Voľne žijúce prežúvavce",
+      "Domáce prežúvavce",
+      "ZOO prežúvavce",
+      "Primáty"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Hlodavce": "Najčastejší hostitelia"
+    },
     "sample": "Pečeň",
     "stage": "Vajíčko",
     "group": "Nematoda",
@@ -1785,19 +1796,16 @@
       "shell": "Hrubá, s polárnymi zátkami"
     },
     "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "škrupina s bodkovanou (jamkovanou) štruktúrou",
-      "asymetrické",
-      "menej výrazné zátky ako pri Trichuris; nachádza sa v pečeňovom tkanive."
+      "Typické sudovité vajíčka s asymetrickými bipolárnymi zátkami a radiálne rozbrázdenou hrubou stenou",
+      "Nachádza sa v pečeňovom tkanive."
     ],
     "differentialDiagnosis": [
-      "Vajíčka sa typicky nachádzajú v pečeni (nie sú vylučované trusom pri životnom cykle bez predátora) - odlíšiť od Capillaria/Eucoleus podľa lokalizácie a hrubej",
-      "jamkovanej škrupiny."
+      "Iné Capillaria/Eucoleus - vajíčka sa nenachádzajú v pečeni, ale sú vylučované trusom"
     ],
     "lifeCycle": "Životný cyklus Calodium hepaticum je priamy (monoxénny), nevyžaduje medzihostiteľa, avšak má unikátnu vlastnosť: vajíčka nemôžu opustiť telo živého hostiteľa prirodzenou cestou. Samica kladie vajíčka do pečeňového parenchýmu hostiteľa. Aby sa vajíčka dostali do prostredia, hostiteľ musí buď zomrieť a rozložiť sa alebo ho musí zožrať predátor/mrchožrút. Ak predátor zožerie infikovanú pečeň (falošná nepravá infekcia), vajíčka prejdú jeho tráviacim traktom neporušené a odchádzajú s trusom. Tieto vajíčka sú zatiaľ neembryonované (neinfekčné). Na vzduchu a v pôde vajíčka embryonujú (dozrievajú na infekčné štádium s larvou) približne za 5 až 8 týždňov.Infekcia nového hostiteľa (skutočná infekcia): Nový hostiteľ (či človek) prehltne embryonované vajíčka s kontaminovanou vodou, potravou alebo zeminou.Migrácia v tele: V čreve sa vyliahnu larvy, ktoré preniknú cez črevnú stenu a cez portálny žilový systém (vena portae) migrujú priamo do pečene. Tu počas 3 – 4 týždňov dospievajú, pária sa a cyklus sa opakuje",
     "pathology": "Patologické zmeny sú vyvolané najmä prítomnosťou dospelých červov, ich pohybom a masívnym kladením vajíčok do pečene.Akútna fáza: Migrácia lariev a dospelých jedincov vyvoláva akútnu hepatitídu, nekrózu hepatocytov a výraznú zápalovú infiltráciu s vysokým podielom eozinofilov.Chronická fáza: Dospelé červy po spárení a nakladení vajíčok v pečeni umierajú. Okolo odumretých červov a nahromadených vajíčok sa vytvárajú granulómy. Tento proces vedie k masívnej fibrotizácii pečene a v závažných prípadoch až k obrazu pečeňovej cirhózy a zlyhaniu pečene. Zdrojom nákazy je pôda, voda alebo zelenina kontaminovaná dospelými (embryonovanými) vajíčkami.Tieto vajíčka sa dostali do pôdy tak, že infikovaný hlodavec uhynul a rozložil sa, alebo ho zožrala napríklad mačka/pes a vajíčka vylúčila trusom.Vajíčka museli následne stráviť niekoľko týždňov v pôde, aby dozreli na infekčné štádium.Človek sa nakazí najčastejšie tak, že zje neumytú zeleninu, pije kontaminovanú vodu, alebo si strčí do úst špinavé ruky od hliny (typické u malých detí).",
     "zoonosis": true,
-    "notes": "Vzácne",
+    "notes": "Vajíčka sa neuvoľňujú stolicou za života hostiteľa – zostávajú uväznené v pečeňovom tkanive. U živých zvierat parazit prakticky nedá diagnostikovať inak než pitvou/biopsiou.",
     "id": "calodium_hepaticum_egg",
     "images": []
   },
@@ -1837,25 +1845,23 @@
       "shell": "Mäkký, s dorzálnymi štetinami"
     },
     "diagnosticSigns": [
-      "Končatiny a prísavky: Nohy sú zakončené krátkymi",
-      "nečlenenými stopkami. Samce majú zvonkovité prísavky (tarsálne karunkuly) na všetkých nohách",
-      "zatiaľ čo samiciam na III. a IV. páre nôh chýbajú.Štetiny (Setae): Typickým znakom oboch pohlaví sú tri dlhé štetiny na treťom páre končatín (odtiaľ názov tripilis).Zadná časť samcov: Samce majú na konci tela na každej strane trojlaločný výbežok",
-      "pričom každý lalok nesie dlhú štetinu. Majú tiež kopulačné prísavky."
+      "Končatiny a prísavky: Nohy sú zakončené krátkymi nečlenenými stopkami. Samce majú zvonovité prísavky na všetkých nohách, samiciam na III. a IV. páre nôh chýbajú.",
+      "Typickým znakom oboch pohlaví sú tri dlhé štetiny na treťom páre končatín (odtiaľ názov tripilis).",
+      "Terminálne umiestnený anus"
     ],
     "differentialDiagnosis": [
-      "Sarcoptový svrab (Notoedres muris",
-      "Sarcoptes scabiei) sa zavrtávajú hlboko do kože (vytvárajú chodbičky)",
-      "zatiaľ čo Caparinia žije na povrchu. Morfologicky majú sarkopty dlhé kĺbové stopky prísaviek."
+      "Sarcoptes scabiei - u ježkov len veľmi raritne. Na rozdiel od Caparinia, ktorý žije na povrchu, sa zavŕtavajú hlboko do kože (vytvárajú chodbičky). Morfologicky majú sarkopty dlhé kĺbové stopky prísaviek.",
+      "Notoedres cati - popísaná koinfekcia s C. tripilis u afrických ježkov (zoonotický druh), treba odlíšiť morfologicky (guľovitý tvar tela, dorzálne umiestnený anus,  Kutikula (povrch tela) na chrbte má husté, koncentrické ryhy, ktoré pod mikroskopom výrazne pripomínajú ľudský papilárny odtlačok prsta)"
     ],
-    "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha výhradne na hostiteľovi, kde roztoč prežíva celý svoj život. Trvá približne 3 týždne:Vajíčko: Samica kladie perleťovo biele vajíčka k báze pichliačov.Larva: Vyliahne sa šesťnohá larva.Nymfa: Prechádza cez štádiá osemnohej protonymfy a deutonymfy, kedy dochádza k pohlavnej diferenciácii.Dospelý jedinec (Imágo): Živí sa odlúpenými kožnými bunkami a epidermálnym detritom. Prenos na nových hostiteľov nastáva priamym kontaktom medzi ježkami alebo kontaminovanou podstielkou.",
-    "pathology": "Parazit má pomerne vysokú patogenitu, zhlukuje sa najmä v oblasti hlavy, uší, slabín a vnútornej strany nôh.Príznaky: Vyvoláva intenzívne svrbenie (pruritus), nepokoj, erytém (sčervenanie kože) a tvorbu lupín či bielych chrást.Strata pichliačov: Masívna infekcia vedie k vypadávaniu pichliačov (alopecia) a deformácii uší.Následky: Zvieratá trpia sebapoškodzovaním zo škriabania. Často sa pridruží sekundárna bakteriálna alebo kvasinková infekcia. Ťažko postihnuté jedince chradnú, strácajú nočnú aktivitu a bez liečby môžu uhynúť.",
+    "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha výhradne na hostiteľovi, kde roztoč prežíva celý svoj život. Trvá približne 3 týždne:\n Vajíčko: Samica kladie perleťovo biele vajíčka k báze pichliačov.\n Larva: Vyliahne sa šesťnohá larva.\n Nymfa: Prechádza cez štádiá osemnohej protonymfy a deutonymfy, kedy dochádza k pohlavnej diferenciácii.\n Dospelý jedinec (Imágo): Živí sa odlúpenými kožnými bunkami a epidermálnym detritom - **nezavŕtava sa do kože**. Prenos na nových hostiteľov nastáva priamym kontaktom medzi ježkami alebo kontaminovanou podstielkou.",
+    "pathology": "Parazit má pomerne vysokú patogenitu, zhlukuje sa najmä v oblasti hlavy, uší, slabín a vnútornej strany nôh.\n Príznaky: Vyvoláva intenzívne svrbenie (pruritus), nepokoj, erytém (sčervenanie kože) a tvorbu lupín či bielych chrást.\n Strata pichliačov: Masívna infekcia vedie k vypadávaniu pichliačov (alopecia) a deformácii uší.\n Následky: Zvieratá trpia sebapoškodzovaním zo škriabania. Často sa pridruží sekundárna bakteriálna alebo kvasinková infekcia. Ťažko postihnuté jedince chradnú, strácajú nočnú aktivitu a bez liečby môžu uhynúť.",
     "zoonosis": false,
     "notes": "",
-    "id": "caparina_tripilis_adult",
+    "id": "caparinia_tripilis_adult",
     "images": []
   },
   {
-    "latinName": "Capillaria ovoreticularis",
+    "latinName": "Capillariidae",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -1864,67 +1870,21 @@
       "class": "Enoplea",
       "order": "Trichinellida",
       "family": "Capillariidae",
-      "genus": "Capillaria",
-      "species": "Capillaria ovoreticularis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 67,
-      "widthMin": 26,
-      "widthMax": 37,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltozelený",
-      "shell": "Zátky"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "škrupina so sieťovitou (retikulárnou) štruktúrou povrchu."
-    ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "capillaria_ovoreticularis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Capillaria sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Capillaria",
+      "genus": "neurčený rod",
       "species": "neurčené do druhu"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Domáce prežúvavce",
+      "Hmyzožravce",
+      "Hlodavce",
+      "Vtáky",
+      "Kengury", 
+      "Plazy",
+      "Hmyzožravce",
+      "Akváriové ryby"
     ],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Hrabavá hydina",
-      "Plazy"
-    ],
-    "hostNotes": {
-      "Hrabavá hydina": "",
-      "Hovädzí dobytok": "",
-      "Plazy": ""
-    },
+    "hosts": [],
+    "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
@@ -1951,10 +1911,10 @@
       "Trichuris: vždy hladký povrch, tmavšie, vypuklé steny, zátky vyčnievajú a sú symetrické"
     ],
     "lifeCycle": "1. Priamy (monoxénny) cyklus - typický napr. pre niektoré druhy parazitujúce v čreve hydiny:\n Dospelé samice v hostiteľovi (čreve, pečeni, dýchacích cestách) kladú nezrelé vajíčka.\nVajíčka sa dostávajú von trusom (prípadne, pri C. hepatica, zostávajú v pečeni až do rozkladu tela hostiteľa).\nV vonkajšom prostredí (pôda, vlhko, teplo) dochádza k dozretiu vajíčka na infekčné štádium obsahujúce larvu (L1).\nNový hostiteľ sa nakazí perorálne – prehltnutím infekčného vajíčka (napr. s kontaminovanou potravou, vodou, pôdou).\nV čreve sa larva vyliahne, migruje do cieľového orgánu (sliznica čreva, pečeň, priedušnica) a dozrieva na dospelého jedinca.\n\n 2. Nepriamy (heteroxénny) cyklus - typický pre druhy parazitujúce v močovom mechúre alebo dýchacích cestách mäsožravcov: \nVajíčka sa dostanú do prostredia trusom alebo močom.\nVajíčko musí byť pozreté dážďovkou (Lumbricidae), ktorá slúži ako medzihostiteľ (paratenický alebo skutočný).\nV tele dážďovky sa larva ďalej vyvíja do infekčného štádia.\nDefinitívny hostiteľ (napr. pes, líška, mačka) sa nakazí zjedením infikovanej dážďovky.\nLarva sa v tele definitívneho hostiteľa dostane do cieľového orgánu a dozreje na dospelého jedinca.",
-    "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická crop-capillariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami",
+    "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická hrvoľová kapilariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n\n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n\n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami. \n\n Akváriové ryby: \n _Capillaria pterophylli_ žije v črevách cichlíd (najmä skalárov a terčovcov). Napadnutá ryba stráca záujem o potravu, chradne, chudne (má prepadnuté bruško) a ťahajú sa z nej dlhé, svetlé až priesvitné výkaly. \n _Pseudocapillaria tomentosa_ napáda kaprovité ryby (napr. mrenky). Masívne infikuje Danio pruhované. Spôsobuje u nich chronické zápaly čriev, zakrivenie chrbtice. \n _Capillostrongyloides sp._ často parazituje u sumčekov a prísavníkov",
     "zoonosis": false,
     "notes": "",
-    "id": "capillaria_sp_egg",
+    "id": "capillariidae_egg",
     "images": []
   },
   {
@@ -17748,8 +17708,8 @@
     "group": "Arachnida",
     "micrometry": {
       "lengthMin": 200,
-      "lengthMax": 400,
-      "widthMin": 150,
+      "lengthMax": 240,
+      "widthMin": 200,
       "widthMax": 250,
       "unit": "µm"
     },
@@ -17759,14 +17719,15 @@
       "shell": "Mäkký, priečne pruhovaný"
     },
     "diagnosticSigns": [
-      "Podobné Sarcoptes",
-      "ale menšie",
-      "s koncentricky uloženými líniami na chrbte a análnym otvorom na chrbtovej (dorzálnej) strane - hlavný odlišujúci znak od Sarcoptes."
+      "Guľovitý tvar tela: Telo dospelých roztočov je takmer dokonale okrúhle (globózne) a dosahuje veľkosť iba okolo 200 až 240 mikrometrov",
+      "Anus sa nenachádza na zadnom okraji tela, ale je posunutý dopredu na chrbtovú (dorzálnu) stranu",
+      "Kresba „odtlačku prsta“: Kutikula (povrch tela) na chrbte má husté, koncentrické ryhy (striácie), ktoré pod mikroskopom výrazne pripomínajú ľudský papilárny odtlačok prsta",
+      "Veľmi krátke končatiny: Má štyri páry krátkych, hrubých nôh. Predné dva páry vyčnievajú z obrysu tela, zatiaľ čo zadné dva páry sú zakrpatené a skryté pod brušnou stranou tela.",
+      "Prísavky na stopkách: Na končatinách sa nachádzajú prísavné terčíky (caruncles) na dlhých, nečlánkovaných stopkách (pediceloch). Samice ich majú na 1. a 2. páre nôh, samce na 1., 2. a 4. páre",
+      "Lézie takmer vždy začínajú na vnútorných okrajoch ušníc, tvári, viečkach a krku. Pri zanedbaní sa infekcia rozšíri na labky (z umývania sa) a celé telo."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Notoedres môže byť potrebná molekulová identifikácia."
+      "Sarcoptes sp.: Na rozdiel od rodu Sarcoptes nemá Notoedres na chrbte ostré, špicaté tŕne (môže mať len zaoblené šupiny)."
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -18712,11 +18673,14 @@
       "species": "Pearsonema plica"
     },
     "hostGroups": [
-      "Mačkovité mäsožravce",
       "Psovité mäsožravce"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Mačka": "Len veľmi zriedkavo"
+    },
     "sample": "Moč",
     "stage": "Vajíčko",
     "group": "Nematoda",
