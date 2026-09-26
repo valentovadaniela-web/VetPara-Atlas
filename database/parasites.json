@@ -1939,76 +1939,31 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 28,
-      "lengthMax": 34,
-      "widthMin": 25,
-      "widthMax": 31,
+      "lengthMin": 29.5,
+      "lengthMax": 36.5,
+      "widthMin": 32.5,
+      "widthMax": 34,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
+      "shape": "Okrúhly až subsférický",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: vretenica",
-      "slepúch (hady/jašterice)."
+      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4).",
+      "Sporocysta je guľovitá cca 21,0 × 23,0 µm"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
+      "Veľkosť oocysty je prvým orientačným kritériom: C. neofalconis je jednoznačne najmenšia (~27 µm), C. megafalconis najväčšia (~44 µm); C. falconis (~34 µm) a C. kutzeri (~37 µm) ležia medzi nimi, pričom C. kutzeri je v priemere o niečo väčšia ako C. falconis a má väčšiu a vajcovitejšiu sporocystu (vajcovitá, cca 24,6 × 21,0 µm).",
+      "Eimeria spp. – jednoznačne odlíšiteľné mikroskopicky počtom sporocýst (4 namiesto 1).",
+      "Potrebné zvážiť tzv. zdanlivý parazitizmus – oocysty kokcídií z koristi (napr. rodu Eimeria z holuba ), ktoré mechanicky prechádzajú tráviacim traktom dravca bez skutočnej infekcie; morfologicky sa nedajú od skutočných kokcídií dravcov spoľahlivo odlíšiť, preto je nutná anamnéza (potrava) a opakované vyšetrenie."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Prejavuje sa predovšetkým u mláďat v chovných/sokoliarskych zariadeniach – enteritída, hnačka, letargia, anorexia, chudnutie, pri ťažších infekciách krvavý trus a v prípade masívnej invázie aj akútny úhyn. Dospelé voľne žijúce jedince bývajú často asymptomatickými nosičmi a vylučovateľmi oocýst.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_falconis_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Caryospora cherrughi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Caryospora",
-      "species": "Caryospora cherrughi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Sokol"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29,
-      "lengthMax": 35,
-      "widthMin": 26,
-      "widthMax": 31.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov bola rovnaká generická hodnota ako pri viacerých iných nesúvisiacich druhoch v tabuľke - pravdepodobne placeholder",
-      "nie špecifické meranie C. neofalconis."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
-    ],
-    "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "caryospora_cherrughi_oocyst",
     "images": []
   },
   {
@@ -2045,15 +2000,16 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Guľovitá oocysta",
-      "po sporulácii obsahuje 1 sporocystu so 8 sporozoitmi (typický znak rodu Caryospora",
-      "odlišuje ho od Eimeria a Isospora)."
+      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4).",
+      "Sporocysta je vajcovitá, cca 24,6 × 21,0 µm"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
+      "Veľkosť oocysty je prvým orientačným kritériom: C. neofalconis je jednoznačne najmenšia (~27 µm), C. megafalconis najväčšia (~44 µm); C. falconis (~34 µm) a C. kutzeri (~37 µm) ležia medzi nimi, pričom C. kutzeri je v priemere o niečo väčšia ako C. falconis.",
+      "Eimeria spp. – jednoznačne odlíšiteľné mikroskopicky počtom sporocýst (4 namiesto 1).",
+      "Potrebné zvážiť tzv. zdanlivý parazitizmus – oocysty kokcídií z koristi (napr. rodu Eimeria z holuba ), ktoré mechanicky prechádzajú tráviacim traktom dravca bez skutočnej infekcie; morfologicky sa nedajú od skutočných kokcídií dravcov spoľahlivo odlíšiť, preto je nutná anamnéza (potrava) a opakované vyšetrenie."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Prejavuje sa predovšetkým u mláďat v chovných/sokoliarskych zariadeniach – enteritída, hnačka, letargia, anorexia, chudnutie, pri ťažších infekciách krvavý trus a v prípade masívnej invázie aj akútny úhyn. Dospelé voľne žijúce jedince bývajú často asymptomatickými nosičmi a vylučovateľmi oocýst.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_kutzeri_oocyst",
@@ -2093,15 +2049,17 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov v tabuľke bola generická (zdieľaná s nesúvisiacimi rodmi Atoxoplasma/Isospora sp./Eimeria sp.)",
-      "nie špecifická pre C. megafalconis; presnú publikovanú hodnotu (Klüh",
-      "1994) sa v dostupných zdrojoch nepodarilo overiť."
+      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4).",
+      "Oocysta subguľovitá až vajcovitá, najväčšia z karyospor sokolov, cca 43,6 × 35,8 µm",
+      "Sporocysta je guľatá, cca 23,8 µm"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
+      "Veľkosť oocysty je prvým orientačným kritériom: C. neofalconis je jednoznačne najmenšia (~27 µm), C. megafalconis najväčšia (~44 µm); C. falconis (~34 µm) a C. kutzeri (~37 µm) ležia medzi nimi, pričom C. kutzeri je v priemere o niečo väčšia ako C. falconis.",
+      "Eimeria spp. – jednoznačne odlíšiteľné mikroskopicky počtom sporocýst (4 namiesto 1).",
+      "Potrebné zvážiť tzv. zdanlivý parazitizmus – oocysty kokcídií z koristi (napr. rodu Eimeria z holuba ), ktoré mechanicky prechádzajú tráviacim traktom dravca bez skutočnej infekcie; morfologicky sa nedajú od skutočných kokcídií dravcov spoľahlivo odlíšiť, preto je nutná anamnéza (potrava) a opakované vyšetrenie."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Prejavuje sa predovšetkým u mláďat v chovných/sokoliarskych zariadeniach – enteritída, hnačka, letargia, anorexia, chudnutie, pri ťažších infekciách krvavý trus a v prípade masívnej invázie aj akútny úhyn. Dospelé voľne žijúce jedince bývajú často asymptomatickými nosičmi a vylučovateľmi oocýst.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_megafalconis_oocyst",
@@ -2141,65 +2099,20 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: sokol. Pozn.: pôvodná hodnota rozmerov bola rovnaká generická hodnota ako pri viacerých iných nesúvisiacich druhoch v tabuľke - pravdepodobne placeholder",
-      "nie špecifické meranie C. neofalconis."
+      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4).",
+      "Oocysta subguľovitá až vajcovitá, najmenšia z karyospor sokolov, cca 427 × 23 µm",
+      "Sporocysta je vajcovitá, malá, cca 18,8 × 14,8"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
+      "Veľkosť oocysty je prvým orientačným kritériom: C. neofalconis je jednoznačne najmenšia (~27 µm), C. megafalconis najväčšia (~44 µm); C. falconis (~34 µm) a C. kutzeri (~37 µm) ležia medzi nimi, pričom C. kutzeri je v priemere o niečo väčšia ako C. falconis.",
+      "Eimeria spp. – jednoznačne odlíšiteľné mikroskopicky počtom sporocýst (4 namiesto 1).",
+      "Potrebné zvážiť tzv. zdanlivý parazitizmus – oocysty kokcídií z koristi (napr. rodu Eimeria z holuba ), ktoré mechanicky prechádzajú tráviacim traktom dravca bez skutočnej infekcie; morfologicky sa nedajú od skutočných kokcídií dravcov spoľahlivo odlíšiť, preto je nutná anamnéza (potrava) a opakované vyšetrenie."
     ],
     "lifeCycle": "Cyklus môže byť priamy (homoxénny) alebo fakultatívne nepriamy (heteroxénny) s využitím prenášača (hlodavca):Priama cesta: Sokol vylúči trusom nezrelé oocysty, tie v prostredí za 1–2 dni dozrejú (sporulujú). Iný sokol ich prehltne s kontaminovanou potravou/vodou.Nepriama cesta (Cez transportného hostiteľa): Dozretú oocystu zožerie drobný hlodavec (myš). V jeho svaloch alebo spojivovom tkanive sa vytvoria latentné štádiá (cysty/karyocysty). Sokol sa nakazí, keď uloví a zožerie túto infikovanú myš.Vývoj v dravcovi: V čreve sokola prebieha masívne nepohlavné množenie (merogónia) a pohlavné množenie (gametogónia), ktoré poškodzuje bunky črevnej sliznice.",
-    "pathology": "Infekcia (karyosporóza) patrí k najnebezpečnejším parazitárnym chorobám chovných a poľovných sokolov:\n Klinické príznaky: Vyvoláva ťažkú, často hemoragickú (krvavú) enteritídu a hnačku.\nCelkový stav: Vtáky strácajú apetít, rýchlo chradnú (kachexia), vykazujú apatiu, slabosť a dochádza k extrémnej strate hmotnosti. Prejavuje sa rapídny pokles výkonnosti pri sokoliarskom výcviku.\n Úmrtnosť: U mláďat sokolov a oslabených jedincov dochádza v dôsledku dehydratácie a deštrukcie čreva k častému úhynu.",
+    "pathology": "Klinicky najvýznamnejší druh. Prejavuje sa predovšetkým u mláďat v chovných/sokoliarskych zariadeniach – enteritída, hnačka, letargia, anorexia, chudnutie, pri ťažších infekciách krvavý trus a v prípade masívnej invázie aj akútny úhyn. Dospelé voľne žijúce jedince bývajú často asymptomatickými nosičmi a vylučovateľmi oocýst.",
     "zoonosis": false,
     "notes": "",
     "id": "caryospora_neofalconis_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Caryospora simplex",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Caryospora",
-      "species": "Caryospora simplex"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Vretenica",
-      "Slepúch"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 20,
-      "lengthMax": 30,
-      "widthMin": 20,
-      "widthMax": 30,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až subsférický",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Po sporulácii obsahuje len 1 sporocystu s 8 sporozoitmi (vzor 1x8) - jedinečný diferenciálny znak rodu Caryospora oproti Eimeria (4x2) a Isospora (2x4). Hostiteľ: vretenica",
-      "slepúch (hady/jašterice)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria/Isospora podľa jednej sporocysty obsahujúcej 8 sporozoitov; pri dravcoch je dôležitý hostiteľ a presná morfometria."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "caryospora_simplex_oocyst",
     "images": []
   },
   {

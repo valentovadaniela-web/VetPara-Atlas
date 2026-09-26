@@ -745,6 +745,22 @@
     "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
+    "parasiteId": "caryospora_falconis_oocyst",
+    "url": "/public/images/parasites/caryospora_falconis_oocyst/caryospora_falconis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:46:21.347Z"
+  },
+  {
+    "parasiteId": "caryospora_kutzeri_oocyst",
+    "url": "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:46:21.347Z"
+  },
+  {
     "parasiteId": "caryospora_kutzeri_oocyst",
     "url": "/public/images/parasites/caryospora_kutzeri_oocyst/caryospora_kutzeri_oocyst_04.webp",
     "alt": "",
@@ -758,9 +774,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:46:21.357Z",
-    "isPrimary": true
-  },
+    "dateAdded": "2026-08-29T11:46:21.357Z"
+    },
   {
     "parasiteId": "caryospora_megafalconis_oocyst",
     "url": "/public/images/parasites/caryospora_megafalconis_oocyst/caryospora_megafalconis_oocyst_02.webp",
