@@ -1878,7 +1878,7 @@
       "Hmyzožravce",
       "Hlodavce",
       "Vtáky",
-      "Kengury", 
+      "Kengury",
       "Plazy",
       "Hmyzožravce",
       "Akváriové ryby"
@@ -1915,7 +1915,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "capillariidae_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/capillariidae_egg/capillariidae_egg_01.webp"
+    ]
   },
   {
     "latinName": "Caryospora falconis",
@@ -2220,59 +2222,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "cathaemasia_longivitellata_egg",
-    "images": []
-  },
-  {
-    "latinName": "Cathaemasia hians",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Echinostomatidae",
-      "genus": "Cathaemasia",
-      "species": "Cathaemasia hians"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Bocian biely"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 98,
-      "lengthMax": 105,
-      "widthMin": 53,
-      "widthMax": 60,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká stena",
-      "Na jednom z pólov (koncov) sa nachádza typické viečko (operculum)",
-      "ktoré slúži na uvoľnenie larvy vo vode.Vnútorný obsah: Čerstvo vylúčené vajíčka už v maternici červov obsahujú plne vyvinuté",
-      "pohyblivé miracídium (larvu) s dobre viditeľnými očnými škvrnami."
-    ],
-    "differentialDiagnosis": [
-      "V koprologiologickom náleze trusu bocianov je nutné odlíšiť vajíčka Cathaemasia longivitellata  najmä od týchto dvoch motolíc:Cathaemasia hians (motolica z bociana čierneho): Vajíčka sú morfologicky aj rozmerovo takmer identické. Rozlíšenie druhu je v truse nemožné; vodítkom je primárne hostiteľ (bocian čierny vs. biely)",
-      "prípadne pitva a molekulárna analýza (PCR) dospelých červov.Chaunocephalus ferox: Veľmi rozšírená črevná motolica bocianov. Jej vajíčka sú výrazne väčšie",
-      "dosahujú dĺžku spravidla nad 110 – 120 μm a šírku nad 70 μm. Sú tiež svetlejšie a na rozdiel od Cathaemasia sa z dospelého vtáka uvoľňujú oveľa častejšie",
-      "keďže dospelé červy žijú priamo v čreve."
-    ],
-    "lifeCycle": "Definitívny hostiteľ (bocian) vylučuje vajíčka trusom do vody.Vo vode sa z viečka (opercula) vyliahne miracídium a napadne 1. medzihostiteľa (vodného slimáka Planorbis planorbis).V slimákovi sa vyvinú pohyblivé cerkárie, ktoré ho opustia.Cerkárie preniknú do 2. medzihostiteľa (žubrienky žiab, drobné ryby), kde sa zapuzdria na metacerkárie.Bocian zožerie nakazenú žubrienku/rybu, parazit migruje do jeho hltana a cyklus sa uzavrie.",
-    "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "cathaemasia_hians",
     "images": []
   },
   {
@@ -5374,7 +5323,9 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "isospora_suis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/isospora_suis_oocyst/cystoisospora_suis_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Cytodites nudus",
@@ -7338,7 +7289,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_acervulina_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_acervulina_oocyst/eimeria_acervulina_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria adenoides",
@@ -7500,7 +7453,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_alabamensis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_alabamensis_oocyst/eimeria_alabamensis_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria alijevi",
@@ -7554,7 +7509,9 @@
     "zoonosis": false,
     "notes": "U kôz",
     "id": "eimeria_alijevi_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_alijevi_oocyst/eimeria_alijevi_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria andrewsi",
@@ -7767,7 +7724,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_arloingi_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_arloingi_oocyst/eimeria_arloingi_oocyst_03.webp"
+    ]
   },
   {
     "latinName": "Eimeria aspheronica",
@@ -7821,7 +7780,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_aspheronica_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_aspheronica_oocyst/eimeria_aspheronica_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria asymmetrica",
@@ -7929,7 +7890,9 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_auburnensis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria austriaca",
@@ -8146,7 +8109,9 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_bovis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_04.webp"
+    ]
   },
   {
     "latinName": "Eimeria brunetti",
@@ -8201,7 +8166,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_brunetti_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria bukidnonensis",
@@ -8255,7 +8222,9 @@
     "zoonosis": false,
     "notes": "Výrazné mikropyle. Najčastejšie u nás.",
     "id": "eimeria_bukidnonensis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_03.webp"
+    ]
   },
   {
     "latinName": "Eimeria capreoli",
@@ -8363,7 +8332,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_caprina_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_caprina_oocyst/eimeria_caprina_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria caprovina",
@@ -8577,7 +8548,9 @@
     "zoonosis": false,
     "notes": "U kôz",
     "id": "eimeria_christenseni_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_christenseni_oocyst/eimeria_christenseni_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria colchici",
@@ -8841,7 +8814,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_cylindrica_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria debliecki",
@@ -8895,7 +8870,9 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_debliecki_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_debliecki_oocyst/eimeria_debliecki_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria dispersa",
@@ -9053,7 +9030,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle. Najčastejšie u nás.",
     "id": "eimeria_ellipsoidalis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria europaea",
@@ -9161,7 +9140,10 @@
     "zoonosis": false,
     "notes": "Neviditeľné mikropyle",
     "id": "eimeria_exigua_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_exigua_oocyst/eimeria_exigua_oocyst_01.webp",
+      "/public/images/parasites/eimeria_exigua_oocyst/eimeria_exigua_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria falciformis",
@@ -9589,7 +9571,9 @@
     "zoonosis": false,
     "notes": "U kôz",
     "id": "eimeria_hirci_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_hirci_oocyst/eimeria_hirci_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria hungarica",
@@ -9805,7 +9789,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_jolchijevi_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_jolchijevi_oocyst/eimeria_jolchijevi_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria keilini",
@@ -10181,7 +10167,9 @@
     "zoonosis": false,
     "notes": "Široké mikropyle s golierom",
     "id": "eimeria_magna_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_magna_oocyst/eimeria_magna_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria marmotae",
@@ -10341,7 +10329,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_maxima_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria media",
@@ -10395,7 +10385,9 @@
     "zoonosis": false,
     "notes": "Zrezaný vpredu",
     "id": "eimeria_media_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_media_oocyst/eimeria_media_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria meleagridis",
@@ -10609,7 +10601,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_mitis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_mitis_oocyst/eimeria_mitis_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria myarii",
@@ -10769,7 +10763,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_necatrix_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_necatrix_oocyst/eimeria_necatrix_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria neodebliecki",
@@ -10823,7 +10819,9 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_neodebliecki_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_neodebliecki_oocyst/eimeria_neodebliecki_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria ninakohlyakimovae",
@@ -10877,7 +10875,9 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_ninaekohljakimovae_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_ninaekohljakimovae_oocyst/eimeria_ninaekohljakimovae_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria nocens",
@@ -11361,7 +11361,9 @@
     "zoonosis": false,
     "notes": "Oba póly zaoblené rovnako",
     "id": "eimeria_perforans_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_perforans_oocyst/eimeria_perforans_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria perminuta",
@@ -11415,7 +11417,9 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_perminuta_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_perminuta_oocyst/eimeria_perminuta_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria phasiani",
@@ -11521,7 +11525,9 @@
     "zoonosis": false,
     "notes": "Viditeľné mikropyle",
     "id": "eimeria_piriformis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_piriformis_oocyst/eimeria_piriformis_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria polita",
@@ -11575,7 +11581,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_polita_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_polita_oocyst/eimeria_polita_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria ponderosa",
@@ -11683,7 +11691,9 @@
     "zoonosis": false,
     "notes": "Veľké sporocysty",
     "id": "eimeria_porci_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_porci_oocyst/eimeria_porci_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria praecox",
@@ -11737,7 +11747,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_praecox_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_praecox_oocyst/eimeria_praecox_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria punctata",
@@ -12111,7 +12123,9 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_scabra_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_scabra_oocyst/eimeria_scabra_oocyst_0.webp"
+    ]
   },
   {
     "latinName": "Eimeria schoenbuchi",
@@ -12808,7 +12822,9 @@
     "zoonosis": false,
     "notes": "Vpredu zúžený",
     "id": "eimeria_stiedae_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_03.webp"
+    ]
   },
   {
     "latinName": "Eimeria subspherica",
@@ -12862,7 +12878,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle. Nepatogén.",
     "id": "eimeria_subspherica_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria suis",
@@ -12916,7 +12934,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_suis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_suis_oocyst/eimeria_suis_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria superba",
@@ -13026,7 +13046,9 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_tenella_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_tenella_oocyst/eimeria_tenella_oocyst_02.webp"
+    ]
   },
   {
     "latinName": "Eimeria townsendi",
