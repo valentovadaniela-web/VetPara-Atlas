@@ -1427,6 +1427,17 @@ const AtlasPage = {
                 }
 
                 event.preventDefault();
+
+                // OPRAVA (2026-09-26): predtým sa tu hash vôbec nemenil —
+                // adresný riadok preto pri otvorenom detaile stále ukazoval
+                // len "#atlas" a F5/reload sa vždy vrátil na zoznam.
+                // history.pushState() aktualizuje URL BEZ vyvolania
+                // "hashchange" (na rozdiel od `location.hash = ...`), takže
+                // Router neprekreslí celý zoznam nanovo — presne to, čo tu
+                // pôvodný preventDefault() riešil kvôli rýchlosti, zostáva
+                // zachované.
+                history.pushState(null, "", `#atlas/${card.dataset.id}`);
+
                 this.showDetail(card.dataset.id);
 
             });
@@ -1558,6 +1569,13 @@ const AtlasPage = {
         document
             .getElementById("atlas-back")
             .addEventListener("click", () => {
+
+                // OPRAVA (2026-09-26): rovnaký dôvod ako pri bindCards() —
+                // adresa sa má zhodovať s tým, čo je skutočne zobrazené
+                // (zoznam bez ID), inak by ďalší reload zas ukázal detail,
+                // ktorý už nie je otvorený. pushState namiesto location.hash
+                // z rovnakého dôvodu (nevyvolať zbytočný hashchange/resolve).
+                history.pushState(null, "", "#atlas");
 
                 app.innerHTML = this.render();
 

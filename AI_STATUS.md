@@ -1,5 +1,58 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.38 Aktuálny stav — doplnené (2026‑09‑26, session: formátovanie textu v detaile parazita + strata otvoreného detailu pri reloade stránky)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahlásila dve veci naraz: (1) v detaile parazita, v sekcii "Morfológia", sa `**text**` nezobrazoval tučne — ostávali tam doslovné dve hviezdičky; (2) keď mala otvorenú stránku s detailom parazita a upravovala kód vo Visual Studio Code (Live Server na `127.0.0.1:5500`), po každom uložení/reloade sa pohľad "presunul" preč z detailu — najprv sa zdalo, že len scrolluje na začiatok stránky, neskôr sa ukázalo, že appka sa v skutočnosti prepínala rovno na zoznam (Atlas), nie len na vrch tej istej stránky.
+
+### ✅ 1. Formátovanie textu (`**`, `_`, `__`, `~~`, `\n`) — nefungovalo len v Morfológii
+
+`AtlasPage.js` už mala funkciu `formatRichText()` (escapuje HTML, potom povolí `**text**` → tučné, `_text_` → kurzíva, `\n` → `<br>`) a používali ju správne `detailField()` (Životný cyklus/Patológia/Poznámka), `diagnosisListField()` (Diferenciálna diagnostika) aj `hostNotesField()` (Poznámky k hostiteľom). Jediné miesto, kde formátovanie chýbalo, bola `morphologyCard()` (zoznam `diagnosticSigns` pod nadpisom "Morfológia") — volala `escapeHtml(sign)` namiesto `formatRichText(sign)`.
+
+**Oprava:**
+- `morphologyCard()`: `escapeHtml(sign)` → `formatRichText(sign)`.
+- `formatRichText()` rozšírená o `__text__` → `<u>` (podčiarknuté) a `~~text~~` → `<del>` (prečiarknuté), s dôrazom na správne poradie regexov (`**` pred `__` pred `_`, aby sa nekrížili).
+- V kóde pribudol podrobný komentár-ťahák priamo pri `formatRichText()`: čo napísať do `.json` polí pre tučné/kurzívu/podčiarknuté/prečiarknuté/nový riadok, a upozornenie na JSON-escaping úvodzoviek (`\"`) a nového riadku (`\n`) pri ručnom editovaní databázových súborov.
+
+Platí teraz konzistentne pre všetky textové polia detailu: `lifeCycle`, `pathology`, `notes`, `differentialDiagnosis`, `hostNotes`, `diagnosticSigns`.
+
+### ✅ 2. Strata otvoreného detailu pri reloade — skutočná príčina a oprava
+
+**Prvá teória (nesprávna, opustená):** predpokladala som, že Live Server pri reloade "odtŕha" ID parazita z hashu (`#atlas/<id>` → `#atlas`). V `Router.js` som kvôli tomu pridala obrannú funkciu `repairTruncatedHash()` (ukladanie hashu do `sessionStorage` pri `beforeunload`, porovnanie a oprava pri ďalšom `start()`).
+
+**Skutočná príčina (nájdená až po nahratí `index.html` a `main.js` a spätnej kontrole `AtlasPage.js`):** `bindCards()` (klik na kartu parazita v zozname) aj tlačidlo "Späť na Atlas" menili pohľad **len cez JS** — volali `event.preventDefault()` a rovno `showDetail()`/`render()`, bez toho, aby kedy nastavili `window.location.hash`. Adresný riadok preto pri otvorenom detaile ukazoval stále len `#atlas` — ID tam nikdy nebolo, takže sa ani nemalo čo "odtrhnúť". Toto bolo pôvodné, zámerné správanie (komentár v kóde z 2026-09-07: rýchlejšie, vyhýba sa prekresleniu celého zoznamu cez Router), no malo vedľajší efekt — reload nemal kam sa vrátiť.
+
+**Finálna oprava (`AtlasPage.js`):**
+- `bindCards()`: pred `showDetail(id)` sa teraz volá `history.pushState(null, "", "#atlas/${id}")`.
+- tlačidlo "Späť na Atlas": pred prekreslením zoznamu sa volá `history.pushState(null, "", "#atlas")`.
+- `history.pushState()` zvolený zámerne namiesto `location.hash = ...`, lebo nevyvoláva `hashchange` — Router preto naďalej neprekresľuje celý zoznam nanovo (pôvodná optimalizácia z 2026-09-07 zostáva zachovaná), iba sa navyše aktualizuje adresa.
+
+Keďže skutočná príčina bola iná, `repairTruncatedHash()` z `Router.js` bola (na rozhodnutie autorky, po vysvetlení oboch možností) **odstránená** — nikdy by sa reálne nespustila a v kóde by len mýlila budúce session. V súbore ostala len krátka historická poznámka, prečo tam dočasne bola a prečo zmizla.
+
+### ✅ 3. Scroll pozícia pri reloade (pôvodná prvá požiadavka tejto session)
+
+`Router.js` teraz priebežne (throttled cez `requestAnimationFrame`) ukladá scroll pozíciu do `sessionStorage`, pod kľúčom viazaným na aktuálny hash (`atlas-scroll:<hash>`). Pri reálnom reloade stránky (prvé volanie `resolve()` po `start()`) sa táto pozícia obnoví; pri bežnej navigácii v appke (`hashchange`) sa scroll naopak vynuluje na vrch — to je normálne SPA správanie. V spojení s opravou #2 (hash teraz vždy verne odráža otvorený detail) toto spolu rieši pôvodne nahlásený problém kompletne — po oprave v kóde a reloade zostane otvorený ten istý detail parazita na tom istom mieste scrollu.
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `src/pages/AtlasPage.js` | `morphologyCard()`: `escapeHtml`→`formatRichText`; `formatRichText()` rozšírená o `__podčiarknuté__`/`~~prečiarknuté~~` + komentár-ťahák; `bindCards()` a tlačidlo "Späť na Atlas": pridaný `history.pushState()` pre správnu adresu pri otvorenom/zatvorenom detaile. | ✅ hotové (súbor priložený v chate), ⏳ čaká na manuálne nahradenie v repozitári autorkou |
+| `src/app/Router.js` | Pridaná perzistencia scroll pozície cez `sessionStorage` (`resolve({isInitialLoad})`, `trackScrollPosition()`, `restoreScrollPosition()`). Dočasne pridaná a znovu odstránená `repairTruncatedHash()` (riešila teóriu, ktorá sa nepotvrdila — pozri vyššie); ostala len stručná historická poznámka. | ✅ hotové (súbor priložený v chate), ⏳ čaká na manuálne nahradenie v repozitári autorkou |
+
+**Nezmenené súbory:** `database/*`, `App.js`, `main.js`, `index.html`, `GalleryPage.js` a všetky ostatné — v tejto session sa nedotkli.
+
+### 🟡 Otvorené úlohy z tejto session (pre ďalšiu session)
+
+1. Po nahradení `AtlasPage.js` a `Router.js` v repozitári naživo overiť: (a) `**text**`/`__text__`/`~~text~~`/`_text_` sa v sekcii Morfológia zobrazuje naformátované; (b) klik na kartu parazita zmení adresu na `#atlas/<id>`; (c) úprava kódu + reload Live Serverom ponechá otvorený ten istý detail na tej istej scroll pozícii.
+2. `GalleryPage.js` sa v tejto session nekontrolovala — ak by sa podobný vzor (`preventDefault()` bez aktualizácie hashu) vyskytoval aj tam, mal by rovnaký vedľajší efekt pri reloade. Nebolo predmetom zadania, netreba riešiť bez explicitnej žiadosti autorky.
+3. Zvážiť, či `history.pushState()` pri otvorení detailu má zmysel doplniť aj o listener na `popstate` (podpora natívneho tlačidla "Späť" v prehliadači) — nebolo súčasťou zadania, len námet, needs explicit approval.
+
+---
+
 🔥 0.37 Aktuálny stav — doplnené (2026‑09‑20, session: vyčistenie neplatných odkazov na fotky v images.json — "broken image" ikony)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII

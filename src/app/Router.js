@@ -18,6 +18,18 @@
  *    skutočne navigovali na inú stránku cez Router.navigate()) sa scroll
  *    naopak vynuluje na začiatok — to je bežné a očakávané správanie SPA
  *    (otvorenie iného parazita/inej stránky má začínať hore).
+ *
+ * POZNÁMKA (2026-09-26, história): v tejto session tu krátko existovala
+ * aj funkcia repairTruncatedHash() — obranná záplata pre teóriu, že Live
+ * Server pri reloade "odtŕha" ID parazita z hashu. Skutočná príčina
+ * nahláseného javu bola napokon iná: AtlasPage.bindCards() (klik na kartu
+ * v zozname) a tlačidlo "Späť na Atlas" volali preventDefault() a menili
+ * pohľad len cez JS, BEZ toho, aby vôbec kedy nastavili
+ * window.location.hash — takže žiadne skracovanie sa nedialo, hash tam
+ * jednoducho nikdy nebol. Opravené priamo v AtlasPage.js (pridaný
+ * history.pushState() pri oboch miestach), takže hash teraz vždy verne
+ * odráža otvorený pohľad a táto záplata už nie je potrebná — odstránená,
+ * aby nemýlila budúce session.
  ******************************************************************************/
 
 class Router {
