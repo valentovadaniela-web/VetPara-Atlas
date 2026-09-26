@@ -1728,7 +1728,7 @@ const AtlasPage = {
                     ${signs.map(sign => `
                         <div class="morph-list-item">
                             <span class="morph-checkmark" aria-hidden="true">✓</span>
-                            <span>${this.escapeHtml(sign)}</span>
+                            <span>${this.formatRichText(sign)}</span>
                         </div>
                     `).join("")}
 
@@ -1975,21 +1975,45 @@ const AtlasPage = {
 
     /**
      * Pre voľný text písaný autorkou (lifeCycle, pathology, notes,
-     * differentialDiagnosis, poznámky k hostiteľom...) — najprv bezpečne
-     * escapuje HTML, potom povolí jednoduché "markdown-like" značky:
-     *   \n        -> <br>            (nový riadok)
-     *   **text**  -> <strong>text</strong>  (tučné)
-     *   _text_    -> <em>text</em>          (kurzíva)
-     * Poradie replace() volaní je dôležité — escapeHtml musí byť prvý,
-     * \n pred ** alebo _ (aby sa nezamieňali so vzormi), ** pred _ (aby sa
-     * nekrížili).
+     * differentialDiagnosis, poznámky k hostiteľom, diagnosticSigns...) —
+     * najprv bezpečne escapuje HTML, potom povolí jednoduché "markdown-like"
+     * značky (ŤAHÁK — presne toto sa dá písať do textových polí v
+     * parasites.json / dog.migrated.json a v app sa to zobrazí naformátované):
+     *
+     *   \n         -> <br>                    (nový riadok)
+     *   **text**   -> <strong>text</strong>    (tučné)
+     *   __text__   -> <u>text</u>              (podčiarknuté)
+     *   _text_     -> <em>text</em>            (kurzíva)
+     *   ~~text~~   -> <del>text</del>          (prečiarknuté)
+     *   "text"     -> "text"                   (úvodzovky — netreba nič
+     *                 špeciálne, obyčajné úvodzovky sa zobrazia bez zmeny;
+     *                 pozor iba pri RUČNOM editovaní .json súboru — tam
+     *                 musí byť " zapísané ako \" (JSON escaping), inak sa
+     *                 pokazí JSON. Najjednoduchšie riešenie: v texte použiť
+     *                 „slovenské" úvodzovky namiesto rovných "", tie sa
+     *                 v JSON-e nemusia escapovať.)
+     *
+     * Poradie replace() volaní je dôležité — escapeHtml musí byť VŽDY prvý
+     * (bezpečnosť), \n pred značkami, ** pred __ pred _ (aby sa nekrížili —
+     * __text__ by inak čiastočne zhodil regex pre _text_) a ~~ môže byť
+     * kdekoľvek, keďže ~ sa nepoužíva v žiadnej inej značke.
+     *
+     * Toto je JEDINÁ funkcia, ktorá formátovanie rieši — používa ju
+     * detailField(), diagnosisListField(), hostNotesField() a
+     * morphologyCard() (OPRAVA 2026-09-26: predtým tam bol omylom
+     * escapeHtml() bez formátovania — pozri AI_STATUS.md). Ak sa v
+     * budúcnosti pridá nové textové pole do detailu parazita, treba ho
+     * vypisovať cez formatRichText(), nie cez escapeHtml(), aby formátovanie
+     * fungovalo konzistentne všade.
      */
     formatRichText(value) {
 
         return this.escapeHtml(value)
             .replace(/\n/g, "<br>")
             .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-            .replace(/_(.+?)_/g, "<em>$1</em>");
+            .replace(/__(.+?)__/g, "<u>$1</u>")
+            .replace(/_(.+?)_/g, "<em>$1</em>")
+            .replace(/~~(.+?)~~/g, "<del>$1</del>");
 
     }
 
