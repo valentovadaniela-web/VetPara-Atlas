@@ -851,77 +851,12 @@
     "dateAdded": "2026-08-29T11:47:04.763Z"
   },
   {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
+    "parasiteId": "citellina_alpina_egg",
+    "url": "/public/images/parasites/citellina_alpina_egg/citellina_alpina_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.527Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.538Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.548Z",
-    "isPrimary": true
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.561Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.576Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.592Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_08.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.607Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_09.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.622Z"
-  },
-  {
-    "parasiteId": "chorioptes_equi_adult",
-    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_10.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:21:35.633Z"
+    "dateAdded": "2026-08-29T11:47:04.763Z"
   },
   {
     "parasiteId": "cittotaenia_sp_egg",
@@ -1133,15 +1068,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:53:24.490Z"
-  },
-  {
-    "parasiteId": "cyclophyllidea_egg",
-    "url": "/public/images/parasites/cyclophyllidea_egg/cyclophyllidea_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:53:24.500Z"
+    "dateAdded": "2026-08-29T11:53:24.490Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "cyniclomyces_guttulatus_yeast",
@@ -3195,6 +3123,79 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:20:48.123Z"
+  },
+    {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.527Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.538Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.548Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.561Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.576Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_07.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.592Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_08.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.607Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_09.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.622Z"
+  },
+  {
+    "parasiteId": "chorioptes_equi_adult",
+    "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_10.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:21:35.633Z"
   },
   {
     "parasiteId": "ichthyophthirius_multifiliis_trophozoite",

@@ -2220,649 +2220,6 @@
     "images": []
   },
   {
-    "latinName": "Cestoda",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "neurčený rad",
-      "family": "neurčená čeľaď",
-      "genus": "neurčený rod",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Plazy"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 25,
-      "lengthMax": 50,
-      "widthMin": 20,
-      "widthMax": 40,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Sivastý",
-      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
-    },
-    "diagnosticSigns": [
-      "Vajíčko typu Cyclophyllidea s onkosférou obklopenou hruškovitým aparátom alebo radiálne pruhovanou embryofórou",
-      "v závislosti od čeľade."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu neurčený rod môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "cestoda_egg",
-    "images": []
-  },
-  {
-    "latinName": "Choanotaenia infundibulum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Dilepididae",
-      "genus": "Choanotaenia",
-      "species": "Choanotaenia infundibulum"
-    },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Sliepka"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 54,
-      "lengthMax": 54,
-      "widthMin": 47,
-      "widthMax": 47,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Hrubá, radiálne pruhovaná"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Choanotaenia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "Medzihostiteľ hmyz (napr. muchy, chrobáky, mravce).",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choanotaenia_infundibulum_egg",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria allogamae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria allogamae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Agamy"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý až oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve). Hostiteľ: agamy. Pozn.: pôvodná hodnota rozmerov v tabuľke zodpovedala všeobecnému (nešpecifikovanému) rozsahu zdieľanému s inými nesúvisiacimi rodmi (Atoxoplasma",
-      "Isospora sp.",
-      "Caryospora) - ide pravdepodobne o generický údaj",
-      "nie o hodnotu špecifickú pre tento druh; presnú publikovanú hodnotu sa nepodarilo dohľadať."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_allogamae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria bohemii",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria bohemii"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo melleri"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 24,
-      "lengthMax": 26,
-      "widthMin": 13,
-      "widthMax": 15,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_bohemii_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria brookesiae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria brookesiae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Brookesia decaryi"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 23,
-      "lengthMax": 27,
-      "widthMin": 13,
-      "widthMax": 16,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_brookesiae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria glawi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria glawi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Furcifer pardalis"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 26,
-      "lengthMax": 29.5,
-      "widthMin": 17,
-      "widthMax": 19,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_glawi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria hirbayah",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria hirbayah"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo calyptratus"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 25,
-      "lengthMax": 30,
-      "widthMin": 13.5,
-      "widthMax": 17.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_hirbayah_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria largeni",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria largeni"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo gracilis"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29.5,
-      "lengthMax": 34,
-      "widthMin": 18.5,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_largeni_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria pogonae",
-    "synonyms": [
-      "Eimeria pogonae"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria pogonae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Agama bradatá"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 15,
-      "lengthMax": 30,
-      "widthMin": 10,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest agám (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_pogonae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria tilburyi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria tilburyi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo jacksonii"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 26,
-      "lengthMax": 33,
-      "widthMin": 14,
-      "widthMax": 18,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_tilburyi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Chorioptes bovis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Psoroptidae",
-      "genus": "Chorioptes",
-      "species": "Chorioptes bovis"
-    },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 400,
-      "lengthMax": 600,
-      "widthMin": 400,
-      "widthMax": 600,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Krátke nečlánkované stopky s prísavkami na konci nôh (na rozdiel od dlhých pri Psoroptes)",
-      "krátke tupé (zaoblené) ústne ústroje."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Chorioptes môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Končatiny",
-    "id": "chorioptes_bovis_adult",
-    "images": []
-  },
-  {
-    "latinName": "Chorioptes equi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Psoroptidae",
-      "genus": "Chorioptes",
-      "species": "Chorioptes equi"
-    },
-    "hostGroups": [
-      "Koňovité"
-    ],
-    "hosts": [
-      "Kôň"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 300,
-      "lengthMax": 500,
-      "widthMin": 200,
-      "widthMax": 350,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Mäkký, s krátkymi končatinami"
-    },
-    "diagnosticSigns": [
-      "Krátke stopky s prísavkami",
-      "krátke tupé ústne ústroje - odlišuje ho od Psoroptes."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Chorioptes môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Končatiny",
-    "id": "chorioptes_equi_adult",
-    "images": []
-  },
-  {
-    "latinName": "Choriorhabditis gracilicauda",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Rhabditidae",
-      "genus": "Choriorhabditis",
-      "species": "Choriorhabditis gracilicauda"
-    },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Slimáky"
-    ],
-    "hostNotes": {},
-    "sample": "Pľúca",
-    "stage": "Dospelý jedinec",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 280,
-      "lengthMax": 1000,
-      "widthMin": 50,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vretenovitý",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "krátky dvojbulbový pažerák"
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Choriorhabditis môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "Voľne žijúci rabditoidný nematód; bežný obyvateľ pôdy a rozkladajúcej sa organickej hmoty, príležitostne nachádzaný vo fekálnych vzorkách ako kontaminant.",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "rhabditis_gracilicaudata_adult",
-    "images": []
-  },
-  {
     "latinName": "Citellina alpina",
     "synonyms": [],
     "slovakName": "",
@@ -2896,18 +2253,14 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Vajíčka sú asymetrické",
-      "z jednej strany sploštené (v tvare písmena D alebo oválne)",
-      "s hrubou čírou stenou a bez pólových zátok"
+      "Vajíčka sú asymetrické, z jednej strany sploštené (v tvare písmena D alebo oválne)"
     ],
     "differentialDiagnosis": [
-      "V truse a čreve svišťov horských je potrebné Citellina alpina odlíšiť od ďalších dvoch najbežnejších červov:Ascaris laevis: Veľká",
-      "masívna hlísta tenkého čreva. Jej vajíčka sú typicky guľovité s hrubým",
-      "hrbolatým povrchom. Na rozdiel od Citellina pred zimou dospelé červy črevo opúšťajú alebo ich larvy migrujú do pečene hostiteľa (diapauza).Ctenotaenia marmotae (pásomnica): Dlhá",
-      "článkovaná pásomnica. Jej vajíčka majú nepravidelný (často trojhranný) tvar s aparátom pyriformis vo vnútri. Pred zimou dospelé pásomnice v čreve svišťa odumierajú."
+      "Ascaris laevis: vajíčka sú typicky guľovité s hrubým, hrbolatým povrchom. Na rozdiel od Citellina pred zimou dospelé červy črevo opúšťajú alebo ich larvy migrujú do pečene hostiteľa (diapauza).",
+      "Ctenotaenia marmotae: vajíčka majú nepravidelný (často trojhranný) tvar s pyriformným aparátom vo vnútri. Pred zimou dospelé pásomnice v čreve svišťa odumierajú."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny). Hostiteľ sa nakazí prehltnutím vajíčok z kontaminovaného prostredia v nore alebo na pastve.Najzaujímavejším aspektom biológie Citellina alpina je jej úspešná stratégia prežitia zimy:Počas zimného spánku (hibernácie) svišťa dochádza k výraznej atrofii (zmenšeniu a útlmu funkcie) jeho čreva.Zatiaľ čo iné parazity svišťov musia črevo pred zimou opustiť (napr. pásomnice) alebo migrovať do iných tkanív, Citellina alpina dokáže zostať aktívna priamo v čreve svišťa počas celej hibernácie.Tento vzácny fenomén hostiteľsko-parazitárneho vzťahu vedci označujú ako „ko-hibernácia“ (co-hibernation). Parazit dokonale toleruje extréme zníženie telesnej teploty a metabolizmu",
-    "pathology": "Lokalizácia: Dospelé jedince parazitujú v hrubom čreve (colon) a slepom čreve hostiteľa.Prejav: Vo väčšine prípadov je patogenita nízka. Pri bežnej intenzite nákazy žije parazit s hostiteľom v rovnováhe a nespôsobuje vážnejšie klinické príznaky.Masívna infekcia: Pri extrémnom premnožení (najmä na jar, kedy je organizmus svišťa po hibernácii oslabený) môže vyvolať lokálny katarálny zápal čreva (enteritídu), mierne poruchy trávenia a svrbenie v perianálnej oblasti pri kladení vajíčok.",
+    "pathology": "Lokalizácia: Dospelé jedince parazitujú v hrubom čreve (colon) a slepom čreve hostiteľa.\n Prejav: Vo väčšine prípadov je patogenita nízka. Pri bežnej intenzite nákazy žije parazit s hostiteľom v rovnováhe a nespôsobuje vážnejšie klinické príznaky.\n Masívna infekcia: Pri extrémnom premnožení (najmä na jar, kedy je organizmus svišťa po hibernácii oslabený) môže vyvolať lokálny katarálny zápal čreva (enteritídu), mierne poruchy trávenia a svrbenie v perianálnej oblasti pri kladení vajíčok.",
     "zoonosis": false,
     "notes": "",
     "id": "citellina_alpina_egg",
@@ -2932,7 +2285,7 @@
       "Králik"
     ],
     "hostNotes": {
-      "Králik": "TYpický pre králiky divé. U domácich  králikov sa prakticky nevyskytuje."
+      "Králik": "Typický pre králiky divé. U domácich králikov sa prakticky nevyskytuje."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -4061,39 +3414,42 @@
       "order": "Cyclophyllidea",
       "family": "neurčená čeľaď",
       "genus": "neurčený rod",
-      "species": "Cyclophyllidea"
+      "species": "neurčené do druhu"
     },
     "hostGroups": [],
     "hosts": [
-      "Krkavec"
+      "Suchozemské korytnačky",
+      "Vodné korytnačky",
+      "Hady",
+      "Jaštery"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Suchozemské korytnačky":"U chovaných suchozemských korytnačiek (Testudo) sú cestódy vo všeobecnosti pomerne zriedkavé (dominujú skôr nematódy – ascaridózy)"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 25,
-      "lengthMax": 50,
+      "lengthMin": 20,
+      "lengthMax": 60,
       "widthMin": 20,
-      "widthMax": 40,
+      "widthMax": 60,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
       "colour": "Sivastý",
-      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+      "shell": "Dvojvrstvová"
     },
     "diagnosticSigns": [
-      "Vajíčko s onkosférou (6 háčikov)",
-      "obklopenou hruškovitým aparátom alebo embryofórou podľa čeľade."
+      "Prítomnosť hexakantného embrya (onkosféry) – 6 háčikov usporiadaných v 3 pároch, viditeľných najmä pri väčšom zväčšení.",
+      "Embryo je obalené embryoforom (vnútorná membrána), okolo neho je tenší vonkajší obal.",
+      "Tvar zvyčajne okrúhly až mierne oválny",
+      "Vajíčka uzavreté v kapsulovitých obaloch."
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu neurčený rod môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [],
+    "lifeCycle": "Ak ide o čeľaď Nematotaeniidae (často u jašterov) – nepriamy cyklus s jedným medzihostiteľom, zvyčajne pôdny článkonožec (chrobáky a ich larvy, mnohonôžky, roztoče a pod.). Plaz (definitívny hostiteľ) sa nakazí zožratím infikovaného bezstavovca s cysticerkoidom, dospelec sa vyvinie priamo v čreve a vylučuje vajíčka/kapsuly trusom.",
+    "pathology": "Pri nízkej intenzite zvyčajne subklinický priebeh. Pri vyššej intenzite: enteritída, malabsorpcia, chudnutie, hnačky, spomalený rast u juvenilných jedincov, mechanické poškodenie sliznice v mieste úponu skolexu, zriedkavo črevná obštrukcia pri masívnej infekcii. Zhoršuje sa pri strese, nesprávnom chove, imunosupresii",
     "zoonosis": false,
     "notes": "",
     "id": "cyclophyllidea_egg",
@@ -15831,6 +15187,600 @@
     "zoonosis": false,
     "notes": "",
     "id": "hystrichis_tricolor_egg",
+    "images": []
+  },
+    {
+    "latinName": "Choanotaenia infundibulum",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Cyclophyllidea",
+      "family": "Dilepididae",
+      "genus": "Choanotaenia",
+      "species": "Choanotaenia infundibulum"
+    },
+    "hostGroups": [
+      "Hydina"
+    ],
+    "hosts": [
+      "Sliepka"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Cestoda",
+    "micrometry": {
+      "lengthMin": 54,
+      "lengthMax": 54,
+      "widthMin": 47,
+      "widthMax": 47,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Hrubá, radiálne pruhovaná"
+    },
+    "diagnosticSigns": [
+      "Identifikácia podľa veľkosti",
+      "morfológie predného a zadného konca",
+      "pažeráka",
+      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Choanotaenia môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "Medzihostiteľ hmyz (napr. muchy, chrobáky, mravce).",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choanotaenia_infundibulum_egg",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria allogamae",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria allogamae"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Agamy"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 10,
+      "lengthMax": 40,
+      "widthMin": 10,
+      "widthMax": 35,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý až oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve). Hostiteľ: agamy. Pozn.: pôvodná hodnota rozmerov v tabuľke zodpovedala všeobecnému (nešpecifikovanému) rozsahu zdieľanému s inými nesúvisiacimi rodmi (Atoxoplasma",
+      "Isospora sp.",
+      "Caryospora) - ide pravdepodobne o generický údaj",
+      "nie o hodnotu špecifickú pre tento druh; presnú publikovanú hodnotu sa nepodarilo dohľadať."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_allogamae_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria bohemii",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria bohemii"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Chamaeleo melleri"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 24,
+      "lengthMax": 26,
+      "widthMin": 13,
+      "widthMax": 15,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_bohemii_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria brookesiae",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria brookesiae"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Brookesia decaryi"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 23,
+      "lengthMax": 27,
+      "widthMin": 13,
+      "widthMax": 16,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_brookesiae_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria glawi",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria glawi"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Furcifer pardalis"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 26,
+      "lengthMax": 29.5,
+      "widthMin": 17,
+      "widthMax": 19,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_glawi_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria hirbayah",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria hirbayah"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Chamaeleo calyptratus"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 25,
+      "lengthMax": 30,
+      "widthMin": 13.5,
+      "widthMax": 17.5,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_hirbayah_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria largeni",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria largeni"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Chamaeleo gracilis"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 29.5,
+      "lengthMax": 34,
+      "widthMin": 18.5,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_largeni_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria pogonae",
+    "synonyms": [
+      "Eimeria pogonae"
+    ],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria pogonae"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Agama bradatá"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 15,
+      "lengthMax": 30,
+      "widthMin": 10,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest agám (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "eimeria_pogonae_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Choleoeimeria tilburyi",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Choleoeimeria",
+      "species": "Choleoeimeria tilburyi"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Chamaeleo jacksonii"
+    ],
+    "hostNotes": {},
+    "sample": "Žlčník",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 26,
+      "lengthMax": 33,
+      "widthMin": 14,
+      "widthMax": 18,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
+      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
+      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "choleoeimeria_tilburyi_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Chorioptes bovis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Psoroptidae",
+      "genus": "Chorioptes",
+      "species": "Chorioptes bovis"
+    },
+    "hostGroups": [
+      "Domáce prežúvavce"
+    ],
+    "hosts": [
+      "Hovädzí dobytok"
+    ],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "micrometry": {
+      "lengthMin": 400,
+      "lengthMax": 600,
+      "widthMin": 400,
+      "widthMax": 600,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Nepravidelný",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Krátke nečlánkované stopky s prísavkami na konci nôh (na rozdiel od dlhých pri Psoroptes)",
+      "krátke tupé (zaoblené) ústne ústroje."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Chorioptes môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "Končatiny",
+    "id": "chorioptes_bovis_adult",
+    "images": []
+  },
+  {
+    "latinName": "Chorioptes equi",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Sarcoptiformes",
+      "family": "Psoroptidae",
+      "genus": "Chorioptes",
+      "species": "Chorioptes equi"
+    },
+    "hostGroups": [
+      "Koňovité"
+    ],
+    "hosts": [
+      "Kôň"
+    ],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "micrometry": {
+      "lengthMin": 300,
+      "lengthMax": 500,
+      "widthMin": 200,
+      "widthMax": 350,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Mäkký, s krátkymi končatinami"
+    },
+    "diagnosticSigns": [
+      "Krátke stopky s prísavkami",
+      "krátke tupé ústne ústroje - odlišuje ho od Psoroptes."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Chorioptes môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "Končatiny",
+    "id": "chorioptes_equi_adult",
+    "images": []
+  },
+  {
+    "latinName": "Choriorhabditis gracilicauda",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Rhabditida",
+      "family": "Rhabditidae",
+      "genus": "Choriorhabditis",
+      "species": "Choriorhabditis gracilicauda"
+    },
+    "hostGroups": [
+      "Mäkkýše"
+    ],
+    "hosts": [
+      "Slimáky"
+    ],
+    "hostNotes": {},
+    "sample": "Pľúca",
+    "stage": "Dospelý jedinec",
+    "group": "Nematoda",
+    "micrometry": {
+      "lengthMin": 280,
+      "lengthMax": 1000,
+      "widthMin": 50,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vretenovitý",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "krátky dvojbulbový pažerák"
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Choriorhabditis môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "Voľne žijúci rabditoidný nematód; bežný obyvateľ pôdy a rozkladajúcej sa organickej hmoty, príležitostne nachádzaný vo fekálnych vzorkách ako kontaminant.",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "rhabditis_gracilicaudata_adult",
     "images": []
   },
   {
