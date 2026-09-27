@@ -2118,116 +2118,9 @@
     "images": []
   },
   {
-    "latinName": "Cathaemasia hians",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Echinostomatidae",
-      "genus": "Cathaemasia",
-      "species": "Cathaemasia hians"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Bocian čierny",
-      "Orol"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 98,
-      "lengthMax": 105,
-      "widthMin": 53,
-      "widthMax": 60,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká stena",
-      "Na jednom z pólov (koncov) sa nachádza typické viečko (operculum)",
-      "ktoré slúži na uvoľnenie larvy vo vode.Vnútorný obsah: Čerstvo vylúčené vajíčka už v maternici červov obsahujú plne vyvinuté",
-      "pohyblivé miracídium (larvu) s dobre viditeľnými očnými škvrnami."
-    ],
-    "differentialDiagnosis": [
-      "V koprologiologickom náleze trusu bocianov je nutné odlíšiť vajíčka Cathaemasia hians najmä od týchto dvoch motolíc:Cathaemasia longivitellata (motolica z bociana bieleho): Vajíčka sú morfologicky aj rozmerovo takmer identické. Rozlíšenie druhu je v truse nemožné; vodítkom je primárne hostiteľ (bocian čierny vs. biely)",
-      "prípadne pitva a molekulárna analýza (PCR) dospelých červov.Chaunocephalus ferox: Veľmi rozšírená črevná motolica bocianov. Jej vajíčka sú výrazne väčšie",
-      "dosahujú dĺžku spravidla nad 110 – 120 μm a šírku nad 70 μm. Sú tiež svetlejšie a na rozdiel od Cathaemasia sa z dospelého vtáka uvoľňujú oveľa častejšie",
-      "keďže dospelé červy žijú priamo v čreve."
-    ],
-    "lifeCycle": "Definitívny hostiteľ (bocian) vylučuje vajíčka trusom do vody.Vo vode sa z viečka (opercula) vyliahne miracídium a napadne 1. medzihostiteľa (vodného slimáka Planorbis planorbis).V slimákovi sa vyvinú pohyblivé cerkárie, ktoré ho opustia.Cerkárie preniknú do 2. medzihostiteľa (žubrienky žiab, drobné ryby), kde sa zapuzdria na metacerkárie.Bocian zožerie nakazenú žubrienku/rybu, parazit migruje do jeho hltana a cyklus sa uzavrie.",
-    "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "cathaemasia_hians_egg",
-    "images": []
-  },
-  {
-    "latinName": "Cathaemasia longivitellata",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Echinostomatidae",
-      "genus": "Cathaemasia",
-      "species": "Cathaemasia longivitellata"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Bocian biely"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 98,
-      "lengthMax": 105,
-      "widthMin": 53,
-      "widthMax": 60,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká stena",
-      "Na jednom z pólov (koncov) sa nachádza typické viečko (operculum)",
-      "ktoré slúži na uvoľnenie larvy vo vode.Vnútorný obsah: Čerstvo vylúčené vajíčka už v maternici červov obsahujú plne vyvinuté",
-      "pohyblivé miracídium (larvu) s dobre viditeľnými očnými škvrnami."
-    ],
-    "differentialDiagnosis": [
-      "V koprologiologickom náleze trusu bocianov je nutné odlíšiť vajíčka Cathaemasia longivitellata  najmä od týchto dvoch motolíc:Cathaemasia hians (motolica z bociana čierneho): Vajíčka sú morfologicky aj rozmerovo takmer identické. Rozlíšenie druhu je v truse nemožné; vodítkom je primárne hostiteľ (bocian čierny vs. biely)",
-      "prípadne pitva a molekulárna analýza (PCR) dospelých červov.Chaunocephalus ferox: Veľmi rozšírená črevná motolica bocianov. Jej vajíčka sú výrazne väčšie",
-      "dosahujú dĺžku spravidla nad 110 – 120 μm a šírku nad 70 μm. Sú tiež svetlejšie a na rozdiel od Cathaemasia sa z dospelého vtáka uvoľňujú oveľa častejšie",
-      "keďže dospelé červy žijú priamo v čreve."
-    ],
-    "lifeCycle": "Definitívny hostiteľ (bocian) vylučuje vajíčka trusom do vody.Vo vode sa z viečka (opercula) vyliahne miracídium a napadne 1. medzihostiteľa (vodného slimáka Planorbis planorbis).V slimákovi sa vyvinú pohyblivé cerkárie, ktoré ho opustia.Cerkárie preniknú do 2. medzihostiteľa (žubrienky žiab, drobné ryby), kde sa zapuzdria na metacerkárie.Bocian zožerie nakazenú žubrienku/rybu, parazit migruje do jeho hltana a cyklus sa uzavrie.",
-    "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "cathaemasia_longivitellata_egg",
-    "images": []
-  },
-  {
     "latinName": "Cephenemyia auribarbis",
-    "synonyms": [],
-    "slovakName": "Strečok červenohlavý",
+    "synonyms": ["Oestrus auribarbis"],
+    "slovakName": "Strečok nosový jelenej zveri",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -2247,55 +2140,39 @@
     "stage": "Larva",
     "group": "Insecta",
     "micrometry": {
-      "lengthMin": 20000,
-      "lengthMax": 30000,
+      "lengthMin": 25000,
+      "lengthMax": 36000,
       "widthMin": 8000,
       "widthMax": 12000,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
+      "colour": "Žltohnedý",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "ývoj larvy prebieha v troch štádiách (instaroch)",
-      "pričom ich veľkosť sa počas zimovania v hostiteľovi drasticky mení:1. instar (L1): Čerstvo narodené larvy.Minimálna dĺžka: 1",
-      "5 mmMaximálna dĺžka: 3",
-      "0 mm2. instar (L2): Prechodné štádium rastu v nosových dutinách.Minimálna dĺžka: 4",
-      "0 mmMaximálna dĺžka: 14",
-      "0 mm3. instar (L3): Finálne",
-      "plne vyvinuté robustné štádium pred opustením hostiteľa.Minimálna dĺžka: 25",
-      "0 mmMaximálna dĺžka: 36",
-      "0 mm (výnimočne až 40",
-      "0 mm)Šírka (L3): 6",
-      "0 mm až 9",
-      "0 mm v najširšom (stredovom) segmente. \r\nTvar tela: Larvy L3 sú červovité",
-      "masívne",
-      "segmentované",
-      "svetložltej až sivohnedej farby (pred zakuklením tmavnú).Kutikulárne tŕne: Povrch segmentov je pokrytý radmi malých",
-      "dozadu nasmerovaných tmavých tŕňov (spinae)",
-      "ktoré im pomáhajú fixovať sa na sliznici.Zadné dýchacie otvory (Spiracula): Na poslednom segmente tela sa nachádzajú stigmatické platničky v tvare polmesiaca. Pre rod Cephenemyia je typické",
-      "dass tŕne obklopujú tieto platničky takmer z každej strany.Ústne háčiky: Na prednom konci majú vyvinutý pár silných",
-      "čiernych sklerotizovaných háčikov na zoškrabovanie tkaniva a prichytávanie."
+      "Larvy tretieho instaru (L3) merajú približne 25 až 35 mm, v plnej zrelosti dosahujú v priemere až 29.4 mm dĺžky a okolo 7.5 mm šírky.",
+      "Farba hnedastá až tmavohnedá – s dozrievaním larvy sa v kutikule zvyšuje množstvo melanínu, čo spôsobuje postupné stmavnutie povrchu (u niektorých terénnych pozorovaní príbuzných druhov rodu sa najstaršie larvy opisujú ako kanárikovo žlté s tmavými pásmi štetín, kým najmladšie štádiá v tej istej dutine sú belavé – farba teda v rámci hostiteľa koreluje priamo s vekom larvy)",
+      "3 až 8 nepravidelných radov tmavohnedých kutikulárnych tŕňov",
+      "Báza tykadlových lalokov 0.19 mm"
     ],
     "differentialDiagnosis": [
-      "U jelenej zveri na Slovensku dochádza k častým duálnym infekciám s iným nosohltanovým parazitom:Pharyngomyia picta (strečok jelenej zveri): Najčastejší konkurent u jelenej zveri v Európe. Larvy L3 P. picta sú o niečo menšie a podstatne svetlejšie. Hlavným znakom je usporiadanie tŕňov na brušnej a chrbtovej strane",
-      "ktoré sú u P. picta menej husté na zadných segmentoch.Cephenemyia stimulator (strečok hltanový): Parazituje výhradne u srnčej zveri (Capreolus capreolus). Larva L3 dosahuje maximálnu veľkosť len okolo 20 – 25 mm a vykazuje odlišné usporiadanie tŕňov okolo zadných stigiem.Hypoderma diana (strečok podkožný): Larvy tohto druhu žijú pod kožou na chrbte dravcov",
-      "nie v nosohltane. Sú širšie",
-      "sudovitého tvaru a nemajú ústne háčiky."
+      "U jelenej zveri na Slovensku dochádza k častým duálnym infekciám s iným nosohltanovým parazitom _Pharyngomyia picta_ (strečok jelenej zveri), ktorého larvy L3 sú o niečo menšie a podstatne svetlejšie. Hlavným znakom je usporiadanie tŕňov na brušnej a chrbtovej strane, ktoré sú u P. picta menej husté na zadných segmentoch.",
+      "Cephenemyia stimulator (strečok srnčí): Parazituje výhradne u srnčej zveri (Capreolus capreolus). Larva L3 dosahuje maximálnu veľkosť len okolo 20 – 25 mm a zadné segmenty (X. a XI.) tela majú bez tŕňov.",
+      "Hypoderma diana a Hypoderma actaeon (strečok podkožný): Iná lokalizácia (podkožie chrbta/krku, nie nosohltan). Sú širšie, sudovitého tvaru a nemajú ústne háčiky."
     ],
-    "lifeCycle": "Cyklus je priamy s voľne žijúcim štádiom imága v prostredí:Viviparia (Larviparia): Dospelá samička (veľkosť 16-18 mm, imituje čmeliaka) nekladie vajíčka, ale za letu vstrekuje živé larvy L1 priamo do nozdier stojacej alebo bežiacej jelenej zveri.Migrácia: Larvy L1 putujú cez nosovú dutinu hlbšie. V zime sa ich vývoj spomaľuje (diapauza).Dozrievanie (Jar): Na jar larvy L2 a L3 migrujú do hltana, hltanových vačkov (bursae pharyngeae) a ku koreňu jazyka, kde dokončujú masívny rast.Zakuklenie: Koncom jari (máj/jún) dospelé L3 dráždia sliznicu, zver ich vykašle alebo vyfrkne von. Larvy padajú na pôdu, zavrtávajú sa a kuklia sa (pupa). Po 2–3 týždňoch sa liahu dospelé muchy.",
-    "pathology": "Prítomnosť desiatok veľkých lariev v úzkom priestore nosohltana vyvoláva mechanické a chemické poškodenie slizníc:Katarálna a purulentná synusitída: Larvy háčikmi neustále traumatizujú sliznicu, čo vedie k masívnej produkcii hlienu a hnisu.Mechanická obštrukcia: Upchatie dýchacích ciest spôsobuje sťažené dýchanie (dyspnoe), zvieratá často kašlú, frkajú, kývajú hlavou a utierajú si nos o stromy.Neurologické symptómy a úhyn: Ak larvy preniknú cez čuchovú kosť (lamina cribrosa) blízko k mozgovým plenám, spôsobujú hnisavú meningitídu, stratu plachosti, nekoordinované pohyby a smrť. Zoslabnuté kusy tiež ľahšie podliehajú predátorom (vlkom) alebo zimnému chradnutiu.",
+    "lifeCycle": "Cyklus je priamy s voľne žijúcim štádiom imága v prostredí:\n Viviparia (Larviparia): Dospelá samička (veľkosť 16-18 mm, imituje čmeliaka) nekladie vajíčka, ale za letu vstrekuje živé larvy L1 priamo do nozdier stojacej alebo bežiacej jelenej zveri.\n Migrácia: Larvy L1 putujú cez nosovú dutinu hlbšie. V zime sa ich vývoj spomaľuje (diapauza).\n Dozrievanie (Jar): Na jar larvy L2 a L3 migrujú do hltana, hltanových vačkov (bursae pharyngeae) a ku koreňu jazyka, kde dokončujú masívny rast.\n Zakuklenie: Koncom jari (máj/jún) dospelé L3 dráždia sliznicu, zver ich vykašle alebo vyfrkne von. Larvy padajú na pôdu, zavrtávajú sa a kuklia sa (pupa). Po 2–3 týždňoch sa liahu dospelé muchy.",
+    "pathology": "Prítomnosť lariev vyvoláva závažnú katarálnu až hnisavú rinitídu, sinusitídu, dyspnoe, sťažené prehĺtanie a celkové zníženie telesnej kondície hostiteľa, najmä u mláďat a subadultných jedincov.",
     "zoonosis": false,
-    "notes": "Na našom území je menej početný a vzácnejší ako jeho príbuzný Cephenemyia stimulator (strečok hltanový), ktorý bežne a masívne napáda srnčiu zver",
-    "id": "cephemomyia_rufibarbis_larva",
+    "notes": "Na našom území je menej početný a vzácnejší ako jeho príbuzný Cephenemyia stimulator (strečok srnčí), ktorý bežne a masívne napáda srnčiu zver",
+    "id": "cephenemyia_auribarbis_larva",
     "images": []
   },
   {
     "latinName": "Cephenemyia stimulator",
     "synonyms": [],
-    "slovakName": "Strečok hltanový",
+    "slovakName": "Strečok srnčí",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -2314,7 +2191,7 @@
     "stage": "Larva",
     "group": "Insecta",
     "micrometry": {
-      "lengthMin": 20000,
+      "lengthMin": 18500,
       "lengthMax": 30000,
       "widthMin": 8000,
       "widthMax": 12000,
@@ -2322,23 +2199,24 @@
     },
     "morphology": {
       "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
+      "colour": "Žltobiely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Rozmery lariev:L1: 1.0 – 2.0 mmL2: 3.5 – 13.0 mmL3: 18.0 – 25.0 mm (šírka 5.0 – 7.0 mm) – ide o menší druh v porovnaní s parazitmi jelenov.Diagnostické znaky a morfológia: Plne vyvinutá larva L3 je vretenovitá",
-      "tmavožltá až svetlohnedá. Na prednom konci nesie silné ústne háčiky. Jej kľúčovým morfologickým znakom je",
-      "že zadné dýchacie platničky (stigmy) sú husto dookola lemované a obklopené drobnými",
-      "tmavými kutikulárnymi tŕňmi."
+      "Larvy tretieho instaru (L3) merajú približne 15 až 20 mm, v plnej zrelosti dosahujú v priemere až 29.4 mm dĺžky a okolo 7.5 mm šírky.",
+      "Farba žltkastá, ale s dozrievaním pribúda melanín v kutikule aj v tŕňoch → postupné stmavnutie povrchu, tmavé škvrny najmä na poslednom segmente.",
+      "5–8 radov tmavohnedých kutikulárnych tŕňov(segmenty III–XI), segmenty X–XI bez tŕňov alebo max. 4 rady"
     ],
     "differentialDiagnosis": [
-      "Diferenciálna diagnostika: Hlavným vodítkom je hostiteľská špecifickosť – parazituje výhradne u srnčej zveri (Capreolus capreolus). Od dvoch predchádzajúcich druhov z jelenov sa líši výrazne menšou konečnou veľkosťou larvy L3 (spravidla nepresiahne 25 mm)."
+      "Pharyngomyia picta – ďalší nosohltanový parazit jeleňovitých, na Slovensku sa však vyskytuje najmä u jelenej zveri; pri prípadnej koincidencii u srnčej zveri sa líši menšími a svetlejšími L3 s riedšim usporiadaním tŕňov na zadných segmentoch.",
+      "Cephenemyia auribarbis – strečky jelenej zveri; parazitujú inú hostiteľskú zver, ich L3 sú výrazne väčšie (bežne cez 25–30 mm) a tmavšie; krížová infestácia srnčej zveri je vzácna, keďže ide o hostiteľsky špecifické druhy.",
+      "Hypoderma diana / Hypoderma actaeon (strečky podkožné) – odlišná lokalizácia (podkožie chrbta a krku, nie nosohltan), larvy sú sudovité, širšie, bez ústnych háčikov!"
     ],
     "lifeCycle": "Životný cyklus: Samička vstrekuje živé larvy L1 za letu do nosových otvorov srnčej zveri. Larvy L1 a L2 prezimujú v nosových dutinách. Na jar (marec – máj) sa sťahujú ku koreňu jazyka a do hltana, kde rýchlo dospievajú do štádia L3. Srny ich následne vykašliavajú do prostredia, kde sa v pôde odohráva zakuklenie a metamorfóza na dospelú muchu.",
     "pathology": "U srnčej zveri je patogenita extrémne vysoká, pretože hltanový priestor srny je anatomicky malý. Spôsobuje mechanickú asfixiu (dusenie), hnisavé zápaly a upchatie dýchacích ciest. Zver je nepokojná, stráca kondíciu a pri masívnom napadnutí (desiatky lariev v hltane) dochádza k vysokej mortalite srnčiat a mladých jedincov na jar.",
     "zoonosis": false,
     "notes": "Je najbežnejším nosohltanovým strečkom na Slovensku, pričom je ekologicky a hostiteľsky prísne špecializovaný.",
-    "id": "cephemomyia_stimulator_larva",
+    "id": "cephenemyia_stimulator_larva",
     "images": []
   },
   {
@@ -2388,58 +2266,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "cestoda_egg",
-    "images": []
-  },
-  {
-    "latinName": "Chaunocephalus ferox",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Echinostomatidae",
-      "genus": "Cathaemasia",
-      "species": "Cathaemasia hians"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Bocian čierny",
-      "Bocian biely"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 110,
-      "lengthMax": 120,
-      "widthMin": 70,
-      "widthMax": 80,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Svetložltý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "tenká stena",
-      "Na jednom z pólov (koncov) sa nachádza typické viečko (operculum)",
-      "ktoré slúži na uvoľnenie larvy vo vode.Vnútorný obsah: Čerstvo vylúčené vajíčka už v maternici červov obsahujú plne vyvinuté",
-      "pohyblivé miracídium (larvu) s dobre viditeľnými očnými škvrnami."
-    ],
-    "differentialDiagnosis": [
-      "V koprologiologickom náleze trusu bocianov je nutné odlíšiť vajíčka Chaunocephalus ferox najmä od týchto dvoch motolíc:Cathaemasia longivitellata (motolica z bociana bieleho) a Cathaemasia hians (motolica z bociana čierneho): ich vajíčka sú výrazne menšie",
-      "tmavšie."
-    ],
-    "lifeCycle": "Životný cyklus je nepriamy (heteroxénny), viazaný na sladkovodné biotopy a zahŕňa dvoch medzihostiteľov:Uvoľnenie vajíčok: Dospelé motolice produkujú vajíčka, ktoré odchádzajú s trusom bociana do vody.Prvý medzihostiteľ (Ulitníky): Vo vode sa z vajíčka vyliahne larva (miracídium), ktorá aktívne vyhľadá a prenikne do vodného slimáka (napr. z čeľade Planorbidae alebo Lymnaeidae). V slimákovi parazit prechádza štádiami spórocysty, redie a mení sa na pohyblivé cerkárie.Druhý medzihostiteľ (Obojživelníky/Ryby): Cerkárie opúšťajú slimáka a plávajú vo vode. Preniknú do žubrienok, žiab alebo drobných sladkovodných rýb, kde sa zapuzdria do invázneho štádia – metacerkárie.Definitívny hostiteľ (Bocian): Bocian sa nakazí skonzumovaním infikovaných žiab alebo rýb. V čreve dravca sa larva uvoľní, prichytí sa na sliznicu a dospieva.",
-    "pathology": "Na rozdiel od Cathaemasia hians, ktorá žije v hltane, tento parazit preniká hlboko do steny čreva. Chaunocephalus ferox patrí medzi najnebezpečnejšie červy u bocianov a spôsobuje závažné, často smrteľné ochorenie (chaunocefalózu).Tvorba kryptových granulómov: Motolica sa neprichytáva len na povrch sliznice, ale zavrtáva sa hlboko do steny tenkého a hrubého čreva (submukózy). Okolo parazita sa vytvára hrubostenná kapsula – granulóm alebo krypta.Makroskopické zmeny: Pri pohľade na črevo zvonku (zo strany serózy) sú viditeľné veľké, tvrdé, uzlovité útvary (hrbolčeky) s priemerom až niekoľko milimetrov.Perforácia čreva: Ak je infekcia masívna, stena čreva sa v mieste granulómov extrémne oslabí, čo môže viesť k jej prederaveniu (perforácii). Obsah čreva následne vytečie do brušnej dutiny a vták hynie na ťažkú peritonitídu (zápal pobrušnice).Klinické príznaky: Nakazené vtáky trpia hemoragickou (krvavou) enteritídou, majú hnačky, odmietajú potravu, upadajú do apatie a rapídne chudnú (kachexia). Masívne hynú najmä mláďatá bocianov na hniezdach, pre ktoré je táto motolica kritickým rizikom.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "chaunocephalus_ferox_egg_1",
     "images": []
   },
   {
@@ -2493,9 +2319,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "choanotaenia_infundibulum_egg",
-    "images": [
-      "/public/images/parasites/choanotaenia_infundibulum_egg/choanotaenia_infundibulum_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Choleoeimeria allogamae",
@@ -7181,6 +7005,53 @@
     "zoonosis": false,
     "notes": "Má viečko",
     "id": "echinostoma_sp_egg",
+    "images": []
+  },
+    {
+    "latinName": "Echinostomatidae",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Echinostomatidae",
+      "genus": "neurčený rod",
+      "species": "neurčené do druhu"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Bocian čierny",
+      "Bocian biely"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Trematoda",
+    "micrometry": {
+      "lengthMin": 87,
+      "lengthMax": 107,
+      "widthMin": 45.8,
+      "widthMax": 52.8,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až eliptický",
+      "colour": "Žltohnedý",
+      "shell": "Dvojvrstvová, s viečkom"
+    },
+    "diagnosticSigns": [
+      "Operculum na jednom póle vajíčka"
+    ],
+    "differentialDiagnosis": [
+      "V rámci čeľade: Cathaemasia hians, Cathaemasia longivitellata a Chaunocephalus ferox - neodlíšiteľné."
+    ],
+    "lifeCycle": "Definitívny hostiteľ (bocian) vylučuje vajíčka trusom do vody.Vo vode sa z viečka (opercula) vyliahne miracídium a napadne 1. medzihostiteľa (vodného slimáka Planorbis planorbis).V slimákovi sa vyvinú pohyblivé cerkárie, ktoré ho opustia.Cerkárie preniknú do 2. medzihostiteľa (žubrienky žiab, drobné ryby), kde sa zapuzdria na metacerkárie.Bocian zožerie nakazenú žubrienku/rybu, parazit migruje do jeho hltana a cyklus sa uzavrie.",
+    "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
+    "zoonosis": false,
+    "notes": "V rámci čeľade sú vajíčka Cathaemasia hians, Cathaemasia longivitellata a Chaunocephalus ferox - neodlíšiteľné, preto v protokole uvádzať len ako čeľaď Echinostomatidae",
+    "id": "echinostomatidae_egg",
     "images": []
   },
   {
@@ -14201,7 +14072,7 @@
     "synonyms": [
       "Gastrophilus intestinalis; Oestrus intestinalis"
     ],
-    "slovakName": "",
+    "slovakName": "Strečok konský",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -14247,7 +14118,7 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "Dvojitý rad ostňov",
-    "id": "gastrophilus_intestinalis_larva",
+    "id": "gasterophilus_intestinalis_larva",
     "images": []
   },
   {
@@ -18751,7 +18622,7 @@
   {
     "latinName": "Pharyngomyia picta",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Strečok sivočierny",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
