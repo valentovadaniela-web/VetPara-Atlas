@@ -2500,9 +2500,9 @@
     "stage": "Larva",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 265,
-      "lengthMax": 330,
-      "widthMin": 20,
+      "lengthMin": 250,
+      "lengthMax": 310,
+      "widthMin": 12,
       "widthMax": 20,
       "unit": "µm"
     },
@@ -2512,9 +2512,8 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "telo je štíhle",
-      "larva je často pohyblivá;\r\npredný koniec je tupo kužeľovitý;\r\npažerák tvorí približne jednu tretinu dĺžky tela;\r\nchvost sa postupne zužuje do špičky;\r\nkoniec chvosta je mierne vychýlený alebo zahnutý",
-      "bez tŕňa a výraznej vlnitosti"
+      "Larvy prvého štádia (L1) vylučované v truse majú charakteristický rovný, ostro zakončený chvostík bez terminálneho tŕňa, zárezu či undulujúceho zvlnenia typického pre iné metastrongylidy.",
+      "Larva je často pohyblivá;\r\npredný koniec je tupo kužeľovitý;\r\npažerák tvorí približne jednu tretinu dĺžky tela;\r\nchvost sa postupne zužuje do špičky;\r\nkoniec chvosta je mierne vychýlený alebo zahnutý"
     ],
     "differentialDiagnosis": [
       "Odlíšiť od Crenosoma vulpis hostiteľskou špecificitou (ježko vs. psovité) a rozmermi; morfologicky si larvy oboch druhov Crenosoma sú veľmi podobné."
@@ -2576,61 +2575,9 @@
     "images": []
   },
   {
-    "latinName": "Cryptobia helicogenae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Euglenozoa",
-      "class": "Kinetoplastea",
-      "order": "Parabodonida",
-      "family": "Cryptobiidae",
-      "genus": "Cryptobia",
-      "species": "Cryptobia helicogenae"
-    },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Slimáky"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Trofozoit",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 11.25,
-      "lengthMax": 27,
-      "widthMin": 1.25,
-      "widthMax": 2.25,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vretenovitý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "predný koniec býva širší",
-      "zadný sa zužuje;\r\ndva nerovnako dlhé bičíky — kratší smeruje dopredu",
-      "druhý dozadu;\r\nkinetoplast uložený v blízkosti zadnej časti tela",
-      "typický pre kinetoplastidy; kinetoplast možno zvýrazniť Giemsovým farbením;\r\nvýrazný zvlnený pohyb alebo rýchle „kľučkovanie“ v čerstvom preparáte"
-    ],
-    "differentialDiagnosis": [
-      "Hranice medzi rodmi Cryptobia a Bodo nie sú úplne stabilné",
-      "preto môže byť morfologické určenie problematické."
-    ],
-    "lifeCycle": "Prenos Cryptobia helicogenae medzi slimákmi pravdepodobne prebieha priamym kontaktom počas párenia, keďže bičíkovec osídľuje pohlavné ústrojenstvo slimákov, najmä kopulačnú burzu alebo jej okolie. Presný prenosový cyklus však nie je dostatočne experimentálne objasnený, preto treba túto cestu označovať ako najpravdepodobnejšiu, nie ako definitívne dokázanú.\r\nPravdepodobný mechanizmus\r\nC. helicogenae sa nachádza v tekutine reprodukčného systému infikovaného slimáka.\r\nPočas vzájomného párenia môže dôjsť k výmene reprodukčných sekrétov a k prenosu voľne plávajúcich bičíkovcov.\r\nParazit následne osídli reprodukčný trakt nového hostiteľa a môže sa v ňom množiť.\r\nKeďže slimáky sú hermafroditické a pri párení si vymieňajú spermie, potenciálne môže dôjsť k prenosu v oboch smeroch.",
-    "pathology": "Endokomenzál pohlavného ústrojenstva (semenná schránka/bursa copulatrix) suchozemských ulitníkov (čeľ. Helicidae a i.) – vo všeobecnosti nepatogénny. Môže ísť o subklinickú infekciu reprodukčného traktu, ktorú možno zistiť až mikroskopicky; pozitívny nález teda automaticky neznamená ochorenie.",
-    "zoonosis": false,
-    "notes": "Pri C. helicogenae sa nález nespája primárne s vajíčkami alebo larvami v stolici. Vyšetriť treba najmä:\r\nčerstvý obsah tráviaceho traktu;\r\ntkanivový odtlačok alebo homogenát orgánu;\r\npodľa literatúry aj reprodukčné orgány slimáka, napríklad burzu kopulačnú;\r\npri chovoch slimákov celkové parazitologické vyšetrenie hostiteľa, nie iba flotáciu trusu.\r\nNajvhodnejší je čerstvý mokrý preparát skúmaný bezprostredne po odbere, ideálne pri 400× zväčšení.",
-    "id": "cryptobia_helicis_trophozoite",
-    "images": []
-  },
-  {
-    "latinName": "Cryptosporidium anserinum",
-    "synonyms": [],
-    "slovakName": "",
+    "latinName": "Cryptosporidium andersoni",
+    "synonyms": ["C. muris „bovinný genotyp“"],
+    "slovakName": "Kryptosporídie dospelého dobytka",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -2638,215 +2585,11 @@
       "order": "Eucoccidiorida",
       "family": "Cryptosporidiidae",
       "genus": "Cryptosporidium",
-      "species": "Cryptosporidium anserinum"
-    },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Hus"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 6,
-      "lengthMax": 7,
-      "widthMin": 4.5,
-      "widthMax": 5.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Sivý",
-      "shell": "Tenká, hladká"
-    },
-    "diagnosticSigns": [
-      "Malá guľovitá oocysta",
-      "pri vylúčení už sporulovaná (4 sporozoity",
-      "bez sporocýst); acidorezistentná (pozitívne farbenie modifikovaným Ziehl-Neelsenom). Hostiteľ: hus."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle",
-    "id": "cryptosporidium_anserinum_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cryptosporidium baileyi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Cryptosporidiidae",
-      "genus": "Cryptosporidium",
-      "species": "Cryptosporidium baileyi "
-    },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Sliepka"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 5,
-      "lengthMax": 7.5,
-      "widthMin": 4,
-      "widthMax": 6,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Sivý",
-      "shell": "Tenká, hladká"
-    },
-    "diagnosticSigns": [
-      "Malá guľovitá sporulovaná oocysta (4 sporozoity)",
-      "acidorezistentná."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle",
-    "id": "cryptosporidium_bayleyi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cryptosporidium meleagridis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Cryptosporidiidae",
-      "genus": "Cryptosporidium",
-      "species": "Cryptosporidium meleagridis"
-    },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Morka"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 4.5,
-      "lengthMax": 6,
-      "widthMin": 4.2,
-      "widthMax": 5.3,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Sivý",
-      "shell": "Tenká, hladká"
-    },
-    "diagnosticSigns": [
-      "Malá guľovitá sporulovaná oocysta (4 sporozoity)",
-      "acidorezistentná."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle",
-    "id": "cryptosporidium_meleagridis_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cryptosporidium muris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Cryptosporidiidae",
-      "genus": "Cryptosporidium",
-      "species": "Cryptosporidium muris"
-    },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Myš"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 7,
-      "lengthMax": 9,
-      "widthMin": 5,
-      "widthMax": 6,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedý",
-      "shell": "Tenká, hladká"
-    },
-    "diagnosticSigns": [
-      "Väčšia guľovitá až oválna sporulovaná oocysta (4 sporozoity)",
-      "parazituje žalúdok (na rozdiel od C. parvum",
-      "ktorý parazituje tenké črevo); acidorezistentná."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle",
-    "id": "cryptosporidium_muris_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cryptosporidium parvum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Cryptosporidiidae",
-      "genus": "Cryptosporidium",
-      "species": "Cryptosporidium parvum"
+      "species": "Cryptosporidium andersoni"
     },
     "hostGroups": [
       "Domáce prežúvavce",
-      "Mäsožravce",
-      "Voľne žijúce prežúvavce",
-      "ZOO prežúvavce"
+      "Ťavy, lamy"
     ],
     "hosts": [
       "Hovädzí dobytok",
@@ -2863,10 +2606,10 @@
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 4.5,
-      "lengthMax": 5.5,
-      "widthMin": 4.2,
-      "widthMax": 5,
+      "lengthMin": 6,
+      "lengthMax": 8.1,
+      "widthMin": 5,
+      "widthMax": 6.5,
       "unit": "µm"
     },
     "morphology": {
@@ -2875,25 +2618,84 @@
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Malá veľkosť (4–5 µm) – najmenšie oocysty medzi bežne diagnostikovanými kokcídiami. Oocysty sú veľmi malé, ľahko sa prehliadnu pri bežnom mikroskopickom vyšetrení.",
-      "Pri modifikovanom Ziehl-Neelsenovom farbení: acidorezistentné ružovo-červené guľôčky."
+      "Oválna až elipsoidná, bezfarebná, hladká stena, 4 sporozoity a zvyškové teliesko. Index tvaru ≈ 1,35",
+      "Pri modifikovanom Ziehl-Neelsenovom farbení: acidorezistentné ružovo-červené guľôčky.",
+      "Veľké oocysty (~7,4 × 5,5 µm) v truse dospelého dobytka bez hnačky."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
+      "C. muris: mierne väčšia, hlavný hostiteľ hlodavec, morfologicky sa prekrýva.",
+      "C. parvum, C. bovis, C. ryanae: menšie, u mladých teliat.",
       "Kvasinky majú podobnú veľkosť, ale nie sú acidorezistentné (nefarebia sa mZ-N metódou) a majú variabilnejší tvar, často pučia.",
       "Artefakty (vzduchové bubliny, tukové kvapky) – nemajú vnútornú štruktúru a nie sú acidorezistentné."
     ],
-    "lifeCycle": "Monoxénny, priamy, prebieha celý v enterocytoch tenkého čreva (intracelulárne, ale extracytoplazmaticky – v apikálnej membránovej väčšine, tzv. \"epicelulárna\" lokalizácia). \nPo zožratí sporulovanej oocysty sa uvoľňujú 4 sporozoity, ktoré invadujú enterocyty → trofozoit → merogónia (typ I a typ II merontov) → gamogónia (mikro- a makrogaméty) → fertilizácia → tvorba oocýst. \nVznikajú dva typy oocýst: tenkostenné (autoinfekcia v hostiteľovi) a hrubostenné (vylučované do prostredia, odolné). \nCelý cyklus trvá cca 12–14 dní od infekcie po vylučovanie oocýst (prepatentná perióda cca 2–7 dní u teliat).",
-    "pathology": "Poškodenie klkov tenkého čreva (atrofia, skrátenie klkov, hyperplázia krýpt) → malabsorpcia, osmotická a sekrečná hnačka. Klinicky sa prejavuje profúznou vodnatou hnačkou, dehydratáciou, anorexiou, u teliat najčastejšie v 1.–3. týždni života. Vysoká morbidita, mortalita zvyčajne nízka, ale v kombinácii s inými patogénmi (rotavírusy, E. coli, Giardia) môže byť závažná.",
+    "lifeCycle": "Monoxénny, vývoj v žľazách abomasa. Prepatentná perióda je približne 10-14 dní, vylučovanie trvá dlho (mesiace) pri nízkej intenzite.",
+    "pathology": "Väčšinou subklinická, možný pokles mliečnej úžitkovosti a prírastkov.",
     "zoonosis": true,
-    "notes": "",
-    "id": "cryptosporidium_parvum_oocyst",
+    "notes": "U dospelých kráv a jalovíc (v strednej Európe patrí k najčastejším druhom dospelého dobytka). Rýchly antigénový test na C. parvum je pri tomto druhu negatívny.",
+    "id": "cryptosporidium_andersoni_oocyst",
+    "images": []
+  },
+    {
+    "latinName": "Cryptosporidium muris",
+    "synonyms": [],
+    "slovakName": "Myšie kryptosporídie",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Cryptosporidiidae",
+      "genus": "Cryptosporidium",
+      "species": "Cryptosporidium muris"
+    },
+    "hostGroups": [
+      "Hlodavce",
+      "Ťavy, lamy",
+      "Primáty"
+    ],
+    "hosts": [
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Hlodavce": "Primárne myšie kryptosporídie"
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 7,
+      "lengthMax": 9,
+      "widthMin": 5,
+      "widthMax": 6.5,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
+      "shell": "Tenká, hladká"
+    },
+    "diagnosticSigns": [
+      "Väčšia guľovitá až oválna sporulovaná oocysta (4 sporozoity)",
+      "Index tvaru ≈ 1,3",
+      "Acidorezistentné oocysty, lokalizácia v žalúdočných žľazách"
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm), guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR.",
+      "C. andersoni: mierne menšia (~7,4 × 5,5 µm), rozmery sa prekrývajú, rozlíšenie hostiteľom a PCR.",
+      "Pseudoparazity: kvasinky (Saccharomyces), spóry húb.",
+      "Pasáž: u hadov a dravých vtákov ide takmer vždy o pasáž z koristi (hlodavce), nie o skutočnú infekciu."
+    ],
+    "lifeCycle": "Monoxénny s autoinfekciou, vývoj v žľazách žalúdka. Prepatentná perióda u myší je približne 5-7 dní, vylučovanie je dlhodobé.",
+    "pathology": "Infekcia je bežne subklinická, možné zhoršenie kondície hlodavcov. ",
+    "zoonosis": false,
+    "notes": "Nemá mikropyleVyskytuje sa u voľne žijúcich a laboratórnych hlodavcov, ale najčastejšie sa objaví ako pasáž z koristi v trusu hadov a dravých vtákov.",
+    "id": "cryptosporidium_muris_oocyst",
     "images": []
   },
   {
     "latinName": "Cryptosporidium saurophilum",
-    "synonyms": [],
-    "slovakName": "",
+    "synonyms": ["Cryptosporidium varanii"],
+    "slovakName": "Kryptosporídie jašterov",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -2908,14 +2710,14 @@
     ],
     "hosts": [],
     "hostNotes": {},
-    "sample": "Črevo",
+    "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 4.4,
-      "lengthMax": 5.1,
-      "widthMin": 4.4,
-      "widthMax": 4.8,
+      "lengthMax": 5.6,
+      "widthMin": 4.2,
+      "widthMax": 5,
       "unit": "µm"
     },
     "morphology": {
@@ -2924,24 +2726,25 @@
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Malá guľovitá sporulovaná oocysta (4 sporozoity)",
-      "acidorezistentná. Hostiteľ: plazy (jašterice)."
+      "Malá ~5 µm guľovitá sporulovaná oocysta (4 sporozoity)",
+      "Index tvaru (dĺžka/šírka) je ≈ 1,06",
+      "Acidorezistentná."
     ],
     "differentialDiagnosis": [
       "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
       "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Monoxénny s autoinfekciou, vývoj v epiteli čreva. Oocysty sa vylučujú trusom, prenos fekálno-orálny v teráriu.",
+    "pathology": "Klinicky chudnutie, atrofia chvosta (gekón leopardí), regurgitácia, apatia. Často perzistentná infekcia bez úspešnej liečby.",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "cryptosporidium_saurophilum_oocyst",
     "images": []
   },
   {
     "latinName": "Cryptosporidium serpentis",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Hadie kryptosporídie",
     "taxonomy": {
       "kingdom": "Protozoa",
       "phylum": "Apicomplexa",
@@ -2961,33 +2764,34 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 5.6,
-      "lengthMax": 6.8,
+      "lengthMax": 6.6,
       "widthMin": 4.8,
-      "widthMax": 5.8,
+      "widthMax": 5.6,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
+      "shape": "Oválny",
       "colour": "Bezfarebný",
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Väčšia guľovitá sporulovaná oocysta (4 sporozoity)",
-      "parazituje žalúdok hadov; acidorezistentná."
+      "Väčšia ~6 × 5 µm guľovitá sporulovaná oocysta (4 sporozoity)",
+      "Typická u hada u hada s chronickou regurgitáciou, zväčšením žalúdka (opuch v strednej tretine tela) a chudnutím",
+      "Acidorezistentná."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
+      "C. muris: veľká (~8 × 6 µm), u hadov ide typicky o pasáž z koristi.",
+      "Pasáž z koristi: hlodavce (C. muris, C. tyzzeri, C. parvum), preto vzorky z regurgitátu alebo žalúdka majú vyššiu výpovednú hodnotu ako trus."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Mačka sa nakazí zožraním medzihostiteľa (najmä slimákov a slizniakov) alebo paratenického hostiteľa (napr. hlodavec, vták, jašterica), ktorý obsahuje infekčné larvy L3.\n\nL3 → črevo mačky → krvný/lymfatický systém → pľúca → dospelce v bronchioloch a alveolách → vajíčka → L1 v dýchacích cestách → vykašľanie a prehltnutie → trus.\n\n V prostredí sa L1 dostávajú do mäkkýšov, kde sa vyvíjajú cez L2 na infekčné L3. Po pozretí mäkkýša mačkou sa cyklus opakuje. \n\n Paratenickí hostitelia umožňujú prežívanie L3 a predstavujú významný zdroj infekcie pre mačky.",
+    "pathology": "Chronická hypertrofická gastritída (zhrubnutie steny žalúdka, nadmerné hlieny), regurgitácia, chudnutie, letargia. Často smrteľná, liečba je málo účinná, jedinec ostáva nosičom.",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "Hlavný nález je v žalúdočnom výplachu alebo regurgitáte. Pri náleze v trus sa pozitívny nález musí konfirmovať PCR, pretože pasáž z koristi je častá.",
     "id": "cryptosporidium_serpentis_oocyst",
     "images": []
   },
-  {
-    "latinName": "Cryptosporidium wrairi",
+    {
+    "latinName": "Cryptosporidium sp.",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -2997,41 +2801,54 @@
       "order": "Eucoccidiorida",
       "family": "Cryptosporidiidae",
       "genus": "Cryptosporidium",
-      "species": "Cryptosporidium wrairi"
+      "species": "Cryptosporidium sp."
     },
-    "hostGroups": [],
-    "hosts": [
-      "Morča"
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "ZOO prežúvavce",
+      "Ošípaná",
+      "Koňovité",
+      "Hlodavce",
+      "Vtáky",
+      "Primáty"
     ],
-    "hostNotes": {},
+    "hosts": [
+      "Pes",
+      "Mačka"
+    ],
+    "hostNotes": {
+      "Hovädzí dobytok": "C. parvum dominuje u hnačkujúcich teliat (typický klinický kontext je hnačka teliat vo veku 5-21 dní), C. bovis a C. ryanae u starších teliat (zvyčajne bez príznakov)"
+    },
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 4.8,
-      "lengthMax": 5.6,
-      "widthMin": 4,
-      "widthMax": 5.4,
+      "lengthMin": 3.2,
+      "lengthMax": 6.6,
+      "widthMin": 2.9,
+      "widthMax": 5.6,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
-      "colour": "Hnedý",
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný",
       "shell": "Tenká, hladká"
     },
     "diagnosticSigns": [
-      "Malá oválna sporulovaná oocysta (4 sporozoity)",
-      "acidorezistentná. Hostiteľ: morča."
+      "Malá guľovitá sporulovaná oocysta",
+      "4 holé sporozoity (bez sporocýst) a zvyškové teliesko. Oocysta je sporulovaná už pri vylúčení.",
+      "Acidorezistentná. Pri modifikovanom Ziehl-Neelsenovom farbení ružovo-červené na modrozelenom pozadí, časť oocýst prázdna („duchovia“)"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od iných drobných kokcídií podľa veľmi malej veľkosti (≈4–8 µm)",
-      "guľovitého tvaru a počtu/typu oocýst; druhové určenie samotnou koprológiou je neisté – podľa potreby PCR."
+      "Veľké druhy kryptosporídií (C. muris a C. andersoni) majú dĺžku ≥ 6,0-7,0 µm, žalúdočnú lokalizáciu a nespôsobujú hnačku",
+      "Pseudoparazity: kvasinky (Candida, Saccharomyces, pučia, bez vnútorných štruktúr), spóry húb, pele, mikrosporídie (1-3 µm), detritus",
+      "Iné kokcídie: Eimeria a Cystoisospora sú väčšie a nesporulované. Cyclospora je väčšia."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle. Neodlíšiteľné od C.parvum",
-    "id": "cryptosporidium_wrairi_oocyst",
+    "lifeCycle": "Monoxénny s autoinfekciou. Sporulované oocysty sa prehltnú, uvoľnia sa sporozoity a napadnú enterocyty (intracelulárne, extracytoplazmaticky). Nasleduje merogónia, gamogónia a oocysty, z ktorých je približne 80 % hrubostenných (do prostredia) a 20 % tenkostenných (autoinfekcia). Prepatentná perióda je 2-7 dní. Oocysty sú okamžite infekčné a v chladnom vlhkom prostredí prežívajú týždne až mesiace.",
+    "pathology": "Atrofia a splývanie klkov, hyperplázia krypt, malabsorpcia, osmotická hnačka, dehydratácia. Pri koinfekcii (rotavírus, koronavírus, E. coli K99) sú úhyny mladých zvierat.",
+    "zoonosis": true,
+    "notes": "Druh _Cryptosporidium parvum_ sa dá detekovať antigénovým testom. Pri druhovo nepotvrdenom náleze sa píše _Cryptosporidium_ sp. Zahŕňa C. parvum, C. bovis, C. ryanae, C. ubiquitum, C. xiaoi, C. suis/scrofarum, C. baileyi, C. meleagridis, C. tyzzeri, C. canis, C. felis a ďalšie.",
+    "id": "cryptosporidium_sp_oocyst",
     "images": []
   },
   {

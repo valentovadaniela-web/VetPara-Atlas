@@ -957,16 +957,48 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "cryptosporidium_parvum_oocyst",
-    "url": "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_01.webp",
+    "parasiteId": "cryptosporidium_andersoni_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_andersoni_oocyst/cryptosporidium_andersoni_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:34:50.564Z"
   },
   {
-    "parasiteId": "cryptosporidium_parvum_oocyst",
-    "url": "/public/images/parasites/cryptosporidium_parvum_oocyst/cryptosporidium_parvum_oocyst_02.webp",
+    "parasiteId": "cryptosporidium_muris_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_muris_oocyst/cryptosporidium_muris_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:50.564Z"
+  },
+    {
+    "parasiteId": "cryptosporidium_saurophilum_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_saurophilum_oocyst/cryptosporidium_saurophilum_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:50.564Z"
+  },
+  {
+    "parasiteId": "cryptosporidium_serpentis_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_serpentis_oocyst/cryptosporidium_serpentis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:50.564Z"
+  },
+  {
+    "parasiteId": "cryptosporidium_sp_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_sp_oocyst/cryptosporidium_sp_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:34:50.564Z"
+  },
+  {
+    "parasiteId": "ccryptosporidium_sp_oocyst",
+    "url": "/public/images/parasites/cryptosporidium_sp_oocyst/cryptosporidium_sp_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
