@@ -2320,60 +2320,6 @@
     "notes": ""
   },
   {
-    "latinName": "Cloacotaenia megalops",
-    "synonyms": [
-      "Hymenolepis megalops"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Hymenolepididae",
-      "genus": "Cloacotaenia",
-      "species": "Cloacotaenia megalops"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Vodné voľne žijúce vtáky",
-      "Vodná hydina"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 45,
-      "lengthMax": 54,
-      "widthMin": 40,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až široko oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Hrubá, radiálne pruhovaná"
-    },
-    "diagnosticSigns": [
-      "Oválne až guľovité",
-      "jednotlivo",
-      "vnútri onkosféra (približne 28 – 34 μm)"
-    ],
-    "differentialDiagnosis": [
-      "Je potrebné tieto vajíčka odlíšiť od dvoch zásadných skupín:Vajíčka rodu Drepanidotaenia / Dicranotaenia: Sú taktiež hymenolepidné",
-      "ale ich vonkajší obal je často výrazne pretiahnutý na póloch (citrónovitý alebo vretenovitý tvar)",
-      "zatiaľ čo Cloacotaenia si zachováva guľovitý až oválny tvar.Vajíčka pásomníc čeľade Davaineidae: Majú vajíčka uložené v truse v tzv. vajíčkových kapsulách (niekoľko vajíčok pokope)",
-      "zatiaľ čo vajíčka Cloacotaenia sa v stolici nachádzajú jednotlivo po rozpade článku."
-    ],
-    "lifeCycle": "Životný cyklus je nepriamy (heteroxénny) a úzko spojený s vodným prostredím:Infikovaný vták vylučuje zrelé články plné vajíčok trusom priamo do vody.Vajíčka vo vode skonzumuje ostrokovka (medzihostiteľ). V jej tele sa vyliahne larva a vyvinie sa do infekčného štádia – cysticerkoidu.Kačica (definitívny hostiteľ) sa nakazí tak, že pri filtrovaní vody a hľadaní potravy zožerie infikované ostrokovky.V tele kačice parazit migruje do cieľového miesta, kde od infekcie po začiatok produkcie vajíčok dospieva približne 6 týždňov.",
-    "pathology": "Netypické miesto parazitácie: Na rozdiel od väčšiny pásomníc, ktoré žijú v tenkom čreve, Cloacotaenia megalops žije primárne v kloake hostiteľa, konkrétne v jej časti nazývanej coprodeum, prípadne v koncovej časti hrubého čreva (bursa Fabricii).Zápalová reakcia: Prítomnosť dospelých červov v kloake mechanicky dráždi sliznicu. Vyvoláva lokálnu katarálnu až hemoragickú kloakitídu (zápal kloaky).Klinické prejavy: Infekcia sa prejavuje hromadením hlienu v zadnej časti traktu, opuchom kloaky, bolesťami pri defekácii a hnačkami. Pri masívnych nákazách (najmä u mláďat domácej drôbeže) dochádza k celkovému oslabeniu, zaostávaniu v raste, chradnutiu a v dôsledku sekundárnych infekcií hrozí aj úhyn.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "cloacotaenia_megalops_egg",
-    "images": []
-  },
-  {
     "latinName": "Coenurus cerebralis",
     "synonyms": [
       "Multiceps multiceps"
@@ -2481,57 +2427,6 @@
     "images": []
   },
   {
-    "latinName": "Colpoda sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Ciliophora",
-      "class": "Colpodea",
-      "order": "Colpodida",
-      "family": "Colpodidae",
-      "genus": "Colpoda",
-      "species": "neurčené do druhu"
-    },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Slimáky"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Trofozoit",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 60,
-      "widthMin": 20,
-      "widthMax": 40,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Fazuľovitý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Telo oválne až obličkovité",
-      "asymetrické; pokryté riasinkami",
-      "výrazná ústna ryha (cytostóm) na ventrálnej strane. Má makronukleus",
-      "mikronukleus a kontraktilné vakuoly. Tvorí odolné cysty."
-    ],
-    "differentialDiagnosis": [
-      "Pri mikroskopickom vyšetrení je potrebné ju odlíšiť od iných zástupcov rodu Colpoda"
-    ],
-    "lifeCycle": "Cyklus je jednoduchý a prebieha striedaním dvoch hlavných štádií:Vegetatívne štádium (trofozoit): Aktívna, pohyblivá bunka, ktorá žije vo vonkajšom prostredí (alebo v hostiteľovi) a živí sa najmä baktériami. Rozmnožuje sa delením vo vnútri tzv. reprodukčných cýst.Štádium cysty (odolná/trvalá cysta): Pri nepriaznivých podmienkach (sucho, nedostatok potravy, nepriaznivé pH) trofozoit zhodí alebo vtiahne brvinky, vylúči dvojvrstvový obal a prejde do anabiózy (encystácia). V tejto forme prežíva dlhé obdobie. Pri návrate vhodných podmienok dochádza k opätovnému uvoľneniu pohyblivého trofozoitu (ekscystácia).",
-    "pathology": "Nie je typickým obligátnym parazitom slimákov. Môže byť nájdený aj v biologickom materiáli a pri rozkladajúcom sa organickom materiáli. Masívne premnoženie v dýchacích či tráviacich orgánoch slimákov môže spôsobiť mechanické dráždenie alebo oslabenie hostiteľa.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "colpoda_steinii_trophozoite",
-    "images": []
-  },
-  {
     "latinName": "Contracaecum sp.",
     "synonyms": [],
     "slovakName": "",
@@ -2550,33 +2445,34 @@
       "Pelikán",
       "Volavka"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Vodné voľne žijúce vtáky":"Rybožravé vtáky"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 52,
-      "widthMin": 50,
-      "widthMax": 52,
+      "lengthMin": 53,
+      "lengthMax":66,
+      "widthMin": 43,
+      "widthMax": 55,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
+      "shape": "Okrúhly až široko oválny",
+      "colour": "Žltohnedý",
+      "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Guľovité",
-      "hrubá hladká škrupina; nachádza sa u rýb a rybožravých vtákov/cicavcov",
-      "morfologicky podobné ostatným Anisakidae."
+      "Okrúhle až oválne",
+      "Nachádza sa u rýb a rybožravých vtákov/cicavcov"
     ],
     "differentialDiagnosis": [
-      "Vajíčko takmer guľovité (šírka ≈ dĺžka) - odlíšiť od Porrocaecum a Anisakis podľa hostiteľa (rybožravé vtáky) a hrubej",
-      "hladkej škrupiny; pri Porrocaecum/Contracaecum je dôležitý aj hostiteľ a biotop."
+      "Porrocaecum podľa hostiteľa (dravce, brodivce, sovy).",
+      "Ascaridia, Heterakis (hydina, vodné vtáky): podobné vajíčka, ale Ascaridia má hladšiu, hrubšiu stenu a Heterakis má výraznú, mierne nerovnú stenu."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je heteroxénny a viazaný na vodné prostredie, pričom zahŕňa medzihostiteľov a paratenických hostiteľov. Po uvoľnení do vody sa vajíčko vyvíja v závislosti od teploty; pri 20–23 °C dochádza počas 4 až 5 dní k dvom zvliekaniam priamo vo vnútri vajíčka. Z vajíčka sa následne liahne infekčná larva tretieho štádia (L3) chránená kutikulou predošlého zvliekania. Larvy sú pohltené veslonôžkami (Copepoda: Cyclops, Acanthocyclops), ktoré slúžia ako prví medzihostitelia. Sladkovodné aj morské ryby (napr. kapor, ostriež, parmica) fungujú ako paratenickí hostitelia, u ktorých sa L3 enkapsulujú na serózach a v orgánoch telovej dutiny.",
+    "pathology": "U definitívnych vtáčích hostiteľov dospelce mechanicky poškodzujú sliznicu predžalúdka a žalúdka, pričom vytvárajú hlboké ulceratívne eozinofilné granulómy sprevádzané krvácaním, kachexiou až úhynom.",
     "zoonosis": false,
     "notes": "",
     "id": "contracaecum_sp_egg",
