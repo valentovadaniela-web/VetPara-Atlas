@@ -4997,7 +4997,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-09-20T13:05:58.041Z"
+    "dateAdded": "2026-09-20T13:05:58.041Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "sarcoptes_scabiei_adult",
