@@ -2983,32 +2983,29 @@
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 50,
+      "lengthMin": 55,
+      "lengthMax": 70,
       "widthMin": 25,
       "widthMax": 40,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly až široko oválny",
+      "shape": "Nepravidelný",
       "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Hrubá, radiálne pruhovaná"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly až široko oválny."
+      "Vajíčka sú nepravidelne sférické až subtriangulárne (trojuholníkovité) či polyedrické (kockovité/štvorhranné). Podobne ako u iných zástupcov čeľade Anoplocephalidae nemajú dokonale guľatý tvar.",
+      "Najdôležitejším diagnostickým znakom vo vnútri vajíčka je prítomnosť tzv. pyriformného aparátu (hruškovitého aparátu). Ide o špeciálnu chitínovú štruktúru v tvare lievika alebo zmrzlinového kornútka, ktorá obaluje samotné embryo. Z hrotu tohto aparátu môžu vybiehať dlhé podporné filamenty",
+      "Vo vnútri pyriformného aparátu sa nachádza plne vyvinuté embryonálne štádium – larva s 6 háčikmi (onkosféra alebo hexakant)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ctenotaenia môže byť potrebná molekulová identifikácia."
+      "Ascaris laevis - oválne až guľaté vajíčko, 70 – 85 µm, hrubý, výrazne hrboľatý žltohnedý obal, vo vnútri je tmavá jednobunková blastoméra (nečlánkované vajíčko)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "• Typ cyklu: Nepriamy (heteroxénny) s povinným striedaním hostiteľov. \n• Definitívny hostiteľ: Svišť (Marmota spp.), syseľ (Spermophilus spp.). Dospelá pásomnica žije v ich tenkom čreve, kde produkuje články plné vajíčok, ktoré sa trusom dostávajú do prostredia. \n • Medzihostiteľ: Voľne žijúce pôdne pancierniky roztoče z radu Oribatida (napr. rody Ceratozetes, Scheloribates). Roztoč skonzumuje vajíčko z trusu, v jeho telovej dutine sa vyvinie infekčné larválne štádium – cysticerkoid. Svišť sa nakazí na pastve náhodným prehltnutím infikovaného roztoča spolu s vegetáciou.",
+    "pathology": "U dospelých, zdravých divých svišťov je patogenita spravidla nízka až stredná. Infekcie bývajú často asymptomatické. Pri masívnom premnožení parazitov však pásomnice mechanicky a nutrične vyčerpávajú hostiteľa",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Zaujímavým aspektom biológie Ctenotaenia marmotae je jej schopnosť vysporiadať sa so zimným spánkom (hibernáciou) svojho hostiteľa. Počas hibernácie svišťov dochádza k výraznej atrofii (zmenšeniu a útlmu funkcie) ich čreva. Ctenotaenia marmotae tento stres rieši tak, že opúšťa tenké črevo svišťa a prečkáva zimu vo svojom medzihostiteľovi (ktorým bývajú voľne žijúce roztoče). Na jar, po prebudení svišťov, dochádza k opätovnej reinfekcii.",
     "id": "ctenotaenia_marmotae_egg",
     "images": []
   },
@@ -3027,35 +3024,37 @@
     },
     "hostGroups": [],
     "hosts": [
+      "Vodné voľne žijúce vtáky",
       "Dravce"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Dravce": "U dravých vtákov sa uvádza druh _Cyathostoma americana_ alebo len _Cyathostoma_ sp."
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 75,
-      "lengthMax": 83,
-      "widthMin": 50,
-      "widthMax": 62,
+      "lengthMin": 80,
+      "lengthMax": 90,
+      "widthMin": 40,
+      "widthMax": 50,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
       "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Oválne až elipsovité vajíčka ~80 × 50 µm",
+      "Hrubostenná, hladká stena, ktorá má na oboch póloch vajíčka málo zreteľné, nevýrazné viečka (operkula). Ide o tzv. bioperkulátne vajíčko.",
+      "Vajíčka odchádzajú z tela hostiteľa v truse už ryhované (často v štádiu moruly / niekoľkých blastomér) a v prostredí sa v nich rýchlo vyvíja larva"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Syngamus trachea (iný definitívny hostiteľ - dravce/vodné vtáky vs. hydina) a podľa tvaru bukálnej kapsuly."
+      "Odlíšiť od _Syngamus trachea_ (iný definitívny hostiteľ - hrabavá hydina)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Priamy, s možnosťou paratenických hostiteľov. \n Vajíčka sa vykašliavajú, prehĺtajú a vylučujú trusom.\n V prostredí sa vo vajíčku vyvíja infekčné štádium L3 (vlhko a teplo, dni až týždne).\n Hostiteľ sa nakazí požitím vajíčka alebo larvy, prípadne paratenického hostiteľa (dážďovky, slimáky).\n Larvy migrujú cez pečeň a krv do pľúc, kde dozrievajú a spájajú sa.\n Dospelé červy žijú v trachei a bronchoch mesiace.",
+    "pathology": "Vykazuje vysokú patogenitu, predovšetkým u mladých vtákov. Dospelé červy sú veľké (samice až do 2 – 3 cm) a majú sýtočervenú farbu (sú hematofágne – živia sa krvou). \n • Hlavné prejavy: Vyvolávajú ťažkú hemoragickú tracheitídu a bronchitídu. Typickým príznakom je „gape“ syndróm – infikované vtáky otvárajú zobák, lapajú po dychu, naťahujú krk, kašlú, krútia hlavou, prskajú krvavý hlien a chradnú. \n • Úmrtnosť: U mláďat husí a kačíc dochádza pri masívnych infekciách k uduseniu v dôsledku mechanického upchatia lumenu priedušnice spletenými červami a hlienom",
     "zoonosis": false,
     "notes": "Viečka",
     "id": "cyathostoma_bronchialis_egg",
