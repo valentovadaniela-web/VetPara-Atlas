@@ -218,12 +218,11 @@
     "hostGroups": [
       "Obojživelníky",
       "Ošípané a diviaky",
-      "Vtáky"
-    ],
-    "hosts": [
+      "Vtáky",
       "Hady",
       "Jašterice"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Mezocerkária",
@@ -271,11 +270,10 @@
       "species": "Alloionema appendiculatum"
     },
     "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
+      "Mäkkýše",
       "Slimáky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Larva",
@@ -432,9 +430,7 @@
     "hostGroups": [
       "Psovité mäsožravce"
     ],
-    "hosts": [
-      "Pes"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -532,9 +528,7 @@
     "hostGroups": [
       "Mačkovité mäsožravce"
     ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -578,10 +572,10 @@
       "genus": "Angiostoma",
       "species": "Angiostoma aspersae"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Slimáky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Pľúca",
     "stage": "Dospelý jedinec",
@@ -676,10 +670,10 @@
       "genus": "Angusticaecum",
       "species": "Angusticaecum holopterum"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Suchozemské korytnačky"
     ],
+    "hosts":  [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -1001,10 +995,10 @@
       "genus": "Ascaridia",
       "species": "Ascaridia columbae"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Holubovité"
+    "hostGroups": [
+        "Holubovité"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -1348,10 +1342,8 @@
       "genus": "Balantidium",
       "species": "neurčené do druhu"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Herbivorné plazy"
-    ],
+    "hostGroups": ["Herbivorné plazy"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
@@ -1397,10 +1389,8 @@
       "genus": "Balantidium",
       "species": "neurčené do druhu"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Herbivorné plazy"
-    ],
+    "hostGroups": ["Herbivorné plazy"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Trofozoit",
@@ -1767,8 +1757,7 @@
       "genus": "Calodium",
       "species": "Calodium hepaticum"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hlodavce",
       "Zajace, králiky",
       "Mäsožravce",
@@ -1777,6 +1766,7 @@
       "ZOO prežúvavce",
       "Primáty"
     ],
+    "hosts": [],
     "hostNotes": {
       "Hlodavce": "Najčastejší hostitelia"
     },
@@ -3022,11 +3012,11 @@
       "genus": "Cyathostoma",
       "species": "Cyathostoma bronchialis"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Vodné voľne žijúce vtáky",
-      "Dravce"
+    "hostGroups": [
+      "Dravce",
+      "Vodné voľne žijúce vtáky"
     ],
+    "hosts": [],
     "hostNotes": {
       "Dravce": "U dravých vtákov sa uvádza druh _Cyathostoma americana_ alebo len _Cyathostoma_ sp."
     },
@@ -3076,9 +3066,7 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -3128,13 +3116,13 @@
       "genus": "neurčený rod",
       "species": "neurčené do druhu"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Suchozemské korytnačky",
       "Vodné korytnačky",
       "Hady",
       "Jaštery"
     ],
+    "hosts": [],
     "hostNotes": {
       "Suchozemské korytnačky":"U chovaných suchozemských korytnačiek (Testudo) sú cestódy vo všeobecnosti pomerne zriedkavé (dominujú skôr nematódy – ascaridózy)"
     },
@@ -3180,10 +3168,8 @@
       "genus": "Cyclospora",
       "species": "neurčené do druhu"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Plazy"
-    ],
+    "hostGroups": ["Plazy"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
