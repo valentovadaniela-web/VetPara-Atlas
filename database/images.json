@@ -1234,6 +1234,79 @@
     "dateAdded": "2026-08-29T11:35:27.104Z"
   },
   {
+    "parasiteId": "cysticercus_cervi_larva",
+    "url": "/public/images/parasites/cysticercus_cervi_larva/cysticercus_cervi_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_cervi_larva",
+    "url": "/public/images/parasites/cysticercus_cervi_larva/cysticercus_cervi_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z",
+  "isPrimary": true
+  },
+  {
+    "parasiteId": "cysticercus_cervi_larva",
+    "url": "/public/images/parasites/cysticercus_cervi_larva/cysticercus_cervi_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_cervi_larva",
+    "url": "/public/images/parasites/cysticercus_cervi_larva/cysticercus_cervi_larva_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_fasciolaris_larva",
+    "url": "/public/images/parasites/cysticercus_fasciolaris_larva/cysticercus_fasciolaris_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"  
+  },
+  {
+    "parasiteId": "cysticercus_fasciolaris_larva",
+    "url": "/public/images/parasites/cysticercus_fasciolaris_larva/cysticercus_fasciolaris_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_fasciolaris_larva",
+    "url": "/public/images/parasites/cysticercus_fasciolaris_larva/cysticercus_fasciolaris_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_ovis_larva",
+    "url": "/public/images/parasites/cysticercus_ovis_larva/cysticercus_ovis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"  
+  },
+  {
+    "parasiteId": "cysticercus_ovis_larva",
+    "url": "/public/images/parasites/cysticercus_ovis_larva/cysticercus_ovis_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"  
+  },
+  {
     "parasiteId": "cysticercus_pisiformis_larva",
     "url": "/public/images/parasites/cysticercus_pisiformis_larva/cysticercus_pisiformis_larva_01.webp",
     "alt": "",

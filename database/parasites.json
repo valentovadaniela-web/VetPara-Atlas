@@ -3392,8 +3392,8 @@
   },
   {
     "latinName": "Cysticercus cervi",
-    "synonyms": [],
-    "slovakName": "",
+    "synonyms": ["Cysticercus krabbei"],
+    "slovakName": "Cysticerkus jelení",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -3405,7 +3405,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Voľne žijúce prežúvavce"
+      "Vysoká zver"
     ],
     "hostNotes": {},
     "sample": "Sval",
@@ -3413,9 +3413,9 @@
     "group": "Cestoda",
     "micrometry": {
       "lengthMin": 4000,
-      "lengthMax": 9000,
-      "widthMin": 2500,
-      "widthMax": 5000,
+      "lengthMax": 12000,
+      "widthMin": 2000,
+      "widthMax": 6000,
       "unit": "µm"
     },
     "morphology": {
@@ -3424,20 +3424,24 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: podlhovastý."
+      "Oválny až elipsovitý mechúrik (väčšinou 5 - 10 mm) naplnený čírou tekutinou, s bielou škvrnou (skolexom).",
+      "Farba: priesvitná bielosivá. Odumierajúce cysty sú žltkasté, syrovité až kalcifikované (kriedovobiele), niekedy zelenkasté pri zápale",
+      "Skolex po stlačení medzi dvoma sklíčkami: 4 prísavky, rostellum a veniec háčikov.",
+      "Predilekčné miesta: kostrové svaly (stehno, plece, chrbtové svaly), srdce, bránica, žuvacie svaly, jazyk; môžu byť aj pod serózami."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Taenia môže byť potrebná molekulová identifikácia."
+      "Cysticercus tenuicollis (T. hydatigena): veľký, do 5–6 cm, v pobrušnici, omente a pečeni, nie vo svale.",
+      "Echinococcus granulosus: veľká cysta s hydatídovým pieskom a protoskolexmi, pečeň a pľúca (aj u jeleňovitých).",
+      "Sarcocystis spp. (S. gracilis, S. capreolicanis a ďalšie): mikroskopické cysty vo svale, ojedinele makrocysty; bez skolexu",
+      "Elaphostrongylus cervi: nematód, dospelé červy v spojivovom tkanive a svaloch, tenké, niťovité, nie mechúriky",
+      "Setaria spp.: nematód v dutine brušnej.",
+      "Pseudoparazitárne lézie: tuberkulózne a iné granulómy, abscesy, hemoragie, lipómy, lymfatické uzliny, kalcifikované ložiská, serómy",
+      "Rozlišovacie kritériá: veľkosť 5–10 mm, svalová lokalizácia, jeden skolex s prísavkami a háčikmi, hostiteľ je jeleňovitá zver"
     ],
-    "lifeCycle": "Cysticercus cervi je označenie larvy patriacej k Taenia krabbei (parazit vlkov/psov)",
-    "pathology": "",
+    "lifeCycle": "Cysticercus cervi je označenie larvy patriacej k Taenia krabbei (parazit vlkov/psov). \n Dospelá pásomnica žije v tenkom čreve psovitých šeliem, dosahuje cca 1–2 m (prepatentná doba cca 6–7 týždňov). Gravidné proglotidy a vajíčka odchádzajú s trusom psa alebo šelmy do prostredia (pasienky, lúky, revír). \nMedzihostiteľ (jeleňovité) pohltí vajíčka z kontaminovanej pastvy a vody. V čreve sa uvoľní onkosféra (6 háčikov), prenikne cez črevnú stenu a krvou sa dostane do svalov. Cysticerkus sa vyvíja niekoľko mesiacov a infekčnosť pre psovité dosahuje po cca 2–3 mesiacoch; v svale prežíva dlhší čas. \nDefinitívny hostiteľ sa nakazí žraním surovej zveriny a vnútorností s živými cystami (poľovnícke psy, líšky, vlky).",
+    "pathology": "U jeleňovitých je infekcia väčšinou asymptomatická, nález je náhodný pri prehliadke zveriny. Pri masívnej infekcii: svalová degenerácia a zápal; odumierajúce cysty vyvolávajú eozinofilný zápal, granulómy a kalcifikáciu. Hlavný význam je veterinárno-hygienický a ekonomický (znehodnotenie zveriny) a epizootologický (udržiavanie cyklu v revíri)",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Test viability: živé cysty po vybratí a inkubácii (37 °C) v žlči alebo fyziologickom roztoku evaginujú skolex, ktorý je pohyblivý. \n\n V protokole sa odporúča uvádzať hostiteľa (druh zveri), lokalizáciu, počet a veľkosť cýst, stav (živá, degenerovaná, kalcifikovaná) a výsledok testu viability (evaginácia skolexu). Odporúčané znenie: Larvocysta (cysticerkus) typu Cysticercus cervi, skolex so 4 prísavkami, rostellom a vencom háčikov; pravdepodobne Taenia krabbei. Pri degenerovanej cyste: Kalcifikovaný/degenerovaný útvar, druhové určenie nie je možné morfologicky potvrdiť",
     "id": "cysticercus_cervi_larva",
     "images": []
   },
@@ -3447,7 +3451,7 @@
       "Cysticercus fasciolaris",
       "Strobilocercus fasciolaris"
     ],
-    "slovakName": "",
+    "slovakName": "Cysticerkus pečene hlodavcov",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -3466,10 +3470,10 @@
     "stage": "Larva",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 3000,
-      "lengthMax": 8000,
+      "lengthMin": 5000,
+      "lengthMax": 40000,
       "widthMin": 3000,
-      "widthMax": 8000,
+      "widthMax": 10000,
       "unit": "µm"
     },
     "morphology": {
@@ -3478,16 +3482,20 @@
       "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [
-      "Predĺžená (strobilocerkoidná) larva v pečeni",
-      "s jedným skolexom s háčikmi."
+      "Guľovitý až oválny mechúrik v pečeni, ktorý vyčnieva zo povrchu. Vo vnútri je larva segmentovaná (strobilus) s predným skolexom a malým zadným mechúrikom. Cysta je obalená väzivovou kapsulou.",
+      "Priesvitná až žltkavá cysta, väzivové puzdro biele až žltobiele; telo larvy bielej farby.",
+      "Skolex s prísavkami a veľkými háčikmi (veľké háčiky ≥ 380 µm)",
+      "Jeden skolex na cystu (strobilocerkus)",
+      "Predilekčné miesto: pečeň (hlavne), len ojedinele iné orgány."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Hydatigera môže byť potrebná molekulová identifikácia."
+      "Taenia crassiceps (cysticerkus): proliferujúce pučiace cysty, často s množstvom skolexov v dutinách a podkoží hlodavcov.",
+      "Pozor: u hlodavcov z voľnej prírody a v zoo nález potrebné odlíšiť od E. multilocularis: multilokulárna, infiltratívna lézia v pečeni. Na Slovensku významná zoonotická patológia. Odlišuje sa multikameráciou a infiltratívnym rastom bez jedného strobilu.",
+      "Pseudoparazitárne lézie: abscesy, granulómy, nádory pečene, regeneračné uzly, cysty s bakteriálnym obsahom.",
+      "Rozlišovacie kritériá: pečeň, cysta s jedným segmentovaným strobilom a skolexom s veľkými háčikmi, hlodavec ako hostiteľ"
     ],
-    "lifeCycle": "Označenie larvy patriacej k Hydatigera taeniaeformis.",
-    "pathology": "",
+    "lifeCycle": "Označenie larvy patriacej k Hydatigera taeniaeformis. \nDospelá pásomnica žije v tenkom čreve mačiek, dĺžka cca 15–60 cm. Prepatentná doba cca 5–6 týždňov. Gravidné proglotidy sa vylučujú s trusom alebo aktívne cez konečník. Vajíčka sú okamžite infekčné. \n Medzihostiteľ (hlodavce) pohltí vajíčka z kontaminovaného prostredia. Onkosféra prenikne cez črevnú stenu a cez portálny obeh sa dostane do pečene, kde sa v priebehu cca 1–2 mesiacov vyvinie strobilocerkus. \n Definitívny hostiteľ (mačka) sa nakazí požitím infikovanej pečene hlodavca. V čreve sa uvoľní skolex a vyvíja sa strobilus. Larvy prežívajú v pečeni dlho (mesiace až rok a viac). ",
+    "pathology": "Hlodavce: cysty v pečeni sú často asymptomatické. Pri masívnej infekcii sa môže vyvinúť zápal pečene, kompresia parenchýmu. Chronické infekcie môžu vyvolať sarkóm pečene (dokumentovaný najmä u potkanov a myší). Pri veľkých cystách ascites, strata kondície.",
     "zoonosis": false,
     "notes": "V cyste larva zvinutá do klbka",
     "id": "cysticercus_fasciolaris_larva",
