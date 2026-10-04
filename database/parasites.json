@@ -3175,10 +3175,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 7,
-      "lengthMax": 10,
-      "widthMin": 7,
-      "widthMax": 10,
+      "lengthMin": 8,
+      "lengthMax": 15,
+      "widthMin": 8,
+      "widthMax": 14,
       "unit": "µm"
     },
     "morphology": {
@@ -3188,18 +3188,18 @@
     },
     "diagnosticSigns": [
       "Guľovitá oocysta",
-      "po sporulácii obsahuje 2 sporocysty",
-      "každá so 4 sporozoitmi; acidorezistentná farbiteľnosť."
+      "Po sporulácii presne 2 sporocysty × 2 sporozoity, čo je kľúčový rodový znak (nesporulované oocysty nemožno spoľahlivo zaradiť k rodu)",
+      "Cryptosporidium (C. serpentis, C. varanii): oveľa menšie 4–6 µm, 4 holé sporozoity bez sporocýst, zafarbí sa modifikovaným Ziehl-Neelsenom."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Cyclospora môže byť potrebná molekulová identifikácia."
+      "Isospora: 2 sporocysty po 4 sporozoitoch. U plazov zriedkavé, mnohé opisy sú sporné.",
+      "Eimeria: 4 sporocysty po 2 sporozoitoch.",
+      "Caryospora: cysty hrubostenné, výskyt u hadov a jašteríc, 1 sporocysta s 8 sporozoitmi."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Monoxénny, priamy cyklus. Oocysty sa vylučujú nesporulované a sporulujú vo vonkajšom prostredí, trvá to dni až týždne podľa teploty. Hostiteľ sa nakazí požitím sporulovaných oocýst (kontaminované prostredie, voda, korisť). V epiteli čreva prebieha merogónia a gamogónia a vznikajú nové oocysty. Paraténna úloha koristi (hmyz, hlodavce) je možná, ale u plazov nepotvrdená.",
+    "pathology": "Väčšinou nízka patogenita, často asymptomatická infekcia. Pri vysokej intenzite alebo strese (zajatie, zlý chov): enteritída, hnačky, strata hmotnosti, odmietanie potravy, regurgitácia.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Pri nejednoznačnom morfologickom náleze je vhodné vyjadriť nález ako oocysty čeľade Eimeriidae.",
     "id": "cyclospora_sp_oocyst",
     "images": []
   },
@@ -3279,7 +3279,7 @@
   {
     "latinName": "Cysticercus bovis",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Cysticerkus hovädzí",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -3290,20 +3290,19 @@
       "species": "Cysticercus bovis"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Domáce prežúvavce",
+      "ZOO prežúvavce"
     ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Larva",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 5000,
-      "lengthMax": 15000,
+      "lengthMin": 4000,
+      "lengthMax": 10000,
       "widthMin": 3000,
-      "widthMax": 8000,
+      "widthMax": 6000,
       "unit": "µm"
     },
     "morphology": {
@@ -3312,17 +3311,26 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Mechúrikovitá larva (cysticerkus) s jedným invaginovaným skolexom bez háčikov (Taenia saginata typ)."
+      "Priesvitný mechúrik 4–10 mm vo svale (žuvacie svaly, srdce, jazyk, bránica, pažerák, iné kostrové svaly).",
+      "Mechúrikovitá larva (cysticerkus) v čírej tekutine s jedným invaginovaným skolexom",
+      "Skolex so 4 prísavkami bez háčikov (stlačenie medzi dvoma sklíčkami a vyšetrenie pod mikroskopom)",
+      "Predilekčné miesta: vnútorné a vonkajšie žuvacie svaly (masseter), srdce, jazyk, bránica, pažerák."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Taenia môže byť potrebná molekulová identifikácia."
+      "Cysticercus tenuicollis (Taenia hydatigena): veľký, 5–6 cm, v pobrušnici, na omente a pečeni, jeden skolex. Častý u oviec, u hovädzieho dobytka menej.",
+      "Cysticercus ovis (Taenia ovis): ovce a kozy, zriedkavo hovädzí dobytok.",
+      "Cysticercus cellulosae (Taenia solium): ošípané, u hovädzieho dobytka veľmi zriedkavé. Skolex má rostellum a dva rady háčikov.", 
+      "Echinococcus granulosus: veľká cysta s hydatídovým pieskom, množstvom protoskolexov a brood capsules (zárodočné púzdra), s háčikmi. Pečeň a pľúca.",
+      "Coenurus (Taenia multiceps, T. serialis): veľká cysta s mnohými skolexmi, väčšinou v mozgu a svaloch.",
+      "Sarcocystis spp.: mikroskopické cysty vo svalovine (S. cruzi, S. hominis, S. hirsuta), makrocysty (druhy pri ovciach). Nie sú viditeľné ako mechúriky s prísavkami. Eozinofilná myozitída (zelenkasté ložiská) pri odumieraní.",
+      "Zoo (iné druhy prežúvavcov): Cysticercus dromedarii (ťavy a ťavovité, Taenia hyaenae) a ďalšie larvocysty. Pri exotických hostiteľoch sa odporúča PCR.",
+      "Pseudoparazitárne a nepodobné lézie (artefakty): \n Kalcifikované alebo syrovité zápalové ložiská: tuberkulózne granulómy, abscesy, aktinobacilóza, nekrózy. \n Lymfatické uzliny, zhluky tuku a lipómy, krvné zrazeniny a hemoragie (petechie, hemangióm). \n Vodnaté cysty (seróm, hygróm), cysty iného pôvodu.",
+      "Rozlišovacie kritériá: veľkosť (4–10 mm oproti 5 cm tenuicollis), počet skolexov (1), prítomnosť háčikov (chýbajú), lokalizácia (svaly, nie pečeň ani pobrušnica)"
     ],
-    "lifeCycle": "Cysticercus bovis je larválne štádium Taenia saginata (definitívny hostiteľ výhradne človek).",
-    "pathology": "",
+    "lifeCycle": "Cysticercus bovis je larválne štádium Taenia saginata (definitívny hostiteľ výhradne človek). \n Dospelá pásomnica žije v tenkom čreve človeka. Dosahuje 4–10 m (viac ako 1 000 proglotíd) a môže žiť roky. \n  Gravidné proglotidy (každá s desaťtisícmi vajíčok) opúšťajú hostiteľa aktívne cez konečník, často nezávisle od defekácie. Vajíčka sa uvoľnia v prostredí. \n  Medzihostiteľ (hovädzí dobytok) pohltí vajíčka z kontaminovanej pastviny, krmiva alebo vody (kal, odpadové vody, záplavy, ľudské výkaly). V čreve sa uvoľní onkosféra (zárodok so 6 háčikmi), prenikne cez črevnú stenu a krvou sa dostane do svalov. \n  V svale sa vyvinie cysticerkus (infekčný pre človeka po cca 10–12 týždňoch), a to najmä v žuvacích svaloch, srdci, jazyku a bránici. \n  Živá cysta prežíva mesiace až viac ako rok, potom degeneruje, kalcifikuje a stráca infekčnosť. \n Človek sa nakazí konzumáciou surového alebo nedostatočne tepelne spracovaného hovädzieho mäsa (tatársky biftek, mleté mäso, surové mäso) so živými cystami. Prepatentná doba je cca 8–12 týždňov. \n  Larvocysty strácajú životaschopnosť po tepelnom spracovaní (jadro aspoň cca 57 °C) a po zmrazení podľa legislatívy.",
+    "pathology": "U hovädzieho dobytka je infekcia zvyčajne asymptomatická. Pri masívnej akútnej infekcii (najmä mladé zvieratá) je možná horúčka, svalová bolesť a myokarditída. Môže to byť smrteľné, ale je to zriedkavé. Reakcia hostiteľa na odumierajúce cysty: zápal, eozinofilná infiltrácia a kalcifikácia (granulóm). Hlavný význam je ekonomický (vyradenie, úprava alebo zníženie hodnoty mäsa) a hygienický (zdroj nákazy človeka). \n\n U človeka spôsobuje dospelá T. saginata teniázu: mierne zažívacie ťažkosti, nechutenstvo, strata hmotnosti, svrbenie okolo konečníka (pohyb proglotíd), často bez príznakov.",
     "zoonosis": true,
-    "notes": "Číra tekutina",
+    "notes": "Test viability: živé cysty po vybratí a inkubácii (37 °C) v žlči alebo fyziologickom roztoku evaginujú skolex, ktorý je pohyblivý. \n Odporúčanie pre laboratórny protokol:Uveďte lokalizáciu, počet a veľkosť cýst, stav (živá, degenerovaná, kalcifikovaná) a výsledok testu viability (evaginácia skolexu). Pri degenerovanej cyste uviesť, napr. kalcifikovaný/degenerovaný útvar, morfologicky nezlučiteľný s druhovým určením.",
     "id": "cysticercus_bovis_larva",
     "images": []
   },

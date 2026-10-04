@@ -1177,6 +1177,14 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "cyclospora_sp_oocyst",
+    "url": "/public/images/parasites/cyclospora_sp_oocyst/cyclospora_sp_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:53:24.482Z"
+  },
+  {
     "parasiteId": "cyniclomyces_guttulatus_yeast",
     "url": "/public/images/parasites/cyniclomyces_guttulatus_yeast/cyniclomyces_guttulatus_yeast_01.webp",
     "alt": "",
@@ -1192,6 +1200,22 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:07:04.436Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "cysticercus_bovis_larva",
+    "url": "/public/images/parasites/cysticercus_bovis_larva/cysticercus_bovis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
+  },
+  {
+    "parasiteId": "cysticercus_bovis_larva",
+    "url": "/public/images/parasites/cysticercus_bovis_larva/cysticercus_bovis_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:35:27.104Z"
   },
   {
     "parasiteId": "cysticercus_pisiformis_larva",
