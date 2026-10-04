@@ -3495,7 +3495,7 @@
       "Rozlišovacie kritériá: pečeň, cysta s jedným segmentovaným strobilom a skolexom s veľkými háčikmi, hlodavec ako hostiteľ"
     ],
     "lifeCycle": "Označenie larvy patriacej k Hydatigera taeniaeformis. \nDospelá pásomnica žije v tenkom čreve mačiek, dĺžka cca 15–60 cm. Prepatentná doba cca 5–6 týždňov. Gravidné proglotidy sa vylučujú s trusom alebo aktívne cez konečník. Vajíčka sú okamžite infekčné. \n Medzihostiteľ (hlodavce) pohltí vajíčka z kontaminovaného prostredia. Onkosféra prenikne cez črevnú stenu a cez portálny obeh sa dostane do pečene, kde sa v priebehu cca 1–2 mesiacov vyvinie strobilocerkus. \n Definitívny hostiteľ (mačka) sa nakazí požitím infikovanej pečene hlodavca. V čreve sa uvoľní skolex a vyvíja sa strobilus. Larvy prežívajú v pečeni dlho (mesiace až rok a viac). ",
-    "pathology": "Hlodavce: cysty v pečeni sú často asymptomatické. Pri masívnej infekcii sa môže vyvinúť zápal pečene, kompresia parenchýmu. Chronické infekcie môžu vyvolať sarkóm pečene (dokumentovaný najmä u potkanov a myší). Pri veľkých cystách ascites, strata kondície.",
+    "pathology": "",
     "zoonosis": false,
     "notes": "V cyste larva zvinutá do klbka",
     "id": "cysticercus_fasciolaris_larva",
@@ -3666,7 +3666,7 @@
   },
   {
     "latinName": "Cystocaulus ocreatus",
-    "synonyms": [],
+    "synonyms": ["Cystocaulus nigrescens"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -3677,21 +3677,17 @@
       "genus": "Cystocaulus",
       "species": "Cystocaulus ocreatus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
+    "hostGroups": [],
+    "hosts": ["Ovca", "Koza", "Kamzík", "Muflón", "Srnec"],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 340,
-      "lengthMax": 480,
-      "widthMin": 15,
-      "widthMax": 22,
+      "lengthMin": 300,
+      "lengthMax": 450,
+      "widthMin": 16,
+      "widthMax": 19,
       "unit": "µm"
     },
     "morphology": {
@@ -3700,17 +3696,22 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s krátkym tŕňovitým výrastkom na konci chvosta."
+      "Predný koniec je zaoblený, zadný sa zužuje do tenkého chvosta.",
+      "Chvostový koniec larvy je zvlnený alebo esovito prehnutý a vybieha do dlhého, ostrého chvostového hrotu",
+      "Na chrbtovej (dorzálnej) strane chvostovej časti sa nachádza malý, jasne viditeľný kutikulárny výbežok/tŕň.",
+      "Na brušnej (ventrálnej) strane za análnym otvorom (post-análna oblasť) sa nachádza jemné priečne kutikulárne ryhovanie."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Cystocaulus môže byť potrebná molekulová identifikácia."
+      "Muellerius capillaris L1: kratšia (≈230–320 µm), zvlnený koniec chvosta vybieha do tvaru malej špičky/ostroh, chvost je kratší.",
+      "Protostrongylus rufescens L1: podobná dĺžka (≈ 300–400 µm), Chvost je rovný, postupne sa zužujúci do ostrej, ale priamej špičky bez zvlnenia a bez tŕňa**.",
+      "Neostrongylus linearis L1: kratšia (≈ 270–340), chvost má tvar písmena „Z“, koncový výbežok je ohnutý, na konci tupý, dorzálny tŕň len zakrpatený.",
+      "Dictyocaulus filaria L1: väčšia (≈ 550–580 µm), s tmavými zrnkami a na prednej časti hlavy má charakteristický gombíkovitý výbežok (protoplazmatický gombík), čím sa od všetkých protostrongylidov zásadne líši.",
+      "Voľne žijúce hlístovce (Rhabditida): majú rhabditiformný pažerák s bulbom a pri dlhšom státí vzorky sa objavujú vo veľkom počte. Larvy v dlhšie stojacom trusu nie sú parazitické."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelce žijú v pľúcach, v bronchioloch a pľúcnom parenchýme (najmä v kaudálnych lalokoch). Samice kladú vajíčka, z ktorých sa liahnu L1.\n L1 sa vykašliavajú, prehĺtajú a odchádzajú trusom. \n L1 aktívne prenikajú do nohy slimáka. Vývoj na L3 trvá pri teplote približne 2–4 týždne (závisí od teploty).\n L3 sa dostávajú do tráviaceho traktu prežúvavcov, kde sa vyvíjajú na dospelce. \n Prežúvavce sa nakazia požitím slimákov alebo vegetácie kontaminovanej larvami L3.Prežúvavec zožerie slimáka s L3 (náhodne pri pasení). \n L3 prenikajú cez črevnú stenu a lymfatickými a krvnými cestami sa dostávajú do pľúc. \n Prepatentná doba je približne 6–10 týždňov.",
+    "pathology": "Dospelce vytvárajú v pľúcach uzlíky až cysty (typicky pod pleurou v kaudálnych lalokoch) s granulomatóznym zápalom. Prejavuje sa bronchiolitídou, intersticiálnou pneumóniou, hyperpláziou hladkej svaloviny a zhrubnutím alveolárnych stien. \n Klinicky je to chronický kašeľ, vychudnutie, zhoršený prírastok (najmä u jahniat a mladých zvierat) a predispozícia k sekundárnym bakteriálnym pneumóniám.\n Je považovaný za patogénnejší ako Muellerius, často však prebieha subklinicky.",
     "zoonosis": false,
-    "notes": "Stočený chvost s tŕňom",
+    "notes": "",
     "id": "cystocaulus_ocreatus_larva",
     "images": []
   },
