@@ -681,6 +681,14 @@
   },
   {
     "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:08:28.838Z"
+  },
+  {
+    "parasiteId": "capillariidae_egg",
     "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_02.webp",
     "alt": "",
     "caption": "",
@@ -716,6 +724,30 @@
     "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_08.webp",
     "alt": "",
     "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_09.webp",
+    "alt": "",
+    "caption": "Nález u korytnačky",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_10.webp",
+    "alt": "",
+    "caption": "Nález u korytnačky",
+    "credit": "",
+    "dateAdded": "2026-09-06T18:29:43.418Z"
+  },
+  {
+    "parasiteId": "capillariidae_egg",
+    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_11.webp",
+    "alt": "",
+    "caption": "Nález u korytnačky",
     "credit": "",
     "dateAdded": "2026-09-06T18:29:43.418Z"
   },
@@ -5282,14 +5314,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-20T19:06:21.680Z"
-  },
-  {
-    "parasiteId": "capillariidae_egg",
-    "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:08:28.838Z"
   },
   {
     "parasiteId": "isospora_suis_oocyst",
