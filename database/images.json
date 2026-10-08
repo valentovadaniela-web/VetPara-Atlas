@@ -1485,6 +1485,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:55:27.555Z"
   },
+   {
+    "parasiteId": "cystoisospora_erinacei_oocyst",
+    "url": "/public/images/parasites/cystoisospora_erinacei_oocyst/cystoisospora_erinacei_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:55:27.555Z"
+  },
   {
     "parasiteId": "isospora_felis_oocyst",
     "url": "/public/images/parasites/isospora_felis_oocyst/isospora_felis_oocyst_01.webp",
@@ -1545,6 +1553,14 @@
   {
     "parasiteId": "isospora_rastegaivae_oocyst",
     "url": "/public/images/parasites/isospora_rastegaivae_oocyst/isospora_rastegaivae_oocyst_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:56:27.982Z"
+  },
+  {
+    "parasiteId": "cystoisospora_rivolta_oocyst",
+    "url": "/public/images/parasites/cystoisospora_rivolta_oocyst/cystoisospora_rivolta_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",

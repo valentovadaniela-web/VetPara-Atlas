@@ -3716,58 +3716,6 @@
     "images": []
   },
   {
-    "latinName": "Cystoisospora almaataensis",
-    "synonyms": [
-      "Isospora almaataensis"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Cystoisospora",
-      "species": "Cystoisospora almaataensis"
-    },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
-    "hosts": [
-      "Ošípaná"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 15.46,
-      "lengthMax": 15.46,
-      "widthMin": 10.85,
-      "widthMax": 10.85,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Sivý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: ošípaná."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Chýba mikropyle",
-    "id": "isospora_almaataensis_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Cystoisospora canis",
     "synonyms": [
       "Isospora canis"
@@ -3791,10 +3739,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 35,
-      "lengthMax": 42,
-      "widthMin": 27,
-      "widthMax": 33,
+      "lengthMin": 34,
+      "lengthMax": 40,
+      "widthMin": 28,
+      "widthMax": 32,
       "unit": "µm"
     },
     "morphology": {
@@ -3803,17 +3751,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Veľká vajcovitá oocysta s tenkou hladkou bezfarebnou škrupinou; nesporulovaná pri vylúčení",
-      "po sporulácii len 2 sporocysty (každá so 4 sporozoitmi) - odlišuje rod Cystoisospora od Eimeria (4 sporocysty x 2)."
+      "Nesporulovaná oocysta (čerstvý trus): obsahuje jednu veľkú, zrnitú, centrálne uloženú sporoblast (zygotu) vypĺňajúcu väčšinu vnútra.",
+      "Sporulovaná oocysta (pri kontakte s kyslíkom, po 1-4 dňoch pri izbovej teplote): 2 sporocysty, každá so 4 sporozoitmi."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora ohioensis-complex (C. ohioensis, C. burrowsi, C. neorivolta): menšie oocysty, cca 20-27 × 15-24 µm; sporocysty v oocyste po sporulácii. Rozlíšenie podľa veľkosti.",
+      "Eimeria spp.: Ak sa u psa nájde rod Eimeria (ktorého zrelé oocysty majú 4 sporocysty s 2 sporozoitmi), ide vždy o pseudoparazitizmus – pes iba zožrala trus vtáka, hlodavca, zajaca alebo bobky lesných prežúvavcov."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Priamy: pes sa nakazí perorálnym príjmom sporulovanej oocysty (kontaminované prostredie, voda, krmivo, srsť). \n Fakultatívne cez paratenického hostiteľa: pes požije hlodavca alebo iného paratenického hostiteľa s monozoickými cystami v tkanivách.\n Endogénny vývin: sporozoity prenikajú do enterocytov čreva (najmä tenké črevo, často distálne ileum, príp. hrubé črevo) a prebieha merogónia (nepohlavné množenie) a gamogónia (pohlavné štádium, tvorba mikro- a makrogamét). \n Vznik oocýst: po oplodnení vzniká nesporulovaná oocysta, ktorá sa vylučuje trusom. \n Prepatentná perióda: cca 9-11 dní. \n Patentná perióda: zvyčajne 1-3 týždne (pri vyššej infekčnej dávke dlhšie). \n Sporulácia: v prostredí (exogénna), v závislosti od teploty a vlhkosti 1-4 dni (pri 20-25 °C cca 24-48 h). \n Prežívanie: oocysty sú odolné voči dezinfekčným prostriedkom a môžu v chladnom, vlhkom prostredí prežiť mesiace až rok.",
+    "pathology": "Väčšina infekcií je subklinická, najmä u dospelých psov. \n Klinická cystoizosporóza u šteniat (3-12 týždňov), pri stresoch (preprava, preplnenie chovov, odstav), imunosupresii a súbežných infekciách: hnačka (kašovitá až vodnatá, niekedy s hlienom, vzácne s prímesou krvi), dehydratácia, vracanie, strata hmotnosti, zaostávanie v raste, apatia, anorexia. \n Závažný priebeh je častejší pri koinfekcii (parvovírus, koronavírus, Giardia, helminty).",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Výskyt najmä u šteniat (cca 3-12 týždňov), často v kombinácii s inými enteropatogénmi (parvoviróza, giardióza, ankylostomóza). \n Opakované vyšetrenie pri podozrení, pretože vylučovanie je prerušované.",
     "id": "isospora_canis_oocyst",
     "images": []
   },
@@ -3844,30 +3792,28 @@
     "group": "Protozoa",
     "methods": [],
     "micrometry": {
-      "lengthMin": 28.1,
-      "lengthMax": 34.2,
-      "widthMin": 23.2,
-      "widthMax": 26.8,
+      "lengthMin": 28,
+      "lengthMax": 34,
+      "widthMin": 23,
+      "widthMax": 27,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
+      "shape": "Vajcovitý až oválny",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: Jež."
+      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty."      
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora rastegaievae - Menšie oocysty (cca 19 × 18 µm), takmer dokonale guľovitý tvar, po sporulácii rovnako 2 sporocysty."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": " Infekcia prebieha fekálno-orálnou cestou, kedy jež prehltne vysporulované (infekčné) oocysty z prostredia. Rod Cystoisospora dokáže navyše využívať aj paratenických hostiteľov (napr. drobné hlodavce alebo hmyz), v ktorých tkanivách vytvára spiace štádiá (gregaróny/monozoické tkanivové cysty). Keď jež takého paratenického hostiteľa zožerie, cyklus sa dokončí.",
+    "pathology": "Pre zdravé dospelé ježe vo voľnej prírode nepredstavuje tento parazit fatálnu hrozbu a infekcia prebieha subklinicky (bez príznakov). Problém však nastáva u mláďat alebo u oslabených jedincov (napr. v záchranných staniciach), kde môže masívna kokcidióza spôsobiť: hnačku, dehydratáciu, chudnutie, anémiu a v extrémnych prípadoch aj úhyn.",
     "zoonosis": false,
     "notes": "",
-    "id": "isospora_erinacei_oocyst",
+    "id": "cystoisospora_erinacei_oocyst",
     "images": []
   },
   {
@@ -3894,10 +3840,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 35,
-      "lengthMax": 48,
-      "widthMin": 25,
-      "widthMax": 35,
+      "lengthMin": 38,
+      "lengthMax": 51,
+      "widthMin": 27,
+      "widthMax": 39,
       "unit": "µm"
     },
     "morphology": {
@@ -3907,72 +3853,18 @@
     },
     "diagnosticSigns": [
       "Veľká vajcovitá oocysta",
-      "hladká škrupina; po sporulácii 2 sporocysty x 4 sporozoity."
+      "V čerstvom truse odchádzajú oocysty nezrelé (nesporulované), obsahujúce len jeden guľovitý cytoplazmatický útvar – sporoblast.",
+      "V prostredí dozrieva oocysta veľmi rýchlo (v priebehu niekoľkých hodín až dní). Zrelá infekčná oocysta obsahuje 2 sporocysty, pričom každá z nich v sebe nesie 4 banánovité sporozoity. Stieda teliesko na sporocystách chýba.!"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora rivolta: Druhá bežná mačacia kokcídia. Je však výrazne menšia (rozmery cca 20 – 25 × 15 – 20 μm).",
+      "Eimeria spp.: Ak sa u mačky nájde rod Eimeria (ktorého zrelé oocysty majú 4 sporocysty s 2 sporozoitmi), ide vždy o pseudoparazitizmus – mačka iba zožrala trus vtáka či hlodavca."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus Cystoisospora felis prebieha v troch krokoch: \n 1. Exogénna fáza (v prostredí): Mačka trusom vylúči nezrelú oocystu, ktorá vo vonkajšom prostredí do 48 hodín vysporuluje na infekčné štádium. \n 2. Infekcia: Mačka sa nakazí buď priamym prehltnutím tejto oocysty, alebo zožratím paratenického hostiteľa (napr. myši) so spiacimi tkanivovými cystami. \n 3. Endogénna fáza (v čreve): Parazit v enterocytoch mačky prejde asexuálnym a sexuálnym množením, poškodí sliznicu a po 7 až 11 dňoch (prepatentná perióda) začne mačka opäť vylučovať nové oocysty.",
+    "pathology": "Väčšina infekcií u dospelých mačiek prebieha bez príznakov (asymptomaticky). Klinická kokcidióza sa prejavuje najmä u mačiatok (vo veku 4 až 12 týždňov) alebo u zvierat v preplnených útulkoch v dôsledku stresu a oslabenej imunity. \n Symptómy: Vodnatá až hlienovitá hnačka (niekedy s prímesou krvi), dehydratácia, nechuť do jedla, bolesti brucha a chradnutie. \n Liečba: Infekcia býva samo-limitujúca, no na potlačenie vylučovania parazita a urýchlenie hojenia čreva sa veterinárne aplikujú sulfonamidy (napr. sulfadimethoxín) alebo modernejšie antikokcidiká zo skupiny triazínov (toltrazuril, ponazuril)",
     "zoonosis": false,
     "notes": "",
     "id": "isospora_felis_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cystoisospora neyrai",
-    "synonyms": [
-      "Isospora neyrai"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Cystoisospora",
-      "species": "Cystoisospora neyrai"
-    },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
-    "hosts": [
-      "Ošípaná"
-    ],
-    "hostNotes": {
-      "Ošípaná": ""
-    },
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 12.9,
-      "lengthMax": 12.9,
-      "widthMin": 9.2,
-      "widthMax": 9.2,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: ošípaná."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Chýba mikropyle",
-    "id": "isospora_neyrai_oocyst",
     "images": []
   },
   {
@@ -4015,6 +3907,8 @@
     ],
     "differentialDiagnosis": [
       "Cystoisospora canis: Oocysty tohto komplexu patria medzi stredne veľké kokcídie psov (sú výrazne menšie než Cystoisospora canis)",
+      "Neospora caninum / Hammondia heydorni: Oocysty týchto dvoch príbuzných druhov sú veľmi podobné, ale sú menšie (cca 10–12 × 8–10 µm) a obsahujú len 1 sporocystu s 4 sporozoitmi (vzor 1 x 4).",
+      "Toxoplasma gondii / Hammondia hammondi: Oocysty týchto dvoch príbuzných druhov sú menšie (cca 10 – 14 × 9 – 11 µm), guľovité, s hrubou dvojvrstvovou schránkou. Po dozretí obsahujú 2 sporocysty, každá so 4 sporozoitmi.",
       "Na rozdiel od Eimeria chýba mikropyle (otvor na póle), polárne granula aj zvyškové teleso oocysty (oocyst residuum)"
     ],
     "lifeCycle": "Cyklus je fakultatívne heteroxénny (môže prebehnúť priamo, ale aj cez medzihostiteľa). \n Exogénna fáza: Pes vylúči nezrelé oocysty v truse. Vo vonkajšom prostredí dochádza k ich dozretiu (sporulácii) v priebehu 12 až 48 hodín v závislosti od teploty. Dozretá oocysta je infekčná. \n Endogénna fáza u definitívneho hostiteľa: Po zožratí zrelej oocysty sa v tenkom čreve uvoľnia sporozoity, ktoré napádajú epitelové bunky (enterocyty) črevných klkov.\n Prebieha nepohlavné množenie (merogónia/schizogónia) vo viacerých generáciách, čo vedie k masívnemu ničeniu buniek.\n Nasleduje pohlavné množenie (gametogónia), vznik makrogamét a mikrogamét, ich splynutie a vytvorenie novej oocysty, ktorá odchádza s trusom. \n Úloha paratenického hostiteľa: Ak oocystu zožerie hlodavec, sporozoity preniknú cez črevo do jeho tkanív (pečeň, slezina, lymfatické uzliny), kde sa zapuzdria ako spiace štádia (bradyzoity / k单ozoity). Pes sa infikuje aj tým, že uloví a zožerie takto nakazeného hlodavca.",
@@ -4064,8 +3958,7 @@
       "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: Jež."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora erinacei: Veľké oocysty (cca 30 x 26 µm), po dozretí (sporulácii) obsahujú 2 sporocysty (v každej 4 sporozoity)"
     ],
     "lifeCycle": "",
     "pathology": "",
@@ -4098,10 +3991,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 21,
-      "lengthMax": 27,
-      "widthMin": 19,
-      "widthMax": 25,
+      "lengthMin": 18,
+      "lengthMax": 25,
+      "widthMin": 15,
+      "widthMax": 21,
       "unit": "µm"
     },
     "morphology": {
@@ -4110,68 +4003,18 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Oválna",
-      "hladká škrupina; po sporulácii 2 sporocysty x 4 sporozoity."
+      "Oválna až širokooválna",
+      "Čerstvý trus mačky obsahuje nezrelé (nesporulované) oocysty s jedným centrálnym sporoblastom. Po dozretí v prostredí (sporulácii) oocysta obsahuje 2 sporocysty, z ktorých každá nesie 4 sporozoity."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Cystoisospora felis: Obrovská oocysta (32 – 53 × 26 – 43), vajcovitý tvar. V čerstvom truse obsahuje 1 bunku (sporoblast), po dozretí 2 sporocysty.",
+      "Toxoplasma gondii / Hammondia hammondi: Oocysty týchto dvoch príbuzných druhov sú menšie (cca 10 – 14 × 9 – 11 µm), guľovité, s hrubou dvojvrstvovou schránkou. Po dozretí obsahujú 2 sporocysty, každá so 4 sporozoitmi."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus Cystoisospora rivolta prebieha v troch rýchlych štádiách: mačka vylučuje trusom nezrelé oocysty, ktoré vo vonkajšom prostredí do 24 až 48 hodín dozrejú na infekčné štádium. Mačka sa nakazí buď priamym prehltnutím týchto oocýst z okolia, alebo nepriamo zožratím paratenického hostiteľa (napr. myši), v ktorého lymfatických uzlinách sa nachádzajú spiace tkanivové cysty. V tenkom čreve mačky parazit napadne enterocyty, kde po prebehnutí asexuálneho a sexuálneho množenia poškodí sliznicu a po 4 až 7 dňoch (prepatentná perióda) začne trusom vylučovať novú generáciu oocýst.",
+    "pathology": "Patológia a klinické príznaky Cystoisospora rivolta sa prejavujú najmä u mačiatok, kde parazit deštruuje enterocyty a spôsobuje atrofiu črevných klisov. Infekcia vyvoláva zápal sliznice tenkého čreva a krýpt, čo vedie k narušeniu vstrebávania živín a vody. Klinicky sa to prejavuje profúznou vodnatou až hlienovitou hnačkou (niekedy s prímesou krvi), dehydratáciou, bolesťami brucha, apatiou a výrazným chradnutím mláďat.",
     "zoonosis": false,
     "notes": "",
-    "id": "isospora_rivolta_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Cystoisospora schmaltzi",
-    "synonyms": [
-      "Isospora schmaltzi"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Cystoisospora",
-      "species": "Cystoisospora schmaltzi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 24.4,
-      "lengthMax": 28.6,
-      "widthMin": 24.4,
-      "widthMax": 28.6,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: Jež."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "isospora_schmaltzi_oocyst",
+    "id": "cystoisospora_rivolta_oocyst",
     "images": []
   },
   {
