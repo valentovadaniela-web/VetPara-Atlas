@@ -3919,9 +3919,9 @@
     "images": []
   },
   {
-    "latinName": "Cystoisospora rastegaivae",
+    "latinName": "Cystoisospora rastegaievae",
     "synonyms": [
-      "Isospora rastegaivae"
+      "Isospora rastegaievae"
     ],
     "slovakName": "",
     "taxonomy": {
@@ -3931,7 +3931,7 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Cystoisospora",
-      "species": "Cystoisospora rastegaivae"
+      "species": "Cystoisospora rastegaievae"
     },
     "hostGroups": [],
     "hosts": [
@@ -3954,17 +3954,15 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje len 2 sporocysty",
-      "každá so 4 sporozoitmi (vzor 2x4) - hlavný odlišujúci znak rodu Cystoisospora/Isospora od rodu Eimeria (4x2). Hostiteľ: Jež."
+      "Nesporulovaná pri vylúčení, sporulovaná oocysta: obsahuje 2 sporocysty, každá so 4 sporozoitmi (znak rodu Cystoisospora a Isospora)"
     ],
     "differentialDiagnosis": [
       "Cystoisospora erinacei: Veľké oocysty (cca 30 x 26 µm), po dozretí (sporulácii) obsahujú 2 sporocysty (v každej 4 sporozoity)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
+    "lifeCycle": "Infekcia prebieha fekálno-orálnou cestou, kedy jež prehltne vysporulované (infekčné) oocysty z prostredia. Rod Cystoisospora dokáže navyše využívať aj paratenických hostiteľov (napr. drobné hlodavce alebo hmyz), v ktorých tkanivách vytvára spiace štádiá (gregaróny/monozoické tkanivové cysty). Keď jež takého paratenického hostiteľa zožerie, cyklus sa dokončí.",
+    "pathology": "Pre zdravé dospelé ježe vo voľnej prírode nepredstavuje tento parazit fatálnu hrozbu a infekcia prebieha subklinicky (bez príznakov). Problém však nastáva u mláďat alebo u oslabených jedincov (napr. v záchranných staniciach), kde môže masívna kokcidióza spôsobiť: hnačku, dehydratáciu, chudnutie, anémiu a v extrémnych prípadoch aj úhyn.",
     "notes": "",
-    "id": "isospora_rastegaivae_oocyst",
+    "id": "cystoisospora_rastegaievae_oocyst",
     "images": []
   },
   {
@@ -4043,37 +4041,36 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 20,
-      "lengthMax": 24,
-      "widthMin": 18,
+      "lengthMin": 18,
+      "lengthMax": 23,
+      "widthMin": 16,
       "widthMax": 21,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Okrúhly",
-      "colour": "Žltohnedý",
+      "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
       "Guľovitá",
-      "hladká škrupina; po sporulácii 2 sporocysty x 4 sporozoity - významný patogén sajacich prasiatok."
+      "Nesporulovaná oocysta obsahuje jednu granulárnu bunku (sporont)",
+      "Zrelá (sporulovaná) oocysta: Obsahuje 2 sporocysty a v každej z nich sú 4 sporozoity (typická štruktúra rodu Cystoisospora).",
+      "Týpický je výskyt u ciciakov (1-3 týždne veku)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Isospora spp. a Eimeria spp. podľa veľkosti",
-      "tvaru a sporulácie; pri Cystoisospora sú typické 2 sporocysty so 4 sporozoitmi a bez Stiedovej štruktúry. Druhové určenie len podľa veľkosti je neisté."
+      "Eimeria spp. ošípaných (E. debliecki, E. polita, E. scabra, E. suis, E. perminuta, E. porci, E. spinosa, E. neodebliecki): štyri sporocysty s dvoma sporozoitmi. Vyskytujú sa najmä u odstavčiat a starších ošípaných. Nálezy Eimeria u kojených prasiat sú zriedkavé."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je monoxénny a priamy. Prasiatko pohltí sporulovanú oocystu z kontaminovaného prostredia pôrodnice, sporozoity napadnú enterocyty jejuna a ilea a prebehne niekoľko generácií nepohlavného množenia (merogónie), po ktorých nasleduje pohlavná fáza (gamogónia) a tvorba oocýst. Oocysty sa vylučujú trusom nesporulované a v prostredí sporulujú za niekoľko dní, pričom sú voči bežným dezinfekčným prostriedkom veľmi odolné. Prepatentná doba trvá približne 4–6 dní, patentná asi 1–2 týždne a hnačka sa môže objaviť ešte pred vylučovaním oocýst. Súčasťou cyklu môžu byť aj tkanivové dormozoity (mezenterické lymfatické uzliny, pečeň, slezina), ktoré sa podieľajú na pretrvávaní infekcie.",
+    "pathology": "Najčastejšie postihnutá veková kategória: prasatá približne 5–15 dní, vysoká morbidita, mortalita nízka až stredná. Zhoršenie nastáva pri súbežných infekciách. \n Klinicky: žltá, pastovitá až vodnatá, zapáchajúca hnačka, dehydratácia, podvýživa, strata hmotnosti a nerovnomerný rast vrhu. Zvieratá sú tiež náchylnejšie na sekundárne bakteriálne infekcie.",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
-    "id": "isospora_suis_oocyst",
-    "images": [
-      "/public/images/parasites/isospora_suis_oocyst/cystoisospora_suis_oocyst_02.webp"
-    ]
+    "notes": "Krátka doba sporulácie (menej ako 24 hodín pri teplotách v pôrodnici) robí z tohto parazita nočnú moru chovateľov. Kým pri iných kokcídiách trvá dozrievanie dní, C. suis stihne infikovať ďalšie prasiatka z rovnakého vrhu takmer okamžite. \n Bežné odčervovacie látky (napr. ivermektín, fenbendazol) na kokcídie vôbec neúčinkujú. Jedinou schválenou a vysoko efektívnou molekulou je toltrazuril, ktorý sa podáva prasiatkam jednorazovo perorálne v prvých dňoch života (3. až 5. deň) ako účinná prevencia.\n Oocysty spoľahlivo ničí v prostredí len horúca para alebo špeciálne dezinfekčné prostriedky na báze chlóru a amoniaku vo vysokých koncentráciach.",
+    "id": "cystoisospora_suis_oocyst",
+    "images": []
   },
   {
     "latinName": "Cytodites nudus",
-    "synonyms": [],
+    "synonyms": ["Cytoleichus nudus"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4084,9 +4081,10 @@
       "genus": "Cytodites",
       "species": "Cytodites nudus"
     },
-    "hostGroups": [],
+    "hostGroups": ["Hrabavá hydina"],
     "hosts": [
-      "Hrabavá hydina"
+      "Kanárik",
+      "Holub"
     ],
     "hostNotes": {},
     "sample": "Vzdušné vaky",
@@ -4095,28 +4093,30 @@
     "micrometry": {
       "lengthMin": 450,
       "lengthMax": 600,
-      "widthMin": 280,
+      "widthMin": 350,
       "widthMax": 400,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Bezfarebný",
+      "shape": "Oválny",
+      "colour": "Žltobiely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
       "Roztoč vzdušných vakov vtákov",
-      "guľovité až oválne telo s krátkymi nôžkami."
+      "Telo je široko oválne, sploštené a nápadne **hladké**. Chýbajú mu výrazné povrchové štetiny (sety) či chlípky, čo mu vyslúžilo druhový názov nudus (nahý).",
+      " Má 4 páry krátkych, robustných nôh. Všetky nohy sú zakončené prísavkami (koptopedami) umiestnenými na stopkách, ktoré roztoč využíva na prichytenie sa na klzkom povrchu slizníc dýchacích ciest.",
+      "Ústne ústrojenstvo: Je redukované, sacieho typu. Chýbajú mu chelicery (hryzadlá) a makadla (palpy), tekutiny a bunkový detrit zo sliznice dýchacieho traktu nasáva."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Cytodites môže byť potrebná molekulová identifikácia."
+      "Zámena prejavov (makroskopicky): Pri pitve sa drobné biele uzlíky a bodky na vzdušných vakoch a pľúcach dajú ľahko zameniť za tuberkulózu vtákov (Mycobacterium avium), aspergilózu (pľúcnu pleseň) či viscerálnu formu dny (kyselina močová na orgánoch).",
+      "V dýchacom trakte vtákov (najmä u kanárikov a exotických vtákov) parazituje roztoč – _Sternostoma tracheacolum_, ktorý je väčší a lokalizuje sa prevažne priamo v priedušnici (trachei). Má tmavé sfarbenie (kvôli natrávenej krvi). Cytodites nudus sa nachádza hlbšie vo vzdušných vakoch a pľúcach, je biely/žltkastý a pod mikroskopom sa líši absenciou chĺpkov a špecifickým tvarom prísaviek na nohách.",
+      "Voľne žijúce a skladové roztoče (Acarus, Tyrophagus, Glycyphagus, Carpoglyphus a pod.): pseudoparazity zo steliva, krmiva alebo prostredia. Majú štetiny a nenachádzajú sa v serózach"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý cyklus prebieha na hostiteľovi bez voľného štádia v prostredí. Trvá 14–21 dní a zahŕňa larválne štádium a dve nymfálne štádiá, pričom po nich nasleduje dospelec (samec alebo samica). Roztoče žijú v dýchacích cestách, vzdušných vakoch, pľúcach, na peritoneu a podľa starších opisov aj v dutých kostiach. Prenášajú sa medzi vtákmi kašľaním, teda priamym kontaktom a vdýchnutím. K prenosu dochádza priamym kontaktom medzi vtákmi, najčastejšie vykašliavaním roztočov do krmiva a vody, prípadne pri kŕmení mláďat rodičmi z hrvoľa..",
+    "pathology": "Pri nízkej intenzite je priebeh bezpríznakový. Pri masívnej invázii vtáky trpia dýchavičnosťou (dyspnoe), sipotom, kašľom, otvárajú zobák a chradnú",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Ante mortem diagnostika je veľmi obmedzená. Koprologické vyšetrenie nie je vhodné.",
     "id": "cytodites_nudus_adult",
     "images": []
   },
@@ -4134,20 +4134,22 @@
       "species": "neurčené do druhu"
     },
     "hostGroups": [
-      "Ryby"
+      "Sladkovodné ryby",
+      "Akváriové ryby"
     ],
-    "hosts": [
-      "Ryby"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
+    "hosts": [],
+    "hostNotes": {
+      "Sladkovodné ryby": "Najmä kaprovité ryby",
+      "Akváriové ryby": "Náchylné sú terčovce (Discus), cichlidy, závojnatky, bojovnice a živorodky"
+         },
+    "sample": "Žiabre",
     "stage": "Dospelý jedinec",
     "group": "Monogenea",
     "micrometry": {
-      "lengthMin": 1500,
+      "lengthMin": 300,
       "lengthMax": 1500,
-      "widthMin": 1500,
-      "widthMax": 1500,
+      "widthMin": 80,
+      "widthMax": 250,
       "unit": "µm"
     },
     "morphology": {
@@ -4156,20 +4158,22 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Tvar plochý, predĺžený, listovitý, v prednom konci s kontraktilným prostom. Zadný koniec nesie diskovitý háčikový prichytávací orgán (haptor)",
+      "Farba: biela, priehľadná až našedlá, v tkanive žiabier ťažko viditeľná",
+      "Telo: na prednom konci štyri lalôčky a **štyri tmavé očné škvrny** (dva páry). Nemajú prísavky.",
+      "Haptor: jeden pár veľkých centrálnych háčikov (kotvičiek) na báze rozdvojených - tvar **písmena Y**, jeden alebo dva priečne spojovacie pruhy a 14 okrajových háčikov (7 párov).",
+      "Oviparia, teda vajcia v tele alebo v prostredí.",
+      "Lokalizácia **na žiabroch**"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "_Gyrodactylus spp._: háčiky na báze nerozdvojené, t.j. v tvare J, živorodé (v tele je viditeľné embryo, často druhé embryo vo vnútri prvého), bez očných škvŕn, 16 okrajových háčikov a napáda aj kožu a plutvy.",
       "pomeru dĺžky k šírke",
       "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dactylogyrus môže byť potrebná molekulová identifikácia."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je priamy a monoxénny. Dospelé hermafroditné hlístky kladú vajcia, ktoré padajú do vody na dno alebo na vegetáciu. Vyliahnutie závisí od teploty vody: pri 20–25 °C trvá približne niekoľko dní, pri nízkych teplotách mnoho týždňov. Z vajíčka vychádza obrvená larva (onkomiracídium) s očnými škvrnami, ktorá voľne pláva a hľadá hostiteľa. Prežíva len krátko (hodiny až dva dni). Po prichytení na žiabre stratí riasinky a vyvinie sa na dospelca, pričom generačná doba je kratšia pri vyšších teplotách. Parazit žije na žiabroch hostiteľa, kde sa živí epitelom a hlienom.",
+    "pathology": "Keďže Dactylogyrus napáda primárne žiabre rýb, príznaky sú spojené najmä s dýchaním. Ryby sa zdržiavajú pod hladinou a rýchlo dýchajú. Žiabre sú začervenané, opuchnuté, nesymetricky otvorené alebo pokryté nadmerným hlienom. Ryby sa snažia parazita striasť a otierajú sa o dekorácie, kamene či rastliny.",
     "zoonosis": false,
-    "notes": "4 laloky",
+    "notes": "Odber: čerstvý zoškrab žiabier (v náteru s kvapkou vody z rybníka alebo akvária) alebo celý žiabrový oblúk. Vyšetrenie je potrebné vykonať okamžite, parazity po uhynutí hostiteľa rýchlo opúšťajú žiabre.",
     "id": "dactylogyrus_sp_adult",
     "images": []
   },

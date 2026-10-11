@@ -1543,16 +1543,16 @@
     "dateAdded": "2026-08-29T12:56:13.203Z"
   },
   {
-    "parasiteId": "isospora_rastegaivae_oocyst",
-    "url": "/public/images/parasites/isospora_rastegaivae_oocyst/isospora_rastegaivae_oocyst_03.webp",
+    "parasiteId": "cystoisospora_rastegaievae_oocyst",
+    "url": "/public/images/parasites/cystoisospora_rastegaievae_oocyst/cystoisospora_rastegaievae_oocyst_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:56:27.971Z"
   },
   {
-    "parasiteId": "isospora_rastegaivae_oocyst",
-    "url": "/public/images/parasites/isospora_rastegaivae_oocyst/isospora_rastegaivae_oocyst_05.webp",
+    "parasiteId": "cystoisospora_rastegaievae_oocyst",
+    "url": "/public/images/parasites/cystoisospora_rastegaievae_oocyst/cystoisospora_rastegaievae_oocyst_05.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -1567,12 +1567,52 @@
     "dateAdded": "2026-08-29T12:56:27.982Z"
   },
   {
-    "parasiteId": "isospora_suis_oocyst",
-    "url": "/public/images/parasites/isospora_suis_oocyst/isospora_suis_oocyst_01.webp",
+    "parasiteId": "cystoisospora_suis_oocyst",
+    "url": "/public/images/parasites/cystoisospora_suis_oocyst/cystoisospora_suis_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:56:55.785Z"
+  },
+  {
+    "parasiteId": "cystoisospora_suis_oocyst",
+    "url": "/public/images/parasites/cystoisospora_suis_oocyst/cystoisospora_suis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:10:51.306Z"
+  },
+  {
+    "parasiteId": "cytodites_nudus_adult",
+    "url": "/public/images/parasites/cytodites_nudus_adult/cytodites_nudus_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:10:51.306Z"
+  },
+  {
+    "parasiteId": "cytodites_nudus_adult",
+    "url": "/public/images/parasites/cytodites_nudus_adult/cytodites_nudus_adult_02.webp",
+    "alt": "",
+    "caption": "Ústne ústrojenstvo je redukované, sacieho typu. Chýbajú mu chelicery (hryzadlá) a makadla (palpy), tekutiny a bunkový detrit zo sliznice dýchacieho traktu nasáva.",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:10:51.306Z"
+  },
+  {
+    "parasiteId": "cytodites_nudus_adult",
+    "url": "/public/images/parasites/cytodites_nudus_adult/cytodites_nudus_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:10:51.306Z"
+  },
+  {
+    "parasiteId": "cytodites_nudus_adult",
+    "url": "/public/images/parasites/cytodites_nudus_adult/cytodites_nudus_adult_04.webp",
+    "alt": "",
+    "caption": "Všetky nohy sú zakončené prísavkami (koptopedami) umiestnenými na stopkách",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:10:51.306Z"
   },
   {
     "parasiteId": "dactylogyrus_sp_adult",
@@ -1586,7 +1626,7 @@
     "parasiteId": "dactylogyrus_sp_adult",
     "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_02.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Centrálne háčiky súna báze zhrubnuté a rozdvojené - tvar **písmena Y**",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:28.924Z"
   },
@@ -1594,7 +1634,7 @@
     "parasiteId": "dactylogyrus_sp_adult",
     "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_03.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Typickým rozlišovacím znakom od rodu Gyrodactylus sú štyri tmavé očné škvrny.",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:28.936Z"
   },
@@ -1723,6 +1763,14 @@
   {
     "parasiteId": "dermanyssus_gallinae_adult",
     "url": "/public/images/parasites/dermanyssus_gallinae_adult/dermanyssus_gallinae_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:59:02.458Z"
+  },
+  {
+    "parasiteId": "dermanyssus_gallinae_adult",
+    "url": "/public/images/parasites/dermanyssus_gallinae_adult/dermanyssus_gallinae_adult_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -5330,14 +5378,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-20T19:06:21.680Z"
-  },
-  {
-    "parasiteId": "isospora_suis_oocyst",
-    "url": "/public/images/parasites/isospora_suis_oocyst/cystoisospora_suis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:10:51.306Z"
   },
   {
     "parasiteId": "eimeria_acervulina_oocyst",
