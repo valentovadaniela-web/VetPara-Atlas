@@ -4188,12 +4188,8 @@
       "genus": "Davainea",
       "species": "Davainea proglottina"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Sliepka"
-    ],
+    "hostGroups": ["Hrabavá hydina"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -4211,8 +4207,9 @@
       "shell": "Hrubá, embryofor s radiálnym pruhovaním"
     },
     "diagnosticSigns": [
-      "Obsahuje onkosféru s hruškovitým aparátom",
-      "drobné vajíčko."
+      "Vajíčka sú obalené v kapsuliach, vždy po jednom",
+      "V truse často celé gravidné proglotídy (cca 0,3 – 0,5 mm)",
+      "Vajíčka sa ako samostatné útvary nachádzajú len zriedkavo"
     ],
     "differentialDiagnosis": [
       "Odlíšiť od Raillietina sp. (tiež Davaineidae, hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko, zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny."
@@ -4739,6 +4736,102 @@
     "zoonosis": false,
     "notes": "Dlhý",
     "id": "demodex_injai_adult",
+    "images": []
+  },
+  {
+    "latinName": "Demodex phylloides",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex phylloides"
+    },
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
+    "hosts": [],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "micrometry": {
+      "lengthMin": 282,
+      "lengthMax": 411,
+      "widthMin": 40,
+      "widthMax": 48,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Predĺžený",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [
+      "Dlhšia",
+      "štíhlejšia forma než D. canis; cigarovité telo."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "Dlhý",
+    "id": "demodex_phylloides_adult",
+    "images": []
+  },
+  {
+    "latinName": "Demodex sciurinus",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Arachnida",
+      "order": "Trombidiformes",
+      "family": "Demodicidae",
+      "genus": "Demodex",
+      "species": "Demodex sciurinus"
+    },
+    "hostGroups": [],
+    "hosts": ["Veverica"],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Dospelý jedinec",
+    "group": "Arachnida",
+    "micrometry": {
+      "lengthMin": 282,
+      "lengthMax": 411,
+      "widthMin": 40,
+      "widthMax": 48,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Predĺžený",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
+    },
+    "diagnosticSigns": [
+      "Dlhšia",
+      "štíhlejšia forma než D. canis; cigarovité telo."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "Dlhý",
+    "id": "demodex_sciurinus_adult",
     "images": []
   },
   {
