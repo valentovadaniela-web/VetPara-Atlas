@@ -4212,12 +4212,14 @@
       "Vajíčka sa ako samostatné útvary nachádzajú len zriedkavo"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Raillietina sp. (tiež Davaineidae, hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko, zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny."
+      "Odlíšiť od Raillietina sp. (tiež Davaineidae, hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko, zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny.",
+      "Amoebotaenia cuneata: vajíčka nemá v kapsuliach.",
+      "Choanotaenia infundibulum: vajíčka nemá v kapsuli, ale majú 2 zreteľné predĺžené filamenty na oboch koncoch obalu vajíčka."
     ],
     "lifeCycle": "Medzihostiteľ suchozemské slimáky (nie hmyz).",
     "pathology": "",
     "zoonosis": false,
-    "notes": "V kapsulách",
+    "notes": "Vajíčka viacerých vtáčích Cyclophyllidea sú si veľmi podobné. Preto môže byť pri rutinnom parazitologickom vyšetrení uvedené – vajíčka pásomníc z radu Cyclophyllidea.",
     "id": "davainea_proglottina_egg",
     "images": []
   },
