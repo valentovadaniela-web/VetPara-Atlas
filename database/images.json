@@ -1624,14 +1624,6 @@
   },
   {
     "parasiteId": "dactylogyrus_sp_adult",
-    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_02.webp",
-    "alt": "",
-    "caption": "Centrálne háčiky súna báze zhrubnuté a rozdvojené - tvar **písmena Y**",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:57:28.924Z"
-  },
-  {
-    "parasiteId": "dactylogyrus_sp_adult",
     "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_03.webp",
     "alt": "",
     "caption": "Typickým rozlišovacím znakom od rodu Gyrodactylus sú štyri tmavé očné škvrny.",
@@ -1664,20 +1656,36 @@
   },
   {
     "parasiteId": "dactylogyrus_sp_adult",
-    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_08.webp",
+    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_07.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Typickým rozlišovacím znakom od rodu Gyrodactylus sú štyri tmavé očné škvrny.",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:28.995Z"
   },
   {
     "parasiteId": "dactylogyrus_sp_adult",
-    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_09.webp",
+    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_10.webp",
+    "alt": "",
+    "caption": "Centrálne háčiky súna báze zhrubnuté a rozdvojené - tvar písmena Y",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:57:29.005Z"
+  },
+  {
+    "parasiteId": "dactylogyrus_sp_adult",
+    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_11.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:29.005Z"
   },
+  {
+    "parasiteId": "dactylogyrus_sp_adult",
+    "url": "/public/images/parasites/dactylogyrus_sp_adult/dactylogyrus_sp_adult_12.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:57:29.005Z"
+  },  
   {
     "parasiteId": "demodex_aurati_adult",
     "url": "/public/images/parasites/demodex_aurati_adult/demodex_aurati_adult_01.webp",

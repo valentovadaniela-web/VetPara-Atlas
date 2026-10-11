@@ -4139,8 +4139,8 @@
     ],
     "hosts": [],
     "hostNotes": {
-      "Sladkovodné ryby": "Najmä kaprovité ryby",
-      "Akváriové ryby": "Náchylné sú terčovce (Discus), cichlidy, závojnatky, bojovnice a živorodky"
+      "Kaprovité": "Na kaproch a KOI kaproch najčastejšie druhy Dactylogyrus extensus (veľmi dlhé háčiky), Dactylogyrus vastator (spôsobuje masívne úhyny plôdika), Dactylogyrus minutus (miniatúrne) alebo Dactylogyrus anchoratus.",
+      "Akváriové ryby": "Náchylné sú terčovce (Discus), cichlidy, závojnatky, bojovnice a živorodky - iné druhy ako u kaprovitých rýb."
          },
     "sample": "Žiabre",
     "stage": "Dospelý jedinec",
@@ -4166,9 +4166,7 @@
       "Lokalizácia **na žiabroch**"
     ],
     "differentialDiagnosis": [
-      "_Gyrodactylus spp._: háčiky na báze nerozdvojené, t.j. v tvare J, živorodé (v tele je viditeľné embryo, často druhé embryo vo vnútri prvého), bez očných škvŕn, 16 okrajových háčikov a napáda aj kožu a plutvy.",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dactylogyrus môže byť potrebná molekulová identifikácia."
+      "_Gyrodactylus spp._: háčiky na báze nerozdvojené, t.j. v tvare J, živorodé (v tele je viditeľné embryo, často druhé embryo vo vnútri prvého), bez očných škvŕn, 16 okrajových háčikov a napáda aj kožu a plutvy."
     ],
     "lifeCycle": "Cyklus je priamy a monoxénny. Dospelé hermafroditné hlístky kladú vajcia, ktoré padajú do vody na dno alebo na vegetáciu. Vyliahnutie závisí od teploty vody: pri 20–25 °C trvá približne niekoľko dní, pri nízkych teplotách mnoho týždňov. Z vajíčka vychádza obrvená larva (onkomiracídium) s očnými škvrnami, ktorá voľne pláva a hľadá hostiteľa. Prežíva len krátko (hodiny až dva dni). Po prichytení na žiabre stratí riasinky a vyvinie sa na dospelca, pričom generačná doba je kratšia pri vyšších teplotách. Parazit žije na žiabroch hostiteľa, kde sa živí epitelom a hlienom.",
     "pathology": "Keďže Dactylogyrus napáda primárne žiabre rýb, príznaky sú spojené najmä s dýchaním. Ryby sa zdržiavajú pod hladinou a rýchlo dýchajú. Žiabre sú začervenané, opuchnuté, nesymetricky otvorené alebo pokryté nadmerným hlienom. Ryby sa snažia parazita striasť a otierajú sa o dekorácie, kamene či rastliny.",
@@ -4217,9 +4215,7 @@
       "drobné vajíčko."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Raillietina sp. (tiež Davaineidae",
-      "hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko",
-      "zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny."
+      "Odlíšiť od Raillietina sp. (tiež Davaineidae, hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko, zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny."
     ],
     "lifeCycle": "Medzihostiteľ suchozemské slimáky (nie hmyz).",
     "pathology": "",
