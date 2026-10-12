@@ -1679,6 +1679,14 @@
     "dateAdded": "2026-08-29T12:57:29.005Z"
   },  
   {
+    "parasiteId": "davainea_proglottina_egg",
+    "url": "/public/images/parasites/davainea_proglottina_egg/davainea_proglottina_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:57:29.005Z"
+  },  
+  {
     "parasiteId": "demodex_aurati_adult",
     "url": "/public/images/parasites/demodex_aurati_adult/demodex_aurati_adult_01.webp",
     "alt": "",
@@ -1864,6 +1872,15 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:57:52.048Z"
   },
+  {
+    "parasiteId": "dentostomella_translucida_egg",
+    "url": "/public/images/parasites/dentostomella_translucida_egg/dentostomella_translucida_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:57:52.048Z"
+  },
+
   {
     "parasiteId": "dermanyssus_gallinae_adult",
     "url": "/public/images/parasites/dermanyssus_gallinae_adult/dermanyssus_gallinae_adult_01.webp",

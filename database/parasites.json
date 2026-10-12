@@ -4195,7 +4195,7 @@
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 55,
+      "lengthMin": 28,
       "lengthMax": 55,
       "widthMin": 36,
       "widthMax": 36,
@@ -4245,10 +4245,10 @@
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 178,
-      "lengthMax": 191,
-      "widthMin": 30,
-      "widthMax": 35,
+      "lengthMin": 180,
+      "lengthMax": 270,
+      "widthMin": 35,
+      "widthMax": 45,
       "unit": "µm"
     },
     "morphology": {
@@ -4257,26 +4257,25 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: predĺžený."
+      "Celková dĺžka: Min. 180 μm – Max. 270 μm (samce bývajú o niečo kratšie ako samice, okolo 150 – 200 μm)",
+      "Telo je jasne rozdelené na tri časti: gnathosoma (ústne ústrojenstvo), podosoma (kráčavá časť) a opisthosoma (dlhý, priečne pruhovaný zadoček)",
+      "Má 4 páry veľmi krátkych, kýpťovitých nôh zakončených drobnými pazúrikmi, ktoré sa nachádzajú v prednej časti tela",
+      "Tvar nápadne dlhý, štíhly a zašpicatený na konci zadočka.",
+      "Nachádza sa primárne hlboko v vlasových/chlpových folikuloch"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex criceti_: Výrazne kratšie, širšie a zavalitejšie telo s tupým koncom (dĺžka len okolo 90 – 110 μm). Žije skôr povrchovo v stratum corneum (pokožke)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus prebieha permanentne na hostiteľovi a trvá približne 18 až 24 dní. Samice kladú vajíčka v tvare vretena priamo do chlpových folikulov, z ktorých sa liahnu šesťnohé larvy. Tie sa cez štádium nymfy (protonymfa a deuteronymfa) transformujú na dospelé jedince s ôsmimi nohami. Celý vývoj je viazaný na mazové žľazy a folikuly, pričom prenos nastáva primárne priamym kontaktom, najčastejšie z matky na mláďatá počas satia mlieka.",
+    "pathology": "Demodex aurati je považovaný za bežného (komenzálneho) obyvateľa kože škrečkov a u zdravých jedincov nevyvoláva žiadne klinické príznaky. K prepuknutiu demodikózy (trúdavosti) dochádza až pri oslabení imunitného systému, strese, podvýžive, v pokročilom veku alebo pri pridružených ochoreniach (napr. nádory). Patologické prejavy zahŕňajú stratu srsti (alopéciu) najmä na chrbte a bokoch, šupinatenie kože, začervenanie (erytém) a v prípade sekundárnej bakteriálnej infekcie aj tvorbu chrást a hnisavý zápal kože.\n Keďže masívne premnoženie tohto roztoča je takmer vždy spojené s imunosupresiou, klinická demodikóza u škrečka pre chovateľa často funguje ako prvý viditeľný varovný signál iného, vážnejšieho vnútorného ochorenia zvieraťa.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Škrečok zlatý je jedným z mála hlodavcov, u ktorého sa bežne vyskytuje synergická infekcia dvoch rôznych druhov rodu Demodex súčasne (_D. aurati_ a _D. criceti_), pričom si dokonale rozdelili ekologické niky na tele hostiteľa.",
     "id": "demodex_aurati_adult",
     "images": []
   },
   {
     "latinName": "Demodex bovis",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. bovis"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4287,21 +4286,17 @@
       "genus": "Demodex",
       "species": "Demodex bovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hostGroups": [],
+    "hosts": ["Hovädzí dobytok"],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 239,
-      "lengthMax": 272,
-      "widthMin": 69,
-      "widthMax": 73,
+      "lengthMin": 200,
+      "lengthMax": 300,
+      "widthMin": 40,
+      "widthMax": 55,
       "unit": "µm"
     },
     "morphology": {
@@ -4310,26 +4305,23 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: cigarovitý."
+      "Má typický červovitý, predĺžený až cigarovitý tvar tela. Delí sa na tri klasické časti: gnathosoma, podosoma s končatinami a priečne ryhovaná, dlhá opisthosoma",
+      "Dospelé jedince majú 4 páry veľmi krátkych nôh umiestnených v prednej tretine tela, čo im uľahčuje pohyb v tesných kožných štruktúrach.",
+      "Opisthosoma je na konci mierne zaoblená, dlhá a tvorí podstatnú časť celkovej dĺžky parazita."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "Na dobytku sa okrem _Demodex bovis_ nevyskytujú iné druhy rodu Demodex. Diagnostika spočíva v odbere materiálu vytlačením obsahu uzlíkov (exsudátu) alebo hlbokým kožným zoškrabom."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus prebieha výhradne na hostiteľovi a trvá približne 18 až 24 dní. Samica kladie vajíčka hlboko do vlasových (chlpových) folikulov a mazových žliaz. Z nich sa liahnu šesťnohé larvy, ktoré sa cez nymfálne štádiá (protonymfa, deuteronymfa) vyvíjajú na osemnohých dospelých jedincov. K prenosu dochádza najčastejšie v ranom veku priamym kontaktom matky (kravy) s teľaťom počas satia mlieka, prípadne trením zvierat v preplnených chovoch.",
+    "pathology": "Demodex bovis kolonizuje kožu zvierat a k prepuknutiu klinickej formy dochádza najčastejšie pri oslabení imunity, strese (napr. počas gravidity či laktácie) alebo podvýžive. Ochorenie sa prejavuje ako papulonodulárna demodikóza s tvorbou hmatateľných uzlíkov a cýst (veľkosti od špendlíkovej hlavičky až po holubie či slepačie vajce). Tieto lézie sa objavujú najmä na krku, pleciach, v podpazuší a na vemene. Pri sekundárnej bakteriálnej infekcii (najčastejšie Staphylococcus spp.) dochádza k hnisaniu, praskaniu uzlíkov, vypadávaniu srsti a tvorbe chrást.",
     "zoonosis": false,
-    "notes": "",
+    "notes": " Veľké percento dobytka je zdravými prenášačmi tohto roztoča (v niektorých oblastiach až 10 – 15 % populácie) bez akýchkoľvek vonkajších príznakov. Príznaky prepuknú až vtedy, keď sa naruší rovnováha medzi parazitom a imunitným systémom hostiteľa.\n Hoci ochorenie málokedy končí smrťou zvieraťa, uzlíky po Demodex bovis zanechávajú v koži trvalé diery a jazvy. Pre kožiarsky priemysel to predstavuje obrovské ekonomické straty, keďže spracovaná koža (useň) z takto infikovaných zvierat stráca svoju kvalitu a pevnosť.",
     "id": "demodex_bovis_adult",
     "images": []
   },
   {
     "latinName": "Demodex caballi",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. equi"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4343,18 +4335,16 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 264,
-      "lengthMax": 453,
-      "widthMin": 40,
-      "widthMax": 55,
+      "lengthMin": 135,
+      "lengthMax": 260,
+      "widthMin": 26,
+      "widthMax": 36,
       "unit": "µm"
     },
     "morphology": {
@@ -4363,26 +4353,25 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: cigarovitý."
+      "Celková dĺžka: min. 135 μm (samce) – Max. 260 μm (samice). Dospelé samice dosahujú priemernú dĺžku okolo 220 – 240 μm.",
+      "Telo je dlhé a výrazne pretiahnuté, štíhle a červovité so zreteľným priečnym ryhovaním (anuláciou) na zadočku (opisthosoma). Zadoček sa ku koncu postupne zužuje a končí mierne zašpicateným (subakútnym) hrotom.",
+      "Disponuje 4 pármi zakrpatených, kýpťovitých nôh s drobnými pazúrikmi, sústredenými v prednej podosomálnej časti tela.",
+      "Ústne ústrojenstvo je relatívne široké (šírka mierne presahuje jeho dĺžku). Samce majú charakteristický kopulačný orgán, ktorý zaberá významnú časť prednej polovice tela.",
+      "Parazituje primárne v mazových žľazách očných viečok (Meibomove žľazy) a v oblasti nozdier/papule."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex equi_: Má výrazne kratšie a zavalitejšie telo. Osídľuje chlpové folikuly na tele (najmä krk, chrbát, lopatky a končatiny)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus sa odohráva permanentne na hostiteľovi a trvá 18 až 24 dní. Samica kladie vajíčka v tvare vretena priamo do vývodov mazových a Meibomových žliaz. Z vajíčok sa liahnu šesťnohé larvy, ktoré sa postupne cez dve nymfálne štádiá (protonymfa a deuteronymfa) transformujú na osemnohé dospelé jedince. K horizontálnemu prenosu dochádza priamym kontaktom medzi koňmi (napr. vzájomným trením v stáde) alebo vertikálne z kobyly na žriebä počas satia a ošetrovania.",
+    "pathology": "Demodex caballi je považovaný za nízko patogénneho parazita a súčasť normálnej kožnej mikroflóry koní. Klinické prejavy (demodikóza) prepuknú zriedkavo, najčastejšie pri znížení imunity, chronickom strese alebo dlhodobej liečbe glukokortikoidmi. Prejavuje sa drobnými uzlíkmi (papulami) s priemerom 2–3 mm na očných viečkach a papuli, šupinatením kože a alopéciou (vypadávaním srsti). Vážnejšie zápaly oka (blefaritída či konjunktivitída) sú však napriek prítomnosti v očných žľazách výnimočné.",
     "zoonosis": false,
-    "notes": "Nozdry",
+    "notes": "Keďže klinické prejavy trúdavosti vyvolávajú drobné vyvýšené uzlíky na okraji očného viečka, veterinári si ich pri prvom pohľade občas pomýlia s nádorovým ochorením kože – najčastejšie so skvamóznobunkovým karcinómom (karcinóm listových buniek). Správnu diagnózu odhalí až histopatologické alebo mikroskopické vyšetrenie obsahu uzlíka.",
     "id": "demodex_caballi_adult",
     "images": []
   },
   {
     "latinName": "Demodex canis",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. canis"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4396,18 +4385,16 @@
     "hostGroups": [
       "Psovité mäsožravce"
     ],
-    "hosts": [
-      "Pes"
-    ],
-    "hostNotes": {},
+    "hosts": [],
+    "hostNotes": {"Pes": "Plemennú predispozíciu vykazujú mopsy, buldogy, francúzske buldočky, dobermany či jazvečíky."},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 165,
+      "lengthMin": 156,
       "lengthMax": 300,
-      "widthMin": 33,
-      "widthMax": 43,
+      "widthMin": 35,
+      "widthMax": 45,
       "unit": "µm"
     },
     "morphology": {
@@ -4416,24 +4403,25 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Predĺžené",
-      "cigarovité (vretenovité) telo s krátkymi pahýľovitými nôžkami v prednej tretine tela; žije vo vlasových folikuloch."
+      "Celková dĺžka: Min. 156 μm – Max. 300 μm. Samce bývajú o niečo kratšie (okolo 170–250 μm), samice dosahujú hornú hranicu až k 300 μm.",
+      "Má typický cigarovitý až polienkovitý tvar. Je transparentné a rozdelené na gnathosomu (krátka, široká hlavička), podosomu (hrudná časť) a opisthosomu (predĺžený zadoček s jemným priečnym ryhovaním).",
+      "Dospelé jedince majú 4 páry veľmi krátkych, hrubých nôh (kýpťov), ktoré vystupujú z podosomy a sú zakončené drobnými pazúrikmi.",
+      "Vajíčka: Majú charakteristický vretenovitý tvar, ktorý býva v anglickej literatúre trefne prirovnávaný k „tehotnému banánu“."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex cornei_ : Výrazne kratší a zavalitejší (cca 90–160 μm). Obýva povrchovejšiu vrstvu kože – stratum corneum (pokožku). V mnohých štúdiách sa považuje za krátku morfologickú variantu D. canis.",
+      "_Demodex injai_ : Nápadne dlhý roztoč (cca 330–375 μm), ktorý má zadoček až dvakrát dlhší ako D. canis. Žije špecificky hlboko v mazových žľazách a spôsobuje výrazne mastnú kožu (seboreu)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha výhradne na tele psa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka do chlpového folikulu, z ktorých sa liahnu šesťnohé larvy. Tie sa po zvlečení menia na osemnohé protonymfy, následne deuteronymfy a nakoniec na pohlavne dospelé jedince. Tento parazit sa prenáša takmer výhradne vertikálne, a to tesným kontaktom matky (suky) so šteniatkami počas prvých 2 až 4 dní života pri dojčení. Horizontálny prenos medzi dospelými psami sa v bežnom kontakte považuje za nepravdepodobný a raritný.",
+    "pathology": "Demodex canis je prirodzenou súčasťou kožnej mikroflóry (komenzál) u viac ako polovice zdravých psov a nespôsobuje im žiadne problémy. K vypuknutiu klinickej demodikózy dochádza len pri zlyhaní alebo potlačení imunitného systému. Ochorenie sa prejavuje v dvoch formách: lokalizovanej (malé ložiská s vypadanou srsťou, často na hlave okolo očí, kde vytvára typické „okuliare“) a generalizovanej, kedy postihuje celé telo. Masívne premnoženie roztočov vedie k deštrukcii chlpových folikulov (alopécii), hyperpigmentácii, zhrubnutiu kože a veľmi často k pridruženej bakteriálnej infekcii (pyodermii spôsobenej napr. Staphylococcus pseudintermedius), čo vedie k hnisaniu, chrastám, opuchom labiek (pododemodikóza) a celkovej apatii zvieraťa.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Generalizovaná forma demodikózy u mladých psov má preukázateľne dedičný základ kvôli vrodenej poruche T-lymfocytov. Z tohto dôvodu sa jedince, ktoré prekonali generalizovanú demodikózu, striktne vyraďujú z chovu, aby neprenášali tento imunitný deficit na potomstvo. \n  Kým v minulosti bola liečba generalizovanej demodikózy nesmierne náročná, spojená s toxickými kúpeľmi (amitraz) či každodenným podávaním ivermektínu, dnes sa ochorenie dá veľmi efektívne zvládnuť modernými antiparazitárnymi tabletami zo skupiny izoxazolínov (napr. s účinnými látkami fluralaner, afoxolaner či sarolaner), ktoré parazita spoľahlivo eliminujú.",
     "id": "demodex_canis_adult",
     "images": []
   },
   {
     "latinName": "Demodex cati",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. felinus"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4447,16 +4435,14 @@
     "hostGroups": [
       "Mačkovité mäsožravce"
     ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 181,
-      "lengthMax": 219,
+      "lengthMin": 130,
+      "lengthMax": 300,
       "widthMin": 30,
       "widthMax": 40,
       "unit": "µm"
@@ -4467,18 +4453,19 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Cigarovité telo",
-      "krátke nôžky v prednej tretine; žije vo vlasových folikuloch."
+      "Patrí k štíhlym a pretiahnutým zástupcom rodu Demodex", 
+      "Celková dĺžka: Min. 130 μm (samce) – Max. 300 μm (samice). Priemerná dĺžka samcov sa pohybuje okolo 180 μm, zatiaľ čo samice dosahujú priemerne až 290 μm.",
+      "Má klasický úzky, predĺžený „cigarovitý“ až červovitý tvar, je však štíhlejší a dlhší v porovnaní s inými druhmi. Zadoček (opisthosoma) tvorí významnú časť tela a má jemné priečne ryhovanie (anuláciu).",
+      "Disponuje 4 pármi veľmi krátkych, kýpťovitých nôh s malými pazúrikmi, ktoré sú umiestnené v prednej hrudnej časti (podosóme).",
+      "Žije hlboko vo vlasových folikuloch a mazových žľazách"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex gatoi_ : Nápadne kratší, zavalitejší a okrúhlejší druh (dĺžka len okolo 90–110 μm). Žije povrchovo v rohovej vrstve kože (stratum corneum) a na rozdiel od _D. cati_ je vyvolačom vysoko nákazlivej (kontagióznej) formy svrabu, ktorá sa šíri medzi mačkami v jednej domácnosti."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha výhradne na tele mačacieho hostiteľa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka priamo do chlpových folikulov a vývodov mazových žliaz, kde sa z nich liahnu šesťnohé larvy. Larvy postupne prechádzajú cez štádiá protonymfy a deuteronymfy na osemnohé dospelé jedince. K prenosu dochádza takmer výhradne vertikálne, a to tesným kontaktom matky s mačatami počas prvých dní života pri dojčení.",
+    "pathology": "Demodex cati je bežnou a neškodnou súčasťou kožnej mikroflóry (komenzálom) zdravých mačiek, no k prepuknutiu ochorenia dochádza pri silnom oslabení imunity. Klinická demodikóza sa prejavuje tvorbou lokalizovaných alebo generalizovaných ložísk alopécie (vypadávania srsti), šupinatením, tvorbou chrást a začervenaním, najčastejšie v oblasti hlavy, očných viečok, krku a uší (ceruminózna otitída). Generalizované formy sú u mačiek raritné a takmer vždy signalizujú vážne pridružené systémové alebo imunosupresívne ochorenie, akým je mačacia leukémia (FeLV), mačací imunodeficit (FIV) alebo diabetes mellitus.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Indikátor vážnych chorôb: Na rozdiel od psov, kde ide často o vrodenú dispozíciu, prepuknutie rozsiahlej demodikózy spôsobenej Demodex cati u dospelej mačky takmer vždy znamená, že zviera bojuje s hlbšou skrytou hrozbou, napr. s vírusovou infekciou FIV/FeLV alebo cukrovkou.",
     "id": "demodex_cati_adult",
     "images": []
   },
@@ -4504,10 +4491,10 @@
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 190,
-      "lengthMax": 210,
-      "widthMin": 25,
-      "widthMax": 30,
+      "lengthMin": 85,
+      "lengthMax": 115,
+      "widthMin": 30,
+      "widthMax": 36,
       "unit": "µm"
     },
     "morphology": {
@@ -4516,26 +4503,25 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: krátky."
+      "Tento druh je nápadne malý a patrí k najkratším zástupcom celého rodu Demodex",
+      "Celková dĺžka: Min. 85 μm – Max. 115 μm (samce bývajú o niečo kratšie, priemerná dĺžka samíc sa udáva okolo 103 μm)",
+      "Má charakteristický krátky, zavalitý až guľovitý či raketový tvar (pripomína malý projektil alebo guľku). Pomer dĺžky zadočka k hrudnej časti je výrazne vyrovnanejší než u iných druhov.",
+      "Má 4 páry veľmi krátkych, kýpťovitých a hrubých nôh nachádzajúcich sa na podosóme. Nohy zaberajú takmer polovicu celkovej dĺžky parazita.",
+      "Zadná časť (opisthosoma) je nápadne krátka, široká a na konci zaoblená či tupá, s jemným priečnym ryhovaním.!"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex aurati_ : Dlhé, štíhle, cigarovité telo (180–270 μm). Žije hlboko vo vlasových folikuloch a mazových žľazách. Vyžaduje hlboký kožný zoškrab (až do objavenia sa kapilárnej krvi) alebo histopatológiu."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus prebieha kompletne na hostiteľovi a trvá približne 15 až 20 dní. Samica kladie drobné vajíčka priamo do záhybov epidermy a povrchových vyústení chlpových jamiek, kde z nich vyliahnu šesťnohé larvy. Larvy prechádzajú postupným zvliekaním cez nymfálne štádiá (protonymfa a deuteronymfa) až do osemnohého dospelého jedinca. Parazit je prítomný na povrchu tela trvalo, pričom prenos prebieha takmer výhradne priamym fyzickým kontaktom z matky na mláďatá počas obdobia laktácie a opatery v hniezde.",
+    "pathology": "_Demodex criceti_ je u škrečkov považovaný za bežného, neškodného komenzála a u zdravých zvierat s funkčnou imunitou nevyvoláva patologické zmeny. Ochorenie prepuká len pri oslabení hostiteľa, podvýžive, v pokročilom veku alebo pri iných metabolických/nádorových ochoreniach (napr. hyperadrenokorticizmus). V porovnaní s _D. aurati_ vykazuje _D. criceti_ výrazne nižšiu patogenitu. Patologické prejavy sa koncentrujú najmä na chrbte a krížovej oblasti, pričom zahŕňajú suchú dermatitis, tvorbu lupín, šupinatenie pokožky, matnú srsť a ložiskovú stratu srsti (alopéciu). Svrbenie (pruritus) býva minimálne alebo úplne absentuje.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Zatiaľ čo absolútna väčšina druhov z rodu Demodex je známa tým, že doslova zalieza hlboko pod povrch do folikulov, _Demodex criceti_ sa správa skôr ako klasický povrchový roztoč, ktorý si v rohovej vrstve kože vytvára malé priehlbiny či „hniezda“.",
     "id": "demodex_criceti_adult",
     "images": []
   },
   {
     "latinName": "Demodex equi",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. equi"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4546,21 +4532,17 @@
       "genus": "Demodex",
       "species": "Demodex equi"
     },
-    "hostGroups": [
-      "Koňovité"
-    ],
-    "hosts": [
-      "Kôň"
-    ],
+    "hostGroups": ["Koňovité"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 179,
-      "lengthMax": 236,
-      "widthMin": 40,
-      "widthMax": 50,
+      "lengthMin": 120,
+      "lengthMax": 210,
+      "widthMin": 30,
+      "widthMax": 42,
       "unit": "µm"
     },
     "morphology": {
@@ -4569,20 +4551,18 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: cigarovitý."
+      "Telo je typicky červovité až „cigarovité“, no v porovnaní s veľmi štíhlym _D. caballi_ pôsobí robustnejšie a širšie v strednej časti. Skladá sa z prednej gnathosomy, podosomy s nohami a priečne pruhovaného zadočka (opisthosoma).",
+      "Má 4 páry zakrpatených, kýpťovitých nôh, ktoré vyrastajú z brušnej strany podosomy. Nohy sú zakončené párom drobných, jemných pazúrikov.",
+      "Opisthosoma (zadoček) končí tupo zaobleným koncom, na rozdiel od zašpicatenejšieho konca u D. caballi.",
+      "Parazituje primárne v chlpových folikuloch po celom tele hostiteľa (krk, plecia, chrbát, zátylok, boky)."
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+    "differentialDiagnosis": [  
+     "_Demodex caballi_ : Má dlhšie a nápadne štíhlejšie telo. Osídľuje výhradne mazové žľazy na hlave, špecificky Meibomove žľazy očných viečok a oblasť nozdier."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha permanentne na tele hostiteľa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka do chlpových folikulov koní. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení menia na osemnohé protonymfy, následne deutonymfy a napokon na pohlavne dospelé jedince. K horizontálnemu prenosu dochádza najmä priamym kontaktom medzi zvieratami (v stáde, pri čistení rovnakými pomôckami), no kľúčový je vertikálny prenos – bezprostredne po narodení z kobyly na žriebä počas satia mlieka a ošetrovania.",
+    "pathology": "Demodex equi patrí k bežným, neškodným zložkám kožnej mikrofauny zdravých koní (komenzál). Klinické ochorenie – demodikóza – prepuká iba zriedkavo, zvyčajne v dôsledku imunosupresie, chronického stresu, podvýživy, zlých zoohygienických podmienok alebo pri systémových chorobách. Prejavuje sa ohniskovou alebo generalizovanou alopéciou (vypadávaním srsti), erytémom (začervenaním), tvorbou drobných šupín, lupín a papúl (uzlíkov) najmä na krku, hlave a pleciach. Svrbenie býva minimálne, zosilnieť môže až pri sekundárnej bakteriálnej infekcii (pyodermii), kedy sa lézie zapália a začnú hniť.",
     "zoonosis": false,
-    "notes": "Telo",
+    "notes": "Hoci je kožné osídlenie roztočom u koní bežné, rozvoj klinických lézií a potvrdenie skutočnej demodikózy u veterinárneho lekára je v porovnaní so psami mimoriadne vzácny a raritný úkaz.",
     "id": "demodex_equi_adult",
     "images": []
   },
@@ -4600,18 +4580,16 @@
       "species": "Demodex erinacei"
     },
     "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
+    "hosts": ["Jež"],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 150,
-      "lengthMax": 200,
-      "widthMin": 30,
-      "widthMax": 40,
+      "lengthMin": 140,
+      "lengthMax": 230,
+      "widthMin": 32,
+      "widthMax": 43,
       "unit": "µm"
     },
     "morphology": {
@@ -4620,20 +4598,18 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: cigarovitý."
+      "Celková dĺžka: Min. 140 μm – Max. 230 μm (priemerná dĺžka dospelých samíc sa pohybuje okolo 190 – 210 μm; samce sú o niečo kratšie).",
+      "Má klasickú anatomickú stavbu rodu Demodex – predĺžený, červovitý a transparentný tvar. Opisthosoma (zadoček) je podlhovastá, pravidelne priečne ryhovaná a tvorí približne dve tretiny celkovej dĺžky tela.",
+      "Dospelé jedince majú 4 páry redukovaných, kýpťovitých nôh situovaných v prednej časti tela, tesne za drobným ústnym ústrojenstvom (gnathosoma).",
+      "Zadoček sa ku koncu postupne zužuje a končí zaobleným, mierne tupým hrotom."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "Na rozdiel od pôvodcov svrabu u ježov, akými sú _Caparinia tripilis_ (veľmi častý ušný a kožný roztoč spôsobujúci masívne chrasty) či _Sarcoptes scabiei_, má _Demodex erinacei_ typicky pretiahnuté, cigarovité telo. Svrabovce sú okrúhle a majú viditeľne dlhšie končatiny. Na diagnostiku _D. erinacei_ je potrebný hlboký kožný zoškrab, zatiaľ čo u _Caparinia_ spp. stačí odobrať povrchové chrasty."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý vývojový cyklus prebieha výhradne na tele ježa a trvá približne 18 až 24 dní. Samica kladie mikroskopické vretenovité vajíčka do chlpových folikulov a upravených puzdier ostňov. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení menia na osemnohé protonymfy a deuteronymfy, až dosiahnu štádium dospelého jedinca. Prenos sa uskutočňuje priamym telesným kontaktom, najmä v hniezde medzi matkou a slepými mláďatami počas laktácie. Mimo hostiteľa roztoče rýchlo vysychajú a hynú.",
+    "pathology": "_Demodex erinacei_ žije na koži ježov väčšinou asymptomaticky ako neškodný komenzál, pričom klinická demodikóza prepuká zriedkavo (prevalencia klinickej formy v prírode je len okolo 1 %). Ochorenie sa rozvíja pri ťažkej podvýžive, hibernačnom vyčerpaní, alebo v synergii s plesňovými infekciami (napr. _Trichophyton_ spp.). Patologicky sa prejavuje stratou srsti a ostňov (alopécia) primárne na hlave a krku, tvorbou vyvýšených papúl, šupinatením a zhrubnutím kože. Pri chronickom priebehu a sekundárnej infekcii baktériami vznikajú hnisavé ložiská, ktoré zviera výrazne oslabujú.",
     "zoonosis": false,
-    "notes": "",
+    "notes": " Nález masívne premnoženého demodexa u nájdeného ježa v záchrannej stanici je pre veterinára takmer stopercentným indikátorom toho, že zviera trpí vážnym vnútorným rozvratom organizmu (napr. silným začervením pľúcnymi červami alebo generalizovanou mykózou) a jeho imunita kompletne zlyhala.",
     "id": "demodex_erinacei_adult",
     "images": []
   },
@@ -4650,21 +4626,17 @@
       "genus": "Demodex",
       "species": "Demodex gatoi"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hostGroups": ["Mačkovité mäsožravce"],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 81,
-      "lengthMax": 115,
-      "widthMin": 20,
-      "widthMax": 25,
+      "lengthMin": 80,
+      "lengthMax": 120,
+      "widthMin": 25,
+      "widthMax": 35,
       "unit": "µm"
     },
     "morphology": {
@@ -4673,19 +4645,18 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Kratšie",
-      "širšie telo než D. cati; žije v povrchových vrstvách kože (nie vo folikuloch)",
-      "preto sa dá zistiť aj povrchovým škrabom."
+      "Patrí k najmenším zástupcom rodu Demodex: Min. 80 μm (samce) – Max. 120 μm (samice). Priemerná dĺžka samcov je približne 90 μm a samíc okolo 110 μm.",
+      "Má nápadne krátke, zavalité až zaoblené telo, pripomínajúce miniatúrny vak alebo vajíčko (podobne ako _Demodex criceti_ u škrečkov). Zadoček je krátky a na konci tupo zaoblený.",
+      "Má 4 páry krátkych, hrubých a kýpťovitých nôh situovaných v prednej časti hrudi.",
+      "žije povrchovo v rohovej vrstve kože (stratum corneum)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex cati_ : Dlhé, štíhle, cigarovité telo (130–300 μm), žije hlboko vo vlasových folikuloch, nie je nákazlivý a vyžaduje imunosupresiu hostiteľa."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus prebieha kompletne na povrchu kože hostiteľa a trvá približne 15 až 20 dní. Samica kladie malé oválne vajíčka do vrstiev keratinizovanej pokožky, kde sa z nich liahnu šesťnohé larvy, ktoré cez nymfálne štádiá prechádzajú na dospelé jedince. Na rozdiel od iných druhov trúdokov sa D. gatoi ľahko šíri priamym horizontálnym kontaktom medzi mačkami (napr. pri spoločnom spaní alebo čistení srsti v jednej domácnosti/útulku).",
+    "pathology": "_Demodex gatoi_ je primárne patogénny roztoč a jeho prítomnosť na koži takmer vždy vyvoláva klinické prejavy, a to aj u inak úplne zdravých jedincov. Hlavným a najvýraznejším príznakom je intenzívne svrbenie (pruritus), ktoré často vedie k sebapoškodzovaniu, vytrhávaniu srsti (sekundárna alopécia), šupinateniu, tvorbe miliárnej dermatitídy a chrást, najčastejšie na bruchu, vnútornej strane stehien, na krku a lakťoch. Príznaky klinicky veľmi pripomínajú alergiu na blešie uhryznutie alebo atopiu.",
     "zoonosis": false,
-    "notes": "Krátky",
+    "notes": "Diagnostika _D. gatoi_ býva zradná, pretože mačky sa dôkladne čistia (lizujú), čím si často z povrchu tela zmyjú aj posledné stopy týchto drobných roztočov. Veterinári preto niekedy nasedia na tzv. diagnostickú (ex iuvantibus) liečbu modernými izoxazolínmi alebo špeciálnymi kúpeľmi, ak je podozrenie na nákazlivý svrab tohto typu silné, aj keď je priamy nález v zoškrabe negatívny.",
     "id": "demodex_gatoi_adult",
     "images": []
   },
@@ -4702,21 +4673,17 @@
       "genus": "Demodex",
       "species": "Demodex injai"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
-    "hostNotes": {},
+    "hostGroups": [],
+    "hosts": ["Pes"],
+    "hostNotes": {"Pes": "Výraznú plemennú predispozíciu vykazujú najmä teriéry (napr. hladkosrsté a drsnosrsté foxteriéry, west-highland-white teriéry či bradáče). Na Slovensku sa s ním stretávajú veterinárni dermatológovia v bežnej klinickej praxi pri vyšetreniach psov s atypickou seboroickou dermatitídou. Zatiaľ čo iné formy generalizovanej demodikózy postihujú staršie alebo ťažko choré psy, _D. injai_ sa prekvapivo často diagnostikuje aj u mladých, inak zdravých jedincov špecifických plemien (napr. teriérov), kde sa predpokladá špecifická lokálna imunitná reakcia kože."},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
       "lengthMin": 282,
       "lengthMax": 411,
-      "widthMin": 40,
-      "widthMax": 48,
+      "widthMin": 35,
+      "widthMax": 50,
       "unit": "µm"
     },
     "morphology": {
@@ -4725,24 +4692,25 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Dlhšia",
-      "štíhlejšia forma než D. canis; cigarovité telo."
+      "Najväčší známy druh demodexov u mäsožravcov: celková dĺžka je min. 282 μm – max. 411 μm (samce dosahujú 309–411 μm, samice 282–396 μm, čím sú takmer dvakrát dlhšie než _D. canis_)",
+      "Telo je extrémne pretiahnuté, úzke a červovité. Zadoček (opisthosoma) tvorí až dve tretiny až tri štvrtiny celkovej dĺžky parazita a je jemne priečne prúžkovaný.",
+      "Gnathosoma: Ústne ústrojenstvo je v porovnaní s ostatnými druhmi pomerne široké, lichobežníkového tvaru.",
+      "Má 4 páry krátkych, hrubých a kýpťovitých nôh situovaných v prednej hrudnej časti tela."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex canis_: Stredne dlhé telo (156–300 μm).",
+      "_Demodex cornei _: Krátke a zavalité telo (90–140 μm), viazané na povrch pokožky."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý vývojový cyklus prebieha permanentne na tele hostiteľa a trvá približne 20 až 35 dní. Samica kladie vretenovité vajíčka priamo do hlbokých častí chlpových folikulov a mazových žliaz, kde sa z nich liahnu šesťnohé larvy. Tie cez štádiá protonymfy a deuteronymfy dozrievajú na osemnohé dospelé jedince, pričom k prenosu dochádza priamym tesným kontaktom matky so šteniatkami v prvých dňoch po narodení.",
+    "pathology": "_Demodex injai_ spôsobuje chronickú generalizovanú alebo ložiskovú demodikózu, ktorá sa klinicky odlišuje primárnou silnou hyperseborrheou (nadmernou produkciou mazu, najmä na dorzálnej línii chrbta – tzv. mastný chrbát), folikulitídou, erytémom, miernou alopéciou a specifickým zatuchnutým zápachom kože. Svrbenie (pruritus) býva pri tomto druhu často oveľa intenzívnejšie než pri bežnom _D. canis_, pričom zápalový proces a mastné prostredie silno podporujú sekundárne bakteriálne infekcie. \n Syndróm mastného chrbta: Na rozdiel od klasickej psej demodikózy, kde prevládajú suché lysiny a šupiny, pre D. injai je typický vizuálne lesklý, mastný a na dotyk lepkavý chrbát, pričom srsť na postihnutých miestach často vôbec nemusí masívne vypadávať",
     "zoonosis": false,
-    "notes": "Dlhý",
+    "notes": "Poznámka: Pri D. injai býva hustota roztočov v koži často nízka, preto sú potrebné široké a hlboké zoškraby z viacerých miest alebo trichogram.",
     "id": "demodex_injai_adult",
     "images": []
   },
   {
     "latinName": "Demodex phylloides",
-    "synonyms": [],
+    "synonyms": ["Demodex folliculorum var. suis"],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Animalia",
@@ -4753,19 +4721,17 @@
       "genus": "Demodex",
       "species": "Demodex phylloides"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": ["Ošípané a diviaky"],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {"Diviak": "U voľne žijúcich diviakov je výskyt tohto druhu roztoča pomerne bežný, pričom sa predpokladá, že ide o pôvodného hostiteľa. U domestikovaných ošípaných je výskyt zriedkavý a väčšinou sa spája s chovom v preplnených podmienkach, kde dochádza k stresu a oslabení imunity."},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 282,
-      "lengthMax": 411,
-      "widthMin": 40,
-      "widthMax": 48,
+      "lengthMin": 175,
+      "lengthMax": 265,
+      "widthMin": 45,
+      "widthMax": 60,
       "unit": "µm"
     },
     "morphology": {
@@ -4774,18 +4740,19 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Dlhšia",
-      "štíhlejšia forma než D. canis; cigarovité telo."
+      "Patrí k stredne veľkým druhom roztočov z rodu Demodex, pričom vykazuje výrazný pohlavný dimorfizmus (samice sú viditeľne väčšie)",
+      "Celková dĺžka: Min. 175 μm – Max. 265 μm (samce bývajú kratšie, zvyčajne okolo 170–200 μm).",
+      "Telo je typicky pretiahnuté a nesie charakteristické znaky rodu. Predná časť tela (gnathosoma a podosoma) je relatívne široká a prechádza do opisthosomy (zadočku), ktorá sa ku koncu zužuje, no na samotnom hrote končí nápadne zaoblene.",
+      "Dospelé roztoče majú 4 páry veľmi krátkych, silných, kýpťovitých nôh s malými pazúrikmi, sústredených na brušnej strane hrudnej časti.",
+      "Samce majú výrazne viditeľný dorsalne umiestnený kopulačný orgán (aedeagus), samice majú vulvu predĺženú na brušnú stranu na úrovni štvrtého páru nôh."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "U ošípaných a diviakov neparazituje žiadny iný druh z rodu Demodex, preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha výhradne na tele ošípanej v priebehu 2 až 3 týždňov (približne 14–21 dní). Samica žije vo vlasových folikuloch a mazových žľazách (najmä na miestach s jemnejšou kožou), kde kladie charakteristické vretenovité vajíčka. Z vajíčok sa liahnu šesťnohé larvy, ktoré sa po zvlečení cez tri nymfálne štádiá (protonymfa, nymfa, deuteronymfa) vyvinú na osemnohé dospelé jedince. Hlavným spôsobom šírenia je priamy fyzický kontakt, predovšetkým vertikálny prenos z infikovanej prasnice na prasiatka počas sania mlieka.",
+    "pathology": "Demodex phylloides je vo väčšine prípadov u ošípaných a najmä u voľne žijúcich diviakov neškodným komenzálom a nespôsobuje žiadne vonkajšie príznaky (asymptomatická infekcia). K prepuknutiu klinickej formy dochádza v dôsledku imunitného deficitu, stresu v preplnených chovoch alebo podvýživy. Ochorenie sa prejavuje tvorbou drobných folikulárnych papúl, uzlíkov a pustúl (pľuzgierov) naplnených syrovitým alebo hnisavým obsahom. Tieto lézie sa tvoria najprv na hlave (okolo očí, na viečkach, rypáku), neskôr prechádzajú na spodnú časť krku, hrudník, brucho a vnútornú stranu stehien. Pri komplikáciách a sekundárnej bakteriálnej infekcii (napr. Staphylococcus spp.) sa uzlíky menia na hnisavé abscesy a zápaly kože.",
     "zoonosis": false,
-    "notes": "Dlhý",
+    "notes": "",
     "id": "demodex_phylloides_adult",
     "images": []
   },
@@ -4809,10 +4776,10 @@
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 282,
-      "lengthMax": 411,
-      "widthMin": 40,
-      "widthMax": 48,
+      "lengthMin": 140,
+      "lengthMax": 180,
+      "widthMin": 30,
+      "widthMax": 40,
       "unit": "µm"
     },
     "morphology": {
@@ -4821,18 +4788,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Dlhšia",
-      "štíhlejšia forma než D. canis; cigarovité telo."
+      "Má predĺžený, typicky červovitý vzhľad s jasným členením. Pomer dĺžky zadočka (opisthosoma) k prednej časti tela (podosoma) je vyvážený, pričom zadoček tvorí o niečo viac ako polovicu celkovej dĺžky a je jemne priečne pruhovaný.",
+      "Disponuje 4 pármi veľmi krátkych, kýpťovitých a hrubých nôh sústredených na hrudi, ktoré mu pomáhajú fixovať sa v stiesnených kožných priestoroch.",
+      "Opisthosoma sa smerom dozadu postupne zužuje a končí mierne zaobleným až subakútnym hrotom."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "U veveríc neparazituje žiadny iný druh z rodu Demodex, preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus prebieha permanentne na tele hostiteľa a odhaduje sa na 18 až 24 dní. Samica kladie vretenovité vajíčka priamo do chlpových folikulov a príslušných mazových žliaz veveríc. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení cez štádiá protonymfy a deuteronymfy transformujú na osemnohé dospelé jedince. K horizontálnemu prenosu medzi dospelými jedincami dochádza len výnimočne, primárna cesta šírenia je vertikálny prenos v hniezde z matky na mláďatá počas obdobia ich odchovu a dojčenia.",
+    "pathology": "_Demodex sciurinus_ sa bežne považuje za asymptomatického obyvateľa kože (komenzál) so stabilne nízkou hustotou populácie. Klinická demodikóza (trúdavosť) u veveríc prepuká zriedkavo, najčastejšie pri výraznom oslabení imunity, podvýžive v zimných mesiacoch, poškodení organizmu inými patogénmi alebo pri stresových stavoch (napr. pri držaní v nevhodných podmienkach v zajatí). Prejavuje sa lokalizovanými lysinami (alopéciou), začervenaním a šupinatením kože najmä v oblasti hlavy, okolo očí, nozdier a na krku. Ak dôjde k sekundárnej bakteriálnej infekcii folikulov, lézie sa môžu zmeniť na hnisavé ranky s tvorbou chrást.",
     "zoonosis": false,
-    "notes": "Dlhý",
+    "notes": "",
     "id": "demodex_sciurinus_adult",
     "images": []
   },
@@ -4849,21 +4815,17 @@
       "genus": "Demodex",
       "species": "Demodex tauri"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hostGroups": [],
+    "hosts": ["Hovädzí dobytok"],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 250,
+      "lengthMin": 180,
       "lengthMax": 250,
-      "widthMin": 40,
-      "widthMax": 60,
+      "widthMin": 35,
+      "widthMax": 45,
       "unit": "µm"
     },
     "morphology": {
@@ -4872,20 +4834,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: cigarovitý."
+      "Telo je typicky pretiahnuté, cigarovité a priehľadné. Opisthosoma (zadoček) zaberá významnú časť tela a je pokrytá hustým priečnym ryhovaním.",
+      "Podobne ako u ostatných zástupcov rodu, dospelé štádiá majú 4 páry redukovaných, zakrpatených a hrubých nôh sústredených v prednej tretine podosomy",
+      "Parazituje striktne v chlpových folikuloch a vývodoch mazových žliaz očných viečok (vrátane Meibomových žliaz). Nevytvára masívne podkožné uzly na tele."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Demodex môže byť potrebná molekulová identifikácia."
+      "_Demodex bovis_: Spôsobuje klasickú papulonodulárnu formu demodikózy. Žije v koži krku, pleca, bokov a hrudníka, kde vytvára veľké hmatateľné uzlíky (cysty) naplnené syrovitým miazgom."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha trvalo na hostiteľovi a trvá približne 18 až 24 dní. Samice kladú mikroskopické vretenovité vajíčka do folikulov rias a priľahlých mazových žliaz očného viečka. Vývoj prechádza cez šesťnohú larvu, protonymfu a deuteronymfu až po osemnohé dospelé jedince. Prenos je predovšetkým vertikálny – tesným fyzickým kontaktom matky (kravy) s narodeným teľaťom počas satia mlieka, kedy dochádza k blízkej migrácii roztočov z oblasti hlavy matky na mláďa.",
+    "pathology": "_Demodex tauri_ vykazuje veľmi nízku patogenitu a v drvivej väčšine prípadov ide o úplne asymptomatického komenzála. Dodnes nie je spoľahlivo dokázané, že by tento druh primárne vyvolával vážne klinické kožné ochorenia dobytka. Pri masívnom premnožení (v dôsledku imunosupresie, stresu alebo metabolických porúch) sa môže podieľať na lokálnom podráždení očného viečka, miernom šupinatení, vypadávaní rias alebo sekundárnej bakteriálnej infekcii (napr. _Moraxella bovis_ alebo _Staphylococcus aureus_), čo môže skomplikovať priebeh zápalov spojiviek (konjunktivitíd).",
     "zoonosis": false,
-    "notes": "V očných viečkach",
+    "notes": "**Československý objav**: Pre našu vedu je tento druh mimoriadne významný, pretože jeho objavenie a detailný opis v roku 1986 pochádza z výskumov na dobytku z územia vtedajšieho Československa.",
     "id": "demodex_tauri_adult",
     "images": []
   },
@@ -4911,10 +4870,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 65,
-      "lengthMax": 90,
-      "widthMin": 25,
-      "widthMax": 38,
+      "lengthMin": 115,
+      "lengthMax": 140,
+      "widthMin": 45,
+      "widthMax": 49,
       "unit": "µm"
     },
     "morphology": {
@@ -4923,20 +4882,17 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Elipsovité",
-      "mierne asymetrické",
-      "tenká hladká škrupina; podobné vajíčku Aspiculuris tetraptera",
-      "ale hostiteľom sú pieskomilovité hlodavce (Meriones); pri vylúčení obsahuje nesegmentovaný zárodok."
+      "Veľké, asymetricky oválne (v tvare polmesiaca alebo vretena)",
+      "Obsahujú už sformované embryo (morulu)"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dentostomella môže byť potrebná molekulová identifikácia."
+      "_Syphacia_ spp. (_S. obvelata, S. muris_): menšie vajíčka (dĺžka 75–85 μm), typický tvar písmena D.",
+      "_Aspiculuris tetraptera_: menšie vajíčka (dĺžka 70–90 μm), symetrické, elipsoidné až vretenovité. ."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez medzihostiteľa v prostredí a tele hostiteľa a prepatentná perióda (čas od infekcie po vylučovanie vajíčok) trvá 25 až 29 dní. Hostiteľ sa nakazí perorálne prehltnutím (ingesciou) infekčných vajíčok z kontaminovaného prostredia, podstielky či krmiva. V čreve hlodavca sa z vajíčok uvoľnia larvy, ktoré migrujú do prednej tretiny tenkého čreva (dvanástnik a nalačník), kde dospievajú. Dospelé samice následne produkujú vajíčka, ktoré odchádzajú trusom do vonkajšieho prostredia.",
+    "pathology": "Tento endoparazit vykazuje veľmi nízku patogenitu a vo väčšine prípadov prebieha infekcia úplne asymptomaticky (bez klinických príznakov). Zvieratá si udržiavajú normálnu telesnú hmotnosť a stabilný príjem potravy. Až pri extrémne masívnom premnožení červov v tesnom priestore tenkého čreva môže dochádzať k mechanickému dráždeniu sliznice, miernym poruchám vstrebávania živín, prípadne k zápalu čreva (enteritíde). Vzácne môže prítomnosť masy červov prispieť k intususcepcii (vsunutiu) čreva. Pri liečbe sa v chovoch úspešne aplikujú benzimidazoly (napr. medikované krmivo s fenbendazolom).",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Väčšina parazitických mrlí (Oxyuridae) u laboratórnych zvierat a hlodavcov (ako rody Syphacia či Aspiculuris) je typická tým, že osídľuje zadné pasáže tráviaceho traktu, teda slepé a hrubé črevo. Dentostomella translucida predstavuje evolučnú výnimku, pretože úmyselne obchádza tieto partie a vyhľadáva výhradne prostredie tenkého čreva.",
     "id": "dentostomella_translucida_egg",
     "images": []
   },
