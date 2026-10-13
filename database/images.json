@@ -1880,7 +1880,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:57:52.048Z"
   },
-
+  {
+    "parasiteId": "dermacentor_sp_adult",
+    "url": "/public/images/parasites/dermacentor_sp_adult/dermacentor_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:57:52.048Z"
+  },
   {
     "parasiteId": "dermanyssus_gallinae_adult",
     "url": "/public/images/parasites/dermanyssus_gallinae_adult/dermanyssus_gallinae_adult_01.webp",
@@ -1930,21 +1937,13 @@
     "credit": "",
     "dateAdded": "2026-08-28T19:58:53.591Z"
   },
-  {
-    "parasiteId": "dicrocoelium_dendriticum_egg",
-    "url": "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_01.webp",
+    {
+    "parasiteId": "dicranotaenia_coronula_egg",
+    "url": "/public/images/parasites/dicranotaenia_coronula_egg/dicranotaenia_coronula_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:36:57.543Z"
-  },
-  {
-    "parasiteId": "dicrocoelium_dendriticum_egg",
-    "url": "/public/images/parasites/dicrocoelium_dendriticum_egg/dicrocoelium_dendriticum_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T11:36:57.551Z"
+    "dateAdded": "2026-08-28T19:58:53.591Z"
   },
   {
     "parasiteId": "dicrocoelium_dendriticum_egg",
@@ -1988,6 +1987,30 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "dictyocaulus_arnfieldi_larva",
+    "url": "/public/images/parasites/dictyocaulus_arnfieldi_larva/dictyocaulus_arnfieldi_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:40:18.171Z"
+  },
+  {
+    "parasiteId": "dictyocaulus_arnfieldi_larva",
+    "url": "/public/images/parasites/dictyocaulus_arnfieldi_larva/dictyocaulus_arnfieldi_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:40:18.171Z"
+  },
+  {
+    "parasiteId": "dictyocaulus_arnfieldi_larva",
+    "url": "/public/images/parasites/dictyocaulus_arnfieldi_larva/dictyocaulus_arnfieldi_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:40:18.171Z"
+  },
+  {
     "parasiteId": "dictyocaulus_filaria_larva",
     "url": "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_01.webp",
     "alt": "",
@@ -2002,6 +2025,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:40:18.186Z"
+  },
+    {
+    "parasiteId": "dictyocaulus_filaria_larva",
+    "url": "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:40:18.171Z"
+  },
+  {
+    "parasiteId": "dictyocaulus_filaria_larva",
+    "url": "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:40:18.171Z"
   },
   {
     "parasiteId": "dictyocaulus_noerneri_larva",
@@ -2037,12 +2076,37 @@
     "dateAdded": "2026-08-29T12:59:27.755Z"
   },
   {
+    "parasiteId": "dictyocaulus_viviparus_larva",
+    "url": "/public/images/parasites/dictyocaulus_viviparus_larva/dictyocaulus_viviparus_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T12:59:27.755Z"
+  },
+    {
     "parasiteId": "dipylidium_caninum_egg",
     "url": "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:00:40.068Z"
+  },
+  {
+    "parasiteId": "dioctophyma_renale_egg",
+    "url": "/public/images/parasites/dioctophyma_renale_egg/dioctophyma_renale_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:00:40.068Z"
+  },
+  {
+    "parasiteId": "dioctophyma_renale_egg",
+    "url": "/public/images/parasites/dioctophyma_renale_egg/dioctophyma_renale_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:00:40.068Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "dipylidium_caninum_egg",
@@ -2238,6 +2302,30 @@
     "dateAdded": "2026-08-28T20:02:17.047Z",
     "isPrimary": true
   },
+    {
+    "parasiteId": "dispharynx_nasuta_egg",
+    "url": "/public/images/parasites/dispharynx_nasuta_egg/dispharynx_nasuta_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:02:17.047Z"
+  },
+  {
+    "parasiteId": "dispharynx_nasuta_egg",
+    "url": "/public/images/parasites/dispharynx_nasuta_egg/dispharynx_nasuta_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:02:17.047Z"
+  },
+  {
+    "parasiteId": "dispharynx_nasuta_egg",
+    "url": "/public/images/parasites/dispharynx_nasuta_egg/dispharynx_nasuta_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:02:17.047Z"
+  },
   {
     "parasiteId": "drepanidotaenia_lanceolata_egg",
     "url": "/public/images/parasites/drepanidotaenia_lanceolata_egg/drepanidotaenia_lanceolata_egg_01.webp",
@@ -2253,6 +2341,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:52:37.925Z"
+  },
+  {
+    "parasiteId": "dujardinascaris_sp_egg",
+    "url": "/public/images/parasites/dujardinascaris_sp_egg/dujardinascaris_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:02:17.047Z"
   },
   {
     "parasiteId": "echinococcus_granulosus_larva",

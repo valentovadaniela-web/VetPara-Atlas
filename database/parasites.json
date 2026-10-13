@@ -4883,7 +4883,8 @@
     },
     "diagnosticSigns": [
       "Veľké, asymetricky oválne (v tvare polmesiaca alebo vretena)",
-      "Obsahujú už sformované embryo (morulu)"
+      "Obsahujú už sformované embryo (morulu)",
+      "Disponuje na jednom zo svojich pólov štruktúrou nazývanou operkulum (čiapočka/viečko), cez ktorú sa neskôr liahne larva."
     ],
     "differentialDiagnosis": [
       "_Syphacia_ spp. (_S. obvelata, S. muris_): menšie vajíčka (dĺžka 75–85 μm), typický tvar písmena D.",
@@ -4897,9 +4898,9 @@
     "images": []
   },
   {
-    "latinName": "Dermacentor marginatus",
+    "latinName": "Dermacentor sp.",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Pijak stepný / lužný",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -4907,11 +4908,19 @@
       "order": "Ixodida",
       "family": "Ixodidae",
       "genus": "Dermacentor",
-      "species": "Dermacentor marginatus"
+      "species": "neurčené do druhu"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Voľne žijúce prežúvavce",
+      "Domáce prežúvavce",
+      "Psovité mäsožravce",
+      "ZOO prežúvavce"
+    ],
     "hosts": [
-      "Voľne žijúce prežúvavce"
+      "Zajac",
+      "Jež",
+      "Diviak",
+      "Človek"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -4919,9 +4928,9 @@
     "group": "Arachnida",
     "micrometry": {
       "lengthMin": 3500,
-      "lengthMax": 5000,
+      "lengthMax": 6000,
       "widthMin": 2500,
-      "widthMax": 3500,
+      "widthMax": 4000,
       "unit": "µm"
     },
     "morphology": {
@@ -4931,24 +4940,28 @@
     },
     "diagnosticSigns": [
       "Tvrdý kliešť s ornamentovaným (mramorovaným) skutom",
-      "prítomné oči a festóny."
+      "Plne nasaté samice: dĺžka extrémne narastá až do 1,5 x 1 cm",
+      "Krátke a široké palpy",
+      "Na okrajoch chrbtového štítku majú dobre viditeľné ploché oči.",
+      "Zadný okraj tela (abdomen) je rozdelený na 11 drobných zárezov/obdĺžnikových políčok (festónov), ktoré sú jasne viditeľné najmä u nenásatých jedincov."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dermacentor môže byť potrebná molekulová identifikácia."
+      "Rod Ixodes - jednofarebný (tmavohnedý až čierny) štítok bez ornamentov, dlhé štíhle palpy, nemá oči, nemá festóny",
+      "Rod Haemaphysalis - jednofarebný (svetlohnedý až žltkastý) štítok bez ornamentov, krátke palpy, druhý článok palp bočne vyčnieva, nemá oči, prítomné festóny",
+      "Rod Hyalomma (tzv. „obrie kliešte“): prenášané sťahovavými vtákmi z Afriky a južnej Európy. Sú výrazne väčšie, majú prúžkované nohy a na rozdiel od našich kliešťov aktívne prenasledujú hostiteľa (bežia za ním). Zatiaľ na Slovensku netvoria stabilné populácie a zimu neprežijú, no ich výskyt monitoruje Biomedicínske centrum SAV",
+      "Rod Rhipicephalus (Kliešť psí - _Rhipicephalus sanguineus_): Teplomilný druh parazitujúci na psoch. Dovolenkári si ho občas nevedomky prinesú z južnej Európy. V našej prírode zimu bežne neprežije, no dokáže sa udomácniť a úspešne rozmnožovať priamo v bytoch alebo chovateľských staniciach."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "ornamentovaný štít, Suché oblasti",
-    "id": "dermacentor_marginatus_adult",
+    "lifeCycle": "Životný cyklus rodu Dermacentor je trojhostiteľský a trvá zvyčajne 1 až 2 roky v závislosti od klimatických podmienok. Začína sa na jar, keď oplodnená nasatá samica nakladie do pôdy tisíce vajíčok. Z nich sa vyliahnu šesťnohé larvy, ktoré napadnú prvého hostiteľa (drobného hlodavca), nasajú sa, odpadnú a v prostredí sa premenia na osemnohú nymfu. Nymfa si nájde druhého hostiteľa (napr. ježa alebo väčšieho hlodavca), opäť sa nasaje krvi a po odpadnutí sa v pôde transformuje na dospelého jedinca (samca alebo samicu). Dospelé jedince potom vyhľadávajú tretieho, veľkého hostiteľa (pes, voľne žijúca zver), na ktorom prebieha samotné cicanie samíc a párenie. Pre rod Dermacentor je typická bimodálna aktivita s vrcholmi skoro na jar (marec – máj) a koncom leta/na jeseň (september – november).",
+    "pathology": "Patologický vplyv kliešťov _Dermacentor_ sp. zahŕňa priame mechanické poškodenie tkanív hostiteľa v mieste prisatia, kde slinné enzýmy spôsobujú lokálny zápal, nekrózu a sekundárnu bakteriálnu infekciu. Najvýznamnejší je však ich status vektora závažných patogénov. U psov sú primárnym prenášačom prvoka _**Babesia canis**_, ktorý spôsobuje psí babeziózu – život ohrozujúce ochorenie prejavujúce sa masívnou deštrukciou červených krviniek (hemolytická anemia), horúčkami, hemoglobinúriou (tmavý moč) a zlyhaním orgánov. Taktiež sú rezervoárom a vektorom baktérií z rodu Rickettsia, Francisella tularensis (pôvodca tularémie) a vírusu kliešťovej encefalitídy či omskej hemoragickej horúčky.",
+    "zoonosis": true,
+    "notes": "_Dermacentor reticulatus_ - piják lužný - vo vlhkých oblastiach \n _Dermacentor marginatus_ - piják stepný - v suchých oblastiach \n\n  Pijaky rodu Dermacentor sú povestné svojou aktivitou počas miernych zím. Dokážu byť aktívne a napádať hostiteľov (najmä psov) aj pri teplotách tesne nad nulou, často behajú po snehu, kvôli čomu bývajú veterinári v strehu aj počas januára a februára.",
+    "id": "dermacentor_sp_adult",
     "images": []
   },
   {
     "latinName": "Dermanyssus gallinae",
     "synonyms": [],
-    "slovakName": "",
+    "slovakName": "Klieštikovec kurí - čmelík",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Arthropoda",
@@ -4968,9 +4981,9 @@
     "group": "Arachnida",
     "micrometry": {
       "lengthMin": 600,
-      "lengthMax": 1000,
-      "widthMin": 600,
-      "widthMax": 1000,
+      "lengthMax": 1500,
+      "widthMin": 300,
+      "widthMax": 900,
       "unit": "µm"
     },
     "morphology": {
@@ -4979,19 +4992,21 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Červený vtáčí roztoč",
-      "po nasatí krvi červenohnedá farba",
-      "dlhé chelicery prispôsobené na sanie krvi."
+      "Nenasatý (bielo-sivý) - 600 μm – 750 μm x 300 μm – 400 μm",
+      "Nasatý krvou (červeno-hnedý) - 1000 μm – 1500 μm x 700 μm – 900 μm",
+      "Sploštené, nečlánkované, oválneho až hruškovitého tvaru, s ôsmimi dlhými nohami u dospelcov (larvy majú iba 6 nôh).",
+      "Veľmi dlhé, ihlicovité chelicery prispôsobené na bodanie a cicanie krvi.",
+      "Dorsálny štít: Nedosahuje až po zadný okraj tela, vzadu je zakomponovaný do rovnej línie alebo mierne skosený.",
+      "Análny štít: Má charakteristický tvar, u samičiek je umiestnený v zadnej časti s anusom v prednej polovici štítu."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dermanyssus môže byť potrebná molekulová identifikácia."
+      "_Ornithonyssus sylviarum_ (klieštikovec vtáčí): Na rozdiel od _D. gallinae_ zostáva na hostiteľovi natrvalo (celý životný cyklus prebieha na tele vtáka, nielen počas kŕmenia). Má odlišný tvar análneho štítu (anus v zadnej polovici) a zužujúci sa dorsálny štít.",
+      "_Argas persicus_ (kliešťovec perzský): Ide o mäkkého kliešťa (rodina Argasidae). Je podstatne väčší (4 – 10 mm), má kožovitý, granulovaný povrch tela a ústne ústrojenstvo (capitulum) je u dospelcov skryté pod predným okrajom tela (nie je viditeľné zhora)"
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Pri kontakte s vtákmi",
+    "lifeCycle": "Životný cyklus klieštikovca je extrémne rýchly a za optimálnych podmienok (teplota 25 – 30 °C a vysoká vlhkosť) trvá len 7 až 10 dní. Samička kladie vajíčka do štrbín kurníka, z ktorých sa liahne šesťnohá larva, tá sa bez prijímania potravy leví na protonymfu. Protonymfa a následná deutonymfa už aktívne cicajú krv na hostiteľovi, pričom celé kŕmenie prebieha výhradne v noci a trvá len 30 až 60 minút; po nasatí parazity okamžite opúšťajú hostiteľa a schovávajú sa do prostredia, kde sa dospelé jedince následne pária.",
+    "pathology": "Prítomnosť klieštikovcov vyvoláva u hydiny silný nepokoj, stres, úporné svrbenie (pruritus) a dermatitídy, čo vedie k sebapoškodzovaniu a trhaniu peria. Pri masívnom premnožení dochádza v dôsledku straty krvi k ťažkej anemii, celkovému chradnutiu, výraznému poklesu znášky vajec (často s krvavými škvrnami na škrupine) a v extrémnych prípadoch, najmä u kurčiat a sediacich kvočiek, nastáva smrť v dôsledku exsangvinácie (vykrácania).",
+    "zoonosis": true,
+    "notes": "• Dospelé klieštikovce dokážu v prázdnom kurníku bez prístupu k hostiteľovi prežiť v stave kryptobiózy až 8 až 10 mesiacov.\n• Sú prísne svetloplaché (negatívny fototaktizmus). Cez deň sú ukryté hlboko v škárach stien, pod hradami či v kŕmidlách a na sliepky útočia výhradne v tme.",
     "id": "dermanyssus_gallinae_adult",
     "images": []
   },
@@ -5020,13 +5035,7 @@
       "Vydra"
     ],
     "hostNotes": {
-      "Alexander": "",
-      "Človek": "",
-      "Líška": "",
-      "Mačka": "",
-      "Medveď": "",
-      "Pes": "",
-      "Vydra": ""
+      "Človek": "Ide o najdlhšiu pásomnicu, aká môže parazitovať v človeku. Bežne dosahuje dĺžku 2 až 15 metrov, no v extrémnych prípadoch boli zaznamenané exempláre dlhé až 25 metrov. V tenkom čreve môže takýto gigant nerušene žiť a denne vyprodukovať až milión vajíčok po dobu viac ako 20 rokov. \n Hoci bola táto nákaza v našich končinách dlho považovaná za vymiznutú (posledné historické prípady na Slovensku boli hlásené v 60. rokoch 20. storočia), parazitológovia potvrdili jej návrat. V susednej Českej republike (v priehrade Lipno) bol v roku 2023 potvrdený lokálny výskyt po tom, čo sa pacient nakazil z čerstvo nasolených ikier zo šťuky. Predpokladá sa, že parazit bol do ekosystému opätovne zavlečený turistami zo severovýchodnej Európy."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -5046,7 +5055,7 @@
     },
     "diagnosticSigns": [
       "Oválne",
-      "Operkulum (viečko) na jednom póle, na opačnom póle často malý hrbolček (aboperculárny hrbolček)",
+      "Operkulum (viečko) na jednom póle, na opačnom póle často malý nenápadný hrbolček (aboperculárny hrbolček)",
       "Nesegmentované pri vylúčení",
       "Hladká stena",
       "Neembryonované vajíčko pri odchode trusom obsahuje zárodočnú bunku/žĺtkové bunky"
@@ -5058,7 +5067,7 @@
     "lifeCycle": "Dospelý D. latus žije v tenkom čreve definitívneho hostiteľa.\nVajíčka odchádzajú s trusom do vody.\nVo vode dozrievajú a uvoľní sa koracídium.\nKoracídium zožerie prvý medzihostiteľ – vodné kôrovce Copepoda.\nVyvinie sa procerkoid.\nKôrovca zožerie sladkovodná ryba → larva sa mení na plerocerkoid v tkanivách ryby.\nDefinitívny hostiteľ sa nakazí konzumáciou surovej alebo nedostatočne tepelne upravenej ryby.\nPlerocerkoid sa v čreve vyvinie na dospelca.",
     "pathology": "Patológia u definitívnych hostiteľov:\nVäčšinou asymptomatická alebo mierna infekcia. Dospelce v tenkom čreve spôsobujú mechanické dráždenie a lokálne poškodenie sliznice. Pri silnej infekcii katarálna enteritída, hnačka, nechutenstvo, abdominálny diskomfort a chudnutie; zriedkavo poruchy črevnej pasáže až obštrukcia.",
     "zoonosis": true,
-    "notes": "",
+    "notes": "Táto pásomnica má neobyčajne vysokú afinitu k vitamínu B12. Dokáže zo stravy hostiteľa vstrebať celým povrchom svojho tela až 80 až 100 % tohto vitamínu. Pri masívnej alebo dlhodobej infekcii preto spôsobuje u ľudí špecifickú formu chudokrevnosti – tzv. megaloblastickú (pernicióznu) anémiu, sprevádzanú demyelináciou nervových vlákien a neurologickými ťažkosťami.",
     "id": "dibothriocephalus_latus_egg",
     "images": []
   },
@@ -5076,22 +5085,18 @@
       "species": "Dicranotaenia coronula"
     },
     "hostGroups": [
-      "Hydina"
+      "Vodná hydina"
     ],
-    "hosts": [
-      "Kačica",
-      "Hus",
-      "Labuť"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 30,
+      "lengthMin": 35,
       "lengthMax": 45,
-      "widthMin": 25,
-      "widthMax": 40,
+      "widthMin": 30,
+      "widthMax": 35,
       "unit": "µm"
     },
     "morphology": {
@@ -5100,20 +5105,20 @@
       "shell": "Hrubá, radiálne pruhovaná"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly až široko oválny."
+      "Vajíčka majú typicky oválny až mierne elipsovitý tvar.",
+      "Vajíčko patrí do kategórie tzv. hymenolepidoidných vajíčok, pre ktoré je typická prítomnosť troch ochranných obalov (stien) chrániacich larvu vo vodnom prostredí",
+      "Vláknité výbežky (filamenty) sú málo zreteľné alebo chýbajú",
+      "Onkosféra obsahuje 3 páry embryonálnych háčikov (spolu 6 háčikov), ktoré slúžia larve na to, aby sa po zožratí medzihostiteľom (vodným kôrovcom) mechanicky prevŕtala cez stenu jeho čreva do telovej dutiny, kde pokračuje jej vývoj na cysticerkoid."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dicranotaenia môže byť potrebná molekulová identifikácia."
+      "_Drepanidotaenia lanceolata_ (pásomnica husia): Jej vajíčka sú výrazne väčšie, merajú približne 60 – 80 μ m na dĺžku a 50 – 70 μ m na šírku. Sú takmer guľaté až oválne s veľmi hrubým vnútorným obalom, zatiaľ čo vajíčka D. coronula sú subtílnejšie (35 – 45 μ m)",
+      "Rod Sobolevicanthus: Tieto vajíčka majú taktiež typický trojobalový hymenolepidoidný vzhľad, no ich vnútorná stena (embryofor) často vybieha na póloch do predĺžených, dobre viditeľných vláknitých útvarov (filamentov). Vajíčka D. coronula sú na póloch hladké a filamenty im spravidla chýbajú alebo sú redukované.",
+      "Rod Diorchis: Vajíčka rodu Diorchis bývajú viac pretiahnuté, elipsovitého až vretenovitého tvaru a ich onkosféra (larva) vo vnútri býva užšia, s odlišne orientovanými tromi pármi háčikov."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus je nepriamy (dixénny) a prebieha striktne vo vodnom prostredí. Dospelá pásomnica žije v čreve kačice alebo husi, kde produkuje vajíčka, ktoré odchádzajú s trusom do vody. Tieto vajíčka s onkosférou zožerie vodný kôrovec (bušanka/nápravník), v ktorého telovej dutine sa v priebehu 2 – 3 týždňov vyvinie infekčné larválne štádium – cysticerkoid. Definitívny hostiteľ (vták) sa nakazí tak, že pri filtrovaní vody alebo požieraní vodnej vegetácie skonzumuje infikované kôrovce. V čreve vtáka sa cysticerkoid prichytí o sliznicu, začne produkovať články a za cca 3 až 4 týždne dospieva na dospelú pásomnicu.",
+    "pathology": "Prítomnosť pásomníc spôsobuje mechanické a toxické dráždenie sliznice tenkého čreva, kde dochádza k lokálnym zápalom (katarálna až hemoragická enteritída) a atrofiám klkov v mieste fixácie scolexu. Pri masívnych infekciách (častých najmä u mladých káčat a húsat) dochádza k narušeniu trávenia, hnačkám, slabosti, chradnutiu a anémii, pričom klbká pásomníc môžu fyzicky upchať lumen čreva, čo vedie k úhynu v dôsledku jeho obštrukcie alebo perforácie.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "V extenzívnych chovoch domácej hydiny a na chovných rybníkoch južného a východného Slovenska, kde je vysoká hustota vodných kôrovcov, býva infikované obrovské percento populácie divých a domácich kačíc.",
     "id": "dicranotaenia_coronula_egg",
     "images": []
   },
@@ -5136,18 +5141,10 @@
       "Ošípané a diviaky",
       "Koňovité",
       "Zajace, králiky",
-      "Hlodavce"
+      "Hlodavce",
+      "Voľne žijúce prežúvavce"
     ],
     "hosts": [
-      "Hovädzí dobytok",
-      "Hlodavce",
-      "Ovca",
-      "Voľne žijúce prežúvavce",
-      "Koza",
-      "Kôň",
-      "Králik",
-      "Pes",
-      "Ošípaná",
       "Človek"
     ],
     "hostNotes": {},
