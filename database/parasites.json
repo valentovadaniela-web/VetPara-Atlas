@@ -6459,59 +6459,6 @@
     "images": []
   },
   {
-    "latinName": "Eimeria arctomysi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria arctomysi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Svišť",
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 20,
-      "lengthMax": 24,
-      "widthMin": 18,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Nemá mikropyle",
-    "id": "eimeria_arctomysi_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Eimeria arloingi",
     "synonyms": [],
     "slovakName": "",
