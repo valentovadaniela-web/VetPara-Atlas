@@ -95,7 +95,7 @@
     "lifeCycle": "Mačka sa nakazí zožraním medzihostiteľa (najmä slimákov a slizniakov) alebo paratenického hostiteľa (napr. hlodavec, vták, jašterica), ktorý obsahuje infekčné larvy L3.\n\nL3 → črevo mačky → krvný/lymfatický systém → pľúca → dospelce v bronchioloch a alveolách → vajíčka → L1 v dýchacích cestách → vykašľanie a prehltnutie → trus.\n\n V prostredí sa L1 dostávajú do mäkkýšov, kde sa vyvíjajú cez L2 na infekčné L3. Po pozretí mäkkýša mačkou sa cyklus opakuje. \n\n Paratenickí hostitelia umožňujú prežívanie L3 a predstavujú významný zdroj infekcie pre mačky.",
     "pathology": "▪ Poškodenie a zápal pľúc a drobných dýchacích ciest\n▪ Tvorba uzlíkov v pľúcnom tkanive\n▪ Nahromadenie hlienu a zápalových buniek\n▪ Pri silnej infekcii kašeľ a sťažené dýchanie.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Príznaky infekcie (chronický kašeľ a sipot) imitujú mačaciu astmu alebo bronchitídu.",
     "id": "aelurostrongylus_abstrusus_larva",
     "images": []
   },
@@ -357,7 +357,7 @@
     "lifeCycle": "Voľne žijúci druh spájaný s hnijúcimi slizniakmi a pôdou. Životný cyklus je priamy bez medzihostiteľa, kedy vtáky na pastve alebo vo vode prehltnú infekčné larvy (L3) vylúčené trusom. Tieto larvy putujú do žalúdka, kde sa zavŕtajú pod jeho výstelku a do troch týždňov dospejú.",
     "pathology": "Parazituje pod zrohovatenou vrstvou svalnatého žalúdka, kde cicia krv, poškodzuje tkanivo a spôsobuje ťažké zápaly, vredy a nekrózu. Prejavy infekcie zahŕňajú chradnutie, výraznú anémiu (chudokrvnosť) a u mladých húsat masívna nákaza končí smrťou.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Dospelé jedince majú v čerstvom stave jasne červenú farbu. Pri masívnej infekcii dokážu doslova zničiť a odlúčiť výstelku žalúdka, čo vedie k tomu, že vtáky nedokážu mechanicky spracovať potravu a vyhladujú sa k smrti.",
     "id": "amidostomum_anseris_egg",
     "images": []
   },
@@ -650,7 +650,7 @@
     "lifeCycle": "Cyklus je nepriamy. Larvy prvé štádia (L1) vykašľané a prehltnuté hostiteľom odchádzajú v truse. V tele slimáka sa vyvinú na infekčné larvy (L3). Pes sa nakazí zožratím infikovaného slimáka (alebo žaby/vtáka ako paratenického hostiteľa). Larvy migrujú cez črevo a lymfatické uzliny krvou do pravej srdcovej predsiene a pľúcnych tepien, kde dospievajú. Nepriame riziko: Chrobák alebo dážďovka síce v sebe larvy A. vasorum neprechovávajú vo svojich tkanivách, ale ak pes zožerie chrobáka, ktorý práve požiera uhynutého infikovaného slizniaka, môže sa teoreticky nakaziť mechanickým prenosom (larvy sú na povrchu chrobáka alebo v jeho tráviacom trakte).",
     "pathology": "Dospelé červy parazitujú v pľúcnych cievach a pravom srdci. Spôsobujú vážne pľúcne zmeny (kašeľ, sťažené dýchanie, uzlíky), srdcové zlyhávanie a typické poruchy zrážania krvi, ktoré vedú k masívnemu vnútornému krvácaniu. Neliečená infekcia končí pre psa smrťou.",
     "zoonosis": false,
-    "notes": "Výrastok na chvoste",
+    "notes": ": Na rozdiel od iných pľúcnych červov dospelé červy nežijú priamo v pľúcnom tkanive, ale v pravej srdcovej komore a pľúcnych tepnách psovitých šeliem. \n : Jedným z najnebezpečnejších a najbizarnejších prejavov tohto parazita je, že u psov vyvoláva závažné poruchy zrážanlivosti krvi (koagulopatie). Infikované psy môžu trpieť nekontrolovateľným krvácaním z nosa, masívnymi modrinami alebo krvácaním do mozgu a očí. \n : Pes sa nemusí nakaziť len priamym zožratím slimáka (medzihostiteľa). Infekčné larvy sa dokážu uvoľniť do slizu, takže pes sa môže nakaziť napríklad len olizovaním hračky alebo pitím z misky, po ktorej preliezol slimák.",
     "id": "angiostrongylus_vasorum_larva",
     "images": []
   },
@@ -859,7 +859,7 @@
     "lifeCycle": "Životný cyklus tohto druhu je nepriamy (heteroxénny):Vajíčka odchádzajú z tela ježa spolu s trusom. Vo vonkajšom prostredí vajíčka zožerie medzihostiteľ, ktorým je pôdny bezstavec (najčastejšie dážďovka), v ktorého tele sa vyvinie infekčná larva. Jež sa nakazí zožratím tejto infikovanej dážďovky. Larvy migrujú do čreva, kde dospievajú na pohlavne zrelé červy.",
     "pathology": "Dospelé červy parazitujú v tenkom čreve ježov. Predným tenkým koncom tela sa zavrtávajú hlboko do črevnej sliznice, čo spôsobuje katarálny zápal čriev (enteritídu). Pri slabých infekciách u dospelých ježov prebieha nákaza takmer bezpríznakovo. Pri masívnom premnožení (často v kombinácii s pľúcnymi červami alebo v ježích záchranných staniciach) vyvoláva výrazné chudnutie, hnačky, dehydratáciu, stratu apetítu a anémiu. Pre oslabené jedince a mladé ježatá môže byť silná nákaza smrteľná.",
     "zoonosis": false,
-    "notes": "Ak ide iba o vajíčko bez dostatočne typickej ornamentácie je možné uviesť ako vajíčka Capillariidae, morfologicky kompatibilné s rodom Aonchotheca.",
+    "notes": "Ak ide iba o vajíčko bez dostatočne typickej ornamentácie je možné uviesť ako **vajíčka Capillariidae**, morfologicky kompatibilné s rodom Aonchotheca.",
     "id": "aonchotheca_erinacei_egg",
     "images": []
   },
@@ -922,9 +922,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "aonchotheca_putorii_egg",
-    "images": [
-      "/public/images/parasites/aonchotheca_putorii_egg/aonchotheca_putorii_egg_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Archaeopsylla erinacei",
@@ -978,7 +976,7 @@
     "lifeCycle": "Cyklus je priamy s kompletnou premenou (vajíčko, 3 štádiá lariev, kukla, dospelá blcha) a trvá približne 2 týždne až niekoľko mesiacov podľa teploty. Dospelé blchy žijú na ježovi, kde sajú krv a samičky kladú vajíčka. Tie vypadávajú do hniezda ježa, kde sa z nich liahnu larvy živiace sa organickým detritom, neskôr sa zakuklia a vyliahnuté dospelce čakajú na hostiteľa.",
     "pathology": "Dospelé blchy mechanicky dráždia kožu ježa a spôsobujú silné svrbenie.U zdravých ježov je prítomnosť pár desiatok bĺch normálna a nespôsobuje vážne škody.Pri masívnom premnožení (u oslabených alebo chorých jedincov ich môžu byť stovky) vyvolávajú ťažkú anémiu (chudokrvnosť) a stratu kondície.U psov a mačiek môže ich pohryznutie vyvolať alergickú dermatitídu.Riziko prenosu chorôb: Tento druh blchy je preukázaným vektorom nebezpečných baktérií, ako sú Rickettsia felis, Rickettsia helvetica či Bartonella henselae (pôvodca choroby z mačacieho škrabnutia). \n Tento druh nie je striktne hostiteľsky špecifický, čo zvyšuje jeho epidemiologický význam",
     "zoonosis": true,
-    "notes": "Je to jediná blcha, u ktorej bola preukázaná účasť na zoonotickom cykle stredomorskej škvrnitej horúčky (Boutonneuse fever), spôsobenej baktériou Rickettsia conorii. \n Môže príležitostne bodnúť aj človeka, hoci nie je jeho primárnym hostiteľom. \n Vzhľadom na jej výskyt spolu s kliešťami na ježkoch (často aj vektormi ďalších rickettsióz) je táto blcha sledovaná ako súčasť širšieho komplexu zoonotických rizík spájaných so synantropnými ježkami",
+    "notes": "Je to jediná blcha, u ktorej bola preukázaná účasť na zoonotickom cykle stredomorskej škvrnitej horúčky (Boutonneuse fever), spôsobenej baktériou _Rickettsia conorii_. \n Môže príležitostne bodnúť aj človeka, hoci nie je jeho primárnym hostiteľom. \n Vzhľadom na jej výskyt spolu s kliešťami na ježkoch (často aj vektormi ďalších rickettsióz) je táto blcha sledovaná ako súčasť širšieho komplexu zoonotických rizík spájaných so synantropnými ježkami",
     "id": "archeopsylla_erinacei_adult",
     "images": []
   },
@@ -1020,12 +1018,12 @@
       "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli."
+      "_Heterakis gallinarum_: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny). Dospelé samičky kladú hrubostenné vajíčka, ktoré odchádzajú s trusom. V prostredí sa vo vajíčku vyvinie infekčná larva. Holub sa nakazí prehltnutím týchto infekčných vajíčok z kontaminovanej potravy alebo vody. Larvy sa vyliahnu v čreve, krátko migrujú do črevnej sliznice (histotrofné štádium) a následne sa vracajú do lumenu čreva, kde dospievajú.",
     "pathology": "Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 7 cm. Larvy počas poškodzujú sliznicu čreva, čo spôsobuje katarálny zápal čriev (enteritídu) a krvácanie. Vtáky strácajú kondíciu, chradnú, majú matné perie, hnačky a anémiu.Mechanické upchatie: Pri masívnom premnožení môžu klbká červov mechanicky upchať črevo (obštrukciu), čo vedie k jeho perforácii (prasknutiu) a smrti vtáka, najmä u mladých holubiat. Nakaziť sa môžu aj iné vtáky, najmä papagáje a iné exotické vtáctvo chované vo voliérach. ",
     "zoonosis": false,
-    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
+    "notes": "Vajíčka _Ascaridia columbae_ a _Heterakis gallinarum_ sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako vajíčka askaridov, najmä pri zmiešaných infekciách. Prípadne **vajíčka radu Ascaridida (Ascaridia/Heterakis)**, alebo **vajíčka nematód čeľade Ascaridiidae**.",
     "id": "ascaridia_columbae_egg",
     "images": []
   },
@@ -1067,12 +1065,12 @@
       "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s Ascaridia"
+      "_Heterakis gallinarum_: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s Ascaridia"
     ],
     "lifeCycle": "Životný cyklus je priamy bez medzihostiteľa, kedy sa morka nakazí prehltnutím infekčných vajíčok z kontaminovanej podlahy alebo pôdy. Larvy sa vyliahnu v čreve, na čas sa zavŕtajú do sliznice a následne sa vracajú do lumenu čreva, kde do štyroch týždňov dospievajú.",
     "pathology": "Z hľadiska patológie dospelé červy parazitujú v tenkom čreve, kde spôsobujú katarálny zápal čriev, hnačky a chudnutie. Pri mladých morkách nákaza výrazne spomaľuje rast, znižuje imunitu a masívne premnoženie môže kvôli upchatiu čreva skončiť smrťou.",
     "zoonosis": false,
-    "notes": "Vajíčka Ascaridia dissimilis a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
+    "notes": "Vajíčka _Ascaridia dissimilis_ a _Heterakis gallinarum_ sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako vajíčka askaridov, najmä pri zmiešaných infekciách. Prípadne **vajíčka radu Ascaridida (Ascaridia/Heterakis)**, alebo **vajíčka nematód čeľade Ascaridiidae**.",
     "id": "ascaridia_dissimilis_egg",
     "images": []
   },
@@ -1115,12 +1113,12 @@
       "Veľmi hrubá, hladká, dvojvrstvová stena"
     ],
     "differentialDiagnosis": [
-      "Heterakis gallinarum: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli"
+      "_Heterakis gallinarum_: menšie (cca 63–75 µm × 36–48 µm), mierne asymetrické (jedna strana býva plochejšia), stena mierne tenšia v porovnaní s A. galli"
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny), kedy sa hydina nakazí prehltnutím infekčných vajíčok z kontaminovanej podstielky, krmiva alebo výbehu. Po vyliahnutí v čreve prechádzajú larvy krátkou fázou zavŕtania sa do črevnej sliznice (histotrofné štádium) a následne sa vracajú do črevného lumenu, kde dospievajú za 5 až 8 týždňov.",
     "pathology": "Z hľadiska patológie dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 12 cm. Spôsobujú katarálny zápal čriev, anémiu, výrazný pokles znášky vajec a chradnutie, pričom u mladých kurčiat môže masívne klbko červov mechanicky upchať črevo a spôsobiť smrť.",
     "zoonosis": false,
-    "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
+    "notes": "Vajíčka _Ascaridia galli_ a _Heterakis gallinarum_ sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako vajíčka askaridov, najmä pri zmiešaných infekciách. Prípadne **vajíčka radu Ascaridida (Ascaridia/Heterakis)**, alebo **vajíčka nematód čeľade Ascaridiidae**.",
     "id": "ascaridia_galli_egg",
     "images": []
   },
@@ -1169,7 +1167,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny) s povinnou migráciou cez orgány. \nPrasatá sa nakazia prehltnutím vysoko odolných infekčných vajíčok z kontaminovanej pôdy, podstielky alebo z kože mliečnej žľazy prasnice pri cicaní. \nVyliahnuté larvy prenikajú stenou hrubého čreva do ciev, krvou migrujú **cez pečeň** do pľúc, kde sú vykašľané, prehltnuté a v tenkom čreve dospievajú.",
     "pathology": "Z hľadiska patológie vyvoláva závažné lézie v dvoch fázach:\n\n Larválna fáza (pečeň a pľúca): Migrujúce larvy mechanicky poškodzujú pečeňové tkanivo, čo zanecháva typické biele väzivové jazvy známe ako „mliečne škvrny“ (milk spots). V pľúcach spôsobujú zápal (pneumóniu), kašeľ a sťažené dýchanie.\n\nIntestinálna fáza (črevo): Dospelé červy parazitujú v tenkom čreve, kde dosahujú dĺžku až 35 cm. Odčerpávajú živiny, čo vedie k zaostávaniu v raste a chradnutiu prasiat, pričom masívne klbká červov môžu spôsobiť upchatie (ileus) alebo prasknutie čreva a smrť. \nAscaris suum, hlavný črevný parazit ošípaných, je schopný infikovať ľudí a dokončiť životný cyklus v ľudskom hostiteľovi, čím spôsobuje symptómy identické s A. lumbricoides.",
     "zoonosis": true,
-    "notes": "Taxonomický status ľudskej A. lumbricoides a A. suum je dlhodobo sporný, pričom dôkazy z morfológie aj genetiky naznačujú, že ide o jeden druh.",
+    "notes": "Taxonomický status ľudskej _A. lumbricoides_ a _A. suum_ je dlhodobo sporný, pričom dôkazy z morfológie aj genetiky naznačujú, že ide o jeden druh.",
     "id": "ascaris_suum_egg",
     "images": []
   },
@@ -1223,9 +1221,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "ascarops_strongylina_egg",
-    "images": [
-      "/public/images/parasites/ascarops_strongylina_egg/ascarops_strongylina_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Aspiculuris tetraptera",
@@ -1365,16 +1361,14 @@
       "Hrubostenná cysta s viditeľnými riasinkami a fazuľovitým makronukleom."
     ],
     "differentialDiagnosis": [
-      "Nyctotherus sp. - cysty sú mierne sploštené s typickým viečkom (operkulom) na jednom póle"
+      "_Nyctotherus_ sp. - cysty sú mierne sploštené s typickým viečkom (operkulom) na jednom póle"
     ],
     "lifeCycle": "Priamy cyklus bez medzihostiteľa. Plaz zožerie zrelú cystu z prostredia, v čreve dôjde k excystácii a uvoľnený trofozoit osídli hrubé črevo, kde sa množí priečnym delením a živí sa baktériami a rastlinným detritom. Pri posune obsahu čreva smerom k rektu dochádza k encystácii a hotové cysty sa vylučujú trusom, pričom sú okamžite infekčné pre ďalšieho hostiteľa.",
     "pathology": "Za normálnych okolností ide o komenzála hrubého čreva bez klinických príznakov. Patogénny potenciál sa prejaví len sekundárne – pri masívnom premnožení, strese, nevhodných chovných podmienkach, zlej diéte alebo súbežnom poškodení sliznice iným agens. Vtedy vzniká katarálna až mierne erozívna kolitída s hnačkou (často so slizom), dehydratáciou a chudnutím. Na rozdiel od Entamoeba invadens chýbajú hlboká ulcerácia, nekróza steny čreva a extraintestinálne šírenie – prognóza je preto výrazne priaznivejšia.",
     "zoonosis": false,
     "notes": "Hoci je Balantidium u mnohých plazov (leguány, korytnačky) prirodzenou súčasťou mikroflóry, za určitých okolností sa správa ako oportúnny patogén. U striktne mäsožravých plazov (napr. niektoré hady) je akýkoľvek nález tohto parazita považovaný za abnormálny.",
     "id": "balantidium_sp_cyst",
-    "images": [
-      "/public/images/parasites/balantidium_sp_cyst/balantidium_sp_cyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Balantidium sp.",
@@ -1414,17 +1408,14 @@
       "V cytoplazme je prítomné veľké množstvo vakuóznych guličiek, ktoré obsahujú natrávenú potravu, a jedna alebo dve pulzujúce (kontraktilné) vakuoly zabezpečujúce reguláciu vody v tele prvoka"
     ],
     "differentialDiagnosis": [
-      "Nyctotherus sp. - Trofozoit Nyctotherus má na rozdiel od Balantidium charakteristický zárez (cytostom) prebiehajúci šikmo stredom tela."
+      "_Nyctotherus_ sp. - Trofozoit Nyctotherus má na rozdiel od Balantidium charakteristický zárez (cytostom) prebiehajúci šikmo stredom tela."
     ],
     "lifeCycle": "Priamy cyklus bez medzihostiteľa. Plaz zožerie zrelú cystu z prostredia, v čreve dôjde k excystácii a uvoľnený trofozoit osídli hrubé črevo, kde sa množí priečnym delením a živí sa baktériami a rastlinným detritom. Pri posune obsahu čreva smerom k rektu dochádza k encystácii a hotové cysty sa vylučujú trusom, pričom sú okamžite infekčné pre ďalšieho hostiteľa.",
     "pathology": "Za normálnych okolností ide o komenzála hrubého čreva bez klinických príznakov. Patogénny potenciál sa prejaví len sekundárne – pri masívnom premnožení, strese, nevhodných chovných podmienkach, zlej diéte alebo súbežnom poškodení sliznice iným agens. Vtedy vzniká katarálna až mierne erozívna kolitída s hnačkou (často so slizom), dehydratáciou a chudnutím. Na rozdiel od Entamoeba invadens chýbajú hlboká ulcerácia, nekróza steny čreva a extraintestinálne šírenie – prognóza je preto výrazne priaznivejšia.",
     "zoonosis": false,
     "notes": "Hoci je Balantidium u mnohých plazov (leguány, korytnačky) prirodzenou súčasťou mikroflóry, za určitých okolností sa správa ako oportúnny patogén. U striktne mäsožravých plazov (napr. niektoré hady) je akýkoľvek nález tohto parazita považovaný za abnormálny.",
     "id": "balantidium_sp_trophozoite",
-    "images": [
-      "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_01.webp",
-      "/public/images/parasites/balantidium_sp_trophozoite/balantidium_sp_trophozoite_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Balantioides coli",
@@ -1582,9 +1573,9 @@
       "Švola so širokou hlavou, širšou než hrudník."
     ],
     "differentialDiagnosis": [
-      "Haematopinus eurysternus: hlava užšia než hruď, väčšia (2–4 mm), tmavá, lokalizácia: hlava, krk, pysk",
-      "Linognathus vituli: predĺžená hlava, dlhší štíhly tvar, modrasté sfarbenie; lokalizácia: krk, plecia",
-      "Solenopotes capillatus: malá (1–1,5 mm), na tvári a hlave, vytvára zhluky"
+      "_Haematopinus eurysternus_: hlava užšia než hruď, väčšia (2–4 mm), tmavá, lokalizácia: hlava, krk, pysk",
+      "_Linognathus vituli_: predĺžená hlava, dlhší štíhly tvar, modrasté sfarbenie; lokalizácia: krk, plecia",
+      "_Solenopotes capillatus_: malá (1–1,5 mm), na tvári a hlave, vytvára zhluky"
     ],
     "lifeCycle": "Životný cyklus prebieha celý na tele hostiteľa (permanentný parazit) a trvá približne 3 až 4 týždne. Typická je pre ne partenogenéza (samičky dokážu klásť vajíčka aj bez párenia so samcami, čo vedie k raketovému nárastu populácie).Vajíčko (hnida): Samička prilepí vajíčka špeciálnym sekrétom pevne k báze chlpov hostiteľa, najčastejšie v oblasti krku, kohútika a chrbta. Vývoj vo vajíčku trvá 7 – 12 dní.Nymfa: Z vajíčka sa vyliahne nymfa, ktorá sa podobá na dospelého jedinca, len je menšia a svetlejšia. Prechádza 3 nymfálnymi štádiami, pričom každé štádium trvá niekoľko dní.Dospelý jedinec (Imágo): Po poslednom zvliekaní sa stáva dospelcom. Celková dĺžka života dospelého jedinca na hostiteľovi je okolo 2 až 3 týždňov. Mimo hostiteľa v prostredí dokáže prežiť maximálne 3 až 7 dní.",
     "pathology": "Prísne hostiteľsky špecifická. To znamená, že celý svoj život viaže na tento konkrétny druh a neprežíva ani sa nerozmnožuje na iných zvieratách alebo ľuďoch (na človeka môže preliezť pri manipulácii s dobytkom, ale rýchlo hynie). Bovicola bovis má hryzavé ústne ústrojenstvo. Na rozdiel od vší necicá krv, ale živí sa odumretými bunkami pokožky, kožným mazom, nečistotami a chlpmi. Napriek tomu spôsobuje hostiteľovi výrazné zdravotné a ekonomické problémy. Neustály pohyb tisícov všeniek po koži vyvoláva silné dráždenie nervových zakončení. Zvieratá sú nepokojné, prešľapujú, nežerú v pokoji. Dobytok sa v snahe uľaviť si od svrbenia intenzívne otiera o kŕmne stoly, ohrady, steny či stromy, prípadne sa hryzie.Kožné lézie: V dôsledku trenia dochádza k vypadávaniu srsti (alopécia), vzniku chrást, zhrubnutiu kože (lichenifikácia) a povrchovým ranám. Tieto rany sa môžu sekundárne infikovať baktériami. Výrazne klesá produkcia mlieka (až o 10 – 25 %) a znižujú sa prírastky na váhe u mäsového dobytka z dôvodu chronického stresu a nepokoja. Dochádza tiež k vážnemu znehodnoteniu surovej kože pre kožiarsky priemysel (tzv. \"light spots\" vady na spracovanej koži).",
@@ -1637,7 +1628,7 @@
       "Eucoleus aerophilus: ~60-80 × 30-40 µm, súdkovité, dve polárne zátky, jamkovaná/sieťovaná stena",
       "Aonchotheca (Capillaria) erinacei: ~50-60 × 22-30 µm, súdkovité, dve polárne zátky, jemne pozdĺžne ryhovaná stena"
     ],
-    "lifeCycle": "Prítomnosť Brachylaima erinacei je podmienená stravovacími návykmi našich ježov. Životný cyklus motolice totiž závisí od suchozemských slimákov a ulitníkov, ktorí fungujú ako medzihostitelia:Jež vylučuje vajíčka motolice trusom do prostredia.Slimáky sa nakazia požieraním kontaminovaného substrátu, pričom v ich tele vznikajú infekčné štádiá (metacerkárie).Jež sa nakazí zožratím infikovaného slimáka. Keďže mäkkýše tvoria významnú zložku potravy slovenských ježov, miera výskytu tohto parazita v ich populácii býva pomerne vysoká",
+    "lifeCycle": "Prítomnosť _Brachylaima erinacei_ je podmienená stravovacími návykmi našich ježov. Životný cyklus motolice totiž závisí od suchozemských slimákov a ulitníkov, ktorí fungujú ako medzihostitelia:Jež vylučuje vajíčka motolice trusom do prostredia.Slimáky sa nakazia požieraním kontaminovaného substrátu, pričom v ich tele vznikajú infekčné štádiá (metacerkárie).Jež sa nakazí zožratím infikovaného slimáka. Keďže mäkkýše tvoria významnú zložku potravy slovenských ježov, miera výskytu tohto parazita v ich populácii býva pomerne vysoká",
     "pathology": "Pri slabšej infekcii ježko nepociťuje vážnejšie problémy. Pri masívnom premnožení však motolice mechanicky a toxicky poškodzujú sliznicu čreva, čo vedie k:Chronickým hnačkám (často s prímesou krvi)Chradnutiu, slabosti a rapídnemu úbytku hmotnostiV najťažších prípadoch k celkovému vyčerpaniu a úhynu, najmä u mladých jedincov pred zimným spánkom.",
     "zoonosis": false,
     "notes": "",
@@ -1687,7 +1678,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne (prehltnutím) cýst kontaminovanou vodou, krmivom alebo lízaním znečisteného prostredia v maštali. V tenkom alebo hrubom čreve hostiteľa pôsobením tráviacich enzýmov stena cysty praskne a uvoľní sa z nej aktívny trofozoit. Trofozoity kolonizujú hrubé črevo (najmä slepé črevo a kolón). Živia sa baktériami a črevným obsahom. Množia sa priečnym binarickým delením (nepohlavne), občasne konjugáciou (pohlavný proces). Pri posune črevného obsahu smerom ku koncu traktu a v dôsledku dehydratácie výkalov trofozoity strácajú brvy, vylučujú ochrannú stenu a menia sa späť na cysty. Cysty odchádzajú s trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vysoko odolné voči nepriaznivým vplyvom počasia či dezinfekcii.",
     "pathology": "Patogenita je sporná. Väčšinou ide o komenzála alebo oportúnneho patogéna, ktorý sa namnoží pri zmene prostredia v čreve (pH, imunosupresia, ostatné infekcie). \n Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
     "zoonosis": false,
-    "notes": "Vnútri vakuola, nepatogén",
+    "notes": ":Dlhé desaťročia bol tento organizmus považovaný za úplne neškodného komenzála, ktorý dobytku pomáha tráviť rastlinnú potravu. Moderné štúdie však ukázali, že pri premnožení stráca svoju „priateľskú“ tvár, narúša sliznicu čreva a stáva sa agresívnym pôvodcom opakujúcich sa hnačiek mladého dobytka.",
     "id": "buxtonella_sulcata_cyst",
     "images": []
   },
@@ -1738,7 +1729,7 @@
     "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne (prehltnutím) cýst kontaminovanou vodou, krmivom alebo lízaním znečisteného prostredia v maštali. V tenkom alebo hrubom čreve hostiteľa pôsobením tráviacich enzýmov stena cysty praskne a uvoľní sa z nej aktívny trofozoit. Trofozoity kolonizujú hrubé črevo (najmä slepé črevo a kolón). Živia sa baktériami a črevným obsahom. Množia sa priečnym binarickým delením (nepohlavne), občasne konjugáciou (pohlavný proces). Pri posune črevného obsahu smerom ku koncu traktu a v dôsledku dehydratácie výkalov trofozoity strácajú brvy, vylučujú ochrannú stenu a menia sa späť na cysty. Cysty odchádzajú s trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vysoko odolné voči nepriaznivým vplyvom počasia či dezinfekcii.",
     "pathology": "Patogenita je sporná. Väčšinou ide o komenzála alebo oportúnneho patogéna, ktorý sa namnoží pri zmene prostredia v čreve (pH, imunosupresia, ostatné infekcie). \n Za normálnych okolností u zdravých dospelých jedincov prežíva parazit ako neškodný obyvateľ čreva. Problém nastáva pri oslabení imunity, strese (odstav, zmena krmiva) alebo u teliat. Premnoženie trofozoitov vedie k narušeniu fermentačných procesov v hrubom čreve. Prejavuje sa akútnou alebo chronickou hnačkou (trus je kašovitý až vodnatý, niekedy s prímesou hlienu). Zvieratá chradnú, dochádza k dehydratácii, apatii a spomaleniu rastu teliat. Parazit produkuje lytické enzímy, ktorými mechanicky a chemicky dráždi sliznicu. Vyvoláva katarálny až ulcerózny zápal hrubého čreva (kolitídu). Pri ťažkých infekciách dochádza k tvorbe drobných erózií, vredov na sliznici slepého čreva a kolónu a k olupovaniu črevného epitelu.",
     "zoonosis": false,
-    "notes": "Vnútri vakuola, nepatogén",
+    "notes": ":Dlhé desaťročia bol tento organizmus považovaný za úplne neškodného komenzála, ktorý dobytku pomáha tráviť rastlinnú potravu. Moderné štúdie však ukázali, že pri premnožení stráca svoju „priateľskú“ tvár, narúša sliznicu čreva a stáva sa agresívnym pôvodcom opakujúcich sa hnačiek mladého dobytka.",
     "id": "buxtonella_sulcata_trophozoite",
     "images": []
   },
