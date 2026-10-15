@@ -157,32 +157,8 @@
     "dateAdded": "2026-08-29T12:47:45.911Z"
   },
   {
-    "parasiteId": "ancylostoma_sp_egg",
-    "url": "/public/images/parasites/ancylostoma_sp_egg/ancylostoma_sp_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:47:45.911Z"
-  },
-  {
-    "parasiteId": "ancylostoma_sp_egg",
-    "url": "/public/images/parasites/ancylostoma_sp_egg/ancylostoma_sp_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:47:45.911Z"
-  },
-  {
     "parasiteId": "ancylostoma_tubaeforme_egg",
     "url": "/public/images/parasites/ancylostoma_tubaeforme_egg/ancylostoma_tubaeforme_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T12:47:45.911Z"
-  },
-  {
-    "parasiteId": "ancylostoma_tubaeforme_egg",
-    "url": "/public/images/parasites/ancylostoma_tubaeforme_egg/ancylostoma_tubaeforme_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -5447,6 +5423,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:41:12.563Z"
+  },
+  {
+    "parasiteId": "uncinaria_sp_egg",
+    "url": "/public/images/parasites/uncinaria_sp_egg/uncinaria_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-28T20:01:05.393Z"
   },
   {
     "parasiteId": "uncinaria_stenocephala_egg",

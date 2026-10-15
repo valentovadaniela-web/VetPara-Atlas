@@ -463,54 +463,6 @@
     "images": []
   },
   {
-    "latinName": "Ancylostoma sp.",
-    "synonyms": [],
-    "slovakName": "Machovec",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Ancylostomatidae",
-      "genus": "Ancylostoma",
-      "species": "Ancylostoma caninum"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Medveď"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 75,
-      "widthMin": 35,
-      "widthMax": 45,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Vajíčko je oválne až elipsovité",
-      "Obsah tvorí morula s oddelenými blastomérami",
-      "Pri bežnej mikroskopii ho nemožno vždy spoľahlivo odlíšiť od vajíčka Uncinaria stenocephala"
-    ],
-    "differentialDiagnosis": [
-      "Uncinaria stenocephala vajíčka sú morfologicky veľmi podobné, ale zvyčajne väčšie a širšie (70–90 × 40–50 µm) než vajíčka Ancylostoma."
-    ],
-    "lifeCycle": "Cyklus je priamy. Dospelé jedince žijú v tenkom čreve, kde sa živia krvou a tkanivovým mokom. Vajíčka odchádzajú trusom do vonkajšieho prostredia. Za vhodnej vlhkosti a teploty sa v nich vyvíja larva L1, ktorá sa následne liahne a cez L2 vyvíja na infekčnú larvu L3. L3 preniká do definitívneho hostiteľa perorálne alebo cez kožu. Po perkutánnom preniknutí larvy migrujú cez krvný obeh a pľúca, následne sú vykašľané, prehltnuté a dostávajú sa do tenkého čreva. U súk môžu hypobiotické larvy pretrvávať v tkanivách a reaktivovať sa počas gravidity; následne sa môžu preniesť na mláďatá mliekom. Prepatentné obdobie je približne 14–21 dní.",
-    "pathology": "Dospelé červy parazitujú v tenkom čreve, kde sa ostrými zubami prisávajú na sliznicu a aktívne cicajú krv. Spôsobujú vážne zápalové zmeny čriev, hnačky a ťažkú anémiu (chudokrvnosť), ktorá býva pre mladé zvieratá často smrteľná. **Dospelé parazity môžu po terapii znovu osídliť črevo v dôsledku reaktivácie hypobiotických lariev.** \n U ľudí larvy putujú pod kožou a spôsobujú silne svrbiace ochorenie larva migrans cutanea.",
-    "zoonosis": true,
-    "notes": "Pri prekrývajúcich sa rozmeroch treba výsledok uvádzať ako vajíčka čeľade **Ancylostomatidae** alebo Ancylostoma/Uncinaria bez určenia druhu.",
-    "id": "ancylostoma_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Ancylostoma tubaeforme",
     "synonyms": [
       "Dochmius tubaeformis"
@@ -22772,6 +22724,57 @@
     "images": []
   },
   {
+    "latinName": "Uncinaria sp.",
+    "synonyms": [],
+    "slovakName": "Machovec líščí",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Ancylostomatidae",
+      "genus": "Uncinaria",
+      "species": "neurčené do druhu"
+    },
+    "hostGroups": [
+    ],
+    "hosts": [
+      "Medveď"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 77.6,
+      "lengthMax": 83.5,
+      "widthMin": 44.3,
+      "widthMax": 45.9,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "8-16 blastomér",
+      "Vajíčka: oválne, tenkostenné, hladké, silne pripomínajúce „strongylidný typ“",
+      "Rozmery vajíčok: uvádzané v rozmedzí 65–90 µm × 35–60 µm (často ~70–90 × 40–50 µm; napr. ~75 × 45 µm).",
+      "Obsah vajíčka pri vylúčení: čerstvo vylúčené vajíčka obsahujú morulu (zhluk niekoľkých buniek, typicky 4–16 blastomérov), nie ešte larvu."
+    ],
+    "differentialDiagnosis": [
+      "Ancylostoma: Vajíčka sú morfologicky veľmi podobné (oválne, tenkostenné, morulované), ale menšie (Ancylostoma cca 60 x 40 µm, Uncinaria cca 83 x 46 µm).  Rozmery sa čiastočne prekrývajú, ale u medve´dov je oveľa pravdepodobnejšia Uncinaria."
+    ],
+    "lifeCycle": "Cyklus je priamy (monoxénny) – bez intermediárneho hostiteľa.\nDefinitívny hostiteľ vylučuje vajíčka s trusom do prostredia.\nVo vlhkej pôde/truse sa z vajíčok liahnu larvy, ktoré sa vyvíjajú cez L1 → L2 → infekčné L3 (zvyčajne v priebehu 2–10 dní v závislosti od teploty a vlhkosti).\nInfekcia definitívneho hostiteľa:\nHlavná cesta: perorálna – požitie L3 lariev z kontaminovanej pôdy, vody, potravy alebo pri olizovaní srsti.\nĎalšia cesta: perkutánna – L3 larvy môžu preniknúť cez kožu (najmä pri kontakte s kontaminovanou pôdou).\nPo vstupe do hostiteľa nasleduje migrácia (vrátane pľúcnej fázy) a dospelé jedince sa usadzujú v tenkom čreve, kde začnú produkovať vajíčka.\nPredpatentná perióda: približne 13–21 dní od infekcie do vylučovania vajíčok.",
+    "pathology": "U. stenocephala je vo všeobecnosti považovaná za mierne patogénnu, ale pri vysokých infekčných dávkach môže spôsobovať významné lézie.\nDospelé červy sa zahryzávajú do črevnej mukózy a „odsávajú“ zátky tkaniva (plug-feeding), čo môže viesť k:\n- Strate bielkovín cez črevo,\n- Hlienovitým hnačkám, prípadne tmavej, dechtovej stolici (meléna),\n- Chudnutiu, neprosperite, zhoršeniu kvality srsti.\n- Pri ťažkých infekciách sa môže objaviť anémia (bledé sliznice), dehydratácia a celkové oslabenie, najmä u mláďat.\n- Dermatitída: migrujúce larvy môžu spôsobovať ventrálnu dermatitídu a kožné lézie; v takých prípadoch možno larvy nájsť v koži (hĺbkový škrab, biopsia).",
+    "zoonosis": false,
+    "notes": "Rozmery sa často prekrývajú s rodom Ancylostoma. V našich klimatických podmienkach (Európa a Severná Amerika) je výrazne dominantnejší a prirodzenejší rod Uncinaria.",
+    "id": "uncinaria_sp_egg",
+    "images": []
+  },
+  {
     "latinName": "Uncinaria stenocephala",
     "synonyms": [],
     "slovakName": "Machovec líščí",
@@ -23191,10 +23194,7 @@
     "lifeCycle": "Má dva odlišné scenáre v závislosti od veku mývala alebo prítomnosti medzihostiteľa:\n\nPriamy cyklus (u mladých mývalov): \nMýval zožerie infekčné vajíčko z prostredia (ktoré dozrievalo na vzduchu 2–4 týždne). \nLarva sa vyliahne v čreve, podstúpi migráciu cez črevnú stenu a orgány a vráti sa dospieť do tenkého čreva.\n\nNepriamy cyklus (u dospelých mývalov – dominantný spôsob): \nStaršie mývaly sú voči priamej infekcii vajíčkami čiastočne imúnne. Nakazia sa predáciou paratenického hostiteľa (napr. hlodavca), ktorý mal v tkanivách zapuzdrené larvy L3. \nPo zožraní hostiteľa sa larvy uvoľnia v čreve mývala a dospievajú bez potreby migrovať tkanivami mývala.",
     "pathology": "U definitívneho hostiteľa (mýval): \nV čreve mývala sa často nachádzajú desiatky dospelých červov (veľkosť 15–20 cm). Spôsobujú len minimálne tkanivové škody, pri masívnych inváziách však hrozí obštrukcia (upchatie) lumen čreva alebo mechanické narušenie trávenia.\nU paratenických hostiteľov a človeka (Extrémna nebezpečnosť): Po prehltnutí vajíčok človekom alebo zvieraťom sa larvy vyliahnu a začnú masívne migrovať telom (Larva migrans). Larvy B. procyonis sú veľmi veľké (dorastajú počas migrácie až do 1–2 mm) a vykazujú silný neurotropizmus (vysoká afinita k mozgovému tkanivu). Približne 5–7 % pozretých lariev preniká priamo do mozgu. V dôsledku ich veľkosti a agresívnej migrácie mechanicky ničia nervové dráhy a vyvolávajú ťažkú eozinofilnú meningoencefalitídu (zápal mozgu a blán). U ľudí (najmä detí, ktoré sa hrajú v piesku kontaminovanom trusom mývalov) ochorenie spôsobuje fatálne neurologické následky – trvalé poškodenie mozgu, slepotu (Larva migrans ocularis) alebo smrť.",
     "zoonosis": true,
-    "images": [
-      "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_01.webp",
-      "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_02.webp"
-    ],
+    "images": [],
     "references": [],
     "notes": ""
   }
