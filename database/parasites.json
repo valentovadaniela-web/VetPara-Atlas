@@ -6142,11 +6142,10 @@
       "genus": "Eimeria",
       "species": "Eimeria ahsata"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -6154,7 +6153,7 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 29,
-      "lengthMax": 44,
+      "lengthMax": 37,
       "widthMin": 17,
       "widthMax": 28,
       "unit": "µm"
@@ -6165,6 +6164,7 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 34 x 22 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -6748,7 +6748,8 @@
       "Domáce prežúvavce"
     ],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -6767,6 +6768,7 @@
       "shell": "Paralelné"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 33 x 22 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -7450,11 +7452,10 @@
       "genus": "Eimeria",
       "species": "Eimeria crandallis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -7462,7 +7463,7 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 17,
-      "lengthMax": 28,
+      "lengthMax": 23,
       "widthMin": 17,
       "widthMax": 22,
       "unit": "µm"
@@ -7473,6 +7474,7 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 23 x 15 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -7887,30 +7889,29 @@
       "genus": "Eimeria",
       "species": "Eimeria falciformis"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Myš"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 18.6,
-      "lengthMax": 18.6,
-      "widthMin": 16.2,
-      "widthMax": 16.2,
+      "lengthMin": 28,
+      "lengthMax": 37,
+      "widthMin": 21,
+      "widthMax": 27,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
+      "shape": "Oválny",
       "colour": "Sivý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
+      "Priemerná veľkosť 32 x 21 µm",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
     "differentialDiagnosis": [
@@ -7926,6 +7927,60 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_falciformis_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Eimeria faurei",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria faurei"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Ovca",
+      "Muflón"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 28,
+      "lengthMax": 37,
+      "widthMin": 21,
+      "widthMax": 27,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 32 x 21 µm",
+      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
+      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+    ],
+    "differentialDiagnosis": [
+      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
+      "tvaru",
+      "L/W pomeru",
+      "mikropyle",
+      "oocystového rezidua",
+      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "Výrazné mikropyle",
+    "id": "eimeria_faurei_oocyst",
     "images": []
   },
   {
@@ -8047,11 +8102,10 @@
       "genus": "Eimeria",
       "species": "Eimeria granulosa"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -8059,9 +8113,9 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 22,
-      "lengthMax": 37,
+      "lengthMax": 35,
       "widthMin": 17,
-      "widthMax": 26,
+      "widthMax": 25,
       "unit": "µm"
     },
     "morphology": {
@@ -8070,6 +8124,7 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 33 x 24 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -9729,11 +9784,10 @@
       "genus": "Eimeria",
       "species": "Eimeria ovinoidalis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -9741,9 +9795,9 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 17,
-      "lengthMax": 28,
-      "widthMin": 12,
-      "widthMax": 23,
+      "lengthMax": 25,
+      "widthMin": 13,
+      "widthMax": 20,
       "unit": "µm"
     },
     "morphology": {
@@ -9752,6 +9806,7 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 22 x 17 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -9837,11 +9892,10 @@
       "genus": "Eimeria",
       "species": "Eimeria pallida"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -9855,11 +9909,12 @@
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Eliptický",
+      "shape": "Okrúhly až subsférický",
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 13 x 13 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -9945,29 +10000,29 @@
       "genus": "Eimeria",
       "species": "Eimeria parva"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 10,
+      "lengthMin": 13,
       "lengthMax": 22,
-      "widthMin": 10,
-      "widthMax": 19,
+      "widthMin": 11,
+      "widthMax": 13,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly",
+      "shape": "Okrúhly až oválny",
       "colour": "Žltobiely",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 16 x 13 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
@@ -12006,11 +12061,10 @@
       "genus": "Eimeria",
       "species": "Eimeria weybridgensis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -12018,7 +12072,7 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 17,
-      "lengthMax": 31,
+      "lengthMax": 30,
       "widthMin": 14,
       "widthMax": 19,
       "unit": "µm"
@@ -12029,6 +12083,7 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
+      "Priemerná veľkosť 25 x 17 µm",
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],

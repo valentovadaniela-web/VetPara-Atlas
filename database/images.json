@@ -2503,6 +2503,14 @@
     "dateAdded": "2026-08-29T13:00:42.757Z"
   },
   {
+    "parasiteId": "eimeria_ahsata_oocyst",
+    "url": "/public/images/parasites/eimeria_ahsata_oocyst/eimeria_ahsata_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:00:42.757Z"
+  },
+  {
     "parasiteId": "eimeria_andrewsi_oocyst",
     "url": "/public/images/parasites/eimeria_andrewsi_oocyst/eimeria_andrewsi_oocyst_01.webp",
     "alt": "",
@@ -2589,6 +2597,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:02:45.395Z"
+  },
+  {
+    "parasiteId": "eimeria_babatica_oocyst",
+    "url": "/public/images/parasites/eimeria_babatica_oocyst/eimeria_babatica_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:03:07.910Z"
+  },
+  {
+    "parasiteId": "eimeria_bakuensis_oocyst",
+    "url": "/public/images/parasites/eimeria_bakuensis_oocyst/eimeria_bakuensis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:03:07.910Z"
   },
   {
     "parasiteId": "eimeria_bovis_oocyst",
@@ -2678,6 +2702,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:45:34.489Z"
+  },
+  {
+    "parasiteId": "eimeria_crandalis_oocyst",
+    "url": "/public/images/parasites/eimeria_crandalis_oocyst/eimeria_crandalis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:04:46.111Z"
   },
   {
     "parasiteId": "eimeria_cylindrica_oocyst",
@@ -2776,6 +2808,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:05:45.961Z"
+  },
+  {
+    "parasiteId": "eimeria_faurei_oocyst",
+    "url": "/public/images/parasites/eimeria_faurei_oocyst/eimeria_faurei_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:06:10.771Z"
+  },
+  {
+    "parasiteId": "eimeria_granulosa_oocyst",
+    "url": "/public/images/parasites/eimeria_granulosa_oocyst/eimeria_granulosa_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:06:10.771Z"
   },
   {
     "parasiteId": "eimeria_hungarica_oocyst",
@@ -2931,6 +2979,14 @@
     "dateAdded": "2026-08-29T13:09:00.983Z"
   },
   {
+    "parasiteId": "eimeria_ovinoidalis_oocyst",
+    "url": "/public/images/parasites/eimeria_ovinoidalis_oocyst/eimeria_ovinoidalis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:09:00.983Z"
+  },
+  {
     "parasiteId": "eimeria_ovis_oocyst",
     "url": "/public/images/parasites/eimeria_ovis_oocyst/eimeria_ovis_oocyst_01.webp",
     "alt": "",
@@ -2947,6 +3003,14 @@
     "dateAdded": "2026-08-29T13:09:31.056Z"
   },
   {
+    "parasiteId": "eimeria_pallida_oocyst",
+    "url": "/public/images/parasites/eimeria_pallida_oocyst/eimeria_pallida_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:09:31.056Z"
+  },
+  {
     "parasiteId": "eimeria_panda_oocyst",
     "url": "/public/images/parasites/eimeria_panda_oocyst/eimeria_panda_oocyst_01.webp",
     "alt": "",
@@ -2957,6 +3021,14 @@
   {
     "parasiteId": "eimeria_parva_oocyst",
     "url": "/public/images/parasites/eimeria_parva_oocyst/eimeria_parva_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:10:02.311Z"
+  },
+  {
+    "parasiteId": "eimeria_parva_oocyst",
+    "url": "/public/images/parasites/eimeria_parva_oocyst/eimeria_parva_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -3147,6 +3219,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:44:17.093Z"
+  },
+  {
+    "parasiteId": "eimeria_weybridgensis_oocyst",
+    "url": "/public/images/parasites/eimeria_weybridgensis_oocyst_oocyst/eimeria_weybridgensis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:14:53.230Z"
   },
   {
     "parasiteId": "eimeria_zuenii_oocyst",
