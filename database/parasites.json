@@ -7080,9 +7080,7 @@
       "genus": "Eimeria",
       "species": "Eimeria caprovina"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
