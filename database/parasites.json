@@ -8472,58 +8472,6 @@
     ]
   },
   {
-    "latinName": "Eimeria marmotae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria marmotae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Svišť"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 52,
-      "widthMin": 41,
-      "widthMax": 43,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Výrazné mikropyle",
-    "id": "eimeria_marmotae_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Eimeria marsica",
     "synonyms": [],
     "slovakName": "",
@@ -8629,9 +8577,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_maxima_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_maxima_oocyst/eimeria_maxima_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria media",
@@ -8685,9 +8631,7 @@
     "zoonosis": false,
     "notes": "Zrezaný vpredu",
     "id": "eimeria_media_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_media_oocyst/eimeria_media_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria meleagridis",
@@ -8901,9 +8845,7 @@
     "zoonosis": false,
     "notes": "Nemá mikropyle",
     "id": "eimeria_mitis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_mitis_oocyst/eimeria_mitis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria necatrix",
@@ -9011,9 +8953,7 @@
     "zoonosis": false,
     "notes": "Chýba mikropyle",
     "id": "eimeria_neodebliecki_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_neodebliecki_oocyst/eimeria_neodebliecki_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria ninakohlyakimovae",
@@ -9068,60 +9008,6 @@
     "notes": "Chýba mikropyle",
     "id": "eimeria_ninaekohljakimovae_oocyst",
     "images": [ ]
-  },
-  {
-    "latinName": "Eimeria nocens",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria nocens"
-    },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Hus"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 25,
-      "lengthMax": 33,
-      "widthMin": 17,
-      "widthMax": 24,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Má mikropyle",
-    "id": "eimeria_nocens_oocyst",
-    "images": []
   },
   {
     "latinName": "Eimeria ovinoidalis",
@@ -10047,112 +9933,6 @@
     "zoonosis": false,
     "notes": "Má mikropyle",
     "id": "eimeria_robusta_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria rotunda",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria rotunda"
-    },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
-    "hosts": [
-      "Srnec"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 14.5,
-      "lengthMax": 16.5,
-      "widthMin": 12,
-      "widthMax": 14,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Má mikropyle",
-    "id": "eimeria_rotunda_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria samyadeli",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria samyadeli"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Pytón"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 37,
-      "lengthMax": 55,
-      "widthMin": 37,
-      "widthMax": 55,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_samyadeli_oocyst",
     "images": []
   },
   {
