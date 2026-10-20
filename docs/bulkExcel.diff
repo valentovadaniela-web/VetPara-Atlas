@@ -1,0 +1,63 @@
+--- bulkExcel.orig.js	2026-10-20 18:09:55.759395269 +0000
++++ bulkExcel.js	2026-10-20 18:10:04.434270740 +0000
+@@ -45,6 +45,20 @@
+     return (arr || []).join(', ');
+ }
+ 
++// Zoznam ODRÁŽOK (diagnosticSigns, differentialDiagnosis): jedna odrážka = jeden RIADOK
++// v bunke (Alt+Enter). Čiarky, bodkočiarky aj '|' vnútri odrážky sú tak povolené
++// a odrážku nerozdelia. Formátovanie píš značkami (**tučné**, _kurzíva_, __podčiarknuté__,
++// ~~prečiarknuté~~) — to isté, čo číta formatRichText() v AtlasPage.js.
++// Zalomenie riadku UVNÚTRI jednej odrážky = doslovné dva znaky \n (nie Alt+Enter).
++function parseItemListField(value) {
++    if (value === undefined || value === null || value === '') return [];
++    return String(value).split(/\r?\n/).map(s => s.trim()).filter(Boolean);
++}
++
++function serializeItemListField(arr) {
++    return (arr || []).join('\n');
++}
++
+ // hostNotes je objekt { hostiteľ: poznámka }. V Exceli ako text:
+ // "Pes: poznámka pre psy | Mačka: iná poznámka"
+ function parseHostNotes(value) {
+@@ -132,8 +146,8 @@
+             colour: row.colour || '',
+             shell: row.shell || '',
+         },
+-        diagnosticSigns: parseListField(row.diagnosticSigns),
+-        differentialDiagnosis: parseListField(row.differentialDiagnosis),
++        diagnosticSigns: parseItemListField(row.diagnosticSigns),
++        differentialDiagnosis: parseItemListField(row.differentialDiagnosis),
+         lifeCycle: row.lifeCycle || '',
+         pathology: row.pathology || '',
+         zoonosis: parseBoolField(row.zoonosis),
+@@ -160,6 +174,8 @@
+                 </p>
+                 <p style="font-size:0.85rem;color:#7f8c8d;">
+                     <strong>hostNotes formát:</strong> "Pes: poznámka pre psy | Mačka: iná poznámka".
++                    <strong>diagnosticSigns / differentialDiagnosis:</strong> jedna odrážka = jeden riadok v bunke (Alt+Enter), čiarky vnútri odrážky sú v poriadku.
++                    Formátovanie značkami: **tučné**, _kurzíva_, __podčiarknuté__, ~~prečiarknuté~~; nový riadok v rámci jednej odrážky: \\n.
+                     <strong>imagesCount / imageUrls</strong> sú len informatívne — import ich ignoruje, fotky sa menia cez kartu "Fotografie".
+                 </p>
+             </div>
+@@ -224,6 +240,8 @@
+             ['shell', existingShells.filter(Boolean).join(', ')],
+             ['id (prázdne = nový, vyplnené = update existujúceho)', ''],
+             ['hostNotes formát', 'Pes: poznámka | Mačka: poznámka'],
++            ['diagnosticSigns / differentialDiagnosis', 'Jedna odrážka = jeden riadok v bunke (Alt+Enter). Čiarky vnútri odrážky sú povolené.'],
++            ['formátovanie textu', '**tučné**  _kurzíva_  __podčiarknuté__  ~~prečiarknuté~~  (nový riadok v jednej odrážke: \\n)'],
+             ['zoonosis', 'áno / nie'],
+         ];
+ 
+@@ -294,8 +312,8 @@
+                 p.morphology?.shape || '',
+                 p.morphology?.colour || '',
+                 p.morphology?.shell || '',
+-                serializeListField(p.diagnosticSigns),
+-                serializeListField(p.differentialDiagnosis),
++                serializeItemListField(p.diagnosticSigns),
++                serializeItemListField(p.differentialDiagnosis),
+                 p.lifeCycle || '',
+                 p.pathology || '',
+                 serializeBoolField(!!p.zoonosis),

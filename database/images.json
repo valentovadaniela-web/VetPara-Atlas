@@ -825,7 +825,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:47:04.763Z"
   },
-    {
+  {
     "parasiteId": "cephenemyia_stimulator_larva",
     "url": "/public/images/parasites/cephenemyia_stimulator_larva/cephenemyia_stimulator_larva_02.webp",
     "alt": "",
@@ -1150,7 +1150,6 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:54:39.681Z"
   },
-
   {
     "parasiteId": "cyathostomum_sp_egg",
     "url": "/public/images/parasites/cyathostomum_sp_egg/cyathostomum_sp_egg_01.webp",
@@ -1248,7 +1247,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:35:27.104Z",
-  "isPrimary": true
+    "isPrimary": true
   },
   {
     "parasiteId": "cysticercus_cervi_larva",
@@ -1272,7 +1271,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:35:27.104Z"  
+    "dateAdded": "2026-08-29T11:35:27.104Z"
   },
   {
     "parasiteId": "cysticercus_fasciolaris_larva",
@@ -1296,7 +1295,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:35:27.104Z"  
+    "dateAdded": "2026-08-29T11:35:27.104Z"
   },
   {
     "parasiteId": "cysticercus_ovis_larva",
@@ -1304,7 +1303,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:35:27.104Z"  
+    "dateAdded": "2026-08-29T11:35:27.104Z"
   },
   {
     "parasiteId": "cysticercus_pisiformis_larva",
@@ -1453,7 +1452,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:55:27.555Z"
   },
-   {
+  {
     "parasiteId": "cystoisospora_erinacei_oocyst",
     "url": "/public/images/parasites/cystoisospora_erinacei_oocyst/cystoisospora_erinacei_oocyst_01.webp",
     "alt": "",
@@ -1653,7 +1652,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:29.005Z"
-  },  
+  },
   {
     "parasiteId": "davainea_proglottina_egg",
     "url": "/public/images/parasites/davainea_proglottina_egg/davainea_proglottina_egg_01.webp",
@@ -1661,7 +1660,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:57:29.005Z"
-  },  
+  },
   {
     "parasiteId": "demodex_aurati_adult",
     "url": "/public/images/parasites/demodex_aurati_adult/demodex_aurati_adult_01.webp",
@@ -1913,7 +1912,7 @@
     "credit": "",
     "dateAdded": "2026-08-28T19:58:53.591Z"
   },
-    {
+  {
     "parasiteId": "dicranotaenia_coronula_egg",
     "url": "/public/images/parasites/dicranotaenia_coronula_egg/dicranotaenia_coronula_egg_01.webp",
     "alt": "",
@@ -2002,7 +2001,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:40:18.186Z"
   },
-    {
+  {
     "parasiteId": "dictyocaulus_filaria_larva",
     "url": "/public/images/parasites/dictyocaulus_filaria_larva/dictyocaulus_filaria_larva_03.webp",
     "alt": "",
@@ -2059,7 +2058,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T12:59:27.755Z"
   },
-    {
+  {
     "parasiteId": "dipylidium_caninum_egg",
     "url": "/public/images/parasites/dipylidium_caninum_egg/dipylidium_caninum_egg_02.webp",
     "alt": "",
@@ -2278,7 +2277,7 @@
     "dateAdded": "2026-08-28T20:02:17.047Z",
     "isPrimary": true
   },
-    {
+  {
     "parasiteId": "dispharynx_nasuta_egg",
     "url": "/public/images/parasites/dispharynx_nasuta_egg/dispharynx_nasuta_egg_01.webp",
     "alt": "",
@@ -3888,7 +3887,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:20:48.123Z"
   },
-    {
+  {
     "parasiteId": "chorioptes_equi_adult",
     "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
     "alt": "",
@@ -6083,5 +6082,13 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-26T19:29:42.209Z"
+  },
+  {
+    "parasiteId": "eimeria_perforans_oocyst",
+    "url": "/public/images/parasites/eimeria_perforans_oocyst/eimeria_perforans_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-10-20T17:32:38.494Z"
   }
 ]

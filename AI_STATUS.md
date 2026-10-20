@@ -1,5 +1,48 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.39 Aktuálny stav — doplnené (2026‑10‑20, session: Excel bulk import — čiarky a formátovanie v `diagnosticSigns`/`differentialDiagnosis`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka pri hromadnom vypĺňaní cez Excel (`tools/admin/forms/bulkExcel.js`) chce, aby sa formátovanie (tučné, kurzíva) zhodovalo s výstupom v detaile a aby mohla v bunke `diagnosticSigns` použiť čiarku bez toho, aby vo výstupe vznikla nová odrážka.
+
+### Zistenia z kódu
+
+1. `parseListField()` delila bunku podľa `,` a používala sa aj pre `diagnosticSigns` a `differentialDiagnosis` — každá čiarka vytvorila novú odrážku.
+2. Export "Aktuálny stav" zapisoval tieto polia cez `join(', ')`, takže round-trip (export → úprava → import) **rozbil každú existujúcu odrážku, ktorá obsahuje čiarku** (po re-importe sa rozpadla na viac odrážok).
+3. Formátovanie: SheetJS číta len text bunky, skutočné tučné/kurzíva nastavené v Exceli sa do JSON nedostanú. Značky `**`, `_`, `__`, `~~` sa ale importom nemenia (prechádzajú ako text) a `formatRichText()` ich vo výstupe spracuje. Autorka ich teda píše priamo do bunky.
+4. Nezrovnalosť spec vs. kód: `docs/2026-08-19_admin-formular-specifikacia.md` §5 uvádza ako oddeľovač zoznamov `;` (a pre `hostNotes` tiež `;`), kód reálne používa `,` (zoznamy) a `|` (`hostNotes`). Dokument zatiaľ nemenený.
+
+### Zmena (`bulkExcel.js`)
+
+- Nové `parseItemListField()` / `serializeItemListField()`: jedna odrážka = jeden riadok v bunke (Alt+Enter), delenie podľa `/\r?\n/`, export spája cez `\n`.
+- Použité len pre `diagnosticSigns` a `differentialDiagnosis` (import aj export). `synonyms`, `hosts`, `hostGroups` ostávajú na čiarke, `hostNotes` na `|`.
+- Zalomenie riadku vo vnútri jednej odrážky: doslovné `\n` (dva znaky).
+- Doplnená nápoveda v UI karte a v hárku "Referencie" šablóny (oddeľovač + značky formátovania).
+
+### ⚠️ Dôsledok pre autorku
+
+Staré Excel súbory, kde boli odrážky oddelené čiarkou, sa teraz načítajú ako jedna odrážka. Treba ich prepísať do formátu "jedna odrážka = jeden riadok". Nový export už zapisuje správny formát.
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/forms/bulkExcel.js` | pozri vyššie | ✅ hotové (syntax OK cez `node --check`), ⬜ naživo neoverené, ⏳ čaká na manuálne nahradenie autorkou |
+
+**Nezmenené:** `dog.json`, `database/*`, `src/*`, `admin.js`, `parasiteForm.js` (formulár pracuje s poľom odrážok priamo, import sa ho netýka).
+
+### 🟡 Otvorené
+
+1. Naživo overiť: odrážka s čiarkou v Excel bunke → jedna odrážka v detaile; round-trip export → import nehlási zmenu (`unchanged`) pre záznamy s čiarkou.
+2. Rozhodnúť, či zosúladiť spec §5 s kódom (alebo naopak), a či presunúť aj `synonyms`/`hosts` na iný oddeľovač.
+3. Prípadná konverzia skutočného rich textu z Excelu (SheetJS `cellHTML`) — nerobené, vyžaduje schválenie.
+4. Zobrazenie skutočného zalomenia riadku v `AtlasPage.js` sa neoverovalo (súbor nebol nahraný); používa sa len literál `\n`.
+
+---
+
 🔥 0.38 Aktuálny stav — doplnené (2026‑09‑26, session: formátovanie textu v detaile parazita + strata otvoreného detailu pri reloade stránky)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
