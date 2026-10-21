@@ -10,7 +10,7 @@
       "order": "Onchoproteocephalidea",
       "family": "Proteocephalidae",
       "genus": "Acanthotaenia",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -1289,7 +1289,7 @@
       "order": "Vestibuliferida",
       "family": "Balantidiidae",
       "genus": "Balantidium",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Herbivorné plazy"
@@ -1336,7 +1336,7 @@
       "order": "Vestibuliferida",
       "family": "Balantidiidae",
       "genus": "Balantidium",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Herbivorné plazy"
@@ -1813,7 +1813,7 @@
       "order": "Trichinellida",
       "family": "Capillariidae",
       "genus": "neurčený rod",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Domáce prežúvavce",
@@ -2233,7 +2233,7 @@
       "order": "Cyclophyllidea",
       "family": "Anoplocephalidae",
       "genus": "Cittotaenia",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -2392,7 +2392,7 @@
       "order": "Strongylida",
       "family": "Anisakidae",
       "genus": "Contracaecum",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -3036,7 +3036,7 @@
       "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Cyathostomum",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Koňovité"
@@ -3091,7 +3091,7 @@
       "order": "Cyclophyllidea",
       "family": "neurčená čeľaď",
       "genus": "neurčený rod",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Suchozemské korytnačky",
@@ -3146,7 +3146,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Cyclospora",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -4123,29 +4123,17 @@
     },
     "diagnosticSigns": [
       "Roztoč vzdušných vakov vtákov",
-      "Telo je široko oválne",
-      "sploštené a nápadne **hladké**. Chýbajú mu výrazné povrchové štetiny (sety) či chlípky",
-      "čo mu vyslúžilo druhový názov nudus (nahý).",
-      "Má 4 páry krátkych",
-      "robustných nôh. Všetky nohy sú zakončené prísavkami (koptopedami) umiestnenými na stopkách",
-      "ktoré roztoč využíva na prichytenie sa na klzkom povrchu slizníc dýchacích ciest.",
-      "Ústne ústrojenstvo: Je redukované",
-      "sacieho typu. Chýbajú mu chelicery (hryzadlá) a makadla (palpy)",
-      "tekutiny a bunkový detrit zo sliznice dýchacieho traktu nasáva."
+      "Telo je široko oválne, sploštené a nápadne **hladké**. Chýbajú mu výrazné povrchové štetiny (sety) či chĺpky, čo mu vyslúžilo druhový názov nudus (nahý).",
+      "Má 4 páry krátkych, robustných nôh. Všetky nohy sú zakončené prísavkami (koptopedami) umiestnenými na stopkách, ktoré roztoč využíva na prichytenie sa na klzkom povrchu slizníc dýchacích ciest.",
+      "Ústne ústrojenstvo: Je redukované, sacieho typu. Chýbajú mu chelicery (hryzadlá) a makadla (palpy), tekutiny a bunkový detrit zo sliznice dýchacieho traktu nasáva."
     ],
     "differentialDiagnosis": [
-      "Zámena prejavov (makroskopicky): Pri pitve sa drobné biele uzlíky a bodky na vzdušných vakoch a pľúcach dajú ľahko zameniť za tuberkulózu vtákov (Mycobacterium avium)",
-      "aspergilózu (pľúcnu pleseň) či viscerálnu formu dny (kyselina močová na orgánoch).",
-      "V dýchacom trakte vtákov (najmä u kanárikov a exotických vtákov) parazituje roztoč – _Sternostoma tracheacolum_",
-      "ktorý je väčší a lokalizuje sa prevažne priamo v priedušnici (trachei). Má tmavé sfarbenie (kvôli natrávenej krvi). Cytodites nudus sa nachádza hlbšie vo vzdušných vakoch a pľúcach",
-      "je biely/žltkastý a pod mikroskopom sa líši absenciou chĺpkov a špecifickým tvarom prísaviek na nohách.",
-      "Voľne žijúce a skladové roztoče (Acarus",
-      "Tyrophagus",
-      "Glycyphagus",
-      "Carpoglyphus a pod.): pseudoparazity zo steliva",
-      "krmiva alebo prostredia. Majú štetiny a nenachádzajú sa v serózach"
+      "Zámena prejavov (makroskopicky): Pri pitve sa drobné biele uzlíky a bodky na vzdušných vakoch a pľúcach dajú ľahko zameniť za tuberkulózu vtákov (Mycobacterium avium), aspergilózu (pľúcnu pleseň) či viscerálnu formu dny (kyselina močová na orgánoch).",
+      "V dýchacom trakte vtákov (najmä u kanárikov a exotických vtákov) parazituje roztoč – _Sternostoma tracheacolum_, ktorý je väčší a lokalizuje sa prevažne priamo v priedušnici (trachei). Má tmavé sfarbenie (kvôli natrávenej krvi).",
+      "Cytodites nudus sa nachádza hlbšie vo vzdušných vakoch a pľúcach, je biely/žltkastý a pod mikroskopom sa líši absenciou chĺpkov a špecifickým tvarom prísaviek na nohách.",
+      "Voľne žijúce a skladové roztoče (Acarus, Tyrophagus, Glycyphagus, Carpoglyphus a pod.): pseudoparazity zo steliva, krmiva alebo prostredia. Majú štetiny a nenachádzajú sa v serózach"
     ],
-    "lifeCycle": "Celý cyklus prebieha na hostiteľovi bez voľného štádia v prostredí. Trvá 14–21 dní a zahŕňa larválne štádium a dve nymfálne štádiá, pričom po nich nasleduje dospelec (samec alebo samica). Roztoče žijú v dýchacích cestách, vzdušných vakoch, pľúcach, na peritoneu a podľa starších opisov aj v dutých kostiach. Prenášajú sa medzi vtákmi kašľaním, teda priamym kontaktom a vdýchnutím. K prenosu dochádza priamym kontaktom medzi vtákmi, najčastejšie vykašliavaním roztočov do krmiva a vody, prípadne pri kŕmení mláďat rodičmi z hrvoľa..",
+    "lifeCycle": "Celý cyklus prebieha na hostiteľovi bez voľného štádia v prostredí. Trvá 14–21 dní a zahŕňa larválne štádium a dve nymfálne štádiá, pričom po nich nasleduje dospelec (samec alebo samica). Roztoče žijú v dýchacích cestách, vzdušných vakoch, pľúcach, na peritoneu a podľa starších opisov aj v dutých kostiach. Prenášajú sa medzi vtákmi kašľaním, teda priamym kontaktom a vdýchnutím. K prenosu dochádza priamym kontaktom medzi vtákmi, najčastejšie vykašliavaním roztočov do krmiva a vody, prípadne pri kŕmení mláďat rodičmi z hrvoľa.",
     "pathology": "Pri nízkej intenzite je priebeh bezpríznakový. Pri masívnej invázii vtáky trpia dýchavičnosťou (dyspnoe), sipotom, kašľom, otvárajú zobák a chradnú",
     "zoonosis": false,
     "notes": "Ante mortem diagnostika je veľmi obmedzená. Koprologické vyšetrenie nie je vhodné.",
@@ -4163,7 +4151,7 @@
       "order": "Dactylogyridea",
       "family": "Dactylogyridae",
       "genus": "Dactylogyrus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Sladkovodné ryby",
@@ -4171,7 +4159,7 @@
     ],
     "hosts": [],
     "hostNotes": {
-      "Kaprovité": "Na kaproch a KOI kaproch najčastejšie druhy Dactylogyrus extensus (veľmi dlhé háčiky), Dactylogyrus vastator (spôsobuje masívne úhyny plôdika), Dactylogyrus minutus (miniatúrne) alebo Dactylogyrus anchoratus.",
+      "Kaprovité": "Na kaproch a KOI kaproch najčastejšie druhy _Dactylogyrus extensus_ (veľmi dlhé háčiky), _Dactylogyrus vastator_ (spôsobuje masívne úhyny plôdika), _Dactylogyrus minutus_ (miniatúrne) alebo _Dactylogyrus anchoratus_.",
       "Akváriové ryby": "Náchylné sú terčovce (Discus), cichlidy, závojnatky, bojovnice a živorodky - iné druhy ako u kaprovitých rýb."
     },
     "sample": "Žiabre",
@@ -4190,27 +4178,15 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Tvar plochý",
-      "predĺžený",
-      "listovitý",
-      "v prednom konci s kontraktilným prostom. Zadný koniec nesie diskovitý háčikový prichytávací orgán (haptor)",
-      "Farba: biela",
-      "priehľadná až našedlá",
-      "v tkanive žiabier ťažko viditeľná",
+      "Tvar plochý, predĺžený, listovitý, v prednom konci s kontraktilným prostom. Zadný koniec nesie diskovitý háčikový prichytávací orgán (haptor)",
+      "Farba: biela, priehľadná až našedlá, v tkanive žiabier ťažko viditeľná",
       "Telo: na prednom konci štyri lalôčky a **štyri tmavé očné škvrny** (dva páry). Nemajú prísavky.",
-      "Haptor: jeden pár veľkých centrálnych háčikov (kotvičiek) na báze rozdvojených - tvar **písmena Y**",
-      "jeden alebo dva priečne spojovacie pruhy a 14 okrajových háčikov (7 párov).",
-      "Oviparia",
-      "teda vajcia v tele alebo v prostredí.",
-      "Lokalizácia **na žiabroch**"
+      "Haptor: jeden pár veľkých centrálnych háčikov (kotvičiek) na báze rozdvojených - tvar **písmena Y**, jeden alebo dva priečne spojovacie pruhy a 14 okrajových háčikov (7 párov).",
+      "Oviparia, teda vajcia v tele alebo v prostredí.",
+      "Lokalizácia **na žiabrach**"
     ],
     "differentialDiagnosis": [
-      "_Gyrodactylus spp._: háčiky na báze nerozdvojené",
-      "t.j. v tvare J",
-      "živorodé (v tele je viditeľné embryo",
-      "často druhé embryo vo vnútri prvého)",
-      "bez očných škvŕn",
-      "16 okrajových háčikov a napáda aj kožu a plutvy."
+      "_Gyrodactylus spp._: háčiky na báze nerozdvojené, t.j. v tvare J, živorodé (v tele je viditeľné embryo, často druhé embryo vo vnútri prvého), **bez očných škvŕn**, 16 okrajových háčikov a napáda aj kožu a plutvy."
     ],
     "lifeCycle": "Cyklus je priamy a monoxénny. Dospelé hermafroditné hlístky kladú vajcia, ktoré padajú do vody na dno alebo na vegetáciu. Vyliahnutie závisí od teploty vody: pri 20–25 °C trvá približne niekoľko dní, pri nízkych teplotách mnoho týždňov. Z vajíčka vychádza obrvená larva (onkomiracídium) s očnými škvrnami, ktorá voľne pláva a hľadá hostiteľa. Prežíva len krátko (hodiny až dva dni). Po prichytení na žiabre stratí riasinky a vyvinie sa na dospelca, pričom generačná doba je kratšia pri vyšších teplotách. Parazit žije na žiabroch hostiteľa, kde sa živí epitelom a hlienom.",
     "pathology": "Keďže Dactylogyrus napáda primárne žiabre rýb, príznaky sú spojené najmä s dýchaním. Ryby sa zdržiavajú pod hladinou a rýchlo dýchajú. Žiabre sú začervenané, opuchnuté, nesymetricky otvorené alebo pokryté nadmerným hlienom. Ryby sa snažia parazita striasť a otierajú sa o dekorácie, kamene či rastliny.",
@@ -4253,19 +4229,14 @@
       "shell": "Hrubá, embryofor s radiálnym pruhovaním"
     },
     "diagnosticSigns": [
-      "Vajíčka sú obalené v kapsuliach",
-      "vždy po jednom",
-      "V truse často celé gravidné proglotídy (cca 0",
-      "3 – 0",
-      "5 mm)",
+      "Vajíčka sú obalené v kapsuliach, vždy po jednom",
+      "V truse často celé gravidné proglotídy (cca 0,3 – 0,5 mm)",
       "Vajíčka sa ako samostatné útvary nachádzajú len zriedkavo"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od Raillietina sp. (tiež Davaineidae",
-      "hydina): D. proglottina má vo vajíčkových kapsulách typicky len 1 vajíčko",
-      "zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny.",
-      "Amoebotaenia cuneata: vajíčka nemá v kapsuliach.",
-      "Choanotaenia infundibulum: vajíčka nemá v kapsuli",
+      "Odlíšiť od _Raillietina_ sp. (tiež Davaineidae, hydina): _D. proglottina_ má vo vajíčkových kapsulách typicky len 1 vajíčko, zatiaľ čo Raillietina má v kapsule viac vajíčok. D. proglottina je napriek malej veľkosti vysoko patogénna už pri nízkej intenzite infekcie u mláďat hydiny.",
+      "_Amoebotaenia cuneata_: vajíčka nemá v kapsuliach.",
+      "_Choanotaenia infundibulum_: vajíčka nemá v kapsuli",
       "ale majú 2 zreteľné predĺžené filamenty na oboch koncoch obalu vajíčka."
     ],
     "lifeCycle": "Medzihostiteľ suchozemské slimáky (nie hmyz).",
@@ -4309,24 +4280,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Celková dĺžka: Min. 180 μm – Max. 270 μm (samce bývajú o niečo kratšie ako samice",
-      "okolo 150 – 200 μm)",
-      "Telo je jasne rozdelené na tri časti: gnathosoma (ústne ústrojenstvo)",
-      "podosoma (kráčavá časť) a opisthosoma (dlhý",
-      "priečne pruhovaný zadoček)",
-      "Má 4 páry veľmi krátkych",
-      "kýpťovitých nôh zakončených drobnými pazúrikmi",
-      "ktoré sa nachádzajú v prednej časti tela",
-      "Tvar nápadne dlhý",
-      "štíhly a zašpicatený na konci zadočka.",
-      "Nachádza sa primárne hlboko v vlasových/chlpových folikuloch"
+      "Celková dĺžka: Min. 180 μm – Max. 270 μm (samce bývajú o niečo kratšie ako samice, okolo 150 – 200 μm)",
+      "Telo je jasne rozdelené na tri časti: gnathosoma (ústne ústrojenstvo), podosoma (kráčavá časť) a opisthosoma (dlhý, priečne pruhovaný zadoček)",
+      "Má 4 páry veľmi krátkych, kýpťovitých nôh zakončených drobnými pazúrikmi, ktoré sa nachádzajú v prednej časti tela",
+      "Tvar nápadne dlhý, štíhly a zašpicatený na konci zadočka.",
+      "Nachádza sa primárne hlboko v chlpových folikuloch"
     ],
     "differentialDiagnosis": [
-      "_Demodex criceti_: Výrazne kratšie",
-      "širšie a zavalitejšie telo s tupým koncom (dĺžka len okolo 90 – 110 μm). Žije skôr povrchovo v stratum corneum (pokožke)."
+      "_Demodex criceti_: Výrazne kratšie, širšie a zavalitejšie telo s tupým koncom (dĺžka len okolo 90 – 110 μm). Žije skôr povrchovo v stratum corneum (pokožke)."
     ],
     "lifeCycle": "Životný cyklus prebieha permanentne na hostiteľovi a trvá približne 18 až 24 dní. Samice kladú vajíčka v tvare vretena priamo do chlpových folikulov, z ktorých sa liahnu šesťnohé larvy. Tie sa cez štádium nymfy (protonymfa a deuteronymfa) transformujú na dospelé jedince s ôsmimi nohami. Celý vývoj je viazaný na mazové žľazy a folikuly, pričom prenos nastáva primárne priamym kontaktom, najčastejšie z matky na mláďatá počas satia mlieka.",
-    "pathology": "Demodex aurati je považovaný za bežného (komenzálneho) obyvateľa kože škrečkov a u zdravých jedincov nevyvoláva žiadne klinické príznaky. K prepuknutiu demodikózy (trúdavosti) dochádza až pri oslabení imunitného systému, strese, podvýžive, v pokročilom veku alebo pri pridružených ochoreniach (napr. nádory). Patologické prejavy zahŕňajú stratu srsti (alopéciu) najmä na chrbte a bokoch, šupinatenie kože, začervenanie (erytém) a v prípade sekundárnej bakteriálnej infekcie aj tvorbu chrást a hnisavý zápal kože.\n Keďže masívne premnoženie tohto roztoča je takmer vždy spojené s imunosupresiou, klinická demodikóza u škrečka pre chovateľa často funguje ako prvý viditeľný varovný signál iného, vážnejšieho vnútorného ochorenia zvieraťa.",
+    "pathology": "_Demodex aurati_ je považovaný za bežného (komenzálneho) obyvateľa kože škrečkov a u zdravých jedincov nevyvoláva žiadne klinické príznaky. K prepuknutiu demodikózy (trúdavosti) dochádza až pri oslabení imunitného systému, strese, podvýžive, v pokročilom veku alebo pri pridružených ochoreniach (napr. nádory). Patologické prejavy zahŕňajú stratu srsti (alopéciu) najmä na chrbte a bokoch, šupinatenie kože, začervenanie (erytém) a v prípade sekundárnej bakteriálnej infekcie aj tvorbu chrást a hnisavý zápal kože.\nKeďže masívne premnoženie tohto roztoča je takmer vždy spojené s imunosupresiou, klinická demodikóza u škrečka pre chovateľa často funguje ako prvý viditeľný varovný signál iného, vážnejšieho vnútorného ochorenia zvieraťa.",
     "zoonosis": false,
     "notes": "Škrečok zlatý je jedným z mála hlodavcov, u ktorého sa bežne vyskytuje synergická infekcia dvoch rôznych druhov rodu Demodex súčasne (_D. aurati_ a _D. criceti_), pričom si dokonale rozdelili ekologické niky na tele hostiteľa.",
     "id": "demodex_aurati_adult",
@@ -4368,20 +4332,15 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Má typický červovitý",
-      "predĺžený až cigarovitý tvar tela. Delí sa na tri klasické časti: gnathosoma",
-      "podosoma s končatinami a priečne ryhovaná",
-      "dlhá opisthosoma",
-      "Dospelé jedince majú 4 páry veľmi krátkych nôh umiestnených v prednej tretine tela",
-      "čo im uľahčuje pohyb v tesných kožných štruktúrach.",
-      "Opisthosoma je na konci mierne zaoblená",
-      "dlhá a tvorí podstatnú časť celkovej dĺžky parazita."
+      "Má typický červovitý, predĺžený až cigarovitý tvar tela. Delí sa na tri klasické časti: gnathosoma, podosoma s končatinami a priečne ryhovaná, dlhá opisthosoma",
+      "Dospelé jedince majú 4 páry veľmi krátkych nôh umiestnených v prednej tretine tela, čo im uľahčuje pohyb v tesných kožných štruktúrach.",
+      "Opisthosoma je na konci mierne zaoblená, dlhá a tvorí podstatnú časť celkovej dĺžky parazita."
     ],
     "differentialDiagnosis": [
       "Na dobytku sa okrem _Demodex bovis_ nevyskytujú iné druhy rodu Demodex. Diagnostika spočíva v odbere materiálu vytlačením obsahu uzlíkov (exsudátu) alebo hlbokým kožným zoškrabom."
     ],
     "lifeCycle": "Životný cyklus prebieha výhradne na hostiteľovi a trvá približne 18 až 24 dní. Samica kladie vajíčka hlboko do vlasových (chlpových) folikulov a mazových žliaz. Z nich sa liahnu šesťnohé larvy, ktoré sa cez nymfálne štádiá (protonymfa, deuteronymfa) vyvíjajú na osemnohých dospelých jedincov. K prenosu dochádza najčastejšie v ranom veku priamym kontaktom matky (kravy) s teľaťom počas satia mlieka, prípadne trením zvierat v preplnených chovoch.",
-    "pathology": "Demodex bovis kolonizuje kožu zvierat a k prepuknutiu klinickej formy dochádza najčastejšie pri oslabení imunity, strese (napr. počas gravidity či laktácie) alebo podvýžive. Ochorenie sa prejavuje ako papulonodulárna demodikóza s tvorbou hmatateľných uzlíkov a cýst (veľkosti od špendlíkovej hlavičky až po holubie či slepačie vajce). Tieto lézie sa objavujú najmä na krku, pleciach, v podpazuší a na vemene. Pri sekundárnej bakteriálnej infekcii (najčastejšie Staphylococcus spp.) dochádza k hnisaniu, praskaniu uzlíkov, vypadávaniu srsti a tvorbe chrást.",
+    "pathology": "_Demodex bovis_ kolonizuje kožu zvierat a k prepuknutiu klinickej formy dochádza najčastejšie pri oslabení imunity, strese (napr. počas gravidity či laktácie) alebo podvýžive. Ochorenie sa prejavuje ako papulonodulárna demodikóza s tvorbou hmatateľných uzlíkov a cýst (veľkosti od špendlíkovej hlavičky až po holubie či slepačie vajce). Tieto lézie sa objavujú najmä na krku, pleciach, v podpazuší a na vemene. Pri sekundárnej bakteriálnej infekcii (najčastejšie Staphylococcus spp.) dochádza k hnisaniu, praskaniu uzlíkov, vypadávaniu srsti a tvorbe chrást.",
     "zoonosis": false,
     "notes": "Veľké percento dobytka je zdravými prenášačmi tohto roztoča (v niektorých oblastiach až 10 – 15 % populácie) bez akýchkoľvek vonkajších príznakov. Príznaky prepuknú až vtedy, keď sa naruší rovnováha medzi parazitom a imunitným systémom hostiteľa.\n Hoci ochorenie málokedy končí smrťou zvieraťa, uzlíky po Demodex bovis zanechávajú v koži trvalé diery a jazvy. Pre kožiarsky priemysel to predstavuje obrovské ekonomické straty, keďže spracovaná koža (useň) z takto infikovaných zvierat stráca svoju kvalitu a pevnosť.",
     "id": "demodex_bovis_adult",
@@ -4424,22 +4383,16 @@
     },
     "diagnosticSigns": [
       "Celková dĺžka: min. 135 μm (samce) – Max. 260 μm (samice). Dospelé samice dosahujú priemernú dĺžku okolo 220 – 240 μm.",
-      "Telo je dlhé a výrazne pretiahnuté",
-      "štíhle a červovité so zreteľným priečnym ryhovaním (anuláciou) na zadočku (opisthosoma). Zadoček sa ku koncu postupne zužuje a končí mierne zašpicateným (subakútnym) hrotom.",
-      "Disponuje 4 pármi zakrpatených",
-      "kýpťovitých nôh s drobnými pazúrikmi",
-      "sústredenými v prednej podosomálnej časti tela.",
-      "Ústne ústrojenstvo je relatívne široké (šírka mierne presahuje jeho dĺžku). Samce majú charakteristický kopulačný orgán",
-      "ktorý zaberá významnú časť prednej polovice tela.",
+      "Telo je dlhé a výrazne pretiahnuté, štíhle a červovité so zreteľným priečnym ryhovaním (anuláciou) na zadočku (opisthosoma). Zadoček sa ku koncu postupne zužuje a končí mierne zašpicateným (subakútnym) hrotom.",
+      "Disponuje 4 pármi zakrpatených, kýpťovitých nôh s drobnými pazúrikmi, sústredenými v prednej podosomálnej časti tela.",
+      "Ústne ústrojenstvo je relatívne široké (šírka mierne presahuje jeho dĺžku). Samce majú charakteristický kopulačný orgán, ktorý zaberá významnú časť prednej polovice tela.",
       "Parazituje primárne v mazových žľazách očných viečok (Meibomove žľazy) a v oblasti nozdier/papule."
     ],
     "differentialDiagnosis": [
-      "_Demodex equi_: Má výrazne kratšie a zavalitejšie telo. Osídľuje chlpové folikuly na tele (najmä krk",
-      "chrbát",
-      "lopatky a končatiny)."
+      "_Demodex equi_: Má výrazne kratšie a zavalitejšie telo. Osídľuje chlpové folikuly na tele (najmä krk, chrbát, lopatky a končatiny)."
     ],
     "lifeCycle": "Celý životný cyklus sa odohráva permanentne na hostiteľovi a trvá 18 až 24 dní. Samica kladie vajíčka v tvare vretena priamo do vývodov mazových a Meibomových žliaz. Z vajíčok sa liahnu šesťnohé larvy, ktoré sa postupne cez dve nymfálne štádiá (protonymfa a deuteronymfa) transformujú na osemnohé dospelé jedince. K horizontálnemu prenosu dochádza priamym kontaktom medzi koňmi (napr. vzájomným trením v stáde) alebo vertikálne z kobyly na žriebä počas satia a ošetrovania.",
-    "pathology": "Demodex caballi je považovaný za nízko patogénneho parazita a súčasť normálnej kožnej mikroflóry koní. Klinické prejavy (demodikóza) prepuknú zriedkavo, najčastejšie pri znížení imunity, chronickom strese alebo dlhodobej liečbe glukokortikoidmi. Prejavuje sa drobnými uzlíkmi (papulami) s priemerom 2–3 mm na očných viečkach a papuli, šupinatením kože a alopéciou (vypadávaním srsti). Vážnejšie zápaly oka (blefaritída či konjunktivitída) sú však napriek prítomnosti v očných žľazách výnimočné.",
+    "pathology": "_Demodex caballi_ je považovaný za nízko patogénneho parazita a súčasť normálnej kožnej mikroflóry koní. Klinické prejavy (demodikóza) prepuknú zriedkavo, najčastejšie pri znížení imunity, chronickom strese alebo dlhodobej liečbe glukokortikoidmi. Prejavuje sa drobnými uzlíkmi (papulami) s priemerom 2–3 mm na očných viečkach a papuli, šupinatením kože a alopéciou (vypadávaním srsti). Vážnejšie zápaly oka (blefaritída či konjunktivitída) sú však napriek prítomnosti v očných žľazách výnimočné.",
     "zoonosis": false,
     "notes": "Keďže klinické prejavy trúdavosti vyvolávajú drobné vyvýšené uzlíky na okraji očného viečka, veterinári si ich pri prvom pohľade občas pomýlia s nádorovým ochorením kože – najčastejšie so skvamóznobunkovým karcinómom (karcinóm listových buniek). Správnu diagnózu odhalí až histopatologické alebo mikroskopické vyšetrenie obsahu uzlíka.",
     "id": "demodex_caballi_adult",
@@ -4483,24 +4436,17 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Celková dĺžka: Min. 156 μm – Max. 300 μm. Samce bývajú o niečo kratšie (okolo 170–250 μm)",
-      "samice dosahujú hornú hranicu až k 300 μm.",
-      "Má typický cigarovitý až polienkovitý tvar. Je transparentné a rozdelené na gnathosomu (krátka",
-      "široká hlavička)",
-      "podosomu (hrudná časť) a opisthosomu (predĺžený zadoček s jemným priečnym ryhovaním).",
-      "Dospelé jedince majú 4 páry veľmi krátkych",
-      "hrubých nôh (kýpťov)",
-      "ktoré vystupujú z podosomy a sú zakončené drobnými pazúrikmi.",
-      "Vajíčka: Majú charakteristický vretenovitý tvar",
-      "ktorý býva v anglickej literatúre trefne prirovnávaný k „tehotnému banánu“."
+      "Celková dĺžka: Min. 156 μm – Max. 300 μm. Samce bývajú o niečo kratšie (okolo 170–250 μm), samice dosahujú hornú hranicu až k 300 μm.",
+      "Má typický cigarovitý až polienkovitý tvar. Je transparentné a rozdelené na gnathosomu (krátka, široká hlavička), podosomu (hrudná časť) a opisthosomu (predĺžený zadoček s jemným priečnym ryhovaním).",
+      "Dospelé jedince majú 4 páry veľmi krátkych, hrubých nôh (kýpťov), ktoré vystupujú z podosomy a sú zakončené drobnými pazúrikmi.",
+      "Vajíčka: Majú charakteristický vretenovitý tvar, ktorý býva v anglickej literatúre trefne prirovnávaný k „tehotnému banánu“."
     ],
     "differentialDiagnosis": [
       "_Demodex cornei_ : Výrazne kratší a zavalitejší (cca 90–160 μm). Obýva povrchovejšiu vrstvu kože – stratum corneum (pokožku). V mnohých štúdiách sa považuje za krátku morfologickú variantu D. canis.",
-      "_Demodex injai_ : Nápadne dlhý roztoč (cca 330–375 μm)",
-      "ktorý má zadoček až dvakrát dlhší ako D. canis. Žije špecificky hlboko v mazových žľazách a spôsobuje výrazne mastnú kožu (seboreu)"
+      "_Demodex injai_ : Nápadne dlhý roztoč (cca 330–375 μm), ktorý má zadoček až dvakrát dlhší ako D. canis. Žije špecificky hlboko v mazových žľazách a spôsobuje výrazne mastnú kožu (seboreu)"
     ],
     "lifeCycle": "Celý životný cyklus prebieha výhradne na tele psa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka do chlpového folikulu, z ktorých sa liahnu šesťnohé larvy. Tie sa po zvlečení menia na osemnohé protonymfy, následne deuteronymfy a nakoniec na pohlavne dospelé jedince. Tento parazit sa prenáša takmer výhradne vertikálne, a to tesným kontaktom matky (suky) so šteniatkami počas prvých 2 až 4 dní života pri dojčení. Horizontálny prenos medzi dospelými psami sa v bežnom kontakte považuje za nepravdepodobný a raritný.",
-    "pathology": "Demodex canis je prirodzenou súčasťou kožnej mikroflóry (komenzál) u viac ako polovice zdravých psov a nespôsobuje im žiadne problémy. K vypuknutiu klinickej demodikózy dochádza len pri zlyhaní alebo potlačení imunitného systému. Ochorenie sa prejavuje v dvoch formách: lokalizovanej (malé ložiská s vypadanou srsťou, často na hlave okolo očí, kde vytvára typické „okuliare“) a generalizovanej, kedy postihuje celé telo. Masívne premnoženie roztočov vedie k deštrukcii chlpových folikulov (alopécii), hyperpigmentácii, zhrubnutiu kože a veľmi často k pridruženej bakteriálnej infekcii (pyodermii spôsobenej napr. Staphylococcus pseudintermedius), čo vedie k hnisaniu, chrastám, opuchom labiek (pododemodikóza) a celkovej apatii zvieraťa.",
+    "pathology": "_Demodex canis_ je prirodzenou súčasťou kožnej mikroflóry (komenzál) u viac ako polovice zdravých psov a nespôsobuje im žiadne problémy. K vypuknutiu klinickej demodikózy dochádza len pri zlyhaní alebo potlačení imunitného systému. Ochorenie sa prejavuje v dvoch formách: lokalizovanej (malé ložiská s vypadanou srsťou, často na hlave okolo očí, kde vytvára typické „okuliare“) a generalizovanej, kedy postihuje celé telo. Masívne premnoženie roztočov vedie k deštrukcii chlpových folikulov (alopécii), hyperpigmentácii, zhrubnutiu kože a veľmi často k pridruženej bakteriálnej infekcii (pyodermii spôsobenej napr. Staphylococcus pseudintermedius), čo vedie k hnisaniu, chrastám, opuchom labiek (pododemodikóza) a celkovej apatii zvieraťa.",
     "zoonosis": false,
     "notes": "Generalizovaná forma demodikózy u mladých psov má preukázateľne dedičný základ kvôli vrodenej poruche T-lymfocytov. Z tohto dôvodu sa jedince, ktoré prekonali generalizovanú demodikózu, striktne vyraďujú z chovu, aby neprenášali tento imunitný deficit na potomstvo. \n  Kým v minulosti bola liečba generalizovanej demodikózy nesmierne náročná, spojená s toxickými kúpeľmi (amitraz) či každodenným podávaním ivermektínu, dnes sa ochorenie dá veľmi efektívne zvládnuť modernými antiparazitárnymi tabletami zo skupiny izoxazolínov (napr. s účinnými látkami fluralaner, afoxolaner či sarolaner), ktoré parazita spoľahlivo eliminujú.",
     "id": "demodex_canis_adult",
@@ -4543,23 +4489,16 @@
     },
     "diagnosticSigns": [
       "Patrí k štíhlym a pretiahnutým zástupcom rodu Demodex",
-      "Celková dĺžka: Min. 130 μm (samce) – Max. 300 μm (samice). Priemerná dĺžka samcov sa pohybuje okolo 180 μm",
-      "zatiaľ čo samice dosahujú priemerne až 290 μm.",
-      "Má klasický úzky",
-      "predĺžený „cigarovitý“ až červovitý tvar",
-      "je však štíhlejší a dlhší v porovnaní s inými druhmi. Zadoček (opisthosoma) tvorí významnú časť tela a má jemné priečne ryhovanie (anuláciu).",
-      "Disponuje 4 pármi veľmi krátkych",
-      "kýpťovitých nôh s malými pazúrikmi",
-      "ktoré sú umiestnené v prednej hrudnej časti (podosóme).",
+      "Celková dĺžka: Min. 130 μm (samce) – Max. 300 μm (samice). Priemerná dĺžka samcov sa pohybuje okolo 180 μm, zatiaľ čo samice dosahujú priemerne až 290 μm.",
+      "Má klasický úzky, predĺžený „cigarovitý“ až červovitý tvar, je však štíhlejší a dlhší v porovnaní s inými druhmi. Zadoček (opisthosoma) tvorí významnú časť tela a má jemné priečne ryhovanie (anuláciu).",
+      "Disponuje 4 pármi veľmi krátkych, kýpťovitých nôh s malými pazúrikmi, ktoré sú umiestnené v prednej hrudnej časti (podosóme).",
       "Žije hlboko vo vlasových folikuloch a mazových žľazách"
     ],
     "differentialDiagnosis": [
-      "_Demodex gatoi_ : Nápadne kratší",
-      "zavalitejší a okrúhlejší druh (dĺžka len okolo 90–110 μm). Žije povrchovo v rohovej vrstve kože (stratum corneum) a na rozdiel od _D. cati_ je vyvolačom vysoko nákazlivej (kontagióznej) formy svrabu",
-      "ktorá sa šíri medzi mačkami v jednej domácnosti."
+      "_Demodex gatoi_ : Nápadne kratší, zavalitejší a okrúhlejší druh (dĺžka len okolo 90–110 μm). Žije povrchovo v rohovej vrstve kože (stratum corneum) a na rozdiel od _D. cati_ je vyvolačom vysoko nákazlivej (kontagióznej) formy svrabu, ktorá sa šíri medzi mačkami v jednej domácnosti."
     ],
     "lifeCycle": "Celý životný cyklus prebieha výhradne na tele mačacieho hostiteľa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka priamo do chlpových folikulov a vývodov mazových žliaz, kde sa z nich liahnu šesťnohé larvy. Larvy postupne prechádzajú cez štádiá protonymfy a deuteronymfy na osemnohé dospelé jedince. K prenosu dochádza takmer výhradne vertikálne, a to tesným kontaktom matky s mačatami počas prvých dní života pri dojčení.",
-    "pathology": "Demodex cati je bežnou a neškodnou súčasťou kožnej mikroflóry (komenzálom) zdravých mačiek, no k prepuknutiu ochorenia dochádza pri silnom oslabení imunity. Klinická demodikóza sa prejavuje tvorbou lokalizovaných alebo generalizovaných ložísk alopécie (vypadávania srsti), šupinatením, tvorbou chrást a začervenaním, najčastejšie v oblasti hlavy, očných viečok, krku a uší (ceruminózna otitída). Generalizované formy sú u mačiek raritné a takmer vždy signalizujú vážne pridružené systémové alebo imunosupresívne ochorenie, akým je mačacia leukémia (FeLV), mačací imunodeficit (FIV) alebo diabetes mellitus.",
+    "pathology": "_Demodex cati_ je bežnou a neškodnou súčasťou kožnej mikroflóry (komenzálom) zdravých mačiek, no k prepuknutiu ochorenia dochádza pri silnom oslabení imunity. Klinická demodikóza sa prejavuje tvorbou lokalizovaných alebo generalizovaných ložísk alopécie (vypadávania srsti), šupinatením, tvorbou chrást a začervenaním, najčastejšie v oblasti hlavy, očných viečok, krku a uší (ceruminózna otitída). Generalizované formy sú u mačiek raritné a takmer vždy signalizujú vážne pridružené systémové alebo imunosupresívne ochorenie, akým je mačacia leukémia (FeLV), mačací imunodeficit (FIV) alebo diabetes mellitus.",
     "zoonosis": false,
     "notes": "Indikátor vážnych chorôb: Na rozdiel od psov, kde ide často o vrodenú dispozíciu, prepuknutie rozsiahlej demodikózy spôsobenej Demodex cati u dospelej mačky takmer vždy znamená, že zviera bojuje s hlbšou skrytou hrozbou, napr. s vírusovou infekciou FIV/FeLV alebo cukrovkou.",
     "id": "demodex_cati_adult",
@@ -4600,20 +4539,13 @@
     },
     "diagnosticSigns": [
       "Tento druh je nápadne malý a patrí k najkratším zástupcom celého rodu Demodex",
-      "Celková dĺžka: Min. 85 μm – Max. 115 μm (samce bývajú o niečo kratšie",
-      "priemerná dĺžka samíc sa udáva okolo 103 μm)",
-      "Má charakteristický krátky",
-      "zavalitý až guľovitý či raketový tvar (pripomína malý projektil alebo guľku). Pomer dĺžky zadočka k hrudnej časti je výrazne vyrovnanejší než u iných druhov.",
-      "Má 4 páry veľmi krátkych",
-      "kýpťovitých a hrubých nôh nachádzajúcich sa na podosóme. Nohy zaberajú takmer polovicu celkovej dĺžky parazita.",
-      "Zadná časť (opisthosoma) je nápadne krátka",
-      "široká a na konci zaoblená či tupá",
-      "s jemným priečnym ryhovaním.!"
+      "Celková dĺžka: Min. 85 μm – Max. 115 μm (samce bývajú o niečo kratšie, priemerná dĺžka samíc sa udáva okolo 103 μm)",
+      "Má charakteristický krátky, zavalitý až guľovitý či raketový tvar (pripomína malý projektil alebo guľku). Pomer dĺžky zadočka k hrudnej časti je výrazne vyrovnanejší než u iných druhov.",
+      "Má 4 páry veľmi krátkych, kýpťovitých a hrubých nôh nachádzajúcich sa na podosóme. Nohy zaberajú takmer polovicu celkovej dĺžky parazita.",
+      "Zadná časť (opisthosoma) je nápadne krátka, široká a na konci zaoblená či tupá, s jemným priečnym ryhovaním.!"
     ],
     "differentialDiagnosis": [
-      "_Demodex aurati_ : Dlhé",
-      "štíhle",
-      "cigarovité telo (180–270 μm). Žije hlboko vo vlasových folikuloch a mazových žľazách. Vyžaduje hlboký kožný zoškrab (až do objavenia sa kapilárnej krvi) alebo histopatológiu."
+      "_Demodex aurati_ : Dlhé, štíhle, cigarovité telo (180–270 μm). Žije hlboko vo vlasových folikuloch a mazových žľazách. Vyžaduje hlboký kožný zoškrab (až do objavenia sa kapilárnej krvi) alebo histopatológiu."
     ],
     "lifeCycle": "Životný cyklus prebieha kompletne na hostiteľovi a trvá približne 15 až 20 dní. Samica kladie drobné vajíčka priamo do záhybov epidermy a povrchových vyústení chlpových jamiek, kde z nich vyliahnu šesťnohé larvy. Larvy prechádzajú postupným zvliekaním cez nymfálne štádiá (protonymfa a deuteronymfa) až do osemnohého dospelého jedinca. Parazit je prítomný na povrchu tela trvalo, pričom prenos prebieha takmer výhradne priamym fyzickým kontaktom z matky na mláďatá počas obdobia laktácie a opatery v hniezde.",
     "pathology": "_Demodex criceti_ je u škrečkov považovaný za bežného, neškodného komenzála a u zdravých zvierat s funkčnou imunitou nevyvoláva patologické zmeny. Ochorenie prepuká len pri oslabení hostiteľa, podvýžive, v pokročilom veku alebo pri iných metabolických/nádorových ochoreniach (napr. hyperadrenokorticizmus). V porovnaní s _D. aurati_ vykazuje _D. criceti_ výrazne nižšiu patogenitu. Patologické prejavy sa koncentrujú najmä na chrbte a krížovej oblasti, pričom zahŕňajú suchú dermatitis, tvorbu lupín, šupinatenie pokožky, matnú srsť a ložiskovú stratu srsti (alopéciu). Svrbenie (pruritus) býva minimálne alebo úplne absentuje.",
@@ -4658,27 +4590,16 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Telo je typicky červovité až „cigarovité“",
-      "no v porovnaní s veľmi štíhlym _D. caballi_ pôsobí robustnejšie a širšie v strednej časti. Skladá sa z prednej gnathosomy",
-      "podosomy s nohami a priečne pruhovaného zadočka (opisthosoma).",
-      "Má 4 páry zakrpatených",
-      "kýpťovitých nôh",
-      "ktoré vyrastajú z brušnej strany podosomy. Nohy sú zakončené párom drobných",
-      "jemných pazúrikov.",
-      "Opisthosoma (zadoček) končí tupo zaobleným koncom",
-      "na rozdiel od zašpicatenejšieho konca u D. caballi.",
-      "Parazituje primárne v chlpových folikuloch po celom tele hostiteľa (krk",
-      "plecia",
-      "chrbát",
-      "zátylok",
-      "boky)."
+      "Telo je typicky červovité až „cigarovité“, no v porovnaní s veľmi štíhlym _D. caballi_ pôsobí robustnejšie a širšie v strednej časti. Skladá sa z prednej gnathosomy, podosomy s nohami a priečne pruhovaného zadočka (opisthosoma).",
+      "Má 4 páry zakrpatených, kýpťovitých nôh, ktoré vyrastajú z brušnej strany podosomy. Nohy sú zakončené párom drobných, jemných pazúrikov.",
+      "Opisthosoma (zadoček) končí tupo zaobleným koncom, na rozdiel od zašpicatenejšieho konca u _D. caballi_.",
+      "Parazituje primárne v chlpových folikuloch po celom tele hostiteľa (krk, plecia, chrbát, zátylok, boky)."
     ],
     "differentialDiagnosis": [
-      "_Demodex caballi_ : Má dlhšie a nápadne štíhlejšie telo. Osídľuje výhradne mazové žľazy na hlave",
-      "špecificky Meibomove žľazy očných viečok a oblasť nozdier."
+      "_Demodex caballi_ : Má dlhšie a nápadne štíhlejšie telo. Osídľuje výhradne mazové žľazy na hlave, špecificky Meibomove žľazy očných viečok a oblasť nozdier."
     ],
     "lifeCycle": "Celý životný cyklus prebieha permanentne na tele hostiteľa a trvá približne 18 až 24 dní. Samica kladie vretenovité vajíčka do chlpových folikulov koní. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení menia na osemnohé protonymfy, následne deutonymfy a napokon na pohlavne dospelé jedince. K horizontálnemu prenosu dochádza najmä priamym kontaktom medzi zvieratami (v stáde, pri čistení rovnakými pomôckami), no kľúčový je vertikálny prenos – bezprostredne po narodení z kobyly na žriebä počas satia mlieka a ošetrovania.",
-    "pathology": "Demodex equi patrí k bežným, neškodným zložkám kožnej mikrofauny zdravých koní (komenzál). Klinické ochorenie – demodikóza – prepuká iba zriedkavo, zvyčajne v dôsledku imunosupresie, chronického stresu, podvýživy, zlých zoohygienických podmienok alebo pri systémových chorobách. Prejavuje sa ohniskovou alebo generalizovanou alopéciou (vypadávaním srsti), erytémom (začervenaním), tvorbou drobných šupín, lupín a papúl (uzlíkov) najmä na krku, hlave a pleciach. Svrbenie býva minimálne, zosilnieť môže až pri sekundárnej bakteriálnej infekcii (pyodermii), kedy sa lézie zapália a začnú hniť.",
+    "pathology": "_Demodex equi_ patrí k bežným, neškodným zložkám kožnej mikrofauny zdravých koní (komenzál). Klinické ochorenie – demodikóza – prepuká iba zriedkavo, zvyčajne v dôsledku imunosupresie, chronického stresu, podvýživy, zlých zoohygienických podmienok alebo pri systémových chorobách. Prejavuje sa ohniskovou alebo generalizovanou alopéciou (vypadávaním srsti), erytémom (začervenaním), tvorbou drobných šupín, lupín a papúl (uzlíkov) najmä na krku, hlave a pleciach. Svrbenie býva minimálne, zosilnieť môže až pri sekundárnej bakteriálnej infekcii (pyodermii), kedy sa lézie zapália a začnú hniť.",
     "zoonosis": false,
     "notes": "Hoci je kožné osídlenie roztočom u koní bežné, rozvoj klinických lézií a potvrdenie skutočnej demodikózy u veterinárneho lekára je v porovnaní so psami mimoriadne vzácny a raritný úkaz.",
     "id": "demodex_equi_adult",
@@ -4719,23 +4640,14 @@
     },
     "diagnosticSigns": [
       "Celková dĺžka: Min. 140 μm – Max. 230 μm (priemerná dĺžka dospelých samíc sa pohybuje okolo 190 – 210 μm; samce sú o niečo kratšie).",
-      "Má klasickú anatomickú stavbu rodu Demodex – predĺžený",
-      "červovitý a transparentný tvar. Opisthosoma (zadoček) je podlhovastá",
-      "pravidelne priečne ryhovaná a tvorí približne dve tretiny celkovej dĺžky tela.",
-      "Dospelé jedince majú 4 páry redukovaných",
-      "kýpťovitých nôh situovaných v prednej časti tela",
-      "tesne za drobným ústnym ústrojenstvom (gnathosoma).",
-      "Zadoček sa ku koncu postupne zužuje a končí zaobleným",
-      "mierne tupým hrotom."
+      "Má klasickú anatomickú stavbu rodu Demodex – predĺžený, červovitý a transparentný tvar. Opisthosoma (zadoček) je podlhovastá, pravidelne priečne ryhovaná a tvorí približne dve tretiny celkovej dĺžky tela.",
+      "Dospelé jedince majú 4 páry redukovaných, kýpťovitých nôh situovaných v prednej časti tela, tesne za drobným ústnym ústrojenstvom (gnathosoma).",
+      "Zadoček sa ku koncu postupne zužuje a končí zaobleným, mierne tupým hrotom."
     ],
     "differentialDiagnosis": [
-      "Na rozdiel od pôvodcov svrabu u ježov",
-      "akými sú _Caparinia tripilis_ (veľmi častý ušný a kožný roztoč spôsobujúci masívne chrasty) či _Sarcoptes scabiei_",
-      "má _Demodex erinacei_ typicky pretiahnuté",
-      "cigarovité telo. Svrabovce sú okrúhle a majú viditeľne dlhšie končatiny. Na diagnostiku _D. erinacei_ je potrebný hlboký kožný zoškrab",
-      "zatiaľ čo u _Caparinia_ spp. stačí odobrať povrchové chrasty."
+      "Na rozdiel od pôvodcov svrabu u ježov, akými sú _Caparinia tripilis_ (veľmi častý ušný a kožný roztoč spôsobujúci masívne chrasty) či _Sarcoptes scabiei_, má _Demodex erinacei_ typicky pretiahnuté, cigarovité telo. Svrabovce sú okrúhle a majú viditeľne dlhšie končatiny. Na diagnostiku _D. erinacei_ je potrebný hlboký kožný zoškrab, zatiaľ čo u _Caparinia_ spp. stačí odobrať povrchové chrasty."
     ],
-    "lifeCycle": "Celý vývojový cyklus prebieha výhradne na tele ježa a trvá približne 18 až 24 dní. Samica kladie mikroskopické vretenovité vajíčka do chlpových folikulov a upravených puzdier ostňov. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení menia na osemnohé protonymfy a deuteronymfy, až dosiahnu štádium dospelého jedinca. Prenos sa uskutočňuje priamym telesným kontaktom, najmä v hniezde medzi matkou a slepými mláďatami počas laktácie. Mimo hostiteľa roztoče rýchlo vysychajú a hynú.",
+    "lifeCycle": "Celý vývinový cyklus prebieha výhradne na tele ježa a trvá približne 18 až 24 dní. Samica kladie mikroskopické vretenovité vajíčka do chlpových folikulov a upravených puzdier ostňov. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení menia na osemnohé protonymfy a deuteronymfy, až dosiahnu štádium dospelého jedinca. Prenos sa uskutočňuje priamym telesným kontaktom, najmä v hniezde medzi matkou a slepými mláďatami počas laktácie. Mimo hostiteľa roztoče rýchlo vysychajú a hynú.",
     "pathology": "_Demodex erinacei_ žije na koži ježov väčšinou asymptomaticky ako neškodný komenzál, pričom klinická demodikóza prepuká zriedkavo (prevalencia klinickej formy v prírode je len okolo 1 %). Ochorenie sa rozvíja pri ťažkej podvýžive, hibernačnom vyčerpaní, alebo v synergii s plesňovými infekciami (napr. _Trichophyton_ spp.). Patologicky sa prejavuje stratou srsti a ostňov (alopécia) primárne na hlave a krku, tvorbou vyvýšených papúl, šupinatením a zhrubnutím kože. Pri chronickom priebehu a sekundárnej infekcii baktériami vznikajú hnisavé ložiská, ktoré zviera výrazne oslabujú.",
     "zoonosis": false,
     "notes": "Nález masívne premnoženého demodexa u nájdeného ježa v záchrannej stanici je pre veterinára takmer stopercentným indikátorom toho, že zviera trpí vážnym vnútorným rozvratom organizmu (napr. silným začervením pľúcnymi červami alebo generalizovanou mykózou) a jeho imunita kompletne zlyhala.",
@@ -4777,19 +4689,12 @@
     },
     "diagnosticSigns": [
       "Patrí k najmenším zástupcom rodu Demodex: Min. 80 μm (samce) – Max. 120 μm (samice). Priemerná dĺžka samcov je približne 90 μm a samíc okolo 110 μm.",
-      "Má nápadne krátke",
-      "zavalité až zaoblené telo",
-      "pripomínajúce miniatúrny vak alebo vajíčko (podobne ako _Demodex criceti_ u škrečkov). Zadoček je krátky a na konci tupo zaoblený.",
-      "Má 4 páry krátkych",
-      "hrubých a kýpťovitých nôh situovaných v prednej časti hrudi.",
-      "žije povrchovo v rohovej vrstve kože (stratum corneum)."
+      "Má nápadne krátke, zavalité až zaoblené telo, pripomínajúce miniatúrny vak alebo vajíčko (podobne ako _Demodex criceti_ u škrečkov). Zadoček je krátky a na konci tupo zaoblený.",
+      "Má 4 páry krátkych, hrubých a kýpťovitých nôh situovaných v prednej časti hrudi.",
+      "Žije povrchovo v rohovej vrstve kože (stratum corneum)."
     ],
     "differentialDiagnosis": [
-      "_Demodex cati_ : Dlhé",
-      "štíhle",
-      "cigarovité telo (130–300 μm)",
-      "žije hlboko vo vlasových folikuloch",
-      "nie je nákazlivý a vyžaduje imunosupresiu hostiteľa."
+      "_Demodex cati_ : Dlhé, štíhle, cigarovité telo (130–300 μm), žije hlboko vo vlasových folikuloch, nie je nákazlivý a vyžaduje imunosupresiu hostiteľa."
     ],
     "lifeCycle": "Životný cyklus prebieha kompletne na povrchu kože hostiteľa a trvá približne 15 až 20 dní. Samica kladie malé oválne vajíčka do vrstiev keratinizovanej pokožky, kde sa z nich liahnu šesťnohé larvy, ktoré cez nymfálne štádiá prechádzajú na dospelé jedince. Na rozdiel od iných druhov trúdokov sa D. gatoi ľahko šíri priamym horizontálnym kontaktom medzi mačkami (napr. pri spoločnom spaní alebo čistení srsti v jednej domácnosti/útulku).",
     "pathology": "_Demodex gatoi_ je primárne patogénny roztoč a jeho prítomnosť na koži takmer vždy vyvoláva klinické prejavy, a to aj u inak úplne zdravých jedincov. Hlavným a najvýraznejším príznakom je intenzívne svrbenie (pruritus), ktoré často vedie k sebapoškodzovaniu, vytrhávaniu srsti (sekundárna alopécia), šupinateniu, tvorbe miliárnej dermatitídy a chrást, najčastejšie na bruchu, vnútornej strane stehien, na krku a lakťoch. Príznaky klinicky veľmi pripomínajú alergiu na blešie uhryznutie alebo atopiu.",
@@ -4834,20 +4739,14 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Najväčší známy druh demodexov u mäsožravcov: celková dĺžka je min. 282 μm – max. 411 μm (samce dosahujú 309–411 μm",
-      "samice 282–396 μm",
-      "čím sú takmer dvakrát dlhšie než _D. canis_)",
-      "Telo je extrémne pretiahnuté",
-      "úzke a červovité. Zadoček (opisthosoma) tvorí až dve tretiny až tri štvrtiny celkovej dĺžky parazita a je jemne priečne prúžkovaný.",
-      "Gnathosoma: Ústne ústrojenstvo je v porovnaní s ostatnými druhmi pomerne široké",
-      "lichobežníkového tvaru.",
-      "Má 4 páry krátkych",
-      "hrubých a kýpťovitých nôh situovaných v prednej hrudnej časti tela."
+      "Najväčší známy druh demodexov u mäsožravcov: celková dĺžka je min. 282 μm – max. 411 μm (samce dosahujú 309–411 μm, samice 282–396 μm, čím sú takmer dvakrát dlhšie než _D. canis_)",
+      "Telo je extrémne pretiahnuté, úzke a červovité. Zadoček (opisthosoma) tvorí až dve tretiny až tri štvrtiny celkovej dĺžky parazita a je jemne priečne prúžkovaný.",
+      "Gnathosoma: Ústne ústrojenstvo je v porovnaní s ostatnými druhmi pomerne široké, lichobežníkového tvaru.",
+      "Má 4 páry krátkych, hrubých a kýpťovitých nôh situovaných v prednej hrudnej časti tela."
     ],
     "differentialDiagnosis": [
       "_Demodex canis_: Stredne dlhé telo (156–300 μm).",
-      "_Demodex cornei _: Krátke a zavalité telo (90–140 μm)",
-      "viazané na povrch pokožky."
+      "_Demodex cornei _: Krátke a zavalité telo (90–140 μm), viazané na povrch pokožky."
     ],
     "lifeCycle": "Celý vývojový cyklus prebieha permanentne na tele hostiteľa a trvá približne 20 až 35 dní. Samica kladie vretenovité vajíčka priamo do hlbokých častí chlpových folikulov a mazových žliaz, kde sa z nich liahnu šesťnohé larvy. Tie cez štádiá protonymfy a deuteronymfy dozrievajú na osemnohé dospelé jedince, pričom k prenosu dochádza priamym tesným kontaktom matky so šteniatkami v prvých dňoch po narodení.",
     "pathology": "_Demodex injai_ spôsobuje chronickú generalizovanú alebo ložiskovú demodikózu, ktorá sa klinicky odlišuje primárnou silnou hyperseborrheou (nadmernou produkciou mazu, najmä na dorzálnej línii chrbta – tzv. mastný chrbát), folikulitídou, erytémom, miernou alopéciou a specifickým zatuchnutým zápachom kože. Svrbenie (pruritus) býva pri tomto druhu často oveľa intenzívnejšie než pri bežnom _D. canis_, pričom zápalový proces a mastné prostredie silno podporujú sekundárne bakteriálne infekcie. \n Syndróm mastného chrbta: Na rozdiel od klasickej psej demodikózy, kde prevládajú suché lysiny a šupiny, pre D. injai je typický vizuálne lesklý, mastný a na dotyk lepkavý chrbát, pričom srsť na postihnutých miestach často vôbec nemusí masívne vypadávať",
@@ -4894,23 +4793,14 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Patrí k stredne veľkým druhom roztočov z rodu Demodex",
-      "pričom vykazuje výrazný pohlavný dimorfizmus (samice sú viditeľne väčšie)",
-      "Celková dĺžka: Min. 175 μm – Max. 265 μm (samce bývajú kratšie",
-      "zvyčajne okolo 170–200 μm).",
-      "Telo je typicky pretiahnuté a nesie charakteristické znaky rodu. Predná časť tela (gnathosoma a podosoma) je relatívne široká a prechádza do opisthosomy (zadočku)",
-      "ktorá sa ku koncu zužuje",
-      "no na samotnom hrote končí nápadne zaoblene.",
-      "Dospelé roztoče majú 4 páry veľmi krátkych",
-      "silných",
-      "kýpťovitých nôh s malými pazúrikmi",
-      "sústredených na brušnej strane hrudnej časti.",
-      "Samce majú výrazne viditeľný dorsalne umiestnený kopulačný orgán (aedeagus)",
-      "samice majú vulvu predĺženú na brušnú stranu na úrovni štvrtého páru nôh."
+      "Patrí k stredne veľkým druhom roztočov z rodu Demodex, pričom vykazuje výrazný pohlavný dimorfizmus (samice sú viditeľne väčšie)",
+      "Celková dĺžka: Min. 175 μm – Max. 265 μm (samce bývajú kratšie, zvyčajne okolo 170–200 μm).",
+      "Telo je typicky pretiahnuté a nesie charakteristické znaky rodu. Predná časť tela (gnathosoma a podosoma) je relatívne široká a prechádza do opisthosomy (zadočku), ktorá sa ku koncu zužuje, no na samotnom hrote končí nápadne zaoblene.",
+      "Dospelé roztoče majú 4 páry veľmi krátkych, silných, kýpťovitých nôh s malými pazúrikmi sústredenými na brušnej strane hrudnej časti.",
+      "Samce majú výrazne viditeľný dorsalne umiestnený kopulačný orgán (aedeagus), samice majú vulvu predĺženú na brušnú stranu na úrovni štvrtého páru nôh."
     ],
     "differentialDiagnosis": [
-      "U ošípaných a diviakov neparazituje žiadny iný druh z rodu Demodex",
-      "preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
+      "U ošípaných a diviakov neparazituje žiadny iný druh z rodu Demodex, preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
     ],
     "lifeCycle": "Celý životný cyklus prebieha výhradne na tele ošípanej v priebehu 2 až 3 týždňov (približne 14–21 dní). Samica žije vo vlasových folikuloch a mazových žľazách (najmä na miestach s jemnejšou kožou), kde kladie charakteristické vretenovité vajíčka. Z vajíčok sa liahnu šesťnohé larvy, ktoré sa po zvlečení cez tri nymfálne štádiá (protonymfa, nymfa, deuteronymfa) vyvinú na osemnohé dospelé jedince. Hlavným spôsobom šírenia je priamy fyzický kontakt, predovšetkým vertikálny prenos z infikovanej prasnice na prasiatka počas sania mlieka.",
     "pathology": "_Demodex phylloides_ je vo väčšine prípadov u ošípaných a najmä u voľne žijúcich diviakov neškodným komenzálom a nespôsobuje žiadne vonkajšie príznaky (asymptomatická infekcia). K prepuknutiu klinickej formy dochádza v dôsledku imunitného deficitu, stresu v preplnených chovoch alebo podvýživy. Ochorenie sa prejavuje tvorbou drobných folikulárnych papúl, uzlíkov a pustúl (pľuzgierov) naplnených syrovitým alebo hnisavým obsahom. Tieto lézie sa tvoria najprv na hlave (okolo očí, na viečkach, rypáku), neskôr prechádzajú na spodnú časť krku, hrudník, brucho a vnútornú stranu stehien. Pri komplikáciách a sekundárnej bakteriálnej infekcii (napr. Staphylococcus spp.) sa uzlíky menia na hnisavé abscesy a zápaly kože.",
@@ -4953,17 +4843,12 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Má predĺžený",
-      "typicky červovitý vzhľad s jasným členením. Pomer dĺžky zadočka (opisthosoma) k prednej časti tela (podosoma) je vyvážený",
-      "pričom zadoček tvorí o niečo viac ako polovicu celkovej dĺžky a je jemne priečne pruhovaný.",
-      "Disponuje 4 pármi veľmi krátkych",
-      "kýpťovitých a hrubých nôh sústredených na hrudi",
-      "ktoré mu pomáhajú fixovať sa v stiesnených kožných priestoroch.",
+      "Má predĺžený, typicky červovitý vzhľad s jasným členením. Pomer dĺžky zadočka (opisthosoma) k prednej časti tela (podosoma) je vyvážený, pričom zadoček tvorí o niečo viac ako polovicu celkovej dĺžky a je jemne priečne pruhovaný.",
+      "Disponuje 4 pármi veľmi krátkych, kýpťovitých a hrubých nôh sústredených na hrudi, ktoré mu pomáhajú fixovať sa v stiesnených kožných priestoroch.",
       "Opisthosoma sa smerom dozadu postupne zužuje a končí mierne zaobleným až subakútnym hrotom."
     ],
     "differentialDiagnosis": [
-      "U veveríc neparazituje žiadny iný druh z rodu Demodex",
-      "preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
+      "U veveríc neparazituje žiadny iný druh z rodu Demodex, preto je identifikácia podľa morfologických znakov a veľkosti pomerne jednoznačná."
     ],
     "lifeCycle": "Životný cyklus prebieha permanentne na tele hostiteľa a odhaduje sa na 18 až 24 dní. Samica kladie vretenovité vajíčka priamo do chlpových folikulov a príslušných mazových žliaz veveríc. Z nich sa liahnu šesťnohé larvy, ktoré sa po zvlečení cez štádiá protonymfy a deuteronymfy transformujú na osemnohé dospelé jedince. K horizontálnemu prenosu medzi dospelými jedincami dochádza len výnimočne, primárna cesta šírenia je vertikálny prenos v hniezde z matky na mláďatá počas obdobia ich odchovu a dojčenia.",
     "pathology": "_Demodex sciurinus_ sa bežne považuje za asymptomatického obyvateľa kože (komenzál) so stabilne nízkou hustotou populácie. Klinická demodikóza (trúdavosť) u veveríc prepuká zriedkavo, najčastejšie pri výraznom oslabení imunity, podvýžive v zimných mesiacoch, poškodení organizmu inými patogénmi alebo pri stresových stavoch (napr. pri držaní v nevhodných podmienkach v zajatí). Prejavuje sa lokalizovanými lysinami (alopéciou), začervenaním a šupinatením kože najmä v oblasti hlavy, okolo očí, nozdier a na krku. Ak dôjde k sekundárnej bakteriálnej infekcii folikulov, lézie sa môžu zmeniť na hnisavé ranky s tvorbou chrást.",
@@ -5006,18 +4891,12 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Telo je typicky pretiahnuté",
-      "cigarovité a priehľadné. Opisthosoma (zadoček) zaberá významnú časť tela a je pokrytá hustým priečnym ryhovaním.",
-      "Podobne ako u ostatných zástupcov rodu",
-      "dospelé štádiá majú 4 páry redukovaných",
-      "zakrpatených a hrubých nôh sústredených v prednej tretine podosomy",
+      "Telo je typicky pretiahnuté, cigarovité a priehľadné. Opisthosoma (zadoček) zaberá významnú časť tela a je pokrytá hustým priečnym ryhovaním.",
+      "Podobne ako u ostatných zástupcov rodu, dospelé štádiá majú 4 páry redukovaných, zakrpatených a hrubých nôh sústredených v prednej tretine podosomy",
       "Parazituje striktne v chlpových folikuloch a vývodoch mazových žliaz očných viečok (vrátane Meibomových žliaz). Nevytvára masívne podkožné uzly na tele."
     ],
     "differentialDiagnosis": [
-      "_Demodex bovis_: Spôsobuje klasickú papulonodulárnu formu demodikózy. Žije v koži krku",
-      "pleca",
-      "bokov a hrudníka",
-      "kde vytvára veľké hmatateľné uzlíky (cysty) naplnené syrovitým miazgom."
+      "_Demodex bovis_: Spôsobuje klasickú papulonodulárnu formu demodikózy. Žije v koži krku, pliec, bokov a hrudníka, kde vytvára veľké hmatateľné uzlíky (cysty) naplnené syrovitým miazgom."
     ],
     "lifeCycle": "Celý životný cyklus prebieha trvalo na hostiteľovi a trvá približne 18 až 24 dní. Samice kladú mikroskopické vretenovité vajíčka do folikulov rias a priľahlých mazových žliaz očného viečka. Vývoj prechádza cez šesťnohú larvu, protonymfu a deuteronymfu až po osemnohé dospelé jedince. Prenos je predovšetkým vertikálny – tesným fyzickým kontaktom matky (kravy) s narodeným teľaťom počas satia mlieka, kedy dochádza k blízkej migrácii roztočov z oblasti hlavy matky na mláďa.",
     "pathology": "_Demodex tauri_ vykazuje veľmi nízku patogenitu a v drvivej väčšine prípadov ide o úplne asymptomatického komenzála. Dodnes nie je spoľahlivo dokázané, že by tento druh primárne vyvolával vážne klinické kožné ochorenia dobytka. Pri masívnom premnožení (v dôsledku imunosupresie, stresu alebo metabolických porúch) sa môže podieľať na lokálnom podráždení očného viečka, miernom šupinatení, vypadávaní rias alebo sekundárnej bakteriálnej infekcii (napr. _Moraxella bovis_ alebo _Staphylococcus aureus_), čo môže skomplikovať priebeh zápalov spojiviek (konjunktivitíd).",
@@ -5060,19 +4939,13 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Veľké",
-      "asymetricky oválne (v tvare polmesiaca alebo vretena)",
+      "Veľké, asymetricky oválne (v tvare polmesiaca alebo vretena)",
       "Obsahujú už sformované embryo (morulu)",
-      "Disponuje na jednom zo svojich pólov štruktúrou nazývanou operkulum (čiapočka/viečko)",
-      "cez ktorú sa neskôr liahne larva."
+      "Disponuje na jednom zo svojich pólov štruktúrou nazývanou operkulum (čiapočka/viečko), cez ktorú sa neskôr liahne larva."
     ],
     "differentialDiagnosis": [
-      "_Syphacia_ spp. (_S. obvelata",
-      "S. muris_): menšie vajíčka (dĺžka 75–85 μm)",
-      "typický tvar písmena D.",
-      "_Aspiculuris tetraptera_: menšie vajíčka (dĺžka 70–90 μm)",
-      "symetrické",
-      "elipsoidné až vretenovité. ."
+      "_Syphacia_ spp. (_S. obvelata, S. muris_): menšie vajíčka (dĺžka 75–85 μm), typický tvar písmena D.",
+      "_Aspiculuris tetraptera_: menšie vajíčka (dĺžka 70–90 μm), symetrické, elipsoidné až vretenovité. ."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny), prebieha bez medzihostiteľa v prostredí a tele hostiteľa a prepatentná perióda (čas od infekcie po vylučovanie vajíčok) trvá 25 až 29 dní. Hostiteľ sa nakazí perorálne prehltnutím (ingesciou) infekčných vajíčok z kontaminovaného prostredia, podstielky či krmiva. V čreve hlodavca sa z vajíčok uvoľnia larvy, ktoré migrujú do prednej tretiny tenkého čreva (dvanástnik a nalačník), kde dospievajú. Dospelé samice následne produkujú vajíčka, ktoré odchádzajú trusom do vonkajšieho prostredia.",
     "pathology": "Tento endoparazit vykazuje veľmi nízku patogenitu a vo väčšine prípadov prebieha infekcia úplne asymptomaticky (bez klinických príznakov). Zvieratá si udržiavajú normálnu telesnú hmotnosť a stabilný príjem potravy. Až pri extrémne masívnom premnožení červov v tesnom priestore tenkého čreva môže dochádzať k mechanickému dráždeniu sliznice, miernym poruchám vstrebávania živín, prípadne k zápalu čreva (enteritíde). Vzácne môže prítomnosť masy červov prispieť k intususcepcii (vsunutiu) čreva. Pri liečbe sa v chovoch úspešne aplikujú benzimidazoly (napr. medikované krmivo s fenbendazolom).",
@@ -5092,7 +4965,7 @@
       "order": "Ixodida",
       "family": "Ixodidae",
       "genus": "Dermacentor",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Voľne žijúce prežúvavce",
@@ -5123,29 +4996,17 @@
       "shell": "Tvrdý chitínový štít"
     },
     "diagnosticSigns": [
-      "Tvrdý kliešť s ornamentovaným (mramorovaným) skutom",
-      "Plne nasaté samice: dĺžka extrémne narastá až do 1",
-      "5 x 1 cm",
+      "Tvrdý kliešť s ornamentovaným (mramorovaným) štítkom",
+      "Plne nasaté samice: dĺžka extrémne narastá až do 1, 5 x 1 cm",
       "Krátke a široké palpy",
       "Na okrajoch chrbtového štítku majú dobre viditeľné ploché oči.",
-      "Zadný okraj tela (abdomen) je rozdelený na 11 drobných zárezov/obdĺžnikových políčok (festónov)",
-      "ktoré sú jasne viditeľné najmä u nenásatých jedincov."
+      "Zadný okraj tela (abdomen) je rozdelený na 11 drobných zárezov/obdĺžnikových políčok (festónov), ktoré sú jasne viditeľné najmä u nenásatých jedincov."
     ],
     "differentialDiagnosis": [
-      "Rod Ixodes - jednofarebný (tmavohnedý až čierny) štítok bez ornamentov",
-      "dlhé štíhle palpy",
-      "nemá oči",
-      "nemá festóny",
-      "Rod Haemaphysalis - jednofarebný (svetlohnedý až žltkastý) štítok bez ornamentov",
-      "krátke palpy",
-      "druhý článok palp bočne vyčnieva",
-      "nemá oči",
-      "prítomné festóny",
-      "Rod Hyalomma (tzv. „obrie kliešte“): prenášané sťahovavými vtákmi z Afriky a južnej Európy. Sú výrazne väčšie",
-      "majú prúžkované nohy a na rozdiel od našich kliešťov aktívne prenasledujú hostiteľa (bežia za ním). Zatiaľ na Slovensku netvoria stabilné populácie a zimu neprežijú",
-      "no ich výskyt monitoruje Biomedicínske centrum SAV",
-      "Rod Rhipicephalus (Kliešť psí - _Rhipicephalus sanguineus_): Teplomilný druh parazitujúci na psoch. Dovolenkári si ho občas nevedomky prinesú z južnej Európy. V našej prírode zimu bežne neprežije",
-      "no dokáže sa udomácniť a úspešne rozmnožovať priamo v bytoch alebo chovateľských staniciach."
+      "Rod Ixodes - jednofarebný (tmavohnedý až čierny) štítok bez ornamentov, dlhé štíhle palpy, nemá oči, nemá festóny",
+      "Rod Haemaphysalis - jednofarebný (svetlohnedý až žltkastý) štítok bez ornamentov, krátke palpy, druhý článok palp bočne vyčnieva, nemá oči, prítomné festóny",
+      "Rod Hyalomma (tzv. „obrie kliešte“): prenášané sťahovavými vtákmi z Afriky a južnej Európy. Sú výrazne väčšie, majú prúžkované nohy a na rozdiel od našich kliešťov aktívne prenasledujú hostiteľa (bežia za ním). Zatiaľ na Slovensku netvoria stabilné populácie a zimu neprežijú, no ich výskyt monitoruje Biomedicínske centrum SAV",
+      "Rod Rhipicephalus (Kliešť psí - _Rhipicephalus sanguineus_): Teplomilný druh parazitujúci na psoch. Dovolenkári si ho občas nevedomky prinesú z južnej Európy. V našej prírode zimu bežne neprežije, no dokáže sa udomácniť a úspešne rozmnožovať priamo v bytoch alebo chovateľských staniciach."
     ],
     "lifeCycle": "Životný cyklus rodu Dermacentor je trojhostiteľský a trvá zvyčajne 1 až 2 roky v závislosti od klimatických podmienok. Začína sa na jar, keď oplodnená nasatá samica nakladie do pôdy tisíce vajíčok. Z nich sa vyliahnu šesťnohé larvy, ktoré napadnú prvého hostiteľa (drobného hlodavca), nasajú sa, odpadnú a v prostredí sa premenia na osemnohú nymfu. Nymfa si nájde druhého hostiteľa (napr. ježa alebo väčšieho hlodavca), opäť sa nasaje krvi a po odpadnutí sa v pôde transformuje na dospelého jedinca (samca alebo samicu). Dospelé jedince potom vyhľadávajú tretieho, veľkého hostiteľa (pes, voľne žijúca zver), na ktorom prebieha samotné cicanie samíc a párenie. Pre rod Dermacentor je typická bimodálna aktivita s vrcholmi skoro na jar (marec – máj) a koncom leta/na jeseň (september – november).",
     "pathology": "Patologický vplyv kliešťov _Dermacentor_ sp. zahŕňa priame mechanické poškodenie tkanív hostiteľa v mieste prisatia, kde slinné enzýmy spôsobujú lokálny zápal, nekrózu a sekundárnu bakteriálnu infekciu. Najvýznamnejší je však ich status vektora závažných patogénov. U psov sú primárnym prenášačom prvoka _**Babesia canis**_, ktorý spôsobuje psí babeziózu – život ohrozujúce ochorenie prejavujúce sa masívnou deštrukciou červených krviniek (hemolytická anemia), horúčkami, hemoglobinúriou (tmavý moč) a zlyhaním orgánov. Taktiež sú rezervoárom a vektorom baktérií z rodu Rickettsia, Francisella tularensis (pôvodca tularémie) a vírusu kliešťovej encefalitídy či omskej hemoragickej horúčky.",
@@ -5190,23 +5051,14 @@
     "diagnosticSigns": [
       "Nenasatý (bielo-sivý) - 600 μm – 750 μm x 300 μm – 400 μm",
       "Nasatý krvou (červeno-hnedý) - 1000 μm – 1500 μm x 700 μm – 900 μm",
-      "Sploštené",
-      "nečlánkované",
-      "oválneho až hruškovitého tvaru",
-      "s ôsmimi dlhými nohami u dospelcov (larvy majú iba 6 nôh).",
-      "Veľmi dlhé",
-      "ihlicovité chelicery prispôsobené na bodanie a cicanie krvi.",
-      "Dorsálny štít: Nedosahuje až po zadný okraj tela",
-      "vzadu je zakomponovaný do rovnej línie alebo mierne skosený.",
-      "Análny štít: Má charakteristický tvar",
-      "u samičiek je umiestnený v zadnej časti s anusom v prednej polovici štítu."
+      "Sploštené, nečlánkované, oválneho až hruškovitého tvaru, s ôsmimi dlhými nohami u dospelcov (larvy majú iba 6 nôh).",
+      "Veľmi dlhé, ihlicovité chelicery prispôsobené na bodanie a cicanie krvi.",
+      "Dorsálny štít: Nedosahuje až po zadný okraj tela, vzadu je zakomponovaný do rovnej línie alebo mierne skosený.",
+      "Análny štít: Má charakteristický tvar, u samičiek je umiestnený v zadnej časti s anusom v prednej polovici štítu."
     ],
     "differentialDiagnosis": [
-      "_Ornithonyssus sylviarum_ (klieštikovec vtáčí): Na rozdiel od _D. gallinae_ zostáva na hostiteľovi natrvalo (celý životný cyklus prebieha na tele vtáka",
-      "nielen počas kŕmenia). Má odlišný tvar análneho štítu (anus v zadnej polovici) a zužujúci sa dorsálny štít.",
-      "_Argas persicus_ (kliešťovec perzský): Ide o mäkkého kliešťa (rodina Argasidae). Je podstatne väčší (4 – 10 mm)",
-      "má kožovitý",
-      "granulovaný povrch tela a ústne ústrojenstvo (capitulum) je u dospelcov skryté pod predným okrajom tela (nie je viditeľné zhora)"
+      "_Ornithonyssus sylviarum_ (klieštikovec vtáčí): Na rozdiel od _D. gallinae_ zostáva na hostiteľovi natrvalo (celý životný cyklus prebieha na tele vtáka, nielen počas kŕmenia). Má odlišný tvar análneho štítu (anus v zadnej polovici) a zužujúci sa dorsálny štít.",
+      "_Argas persicus_ (kliešťovec perzský): Ide o mäkkého kliešťa (rodina Argasidae). Je podstatne väčší (4 – 10 mm), má kožovitý, granulovaný povrch tela a ústne ústrojenstvo (capitulum) je u dospelcov skryté pod predným okrajom tela (nie je viditeľné zhora)"
     ],
     "lifeCycle": "Životný cyklus klieštikovca je extrémne rýchly a za optimálnych podmienok (teplota 25 – 30 °C a vysoká vlhkosť) trvá len 7 až 10 dní. Samička kladie vajíčka do štrbín kurníka, z ktorých sa liahne šesťnohá larva, tá sa bez prijímania potravy leví na protonymfu. Protonymfa a následná deutonymfa už aktívne cicajú krv na hostiteľovi, pričom celé kŕmenie prebieha výhradne v noci a trvá len 30 až 60 minút; po nasatí parazity okamžite opúšťajú hostiteľa a schovávajú sa do prostredia, kde sa dospelé jedince následne pária.",
     "pathology": "Prítomnosť klieštikovcov vyvoláva u hydiny silný nepokoj, stres, úporné svrbenie (pruritus) a dermatitídy, čo vedie k sebapoškodzovaniu a trhaniu peria. Pri masívnom premnožení dochádza v dôsledku straty krvi k ťažkej anemii, celkovému chradnutiu, výraznému poklesu znášky vajec (často s krvavými škvrnami na škrupine) a v extrémnych prípadoch, najmä u kurčiat a sediacich kvočiek, nastáva smrť v dôsledku exsangvinácie (vykrácania).",
@@ -5259,18 +5111,16 @@
     },
     "diagnosticSigns": [
       "Oválne",
-      "Operkulum (viečko) na jednom póle",
-      "na opačnom póle často malý nenápadný hrbolček (aboperculárny hrbolček)",
+      "Operkulum (viečko) na jednom póle, na opačnom póle často malý nenápadný hrbolček (aboperculárny hrbolček)",
       "Nesegmentované pri vylúčení",
       "Hladká stena",
       "Neembryonované vajíčko pri odchode trusom obsahuje zárodočnú bunku/žĺtkové bunky"
     ],
     "differentialDiagnosis": [
-      "_Spirometra_ spp. - veľmi podobné vajíčka",
-      "ale na Slovensku extrémne zriedkavé",
+      "_Spirometra_ spp. - veľmi podobné vajíčka, ale na Slovensku extrémne zriedkavé",
       "_Fasciola hepatica_ - výrazne väčšie vajíčko (130–150 × 60–90 µm)"
     ],
-    "lifeCycle": "Dospelý D. latus žije v tenkom čreve definitívneho hostiteľa.\nVajíčka odchádzajú s trusom do vody.\nVo vode dozrievajú a uvoľní sa koracídium.\nKoracídium zožerie prvý medzihostiteľ – vodné kôrovce Copepoda.\nVyvinie sa procerkoid.\nKôrovca zožerie sladkovodná ryba → larva sa mení na plerocerkoid v tkanivách ryby.\nDefinitívny hostiteľ sa nakazí konzumáciou surovej alebo nedostatočne tepelne upravenej ryby.\nPlerocerkoid sa v čreve vyvinie na dospelca.",
+    "lifeCycle": "Dospelý _D. latus_ žije v tenkom čreve definitívneho hostiteľa.\nVajíčka odchádzajú s trusom do vody.\nVo vode dozrievajú a uvoľní sa koracídium.\nKoracídium zožerie prvý medzihostiteľ – vodné kôrovce Copepoda.\nVyvinie sa procerkoid.\nKôrovca zožerie sladkovodná ryba → larva sa mení na plerocerkoid v tkanivách ryby.\nDefinitívny hostiteľ sa nakazí konzumáciou surovej alebo nedostatočne tepelne upravenej ryby.\nPlerocerkoid sa v čreve vyvinie na dospelca.",
     "pathology": "Patológia u definitívnych hostiteľov:\nVäčšinou asymptomatická alebo mierna infekcia. Dospelce v tenkom čreve spôsobujú mechanické dráždenie a lokálne poškodenie sliznice. Pri silnej infekcii katarálna enteritída, hnačka, nechutenstvo, abdominálny diskomfort a chudnutie; zriedkavo poruchy črevnej pasáže až obštrukcia.",
     "zoonosis": true,
     "notes": "Táto pásomnica má neobyčajne vysokú afinitu k vitamínu B12. Dokáže zo stravy hostiteľa vstrebať celým povrchom svojho tela až 80 až 100 % tohto vitamínu. Pri masívnej alebo dlhodobej infekcii preto spôsobuje u ľudí špecifickú formu chudokrevnosti – tzv. megaloblastickú (pernicióznu) anémiu, sprevádzanú demyelináciou nervových vlákien a neurologickými ťažkosťami.",
@@ -5312,24 +5162,14 @@
     },
     "diagnosticSigns": [
       "Vajíčka majú typicky oválny až mierne elipsovitý tvar.",
-      "Vajíčko patrí do kategórie tzv. hymenolepidoidných vajíčok",
-      "pre ktoré je typická prítomnosť troch ochranných obalov (stien) chrániacich larvu vo vodnom prostredí",
+      "Vajíčko patrí do kategórie tzv. hymenolepidoidných vajíčok, pre ktoré je typická prítomnosť troch ochranných obalov (stien) chrániacich larvu vo vodnom prostredí",
       "Vláknité výbežky (filamenty) sú málo zreteľné alebo chýbajú",
-      "Onkosféra obsahuje 3 páry embryonálnych háčikov (spolu 6 háčikov)",
-      "ktoré slúžia larve na to",
-      "aby sa po zožratí medzihostiteľom (vodným kôrovcom) mechanicky prevŕtala cez stenu jeho čreva do telovej dutiny",
-      "kde pokračuje jej vývoj na cysticerkoid."
+      "Onkosféra obsahuje 3 páry embryonálnych háčikov (spolu 6 háčikov), ktoré slúžia larve na to, aby sa po zožratí medzihostiteľom (vodným kôrovcom) mechanicky prevŕtala cez stenu jeho čreva do telovej dutiny, kde pokračuje jej vývoj na cysticerkoid."
     ],
     "differentialDiagnosis": [
-      "_Drepanidotaenia lanceolata_ (pásomnica husia): Jej vajíčka sú výrazne väčšie",
-      "merajú približne 60 – 80 μ m na dĺžku a 50 – 70 μ m na šírku. Sú takmer guľaté až oválne s veľmi hrubým vnútorným obalom",
-      "zatiaľ čo vajíčka D. coronula sú subtílnejšie (35 – 45 μ m)",
-      "Rod Sobolevicanthus: Tieto vajíčka majú taktiež typický trojobalový hymenolepidoidný vzhľad",
-      "no ich vnútorná stena (embryofor) často vybieha na póloch do predĺžených",
-      "dobre viditeľných vláknitých útvarov (filamentov). Vajíčka D. coronula sú na póloch hladké a filamenty im spravidla chýbajú alebo sú redukované.",
-      "Rod Diorchis: Vajíčka rodu Diorchis bývajú viac pretiahnuté",
-      "elipsovitého až vretenovitého tvaru a ich onkosféra (larva) vo vnútri býva užšia",
-      "s odlišne orientovanými tromi pármi háčikov."
+      "_Drepanidotaenia lanceolata_ (pásomnica husia): Jej vajíčka sú výrazne väčšie, merajú približne 60 – 80 μ m na dĺžku a 50 – 70 μ m na šírku. Sú takmer guľaté až oválne s veľmi hrubým vnútorným obalom, zatiaľ čo vajíčka _D. coronula_ sú subtílnejšie (35 – 45 μ m)",
+      "Rod Sobolevicanthus: Tieto vajíčka majú taktiež typický trojobalový hymenolepidoidný vzhľad, no ich vnútorná stena (embryofor) často vybieha na póloch do predĺžených, dobre viditeľných vláknitých útvarov (filamentov). Vajíčka _D. coronula_ sú na póloch hladké a filamenty im spravidla chýbajú alebo sú redukované.",
+      "Rod Diorchis: Vajíčka rodu Diorchis bývajú viac pretiahnuté, elipsovitého až vretenovitého tvaru a ich onkosféra (larva) vo vnútri býva užšia, s odlišne orientovanými tromi pármi háčikov."
     ],
     "lifeCycle": "Životný cyklus je nepriamy (dixénny) a prebieha striktne vo vodnom prostredí. Dospelá pásomnica žije v čreve kačice alebo husi, kde produkuje vajíčka, ktoré odchádzajú s trusom do vody. Tieto vajíčka s onkosférou zožerie vodný kôrovec (bušanka/nápravník), v ktorého telovej dutine sa v priebehu 2 – 3 týždňov vyvinie infekčné larválne štádium – cysticerkoid. Definitívny hostiteľ (vták) sa nakazí tak, že pri filtrovaní vody alebo požieraní vodnej vegetácie skonzumuje infikované kôrovce. V čreve vtáka sa cysticerkoid prichytí o sliznicu, začne produkovať články a za cca 3 až 4 týždne dospieva na dospelú pásomnicu.",
     "pathology": "Prítomnosť pásomníc spôsobuje mechanické a toxické dráždenie sliznice tenkého čreva, kde dochádza k lokálnym zápalom (katarálna až hemoragická enteritída) a atrofiám klkov v mieste fixácie scolexu. Pri masívnych infekciách (častých najmä u mladých káčat a húsat) dochádza k narušeniu trávenia, hnačkám, slabosti, chradnutiu a anémii, pričom klbká pásomníc môžu fyzicky upchať lumen čreva, čo vedie k úhynu v dôsledku jeho obštrukcie alebo perforácie.",
@@ -5340,8 +5180,10 @@
   },
   {
     "latinName": "Dicrocoelium dendriticum",
-    "synonyms": [],
-    "slovakName": "",
+    "synonyms": [
+      "Dicrocoelium lanceolatum"
+    ],
+    "slovakName": "Motolica kopijovitá",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -5352,18 +5194,14 @@
       "species": "Dicrocoelium dendriticum"
     },
     "hostGroups": [
-      "Psovité mäsožravce",
       "Domáce prežúvavce",
       "Ošípané a diviaky",
-      "Koňovité",
       "Zajace",
       "králiky",
       "Hlodavce",
       "Voľne žijúce prežúvavce"
     ],
-    "hosts": [
-      "Človek"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -5381,21 +5219,17 @@
       "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [
-      "Malé",
-      "Tmavohnedé",
-      "hrubostenné",
-      "asymetrické",
-      "operkulované vajíčko; pri vylúčení už embryonované (obsahuje vyvinuté miracídium)."
+      "Drobné, oválne a asymetrické (z jednej strany mierne sploštené)",
+      "Na jednom póle sa nachádza málo zreteľné viečko (operculum).",
+      "V čase vylúčenia trusom sú už plne embryonované, čo znamená, že vo vnútri obsahujú vyvinutú larvu – miracídium (často viditeľné ako **dve tmavé škvrny pripomínajúce oči**)."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dicrocoelium môže byť potrebná molekulová identifikácia."
+      "Spóra koprofilnej huby (Askomycéty) - väčšinou menšie, tmavohnedé, obsah je homogénny (priesvitný, zrnitý alebo s jednou/dvoma veľkými tukovými kvapkami – lipidovými vakuolami), bez náznaku larvy."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelé motolice žijú vo žlučovodoch prežúvavcov, kde produkujú vajíčka, ktoré odchádzajú trusom do vonkajšieho prostredia. Tieto vajíčka na suchu zožerie prvý medzihostiteľ – suchozemský slimák, v ktorého tele prebehne larválne množenie a slimák ich následne vylúči v lepkavých slizových guľôčkach. Tieto guľôčky zožerie druhý medzihostiteľ – mravec, v ktorom larvy migrujú a zapuzdria sa ako infekčné metacerkárie. Definitívny hostiteľ (napr. ovca) sa nakazí náhodným zožratím infikovaného mravca spolu s trávou počas pastvy, pričom mladé motolice vycestujú z čreva priamo cez žlčovod do pečene.",
+    "pathology": "Ochorenie sa nazýva dikrocelióza a prebieha chronicky. Keďže sú motolice malé, mechanicky nepoškodzujú tkanivo pečene tak agresívne ako Fasciola hepatica, avšak pri masívnych infekciách dochádza k chronickému zápalu žlčovodov (cholangitída), ich rozšíreniu, hyperplázii epitelu a následnej periportálnej fibróze. Zvieratá trpia poruchami trávenia, chradnutím, anémiou a edémami, pričom pečeň mení svoju štruktúru, tuhne a dochádza k cirhóze.",
     "zoonosis": false,
-    "notes": "2 \"očká\"",
+    "notes": "**Zombifikácia** mravca: Jedna z lariev (cerkárií) po zožratí mravcom migruje priamo do jeho hlavového ganglia (mozgu). Tu ovplyvní nervovú sústavu mravca tak, že pri večernom poklese teploty mravec nevojde do mraveniska, ale dostane kŕč, vylezie na vrchol stebla trávy a pevne sa zahryzne do rastliny. Zostane tam nehybne visieť až do rána, čím sa maximalizuje šanca, že ho spoločne s trávou zožerie pasúci sa prežúvavec.\n**Altruizmus** v prírode: Larva, ktorá ovládne mozog mravca a prinúti ho vyliezť na steblo, sa obetuje – v mozgu mravca sa nezapuzdri a po zožratí definitívnym hostiteľom zahynie. Týmto činom však zachráni a prenesie stovky svojich genetických klonov (ostatných lariev), ktoré sú bezpečne zapuzdrené v brušku mravca a úspešne dospelého hostiteľa infikujú.",
     "id": "dicrocoelium_dendriticum_egg",
     "images": []
   },
@@ -5416,9 +5250,14 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Kôň",
+      "Somár",
+      "Zebra"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Somár": "U oslov a mulíc prebieha infekcia latentne (bez príznakov), parazit tu bežne dospieva a produkuje vajíčka.",
+      "Kôň": "U koní červy len zriedka dosiahnu pohlavnú dospelosť (infekcia je non-patentná), no vyvolávajú silnú klinickú reakciu."
+    },
     "sample": "Trus",
     "stage": "Larva",
     "group": "Nematoda",
@@ -5435,17 +5274,20 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s tŕňovitým koncom chvosta a tmavými črevnými granulami."
+      "Predný koniec (hlava): Je zaoblený, bez výrazných anatomických príveskov či gombíkovitých štruktúr.",
+      "Črevo a vnútro telo: Črevo zaberá podstatnú časť tela a má veľmi tmavý, husto granulovaný vzhľad. Tieto granule obsahujú zásobné látky (glykogén a tuky), ktoré larve dodávajú tmavosivé až čierne sfarbenie pod prechádzajúcim svetlom.",
+      "Zadný koniec (chvost): Toto je kľúčový diagnostický znak. Chvost larvy sa prudko zužuje a je zakončený malým, ale jasne viditeľným ostrým hrotom – tzv. terminálnym tŕňom (terminal spike).",
+      "Pohyb: Ak je vzorka čerstvá a voda teplá, larvy vykazujú živý, vlnivý a hadovitý pohyb smerom vpred."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dictyocaulus môže byť potrebná molekulová identifikácia."
+      "Larvy strongylidov (najmä infekčné L3, ktoré migrujú najviac) sú spravidla dlhšie, majú svetlé, jasne diferencované črevo (vidno jednotlivé črevné bunky, zvyčajne 8 až 20) a ich chvost končí postupným stiahnutím do špičky bez terminálneho tŕňa. Navyše larvy L3 strongylidov majú na sebe ochrannú kutikulárnu pošvu (zvlieknutú kožku).",
+      "Larva L1 _Strongyloides westeri_ má charakteristický rhabditiformný pažerák (predná časť pažeráka je rozšírená, nasleduje zúženie a guľovitý bulbus). Larvy D. arnfieldi majú pažerák filariformný (rovný, valcovitý). Chvost háďatka je navyše dlhý a ostro zahrotený, no chýba mu ten pravý, ostro oddelený terminálny tŕň na otupenom konci.",
+      "Voľne žijúce hlístice sa v sedimente často vyskytujú vo všetkých vývinových štádiách (dospelé samce, samice s vajíčkami v maternici, larvy). Majú rhabditiformný pažerák s výrazným dvojitým bulbom a chýba im tmavé, nepriehľadné granulované črevo, aké má Dictyocaulus."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je priamy, bez medzihostiteľa. Dospelé samice kladú v dýchacích cestách hostiteľa embryonované vajíčka, ktoré zviera vykašle, prehltne a tie sa vylučujú trusom (často sa vyliahnu na larvy L1 už počas pasáže črevom). Na pastvine sa larvy počas niekoľkých dní dvakrát zvlečú, až dosiahnu infekčné štádium L3, ktoré migruje na steblá trávy. Hostiteľ sa nakazí spásaním kontaminovanej trávy. Po prehltnutí larvy L3 preniknú cez stenu čreva do miazgových ciev a lymfatických uzlín, odtiaľ krvným obehom putujú do pľúc, kde sa premenia na dospelé jedince v prieduškách a priedušnici.",
+    "pathology": "Patologické zmeny závisia od druhu hostiteľa. Kým u oslov prebieha infekcia takmer asymptomaticky, u koní vyvoláva prítomnosť migrujúcich larev a dospelcov závažnú mechanickú a imunitnú iritáciu. Dochádza k upchávaniu bronchov hlienom a červami, čo vedie k vzniku chronickej katarálnej bronchitídy, paroxyzmálneho (záchvatového) kašľa, emfyzému a eozinofilnej bronchopneumónie. Pľúcne tkanivo vykazuje atelektázy (kolaps pľúcnych sklipkov) a ložiská zápalu, čo sa klinicky prejavuje sťaženým dýchaním (dyspnoe), chudnutím a intoleranciou záťaže.",
     "zoonosis": false,
-    "notes": "Bez čreva",
+    "notes": "**Osol ako „trójsky kôň“**: Osol slúži ako doživotný tichý prenášač bez akýchkoľvek príznakov. Kôň chovaný spoločne s oslom sa takmer s istotou nakazí a bude vážne chorý, hoci osol vyzerá úplne zdravo.\n**Parazitárna slepá ulička**: U koní sa červy málokedy dožijú štádia, kedy by produkovali vajíčka. Imunitný systém koňa ich totiž efektívne likviduje, no sprievodný zápal poškodzuje samotné pľúca koňa. Keďže **kone takmer vôbec nevylučujú larvy trusom**, vyšetrenie trusu (Baermann) u nich býva často negatívne aj napriek silným príznakom. Diagnóza sa preto u koní často potvrdzuje až pomocou tracheálneho výplachu.",
     "id": "dictyocaulus_arnfieldi_larva",
     "images": []
   },
@@ -5463,11 +5305,15 @@
       "species": "Dictyocaulus filaria"
     },
     "hostGroups": [
-      "Domáce prežúvavce"
+      "Ťavy",
+      "lamy"
     ],
     "hosts": [
       "Ovca",
-      "Voľne žijúce prežúvavce"
+      "Koza",
+      "Muflón",
+      "Kamzík",
+      "Antilopy"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5486,18 +5332,19 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s tŕňovitým koncom chvosta",
-      "tmavé črevné granule; väčšia než D. viviparus."
+      "Predný koniec (hlava): Je to najdôležitejší rozlišovací znak. Hlava je zakončená malým, dobre viditeľným **gombíkovitým výbežkom** (protoplazmatickým uzlíkom / cephalic knob).",
+      "Črevo a vnútro tela: Celé črevo je vyplnené veľkým množstvom tmavých potravinových granúl. Vďaka tomu je stredná časť tela pod mikroskopom takmer nepriehľadná a čierna.",
+      "Zadný koniec (chvost): Je tupo zakončený a rovný, bez akýchkoľvek tŕňov, zárezov či špirálového stočenia."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť L1 od D. viviparus (hostiteľ - ovce/kozy/voľne žijúce prežúvavce vs. hovädzí dobytok) a od Muellerius/Protostrongylus (menšie larvy",
-      "esovitý chvost",
-      "dorzálny tŕň)."
+      "_Muellerius capillaris_ (malý pľúcny červ) - malá larva(250 – 300 µm), predný koniec hladký a zaoblený, chvost zvlnený (v tvare „S“) s chrbtovým tŕňom, vnútro pomerne svetlé a priehľadné",
+      "_Protostrongylus rufescens_ - stredná larva (300 – 400 µm), predný koniec hladký a zaoblený, chvost rovný, ostro zakončený a bez tŕňa, vnútro svetlé",
+      "Strongylidy (gastrointestinálne červy) - stredná larva (cca 400 – 500 µm pri L3), predný koniec hladký a zaoblený, chvost dlhý, bičovitý (často s ochrannou pošvou L3), vn[tri jasne viditeľné črevné bunky"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je priamy a prebieha bez medzihostiteľa. Dospelé červy parazitujú v prieduškách a priedušnici oviec alebo kôz, kde samice kladú embryonované vajíčka. Hostiteľ ich vykašle do ústnej dutiny, prehltne a počas prechodu tráviacim traktom sa z nich rýchlo liahnu larvy prvého štádia (L1), ktoré zviera vylučuje trusom na pastvinu. Vo vonkajšom prostredí sa larvy počas niekoľkých dní dvakrát zvlečú (štádiá L1 na L2 a infekčné L3), pričom si zachovávajú ochrannú pošvu zvyšujúcu ich odolnosť voči chladu a suchu. Hostiteľ sa nakazí spásaním trávy kontaminovanej larvami L3, ktoré po prehltnutí preniknú cez stenu čreva do lymfatických uzlín a následne sú krvným a miazgovým obehom zanesené do pľúc, kde dospievajú za približne 4 až 5 týždňov.",
+    "pathology": "Patologické zmeny v pľúcach sú vyvolané mechanickým drždením a imunitnou odpoveďou hostiteľa na prítomnosť lariev aj dospelcov. Počas migrácie lariev alveolami vzniká akútna alveolitída a bronchitída, ktorá pri masívnych infekciách prechádza do závažnej verminóznej bronchopneumónie. Prítomnosť dospelých červov a nahromadeného exudátu (hlienu, hnisu a zápalových buniek) blokuje lumen priedušiek, čo vedie k vzniku pľúcnych atelektáz (kolapsu sklipkov), lokalizovanému emfyzému (rozedme pľúc) a chronickému, záchvatovému kašľu. Oslabené pľúcne tkanivo je navyše vysoko náchylné na sekundárne bakteriálne infekcie (napr. Pasteurella spp.), ktoré môžu spôsobiť fatálny zápal pľúc sprevádzaný purulentným výtokom z nosa a celkovým chradnutím zvieraťa.",
     "zoonosis": false,
-    "notes": "Gombík vpredu",
+    "notes": "Larvy _Dictyocaulus filaria_ využívajú na svoje šírenie koprofilnú hubu Pilobolus. Larvy aktívne vylezú na plodnicu tejto huby rastúcej na truse. Keď zrelá huba vystrelí svoje spóry do okolia (až do vzdialenosti 2 metrov), vymrští so sebou aj infekčné larvy pľúcnika priamo na čistú trávu, ktorú ovce radi spásajú.\nVeková odolnosť : Staršie ovce, ktoré sa s parazitom už stretli, si dokážu vybudovať relatívne silnú imunitu. Pri opakovanej infekcii na začiatku pastovnej sezóny u nich dochádza k tzv. \"self-cure\" (samoočistnému) efektu, kedy imunitný systém prudkou alergickou reakciou v pľúcach vypudí dospelé červy skôr, než stihnú masívne naklásť vajíčka. Hlavným zdrojom nákazy na pastvine tak zostávajú jahňatá a mladé kazy.\nZimný spánok v hostiteľovi: Parazit sa dokáže prispôsobiť zimnému obdobiu, kedy ovce nie sú na pastve. Larvy prijaté neskoro na jeseň môžu v tele hostiteľa prejsť do stavu inhibovaného (zastaveného) vývinu v lymfatických uzlinách alebo pľúcach. Svoj vývin dokončia až na jar, čím zabezpečia okamžitú kontamináciu nových pastvín hneď na začiatku sezóny.",
     "id": "dictyocaulus_filaria_larva",
     "images": []
   },
@@ -5524,7 +5371,7 @@
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 300,
-      "lengthMax": 360,
+      "lengthMax": 390,
       "widthMin": 20,
       "widthMax": 30,
       "unit": "µm"
@@ -5535,17 +5382,18 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s tŕňovitým koncom chvosta a tmavými črevnými granulami."
+      "Predný koniec (hlava): Je zaoblený, hladký a úplne bez gombíkovitého výbežku (čím sa zásadne líši od D. filaria).",
+      "Črevo a vnútro tela: Obsahuje charakteristické tmavé potravné granule, kvôli ktorým stredná časť tela pod mikroskopom pôsobí nepriehľadne, tmavo až čierno.",
+      "Zadný koniec (chvost): Je rovný a zužuje sa do tupejšieho až mierne zaobleného hrotu. Nemá ostro oddelený terminálny tŕň."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Dictyocaulus môže byť potrebná molekulová identifikácia."
+      "Larvy L1 malých pľúcnych červov (napr. Varestrongylus) sú kratšie (okolo 250–300 µm) a ich chvostový koniec je zvlnený do tvaru písmena „S“ alebo s výrazným zárezom (chrbtovým tŕňom). Larva _D. noerneri_ má chvost vždy rovný a bez akéhokoľvek zárezu či tŕňa. Navyše, malé pľúcniky nemajú tak husto a tmavo granulované črevo.",
+      "Larvy žalúdočno-črevných strongylov (najčastejšie už v infekčnom štádiu L3) majú jasné, svetlé a priehľadné črevo, v ktorom jasne vidno jednotlivé bunky (zvyčajne 16 alebo viac). Sú veľmi rýchle a mrštné, zatiaľ čo larvy pľúcnych červov plné tmavých granúl sú pomalšie."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je priamy, bez účasti medzihostiteľa. Dospelé hlístice parazitujú v prieduškách a priedušnici jeleňovitých, kde samičky kladú plne embryonované vajíčka, ktoré hostiteľ vykašle do ústnej dutiny a prehltne. Z vajíčok sa už počas pasáže tráviacim traktom liahnu larvy prvého štádia (L1), ktoré zviera vylučuje trusom do vonkajšieho prostredia. Na pastvine sa larvy počas dvoch zvlečení transformujú na infekčné larvy tretieho štádia (L3), pričom si zachovávajú ochrannú pošvu z predchádzajúceho štádia. Jelenia či srnčia zver sa nakazí spásaním kontaminovaného porastu; prehltnuté larvy L3 následne penetrujú stenu čreva, migrujú cez lymfatický a krvný systém priamo do pľúcnych ciev, odkiaľ prenikajú do alveol a priedušiek, kde dospievajú.",
+    "pathology": "Prítomnosť migrujúcich lariev a dospelých červov vyvoláva v pľúcnom parenchýme výraznú mechanickú a imunitnú iritáciu. V počiatočnej fáze migrácie vzniká akútna alveolitída a bronchiolitída, ktorá pri masívnych infekciách prechádza do difúznej eozinofilnej bronchopneumónie s výrazným presiaknutím (edémom) pľúc. Dospelé červy mechanicky blokujú priesvit bronchov, čo vedie k retencii hlienu, ložiskovým atelektázam (kolapsu pľúcnych sklipkov) a kompenzačnému emfyzému (rozedme pľúc), čo sa klinicky prejavuje záchvatovým kašľom, sťaženým dýchaním a chradnutím zveri. U oslabených jedincov, najmä u tohtoročných mláďat, parazitárne poškodenie otvára bránu pre sekundárne bakteriálne infekcie (napr. Pasteurella spp. alebo Arcanobacterium spp.), ktoré bývajú častou príčinou úhynu.",
     "zoonosis": false,
-    "notes": "Bez čreva",
+    "notes": "**Indikátor preľudnenia revíru**: Masívny výskyt pľúcnika jelenieho a vysoká úmrtnosť mladých jelenčiat či srnčiat na pľúcnu červivosť slúži pre poľovníkov ako spoľahlivý biologický indikátor toho, že daný revír je prezverený (hustota populácie zveri je príliš vysoká, čo uľahčuje prenos infekcie a vedie k degradácii pastvy).\nRovnako ako ostatní zástupcovia tohto rodu, aj larvy _D. noerneri_ využívajú na prekonanie „zóny odporu“ (miesta okolo exkrementov, ktorým sa zver pri spásaní vyhýba) koprofilnú hubu Pilobolus. Vylezením na jej plodnicu sa nechajú vystreliť do vzdialenosti vyše jedného metra, čím sa dostanú na čistú, pre zver atraktívnu trávu.",
     "id": "dictyocaulus_noerneri_larva",
     "images": []
   },
@@ -5562,11 +5410,10 @@
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus viviparus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5585,16 +5432,19 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s tŕňovitým (zúbkovaným) koncom chvosta bez puzdra; obsahuje tmavé črevné granule."
+      "• Veľkosť: Larva je stredne veľká, meria približne 390 až 450 µm na dĺžku.",
+      "Predný koniec (hlava): Je zaoblený, hladký a nemá gombíkovitý výbežok (protoplazmatický uzlíkom), čím sa jasne odlišuje od pľúcnika ovčieho (D. filaria).",
+      "Črevo a vnútro tela: Je vyplnené veľkým množstvom hnedastých až tmavosivých potravných granúl. Stredná časť tela preto pod mikroskopom pôsobí nepriehľadná a tmavá. Keďže má tieto zásoby, larva vo vonkajšom prostredí neprijíma potravu.",
+      "Zadný koniec (chvost): Je rovný a končí v tupejšom až mierne zaoblenom hrote (blunt point). Nemá ostro oddelený terminálny tŕň."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť L1 od D. filaria (hostiteľská špecificita) a od larvy 1. štádia Muellerius capillaris (kratšia",
-      "esovito zahnutý chvost s dorzálnym tŕňom)."
+      "Larvy črevných strongylov (najčastejšie nájdeme už infekčné L3) sú rýchle, majú svetlé, priesvitné črevo s jasne viditeľnými bunkami a ich chvost končí dlhým, bičovitým výbežkom (často v kutikulárnej pošve). Larva _D. viviparus_ je pomalšia a jej vnútro je pre husto natlačené granule tmavé. V úplne čerstvom truse dobytka je _D. viviparus_ spravidla jedinou prítomnou nematódovou larvou.",
+      "Voľne žijúce hlístice majú tzv. rhabditiformný pažerák (s výrazným dvojitým zaobleným bulbom). V sedimente sa navyše vyskytujú v rôznych štádiách vrátane dospelcov (samce s pikulami, samice s vajíčkami v maternici)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je priamy a prebieha bez medzihostiteľa. Dospelé červy žijú v prieduškách a priedušnici dobytka, kde samičky produkujú vajíčka. Tie hostiteľ vykašle a prehltne, pričom už počas pasáže črevom sa z nich vyliahnu larvy L1, ktoré odchádzajú trusom na pastvinu. Počas približne 5 až 7 dní sa larvy vo vonkajšom prostredí dvakrát zvlečú na infekčné štádium L3. Dobytok sa nakazí spásaním kontaminovanej trávy. Prehltnuté larvy L3 preniknú cez sliznicu tenkého čreva, migrujú do mezenterických lymfatických uzlín (kde sa premenia na L4) a odtiaľ krvným a miazgovým obehom putujú do pľúcnych alveol a bronchov, kde dospievajú.",
+    "pathology": "Patogenéza diktyokaulózy dobytka sa delí na fázu migračnú a prepatentnú/patentnú. Migrujúce larvy prenikajúce cez alveoly vyvolávajú akútnu alveolitídu a bronchiolitídu s masívnym zápalovým infiltrátom (najmä eozinofily). Dospelé červy usadené v bronchoch mechanicky dráždia sliznicu, stimulujú nadmernú produkciu hlienu a spolu s bunkovým detritom blokujú dýchacie cesty, čo vedie k vzniku pľúcnych atelektáz (kolapsu sklipkov) a emfyzému. Klinicky sa ochorenie prejavuje sťaženým, zrýchleným dýchaním, typickým silným vlhkým kašľom (zvieratá kašlú s natiahnutým krkom a vyplazeným jazykom), apatiou, stratou úžitkovosti a pri absencii liečby až úhynom v dôsledku zadusenia alebo sekundárnej bakteriálnej bronchopneumónie.",
     "zoonosis": false,
-    "notes": "Bez čreva",
+    "notes": "Hubový expanzný modul (Pilobolus): Larvy _D. viviparus_ sú veľmi málo pohyblivé a bez pomoci by neopustili kravský extrement (ktorému sa dobytok pri pasení vyhýba). Aktívne preto vylezú na stopku koprofilnej huby Pilobolus priamo na jej puzdro so spórami. Keď huba vplyvom tlaku exploduje, vystrelí spóry spolu s larvami pľúcnika až do vzdialenosti 3 metrov na čistú trávu.\nKomerčná vakcína: _Dictyocaulus viviparus_ je jedným z mála parazitických červov, proti ktorému bola úspešne vyvinutá a komerčne využívaná živá oslabená vakcína (obsahujúca larvy L3 ožiarené röntgenovými lúčmi). Tieto larvy po podaní vyvolajú imunitnú odpoveď v uzlinách, ale nedokážu dokončiť migráciu a dospieť v pľúcach.",
     "id": "dictyocaulus_viviparus_larva",
     "images": []
   },
@@ -5620,7 +5470,8 @@
     "hosts": [
       "Norok",
       "Vydra",
-      "Lasica"
+      "Lasica",
+      "Kuna"
     ],
     "hostNotes": {},
     "sample": "Moč",
@@ -5639,17 +5490,16 @@
       "shell": "Vrásčitá"
     },
     "diagnosticSigns": [
-      "Sudkovitý (citrónovitý) tvar",
-      "hrubá škrupina so silne jamkovaným (bodkovaným) povrchom; nachádza sa v moči."
+      "Vajíčka majú typický oválny až eliptický tvar. Sú kryté hrubou, výrazne jamkovitou a hrboľatou škrupinou (pitted shell), ktorá im dodáva drsný štruktúrovaný povrch. Na oboch póloch majú charakteristické priesvitné zátky..",
+      "Pri vylúčení sú neembryonované, spravidla v štádiu jednej alebo dvoch buniek. K vývinu larvy dochádza až vo vonkajšom prostredí (vo vode)."
     ],
     "differentialDiagnosis": [
-      "Najväčšia nematóda parazitujúca cicavce; vajíčko pripomína Capillaria/Trichuris (súdočkovitý tvar s jamkovaným povrchom)",
-      "ale je výrazne väčšie."
+      "Diferenciálna diagnostika v moči psov či divých šeliem zahŕňa najmä parazita _Pearsonema plica_ - sú podobnej veľkosti a tiež majú bipolárne zátky, ich škrupina je však hladká, s jemným sieťovaním, zatiaľ čo _Dioctophyme renale_ má povrch hlboko jamkovitý a hrubý."
     ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V močovom sedimente",
+    "lifeCycle": "Vývinový cyklus je nepriamy a viazaný na vodné prostredie. Neembryonované vajíčka odchádzajú s močom definitívneho hostiteľa do vody, kde sa v nich v priebehu niekoľkých týždňov vyvinie larva L1. Tieto vajíčka prehltne prvý medzihostiteľ – sladkovodný červ (oligochaeta), v ktorom larva migruje a vyvíja sa až do infekčného štádia L3. Ak červa zožerie paratenický hostiteľ (ryba alebo žaba), larva L3 sa zapuzdrí v jeho tkanivách. Definitívny hostiteľ (šelma, pes, prípadne človek) sa nakazí zožratím infikovaného červa alebo surovej paratenickej ryby/žaby. Po prehltnutí larva preniká cez stenu čreva, migruje cez pečeň do brušnej dutiny a odtiaľ sa aktívne zavrtáva do obličky (preferenčne pravej), kde dospieva.",
+    "pathology": "Patologický dopad _Dioctophyme renale_ je pre obličku hostiteľa devastujúci. Červ (samica môže dosiahnuť dĺžku až vyše 1 metra) postupne mechanicky likviduje parenchým obličky, pričom z nej zostáva len fibrotické, nefunkčné puzdro vyplnené krvavou tekutinou, hnisom a samotnými parazitmi (hydronefróza a úplná atrofia obličky). Ochorenie sa prejavuje hematúriou (krv v moči), bolesťami bedrovej oblasti, urémiou a pri obojstrannom postihnutí fatálnym zlyhaním obličiek. Často dochádza aj k ektopickému výskytu, kedy červy zostávajú voľne v brušnej alebo hrudnej dutine, kde vyvolávajú chronickú peritonitídu (zápal pobrušnice) a nekrózu orgánov.",
+    "zoonosis": true,
+    "notes": "Samica _Dioctophyme renale_ môže merať **až 103 cm** s hrúbkou okolo 1 cm, čo z nej robí vôbec najväčšiu hlísticu parazitujúcu u cicavcov.\n**Pravostranná preferencia**: Parazit má nevysvetliteľnú, no štatisticky dokázanú tendenciu napádať takmer výhradne pravú obličku hostiteľa. Predpokladá sa, že to súvisí s anatomickou blízkosťou dvanástnika a pečene, cez ktoré larva migruje z tráviaceho traktu. Ľavá oblička býva napadnutá len pri extrémne masívnych infekciách.\nNa rozdiel od väčšiny iných nematód je tento parazit **rezistentný** voči bežným anthelmintikám (odčervovadlám). Jedinou efektívnou metódou liečby u psa či človeka je chirurgické odstránenie celého červa, prípadne kompletná nefrektómia (odstránenie zničenej obličky).",
     "id": "dioctophyme_renale_egg",
     "images": []
   },
@@ -5692,24 +5542,13 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Vajíčka nie sú vylučované jednotlivo",
-      "ale v kapsulách (obaloch).",
+      "Vajíčka nie sú vylučované jednotlivo, ale v kapsulách (obaloch).",
       "Vaječné balíčky jú okrúhle až oválne útvary s priemerom cca 120–200 µm a obsahujúce 5–30 (často ~25) vajíčok v jednom balíčku.",
-      "Jednotlivé vajíčka sú okrúhle až oválne",
-      "35–60 µm (často uvádzané 35–50 µm)",
-      "s tenkou stenou a hexakantným embryom (onkosféra) so 6 háčikmi.",
-      "Proglotidy (články) v truse: pohyblivé",
-      "tvarovo pripomínajú semienko uhorky/tekvice",
-      "dĺžka cca 10–12 mm",
-      "šírka ~2–3 mm",
-      "s dvoma genitálnymi pórmi (po jednom na každom bočnom okraji)."
+      "Jednotlivé vajíčka sú okrúhle až oválne, 35–60 µm (často uvádzané 35–50 µm), s tenkou stenou a hexakantným embryom (onkosféra) so 6 háčikmi.",
+      "Proglotidy (články) v truse: pohyblivé, tvarovo pripomínajú semienko uhorky/tekvice, dĺžka cca 10–12 mm, šírka ~2–3 mm, s dvoma genitálnymi pórmi (po jednom na každom bočnom okraji)."
     ],
     "differentialDiagnosis": [
-      "Vajíčka Taenia / Echinococcus:  Vajíčka jednotlivé",
-      "nie v balíčkoch; často s viditeľnou embryonálnou štruktúrou",
-      "veľkosť podobná",
-      "ale chýbajú typické „packety“.  Proglotidy majú iný tvar a usporiadanie genitálnych pórov (nie dva póry na bočných okrajoch ako pri Dipylidium). V praxi je pre D. caninum rozhodujúci nález vaječných balíčkov a typických dvoj-pórových",
-      "„uhorkovitých“ proglotidov"
+      "Vajíčka Taenia / Echinococcus:  Vajíčka jednotlivé, nie v balíčkoch; často s viditeľnou embryonálnou štruktúrou, veľkosť podobná, ale chýbajú typické „packety“.  Proglotidy majú iný tvar a usporiadanie genitálnych pórov (nie dva póry na bočných okrajoch ako pri Dipylidium). V praxi je pre _D. caninum_ rozhodujúci nález vaječných balíčkov a typických dvoj-pórových „uhorkovitých“ proglotidov"
     ],
     "lifeCycle": "Definitívny hostiteľ (DH): pes/mačka – dospelá pásomnica v tenkom čreve produkuje gravidné proglotidy.\nGravidné proglotidy sa aktívne alebo pasívne vylučujú s trusom alebo vyliezajú z perianálnej oblasti a rozpadávajú sa v prostredí, čím uvoľňujú vaječné balíčky.\nIntermediárny hostiteľ (IH): larvy hmyzu – najmä blchy (Ctenocephalides canis, C. felis) a zriedkavo švoly (Trichodectes canis).\nLarvy hmyzu v prostredí požierajú vajíčka/balíčky; vo vnútri sa vyvíja cysticerkoid (metacestódne štádium).\nInfekcia definitívneho hostiteľa: pes/mačka sa infikuje požitím infikovanej blchy/švoly (napr. pri olizovaní srsti).\nV tenkom čreve sa z cysticerkoidu vyvinie dospelá pásomnica, ktorá sa uchytí na črevnú stenu a začne produkovať nové články.",
     "pathology": "Väčšina infekcií je mierneho priebehu; dospelé pásomnice sú relatívne málo patogénne.\nPri silnejších infekciách sa môžu vyskytnúť:\nAbdominálne ťažkosti: bolesť brucha, nechutenstvo, neprosperita.\nTráviace poruchy: hnačky alebo zápcha, zriedkavo až intestinálna obštrukcia pri masívnej infekcii.\nČastým klinickým prejavom je perianálne podráždenie spôsobené migráciou gravidných proglotidov:\nZviera vykazuje svrbenie v oblasti konečníka, olizuje si túto oblasť, „tlačí zadok o zem, sánkuje“ (tzv. „sleighing“).\nSekundárne môže dochádzať k dermatitíde v perianálnej oblasti v dôsledku mechanického dráždenia a olizovania.",
@@ -5761,32 +5600,19 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Telo je štíhle",
-      "rovnomerné",
-      "s tupým",
-      "zaobleným zadným koncom (nie špicatý).",
-      "Cefalický priestor (hlavový koniec): krátky",
-      "zvyčajne 1–2 µm dlhý",
-      "pomerne nevýrazný.",
-      "Chvostový koniec: bez terminálneho háčika",
-      "postupne sa zužujúci",
-      "posledné jadro nie je výrazne oddelené od konca tela.",
-      "V čerstvom preparáte je pohyb serpentiformný (vlnivý) a skôr stacionárny – mikrofilária sa vlní",
-      "ale neposúva dopredu",
-      "Pri histochemickom farbení sa farbia oba póry (análny a exkrečný): v preparáte sú \"2 červené bodky)"
+      "Telo je štíhle rovnomerne, s tupým, zaobleným zadným koncom (nie špicatý).",
+      "Cefalický priestor (hlavový koniec): krátky, zvyčajne 1–2 µm dlhý, pomerne nevýrazný.",
+      "Chvostový koniec: bez terminálneho háčika, postupne sa zužujúci, posledné jadro nie je výrazne oddelené od konca tela.",
+      "V čerstvom preparáte je pohyb serpentiformný (vlnivý) a skôr stacionárny – mikrofilária sa vlní, ale neposúva dopredu",
+      "Pri histochemickom farbení sa farbia oba póry (análny a exkrečný): v preparáte sú **2 červené bodky**"
     ],
     "differentialDiagnosis": [
-      "Dirofilaria repens (podkožná filária) Veľkosť mikrofilárií: dlhšie (350–380 µm) a širšie (7–8 µm) ako D. immitis.  D. repens: dlhší a výraznejší cefalický priestor (často ~10–15 µm)",
-      "čo je jeden z najspoľahlivejších rozlišovacích znakov.  Chvostový koniec:  D. repens: často s jemne zahroteným alebo inak tvarovaným koncom",
-      "posledné jadro môže byť inak uložené.  Kľúčový rozdiel:  u **D. immitis sa histochemicky farbia oba otvory",
-      "u D. repens iba zadný (análny)**.",
-      "Acanthocheilonema reconditum (syn. Dipetalonema reconditum): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Dĺžka mikrofilárií (dĺžka 250–300 µm) podobné alebo kratšia ako D. immitis. Chvostový koniec: A. reconditum často s výrazne zahroteným alebo inak tvarovaným koncom",
-      "niekedy s malým háčikom.  Pohyb A. reconditum je rýchly",
-      "progresívny – mikrofilária sa aktívne posúva dopredu",
-      "na rozdiel od skôr stacionárneho vlnenia D. immitis."
+      "_Dirofilaria repens_ (podkožná filária) Veľkosť mikrofilárií: dlhšie (350–380 µm) a širšie (7–8 µm) ako _D. immitis_.  D. repens má dlhší a výraznejší cefalický priestor (často ~10–15 µm), čo je jeden z najspoľahlivejších rozlišovacích znakov.  Chvostový koniec _D. repens_ často s jemne zahroteným alebo inak tvarovaným koncom, posledné jadro môže byť inak uložené.  Kľúčový rozdiel:  u **_D. immitis_ sa histochemicky farbia oba otvory",
+      "u _D. repens_ iba zadný (análny)**.",
+      "_Acanthocheilonema reconditum_ (syn. _Dipetalonema reconditum_): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Dĺžka mikrofilárií (dĺžka 250–300 µm) podobné alebo kratšia ako _D. immitis_. Chvostový koniec _A. reconditum_ často s výrazne zahroteným alebo inak tvarovaným koncom, niekedy s malým háčikom.  Pohyb _A. reconditum_ je rýchly a progresívny – mikrofilária sa aktívne posúva dopredu, na rozdiel od skôr stacionárneho vlnenia _D. immitis_."
     ],
     "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\nDefinitívny hostiteľ (DH): pes/mačka – dospelé samičky produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (tento vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú cez podkožie a svaly, vyvíjajú sa na L4 a následne na L5 (juvenilné dospelé jedince), ktoré migrujú do pľúcnych artérií a pravej časti srdca, kde dospievajú.\nPredpatentná perióda: približne 6–9 mesiacov (180–270 dní) od infekcie do produkcie mikrofilárií.",
-    "pathology": "Dospelé D. immitis spôsobujú mechanické a zápalové lézie v pľúcnych artériách a pravej časti srdca:\n- Endarteritída a proliferácia intimy pľúcnych artérií,\n- Trombózy a zhrubnutie cievnej steny,\n- Pľúcna hypertenzia a následné pravostranné srdcové zlyhanie.\nKlinické príznaky u psov:\n- Kašeľ, dyspnoe, znížená tolerancia záťaže,\n- Ascites, opuchy, hepatomegália (pri pravostrannom zlyhaní),\n- Chudnutie, neprosperita, v ťažkých prípadoch kolaps a náhly úhyn.\n- Caval syndróm (ťažká forma): Masívna infekcia s veľkým počtom dospelých červov v pravej predsieni a komore, vedúca k akútnemu pravostrannému zlyhaniu, hemolytickej anémii a často rýchlemu úhynu.\nU mačiek je infekcia často miernejšia, ale môže spôsobiť HARD (Heartworm Associated Respiratory Disease) – chronickú bronchitídu a pľúcne lézie, niekedy s náhlym úhynom.\nMikrofilárie samotné sú zvyčajne málo patogénne, ale môžu prispievať k imunologickým reakciám a v niektorých prípadoch k poškodeniu obličiek (glomerulonefritída).",
+    "pathology": "Dospelé _D. immitis_ spôsobujú mechanické a zápalové lézie v pľúcnych artériách a pravej časti srdca:\n- Endarteritída a proliferácia intimy pľúcnych artérií,\n- Trombózy a zhrubnutie cievnej steny,\n- Pľúcna hypertenzia a následné pravostranné srdcové zlyhanie.\nKlinické príznaky u psov:\n- Kašeľ, dyspnoe, znížená tolerancia záťaže,\n- Ascites, opuchy, hepatomegália (pri pravostrannom zlyhaní),\n- Chudnutie, neprosperita, v ťažkých prípadoch kolaps a náhly úhyn.\n- Caval syndróm (ťažká forma): Masívna infekcia s veľkým počtom dospelých červov v pravej predsieni a komore, vedúca k akútnemu pravostrannému zlyhaniu, hemolytickej anémii a často rýchlemu úhynu.\nU mačiek je infekcia často miernejšia, ale môže spôsobiť HARD (Heartworm Associated Respiratory Disease) – chronickú bronchitídu a pľúcne lézie, niekedy s náhlym úhynom.\nMikrofilárie samotné sú zvyčajne málo patogénne, ale môžu prispievať k imunologickým reakciám a v niektorých prípadoch k poškodeniu obličiek (glomerulonefritída).",
     "zoonosis": false,
     "notes": "Farbenie (Giemsa, Wright): Zvýrazní vnútorné štruktúry, cefalický priestor a chvostový koniec; dôležité pre diferenciáciu od iných filárií.\nFarbenie histochemické: podľa aktivity kyslej fosfatázy v oblastiach análneho a exkrečného póru diferencuje D. immitis od D. repens.\nAntigénový test detekuje antigén D. immitis (na D. repens testy nevyrábajú)",
     "id": "dirofilaria_immitis_larva",
@@ -5836,25 +5662,15 @@
     },
     "diagnosticSigns": [
       "Telo je štíhle s tupým zaobleným zadným koncom.",
-      "Cefalický priestor (hlavový koniec): dlhý a výrazný",
-      "zvyčajne 10–15 µm.",
-      "Chvostový koniec: jemne zahrotený alebo inak tvarovaný",
-      "posledné jadro môže byť inak uložené než pri D. immitis (nie tak plynulo splývajúce s koncom tela)",
-      "V čerstvom preparáte je pohyb serpentiformný (vlnivý)",
-      "skôr stacionárny",
-      "t.j. nepohybuje sa vopred",
-      "Pri histochemickom farbení sa farbí iba análny pór (zadný otvor)",
-      "exkrečný pór sa nefarbí – \"1 červená bodka\""
+      "Cefalický priestor (hlavový koniec): dlhý a výrazný, zvyčajne 10–15 µm.",
+      "Chvostový koniec: jemne zahrotený alebo inak tvarovaný, posledné jadro môže byť inak uložené než pri D. immitis (nie tak plynulo splývajúce s koncom tela)",
+      "V čerstvom preparáte je pohyb serpentiformný (vlnivý), skôr stacionárny, t.j. nepohybuje sa vopred",
+      "Pri histochemickom farbení sa farbí iba análny pór (zadný otvor), exkrečný pór sa nefarbí –  **1 červená bodka**"
     ],
     "differentialDiagnosis": [
-      "Dirofilaria immitis (srdcová filária): mikrofilárie má kratšie (290–330 µm) a užšie (5–7 µm) ako D. repens. D. immitis: krátky",
-      "nevýrazný cefalický priestor (1–2 µm) oproti dlhému u D. repens. Chvostový koniec D. immitis je bez terminálneho háčika",
-      "plynule sa zužujúci. Kľúčový rozdiel: u D. repens sa histochemicky farbí iba análny pór",
-      "u D. immitis oba (análny aj exkrečný).",
-      "Acanthocheilonema reconditum (syn. Dipetalonema reconditum): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Kratšie mikrofilárie (250–300 µm) ako D. repens. Chvostový koniec často výrazne zahrotený",
-      "niekedy s malým háčikom. Pohyb je rýchly",
-      "progresívny (aktívne sa posúva dopredu)",
-      "na rozdiel od skôr stacionárneho vlnenia D. repens."
+      "_Dirofilaria immitis_ (srdcová filária): mikrofilárie má kratšie (290–330 µm) a užšie (5–7 µm) ako _D. repens_. _D. immitis_: krátky, nevýrazný cefalický priestor (1–2 µm) oproti dlhému u D. repens. Chvostový koniec _D. immitis_ je bez terminálneho háčika, plynule sa zužujúci. Kľúčový rozdiel: u _D. repens_ sa histochemicky farbí iba análny pór, u _D. immitis_ oba póry (análny aj exkrečný).",
+      "_Acanthocheilonema reconditum_ (syn. _Dipetalonema reconditum_): Na Slovensku zatiaľ (2026) nebola diagnostikovaná. Kratšie mikrofilárie (250–300 µm) ako D. repens. Chvostový koniec často výrazne zahrotený",
+      "niekedy s malým háčikom. Pohyb je rýchly, progresívny (aktívne sa posúva dopredu), na rozdiel od skôr stacionárneho vlnenia _D. repens_."
     ],
     "lifeCycle": "Cyklus je heteroxénny (nepriamy) s komárom (Culicidae) ako intermediárnym hostiteľom a vektorom.\nDefinitívny hostiteľ (DH): pes/mačka/líška – dospelé samičky uložené v podkoží produkujú mikrofilárie (L1), ktoré kolujú v periférnej krvi.\nKomár (IH): pri nasatí na infikovanom hostiteľovi nasaje mikrofilárie, ktoré sa v tele komára vyvíjajú:\nL1 → L2 → infekčné L3 (vývoj trvá zvyčajne 10–14 dní, závisí od teploty a druhu komára).\nInfekcia definitívneho hostiteľa:\nKomár pri ďalšom bodnutí vstrekuje L3 larvy do kože definitívneho hostiteľa.\nV hostiteľovi L3 larvy migrujú a vyvíjajú sa cez L4 na L5 (juvenilné dospelé jedince), ktoré zostávajú lokalizované v podkoží a podkožnom väzive (na rozdiel od D. immitis, ktorá migruje do pľúcnych artérií a srdca).\nPredpatentná perióda: približne 6–9 mesiacov (approx. 200–230 dní) od infekcie do produkcie mikrofilárií.",
     "pathology": "Dospelé D. repens sa lokalizujú v podkoží a podkožnom väzive, kde spôsobujú prevažne mierne, lokálne zmeny:\nTvorba podkožných nodulov (uzlíkov) v mieste výskytu dospelých červov,\nMierny lokálny zápal a fibróza okolo červov,\nPri masívnejšej infekcii svrbenie a dermatitída.\nKlinické príznaky u psov:\nVäčšinou asymptomatický alebo mierny priebeh,\nPodkožné uzlíky, niekedy migrujúce opuchy,\nSvrbenie kože, alopécia v mieste lézií,\nSystémové príznaky (kašeľ, kardiovaskulárne zlyhanie) sa na rozdiel od D. immitis prakticky nevyskytujú.\nU mačiek je infekcia zvyčajne mierna až asymptomatická, prejavuje sa najmä kožnými zmenami.\nMikrofilárie samotné sú zvyčajne nepatogénne, klinický význam majú predovšetkým dospelé jedince v podkoží.",
@@ -5981,7 +5797,7 @@
       "order": "Ascaridida",
       "family": "Heterocheilidae",
       "genus": "Dujardinascaris",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -6132,7 +5948,7 @@
       "order": "Cyclophyllidea",
       "family": "Taeniidae",
       "genus": "Echinococcus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Psovité mäsožravce"
@@ -6182,7 +5998,7 @@
       "order": "Plagiorchiida",
       "family": "Echinostomatidae",
       "genus": "Echinostoma",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Hlodavce",
@@ -6236,7 +6052,7 @@
       "order": "Plagiorchiida",
       "family": "Echinostomatidae",
       "genus": "neurčený rod",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -10698,7 +10514,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Eimeria",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Vtáky"
@@ -10754,7 +10570,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Eimeria",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -11725,7 +11541,7 @@
       "order": "Strongylida",
       "family": "Trichostrongylidae",
       "genus": "Epomidiostomum",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Hydina"
@@ -12477,7 +12293,7 @@
       "order": "Trombidiformes",
       "family": "Pterygosomatidae",
       "genus": "Geckobia",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -12528,7 +12344,7 @@
       "order": "Trombidiformes",
       "family": "Pterygosomatidae",
       "genus": "Geckobiella",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -12864,7 +12680,7 @@
       "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Globocephalus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Ošípané a diviaky"
@@ -13019,7 +12835,7 @@
       "order": "Gyrodactylidea",
       "family": "Gyrodactylidae",
       "genus": "Gyrodactylus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Ryby"
@@ -13072,7 +12888,7 @@
       "order": "Spirurida",
       "family": "Habronematidae",
       "genus": "Habronema",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Koňovité"
@@ -13478,7 +13294,7 @@
       "order": "Ascaridida",
       "family": "Heterakidae",
       "genus": "Heterakis",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -13528,7 +13344,7 @@
       "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Hexametra",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -13690,7 +13506,7 @@
       "order": "Trombidiformes",
       "family": "Pterygosomatidae",
       "genus": "Hirstiella",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -15002,7 +14818,7 @@
       "order": "Strongylida",
       "family": "Diaphanocephalidae",
       "genus": "Kalicephalus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -15459,7 +15275,7 @@
       "order": "Oxyurida",
       "family": "Pharyngodonidae",
       "genus": "Mehdiela",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -15509,7 +15325,7 @@
       "order": "Cyclophyllidea",
       "family": "Mesocestoididae",
       "genus": "Mesocestoides",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -15558,7 +15374,7 @@
       "order": "Strongylida",
       "family": "Metastrongylidae",
       "genus": "Metastrongylus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Ošípané a diviaky"
@@ -15712,7 +15528,7 @@
       "order": "Cyclophyllidea",
       "family": "Anoplocephalidae",
       "genus": "Monoecocestus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -15915,7 +15731,7 @@
       "order": "Ascaridida",
       "family": "Heterocheilidae",
       "genus": "Multicaecum",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -16142,7 +15958,7 @@
       "order": "Strongylida",
       "family": "Molineidae",
       "genus": "Nematodirus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Domáce prežúvavce",
@@ -16569,7 +16385,7 @@
       "order": "Clevelandellida",
       "family": "Clevelandellidae",
       "genus": "Nyctotherus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -16620,7 +16436,7 @@
       "order": "Plagiorchiida",
       "family": "Ochetosomatidae",
       "genus": "Ochetostoma",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -16788,7 +16604,7 @@
       "order": "Cyclophyllidea",
       "family": "Anoplocephalidae",
       "genus": "Oochoristica",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy",
@@ -16840,7 +16656,7 @@
       "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Ophidascaris",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -16945,7 +16761,7 @@
       "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Orneoascaris",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -17781,7 +17597,7 @@
       "order": "Spirurida",
       "family": "Physalopteridae",
       "genus": "Physaloptera",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Psovité mäsožravce"
@@ -17890,7 +17706,7 @@
       "order": "Ascaridida",
       "family": "Ascarididae",
       "genus": "Polydelphis",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -18151,7 +17967,7 @@
       "order": "Strongylida",
       "family": "Ascarididae",
       "genus": "Porrocaecum",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -18201,7 +18017,7 @@
       "order": "Onchoproteocephalidea",
       "family": "Proteocephalidae",
       "genus": "Proteocephalus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Ryby"
@@ -18513,7 +18329,7 @@
       "order": "Trombidiformes",
       "family": "Pterygosomatidae",
       "genus": "Pterygosoma",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -18666,7 +18482,7 @@
       "order": "Cyclophyllidea",
       "family": "Davaineidae",
       "genus": "Raillietina",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Hydina"
@@ -19391,7 +19207,7 @@
       "order": "Eucoccidiorida",
       "family": "Sarcocystidae",
       "genus": "Sarcocystis",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Mačkovité mäsožravce",
@@ -19989,9 +19805,9 @@
       "phylum": "Nematoda",
       "class": "Chromadorea",
       "order": "Strongylida",
-      "family": "neurčené do čeľade",
+      "family": "neurčená čeľaď",
       "genus": "neurčený rod",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Domáce prežúvavce",
@@ -20468,7 +20284,7 @@
       "order": "Rhabditida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Mäsožravce",
@@ -20533,7 +20349,7 @@
       "order": "Rhabditida",
       "family": "Strongyloididae",
       "genus": "Strongyloides",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Mäsožravce",
@@ -20701,7 +20517,7 @@
       "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Strongylus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Koňovité"
@@ -20919,7 +20735,7 @@
       "order": "Oxyurida",
       "family": "Pharyngodonidae",
       "genus": "Tachygonetria",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -20970,7 +20786,7 @@
       "order": "Cyclophyllidea",
       "family": "Taeniidae",
       "genus": "Taenia",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Mäsožravce"
@@ -21040,7 +20856,7 @@
       "order": "Ascaridida",
       "family": "Anisakidae",
       "genus": "Terranova",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
@@ -21445,7 +21261,7 @@
       "order": "Diplostomida",
       "family": "Schistosomatidae",
       "genus": "Trichobilharzia",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Vtáky"
@@ -21497,7 +21313,7 @@
       "order": "Mobilida",
       "family": "Trichodinidae",
       "genus": "Trichodina",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Ryby"
@@ -22006,7 +21822,7 @@
       "order": "Trichinellida",
       "family": "Trichuridae",
       "genus": "Trichuris",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Domáce prežúvavce"
@@ -22162,7 +21978,7 @@
       "order": "Strongylida",
       "family": "Strongylidae",
       "genus": "Triodontophorus",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Koňovité"
@@ -22362,7 +22178,7 @@
       "order": "Strongylida",
       "family": "Ancylostomatidae",
       "genus": "Uncinaria",
-      "species": "neurčené do druhu"
+      "species": "neurčený druh"
     },
     "hostGroups": [],
     "hosts": [
@@ -22751,8 +22567,7 @@
       "Medveď"
     ],
     "hostNotes": {
-      "Človek": "Človek je nepravý, náhodný hostiteľ. Nákaza sa prejavuje ako syndróm Larva migrans visceralis (LMV) alebo syndróm Larva migrans ocularis (LMO).",
-      "Medveď": ""
+      "Človek": "Človek je nepravý, náhodný hostiteľ. Nákaza sa prejavuje ako syndróm Larva migrans visceralis (LMV) alebo syndróm Larva migrans ocularis (LMO)."
     },
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -22770,23 +22585,15 @@
       "shell": "Hrubá, viacvrstvová"
     },
     "diagnosticSigns": [
-      "Hrubá stena s jemne jamkovaným",
-      "štruktúrovaným povrchom",
-      "ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
+      "Hrubá stena s jemne jamkovaným, štruktúrovaným povrchom, ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
     ],
     "differentialDiagnosis": [
-      "Toxocara canis / Toxocara cati: Vajíčka sú menšie (cca 65 – 75 µm)",
-      "majú o niečo hrubšiu alveolárnu (sieťovitú) štruktúru na povrchu. Tieto druhy sa však u medveďov bežne nevyskytujú",
-      "diferenciácia je dôležitá pri kontaminácii vzoriek trusom psovitých/mačkovitých šeliem.",
-      "Ascaris suum / Ascaris lumbricoides: Majú výrazne hrubší",
-      "hrbolčekovitý (mamilačný) povrch",
-      "nie jemne jamkovaný. Hostiteľom sú ošípané",
-      "diviaky / primáty.",
-      "Baylisascaris procyonis (škrkavka mývalia): Vajíčka sú veľmi podobné",
-      "ale menšie (65 – 70 µm × 50 – 65 µm). Hostiteľom sú medvedíky čistotné (mývaly)"
+      "_Toxocara canis / Toxocara cati_: Vajíčka sú menšie (cca 65 – 75 µm), majú o niečo hrubšiu alveolárnu (sieťovitú) štruktúru na povrchu. Tieto druhy sa však u medveďov bežne nevyskytujú.",
+      "_Ascaris suum / Ascaris lumbricoides_: Majú výrazne hrubší, hrbolčekovitý (mamilačný) povrch, nie jemne jamkovaný. Hostiteľom sú ošípané, diviaky / primáty.",
+      "_Baylisascaris procyonis_ (škrkavka mývalia): Vajíčka sú veľmi podobné, ale menšie (65 – 70 µm × 50 – 65 µm). Hostiteľom sú medvedíky čistotné (mývaly)"
     ],
     "lifeCycle": "Cyklus môže prebiehať dvoma hlavnými spôsobmi (priamy a nepriamy):\nPriamy cyklus: \nMedveď zožerie infekčné vajíčko z prostredia (ktoré obsahuje vyvinutú larvu L2/L3). \nV čreve sa larva uvoľní, podstupuje entero-hepatálnu/pulmonálnu migráciu (cez pečeň a pľúca) alebo priamu migráciu v stene čreva, vracia sa do lumenu tenkého čreva a dospieva.\nNepriamy cyklus (s paratenickým hostiteľom): \nDrobné cicavce alebo vtáky zožerú infekčné vajíčka. \nLarvy sa vyliahnu v ich čreve, preniknú do steny a migrujú do tkanív (svaly, mozog, orgány), kde sa opuzdria (enkapsulujú) ako L3 larvy. \nMedveď sa nakazí predáciou (zožratím) tohto hostiteľa. Larvy v čreve medveďa rýchlo dospievajú bez ďalšej orgánovej migrácie.",
-    "pathology": "U definitívneho hostiteľa (medveď):Nízke infekcie prebiehajú asymptomaticky.Masívne infekcie spôsobujú mechanické podráždenie sliznice tenkého čreva, katarálny zápal čriev (enteritídu), podvýživu, stratu hmotnosti a v extrémnych prípadoch až obštrukciu (upchatie) alebo perforáciu (prederavenie) čreva dospelými červami (ktoré môžu dorastať do dĺžky 10 – 20 cm).\nU paratenických hostiteľov a človeka (Larva migrans):Ak vajíčko pozrie netypický hostiteľ (vrátane človeka), vyvíja sa syndróm Larva migrans visceralis (LMV) alebo Larva migrans ocularis (LMO).Larvy rodu Baylisascaris majú tendenciu rásť počas migrácie a majú afinitu k centrálnemu nervovému systému. Môžu spôsobiť závažnú neurologickú formu (Larva migrans neuralis – NLM), prejavujúcu sa zápalom mozgu (encefalitídou), poruchami koordinácie a smrťou paratenického hostiteľa. B. transfuga je však považovaná za o niečo menej neurotropnú než obávaná B. procyonis.",
+    "pathology": "U definitívneho hostiteľa (medveď):Nízke infekcie prebiehajú asymptomaticky.Masívne infekcie spôsobujú mechanické podráždenie sliznice tenkého čreva, katarálny zápal čriev (enteritídu), podvýživu, stratu hmotnosti a v extrémnych prípadoch až obštrukciu (upchatie) alebo perforáciu (prederavenie) čreva dospelými červami (ktoré môžu dorastať do dĺžky 10 – 20 cm).\nU paratenických hostiteľov a človeka (Larva migrans):Ak vajíčko pozrie netypický hostiteľ (vrátane človeka), vyvíja sa syndróm Larva migrans visceralis (LMV) alebo Larva migrans ocularis (LMO).Larvy rodu Baylisascaris majú tendenciu rásť počas migrácie a majú afinitu k centrálnemu nervovému systému. Môžu spôsobiť závažnú neurologickú formu (Larva migrans neuralis – NLM), prejavujúcu sa zápalom mozgu (encefalitídou), poruchami koordinácie a smrťou paratenického hostiteľa. B. transfuga je však považovaná za o niečo menej neurotropnú než obávaná _B. procyonis_.",
     "zoonosis": true,
     "notes": "",
     "id": "baylisascaris_transfuga_egg",
@@ -22834,18 +22641,12 @@
       "shell": "Hrubá, viacvrstvová"
     },
     "diagnosticSigns": [
-      "Príležitostne môže ako definitívny hostiteľ slúžiť aj pes domáci (Canis lupus familiaris)",
-      "u ktorého červy dokážu dospieť v čreve a vylučovať vajíčka.",
-      "Sú mimoriadne odolné voči vonkajšiemu prostrediu (prežijú roky). Na povrchu majú o niečo hrubšiu zrnitosť ako vajíčka B. transfuga."
+      "Hrubá stena s jemne jamkovaným, štruktúrovaným povrchom, ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
     ],
     "differentialDiagnosis": [
-      "Baylisascaris transfuga: Vajíčka sú väčšie (70 – 90 µm) a parazitujú u medveďov. Rozlíšenie je dôležité pri prekrývaní teritórií medveďov a mývalov.",
-      "Toxocara canis: Sú veľmi podobné tvarom aj tmavou farbou",
-      "ale vajíčka T. canis sú o niečo väčšie (cca 85 – 90 µm) a ich jamkovaný povrch pripomína golfovú loptičku (má hlbšie a zreteľnejšie preliačiny).",
-      "Ascaris suum: Vajíčka majú povrch pokrytý hrubými",
-      "nepravidelnými",
-      "makroskopicky viditeľnými hrbolčekmi",
-      "zatiaľ čo B. procyonis má povrch relatívne uniformne zrnitý. Parazit ošípaných a diviakov."
+      "_Baylisascaris transfuga_: Vajíčka sú väčšie (70 – 90 µm) a parazitujú u medveďov. Rozlíšenie je dôležité pri prekrývaní teritórií medveďov a mývalov.",
+      "_Toxocara canis_: Sú veľmi podobné tvarom aj tmavou farbou, ale vajíčka _T. canis_ sú o niečo väčšie (cca 85 – 90 µm) a ich jamkovaný povrch pripomína golfovú loptičku (má hlbšie a zreteľnejšie preliačiny).",
+      "_Ascaris suum_: Vajíčka majú povrch pokrytý hrubými, nepravidelnými, makroskopicky viditeľnými hrbolčekmi, zatiaľ čo _B. procyonis_ má povrch relatívne uniformne zrnitý. Parazit ošípaných a diviakov."
     ],
     "lifeCycle": "Má dva odlišné scenáre v závislosti od veku mývala alebo prítomnosti medzihostiteľa:\nPriamy cyklus (u mladých mývalov): \nMýval zožerie infekčné vajíčko z prostredia (ktoré dozrievalo na vzduchu 2–4 týždne). \nLarva sa vyliahne v čreve, podstúpi migráciu cez črevnú stenu a orgány a vráti sa dospieť do tenkého čreva.\nNepriamy cyklus (u dospelých mývalov – dominantný spôsob): \nStaršie mývaly sú voči priamej infekcii vajíčkami čiastočne imúnne. Nakazia sa predáciou paratenického hostiteľa (napr. hlodavca), ktorý mal v tkanivách zapuzdrené larvy L3. \nPo zožraní hostiteľa sa larvy uvoľnia v čreve mývala a dospievajú bez potreby migrovať tkanivami mývala.",
     "pathology": "U definitívneho hostiteľa (mýval): \nV čreve mývala sa často nachádzajú desiatky dospelých červov (veľkosť 15–20 cm). Spôsobujú len minimálne tkanivové škody, pri masívnych inváziách však hrozí obštrukcia (upchatie) lumen čreva alebo mechanické narušenie trávenia.\nU paratenických hostiteľov a človeka (Extrémna nebezpečnosť): Po prehltnutí vajíčok človekom alebo zvieraťom sa larvy vyliahnu a začnú masívne migrovať telom (Larva migrans). Larvy B. procyonis sú veľmi veľké (dorastajú počas migrácie až do 1–2 mm) a vykazujú silný neurotropizmus (vysoká afinita k mozgovému tkanivu). Približne 5–7 % pozretých lariev preniká priamo do mozgu. V dôsledku ich veľkosti a agresívnej migrácie mechanicky ničia nervové dráhy a vyvolávajú ťažkú eozinofilnú meningoencefalitídu (zápal mozgu a blán). U ľudí (najmä detí, ktoré sa hrajú v piesku kontaminovanom trusom mývalov) ochorenie spôsobuje fatálne neurologické následky – trvalé poškodenie mozgu, slepotu (Larva migrans ocularis) alebo smrť.",
