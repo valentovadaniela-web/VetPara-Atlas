@@ -22,6 +22,14 @@ Autorka pri hromadnom vypĺňaní cez Excel (`tools/admin/forms/bulkExcel.js`) c
 - Zalomenie riadku vo vnútri jednej odrážky: doslovné `\n` (dva znaky).
 - Doplnená nápoveda v UI karte a v hárku "Referencie" šablóny (oddeľovač + značky formátovania).
 
+### Doplnenie: zdvojené zalomenia z Alt+Enter vo voľných poliach
+
+- Hlásenie autorky: jedno Alt+Enter v bunke sa na stránke zobrazilo ako 2–3 zalomenia (vo VS Code vidno `\r\r\n\n`).
+- Overené: SheetJS text bunky nemení (test: `a\r\r\n\nb` sa načíta nezmenené), takže zdvojené znaky sú už v samotnom Excel súbore. Prehliadač pri `white-space: pre-line` (viď 0.36) a parsovaní HTML každý z `\r`, `\r\n`, `\n` zobrazí ako zalomenie.
+- Oprava: nové `normalizeMultiline()` v `bulkExcel.js` — každá súvislá skupina `\r`/`\n` sa zredukuje na jeden `\n` (+ `trim()`). Použité pre `lifeCycle`, `pathology`, `notes` a poznámky v `hostNotes`.
+- Dôsledok: prázdny riadok (odstavec) cez Alt+Enter dvakrát sa zlúči na jedno zalomenie; odstavec zapíš doslovne ako `\n\n` (štyri znaky).
+- Pôvod zdvojenia v Exceli nezistený (možno súbor z iného nástroja alebo vložený text) — ⬜ overiť na reálnom súbore autorky.
+
 ### ⚠️ Dôsledok pre autorku
 
 Staré Excel súbory, kde boli odrážky oddelené čiarkou, sa teraz načítajú ako jedna odrážka. Treba ich prepísať do formátu "jedna odrážka = jeden riadok". Nový export už zapisuje správny formát.

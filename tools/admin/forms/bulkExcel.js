@@ -59,6 +59,15 @@ function serializeItemListField(arr) {
     return (arr || []).join('\n');
 }
 
+// Voľný viacriadkový text (lifeCycle, pathology, notes, poznámky v hostNotes).
+// Excel/iné nástroje občas uložia jedno Alt+Enter ako viac znakov (napr. \r\r\n\n),
+// čo prehliadač zobrazí ako 2-3 zalomenia. Každá súvislá skupina \r/\n sa preto
+// zredukuje na JEDEN '\n'. Prázdny riadok (odstavec) zapíš doslovne ako \n\n (dva znaky + dva znaky).
+function normalizeMultiline(value) {
+    if (value === undefined || value === null) return '';
+    return String(value).replace(/[\r\n]+/g, '\n').trim();
+}
+
 // hostNotes je objekt { hostiteľ: poznámka }. V Exceli ako text:
 // "Pes: poznámka pre psy | Mačka: iná poznámka"
 function parseHostNotes(value) {
@@ -68,7 +77,7 @@ function parseHostNotes(value) {
         const idx = part.indexOf(':');
         if (idx === -1) return;
         const key = part.slice(0, idx).trim();
-        const note = part.slice(idx + 1).trim();
+        const note = normalizeMultiline(part.slice(idx + 1));
         if (key) result[key] = note;
     });
     return result;
@@ -148,10 +157,10 @@ function buildFieldsFromRow(row) {
         },
         diagnosticSigns: parseItemListField(row.diagnosticSigns),
         differentialDiagnosis: parseItemListField(row.differentialDiagnosis),
-        lifeCycle: row.lifeCycle || '',
-        pathology: row.pathology || '',
+        lifeCycle: normalizeMultiline(row.lifeCycle),
+        pathology: normalizeMultiline(row.pathology),
         zoonosis: parseBoolField(row.zoonosis),
-        notes: row.notes || '',
+        notes: normalizeMultiline(row.notes),
     };
 }
 
