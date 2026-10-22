@@ -5829,9 +5829,7 @@
     },
     "diagnosticSigns": [
       "Mechúrikovitý (hydatídny) cystický útvar s vnútornou zárodočnou vrstvou produkujúcou protoskolexy; jednokomorová cysta.",
-      "Stena larvocysty: Skladá sa z dvoch hlavných parazitárnych vrstiev obklopených ochrannou väzivovou kapsulou hostiteľa:",
-      "1. Kutikulárna (laminárna) vrstva (exocysta): Vonkajšia, acelulárna, mliečne biela, želatínová vrstva zložená z mukopolysacharidov. Dosahuje hrúbku až niekoľko milimetrov a slúži ako mechanická a imunitná bariéra.",
-      "2. Zárodočná (germinálna) vrstva (endocysta): Vnútorná, veľmi tenká bunková vrstva (cca 10 – 20 µm), ktorá je metabolicky aktívna.",
+      "Stena larvocysty: Skladá sa z dvoch hlavných parazitárnych vrstiev obklopených ochrannou väzivovou kapsulou hostiteľa: **1. Kutikulárna (laminárna) vrstva (exocysta)**: Vonkajšia, acelulárna, mliečne biela, želatínová vrstva zložená z mukopolysacharidov. Dosahuje hrúbku až niekoľko milimetrov a slúži ako mechanická a imunitná bariéra. **2. Zárodočná (germinálna) vrstva (endocysta)**: Vnútorná, veľmi tenká bunková vrstva (cca 10 – 20 µm), ktorá je metabolicky aktívna.",
       "Vnútorné usporiadanie a špecifické orgány: Zo zárodočnej vrstvy pučia smerom do vnútra cysty tzv. plodové komôrky. Vnútri týchto komôrok sa diferencujú invaginované hlavičky budúcich pásomníc – protoskolexy. Každý protoskolex (veľkosť cca 100 – 150 µm) je vybavený štyrmi prísavkami a dvojitým vencom typických taenioidných háčikov.",
       "Hydatidový piesok: Uvoľnené plodové komôrky, voľné protoskolexy a vypadnuté háčiky sedimentujú na dne cysty a makroskopicky pripomínajú jemný biely piesok suspendovaný v čistej hydatidovej tekutine."
     ],
@@ -5892,9 +5890,7 @@
     },
     "diagnosticSigns": [
       "Netvorí jednu veľkú ohraničenú guľovitú cystu. Pozostáva z konglomerátu stoviek až tisícok miniatúrnych mechúrikov (alveol) s priemerom od 1 000 do 10 000 µm (1 – 10 mm). Celá táto parazitárna masa infiltratívne prerastá tkanivom pečene a môže dosiahnuť celkovú veľkosť od niekoľkých centimetrov až po obrovské útvary zaberajúce celý pečeňový lalok.",
-      "Stena larvocysty:",
-      "1. Kutikulárna (laminárna) vrstva: Je extrémne tenká (často len niekoľko mikrometrov), na rozdiel od hrubej želatínovej vrstvy _E. granulosus_.",
-      "2. Zárodočna (germinálna) vrstva: Je vysoko aktívna, no na rozdiel od iných pásomníc pučí smerom von (exogénne pučanie). Týmto spôsobom parazit neustále invazívne preniká do okolitého zdravého parenchýmu.",
+      "Stena larvocysty: **1. Kutikulárna (laminárna) vrstva**: Je extrémne tenká (často len niekoľko mikrometrov), na rozdiel od hrubej želatínovej vrstvy _E. granulosus_. **2. Zárodočna (germinálna) vrstva**: Je vysoko aktívna, no na rozdiel od iných pásomníc pučí smerom von (exogénne pučanie). Týmto spôsobom parazit neustále invazívne preniká do okolitého zdravého parenchýmu.",
       "Vnútro jednotlivých mikro-mechúrikov obsahuje gélovitú alebo tekutú hmotu. U prirodzených medzihostiteľov (hraboš) sa v nich tvoria protoskolices (hlavičky) s typickými štyrmi prísavkami a vencom taenioidných háčikov."
     ],
     "differentialDiagnosis": [
