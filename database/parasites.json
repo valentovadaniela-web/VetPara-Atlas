@@ -5680,58 +5680,6 @@
     "images": []
   },
   {
-    "latinName": "Dispharynx nasuta",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Spirurida",
-      "family": "Acuariidae",
-      "genus": "Dispharynx",
-      "species": "Dispharynx nasuta"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Holub"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 28.8,
-      "lengthMax": 32.4,
-      "widthMin": 18,
-      "widthMax": 21.6,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Malé",
-      "oválne",
-      "hrubostenné",
-      "hladké",
-      "embryonované vajíčko (obsahuje larvu pri vylúčení); typické pre čeľaď Acuariidae"
-    ],
-    "differentialDiagnosis": [
-      "Proventrikulárny spirurid vtákov",
-      "prenos suchozemskými mäkkýšmi; vajíčko malé",
-      "hrubostenné s larvou."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "dispharynx_nasuta_egg",
-    "images": []
-  },
-  {
     "latinName": "Drepanidotaenia lanceolata",
     "synonyms": [],
     "slovakName": "",
