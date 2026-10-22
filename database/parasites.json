@@ -5681,8 +5681,11 @@
   },
   {
     "latinName": "Drepanidotaenia lanceolata",
-    "synonyms": [],
-    "slovakName": "",
+    "synonyms": [
+      "Hymenolepis lanceolata",
+      "Taenia lanceolata"
+    ],
+    "slovakName": "Pásomnica kopijovitá",
     "taxonomy": {
       "kingdom": "Animalia",
       "phylum": "Platyhelminthes",
@@ -5692,9 +5695,7 @@
       "genus": "Drepanidotaenia",
       "species": "Drepanidotaenia lanceolata"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Kačica",
       "Hus",
@@ -5706,29 +5707,35 @@
     "group": "Cestoda",
     "micrometry": {
       "lengthMin": 50,
-      "lengthMax": 50,
+      "lengthMax": 100,
       "widthMin": 35,
-      "widthMax": 35,
+      "widthMax": 50,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly až široko oválny",
+      "shape": "Oválny až eliptický",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Hrubá, radiálne pruhovaná"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly až široko oválny."
+      "Pomerne veľké vajíčka",
+      "Majú tenkú, hladkú, bezfarebnú vonkajšiu stenu s tromi obalmi.",
+      "Vo vnútri sa nachádza larválne štádium – onkosféra (hexakant) so šiestimi háčikmi"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Drepanidotaenia môže byť potrebná molekulová identifikácia."
+      "Pri mikroskopickom vyšetrení trusu labutí, kačíc a husí (Anseriformes) hrozí najčastejšie zámena vajíčok v rámci príbuzných rodov čeľade Hymenolepididae, prípadne s inými špecifickými vtáčími pásomnicami a motolicami.",
+      "_Sobolevicanthus gracilis_ (syn. _Hymenolepis gracilis_): Najčastejšie postihuje kačice a labute. Vajíčko je výrazne vretenovité a predĺžené (nie oválne). Z pólov vnútornej membrány (embryofóru) vychádzajú dlhé, tenké, jasne viditeľné a zvlnené polárne vlákna, ktoré sa tiahnu do medziobalového priestoru. Drepanidotaenia tieto dlhé nite nemá.",
+      "_Dicranotaenia coronula_ (syn. _Hymenolepis coronula_): Bežný parazit divých i domácich kačíc a husí. Vajíčka sú o niečo menšie, pretiahnutejšie a ich medziobalový priestor nie je číry, ale vyplnený jemnou zrnitou hmotou. Vnútorná larválna onkosféra je v pomere k celkovému vajíčku oveľa väčšia (vajíčko vyzerá „plnšie“) ako u Drepanidotaenia, kde je onkosféra malá a obklopená veľkým prázdnym priestorom.",
+      "_Fimbriaria fasciolaris_: Veľmi častá pásomnica kačíc, husí aj divo žijúcich labutí. V truse sa spravidla nenachádzajú jednotlivé samostatné vajíčka. Tento druh uvoľňuje vajíčka usporiadané v typických zhlukoch (kapsulách) zabalených do spoločného hlienovitého obalu. Ak sa obal rozpadne, jednotlivé vajíčka sú menšie (okolo 30 – 45 µm) a majú nepravidelný tvar.",
+      "_Cloacotaenia megalops_: Parazituje špecificky v kloake a hrubom čreve kačíc. Vajíčka sú takmer dokonale guľovité (nie oválne). Škrupina je extrémne tenká a transparentná. Na póloch vnútornej membrány sú prítomné veľmi hrubé, uzlíkovité polárne zhrubnutia, z ktorých nevychádzajú nite, ale samotná štruktúra pólu je robustná a nápadná.",
+      "\\n\\n",
+      "Zhrnutie pre rýchlu diagnostiku pod mikroskopom:",
+      "• Tvar: Široko oválny = Drepanidotaenia | Vretenovitý = Sobolevicanthus | Guľovitý = Cloacotaenia.",
+      "• Vnútro: Malá larva a veľa voľného miesta = Drepanidotaenia | Larva tesne vypĺňa priestor = Dicranotaenia.",
+      "• Póly: Čisté bez výbežkov = Drepanidotaenia | S dlhými nitkami = Sobolevicanthus | S hrubým uzlíkom = Cloacotaenia."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývin prebieha nepriamo s účasťou jedného medzihostiteľa. Definitívny hostiteľ (vodný vták) vylučuje trusom do vody zrelé články plné vajíčok. Vajíčka vo vode prehltnú drobné sladkovodné kôrovce (búchanovité – Copepoda), v ktorých tele sa onkosféra v priebehu 2 až 3 týždňov premení na infekčné larválne štádium – cysticerkoit. Vodné vtáky sa nakazia na vodných plochách pri aktívnom požieraní týchto infikovaných kôrovcov. V tenkom čreve vtáka sa larva prichytí na sliznicu a za ďalších 15 až 20 dní dospeje v dospelú pásomnicu, ktorá začne produkovať vajíčka.",
+    "pathology": "Patogenita závisí od intenzity infekcie a veku vtákov, pričom najcitlivejšia je mladá hydina do dvoch mesiacov veku. Masívne invázie spôsobujú mechanické podráždenie sliznice tenkého čreva háčikmi, čo vedie k zápalu čriev (enteritíde), opuchom, krvácaniu a v závažných prípadoch až k upchaniu (obštrukcii) črevného lumen. Parazit oberá hostiteľa o živiny, čo vyvoláva podvýživu, spomalenie rastu, anémiu a neurologické príznaky (napr. poruchy koordinácie a chôdze) v dôsledku pôsobenia metabolických toxínov pásomnice. U dospelých jedincov prebieha infekcia často asymptomaticky, no znižuje znášku a kvalitu mäsa.",
     "zoonosis": false,
     "notes": "",
     "id": "drepanidotaenia_lanceolata_egg",
@@ -5756,10 +5763,10 @@
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 75,
-      "widthMin": 45,
-      "widthMax": 58,
+      "lengthMin": 52,
+      "lengthMax": 90,
+      "widthMin": 40,
+      "widthMax": 78,
       "unit": "µm"
     },
     "morphology": {
@@ -5769,16 +5776,15 @@
     },
     "diagnosticSigns": [
       "Guľovité až subguľovité",
-      "hrubá mierne zrnitá škrupina",
-      "typický ascaridný typ vajíčka; parazit krokodílov/plazov (čeľaď Heterocheilidae)."
+      "Hladká, relatívne tenká transparentná škrupina (hrúbka steny približne 2 – 3 µm) bez povrchového jamkovania. Vajíčko nemá operkulum (viečko) ani pólové filamenty."
     ],
     "differentialDiagnosis": [
-      "Askaridid krokodílov - odlíšiť od Multicaecum a Polydelphis podľa hostiteľa a štruktúry pier/ezofágu."
+      "Askaridid krokodílov"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je nepriamy (heteroxénny). Dospelé samice v žalúdku krokodílov produkujú vajíčka, ktoré odchádzajú s trusom do vodného prostredia. Vo vonkajšom prostredí (vo vode) sa vo vajíčku vyvinie larva prvej (L1) a následne druhej fázy (L2), ktorá sa vo vajíčku stáva infekčnou alebo sa vyliahne. Tieto štádiá (alebo vajíčka) sú pozreté medzihostiteľom – vodným bezstavovcom, obojživelníkom alebo rybám. V ich telovej dutine a tkanivách larva migruje, zapuzdruje sa a transformuje na infekčné štádium tretej fázy (L3). Definitívny hostiteľ (krokodíl) sa nakazí predáciou týchto medzihostiteľov (skrmovaním infikovaných rýb alebo žiab). V žalúdku krokodíla sa larva L3 uvoľní, zvlieka sa do L4 a dospieva na dospelého jedinca, ktorý sa fixuje na žalúdočnú sliznicu.",
+    "pathology": "Patogenita je stredná až vysoká v závislosti od intenzity infekcie. Dospelé červy rodu Dujardinascaris žijú v lúmene žalúdka definitívneho hostiteľa, kde sa mechanicky prichytávajú k sliznici. Svojou prítomnosťou a penetráciou indukujú hlboké vredovité ložiská a kráterovité lézie v žalúdočnej stene, pričom v jednom takomto vrede môže byť fixovaných hneď niekoľko desiatok červov. Klinicky sa masívna parazitóza prejavuje chronickou gastritídou, inapetenciou (nechutenstvom), regurgitáciou stravy, chradnutím zvieraťa (kachexiou) a v prípade perforácie steny žalúdka dochádza k fatálnej peritonitíde (zápalu pobrušnice) a úhynu.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Vajíčka morfologicky plne zhodné s rodom Dujardinascaris boli objavené vo fosílnych koprolitoch (skamenenom truse) krokodílích predkov (Crocodyliforms) z obdobia spodnej kriedy (Mesozoikum) v Španielsku. To dokazuje, že táto parazitárna línia vykazuje extrémnu evolučnú stabilitu a sprevádza krokodíly už milióny rokov.",
     "id": "dujardinascaris_sp_egg",
     "images": []
   },
@@ -5800,11 +5806,12 @@
       "Voľne žijúce prežúvavce",
       "Ošípané a diviaky",
       "ZOO prežúvavce",
-      "Nepárnokopytníky",
-      "Primáty"
+      "Nepárnokopytníky"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Hovädzí dobytok": "Až 90 % hydatidových cýst nájdených u infikovaného hovädzieho dobytka je sterilných (neobsahujú protoskolexy). Hovädzí dobytok je pre tento parazitárny kmeň (najmä ovčí kmeň G1) imunologicky nevhodným hostiteľom, ktorý dokáže vývoj parazita čiastočne potlačiť, hoci samotná cysta v orgáne narastie. Diagnóza sa potvrdzuje histologicky preukázaním charakteristickej bezbunkovej vrstvy laminárnej steny, ktorá sa intenzívne farbí PAS metódou (Periodic acid–Schiff)."
+    },
     "sample": "Pečeň",
     "stage": "Larva",
     "group": "Cestoda",
@@ -5821,15 +5828,21 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Mechúrikovitý (hydatídny) cystický útvar s vnútornou zárodočnou vrstvou produkujúcou protoskolexy; jednokomorová cysta."
+      "Mechúrikovitý (hydatídny) cystický útvar s vnútornou zárodočnou vrstvou produkujúcou protoskolexy; jednokomorová cysta.",
+      "Stena larvocysty: Skladá sa z dvoch hlavných parazitárnych vrstiev obklopených ochrannou väzivovou kapsulou hostiteľa:",
+      "1. Kutikulárna (laminárna) vrstva (exocysta): Vonkajšia, acelulárna, mliečne biela, želatínová vrstva zložená z mukopolysacharidov. Dosahuje hrúbku až niekoľko milimetrov a slúži ako mechanická a imunitná bariéra.",
+      "2. Zárodočná (germinálna) vrstva (endocysta): Vnútorná, veľmi tenká bunková vrstva (cca 10 – 20 µm), ktorá je metabolicky aktívna.",
+      "Vnútorné usporiadanie a špecifické orgány: Zo zárodočnej vrstvy pučia smerom do vnútra cysty tzv. plodové komôrky. Vnútri týchto komôrok sa diferencujú invaginované hlavičky budúcich pásomníc – protoskolexy. Každý protoskolex (veľkosť cca 100 – 150 µm) je vybavený štyrmi prísavkami a dvojitým vencom typických taenioidných háčikov.",
+      "Hydatidový piesok: Uvoľnené plodové komôrky, voľné protoskolexy a vypadnuté háčiky sedimentujú na dne cysty a makroskopicky pripomínajú jemný biely piesok suspendovaný v čistej hydatidovej tekutine."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Echinococcus môže byť potrebná molekulová identifikácia."
+      "Larvocysta _Echinococcus multilocularis_ (alveolárna hydatida): Nevytvára jednu veľkú ohraničenú cystu. Tvorí konglomerát drobných, milimetrových mechúrikov, ktoré infiltrujú tkanivo (pečeň) ako nádor a chýba im hrubá laminárna stena.",
+      "_Cysticercus tenuicollis_ (larva _Taenia hydatigena_): Veľmi častý nález u oviec a ošípaných na pobrušnici a povrchu pečene. Je to tenkostenný mechúrik naplnený tekutinou, visí na dlhej stopke a vždy obsahuje iba jeden jediný, veľký, dobre viditeľný invaginovaný skolex, zatiaľ čo hydatida ich obsahuje tisíce (alebo je sterilná).",
+      "_Cysticercus bovis_ / _Cysticercus cellulosae_ (larvy _Taenia saginata_ a _T. solium_): Sú lokalizované v svalovine (nie v pečeni/pľúcach), sú miniatúrne (do 1 cm) a obsahujú len jeden skolex.",
+      "Neinfekčné cysty: Vrodené serózne cysty pečene alebo obličiek. Chýba im parazitárna laminárna stena, plodové komôrky a hydatidový piesok."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je nepriamy (heteroxénny). Definitívny hostiteľ (pes, vlk) vylučuje trusom vajíčka (obsahujúce onkosféru), ktoré kontaminujú prostredie (pastvy, vodu). Medzihostiteľ (ovca, diviak, človek) tieto vajíčka perorálne prijme (ingestia). V tenkom čreve medzihostiteľa sa z vajíčka uvoľní onkosféra, ktorá pomocou háčikov penetruje sliznicu čreva a krvným obehom (systémom vena portae), migruje prioritne do pečene, prípadne cez srdce do pľúc či iných orgánov. Tam sa onkosféra transformuje a pomaly (mesiace až roky) rastie do štádia larvocysty (hydatidy). Cyklus sa uzavrie, keď definitívny hostiteľ (pes/vlk) zožerie orgány infikovaného medzihostiteľa s hydatídou (napr. pri zabíjačke alebo uhynutej zveri). Protoskolexy sa v čreve šelmy uvoľnia, prichytia na sliznicu a dospejú v dospelé pásomnice.",
+    "pathology": "Patogenita larvocysty pre medzihostiteľa spočíva primárne v mechanickom tlaku (kompresný efekt) na okolité tkanivá. Ako cysta pomaly expanduje, utláča parenchým pečene alebo pľúc, čo vedie k atrofii orgánu, fibróze a poruchám jeho funkcie. \nKlinické príznaky závisia od lokalizácie: pri postihnutí pečene sa objavuje ikterus, poruchy trávenia a ascites; pri pľúcnej forme kašeľ, dýchavičnosť (dyspnoe) a výtoky z nosa. \nNajnebezpečnejšou komplikáciou je spontánne alebo traumatické prasknutie (ruptúra) cysty. Uvoľnenie veľkého množstva hydatidovej tekutiny do obehu hostiteľa vyvolá okamžitý **anafylaktický šok**, ktorý môže viesť k náhlemu úhynu zvieraťa. Zároveň dochádza k diseminácii (rozosievaniu) protoskolexov a vzniku stoviek nových sekundárnych cýst.",
     "zoonosis": true,
     "notes": "Vnútri tekutina a piesok",
     "id": "echinococcus_granulosus_larva",
@@ -5852,16 +5865,24 @@
       "Hlodavce",
       "Primáty"
     ],
-    "hosts": [],
-    "hostNotes": {},
+    "hosts": [
+      "Pes",
+      "Ošípaná",
+      "Človek"
+    ],
+    "hostNotes": {
+      "Primáty": "Larvocysta v ich pečeni rastie nekontrolovateľne, no zostáva prevažne sterilná (netvoria sa v nej protoskolexy). V strede lézie tkanivo v dôsledku ischémie nekrotizuje a vytvára sa centrálna dutina vyplnená hnisavou/kašovitou tekutinou, čo imituje pečeňový absces alebo rozpadnutý karcinóm.",
+      "Človek": "Larvocysta v ich pečeni rastie nekontrolovateľne, no zostáva prevažne sterilná (netvoria sa v nej protoskolexy). V strede lézie tkanivo v dôsledku ischémie nekrotizuje a vytvára sa centrálna dutina vyplnená hnisavou/kašovitou tekutinou, čo imituje pečeňový absces alebo rozpadnutý karcinóm. Inkubačná doba u ľudí je extrémne dlhá (5 až 15 rokov), kedy človek nemá žiadne príznaky, zatiaľ čo parazit mu pomaly devastuje pečeň.",
+      "Pes": "V posledných rokoch stúpa na Slovensku počet prípadov, kedy pes domáci figuruje ako medzihostiteľ. Ak pes prehltne vajíčko (napr. z trusu líšky), v jeho vlastnej pečeni sa rozvinie alveolárna hydatida. Pre psa je tento stav fatálny a klinicky prebieha identicky ako u ľudí – imituje rýchlo rastúci tumor pečene.."
+    },
     "sample": "Pečeň",
     "stage": "Larva",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 50000,
-      "lengthMax": 300000,
-      "widthMin": 30000,
-      "widthMax": 370000,
+      "lengthMin": 1000,
+      "lengthMax": 100000,
+      "widthMin": 1000,
+      "widthMax": 100000,
       "unit": "µm"
     },
     "morphology": {
@@ -5870,18 +5891,21 @@
       "shell": "Hrubá, radiálne pruhovaná"
     },
     "diagnosticSigns": [
-      "Mnohokomorový (alveolárny)",
-      "infiltratívne rastúci mechúrikovitý útvar produkujúci protoskolexy."
+      "Netvorí jednu veľkú ohraničenú guľovitú cystu. Pozostáva z konglomerátu stoviek až tisícok miniatúrnych mechúrikov (alveol) s priemerom od 1 000 do 10 000 µm (1 – 10 mm). Celá táto parazitárna masa infiltratívne prerastá tkanivom pečene a môže dosiahnuť celkovú veľkosť od niekoľkých centimetrov až po obrovské útvary zaberajúce celý pečeňový lalok.",
+      "Stena larvocysty:",
+      "1. Kutikulárna (laminárna) vrstva: Je extrémne tenká (často len niekoľko mikrometrov), na rozdiel od hrubej želatínovej vrstvy _E. granulosus_.",
+      "2. Zárodočna (germinálna) vrstva: Je vysoko aktívna, no na rozdiel od iných pásomníc pučí smerom von (exogénne pučanie). Týmto spôsobom parazit neustále invazívne preniká do okolitého zdravého parenchýmu.",
+      "Vnútro jednotlivých mikro-mechúrikov obsahuje gélovitú alebo tekutú hmotu. U prirodzených medzihostiteľov (hraboš) sa v nich tvoria protoskolices (hlavičky) s typickými štyrmi prísavkami a vencom taenioidných háčikov."
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Echinococcus môže byť potrebná molekulová identifikácia."
+      "Larvocysta _Echinococcus granulosus_: Vytvára jasne ohraničenú, solitárnu, hladkú cystu s hrubou bielou stenou, ktorá sa dá ľahko odlúčiť od tkaniva pečene. Netvorí syndróm \"špongie\".",
+      "Nádory pečene (Hepatocelulárny karcinóm, metastázy): Makroskopicky takmer na nerozoznanie od alveolárnej hydatidy. Rozlíšenie je možné len histologicky (prítomnosť parazitárnych štruktúr vs. atypické bunky hostiteľa).",
+      "Abscesy pečene (napr. _Fusobacterium necrophorum_, Corynebacterium): Obsahujú hnis a majú bakteriálne puzdro, chýba v nich porézna štruktúra parazitárnych alveol."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus je nepriamy (heteroxénny) a prebieha primárne v cykle šelma – drobný hlodavec. Definitívny hostiteľ (líška, pes) vylučuje trusom mikroskopické vajíčka. Medzihostiteľ (hraboš) sa nakazí perorálne konzumáciou potravy kontaminovanej týmito vajíčkami. V tenkom čreve hlodavca sa z vajíčka vyliahne larva (onkosféra), ktorá prevŕta stenu čreva a krvným obehom putuje priamo do pečene. V pečeni onkosféra metamorfuje na larvocystu, ktorá začne exogénne pučať a tvoriť alveoly. Do 2 – 3 mesiacov sa v nej vyvinú infekčné protoskolexy. Cyklus sa uzavrie, keď líška alebo pes uloví a zožerie infikovaného hraboša. V čreve šelmy z každej hlavičky (protoskolexu) vyrastie drobná, iba 2 – 6 mm dlhá dospelá pásomnica, ktorá o 4 – 5 týždňov začne produkovať nové vajíčka.",
+    "pathology": "Larvocysta _E. multilocularis_ vykazuje extrémnu patogenitu pre aberantných medzihostiteľov (vrátane človeka a primátov). Keďže parazit v ich pečeni permanentne exogénne pučí a deštruuje okolité tkanivo, dochádza k masívnej fibrotizácii, ischémii a nekróze pečeňového parenchýmu. Parazitárna masa postupne uzatvára žlčovody (spôsobuje obštrukčný ikterus) a portálne cievy (vyvoláva portálnu hypertenziu a ascites). V pokročilom štádiu má larvocysta schopnosť metastázovať – úlomky germinálnej vrstvy alebo mikromechúriky prenikajú do krvi alebo lymfy a zakladajú sekundárne lézie v pľúcach alebo v mozgu. Bez liečby vedie toto ochorenie k multiorgánovému zlyhaniu a má takmer 100 % letalitu.",
     "zoonosis": true,
-    "notes": "Mnohokomorový mechúrik",
+    "notes": "Vajíčka _E. multilocularis_ bez problémov prežívajú teploty do –30 °C po dobu niekoľkých mesiacov. Bežné dezinfekčné prostriedky na báze alkoholu sú voči nim neúčinné. Spoľahlivo ich ničí len teplota nad +60 °C, úplné vyschnutie alebo pôsobenie koncentrovaného chlórnanu sodného",
     "id": "echinococcus_multilocularis_larva",
     "images": []
   },
@@ -5902,18 +5926,19 @@
       "Psovité mäsožravce"
     ],
     "hosts": [
-      "Pes",
-      "Líška"
+      "Mačka"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Mačka": "Len výnimočne"
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
     "micrometry": {
-      "lengthMin": 34,
-      "lengthMax": 39,
-      "widthMin": 31,
-      "widthMax": 35,
+      "lengthMin": 30,
+      "lengthMax": 50,
+      "widthMin": 22,
+      "widthMax": 44,
       "unit": "µm"
     },
     "morphology": {
@@ -5923,15 +5948,17 @@
     },
     "diagnosticSigns": [
       "Guľovité",
-      "hrubá radiálne pruhovaná embryofóra so šesťháčikovou onkosférou; morfologicky nerozlíšiteľné od rodu Taenia."
+      "Vajíčko nemá klasickú vaječnú stenu (tá sa stráca už v maternici). Vonkajšiu viditeľnú vrstvu tvorí hrubý, žltohnedý až tmavohnedý embryofor. Pri detailnom zaostrení vykazuje **výrazné priečne ryhovanie**, čo dodáva obalu „ozubený“ alebo lúčovitý vzhľad.",
+      "Vo vnútri embryoforu je uzavretá plne vyvinutá, invazívna larva – onkosféra (hexakant). Obsahuje 3 páry chitinóznych háčikov (spolu 6 háčikov) usporiadaných bilaterálne, ktoré sú pri zväčšení 400× až 1000× viditeľné ako drobné reflexné čiarky v strede vajíčka.",
+      "Vajíčko nemá operkulum (viečko) ani pólové filamenty."
     ],
     "differentialDiagnosis": [
-      "vajíčko mikroskopicky nerozlíšiteľné od iných Taeniidae - udáva sa ako vajíčko taeniového typu"
+      "Vajíčko je mikroskopicky nerozlíšiteľné od iných Taeniidae - udáva sa ako **Vajíčko taeniového typu**"
     ],
-    "lifeCycle": "",
-    "pathology": "Štádium (vajíčko vylučované psom) je priamo infekčné pre človeka",
+    "lifeCycle": "Vývinový cyklus je nepriamy (heteroxénny). Dospelé pásomnice v tenkom čreve šeliem (DH) produkujú vajíčka, ktoré odchádzajú s trusom do prostredia. Tieto vajíčka sú vďaka hrubému embryoforu extrémne odolné voči vonkajším vplyvom (prežijú mrazy, prežijú vo vlhku mesiace). Po perorálnej ingestii (zožratí) vajíčka vhodným medzihostiteľom (kopytníky, hlodavce, človek) sa v tenkom čreve účinkom tráviacich štiav embryofor rozpadne. Uvoľnená onkosféra (larva) pomocou svojich 6 háčikov penetruje cez stenu čreva do krvných kapilár a migruje do cieľových orgánov (pečeň, pľúca), kde pomaly transformuje na finálne larválne štádium – larvocystu.",
+    "pathology": "Vajíčko je pôvodcom závažnej patológie u medzihostiteľa, zatiaľ čo u definitívneho hostiteľa (napr. u psa, ktorý vajíčka vylučuje) dospelé pásomnice nevyvolávajú takmer žiadne patologické zmeny ani klinické príznaky (inapparentná infekcia). U medzihostiteľov (vrátane človeka a primátov) je konzumácia vajíčka spúšťačom cystickej alebo alveolárnej echinokokózy. Migrujúce onkosféry deštruujú tkanivá a rastúce larvocysty mechanicky utláčajú parenchým orgánov, vyvolávajú fibrózu, nekrózy, v prípade _E. multilocularis_ infiltratívne metastázujú a bez liečby vedú k fatálnemu zlyhaniu pečene a smrti hostiteľa.",
     "zoonosis": true,
-    "notes": "",
+    "notes": "Každé taenioidné vajíčko nájdené v truse loveckého alebo dedinského psa na Slovensku sa z dôvodu bezpečnosti parazitologického personálu posudzuje, akoby išlo o _Echinococcus sp._, kým PCR nedokáže opak.",
     "id": "echinococcus_sp_egg",
     "images": []
   },
