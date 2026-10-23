@@ -677,7 +677,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -1509,9 +1511,7 @@
     "hostGroups": [
       "Domáce prežúvavce"
     ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -2553,7 +2553,6 @@
       "lamy"
     ],
     "hosts": [
-      "Hovädzí dobytok",
       "Mačka",
       "Pes"
     ],
@@ -3041,7 +3040,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -3209,11 +3210,7 @@
     ],
     "hosts": [
       "Činčila",
-      "Králik",
-      "Mačka",
-      "Morča",
-      "Pes",
-      "Zajac"
+      "Morča"
     ],
     "hostNotes": {
       "Činčila": "Bežný komenzál tráviaceho traktu",
@@ -3393,10 +3390,10 @@
       "genus": "Taenia",
       "species": "Cysticercus cervi"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vysoká zver"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Larva",
@@ -3507,10 +3504,7 @@
     "hostGroups": [
       "Domáce prežúvavce"
     ],
-    "hosts": [
-      "Ovca",
-      "Koza"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Larva",
@@ -4048,9 +4042,7 @@
     "hostGroups": [
       "Ošípané a diviaky"
     ],
-    "hosts": [
-      "Ošípaná"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -4364,7 +4356,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -5250,8 +5244,6 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň",
-      "Somár",
       "Zebra"
     ],
     "hostNotes": {
@@ -5575,9 +5567,7 @@
       "Psovité mäsožravce"
     ],
     "hosts": [
-      "Človek",
-      "Fretka",
-      "Mačka"
+      "Fretka"
     ],
     "hostNotes": {
       "Človek": "Človek na nemôže nakaziť od psa, iba od komára. Je náhodný hostiteľ, v ktorom larvy zvyčajne nedospievajú na dospelé jedince a neprodukujú mikrofilárie; u človeka sa skôr tvoria noduly v pľúcach, podkoží alebo oku.",
@@ -5636,9 +5626,7 @@
       "Psovité mäsožravce"
     ],
     "hosts": [
-      "Človek",
-      "Fretka",
-      "Mačka"
+      "Fretka"
     ],
     "hostNotes": {
       "Človek": "Človek sa nemôže nakaziť od psa, iba od komára. Je náhodný hostiteľ – D. repens je najčastejšou príčinou humánnej dirofilariózy v Európe; u človeka sa tvoria podkožné noduly, často v oblasti oka (periokulárne), tváre alebo podkožia, larvy zvyčajne nedospievajú a neprodukujú mikrofilárie.",
@@ -5972,11 +5960,13 @@
       "species": "neurčený druh"
     },
     "hostGroups": [
-      "Hlodavce",
-      "Mäsožravce"
+      "Vodné voľne žijúce vtáky",
+      "Vodná hydina"
     ],
     "hosts": [
-      "Vodné voľne žijúce vtáky",
+      "Ondatra",
+      "Nutria",
+      "Bobor",
       "Plameniak"
     ],
     "hostNotes": {},
@@ -5984,10 +5974,10 @@
     "stage": "Vajíčko",
     "group": "Trematoda",
     "micrometry": {
-      "lengthMin": 100,
-      "lengthMax": 100,
-      "widthMin": 70,
-      "widthMax": 70,
+      "lengthMin": 80,
+      "lengthMax": 135,
+      "widthMin": 55,
+      "widthMax": 80,
       "unit": "µm"
     },
     "morphology": {
@@ -5996,19 +5986,18 @@
       "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [
-      "Veľké",
-      "oválne",
-      "žltohnedé operkulované vajíčko",
-      "podobné čeľadi Fasciolidae",
-      "ale menšie."
+      "Veľké, oválne, žltohnedé operkulované vajíčko, podobné čeľadi Fasciolidae, ale menšie.",
+      "Tenká, hladká a číra stena žltohnedej až slamovožltej farby.",
+      "Na jednom póle sa nachádza málo výrazné, ploché viečko (operculum). Protiľahlý (aboperkulárny) pól steny býva charakteristicky zhrubnutý (niekedy s drobným hrbolčekom či vrásnením).",
+      "Vajíčko je v čase odchodu z tela hostiteľa neembryonované (obsahuje nečlenenú zygotu obklopenú početnými žĺtkovými bunkami, ktoré kompletne vypĺňajú vnútorný priestor)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od vajíčok Fasciola hepatica a Fascioloides magna (výrazne väčšie) a od Paramphistomum (bez zreteľného viečka)."
+      "_Fasciola hepatica / Fascioloides magna_: Väčšie (130 – 150 µm). Vajíčka Fasciola majú výraznejšie operkulárne rameno a jasnejšie diferencované viečko, chýba im výrazné aboperkulárne zhrubnutie typické pre echinostómy. Vtáky sú hostiteľ len výnimočne, hlavným hostiteľom sú prežúvavce."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je trojhostiteľový (heteroxénny) a striktne viazaný na vodné prostredie. Neembryonované vajíčka odchádzajú trusom do vody, kde sa v priebehu 2–3 týždňov vyvinie a vyliahne obrvené miracídium. To aktívne penetruje do prvého medzihostiteľa (vodného slimáka), kde prechádza štádiami sporoocysty, dvoch generácií redií a nakoniec produkuje pohyblivé cerkárie. Cerkárie opúšťajú slimáka a prenikajú do druhého medzihostiteľa (iný slimák, lastúrnik, ryba alebo žubrienka), kde encystujú do infekčného štádia – metacerkárie. Definitívny hostiteľ sa nakazí ingesciou (zožratím) tohto druhého medzihostiteľa. V tenkom čreve hostiteľa sa larva excystuje a počas niekoľkých týždňov dospieva na pohlavne aktívneho dospelca.",
+    "pathology": "Patogenita rodu Echinostoma závisí primárne od intenzity infekcie (počtu červov v čreve). Pri nízkej intenzite prebieha nákaza spravidla asymptomaticky. Pri masívnych infekciách dochádza k mechanickému a traumatickému poškodeniu sliznice tenkého a slepého čreva, ktoré červy zraňujú svojimi ostrými hlavovými ostňami a fixujú sa naň mohutnými prísavkami. Patologické zmeny zahŕňajú katarálnu až hemoragickú enteritídu, fokálne ulcerácie, stratu mikroklkov a infiltráciu sliznice zápalovými bunkami (najmä eozinofilmi). Klinicky sa u postihnutých vtákov alebo zvierat prejavuje profúznymi vodnatými hnačkami, anorexiou, výraznou stratou hmotnosti, anémiou a v závažných prípadoch u mláďat hrozí úhyn v dôsledku dehydratácie a kachexie.",
     "zoonosis": false,
-    "notes": "Má viečko",
+    "notes": "",
     "id": "echinostoma_sp_egg",
     "images": []
   },
@@ -6035,7 +6024,7 @@
     "stage": "Vajíčko",
     "group": "Trematoda",
     "micrometry": {
-      "lengthMin": 87,
+      "lengthMin": 75,
       "lengthMax": 107,
       "widthMin": 45.8,
       "widthMax": 52.8,
@@ -6047,16 +6036,17 @@
       "shell": "Dvojvrstvová, s viečkom"
     },
     "diagnosticSigns": [
-      "Operculum na jednom póle vajíčka"
+      "Oválne až elipsovité",
+      "Viac alebo menej nápedné viečko.",
+      "Často majú na opačnom póle ako je viečko (aboperkulárny koniec) mierne zhrubnutie steny alebo drobný hrbolček."
     ],
     "differentialDiagnosis": [
-      "V rámci čeľade: Cathaemasia hians",
-      "Cathaemasia longivitellata a Chaunocephalus ferox - neodlíšiteľné."
+      "V rámci čeľade: _Cathaemasia hians, Cathaemasia longivitellata a Chaunocephalus ferox, Echinostoma sp._ - neodlíšiteľné."
     ],
     "lifeCycle": "Definitívny hostiteľ (bocian) vylučuje vajíčka trusom do vody.Vo vode sa z viečka (opercula) vyliahne miracídium a napadne 1. medzihostiteľa (vodného slimáka Planorbis planorbis).V slimákovi sa vyvinú pohyblivé cerkárie, ktoré ho opustia.Cerkárie preniknú do 2. medzihostiteľa (žubrienky žiab, drobné ryby), kde sa zapuzdria na metacerkárie.Bocian zožerie nakazenú žubrienku/rybu, parazit migruje do jeho hltana a cyklus sa uzavrie.",
     "pathology": "Mechanické dráždenie: Fixáciou pomocou dvoch silných prísaviek motolica poškodzuje jemnú sliznicu hltana a pažeráka.Tkanivová reakcia: V mieste prichytenia vzniká fokálna ulcerácia (vredy) a výrazný katarálny zápal pažeráka (ezofagitída).Klinický dopad: Spôsobuje sťažené prehĺtanie potravy (dysfágiu), hromadenie hlienu, chradnutie vtákov a pri masívnej invázii môže dôjsť k úhynu, najmä u mláďat na hniezdach.",
     "zoonosis": false,
-    "notes": "V rámci čeľade sú vajíčka Cathaemasia hians, Cathaemasia longivitellata a Chaunocephalus ferox - neodlíšiteľné, preto v protokole uvádzať len ako čeľaď Echinostomatidae",
+    "notes": "V rámci čeľade sú vajíčka Echinostoma, Cathaemasia a Chaunocephalus - neodlíšiteľné, preto v protokole pri bocianoch uvádzať len ako **čeľaď Echinostomatidae**",
     "id": "echinostomatidae_egg",
     "images": []
   },
@@ -6074,43 +6064,38 @@
       "species": "Echinuria uncinata"
     },
     "hostGroups": [
-      "Vtáky"
+      "Vodné voľne žijúce vtáky",
+      "Vodná hydina"
     ],
-    "hosts": [
-      "Vodné voľne žijúce vtáky"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
     "micrometry": {
       "lengthMin": 35,
-      "lengthMax": 35,
-      "widthMin": 20,
-      "widthMax": 20,
+      "lengthMax": 38,
+      "widthMin": 19,
+      "widthMax": 21,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
       "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Malé",
-      "oválne",
-      "hrubostenné",
-      "embryonované vajíčko; typické pre čeľaď Acuariidae",
-      "parazit vodného vtáctva (husi",
-      "kačice)."
+      "Elipsovitý až oválny tvar, pravidelne symetrický, na póloch zaoblený",
+      "Nemá viečko (operculum)",
+      "Vajíčko odchádza z tela hostiteľa už embryonované – vo vnútri sa nachádza kompletne vyvinutá a stočená larva prvého štádia L1"
     ],
     "differentialDiagnosis": [
-      "Proventrikulárny spirurid vodného vtáctva",
-      "prenos perloočkami (Daphnia); podobný Dispharynx."
+      "_Amidostomum_ sp. - má vajíčka typu Strongylida – sú omnoho väčšie (cca 85 × 50 µm), tenkostenné a neembryonované (obsahujú morulu)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je dvojhostiteľový (heteroxénny). Embryonované vajíčka odchádzajú s trusom vtákov do vody. Vo vode sa neliahnu samovoľne, ale musia byť zožraté medzihostiteľom – vodnou perloočkou (Daphnia sp.). V čreve perloočky sa z vajíčka uvoľní larva (L1), penetruje do telovej dutiny kôrovca a dvakrát sa leví na infekčné štádium larvy tretieho stupňa (L3). Definitívny hostiteľ (kačica/hus) sa nakazí ingesciou (prehltnutím) infikovaných perloočiek pri filtrovaní vody. V zažívacom trakte vtáka sa larvy uvoľnia, migrujú do sliznice predžalúdka (proventriculus), kde sa dvakrát zvliekajú a dospievajú.",
+    "pathology": "Echinuria uncinata vykazuje vysokú patogenitu, predovšetkým u mladých káčat a húsat. Dospelé červy imigrujú hlboko do steny predžalúdka (proventriculus), niekedy na rozhraní so svalnatým žalúdkom. Spôsobujú tam tvorbu veľkých uzlovitých granulómov a vredov sliznice. Dochádza k závažnej deštrukcii žliaz predžalúdka, hypertrofii steny a mechanickému zúženiu (až úplnej obštrukcii) lumen predžalúdka. Vtáky trpia anorexiou, ťažkou dysfágiou (neschopnosťou prehĺtať potravu), vracaním a rýchlym chradnutím (kachexiou). Pri masívnych inváziách dochádza k perforácii steny predžalúdka a k fatálnej migrácii červov do telovej dutiny, vzdušných vakov a pľúc, čo vedie k náhlemu úhynu.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Sezónna parazitóza: Vzplanutia echinuriózy majú striktne sezónny charakter viazaný na letné mesiace. Je to spôsobené masívnym premnožením populácie medzihostiteľov (Daphnia magna) v stojatých a teplých vodách rybníkov.",
     "id": "echinuria_uncinata_egg",
     "images": []
   },
