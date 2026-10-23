@@ -5154,22 +5154,6 @@
   },
   {
     "parasiteId": "taenia_sp_egg",
-    "url": "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:00:02.718Z"
-  },
-  {
-    "parasiteId": "taenia_sp_egg",
-    "url": "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-28T20:00:02.705Z"
-  },
-  {
-    "parasiteId": "taenia_sp_egg",
     "url": "/public/images/parasites/taenia_sp_egg/taenia_sp_egg_05.webp",
     "alt": "",
     "caption": "",
@@ -5767,7 +5751,7 @@
     "parasiteId": "baylisascaris_procyonis_egg",
     "url": "/public/images/parasites/baylisascaris_procyonis_egg/baylisascaris_procyonis_egg_01.webp",
     "alt": "",
-    "caption": "",
+    "caption": "Toxocara canis (vpravo) sú veľmi podobné tvarom aj tmavou farbou, ale vajíčka T. canis sú o niečo väčšie a ich jamkovaný povrch pripomína golfovú loptičku",
     "credit": "",
     "dateAdded": "2026-09-20T19:06:09.703Z"
   },
@@ -5777,7 +5761,8 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-09-20T19:06:09.714Z"
+    "dateAdded": "2026-09-20T19:06:09.714Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "baylisascaris_transfuga_egg",
