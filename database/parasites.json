@@ -269,11 +269,10 @@
       "genus": "Alloionema",
       "species": "Alloionema appendiculatum"
     },
-    "hostGroups": [
-      "Mäkkýše",
+    "hostGroups": [],
+    "hosts": [
       "Slimáky"
     ],
-    "hosts": [],
     "hostNotes": {},
     "sample": "Sval",
     "stage": "Larva",
@@ -731,7 +730,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -1609,7 +1610,9 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -1657,7 +1660,8 @@
     "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
-      "Zubor"
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -4305,7 +4309,9 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -4566,7 +4572,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -4866,7 +4874,9 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -5353,10 +5363,10 @@
       "genus": "Dictyocaulus",
       "species": "Dictyocaulus noerneri"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vysoká zver"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -5405,7 +5415,8 @@
     "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
-      "Zubor"
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -5853,8 +5864,7 @@
     ],
     "hosts": [
       "Pes",
-      "Ošípaná",
-      "Človek"
+      "Ošípaná"
     ],
     "hostNotes": {
       "Primáty": "Larvocysta v ich pečeni rastie nekontrolovateľne, no zostáva prevažne sterilná (netvoria sa v nej protoskolexy). V strede lézie tkanivo v dôsledku ischémie nekrotizuje a vytvára sa centrálna dutina vyplnená hnisavou/kašovitou tekutinou, čo imituje pečeňový absces alebo rozpadnutý karcinóm.",
@@ -6112,9 +6122,7 @@
       "genus": "Eimeria",
       "species": "Eimeria acervulina"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -6123,10 +6131,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 17,
-      "lengthMax": 19,
-      "widthMin": 13,
-      "widthMax": 15,
+      "lengthMin": 17.7,
+      "lengthMax": 20.2,
+      "widthMin": 13.7,
+      "widthMax": 16.3,
       "unit": "µm"
     },
     "morphology": {
@@ -6135,21 +6143,20 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2). lokalizácia v prednej časti tenkého čreva (duodenum)."
+      "Priemerná veľkosť 18,3 × 14,6 µm",
+      "Na prednom zúženom póle chýba mikropyla (otvor) aj mikropylárna čiapočka.",
+      "Vo vnútri oocysty sa nenachádza žiadny zvyšok po delení (oocystové rezíduum).",
+      "Sporulovaná oocysta (infekčná): Dozrieva vo vonkajšom prostredí za prístupu kyslíka, vlhkosti a optimálnej teploty už za 13 až 17 hodín (veľmi rýchla sporulácia). Má typickú štruktúru pre rod Eimeria: obsahuje 4 sporocysty, pričom v každej sporocyste sú 2 sporozoity (celkovo 8 infekčných jedincov v jednej oocyste). Sporocysty sú predĺžené, ovoidné ( cca 12 × 6 µm) a na užšom konci majú tzv. Stiedove teliesko"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria maxima_: Je výrazne väčšia (cca 30,5 × 20,7 µm), má hrubšiu, žltkastohnedú až drsnú stenu.",
+      "_Eimeria tenella_: Je o niečo väčšia (cca 22 × 19 µm), má viac široko-ovoidný tvar a parazituje v slepých črevách (caecum), kde spôsobuje krvavú kokcidiózu.",
+      "_Eimeria mitis (16,2 × 15,5 µm)/ E. praecox (21,3 × 17,1 m)_: Majú výrazne guľovejší tvar (sférický) na rozdiel od striktne vajcovitej _E. acervulina_ (18,3 × 14,6 µm)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha bez medzihostiteľa priamym prenosom. Hostiteľ (kura) sa nakazí perorálnym príjmom (ingesciou) vysporulovanej (infekčnej) oocysty z kontaminovaného prostredia (podstielka, krmivo, voda). V svalnatom žalúdku a pôsobením žlče a trypzínu v dvanástniku dochádza k excitácii – uvoľneniu sporozoitov. Tieto invadujú do epitelových buniek dvanástnika (duodéna), kde prebieha nepohlavné rozmnožovanie (schizogónia/merogónia) vo viacerých generáciách, čím dochádza k masívnej deštrukcii enterocytov. Následne nastáva pohlavná fáza (gametogónia), kedy splynutím mikrogaméty a makrogaméty vzniká zygota. Okolo nej sa vytvorí pevná stena a vzniká nevysporulovaná oocysta, ktorá je vylučovaná trusom do vonkajšieho prostredia. Vo vonkajšom prostredí oocysta za prístupu kyslíka, optimálnej teploty a vlhkosti vysporuluje na infekčné štádium v priebehu 17 až 24 hodín. Prepatentná perióda (čas od infekcie po vylúčenie prvých oocýst) je mimoriadne krátka – len 4 dni (96 hodín).",
+    "pathology": "_Eimeria acervulina_ vykazuje strednú až vysokú patogenitu, v závislosti od infekčnej dávky. Na rozdiel od _E. tenella_ nespôsobuje masívne fatálne krvácanie, ale masívne deštruuje absorpčný povrch čreva, čo vedie k ťažkému malabsorpčnému syndrómu. Klinicky sa infekcia prejavuje výrazným znížením prírastkov hmotnosti, zhoršenou konverziou krmiva, apatiou, našuchoreným perím a dehydratáciou. Trus je vodnatý, hlienovitý, niekedy s prímesou oranžového detritu, ale bez čistej krvi. Pri sekcii (patologicko-anatomickom vyšetrení) sú lézie patognomické pre tento druh: na sliznici dvanástnika sú prítomné charakteristické priečne biele až sivobiele prúžky alebo škvrny (tzv. \"rebríčkovité\" lézie), ktoré predstavujú masívne zhluky vyvíjajúcich sa schizontov a oocýst. Pri ťažkých infekciách sliznica duodéna kompletne hrubne, dochádza k jej nekróze a črevo stráca svoju funkčnosť.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "**Biele prúžky ako biologický fenomén**: Schopnosť tohto parazita organizovať sa v epiteli čreva do paralelných bielych priečnych línií viditeľných voľným okom je unikátnym makroskopickým diagnostickým znakom v parazitológii.\nPráve kvôli vysokej prevalencii a ekonomickým stratám je oslabený (atenuovaný) kmeň _E. acervulina_ stabilnou súčasťou komerčných polyvalentných živých **vakcín** (napr. Paracox, Coccivac), ktoré sa podávajú jednodňovým kurčatám na farmách na stimuláciu celoživotnej slizničnej imunity.",
     "id": "eimeria_acervulina_oocyst",
     "images": [
       "/public/images/parasites/eimeria_acervulina_oocyst/eimeria_acervulina_oocyst_02.webp"
@@ -6157,7 +6164,9 @@
   },
   {
     "latinName": "Eimeria adenoides",
-    "synonyms": [],
+    "synonyms": [
+      "Eimeria adenoeides"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
@@ -6168,9 +6177,7 @@
       "genus": "Eimeria",
       "species": "Eimeria adenoides"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Morka"
     ],
@@ -6179,10 +6186,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 24,
-      "lengthMax": 26,
-      "widthMin": 15,
-      "widthMax": 17,
+      "lengthMin": 18.9,
+      "lengthMax": 31.3,
+      "widthMin": 12.6,
+      "widthMax": 20.9,
       "unit": "µm"
     },
     "morphology": {
@@ -6191,21 +6198,24 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 25,6 × 16,6 µm",
+      "Výrazne predĺžený, úzko elipsovitý až ovoidný (vajcovitý) tvar, s hladkým povrchom.",
+      "Index tvaru (D/Š pomerný index): Približne 1,5 – 1,6 (čo podčiarkuje jej pretiahnutý tvar)",
+      "V čerstvom truse sa nachádza nevysporulovaná oocysta, ktorá pozostáva z dvojvrstvovej, tenkej, hladkej a bezfarebnej steny, v ktorej vnútri je koncentrovaná tmavá guľovitá zygota (sporoblast) obklopená voľným čírym priestorom.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Na širšom póle oocysty sa nachádza 1 dobre viditeľná mikropyla.",
+      "Sú prítomné 1 až 3 polárne granuly (polárne telieska).",
+      "Oocystová reziduálna masa úplne chýba, zatiaľ čo sporocystová reziduálna masa je prítomná vo forme jasných granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria meleagrimitis_: Menšia (cca 19 × 16 µm), tvar je subsférický až široko ovoidný, parazituje najmä v dvanástniku a jejune. Nemá tak výrazne pretiahnutý tvar.",
+      "_Eimeria dispersa_: Stredne veľká (cca 23 × 21 µm), široko ovoidná až guľovitá, nemá polárnu granulu a vykazuje nízku patogenitu v tenkom čreve.",
+      "_Eimeria gallopavonis_: Rozmermi veľmi blízka (cca 27 × 17 µm) a tiež elipsovitá, parazituje v ileu a rekte. Diferenciácia čisto podľa oocysty je extrémne náročná a vyžaduje molekulárnu diagnostiku (PCR) alebo posúdenie presnej patológie čreva. Novšie fylogenetické a taxonomické revízie diskutujú o tom, či nejde o synonymum _E. adenoides_"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha bez účasti medzihostiteľa (priamy cyklus). Morka sa nakazí orálnym príjmom vysporulovanej oocysty z prostredia (podstielka, krmivo). V tráviacom trakte pôsobením mechanických faktorov a enzýmov dochádza k vycestovaniu sporozoitov, ktoré prenikajú do buniek črevného epitelu (enterocytov) v slepých črevách a rekte. Tu prebieha intenzívne nepohlavné množenie (schizogónia/merogónia) v minimálne dvoch generáciách, ktoré masívne ničí sliznicu čreva. Nasleduje pohlavná fáza (gametogónia), pri ktorej vznikajú mikrogaméty a makrogaméty, ktorých splynutím vzniká zygota. Po sformovaní obalu sa nevysporulované oocysty vylučujú trusom do vonkajšieho prostredia. Vo vonkajšom prostredí pri dostatočnej teplote (20–25 °C), vlhkosti a prístupe kyslíka oocysta vysporuluje do infekčného štádia už za 18 až 24 hodín. Prepatentná perióda trvá približne 4,5 až 5 dní (cca 108–114 hodín).",
+    "pathology": "Eimeria adenoides patrí spolu s E. meleagrimitis k najpatogénnejším kokcídiám moriek. Postihuje najmä mladé morčatá vo veku do 4 až 6 týždňov. Klinicky sa prejavuje ťažkou depresiou, hlukom sprevádzaným húfovaním (chladom), apatiou, našuchoreným perím a rýchlym chradnutím. Typickým príznakom je tekutá, hlienovitá až vodnatá hnačka, v ktorej sa často nachádzajú kusy zlúpanej črevnej sliznice (oranžovo-biele hlienové častečky), ojedinele s prímesou krvi. Pri sekcii nachádzame masívne patologické zmeny v slepých črevách a rekte: stena čreva je výrazne zhrubnutá, edematózna a lumen čreva je vyplnený charakteristickým syrovitým (kazeóznym) alebo hlienovo-hnisavým belavým odliatkom (detritom). Úmrtnosť v neliečených chovoch u mladých jedincov môže dosiahnuť až 100 %.",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "Oocysty tohto druhu dokážu v podstielke hlbokých maštalí prežívať dlhé mesiace a vykazujú extrémnu rezistenciu voči bežným dezinfekčným prostriedkom na báze chlóru či kyselín; efektívne sú len špecifické krezolové dezinfekčné preparáty alebo termická asanácia (plameň, horúca para).",
     "id": "eimeria_adenoides_oocyst",
     "images": []
   },
@@ -6233,9 +6243,9 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 29,
-      "lengthMax": 37,
-      "widthMin": 17,
-      "widthMax": 28,
+      "lengthMax": 44,
+      "widthMin": 20,
+      "widthMax": 29,
       "unit": "µm"
     },
     "morphology": {
@@ -6244,22 +6254,22 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Priemerná veľkosť 34 x 22 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 36 × 24 µm",
+      "Pretiahnutý elipsovitý, k pólu zúžený tvar",
+      "Hladká, žltohnedá stena, **výrazná kupolovitá čiapočka**",
+      "Čerstvý trus obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, pomerne hrubý, zložený z dvoch vrstiev a má žltohnedé až svetlo jantárové sfarbenie. Vo vnútri sa nachádza tmavá, zrnitá, guľovitá zygota (sporoblast), ktorá nevyplňuje celý vnútorný priestor oocysty a zanecháva na póloch voľné miesto.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Na užšom póle oocysty sa nachádza výrazná, dobre viditeľná mikropyla, ktorá je prekrytá veľkou, kupolovitou polárnou čiapočkou (polárna granula/čiapočka). Oocystová reziduálna masa chýba, ale sporocystová reziduálna masa je prítomná ako zhluky drobných granúl medzi sporozoitmi."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria crandallis_: Podstatne menšia (cca 22 × 19 µm), subsférická až široko ovoidná. Je bezfarebná, má malú nenápadnú čiapočku, chýba jej výrazne pretiahnutý tvar _E. ahsata_.",
+      "_Eimeria bakuensis_ (syn. _E. ovina_): Rozmerovo veľmi blízka (cca 27 × 20 µm), elipsovitá s polárnou čiapočkou. Rozlišuje sa detailným meraním (dĺžka _E. bakuensis_  zriedka presiahne 33 µm, zatiaľ čo _E. ahsata_ bežne dosahuje nad 36–40 µm).",
+      "_Eimeria intricata_: Je jedinečný megadruh ovčích kokcídií. Je ešte výrazne väčšia než _E. ahsata_ (meria až 47 × 35 µm), má extrémne hrubú, tmavohnedú, výrazne rýhovanú/priečne štruktúrovanú stenu a obrovskú polárnu čiapočku, takže zámena hrozí len pri nepozornom prehliadnutí textúry obalu."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha priamou cestou fekálno-orálnym prenosom. Jahňa skonzumuje s kontaminovanou pasienkovou trávou alebo znečisteným krmivom/vodou vysporulovanú oocystu. V tenkom čreve prebieha excitácia sporozoitov, ktoré penetrujú do buniek črevného epitelu (enterocytov), lokalizovaných prevažne v strednej a zadnej časti tenkého čreva (jejunum, ileum). Tu prebieha nepohlavná fáza replikácie (schizogónia), kedy sa parazit masívne namnoží a deštruuje okolité bunky. Nasleduje pohlavná fáza (gametogónia), formovanie zygoty a sekrécia ochranného obalu. Nevysporulované oocysty odchádzajú s trusom von z tela hostiteľa. V prostredí pri optimálnej vlhkosti a teplote oocysta vysporuluje na infekčné štádium približne za 36 až 72 hodín. Prepatentná perióda sa pohybuje v rozmedzí 18 až 21 dní.",
+    "pathology": "Eimeria ahsata je považovaná (spolu s E. ovinoidalis a E. crandallis) za jeden z najpatogénnejších druhov u oviec. Vyvoláva klinickú formu kokcidiózy, postihujúcu predovšetkým jahňatá vo veku 1 až 4 mesiace po odstave alebo pri prechode na pastvu. Klinické príznaky zahŕňajú akútnu, úpornú vodnatú až tmavú dechtovú hnačku (niekedy s prímesou krvi alebo hlienu), slabosť, chradnutie, inapetenciu a ťažkú dehydratáciu. Pri patologicko-anatomickom (sekčnom) vyšetrení je sliznica jejuna a ilea výrazne zhrubnutá, prekvená (hyperemická) s petechiami. Na sliznici tenkého čreva sú makroskopicky viditeľné belavé až žltkasté uzlíky alebo plaky (veľkosti špendlíkovej hlavičky), ktoré predstavujú masívne zhluky schizontov a oocýst v črevných klkoch. Pri masívnej infekcii dochádza k totálnemu obnaženiu sliznice (denudácii) a úhynu zvieraťa.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Staršie ovce fungujú ako asymptomatickí nosiči (rezervoáre). Vylučujú nízke počty oocýst, čím kontinuálne znečisťujú pastviny, no samy neochorejú vďaka stabilnej, vekom získanej slizničnej imunite.\nNález obrovského množstva oocýst _E. ahsata_ v truse nemusí vždy korelovať s akútnym stavom, nakoľko najťažšie patologické zmeny a úhyny jahniat sa často odohrávajú na konci schizogónie – t.j. tesne predtým, než sa oocysty masovo objavia v truse (počas klinického vrcholu hnačky môže byť počet oocýst na gram trusu - OPG - paradoxne nízky).",
     "id": "eimeria_ahsata_oocyst",
     "images": []
   },
@@ -6276,44 +6286,44 @@
       "genus": "Eimeria",
       "species": "Eimeria alabamensis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 16,
-      "lengthMax": 24,
-      "widthMin": 12,
-      "widthMax": 16,
+      "lengthMin": 13,
+      "lengthMax": 25,
+      "widthMin": 11,
+      "widthMax": 17,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Hruškovitý",
+      "shape": "Vajcovitý",
       "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
+      "shell": "Tenký"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 18,9 × 13,4 µm",
+      "Typicky asymetricky ovoidný (vajcovitý) až elipsovitý tvar",
+      "Čerstvo pasírovaný trus obsahuje nevysporulované oocysty. Stena oocysty je extrémne hladká, veľmi tenká, priesvitná (bezfarebná až jemne žltkastá) a zložená z jednej vrstvy (niektoré zdroje uvádzajú dve tesne priliehajúce vrstvy, no pod mikroskopom pôsobí jednovrstvovo). Vo vnútri sa nachádza homogénna, tmavá, zrnitá zygota (sporoblast), ktorá takmer kompletne vypĺňa lumen oocysty.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Mikropyla úplne chýba. Polárna granula (polárne teliesko) chýba, prípadne je prítomná len zriedkavo vo forme nepatrnej bodky. Oocystová reziduálna masa chýba, zatiaľ čo sporocystová reziduálna masa je prítomná ako malý zhluk tmavých granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria subspherica_: Najmenšia kokcídia dobytka (cca 11 × 10 µm), tvar je takmer dokonale guľovitý (sférický) a je úplne apatogénna.",
+      "_Eimeria zuernii_: Podobná veľkosť (cca 18 × 16 µm), ale tvar je výrazne subsférický až guľovitý a stena je o niečo hrubšia. Spôsobuje ťažkú hemoragickú kokcidiózu najmä v maštaliach.",
+      "_Eimeria ellipsoidalis_: Rozmermi veľmi blízka (cca 23 × 16 µm), avšak jej tvar je čisto elipsovitý (symetrický) bez zúženia na jednom póle a lokalizuje sa výhradne v cytoplasme buniek, nie v jadre."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus E. alabamensis vykazuje zásadnú biologickú anomáliu: na rozdiel od drvivej väčšiny kokcídií, ktoré sa vyvíjajú v cytoplasme enterocytov, tento druh preniká priamo do jadier (intranukleárne) epitelových buniek črevných klkov v zadnej časti tenkého čreva (ileum). Teľa sa nakazí perorálnym príjmom vysporulovaných oocýst z infikovaného pasienku (parazit dokáže vynikajúco prezimovať na tráve). Po excitácii sporozoity preniknú do jadier enterocytov, kde prebieha nepohlavné množenie (schizogónia/merogónia). Následná pohlavná fáza (gametogónia) vedie k deštrukcii bunkových jadier, formovaniu zygoty a vylučovaniu nevysporulovaných oocýst trusom. Vo vonkajšom prostredí oocysta vysporuluje na infekčné štádium extrémne rýchlo – už za 24 až 48 hodín pri optimálnej teplote a vlhkosti. Prepatentná perióda je mimoriadne krátka, trvá len 6 až 8 dní (pri iných druhoch je to 15–21 dní).",
+    "pathology": "Eimeria alabamensis vykazuje strednú patogenitu, avšak kvôli masívnemu vnútrojadrovému parazitizmu v tenkom čreve vyvoláva vážne systémové narušenie trávenia. Ochorenie postihuje typicky mladý dobytok (teľatá a ročky) 1 až 2 týždne po vyhnaní na trvalé pastviny na jar. Masívna deštrukcia klkov tenkého čreva vedie k náhlemu prepuknutiu profúznej, vodnatej, žltozelenej až sivej hnačky, ktorá je sprevádzaná apatiou, inapetenciou, výraznou dehydratáciou, bolesťami brucha (tenezmy) a extrémnym úbytkom hmotnosti (teľatá môžu stratiť až 15–20 kg za tri týždne). Úmrtnosť (mortalita) je spravidla nízka, no ekonomické straty z dôvodu zastavenia rastu a kachexie sú obrovské. Pri sekcii nachádzame katarálny zápal sliznice ilea, ktorej klky sú atrofované, zliate a pokryté hlienovitým exsudátom.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "**Unikátny vnútrojadrový parazitizmus**: Umiestnenie schizontov a gamontov priamo v jadre (nukleu) hostiteľskej bunky je v rámci rodu Eimeria u cicavcov raritou a spôsobuje okamžitú smrť a lýzu zasiahnutej bunky, čo vysvetľuje rýchly nástup klinických príznakov.",
     "id": "eimeria_alabamensis_oocyst",
     "images": [
       "/public/images/parasites/eimeria_alabamensis_oocyst/eimeria_alabamensis_oocyst_01.webp"
@@ -6332,21 +6342,20 @@
       "genus": "Eimeria",
       "species": "Eimeria alijevi"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Koza"
+      "Koza",
+      "Kozorožec"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 16,
-      "lengthMax": 17,
-      "widthMin": 14,
-      "widthMax": 15,
+      "lengthMin": 16.5,
+      "lengthMax": 17.2,
+      "widthMin": 14.5,
+      "widthMax": 15.2,
       "unit": "µm"
     },
     "morphology": {
@@ -6355,21 +6364,21 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 17 × 15 µm",
+      "Široko elipsovitý, subsférický až takmer guľovitý tvar. Obidva póly oocysty sú rovnomerne zaoblené, tvar je symetrický.",
+      "Čerstvo pasírovaný trus obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, tenký, homogénny a bezfarebný až svetlo žltkastý, zložený z dvoch jemných vrstiev. Vo vnútri oocysty sa nachádza tmavá, jemne granulovaná guľovitá zygota (sporoblast), ktorá vypĺňa väčšinu lumenu, no necháva úzke voľné pásmo pod stenou.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Mikropyla úplne chýba. Polárna granula (polárne teliesko) je spravidla prítomná (zvyčajne jedna, dobre viditeľná). Oocystová reziduálna masa chýba, zatiaľ čo sporocystová reziduálna masa je prítomná vo forme malého, kompaktného zhluku granúl medzi sporozoitmi."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria ninakohlyakimovae_: Podobný tvar, ale je viditeľne väčšia (cca 21 × 15 µm), jej stena je na jednom póle mierne stenčená a patrí k najpatogénnejším druhom u kôz, zatiaľ čo _E. alijevi_ je málo patogénna.",
+      "_Eimeria hirci_: Je o niečo väčšia (cca 21 × 16 µm), má oválnejší/ovoidnejší tvar a jej oocysty vykazujú mierne vyšší index tvaru (sú pretiahnutejšie).",
+      "_Eimeria parva_: Tento druh parazituje výhradne u oviec. Má takmer identickú veľkosť (17 × 14 µm) a tvar. Odlíšenie oocýst _E. alijevi_ od _E. parva_ je čisto morfologicky nemožné; kľúčom k druhovému určeniu je druh hostiteľa (koza vs. ovca) kvôli rigidnej hostiteľskej špecifickosti."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus prebieha priamou cestou bez účasti medzihostiteľa. Koza sa nakazí ingesciou (prehltnutím) vysporulovanej oocysty s kontaminovaným krmivom, vodou alebo zo znečistenej srsti vemena matky. V lumen tenkého a následne hrubého čreva dochádza k excystácii sporozoitov, ktoré invadujú do enterocytov sliznice. Prebieha tu endogénna fáza nepohlavného množenia (schizogónia/merogónia) a následne pohlavná fáza (gametogónia). Po oplodnení makrogaméty vzniká nevysporulovaná oocysta, ktorá odchádza trusom von z tela. V prostredí za prístupu kyslíka a optimálnej vlhkosti vysporuluje do infekčného štádia v priebehu 48 až 72 hodín. Prepatentná perióda trvá približne 11 až 15 dní.",
+    "pathology": "_Eimeria alijevi_ vykazuje veľmi nízku patogenitu (je považovaná za takmer apatogénny druh). Monoinfekcia týmto druhom zriedka vyvolá klinické príznaky ochorenia, a to aj pri relatívne vysokom počte oocýst v truse (OPG). Ak sa však vyskytne u oslabených kozliat po odstave alebo v kombinácii s vysoko patogénnymi druhmi (ako E. ninakohlyakimovae alebo E. arloingi), prispieva k celkovému malabsorpčnému syndrómu. Klinicky sa zmiešaná kokcidióza prejavuje prechodným hnačkovým stavom (trus je mäkký, kašovitý, málokedy vodnatý a bez krvi), zníženým apetítom a miernym zaostávaním v raste. Patologicko-anatomické zmeny na čreve sú pri izolovanej infekcii _E. alijevi_ mikroskopicky zanedbateľné.",
     "zoonosis": false,
-    "notes": "U kôz",
+    "notes": "**Biologický indikátor čistoty**: Vysoký nález oocýst _E. alijevi_ pri nulových klinických príznakoch v stáde indikuje, že zvieratá sú v dobrej kondícii a majú vybudovanú stabilnú imunitu, no zároveň upozorňuje na manažmentové nedostatky v hygiene ustajnenia (zvýšená fekálna kontaminácia prostredia).",
     "id": "eimeria_alijevi_oocyst",
     "images": [
       "/public/images/parasites/eimeria_alijevi_oocyst/eimeria_alijevi_oocyst_01.webp"
@@ -6397,33 +6406,32 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 22,
-      "lengthMax": 26,
-      "widthMin": 14,
-      "widthMax": 17,
+      "lengthMin": 19.8,
+      "lengthMax": 22.5,
+      "widthMin": 14.4,
+      "widthMax": 16.2,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
       "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
+      "shell": "Tenký"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 21 × 15 µm",
+      "Premenlivý, najčastejšie oválny (ovoidný) s mierne zašpicatenými oboma pólmi, prípadne subsférický až elipsovitý tvar.",
+      "V čerstvom truse veverice sa vylučuje nevysporulovaná oocysta. Obal (stena oocysty) je hladký, tenký, svetlý (bezfarebný) a je zložený z jednej vrstvy. Vo vnútri sa nachádza tmavšia guľovitá zygota (sporoblast).",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Mikropyla úplne chýba. Polárna granula (polárne teliesko) chýba. Oocystová reziduálna masa je prítomná (dôležitý rozlišovací znak)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria sciurorum_: Najčastejší druh (prevalencia až 66 %). Oocysty sú o niečo väčšie (cca 28 × 19 µm), majú elipsovitý tvar, ale stena je dvojvrstvá a nemá oocystovú reziduálnu masu, zatiaľ čo _E. andrewsi_ ju má.",
+      "_Eimeria mira_: Druh s charakteristickým hruškovitým (piriformným) tvarom oocysty (cca 34 × 22 µm), hrubou, drsnou, žltohnedou stenou a výraznou mikropylou na póle, čo ju okamžite odlišuje od hladkej a bezmikropylovej _E. andrewsi_."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývin prebieha priamou cestou fekálno-orálnou transmisiou (bez medzihostiteľa). Veverica sa nakazí prehltnutím vysporulovanej oocysty z prostredia (kôra stromov znečistená trusom, hniezda, krmítka). V tenkom čreve dochádza k excystácii sporozoitov, ktoré penetrujú do buniek črevného epitelu. Prebieha endogénna fáza nepohlavného množenia (schizogónia) spojená s lýzou enterocytov, po ktorej nasleduje pohlavné štádium (gametogónia). Výsledné nevysporulované oocysty odchádzajú s trusom. V prostredí za prístupu kyslíka a vlhkosti oocysta vysporuluje na infekčné štádium. Prepatentná perióda nie je pre tento špecifický druh exaktne stanovená, no u príbuzných hlodavčích kokcídií sa pohybuje medzi 5 až 7 dňami.",
+    "pathology": "Eimeria andrewsi vykazuje nízku až strednú patogenitu. U dospelých voľne žijúcich veveríc prebieha infekcia spravidla asymptomaticky (subklinicky) bez zjavných makroskopických zmien, pričom parazit prispieva k prirodzenej parazitárnej záťaži populácie. K rozvoju klinickej kokcidiózy dochádza primárne u mladých veveričiat (včat) alebo u jedincov v zajatí/stresových podmienkach (záchranné stanice). Prejavuje sa apatiou, hnačkou (niekedy s hlienom) a stratou kondície. Pri masívnej infekcii dochádza k deskvamácii epitelu tenkého čreva a katarálnemu enteritickému zápalu, čo u mláďat môže prispieť k úhynu.",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "Ekologické štúdie u divých populácií veveríc na britských ostrovoch a v strednej Európe preukázali zaujímavú pozitívnu interakciu medzi _E. sciurorum_ a_ E. andrewsi_ – veverice sú veľmi často nakazené oboma týmito druhmi súčasne bez toho, aby si parazity konkurovali v črevnom prostredí.",
     "id": "eimeria_andrewsi_oocyst",
     "images": []
   },
@@ -6440,9 +6448,7 @@
       "genus": "Eimeria",
       "species": "Eimeria anseris"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hus"
     ],
@@ -6451,33 +6457,33 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 16,
-      "lengthMax": 23,
-      "widthMin": 13,
-      "widthMax": 18,
+      "lengthMin": 19,
+      "lengthMax": 26,
+      "widthMin": 15,
+      "widthMax": 21,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Hruškovitý",
+      "shape": "Vajcovitý",
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 22,5 × 17,5 µm",
+      "Premenlivý, najčastejšie oválny (ovoidný) s mierne zašpicatenými oboma pólmi, prípadne subsférický až elipsovitý tvar",
+      "Čerstvo pasírovaný trus obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, pomerne tenký, číry, svetložltého až žltozeleného odtieňa a skladá sa z dvoch vrstiev. Vo vnútri sa nachádza tmavá, zrnitá guľovitá zygota (sporoblast), ktorá vypĺňa stred oocysty a zanecháva voľný priestor najmä pod pólmi.",
+      "Vysporulovaná oocysta vykazuje konfiguráciu 1:4:2 – obsahuje 4 sporocysty, pričom v každej sporocyste sú prítomné 2 sporozoity.",
+      "Na užšom póle sa nachádza dobre viditeľná mikropyla, ktorá je sploštená alebo len mierne klenutá, chýba však masívna polárna čiapočka (polar cap). Polárna granula je prítomná. Oocystová reziduálna masa chýba, ale sporocystová reziduálna masa je prítomná vo forme zhluku jemných granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria truncata_: Druh parazitujúci výhradne v obličkách husí. Jej oocysty sa však vylučujú rovnako trusom (prostredníctvom kloaky). Sú o niečo väčšie (cca 24 × 17 µm), majú prísne hruškovitý tvar a ich mikropyla je na póle zakrytá výrazným, ostro ohraničeným uzáverom, čo ju odlišuje od črevnej _E. anseris_.",
+      "_Eimeria nocens_: Výrazne väčší megadruh (cca 31 × 22 µm). Má masívnu, hrubú, rýhovanú a tmavohnedú stenu oocysty, ktorá pripomína skôr kokcídie prežúvavcov, zámena kvôli rozmerom nehrozí.",
+      "_Tyzzeria perniciosa_: Parazituje primárne u kačíc, no pri zámene hydiny v diagnostike je dôležité vedieť, že rod Tyzzeria po vysporulovaní neobsahuje sporocysty, ale 8 voľných sporozoitov priamo v oocyste."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha bez medzihostiteľa. Húsatá sa nakazia perorálnym príjmom (ingesciou) vysporulovaných infekčných oocýst z kontaminovanej podstielky, výbehu alebo vodnej hladiny. V lumen čreva sa uvoľnia sporozoity, ktoré prenikajú do epitelových buniek krýpt a lamina propria v jejune a ileu. Prebiehajú dve generácie nepohlavného množenia (merogónia/schizogónia), pričom každá generácia merontov deštruuje enterocyty. Okolo 5. dňa po infekcii začína pohlavná fáza (gametogónia), kedy splývajú mikrogaméty a makrogaméty za vzniku zygoty. Nevysporulované oocysty sa začínajú objavovať v truse na 7. deň po infekcii (prepatentná perióda trvá 7 dní / 168 hodín). V prostredí oocysta vysporuluje do infekčného štádia za 24 až 48 hodín pri optimálnej vlhkosti a teplote.",
+    "pathology": "_Eimeria anseris_ vykazuje vysokú patogenitu a je hlavným pôvodcom akútnej enterálnej kokcidiózy húsat vo veku od 2 týždňov do 3 mesiacov. Masívny zápal postihuje celé tenké črevo. Klinicky sa ochorenie prejavuje náhlou apatiou, zhlukovaním húsat (hľadanie tepla), výraznou slabosťou nôh, nechutenstvom a profúznou, hlienovitou až masívnou krvavou hnačkou. Úmrtnosť môže v neliečených kŕdľoch dosiahnuť 60–80 %. Pri sekcii nachádzame akútny katarálny až hemoragický zápal sliznice jejuna a ilea. Črevná stena je zhrubnutá, edematózna a sliznica je pokrytá červenkastým hlienom alebo plátmi odlúpeného epitelu s drobnými petechiami (krvácaninami).",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Na rozdiel od väčšiny iných aviárnych kokcídií, ktoré parazitujú výhradne v cytoplasme epitelu, vývinové štádiá _E. anseris_ sa dokážu príležitostne lokalizovať aj priamo v jadrách hostiteľských buniek (intranukleárne) sliznice a lamina propria, čo urýchľuje nekrózu tkaniva.",
     "id": "eimeria_anseris_oocyst",
     "images": []
   },
@@ -6494,21 +6500,20 @@
       "genus": "Eimeria",
       "species": "Eimeria arloingi"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Koza"
+      "Koza",
+      "Kozorožec"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 17,
-      "lengthMax": 42,
-      "widthMin": 13,
-      "widthMax": 27,
+      "lengthMin": 27,
+      "lengthMax": 28,
+      "widthMin": 18,
+      "widthMax": 19,
       "unit": "µm"
     },
     "morphology": {
@@ -6517,21 +6522,21 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 28 × 19 µm",
+      "Široko elipsovitý až oválny (ovoidný) tvar, na užšom póle mierne sploštený alebo zúžený.",
+      "Čerstvý trus obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, pomerne hrubý, žltkastý až svetlohnedý, zložený z dvoch vrstiev. Vo vnútri sa nachádza tmavá, guľovitá zygota (sporoblast), ktorá nevyplňuje celý objem oocysty.",
+      "Vysporulovaná oocysta obsahuje 4 sporocysty, v každej z nich sa nachádzajú 2 sporozoity (konfigurácia 1:4:2)",
+      "Mikropyla úplne chýba. Na užšom póle je však prítomná veľmi nápadná, hladká a zreteľne ohraničená polárna čiapočka (polar cap), pod ktorou sa často nachádza polárna granula. Oocystová reziduálna masa chýba, zatiaľ čo sporocystová reziduálna masa je dobre vyjadrená."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria christenseni_: Patrí k najväčším druhom u kôz (až 30–40 µm), má veľmi hrubú, hnedú, výrazne rýhovanú/pórovitú stenu a tiež polárnu čiapočku, čím sa odlišuje od hladkého obalu _E. arloingi_.",
+      "_Eimeria hirci_: Je o niečo menšia (cca 21 × 16 µm), má jemnejšiu polárnu čiapočku a oválnejší tvar.",
+      "_Eimeria ninakohlyakimovae_: Rozmerovo veľmi blízka (cca 21 × 15 µm), ale nemá polárnu čiapočku ani mikropyle (je hladká na oboch póloch) a patrí k najpatogénnejším druhom vôbec."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je priamy (monoxénny). Koza sa nakazí perorálnym príjmom vysporulovanej oocysty z kontaminovaného prostredia (podstielka, krmivo, vemeno matky). V tenkom čreve sa uvoľnia sporozoity, ktoré invadujú do epitelu jejuna a ilea. E. arloingi je známa tvorbou obrovských makromerontov (tzv. makromeronty I. generácie), ktoré rastú v hlbších vrstvách sliznice a spôsobujú tvorbu makroskopických uzlíkov. Nasleduje gametogónia a vylučovanie nevysporulovaných oocýst trusom. Prepatentná perióda trvá 16 až 18 dní. Vo vonkajšom prostredí oocysta vysporuluje do infekčného štádia za 2 až 3 dni v závislosti od teploty.",
+    "pathology": "_Eimeria arloingi_ je spolu s _E. ninakohlyakimovae_ hlavným pôvodcom závažnej klinickej kokcidiózy kozliat vo veku 1 až 5 mesiacov. Patogenita je mimoriadne vysoká. V počiatočných fázach schizogónie sa v sliznici jejuna a ilea vytvárajú biele až žltkasté uzlíky (noduly) veľkosti špendlíkovej hlavičky. Pri masívnej infekcii dochádza k deštrukcii črevných klkov, vzniku ťažkého katarálneho až hemoragického enteritického západu, edému a hromadeniu tekutín v čreve. Klinicky sa stav prejavuje profúznou, často krvavou hnačkou, dehydratáciou, stratou hmotnosti, vyčerpaním a vysokým úhynom neliečených kozliat.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Na rozdiel od väčšiny iných druhov, poškodenie čreva pri _E. arloingi_ zanecháva pri pitevnom vyšetrení v tenkom čreve typický zrnitý vzhľad bieleho nodulárneho výsevu, ktorý sa dá zameniť napríklad s parazitárnou tuberkulózou alebo listeriózou.",
     "id": "eimeria_arloingi_oocyst",
     "images": [
       "/public/images/parasites/eimeria_arloingi_oocyst/eimeria_arloingi_oocyst_03.webp"
@@ -6550,44 +6555,43 @@
       "genus": "Eimeria",
       "species": "Eimeria aspheronica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Koza"
+      "Koza",
+      "Kozorožec"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 32,
-      "widthMin": 22,
-      "widthMax": 24,
+      "lengthMin": 29,
+      "lengthMax": 31,
+      "widthMin": 21,
+      "widthMax": 23,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly až oválny",
+      "shape": "Oválny až eliptický",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 29 × 21 µm",
+      "Symetricky oválny (ovoidný) až elipsovitý tvar.",
+      "Čerstvý trus kôz obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, tenký, jednovrstvový (výnimočný znak, väčšina druhov má 2 vrstvy) a jeho sfarbenie prechádza od svetlozelenkastej, cez svetložltú až po jemne žlto-ružovú. Tmavá, zrnitá zygota (sporoblast) vypĺňa stredný priestor.",
+      "Vysporulovaná oocysty obsahuje 4 sporocysty, v každej z nich sa nachádzajú 2 sporozoity (konfigurácia 1:4:2)",
+      "Na užšom póle je prítomná mikropyla (šírka 2,0 – 3,0 µm). Polárna čiapočka (polar cap) úplne chýba (otvor mikropyly je voľný). Polárna granula (polárne teliesko) je prítomná. Oocystová reziduálna masa chýba, ale na zahrotenom póle sporocýst je vyvinuté výrazné Stiedovo teliesko (Stieda body) a sporocystová reziduálna masa."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria ninakohlyakimovae_: Rozmerovo menšia (cca 21 × 15 µm), elipsovitá, jej mikropyla je extrémne nevýrazná (niekedy popisovaná ako chýbajúca, len so stenčeným pólom steny), pričom jej obal je striktne dvojvrstvový. Je vysoko patogénna.",
+      "_Eimeria arloingi_/ _E. christenseni_: Sú to veľké oocysty, ktoré majú rovnako dobre vyvinutú mikropylu, avšak u oboch druhov je mikropyla prekrytá masívnou, výraznou polárnou čiapočkou, ktorá u _E. aspheronica_ úplne chýba.",
+      "_Eimeria caprina_: Rozmermi veľmi blízka (cca 32 × 22 µm), široko elipsovitá až ovoidná, stena je však hladká, dvojvrstvová a mikropyla je sotva badateľná, bez polárnej granuly."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus prebieha bez účasti medzihostiteľa (priamy cyklus). Koza sa nakazí ingesciou (prehltnutím) vysporulovanej infekčnej oocysty. V lumen tenkého čreva (najmä v jejune) sa uvoľnia sporozoity, ktoré prenikajú hlboko do sliznice. Prvá generácia schizontov (merontov) sa vyvíja atypicky v lamina propria a prípadne v submukóze čreva, kde dosahuje obrovské rozmery (makroschizonty veľkosti až 125 × 82 µm). Druhá generácia schizontov a následná pohlavná fáza (gametogónia) prebiehajú už klasicky v enterocytoch epitelu tenkého čreva a slepého čreva (caeca). Po oplodnení makrogaméty vzniká nevysporulovaná oocysta vylučovaná trusom. V prostredí za prístupu kyslíka a optimálnej teploty (24 – 26 °C) oocysta vysporuluje do infekčného štádia za 48 až 90 hodín. Prepatentná perióda trvá približne 20 dní.",
+    "pathology": "_Eimeria aspheronica_ vykazuje strednú patogenitu. Vzhľadom na to, že obrie schizonty I. generácie deštruujú lamina propria a submukózu, vyvolávajú lokálny katarálny až hemoragický zápal čreva ešte predtým, ako sa parazit začne pohlavne množiť a vylučovať oocysty. Klinicky sa masívna infekcia prejavuje u kozliat hnačkou (trus je hlienovitý, redší, len ojedinele s prímesou krvi), apatiou, dehydratáciou a spomalením prírastkov. Pri patologicko-anatomickom vyšetrení sa v jejune nachádzajú drobné belavé uzlíky (lézie) s priemerom 1 – 3 mm, sprevádzané lokálnym prekrvením (kongesciou) a zmenami na regionálnych mezenteriálnych lymfatických uzlinách, ktoré bývajú edematózne a hemoragické.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Na Slovensku patrí medzi menej frekventované, no potvrdené druhy v extenzívnych a ekologických chovoch kôz.",
     "id": "eimeria_aspheronica_oocyst",
     "images": [
       "/public/images/parasites/eimeria_aspheronica_oocyst/eimeria_aspheronica_oocyst_02.webp"
@@ -6606,9 +6610,7 @@
       "genus": "Eimeria",
       "species": "Eimeria asymmetrica"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -6617,10 +6619,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 28,
-      "lengthMax": 30,
-      "widthMin": 16,
-      "widthMax": 18,
+      "lengthMin": 25,
+      "lengthMax": 32.6,
+      "widthMin": 17,
+      "widthMax": 22.4,
       "unit": "µm"
     },
     "morphology": {
@@ -6629,21 +6631,21 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 29 × 19,5 µm",
+      "Typicky asymetrický elipsovitý až ovoidný (vajcovitý) tvar. Jedna strana (longitudinálna krivka) oocysty je viditeľne viac sploštená alebo preliačená než druhá, čo jej dodáva **charakteristický zakrivený, obličkovitý alebo asymetrický profil**.",
+      "Čerstvý trus jelenej zveri obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, stredne hrubý, žltkastý až žltohnedý, zložený z dvoch zreteľných vrstiev. Vo vnútri sa nachádza tmavá, zrnitá, guľovitá zygota (sporoblast), ktorá kvôli asymetrii obalu zanecháva nerovnomerné voľné priestory pod stenami.",
+      "Vysporulovaná oocysty obsahuje 4 sporocysty, pričom v každej z nich sú umiestnené 2 sporozoity.",
+      "Na užšom póle sa nachádza dobre viditeľná mikropyla. Polárna granula (polárne teliesko) býva prítomná. Oocystová reziduálna masa chýba, ale sporocystová reziduálna masa je vyvinutá vo forme tmavých granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria austriaca_: Je o niečo väčšia (cca 35 × 22 µm), no jej tvar je striktne symetricky elipsovitý bez akéhokoľvek sploštenia strán, stena je hrubšia a má výraznejšiu hnedú farbu.",
+      "_Eimeria cervi_: Výrazne odlišná, menšia (cca 20 × 12 µm), má hruškovitý (piriformný) tvar a zúžený pól.",
+      "_Eimeria elaphi_: Rozmermi o niečo menšia (cca 17 × 13 µm), subsférická (takmer guľovitá), stena je bezfarebná a hladká."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha priamou cestou bez účasti medzihostiteľa. Jeleň sa nakazí perorálnym príjmom (ingesciou) vysporulovaných infekčných oocýst, najčastejšie pri spásaní kontaminovanej vegetácie v okolí krmovísk a hydrografickej siete (kaluže, napájadlá), kde sa zver koncentruje. V tenkom čreve dochádza k excystácii a uvoľnené sporozoity invadujú do epitelových buniek (enterocytov) sliznice. Prebieha endogénna fáza nepohlavného množenia (schizogónia/merogónia), nasledovaná pohlavnou fázou (gametogónia) v bunkách tenkého čreva. Výsledné nevysporulované oocysty odchádzajú trusom do prostredia. Vo vonkajšom prostredí za prístupu kyslíka a vlhkosti oocysta vysporuluje do infekčného štádia v priebehu 48 až 72 hodín. Prepatentná perióda sa odhaduje na 12 až 15 dní.",
+    "pathology": "Eimeria asymmetrica vykazuje nízku až strednú patogenitu. U dospelých jedincov vo voľnej prírode prebieha infekcia spravidla asymptomaticky (latentne) a zviera funguje ako rezervoár. Problém nastáva pri vysokej hustote zveri vo zverniciach, počas tuhých zím na krmoviskách, alebo u tohtoročných balených teliat (kolouchov), kde stres a nutričný deficit aktivujú klinickú formu kokcidiózy. Prejavuje sa prechodnou kašovitou až tmavou vodnatou hnačkou, apatiou, zníženou kvalitou srsti (vlnením) a chradnutím. Pri patologicko-anatomickom vyšetrení nachádzame mierny katarálny zápal sliznice tenkého čreva (enteritídu) spojený s lokálnym olupovaním epitelu.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Prevalencia tohto parazita rapídne stúpa na konci zimy. Koncentrácia jelenej zveri na malom priestore okolo poľovníckych krmelcov vedie k extrémnej fekálnej kontaminácii snehu a pôdy oocystami, ktoré bez problémov prečkajú aj silné slovenské mrazy.",
     "id": "eimeria_asymmetrica_oocyst",
     "images": []
   },
@@ -6660,21 +6662,21 @@
       "genus": "Eimeria",
       "species": "Eimeria auburnensis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 33,
-      "lengthMax": 41,
-      "widthMin": 24,
-      "widthMax": 28,
+      "lengthMin": 32,
+      "lengthMax": 46,
+      "widthMin": 20,
+      "widthMax": 25,
       "unit": "µm"
     },
     "morphology": {
@@ -6683,21 +6685,22 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 38,5 × 22 µm",
+      "Index tvaru (D/Š): Približne 1,60 – 1,75.",
+      "Predĺžene ovoidný (vajcovitý) až elipsovitý tvar, pričom sa viditeľne zužuje (zužuje profil) smerom k jednému pólu s mikropylou.",
+      "Čerstvopasírovaný trus obsahuje nevysporulované oocysty. Sú charakteristické dvojvrstvovou stenou (hrúbka cca 1,5 µm), pričom vonkajšia vrstva steny môže vykazovať výraznú modularitu – býva hrubá, žltkastá až hnedastá a hrubozrnná až bradavičnatá (tzv. mamilovaná stena). Menšia časť oocýst (v závislosti od kmeňa) má stenu hladkú a transparentnú. Tmavá guľovitá zygota (sporoblast) leží v strede lumen.",
+      "Vysporulovaná oocysta obsahuje 4 pretiahnuté sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Na užšom póle sa nachádza malá, no zreteľná mikropyla. Polárna granula chýba. Oocystová reziduálna masa úplne chýba, ale sporocystová reziduálna masa je prítomná vo forme veľkého počtu tmavých granúl rozptýlených medzi sporozoitmi."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria bovis_: Rozmerovo menšia (cca 28 × 20 µm), jej oocysta je striktne ovoidná (tvar slepačieho vajca), stena je vždy dokonale hladká a bezfarebná.",
+      "_Eimeria canadensis_: Rozmermi veľmi blízka (cca 33 × 23 µm) a elipsovitá, no jej mikropyla je sotva badateľná a stena oocysty je vždy dokonale hladká, bez typického bradavičnatého/mamilovaného reliéfu.",
+      "_Eimeria wyomingensis_: Veľká (cca 40 × 28 µm), široko ovoidná, má však extrémne hrubú, tmavohnedú až čiernu stenu s hrubou textúrou, no chýba jej výrazné predĺženie a zúženie pólu typické pre _E. auburnensis_."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha priamou cestou bez medzihostiteľa. Teľa skonzumuje s kontaminovanou podstielkou či krmivom vysporulovanú (infekčnú) oocystu. V lumen tenkého čreva dochádza k excystácii sporozoitov, ktoré prenikajú do buniek črevného epitelu. E. auburnensis vykazuje špecifikum v nepohlavnom množení (schizogónia/merogónia) – vytvára obrovské schizonty (makromeronty) s priemerom až 200–300 µm, ktoré sa lokalizujú hlboko v lamina propria strednej a zadnej tretiny tenkého čreva a obsahujú tisíce merozoitov. Pohlavná fáza (gametogónia) prebieha v subepitelových bunkách (mezodermálneho pôvodu), kde po oplodnení makrogaméty vzniká zygota. Nevysporulované oocysty odchádzajú s trusom. V prostredí pri optimálnej vlhkosti a teplote oocysta vysporuluje do infekčného štádia za 48 až 72 hodín. Prepatentná perióda trvá 18 až 20 dní.",
+    "pathology": "_Eimeria auburnensis_ vykazuje strednú patogenitu. Sama osebe zriedka vyvoláva masívny fatálny úhyn (na rozdiel od E. zuernii alebo E. bovis), no v podmienkach intenzívnych odchovov teliat výrazne potencuje závažnosť zmiešaných kokcidióz. Keďže obrie schizonty a gamonti deštruujú bunky hlboko v lamina propria tenkého čreva, dochádza k narušeniu integrity kapilár a slizničných klkov. Klinicky sa masívna infekcia prejavuje u teliat vo veku 1 až 6 mesiacov profúznou, kašovitou až vodnatou hnačkou so zelenkasto-sivým zafarbením a prímesou hlienu, tenezmami (bolestivým nútením na defekáciu) a výraznou dehydratáciou. Pri sekcii nachádzame katarálny enterálny zápal s edémom a zhrubnutím steny ilea.",
     "zoonosis": false,
-    "notes": "Výrazné mikropyle. Najčastejšie u nás.",
+    "notes": "Na Slovensku vykazuje stabilne vysokú prevalenciu v chovoch hovädzieho dobytka, kde sa bežne vyskytuje v zmiešaných infekciách s druhmi _E. bovis_ a _E. zuernii_. \nPrítomnosť dvoch odlišných foriem oocýst (veľká časť s výrazne bradavičnatým povrchom a menšia časť s dokonale hladkým obalom) v rámci jedného genetického druhu dlho miatla parazitológov, ktorí hladké formy chybne radili k iným druhom.",
     "id": "eimeria_auburnensis_oocyst",
     "images": [
       "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp"
@@ -6716,9 +6719,7 @@
       "genus": "Eimeria",
       "species": "Eimeria austriaca"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -6727,10 +6728,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 20,
-      "lengthMax": 22,
-      "widthMin": 18,
-      "widthMax": 26,
+      "lengthMin": 33,
+      "lengthMax": 35,
+      "widthMin": 21,
+      "widthMax": 22,
       "unit": "µm"
     },
     "morphology": {
@@ -6739,21 +6740,21 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná veľkosť 29 × 19,5 µm",
+      "Tvar dokonale a prísne symetricky elipsovitý až ovoidný (vajcovitý). Na rozdiel od niektorých iných jeleních kokcídií sú obidve strany rovnomerne zaoblené.",
+      "Čerstvý trus jelenej zveri obsahuje nevysporulované oocysty. Obal (stena oocysty) je hladký, stredne hrubý (cca 1,5 µm), žltkastý až jasne žltohnedý a pozostáva z dvoch zreteľných vrstiev. Vo vnútri oocysty sa nachádza tmavá, granulovaná, guľovitá zygota (sporoblast), ktorá vypĺňa stredný priestor lumenu.",
+      "Vysporulovaná oocysty obsahuje 4 sporocysty, pričom v každej z nich sú umiestnené 2 sporozoity.",
+      "Na jednom z pólov sa nachádza zreteľná mikropyla (často mierne sploštená). Polárna granula (polárne teliesko) je prítomná. Oocystová reziduálna masa chýba, no sporocystová reziduálna masa je prítomná vo forme zhluku drobných granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria asymmetrica_: Veľmi podobná rozmermi (cca 29 × 19 µm) a rovnako disponuje mikropylou. Zásadný rozdiel je v tvare – _E. asymmetrica_ má jednu stranu oocysty viditeľne sploštenú alebo preliačenú (je asymetrická), zatiaľ čo _E. austriaca_ je dokonale symetricky elipsovitá.",
+      "_Eimeria robusta_: Výrazne väčší megadruh (cca 40 – 48 µm). Má extrémne hrubú, tmavohnedú stenu s drsným, rýhovaným povrchom a masívnu polárnu čiapočku, čo zámenu úplne vylučuje.",
+      "_Eimeria elaphi_: Rozmerovo výrazne menšia (cca 17 × 13 µm), subsférická (guľovitá) s tenkou a svetlou stenou."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus prebieha priamou cestou fekálno-orálneho prenosu bez účasti medzihostiteľa. Jeleň skonzumuje vysporulovanú infekčnú oocystu pri spásaní vegetácie kontaminovanej trusom, najmä v okolí zimných krmovísk. V lumen tenkého čreva dochádza k excystácii sporozoitov, ktoré penetrujú do enterocytov sliznice tenkého čreva. Nasleduje endogénna fáza nepohlavného množenia (schizogónia) spojená s lýzou napadnutých buniek. Následná pohlavná fáza (gametogónia) vedie k sformovaniu zygoty, ktorá vylučuje ochranný obal. Nevysporulované oocysty odchádzajú trusom do vonkajšieho prostredia, kde za prístupu kyslíka a vlhkosti vysporulujú na infekčné štádium v priebehu 48 až 72 hodín. Prepatentná perióda sa odhaduje na 12 až 14 dní.",
+    "pathology": "_Eimeria austriaca_ vykazuje nízku až strednú patogenitu. U dospelých voľne žijúcich jeleňov prebieha infekcia spravidla subklinicky (latentne) bez zjavných vonkajších príznakov. K prepuknutiu klinickej kokcidiózy dochádza primárne u tohtoročných teliat na konci zimy a počas jari, alebo pri vysokej hustote zveri v uzavretých zverniciach. Zvýšený parazitárny tlak a nutričný stres vedú k rozvoju katarálneho zápalu tenkého čreva. Klinicky sa ochorenie prejavuje prechodnou kašovitou až tmavou vodnatou hnačkou, inapetenciou, dehydratáciou a zhoršením kvality srsti. Pri sekcii nachádzame lokálne začervenanie a edém sliznice tenkého čreva s miernou atrofiou črevných klkov.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_austriaca_oocyst",
     "images": []
   },
@@ -6770,10 +6771,7 @@
       "genus": "Eimeria",
       "species": "Eimeria babatica"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -6825,9 +6823,7 @@
       "genus": "Eimeria",
       "species": "Eimeria bakuensis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca",
       "Muflón"
@@ -6881,11 +6877,11 @@
       "genus": "Eimeria",
       "species": "Eimeria bovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -6938,9 +6934,7 @@
       "genus": "Eimeria",
       "species": "Eimeria brunetti"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -6995,11 +6989,11 @@
       "genus": "Eimeria",
       "species": "Eimeria bukidnonensis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -7105,9 +7099,7 @@
       "genus": "Eimeria",
       "species": "Eimeria caprina"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -7265,9 +7257,7 @@
       "genus": "Eimeria",
       "species": "Eimeria cervi"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -7319,9 +7309,7 @@
       "genus": "Eimeria",
       "species": "Eimeria christenseni"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -7533,11 +7521,11 @@
       "genus": "Eimeria",
       "species": "Eimeria cylindrica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -7589,9 +7577,7 @@
       "genus": "Eimeria",
       "species": "Eimeria debliecki"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -7749,9 +7735,7 @@
       "genus": "Eimeria",
       "species": "Eimeria ellipsoidalis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok"
     ],
@@ -7805,10 +7789,7 @@
       "genus": "Eimeria",
       "species": "Eimeria europaea"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -7860,10 +7841,7 @@
       "genus": "Eimeria",
       "species": "Eimeria exigua"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -8078,9 +8056,7 @@
       "genus": "Eimeria",
       "species": "Eimeria hirci"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -8132,10 +8108,7 @@
       "genus": "Eimeria",
       "species": "Eimeria hungarica"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -8187,9 +8160,7 @@
       "genus": "Eimeria",
       "species": "Eimeria intricata"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -8241,10 +8212,7 @@
       "genus": "Eimeria",
       "species": "Eimeria irresidua"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -8296,9 +8264,7 @@
       "genus": "Eimeria",
       "species": "Eimeria jolchijevi"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -8352,10 +8318,7 @@
       "genus": "Eimeria",
       "species": "Eimeria leporis"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -8460,10 +8423,7 @@
       "genus": "Eimeria",
       "species": "Eimeria macrosculpta"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -8515,10 +8475,7 @@
       "genus": "Eimeria",
       "species": "Eimeria magna"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -8572,9 +8529,7 @@
       "genus": "Eimeria",
       "species": "Eimeria marsica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -8626,9 +8581,7 @@
       "genus": "Eimeria",
       "species": "Eimeria maxima"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -8680,10 +8633,7 @@
       "genus": "Eimeria",
       "species": "Eimeria media"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -8735,9 +8685,7 @@
       "genus": "Eimeria",
       "species": "Eimeria meleagridis"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Morka"
     ],
@@ -8789,9 +8737,7 @@
       "genus": "Eimeria",
       "species": "Eimeria meleagrimitis"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Morka"
     ],
@@ -8895,9 +8841,7 @@
       "genus": "Eimeria",
       "species": "Eimeria mitis"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -8949,9 +8893,7 @@
       "genus": "Eimeria",
       "species": "Eimeria necatrix"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -9003,9 +8945,7 @@
       "genus": "Eimeria",
       "species": "Eimeria neodebliecki"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -9057,9 +8997,7 @@
       "genus": "Eimeria",
       "species": "Eimeria ninakohlyakimovae"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -9165,9 +9103,7 @@
       "genus": "Eimeria",
       "species": "Eimeria ovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -9273,9 +9209,7 @@
       "genus": "Eimeria",
       "species": "Eimeria panda"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Srnec"
     ],
@@ -9381,10 +9315,7 @@
       "genus": "Eimeria",
       "species": "Eimeria perforans"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -9438,9 +9369,7 @@
       "genus": "Eimeria",
       "species": "Eimeria perminuta"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -9546,10 +9475,7 @@
       "genus": "Eimeria",
       "species": "Eimeria piriformis"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -9603,9 +9529,7 @@
       "genus": "Eimeria",
       "species": "Eimeria polita"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -9659,9 +9583,7 @@
       "genus": "Eimeria",
       "species": "Eimeria ponderosa"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Srnec"
     ],
@@ -9713,9 +9635,7 @@
       "genus": "Eimeria",
       "species": "Eimeria porci"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -9769,9 +9689,7 @@
       "genus": "Eimeria",
       "species": "Eimeria praecox"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -9825,9 +9743,7 @@
       "genus": "Eimeria",
       "species": "Eimeria punctata"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -9931,10 +9847,7 @@
       "genus": "Eimeria",
       "species": "Eimeria robertsoni"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -9986,9 +9899,7 @@
       "genus": "Eimeria",
       "species": "Eimeria robusta"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -10040,9 +9951,7 @@
       "genus": "Eimeria",
       "species": "Eimeria scabra"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -10096,9 +10005,7 @@
       "genus": "Eimeria",
       "species": "Eimeria schoenbuchi"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -10150,10 +10057,7 @@
       "genus": "Eimeria",
       "species": "Eimeria sculpta"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -10205,10 +10109,7 @@
       "genus": "Eimeria",
       "species": "Eimeria semisculpta"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -10260,9 +10161,7 @@
       "genus": "Eimeria",
       "species": "Eimeria separata"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -10418,9 +10317,7 @@
       "genus": "Eimeria",
       "species": "Eimeria sordida"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -10472,9 +10369,7 @@
       "genus": "Eimeria",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Vtáky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Plazy",
       "Vtáky"
@@ -10581,9 +10476,7 @@
       "genus": "Eimeria",
       "species": "Eimeria spinosa"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -10635,10 +10528,7 @@
       "genus": "Eimeria",
       "species": "Eimeria stefanskii"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -10690,10 +10580,7 @@
       "genus": "Eimeria",
       "species": "Eimeria stiedae"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -10747,11 +10634,11 @@
       "genus": "Eimeria",
       "species": "Eimeria subspherica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -10803,9 +10690,7 @@
       "genus": "Eimeria",
       "species": "Eimeria suis"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -10859,9 +10744,7 @@
       "genus": "Eimeria",
       "species": "Eimeria superba"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Srnec"
     ],
@@ -10913,9 +10796,7 @@
       "genus": "Eimeria",
       "species": "Eimeria tenella"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -10971,10 +10852,7 @@
       "genus": "Eimeria",
       "species": "Eimeria townsendi"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -11026,9 +10904,7 @@
       "genus": "Eimeria",
       "species": "Eimeria truncata"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hus"
     ],
@@ -11132,9 +11008,7 @@
       "genus": "Eimeria",
       "species": "Eimeria wassiliewskyi"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jeleň"
     ],
@@ -11292,11 +11166,11 @@
       "genus": "Eimeria",
       "species": "Eimeria zuenii"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -11346,10 +11220,10 @@
       "genus": "Elaphostrongylus",
       "species": "Elaphostrongylus cervi"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vysoká zver"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -11393,10 +11267,10 @@
       "genus": "Entamoeba",
       "species": "Entamoeba invadens"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Plazy"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
@@ -11447,11 +11321,9 @@
       "species": "neurčený druh"
     },
     "hostGroups": [
-      "Plazy"
-    ],
-    "hosts": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Pľúca",
     "stage": "Dospelý jedinec",
@@ -11499,9 +11371,7 @@
       "genus": "Epomidiostomum",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hus"
     ],
@@ -11552,9 +11422,7 @@
       "genus": "Epomidiostomum",
       "species": "Epomidiostomum uncinatum"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Kačica"
     ],
@@ -11605,9 +11473,7 @@
       "genus": "Ergasilus",
       "species": "Ergasilus sieboldi"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ryby"
     ],
@@ -11660,11 +11526,7 @@
       "genus": "Eucoleus",
       "species": "Eucoleus aerophilus"
     },
-    "hostGroups": [
-      "Psovité mäsožravce",
-      "Mačkovité mäsožravce",
-      "Lasicovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Jež"
     ],
@@ -11730,14 +11592,8 @@
       "genus": "Eucoleus",
       "species": "Eucoleus boehmi"
     },
-    "hostGroups": [
-      "Psovité mäsožravce",
-      "Mačkovité mäsožravce",
-      "Lasicovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -11787,10 +11643,7 @@
       "genus": "Fasciola",
       "species": "Fasciola gigantica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -11840,10 +11693,7 @@
       "genus": "Fasciola",
       "species": "Fasciola hepatica"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Človek",
       "Diviak",
@@ -11903,11 +11753,11 @@
       "genus": "Fascioloides",
       "species": "Fascioloides magna"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
+      "Zubor",
+      "Byvol",
       "Koza",
       "Kôň",
       "Ošípaná",
@@ -11972,11 +11822,11 @@
       "genus": "Fascioloides",
       "species": "Fascioloides magna"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
+      "Zubor",
+      "Byvol",
       "Koza",
       "Kôň",
       "Ošípaná",
@@ -12036,12 +11886,8 @@
       "genus": "Filicollis",
       "species": "Filicollis anatis"
     },
-    "hostGroups": [
-      "Vtáky"
-    ],
-    "hosts": [
-      "Vodné voľne žijúce vtáky"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -12097,7 +11943,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -12150,7 +11996,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -12204,7 +12050,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -12355,18 +12201,7 @@
       "genus": "Giardia",
       "species": "Giardia duodenalis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Hlodavce",
-      "Hmyzožravce",
-      "Mäsožravce",
-      "Nepárnokopytníky",
-      "ZOO zvieratá - ostatné",
-      "Ošípané a diviaky",
-      "Voľne žijúce prežúvavce",
-      "Vtáky",
-      "ZOO prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Človek"
     ],
@@ -12490,9 +12325,7 @@
       "genus": "Giardia",
       "species": "Giardia muris"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -12540,9 +12373,7 @@
       "genus": "Giardia",
       "species": "Giardia simoni"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -12590,9 +12421,7 @@
       "genus": "Giardia",
       "species": "Giardia varani"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -12638,9 +12467,7 @@
       "genus": "Globocephalus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -12741,10 +12568,7 @@
       "genus": "Graphidium",
       "species": "Graphidium strigosum"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -12793,12 +12617,8 @@
       "genus": "Gyrodactylus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
-    "hosts": [
-      "Ryby"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -12850,7 +12670,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -12899,9 +12719,7 @@
       "species": "Haemaphysalis concinna"
     },
     "hostGroups": [],
-    "hosts": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -12951,7 +12769,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -12997,11 +12815,11 @@
       "genus": "Haematopinus",
       "species": "Haematopinus eurysternus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -13048,9 +12866,7 @@
       "genus": "Hammondia",
       "species": "Hammondia hammondi"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -13097,9 +12913,7 @@
       "genus": "Hammondia",
       "species": "Hammondia heydorni"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -13144,9 +12958,7 @@
       "genus": "Heterakis",
       "species": "Heterakis dispar"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hus",
       "Kačica",
@@ -13197,9 +13009,7 @@
       "genus": "Heterakis",
       "species": "Heterakis gallinarum"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka",
       "Hus"
@@ -13350,9 +13160,7 @@
       "genus": "Hexamita",
       "species": "Hexamita parva"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Korytnačky"
     ],
@@ -13415,7 +13223,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -13565,12 +13373,8 @@
       "genus": "Hymenolepis",
       "species": "Hymenolepis diminuta"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -13617,12 +13421,8 @@
       "genus": "Hyostrongylus",
       "species": "Hyostrongylus rubidus"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
-    "hosts": [
-      "Ošípaná"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -13668,10 +13468,10 @@
       "genus": "Hypoderma",
       "species": "Hypoderma actaeon"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vysoká zver"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Larva",
@@ -13720,11 +13520,11 @@
       "genus": "Hypoderma",
       "species": "Hypoderma bovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -13772,10 +13572,10 @@
       "genus": "Hypoderma",
       "species": "Hypoderma diana"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vysoká zver"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Larva",
@@ -13824,11 +13624,11 @@
       "genus": "Hypoderma",
       "species": "Hypoderma lineatum"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -13876,9 +13676,7 @@
       "genus": "Hystrichis",
       "species": "Hystrichis tricolor"
     },
-    "hostGroups": [
-      "Vtáky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Vodné voľne žijúce vtáky"
     ],
@@ -13928,9 +13726,7 @@
       "genus": "Choanotaenia",
       "species": "Choanotaenia infundibulum"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -14370,11 +14166,11 @@
       "genus": "Chorioptes",
       "species": "Chorioptes bovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -14425,7 +14221,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -14472,9 +14268,7 @@
       "genus": "Choriorhabditis",
       "species": "Choriorhabditis gracilicauda"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Slimáky"
     ],
@@ -14522,12 +14316,8 @@
       "genus": "Ichthyophthirius",
       "species": "Ichthyophthirius multifiliis"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
-    "hosts": [
-      "Ryby"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Trofozoit",
@@ -14716,18 +14506,7 @@
       "genus": "Ixodes",
       "species": "Ixodes ricinus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Hlodavce",
-      "Hmyzožravce",
-      "Mäsožravce",
-      "Nepárnokopytníky",
-      "ZOO zvieratá - ostatné",
-      "Ošípané a diviaky",
-      "Voľne žijúce prežúvavce",
-      "Vtáky",
-      "ZOO prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -14776,9 +14555,7 @@
       "genus": "Kalicephalus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -14828,12 +14605,8 @@
       "genus": "Lernaea",
       "species": "Lernaea cyprinacea"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
-    "hosts": [
-      "Ryby"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -14881,12 +14654,8 @@
       "genus": "Ligula",
       "species": "Ligula intestinalis"
     },
-    "hostGroups": [
-      "Vodné voľne žijúce vtáky"
-    ],
-    "hosts": [
-      "Vodné voľne žijúce vtáky"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {
       "Vodné voľne žijúce vtáky": ""
     },
@@ -14945,9 +14714,7 @@
       "genus": "Ligula",
       "species": "Ligula intestinalis"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Kaprovité"
     ],
@@ -15023,12 +14790,8 @@
       "genus": "Linguatula",
       "species": "Linguatula serrata"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -15076,11 +14839,11 @@
       "genus": "Linognathus",
       "species": "Linognathus vituli"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -15178,9 +14941,7 @@
       "genus": "Macracanthorhynchus",
       "species": "Macracanthorhynchus hirudinaceus"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15332,12 +15093,8 @@
       "genus": "Metastrongylus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
-    "hosts": [
-      "Ošípaná"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -15387,10 +15144,7 @@
       "genus": "Moniezia",
       "species": "Moniezia benedeni"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15437,10 +15191,7 @@
       "genus": "Moniezia",
       "species": "Moniezia expansa"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15641,9 +15392,7 @@
       "genus": "Muellerius",
       "species": "Muellerius capillaris"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -15739,9 +15488,7 @@
       "genus": "Myobia",
       "species": "Myobia musculi"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -15858,11 +15605,12 @@
       "genus": "Myocoptes",
       "species": "Myocoptes musculinus"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Myš",
+    "hostGroups": [
       "Hady",
       "Jaštery"
+    ],
+    "hosts": [
+      "Myš"
     ],
     "hostNotes": {
       "Myš": "Primárne myš domáca (Mus musculus), vrátane laboratórnych línií. Vyžaduje osrstené zviera – bezsrsté (nude) myši nie sú vnímavé.",
@@ -15916,14 +15664,8 @@
       "genus": "Nematodirus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "ZOO prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {
       "Ovca": "Najcitlivejšia kategória: mladé jahňatá po začiatku pasenia; klinické prípady sa opisujú približne vo veku 8–20 týždňov"
     },
@@ -15972,11 +15714,9 @@
       "species": "Nemhelix bakeri"
     },
     "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
       "Slimáky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Pohlavné orgány",
     "stage": "Dospelý jedinec",
@@ -16080,7 +15820,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -16126,9 +15866,7 @@
       "genus": "Nippostrongylus",
       "species": "Nippostrongylus brasiliensis"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -16177,9 +15915,7 @@
       "genus": "Notoedres",
       "species": "Notoedres alepis"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -16291,9 +16027,7 @@
       "genus": "Notoedres",
       "species": "Notoedres muris"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -16394,9 +16128,7 @@
       "genus": "Ochetostoma",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -16445,9 +16177,7 @@
       "genus": "Oesophagostomum",
       "species": "Oesophagostomum dentatum"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -16562,10 +16292,7 @@
       "genus": "Oochoristica",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy",
-      "Obojživelníky"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -16614,9 +16341,7 @@
       "genus": "Ophidascaris",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -16666,9 +16391,7 @@
       "genus": "Ophionyssus",
       "species": "Ophionyssus natricis"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -16818,12 +16541,8 @@
       "genus": "Oslerus",
       "species": "Oslerus osleri"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -16871,7 +16590,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -16918,11 +16637,7 @@
       "genus": "Paramphistomum",
       "species": "Paramphistomum cervi"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce",
-      "ZOO prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -16984,7 +16699,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -17042,7 +16759,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -17138,10 +16855,7 @@
       "genus": "Passalurus",
       "species": "Passalurus ambiguus"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -17189,12 +16903,8 @@
       "genus": "Pearsonema",
       "species": "Pearsonema feliscati"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Moč",
     "stage": "Vajíčko",
@@ -17246,9 +16956,7 @@
       "genus": "Pearsonema",
       "species": "Pearsonema plica"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Mačka"
     ],
@@ -17350,9 +17058,7 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17452,9 +17158,7 @@
       "genus": "Phasmarhabditis",
       "species": "Phasmarhabditis hermaphrodita"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Slimáky"
     ],
@@ -17555,12 +17259,8 @@
       "genus": "Physaloptera",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -17608,9 +17308,7 @@
       "genus": "Physocephalus",
       "species": "Physocephalus sexalatus"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {
       "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
@@ -17664,9 +17362,7 @@
       "genus": "Polydelphis",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -17716,9 +17412,7 @@
       "genus": "Polymorphus",
       "species": "Polymorphus minutus"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Kačica",
       "Hus",
@@ -17773,9 +17467,7 @@
       "genus": "Polyplax",
       "species": "Polyplax serrata"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -17823,9 +17515,7 @@
       "genus": "Polyplax",
       "species": "Polyplax spinulosa"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -17875,9 +17565,7 @@
       "genus": "Porrocaecum",
       "species": "Porrocaecum crassum"
     },
-    "hostGroups": [
-      "Vodné voľne žijúce vtáky"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17975,9 +17663,7 @@
       "genus": "Proteocephalus",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Ryby"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sladkovodné ryby"
     ],
@@ -18028,12 +17714,8 @@
       "genus": "Protostrongylus",
       "species": "Protostrongylus brevispiculatum"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18079,13 +17761,8 @@
       "genus": "Protostrongylus",
       "species": "Protostrongylus commutatus"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
-    "hosts": [
-      "Králik"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18131,12 +17808,8 @@
       "genus": "Protostrongylus",
       "species": "Protostrongylus rufescens"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Ovca"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18181,11 +17854,9 @@
       "genus": "Psoroptes",
       "species": "Psoroptes equi"
     },
-    "hostGroups": [
-      "Koňovité"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Kôň"
+      "Koňovité"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -18232,12 +17903,8 @@
       "genus": "Psoroptes",
       "species": "Psoroptes ovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
-    "hosts": [
-      "Hovädzí dobytok"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18288,9 +17955,7 @@
       "species": "neurčený druh"
     },
     "hostGroups": [],
-    "hosts": [
-      "Agamy"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18338,12 +18003,8 @@
       "genus": "Radfordia",
       "species": "Radfordia affinis"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Myš"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18389,12 +18050,8 @@
       "genus": "Radfordia",
       "species": "Radfordia ensifera"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Potkan"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18440,12 +18097,8 @@
       "genus": "Raillietina",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Sliepka"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -18493,9 +18146,7 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Obojživelníky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Plazy",
       "Obojživelníky"
@@ -18545,12 +18196,8 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
-    "hosts": [
-      "Korytnačky"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18597,12 +18244,8 @@
       "genus": "Riccardoella",
       "species": "Riccardoella limacum"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Slimáky"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Plášťová dutina",
     "stage": "Dospelý jedinec",
@@ -18650,12 +18293,8 @@
       "genus": "Riccardoella",
       "species": "Riccardoella oudemansi"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
-    "hosts": [
-      "Slimáky"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Plášťová dutina",
     "stage": "Dospelý jedinec",
@@ -18704,9 +18343,7 @@
       "species": "Rodentolepis erinacei"
     },
     "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -18754,9 +18391,7 @@
       "genus": "Rodentolepis",
       "species": "Rodentolepis microstoma"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hlodavce"
     ],
@@ -18809,9 +18444,7 @@
       "genus": "Rodentolepis",
       "species": "Rodentolepis nana"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hlodavce",
       "Primáty"
@@ -18862,9 +18495,7 @@
       "species": "Sarcocystis accipitris"
     },
     "hostGroups": [],
-    "hosts": [
-      "Jastrab"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -18912,9 +18543,7 @@
       "species": "Sarcocystis cernae"
     },
     "hostGroups": [],
-    "hosts": [
-      "Sokol"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -18961,11 +18590,9 @@
       "genus": "Sarcocystis",
       "species": "Sarcocystis dispersa"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Myšiarka"
+      "Hlodavce"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -19013,12 +18640,8 @@
       "genus": "Sarcocystis",
       "species": "Sarcocystis horvathi"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
-    "hosts": [
-      "Sliepka"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -19066,9 +18689,7 @@
       "species": "Sarcocystis scotti"
     },
     "hostGroups": [],
-    "hosts": [
-      "Sovy"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -19165,11 +18786,7 @@
       "genus": "Sarcocystis",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce",
-      "Psovité mäsožravce",
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {
       "Pes": "Nález sarcocýst v truse psa predstavuje riziko najmä pre hovädzí dobytok, ovce, kozy a raticovú zver (napr. S. cruzi, S. tenella). Kontaminácia krmiva a pasienkov pozitívnym trusom psa vyvoláva u dobytka akútne ochorenie, masívne potraty a úhyn. Pre človeka v SR riziko nepredstavuje.",
@@ -19230,18 +18847,7 @@
       "genus": "Sarcoptes",
       "species": "Sarcoptes scabiei"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Hlodavce",
-      "Hmyzožravce",
-      "Mäsožravce",
-      "Nepárnokopytníky",
-      "ZOO zvieratá - ostatné",
-      "Ošípané a diviaky",
-      "Voľne žijúce prežúvavce",
-      "Vtáky",
-      "ZOO prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -19289,9 +18895,7 @@
       "genus": "Skrjabinema",
       "species": "Skrjabinema caprae"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Koza"
     ],
@@ -19341,9 +18945,7 @@
       "genus": "Skrjabinema",
       "species": "Skrjabinema ovis"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ovca"
     ],
@@ -19395,11 +18997,11 @@
       "genus": "Solenopotes",
       "species": " Solenopotes burmeisteri"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -19448,11 +19050,11 @@
       "genus": "Solenopotes",
       "species": "Solenopotes capillatus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -19501,12 +19103,8 @@
       "genus": "Spirocerca",
       "species": "Spirocerca lupi"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [
-      "Pes"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -19553,9 +19151,7 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Vodné korytnačky"
     ],
@@ -19606,9 +19202,7 @@
       "genus": "Stephanurus",
       "species": "Stephanurus dentatus"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -19659,9 +19253,7 @@
       "genus": "Stratiolaelaps",
       "species": "Stratiolaelaps scimitus"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Slimáky"
     ],
@@ -19712,12 +19304,8 @@
       "genus": "Strobilocercus",
       "species": "Strobilocercus fasciolaris"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
-    "hosts": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Pečeň",
     "stage": "Larva",
@@ -19765,12 +19353,7 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "ZOO prežúvavce",
-      "Voľne žijúce prežúvavce",
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -19831,13 +19414,11 @@
       "genus": "Strongyloides",
       "species": "Strongyloides papillosus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
+      "Zubor",
+      "Byvol",
       "Králik"
     ],
     "hostNotes": {},
@@ -19885,13 +19466,11 @@
       "genus": "Strongyloides",
       "species": "Strongyloides papillosus"
     },
-    "hostGroups": [
-      "Domáce prežúvavce",
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
+      "Zubor",
+      "Byvol",
       "Králik"
     ],
     "hostNotes": {},
@@ -19939,9 +19518,7 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ransomi"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -19990,9 +19567,7 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ransomi"
     },
-    "hostGroups": [
-      "Ošípané a diviaky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Ošípaná"
     ],
@@ -20042,9 +19617,7 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ratti"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -20093,9 +19666,7 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ratti"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -20242,12 +19813,7 @@
       "genus": "Strongyloides",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Mäsožravce",
-      "Plazy",
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {
       "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
@@ -20307,12 +19873,7 @@
       "genus": "Strongyloides",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Mäsožravce",
-      "Plazy",
-      "Domáce prežúvavce",
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {
       "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
@@ -20381,7 +19942,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -20430,7 +19993,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -20478,7 +20043,9 @@
     "hostGroups": [
       "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -20591,9 +20158,7 @@
       "genus": "Syphacia",
       "species": "Syphacia muris"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -20642,9 +20207,7 @@
       "genus": "Syphacia",
       "species": "Syphacia obvelata"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -20744,12 +20307,9 @@
       "genus": "Taenia",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Človek",
-      "Líška",
       "Šimpanz"
     ],
     "hostNotes": {
@@ -20814,9 +20374,7 @@
       "genus": "Terranova",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Plazy"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hady"
     ],
@@ -20868,9 +20426,7 @@
       "genus": "Tetratrichomonas",
       "species": "Tetratrichomonas limacis"
     },
-    "hostGroups": [
-      "Mäkkýše"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Slimáky"
     ],
@@ -20918,10 +20474,7 @@
       "genus": "Toxascaris",
       "species": "Toxascaris leonina"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce",
-      "Psovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -20968,9 +20521,7 @@
       "genus": "Toxocara",
       "species": "Toxocara canis"
     },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21018,9 +20569,7 @@
       "genus": "Toxocara",
       "species": "Toxocara cati"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21067,11 +20616,11 @@
       "genus": "Toxocara",
       "species": "Toxocara vitulorum"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
-      "Hovädzí dobytok"
+      "Hovädzí dobytok",
+      "Zubor",
+      "Byvol"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -21118,9 +20667,7 @@
       "genus": "Toxoplasma",
       "species": "Toxoplasma gondii"
     },
-    "hostGroups": [
-      "Mačkovité mäsožravce"
-    ],
+    "hostGroups": [],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21171,9 +20718,7 @@
       "species": "neurčený druh"
     },
     "hostGroups": [],
-    "hosts": [
-      "Plazy"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -21220,11 +20765,9 @@
       "species": "neurčený druh"
     },
     "hostGroups": [
-      "Vtáky"
-    ],
-    "hosts": [
       "Vodné voľne žijúce vtáky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -21274,9 +20817,7 @@
     "hostGroups": [
       "Ryby"
     ],
-    "hosts": [
-      "Ryby"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Trofozoit",
@@ -21324,10 +20865,10 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Plazy"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Trofozoit",
@@ -21376,9 +20917,7 @@
       "genus": "Trichosomoides",
       "species": "Trichosomoides crassicauda"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Potkan"
     ],
@@ -21429,7 +20968,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -21525,10 +21064,7 @@
       "genus": "Trichostrongylus",
       "species": "Trichostrongylus retortaeformis"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Králik"
     ],
@@ -21629,9 +21165,7 @@
     "hostGroups": [
       "Mačkovité mäsožravce"
     ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -21677,10 +21211,7 @@
       "genus": "Trichuris",
       "species": "Trichuris leporis"
     },
-    "hostGroups": [
-      "Zajace",
-      "králiky"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Zajac"
     ],
@@ -21729,9 +21260,7 @@
       "genus": "Trichuris",
       "species": "Trichuris muris"
     },
-    "hostGroups": [
-      "Hlodavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Myš"
     ],
@@ -21780,11 +21309,11 @@
       "genus": "Trichuris",
       "species": "neurčený druh"
     },
-    "hostGroups": [
-      "Domáce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hovädzí dobytok",
+      "Zubor",
+      "Byvol",
       "Ovca",
       "Voľne žijúce prežúvavce"
     ],
@@ -21836,9 +21365,7 @@
     "hostGroups": [
       "Ošípané a diviaky"
     ],
-    "hosts": [
-      "Ošípané a diviaky"
-    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -21940,7 +21467,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -22037,9 +21564,7 @@
       "genus": "Tyzzeria",
       "species": "Tyzzeria parvula"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Hus"
     ],
@@ -22087,9 +21612,7 @@
       "genus": "Tyzzeria",
       "species": "Tyzzeria perniciosa"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Kačica"
     ],
@@ -22199,9 +21722,7 @@
       "Mačkovité mäsožravce",
       "Psovité mäsožravce"
     ],
-    "hosts": [
-      "Mačka"
-    ],
+    "hosts": [],
     "hostNotes": {
       "Mačka": "U mačiek len výnimočne"
     },
@@ -22262,9 +21783,7 @@
       "genus": "Varestrongylus",
       "species": "Varestrongylus capreoli"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Srnec"
     ],
@@ -22312,9 +21831,7 @@
       "genus": "Varestrongylus",
       "species": "Varestrongylus sagittatus"
     },
-    "hostGroups": [
-      "Voľne žijúce prežúvavce"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Daniel"
     ],
@@ -22410,9 +21927,7 @@
       "genus": "Wenyonella",
       "species": "Wenyonella gallinae"
     },
-    "hostGroups": [
-      "Hydina"
-    ],
+    "hostGroups": [],
     "hosts": [
       "Sliepka"
     ],
@@ -22467,7 +21982,7 @@
       "Koňovité"
     ],
     "hosts": [
-      "Kôň"
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
