@@ -2621,7 +2621,7 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:42:08.114Z"
   },
-    {
+  {
     "parasiteId": "eimeria_brunetti_oocyst",
     "url": "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_02.webp",
     "alt": "",
@@ -2629,7 +2629,6 @@
     "credit": "",
     "dateAdded": "2026-09-26T19:16:54.881Z",
     "isPrimary": true
-
   },
   {
     "parasiteId": "eimeria_bukidnonensis_oocyst",
@@ -3075,22 +3074,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:11:17.017Z"
-  },
-  {
-    "parasiteId": "eimeria_pythonis_oocyst",
-    "url": "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:11:29.560Z"
-  },
-  {
-    "parasiteId": "eimeria_pythonis_oocyst",
-    "url": "/public/images/parasites/eimeria_pythonis_oocyst/eimeria_pythonis_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:11:29.574Z"
   },
   {
     "parasiteId": "eimeria_robusta_oocyst",
