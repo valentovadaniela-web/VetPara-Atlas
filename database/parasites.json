@@ -8047,27 +8047,31 @@
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Vajcovitý",
+      "shape": "Hruškovitý",
       "colour": "Žltobiely",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Priemerná veľkosť 33 x 24 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 29,4 × 20,9 μm (dĺžkovo-šírkový index cca 1,4)",
+      "Tvar oocysty: Výrazne hruškovitý (pyriformný) až vajcovitý, na užšom póle jasne sploštený",
+      "Mikropyla (micropyle): Prítomná na užšom, sploštenom póle, dobre viditeľná, široká približne 3 – 5 μm.",
+      "Mikropylárna čiapočka (micropyle cap): Prítomná, pomerne nízka, široká, plocho vyklenutá, jemne prečnievajúca cez okraj oocysty.",
+      "Obal (stena): Hladký, dvojvrstvový, svetložltej až žltohnedej farby, na póle s čiapočkou mierne zhrubnutý.",
+      "Reziduálne teliesko oocysty (oocyst residuum): Neprítomné.",
+      "Polárne teliesko (polar granule): Prítomné (často vo forme drobných zŕn rozptýlených pod mikropylou).",
+      "Pri natívnom koprologickom vyšetrení (flotačná metóda podľa Sheathera alebo Faustov roztok) nachádzame v čerstvom truse nesporulované oocysty. Tie obsahujú kompaktnú, tmavú, granulovanú stredovú masu – zygote/sporoblast, ktorá nevypĺňa celý vnútorný priestor oocysty.",
+      "Po sporulácii v vonkajšom prostredí (ktorá trvá cca 3 – 4 dni pri optimálnej teplote a vlhkosti) oocysta obsahuje 4 sporocysty, pričom každá z nich nesie 2 sporozoity (typická morfológia rodu Eimeria). Sporocysty sú podlhovasto vajcovité, s rozmermi cca 13 – 15 × 8 μm, s prítomným reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria intricata_: Je výrazne väčšia (36 – 50 μm), má masívnu, vysoko vyklenutú polguľovitú čiapočku a hrubú, výrazne skulpturovanú (bodkovanú/ryhovanú) stenu. Viditeľná voľným okom pri menšom zväčšení.",
+      "• _Eimeria bakuensis_ (syn. _E. ovina_): Má typický elipsovitý až urcovitý tvar s takmer paralelnými bočnými stenami. Čiapočka je menšia a oocysta je celkovo užšia v pomere k dĺžke než u _E. granulosa_.",
+      "• _Eimeria ahsata_: Má o niečo väčšie rozmery (30 – 40 μm) a jej tvar je viac elipsovitý, zužujúci sa k obom pólom, s výraznejšou čiapočkou.",
+      "• _Eimeria faurei_: Oocysty sú vajcovitého tvaru, s mikropylou, avšak úplne im chýba mikropylárna čiapočka, prípadne je prítomný len nepatrný plochý reflex."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria granulosa_ je monoxénny parazit s priamym vývinovým cyklom bez účasti medzihostiteľa. K infekcii dochádza perorálnym požitím (fekálno-orálna cesta) sporulovaných oocýst z kontaminovaného krmiva, vody či podstielky. V lúmene tenkého čreva hostiteľa dôjde pôsobením žlče a pankreatických enzýmov k excystácii – uvoľneniu sporozoitov. Tieto invadujú do enterocytov sliznice tenkého čreva (najmä v jej strednej a zadnej tretine). Nasleduje nepohlavné rozmnožovanie (merogónia/schizogónia), počas ktorej vzniká niekoľko generácií merozoitov, čo vedie k masívnej deštrukcii buniek črevného epitelu. Cyklus pokračuje pohlavnou fázou (gamogónia), kde mikrogamétami oplodnené makrogaméty vytvoria ochrannú stenu a transformujú sa na nesporulované oocysty. Tieto oocysty sa následne vylučujú trusom do vonkajšieho prostredia, kde za prístupu kyslíka a vlhkosti prebehne externá sporogónia, čím sa oocysta stáva opäť infekčnou. Prepatentná perióda trvá približne 14 – 18 dní.",
+    "pathology": "_Eimeria granulosa_ je v porovnaní s vysoko patogénnymi druhmi (ako sú _E. ovinoidalis_ či _E. crandallis_) považovaná za mierne až stredne patogénny druh. Samostatné infekcie sú vzácne a spravidla prebiehajú subklinicky. Avšak pri masívnom premnožení, najčastejšie v synergizme s inými druhmi kokcídií u imunitne nenaivných jahniat (vo veku 1 – 4 mesiacov) vyvoláva klinickú kokcidiózu. Klinické príznaky zahŕňajú prechodné hnačky (niekedy s prímesou hlienu, málokedy s čerstvou krvou), znížený váhový prírastok, apatiu, dehydratáciu a stratu kvality vlny. Pri sekcii (necropisii) alebo histopatologickom vyšetrení nachádzame na seróze a sliznici tenkého čreva charakteristické lézie: drobné, roztrúsené petechia (bodkovité krvácaniny) a belavé uzlíky/škvrny veľkosti špendlíkovej hlavičky. Tieto uzlíky predstavujú zhluky vyvíjajúcich sa makrogamét a oocýst v hyperplastických klkoch tenkého čreva.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Najväčšou biologicko-patologickou zaujímavosťou tohto druhu je, že hoci nepatrí k najsmrteľnejším druhom, jeho prítomnosť v čreve vytvára tak výrazné biele bodkovité makroskopické zmeny (viditeľné priamo cez serózu čreva), že patológ si ich pri pitve môže ľahko pomýliť s perzistentnými zmenami po nebezpečnejších patogénoch.",
     "id": "eimeria_granulosa_oocyst",
     "images": []
   },
@@ -8086,38 +8090,41 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Rampholeon temporalis"
+      "Chameleón pralesný (Rampholeon temporalis)"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 29,
+      "lengthMin": 19,
       "lengthMax": 31,
       "widthMin": 22,
       "widthMax": 25,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Eliptický",
+      "shape": "Oválny až eliptický",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 30,2 × 23,5 μm (dĺžkovo-šírkový index cca 1,3)",
+      "Tvar oocysty: Výrazne oválny až elipsovitý.",
+      "Obal (stena): Nápadne hrubá (okolo 2 μm), dvojvrstvová a jej **vonkajší povrch je výrazne drsný**, skulpturovaný a nepravidelný.",
+      "Mikropyla a mikropylárna čiapočka: **Neprítomná**.",
+      "Polárne teliesko (polar granule): Neprítomné.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Pri koprologickom vyšetrení trusu plazov (najčastejšie flotačnou metódou s nasýteným roztokom cukru či zinku) odchádzajú nesporulované oocysty, ktoré obsahujú guľovitý sporoblast vypĺňajúci stredný priestor.",
+      "Po exogénnej sporulácii (ktorá prebieha v prostredí terária pri optimálnej vlhkosti) sa oocysta stáva infekčnou a obsahuje 4 sporocysty, pričom v každej sú 2 sporozoity. Sporocysty sú oválne, s rozmermi približne 12 – 14 × 9 μm, majú prítomné Stiedovej teliesko a obsahujú reziduálne teliesko sporocysty zložené z drobných granúl."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria rhampholeontis_: Parazituje u rovnakého hostiteľa, no jej oocysty sú menšie (cca 20 – 24 μm) a ich stena je dokonale hladká a tenká.",
+      "_Eimeria ceratophorae_: Nachádza sa u iných stromových jašterov, oocysty majú sférický (guľatý) tvar a stena je číra a hladká.",
+      "_Isospora spp_.: Často nachádzané v truse chameleónov. Rozlišujú sa po sporulácii, kedy oocysta rodu Isospora obsahuje iba 2 sporocysty (každá so 4 sporozoitami), zatiaľ čo Eimeria hajeki má 4 sporocysty."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria hajeki_ je monoxénny a prísne hostiteľsky špecifický parazit. Cyklus začína, keď chameleón v teráriu nechtiac zožerie (napr. s kŕmnym hmyzom) infekčnú sporulovanú oocystu z prostredia. V tráviacom trakte plaza sa uvoľnia sporozoity, ktoré prenikajú do buniek sliznice tenkého, prípadne hrubého čreva. Nasleduje vnútrobunková fáza nepohlavného množenia (merogónia), ktorá masívne ničí enterocyty, po ktorej nasleduje pohlavný cyklus (gamogónia) končiaci produkciou nesporulovaných oocýst. Tieto oocysty odchádzajú s trusom von, kde k ich sporulácii na infekčné štádium dochádza v priebehu niekoľkých dní v závislosti od teploty a vlhkosti substrátu v teráriu.",
+    "pathology": "Patogenita tohto druhu v prírodných podmienkach Tanzánie je nízka a udržiava sa v rovnováhe. Avšak v podmienkach zajatia (ZOO, záujmové chovy) pôsobí na miniatúrne chameleóny rodu Rampholeon obrovský transportný a environmentálny stres. Pri masívnom premnožení v obmedzenom priestore terária vyvoláva E. hajeki vážnu intestinálnu kokcidiózu. Klinicky sa prejavuje apatiou plaza, výrazným chradnutím (anorexia, chudnutie v oblasti panvy a chrbta), deformáciou trusu (kašovitý až vodnatý trus, niekedy s prímesou krvi) a dehydratáciou (zapadnuté oči). Pri patologickom vyšetrení uhynutých jedincov dominuje katarálny až hemoragický zápal čriev s ťažkou atrofiou črevných klkov.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_hajeki_oocyst",
@@ -8146,10 +8153,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 21,
-      "lengthMax": 23,
-      "widthMin": 16,
-      "widthMax": 19,
+      "lengthMin": 17,
+      "lengthMax": 26,
+      "widthMin": 13,
+      "widthMax": 22,
       "unit": "µm"
     },
     "morphology": {
@@ -8158,21 +8165,24 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 21,5 × 16,5 μm (dĺžkovo-šírkový index sa pohybuje okolo 1,2 – 1,3)",
+      "Mikropyla (micropyle): Prítomná, avšak extrémne malá a slabo viditeľná (často badateľná len ako jemné stenčenie steny na jednom póle).",
+      "Mikropylárna čiapočka: Neprítomná (na rozdiel od E. crandallis oviec, s ktorou bola predtým stotožňovaná).",
+      "Obal (stena): Hladký, tenký, jemne dvojvrstvový. Vonkajšia vrstva je bezfarebná, vnútorná vrstva má svetložltý až bledohnedý nádych.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Polárne teliesko: Prítomné (zvyčajne jedno alebo dve malé, vysoko refraktívne zrnká umiestnené pod mikropylárnym pólom).",
+      "Pri rutinnom koprologickom vyšetrení čerstvého trusu kôz (flotačné metódy) nachádzame nesporulované oocysty. Ich vnútro vypĺňa tmavý, hrubo zrnitý a homogénny sporoblast (zygota), ktorý sa nedotýka stien oocysty.",
+      "Po exogénnej sporulácii v prostredí (trvá 2 až 4 dni v závislosti od mikroklímy) oocysta obsahuje 4 sporocysty, pričom každá nesie 2 sporozoity. Sporocysty sú ovoidné (cca 10 × 7 μm) s jemne naznačeným Stiedovej telieskom a s prítomným reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria arloingi_ a _E. christenseni_: Sú to najčastejšie a vysoko patogénne druhy kôz. Sú výrazne väčšie (nad 25 – 30 μm), majú typicky elipsovitý až podlhovastý tvar a obe majú mohutnú, jasne viditeľnú mikropylárnu čiapočku.",
+      "_Eimeria ninakohlyakimovae_: Rozmerovo veľmi blízka (cca 20 – 21 μm) a vysoko patogénna. Odlišuje sa tým, že je dokonalejšie guľovitá (sférická) a nemá absolútne žiadny náznak mikropyle ani polárneho telieska.",
+      "_Eimeria parva_: Je menšia (15 – 18 μm), úplne sférická, chýba jej akýkoľvek náznak mikropyle."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria hirci _má priamy (monoxénny) vývinový cyklus. Zdrojom infekcie pre vnímavé kozľatá sú exogénne sporulované oocysty prežívajúce v prostredí maštale alebo na pastvine. Po ingescii (zožratí) kontaminovaného krmiva či vody sa v tenkom čreve pôsobením tráviacich štiav otvárajú oocysty a uvoľnené sporozoity penetrujú do enterocytov. V nich prebieha nepohlavná fáza (merogónia) produkujúca merozoity, ktoré invadujú ďalšie zdravé bunky sliznice, čo rapídne znásobuje parazitárnu nálož. Nasleduje pohlavná fáza (gamogónia), kedy mikrogaméty oplodnia makrogaméty, vzniká zygota, obalí sa ochrannou stenou a ako nesporulovaná oocysta odchádza s feces (trusom) von z hostiteľa. Prepatentná perióda sa odhaduje na 12 až 15 dní.",
+    "pathology": "Z hľadiska veterinárnej medicíny je Eimeria hirci klasifikovaná ako mierne až stredne patogénny druh. Pri samostatnej, nízkej infekcii u dospelých kôz prebieha parazitizmus asymptomaticky. Patologický stav (kokcidióza) nastáva u kozliat po odstave (vo veku 2 – 4 mesiacov) pri zlyhaní zoohygieny, preplnení maštalí alebo náhlej zmene počasia. Masívne poškodenie sliznice tenkého čreva vedie k malabsorpcii živín. Klinicky sa ochorenie prejavuje kašovitou až vodnatou hnačkou tmavej farby (málokedy s prímesou krvi), dehydratáciou, nahrbeným postojom v dôsledku bolesti brucha (kolika) a výrazným zaostávaním v raste. Pri sekcii nachádzame katarálny zápal čreva (enteritída) s variabilným stupňom deskvamácie (zlupovania) epitelu.",
     "zoonosis": false,
-    "notes": "U kôz",
+    "notes": "Dospelé kozy majú voči E. hirci vyvinutú silnú imunitu, ktorá im bráni v rozvoji klinických príznakov, no nezabraňuje im vylučovať malé množstvá oocýst. Pôsobia tak ako dokonalý, asymptomatický rezervoár, ktorý neustále kontaminuje podstielku pre novonarodené, imunitne naivné kozľatá.",
     "id": "eimeria_hirci_oocyst",
     "images": []
   },
@@ -8198,9 +8208,9 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 13,
+      "lengthMin": 12,
       "lengthMax": 15,
-      "widthMin": 12,
+      "widthMin": 11,
       "widthMax": 14,
       "unit": "µm"
     },
@@ -8210,21 +8220,24 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 14,0 × 13,0 μm (dĺžkovo-šírkový index cca 1,1)",
+      "Sférický (guľovitý) až subosférický (mierne sploštený guľovitý)",
+      "Mikropyla a mikropylárna čiapočka: Absolútne neprítomné.",
+      "Obal (stena): Extrémne tenký, hladký, bezfarebný (transparentný) a jednovrstvový.",
+      "Polárne teliesko (polar granule): Môže, ale nemusí byť jasne diferencované (často splýva s reziduom).",
+      "Reziduálne teliesko oocysty: Prítomné po sporulácii ako 1 až 3 drobné, voľne roztrúsené refraktívne granuly (\"zrná\") medzi sporocystami.",
+      "Pri koprologickom vyšetrení trusu zajacov (flotačná metóda s roztokom s vysokou špecifickou hmotnosťou) nachádzame v čerstvých vzorkách nesporulované oocysty. Vzhľadom na miniatúrnu veľkosť (okolo 14 μm) a číru, tenkú stenu ich možno pri nižšom zväčšení mikroskopu (100×) ľahko prehliadnuť alebo zameniť za kvasinky či rastlinné štruktúry; vyžaduje sa analýza pri zväčšení 400×. Vnútro nesporulovanej oocysty tvorí drobná stredová granulovaná masa (sporont).",
+      "Po sporulácii vo vonkajšom prostredí (ktorá prebieha rýchlo, zvyčajne do 2 – 3 dní) oocysta nadobúda typickú štruktúru: obsahuje 4 sporocysty, v každej z nich sú 2 sporozoity. Sporocysty sú veľmi malé, takmer guľovité (cca 6 × 5 μm), s nevýrazným Stiedovej telieskom."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria exigua_: Rozmerovo najpodobnejšia (13 – 18 μm), stena je rovnako tenká a hladká. Hlavným rozlišovacím znakom je, že E. exigua po sporulácii nemá žiadne reziduálne teliesko oocysty (ani len roztrúsené granuly), zatiaľ čo _E. hungarica granule_ má. Súčasne _E. exigua_ je **primárne parazitom králikov**, u zajacov je vzácna.",
+      "• _Eimeria leporis_: Najrozšírenejší druh u zajacov. Je však výrazne väčší (priemerne 28 – 32 μm) a má typicky valcovitý/podlhovastý tvar so žltkastou stenou.",
+      "• _Eimeria europaea_ a _E. robertsoni_: Sú masívne oocysty (nad 30 – 40 μm), ktoré disponujú výraznou, zreteľnou mikropylárnou čiapočkou a hrubou stenu, čo akúkoľvek zámenu vylučuje."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria hungarica_ prekonáva priamy (monoxénny) fekálno-orálny vývinový cyklus. Zajac poľný sa nakazí požitiu sporulovaných oocýst pri pasení sa na kontaminovanej vegetácii. V lumene prednej časti tenkého čreva (duodénum, jejúnum) dochádza k exscystácii. Uvoľnené banánovité sporozoity aktívne penetrujú do enterocytov. V nich, konkrétne v kefkovom leme sliznice blízko vrcholov črevných klkov, prebieha intracelulárny nepohlavný vývin (merogónia). Po vytvorení dvoch až troch generácií merozoitov nastáva pohlavná fáza (gamogónia). Diferencované makrogaméty a mikrogaméty fuzujú, vytvárajú zygotu, ktorá sa obalí tenkou ochrannou stenou a ako nesporulovaná oocysta odchádza s trusom do prostredia. Tam prebehne kyslíkovo závislá exogénna sporogónia na infekčné štádium.",
+    "pathology": "Tento druh vykazuje nízku až strednú inherentnú patogenitu. Vzhľadom na to, že parazituje prevažne v najvrchnejších častiach enterocytov (kefkovom leme), nespôsobuje hlbokú ulceráciu črevnej steny tak ako masívne invazívne druhy. U dospelých divo žijúcich zajacov prebieha infekcia úplne asymptomaticky. Problém (klinická kokcidióza) nastáva u mladých zajatých nenaivných jedincov (tzv. \"bobačiek\") vo veku do 2 – 3 mesiacov, najmä v podmienkach intenzívnych umelých odchovov zajacov (aklimatizačné zvernice, farmové chovy). Stres z preplnenia a vysoký infekčný tlak vedú k rozvoju katarálnej enteritídy (zápalu čriev). Klinické príznaky zahŕňajú nechutenstvo, nenačuchranú srsť, matnú apatiu a hnačky (bez krvi), čo vedie k dehydratácii a úhynu mláďat. Pri sekcii sú klky tenkého čreva mierne zhrubnuté a edematózne.",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_hungarica_oocyst",
     "images": []
   },
@@ -8243,17 +8256,18 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 40,
-      "lengthMax": 56,
+      "lengthMin": 39,
+      "lengthMax": 54,
       "widthMin": 30,
-      "widthMax": 41,
+      "widthMax": 38,
       "unit": "µm"
     },
     "morphology": {
@@ -8262,8 +8276,15 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 47,0 × 35,5 μm (dĺžkovo-šírkový index cca 1,3 – 1,4). Je to najväčšia kokcídia infikujúca ovce.",
+      "Široko elipsovitý až ovoidný (vajcovitý).",
+      "Obal (stena): Extrémne hrubá (až 3 – 4 μm), jasne dvojvrstvová. Vonkajšia vrstva je žltohnedá až tmavohnedá, nepriehľadná a má výrazne drsný, skulpturovaný povrch s priečnymi ryhami alebo bodkovaním.",
+      "Mikropyla (micropyle): Veľmi dobre viditeľná na užšom póle, široká približne 6 – 8 μm.",
+      "Mikropylárna čiapočka (micropyle cap): Mohutná, masívna, polguľovitá a tmavo sfarbená. Dosahuje výšku 2 – 4 μm a šírku 8 – 11 μm. Dominuje celkovému vzhľadu pólu oocysty.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Polárne teliesko: Prítomné (často jedno alebo viacero refraktívnych zŕn pod mikropylou).",
+      "Pri rutinnom koprologickom vyšetrení (flotačné metódy, napr. Brezov roztok alebo nasýtený roztok cukru) nachádzame v čerstvom truse nesporulované oocysty. Vďaka ich obrovskej veľkosti a tmavej, nepriehľadnej stene sú okamžite identifikovateľné už pri základnom zväčšení mikroskopu (100×). Stred oocysty vypĺňa tmavá, zrnitá, guľovitá zygota (sporont).",
+      "Po sporulácii vo vonkajšom prostredí (ktorá trvá relatívne dlho, cca 5 – 7 dní v závislosti od teploty) oocysta obsahuje 4 sporocysty, pričom v každej sú 2 sporozoity. Sporocysty sú predĺžené, ovoidné (rozmery cca 16 – 20 × 10 – 14 μm), s jasným Stiedovej telieskom a s masívnym reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
       "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
@@ -8318,17 +8339,14 @@
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria ahsata_: Dosahuje dĺžku do 40 μm, no jej stena je dokonale hladká, tenká a svetložltá. Tvar je viac elipsovitý, zužujúci sa k obom pólom.",
+      "_Eimeria bakuensis_ (syn. _E. ovina_): Je podstatne menšia (okolo 31 μm), má typicky elipsovitý tvar s takmer paralelnými bočnými stenami a stenu má hladkú a číru.",
+      "_Eimeria granulosa_: Je výrazne menšia (cca 29 μm), vykazuje typický hruškovitý (pyriformný) tvar a jej mikropylárna čiapočka je veľmi nízka a plochá na sploštenom póle."
     ],
-    "lifeCycle": "",
-    "pathology": "vysoko patogénny druh.",
+    "lifeCycle": "_Eimeria intricata_ prekonáva priamy (monoxénny) vývinový cyklus. K nákaze dochádza perorálnym požitím exogénne sporulovaných oocýst. Po excystácii v lúmene tráviaceho traktu sporozoity prenikajú do buniek sliznice. Na rozdiel od väčšiny ostatných eimérií oviec, ktoré striktne kolonizujú črevá, sa endogénne štádiá E. intricata môžu lokalizovať nielen v tenkom čreve (jejunum, ileum), ale výnimočne aj v sliznici slezu (abomasum). V bunkách prebiehajú minimálne dve generácie nepohlavného množenia (merogónie). Druhá generácia merontov dosahuje pomerne veľké rozmery. Následná pohlavná fáza (gamogónia) končí produkciou nesporulovaných oocýst, ktoré odchádzajú s trusom do vonkajšieho prostredia. Prepatentná perióda (čas od infekcie po vylúčenie prvých oocýst) je u tohto druhu pomerne dlhá a pohybuje sa medzi 20 až 23 dňami.",
+    "pathology": "Z veterinárno-medicínskeho pohľadu je Eimeria intricata považovaná za druh s nízkou až miernou inherentnou patogenitou. Vo väčšine prípadov prebieha infekcia subklinicky. Ak sa však premnoží u jahniat po odstave (najčastejšie ako synergická súčasť zmiešaných infekcií s vysoko patogénnymi druhmi E. ovinoidalis alebo E. crandallis), podieľa sa na klinických prejavoch kokcidiózy. Tie zahŕňajú stratu apetítu, znížené váhové prírastky, matnú srsť a pastovitú až vodnatú hnačku (spravidla bez masívneho krvácania). Pri sekcii nachádzame katarálny zápal tenkého čreva. Keďže sa parazit môže vyvíjať aj v sleze, pri masívnych infekciách dochádza k ložiskovým zmenám (abomasitída) sprevádzaným lokálnym edémom a narušením sekrécie tráviacich enzýmov.",
     "zoonosis": false,
-    "notes": "Viditeľné",
+    "notes": "Hoci ide o morfologicky najnápadnejší a najrobustnejší druh, jeho schopnosť vyvolať ťažké úhyny zvierat je omnoho nižšia než u miniatúrnej a nenápadnej _Eimeria ovinoidalis_, ktorá devastuje kryptové bunky hrubého čreva.",
     "id": "eimeria_irresidua_oocyst",
     "images": []
   },
@@ -8355,31 +8373,35 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 30,
-      "lengthMax": 32,
-      "widthMin": 21,
-      "widthMax": 23,
+      "lengthMin": 28,
+      "lengthMax": 36,
+      "widthMin": 19,
+      "widthMax": 30,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly až oválny",
+      "shape": "Vajcovitý",
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 32,0 × 23,0 μm (dĺžkovo-šírkový index cca 1,4).",
+      "Tvar oocysty: Výrazne elipsovitý až ovoidný (vajcovitý).",
+      "Mikropyla (micropyle): Jasne viditeľná na užšom póle.",
+      "Mikropylárna čiapočka (micropyle cap): Prítomná, zreteľná, stredne vysoká, klenutá.",
+      "Obal (stena): Dvojvrstvový, hladký, svetložltej až žltohnedej farby.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Polárne teliesko: Prítomné (často jedno malé refraktívne zrnko pod čiapočkou).",
+      "Pri natívnom koprologickom vyšetrení flotačnou metódou nachádzame v čerstvom truse nesporulované oocysty. Tie obsahujú kruhovú, tmavú a granulovanú centrálnu masu (sporont/zygotu), ktorá kompletne nevypĺňa vnútorný priestor oocysty.",
+      "Po exogénnej sporulácii (trvajúcej 2 – 4 dni v podmienkach vonkajšieho prostredia) oocysta nadobúda infekčnosť a obsahuje 4 sporocysty, pričom každá nesie 2 sporozoity. Sporocysty sú ovoidné s drobným Stiedovej telieskom a obsahujú granulované reziduálne teliesko sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria arloingi_: Najbežnejší druh u kôz. Má podobnú veľkosť (~28–30 μm), avšak jej tvar je viac urcovitý (bočné steny sú takmer paralelné), zatiaľ čo _E. jolchijevi_ je typicky elipsovitá.",
+      "_Eimeria christenseni_: Je celkovo väčšia (priemerne 38 × 25 μm) a jej mikropylárna čiapočka je výrazne prominentnejšia, vyššia a širšia.",
+      "_Eimeria ninakohlyakimovae_: Rozmerovo sa môže prekrývať, avšak jej absolútne chýba mikropyla aj mikropylárna čiapočka a má dokonale sférický tvar."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria jolchijevi_ prebieha priamy (monoxénny) vývinový cyklus. Kozliatka sa nakazia perorálnym požitím (fekálno-orálna cesta) sporulovaných oocýst z kontaminovanej podstielky, krmiva alebo vody. V tenkom čreve prebieha excystácia a uvoľnené sporozoity invadujú enterocyty sliznice. Nasleduje intracelulárna fáza nepohlavného rozmnožovania (merogónia/schizogónia), kedy vznikajú merozoity likvidujúce bunky črevného epitelu. Cyklus prechádza do pohlavnej fázy (gamogónia), kde dochádza k fúzii makrogamét a mikrogamét, vzniku zygoty a sformovaniu steny nesporulovanej oocysty, ktorá sa vylučuje trusom. Vonku v prítomnosti kyslíka nastáva sporogónia. Prepatentná perióda je približne 15 dní.",
+    "pathology": "Z veterinárneho hľadiska je _Eimeria jolchijevi_ hodnotená ako nízko patogénny (neopatogénny) druh. Monoinfekcie prebiehajú asymptomaticky a nespôsobujú vážne klinické narušenie zdravia. Patologický význam nadobúda parazit len pri zmiešaných infekciách u kozliat (vo veku 1–6 mesiacov) v kombinácii s vysoko patogénnymi druhmi (_E. arloingi, E. ninakohlyakimovae_) za predpokladu zlých zoohygienických podmienok. Vtedy prispieva k rozvoju katarálnej enteritídy, prejavujúcej sa zníženým váhovým prírastkom, prechodnou pastovitou hnačkou bez krvi a dehydratáciou. Na sliznici čreva nevytvára hlboké ulcerácie ani masívne hemorágie.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_jolchijevi_oocyst",
@@ -8410,7 +8432,7 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 26,
-      "lengthMax": 36,
+      "lengthMax": 38,
       "widthMin": 13,
       "widthMax": 20,
       "unit": "µm"
@@ -8421,27 +8443,33 @@
       "shell": "Paralelné"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 32,0 × 16,0 μm (výrazne dlhá a úzka oocysta).",
+      "Tvar oocysty: Charakteristicky predĺžený, valcovitý (cylindrický) až podlhovasto ovoidný s takmer paralelnými bočnými stenami. Tvarový index (pomer dĺžky k šírke) je mimoriadne vysoký, často viac ako 1,8 až 2,0.",
+      "Mikropyla (micropyle): Dobre viditeľná na jednom z pólov vo forme jemného sploštenia alebo prerušenia vnútornej vrstvy.",
+      "Mikropylárna čiapočka: Neprítomná.",
+      "Obal (stena): Tenký, hladký, bezfarebný až jemne nažltnutý alebo bledohnedý. Pozostáva spravidla z jednej vrstvy.",
+      "Reziduálne teliesko oocysty (oocyst residuum): Prítomné po sporulácii; tvorí ho jedna veľká, kompaktná, vysoko refraktívna tuková guľôčka (alebo veľké granule).",
+      "Polárne teliesko: Prítomné (často fixované blízko pólu).",
+      "Pri natívnom koprologickom vyšetrení trusu zajacov (klasická flotačná metóda s nasýteným roztokom soli alebo sacharózy) nachádzame v čerstvých vzorkách nesporulované oocysty. Sú nápadné svojím \"ceruzkovitým\" podlhovastým tvarom. Vnútro vypĺňa centrálny granulovaný sporoblast (zygota), ktorý je podlhovastý a necháva oba póly oocysty voľné.",
+      "Po sporulácii v prostredí (ktorá trvá zvyčajne 2 až 3 dni v závislosti od mikroklímy) oocysta obsahuje 4 sporocysty, pričom každá nesie 2 sporozoity. Sporocysty sú pretiahnuté, ovoidné a v oocyste sú usporiadané pozdĺžne (často ležia \"hlava-chvost\") s veľkým centrálnym reziduálnym telesom."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria stefanskii_: Taktiež predĺžená (30 x 17 μm), no má viditeľnú, hoci malú mikropylárnu čiapočku a jej stena býva o niečo hrubšia a tmavšia.",
+      "_Eimeria hungarica_: Je diametrálne odlišná; patrí k najmenším druhom (cca 14 μm), má dokonale guľovitý (sférický) tvar a jej oocystové reziduum je tvorené len voľnými drobnými granulami.",
+      "_Eimeria europaea_ a _E. robertsoni_: Sú masívne, široko vajcovité oocysty (veľkosť nad 35 – 45 μm), ktoré disponujú mohutnou a jasne viditeľnou mikropylárnou čiapočkou, zatiaľ čo _E. leporis_ čiapočku nikdy nemá."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria leporis_ je monoxénny parazit s priamym vývinovým cyklom. K infekcii dochádza požitím exogénne sporulovaných (infekčných) oocýst z pasienkov kontaminovaných trusom. V lúmene tenkého čreva prebieha excystácia, pri ktorej sporozoity opúšťajú obaly a penetrujú do enterocytov epitelu tenkého čreva (najmä v oblasti jejúna a ilea). Tu parazit absolvuje fázu vnútrobunkového nepohlavného množenia (merogóniu/schizogónia), počas ktorej sa tvorí niekoľko generácií merozoitov, čo masívne deštruuje funkčný črevný epitel. Nasleduje pohlavný cyklus (gamogónia) vedúci k vzniku fuzovaných zygot, ktoré sa obalia stenou. Tieto nesporulované oocysty sa následne uvoľňujú do lumenu čreva a odchádzajú s trusom do vonkajšieho prostredia, kde v prítomnosti kyslíka prebieha exogénna sporogónia. Prepatentná perióda trvá približne 12 až 14 dní.",
+    "pathology": "Z hľadiska patogenity je _Eimeria leporis_ klasifikovaná ako stredne až vysoko patogénny druh, najmä v závislosti od veku a kondície hostiteľa. U dospelých jedincov vo voľnej prírode prebieha parazitizmus často subklinicky a bez zjavných príznakov. Avšak pre mladé zajace (vo veku 1 – 3 mesiacov) predstavuje smrteľné nebezpečenstvo. Masívna replikácia v enterocytoch vedie k denudácii (zlupovaniu) sliznice a závažnej katarálnej až hemoragickej enteritíde (zápalu čriev). Klinická zajačia kokcidióza sa prejavuje apatiou, nenačuchranou matnou srsťou, rapídnym chradnutím a profúznymi vodnatými, niekedy hlienovitými hnačkami. Pri sekcii nachádzame stenu tenkého čreva zhrubnutú, edematóznu, s pozdĺžnymi belavými prúžkami a bodkovitými hemorágiami (petechiami). Úmrtnosť u mláďat môže pri masívnom tlaku dosiahnuť 30 – 50 %",
     "zoonosis": false,
-    "notes": "Málo výrazné mikropyle",
+    "notes": "Nedávne európske parazitologické štúdie (vrátane výskumov v susednej Českej republike z rokov 2022–2024) ukázali prekvapivý epidemiologický trend: prevalencia _Eimeria leporis_ a príbuzných druhov je signifikantne vyššia u dospelých zajacov (~88 %) než u mláďat (~37 %). Parazitológovia to vysvetľujú tak, že extrémne citlivé nakazené mláďatá hynú v prírode tak rýchlo, že sa nestihnú zachytiť pri odstreloch alebo monitoringoch, zatiaľ čo dospelé jedince prežívajú ako odolní, chronickí nosiči.",
     "id": "eimeria_leporis_oocyst",
     "images": []
   },
   {
     "latinName": "Eimeria leuckarti",
-    "synonyms": [],
+    "synonyms": [
+      "Globidium leuckarti"
+    ],
     "slovakName": "",
     "taxonomy": {
       "kingdom": "Protozoa",
@@ -8453,18 +8481,20 @@
       "species": "Eimeria leuckarti"
     },
     "hostGroups": [
-      "Nepárnokopytníky"
+      "Koňovité"
     ],
-    "hosts": [],
+    "hosts": [
+      "Zebra"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 55,
-      "lengthMax": 85,
-      "widthMin": 38,
-      "widthMax": 63,
+      "lengthMin": 70,
+      "lengthMax": 94,
+      "widthMin": 47,
+      "widthMax": 79,
       "unit": "µm"
     },
     "morphology": {
@@ -8473,22 +8503,22 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Veľká hruškovitá oocysta s hrubou",
-      "hnedou",
-      "zrnitou škrupinou - typicky najväčšia Eimeria u koní."
+      "Priemerná dĺžka a šírka: 80 – 86 × 50 – 56 μm (hmotnostne extrémne ťažká oocysta).",
+      "Tvar oocysty: Výrazne ovoidný (vajcovitý) až hruškovitý (pyriformný), s jasne splošteným a zúženým pólom. Ide o jednu z najväčších a morfologicky najšpecifickejších oocýst v rámci celého rodu Eimeria.",
+      "Obal (stena): Nápadne hrubá (masívna, cca 6 – 7 μm), jasne dvojvrstvová. Vonkajšia vrstva je tmavohnedá až nepriehľadná, s jemne granulovanou až drsnou textúrou, čo dodáva oocyste vzhľad pripomínajúci vajíčko nematód rodu Trichuris alebo kúsok rastlinného detritu.",
+      "Mikropyla (micropyle): Dobre viditeľná na užšom, sploštenom póle ako zreteľný, cca 6 – 8 μm široký otvor (prerušenie tmavej steny).",
+      "Mikropylárna čiapočka: Úplne neprítomná.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Pri rutinnom koprologickom vyšetrení čerstvého trusu koní nachádzame nesporulované oocysty. Vnútro kompletne vypĺňa tmavá, nepriehľadná stredová bunková masa (sporoblast).",
+      "Po exogénnej sporulácii, ktorá trvá nezvyčajne dlho (približne 2 až 3 týždne vo vonkajšom prostredí), oocysta obsahuje 4 sporocysty, v každej po 2 sporozoity."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "Keďže u koní neparazituje žiaden iný druh rodu Eimeria, zámena s príbuznými druhmi u rovnakého hostiteľa odpadá."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria leuckarti_ prebieha priamy (monoxénny) vývinový cyklus. Žriebä sa nakazí perorálnym požitím exogénne vysporulovanej infekčnej oocysty (napr. zo znečisteného vemena kobyly, podstielky či krmiva). V lúmene tenkého čreva nastáva excystácia. Uvoľnené sporozoity migrujú hlboko do sliznice a invadujú enterocyty, konkrétne v oblasti lamina propria tenkého čreva (jejunum a ileum). Vnútrobunková fáza nepohlavného množenia (merogónia) produkuje obrovské, takzvané makroschizonty (dosahujúce veľkosť až do 300 μm), ktoré doslova nafukujú hostiteľské bunky. Nasleduje pohlavná fáza (gamogónia), po ktorej oplodnené makrogaméty sformujú masívny obal a ako nesporulované oocysty sa odlúčia do čreva a odchádzajú s trusom von. Prepatentná perióda je nezvyčajne dlhá a trvá minimálne 30 až 35 dní.",
+    "pathology": "Z veterinárneho hľadiska je _Eimeria leuckarti_ považovaná za nízko patogénneho parazita, ktorého nález je vo väčšine prípadov náhodný a subklinický. Napriek gigantickým rozmerom endogénnych štádií v čreve vyvoláva klinické ochorenie (kokcidiózu koní) iba zriedkavo. K rozvoju patológie dochádza pri masívnych infekciách u žriebät s narušenou imunitou (napr. pri súbežnej infekcii rotavírusmi, Rhodococcus equi či pri silnom začervení škravkami). Vtedy parazit vyvoláva ložiskovú enteritídu sliznice tenkého čreva. Klinicky sa prejavuje intermitentnými (striedavými) vodnatými hnačkami, miernou kolikou, dehydratáciou, apatiou a stratou kondície žriebäťa. Histopatologicky nachádzame v sliznici čreva deštrukciu klkov, infiltráciu zápalových buniek (eozinofilov a lymfocytov) okolo masívnych gamontov a oocýst.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Vyskytuje sa na celom území Slovenskej republiky. Najvyššia prevalencia je u žriebät vo veku od 1 do 6 mesiacov a u mladých koní v hromadných chovoch (napr. plemenné žrebčíny, športové a rekreačné stajne).",
     "id": "eimeria_leuckarti_oocyst",
     "images": []
   },
@@ -8507,40 +8537,43 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Králik"
+      "Zajac"
     ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 37,
-      "lengthMax": 44.5,
-      "widthMin": 22,
-      "widthMax": 25,
+      "lengthMin": 32,
+      "lengthMax": 40,
+      "widthMin": 24,
+      "widthMax": 30,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
+      "shape": "Vajcovitý",
       "colour": "Žltohnedý",
-      "shell": "Paralelné"
+      "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: ~36,5 × 27,2 μm (stredne veľká až väčšia oocysta)",
+      "Vajcovitý (ovoidný) až široko elipsovitý",
+      "Obal (stena): Nápadne hrubá a dvojvrstvová. Vonkajšia vrstva je žltohnedá až tmavohnedá s extramodernou, masívnou skulpturáciou (povrch je posiaty veľkými, nepravidelnými hrbolčekmi, jamkami alebo lištami), čo jej dáva extrémne drsný, až „bradavicnatý“ vzhľad.",
+      "Mikropyla (micropyle): Dobre vyvinutá na zúženom póle.",
+      "Mikropylárna čiapočka: Prítomná, stredne veľká, klenutá, jemne prekrývajúca mikropylu.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Pri natívnom koprologickom vyšetrení trusu zajacov flotačnou metódou nachádzame nesporulované oocysty. Kvôli tmavej, masívnej a hrboľatej stene sú v zornom poli veľmi nápadné, no ich skulpturovaný povrch môže čiastočne maskovať vnútorné štruktúry. Stred oocysty vypĺňa tmavý, granulovaný sporoblast, ktorý nevychádza až k okrajom steny.",
+      "Po exogénnej sporulácii v vonkajšom prostredí (trvá zvyčajne 4 – 5 dní) oocysta obsahuje typickú zostavu: 4 sporocysty, v každej 2 sporozoity. Sporocysty sú ovoidné s prítomným Stiedovej telieskom a masívnym reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria europaea_: Rozmerovo veľmi podobná (priemerne 34 × 22 μm) a disponuje veľkou čiapočkou. Hlavným rozdielom je však úplne hladká, číra a svetlá stena E. europaea, zatiaľ čo E. macrosculpta ju má drsnú a hnedastú.",
+      "_Eimeria stefanskii_: Má taktiež naznačenú drobnú čiapočku a predĺžený tvar, no jej stena je takmer hladká bez masívnych bradavicnatých útvarov.",
+      "_Eimeria leporis_: Absolútne najčastejší slovenský druh. Je typicky valcovitá (cylindrická), bez čiapočky, má tenkú hladkú stenu a po sporulácii obsahuje veľké guľovité oocystové reziduum."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria macrosculpta_ má priamy (monoxénny) vývinový cyklus. Prenos sa uskutočňuje fekálno-orálnou cestou požitím exogénne sporulovaných oocýst z prostredia (tráva, kontaminovaná pôda). V čreve zajaca nastáva excystácia. Uvoľnené sporozoity penetrujú do enterocytov epitelu tenkého čreva, kde prebieha nepohlavná fáza množenia (merogónia). Po deštrukcii hostiteľských buniek a uvoľnení merozoitov cyklus prechádza do pohlavnej fázy (gamogónia). Oplodnená zygota (makrogaméta po fúzii s mikrogamétou) vytvorí masívnu skulpturovanú stenu a ako nesporulovaná oocysta odchádza s feces von z tela. Vo vonkajšom prostredí prebieha exogénna sporogónia na infekčné štádium. Prepatentná perióda sa odhaduje na 14 – 16 dní.",
+    "pathology": "Vzhľadom na nízku prevalenciu a obmedzené možnosti štúdia tohto vzácneho druhu je jeho inherentná patogenita považovaná za strednú. Pri bežných nízkych inváziách u divých zajacov prebieha infekcia subklinicky. Pri masívnom zaostrení alebo v zmiešaných kokcídiových infekciách (najmä u mladých jedincov vo veku 1 – 3 mesiacov) prispieva k rozvoju enteritídy (zápalu čriev). Poškodenie enterocytov vedie k zníženej absorpcii živín, malabsorpcii, dehydratácii a hnačkám kašovitej konzistencie. Pri makroskopickom vyšetrení čreva po úhyne môžu byť prítomné drobné belavé povlaky alebo prekrvená (hyperemická) sliznica tenkého čreva.",
     "zoonosis": false,
-    "notes": "Výrazné mikropyle. Veľmi zriedkavá",
+    "notes": "Veľmi vzácny parazit. Na území Slovenskej republiky je nález _Eimeria macrosculpta_ **veľmi nepravdepodobný až raritný**. Hoci bol druh opísaný v susednom Maďarsku a ojedinele sa vyskytuje v strednej Európe, v rutinných koprologických vyšetreniach našich divých zajacov absolútne dominujú iné taxóny. Ak sa zachytí, spravidla ide o importované zvieratá alebo prechodnú mikroložiskovú prítomnosť v južných prihraničných oblastiach.",
     "id": "eimeria_macrosculpta_oocyst",
     "images": []
   },
@@ -8566,10 +8599,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 31,
-      "lengthMax": 40,
-      "widthMin": 22,
-      "widthMax": 26,
+      "lengthMin": 27,
+      "lengthMax": 41,
+      "widthMin": 17,
+      "widthMax": 29,
       "unit": "µm"
     },
     "morphology": {
@@ -8578,21 +8611,25 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2). žltohnedá stena."
+      "Priemerná dĺžka a šírka: 35,0 × 24,0 μm (dĺžkovo-šírkový index cca 1,4 – 1,5)",
+      "Tvar oocysty: Ovoidný (vajcovitý) až široko elipsovitý.",
+      "Mikropyla (micropyle): Veľmi nápadná, široká (cca 5 – 6 μm) a hlboká na užšom póle oocysty.",
+      "Mikropylárny golierik / obruba: Najdôležitejší rozlišovací znak. **Okolo mikropyly sa nachádzajú výrazné, prečnievajúce a vyvýšené okraje steny oocysty, ktoré pripomínajú golierik**, korunku alebo ozubenú obrubu.",
+      "Obal (stena): Hladký, dvojvrstvový, žltkastý až jasne žltohnedý.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Polárne teliesko: Prítomné (často ako malé zrnko lokalizované hlboko pod mikropylárnym pólom).",
+      "Pri natívnom koprologickom vyšetrení (klasická flotačná metóda s nasýteným roztokom soli alebo sacharózy) nachádzame v čerstvom truse králikov nesporulované oocysty. Sú veľmi nápadné vďaka svojej veľkosti, žltohnedej farbe a \"golieriku\". Vnútro vypĺňa tmavá, zrnitá stredová zygota (sporont), ktorá zanecháva oba póly voľné.",
+      "Po exogénnej sporulácii (ktorá pri teplote 20 – 24 °C prebieha rýchlo, v priebehu 2 až 3 dní) oocysta obsahuje 4 sporocysty, v každej po 2 sporozoity. Sporocysty sú ovoidné (cca 16 × 9 μm) s masívnym, jasne viditeľným Stiedovej telieskom a s prítomným reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria stiedae_: Pôvodca nebezpečnej jaternej kokcidiózy králikov. Rozmerovo je veľmi podobná (priemerne 37 × 20 μm) a taktiež má mikropylu, avšak jej absolútne chýba vyvýšený mikropylárny golierik. Má dokonale hladký, pravidelný elipsovitý obrys bez deformácie na póle a je o niečo užšia.",
+      "_Eimeria intestinalis_: Vysoko patogénny črevný druh. Je o niečo menšia (priemerne 27 × 18 μm), má taktiež jemne naznačený golierik, avšak jej tvar je výrazne hruškovitejší (pyriformný) a stena je číra, takmer bezfarebná.",
+      "_Eimeria media_: Menšia (cca 27 × 17 μm), ovoidná, má malú mikropylu, ale po sporulácii vždy obsahuje veľké, kompaktné reziduálne teliesko oocysty, ktoré u E. magna chýba."
     ],
-    "lifeCycle": "",
-    "pathology": "vysoko patogénny",
+    "lifeCycle": "_Eimeria magna_ prekonáva priamy (monoxénny) vývinový cyklus. Králik sa nakazí perorálnym požitím exogénne vysporulovaných (infekčných) oocýst. Tie sa často nachádzajú na znečistenom pletive koterov, v krmive alebo ich mláďatá olizujú z vemena matky. V tenkom čreve nastáva excystácia a uvoľnené sporozoity penetrujú do enterocytov, pričom preferujú strednú a zadnú tretinu tenkého čreva (jejunum a ileum). V bunkách prebieha masívna vnútrobunková nepohlavná fáza (merogónia) pozostávajúca z minimálne 3 až 5 generácií merozoitov, čo vedie k extenzívnej deštrukcii črevnej sliznice. Nasleduje pohlavná fáza (gamogónia), v ktorej fuzujú makrogaméty a mikrogaméty. Vzniknuté zygoty sformujú ochranné obaly a ako nesporulované oocysty odchádzajú s trusom do vonkajšieho prostredia. Tam pri dostatku kyslíka a vlhkosti prebehne externá sporogónia. Prepatentná perióda trvá približne 7 dní.",
+    "pathology": "_Eimeria magna_ patrí k vysoko patogénnym druhom s mimoriadnou imunogenitou. Masívna replikácia parazita v enterocytoch poškodzuje črevné klky, čo vedie k narušeniu absorpcie tekutín a živín. Klinická črevná kokcidióza vyvolaná týmto druhom postihuje najmä mláďatá vo veku 4 až 8 týždňov (krátko po odstave). Prejavuje sa apatiou, intenzívnym škrípaním zubov (príznak bolesti brucha), profúznymi hnačkami, ktoré môžu byť hlienovité až s prímesou tmavej krvi, nenačuchranou srsťou a rýchlym úhynom v dôsledku dehydratácie. Pri sekcii nachádzame jejunum a ileum silne dilatované (rozšírené), vyplnené zapáchajúcim tekutým obsahom a plynom. Sliznica je výrazne prekrvená (hyperemická), zhrubnutá, s prítomnosťou rozsiahlych petechií (krvácanín) a difúznych belavých povlakov.",
     "zoonosis": false,
-    "notes": "Široké mikropyle s golierom",
+    "notes": "Hoci ide o veľmi nebezpečný kmeň, Eimeria magna stimuluje u prežitých králikov mimoriadne silnú a rýchlu imunitnú odpoveď. Jediná nízka dávka oocýst dokáže králika celoživotne chrániť pred reinfekciou, čo sa celosvetovo intenzívne využíva pri vývoji moderných perorálnych vakcín pre komerčné chovy.",
     "id": "eimeria_magna_oocyst",
     "images": [
       "/public/images/parasites/eimeria_magna_oocyst/eimeria_magna_oocyst_02.webp"
@@ -8613,7 +8650,8 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -8623,7 +8661,7 @@
       "lengthMin": 15,
       "lengthMax": 22,
       "widthMin": 11,
-      "widthMax": 14,
+      "widthMax": 15,
       "unit": "µm"
     },
     "morphology": {
@@ -8632,21 +8670,26 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 19,1 × 13,1 μm (dĺžkovo-šírkový index sa pohybuje okolo 1,4 – 1,5).",
+      "Pravidelne elipsovitý až jemne ovoidný (oválny). Radí sa k menším druhom eimérií oviec.",
+      "Mikropyla (micropyle): Prítomná na užšom póle, avšak veľmi malá a nezreteľná (inconspicuous).",
+      "Mikropylárna čiapočka (micropyle cap): Prítomná, ale extrémne malá, nenápadná a plochá. Často vyzerá len ako drobný, sotva badateľný priehľadný reflex na póle oocysty.",
+      "Obal (stena): Hladký, tenký, dvojvrstvový. Vonkajšia vrstva je bezfarebná, vnútorná vrstva má jemný žltkastý nádych.",
+      "Reziduálne teliesko oocysty: Neprítomné.",
+      "Polárne teliesko: Prítomné (spravidla jedno malé, refraktívne zrnko umiestnené pod mikropylárnym pólom).",
+      "Pri rutinnom koprologickom vyšetrení čerstvého trusu oviec (flotačná metóda podľa Sheathera alebo Faustov roztok) nachádzame nesporulované oocysty. Vzhľadom na malé rozmery (~19 μm) vyžadujú dôkladné prezeranie pri zväčšení 400×. Ich vnútro vypĺňa okrúhly, tmavší granulovaný sporoblast, ktorý necháva oba póly voľné.",
+      "Po exogénnej sporulácii v vonkajšom prostredí oocysta obsahuje 4 sporocysty, v každej po 2 sporozoity. Sporocysty sú ovoidné, merajú cca 7 – 10 × 5 – 6 μm a obsahujú drobné reziduálne teliesko sporocysty."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
+      "_Eimeria parva_: Rozmerovo veľmi blízka (17 × 14 μm), avšak jej absolútne chýba mikropyla aj mikropylárna čiapočka a jej tvar je výrazne guľovitejší (sférický).",
+      "_Eimeria pallida_: Je ešte menšia (priemerne 14 × 10 μm), elipsovitá, s takmer nepostrehnuteľnou mikropylou, ale úplne jej chýba mikropylárna čiapočka.",
+      "_Eimeria crandallis_: Taktiež disponuje čiapočkou, je však o niečo väčšia (priemerne 22 × 18 μm) a jej tvar je viac subosférický až široko ovoidný, s výraznejšou čiapočkou.",
+      "_Eimeria granulosa_: Má rovnako plochú čiapočku, no je diametrálne väčšia (priemerne 29 × 21 μm) a vykazuje typický hruškovitý (pyriformný) tvar."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "_Eimeria marsica_ má priamy (monoxénny) vývinový cyklus. Jahňatá sa nakazia perorálnym požitím exogénne sporulovaných infekčných oocýst z kontaminovanej pastvy alebo podstielky. V tenkom čreve prebieha excystácia a uvoľnené sporozoity penetrujú do enterocytov sliznice. Tu parazit absolvuje vnútrobunkovú nepohlavnú fázu (merogónia/schizogónia), počas ktorej vzniká niekoľko generácií merozoitov ničiaci bunky epitelu. Následná pohlavná fáza (gamogónia) končí produkciou nesporulovaných oocýst. Tie odchádzajú s trusom do vonkajšieho prostredia, kde za prístupu kyslíka prebieha exogénna sporogónia na infekčné štádium. Prepatentná perióda trvá 14 až 16 dní.",
+    "pathology": "Z veterinárno-medicínskeho hľadiska vykazuje _Eimeria marsica_ nízku inherentnú patogenitu. Samostatné infekcie prebiehajú takmer výhradne subklinicky (asymptomaticky). Patologický význam nadobúda len ako minoritná súčasť zmiešaných kokcidióz u mladých jahniat (vo veku 1 až 4 mesiacov) za predpokladu vysokého infekčného tlaku a stresových faktorov (odstav, zlé počasie, preplnenie maštalí). V takýchto prípadoch prispieva k celkovému obrazu katarálnej enteritídy, prejavujúcej sa miernymi pastovitými hnačkami (spravidla bez krvi), zníženým váhovým prírastkom a prechodnou dehydratáciou. Na sliznici čreva nespôsobuje hlboké ulcerácie ani masívne makroskopické lézie.",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "Pre začínajúcich laborantov je _E. marsica_ permanentným orieškom. Jej mikropylárna čiapočka je tak nízka a nevýrazná, že pri rýchlom skríningu trusu býva tento druh takmer pravdepodobne zapísaný ako _Eimeria pallida_ alebo väčšia _Eimeria parva_, čo skresľuje epidemiologické dáta o diverzite kmeňov v chove.",
     "id": "eimeria_marsica_oocyst",
     "images": []
   },
@@ -8683,22 +8726,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Vajcovitá",
-      "casto zafarbená (nahnedasto-žltá) škrupina; typický eimeriový vzor 4 sporocysty x 2 sporozoity po sporulácii."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_maxima_oocyst",
     "images": []
   },
@@ -8735,22 +8768,12 @@
       "colour": "Ružový",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Zrezaný vpredu",
+    "notes": "",
     "id": "eimeria_media_oocyst",
     "images": []
   },
@@ -8787,22 +8810,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_meleagridis_oocyst",
     "images": []
   },
@@ -8839,22 +8852,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "vysoko patogénna.",
+    "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_meleagrimitis_oocyst",
     "images": []
   },
@@ -8891,22 +8894,12 @@
       "colour": "Hnedý",
       "shell": "Hrubá"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_mira_oocyst",
     "images": []
   },
@@ -8943,22 +8936,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "nízko patogénna",
+    "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_mitis_oocyst",
     "images": []
   },
@@ -8995,22 +8978,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "vysoko patogénna, schizogónia v strednej časti tenkého čreva, gamogónia v céku.",
+    "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_necatrix_oocyst",
     "images": []
   },
@@ -9047,22 +9020,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_neodebliecki_oocyst",
     "images": []
   },
@@ -9100,22 +9063,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_ninaekohljakimovae_oocyst",
     "images": []
   },
@@ -9153,23 +9106,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Priemerná veľkosť 22 x 17 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_ovinoidalis_oocyst",
     "images": []
   },
@@ -9188,7 +9130,8 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -9206,22 +9149,12 @@
       "colour": "Svetlohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_ovis_oocyst",
     "images": []
   },
@@ -9259,23 +9192,12 @@
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Priemerná veľkosť 13 x 13 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_pallida_oocyst",
     "images": []
   },
@@ -9312,22 +9234,12 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_panda_oocyst",
     "images": []
   },
@@ -9365,23 +9277,12 @@
       "colour": "Žltobiely",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Priemerná veľkosť 16 x 13 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_parva_oocyst",
     "images": []
   },
@@ -9418,22 +9319,12 @@
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2). Hostiteľ: králik."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "najbežnejší, nízko patogénny druh.",
+    "pathology": "",
     "zoonosis": false,
-    "notes": "Oba póly zaoblené rovnako",
+    "notes": "",
     "id": "eimeria_perforans_oocyst",
     "images": [
       "/public/images/parasites/eimeria_perforans_oocyst/eimeria_perforans_oocyst_02.webp"
@@ -9472,22 +9363,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_perminuta_oocyst",
     "images": [
       "/public/images/parasites/eimeria_perminuta_oocyst/eimeria_perminuta_oocyst_01.webp"
@@ -9526,18 +9407,8 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -9578,22 +9449,12 @@
       "colour": "Bezfarebný",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Viditeľné mikropyle",
+    "notes": "",
     "id": "eimeria_piriformis_oocyst",
     "images": [
       "/public/images/parasites/eimeria_piriformis_oocyst/eimeria_piriformis_oocyst_02.webp"
@@ -9632,22 +9493,12 @@
       "colour": "Žltohnedý",
       "shell": "Hrubá"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_polita_oocyst",
     "images": [
       "/public/images/parasites/eimeria_polita_oocyst/eimeria_polita_oocyst_01.webp"
@@ -9686,22 +9537,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_ponderosa_oocyst",
     "images": []
   },
@@ -9738,22 +9579,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Veľké sporocysty",
+    "notes": "",
     "id": "eimeria_porci_oocyst",
     "images": [
       "/public/images/parasites/eimeria_porci_oocyst/eimeria_porci_oocyst_01.webp"
@@ -9792,22 +9623,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
-    "pathology": "krátky prepatentný čas, nízka patogenita.",
+    "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_praecox_oocyst",
     "images": [
       "/public/images/parasites/eimeria_praecox_oocyst/eimeria_praecox_oocyst_01.webp"
@@ -9828,7 +9649,8 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -9846,22 +9668,12 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_punctata_oocyst",
     "images": []
   },
@@ -9898,22 +9710,12 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_pythonis_oocyst",
     "images": []
   },
@@ -9950,22 +9752,12 @@
       "colour": "Žltohnedý",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Výrazné mikropyle s golierom",
+    "notes": "",
     "id": "eimeria_robertsoni_oocyst",
     "images": []
   },
@@ -10002,22 +9794,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_robusta_oocyst",
     "images": []
   },
@@ -10054,22 +9836,12 @@
       "colour": "Hnedý",
       "shell": "Radiálne pruhovaná"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_scabra_oocyst",
     "images": [
       "/public/images/parasites/eimeria_scabra_oocyst/eimeria_scabra_oocyst_0.webp"
@@ -10108,22 +9880,12 @@
       "colour": "Hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_schoenbuchi_oocyst",
     "images": []
   },
@@ -10160,22 +9922,12 @@
       "colour": "Tmavohnedý",
       "shell": "Hrubá"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle. Veľmi zriedkavá",
+    "notes": "",
     "id": "eimeria_sculpta_oocyst",
     "images": []
   },
@@ -10212,22 +9964,12 @@
       "colour": "Žltohnedý",
       "shell": "Paralelné"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Výrazné mikropyle",
+    "notes": "",
     "id": "eimeria_semisculpta_oocyst",
     "images": []
   },
@@ -10264,22 +10006,12 @@
       "colour": "Svetložltý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_separata_oocyst",
     "images": []
   },
@@ -10316,22 +10048,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_serbica_oocyst",
     "images": []
   },
@@ -10368,18 +10090,8 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -10420,22 +10132,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_sordida_oocyst",
     "images": []
   },
@@ -10473,19 +10175,8 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2). Generický záznam pre nešpecifikovaný druh u plazov/vtákov - konkrétny rozsah rozmerov v tabuľke je len orientačný odhad rodového rozsahu",
-      "nie meranie konkrétneho druhu."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -10526,19 +10217,8 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve). Generický záznam pre nešpecifikovaný žlčníkový (Choleoeimeria-typ) druh u plazov - rozsah rozmerov je len orientačný odhad",
-      "nie meranie konkrétneho druhu."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -10579,22 +10259,12 @@
       "colour": "Hnedý",
       "shell": "Hrubá"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Chýba mikropyle",
+    "notes": "",
     "id": "eimeria_spinosa_oocyst",
     "images": []
   },
@@ -10632,21 +10302,13 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Viditeľné mikropyle. Najväčšia zo zajačích kokcídií."
     ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Viditeľné mikropyle. Najväčšia zo zajačích kokcídií.",
+    "notes": "",
     "id": "eimeria_stefanskii_oocyst",
     "images": []
   },
@@ -10683,22 +10345,12 @@
       "colour": "Ružový",
       "shell": "Tenká"
     },
-    "diagnosticSigns": [
-      "Oválna oocysta",
-      "bledožltá; nachádza sa v žlčových cestách pečene (parazit pečene u králikov); po sporulácii 4 sporocysty x 2 sporozoity."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Vpredu zúžený",
+    "notes": "",
     "id": "eimeria_stiedae_oocyst",
     "images": [
       "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_03.webp"
@@ -10739,22 +10391,12 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle. Nepatogén.",
+    "notes": "",
     "id": "eimeria_subspherica_oocyst",
     "images": [
       "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_01.webp"
@@ -10793,18 +10435,8 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -10847,22 +10479,12 @@
       "colour": "Tmavohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_superba_oocyst",
     "images": []
   },
@@ -10899,24 +10521,12 @@
       "colour": "Zelenkastý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Vajcovité",
-      "bez mikropyle",
-      "hladká dvojvrstvová škrupina; pri vylúčení nesporulované (obsahuje jednu zárodočnú bunku - sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický eimeriový vzor 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Nemá mikropyle",
+    "notes": "",
     "id": "eimeria_tenella_oocyst",
     "images": [
       "/public/images/parasites/eimeria_tenella_oocyst/eimeria_tenella_oocyst_02.webp"
@@ -10955,22 +10565,12 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Výrazné mikropyle",
+    "notes": "",
     "id": "eimeria_townsendi_oocyst",
     "images": []
   },
@@ -11007,22 +10607,12 @@
       "colour": "Sivý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_truncata_oocyst",
     "images": []
   },
@@ -11059,18 +10649,8 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -11111,22 +10691,12 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_wassiliewskyi_oocyst",
     "images": []
   },
@@ -11169,18 +10739,11 @@
       "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
       "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
     ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
-    "notes": "Má mikropyle",
+    "notes": "",
     "id": "eimeria_weybridgensis_oocyst",
     "images": []
   },
@@ -11217,18 +10780,8 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -11271,18 +10824,8 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2). Hostiteľ: hovädzí dobytok."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od ostatných Eimeria spp. rovnakého hostiteľa podľa veľkosti",
-      "tvaru",
-      "L/W pomeru",
-      "mikropyle",
-      "oocystového rezidua",
-      "polárnej granuly a štruktúry sporocýst; pri podobných druhoch morfológia sama nemusí byť definitívna."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -15477,7 +15020,8 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -19031,7 +18575,8 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Ovca"
+      "Ovca",
+      "Muflón"
     ],
     "hostNotes": {},
     "sample": "Trus",
