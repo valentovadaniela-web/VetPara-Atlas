@@ -2551,6 +2551,15 @@
   },
   {
     "parasiteId": "eimeria_auburnensis_oocyst",
+    "url": "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:15:05.672Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "eimeria_auburnensis_oocyst",
     "url": "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_03.webp",
     "alt": "",
     "caption": "",
@@ -2614,6 +2623,15 @@
     "dateAdded": "2026-08-29T13:03:07.933Z"
   },
   {
+    "parasiteId": "eimeria_bovis_oocyst",
+    "url": "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:15:53.949Z",
+    "isPrimary": true
+  },
+  {
     "parasiteId": "eimeria_brunetti_oocyst",
     "url": "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_01.webp",
     "alt": "",
@@ -2632,19 +2650,20 @@
   },
   {
     "parasiteId": "eimeria_bukidnonensis_oocyst",
-    "url": "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:03:28.865Z"
-  },
-  {
-    "parasiteId": "eimeria_bukidnonensis_oocyst",
     "url": "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:03:28.876Z"
+  },
+  {
+    "parasiteId": "eimeria_bukidnonensis_oocyst",
+    "url": "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:17:33.471Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "eimeria_capreoli_oocyst",
@@ -2705,6 +2724,15 @@
   },
   {
     "parasiteId": "eimeria_cylindrica_oocyst",
+    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:18:23.809Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "eimeria_cylindrica_oocyst",
     "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_02.webp",
     "alt": "",
     "caption": "",
@@ -2733,8 +2761,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T13:04:46.168Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-29T13:04:46.168Z"
   },
   {
     "parasiteId": "eimeria_dispersa_oocyst",
@@ -2776,6 +2803,15 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:05:15.008Z"
+  },
+  {
+    "parasiteId": "eimeria_ellipsoidalis_oocyst",
+    "url": "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:19:25.337Z",
+    "isPrimary": true
   },
   {
     "parasiteId": "eimeria_ellipsoidalis_oocyst",
@@ -3149,6 +3185,15 @@
   },
   {
     "parasiteId": "eimeria_subspherica_oocyst",
+    "url": "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:28:45.089Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "eimeria_subspherica_oocyst",
     "url": "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_02.webp",
     "alt": "",
     "caption": "",
@@ -3161,8 +3206,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T13:14:15.552Z",
-    "isPrimary": true
+    "dateAdded": "2026-08-29T13:14:15.552Z"
   },
   {
     "parasiteId": "eimeria_tenella_oocyst",
@@ -3222,8 +3266,16 @@
     "dateAdded": "2026-08-29T13:14:53.230Z"
   },
   {
-    "parasiteId": "eimeria_zuenii_oocyst",
-    "url": "/public/images/parasites/eimeria_zuenii_oocyst/eimeria_zuenii_oocyst_01.webp",
+    "parasiteId": "eimeria_zuernii_oocyst",
+    "url": "/public/images/parasites/eimeria_zuernii_oocyst/eimeria_zuernii_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:14:53.230Z"
+  },
+  {
+    "parasiteId": "eimeria_zuernii_oocyst",
+    "url": "/public/images/parasites/eimeria_zuernii_oocyst/eimeria_zuernii_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -5823,30 +5875,6 @@
     "dateAdded": "2026-09-26T19:14:28.587Z"
   },
   {
-    "parasiteId": "eimeria_auburnensis_oocyst",
-    "url": "/public/images/parasites/eimeria_auburnensis_oocyst/eimeria_auburnensis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:15:05.672Z"
-  },
-  {
-    "parasiteId": "eimeria_bovis_oocyst",
-    "url": "/public/images/parasites/eimeria_bovis_oocyst/eimeria_bovis_oocyst_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:15:53.949Z"
-  },
-  {
-    "parasiteId": "eimeria_bukidnonensis_oocyst",
-    "url": "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:17:33.471Z"
-  },
-  {
     "parasiteId": "eimeria_caprina_oocyst",
     "url": "/public/images/parasites/eimeria_caprina_oocyst/eimeria_caprina_oocyst_01.webp",
     "alt": "",
@@ -5855,28 +5883,12 @@
     "dateAdded": "2026-09-26T19:17:50.061Z"
   },
   {
-    "parasiteId": "eimeria_cylindrica_oocyst",
-    "url": "/public/images/parasites/eimeria_cylindrica_oocyst/eimeria_cylindrica_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:18:23.809Z"
-  },
-  {
     "parasiteId": "eimeria_debliecki_oocyst",
     "url": "/public/images/parasites/eimeria_debliecki_oocyst/eimeria_debliecki_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-26T19:18:41.505Z"
-  },
-  {
-    "parasiteId": "eimeria_ellipsoidalis_oocyst",
-    "url": "/public/images/parasites/eimeria_ellipsoidalis_oocyst/eimeria_ellipsoidalis_oocyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:19:25.337Z"
   },
   {
     "parasiteId": "eimeria_exigua_oocyst",
@@ -6013,14 +6025,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-26T19:28:24.561Z"
-  },
-  {
-    "parasiteId": "eimeria_subspherica_oocyst",
-    "url": "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-26T19:28:45.089Z"
   },
   {
     "parasiteId": "eimeria_suis_oocyst",
