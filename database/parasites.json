@@ -1545,9 +1545,7 @@
     "zoonosis": true,
     "notes": "",
     "id": "baylisascaris_transfuga_egg",
-    "images": [
-      "/public/images/parasites/baylisascaris_transfuga_egg/baylisascaris_transfuga_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Baylisascaris procyonis",
@@ -1969,9 +1967,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "capillariidae_egg",
-    "images": [
-      "/public/images/parasites/capillariidae_egg/capillariidae_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Caryospora falconis",
@@ -6267,9 +6263,7 @@
     "zoonosis": false,
     "notes": "**Biele prúžky ako biologický fenomén**: Schopnosť tohto parazita organizovať sa v epiteli čreva do paralelných bielych priečnych línií viditeľných voľným okom je unikátnym makroskopickým diagnostickým znakom v parazitológii.\nPráve kvôli vysokej prevalencii a ekonomickým stratám je oslabený (atenuovaný) kmeň _E. acervulina_ stabilnou súčasťou komerčných polyvalentných živých **vakcín** (napr. Paracox, Coccivac), ktoré sa podávajú jednodňovým kurčatám na farmách na stimuláciu celoživotnej slizničnej imunity.",
     "id": "eimeria_acervulina_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_acervulina_oocyst/eimeria_acervulina_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria adenoides",
@@ -6487,9 +6481,7 @@
     "zoonosis": false,
     "notes": "**Biologický indikátor čistoty**: Vysoký nález oocýst _E. alijevi_ pri nulových klinických príznakoch v stáde indikuje, že zvieratá sú v dobrej kondícii a majú vybudovanú stabilnú imunitu, no zároveň upozorňuje na manažmentové nedostatky v hygiene ustajnenia (zvýšená fekálna kontaminácia prostredia).",
     "id": "eimeria_alijevi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_alijevi_oocyst/eimeria_alijevi_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria andrewsi",
@@ -6645,9 +6637,7 @@
     "zoonosis": false,
     "notes": "Na rozdiel od väčšiny iných druhov, poškodenie čreva pri _E. arloingi_ zanecháva pri pitevnom vyšetrení v tenkom čreve typický zrnitý vzhľad bieleho nodulárneho výsevu, ktorý sa dá zameniť napríklad s parazitárnou tuberkulózou alebo listeriózou.",
     "id": "eimeria_arloingi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_arloingi_oocyst/eimeria_arloingi_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria aspheronica",
@@ -6700,9 +6690,7 @@
     "zoonosis": false,
     "notes": "Na Slovensku patrí medzi menej frekventované, no potvrdené druhy v extenzívnych a ekologických chovoch kôz.",
     "id": "eimeria_aspheronica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_aspheronica_oocyst/eimeria_aspheronica_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria asymmetrica",
@@ -7070,9 +7058,7 @@
     "zoonosis": false,
     "notes": "Poškodenie absorpcie vody v zadnej časti čreva a rekte vedie k masívnemu vylučovaniu vodnatého trusu, čo rýchlo znehodnocuje podstielku v halách a zvyšuje emisie amoniaku.",
     "id": "eimeria_brunetti_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_brunetti_oocyst/eimeria_brunetti_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria bukidnonensis",
@@ -7124,9 +7110,7 @@
     "zoonosis": false,
     "notes": "Význam tohto parazita spočíva čisto v diferenciálnej diagnostike, aby sa masívny nález týchto obrovských oocýst v McMasterovej komôrke nezamenil za akútne prepuknutie nebezpečnej kokcidiózy.",
     "id": "eimeria_bukidnonensis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_bukidnonensis_oocyst/eimeria_bukidnonensis_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria capreoli",
@@ -7242,9 +7226,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_caprina_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_caprina_oocyst/eimeria_caprina_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria caprovina",
@@ -7473,9 +7455,7 @@
     "zoonosis": false,
     "notes": "Imunitný efekt: Štúdie ukázali, že po prekonaní primárnej (aj subklinickej) infekcie _E. christenseni_ si kozľatá vytvárajú silnú imunitnú odpoveď, ktorá ich v neskoršom veku chráni pred masívnym vylučovaním oocýst a rozvinutím klinickej hnačky pri reinfekcii.",
     "id": "eimeria_christenseni_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_christenseni_oocyst/eimeria_christenseni_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria colchici",
@@ -7761,9 +7741,7 @@
     "zoonosis": false,
     "notes": "_Eimeria debliecki_ je **najbežnejším a najčastejšie diagnostikovaným druhom** rodu Eimeria u ošípaných v strednej Európe vrátane Slovenska. Hoci u prasiatok dominuje patogénnejšia _Cystoisospora suis_, tento druh predstavuje stabilný diagnostický nález najmä u odstavčiat a starších kategórií prasat.\nVo veterinárnej praxi sa často stáva, že pri hnačkách 2-týždňových prasiatok sa vo flotačnom náleze objavia oocysty _E. debliecki_. Experimentálne štúdie však potvrdili, že tento druh nie je primárnym pôvodcom neonatálnych hnačiek. Skutočným vinníkom v tomto veku býva _Cystoisospora suis_, ktorej oocysty sa v čerstvom truse kvôli rýchlej sporulácii dajú ľahko zameniť alebo úplne prehliadnuť.",
     "id": "eimeria_debliecki_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_debliecki_oocyst/eimeria_debliecki_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria dispersa",
@@ -8045,10 +8023,7 @@
     "zoonosis": false,
     "notes": "Epidemiologickou zaujímavosťou tohto druhu je jeho sezónna dynamika prežívania vo vonkajšom prostredí: na rozdiel od väčšiny iných eimérií vykazuje _E. exigua_ tendenciu k maximálnemu vylučovaniu oocýst a replikácii počas chladných mesiacov jesene a zimy, kým v horúcom lete jej výskyt dramaticky klesá.",
     "id": "eimeria_exigua_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_exigua_oocyst/eimeria_exigua_oocyst_01.webp",
-      "/public/images/parasites/eimeria_exigua_oocyst/eimeria_exigua_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria faurei",
@@ -8106,6 +8081,64 @@
     "notes": "",
     "id": "eimeria_faurei_oocyst",
     "images": []
+  },
+    {
+    "id": "eimeria_flavescens_oocyst",
+    "latinName": "Eimeria flavescens",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria flavescens"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Králik"
+    ],
+    "hostNotes": {
+      "Králik": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 28,
+      "lengthMax": 36,
+      "widthMin": 18,
+      "widthMax": 25,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Žltozelený",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 31,7 × 21,4 µm",
+      "Hruškovitý až oválny tvar, **širší na prednom póle**. Index tvaru: cca 1,5",
+      "**Široká mikropyla na širšom póle** — kľúčový rozlišovací znak.",
+      "Prítomné oocystové rezíduum — odlišuje od _E. irresidua_, kde rezíduum chýba"
+    ],
+    "differentialDiagnosis": [
+      "_E. irresidua_:  _E. flavescens a E. irresidua_ majú podobnú veľkosť a tvar oocysty; kľúčovým rozlišovacím znakom je prítomnosť oocystového rezídua (pri _E. flavescens_ prítomné, pri _E. irresidua_ chýba). E. irresidua je **väčšia** (35,6 × 25,1 µm)",
+      "_E. magna_: **Väčšia a širšia** (36,8 × 23,5 µm), s veľkým rezíduom a **širokou mikropylou s golierom**.",
+      "_E. intestinalis_: **Menšia a užšia** (28,3 × 17,1 µm), **mikropyla na užšom póle** — na rozdiel od _E. flavescens_.",
+      "_E. media_: **Menšia** (28,0 × 18,3 µm), menej hruškovitá, mikropyla nevýraznejšia",
+      "_E. piriformis_: **Hruškovitá, menšia a užšia** (27,9 × 18,0 µm), menej výrazná mikropyla.",
+      "_E. coecicola_: **Valcovitý tvar** (30,5 × 17,6 µm) vs. hruškovitý tvar _E. flavescens_; **mikropyla na opačnom póle**."
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky dolnej časti tenkého čreva, slepého čreva a hrubého čreva. Prvá generácia schizontov sa vyvíja hlboko v žľazách dolného tenkého čreva; merozoity potom migrujú do slepého čreva a hrubého čreva, kde vznikajú ďalšie generácie schizontov a gametocyty. Po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. flavescens_je vysoko patogénna eimeria králika; už nízke dávky oocyst môžu u mladých králikov spôsobiť ťažkú enteritídu s vysokou morbiditou a mortalitou. Patologické zmeny zahŕňajú zápal dolného tenkého čreva, slepého čreva a hrubého čreva, s poškodením epitelu, hnačkou, dehydratáciou, chudnutím a v ťažkých prípadoch smrťou. Spolu s _E. intestinalis_ patrí medzi najnebezpečnejšie črevné eimerie králika.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Eimeria granulosa",
@@ -8331,6 +8364,55 @@
     "id": "eimeria_hungarica_oocyst",
     "images": []
   },
+    {
+    "latinName": "Eimeria intestinalis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidas",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria intestinalis"
+    },
+    "hostGroups": [],
+    "hosts": [],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 23,
+      "lengthMax": 31,
+      "widthMin": 15,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 27,0 × 18,0 μm",
+      "Tvar: Nápadne **hruškovitý** (piriformný), na mikropylárnom póle výrazne zúžený, na opačnom póle široko zaoblený.",
+      "Oocystová stena je dvojvrstvová, hladká, transparentná (bezfarebná) až jemne žltkastá. **Mikropyla je jasne viditeľná**, umiestnená na úzkom póle, plochá, bez polárnej čiapočky. Po sporulácii sa netvorí oocystový zvyšok (oocyst residuum), ale prítomná je polárna granula."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria piriformis_: 29,0 × 18,0 μm, hruškovitý tvar, veľmi podobná, avšak **stena je intenzívne žltohnedá až olivovo-hnedá**.",
+      "_Eimeria magna_: 35,0 × 24,0 μm, široko vajcovitý tvar, výrazne **väčšia** oocysta, **naružovastá** stena, masívny **golierik** okolo mikropyly.",
+      "_Eimeria stiedae_: 34,5 × 21,5 μm, pravidelne vajcovitý\t tvar, ocysta je **väčšia**, symetrická (**nie hruškovitá**), svetložltá.",
+      "_Eimeria perforans_: 21,0 × 14,0 μm, výrazne **menšia** oocysta, **dokonale elipsovitá**, úplne jej **chýba mikropyla**."
+    ],
+    "lifeCycle": "Vývin prebieha priamou cestou (monoxénny cyklus). Králik sa nakazí perorálnou ingestiou sporulovaných oocýst z prostredia. V tenkom čreve nastáva excystácia a uvoľnené sporozoity prenikajú hlboko do sliznice. Na rozdiel od menej patogénnych druhov, Eimeria intestinalis parazituje v dolnej tretine tenkého čreva (jejunum a ileum), pričom invaduje nielen enterocyty, ale aj bunky v kryptách sliznice. Prebiehajú minimálne 3 generácie schizogónie (nepohlavného množenia) nasledované masívnou gametogóniou (pohlavné množenie). Nesporulované oocysty odchádzajú s trusom von, kde vo vlhkom prostredí do 48–72 hodín sporulujú na infekčné štádium.",
+    "pathology": "_Eimeria intestinalis_ patrí k najnebezpečnejším črevným kokcídiám. Spôsobuje hlbokú deštrukciu črevných krypt a sliznice, čo vedie k rozsiahlej deskvamácii (odlupovaniu) epitelu. Sliznica jejuna a ilea je po úhyne zhrubnutá, silne prekrvená (hyperémia) až difúzne zakrvácaná s povlakmi fibrínu. Klinicky sa u mladých králikov (najčastejšie 1–2 mesiace po odstavu) prejavuje ako akútna, profúzna, vodnatá až hlienovitá hnačka, niekedy s prímesou krvi, sprevádzaná krčmi brušnej steny, extrémnou apatiou, rýchlou dehydratáciou a chradnutím. Úmrtnosť v neliečených drobnochovoch môže pri masívnej infekcii dosiahnuť až 70–90 %.",
+    "zoonosis": false,
+    "notes": "**Imunitný paradox**: Králiky, ktoré prežijú masívnu akútnu infekciu _E. intestinalis_, si vyvinú mimoriadne silnú a dlhodobú imunitu voči tomuto konkrétnemu druhu. V dospelosti sa stávajú asymptomatickými nosičmi, ktorí však trusom vylučujú nízke počty oocýst, čím neustále udržiavajú infekčný tlak v králikárni pre novonarodené mláďatá.",
+    "id": "eimeria_intestinalis_oocyst",
+    "images": []
+  },
   {
     "latinName": "Eimeria intricata",
     "synonyms": [],
@@ -8497,9 +8579,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_jolchijevi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_jolchijevi_oocyst/eimeria_jolchijevi_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria leporis",
@@ -8723,9 +8803,7 @@
     "zoonosis": false,
     "notes": "Hoci ide o veľmi nebezpečný kmeň, Eimeria magna stimuluje u prežitých králikov mimoriadne silnú a rýchlu imunitnú odpoveď. Jediná nízka dávka oocýst dokáže králika celoživotne chrániť pred reinfekciou, čo sa celosvetovo intenzívne využíva pri vývoji moderných perorálnych vakcín pre komerčné chovy.",
     "id": "eimeria_magna_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_magna_oocyst/eimeria_magna_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria marsica",
@@ -9575,9 +9653,7 @@
     "zoonosis": false,
     "notes": "Mimoriadne dôležitou biologickou zaujímavosťou tohto druhu je jeho imunologický fenomén „imunitnej interferencie“. Výskumy preukázali, že ak mladý králik prekoná ranú, nízku infekciu druhom _E. perforans_, jeho črevný imunitný systém si vytvorí čiastočnú skríženú ochranu, ktorá dokáže výrazne stlmiť patologický dopad pri následnej expozícii oveľa nebezpečnejším a vysoko virulentným črevným druhom (ako sú _E. intestinalis_ alebo _E. flavescens_). Z tohto dôvodu sa prítomnosť _E. perforans_ v nízkych množstvách v chovoch nepovažuje za katastrofu, ale za prirodzený stimul rozvoja lokálnej črevnej imunity zvierat.",
     "id": "eimeria_perforans_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_perforans_oocyst/eimeria_perforans_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria perminuta",
@@ -9628,9 +9704,7 @@
     "zoonosis": false,
     "notes": "Hoci ide o miniatúrnu oocystu, jej drsná, zrnitá a hnedastá proteínovo-lipidová vonkajšia vrstva jej poskytuje enormnú mechanickú a chemickú odolnosť. Výskumy ukázali, že oocysty _E. perminuta_ odolávajú vyschnutiu a bežným maštalným dezinfekčným prostriedkom na báze chlóru či jódu podstatne lepšie ako tenkostenné druhy, čo parazitovi umožňuje prežívať v maštalnom prostredí a v pôde výbehov po dobu presahujúcu jeden rok.",
     "id": "eimeria_perminuta_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_perminuta_oocyst/eimeria_perminuta_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria phasiani",
@@ -9731,9 +9805,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_piriformis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_piriformis_oocyst/eimeria_piriformis_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria polita",
@@ -9785,9 +9857,7 @@
     "zoonosis": false,
     "notes": "Z biologického a epidemiologického hľadiska je _E. polita_ mimoriadne zaujímavá svojou rolou v tzv. \"syndróme po odstave\". Hoci dominantným patogénom v pôrodniciach u novonarodených ciciakov je jednoznačne _Cystoisospora suis_, _E. polita_ spolu s _E. debliecki_ vytvárajú stabilný infekčný tlak hneď po presune zvierat do predvýkrmu. Stres zo zmeny krmiva a odstavu od matky znižuje lokálnu imunitu čreva puliet natoľko, že aj stredne patogénna _E. polita_ dokáže v chove vyvolať masové vlnové hnačky, ktoré chovatelia často mylne pripisujú výlučne bakteriálnym patogénom (napr. _E. coli_).",
     "id": "eimeria_polita_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_polita_oocyst/eimeria_polita_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria ponderosa",
@@ -9891,9 +9961,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_porci_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_porci_oocyst/eimeria_porci_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria praecox",
@@ -9943,9 +10011,7 @@
     "zoonosis": false,
     "notes": "V modernom hydinárskom priemysle hrá tento druh špecifickú úlohu v vakcinácii živými oslabenými (attenuovanými) vakcínami (napr. HIPRACOX). Keďže _E. praecox_ má najkratší životný cyklus, do takýchto vakcín sa pridáva zámerne, aby stimulovala rannú imunitu čreva bez toho, aby spôsobila devastáciu kŕmnej konverzie ako toxickejšie druhy.",
     "id": "eimeria_praecox_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_praecox_oocyst/eimeria_praecox_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria punctata",
@@ -10151,9 +10217,7 @@
     "zoonosis": false,
     "notes": "Vďaka svojej mimoriadne hrubej, vráskavej a hnedej proteínovo-lipidovej stene vykazujú oocysty E. scabra najvyššiu chemickú a mechanickú rezistenciu spomedzi všetkých kokcídii ošípaných. Dokážu prežívať v prasklinách betónových podláh a v pôde výbehov viac ako 15 až 18 mesiacov, pričom bez problémov tolerujú bežné dezinfekčné prostriedky na báze chlóru a bez ujmy prečkajú aj silné mrazy. Pre chovateľov ošípaných je nález tohto druhu signálom pre okamžitú zmenu dezinfekčného protokolu na špeciálne krezolové preparáty.",
     "id": "eimeria_scabra_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_scabra_oocyst/eimeria_scabra_oocyst_0.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria schoenbuchi",
@@ -10744,9 +10808,7 @@
     "zoonosis": false,
     "notes": "Oocysty _E. stiedae_ sú extrémne odolné voči bežným dezinfekčným prostriedkom na báze chlóru alebo kyselín. V prostredí králikární prežívajú mesiace. Účinnú asanáciu je možné dosiahnuť len vysokou teplotou (horúca voda nad 70 °C, opaľovanie klietok plameňom) alebo špeciálnymi antikokcidióznymi dezinfekciami (napr. na báze krezolu).",
     "id": "eimeria_stiedae_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_stiedae_oocyst/eimeria_stiedae_oocyst_03.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria subspherica",
@@ -10800,9 +10862,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_subspherica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_subspherica_oocyst/eimeria_subspherica_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria suis",
@@ -10854,9 +10914,7 @@
     "zoonosis": false,
     "notes": "**Veková segregácia**: V epidemiológii chovov ošípaných platí jasné pravidlo – ak majú hnačky prasatá staršie ako 3–4 týždne, hľadáme druhy rodu Eimeria (vrátane _E. suis_). Ak evidujeme hnačky u kritických 5- až 15-dňových prasiatok, pôvodcom je takmer bezvýhradne _Cystoisospora suis_. Dospelé prasnice často fungujú ako asymptomatickí nosiči oboch rodov a rezervoár infekcie pre prostredie.",
     "id": "eimeria_suis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_suis_oocyst/eimeria_suis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria superba",
@@ -10942,9 +11000,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_tenella_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_tenella_oocyst/eimeria_tenella_oocyst_02.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria townsendi",
@@ -15166,10 +15222,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "metastrongylus_sp_egg",
-    "images": [
-      "/public/images/parasites/metastrongylus_sp_egg/metastrongylus_sp_egg_06.webp",
-      "/public/images/parasites/metastrongylus_sp_egg/metastrongylus_sp_egg_07.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Moniezia benedeni",
@@ -17386,9 +17439,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "physocephalus_sexalatus_egg",
-    "images": [
-      "/public/images/parasites/physocephalus_sexalatus_egg/physocephalus_sexalatus_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Polydelphis sp.",
@@ -19643,9 +19694,7 @@
     "zoonosis": false,
     "notes": "L1 - veľké genit. promodium",
     "id": "strongyloides_ransomi_larva",
-    "images": [
-      "/public/images/parasites/strongyloides_ransomi_larva/strongyloides_ransomi_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Strongyloides ratti",
@@ -21439,9 +21488,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichuris_suis_egg",
-    "images": [
-      "/public/images/parasites/trichuris_suis_egg/trichuris_suis_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Trichuris vulpis",
@@ -22059,172 +22106,5 @@
     "notes": "Najmä v zime",
     "id": "damalinia_equi_adult",
     "images": []
-  },
-  {
-    "latinName": "Eimeria intestinalis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidas",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria intestinalis"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 23,
-      "lengthMax": 31,
-      "widthMin": 15,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Hruškovitý",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Priemerná dĺžka a šírka: 27,0 × 18,0 μm",
-      "Tvar: Nápadne **hruškovitý** (piriformný), na mikropylárnom póle výrazne zúžený, na opačnom póle široko zaoblený.",
-      "Oocystová stena je dvojvrstvová, hladká, transparentná (bezfarebná) až jemne žltkastá. **Mikropyla je jasne viditeľná**, umiestnená na úzkom póle, plochá, bez polárnej čiapočky. Po sporulácii sa netvorí oocystový zvyšok (oocyst residuum), ale prítomná je polárna granula."
-    ],
-    "differentialDiagnosis": [
-      "_Eimeria piriformis_: 29,0 × 18,0 μm, hruškovitý tvar, veľmi podobná, avšak **stena je intenzívne žltohnedá až olivovo-hnedá**.",
-      "_Eimeria magna_: 35,0 × 24,0 μm, široko vajcovitý tvar, výrazne **väčšia** oocysta, **naružovastá** stena, masívny **golierik** okolo mikropyly.",
-      "_Eimeria stiedae_: 34,5 × 21,5 μm, pravidelne vajcovitý\t tvar, ocysta je **väčšia**, symetrická (**nie hruškovitá**), svetložltá.",
-      "_Eimeria perforans_: 21,0 × 14,0 μm, výrazne **menšia** oocysta, **dokonale elipsovitá**, úplne jej **chýba mikropyla**."
-    ],
-    "lifeCycle": "Vývin prebieha priamou cestou (monoxénny cyklus). Králik sa nakazí perorálnou ingestiou sporulovaných oocýst z prostredia. V tenkom čreve nastáva excystácia a uvoľnené sporozoity prenikajú hlboko do sliznice. Na rozdiel od menej patogénnych druhov, Eimeria intestinalis parazituje v dolnej tretine tenkého čreva (jejunum a ileum), pričom invaduje nielen enterocyty, ale aj bunky v kryptách sliznice. Prebiehajú minimálne 3 generácie schizogónie (nepohlavného množenia) nasledované masívnou gametogóniou (pohlavné množenie). Nesporulované oocysty odchádzajú s trusom von, kde vo vlhkom prostredí do 48–72 hodín sporulujú na infekčné štádium.",
-    "pathology": "_Eimeria intestinalis_ patrí k najnebezpečnejším črevným kokcídiám. Spôsobuje hlbokú deštrukciu črevných krypt a sliznice, čo vedie k rozsiahlej deskvamácii (odlupovaniu) epitelu. Sliznica jejuna a ilea je po úhyne zhrubnutá, silne prekrvená (hyperémia) až difúzne zakrvácaná s povlakmi fibrínu. Klinicky sa u mladých králikov (najčastejšie 1–2 mesiace po odstavu) prejavuje ako akútna, profúzna, vodnatá až hlienovitá hnačka, niekedy s prímesou krvi, sprevádzaná krčmi brušnej steny, extrémnou apatiou, rýchlou dehydratáciou a chradnutím. Úmrtnosť v neliečených drobnochovoch môže pri masívnej infekcii dosiahnuť až 70–90 %.",
-    "zoonosis": false,
-    "notes": "**Imunitný paradox**: Králiky, ktoré prežijú masívnu akútnu infekciu _E. intestinalis_, si vyvinú mimoriadne silnú a dlhodobú imunitu voči tomuto konkrétnemu druhu. V dospelosti sa stávajú asymptomatickými nosičmi, ktorí však trusom vylučujú nízke počty oocýst, čím neustále udržiavajú infekčný tlak v králikárni pre novonarodené mláďatá.",
-    "id": "eimeria_intestinalis_oocyst",
-    "images": []
-  },
-  {
-    "id": "eimeria_coecicola_oocyst",
-    "latinName": "Eimeria coecicola",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria coecicola"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Králik"
-    ],
-    "hostNotes": {
-      "Králik": ""
-    },
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 27,
-      "lengthMax": 35,
-      "widthMin": 15,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Eliptický",
-      "colour": "Zelenkastý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Veľkosť približne 30 × 17 µm",
-      "**Valcovitý až predĺžene elipsovitý tvar**, nie guľovitý ani hruškovitý.",
-      "**Výrazná mikropyla**, prítomné oocystové rezíduum, menšie ako pri _E. media_",
-      "Hladká, dvojvrstvová, žlto-zelenkastá až svetlo žltá steny oocysty"
-    ],
-    "differentialDiagnosis": [
-      "_E. media_: Oválna až elipsovitá, 28,6 × 16,7 µm, mikropyla prítomná, oocystové rezíduum prítomné. Veľmi podobná veľkosťou, ale _E. coecicola_ je viac valcovitá/predĺžená a má menšie oocystové rezíduum.",
-      "_E. perforans_: Elipsovito-subobdĺžniková, 22,2 × 14,5 µm, mikropyla nevýrazná, oocystové rezíduum malé. Menšia, menej valcovitá, **mikropyla nevýrazná**— na rozdiel od výraznej mikropyle E. coecicola.",
-      "_E. exigua_: Výrazne **menšia** (5,8 × 15,8 µm) a **guľovitá,** **bez mikropyle** a bez rezídua.",
-      "_E. intestinalis_: **Hruškovitá**, 28,3 × 17,1 µm, mikropyla na užšom póle. Hruškovitý tvar vs. valcovitý tvar _E. coecicola_.",
-      "_E. piriformis_: **Hruškovitá**, 27,9 × 18,0 µm, mikropyla prítomná. Hruškovitý tvar, nie valcovitý; iná lokalizácia v čreve.",
-      "_E. magna_: Oválna, 36,8 × 23,5 µm, široká mikropyla s frill, veľké oocystové rezíduum. **Väčšia, širšia**, s veľkým rezíduom a **širokou mikropylou**.",
-      "_E. flavescens_: Hruškovitá, 29,2 × 16,7 µm, mikropyla na najširšom póle. **Hruškovitý tvar a mikropyla na širšom póle** — na rozdiel od _E. coecicola_.",
-      "_Elipsovitá, 30,1 × 18,3 µm, mikropyla prítomná; parazituje v žlčovodoch. Morfologicky blízka, ale lokalizácia v žlčovodoch, nie v čreve; **pri koprologickom náleze sa môže zameniť.**"
-    ],
-    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky slepého čreva a hrubého čreva. Po niekoľkých cykloch nepohlavného rozmnožovania (schizogónia) vznikajú merozoity, z ktorých sa vyvinú gamonty; po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
-    "pathology": "_E. coecicola_ patrí medzi najmenej patogénne eimerie králika; pri nízkej intenzite infekcie býva asymptomatická. Pri masívnej infekcii môže spôsobiť katarálnu enteritídu slepého čreva a hrubého čreva, hnačku, chudnutie a slabosť, najmä u mladých alebo imunodeficientných zvierat. Patologické zmeny sú zvyčajne mierne — zápal slepého čreva bez výraznejšieho poškodenia sliznice, na rozdiel od vysoko patogénnych druhov ako _E. intestinalis, E. flavescens_ či _E. stiedae_.",
-    "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
-  },
-  {
-    "id": "eimeria_flavescens_oocyst",
-    "latinName": "Eimeria flavescens",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria flavescens"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Králik"
-    ],
-    "hostNotes": {
-      "Králik": ""
-    },
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "methods": [],
-    "micrometry": {
-      "lengthMin": 28,
-      "lengthMax": 36,
-      "widthMin": 18,
-      "widthMax": 25,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Hruškovitý",
-      "colour": "Žltozelený",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Priemerná veľkosť 31,7 × 21,4 µm",
-      "Hruškovitý až oválny tvar, **širší na prednom póle**. Index tvaru: cca 1,5",
-      "**Široká mikropyla na širšom póle** — kľúčový rozlišovací znak.",
-      "Prítomné oocystové rezíduum — odlišuje od _E. irresidua_, kde rezíduum chýba"
-    ],
-    "differentialDiagnosis": [
-      "_E. irresidua_:  _E. flavescens a E. irresidua_ majú podobnú veľkosť a tvar oocysty; kľúčovým rozlišovacím znakom je prítomnosť oocystového rezídua (pri _E. flavescens_ prítomné, pri _E. irresidua_ chýba). E. irresidua je **väčšia** (35,6 × 25,1 µm)",
-      "_E. magna_: **Väčšia a širšia** (36,8 × 23,5 µm), s veľkým rezíduom a **širokou mikropylou s golierom**.",
-      "_E. intestinalis_: **Menšia a užšia** (28,3 × 17,1 µm), **mikropyla na užšom póle** — na rozdiel od _E. flavescens_.",
-      "_E. media_: **Menšia** (28,0 × 18,3 µm), menej hruškovitá, mikropyla nevýraznejšia",
-      "_E. piriformis_: **Hruškovitá, menšia a užšia** (27,9 × 18,0 µm), menej výrazná mikropyla.",
-      "_E. coecicola_: **Valcovitý tvar** (30,5 × 17,6 µm) vs. hruškovitý tvar _E. flavescens_; **mikropyla na opačnom póle**."
-    ],
-    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky dolnej časti tenkého čreva, slepého čreva a hrubého čreva. Prvá generácia schizontov sa vyvíja hlboko v žľazách dolného tenkého čreva; merozoity potom migrujú do slepého čreva a hrubého čreva, kde vznikajú ďalšie generácie schizontov a gametocyty. Po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
-    "pathology": "_E. flavescens_je vysoko patogénna eimeria králika; už nízke dávky oocyst môžu u mladých králikov spôsobiť ťažkú enteritídu s vysokou morbiditou a mortalitou. Patologické zmeny zahŕňajú zápal dolného tenkého čreva, slepého čreva a hrubého čreva, s poškodením epitelu, hnačkou, dehydratáciou, chudnutím a v ťažkých prípadoch smrťou. Spolu s _E. intestinalis_ patrí medzi najnebezpečnejšie črevné eimerie králika.",
-    "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
   }
 ]
