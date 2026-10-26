@@ -22108,5 +22108,123 @@
     "notes": "**Imunitný paradox**: Králiky, ktoré prežijú masívnu akútnu infekciu _E. intestinalis_, si vyvinú mimoriadne silnú a dlhodobú imunitu voči tomuto konkrétnemu druhu. V dospelosti sa stávajú asymptomatickými nosičmi, ktorí však trusom vylučujú nízke počty oocýst, čím neustále udržiavajú infekčný tlak v králikárni pre novonarodené mláďatá.",
     "id": "eimeria_intestinalis_oocyst",
     "images": []
+  },
+  {
+    "id": "eimeria_coecicola_oocyst",
+    "latinName": "Eimeria coecicola",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria coecicola"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Králik"
+    ],
+    "hostNotes": {
+      "Králik": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 27,
+      "lengthMax": 35,
+      "widthMin": 15,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Zelenkastý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Veľkosť približne 30 × 17 µm",
+      "**Valcovitý až predĺžene elipsovitý tvar**, nie guľovitý ani hruškovitý.",
+      "**Výrazná mikropyla**, prítomné oocystové rezíduum, menšie ako pri _E. media_",
+      "Hladká, dvojvrstvová, žlto-zelenkastá až svetlo žltá steny oocysty"
+    ],
+    "differentialDiagnosis": [
+      "_E. media_: Oválna až elipsovitá, 28,6 × 16,7 µm, mikropyla prítomná, oocystové rezíduum prítomné. Veľmi podobná veľkosťou, ale _E. coecicola_ je viac valcovitá/predĺžená a má menšie oocystové rezíduum.",
+      "_E. perforans_: Elipsovito-subobdĺžniková, 22,2 × 14,5 µm, mikropyla nevýrazná, oocystové rezíduum malé. Menšia, menej valcovitá, **mikropyla nevýrazná**— na rozdiel od výraznej mikropyle E. coecicola.",
+      "_E. exigua_: Výrazne **menšia** (5,8 × 15,8 µm) a **guľovitá,** **bez mikropyle** a bez rezídua.",
+      "_E. intestinalis_: **Hruškovitá**, 28,3 × 17,1 µm, mikropyla na užšom póle. Hruškovitý tvar vs. valcovitý tvar _E. coecicola_.",
+      "_E. piriformis_: **Hruškovitá**, 27,9 × 18,0 µm, mikropyla prítomná. Hruškovitý tvar, nie valcovitý; iná lokalizácia v čreve.",
+      "_E. magna_: Oválna, 36,8 × 23,5 µm, široká mikropyla s frill, veľké oocystové rezíduum. **Väčšia, širšia**, s veľkým rezíduom a **širokou mikropylou**.",
+      "_E. flavescens_: Hruškovitá, 29,2 × 16,7 µm, mikropyla na najširšom póle. **Hruškovitý tvar a mikropyla na širšom póle** — na rozdiel od _E. coecicola_.",
+      "_Elipsovitá, 30,1 × 18,3 µm, mikropyla prítomná; parazituje v žlčovodoch. Morfologicky blízka, ale lokalizácia v žlčovodoch, nie v čreve; **pri koprologickom náleze sa môže zameniť.**"
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky slepého čreva a hrubého čreva. Po niekoľkých cykloch nepohlavného rozmnožovania (schizogónia) vznikajú merozoity, z ktorých sa vyvinú gamonty; po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. coecicola_ patrí medzi najmenej patogénne eimerie králika; pri nízkej intenzite infekcie býva asymptomatická. Pri masívnej infekcii môže spôsobiť katarálnu enteritídu slepého čreva a hrubého čreva, hnačku, chudnutie a slabosť, najmä u mladých alebo imunodeficientných zvierat. Patologické zmeny sú zvyčajne mierne — zápal slepého čreva bez výraznejšieho poškodenia sliznice, na rozdiel od vysoko patogénnych druhov ako _E. intestinalis, E. flavescens_ či _E. stiedae_.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
+    "id": "eimeria_flavescens_oocyst",
+    "latinName": "Eimeria flavescens",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria flavescens"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Králik"
+    ],
+    "hostNotes": {
+      "Králik": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 28,
+      "lengthMax": 36,
+      "widthMin": 18,
+      "widthMax": 25,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Žltozelený",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 31,7 × 21,4 µm",
+      "Hruškovitý až oválny tvar, **širší na prednom póle**. Index tvaru: cca 1,5",
+      "**Široká mikropyla na širšom póle** — kľúčový rozlišovací znak.",
+      "Prítomné oocystové rezíduum — odlišuje od _E. irresidua_, kde rezíduum chýba"
+    ],
+    "differentialDiagnosis": [
+      "_E. irresidua_:  _E. flavescens a E. irresidua_ majú podobnú veľkosť a tvar oocysty; kľúčovým rozlišovacím znakom je prítomnosť oocystového rezídua (pri _E. flavescens_ prítomné, pri _E. irresidua_ chýba). E. irresidua je **väčšia** (35,6 × 25,1 µm)",
+      "_E. magna_: **Väčšia a širšia** (36,8 × 23,5 µm), s veľkým rezíduom a **širokou mikropylou s golierom**.",
+      "_E. intestinalis_: **Menšia a užšia** (28,3 × 17,1 µm), **mikropyla na užšom póle** — na rozdiel od _E. flavescens_.",
+      "_E. media_: **Menšia** (28,0 × 18,3 µm), menej hruškovitá, mikropyla nevýraznejšia",
+      "_E. piriformis_: **Hruškovitá, menšia a užšia** (27,9 × 18,0 µm), menej výrazná mikropyla.",
+      "_E. coecicola_: **Valcovitý tvar** (30,5 × 17,6 µm) vs. hruškovitý tvar _E. flavescens_; **mikropyla na opačnom póle**."
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky dolnej časti tenkého čreva, slepého čreva a hrubého čreva. Prvá generácia schizontov sa vyvíja hlboko v žľazách dolného tenkého čreva; merozoity potom migrujú do slepého čreva a hrubého čreva, kde vznikajú ďalšie generácie schizontov a gametocyty. Po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. flavescens_je vysoko patogénna eimeria králika; už nízke dávky oocyst môžu u mladých králikov spôsobiť ťažkú enteritídu s vysokou morbiditou a mortalitou. Patologické zmeny zahŕňajú zápal dolného tenkého čreva, slepého čreva a hrubého čreva, s poškodením epitelu, hnačkou, dehydratáciou, chudnutím a v ťažkých prípadoch smrťou. Spolu s _E. intestinalis_ patrí medzi najnebezpečnejšie črevné eimerie králika.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   }
 ]
