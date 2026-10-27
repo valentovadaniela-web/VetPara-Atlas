@@ -4,6 +4,17 @@ let currentEditingId = null;
 let currentRecord = null;
 let pendingHostGroupsConfirm = false;
 
+// Čo sa pri použití šablóny prevezme (pamätá sa medzi výbermi šablón).
+// ID, latinName, slovakName, synonyms, images a hostGroups sa NEPREBERAJÚ NIKDY.
+const templateOptions = {
+    taxonomy: true,
+    hosts: true,
+    sampleStage: true,
+    morphology: true,
+    micrometry: false,
+    texts: true,
+};
+
 export function renderParasiteTab() {
     const container = document.getElementById('tab-parasite');
     container.innerHTML = `
@@ -78,7 +89,7 @@ function doSearch() {
     });
 }
 
-function renderForm(record) {
+function renderForm(record, template = null, templateLabel = '') {
     const container = document.getElementById('parasite-form');
     const isNew = !record;
 
@@ -116,7 +127,8 @@ function renderForm(record) {
         notes: ''
     };
 
-    const data = record ? { ...defaultRecord, ...record } : { ...defaultRecord };
+    const base = record || template || {};
+    const data = { ...defaultRecord, ...base };
     if (!data.hostNotes || typeof data.hostNotes !== 'object') data.hostNotes = {};
 
     // FIX #1: Použiť getAllIds() pre kontrolu duplicity
@@ -129,6 +141,7 @@ function renderForm(record) {
     const idExists = data.id && isIdDuplicate(data.id, currentEditingId);
 
     let html = `
+        ${isNew ? templateBoxHtml(templateLabel) : ''}
         <div class="form-row">
             <div class="form-group" style="flex: 0 1 300px;">
                 <label>ID <span class="required">*</span></label>
@@ -353,6 +366,8 @@ function renderForm(record) {
 
     container.innerHTML = html;
 
+    if (isNew) setupTemplateBox();
+
     // --- EVENTY ---
 
     if (isNew) {
@@ -499,6 +514,133 @@ function renderForm(record) {
             document.getElementById('search-results').style.display = 'none';
         });
     }
+}
+
+// ===== ŠABLÓNA Z EXISTUJÚCEHO PARAZITA =====
+
+function templateBoxHtml(label) {
+    const opt = (key, text) => `
+        <label style="font-weight:400;font-size:0.85rem;display:inline-flex;align-items:center;gap:0.3rem;margin-right:1rem;">
+            <input type="checkbox" class="tpl-opt" data-key="${key}" ${templateOptions[key] ? 'checked' : ''} /> ${text}
+        </label>`;
+
+    return `
+        <div id="template-box" style="border:1px dashed #95a5a6;border-radius:6px;padding:0.8rem;margin-bottom:1rem;background:#f8f9fa;">
+            <div style="font-weight:600;margin-bottom:0.4rem;">📋 Použiť existujúceho parazita ako šablónu</div>
+            ${label ? `<div style="margin-bottom:0.5rem;color:#27ae60;">✅ Predvyplnené z: <strong>${escHtml(label)}</strong> — skontroluj najmä druh (species), hostiteľov a mikrometriu.</div>` : ''}
+            <input type="text" id="tpl-search" placeholder="Hľadať šablónu podľa ID alebo latinského mena..." autocomplete="off" />
+            <div id="tpl-results" style="display:none;position:static;max-height:220px;overflow:auto;border:1px solid #dfe6e9;background:#fff;margin-top:0.3rem;"></div>
+            <div style="margin-top:0.6rem;">
+                ${opt('taxonomy', 'Taxonómia')}
+                ${opt('hosts', 'Hostitelia + poznámky')}
+                ${opt('sampleStage', 'Vzorka / štádium / skupina')}
+                ${opt('morphology', 'Tvar / farba / schránka')}
+                ${opt('micrometry', 'Mikrometria')}
+                ${opt('texts', 'Texty (znaky, diferenciálna dg., cyklus, patológia, zoonóza, referencie, poznámky)')}
+                <div style="font-size:0.8rem;color:#7f8c8d;margin-top:0.3rem;">
+                    ID, latinský a slovenský názov, synonymá, fotky a skupiny hostiteľov (hostGroups) sa neprebierajú nikdy.
+                    Zmena výberu platí pri ďalšom výbere šablóny.
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+function setupTemplateBox() {
+    document.querySelectorAll('.tpl-opt').forEach(cb => {
+        cb.addEventListener('change', () => {
+            templateOptions[cb.dataset.key] = cb.checked;
+        });
+    });
+
+    const input = document.getElementById('tpl-search');
+    const results = document.getElementById('tpl-results');
+    if (!input || !results) return;
+
+    input.addEventListener('input', () => {
+        const q = input.value.trim().toLowerCase();
+        if (!q) {
+            results.style.display = 'none';
+            return;
+        }
+
+        // workingCopy = pôvodné dáta + ešte neexportované zmeny
+        const found = state.workingCopy.filter(p =>
+            (p.id || '').toLowerCase().includes(q) ||
+            (p.latinName || '').toLowerCase().includes(q)
+        ).slice(0, 15);
+
+        if (found.length === 0) {
+            results.innerHTML = '<div class="result-item" style="color:#7f8c8d;padding:0.4rem;">Žiadne výsledky</div>';
+        } else {
+            results.innerHTML = found.map(p => `
+                <div class="result-item" data-id="${escHtml(p.id)}" style="padding:0.4rem;cursor:pointer;">
+                    <span class="id-badge">${escHtml(p.id)}</span>
+                    ${escHtml(p.latinName)} ${p.slovakName ? '– ' + escHtml(p.slovakName) : ''}
+                </div>
+            `).join('');
+            results.querySelectorAll('.result-item[data-id]').forEach(el => {
+                el.addEventListener('click', () => applyTemplate(el.dataset.id));
+            });
+        }
+        results.style.display = 'block';
+    });
+}
+
+function applyTemplate(id) {
+    const source = state.workingCopy.find(p => p.id === id);
+    if (!source) return;
+
+    // Ak je už niečo vyplnené (okrem mena), šablóna to prepíše – spýtaj sa.
+    const filled = ['f-sample', 'f-stage', 'f-kingdom', 'f-genus', 'f-lifeCycle', 'f-pathology', 'f-notes']
+        .some(fid => (document.getElementById(fid)?.value || '').trim() !== '');
+    if (filled && !confirm('Formulár už obsahuje vyplnené údaje. Šablóna ich prepíše (latinský a slovenský názov ostanú). Pokračovať?')) {
+        return;
+    }
+
+    const tpl = buildTemplateData(source, templateOptions);
+
+    // Už napísané mená ostávajú
+    tpl.latinName = (document.getElementById('f-latinName')?.value || '').trim();
+    tpl.slovakName = (document.getElementById('f-slovakName')?.value || '').trim();
+
+    pendingHostGroupsConfirm = false;
+    renderForm(null, tpl, `${source.latinName} (${source.id})`);
+}
+
+function buildTemplateData(source, opts) {
+    const src = JSON.parse(JSON.stringify(source));
+    const out = {};
+
+    if (opts.taxonomy) out.taxonomy = src.taxonomy || {};
+
+    if (opts.hosts) {
+        out.hosts = src.hosts || [];
+        out.hostNotes = src.hostNotes || {};
+    }
+
+    if (opts.sampleStage) {
+        out.sample = src.sample || '';
+        out.stage = src.stage || '';
+        out.group = src.group || '';
+    }
+
+    if (opts.morphology) out.morphology = src.morphology || {};
+
+    if (opts.micrometry && src.micrometry) out.micrometry = src.micrometry;
+
+    if (opts.texts) {
+        out.diagnosticSigns = src.diagnosticSigns || [];
+        out.differentialDiagnosis = src.differentialDiagnosis || [];
+        out.lifeCycle = src.lifeCycle || '';
+        out.pathology = src.pathology || '';
+        out.zoonosis = !!src.zoonosis;
+        out.references = src.references || [];
+        out.notes = src.notes || '';
+    }
+
+    // Nikdy: id, latinName, slovakName, synonyms, images, hostGroups, methods
+    return out;
 }
 
 function setupArrayControls(containerId, type, data) {

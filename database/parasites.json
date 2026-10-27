@@ -113,6 +113,57 @@
       "species": "Alaria alata"
     },
     "hostGroups": [
+      "Mačkovité mäsožravce",
+      "Psovité mäsožravce"
+    ],
+    "hosts": [],
+    "hostNotes": {},
+    "sample": "Črevo",
+    "stage": "Dospelý jedinec",
+    "group": "Trematoda",
+    "micrometry": {
+      "lengthMin": 2500,
+      "lengthMax": 6000,
+      "widthMin": 500,
+      "widthMax": 2000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Listovitý",
+      "colour": "Sivobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Telo je rozdelené na dve časti – predná je rozšírená",
+      "pohárikovitá až dvjlaločnatá",
+      "zadná časť je valcovitá a dlhšia.",
+      "V prednej časti sa nachádza ústna prísavka a špecifické prídavné orgány na prichytenie k sliznici čreva."
+    ],
+    "differentialDiagnosis": [
+      "Diferenciálne podľa morfológie dospelca",
+      "hostiteľa a lokalizácie; pri kryptických druhoch odporúčané molekulové potvrdenie."
+    ],
+    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
+    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
+    "zoonosis": true,
+    "notes": "",
+    "id": "alaria_alata_adult",
+    "images": []
+  },
+  {
+    "latinName": "Alaria alata",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Diplostomida",
+      "family": "Diplostomidae",
+      "genus": "Alaria",
+      "species": "Alaria alata"
+    },
+    "hostGroups": [
       "Domáce prežúvavce",
       "Mačkovité mäsožravce",
       "Psovité mäsožravce"
@@ -149,57 +200,6 @@
     "zoonosis": true,
     "notes": "Na diagnostiku je lepšia sedimentačná metóda.",
     "id": "alaria_alata_egg",
-    "images": []
-  },
-  {
-    "latinName": "Alaria alata",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Diplostomida",
-      "family": "Diplostomidae",
-      "genus": "Alaria",
-      "species": "Alaria alata"
-    },
-    "hostGroups": [
-      "Mačkovité mäsožravce",
-      "Psovité mäsožravce"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Črevo",
-    "stage": "Dospelý jedinec",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 2500,
-      "lengthMax": 6000,
-      "widthMin": 500,
-      "widthMax": 2000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Listovitý",
-      "colour": "Sivobiely",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Telo je rozdelené na dve časti – predná je rozšírená",
-      "pohárikovitá až dvjlaločnatá",
-      "zadná časť je valcovitá a dlhšia.",
-      "V prednej časti sa nachádza ústna prísavka a špecifické prídavné orgány na prichytenie k sliznici čreva."
-    ],
-    "differentialDiagnosis": [
-      "Diferenciálne podľa morfológie dospelca",
-      "hostiteľa a lokalizácie; pri kryptických druhoch odporúčané molekulové potvrdenie."
-    ],
-    "lifeCycle": "Životný cyklus prebieha v nasledujúcich štádiách spojených s vodným prostredím: \nVajíčko: Dospelé motolice žijú v tenkom čreve šeliem (líšky, vlky, psy). Ich vajíčka sa trusom dostávajú do vonkajšieho prostredia. Vo vode sa z nich po zhruba dvoch týždňoch liahne pohyblivá larva – miracídium.\n1. Medzihostiteľ (sladkovodné slimáky): Miracídium aktívne vyhľadá a prenikne do vodného slimáka (najčastejšie rody Planorbis či Helisoma). V ňom sa nepohlavne namnoží a premení na plávajúce larvy – cerkárie, ktoré slimáka opúšťajú.\n2. Medzihostiteľ (obojživelníky): Cerkárie preniknú do kože žubrienok alebo dospelých žiab. V ich tkanivách sa premenia na infekčné štádium – mezocerkáriu (veľkú zhruba 0,5 mm).Paratenickí (transportní) hostitelia: Ak infikovanú žabu zožerie iné zviera (napr. diviak, hlodavce, hady či vtáky), vývoj motolice sa v ňom zastaví. Larvy (mezocerkárie) však nezomrú, ale vycestujú do svaloviny a tukového tkaniva tohto zvieraťa, kde zostávajú dlho živé a infekčné.\nKonečný hostiteľ (šelma) sa nakazí buď zožratím žaby (2. medzihostiteľ) alebo diviaka/hlodavca (paratenický hostiteľ). Larva mu cez pľúca premigruje späť do čreva, kde dospelé jedince cyklus uzavrú.",
-    "pathology": "Definitívny hostiteľ: Mierne infekcie prebiehajú bezpríznakovo. Masívne invázie spôsobujú zápal črevnej sliznice (enteritídu), hnačky, chudnutie, celkovú slabosť a zhoršenú kvalitu srsti. Larválne štádiá (mesocerkárie) migrujú cez pľúca a dýchacie cesty, čo môže vyvolať prechodné respiračné ťažkosti.\nČlovek len náhodný a nie prirodzený hostiteľ, larvy v ľudskom tele nedospejú v čreve, ale začnú migrovať cez steny orgánov (syndróm larva migrans). . K nákaze dochádza výhradne konzumáciou nedostatočne tepelne upraveného mäsa infikovaných zvierat – na našom území ide najčastejšie o zverinu z diviaka, prípadne žabie stehienka.",
-    "zoonosis": true,
-    "notes": "",
-    "id": "alaria_alata_adult",
     "images": []
   },
   {
@@ -1495,59 +1495,6 @@
     "images": []
   },
   {
-    "latinName": "Baylisascaris transfuga",
-    "synonyms": [
-      "Ascaris transfuga"
-    ],
-    "slovakName": "Škrkavka medvedia",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Ascaridida",
-      "family": "Ascarididae",
-      "genus": "Baylisascaris",
-      "species": "Baylisascaris transfuga"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Človek",
-      "Medveď"
-    ],
-    "hostNotes": {
-      "Človek": "Človek je nepravý, náhodný hostiteľ. Nákaza sa prejavuje ako syndróm Larva migrans visceralis (LMV) alebo syndróm Larva migrans ocularis (LMO)."
-    },
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 90,
-      "widthMin": 6075,
-      "widthMax": 70,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až oválny",
-      "colour": "Hnedý",
-      "shell": "Hrubá, viacvrstvová"
-    },
-    "diagnosticSigns": [
-      "Hrubá stena s jemne jamkovaným, štruktúrovaným povrchom, ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
-    ],
-    "differentialDiagnosis": [
-      "_Toxocara canis / Toxocara cati_: Vajíčka sú menšie (cca 65 – 75 µm), majú o niečo hrubšiu alveolárnu (sieťovitú) štruktúru na povrchu. Tieto druhy sa však u medveďov bežne nevyskytujú.",
-      "_Ascaris suum / Ascaris lumbricoides_: Majú výrazne hrubší, hrbolčekovitý (mamilačný) povrch, nie jemne jamkovaný. Hostiteľom sú ošípané, diviaky / primáty.",
-      "_Baylisascaris procyonis_ (škrkavka mývalia): Vajíčka sú veľmi podobné, ale menšie (65 – 70 µm × 50 – 65 µm). Hostiteľom sú medvedíky čistotné (mývaly)"
-    ],
-    "lifeCycle": "Cyklus môže prebiehať dvoma hlavnými spôsobmi (priamy a nepriamy):\nPriamy cyklus: \nMedveď zožerie infekčné vajíčko z prostredia (ktoré obsahuje vyvinutú larvu L2/L3). \nV čreve sa larva uvoľní, podstupuje entero-hepatálnu/pulmonálnu migráciu (cez pečeň a pľúca) alebo priamu migráciu v stene čreva, vracia sa do lumenu tenkého čreva a dospieva.\nNepriamy cyklus (s paratenickým hostiteľom): \nDrobné cicavce alebo vtáky zožerú infekčné vajíčka. \nLarvy sa vyliahnu v ich čreve, preniknú do steny a migrujú do tkanív (svaly, mozog, orgány), kde sa opuzdria (enkapsulujú) ako L3 larvy. \nMedveď sa nakazí predáciou (zožratím) tohto hostiteľa. Larvy v čreve medveďa rýchlo dospievajú bez ďalšej orgánovej migrácie.",
-    "pathology": "U definitívneho hostiteľa (medveď):Nízke infekcie prebiehajú asymptomaticky.Masívne infekcie spôsobujú mechanické podráždenie sliznice tenkého čreva, katarálny zápal čriev (enteritídu), podvýživu, stratu hmotnosti a v extrémnych prípadoch až obštrukciu (upchatie) alebo perforáciu (prederavenie) čreva dospelými červami (ktoré môžu dorastať do dĺžky 10 – 20 cm).\nU paratenických hostiteľov a človeka (Larva migrans):Ak vajíčko pozrie netypický hostiteľ (vrátane človeka), vyvíja sa syndróm Larva migrans visceralis (LMV) alebo Larva migrans ocularis (LMO).Larvy rodu Baylisascaris majú tendenciu rásť počas migrácie a majú afinitu k centrálnemu nervovému systému. Môžu spôsobiť závažnú neurologickú formu (Larva migrans neuralis – NLM), prejavujúcu sa zápalom mozgu (encefalitídou), poruchami koordinácie a smrťou paratenického hostiteľa. B. transfuga je však považovaná za o niečo menej neurotropnú než obávaná _B. procyonis_.",
-    "zoonosis": true,
-    "notes": "",
-    "id": "baylisascaris_transfuga_egg",
-    "images": []
-  },
-  {
     "latinName": "Baylisascaris procyonis",
     "synonyms": [],
     "slovakName": "Škrkavka mývalia",
@@ -1599,6 +1546,59 @@
     "zoonosis": true,
     "notes": "",
     "id": "baylisascaris_procyonis_egg",
+    "images": []
+  },
+  {
+    "latinName": "Baylisascaris transfuga",
+    "synonyms": [
+      "Ascaris transfuga"
+    ],
+    "slovakName": "Škrkavka medvedia",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Ascaridida",
+      "family": "Ascarididae",
+      "genus": "Baylisascaris",
+      "species": "Baylisascaris transfuga"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Človek",
+      "Medveď"
+    ],
+    "hostNotes": {
+      "Človek": "Človek je nepravý, náhodný hostiteľ. Nákaza sa prejavuje ako syndróm Larva migrans visceralis (LMV) alebo syndróm Larva migrans ocularis (LMO)."
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 90,
+      "widthMin": 6075,
+      "widthMax": 70,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly až oválny",
+      "colour": "Hnedý",
+      "shell": "Hrubá, viacvrstvová"
+    },
+    "diagnosticSigns": [
+      "Hrubá stena s jemne jamkovaným, štruktúrovaným povrchom, ktorý má hnedožlté až tmavohnedé sfarbenie kvôli žlčovým pigmentom hostiteľa."
+    ],
+    "differentialDiagnosis": [
+      "_Toxocara canis / Toxocara cati_: Vajíčka sú menšie (cca 65 – 75 µm), majú o niečo hrubšiu alveolárnu (sieťovitú) štruktúru na povrchu. Tieto druhy sa však u medveďov bežne nevyskytujú.",
+      "_Ascaris suum / Ascaris lumbricoides_: Majú výrazne hrubší, hrbolčekovitý (mamilačný) povrch, nie jemne jamkovaný. Hostiteľom sú ošípané, diviaky / primáty.",
+      "_Baylisascaris procyonis_ (škrkavka mývalia): Vajíčka sú veľmi podobné, ale menšie (65 – 70 µm × 50 – 65 µm). Hostiteľom sú medvedíky čistotné (mývaly)"
+    ],
+    "lifeCycle": "Cyklus môže prebiehať dvoma hlavnými spôsobmi (priamy a nepriamy):\nPriamy cyklus: \nMedveď zožerie infekčné vajíčko z prostredia (ktoré obsahuje vyvinutú larvu L2/L3). \nV čreve sa larva uvoľní, podstupuje entero-hepatálnu/pulmonálnu migráciu (cez pečeň a pľúca) alebo priamu migráciu v stene čreva, vracia sa do lumenu tenkého čreva a dospieva.\nNepriamy cyklus (s paratenickým hostiteľom): \nDrobné cicavce alebo vtáky zožerú infekčné vajíčka. \nLarvy sa vyliahnu v ich čreve, preniknú do steny a migrujú do tkanív (svaly, mozog, orgány), kde sa opuzdria (enkapsulujú) ako L3 larvy. \nMedveď sa nakazí predáciou (zožratím) tohto hostiteľa. Larvy v čreve medveďa rýchlo dospievajú bez ďalšej orgánovej migrácie.",
+    "pathology": "U definitívneho hostiteľa (medveď):Nízke infekcie prebiehajú asymptomaticky.Masívne infekcie spôsobujú mechanické podráždenie sliznice tenkého čreva, katarálny zápal čriev (enteritídu), podvýživu, stratu hmotnosti a v extrémnych prípadoch až obštrukciu (upchatie) alebo perforáciu (prederavenie) čreva dospelými červami (ktoré môžu dorastať do dĺžky 10 – 20 cm).\nU paratenických hostiteľov a človeka (Larva migrans):Ak vajíčko pozrie netypický hostiteľ (vrátane človeka), vyvíja sa syndróm Larva migrans visceralis (LMV) alebo Larva migrans ocularis (LMO).Larvy rodu Baylisascaris majú tendenciu rásť počas migrácie a majú afinitu k centrálnemu nervovému systému. Môžu spôsobiť závažnú neurologickú formu (Larva migrans neuralis – NLM), prejavujúcu sa zápalom mozgu (encefalitídou), poruchami koordinácie a smrťou paratenického hostiteľa. B. transfuga je však považovaná za o niečo menej neurotropnú než obávaná _B. procyonis_.",
+    "zoonosis": true,
+    "notes": "",
+    "id": "baylisascaris_transfuga_egg",
     "images": []
   },
   {
@@ -6957,6 +6957,61 @@
     "images": []
   },
   {
+    "latinName": "Eimeria bateri",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria bateri"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Prepelica"
+    ],
+    "hostNotes": {
+      "Prepelica": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 24.7,
+      "lengthMax": 27.2,
+      "widthMin": 18,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 25,1 × 18,9 µm",
+      "Subguľovitý až elipsovitý tvar, pomer L/W ~1,3–1,4",
+      "Má 1 alebo 2 polárne telieska.",
+      "Sporocysty vajcovité (9,0 – 11,0 × 5,5 – 6,5 µm)"
+    ],
+    "differentialDiagnosis": [
+      "_E. uzura_: Široko elipsovitá, (23,1 – 24,7 × 17,5 – 18,3 μm), sporocysty **pretiahnuté**",
+      "_E. tsunodai_: **Menšia a užšia**, oválna až subsférická,  (18,6 – 19,9 × 15,7 – 16,6 μm), _E. bateri_ je väčšia a širšia.",
+      "**Hlavný záver pre prax**: Ak nájdete oocystu, ktorá má dĺžku pod 20 μm, ide takmer s istotou o _E. tsunodai_. Ak má oocysta okolo 25 μm a viac, musíte sa pozrieť na šírku sporocysty – ak je široká (nad 6,5 μm), je to _E. bateri_, ak je užšia a pretiahnutá, ide o _E. uzura_."
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky tenkého čreva. Merozoity sa nachádzajú najmä v jejunu, schizonty v hrubom čreve; po niekoľkých cykloch nepohlavného rozmnožovania (schizogónia) vznikajú gamonty, z ktorých po oplodnení vznikne oocysta vylúčená trusom. V prostredí oocysta sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. bateri_ je považovaná za mierne až stredne patogénnu eimeriu japonskej prepelice; pri nízkej intenzite infekcie býva asymptomatická alebo spôsobuje len spomalenie rastu a zníženie reprodukcie. Pri masívnej infekcii môže spôsobiť nehemoragické nadúvanie slepého čreva (ballooning of caeca), katarálnu enteritídu, hnačku, chudnutie a slabosť. Patologické zmeny sú zvyčajne mierne — zápal slepého čreva bez výraznejšieho poškodenia sliznice, na rozdiel od vysoko patogénnych druhov ako _E. tenella_ u kurčiat.",
+    "zoonosis": false,
+    "notes": "Najčastejšie uvádzaná a najrozšírenejšia eimeria japonskej prepelice; v európskych chovoch je bežne dokazovaná.",
+    "id": "eimeria_bateri_oocyst",
+    "images": [
+      "/public/images/parasites/eimeria_bateri_oocyst/eimeria_bateri_oocyst_01.webp"
+    ]
+  },
+  {
     "latinName": "Eimeria bovis",
     "synonyms": [],
     "slovakName": "",
@@ -7397,65 +7452,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_cervi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria christenseni",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria christenseni"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Koza",
-      "Kozorožec"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 32,
-      "lengthMax": 44,
-      "widthMin": 22,
-      "widthMax": 30,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Priemerné rozmery: 38,4 – 40,5 × 25,0 – 27,3 μm",
-      "Tvar oocysty: Výrazne vajcovitý (ovoidný) až hruškovitý (piriformný). Oocysta je viditeľne dlhšia ako širšia, na jednom póle zúžená.",
-      "Oocystová stena: Hladká, dvojvrstvová, hrubá cca 1,4 – 1,8 μm. Vnútorná vrstva je žltohnedá až tmavohnedá.",
-      "Mikropyla (mikropylárny otvor): Prítomná na zúženom póle, dobre zreteľná, široká 2,0 – 4,0 μm.",
-      "Mikropylárna čiapočka (polar cap): Prítomná, mimoriadne nápadná a mohutná. Je klenbovitá, vystupujúca, dosahuje výšku 1,0 – 2,5 μm a šírku 2,0 – 5,0 μm. (Pozor: Pri nešetrnej sedimentácii či starých vzorkách sa môže ojedinele odtrhnúť).",
-      "Polárne teliesko (polar granule): Prítomné po sporulácii (zvyčajne 2 alebo viac drobných granúl situovaných pod čiapočkou).",
-      "Oocystové reziduálne teliesko (oocyst residuum): Neprítomné.",
-      "Sporocysty: Obsahuje 4 ovoidné sporocysty (cca 14 × 9 μm) s výrazným Stiedovym telieskom a roztrúseným sporocystovým reziduálnym telieskom. Každá sporocysta nesie 2 sporozoity.",
-      "Nesporulovaná oocysta (čerstvý trus): Obrovská hnedastá oocysta v tvare veľkého vajca, na ktorej užšom vrchole tróni jasne vystupujúca transparentná pologuľovitá čiapočka. Centrálnu časť vypĺňa veľký, tmavý, hrubo granulovaný sporont odstupujúci od pólov.",
-      "Sporulovaná oocysta: Po exogénnej fáze (sporulácia trvá cca 60 – 90 hodín pri izbovej teplote) sú vo vnútri jasne čitateľné štyri elipsovité sporocysty. Zvyšok priestoru oocysty zostáva opticky prázdny a číry, s výnimkou polárnych teliesok pod mikropylou."
-    ],
-    "differentialDiagnosis": [
-      "_Eimeria arloingi_: Taktiež má čiapočku a je vysoko patogénna, je však výrazne menšia (priemerne 28 × 19 μm) a jej tvar je striktne elipsovitý (valcovitý), s paralelnými bočnými stenami, zatiaľ čo _E. christenseni_ sa smerom k čiapočke kužeľovito zužuje (hruškovitý profil).",
-      "_Eimeria jolchijevi_: Veľmi podobná, veľká, ovoidná oocysta s čiapočkou. Odlišuje sa najmä tvarom čiapočky, ktorá je u _E. jolchijevi_ viac sploštená, a stena oocysty býva o niečo svetlejšia až bezfarebná.",
-      "_Eimeria caprina_ a _E. caprovina_: Sú rozmerovo veľké, avšak úplne im chýba mikropylárna čiapočka. Ich mikropyla je voľná a profil pólu u E. caprovina je striktne zrezaný do roviny."
-    ],
-    "lifeCycle": "Cyklus je priamy (monoxénny). Kozľatá sa nakazia pozretím (ingesciou) sporulovaných oocýst z prostredia (fekálne kontaminované krmivo, podstielka, struky matiek). V tenkom čreve dochádza k excystácii. E. christenseni sa vyznačuje špecifikom: prvá generácia nepohlavného rozmnožovania (merogónie) prebieha v endoteli ciev alebo v lamine propria sliznice tenkého čreva, kde sa tvorí obrovské macromeronty (megaloshizonty). Druhá generácia merontov a následná pohlavná fáza (gametogónia) prebiehajú priamo v enterocytoch krypt sliznice tenkého čreva (jejunum, ileum). Po fertilizácii makrogaméty mikrogamétou vzniká zygóta a nesporulované oocysty sa sypú do lúmenu a odchádzajú s faeces von. Vo vonkajšom prostredí sporulujú za 2,5 až 4 dni. Prepatentná perióda je cca 14 – 17 dní.",
-    "pathology": "Eimeria christenseni sa radí medzi vysoko patogénne druhy kokcídií kôz. Megaloshizonty v lamine propria a masívna gametogónia v kryptách spôsobujú ťažkú deštrukciu črevného epitelu, atrofiu a sploštenie črevných klkov (enteritída). Klinická kokcidióza (eimerióza) postihuje najmä novonarodené kozľatá a mladé jedince vo veku do 3 – 4 mesiacov. Typickými príznakmi sú profúzne vodnaté až kašovité hnačky (niekedy s prímesou krvi a hlienu), silná dehydratácia, nechutenstvo (anorexia), polydipsia (zvýšený smäd), matná naježená srsť a extrémna slabosť zvierat. Pri pitve dominuje difúzny lymphoplasmacytárny zápal tenkého čreva s eróziami sliznice, hemorágiami a prítomnosťou belavých makroskopických uzlíkov (plakov) na črevnej stene.",
-    "zoonosis": false,
-    "notes": "Imunitný efekt: Štúdie ukázali, že po prekonaní primárnej (aj subklinickej) infekcie _E. christenseni_ si kozľatá vytvárajú silnú imunitnú odpoveď, ktorá ich v neskoršom veku chráni pred masívnym vylučovaním oocýst a rozvinutím klinickej hnačky pri reinfekcii.",
-    "id": "eimeria_christenseni_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_cervi_oocyst/eimeria_cervi_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria colchici",
@@ -7567,7 +7566,9 @@
     "zoonosis": false,
     "notes": "**Vplyv na pretekársku kondíciu**: Na rozdiel od iných eimérií, ktoré zviera buď zabijú alebo si nevšimnete ich prítomnosť, u poštových holubov je _E. columbarum_ limitujúcim faktorom úspechu. Aj nízky subklinický počet oocýst v truse (zistený rutinnou mikroskopiou pred sezónou) dokáže kvôli mikroléziám v čreve znížiť absorpciu živín natoľko, že holub stráca orientačnú a letovú vytrvalosť.\n**Imunitná odolnosť**: Holuby si na rozdiel od infekcie trichomonádami dokážu po opakovaných slabých expozíciách oocystám vybudovať čiastočnú prirodzenú odolnosť (imunitu), ktorá u dospelých vtákov drží prejavy kokcidiózy pod kontrolou.",
     "id": "eimeria_columbarum_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_columbarum_oocyst/eimeria_columbarum_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria crandallis",
@@ -8082,8 +8083,7 @@
     "id": "eimeria_faurei_oocyst",
     "images": []
   },
-    {
-    "id": "eimeria_flavescens_oocyst",
+  {
     "latinName": "Eimeria flavescens",
     "synonyms": [],
     "slovakName": "",
@@ -8106,7 +8106,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 28,
       "lengthMax": 36,
@@ -8136,9 +8135,9 @@
     "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky dolnej časti tenkého čreva, slepého čreva a hrubého čreva. Prvá generácia schizontov sa vyvíja hlboko v žľazách dolného tenkého čreva; merozoity potom migrujú do slepého čreva a hrubého čreva, kde vznikajú ďalšie generácie schizontov a gametocyty. Po oplodnení vznikne oocysta, ktorá sa vylúči trusom a v prostredí sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
     "pathology": "_E. flavescens_je vysoko patogénna eimeria králika; už nízke dávky oocyst môžu u mladých králikov spôsobiť ťažkú enteritídu s vysokou morbiditou a mortalitou. Patologické zmeny zahŕňajú zápal dolného tenkého čreva, slepého čreva a hrubého čreva, s poškodením epitelu, hnačkou, dehydratáciou, chudnutím a v ťažkých prípadoch smrťou. Spolu s _E. intestinalis_ patrí medzi najnebezpečnejšie črevné eimerie králika.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "eimeria_flavescens_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria granulosa",
@@ -8251,7 +8250,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_hajeki_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_hajeki_oocyst/eimeria_hajeki_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria hirci",
@@ -8364,7 +8365,65 @@
     "id": "eimeria_hungarica_oocyst",
     "images": []
   },
-    {
+  {
+    "latinName": "Eimeria christenseni",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria christenseni"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Koza",
+      "Kozorožec"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 32,
+      "lengthMax": 44,
+      "widthMin": 22,
+      "widthMax": 30,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Žltohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerné rozmery: 38,4 – 40,5 × 25,0 – 27,3 μm",
+      "Tvar oocysty: Výrazne vajcovitý (ovoidný) až hruškovitý (piriformný). Oocysta je viditeľne dlhšia ako širšia, na jednom póle zúžená.",
+      "Oocystová stena: Hladká, dvojvrstvová, hrubá cca 1,4 – 1,8 μm. Vnútorná vrstva je žltohnedá až tmavohnedá.",
+      "Mikropyla (mikropylárny otvor): Prítomná na zúženom póle, dobre zreteľná, široká 2,0 – 4,0 μm.",
+      "Mikropylárna čiapočka (polar cap): Prítomná, mimoriadne nápadná a mohutná. Je klenbovitá, vystupujúca, dosahuje výšku 1,0 – 2,5 μm a šírku 2,0 – 5,0 μm. (Pozor: Pri nešetrnej sedimentácii či starých vzorkách sa môže ojedinele odtrhnúť).",
+      "Polárne teliesko (polar granule): Prítomné po sporulácii (zvyčajne 2 alebo viac drobných granúl situovaných pod čiapočkou).",
+      "Oocystové reziduálne teliesko (oocyst residuum): Neprítomné.",
+      "Sporocysty: Obsahuje 4 ovoidné sporocysty (cca 14 × 9 μm) s výrazným Stiedovym telieskom a roztrúseným sporocystovým reziduálnym telieskom. Každá sporocysta nesie 2 sporozoity.",
+      "Nesporulovaná oocysta (čerstvý trus): Obrovská hnedastá oocysta v tvare veľkého vajca, na ktorej užšom vrchole tróni jasne vystupujúca transparentná pologuľovitá čiapočka. Centrálnu časť vypĺňa veľký, tmavý, hrubo granulovaný sporont odstupujúci od pólov.",
+      "Sporulovaná oocysta: Po exogénnej fáze (sporulácia trvá cca 60 – 90 hodín pri izbovej teplote) sú vo vnútri jasne čitateľné štyri elipsovité sporocysty. Zvyšok priestoru oocysty zostáva opticky prázdny a číry, s výnimkou polárnych teliesok pod mikropylou."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria arloingi_: Taktiež má čiapočku a je vysoko patogénna, je však výrazne menšia (priemerne 28 × 19 μm) a jej tvar je striktne elipsovitý (valcovitý), s paralelnými bočnými stenami, zatiaľ čo _E. christenseni_ sa smerom k čiapočke kužeľovito zužuje (hruškovitý profil).",
+      "_Eimeria jolchijevi_: Veľmi podobná, veľká, ovoidná oocysta s čiapočkou. Odlišuje sa najmä tvarom čiapočky, ktorá je u _E. jolchijevi_ viac sploštená, a stena oocysty býva o niečo svetlejšia až bezfarebná.",
+      "_Eimeria caprina_ a _E. caprovina_: Sú rozmerovo veľké, avšak úplne im chýba mikropylárna čiapočka. Ich mikropyla je voľná a profil pólu u E. caprovina je striktne zrezaný do roviny."
+    ],
+    "lifeCycle": "Cyklus je priamy (monoxénny). Kozľatá sa nakazia pozretím (ingesciou) sporulovaných oocýst z prostredia (fekálne kontaminované krmivo, podstielka, struky matiek). V tenkom čreve dochádza k excystácii. E. christenseni sa vyznačuje špecifikom: prvá generácia nepohlavného rozmnožovania (merogónie) prebieha v endoteli ciev alebo v lamine propria sliznice tenkého čreva, kde sa tvorí obrovské macromeronty (megaloshizonty). Druhá generácia merontov a následná pohlavná fáza (gametogónia) prebiehajú priamo v enterocytoch krypt sliznice tenkého čreva (jejunum, ileum). Po fertilizácii makrogaméty mikrogamétou vzniká zygóta a nesporulované oocysty sa sypú do lúmenu a odchádzajú s faeces von. Vo vonkajšom prostredí sporulujú za 2,5 až 4 dni. Prepatentná perióda je cca 14 – 17 dní.",
+    "pathology": "Eimeria christenseni sa radí medzi vysoko patogénne druhy kokcídií kôz. Megaloshizonty v lamine propria a masívna gametogónia v kryptách spôsobujú ťažkú deštrukciu črevného epitelu, atrofiu a sploštenie črevných klkov (enteritída). Klinická kokcidióza (eimerióza) postihuje najmä novonarodené kozľatá a mladé jedince vo veku do 3 – 4 mesiacov. Typickými príznakmi sú profúzne vodnaté až kašovité hnačky (niekedy s prímesou krvi a hlienu), silná dehydratácia, nechutenstvo (anorexia), polydipsia (zvýšený smäd), matná naježená srsť a extrémna slabosť zvierat. Pri pitve dominuje difúzny lymphoplasmacytárny zápal tenkého čreva s eróziami sliznice, hemorágiami a prítomnosťou belavých makroskopických uzlíkov (plakov) na črevnej stene.",
+    "zoonosis": false,
+    "notes": "Imunitný efekt: Štúdie ukázali, že po prekonaní primárnej (aj subklinickej) infekcie _E. christenseni_ si kozľatá vytvárajú silnú imunitnú odpoveď, ktorá ich v neskoršom veku chráni pred masívnym vylučovaním oocýst a rozvinutím klinickej hnačky pri reinfekcii.",
+    "id": "eimeria_christenseni_oocyst",
+    "images": []
+  },
+  {
     "latinName": "Eimeria intestinalis",
     "synonyms": [],
     "slovakName": "",
@@ -8411,7 +8470,9 @@
     "zoonosis": false,
     "notes": "**Imunitný paradox**: Králiky, ktoré prežijú masívnu akútnu infekciu _E. intestinalis_, si vyvinú mimoriadne silnú a dlhodobú imunitu voči tomuto konkrétnemu druhu. V dospelosti sa stávajú asymptomatickými nosičmi, ktorí však trusom vylučujú nízke počty oocýst, čím neustále udržiavajú infekčný tlak v králikárni pre novonarodené mláďatá.",
     "id": "eimeria_intestinalis_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_intestinalis_oocyst/eimeria_intestinalis_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria intricata",
@@ -8747,7 +8808,9 @@
     "zoonosis": false,
     "notes": "Veľmi vzácny parazit. Na území Slovenskej republiky je nález _Eimeria macrosculpta_ **veľmi nepravdepodobný až raritný**. Hoci bol druh opísaný v susednom Maďarsku a ojedinele sa vyskytuje v strednej Európe, v rutinných koprologických vyšetreniach našich divých zajacov absolútne dominujú iné taxóny. Ak sa zachytí, spravidla ide o importované zvieratá alebo prechodnú mikroložiskovú prítomnosť v južných prihraničných oblastiach.",
     "id": "eimeria_macrosculpta_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_macrosculpta_oocyst/eimeria_macrosculpta_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria magna",
@@ -10220,58 +10283,6 @@
     "images": []
   },
   {
-    "latinName": "Eimeria schoenbuchi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria schoenbuchi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jeleň"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 24,
-      "lengthMax": 33,
-      "widthMin": 20,
-      "widthMax": 29,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Priemerné hodnoty: cca 28 μm × 25 μm. Patrí k stredne veľkým druhom kokcídii jelenovitej zveri.",
-      "Tvar oocysty: Typicky guľovitý (sférický) až široko oválny (subsférický), veľmi pravidelný, s rovnomerne zaoblenými kontúrami bez zúženia. Index tvaru: Veľmi nízky, zvyčajne 1,06 – 1,12 (pôsobí nápadne okrúhlym, robustným dojmom).",
-      "Špecifické znaky: Oocystová stena je hrubá (cca 2,0 μm), dvojvrstvová a má **charakteristické intenzívne žltohnedé až olivovohnedé sfarbenie**. Povrch steny je úplne hladký (žiadne skulptúry či jamky). Mikropyla je extrémne nepatrná (zvyčajne viditeľná len ako jemné sploštenie vnútornej vrstvy na jednom póle), mikropylárna čiapočka (polar cap) úplne chýba. Po kompletnom vysporulovaní chýba oocystové reziduálne teliesko (oocyst residuum).",
-      "V čerstvom truse jelenovitej zveri (natívny preparát po koprologickej flotácii) nachádzame oocysty nesporulované. Vnútro vypĺňa guľovitá, hrubozrnná masa sporoblastu (zygoty). Z dôvodu takmer dokonale sférického habitu vypĺňa zygota väčšinu vnútorného priestoru a pod hrubou, žltohnedou stenou zanecháva len veľmi úzky, rovnomerný optický lem. Ostro hladký povrch steny a jej žiarivá hnedastá refrakcia robia oocystu dobre viditeľnou aj pri základnom diagnostickom zväčšení (200× až 400×), pričom na definitívne potvrdenie a vylúčenie zámeny s inými guľatými štádiami je nutná okulárová mikrometriu."
-    ],
-    "differentialDiagnosis": [
-      "_Eimeria robusta_: Výrazne **väčšia** oocysta (priemerne 36 × 25 μm), tvarovo jasne ovoidná až hruškovitá (nie guľovitá), s výrazne drsnou, jamkovitou tmavohnedou stenou a širokou, otvorenou mikropylou.",
-      "_Eimeria austriaca_: Výrazne **väčšia** (cca 38 – 42 μm), má striktne eliptický (pretiahnutý) tvar s tenkou a čírou stenou.",
-      "_Eimeria sordida_: Oocysty sú o niečo väčšie (cca 30 × 22 μm), majú **typicky ovoidný tvar** s tenkou, transparentnou stenou a viditeľnou mikropylou.",
-      "_Eimeria asymetrica_: Oocysty vykazujú typicky **asymetricky sploštený tvar** jednej bočnej steny a sú svetlé."
-    ],
-    "lifeCycle": "_Eimeria schoenbuchi_ vykazuje priamy (monoxénny) vývinový cyklus bez striedania hostiteľov. K nákaze voľne žijúcej zveri dochádza perorálne zožratím (ingesciou) krmiva, ohryzu alebo vody kontaminovanej infekčnými sporulovanými oocystami (k procesu sporulácie dochádza vo vonkajšom prostredí za prístupu kyslíka a vlhkosti). V lumene gastrointestinálneho traktu nastáva excystácia. Uvoľnené sporozoity penetrujú enterocyty sliznice a parazitujú v bunkách črevného epitelu. Po prebehnutí vnútorných fáz nepohlavného množenia (merogónie) nasleduje pohlavná gametogónia. Výsledné nesporulované oocysty sú vylučované trusom zveri do lesného prostredia.",
-    "pathology": "Tento druh parazita patrí medzi nízko až stredne patogénne kokcídie jelenovitej zveri. V prirodzených podmienkach voľných revírov SR vyvoláva u dospelých kusov takmer výlučne subklinické (asymptomatické) infekcie bez makroskopických zmien na orgánoch, nakoľko zver žije v dlhodobej stabilnej parazitárnej rovnováhe. K patologickému vzplanutiu (klinickej kokcidióze) dochádza u tohoročných jelenčiat v nepriaznivom zimnom období (kedy stres z chladu, nutričný deficit alebo vysoká koncentrácia zveri na krmoviskách oslabia imunitu). Masívna infekcia vyvoláva miernu katarálnu enteritídu. Klinicky sa ochorenie manifestuje prechodnými kašovitými hnačkami, dehydratáciou, zmatnením srsti a dočasným znížením kondície mláďat.",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_schoenbuchi_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Eimeria sculpta",
     "synonyms": [],
     "slovakName": "",
@@ -10466,6 +10477,58 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_serbica_oocyst",
+    "images": []
+  },
+  {
+    "latinName": "Eimeria schoenbuchi",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria schoenbuchi"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Jeleň"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 24,
+      "lengthMax": 33,
+      "widthMin": 20,
+      "widthMax": 29,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerné hodnoty: cca 28 μm × 25 μm. Patrí k stredne veľkým druhom kokcídii jelenovitej zveri.",
+      "Tvar oocysty: Typicky guľovitý (sférický) až široko oválny (subsférický), veľmi pravidelný, s rovnomerne zaoblenými kontúrami bez zúženia. Index tvaru: Veľmi nízky, zvyčajne 1,06 – 1,12 (pôsobí nápadne okrúhlym, robustným dojmom).",
+      "Špecifické znaky: Oocystová stena je hrubá (cca 2,0 μm), dvojvrstvová a má **charakteristické intenzívne žltohnedé až olivovohnedé sfarbenie**. Povrch steny je úplne hladký (žiadne skulptúry či jamky). Mikropyla je extrémne nepatrná (zvyčajne viditeľná len ako jemné sploštenie vnútornej vrstvy na jednom póle), mikropylárna čiapočka (polar cap) úplne chýba. Po kompletnom vysporulovaní chýba oocystové reziduálne teliesko (oocyst residuum).",
+      "V čerstvom truse jelenovitej zveri (natívny preparát po koprologickej flotácii) nachádzame oocysty nesporulované. Vnútro vypĺňa guľovitá, hrubozrnná masa sporoblastu (zygoty). Z dôvodu takmer dokonale sférického habitu vypĺňa zygota väčšinu vnútorného priestoru a pod hrubou, žltohnedou stenou zanecháva len veľmi úzky, rovnomerný optický lem. Ostro hladký povrch steny a jej žiarivá hnedastá refrakcia robia oocystu dobre viditeľnou aj pri základnom diagnostickom zväčšení (200× až 400×), pričom na definitívne potvrdenie a vylúčenie zámeny s inými guľatými štádiami je nutná okulárová mikrometriu."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria robusta_: Výrazne **väčšia** oocysta (priemerne 36 × 25 μm), tvarovo jasne ovoidná až hruškovitá (nie guľovitá), s výrazne drsnou, jamkovitou tmavohnedou stenou a širokou, otvorenou mikropylou.",
+      "_Eimeria austriaca_: Výrazne **väčšia** (cca 38 – 42 μm), má striktne eliptický (pretiahnutý) tvar s tenkou a čírou stenou.",
+      "_Eimeria sordida_: Oocysty sú o niečo väčšie (cca 30 × 22 μm), majú **typicky ovoidný tvar** s tenkou, transparentnou stenou a viditeľnou mikropylou.",
+      "_Eimeria asymetrica_: Oocysty vykazujú typicky **asymetricky sploštený tvar** jednej bočnej steny a sú svetlé."
+    ],
+    "lifeCycle": "_Eimeria schoenbuchi_ vykazuje priamy (monoxénny) vývinový cyklus bez striedania hostiteľov. K nákaze voľne žijúcej zveri dochádza perorálne zožratím (ingesciou) krmiva, ohryzu alebo vody kontaminovanej infekčnými sporulovanými oocystami (k procesu sporulácie dochádza vo vonkajšom prostredí za prístupu kyslíka a vlhkosti). V lumene gastrointestinálneho traktu nastáva excystácia. Uvoľnené sporozoity penetrujú enterocyty sliznice a parazitujú v bunkách črevného epitelu. Po prebehnutí vnútorných fáz nepohlavného množenia (merogónie) nasleduje pohlavná gametogónia. Výsledné nesporulované oocysty sú vylučované trusom zveri do lesného prostredia.",
+    "pathology": "Tento druh parazita patrí medzi nízko až stredne patogénne kokcídie jelenovitej zveri. V prirodzených podmienkach voľných revírov SR vyvoláva u dospelých kusov takmer výlučne subklinické (asymptomatické) infekcie bez makroskopických zmien na orgánoch, nakoľko zver žije v dlhodobej stabilnej parazitárnej rovnováhe. K patologickému vzplanutiu (klinickej kokcidióze) dochádza u tohoročných jelenčiat v nepriaznivom zimnom období (kedy stres z chladu, nutričný deficit alebo vysoká koncentrácia zveri na krmoviskách oslabia imunitu). Masívna infekcia vyvoláva miernu katarálnu enteritídu. Klinicky sa ochorenie manifestuje prechodnými kašovitými hnačkami, dehydratáciou, zmatnením srsti a dočasným znížením kondície mláďat.",
+    "zoonosis": false,
+    "notes": "",
+    "id": "eimeria_schoenbuchi_oocyst",
     "images": []
   },
   {
@@ -11085,6 +11148,116 @@
     "notes": "",
     "id": "eimeria_truncata_oocyst",
     "images": []
+  },
+  {
+    "latinName": "Eimeria tsunodai",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria tsunodai"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Prepelica"
+    ],
+    "hostNotes": {
+      "Prepelica": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 18.6,
+      "lengthMax": 19.9,
+      "widthMin": 15.7,
+      "widthMax": 16.6,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 19 x 14,6 µm",
+      "Ovoidná až subsférická, Index tvaru 1,30. Oocysty často **na jednom konci sploštené**.",
+      "Má 1 alebo 2 polárne telieska",
+      "Sporocysty vajcovité (9,0 – 11,0 × 5,5 – 6,5 µm)"
+    ],
+    "differentialDiagnosis": [
+      "_E. bateri_ je **väčšie** (24,7 – 27,2 × 18,0 – 20,0 μm), má ovoidný, **nikdy nie guľovitý tvar**, **sporocysty vajcovité**, výrazne širšie a robustnejšie (9,0 – 11,5 × 6,5 – 7,5 μm)",
+      "_E. uzura_ : **väčšie** (23,1 – 24,7 × 17,5 – 18,3 μm), ovoidný, nikdy nie guľovitý tvar, 5 a viac polárnych teliesok, **sporocysty predĺžené** (10,0 – 12,5 × 5,5 – 6,5 μm), ich dĺžka je v pomere k šírke najväčšia, preto pôsobia pretiahnuto.",
+      "**Hlavný záver pre prax**: Ak nájdete oocystu, ktorá má dĺžku pod 20 μm, ide takmer s istotou o _E. tsunodai_. Ak má oocysta okolo 25 μm a viac, musíte sa pozrieť na šírku sporocysty – ak je široká (nad 6,5 μm), je to _E. bateri_, ak je užšia a pretiahnutá, ide o _E. uzura_."
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky slepého čreva. Merozoity sa nachádzajú najmä v slepom čreve, schizonty v hrubom čreve; po niekoľkých cykloch nepohlavného rozmnožovania (schizogónia) vznikajú gamonty, z ktorých po oplodnení vznikne oocysta vylúčená trusom. V prostredí oocysta sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. tsunodai_ je najpatogénnejšia eimeria japonskej prepelice; pri masívnej infekcii spôsobuje cekálnu kokcídiózu s výrazným poškodením slepého čreva. Patologické zmeny zahŕňajú nadúvanie slepého čreva, bielenie sliznice, katarálnu až hemoragickú enteritídu, hnačku, chudnutie a slabosť. Na rozdiel od _E. bateri_ (mierne patogénna) alebo _E. uzura_ (mierne až stredne patogénna) je _E. tsunodai_ považovaná za klinicky najvýznamnejší druh.",
+    "zoonosis": false,
+    "notes": "",
+    "id": "eimeria_tsunodai_oocyst",
+    "images": [
+      "/public/images/parasites/eimeria_tsunodai_oocyst/eimeria_tsunoidai_oocyst_01.webp"
+    ]
+  },
+  {
+    "latinName": "Eimeria uzura",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria uzura"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Prepelica"
+    ],
+    "hostNotes": {
+      "Prepelica": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 23.1,
+      "lengthMax": 24.7,
+      "widthMin": 17.5,
+      "widthMax": 18.3,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná veľkosť 23,9 × 17,9 µm",
+      "Ovoidný až eliptický tvar, Index tvaru 1,3 - 1,4.",
+      "Má 5 a viac polárnych teliesok",
+      "Sporocysty **predĺžené** (10,0 – 15 × 5,5 – 8 µm)"
+    ],
+    "differentialDiagnosis": [
+      "_E. bateri_ je **väčšie** (24,7 – 27,2 × 18,0 – 20,0 μm), má ovoidný, **nikdy nie guľovitý tvar**, menej polárnych teliesok (1-2), **sporocysty vajcovité**, výrazne širšie a robustnejšie (9,0 – 11,5 × 6,5 – 7,5 μm)",
+      "_E.tsunoidai_ sú **menšie** (18,6 – 19,9 × 15,7 – 16,6 μm), často guľovité, menej polárnych teliesok (1-2)",
+      "**Hlavný záver pre prax**: Ak nájdete oocystu, ktorá má dĺžku pod 20 μm, ide takmer s istotou o _E. tsunodai_. Ak má oocysta okolo 25 μm a viac, musíte sa pozrieť na šírku sporocysty – ak je široká (nad 6,5 μm), je to _E. bateri_, ak je užšia a pretiahnutá, ide o _E. uzura_."
+    ],
+    "lifeCycle": "Infekcia vzniká požitím sporulovanej oocysty kontaminovanou potravou, vodou alebo podstielkou; v čreve sa uvoľnia sporozoity, ktoré napádajú epitelové bunky tenkého čreva aj slepého čreva. Merozoity sa nachádzajú najmä v tenkom čreve, schizonty v hrubom čreve; po niekoľkých cykloch nepohlavného rozmnožovania (schizogónia) vznikajú gamonty, z ktorých po oplodnení vznikne oocysta vylúčená trusom. V prostredí oocysta sporuluje na infekčné štádium. Celý cyklus prebieha v jednom hostiteľovi, bez potreby medzihostiteľa.",
+    "pathology": "_E. uzura_ je mierne až stredne patogénna eimeria japonskej prepelice; pri nízkej intenzite infekcie býva asymptomatická alebo spôsobuje len spomalenie rastu a zníženie reprodukcie. Pri masívnej infekcii môže spôsobiť katarálnu enteritídu tenkého čreva a slepého čreva, hnačku, chudnutie a slabosť. Patologické zmeny sú zvyčajne mierne — zápal tenkého čreva a slepého čreva bez výraznejšieho poškodenia sliznice, na rozdiel od vysoko patogénnej _E. tsunodai_.",
+    "zoonosis": false,
+    "notes": "",
+    "id": "eimeria_uzura_oocyst",
+    "images": [
+      "/public/images/parasites/eimeria_uzura_oocyst/eimeria_uzura_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria vencesi",
@@ -15075,7 +15248,9 @@
     "zoonosis": true,
     "notes": "",
     "id": "macracanthorhynchus_hirudinaceus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/macracanthorhynchus_hirudinaceus_egg/macracanthorhynchus_hirudinaceus_egg_01.webp"
+    ]
   },
   {
     "latinName": "Mehdiela sp.",
@@ -16210,55 +16385,6 @@
     "images": []
   },
   {
-    "latinName": "Ochetostoma sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Ochetosomatidae",
-      "genus": "Ochetostoma",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hady"
-    ],
-    "hostNotes": {},
-    "sample": "Ústna dutina",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 150,
-      "widthMin": 40,
-      "widthMax": 90,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "operkulované vajíčko."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ochetostoma môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "ochetostoma_egg",
-    "images": []
-  },
-  {
     "latinName": "Oesophagostomum dentatum",
     "synonyms": [],
     "slovakName": "",
@@ -16305,6 +16431,55 @@
     "zoonosis": false,
     "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Strongylida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida.",
     "id": "oesophagostomum_dentatum_egg",
+    "images": []
+  },
+  {
+    "latinName": "Ochetostoma sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Ochetosomatidae",
+      "genus": "Ochetostoma",
+      "species": "neurčený druh"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Hady"
+    ],
+    "hostNotes": {},
+    "sample": "Ústna dutina",
+    "stage": "Vajíčko",
+    "group": "Trematoda",
+    "micrometry": {
+      "lengthMin": 70,
+      "lengthMax": 150,
+      "widthMin": 40,
+      "widthMax": 90,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Žltohnedý",
+      "shell": "Dvojvrstvová, s viečkom"
+    },
+    "diagnosticSigns": [
+      "Oválne",
+      "operkulované vajíčko."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ochetostoma môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "ochetostoma_egg",
     "images": []
   },
   {
@@ -20336,57 +20511,6 @@
     "images": []
   },
   {
-    "latinName": "Tachygonetria sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Oxyurida",
-      "family": "Pharyngodonidae",
-      "genus": "Tachygonetria",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Testudo marginata"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 80,
-      "widthMin": 30,
-      "widthMax": 50,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "asymetrické",
-      "tenká hladká škrupina",
-      "typický oxyuridný typ vajíčka; parazit korytnačiek (čeľaď Pharyngodonidae)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Tachygonetria môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "tachygonetria_egg",
-    "images": []
-  },
-  {
     "latinName": "Taenia sp.",
     "synonyms": [],
     "slovakName": "",
@@ -20451,6 +20575,57 @@
     "zoonosis": true,
     "notes": "Nález potvrdzuje infekciu Taeniidae, ale nerozlíši Taenia od Echinococcus",
     "id": "taenia_sp_egg",
+    "images": []
+  },
+  {
+    "latinName": "Tachygonetria sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Oxyurida",
+      "family": "Pharyngodonidae",
+      "genus": "Tachygonetria",
+      "species": "neurčený druh"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Testudo marginata"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "micrometry": {
+      "lengthMin": 60,
+      "lengthMax": 80,
+      "widthMin": 30,
+      "widthMax": 50,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "Oválne",
+      "asymetrické",
+      "tenká hladká škrupina",
+      "typický oxyuridný typ vajíčka; parazit korytnačiek (čeľaď Pharyngodonidae)."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Tachygonetria môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "tachygonetria_egg",
     "images": []
   },
   {

@@ -1,5 +1,35 @@
 import { state, updatePendingUI } from './admin.js';
 
+// --- Zoradenie výstupu ---
+// Parazity: abecedne podľa latinName (fallback id) – rovnaký kľúč ako v Atlase.
+function sortParasites(list) {
+    return list.sort((a, b) =>
+        (a.latinName || a.id || '').localeCompare(b.latinName || b.id || '', 'sk', { sensitivity: 'base' }) ||
+        (a.id || '').localeCompare(b.id || '', 'sk', { sensitivity: 'base' })
+    );
+}
+
+// Číslo fotky z názvu súboru: ".../alaria_alata_egg_07.webp" -> 7 (aj "_07_full.webp").
+// Fotky bez čísla idú na koniec skupiny.
+function getPhotoNumber(url) {
+    const m = String(url || '').match(/_(\d+)(?:_full)?\.[a-z0-9]+(?:\?.*)?$/i);
+    return m ? parseInt(m[1], 10) : Infinity;
+}
+
+// Obrázky: najprv podľa parasiteId (abecedne), potom podľa čísla fotky (číselne),
+// nakoniec podľa url a dateAdded ako poistka pre rovnaké hodnoty.
+function sortImages(list) {
+    return list.sort((a, b) => {
+        const byParasite = (a.parasiteId || '').localeCompare(b.parasiteId || '', 'sk', { sensitivity: 'base' });
+        if (byParasite !== 0) return byParasite;
+        const na = getPhotoNumber(a.url);
+        const nb = getPhotoNumber(b.url);
+        if (na !== nb) return na < nb ? -1 : 1;
+        return (a.url || '').localeCompare(b.url || '') ||
+               (a.dateAdded || '').localeCompare(b.dateAdded || '');
+    });
+}
+
 export async function exportZip() {
     if (state.pendingChanges.length === 0) {
         alert('Nie sú žiadne čakajúce zmeny na export.');
@@ -38,6 +68,10 @@ export async function exportZip() {
                 }
             }
         }
+
+        // --- Zoradenie (abecedne; obrázky navyše podľa čísla fotky) ---
+        sortParasites(finalParasites);
+        sortImages(finalImages);
 
         // --- Vytvorenie ZIP ---
         const zip = new JSZip();
