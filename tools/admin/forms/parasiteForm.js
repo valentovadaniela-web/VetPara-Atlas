@@ -4,6 +4,9 @@ let currentEditingId = null;
 let currentRecord = null;
 let pendingHostGroupsConfirm = false;
 
+// Šablóna použitá v aktuálnom novom zázname ({ id, label }); null = žiadna.
+let activeTemplate = null;
+
 // Čo sa pri použití šablóny prevezme (pamätá sa medzi výbermi šablón).
 // ID, latinName, slovakName, synonyms, images a hostGroups sa NEPREBERAJÚ NIKDY.
 const templateOptions = {
@@ -89,7 +92,10 @@ function doSearch() {
     });
 }
 
-function renderForm(record, template = null, templateLabel = '') {
+function renderForm(record, template = null, templateLabel = '', savedNote = '') {
+    // Aktívna šablóna platí len pre nový záznam vytvorený zo šablóny.
+    if (record || !template) activeTemplate = null;
+
     const container = document.getElementById('parasite-form');
     const isNew = !record;
 
@@ -141,7 +147,7 @@ function renderForm(record, template = null, templateLabel = '') {
     const idExists = data.id && isIdDuplicate(data.id, currentEditingId);
 
     let html = `
-        ${isNew ? templateBoxHtml(templateLabel) : ''}
+        ${isNew ? templateBoxHtml(templateLabel, savedNote) : ''}
         <div class="form-row">
             <div class="form-group" style="flex: 0 1 300px;">
                 <label>ID <span class="required">*</span></label>
@@ -359,6 +365,7 @@ function renderForm(record, template = null, templateLabel = '') {
 
         <div class="form-actions">
             <button id="save-btn" class="btn-primary">💾 Pridať do frontu zmien</button>
+            ${isNew && activeTemplate ? `<button id="save-continue-btn" class="btn-primary">💾➕ Uložiť a pokračovať s rovnakou šablónou</button>` : ''}
             <button id="clear-btn" class="btn-secondary">🗑 Vyčistiť formulár</button>
             ${!isNew ? `<button id="delete-btn" class="btn-danger">🗑 Odstrániť záznam</button>` : ''}
         </div>
@@ -443,7 +450,7 @@ function renderForm(record, template = null, templateLabel = '') {
         pendingHostGroupsConfirm = confirmCheck.checked;
     });
 
-    document.getElementById('save-btn').addEventListener('click', async () => {
+    const doSave = async (keepTemplate) => {
         const formData = collectFormData(isNew);
         if (!formData) return;
 
@@ -476,15 +483,33 @@ function renderForm(record, template = null, templateLabel = '') {
             };
             addPendingChange(change);
             if (isNew) {
-                renderForm(null);
                 currentEditingId = null;
                 currentRecord = null;
+                pendingHostGroupsConfirm = false;
+
+                // „Uložiť a pokračovať": nový prázdny formulár z tej istej šablóny
+                const src = keepTemplate && activeTemplate
+                    ? state.workingCopy.find(p => p.id === activeTemplate.id)
+                    : null;
+                if (src) {
+                    renderForm(
+                        null,
+                        buildTemplateData(src, templateOptions),
+                        activeTemplate.label,
+                        `Uložené: ${formData.latinName} (${formData.id}). Môžeš pokračovať ďalším záznamom.`
+                    );
+                } else {
+                    renderForm(null);
+                }
             } else {
                 currentRecord = JSON.parse(JSON.stringify(formData));
             }
             document.getElementById('search-results').style.display = 'none';
         }
-    });
+    };
+
+    document.getElementById('save-btn').addEventListener('click', () => doSave(false));
+    document.getElementById('save-continue-btn')?.addEventListener('click', () => doSave(true));
 
     document.getElementById('clear-btn').addEventListener('click', () => {
         if (confirm('Naozaj chceš vyčistiť formulár? Neuložené zmeny sa stratia.')) {
@@ -518,7 +543,7 @@ function renderForm(record, template = null, templateLabel = '') {
 
 // ===== ŠABLÓNA Z EXISTUJÚCEHO PARAZITA =====
 
-function templateBoxHtml(label) {
+function templateBoxHtml(label, savedNote = '') {
     const opt = (key, text) => `
         <label style="font-weight:400;font-size:0.85rem;display:inline-flex;align-items:center;gap:0.3rem;margin-right:1rem;">
             <input type="checkbox" class="tpl-opt" data-key="${key}" ${templateOptions[key] ? 'checked' : ''} /> ${text}
@@ -527,6 +552,7 @@ function templateBoxHtml(label) {
     return `
         <div id="template-box" style="border:1px dashed #95a5a6;border-radius:6px;padding:0.8rem;margin-bottom:1rem;background:#f8f9fa;">
             <div style="font-weight:600;margin-bottom:0.4rem;">📋 Použiť existujúceho parazita ako šablónu</div>
+            ${savedNote ? `<div style="margin-bottom:0.5rem;color:#2980b9;">💾 ${escHtml(savedNote)}</div>` : ''}
             ${label ? `<div style="margin-bottom:0.5rem;color:#27ae60;">✅ Predvyplnené z: <strong>${escHtml(label)}</strong> — skontroluj najmä druh (species), hostiteľov a mikrometriu.</div>` : ''}
             <input type="text" id="tpl-search" placeholder="Hľadať šablónu podľa ID alebo latinského mena..." autocomplete="off" />
             <div id="tpl-results" style="display:none;position:static;max-height:220px;overflow:auto;border:1px solid #dfe6e9;background:#fff;margin-top:0.3rem;"></div>
@@ -539,7 +565,7 @@ function templateBoxHtml(label) {
                 ${opt('texts', 'Texty (znaky, diferenciálna dg., cyklus, patológia, zoonóza, referencie, poznámky)')}
                 <div style="font-size:0.8rem;color:#7f8c8d;margin-top:0.3rem;">
                     ID, latinský a slovenský názov, synonymá, fotky a skupiny hostiteľov (hostGroups) sa neprebierajú nikdy.
-                    Zmena výberu platí pri ďalšom výbere šablóny.
+                    Zmena výberu platí pri ďalšom použití šablóny (aj pri „Uložiť a pokračovať“).
                 </div>
             </div>
         </div>
@@ -605,7 +631,9 @@ function applyTemplate(id) {
     tpl.slovakName = (document.getElementById('f-slovakName')?.value || '').trim();
 
     pendingHostGroupsConfirm = false;
-    renderForm(null, tpl, `${source.latinName} (${source.id})`);
+    const label = `${source.latinName} (${source.id})`;
+    activeTemplate = { id: source.id, label };
+    renderForm(null, tpl, label);
 }
 
 function buildTemplateData(source, opts) {

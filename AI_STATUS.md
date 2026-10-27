@@ -1,5 +1,97 @@
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
+🔥 0.40 Aktuálny stav — doplnené (2026‑10‑27, session: zoradenie exportu v Admin nástroji + šablóna z existujúceho parazita)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka nahrala `AI_STATUS.md`, potom `admin.js` + `zipExport.js` a neskôr `parasiteForm.js`. Dve nezávislé požiadavky na Admin nástroj:
+
+1. Keď cez Admin pridá parazita alebo fotku, záznam sa v exportovanom JSON zaradí na koniec. Chce, aby boli parazity vždy abecedne a fotky abecedne podľa druhu a v rámci druhu podľa čísla fotky.
+2. Pri zadávaní nového parazita chce použiť údaje iného parazita ako šablónu (napr. taxonómia pri rode *Eimeria*), aby prepisovala len to, čo sa líši.
+3. (dodatočne) Pri zadávaní viacerých druhov za sebou chce tlačidlo „Uložiť a pokračovať s rovnakou šablónou“.
+
+### ✅ 1. Zoradenie exportovaných súborov (`zipExport.js`)
+
+**Zistenie:** `finalParasites` je kópia `state.workingCopy` a `finalImages` je `state.images` doplnené o fotky z `parasite.images`. Nič sa nezoraďovalo, nové záznamy preto zostali na konci. `admin.js` sa nemenil, poradie sa rieši až tesne pred skladaním ZIPu.
+
+**Zmena:**
+
+- Nové `sortParasites()`: podľa `latinName` (fallback `id`), `localeCompare(..., 'sk', { sensitivity: 'base' })`, pri zhode podľa `id`. Rovnaký kľúč ako v Atlase a v Admin vyhľadávaní.
+- Nové `sortImages()`: najprv `parasiteId` abecedne, potom číslo fotky z `url`, nakoniec `url` a `dateAdded` ako poistka.
+- Nové `getPhotoNumber(url)`: regex `_(\d+)(?:_full)?\.<prípona>` → číslo (`..._07.webp` → 7). Porovnáva sa číselne (`_2` pred `_10`). Fotka bez čísla v názve ide na koniec svojho druhu.
+- Obe funkcie sa volajú po doplnení obrázkov z `parasite.images` a pred vytvorením ZIPu, takže poradie platí pre záznamy pridané formulárom Parazit, formulárom Fotografie aj cez Excel.
+
+**Overené:** syntax cez `node --check`, regex a `sortImages()` na vzorke (`a_10`, `a_2`, `a_1`, `b_1` → `a_1`, `a_2`, `a_10`, `b_1`). ✅ Naživo overené autorkou — nový parazit aj nová fotka sa v exporte zaradili správne. ✅ Autorka potvrdila, že všetky názvy fotiek v `images.json` majú číslo v tvare `_<číslo>.<prípona>`.
+
+**⚠️ Dôsledok pre autorku:** prvý export po nasadení prepíše poradie všetkých existujúcich záznamov v `parasites.json` aj `images.json`. Diff v GitHube bude veľký, hoci sa obsah nemení. Radí sa len export, `state.workingCopy` v Admin nástroji ostáva v poradí pridania až do exportu.
+
+**Poznámka:** parazity sa radia podľa `latinName`, fotky podľa `parasiteId`. Ak `id` nezačína rovnako ako `latinName`, môže byť poradie medzi dvoma súbormi mierne odlišné.
+
+### ✅ 2. Šablóna z existujúceho parazita (`parasiteForm.js`)
+
+**Zmena:**
+
+- Pri **➕ Vytvoriť nový** pribudne na vrchu formulára rámček „Použiť existujúceho parazita ako šablónu" s vyhľadávaním podľa `id` / `latinName` (max. 15 výsledkov). Hľadá v `state.workingCopy`, teda aj v ešte neexportovaných zmenách.
+- `renderForm(record, template = null, templateLabel = '')`: pri novom zázname sa dáta skladajú z `defaultRecord` + šablóny. Pri úprave existujúceho záznamu sa rámček nezobrazuje.
+- Nové funkcie: `templateBoxHtml()`, `setupTemplateBox()`, `applyTemplate()`, `buildTemplateData()`.
+- Po výbere sa formulár predvyplní a zobrazí sa zelený riadok „Predvyplnené z: …" s pripomienkou skontrolovať druh, hostiteľov a mikrometriu. Už napísaný `latinName` a `slovakName` ostanú. Ak sú vyplnené aj iné polia, formulár sa najprv opýta na prepísanie.
+- ID sa generuje ako doteraz z nového `latinName` a `stage`, kontrola duplicity (`isIdDuplicate`) ostala nezmenená.
+
+**Čo sa preberá** (zaškrtávacie políčka, výber sa pamätá v module cez `templateOptions`, platí od ďalšieho výberu šablóny):
+
+| Skupina | Predvolene |
+| --- | --- |
+| Taxonómia (vrátane `species`) | ✅ |
+| Hostitelia + `hostNotes` | ✅ |
+| `sample` / `stage` / `group` | ✅ |
+| `morphology` (tvar, farba, schránka) | ✅ |
+| `micrometry` | ❌ (líši sa pri každom druhu) |
+| `diagnosticSigns`, `differentialDiagnosis`, `lifeCycle`, `pathology`, `zoonosis`, `references`, `notes` | ✅ |
+
+**Nikdy sa nepreberá:** `id`, `latinName`, `slovakName`, `synonyms`, `images`, `hostGroups`, `methods`.
+
+**Rozhodnutia:**
+
+- `hostGroups` sa nekopíruje zámerne — zachovaná zásada, že pole sa nikdy nesmie napĺňať automaticky; ostáva ručný výber s potvrdzovacím checkboxom.
+- `species` sa kopíruje, aby šablóna fungovala aj pre iné štádium toho istého druhu (vajíčko ↔ dospelý jedinec). Pri inom druhu ho treba prepísať, na čo upozorňuje zelený riadok.
+
+**Overené:** syntax cez `node --check`, `diff` proti pôvodnému súboru ukázal zmenu len dvoch pôvodných riadkov (hlavička `renderForm` a zloženie `data`), všetko ostatné je pridané. ✅ Naživo overené autorkou.
+
+### ✅ 3. „Uložiť a pokračovať s rovnakou šablónou“ (`parasiteForm.js`)
+
+**Zmena:**
+
+- Pri novom zázname vytvorenom zo šablóny pribudne vedľa „Pridať do frontu zmien“ tlačidlo **💾➕ Uložiť a pokračovať s rovnakou šablónou**. Bez použitej šablóny sa nezobrazuje.
+- Uloží záznam do frontu zmien rovnakou cestou ako obyčajné uloženie (kontrola `hostGroups`, validácia, kontrola duplicity ID, diff panel) a potom otvorí nový formulár predvyplnený z **tej istej šablóny**. Názvy ostanú prázdne. Nad formulárom sa zobrazí modrý riadok „Uložené: <meno> (<id>)“.
+- Obyčajné uloženie ostalo nezmenené (vráti prázdny formulár, šablóna sa zruší).
+- Implementácia: modulová premenná `activeTemplate = { id, label }` (nastavuje `applyTemplate()`, ruší ju `renderForm()` pri úprave záznamu alebo pri prázdnom novom formulári), handler uloženia prerobený na `doSave(keepTemplate)`, `renderForm()` má 4. parameter `savedNote`.
+- Šablóna sa pri pokračovaní znovu načíta zo `state.workingCopy` a `buildTemplateData()` použije aktuálne zaškrtnuté políčka, takže zmena výberu sa prejaví pri ďalšom pokračovaní. Ak by zdrojový záznam medzitým zmizol, formulár sa otvorí prázdny.
+- `hostGroups` sa ani tu nepreberá a potvrdenie varovania (`pendingHostGroupsConfirm`) sa po uložení resetuje.
+
+**Overené:** syntax cez `node --check` a funkčný test v jsdom so stub `admin.js` (šablóna → predvyplnenie bez mena, `hostGroups` a mikrometrie; uložiť a pokračovať → záznam vo fronte, nový predvyplnený formulár s modrou správou; obyčajné uloženie → tlačidlo zmizne, formulár prázdny). ⬜ Naživo v reálnom Admin nástroji neoverené.
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/zipExport.js` | `sortParasites()`, `sortImages()`, `getPhotoNumber()`, volanie pred skladaním ZIPu | ✅ hotové (syntax OK), ✅ naživo overené autorkou |
+| `tools/admin/forms/parasiteForm.js` | šablóna z existujúceho parazita (rámček, `applyTemplate`, `buildTemplateData`, `templateOptions`) + tlačidlo „Uložiť a pokračovať s rovnakou šablónou“ (`activeTemplate`, `doSave`, `savedNote`) | ✅ hotové (syntax OK, jsdom test OK), ✅ šablóna naživo overená autorkou, ⬜ tlačidlo „Uložiť a pokračovať“ naživo neoverené, ⏳ čaká na manuálne nahradenie autorkou |
+
+**Nezmenené:** `admin.js`, `database/*`, `src/*`, `bulkExcel.js`, `imageForm.js`, `diff.js`, `index.html`, `admin.css`.
+
+### 🟡 Otvorené
+
+1. ✅ ~~Naživo overiť zoradenie exportu~~ — hotovo, autorka potvrdila.
+2. ✅ ~~Overiť formát `_<číslo>.<prípona>` v `url` fotiek~~ — hotovo, všetky názvy ho majú; fotka bez čísla (ide na koniec svojho druhu) preto v praxi nehrozí.
+3. ✅ ~~Naživo overiť šablónu~~ — hotovo, autorka potvrdila.
+4. ✅ ~~Rozhodnúť, či zoradiť aj `state.workingCopy` priamo v Admin nástroji~~ — rozhodnuté: **nerobiť**. Zoradenie ostáva len pri exporte; nový záznam sa vo vyhľadávaní v admine zobrazí na konci, kým sa neexportuje.
+5. ✅ ~~Nápad: „Uložiť a pokračovať s rovnakou šablónou“~~ — implementované (pozri §3 vyššie), ⬜ čaká na naživo overenie autorkou.
+6. ⬜ Naživo overiť tlačidlo „Uložiť a pokračovať“: uloží sa záznam, otvorí sa nový formulár z rovnakej šablóny s prázdnymi názvami, modrý riadok sa zobrazí, ID sa vygeneruje z nového mena.
+
+---
+
 🔥 0.39 Aktuálny stav — doplnené (2026‑10‑20, session: Excel bulk import — čiarky a formátovanie v `diagnosticSigns`/`differentialDiagnosis`)
 
 ## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
