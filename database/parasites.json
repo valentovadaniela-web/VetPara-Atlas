@@ -7608,10 +7608,10 @@
       "Priemerné rozmery: 22,0 – 24,0 × 18,0 – 19,0 μm (radí sa k stredne malým až stredným druhom).",
       "Tvar oocysty: Výrazne subsférický (takmer guľovitý), široko elipsovitý až mierne vajcovitý (ovoidný).",
       "Oocystová stena: Hladká, dvojvrstvová, tenká (cca 1,0 μm), transparentná, bezfarebná až jemne zelenkastá alebo žltkastá.",
-      "Mikropyla (mikropylárny otvor): Prítomná, avšak mimoriadne nenápadná, drobná a ťažko viditeľná (často vyžaduje dôkladné zaclonenie mikroskopu na zachytenie jemného stenčenia na jednom z pólov).",
-      "Mikropylárna čiapočka (polar cap): Neprítomná (CHÝBA). Nad mikropylou sa nenachádza žiadny vypuklý kryt.",
+      "Mikropyla mimoriadne nenápadná, drobná a ťažko viditeľná (často vyžaduje dôkladné zaclonenie mikroskopu na zachytenie jemného stenčenia na jednom z pólov).",
+      "Mikropylárna čiapočka dobre viditeľná, plochá.",
       "Polárne teliesko (polar granule): Prítomné po sporulácii (zvyčajne jedno alebo dve malé telieska hneď pod mikropylou).",
-      "Oocystové reziduálne teliesko (oocyst residuum): Neprítomné.",
+      "Oocystové reziduálne teliesko: Neprítomné.",
       "Sporocysty: Obsahuje 4 sporocysty, ktoré sú ovoidné (cca 10 × 6 μm) s prítomným Stiedovym telieskom a malým sporocystovým reziduálnym telieskom. Každá nesie 2 sporozoity.",
       "Nesporulovaná oocysta (čerstvý trus): Vidno menšie, takmer guľaté až široko vajcovité útvary s čírou tenkou stenou. Stred vypĺňa hustý, tmavý granulovaný sporont, ktorý odstupuje od pólov len minimálne. Mikropyla na póle je takmer nepostihnuteľná.",
       "Sporulovaná oocysta (truse z prostredia): Po exogénnej fáze (sporulácia trvá cca 48 – 72 hodín pri optimálnej teplote) sú vnútri viditeľné štyri samostatné, ohraničené ovoidné sporocysty. Okolitý priestor oocysty zostáva číry, prítomné je len jedno drobné polárne teliesko."
@@ -7620,7 +7620,8 @@
       "_Eimeria ovinoidalis_: Najčastejší spoločník. Má podobné rozmery (cca 23 × 18 μm), je však striktne elipsovitá až valcovitá s paralelnými bočnými stenami, zatiaľ čo _E. crandallis_ je viac \"bacuľatá\", guľovitá až subsférická. _E. ovinoidalis_ navyše nemá mikropylu.",
       "_Eimeria parva_: Je výrazne menšia (priemerne 17 × 14 μm), má dokonale guľovitý (sférický) tvar a mikropyla jej úplne chýba.",
       "_Eimeria ahsata_ a _E. intricata_: Tieto druhy sú dramaticky väčšie (nad 35 – 40 μm) a majú mohutnú, dobre viditeľnú mikropylárnu čiapočku, ktorá u E. crandallis chýba.",
-      "_Eimeria faurei_: Má podobnú mikropylu bez čiapočky, je však výrazne väčšia (priemerne 30 × 21 μm) a má typicky výrazný vajcovitý (hruškovitý) tvar so zúženým pólom."
+      "_Eimeria faurei_: Má podobnú mikropylu bez čiapočky, je však výrazne väčšia (priemerne 30 × 21 μm) a má typicky výrazný vajcovitý (hruškovitý) tvar so zúženým pólom.",
+      "_Eimeria weybridgensis_: Prakticky rovnaká veľkosť a tvar. V praxi sa často reportujú spoločne ako **komplex E. crandallis / E. weybridgensis**."
     ],
     "lifeCycle": "Cyklus je priamy (monoxénny). Jahňatá sa nakazia ingesciou sporulovaných oocýst z kontaminovaných pastvín, podstielky alebo matkiných strukov. Po excystácii v tenkom čreve prenikajú sporozoity do hlbokých štruktúr sliznice. E. crandallis vykazuje vysokú patologickú adaptáciu: prvá generácia nepohlavného rozmnožovania (merogónia) prebieha hlboko v Lieberkühnových kryptách v počiatočných úsekoch tenkého čreva. Druhá generácia merontov a následná pohlavná fáza (gametogónia) sa presúva do zadnej časti tenkého čreva (ileum). Po fertilizácii odchádzajú nesporulované oocysty s trusom. Sporogónia (exogénna fáza) vo vonkajšom prostredí trvá pri vhodnej teplote 2 až 3 dni. Prepatentná perióda je 13 – 16 dní.",
     "pathology": "_Eimeria crandallis_ patrí k vysoko patogénnym druhom. Afekcia buniek Lieberkühnových krýpt a hlboká lokalizácia merontov v ileu vedie k masívnemu kolapsu črevnej architektúry, ťažkej atrofii klkov a slizničným eróziám. Klinická eimerióza (kokcidióza) postihuje najmä jahňatá vo veku 4 až 8 týždňov (často pod vplyvom stresu z odstavu, zmeny krmiva či transportu). Prejavuje sa profúznou, vodnatou, profúznou hnačkou, v ktorej sa neskôr objavuje hlien a prímesi krvi/fíbrínových odliatkov čreva. Pridružuje sa dehydratácia, bolestivé tenezmy (napínanie na defekáciu), rýchla emaciácia (chradnutie) a bez včasnej terapie (toltrazuril, diclazuril) masívne úhyny jahniat. Pri sekcii nachádzame hemoragicko-katarálnu enteritídu ilea s difúznym olupovaním sliznice.",
@@ -9286,9 +9287,9 @@
       "Vnútro nesporulovanej oocysty vypĺňa guľovitá, hrubozrnná hmota zygoty (sporoblastu), ktorá odstupuje od tenkej, čírej steny."
     ],
     "differentialDiagnosis": [
-      "_Eimeria tenella_: Oocysty _E. necatrix_ sú pod mikroskopom morfologicky takmer úplne identické s oocystami _Eimeria tenella_ (tvarom, veľkosťou aj absenciou mikropyly). Čisté koprologické vyšetrenie trusu flotáciou preto neumožňuje tieto dva druhy od seba spoľahlivo odlíšiť. Definitívna diagnóza sa opiera o pitevný nález, mikrolokalizáciu schizontov (_E.tenella_ výhradne v slepých črevách (caeca), zatiaľ čo_E. necatrix_ v strednej časti tenkého čreva) alebo PCR.",
-      "_Eimeria acervulina_: Oocysty sú o niečo menšie, vajcovité a ich nález v tenkom čreve je sprevádzaný bielymi priečnymi rebríčkovitými léziami na sliznici (nie hemorágiami).",
-      "_Eimeria maxima_: Výrazne väčšia oocysta (priemerne 30 × 20 μm, no až do 42 μm) s hrubou, žltohnedou drsnou stenou."
+      "_Eimeria tenella_:  Oocysty _E. necatrix_  (20 × 17 μm) sú pod mikroskopom morfologicky takmer úplne identické s oocystami _Eimeria tenella_  (22,6 × 19,0 μm).  _E. necatrix_ ale o niečo pretiahnutejšia. Jej tvar inklinuje k podlhovasto oválnemu (až elipsovitému -  jej tvarový index je vyšší, zvyčajne 1,25 – 1,30) oproti **širokooválnemu** tvaru _E.tenella_ s indexom tvaru 1,12-1,20. Čisté koprologické vyšetrenie trusu flotáciou neumožňuje tieto dva druhy od seba spoľahlivo odlíšiť. Definitívna diagnóza sa opiera o pitevný nález, mikrolokalizáciu schizontov _E.tenella_ výhradne v slepých črevách (caeca), zatiaľ čo_E. necatrix_ v strednej časti tenkého čreva) alebo PCR.",
+      "_Eimeria acervulina_: Oocysty sú o niečo **menšie**, vajcovité a ich nález v tenkom čreve je sprevádzaný bielymi priečnymi rebríčkovitými léziami na sliznici (nie hemorágiami).",
+      "_Eimeria maxima_: Výrazne **väčšia** oocysta (priemerne 30 × 20 μm, no až do 42 μm) s hrubou, žltohnedou drsnou stenou."
     ],
     "lifeCycle": "_Eimeria necatrix_ má priamy (monoxénny) cyklus, ktorý však vykazuje unikátnu topografickú separáciu (tzv. schizogonicko-gametogonický nesúlad). Vták pozrie infekčné sporulované oocysty. Uvoľnené sporozoity penetrujú do enterocytov strednej tretiny tenkého čreva (jejunum a ileum). Tu prebieha 1. a 2. generácia nepohlavného množenia (merogónia). Druhá generácia schizontov dosahuje obrie rozmery (až 60 μm) a vyvíja sa hlboko v subepiteliálnych vrstvách sliznice. Následne uvoľnené merozoity migrujú smerom dole do slepých čriev (caeca), kde prebieha finálna pohlavná fáza (gametogónia). Formované nesporulované oocysty sú vylučované trusom a vo vonkajšom prostredí vysporulujú za 24 až 48 hodín. Prepatentná perióda je približne 7 dní.",
     "pathology": "Tento druh patrí spolu s _E. tenella_ k najvirulentnejším a najničivejším kokcídiám. Obrie schizonty 2. generácie pri svojom raste a uvoľňovaní doslova roztrhajú stenu strednej časti tenkého čreva, čím deštruujú krvné cievy a hladkú svalovinu. Makroskopicky je tenké črevo enormne dilatované (rozšírené), naplnené masívnymi krvavými zrazeninami a seróza je posiata charakteristickými bielymi ložiskami (zhluky schizontov) pretkanými drobnými petéchiami – obraz tzv. „soli a korenia“ (salt and pepper appearance). Klinicky sa prejavuje akútnou črevnou kokcidiózou: náhlymi úhynmi bez predchádzajúcich príznakov, masívnymi krvavými hnačkami, extrémnou anémiou (bledé hrebienky a laloky), apatiou a somnolenciou. Mortalita neošetreného kŕdľa môže presiahnuť 20–30 %.",
@@ -11001,21 +11002,30 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 46,
-      "lengthMax": 46,
-      "widthMin": 32,
-      "widthMax": 32,
+      "lengthMin": 43,
+      "lengthMax": 49,
+      "widthMin": 30,
+      "widthMax": 34,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Eliptický",
+      "shape": "Vajcovitý",
       "colour": "Tmavohnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 46 × 32 μm.",
+      "Tvar: Výrazne predĺžene ovoidný až elipsoidný. Podobá sa na vajíčko s asymetricky zúženým jedným pólom.",
+      "Stena je dvojvrstvová, hladká a **žltohnedo až tmavohnedo** sfarbená. Na zúženom konci sa nachádza **mikropyle** bez výraznej polárnej čiapočky"
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria ponderosa_: Dosahuje dĺžku 38 – 45 μm. Má taktiež mikropyle, ale jej **stena je výrazne hrubá, drsná, vráskavá** a tmavohnedá, zatiaľ čo _E. superba_ ju má hladkú.",
+      "_Eimeria panda_: **Menšia** oocysta (31 – 35 μm), má pretiahnutý, takmer rožkovitý alebo fazuľovitý tvar.",
+      "_Eimeria capreoli_: **Menšia** (25 – 35 μm), vajcovitá, svetlá, nemá tak výrazné mikropyle.",
+      "_Eimeria rotunda_: **Veľmi malá** (13 – 18 μm) a striktne guľovitá, zámena kvôli veľkosti nehrozí"
+    ],
+    "lifeCycle": "Vývinový cyklus je priamy a prebieha monoxénne (v jedinom hostiteľovi). Infikovaný srnec vylučuje trusom do vonkajšieho prostredia neinfekčné (nesporulované) oocysty. Tie na pastvine za prítomnosti kyslíka a dostatočnej vlhkosti prejdú procesom sporulácie, ktorý trvá niekoľko dní. Zdravé zviera sa nakazí prehltnutím týchto sporulovaných oocýst z kontaminovanej trávy alebo vody. V čreve hostiteľa oocysty prasknú, uvoľnené sporozoity napádajú epitelové bunky črevnej sliznice (enterocyty) a prechádzajú fázami nepohlavného (schizogónia) a pohlavného množenia (gametogónia), čo vyústi do tvorby nových oocýst.",
+    "pathology": "_Eimeria superba_ vykazuje strednú patogenitu. Množenie parazita v črevných bunkách deštruuje sliznicu, čo vedie k narušeniu mechanickej a absorpčnej funkcie čreva. Pri bežných (slabých) infekciách u dospelých jedincov prebieha nákaza asymptomaticky. Problém nastáva pri masívnych infekciách u tohtoročných mláďat (srnčiat) alebo u zvierat oslabených zimným hladovaním a stresom. Parazit vyvoláva katarálnu enteritídu (zápal čreva), čo sa klinicky prejavuje tmavými hnačkami, dehydratáciou, naježenou srsťou, celkovou slabosťou a výrazným chradnutím. Straty na epiteli otvárajú cestu pre sekundárne bakteriálne zápaly čriev.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_superba_oocyst",
@@ -11043,23 +11053,29 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 23,
-      "lengthMax": 23,
-      "widthMin": 19,
-      "widthMax": 19,
+      "lengthMin": 19.5,
+      "lengthMax": 26,
+      "widthMin": 16.5,
+      "widthMax": 22.8,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Zelenkastý",
-      "shell": "Dvojvrstvová, hladká"
+      "shape": "Oválny",
+      "colour": "Bezfarebný",
+      "shell": "Tenká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [
-      "_Eimeria necatrix_: Oocysty _E. necatrix_ sú pod mikroskopom morfologicky takmer úplne identické s oocystami _Eimeria tenella_ (tvarom, veľkosťou aj absenciou mikropyly). Čisté koprologické vyšetrenie trusu flotáciou preto neumožňuje tieto dva druhy od seba spoľahlivo odlíšiť. Definitívna diagnóza sa opiera o pitevný nález, mikrolokalizáciu schizontov (_E.tenella_ výhradne v slepých črevách (caeca), zatiaľ čo_E. necatrix_ v strednej časti tenkého čreva) alebo PCR."
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 22,6 × 19,0 μm.",
+      "Tvar oocysty: **Široko oválny**, symetrický, bez zúženia. Pomer dĺžky a šírky (tvarový index) sa pohybuje okolo 1,15 – 1,20.",
+      "Oocysta **nemá mikropylu**. Stena je jednovrstvová, hladká, bezfarebná až jemne žltkastá. Po vysporulovaní chýba oocystová reziduálna masa, no prítomné je malé polárne teliesko (polar granule)."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [
+      "_Eimeria necatrix_: Oocysty _E. necatrix_  (20 × 17 μm) sú pod mikroskopom morfologicky takmer úplne identické s oocystami _Eimeria tenella_  (22,6 × 19,0 μm).  Je ale o niečo pretiahnutejšia. Jej tvar inklinuje k **podlhovasto oválnemu (až elipsovitému** -  jej tvarový index je vyšší, zvyčajne 1,25 – 1,30) oproti širokooválnemu tvaru _E.tenella_ s indexom tvaru 1,12-1,20. Čisté koprologické vyšetrenie trusu flotáciou neumožňuje tieto dva druhy od seba spoľahlivo odlíšiť. Definitívna diagnóza sa opiera o pitevný nález, mikrolokalizáciu schizontov _E.tenella_ výhradne v slepých črevách (caeca), zatiaľ čo_E. necatrix_ v strednej časti tenkého čreva) alebo PCR.",
+      "_Eimeria maxima_: Výrazne **väčšia** (priemerne 30 × 20 μm), má charakteristickú žltkastú až hnedastú stenu, ktorá býva jemne drsná.",
+      "_Eimeria acervulina_: **Menšia** (priemerne 16 × 13 μm), typicky vajcovitá až kvapkovitá, masovo sa vyskytuje v prednej časti tenkého čreva."
+    ],
+    "lifeCycle": "Vývin je priamy (monoxénny). Kura pozrie infekčnú (vysporulovanú) oocystu z podstielky, krmiva alebo vody. V svalnatom žalúdku a pôsobením trypsinínu v čreve praská stena oocysty a uvoľňujú sa sporozoity. Ty migrujú špecificky do sliznice slepých čriev (caeca), kde prenikajú do buniek epitelu. Nasledujú minimálne dve generácie nepohlavného množenia (schizogónia). Najmä druhá generácia schizontov dosahuje obrovské rozmery a deštruuje okolité tkanivo sliznice. Po nej nastáva pohlavná fáza (gametogónia), vznikajú samčie a samičie gaméty, ktorých splynutím vzniká ne頭ysporulovaná oocysta. Tá odchádza trusom von, kde v teple a vlhku vysporuluje na infekčné štádium (za 18 až 48 hodín). Preinfekčná doba (od pozretia po vylúčenie oocysty) je 6 až 7 dní.",
+    "pathology": "_Eimeria tenella_ patrí k najpatogénnejším kokcídiám hydiny. Spôsobuje akútnu hemoragickú cekálnu kokcidiózu, postihujúcu najmä kurčatá vo veku 3 až 6 týždňov. Masívny rozpad buniek počas druhej schizogónie spôsobuje hlboké poškodenie steny čreva a obnaženie ciev. Klinicky sa prejavuje krvavou hnačkou, apatiou, nahrbeným postojom, anémiou (bledé hrebienky) a vysokou mortalitou (až do 50 % pri neliečených chovoch). Pri sekcii sú slepé črevá enormne zväčšené, distendované, naplnené čerstvou krvou alebo neskôr tuhými, syrovitými krvavými zátkami (tzv. cekálne kasty), čo vedie k úplnej nekróze sliznice čreva.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_tenella_oocyst",
@@ -11087,10 +11103,10 @@
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 34,
-      "lengthMax": 52,
-      "widthMin": 23,
-      "widthMax": 32,
+      "lengthMin": 32.5,
+      "lengthMax": 54.5,
+      "widthMin": 21,
+      "widthMax": 39,
       "unit": "µm"
     },
     "morphology": {
@@ -11098,10 +11114,18 @@
       "colour": "Žltohnedý",
       "shell": "Dvojvrstvová"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Veľká oocysta (často nad 40 μm), čo ju radí k najväčším kokcídiám nachádzaným v truse zajacov. Literárne údaje o priemernej dĺžke a šírke sa mierne líšia; niekde 43 × 31 μm, zatiaľ čo inde sú uvedené menšie varianty okolo 36 × 22,7 μm.",
+      "Výrazne **vajcovitý** (ovoidný) tvar.",
+      "Stena je hladká, pomerne hrubá, žltohnedo až hnedasto sfarbená, s jasne ohraničeným prerušením na užšom póle (mikropyle)."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria robertsoni_: Veľmi podobná veľkosťou (41 × 27 μm), no jej oocysta má **širšie a nápadnejšie mikropyle s lemujúcim golierikom**, a stena býva svetlejšia.",
+      "_Eimeria leporis_: Má valcovitý až predĺžený elipsovitý tvar (32 × 16 μm), je **výrazne užšia** a chýba jej robustnosť _E. townsendi_.",
+      "_Eimeria europaea_: **Menšia** (30 × 19 μm), chýba jej takto výrazné zúženie na póle."
+    ],
+    "lifeCycle": "Vývin prebieha priamo (monoxénne). Zajac sa nakazí na lúkach alebo v chovných klietkach ingesciou sporulovaných oocýst. Po prechode žalúdkom pôsobením tráviacich enzýmov dochádza v tenkom čreve k excystácii. Uvoľnené sporozoity penetrujú do enterocytov sliznice tenkého čreva. Tu prebieha niekoľko cyklov nepohlavného množenia (schizogónia) spojená s masívnou deštrukciou epitelu. Po nej nasleduje diferenciácia na samčie a samičie bunky, ich splynutie (gametogónia) a formovanie nesporulovanej oocysty. Oocysty odchádzajú trusom do prostredia, kde v závislosti od vlhkosti a prístupu kyslíka za niekoľko dní vysporulujú na infekčné štádium.",
+    "pathology": "_Eimeria townsendi_ patrí k stredne až silne patogénnym druhom zajacov. Vo voľnej prírode vyvoláva subklinické infekcie, no v intenzívnych chovoch (zvernice, farmové odchovy zajacov) je pôvodcom ťažkých kokcidióz s vysokou mortalitou mladých jedincov (katarov). Masívna deštrukcia sliznice čreva vedie k ťažkým enteritídam (zápalom čriev). Klinické príznaky zahŕňajú profúzne hnačky, výrazné chradnutie, slabosť a neschopnosť úniku pred predátormi. Pri pitve nachádzame stenu tenkého čreva zhrubnutú, prekrvenú, s povlakmi hlienu a drobnými belavými uzlíkmi na sliznici, ktoré predstavujú ložiská parazitárneho množenia. Ochorenie často prebieha v synergii s ostatnými druhmi eimérií zajacov.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_townsendi_oocyst",
@@ -11120,32 +11144,40 @@
       "genus": "Eimeria",
       "species": "Eimeria truncata"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Hus"
+    "hostGroups": [
+      "Vodná hydina"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 18,
-      "lengthMax": 24,
+      "lengthMin": 14,
+      "lengthMax": 33,
       "widthMin": 13,
-      "widthMax": 18,
+      "widthMax": 25,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Oválny",
-      "colour": "Sivý",
+      "shape": "Vajcovitý",
+      "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 24 x 17 μm.",
+      "Vajcovitý až hruškovitý tvar s výrazne splošteným (**utnutým) užším pólom**, zakončený typickou plochou čiapočkou. Podľa tohto morfologického znaku (\"utnutia\") dostal parazit druhový názov truncata.",
+      "Na sploštenom póle sa nachádza **veľmi zreteľná a široká mikropyla**. Po vysporulovaní chýba oocystová reziduálna masa, no prítomné sú malé polárne telieska"
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria anseris_: Podobná veľkosť (20 – 25 μm), ale má pravidelný hruškovitý tvar so zaobleným pólom (**nie je sploštená**) a parazituje v tenkom čreve.",
+      "_Eimeria nocens_: Výrazne väčšia oocysta (25 – 33 μm), stena je **hrubšia a hnedastá**, parazituje v čreve.",
+      "_Eimeria kotlani_: Veľká (25 – 34 μm), **okrúhla** až široko oválna oocysta parazitujúca v hrubom čreve a kloake."
+    ],
+    "lifeCycle": "Vývin je priamy (monoxénny). Hus pozrie infekčnú (vysporulovanú) oocystu z pastvy alebo kontaminovanej vody. V zažívacom trakte sa uvoľnia sporozoity, ktoré však nezostávajú v čreve. Cez cievny alebo lymfatický systém migrujú špecificky do obličiek, kde napádajú epitelové bunky obličkových tubulov (močových kanálikov). Tu prebieha nepohlavné množenie (schizogónia), ktoré masívne ničí obličkové tkanivo. Po následnej pohlavnej fáze (gametogónia) vznikajú oocysty, ktoré sú vyplavované močom do kloaky a odchádzajú z tela. Vo vonkajšom prostredí vysporulujú na infekčné štádium v priebehu 1 až 5 dní. Prepatentná doba je extrémne krátka – trvá iba 5 dní.",
+    "pathology": "_Eimeria truncata_ patrí k najnebezpečnejším kokcídiám vodnej hydiny. Spôsobuje akútnu obličkovú kokcidiózu, pričom mortalita u húsat (vo veku 3 až 12 týždňov) môže dosiahnuť až 80 – 100 %. Deštrukcia epitelu obličkových tubulov vedie k totálnemu zlyhaniu obličiek a uremií. Klinicky sa prejavuje extrémnou apatiou, slabosťou, neprirodzeným polohovaním hlavy, stratou rovnováhy a typickou hnačkou s masívnym obsahom bielych urátov. Pri sekcii sú obličky enormne zväčšené, bledé, krehké a posiate nespočetnými drobnými, žlto-bielymi uzlíkmi a ložiskami kriedového vzhľadu (kyselina močová a zhluky parazitov).",
     "zoonosis": false,
-    "notes": "",
+    "notes": "U husí domácej sa na Slovensku vyskytuje niekoľko druhov eimérií, avšak Eimeria truncata je jediným druhom postihujúcim obličky. Ostatné druhy parazitujú v čreve.",
     "id": "eimeria_truncata_oocyst",
     "images": []
   },
@@ -11274,7 +11306,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Furcifer pardalis"
+      "Chameleón pardálí (Furcifer pardalis)"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -11282,7 +11314,7 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 13,
-      "lengthMax": 15.5,
+      "lengthMax": 15,
       "widthMin": 12,
       "widthMax": 13,
       "unit": "µm"
@@ -11292,12 +11324,20 @@
       "colour": "Bezfarebný až svetlo hnedý",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 14,3 × 13,0 μm. Ide o najmenšiu známu kokcídiu parazitujúcu u chameleónov pardálích.",
+      "** Striktne okrúhly obrys**, bez akéhokoľvek pólového zúženia.",
+      "Úplne chýba mikropyle (pórové viečko) i akákoľvek polárna čiapočka."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria glawi_: Spoluobjavená s _E. vencesi_ u rovnakého hostiteľa. Je však **výrazne väčšia** (27,7 × 18,4 μm) a má typický **valcovitý až predĺžene elipsovitý tvar**. Zámena kvôli diametrálne odlišnému tvaru nehrozí.",
+      "_Isospora brygooi_: Častá kokcídia chameleónov pardálích. Oocysty sú **väčšie** (cca 20 × 19 μm) a po sporulácii obsahujú iba 2 sporocysty (každá so 4 sporozoitmi), čo je hlavný rodový rozdiel oproti _Eimeria vencesi_ (4 sporocysty).",
+      "_Choleoeimeria_ spp.: Tieto kokcídie plazov sporulujú endogénne (už v tele), oocysty v truse sú už zrelé a typicky sa rozpadávajú na samostatné sporocysty, zatiaľ čo _E. vencesi _odchádza z tela spravidla nezrelá."
+    ],
+    "lifeCycle": "Vývin prebieha priamo (monoxénne), bez zapojenia akéhokoľvek prenášača alebo medzihostiteľa. Chameleón sa nakazí v teráriu olizovaním substrátu, rastlín, kvapiek vody alebo požieraním kŕmneho hmyzu (cvrčky, šváby), ktorý bol mechanicky kontaminovaný infekčnými, vysporulovanými oocystami z trusu. V tráviacom trakte plaza sa uvoľnia sporozoity, ktoré infikujú enterocyty tenkého čreva. V sliznici čreva prebieha nepohlavné masívne delenie (schizogónia) a následná tvorba pohlavných buniek (gametogónia). Ne頭ysporulované oocysty odchádzajú trusom do vonkajšieho prostredia terária, kde v podmienkach vysokej vlhkosti a teráriového tepla rýchlo (v priebehu desiatok hodín) vysporulujú na infekčné štádium.",
+    "pathology": "_Eimeria vencesi_ parazituje v tenkom čreve. U dospelých, adaptovaných chameleónov držaných v optimálnych podmienkach prebieha infekcia často bezpríznakovo (subklinicky). Avšak u mláďat chameleónov (odchovov) alebo u jedincov v strese (napr. transport, nevhodná teplota/vlhkosť, sociálny tlak v spoločnom teráriu) vyvoláva ťažkú črevnú kokcidiózu. Parazit deštruuje resorpčný povrch čreva, čo vedie k zápalu (enteritíde), poruche vstrebávania živín a dehydratácii. Klinické príznaky zahŕňajú zapáchajúci hnačkovitý trus, apatiu, nechutenstvo (anorexiu), rýchle chradnutie a prepadnuté oči. Pri masívnych nákazách mláďat dochádza k úhynom.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "V zajatí (v teráriách) sa kvôli obmedzenému priestoru oocysty extrémne rýchlo kumulujú. To, čo je na Madagaskare v prírode vzácna infekcia, sa v podmienkach umelého chovu na Slovensku môže zmeniť na masívnu explóziu nákazy, ktorá dokáže zlikvidovať celý odchov mladých chameleónov.",
     "id": "eimeria_vencesi_oocyst",
     "images": []
   },
@@ -11378,13 +11418,17 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Priemerná veľkosť 25 x 17 µm",
-      "Nesporulovaná pri vylúčení (obsahuje 1 sporont); po sporulácii obsahuje 4 sporocysty",
-      "každá s 2 sporozoitmi (typický vzor rodu Eimeria 4x2)."
+      "Priemerná dĺžka a šírka: 24 × 18 μm.",
+      "**Pravidelne oválny / elipsovitý tvar**, bez výrazného zúženia.",
+      "Na užšom póle sa nachádza drobné, ploché a ťažko viditeľné mikropyle, nad ktorým čnie nevýrazná, nízka polárna čiapočka (polar cap). Oocystová reziduálna masa po kompletnom vysporulovaní chýba."
     ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [
+      "_Eimeria crandallis_: Prakticky rovnaká veľkosť a tvar. Prakticky rovnaká veľkosť a tvar. V praxi sa často reportujú spoločne ako **komplex E. crandallis / E. weybridgensis**.",
+      "_Eimeria ahsata / E. ovina_: Oocysty sú výrazne **väčšie** (často nad 30 – 40 μm) s **mohutnými, kupolovitými polárnymi čiapočkami**.",
+      "_Eimeria parva_: Výrazne **menšia** (okolo 15 – 18 μm), takmer dokonale guľovitá a úplne jej chýba mikropyle aj čiapočka."
+    ],
+    "lifeCycle": "Vývin prebieha priamo (monoxénne). Ovca alebo jahňa prehltne infekčnú (vysporulovanú) oocystu pri pastve, prípadne zo znečistených kŕmidiel v ovíne. V tenkom čreve pôsobením trypsínu a žlče oocysta praská, sporozoity prenikajú do buniek črevného epitelu. Prebieha tu nepohlavná schizogónia (množenie merozoitov), nasledovaná pohlavnou gametogóniou. Vývojové štádiá E. weybridgensis sú lokalizované primárne v strednej a zadnej časti tenkého čreva. Ne头ysporulované oocysty odchádzajú trusom do vonkajšieho prostredia, kde pri optimálnej vlhkosti a teplote vysporulujú za 2 až 4 dni. Prepatentná doba je približne 14 – 15 dní.",
+    "pathology": "_Eimeria weybridgensis_ sama o sebe vykazuje nízku až strednú patogenitu. V prirodzených podmienkach chovov na Slovensku však takmer nikdy neúčinkuje sama, ale ako súčasť zmiešaných infekcií. K prepuknutiu klinickej kokcidiózy jahniat dochádza najčastejšie po odstave (vek 4 až 8 týždňov) vplyvom stresu. Parazit ničí bunky sliznice tenkého čreva, čím vyvoláva katarálny zápal. Typickými prejavmi sú kašovitá až vodnatá hnačka (obvykle bez tmavej krvi), nechuť do žrania, slabé prírastky na váhe a dehydratácia. Pri pitve sa na sliznici tenkého čreva nachádzajú drobné belavé škvrny (zhluky makrogamét a schizontov) a mierne presiaknutie črevnej steny.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_weybridgensis_oocyst",
@@ -11405,7 +11449,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Furcifer oustaleti"
+      "Chameleón Oustaletov (Furcifer oustaleti)"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -11419,14 +11463,21 @@
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Okrúhly až oválny",
+      "shape": "Okrúhly",
       "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
+      "shell": "Tenká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Priemerné rozmery: 17,9 × 15,0 μm.",
+      "Pravidelne **guľovitý** tvar",
+      "Stena je hladká, tenká, číra a bezfarebná. Mikropyle a polárna čiapočka úplne chýbajú."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria glawi_: Výrazne **väčšia** oocysta (27,7 × 18,4 μm) s typicky valcovitým tvarom, zámena kvôli tvaru nehrozí.",
+      "_Isospora_ spp.: Časté kokcídie plazov, ktoré sa dajú ľahko odlíšiť po vysporulovaní, pretože obsahujú len 2 sporocysty (každá so 4 sporozoitmi), zatiaľ čo _E. worthi_ má 4 sporocysty."
+    ],
+    "lifeCycle": "Vývin je priamy (monoxénny). Chameleón sa nakazí fekálno-orálnou cestou pri pozretí potravy alebo vody kontaminovanej infekčnými sporulovanými oocystami z prostredia terária. V tenkom čreve dochádza k uvoľneniu sporozoitov (excystácii), ktoré invadujú epitelové bunky čreva. Nasleduje vnútrobunková fáza nepohlavného delenia (schizogónia) a neskôr pohlavná diferenciácia (gametogónia). Výsledné ne頭ysporulované oocysty sa vylučujú trusom. Sporulácia (dozretie na infekčné štádium) prebieha v priebehu niekoľkých dní v externom prostredí pri vhodnej teplote a vlhkosti.",
+    "pathology": "Presná lokalizácia v tkanive a podrobná patogenita druhu _Eimeria worthi_ nie sú detailne preštudované, keďže bol parazit zachytený primárne z koprologických vzoriek (truse). Všeobecne však u chameleónov vyvoláva katarálny zápal čreva. U dospelých jedincov prebieha infekcia latentne (bez príznakov). Ak dôjde k premnoženiu oocýst v malom priestore expozície alebo k oslabeniu imunity zvieraťa (stres, nevhodné svetelné podmienky, absencia UV), nastupuje klinická kokcidióza. Tá sa prejavuje apatiou, odmietaním potravy, chradnutím svaloviny chvosta a končatín, tmavým sfarbením kože (prejav stresu a bolesti) a vodnatým, silne zapáchajúcim trusom.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_worthi_oocyst",
@@ -11467,12 +11518,22 @@
       "colour": "Bezfarebný",
       "shell": "Dvojvrstvová, hladká"
     },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 18,5 × 15,0 μm.",
+      "** Charakteristicky okrúhly obrys**, bez akéhokoľvek sploštenia či pólového pórového zúženia.",
+      "Výrazne tenká, hladká, sklovito číra stena, ktorá pod mikroskopom silno láme svetlo a javí sa ako jemná dvojitá kontúra.",
+      "V čerstvom truse vypĺňa vnútro gulatá tmavá zygota, ktorá zaberá takmer celú oocystu. Po exogénnej sporulácii v prostredí oocysta obsahuje 4 sporocysty, z ktorých každá nesie 2 sporozoity. Nález týchto oocýst v truse teliat býva sprevádzaný masívnym nálezom erytrocytov (krvi) a odlúpaných buniek epitelu."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria bovis_: Je výrazne **väčšia** (priemerne 28 × 20 μm), má typický vajcovitý (hruškovitý) tvar a na užšom póle má jasne viditeľné mikropyle.",
+      "_Eimeria auburnensis_: Výrazne **väčšia** (cca 38 × 23 μm), elipsovitá oocysta s hrubou, žltkastou a často jemne zdobenou stenou a prítomným mikropyle.",
+      "_Eimeria ellipsoidalis_: Má podobnú veľkosť (15 – 25 μm), avšak jej tvar je **striktne elipsovitý až predĺžený**, nie guľovitý.",
+      "_Eimeria subspherica_: Je **menšia** (11 – 15 μm), sub-sferická oocysta, ktorá vykazuje nízku patogenitu."
+    ],
+    "lifeCycle": "Vývin je priamy (monoxénny). Teľa sa nakazí ingesciou (zožratím) vysporulovaných oocýst z kontaminovaného krmiva, vody či pri olizovaní stien boxov. V čreve sa uvoľnia sporozoity, ktoré prenikajú do epitelu. Prvá generácia schizogónie prebieha v tenkom čreve, avšak druhá generácia schizogónie a následná gametogónia napádajú sliznicu slepého a hrubého čreva (colon). Schizonty druhej generácie dosahujú obrovské rozmery a deštruujú hlboké vrstvy sliznice vrátane ciev. Ne頭ysporulované oocysty odchádzajú trusom. Vo vonkajšom prostredí vysporulujú za 24 až 72 hodín v závislosti od teploty. Prepatentná doba je 12 až 14 dní.",
+    "pathology": "_Eimeria zuernii_ spoločne s _E. bovis_ predstavuje najpatogénnejší druh kokcídií u prežúvavcov. Spôsobuje akútnu cekokolitídu s masívnou deštrukciou slizničného epitelu a obnažením kapilár hrubého čreva. Postihuje najmä teliatká vo veku od 3 týždňov do 6 mesiacov. Klinicky sa prejavuje profúznou, tmavou až čiernou krvavou hnačkou, ktorá obsahuje zdrapy črevnej sliznice a hlienu. Zvieratá trpia úporným a bolestivým nútením na defekáciu (tenezmus), majú nahrbený postoj, rýchlo dehydratujú a upadajú do anémie. Špecifickou komplikáciou pri nákaze _E. zuernii_ je nervová forma kokcidiózy (nervous coccidiosis), kedy toxíny parazita vyvolávajú u teliat epileptiformné kŕče, nystagmus a slepotu s takmer 100% mortalitou.",
     "zoonosis": false,
-    "notes": "U teliat infikovaných masívnymi dávkami _E. bovis_ a _E. zuernii_ sa popri hnačke môže rozvinúť tzv. **nervová forma kokcidiózy**, prejavujúca sa tonicko-klonickými kŕčmi, opistotonusom a nystagmom. Tento jav nie je spôsobený prienikom parazita do mozgu, ale systémovým šokom, dehydratáciou, hypomagnezémiou a produkciou neznámeho neurotoxínu.",
+    "notes": "U teliat infikovaných masívnymi dávkami _E. bovis_ a _E. zuernii_ sa popri hnačke môže rozvinúť tzv. **nervová forma kokcidiózy**, prejavujúca sa tonicko-klonickými kŕčmi, opistotonusom a nystagmom. Tento jav nie je spôsobený prienikom parazita do mozgu, ale systémovým šokom, dehydratáciou, hypomagnezémiou a produkciou neznámeho neurotoxínu.\nNa rozdiel od iných parazitov, epidémie _E. zuernii_ často prepukajú uprostred tuhých zím. Je to spôsobené vysokou odolnosťou jej oocýst, ktoré dokážu prežiť teploty až -18 °C po dobu jedného mesiaca a po oteplení v maštaliach okamžite infikovať teliatká zgrupované kvôli chladu",
     "id": "eimeria_zuernii_oocyst",
     "images": []
   },
