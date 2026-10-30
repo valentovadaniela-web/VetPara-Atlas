@@ -2631,6 +2631,14 @@
     "dateAdded": "2026-09-26T19:12:21.145Z"
   },
   {
+    "parasiteId": "eimeria_alpacae_oocyst",
+    "url": "/public/images/parasites/eimeria_alpacae_oocyst/eimeria_alpacae_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:12:21.145Z"
+  },
+  {
     "parasiteId": "eimeria_andrewsi_oocyst",
     "url": "/public/images/parasites/eimeria_andrewsi_oocyst/eimeria_andrewsi_oocyst_01.webp",
     "alt": "",
@@ -2762,6 +2770,22 @@
   {
     "parasiteId": "eimeria_bateri_oocyst",
     "url": "/public/images/parasites/eimeria_bateri_oocyst/eimeria_bateri_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-10-27T20:29:55.878Z"
+  },
+  {
+    "parasiteId": "eimeria_bateri_oocyst",
+    "url": "/public/images/parasites/eimeria_bateri_oocyst/eimeria_bateri_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-10-27T20:29:55.878Z"
+  },
+  {
+    "parasiteId": "eimeria_bateri_oocyst",
+    "url": "/public/images/parasites/eimeria_bateri_oocyst/eimeria_bateri_oocyst_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -3119,6 +3143,14 @@
     "dateAdded": "2026-08-29T13:06:56.689Z"
   },
   {
+    "parasiteId": "eimeria_ivitaensis_oocyst",
+    "url": "/public/images/parasites/eimeria_ivitaensis_oocyst/eimeria_ivitaensis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:06:56.689Z"
+  },
+  {
     "parasiteId": "eimeria_jolchijevi_oocyst",
     "url": "/public/images/parasites/eimeria_jolchijevi_oocyst/eimeria_jolchijevi_oocyst_01.webp",
     "alt": "",
@@ -3143,6 +3175,30 @@
     "dateAdded": "2026-08-29T11:44:35.552Z"
   },
   {
+    "parasiteId": "eimeria_lamae_oocyst",
+    "url": "/public/images/parasites/eimeria_lamae_oocyst/eimeria_lamae_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:07:19.494Z"
+  },
+  {
+    "parasiteId": "eimeria_lamae_oocyst",
+    "url": "/public/images/parasites/eimeria_lamae_oocyst/eimeria_lamae_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:07:19.494Z"
+  },
+  {
+    "parasiteId": "eimeria_lamae_oocyst",
+    "url": "/public/images/parasites/eimeria_lamae_oocyst/eimeria_lamae_oocyst_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:07:19.494Z"
+  },
+  {
     "parasiteId": "eimeria_leporis_oocyst",
     "url": "/public/images/parasites/eimeria_leporis_oocyst/eimeria_leporis_oocyst_01.webp",
     "alt": "",
@@ -3161,6 +3217,14 @@
   {
     "parasiteId": "eimeria_macrosculpta_oocyst",
     "url": "/public/images/parasites/eimeria_macrosculpta_oocyst/eimeria_macrosculpta_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-10-27T20:49:53.220Z"
+  },
+  {
+    "parasiteId": "eimeria_macusaniensis_oocyst",
+    "url": "/public/images/parasites/eimeria_macusaniensis_oocyst/eimeria_macusaniensis_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -3282,6 +3346,14 @@
   {
     "parasiteId": "eimeria_mitis_oocyst",
     "url": "/public/images/parasites/eimeria_mitis_oocyst/eimeria_mitis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:22:54.867Z"
+  },
+  {
+    "parasiteId": "eimeria_mitis_oocyst",
+    "url": "/public/images/parasites/eimeria_mitis_oocyst/eimeria_mitis_oocyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -3474,6 +3546,22 @@
     "dateAdded": "2026-08-29T13:11:17.017Z"
   },
   {
+    "parasiteId": "eimeria_punoensis_oocyst",
+    "url": "/public/images/parasites/eimeria_punoensis_oocyst/eimeria_punoensis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:11:17.017Z"
+  },
+  {
+    "parasiteId": "eimeria_punoensis_oocyst",
+    "url": "/public/images/parasites/eimeria_punoensis_oocyst/eimeria_punoensis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:11:17.017Z"
+  },
+  {
     "parasiteId": "eimeria_robusta_oocyst",
     "url": "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_02.webp",
     "alt": "",
@@ -3589,6 +3677,14 @@
   {
     "parasiteId": "eimeria_suis_oocyst",
     "url": "/public/images/parasites/eimeria_suis_oocyst/eimeria_suis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-09-26T19:28:59.709Z"
+  },
+  {
+    "parasiteId": "eimeria_superba_oocyst",
+    "url": "/public/images/parasites/eimeria_superba_oocyst/eimeria_superba_oocyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4017,6 +4113,30 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:18:21.357Z"
+  },
+  {
+    "parasiteId": "graphidioides_affinis_egg",
+    "url": "/public/images/parasites/graphidioides_affinis_egg/graphidioides_affinis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:18:53.776Z"
+  },
+  {
+    "parasiteId": "graphidioides_affinis_egg",
+    "url": "/public/images/parasites/graphidioides_affinis_egg/graphidioides_affinis_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:18:53.776Z"
+  },
+  {
+    "parasiteId": "graphidioides_affinis_egg",
+    "url": "/public/images/parasites/graphidioides_affinis_egg/graphidioides_affinis_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:18:53.776Z"
   },
   {
     "parasiteId": "gyrodactylus_sp_adult",
@@ -4498,6 +4618,22 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:58:15.445Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "isospora_gracilis_oocyst",
+    "url": "/public/images/parasites/isospora_gracilis_oocyst/isospora_gracilis_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:18:53.776Z"
+  },
+  {
+    "parasiteId": "isospora_gracilis_oocyst",
+    "url": "/public/images/parasites/isospora_gracilis_oocyst/isospora_gracilis_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:18:53.776Z"
   },
   {
     "parasiteId": "isospora_jaracimrmani_oocyst",

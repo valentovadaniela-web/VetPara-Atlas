@@ -6484,6 +6484,64 @@
     "images": []
   },
   {
+    "id": "eimeria_alpacae_oocyst",
+    "latinName": "Eimeria alpacae",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria alpacae"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Alpaka",
+      "Lama"
+    ],
+    "hostNotes": {
+      "Alpaka": "",
+      "Lama": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 22,
+      "lengthMax": 27,
+      "widthMin": 18,
+      "widthMax": 24,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Žltobiely",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 24,1 × 19,6 μm",
+      "Typicky pravidelne elipsoidný tvar",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Na užšom póle oocysty je prítomná **zreteľná mikropyla**, ktorá je prekrytá charakteristickou **kupolovitou až polguľovitou mikropylárnou čiapočkou**."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria punoensis_: Je **menšia** (17–22 × 14–18 μm). Od _E. alpacae_ sa líši menšími rozmermi a jej mikropylárna čiapočka je extrémne nízka, plochá a **sotva viditeľná**.",
+      "_Eimeria lamae_: Je **výrazne väčšia** (30–40 × 21–30 μm). Má síce mikropylu, ale úplne jej chýba mikropylárna čiapočka, zatiaľ čo E. alpacae ju má výrazne vyvinutú.",
+      "_Eimeria macusaniensis_: **Obrovská** kokcídia (81–107 × 61–80 μm), má **hruškovitý (piriformný) tvar, tmavohnedú hrubú stenu** a masívnu mikropylárnu **čiapočku**.",
+      "_Eimeria ivitaensis_: Veľká kokcídia (77–93 × 43–54 μm). Rovnako **omnoho väčšia** ako _E. alpacae_, má predĺžený elipsoidný tvar a hnedastú stenu bez výraznej čiapočky."
+    ],
+    "lifeCycle": "Vývinový cyklus _Eimeria alpacae_ je priamy (monoxénny). Zvieratá sa nakazia ingesciou (zožratím) sporulovaných oocýst z kontaminovanej pastvy, krmiva alebo vody. V tenkom čreve hostiteľa sa uvoľnia sporozoity, ktoré penetrujú enterocyty sliznice. Endogénna fáza zahŕňa sériu nepohlavného množenia (merogónia) a pohlavného množenia (gametogónia) v bunkách črevného epitelu. Výsledkom sú nesporulované oocysty vylučované trusom do vonkajšieho prostredia. Tam za prístupu kyslíka, dostatočnej vlhkosti a optimálnej teploty prebieha exogénna fáza (sporulácia). Prepatentná perióda tohto druhu je približne 11 až 12 dní, čo z neho robí druh s veľmi rýchlym cyklom.",
+    "pathology": "_Eimeria alpacae_ je považovaná za nízko až stredne patogénny druh. U dospelých jedincov prebieha infekcia spravidla asymptomaticky a bez zjavných klinických príznakov, aj napriek vyššiemu počtu vylučovaných oocýst. Zvýšené riziko však predstavuje pre mláďatá vo veku do 3–4 mesiacov alebo pre zvieratá v imunitnom strese (transport, zmena krmiva, odstav). V takýchto prípadoch môže masívna infekcia spôsobiť zápalovú reakciu črevnej sliznice (miernu katarálnu enteritídu), čo sa klinicky prejaví prechodnými kašovitými hnačkami, miernou apatiou a prechodným znížením prírastkov hmotnosti.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "V koproologických nálezoch z chovov alpák sa _E. alpacae_ len zriedkavo vyskytuje ako monoinfekcia. Takmer vždy tvorí stabilnú súčasť zmiešaných kokcidióz spolu s druhmi _E. punoensis_ a _E. lamae_."
+  },
+  {
     "latinName": "Eimeria andrewsi",
     "synonyms": [],
     "slovakName": "",
@@ -8587,6 +8645,63 @@
     "images": []
   },
   {
+    "id": "eimeria_ivitaensis_oocyst",
+    "latinName": "Eimeria ivitaensis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria ivitaensis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Alpaka",
+      "Lama"
+    ],
+    "hostNotes": {
+      "Alpaka": "",
+      "Lama": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 77,
+      "lengthMax": 93,
+      "widthMin": 45,
+      "widthMax": 54,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Tmavohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 85–91 × 48–54 μm (ide o druhú najväčšiu kokcídiu lám)",
+      "Výrazne **predĺžený elipsoidný** až valcovitý tvar s takmer **paralelnými bočnými stenami**.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Na užšom póle je prítomná mikropyla. Mikropylárna čiapočka je buď úplne neprítomná, alebo len veľmi plochá, nízka a nevýrazná.",
+      "Stena oocysty je stredne hrubá (cca 2,5–3,5 μm), dvojvrstvová, hladká a má charakteristickú tmavohnedú až žltohnedú farbu."
+    ],
+    "differentialDiagnosis": [
+      "Vďaka obrovskej veľkosti a typickej tmavej farbe je zámena s malými druhmi eimérií (_E. lamae, E. alpacae, E. punoensis_) pri správnom zaostrení mikroskopu vylúčená.",
+      "_Eimeria macusaniensis_: Dosahuje podobnú dĺžku, no je **výrazne širšia**. Jej tvar nie je predĺžený elipsoidný, ale **hruškovitý**. Má omnoho **hrubšiu stenu** (nad 8 μm) s drsným povrchom a najmä masívnu, širokú, ostro ohraničenú **mikropylárnu čiapočku**, ktorú _E. ivitaensis_ nemá."
+    ],
+    "lifeCycle": "Vývinový cyklus je priamy (monoxénny) a prebieha bez účasti medzihostiteľov. K nakazeniu zvieraťa dochádza perorálnou ingesciou (zožratím) sporulovaných oocýst. V tráviacom trakte dochádza k excystácii sporozoitov, ktoré migrujú do enterocytov sliznice tenkého čreva. Endogénna fáza zahŕňa sériu nepohlavných (merogónia) a pohlavných (gametogónia) cyklov replikácie. Z dôvodu veľkých rozmerov endogénnych štádií je tento proces biologicky pomalší. Prepatentná perióda je pomerne dlhá a odhaduje sa na 22 až 26 dní. Nesporulované oocysty odchádzajú trusom do prostredia, kde dochádza k exogénnej sporulácii.",
+    "pathology": "_Eimeria ivitaensis_ je popri _E. macusaniensis_ považovaná za vysoko patogénny druh, hoci referencií z terénu je menej z dôvodu jej nižšej prevalencie. Multiplikácia parazita spôsobuje mechanické a enzymatické poškodenie enterocytov, atrofiu črevných klkov a erózie sliznice. Masívne infekcie vyvolávajú ťažkú katarálnu až hemoragickú enteritídu. Klinické príznaky zahŕňajú profúzne hnačky (často s prímesou krvi), apatiu, akútnu anorexiu, dehydratáciu, ťažkú stratu hmotnosti a hypoproteinémiu. U mláďat môže mať infekcia bez včasnej terapeutickej intervencie fatálny priebeh.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Pre stredne hrubú až hrubú stenu oocysty a hlbšiu lokalizáciu v čreve sú bežné antikokcidiká (ako sulfónamidy) v chovoch málo účinné. V prípade pozitívneho nálezu sa odporúča cielená liečba modernými kokcidiocídmi zo skupiny triazínových derivátov (napr. toltrazuril)."
+  },
+  {
     "latinName": "Eimeria jolchijevi",
     "synonyms": [],
     "slovakName": "",
@@ -8642,6 +8757,64 @@
     "notes": "",
     "id": "eimeria_jolchijevi_oocyst",
     "images": []
+  },
+  {
+    "id": "eimeria_lamae_oocyst",
+    "latinName": "Eimeria lamae",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria lamae"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Alpaka",
+      "Lama"
+    ],
+    "hostNotes": {
+      "Alpaka": "",
+      "Lama": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 30,
+      "lengthMax": 40,
+      "widthMin": 21,
+      "widthMax": 30,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny",
+      "colour": "Žltobiely",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Veľkosť približne 35,6 × 24,5 µm",
+      "Elipsovitý až oválny tvar, pomer L/W ~1,45",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "**Bez viditeľnej mikropyle**, bez oocystového rezídua."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria punoensis_: Najmenšia kokcídia lám (17–22 × 14–18 μm). Od _E. lamae_ sa líši **výrazne menšou veľkosťou** (nedochádza k prekrývaniu rozmerov) a prítomnosťou malej, plochej mikopylárnej čiapočky.",
+      "_Eimeria alpacae_: Stredne veľká (22–27 × 18–24 μm). Je **menšia** ako _E. lamae_ a jej mikropyla je prekrytá **viditeľnou kupolovitou mikropylárnou čiapočkou**.",
+      "_Eimeria macusaniensis_: **Obrovská** kokcídia (81–107 × 61–80 μm). Je viac než dvakrát väčšia ako _E. lamae_, má **hruškovitý (piriformný) tvar, tmavohnedú hrubú stenu** a masívnu mikropylárnu **čiapočku**.",
+      "_Eimeria ivitaensis_: Veľká kokcídia (77–93 × 43–54 μm). Rovnako **omnoho väčšia** ako _E. lamae_, má predĺžený elipsoidný tvar a hnedastú stenu bez výraznej čiapočky."
+    ],
+    "lifeCycle": "Vývinový cyklus _Eimeria lamae_ je priamy (monoxénny) a prebieha bez medzihostiteľov. Infekcia začína alimentárnou ingesciou (zožratím) sporulovaných oocýst z kontaminovaného prostredia (krmivo, voda, exkrementy). V tráviacom trakte hostiteľa sa pôsobením žlče a klesajúceho pH uvoľnia sporozoity, ktoré penetrujú enterocyty povrchového epitelu tenkého čreva (predovšetkým jejunum a ileum). Nasleduje endogénna fáza nepohlavného rozmnožovania (merogónia/schizogónia) a neskôr pohlavného rozmnožovania (gametogónia), ktoré vedie k formovaniu nesporulovaných oocýst. Tieto oocysty sú vylučované trusom do vonkajšieho prostredia, kde pri optimálnej teplote a vlhkosti prebehne počas niekoľkých dní sporulácia (exogénna fáza), čím sa oocysta stáva opäť infekčnou. Prepatentná perióda je približne 15–16 dní.",
+    "pathology": "_Eimeria lamae_ sa radí medzi stredne až vysoko patogénne druhy kokcídií juhoamerických kamelidov. Masívne infekcie, najmä u mláďat (crias) a imunitne kompromitovaných jedincov, spôsobujú deštrukciu enterocytov na vrcholoch klkov tenkého čreva. Patologické zmeny zahŕňajú katarálny až hemoragický zápal čreva (enteritídu), sprevádzaný atrofiou klkov a malabsorpciou živín. Klinicky sa ochorenie manifestuje profúznymi hnačkami (často s prímesou hlienu alebo krvi), dehydratáciou, letargiou, výrazným chradnutím (chudnutím) a anémiou. Vážne neliečené prípady u mláďat môžu končiť fatálne v dôsledku metabolického rozvratu alebo sekundárnych bakteriálnych infekcií (napr. premnoženie Clostridium perfringens).",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Eimeria leporis",
@@ -8812,6 +8985,63 @@
     "images": [
       "/public/images/parasites/eimeria_macrosculpta_oocyst/eimeria_macrosculpta_oocyst_01.webp"
     ]
+  },
+  {
+    "id": "eimeria_macusaniensis_oocyst",
+    "latinName": "Eimeria macusaniensis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria macusaniensis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Alpaka",
+      "Lama"
+    ],
+    "hostNotes": {
+      "Alpaka": "",
+      "Lama": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 81,
+      "lengthMax": 107,
+      "widthMin": 61,
+      "widthMax": 80,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Tmavohnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 93,6 × 67,4 μm",
+      "Veľmi charakteristický hruškovitý (piriformný) až vajcovitý tvar, pripomínajúci pozdĺžne rozrezané avokádo.",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "Oocysta má **extrémne hrubú stenu** (8,5 až 11,4 μm), ktorá sa skladá z troch vrstiev a má hrubý, zrnitý povrch tmavohnedej až zelenohnedej farby.",
+      "Na užšom póle sa nachádza masívna, široká a veľmi dobre viditeľná mikropylárna čiapočka"
+    ],
+    "differentialDiagnosis": [
+      "Vďaka obrovskej veľkosti a typickej tmavej farbe je zámena s malými druhmi eimérií (_E. lamae, E. alpacae, E. punoensis_) pri správnom zaostrení mikroskopu vylúčená.",
+      "_Eimeria ivitaensis_: Dosahuje podobnú dĺžku (83–99 μm), ale je **podstatne užšia** (49–59 μm). Má predĺžený **elipsoidný tvar (nie hruškovitý)**, jej stena je o niečo tenšia, svetlejšie hnedá a chýba jej masívna, široká mikropylárna čiapočka, akú má _E. macusaniensis._"
+    ],
+    "lifeCycle": "Vývinový cyklus je priamy (monoxénny), no biologicky podstatne pomalší ako u iných eimérií. Po prehltnutí sporulovanej oocysty sa sporozoity uvoľňujú v čreve, no prenikajú extrémne hlboko – až do oblasti krypt sliznice distálneho jejuna a ilea. Tam prebieha merogónia a obrie schizogónie, pričom meronty dosahujú veľkosť až nad 100 μm. Kvôli tejto masívnej hĺbkovej replikácii má E. macusaniensis extrémne dlhú prepatentnú periódu, ktorá trvá 32 až 43 dní (niektoré zdroje uvádzajú pri alpakách až 58 dní). Patentná perióda (vylučovanie oocýst) trvá spravidla 14 až 40 dní.",
+    "pathology": "_Eimeria macusaniensis_ je vysoko patogénny a potenciálne letálny patogén. Vývojom obrovských endogénnych štádií v hlbokých kryptách dochádza k totálnej deštrukcii črevnej architektúry, nekróze klkov a ťažkej nekrohemoragickej enteritíde. Na rozdiel od iných kokcidióz je hnačka netypická a často úplne chýba (najmä u dospelých). Hlavnými príznakmi sú extrémne chradnutie, letargia, ťažká hypoproteinémia (strata bielkovín cez poškodené črevo) vedúca k edémom, dehydratácia a slabosť. Často dochádza k úhynu v dôsledku obehového šoku alebo sekundárnej anaeróbnej infekcie spôsobenej Clostridium perfringens, ktorej toxíny prenikajú cez obnaženú sliznicu (vyvolanie fatálnej enterotoxémie). Klinické príznaky a úhyn zvieraťa bežne predbiehajú samotné vylučovanie oocýst (zviera uhynie v prepatentnej fáze, kedy je koproologické vyšetrenie ešte falošne negatívne).",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "**Archeologický unikát**: Oocysty _E. macusaniensis_ majú vďaka svojej mimoriadne hrubej stene neuveriteľnú mechanickú a chemickú odolnosť. Dokonale zachovalé oocysty boli objavené v fosílnom truse (koprolitoch) a v črevách mumifikovaných lám v Patagónii, ktoré sú staré približne 10 000 rokov (obdobie holocénu).\nBežné antikokcidiká (ako amprolium) majú pri tomto druhu pre hĺbku lézií obmedzenú účinnosť. V modernej parazitologickej terapii kamelidov sa preto siaha po účinnejších benzénacetonitrilových kokcidiocídoch, ako je toltrazuril alebo ponazuril, ktoré dokážu zasiahnuť parazita priamo vo vnútri tkaniva sliznice."
   },
   {
     "latinName": "Eimeria magna",
@@ -10126,6 +10356,64 @@
     "notes": "Z biologického a mikroskopického hľadiska je _ E. punctata _„drahokamom“ pre parazitologických diagnostikov. Vzhľadom na jej vzácny výskyt a mimoriadne estetickú, precízne štruktúrovanú jamkovitú stenu je jej záchyt v truse pastvinných oviec považovaný za raritný a zaujímavý nález (v prechádzajúcom svetle mikroskopu stena vytvára nádherný optický raster).\nNiektoré zdroje uváduajú aj nálezy tohto druhu u kôz.",
     "id": "eimeria_punctata_oocyst",
     "images": []
+  },
+  {
+    "id": "eimeria_punoensis_oocyst",
+    "latinName": "Eimeria punoensis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Eimeria",
+      "species": "Eimeria punoensis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Alpaka",
+      "Lama"
+    ],
+    "hostNotes": {
+      "Alpaka": "",
+      "Lama": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 17,
+      "lengthMax": 22,
+      "widthMin": 14,
+      "widthMax": 18,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Vajcovitý až oválny",
+      "colour": "Bezfarebný",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 19,9 × 16,4 μm (ide o najmenší opísaný druh eimérie u juhoamerických kamelidov).",
+      "Elipsoidný, prípadne mierne ovoidný (vajcovitý)",
+      "Vysporulovaná oocysta obsahuje 4 predĺžené sporocysty, v každej z nich sa nachádzajú 2 sporozoity.",
+      "**Bez viditeľnej mikropyle**, bez oocystového rezídua."
+    ],
+    "differentialDiagnosis": [
+      "_Eimeria lamae_: Je **výrazne väčšia** (30–40 × 21–30 μm). Má pretiahlejší tvar, o niečo viditeľnejšiu mikropylu.",
+      "_Eimeria alpacae_:  Je o niečo väčšia (22–27 × 18–24 μm) a na rozdiel od _E. punoensis_ má **veľmi zreteľnú, dobre viditeľnú kupolovitú mikropylárnu čiapočku**.",
+      "_Eimeria macusaniensis_: **Obrovská** kokcídia (81–107 × 61–80 μm), má **hruškovitý (piriformný) tvar, tmavohnedú hrubú stenu** a masívnu mikropylárnu **čiapočku**.",
+      "_Eimeria ivitaensis_: Veľká kokcídia (77–93 × 43–54 μm). Rovnako **omnoho väčšia**, má predĺžený elipsoidný tvar a hnedastú stenu bez výraznej čiapočky."
+    ],
+    "lifeCycle": "Vývinový cyklus _Eimeria punoensis_ je priamy (monoxénny). K infekcii zvieraťa dochádza požitím (ingesciou) sporulovaných oocýst z vonkajšieho prostredia (voda, krmivo znečistené trusom). V čreve hostiteľa sa excystujú sporozoity, ktoré prenikajú do buniek sliznice (enterocytov) tenkého čreva. Nasleduje fáza nepohlavného množenia (merogónia) a pohlavného množenia (gametogónia), po ktorej sa do lúmenu čreva uvoľňujú nesporulované oocysty. Tie odchádzajú trusom von, kde v prítomnosti kyslíka a vlhkosti bleskovo sporulujú. _E. punoensis_ vyniká mimoriadne krátkou prepatentnou periódou, ktorá trvá iba 10 dní (najkratšia spomedzi eimérií lám), pričom exkrécia (patentná perióda) môže trvať až 24 dní.",
+    "pathology": "_Eimeria punoensis_ sa považuje za nízko patogénny až takmer nepatogénny druh u dospelých a zdravých zvierat. Experimentálne infekcie vysokými dávkami oocýst u zvierat starších ako 1 rok nevyvolali žiadne klinické príznaky ochorenia. Masívne vylučovanie oocýst (vysoké OPG – oocysts per gram) často prebieha úplne asymptomaticky. Výnimkou môžu byť mláďatá vo veku 2–4 týždňov, u ktorých sa pri masívnom premnožení v kombinácii s inými druhmi (napr. _E. macusaniensis_) môže rozvinúť mierna katarálna enteritída, prejavujúca sa prechodnou hnačkou a spomalením rastu.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Napriek svojej nízkej patogenite je _E. punoensis_ často najčastejšie detegovaným druhom v zmiešaných infekciách u lám a alpák (vyskytuje sa až vo viac ako 70 % prípadov kokcidióz kamelidov). Jej evolučnou taktikou je extrémne rýchly cyklus (10 dní) a masívna produkcia oocýst, vďaka čomu dokonale saturuje pastviny bez toho, aby svojho hostiteľa usmrtila."
   },
   {
     "latinName": "Eimeria robertsoni",
@@ -14775,6 +15063,58 @@
     "notes": "",
     "id": "isospora_brygooi_oocyst",
     "images": []
+  },
+  {
+    "id": "isospora_gracilis_oocyst",
+    "latinName": "Isospora gracilis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Apicomplexa",
+      "class": "Conoidasida",
+      "order": "Eucoccidiorida",
+      "family": "Eimeriidae",
+      "genus": "Isospora",
+      "species": "Isospora gracilis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Beo posvätný"
+    ],
+    "hostNotes": {
+      "Beo posvätný": ""
+    },
+    "sample": "Trus",
+    "stage": "Oocysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 26,
+      "lengthMax": 21,
+      "widthMin": 24,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až subsférický",
+      "colour": "Bezfarebný až svetlo hnedý",
+      "shell": "Dvojvrstvová, hladká"
+    },
+    "diagnosticSigns": [
+      "Priemerná dĺžka a šírka: 24,6 × 22,4 μm",
+      "Takmer **dokonale guľovitý** (sferický) až mierne sub-sferický (skoro guľovitý) tvar.",
+      "Stena oocysty je hladká, tenká, bezfarebná a zložená z dvoch vrstiev. Na oocyste úplne chýba mikropyla (otvor) aj akákoľvek mikropylárna čiapočka. Výrazným znakom po dozretí je prítomnosť polárneho telieska (polar granule), ktoré sa nachádza vo vnútri oocysty."
+    ],
+    "differentialDiagnosis": [
+      "Je to hostiteľsky špecifický druh viazaný na bea posvätného."
+    ],
+    "lifeCycle": "Vývinový cyklus je monoxénny (priamy). Beo sa nakazí prehltnutím (ingesciou) sporulovanej oocysty z prostredia. V tenkom čreve sliznice sa uvoľnia sporozoity. Pri vtáčích izospórach sa však vyskytuje závažné biologické špecifikum – systémová fáza (tzv. atoxoplazmóza). Predtým, ako parazit začne pohlavné rozmnožovanie v čreve, sporozoity preniknú do lymfocytov a makrofágov (bielych krviniek). V nich sa krvným obehom šíria do celého tela (pečeň, slezina, pľúca), kde prebieha masívna extraintestinálna merogónia. Až po tejto fáze sa parazit vracia do enterocytov čreva, dokončí gametogóniu a vták začne trusom vylučovať nesporulované oocysty.",
+    "pathology": "_Isospora graculae_ vykazuje vysokú patogenitu, najmä u mladých vtákov v zajatí a pri stresových faktoroch (transport, zlá hygiena). Kvôli spomínanej systémovej (atoxoplazmovej) fáze parazit neničí len črevo, ale spôsobuje ťažké systémové ochorenie. Patologické zmeny zahŕňajú masívnu splenomegáliu (zväčšenie sleziny), hepatomegáliu (zväčšenie pečene) s ložiskovými nekrózami a ťažkú katarálnu až zápalovú enteritídu čreva. Klinicky sa u beov choroba prejavuje apatiou, našuchoreným perím, hnačkami, dýchacími ťažkosťami a typickým príznakom je čierne, zväčšené bruško (presvitajúca zväčšená pečeň a slezina cez tenkú kožu vtáka). Úmrtnosť u mláďat môže dosiahnuť až 80 %.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Isospora jaracimrmani",
