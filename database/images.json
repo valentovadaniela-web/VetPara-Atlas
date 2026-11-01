@@ -1783,6 +1783,14 @@
     "dateAdded": "2026-08-29T12:57:29.005Z"
   },
   {
+    "parasiteId": "deletrocephalus_dimidiatus_egg",
+    "url": "/public/images/parasites/deletrocephalus_dimidiatus_egg/deletrocephalus_dimidiatus_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T15:33:08.205Z"
+  },
+  {
     "parasiteId": "demodex_aurati_adult",
     "url": "/public/images/parasites/demodex_aurati_adult/demodex_aurati_adult_01.webp",
     "alt": "",
@@ -3079,6 +3087,22 @@
     "dateAdded": "2026-08-29T13:06:10.771Z"
   },
   {
+    "parasiteId": "eimeria_flavescens_oocyst",
+    "url": "/public/images/parasites/eimeria_flavescens_oocyst/eimeria_flavescens_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:34:36.171Z"
+  },
+  {
+    "parasiteId": "eimeria_flavescens_oocyst",
+    "url": "/public/images/parasites/eimeria_flavescens_oocyst/eimeria_flavescens_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:34:36.171Z"
+  },
+  {
     "parasiteId": "eimeria_granulosa_oocyst",
     "url": "/public/images/parasites/eimeria_granulosa_oocyst/eimeria_granulosa_oocyst_01.webp",
     "alt": "",
@@ -3245,6 +3269,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-26T19:21:24.274Z"
+  },
+  {
+    "parasiteId": "eimeria_marsica_oocyst",
+    "url": "/public/images/parasites/eimeria_marsica_oocyst/eimeria_marsica_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:35:04.708Z"
   },
   {
     "parasiteId": "eimeria_maxima_oocyst",
@@ -3562,6 +3594,14 @@
     "dateAdded": "2026-08-29T13:11:17.017Z"
   },
   {
+    "parasiteId": "eimeria_robertsoni_oocyst",
+    "url": "/public/images/parasites/eimeria_robertsoni_oocyst/eimeria_robertsoni_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:36:43.588Z"
+  },
+  {
     "parasiteId": "eimeria_robusta_oocyst",
     "url": "/public/images/parasites/eimeria_robusta_oocyst/eimeria_robusta_oocyst_02.webp",
     "alt": "",
@@ -3576,6 +3616,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-09-26T19:27:20.913Z"
+  },
+  {
+    "parasiteId": "eimeria_sculpta_oocyst",
+    "url": "/public/images/parasites/eimeria_sculpta_oocyst/eimeria_sculpta_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:36:55.716Z"
   },
   {
     "parasiteId": "eimeria_semisculpta_oocyst",
@@ -3600,6 +3648,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:12:34.688Z"
+  },
+  {
+    "parasiteId": "eimeria_schoenbuchi_oocyst",
+    "url": "/public/images/parasites/eimeria_schoenbuchi_oocyst/eimeria_schoenbuchi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T16:37:10.884Z"
   },
   {
     "parasiteId": "eimeria_simonkingi_oocyst",
@@ -4125,14 +4181,6 @@
   {
     "parasiteId": "graphidioides_affinis_egg",
     "url": "/public/images/parasites/graphidioides_affinis_egg/graphidioides_affinis_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:18:53.776Z"
-  },
-  {
-    "parasiteId": "graphidioides_affinis_egg",
-    "url": "/public/images/parasites/graphidioides_affinis_egg/graphidioides_affinis_egg_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4685,6 +4733,23 @@
     "dateAdded": "2026-08-29T11:39:32.366Z"
   },
   {
+    "parasiteId": "labiostrongylus_sp_egg",
+    "url": "/public/images/parasites/labiostrongylus_sp_egg/labiostrongylus_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:22:54.240Z"
+  },
+  {
+    "parasiteId": "labiostrongylus_sp_egg",
+    "url": "/public/images/parasites/labiostrongylus_sp_egg/labiostrongylus_sp_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:22:54.240Z",
+    "isPrimary": true
+  },
+  {
     "parasiteId": "lernaea_cyprinacea_adult",
     "url": "/public/images/parasites/lernaea_cyprinacea_adult/lernaea_cyprinacea_adult_01.webp",
     "alt": "",
@@ -5186,6 +5251,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:36:36.369Z"
+  },
+  {
+    "parasiteId": "paradeletrocephalus_minor_egg",
+    "url": "/public/images/parasites/paradeletrocephalus_minor_egg/paradeletrocephalus_minor_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-01T15:33:55.576Z"
   },
   {
     "parasiteId": "paramphistomum_cervi_egg",

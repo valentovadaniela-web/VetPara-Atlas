@@ -4348,6 +4348,60 @@
     "images": []
   },
   {
+    "id": "deletrocephalus_dimidiatus_egg",
+    "latinName": "Deletrocephalus dimidiatus",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Deletrocephalidae",
+      "genus": "Deletrocephalus",
+      "species": "Deletrocephalus dimidiatus"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Nandu"
+    ],
+    "hostNotes": {
+      "Nandu": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 150,
+      "lengthMax": 165,
+      "widthMin": 70,
+      "widthMax": 80,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "**Veľké** vajíčko, priemerná veľkosť 164 x 70 µm",
+      "Elipsoidné až široko oválne vajíčko.",
+      "Obal pôsobí **jamkovito**."
+    ],
+    "differentialDiagnosis": [
+      "_Paradeletrocephalus minor_:  Vajíčka tohto druhu sú výrazne väčšie, ich dĺžka dosahuje 190 – 200 µm a šírka 60 – 70 µm. Na základe tejto gigantickej dĺžky ich možno od _D. dimidiatus_ spoľahlivo odlíšiť."
+    ],
+    "lifeCycle": "_Deletrocephalus dimidiatus_ prechádza priamym (monoxénnym) vývinom. Neembryonované vajíčka odchádzajú z čreva nanduov s trusom do vonkajšieho prostredia. V truse sa pri optimálnej vlhkosti a teplote liahne larva prvého štádia (L₁), ktorá sa živí okolitými baktériami. Larva sa v exkrementoch dvakrát zvlieka (cez štádium L₂) až do infekčného štádia L₃, pričom si ponecháva starú kutikulu ako ochrannú pošvu proti nepriaznivým podmienkam. Nandu sa infikuje perorálne, najčastejšie spásaním kontaminovanej vegetácie. Prehltnuté larvy migrujú do krypt sliznice hrubého a slepého čreva, kde prebieha zvliekanie na L₄ a premena na dospelce, ktoré následne kopulujú a produkujú vajíčka.",
+    "pathology": "Parazit vykazuje strednú až vysokú patogenitu, s kritickým dopadom na kurčatá a mladé jedince nanduov v zajatí. Dospelé červy mechanicky poškodzujú črevnú stenu fixáciou ústnych kapsúl, spojenou s hematofágiou (nasávaním krvi) a olupovaním sliznice. Masívna infekcia vyvoláva ťažkú chronickú tyflitídu a kolitídu (zápal slepého a hrubého čreva). Medzi hlavné klinické príznaky patrí apatia, progresívne chradnutie, hnačky (niekedy hemoragické) a dehydratácia. Pri pitve nachádzame sliznicu čriev silne hyperemickú, zhrubnutú, pokrytú nekrotickým povlakom a ulceráciami, s masívnym výskytom parazitov fixovaných na tkanivo.",
+    "zoonosis": false,
+    "images": [
+      "/public/images/parasites/deletrocephalus_dimidiatus_egg/deletrocephalus_dimidiatus_egg_01.webp"
+    ],
+    "references": [],
+    "notes": ""
+  },
+  {
     "latinName": "Demodex aurati",
     "synonyms": [],
     "slovakName": "",
@@ -8196,7 +8250,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_flavescens_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_flavescens_oocyst/eimeria_flavescens_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria granulosa",
@@ -9136,12 +9192,10 @@
     "diagnosticSigns": [
       "Priemerná dĺžka a šírka: 19,1 × 13,1 μm (dĺžkovo-šírkový index sa pohybuje okolo 1,4 – 1,5).",
       "Pravidelne elipsovitý až jemne ovoidný (oválny). Radí sa k menším druhom eimérií oviec.",
-      "Mikropyla (micropyle): Prítomná na užšom póle, avšak veľmi malá a nezreteľná (inconspicuous).",
-      "Mikropylárna čiapočka (micropyle cap): Prítomná, ale extrémne malá, nenápadná a plochá. Často vyzerá len ako drobný, sotva badateľný priehľadný reflex na póle oocysty.",
-      "Obal (stena): Hladký, tenký, dvojvrstvový. Vonkajšia vrstva je bezfarebná, vnútorná vrstva má jemný žltkastý nádych.",
+      "**Mikropyla prítomná** na užšom póle, avšak **veľmi malá a nezreteľná**.",
+      "**Mikropylárna čiapočka prítomná**, ale extrémne malá, **nenápadná** a plochá. Často vyzerá len ako drobný, sotva badateľný priehľadný reflex na póle oocysty.",
       "Reziduálne teliesko oocysty: Neprítomné.",
       "Polárne teliesko: Prítomné (spravidla jedno malé, refraktívne zrnko umiestnené pod mikropylárnym pólom).",
-      "Pri rutinnom koprologickom vyšetrení čerstvého trusu oviec (flotačná metóda podľa Sheathera alebo Faustov roztok) nachádzame nesporulované oocysty. Vzhľadom na malé rozmery (~19 μm) vyžadujú dôkladné prezeranie pri zväčšení 400×. Ich vnútro vypĺňa okrúhly, tmavší granulovaný sporoblast, ktorý necháva oba póly voľné.",
       "Po exogénnej sporulácii v vonkajšom prostredí oocysta obsahuje 4 sporocysty, v každej po 2 sporozoity. Sporocysty sú ovoidné, merajú cca 7 – 10 × 5 – 6 μm a obsahujú drobné reziduálne teliesko sporocysty."
     ],
     "differentialDiagnosis": [
@@ -9155,7 +9209,9 @@
     "zoonosis": false,
     "notes": "Pre začínajúcich laborantov je _E. marsica_ permanentným orieškom. Jej mikropylárna čiapočka je tak nízka a nevýrazná, že pri rýchlom skríningu trusu býva tento druh takmer pravdepodobne zapísaný ako _Eimeria pallida_ alebo väčšia _Eimeria parva_, čo skresľuje epidemiologické dáta o diverzite kmeňov v chove.",
     "id": "eimeria_marsica_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_marsica_oocyst/eimeria_marsica_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria maxima",
@@ -10465,7 +10521,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_robertsoni_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_robertsoni_oocyst/eimeria_robertsoni_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria robusta",
@@ -10621,7 +10679,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_sculpta_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_sculpta_oocyst/eimeria_sculpta_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria semisculpta",
@@ -10727,48 +10787,6 @@
     "images": []
   },
   {
-    "latinName": "Eimeria serbica",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "Eimeria serbica"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 23,
-      "lengthMax": 45,
-      "widthMin": 13,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_serbica_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Eimeria schoenbuchi",
     "synonyms": [],
     "slovakName": "",
@@ -10802,10 +10820,10 @@
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
-      "Priemerné hodnoty: cca 28 μm × 25 μm. Patrí k stredne veľkým druhom kokcídii jelenovitej zveri.",
+      "Priemerné hodnoty: cca 28 μm × 25 μm. Patrí k stredne veľkým druhom kokcídii jeleňovitej zveri.",
       "Tvar oocysty: Typicky guľovitý (sférický) až široko oválny (subsférický), veľmi pravidelný, s rovnomerne zaoblenými kontúrami bez zúženia. Index tvaru: Veľmi nízky, zvyčajne 1,06 – 1,12 (pôsobí nápadne okrúhlym, robustným dojmom).",
-      "Špecifické znaky: Oocystová stena je hrubá (cca 2,0 μm), dvojvrstvová a má **charakteristické intenzívne žltohnedé až olivovohnedé sfarbenie**. Povrch steny je úplne hladký (žiadne skulptúry či jamky). Mikropyla je extrémne nepatrná (zvyčajne viditeľná len ako jemné sploštenie vnútornej vrstvy na jednom póle), mikropylárna čiapočka (polar cap) úplne chýba. Po kompletnom vysporulovaní chýba oocystové reziduálne teliesko (oocyst residuum).",
-      "V čerstvom truse jelenovitej zveri (natívny preparát po koprologickej flotácii) nachádzame oocysty nesporulované. Vnútro vypĺňa guľovitá, hrubozrnná masa sporoblastu (zygoty). Z dôvodu takmer dokonale sférického habitu vypĺňa zygota väčšinu vnútorného priestoru a pod hrubou, žltohnedou stenou zanecháva len veľmi úzky, rovnomerný optický lem. Ostro hladký povrch steny a jej žiarivá hnedastá refrakcia robia oocystu dobre viditeľnou aj pri základnom diagnostickom zväčšení (200× až 400×), pričom na definitívne potvrdenie a vylúčenie zámeny s inými guľatými štádiami je nutná okulárová mikrometriu."
+      "Špecifické znaky: Oocystová stena je hrubá (cca 2,0 μm), dvojvrstvová a má **charakteristické intenzívne žltohnedé až olivovohnedé sfarbenie**. Povrch steny je úplne hladký (žiadne skulptúry či jamky). Mikropyla je extrémne nepatrná (zvyčajne viditeľná len ako jemné sploštenie vnútornej vrstvy na jednom póle), mikropylárna čiapočka úplne chýba. Po kompletnom vysporulovaní chýba oocystové reziduálne teliesko (oocyst residuum).",
+      "V čerstvom truse jeleňovitej zveri (natívny preparát po koprologickej flotácii) nachádzame oocysty nesporulované. Vnútro vypĺňa guľovitá, hrubozrnná masa sporoblastu (zygoty). Z dôvodu takmer dokonale sférického habitu vypĺňa zygota väčšinu vnútorného priestoru a pod hrubou, žltohnedou stenou zanecháva len veľmi úzky, rovnomerný optický lem. Ostro hladký povrch steny a jej žiarivá hnedastá refrakcia robia oocystu dobre viditeľnou aj pri základnom diagnostickom zväčšení (200× až 400×), pričom na definitívne potvrdenie a vylúčenie zámeny s inými guľatými štádiami je nutná okulárová mikrometriu."
     ],
     "differentialDiagnosis": [
       "_Eimeria robusta_: Výrazne **väčšia** oocysta (priemerne 36 × 25 μm), tvarovo jasne ovoidná až hruškovitá (nie guľovitá), s výrazne drsnou, jamkovitou tmavohnedou stenou a širokou, otvorenou mikropylou.",
@@ -10814,11 +10832,13 @@
       "_Eimeria asymetrica_: Oocysty vykazujú typicky **asymetricky sploštený tvar** jednej bočnej steny a sú svetlé."
     ],
     "lifeCycle": "_Eimeria schoenbuchi_ vykazuje priamy (monoxénny) vývinový cyklus bez striedania hostiteľov. K nákaze voľne žijúcej zveri dochádza perorálne zožratím (ingesciou) krmiva, ohryzu alebo vody kontaminovanej infekčnými sporulovanými oocystami (k procesu sporulácie dochádza vo vonkajšom prostredí za prístupu kyslíka a vlhkosti). V lumene gastrointestinálneho traktu nastáva excystácia. Uvoľnené sporozoity penetrujú enterocyty sliznice a parazitujú v bunkách črevného epitelu. Po prebehnutí vnútorných fáz nepohlavného množenia (merogónie) nasleduje pohlavná gametogónia. Výsledné nesporulované oocysty sú vylučované trusom zveri do lesného prostredia.",
-    "pathology": "Tento druh parazita patrí medzi nízko až stredne patogénne kokcídie jelenovitej zveri. V prirodzených podmienkach voľných revírov SR vyvoláva u dospelých kusov takmer výlučne subklinické (asymptomatické) infekcie bez makroskopických zmien na orgánoch, nakoľko zver žije v dlhodobej stabilnej parazitárnej rovnováhe. K patologickému vzplanutiu (klinickej kokcidióze) dochádza u tohoročných jelenčiat v nepriaznivom zimnom období (kedy stres z chladu, nutričný deficit alebo vysoká koncentrácia zveri na krmoviskách oslabia imunitu). Masívna infekcia vyvoláva miernu katarálnu enteritídu. Klinicky sa ochorenie manifestuje prechodnými kašovitými hnačkami, dehydratáciou, zmatnením srsti a dočasným znížením kondície mláďat.",
+    "pathology": "Tento druh parazita patrí medzi nízko až stredne patogénne kokcídie jeleňovitej zveri. V prirodzených podmienkach voľných revírov SR vyvoláva u dospelých kusov takmer výlučne subklinické (asymptomatické) infekcie bez makroskopických zmien na orgánoch, nakoľko zver žije v dlhodobej stabilnej parazitárnej rovnováhe. K patologickému vzplanutiu (klinickej kokcidióze) dochádza u tohoročných jelenčiat v nepriaznivom zimnom období (kedy stres z chladu, nutričný deficit alebo vysoká koncentrácia zveri na krmoviskách oslabia imunitu). Masívna infekcia vyvoláva miernu katarálnu enteritídu. Klinicky sa ochorenie manifestuje prechodnými kašovitými hnačkami, dehydratáciou, zmatnením srsti a dočasným znížením kondície mláďat.",
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_schoenbuchi_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/eimeria_schoenbuchi_oocyst/eimeria_schoenbuchi_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Eimeria simonkingi",
@@ -13174,6 +13194,59 @@
     "images": []
   },
   {
+    "id": "graphidioides_affinis_egg",
+    "latinName": "Graphidioides affinis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Trichostrongylidae",
+      "genus": "Graphidioides",
+      "species": "Graphidioides affinis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Mara"
+    ],
+    "hostNotes": {
+      "Mara": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 127,
+      "lengthMax": 150,
+      "widthMin": 68,
+      "widthMax": 80,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Oválny až eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "**Veľké vajíčka**",
+      "Pravidelne oválny, prísne symetrický tvar s paralelnými bočnými stenami.",
+      "Tenká, hladká, bezfarebná a priesvitná dvojitá membrána.",
+      "Obsahuje tmavú, nesegmentovanú alebo skorú ryhujúcu sa morulu (veľké množstvo drobných blastomér). Póly vajíčka sú prázdne."
+    ],
+    "differentialDiagnosis": [
+      "_Trichostrongylus retortaeformis_: Bežný parazit zajacov, ktorý môže sekundárne infikovať mary.  Vajíčka sú **výrazne menšie** (cca 75 – 90 × 40 – 50 µm) a morula obsahuje menej blastomér (zvyčajne 16–32)."
+    ],
+    "lifeCycle": "_Graphidioides affinis_ vykazuje priamy, monoxénny vývinový cyklus bez účasti medzihostiteľa. Samice kladú vajíčka v žalúdku hostiteľa, ktoré odchádzajú s trusom do vonkajšieho prostredia. V exkrementoch sa za priaznivej teploty a vlhkosti z vajíčka liahne larva prvého štádia (L1), ktorá sa dvakrát zvlieka na larvu druhého (L2) a následne na infekčnú larvu tretieho štádia (L3), pričom si zachováva kutikulu z predchádzajúceho štádia ako ochrannú pošvu. Hostiteľ (mara) sa infikuje perorálne, pasením sa na vegetácii alebo požieraním krmiva kontaminovaného infekčnými larvami (L3). Po prehltnutí larvy migrujú do žalúdočných žliaz (glandulae gastricae), kde prebieha zvliekanie na (L4) a dospelce (L5), ktoré následne kolonizujú povrch sliznice žalúdka, fixujú sa medzi riasami a pohlavne dospievajú.",
+    "pathology": "Tento parazit je typickým žalúdočným patogénom mar patagónskych. Dospelé červy mechanicky dráždia sliznicu žalúdka a svojou prítomnosťou v žalúdočných žľazách narúšajú sekréciu kyseliny chlorovodíkovej a pepsinogénu, čo vedie k lokálnemu vzostupu pH. Klinicky sa masívna infekcia prejavuje chronickou obštrukčnou a ulceróznou gastritídou, nechutenstvom, progresívnym chradnutím (kachexiou), anémiou (v dôsledku drobných krvácaní zo sliznice) a hnačkami. Pri sekcii (nekropsii) nachádzame na sliznici žalúdka hyperémiu, katarálny zápal, ložiskové ulcerácie (vredy) kryté hlienom a hemorágie, pričom v hlienovom nánose sú makroskopicky viditeľné klbká jemných červených červov.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
+  },
+  {
     "latinName": "Graphidium strigosum",
     "synonyms": [],
     "slovakName": "",
@@ -14544,7 +14617,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Furcifer pardalis"
+      "Chameleón pardálí (Furcifer pardalis)"
     ],
     "hostNotes": {},
     "sample": "Žlčník",
@@ -15032,7 +15105,7 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Furcifer pardalis"
+      "Chameleón pardálí (Furcifer pardalis)"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -15261,6 +15334,59 @@
     "notes": "",
     "id": "kalicephalus_sp_egg",
     "images": []
+  },
+  {
+    "id": "labiostrongylus_sp_egg",
+    "latinName": "Labiostrongylus sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Chabertiidae",
+      "genus": "Labiostrongylus",
+      "species": "neurčený druh"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Kengura červená (Macropus rufus) - Red Kangaroo",
+      "Kengura sivá (Macropus giganteus) - Eastern Grey Kangaroo"
+    ],
+    "hostNotes": {
+      "Kengura červená (Macropus rufus) - Red Kangaroo": "",
+      "Kengura sivá (Macropus giganteus) - Eastern Grey Kangaroo": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 155,
+      "lengthMax": 185,
+      "widthMin": 80,
+      "widthMax": 95,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Tvar: Pravidelný, široko elipsoidný až oválny, s rovnomerne klenutými stenami.",
+      "Vnútro: V čerstvom truse obsahuje tmavú, zreteľne ohraničenú morulu (štádium viacerých blastomér). Pri miernom zdržaní trusu v prostredí vajíčko rýchlo embryonuje a mení sa na embryonované **vajíčko obsahujúce sformovanú larvu.**"
+    ],
+    "differentialDiagnosis": [
+      "Ostatné strongylidy kengúr (Rugopharynx, Pharyngostrongylus): Sú dramaticky menšie (max. 110 – 130 µm na dĺžku). Pri porovnaní v zornom poli pôsobia ako polovičné."
+    ],
+    "lifeCycle": "Vývin je priamy (monoxénny). Zvláštnosťou rodu Labiostrongylus (zistenou napr. pri príbuznom druhu L. eugenii) je, že k prvému zvliekaniu dochádza často ešte vo vnútri vajíčka. Larvy sa z vajíčka liahnu už vo veľmi pokročilom štádiu (niekedy ako zaobalené larvy druhého štádia L₂). Vo vonkajšom prostredí prebieha transformácia na infekčné larvy tretieho štádia (L₃), ktoré sú mimoriadne odolné voči vyschnutiu v nehostinných austrálskych podmienkach. Kengura sa infikuje perorálne prehltnutím L₃ lariev pri pasení. Larvy migrujú do žalúdka, kde prenikajú hlboko do žalúdočných žliaz a po záverečných zvliekaniach dospievajú na povrchu sliznice žalúdka. Prepatentná perióda je dlhá, často presahuje 16 až 20 týždňov.",
+    "pathology": "Vzhľadom na extrémnu veľkosť dospelých červov (až 6 cm) a ich masívne počty (stovky až tisíce jedincov) je Labiostrongylus vysoko patogénny. Červy vytvárajú v žalúdku kengúr masívne mechanické kongescie. Spôsobujú erózie sliznice, ťažkú hyperplastickú a nodulárnu gastritídu. Žalúdok infikovaných kengúr býva chronicky distendovaný (roztiahnutý), naplnený nestrávenou potravou a červami. Klinicky sa ochorenie prejavuje ako syndróm chradnutia kengúr – progresívna vychudnutosť (kachexia), dehydratácia, hnačky striedané so zápchou, anémia a celková slabosť. Masívne prepuknutie v zajatí nezriedka končí náhlym úhynom.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Lernaea cyprinacea",
@@ -17293,6 +17419,60 @@
     "notes": "So zátkou",
     "id": "oxyuris_equi_egg",
     "images": []
+  },
+  {
+    "id": "paradeletrocephalus_minor_egg",
+    "latinName": "Paradeletrocephalus minor",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Nematoda",
+      "class": "Chromadorea",
+      "order": "Strongylida",
+      "family": "Deletrocephalidae",
+      "genus": "Paradeletrocephalus",
+      "species": "Paradeletrocephalus minor"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Nandu"
+    ],
+    "hostNotes": {
+      "Nandu": ""
+    },
+    "sample": "Trus",
+    "stage": "Vajíčko",
+    "group": "Nematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 190,
+      "lengthMax": 210,
+      "widthMin": 60,
+      "widthMax": 74,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Bezfarebný",
+      "shell": "Tenká až stredne hrubá"
+    },
+    "diagnosticSigns": [
+      "**Gigantické** vajíčko, priemerná veľkosť 200 x 65 µm",
+      "Charakteristicky úzky, **výrazne pretiahnutý, elipsoidný tvar s paralelnými bočnými stenami** a symetricky zaoblenými pólmi. Pôsobí omnoho štíhlejšie ako vajíčka príbuzných rodov",
+      "•  \t• V čerstvom truse obsahuje tmavú, zreteľne ohraničenú a bunkovo bohatú morulu. Vzhľadom na dĺžku vajíčka sú číre zóny na oboch póloch vajíčka (medzi morulou a stenným obalom) mimoriadne veľké a nápadné."
+    ],
+    "differentialDiagnosis": [
+      "_Deletrocephalus dimidiatus_:  vajíčka sú **výrazne kratšie** (150 – 160 µm) a v pomere k dĺžke širšie (70 – 85 µm). Vajíčko _P. minor_ je nápadne dlhšie, štíhlejšie a pólové číre priestory sú omnoho hlbšie."
+    ],
+    "lifeCycle": "_Paradeletrocephalus minor_má priamy vývinový cyklus (monoxénny). Samice produkujú neembryonované vajíčka, ktoré odchádzajú s exkrementami hostiteľa do vonkajšieho prostredia. V truse prebieha pri dostatočnej teplote a vlhkosti ryhovanie moruly, embryo sa formuje a liahne sa larva prvého štádia (L₁). Tá sa dvakrát zvlieka na larvu druhého (L₂) a následne na infekčnú larvu tretieho štádia (L₃), ktorá ostáva chránená v exúviu (pošve) predchádzajúceho štádia. Nandu sa infikuje perorálne prehltnutím lariev L₃ pri pasení vo výbehu. Larvy migrujú do zadných úsekov tráviaceho traktu (hrubé a slepé črevo), kde ukončujú vývin, zvliekajú sa na L₄ a dospievajú na dospelé jedince (L₅).",
+    "pathology": "Patogenita _Paradeletrocephalus minor_ je stredná až vysoká, pričom sa synergicky sčítava pri simultánnych infekciách s rodom Deletrocephalus. Dospelé červy sa fixujú na sliznicu slepých čriev. Aj keď nemajú vnútorné hrebene v ústnej kapsule, silný podtlak a mechanické zovretie spôsobujú mikrotraumy sliznice, ložiskovú nekrózu a zápal. Pri masívnych premoreniach (najmä u kurčiat nanduov v zajatí) vyvolávajú chronickú tyflitídu a kolitídu, spojenú s poruchami absorpcie vody a živín. Klinické príznaky zahŕňajú progresívnu stratu hmotnosti, apatiu, matné perie a úporné hnačky. U dospelých vtákov môže infekcia prebiehať subklinicky, no v stresových situáciách prispieva k celkovému chradnutiu.",
+    "zoonosis": false,
+    "images": [
+      "/public/images/parasites/paradeletrocephalus_minor_egg/paradeletrocephalus_minor_egg_01.webp"
+    ],
+    "references": [],
+    "notes": ""
   },
   {
     "latinName": "Paramphistomum cervi",
