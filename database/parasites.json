@@ -10675,9 +10675,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_sculpta_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_sculpta_oocyst/eimeria_sculpta_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria semisculpta",
@@ -10831,9 +10829,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_schoenbuchi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_schoenbuchi_oocyst/eimeria_schoenbuchi_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria simonkingi",
@@ -10887,91 +10883,6 @@
     "zoonosis": false,
     "notes": "Pri nákupe exotických felzúm a gekónov z importov je _Eimeria simonkingi_ jedným z najčastejšie zachytených protozoárnych parazitov v karanténnych staniciach ZOO, čo si vyžaduje dôslednú koprologickú kontrolu pred zaradením zvierat do spoločných expozícií.",
     "id": "eimeria_simonkingi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Plazy",
-      "Vtáky"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_sp_oocyst__plazy",
-    "images": []
-  },
-  {
-    "latinName": "Eimeria sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Eimeria",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Plazy"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 10,
-      "lengthMax": 40,
-      "widthMin": 10,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_sp_oocyst__zlcnik",
     "images": []
   },
   {
@@ -11489,9 +11400,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_uzura_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_uzura_oocyst/eimeria_uzura_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria vencesi",

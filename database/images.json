@@ -190,6 +190,14 @@
   },
   {
     "parasiteId": "angiostrongylus_vasorum_larva",
+    "url": "/public/images/parasites/angiostrongylus_vasorum_larva/angiostrongylus_vasorum_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:06:44.802Z"
+  },
+  {
+    "parasiteId": "angiostrongylus_vasorum_larva",
     "url": "/public/images/parasites/angiostrongylus_vasorum_larva/angiostrongylus_vasorum_larva_02.webp",
     "alt": "",
     "caption": "",
@@ -3764,6 +3772,14 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "eimeria_townsendi_oocyst",
+    "url": "/public/images/parasites/eimeria_townsendi_oocyst/eimeria_townsendi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:07:18.826Z"
+  },
+  {
     "parasiteId": "eimeria_truncata_oocyst",
     "url": "/public/images/parasites/eimeria_truncata_oocyst/eimeria_truncata_oocyst_01.webp",
     "alt": "",
@@ -3820,6 +3836,14 @@
     "dateAdded": "2026-10-27T20:30:36.954Z"
   },
   {
+    "parasiteId": "eimeria_vencesi_oocyst",
+    "url": "/public/images/parasites/eimeria_vencesi_oocyst/eimeria_vencesi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:07:31.393Z"
+  },
+  {
     "parasiteId": "eimeria_weybridgensis_oocyst",
     "url": "/public/images/parasites/eimeria_weybridgensis_oocyst/eimeria_weybridgensis_oocyst_01.webp",
     "alt": "",
@@ -3828,6 +3852,14 @@
     "dateAdded": "2026-08-29T13:14:53.230Z"
   },
   {
+    "parasiteId": "eimeria_worthi_oocyst",
+    "url": "/public/images/parasites/eimeria_worthi_oocyst/eimeria_worthi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:07:44.329Z"
+  },
+  {
     "parasiteId": "eimeria_zuernii_oocyst",
     "url": "/public/images/parasites/eimeria_zuernii_oocyst/eimeria_zuernii_oocyst_01.webp",
     "alt": "",
@@ -3842,6 +3874,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:14:53.230Z"
+  },
+  {
+    "parasiteId": "elaphostrongylus_cervi_larva",
+    "url": "/public/images/parasites/elaphostrongylus_cervi_larva/elaphostrongylus_cervi_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:07:54.718Z"
   },
   {
     "parasiteId": "entamoeba_invadens_cyst",
@@ -4488,6 +4528,22 @@
     "dateAdded": "2026-09-20T13:59:04.991Z"
   },
   {
+    "parasiteId": "choleoeimeria_brookesiae_oocyst",
+    "url": "/public/images/parasites/choleoeimeria_brookesiae_oocyst/choleoeimeria_brookesiae_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:08:26.795Z"
+  },
+  {
+    "parasiteId": "choleoeimeria_glawi_oocyst",
+    "url": "/public/images/parasites/choleoeimeria_glawi_oocyst/choleoeimeria_glawi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:08:39.166Z"
+  },
+  {
     "parasiteId": "chorioptes_equi_adult",
     "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
     "alt": "",
@@ -4625,6 +4681,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:22:09.057Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "isospora_brygooi_oocyst",
+    "url": "/public/images/parasites/isospora_brygooi_oocyst/isospora_brygooi_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T19:08:56.224Z"
   },
   {
     "parasiteId": "isospora_canis_oocyst",
