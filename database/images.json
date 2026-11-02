@@ -3932,6 +3932,14 @@
     "dateAdded": "2026-08-29T13:15:27.000Z"
   },
   {
+    "parasiteId": "entonyssidae_adult",
+    "url": "/public/images/parasites/entonyssidae_adult/entonyssidae_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T21:01:35.560Z"
+  },
+  {
     "parasiteId": "ergasilus_sieboldi_adult",
     "url": "/public/images/parasites/ergasilus_sieboldi_adult/ergasilus_sieboldi_adult_01.webp",
     "alt": "",
@@ -5317,6 +5325,22 @@
     "dateAdded": "2026-08-29T11:36:36.369Z"
   },
   {
+    "parasiteId": "ophionyssus_natricis_adult",
+    "url": "/public/images/parasites/ophionyssus_natricis_adult/ophionyssus_natricis_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T21:02:16.204Z"
+  },
+  {
+    "parasiteId": "ophionyssus_natricis_adult",
+    "url": "/public/images/parasites/ophionyssus_natricis_adult/ophionyssus_natricis_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T21:02:16.217Z"
+  },
+  {
     "parasiteId": "paradeletrocephalus_minor_egg",
     "url": "/public/images/parasites/paradeletrocephalus_minor_egg/paradeletrocephalus_minor_egg_01.webp",
     "alt": "",
@@ -6370,6 +6394,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:01:05.393Z"
+  },
+  {
+    "parasiteId": "varestrongylus_capreoli_larva",
+    "url": "/public/images/parasites/varestrongylus_capreoli_larva/varestrongylus_capreoli_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-02T21:04:10.305Z"
   },
   {
     "parasiteId": "varestrongylus_sagittatus_larva",

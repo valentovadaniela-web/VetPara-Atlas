@@ -4348,7 +4348,6 @@
     "images": []
   },
   {
-    "id": "deletrocephalus_dimidiatus_egg",
     "latinName": "Deletrocephalus dimidiatus",
     "synonyms": [],
     "slovakName": "",
@@ -4371,7 +4370,6 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 150,
       "lengthMax": 165,
@@ -4395,11 +4393,9 @@
     "lifeCycle": "_Deletrocephalus dimidiatus_ prechádza priamym (monoxénnym) vývinom. Neembryonované vajíčka odchádzajú z čreva nanduov s trusom do vonkajšieho prostredia. V truse sa pri optimálnej vlhkosti a teplote liahne larva prvého štádia (L₁), ktorá sa živí okolitými baktériami. Larva sa v exkrementoch dvakrát zvlieka (cez štádium L₂) až do infekčného štádia L₃, pričom si ponecháva starú kutikulu ako ochrannú pošvu proti nepriaznivým podmienkam. Nandu sa infikuje perorálne, najčastejšie spásaním kontaminovanej vegetácie. Prehltnuté larvy migrujú do krypt sliznice hrubého a slepého čreva, kde prebieha zvliekanie na L₄ a premena na dospelce, ktoré následne kopulujú a produkujú vajíčka.",
     "pathology": "Parazit vykazuje strednú až vysokú patogenitu, s kritickým dopadom na kurčatá a mladé jedince nanduov v zajatí. Dospelé červy mechanicky poškodzujú črevnú stenu fixáciou ústnych kapsúl, spojenou s hematofágiou (nasávaním krvi) a olupovaním sliznice. Masívna infekcia vyvoláva ťažkú chronickú tyflitídu a kolitídu (zápal slepého a hrubého čreva). Medzi hlavné klinické príznaky patrí apatia, progresívne chradnutie, hnačky (niekedy hemoragické) a dehydratácia. Pri pitve nachádzame sliznicu čriev silne hyperemickú, zhrubnutú, pokrytú nekrotickým povlakom a ulceráciami, s masívnym výskytom parazitov fixovaných na tkanivo.",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/deletrocephalus_dimidiatus_egg/deletrocephalus_dimidiatus_egg_01.webp"
-    ],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "deletrocephalus_dimidiatus_egg",
+    "images": []
   },
   {
     "latinName": "Demodex aurati",
@@ -6538,7 +6534,6 @@
     "images": []
   },
   {
-    "id": "eimeria_alpacae_oocyst",
     "latinName": "Eimeria alpacae",
     "synonyms": [],
     "slovakName": "",
@@ -6563,7 +6558,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 22,
       "lengthMax": 27,
@@ -6591,9 +6585,9 @@
     "lifeCycle": "Vývinový cyklus _Eimeria alpacae_ je priamy (monoxénny). Zvieratá sa nakazia ingesciou (zožratím) sporulovaných oocýst z kontaminovanej pastvy, krmiva alebo vody. V tenkom čreve hostiteľa sa uvoľnia sporozoity, ktoré penetrujú enterocyty sliznice. Endogénna fáza zahŕňa sériu nepohlavného množenia (merogónia) a pohlavného množenia (gametogónia) v bunkách črevného epitelu. Výsledkom sú nesporulované oocysty vylučované trusom do vonkajšieho prostredia. Tam za prístupu kyslíka, dostatočnej vlhkosti a optimálnej teploty prebieha exogénna fáza (sporulácia). Prepatentná perióda tohto druhu je približne 11 až 12 dní, čo z neho robí druh s veľmi rýchlym cyklom.",
     "pathology": "_Eimeria alpacae_ je považovaná za nízko až stredne patogénny druh. U dospelých jedincov prebieha infekcia spravidla asymptomaticky a bez zjavných klinických príznakov, aj napriek vyššiemu počtu vylučovaných oocýst. Zvýšené riziko však predstavuje pre mláďatá vo veku do 3–4 mesiacov alebo pre zvieratá v imunitnom strese (transport, zmena krmiva, odstav). V takýchto prípadoch môže masívna infekcia spôsobiť zápalovú reakciu črevnej sliznice (miernu katarálnu enteritídu), čo sa klinicky prejaví prechodnými kašovitými hnačkami, miernou apatiou a prechodným znížením prírastkov hmotnosti.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "V koproologických nálezoch z chovov alpák sa _E. alpacae_ len zriedkavo vyskytuje ako monoinfekcia. Takmer vždy tvorí stabilnú súčasť zmiešaných kokcidióz spolu s druhmi _E. punoensis_ a _E. lamae_."
+    "notes": "V koproologických nálezoch z chovov alpák sa _E. alpacae_ len zriedkavo vyskytuje ako monoinfekcia. Takmer vždy tvorí stabilnú súčasť zmiešaných kokcidióz spolu s druhmi _E. punoensis_ a _E. lamae_.",
+    "id": "eimeria_alpacae_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria andrewsi",
@@ -7119,9 +7113,7 @@
     "zoonosis": false,
     "notes": "Najčastejšie uvádzaná a najrozšírenejšia eimeria japonskej prepelice; v európskych chovoch je bežne dokazovaná.",
     "id": "eimeria_bateri_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_bateri_oocyst/eimeria_bateri_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria bovis",
@@ -7563,9 +7555,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_cervi_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_cervi_oocyst/eimeria_cervi_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria colchici",
@@ -7677,9 +7667,7 @@
     "zoonosis": false,
     "notes": "**Vplyv na pretekársku kondíciu**: Na rozdiel od iných eimérií, ktoré zviera buď zabijú alebo si nevšimnete ich prítomnosť, u poštových holubov je _E. columbarum_ limitujúcim faktorom úspechu. Aj nízky subklinický počet oocýst v truse (zistený rutinnou mikroskopiou pred sezónou) dokáže kvôli mikroléziám v čreve znížiť absorpciu živín natoľko, že holub stráca orientačnú a letovú vytrvalosť.\n**Imunitná odolnosť**: Holuby si na rozdiel od infekcie trichomonádami dokážu po opakovaných slabých expozíciách oocystám vybudovať čiastočnú prirodzenú odolnosť (imunitu), ktorá u dospelých vtákov drží prejavy kokcidiózy pod kontrolou.",
     "id": "eimeria_columbarum_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_columbarum_oocyst/eimeria_columbarum_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria crandallis",
@@ -8249,9 +8237,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_flavescens_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_flavescens_oocyst/eimeria_flavescens_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria granulosa",
@@ -8364,9 +8350,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_hajeki_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_hajeki_oocyst/eimeria_hajeki_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria hirci",
@@ -8584,9 +8568,7 @@
     "zoonosis": false,
     "notes": "**Imunitný paradox**: Králiky, ktoré prežijú masívnu akútnu infekciu _E. intestinalis_, si vyvinú mimoriadne silnú a dlhodobú imunitu voči tomuto konkrétnemu druhu. V dospelosti sa stávajú asymptomatickými nosičmi, ktorí však trusom vylučujú nízke počty oocýst, čím neustále udržiavajú infekčný tlak v králikárni pre novonarodené mláďatá.",
     "id": "eimeria_intestinalis_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_intestinalis_oocyst/eimeria_intestinalis_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria intricata",
@@ -8700,7 +8682,6 @@
     "images": []
   },
   {
-    "id": "eimeria_ivitaensis_oocyst",
     "latinName": "Eimeria ivitaensis",
     "synonyms": [],
     "slovakName": "",
@@ -8725,7 +8706,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 77,
       "lengthMax": 93,
@@ -8752,9 +8732,9 @@
     "lifeCycle": "Vývinový cyklus je priamy (monoxénny) a prebieha bez účasti medzihostiteľov. K nakazeniu zvieraťa dochádza perorálnou ingesciou (zožratím) sporulovaných oocýst. V tráviacom trakte dochádza k excystácii sporozoitov, ktoré migrujú do enterocytov sliznice tenkého čreva. Endogénna fáza zahŕňa sériu nepohlavných (merogónia) a pohlavných (gametogónia) cyklov replikácie. Z dôvodu veľkých rozmerov endogénnych štádií je tento proces biologicky pomalší. Prepatentná perióda je pomerne dlhá a odhaduje sa na 22 až 26 dní. Nesporulované oocysty odchádzajú trusom do prostredia, kde dochádza k exogénnej sporulácii.",
     "pathology": "_Eimeria ivitaensis_ je popri _E. macusaniensis_ považovaná za vysoko patogénny druh, hoci referencií z terénu je menej z dôvodu jej nižšej prevalencie. Multiplikácia parazita spôsobuje mechanické a enzymatické poškodenie enterocytov, atrofiu črevných klkov a erózie sliznice. Masívne infekcie vyvolávajú ťažkú katarálnu až hemoragickú enteritídu. Klinické príznaky zahŕňajú profúzne hnačky (často s prímesou krvi), apatiu, akútnu anorexiu, dehydratáciu, ťažkú stratu hmotnosti a hypoproteinémiu. U mláďat môže mať infekcia bez včasnej terapeutickej intervencie fatálny priebeh.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Pre stredne hrubú až hrubú stenu oocysty a hlbšiu lokalizáciu v čreve sú bežné antikokcidiká (ako sulfónamidy) v chovoch málo účinné. V prípade pozitívneho nálezu sa odporúča cielená liečba modernými kokcidiocídmi zo skupiny triazínových derivátov (napr. toltrazuril)."
+    "notes": "Pre stredne hrubú až hrubú stenu oocysty a hlbšiu lokalizáciu v čreve sú bežné antikokcidiká (ako sulfónamidy) v chovoch málo účinné. V prípade pozitívneho nálezu sa odporúča cielená liečba modernými kokcidiocídmi zo skupiny triazínových derivátov (napr. toltrazuril).",
+    "id": "eimeria_ivitaensis_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria jolchijevi",
@@ -8814,7 +8794,6 @@
     "images": []
   },
   {
-    "id": "eimeria_lamae_oocyst",
     "latinName": "Eimeria lamae",
     "synonyms": [],
     "slovakName": "",
@@ -8839,7 +8818,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 30,
       "lengthMax": 40,
@@ -8867,9 +8845,9 @@
     "lifeCycle": "Vývinový cyklus _Eimeria lamae_ je priamy (monoxénny) a prebieha bez medzihostiteľov. Infekcia začína alimentárnou ingesciou (zožratím) sporulovaných oocýst z kontaminovaného prostredia (krmivo, voda, exkrementy). V tráviacom trakte hostiteľa sa pôsobením žlče a klesajúceho pH uvoľnia sporozoity, ktoré penetrujú enterocyty povrchového epitelu tenkého čreva (predovšetkým jejunum a ileum). Nasleduje endogénna fáza nepohlavného rozmnožovania (merogónia/schizogónia) a neskôr pohlavného rozmnožovania (gametogónia), ktoré vedie k formovaniu nesporulovaných oocýst. Tieto oocysty sú vylučované trusom do vonkajšieho prostredia, kde pri optimálnej teplote a vlhkosti prebehne počas niekoľkých dní sporulácia (exogénna fáza), čím sa oocysta stáva opäť infekčnou. Prepatentná perióda je približne 15–16 dní.",
     "pathology": "_Eimeria lamae_ sa radí medzi stredne až vysoko patogénne druhy kokcídií juhoamerických kamelidov. Masívne infekcie, najmä u mláďat (crias) a imunitne kompromitovaných jedincov, spôsobujú deštrukciu enterocytov na vrcholoch klkov tenkého čreva. Patologické zmeny zahŕňajú katarálny až hemoragický zápal čreva (enteritídu), sprevádzaný atrofiou klkov a malabsorpciou živín. Klinicky sa ochorenie manifestuje profúznymi hnačkami (často s prímesou hlienu alebo krvi), dehydratáciou, letargiou, výrazným chradnutím (chudnutím) a anémiou. Vážne neliečené prípady u mláďat môžu končiť fatálne v dôsledku metabolického rozvratu alebo sekundárnych bakteriálnych infekcií (napr. premnoženie Clostridium perfringens).",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "eimeria_lamae_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria leporis",
@@ -9035,12 +9013,9 @@
     "zoonosis": false,
     "notes": "Veľmi vzácny parazit. Na území Slovenskej republiky je nález _Eimeria macrosculpta_ **veľmi nepravdepodobný až raritný**. Hoci bol druh opísaný v susednom Maďarsku a ojedinele sa vyskytuje v strednej Európe, v rutinných koprologických vyšetreniach našich divých zajacov absolútne dominujú iné taxóny. Ak sa zachytí, spravidla ide o importované zvieratá alebo prechodnú mikroložiskovú prítomnosť v južných prihraničných oblastiach.",
     "id": "eimeria_macrosculpta_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_macrosculpta_oocyst/eimeria_macrosculpta_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
-    "id": "eimeria_macusaniensis_oocyst",
     "latinName": "Eimeria macusaniensis",
     "synonyms": [],
     "slovakName": "",
@@ -9065,7 +9040,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 81,
       "lengthMax": 107,
@@ -9092,9 +9066,9 @@
     "lifeCycle": "Vývinový cyklus je priamy (monoxénny), no biologicky podstatne pomalší ako u iných eimérií. Po prehltnutí sporulovanej oocysty sa sporozoity uvoľňujú v čreve, no prenikajú extrémne hlboko – až do oblasti krypt sliznice distálneho jejuna a ilea. Tam prebieha merogónia a obrie schizogónie, pričom meronty dosahujú veľkosť až nad 100 μm. Kvôli tejto masívnej hĺbkovej replikácii má E. macusaniensis extrémne dlhú prepatentnú periódu, ktorá trvá 32 až 43 dní (niektoré zdroje uvádzajú pri alpakách až 58 dní). Patentná perióda (vylučovanie oocýst) trvá spravidla 14 až 40 dní.",
     "pathology": "_Eimeria macusaniensis_ je vysoko patogénny a potenciálne letálny patogén. Vývojom obrovských endogénnych štádií v hlbokých kryptách dochádza k totálnej deštrukcii črevnej architektúry, nekróze klkov a ťažkej nekrohemoragickej enteritíde. Na rozdiel od iných kokcidióz je hnačka netypická a často úplne chýba (najmä u dospelých). Hlavnými príznakmi sú extrémne chradnutie, letargia, ťažká hypoproteinémia (strata bielkovín cez poškodené črevo) vedúca k edémom, dehydratácia a slabosť. Často dochádza k úhynu v dôsledku obehového šoku alebo sekundárnej anaeróbnej infekcie spôsobenej Clostridium perfringens, ktorej toxíny prenikajú cez obnaženú sliznicu (vyvolanie fatálnej enterotoxémie). Klinické príznaky a úhyn zvieraťa bežne predbiehajú samotné vylučovanie oocýst (zviera uhynie v prepatentnej fáze, kedy je koproologické vyšetrenie ešte falošne negatívne).",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "**Archeologický unikát**: Oocysty _E. macusaniensis_ majú vďaka svojej mimoriadne hrubej stene neuveriteľnú mechanickú a chemickú odolnosť. Dokonale zachovalé oocysty boli objavené v fosílnom truse (koprolitoch) a v črevách mumifikovaných lám v Patagónii, ktoré sú staré približne 10 000 rokov (obdobie holocénu).\nBežné antikokcidiká (ako amprolium) majú pri tomto druhu pre hĺbku lézií obmedzenú účinnosť. V modernej parazitologickej terapii kamelidov sa preto siaha po účinnejších benzénacetonitrilových kokcidiocídoch, ako je toltrazuril alebo ponazuril, ktoré dokážu zasiahnuť parazita priamo vo vnútri tkaniva sliznice."
+    "notes": "**Archeologický unikát**: Oocysty _E. macusaniensis_ majú vďaka svojej mimoriadne hrubej stene neuveriteľnú mechanickú a chemickú odolnosť. Dokonale zachovalé oocysty boli objavené v fosílnom truse (koprolitoch) a v črevách mumifikovaných lám v Patagónii, ktoré sú staré približne 10 000 rokov (obdobie holocénu).\nBežné antikokcidiká (ako amprolium) majú pri tomto druhu pre hĺbku lézií obmedzenú účinnosť. V modernej parazitologickej terapii kamelidov sa preto siaha po účinnejších benzénacetonitrilových kokcidiocídoch, ako je toltrazuril alebo ponazuril, ktoré dokážu zasiahnuť parazita priamo vo vnútri tkaniva sliznice.",
+    "id": "eimeria_macusaniensis_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria magna",
@@ -9206,9 +9180,7 @@
     "zoonosis": false,
     "notes": "Pre začínajúcich laborantov je _E. marsica_ permanentným orieškom. Jej mikropylárna čiapočka je tak nízka a nevýrazná, že pri rýchlom skríningu trusu býva tento druh takmer pravdepodobne zapísaný ako _Eimeria pallida_ alebo väčšia _Eimeria parva_, čo skresľuje epidemiologické dáta o diverzite kmeňov v chove.",
     "id": "eimeria_marsica_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_marsica_oocyst/eimeria_marsica_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria maxima",
@@ -10411,7 +10383,6 @@
     "images": []
   },
   {
-    "id": "eimeria_punoensis_oocyst",
     "latinName": "Eimeria punoensis",
     "synonyms": [],
     "slovakName": "",
@@ -10436,7 +10407,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 17,
       "lengthMax": 22,
@@ -10464,9 +10434,9 @@
     "lifeCycle": "Vývinový cyklus _Eimeria punoensis_ je priamy (monoxénny). K infekcii zvieraťa dochádza požitím (ingesciou) sporulovaných oocýst z vonkajšieho prostredia (voda, krmivo znečistené trusom). V čreve hostiteľa sa excystujú sporozoity, ktoré prenikajú do buniek sliznice (enterocytov) tenkého čreva. Nasleduje fáza nepohlavného množenia (merogónia) a pohlavného množenia (gametogónia), po ktorej sa do lúmenu čreva uvoľňujú nesporulované oocysty. Tie odchádzajú trusom von, kde v prítomnosti kyslíka a vlhkosti bleskovo sporulujú. _E. punoensis_ vyniká mimoriadne krátkou prepatentnou periódou, ktorá trvá iba 10 dní (najkratšia spomedzi eimérií lám), pričom exkrécia (patentná perióda) môže trvať až 24 dní.",
     "pathology": "_Eimeria punoensis_ sa považuje za nízko patogénny až takmer nepatogénny druh u dospelých a zdravých zvierat. Experimentálne infekcie vysokými dávkami oocýst u zvierat starších ako 1 rok nevyvolali žiadne klinické príznaky ochorenia. Masívne vylučovanie oocýst (vysoké OPG – oocysts per gram) často prebieha úplne asymptomaticky. Výnimkou môžu byť mláďatá vo veku 2–4 týždňov, u ktorých sa pri masívnom premnožení v kombinácii s inými druhmi (napr. _E. macusaniensis_) môže rozvinúť mierna katarálna enteritída, prejavujúca sa prechodnou hnačkou a spomalením rastu.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": "Napriek svojej nízkej patogenite je _E. punoensis_ často najčastejšie detegovaným druhom v zmiešaných infekciách u lám a alpák (vyskytuje sa až vo viac ako 70 % prípadov kokcidióz kamelidov). Jej evolučnou taktikou je extrémne rýchly cyklus (10 dní) a masívna produkcia oocýst, vďaka čomu dokonale saturuje pastviny bez toho, aby svojho hostiteľa usmrtila."
+    "notes": "Napriek svojej nízkej patogenite je _E. punoensis_ často najčastejšie detegovaným druhom v zmiešaných infekciách u lám a alpák (vyskytuje sa až vo viac ako 70 % prípadov kokcidióz kamelidov). Jej evolučnou taktikou je extrémne rýchly cyklus (10 dní) a masívna produkcia oocýst, vďaka čomu dokonale saturuje pastviny bez toho, aby svojho hostiteľa usmrtila.",
+    "id": "eimeria_punoensis_oocyst",
+    "images": []
   },
   {
     "latinName": "Eimeria robertsoni",
@@ -10518,9 +10488,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_robertsoni_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_robertsoni_oocyst/eimeria_robertsoni_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria robusta",
@@ -11345,9 +11313,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "eimeria_tsunodai_oocyst",
-    "images": [
-      "/public/images/parasites/eimeria_tsunodai_oocyst/eimeria_tsunoidai_oocyst_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Eimeria uzura",
@@ -11628,10 +11594,10 @@
     "stage": "Larva",
     "group": "Nematoda",
     "micrometry": {
-      "lengthMin": 390,
-      "lengthMax": 459,
-      "widthMin": 15,
-      "widthMax": 22,
+      "lengthMin": 370,
+      "lengthMax": 430,
+      "widthMin": 18,
+      "widthMax": 24,
       "unit": "µm"
     },
     "morphology": {
@@ -11640,16 +11606,20 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "L1 larva s vlnitým povrchom kutikuly a krátkym tŕňovitým výrastkom na konci chvosta",
-      "typickým pre čeľaď Protostrongylidae."
+      "Priemerná veľkosť 420 x 20",
+      "Chvost je esovito prehnutý s ostrou špičkou, na dorzálnej strane má zreteľný **dorzálny tŕň**.",
+      "Na chvostovom konci nie sú kutikulárne vlnky/zúbky, za dorzálnym tŕňom (smerom ku špičke) je **hladký**, postupne sa zužujúci chvost bez týchto zárezov.",
+      "Vo vnútri granulované prapôvodné črevo **s tmavými granulami**."
     ],
     "differentialDiagnosis": [
-      "Odlíšiť L1 od Varestrongylus a Muellerius u jelenej zveri; typický je dlhší chvost bez výrazného dorzálneho tŕňa."
+      "_Varestrongylus sagittatus_ - **menší** (v rozmedzí 330 – 370 μm), chvost má na konci hlboký zárez (zárez v tvare písmena V), pričom koniec je zvlnený až **zúbkovaný***",
+      "_Muellerius cappilaris_ - je najmä u kôz a oviec, menší (300 - 320 μm), tiež zvlenený chvost s tŕňom",
+      "_Dictyocaulus noerneri_ : larvy L1 sú veľké (390 – 460 µm), ale ich chvost je rovný, zašpicatený a úplne **bez dorzálneho tŕňa**. V prednej časti majú navyše **viditeľný protoplazmatický gombík**."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Cyklus je nepriamy (heteroxénny). Dospelé červy parazitujú v spojivovom tkanive centrálneho nervového systému (mozgové obaly) a v medzisvalovom spojive jeleňov. Samice kladú vajíčka do cievneho riečiska, odkiaľ sú krvou transportované do pľúcnych kapilár. V pľúcach sa vyliahnu larvy L1, vykašliavajú sa, prehltnú a odchádzajú aktívne s trusom do vonkajšieho prostredia. Vo vonkajšom prostredí L1 larvy penetrujú cez nohu do suchozemských slimákov (medzihostiteľov). V slimákovi prebieha dvojnásobné zvliekanie až do infekčného štádia L3 (trvá to cca 3 – 5 týždňov v závislosti od teploty). Definitívny hostiteľ (jeleň) sa nakazí ingesciou (zožratím) slimáka s infekčnými L3 larvami spolu s trávou. V zažívacom trakte sa larvy uvoľnia, penetrujú stenu čreva a migrujú cestou lymfatického a krvného systému cez pľúca do CNS, kde dospievajú. Prepatentná perióda je dlhá, trvá približne 3 až 4 mesiace.",
+    "pathology": "Patogenita je úzko naviazaná na migráciu a lokalizáciu parazita. V pľúcach vyvoláva prechod L1 lariev ložiskovú **verminóznu bronchopneumóniu** s infiltráciou eozinofilov a makrofágov. Najzávažnejšie lézie však vznikajú **v centrálnom nervovom systéme (mozog a miecha)**, kde dospelce a subadultné štádiá mechanicky traumatizujú tkanivo. Vzniká nehnisavá eozinofilná meningoencefalomyelitída, sprevádzaná maláciou (mäknutím) nervového tkaniva a ložiskovými krvácaninami. Klinicky sa ochorenie (elapfostrongylóza) prejavuje neurologickými príznakmi: poruchami koordinácie (ataxia), slabosťou panvových končatín, parézami až paralýzami, krúživým pohybom, slepotou a postupným chradnutím (kachexiou), ktoré u oslabených kusov končí fatálne.",
     "zoonosis": false,
-    "notes": "Priamy koniec",
+    "notes": "Cerebrospinálna nematodóza netypických hostiteľov: _Elaphostrongylus cervi_ vykazuje vysokú patogenitu v momente, keď prenikne do netypického hostiteľa (napr. ovca alebo koza). Keďže v ich tele \"zablúdi\", dochádza k masívnej aberantnej migrácii v mieche a mozgu, čo vedie k akútnemu prepuknutiu neurologických symptómov (tzv. paralýza kôz a oviec).",
     "id": "elaphostrongylus_cervi_larva",
     "images": []
   },
@@ -11670,15 +11640,20 @@
       "Plazy"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Korytnačky": "Asymptomatickí nosiči (rezervoáre): Korytnačky (najmä vodné korytnačky rodov Trachemys, Pseudemys a suchozemské korytnačky). Tieto zvieratá vylučujú obrovské množstvá cyst bez akýchkoľvek príznakov ochorenia.",
+      "Krokodýly": "Asymptomatickí nosiči (rezervoáre) vylučujú obrovské množstvá cyst bez akýchkoľvek príznakov ochorenia.",
+      "Hady": "Vysoko vnímavé (letálne) najmä veľhhadovité – Boidae, pytóny – Pythonidae, vretenice a užovky). U týchto druhov dosahuje mortalita bez liečby takmer 100 %.",
+      "Jaštery": "Vysoko vnímavé (letálne) pre varany, agamy bradaté, leguány"
+    },
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 9,
-      "lengthMax": 24,
-      "widthMin": 9,
-      "widthMax": 24,
+      "lengthMin": 11,
+      "lengthMax": 20,
+      "widthMin": 11,
+      "widthMax": 20,
       "unit": "µm"
     },
     "morphology": {
@@ -11687,22 +11662,18 @@
       "shell": "Tenká"
     },
     "diagnosticSigns": [
-      "Guľovitá cysta so 4 jadrami v zrelom štádiu."
+      "Priemerná veľkosť cysty je 11 – 20 µm (najčastejšie okolo 14 – 16 µm).",
+      "Zrelá infekčná cysta obsahuje presne 4 jadrá. Nezrelé cysty môžu mať 1 alebo 2 jadrá. Jadrá majú rovnakú štruktúru ako u trofozoita (periférny chromatín a drobný karyozóm).",
+      "V mladých cystách sú prítomné 1 až 3 ostro ohraničené chromatoidné tyčinky (zhluky RNA a proteínov) s typicky zaoblenými, tupými koncami (niekedy v tvare cigary)"
     ],
     "differentialDiagnosis": [
-      "Odlíšiť od nepatogénnych/komenzálnych améb plazov (E. terrapinae",
-      "E. insolita",
-      "E. barreti) a od voľne žijúcich/náhodných amôb (Endolimax",
-      "Iodamoeba) podľa veľkosti cysty",
-      "počtu jadier (zrelá cysta E. invadens je štvorjadrová) a kultivácie (E. invadens nerastie nad 33 °C",
-      "na rozdiel od E. histolytica). Morfologicky je E. invadens prakticky nerozlíšiteľná od humánnej E. histolytica/E. dispar – pri súbežnej práci s humánnymi a plazími vzorkami hrozí zámena",
-      "hoci ide o odlišné",
-      "na hostiteľa špecifické druhy (E. invadens nie je zoonóza)."
+      "_Entamoeba barreti / Entamoeba Knowlesi_: Nepatogénne améby korytnačiek. Ich cysty sú často o niečo väčšie a môžu vykazovať odlišný počet jadier v zrelom štádiu.",
+      "Cysty bičíkovcov (Monocercomonas, Hypotrichomonas): Veľmi často prítomné u plazov. Ich cysty bývajú menšie (zvyčajne do 10 µm), majú oválny tvar a vnútorné štruktúry obsahujú pozostatky bičíkov (axostyl), nie 4 typické amébovité jadrá."
     ],
-    "lifeCycle": "",
-    "pathology": "U hadov a jašteríc je E. invadens často vysoko patogénna (letalita ~100 % pri neliečenej invazívnej forme), zatiaľ čo u korytnačiek/suchozemských a vodných korytnačiek (Testudines) sa správa väčšinou ako komenzál bez klinických príznakov – korytnačky môžu byť bezpríznakovým zdrojom nákazy pre hady/jaštery v spoločnom chove.",
+    "lifeCycle": "Vývinový cyklus je priamy (monoxénny) a šíri sa fekálno-orálnou cestou. Korytnačka (nosič) alebo chorý had vylúčia so stolicou do prostredia odolné, štvorjadrové cysty. Vnímavý plaz (napr. had) tieto cysty pozrie spolu s kontaminovanou potravou alebo vodou. Cysta vďaka svojej stene bez ujmy prekoná kyslé prostredie žalúdka a prechádza do čreva, kde dochádza k excystácii. Z jednej štvorjadrovej cysty sa uvoľní tetranukleárny trofozoit, ktorý sa následne rozdelí na 8 malých améb (metacystické trofozoity). Tieto trofozoity kolonizujú hrubé črevo a slepé črevá. Pri invazívnej forme prenikajú hlboko do sliznice, množia sa binárnym delením a neskôr, pri prechode do distálnych častí traktu, sa opäť encystujú (zahusťujú a vytvárajú stenu), pričom sa jadro dvakrát rozdelí na finálne 4 jadrá, a kolobeh sa uzatvára.",
+    "pathology": "U hadov a jašteríc je _E. invadens_ často vysoko patogénna (letalita ~100 % pri neliečenej invazívnej forme), zatiaľ čo u korytnačiek/suchozemských a vodných korytnačiek (Testudines) sa správa väčšinou ako komenzál bez klinických príznakov – korytnačky môžu byť bezpríznakovým zdrojom nákazy pre hady/jaštery v spoločnom chove.\n_Entamoeba invadens_ vyvoláva u vnímavých plazov závažné, často fatálne ochorenie zvané amébová dyzentéria (amébiáza plazov). Trofozoity vylučujú silné lytické enzýmy (histolytické proteázy), pomocou ktorých deštruujú bunky sliznice hrubého čreva. Stena čreva masívne zhrubne, pokryje sa pseudomembránami a dochádza k tvorbe hlbokých vredov. Cez poškodenú stenu čreva trofozoity penetrujú do cievneho systému a portálnym (vrátnicovým) obehom migrujú priamo do pečene. V pečeni parazit spôsobuje rozsiahlu nekrotizujúcu hepatitídu s tvorbou mnohopočetných amébových abscesov. Klinicky sa u hadov a jašterov ochorenie prejavuje apatiou, kompletnou anorexiou, ťažkou dehydratáciou, zvracaním a typickým hlienovitým až krvavým trusom. V dôsledku zlyhania pečene a septikémie nastáva úhyn.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "V herpetologickej praxi je toto ochorenie hlavným dôvodom, prečo sa nikdy **nesmú chovať hady spoločne s korytnačkami** (alebo v rovnakej miestnosti bez prísnej karantény). Korytnačky fungujú ako dokonalý trojský kôň – samy sú zdravé, no pre hady vylučujú biologickú zbraň.\n**Teplotná závislosť**: E. invadens je striktne závislá od teploty. Optimálne sa množí pri teplotách okolo 25 – 30 °C. Zvýšenie teploty prostredia (tzv. indukovaná horúčka plazov nad 33 – 35 °C) dokáže in vitro a niekedy aj in vivo zastaviť replikáciu trofozoitov, čo sa historicky využívalo ako podporná metóda liečby.",
     "id": "entamoeba_invadens_cyst",
     "images": []
   },
@@ -11723,37 +11694,39 @@
       "Hady"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Hady": "Medzi najčastejších hostiteľov patria zástupcovia rodov Boa, Python, Pantherophis (užovky) či Lampropeltis (korálovky)."
+    },
     "sample": "Pľúca",
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 1000,
-      "lengthMax": 2500,
+      "lengthMin": 500,
+      "lengthMax": 1000,
       "widthMin": 500,
-      "widthMax": 1500,
+      "widthMax": 700,
       "unit": "µm"
     },
     "morphology": {
       "shape": "Oválny",
-      "colour": "Hnedočervený",
+      "colour": "Biely",
       "shell": "Mäkký kutikulárny obal"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: oválny."
+      "Samice merajú približne 700 – 1 000 µm (0,7 – 1 mm), samce sú o niečo menšie, v rozmedzí 500 – 700 µm.",
+      "Stredne veľké, pretiahnuté až oválne roztoče, ktoré majú kvôli endoparazitickému spôsobu života výrazne redukovanú kutikulárnu sklerotizáciu (sú mäkké, mliečnobiele až žltkasté, po nasatí krvi s tmavým obsahom čreva).",
+      "**Krátke, robustné končatiny s masívnymi hrotmi/hákmi**",
+      "Kutikula mäkká, biela/žltkastá, slabé štíty"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu neurčený rod môže byť potrebná molekulová identifikácia."
+      "_Ophionyssus natricis_ (Klieštikovec plazí): Je to striktný ektoparazit (žije na koži a pod šupinami). Do trusu sa dostane náhodne, ak had pri čistení požerie vlastné kožné parazity. Ophionyssus má **oveľa dlhšie, tenšie nohy** (behacie), **silne pigmentovanú kutikulu**, tmavé, silne sklerotizované štítky a nemá robustné hrubé háky na končatinách prispôsobené slizniciam.",
+      "Roztoče z krmiva (Glycyphagidae/Acaridae: napr. _Acarus siro, Tyrophagus_ spp.): Ide o nepatogénne roztoče, ktoré parazitujú na skrmovaných hlodavcoch (myši, potkany) alebo substráte. Prechádzajú cez hada pasívne. Majú **dlhé zmyslové chlpy** (sety) po celom lesklom tele a úplne im **chýbajú bodavé ústne ústroje a mohutné fixačné** aparáty pľúcnych červov. Majú krátke až stredne dlhé končatiny s tenkými vláskami",
+      "Larvy pentastomíd (jazyčnatiek): V pľúcach plazov žijú často aj jazyčnatky (napr. rod Kiricephalus či Armillifer). Ich vajíčka s larvami (ktoré majú 4 zakrpatené nožičky s háčikmi) sa taktiež nachádzajú v truse. Larva pentastomídy je však červovitá, článkovaná a nemá anatómiu dospelého roztoča."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Životný cyklus Entonyssidae prebieha kompletne na jedinom hostiteľovi (monoxénny cyklus). Samice v pľúcach rodia priamo živé šesťnohé larvy (ovoviviparia), ktoré sa v dýchacích cestách takmer ihneď zvliekajú na osemnohé protonymfy. Následne cez štádium deutonymfy dospievajú na dospelé samce a samice. Celý tento proces prebieha na sliznici respiračného traktu. Prenos medzi hadmi nastáva priamym kontaktom (napr. pri párení alebo spoločnom zimovaní), kedy nymfy a dospelce aktívne vyliezajú z glottis (dýchacej štrbiny) infikovaného jedinca do dutiny ústnej a prechádzajú do ústnej dutiny zdravého plaza. Vlhké prostredie terárií s vysokou hustotou zvierat tento prenos výrazne urýchľuje.",
+    "pathology": "Prítomnosť pľúcnych roztočov vážne narúša respiračné funkcie plaza. Roztoče mechanicky dráždia sliznicu pľúcnych vakov a fixáciou svojich hákov spôsobujú mikrotraumy. Svojím cicaním krvi vyvolávajú lokálne hemorágie a ložiskové zápaly. Dochádza k nadmernej produkcii viskózneho hlienu a vzniká ťažká verminózna/parazitárna bronchopneumónia. Infikované hady trpia dýchavičnosťou (dyspnoe), dýchajú s otvorenou tlamou, z ktorej môže vytekať spenený hlien, a pri dýchaní vydávajú pískavé alebo syčivé zvuky. Pri masívnych infekciách dochádza k obštrukcii trachey hlienom a parazitmi, čo vedie k asfixii (uduseniu) alebo k sekundárnej bakteriálnej sepse vyvolanej oportúnnymi patogénmi (napr. **Pseudomonas** spp. alebo **Aeromonas** spp.).",
     "zoonosis": false,
-    "notes": "",
+    "notes": "Tracheálny ster/výplach: Keďže záchyt v truse môže byť nepravidelný, spoľahlivejšou metódou je tracheálny výplach pomocou katétra a vlažného sterilného fyziologického roztoku, prípadne jemný ster zo sliznice ústia trachey (glottis), kde sa roztoče často zhromažďujú.",
     "id": "entonyssidae_adult",
     "images": []
   },
@@ -11790,17 +11763,8 @@
       "colour": "Bezfarebný",
       "shell": "Tenká až stredne hrubá"
     },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Epomidiostomum môže byť potrebná molekulová identifikácia."
-    ],
+    "diagnosticSigns": [],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -11847,11 +11811,7 @@
       "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
       "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Epomidiostomum môže byť potrebná molekulová identifikácia."
-    ],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -11898,11 +11858,7 @@
       "pažeráka",
       "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Ergasilus môže byť potrebná molekulová identifikácia."
-    ],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -12955,7 +12911,6 @@
     "images": []
   },
   {
-    "id": "graphidioides_affinis_egg",
     "latinName": "Graphidioides affinis",
     "synonyms": [],
     "slovakName": "",
@@ -12978,7 +12933,6 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 127,
       "lengthMax": 150,
@@ -13003,9 +12957,9 @@
     "lifeCycle": "_Graphidioides affinis_ vykazuje priamy, monoxénny vývinový cyklus bez účasti medzihostiteľa. Samice kladú vajíčka v žalúdku hostiteľa, ktoré odchádzajú s trusom do vonkajšieho prostredia. V exkrementoch sa za priaznivej teploty a vlhkosti z vajíčka liahne larva prvého štádia (L1), ktorá sa dvakrát zvlieka na larvu druhého (L2) a následne na infekčnú larvu tretieho štádia (L3), pričom si zachováva kutikulu z predchádzajúceho štádia ako ochrannú pošvu. Hostiteľ (mara) sa infikuje perorálne, pasením sa na vegetácii alebo požieraním krmiva kontaminovaného infekčnými larvami (L3). Po prehltnutí larvy migrujú do žalúdočných žliaz (glandulae gastricae), kde prebieha zvliekanie na (L4) a dospelce (L5), ktoré následne kolonizujú povrch sliznice žalúdka, fixujú sa medzi riasami a pohlavne dospievajú.",
     "pathology": "Tento parazit je typickým žalúdočným patogénom mar patagónskych. Dospelé červy mechanicky dráždia sliznicu žalúdka a svojou prítomnosťou v žalúdočných žľazách narúšajú sekréciu kyseliny chlorovodíkovej a pepsinogénu, čo vedie k lokálnemu vzostupu pH. Klinicky sa masívna infekcia prejavuje chronickou obštrukčnou a ulceróznou gastritídou, nechutenstvom, progresívnym chradnutím (kachexiou), anémiou (v dôsledku drobných krvácaní zo sliznice) a hnačkami. Pri sekcii (nekropsii) nachádzame na sliznici žalúdka hyperémiu, katarálny zápal, ložiskové ulcerácie (vredy) kryté hlienom a hemorágie, pričom v hlienovom nánose sú makroskopicky viditeľné klbká jemných červených červov.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "graphidioides_affinis_egg",
+    "images": []
   },
   {
     "latinName": "Graphidium strigosum",
@@ -14899,7 +14853,6 @@
     "images": []
   },
   {
-    "id": "isospora_gracilis_oocyst",
     "latinName": "Isospora gracilis",
     "synonyms": [],
     "slovakName": "",
@@ -14922,7 +14875,6 @@
     "sample": "Trus",
     "stage": "Oocysta",
     "group": "Protozoa",
-    "methods": [],
     "micrometry": {
       "lengthMin": 26,
       "lengthMax": 21,
@@ -14946,9 +14898,9 @@
     "lifeCycle": "Vývinový cyklus je monoxénny (priamy). Beo sa nakazí prehltnutím (ingesciou) sporulovanej oocysty z prostredia. V tenkom čreve sliznice sa uvoľnia sporozoity. Pri vtáčích izospórach sa však vyskytuje závažné biologické špecifikum – systémová fáza (tzv. atoxoplazmóza). Predtým, ako parazit začne pohlavné rozmnožovanie v čreve, sporozoity preniknú do lymfocytov a makrofágov (bielych krviniek). V nich sa krvným obehom šíria do celého tela (pečeň, slezina, pľúca), kde prebieha masívna extraintestinálna merogónia. Až po tejto fáze sa parazit vracia do enterocytov čreva, dokončí gametogóniu a vták začne trusom vylučovať nesporulované oocysty.",
     "pathology": "_Isospora graculae_ vykazuje vysokú patogenitu, najmä u mladých vtákov v zajatí a pri stresových faktoroch (transport, zlá hygiena). Kvôli spomínanej systémovej (atoxoplazmovej) fáze parazit neničí len črevo, ale spôsobuje ťažké systémové ochorenie. Patologické zmeny zahŕňajú masívnu splenomegáliu (zväčšenie sleziny), hepatomegáliu (zväčšenie pečene) s ložiskovými nekrózami a ťažkú katarálnu až zápalovú enteritídu čreva. Klinicky sa u beov choroba prejavuje apatiou, našuchoreným perím, hnačkami, dýchacími ťažkosťami a typickým príznakom je čierne, zväčšené bruško (presvitajúca zväčšená pečeň a slezina cez tenkú kožu vtáka). Úmrtnosť u mláďat môže dosiahnuť až 80 %.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "isospora_gracilis_oocyst",
+    "images": []
   },
   {
     "latinName": "Isospora jaracimrmani",
@@ -15097,7 +15049,6 @@
     "images": []
   },
   {
-    "id": "labiostrongylus_sp_egg",
     "latinName": "Labiostrongylus sp.",
     "synonyms": [],
     "slovakName": "",
@@ -15122,7 +15073,6 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 155,
       "lengthMax": 185,
@@ -15145,9 +15095,9 @@
     "lifeCycle": "Vývin je priamy (monoxénny). Zvláštnosťou rodu Labiostrongylus (zistenou napr. pri príbuznom druhu L. eugenii) je, že k prvému zvliekaniu dochádza často ešte vo vnútri vajíčka. Larvy sa z vajíčka liahnu už vo veľmi pokročilom štádiu (niekedy ako zaobalené larvy druhého štádia L₂). Vo vonkajšom prostredí prebieha transformácia na infekčné larvy tretieho štádia (L₃), ktoré sú mimoriadne odolné voči vyschnutiu v nehostinných austrálskych podmienkach. Kengura sa infikuje perorálne prehltnutím L₃ lariev pri pasení. Larvy migrujú do žalúdka, kde prenikajú hlboko do žalúdočných žliaz a po záverečných zvliekaniach dospievajú na povrchu sliznice žalúdka. Prepatentná perióda je dlhá, často presahuje 16 až 20 týždňov.",
     "pathology": "Vzhľadom na extrémnu veľkosť dospelých červov (až 6 cm) a ich masívne počty (stovky až tisíce jedincov) je Labiostrongylus vysoko patogénny. Červy vytvárajú v žalúdku kengúr masívne mechanické kongescie. Spôsobujú erózie sliznice, ťažkú hyperplastickú a nodulárnu gastritídu. Žalúdok infikovaných kengúr býva chronicky distendovaný (roztiahnutý), naplnený nestrávenou potravou a červami. Klinicky sa ochorenie prejavuje ako syndróm chradnutia kengúr – progresívna vychudnutosť (kachexia), dehydratácia, hnačky striedané so zápchou, anémia a celková slabosť. Masívne prepuknutie v zajatí nezriedka končí náhlym úhynom.",
     "zoonosis": false,
-    "images": [],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "labiostrongylus_sp_egg",
+    "images": []
   },
   {
     "latinName": "Lernaea cyprinacea",
@@ -15536,9 +15486,7 @@
     "zoonosis": true,
     "notes": "",
     "id": "macracanthorhynchus_hirudinaceus_egg",
-    "images": [
-      "/public/images/parasites/macracanthorhynchus_hirudinaceus_egg/macracanthorhynchus_hirudinaceus_egg_01.webp"
-    ]
+    "images": []
   },
   {
     "latinName": "Mehdiela sp.",
@@ -17182,7 +17130,6 @@
     "images": []
   },
   {
-    "id": "paradeletrocephalus_minor_egg",
     "latinName": "Paradeletrocephalus minor",
     "synonyms": [],
     "slovakName": "",
@@ -17205,7 +17152,6 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
-    "methods": [],
     "micrometry": {
       "lengthMin": 190,
       "lengthMax": 210,
@@ -17229,11 +17175,9 @@
     "lifeCycle": "_Paradeletrocephalus minor_má priamy vývinový cyklus (monoxénny). Samice produkujú neembryonované vajíčka, ktoré odchádzajú s exkrementami hostiteľa do vonkajšieho prostredia. V truse prebieha pri dostatočnej teplote a vlhkosti ryhovanie moruly, embryo sa formuje a liahne sa larva prvého štádia (L₁). Tá sa dvakrát zvlieka na larvu druhého (L₂) a následne na infekčnú larvu tretieho štádia (L₃), ktorá ostáva chránená v exúviu (pošve) predchádzajúceho štádia. Nandu sa infikuje perorálne prehltnutím lariev L₃ pri pasení vo výbehu. Larvy migrujú do zadných úsekov tráviaceho traktu (hrubé a slepé črevo), kde ukončujú vývin, zvliekajú sa na L₄ a dospievajú na dospelé jedince (L₅).",
     "pathology": "Patogenita _Paradeletrocephalus minor_ je stredná až vysoká, pričom sa synergicky sčítava pri simultánnych infekciách s rodom Deletrocephalus. Dospelé červy sa fixujú na sliznicu slepých čriev. Aj keď nemajú vnútorné hrebene v ústnej kapsule, silný podtlak a mechanické zovretie spôsobujú mikrotraumy sliznice, ložiskovú nekrózu a zápal. Pri masívnych premoreniach (najmä u kurčiat nanduov v zajatí) vyvolávajú chronickú tyflitídu a kolitídu, spojenú s poruchami absorpcie vody a živín. Klinické príznaky zahŕňajú progresívnu stratu hmotnosti, apatiu, matné perie a úporné hnačky. U dospelých vtákov môže infekcia prebiehať subklinicky, no v stresových situáciách prispieva k celkovému chradnutiu.",
     "zoonosis": false,
-    "images": [
-      "/public/images/parasites/paradeletrocephalus_minor_egg/paradeletrocephalus_minor_egg_01.webp"
-    ],
-    "references": [],
-    "notes": ""
+    "notes": "",
+    "id": "paradeletrocephalus_minor_egg",
+    "images": []
   },
   {
     "latinName": "Paramphistomum cervi",
