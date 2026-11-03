@@ -11745,7 +11745,9 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Hus"
+      "Hus",
+      "Kačica",
+      "Labuť"
     ],
     "hostNotes": {},
     "sample": "Trus",
@@ -11755,49 +11757,7 @@
       "lengthMin": 74,
       "lengthMax": 90,
       "widthMin": 45,
-      "widthMax": 51,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "epomidiostomum_sp_egg",
-    "images": []
-  },
-  {
-    "latinName": "Epomidiostomum uncinatum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Epomidiostomum",
-      "species": "Epomidiostomum uncinatum"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Kačica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 74,
-      "lengthMax": 90,
-      "widthMin": 45,
-      "widthMax": 50,
+      "widthMax": 55,
       "unit": "µm"
     },
     "morphology": {
@@ -11806,17 +11766,18 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Vajíčka sú oválneho až elipsovitého tvaru",
+      "V čerstvom truse obsahujú už ranné štádium ryhovania – morulu (najčastejšie 8 až 16 blastomér)."
     ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [
+      "_Amidostomum anseris_: Najčastejší diagnostický konkurent. Vajíčka sú morfologicky takmer identické, avšak Amidostomum má vajíčka robustnejšie, široko obálne, o niečo **väčšie** (cca 85 – 110 μm × 50 – 70 μm) a v čerstvom truse často obsahuje pokročilejšie štádium ryhovania (morulu s vyšším počtom buniek alebo už formujúcu sa larvu L1).",
+      "_Trichostrongylus tenuis_: Vajíčka sú menšie (65 – 75 μm × 35 – 45 μm), majú ostrejšie póly (pripomínajúce vajíčka parazitov prežúvavcov) a v čerstvom truse sú menej vyvinuté."
+    ],
+    "lifeCycle": "Vývin prebieha priamou cestou bez medzihostiteľa (priamy cyklus). Vajíčka odchádzajú trusom hostiteľa do vonkajšieho prostredia (vodné plochy, vlhká lúka). Vo vonkajšom prostredí sa vo vajíčku vyvinie larva prvého štádia (L1), ktorá sa vyliahne, dvakrát sa zvlieka vo vode alebo vo vlhkej pôde a stáva sa z nej infekčná larva tretieho štádia (L3). Vtáky sa infikujú perorálne (pozretím) pri pasení sa na brehoch alebo pitím kontaminovanej vody. Po prehltnutí larvy migrujú do svalnatého žalúdka, kde prenikajú pod kutikulárnu výstelku, zvliekajú sa do štádia L4 a dospievajú na dospelce. Prepatórna perióda trvá približne 3 až 4 týždne.",
+    "pathology": "Nematódy rodu Epomidiostomum mechanicky a chemicky poškodzujú sliznicu a podkutikulárne vrstvy svalnatého žalúdka. Zavŕtavajú sa pod výstelku, čo vedie k jej odlupovaniu, vzniku hemorágií, erózií a ulcerácií (vredov). Pri masívnych inváziách dochádza k deštrukcii svaloviny žalúdka, narušeniu mechanického spracovania potravy a k chronickému zápalu. Klinicky sa ochorenie prejavuje anorexiou, chradnutím, hnačkami, anémiou, slabosťou nôh a u mladých vtákov môže spôsobiť vysokú mortalitu.",
     "zoonosis": false,
     "notes": "",
-    "id": "epomidiostomum_uncinatum_egg",
+    "id": "epomidiostomum_sp_egg",
     "images": []
   },
   {
@@ -11832,10 +11793,10 @@
       "genus": "Ergasilus",
       "species": "Ergasilus sieboldi"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Ryby"
+    "hostGroups": [
+      "Sladkovodné ryby"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -11843,26 +11804,30 @@
     "micrometry": {
       "lengthMin": 1000,
       "lengthMax": 1500,
-      "widthMin": 1000,
-      "widthMax": 1500,
+      "widthMin": 400,
+      "widthMax": 550,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Bezfarebný",
+      "shape": "Hruškovitý",
+      "colour": "Biely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Robustné, hruškovité telo - typický cyklopoidný tvar (pripomína bežné cyklopy), delí sa na širší cephalothorax (hlavohruď) a zužujúci sa urosóm (zadoček)",
+      "**Antény (2. pár): Premenené na masívne, mohutné kliešťovité prichytávacie háčiky (pazúry)**. Tieto antény sú veľmi mohutné, hrubé a svalnaté. Celé tykadlo je silno zakrivené a koncový pazúr je masívny, ostrý a hlboko zahnutý (pripomína kosák). Táto robustná stavba mu umožňuje pevne sa udržať aj na silných žiabrových lístkoch veľkých hostiteľov (napríklad dravých rýb) v prúde vody.",
+      "Antenuly (1. pár): Sú krátke, zmyslové, zložené zo 6 segmentov.",
+      "Usporiadanie orgánov a príveskov: Na ventrálnej strane tela sa nachádzajú 4 páry dvojvetvových plávacích nôh nesúcich brvy a piaty, silne redukovaný pár nôh. Na hlave je prítomné jediné stredové (naupliové) oko.",
+      "Dospelé fertilné samice nesú počas sezóny pár dlhých, bielych, valcovitých vaječných vakov pripojených k genitálnemu segmentu. Tieto vaky často presahujú dĺžku samotného tela parazita (až 1,5 – 2 mm)."
     ],
-    "differentialDiagnosis": [],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [
+      "Samička _Ergasilus briani_ je výrazne **menšia** a meria zvyčajne iba 0,7 až 1,0 mm. Má štíhlejšie a podlhovastejšie telo, výrazne hruškovitý cephalothorax. Hlavný taxonomický rozdiel, ktorý vedci skúmajú pod mikroskopom, spočíva v tvare a zakrivení druhého páru tykadiel (antén), ktorými sa parazit prichytáva na žiabre. _E. briani_ má **antény viteľne štíhlejšie**, jemnejšie a pretiahnutejšie. Jednotlivé články tykadla sú v pomere k šírke dlhšie. Koncový prichytávací pazúr nie je až tak extrémne robustný, je jemnejší a jeho zakrivenie je prispôsobené tenším žiabrovým lístkom menších druhov kaprovitých rýb. Kým _E. sieboldi_ je veľký univerzál a dokáže masívne napadnúť desiatky druhov rýb vrátane dravcov (šťuky, ostrieže) či lososovitých rýb, _E. briani_ sa **špecializuje takmer výhradne na menšie kaprovité ryby** (napr. plotica, červenica, hrebenačka).",
+      "_Lernaea cyprinacea_ (mladé štádiá): Dospelá parazitická samica rodu Lernaea je kompletne metamorfovaná, červovitá a výrazne väčšia (cca 9 000 – 12 000 μm / 9–12 mm), zakorenená hlboko v svalovine či žiabrach pomocou hlavových výrastkov (\"kotvy\"). Zámena hrozí len pri mikroskopovaní pohyblivých kopepoditových štádií."
+    ],
+    "lifeCycle": "Vývinový cyklus zahŕňa voľne žijúce planktónové štádiá a je závislý od teploty vody. Z vaječných vakov samice sa do vody vyliahnu voľne plávajúce larvy – nauplius. Tie prechádzajú vo vodnom stĺpci niekoľkými zvliekaniami (3 štádiá nauplia a 5 štádií kopepodita). Samce a samičky dosahujú pohlavnú dospelosť ako voľne žijúce organizmy v planktóne, kde dochádza k ich kopulácii. Po spárení samce hynú. Oplodnená dospelá samica následne vyhľadá hostiteľa (rybu), aktívne napáda jej žiabrový aparát, pomocou modifikovaných antén sa permanentne prichytí a začne produkovať vaječné vaky. Celý cyklus trvá v letných mesiacoch len niekoľko týždňov.",
+    "pathology": "_Ergasilus sieboldi_ je vysoko patogénny ektoparazit. Mechanické zovretie žiabrového tkaniva silnými kliešťovitými anténami spôsobuje lokalizovanú kompresnú atrofiu, narušenie kapilárneho obehu a nekrózu lístkov. Parazit sa navyše aktívne živí epitelovými bunkami žiabier, hlienom a krvou hostiteľa, ktoré zoškrabáva pomocou modifikovaných ústnych príveskov. Pri masívnych inváziách (stovky jedincov na jednej rybe) dochádza k hyperplázii (zhrubnutiu) žiabrového epitelu, zrastaniu žiabrových lístkov a k rozsiahlemu poškodeniu respiračného povrchu. Klinicky sa to prejavuje dýchavičnosťou (ryby sa zdržujú pri prítoku alebo na hladine a „lapajú po vzduchu“), anémiou, stratou hmotnosti a narušením osmoregulácie. Postihnuté ryby sú náchylné na sekundárne bakteriálne a plesňové infekcie (Saprolegnia), pričom v intenzívnych chovoch dochádza k hromadným úhynom.",
     "zoonosis": false,
-    "notes": "Hákovité tykadlá",
+    "notes": "Dospelé oplodnené samice dokážu na žiabrach rýb prezimovať. Na jar, keď teplota vody stúpne nad 10–14 °C, okamžite spúšťajú intenzívnu produkciu vajíčok, čo vedie k letným populačným explóziám.",
     "id": "ergasilus_sieboldi_adult",
     "images": []
   },
