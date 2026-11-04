@@ -8535,7 +8535,9 @@
       "species": "Eimeria intestinalis"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Králik"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Oocysta",
@@ -11912,7 +11914,9 @@
       "genus": "Eucoleus",
       "species": "Eucoleus boehmi"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -11948,56 +11952,6 @@
     "zoonosis": false,
     "notes": "Zátky rovné asymetrické a bez prstencov",
     "id": "eucoleus_boehmi_egg",
-    "images": []
-  },
-  {
-    "latinName": "Fasciola gigantica",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "Plagiorchiida",
-      "family": "Fasciolidae",
-      "genus": "Fasciola",
-      "species": "Fasciola gigantica"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 160,
-      "lengthMax": 190,
-      "widthMin": 80,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Zlatožltý až žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Podobné F. hepatica",
-      "ale väčšie; oválne",
-      "žltohnedé",
-      "operkulované",
-      "nesegmentované."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Fasciola môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Vzácne",
-    "id": "fasciola_gigantica_egg",
     "images": []
   },
   {
@@ -12206,7 +12160,9 @@
       "genus": "Filicollis",
       "species": "Filicollis anatis"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Vodná hydina"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -12242,60 +12198,13 @@
     "zoonosis": false,
     "notes": "",
     "id": "filicolis_anatis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Gasterophilus haemorrhoidalis",
-    "synonyms": [
-      "Gastrophilus haemorrhoidalis; Oestrus haemorrhoidalis"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Insecta",
-      "order": "Diptera",
-      "family": "Oestridae",
-      "genus": "Gasterophilus",
-      "species": "Gasterophilus haemorrhoidalis"
-    },
-    "hostGroups": [
-      "Koňovité"
-    ],
-    "hosts": [
-      "Zebra"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Larva",
-    "group": "Insecta",
-    "micrometry": {
-      "lengthMin": 15000,
-      "lengthMax": 19000,
-      "widthMin": 5000,
-      "widthMax": 7000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Larva s tmavým zadným koncom tela ('čierny zadok') - typický rozlišovací znak."
-    ],
-    "differentialDiagnosis": [
-      "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
-      "šírky",
-      "tvaru chvosta",
-      "pažeráka a kutikulárnych znakov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Dvojitý rad ostňov",
-    "id": "gastrophilus_haemorrhoidalis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_01.webp",
+      "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_02.webp",
+      "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_03.webp",
+      "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_04.webp",
+      "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_05.webp"
+    ]
   },
   {
     "latinName": "Gasterophilus intestinalis",
@@ -12352,59 +12261,6 @@
     "images": []
   },
   {
-    "latinName": "Gasterophilus nasalis",
-    "synonyms": [
-      "Gastrophilus nasalis; Oestrus nasalis"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Insecta",
-      "order": "Diptera",
-      "family": "Oestridae",
-      "genus": "Gasterophilus",
-      "species": "Gasterophilus nasalis"
-    },
-    "hostGroups": [
-      "Koňovité"
-    ],
-    "hosts": [
-      "Zebra"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Larva",
-    "group": "Insecta",
-    "micrometry": {
-      "lengthMin": 13000,
-      "lengthMax": 15000,
-      "widthMin": 5000,
-      "widthMax": 6000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Larva s jedným pásom tŕňov na segmentoch (na rozdiel od dvoch pri G. intestinalis)."
-    ],
-    "differentialDiagnosis": [
-      "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
-      "šírky",
-      "tvaru chvosta",
-      "pažeráka a kutikulárnych znakov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Jeden rad ostňov",
-    "id": "gastrophilus_nasalis_larva",
-    "images": []
-  },
-  {
     "latinName": "Geckobia sp.",
     "synonyms": [],
     "slovakName": "",
@@ -12453,7 +12309,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "geckobia_sp_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/geckobia_sp_adult/geckobia_sp_adult_01.webp"
+    ]
   },
   {
     "latinName": "Geckobiella sp.",
@@ -12504,7 +12362,11 @@
     "zoonosis": false,
     "notes": "",
     "id": "geckobiella_sp_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_01.webp",
+      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_02.webp",
+      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_03.webp"
+    ]
   },
   {
     "latinName": "Giardia duodenalis",
@@ -12582,7 +12444,10 @@
     "zoonosis": true,
     "notes": "Navrhovaná revízia názvoslovia\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\n Giardia duodenalis* – asambláž AI,\nGiardia intestinalis* – asambláž AII,\nGiardia enterica* – asambláž B,\nGiardia canis* – asambláž C,\nGiardia lupus* – asambláž D,\nGiardia bovis* – asambláž E,\nGiardia cati* – asambláž F,\nGiardia simoni* – asambláž G.\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre.",
     "id": "giardia_intestinalis_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_01.webp",
+      "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_02.webp"
+    ]
   },
   {
     "latinName": "Giardia microti",
@@ -12630,7 +12495,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "giardia_microti_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/giardia_microti_cyst/giardia_microti_cyst_01.webp"
+    ]
   },
   {
     "latinName": "Giardia muris",
@@ -12678,7 +12545,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "giardia_muris_cyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/giardia_muris_cyst/giardia_muris_cyst_01.webp"
+    ]
   },
   {
     "latinName": "Giardia simoni",
@@ -12741,7 +12610,9 @@
       "genus": "Giardia",
       "species": "Giardia varani"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Jaštery"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -12772,108 +12643,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "giardia_varani_cyst",
-    "images": []
-  },
-  {
-    "latinName": "Globocephalus sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Ancylostomatidae",
-      "genus": "Globocephalus",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Ošípaná"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 56,
-      "widthMin": 26,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Hyostrongylus rubidus a Oesophagostomum dentatum u ošípaných (vajíčko typu 'strongyle egg'",
-      "nutná koprokultúra). Korektný zápis do nálezu by mal vyzerať nasledovne: **Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Strongylida**."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "globocephalus_sp_egg",
-    "images": []
-  },
-  {
-    "latinName": "Gongylonema mucronatum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Spirurida",
-      "family": "Gongylonematidae",
-      "genus": "Gongylonema",
-      "species": "Gongylonema mucronatum"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 70,
-      "widthMin": 27,
-      "widthMax": 37,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Malé",
-      "oválne",
-      "hrubostenné",
-      "hladké vajíčko obsahujúce už vyvinutú larvu pri vylúčení (embryonované)",
-      "typické pre rod Gongylonema (čeľaď Gongylonematidae)."
-    ],
-    "differentialDiagnosis": [
-      "Parazit sliznice pažeráka/žalúdka; vajíčko hrubostenné s už vyvinutou larvou",
-      "podobné Spirocerca - odlíšiť podľa hostiteľa a lokalizácie dospelcov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "gondylonema_mucronatum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/giardia_varani_cyst/giardia_varani_cyst_01.webp"
+    ]
   },
   {
     "latinName": "Graphidioides affinis",
@@ -12988,7 +12760,9 @@
       "genus": "Gyrodactylus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Ryby"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -13074,7 +12848,9 @@
     "zoonosis": false,
     "notes": "Vnútri larva",
     "id": "habronema_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/habronema_sp_egg/habronema_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Haemaphysalis concinna",
@@ -13089,7 +12865,15 @@
       "genus": "Haemaphysalis",
       "species": "Haemaphysalis concinna"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "ZOO prežúvavce",
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce",
+      "Zajace, králiky",
+      "Mäsožravce",
+      "Nepárnokopytníky",
+      "Vtáky"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -13121,7 +12905,12 @@
     "zoonosis": false,
     "notes": "Lužné lesy",
     "id": "haemaphysalis_concinna_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_01.webp",
+      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_02.webp",
+      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_03.webp",
+      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_04.webp"
+    ]
   },
   {
     "latinName": "Haematopinus asini",
@@ -13171,7 +12960,10 @@
     "zoonosis": false,
     "notes": "Najmä v zime",
     "id": "haematopinus_asini_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_01.webp",
+      "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_02.webp"
+    ]
   },
   {
     "latinName": "Haematopinus eurysternus",
@@ -13237,7 +13029,9 @@
       "genus": "Hammondia",
       "species": "Hammondia hammondi"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mačkovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -13269,7 +13063,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "hammondia_hammondi_oocyst",
-    "images": []
+    "images": [
+      "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_02.webp",
+      "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_03.webp"
+    ]
   },
   {
     "latinName": "Hammondia heydorni",
@@ -13284,7 +13081,9 @@
       "genus": "Hammondia",
       "species": "Hammondia heydorni"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -13365,7 +13164,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "heterakis_dispar_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/heterakis_dispar_egg/heterakis_dispar_egg_01.webp"
+    ]
   },
   {
     "latinName": "Heterakis gallinarum",
@@ -13468,7 +13269,9 @@
     "zoonosis": false,
     "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
     "id": "heterakis_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/heterakis_sp_egg/heterakis_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Hexametra sp.",
@@ -13575,7 +13378,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "hexamita_parva_trophozoite",
-    "images": []
+    "images": [
+      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_01.webp",
+      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_02.webp",
+      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_03.webp",
+      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_04.webp"
+    ]
   },
   {
     "latinName": "Hippobosca equina",
@@ -13628,7 +13436,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "hippobosca_equina_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/hippobosca_equina_adult/hippobosca_equina_adult_01.webp"
+    ]
   },
   {
     "latinName": "Hirstiella sp.",
@@ -13679,7 +13489,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "hirstiella_sp_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_01.webp",
+      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_02.webp",
+      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_03.webp",
+      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_04.webp"
+    ]
   },
   {
     "latinName": "Histomonas meleagridis",
@@ -13744,8 +13559,12 @@
       "genus": "Hymenolepis",
       "species": "Hymenolepis diminuta"
     },
-    "hostGroups": [],
-    "hosts": [],
+    "hostGroups": [
+      "Hlodavce"
+    ],
+    "hosts": [
+      "Človek"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -13792,7 +13611,9 @@
       "genus": "Hyostrongylus",
       "species": "Hyostrongylus rubidus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -13824,7 +13645,10 @@
     "zoonosis": false,
     "notes": "8-32 blastomér",
     "id": "hyostrongylus_rubidus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_01.webp",
+      "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_02.webp"
+    ]
   },
   {
     "latinName": "Hypoderma actaeon",
@@ -13876,59 +13700,11 @@
     "zoonosis": false,
     "notes": "Na chrbte pod kožou",
     "id": "hypoderma_actaeon_larva",
-    "images": []
-  },
-  {
-    "latinName": "Hypoderma bovis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Insecta",
-      "order": "Diptera",
-      "family": "Oestridae",
-      "genus": "Hypoderma",
-      "species": "Hypoderma bovis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Zubor",
-      "Byvol"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Larva",
-    "group": "Insecta",
-    "micrometry": {
-      "lengthMin": 27000,
-      "lengthMax": 28000,
-      "widthMin": 10000,
-      "widthMax": 12000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Larva (L3) s pásmi tŕňov (spinuly) na jednotlivých telesných segmentoch",
-      "zadné dýchacie otvory (spirakuly) charakteristické pre rod."
-    ],
-    "differentialDiagnosis": [
-      "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
-      "šírky",
-      "tvaru chvosta",
-      "pažeráka a kutikulárnych znakov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Migruje pozdĺž nervových dráh",
-    "id": "hypoderma_bovis_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_01.webp",
+      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_02.webp",
+      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_03.webp"
+    ]
   },
   {
     "latinName": "Hypoderma diana",
@@ -13983,58 +13759,6 @@
     "images": []
   },
   {
-    "latinName": "Hypoderma lineatum",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Insecta",
-      "order": "Diptera",
-      "family": "Oestridae",
-      "genus": "Hypoderma",
-      "species": "Hypoderma lineatum"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hovädzí dobytok",
-      "Zubor",
-      "Byvol"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Larva",
-    "group": "Insecta",
-    "micrometry": {
-      "lengthMin": 24000,
-      "lengthMax": 26000,
-      "widthMin": 9000,
-      "widthMax": 12000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Larva (L3) s pásmi tŕňov na segmentoch",
-      "podobná H. bovis."
-    ],
-    "differentialDiagnosis": [
-      "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
-      "šírky",
-      "tvaru chvosta",
-      "pažeráka a kutikulárnych znakov."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Migruje pozdĺž fascií",
-    "id": "hypoderma_lineatum_larva",
-    "images": []
-  },
-  {
     "latinName": "Hystrichis tricolor",
     "synonyms": [],
     "slovakName": "",
@@ -14082,7 +13806,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "hystrichis_tricolor_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/hystrichis_tricolor_egg/hystrichis_tricolor_egg_01.webp"
+    ]
   },
   {
     "latinName": "Choanotaenia infundibulum",
@@ -14627,54 +14353,6 @@
     "images": []
   },
   {
-    "latinName": "Choriorhabditis gracilicauda",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Rhabditidae",
-      "genus": "Choriorhabditis",
-      "species": "Choriorhabditis gracilicauda"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Slimáky"
-    ],
-    "hostNotes": {},
-    "sample": "Pľúca",
-    "stage": "Dospelý jedinec",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 280,
-      "lengthMax": 1000,
-      "widthMin": 50,
-      "widthMax": 100,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vretenovitý",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "krátky dvojbulbový pažerák"
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Choriorhabditis môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "Voľne žijúci rabditoidný nematód; bežný obyvateľ pôdy a rozkladajúcej sa organickej hmoty, príležitostne nachádzaný vo fekálnych vzorkách ako kontaminant.",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "rhabditis_gracilicaudata_adult",
-    "images": []
-  },
-  {
     "latinName": "Ichthyophthirius multifiliis",
     "synonyms": [],
     "slovakName": "",
@@ -14687,7 +14365,10 @@
       "genus": "Ichthyophthirius",
       "species": "Ichthyophthirius multifiliis"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Akváriové ryby",
+      "Sladkovodné ryby"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -14927,7 +14608,19 @@
       "genus": "Ixodes",
       "species": "Ixodes ricinus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "ZOO zvieratá",
+      "Voľne žijúce prežúvavce",
+      "Zajace, králiky",
+      "Ošípané a diviaky",
+      "Nepárnokopytníky",
+      "Domáce prežúvavce",
+      "Mäsožravce",
+      "Hlodavce",
+      "Vtáky",
+      "Plazy",
+      "Hmyzožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -15077,7 +14770,9 @@
       "genus": "Lernaea",
       "species": "Lernaea cyprinacea"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Sladkovodné ryby"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -15126,11 +14821,11 @@
       "genus": "Ligula",
       "species": "Ligula intestinalis"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Vodné voľne žijúce vtáky"
+    ],
     "hosts": [],
-    "hostNotes": {
-      "Vodné voľne žijúce vtáky": ""
-    },
+    "hostNotes": [],
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
@@ -15262,7 +14957,9 @@
       "genus": "Linguatula",
       "species": "Linguatula serrata"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15413,7 +15110,9 @@
       "genus": "Macracanthorhynchus",
       "species": "Macracanthorhynchus hirudinaceus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15565,7 +15264,9 @@
       "genus": "Metastrongylus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15613,7 +15314,10 @@
       "genus": "Moniezia",
       "species": "Moniezia benedeni"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -15660,7 +15364,10 @@
       "genus": "Moniezia",
       "species": "Moniezia expansa"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -16134,7 +15841,11 @@
       "genus": "Nematodirus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce",
+      "ZOO prežúvavce"
+    ],
     "hosts": [],
     "hostNotes": {
       "Ovca": "Najcitlivejšia kategória: mladé jahňatá po začiatku pasenia; klinické prípady sa opisujú približne vo veku 8–20 týždňov"
@@ -16370,56 +16081,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "nippostrongylus_brasiliensis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Notoedres alepis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Sarcoptiformes",
-      "family": "Sarcoptidae",
-      "genus": "Notoedres",
-      "species": "Notoedres alepis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Myš"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 200,
-      "lengthMax": 400,
-      "widthMin": 150,
-      "widthMax": 250,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly",
-      "colour": "Bezfarebný",
-      "shell": "Mäkký, priečne pruhovaný"
-    },
-    "diagnosticSigns": [
-      "Podobné N. cati",
-      "dorzálny análny otvor",
-      "koncentrické čiary na chrbte."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Notoedres môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Kožná forma",
-    "id": "notoedres_alepis_adult",
     "images": []
   },
   {
@@ -16762,7 +16423,10 @@
       "genus": "Oochoristica",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Hady",
+      "Jaštery"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -16796,7 +16460,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "oochoristica_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/oochoristica_sp_egg/oochoristica_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Ophidascaris sp.",
@@ -17011,7 +16677,9 @@
       "genus": "Oslerus",
       "species": "Oslerus osleri"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17157,7 +16825,10 @@
       "genus": "Paramphistomum",
       "species": "Paramphistomum cervi"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17423,7 +17094,9 @@
       "genus": "Pearsonema",
       "species": "Pearsonema feliscati"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mačkovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Moč",
@@ -17476,10 +17149,13 @@
       "genus": "Pearsonema",
       "species": "Pearsonema plica"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Mačka"
+    "hostGroups": [
+      "Psovité mäsožravce",
+      "Lasicovité mäsožravce",
+      "Mačkovité mäsožravce",
+      "Medvedíkovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {
       "Mačka": "Len veľmi zriedkavo"
     },
@@ -17578,7 +17254,9 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Plazy"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17779,7 +17457,9 @@
       "genus": "Physaloptera",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -17828,7 +17508,9 @@
       "genus": "Physocephalus",
       "species": "Physocephalus sexalatus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Ošípané a diviaky"
+    ],
     "hosts": [],
     "hostNotes": {
       "Ošípaná": "V moderných veľkochovoch, kde ošípané nemajú prístup k pôde a výbehom, sa tento červ takmer vôbec nevyskytuje, pretože zvieratá neprídu do kontaktu s infikovanými chrobákmi."
@@ -18083,7 +17765,10 @@
       "genus": "Porrocaecum",
       "species": "Porrocaecum crassum"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Vodné voľne žijúce vtáky",
+      "Vodná hydina"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -18220,7 +17905,7 @@
     "images": []
   },
   {
-    "latinName": "Protostrongylus brevispiculatum",
+    "latinName": "Protostrongylus brevispiculum",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -18230,10 +17915,15 @@
       "order": "Strongylida",
       "family": "Protostrongylidae",
       "genus": "Protostrongylus",
-      "species": "Protostrongylus brevispiculatum"
+      "species": "Protostrongylus brevispiculum"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Ovca",
+      "Koza",
+      "Muflón",
+      "Kamzík"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18279,7 +17969,9 @@
       "genus": "Protostrongylus",
       "species": "Protostrongylus commutatus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Zajace, králiky"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -18327,7 +18019,12 @@
       "species": "Protostrongylus rufescens"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Ovca",
+      "Koza",
+      "Muflón",
+      "Kamzík"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18422,7 +18119,10 @@
       "species": "Psoroptes ovis"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Ovca",
+      "Muflón"
+    ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18472,7 +18172,9 @@
       "genus": "Pterygosoma",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Agamy"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -18522,7 +18224,9 @@
       "species": "Radfordia affinis"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Myš"
+    ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18569,7 +18273,9 @@
       "species": "Radfordia ensifera"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Potkan"
+    ],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -18615,7 +18321,10 @@
       "genus": "Raillietina",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Holubovité",
+      "Hrabavá hydina"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -18702,54 +18411,6 @@
     "images": []
   },
   {
-    "latinName": "Rhabditida",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Rhabditidae",
-      "genus": "neurčený rod",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 100,
-      "widthMin": 15,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Rabditoidná larva s krátkym dvojbulbovým pažerákom – typický znak voľne žijúcich/rabditoidných štádií (na rozdiel od filariformných strongylidných L3",
-      "ktoré majú tenšie",
-      "predĺžené telo bez nápadného bulbu)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu neurčený rod môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "V parazitologickom laboratóriu sa kvôli morfologickej príbuznosti s ďalšími parazitmi radu Rhabditida neodporúča písať do finálneho protokolu priamo konkrétny druh, pokiaľ nebola vykonaná kultivácia lariev alebo PCR. Korektný zápis do nálezu by mal vyzerať nasledovne: Vzorka trusu obsahuje vajíčka gastrointestinálnych strongylidov z radu Rhabditida.",
-    "id": "rhabditida_larva",
-    "images": []
-  },
-  {
     "latinName": "Riccardoella limacum",
     "synonyms": [],
     "slovakName": "",
@@ -18763,7 +18424,9 @@
       "species": "Riccardoella limacum"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Slimáky"
+    ],
     "hostNotes": {},
     "sample": "Plášťová dutina",
     "stage": "Dospelý jedinec",
@@ -18812,7 +18475,9 @@
       "species": "Riccardoella oudemansi"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Slimáky"
+    ],
     "hostNotes": {},
     "sample": "Plášťová dutina",
     "stage": "Dospelý jedinec",
@@ -18861,7 +18526,9 @@
       "species": "Rodentolepis erinacei"
     },
     "hostGroups": [],
-    "hosts": [],
+    "hosts": [
+      "Jež"
+    ],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -19000,298 +18667,6 @@
     "images": []
   },
   {
-    "latinName": "Sarcocystis accipitris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis accipitris"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Medzihostiteľ Serinus canaria",
-    "id": "sarcocystis_accipitris_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Sarcocystis cernae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis cernae"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Medzihostiteľ škrečkovité",
-    "id": "sarcocystis_cernae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Sarcocystis dispersa",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis dispersa"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hlodavce"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Medzihostiteľ myšovité",
-    "id": "sarcocystis_dispersa_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Sarcocystis horvathi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis horvathi"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "sarcocystis_horvathi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Sarcocystis scotti",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis scotti"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Medzihostiteľ myši",
-    "id": "sarcocystis_scotti_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Sarcocystis sebeki",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Sarcocystidae",
-      "genus": "Sarcocystis",
-      "species": "Sarcocystis sebeki"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hrabavá hydina"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 13,
-      "widthMin": 6,
-      "widthMax": 11,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Tenkostenná oocysta",
-      "pri vylúčení už sporulovaná (2 sporocysty",
-      "každá so 4 sporozoitmi); škrupina sa v čreve často rozpadá",
-      "preto sa v truse bežnejšie nachádzajú voľné sporocysty."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Cryptosporidium a drobných Eimeriidae podľa veľkosti",
-      "sporulácie a počtu sporozoitov; oocysty Sarcocystis často sporulujú v čreve a v truse sa nachádzajú aj sporocysty."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Medzihostiteľ myšovité",
-    "id": "sarcocystis_sebeki_oocyst",
-    "images": []
-  },
-  {
     "latinName": "Sarcocystis sp.",
     "synonyms": [],
     "slovakName": "",
@@ -19304,8 +18679,13 @@
       "genus": "Sarcocystis",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [],
+    "hostGroups": [
+      "Mäsožravce",
+      "Dravce"
+    ],
+    "hosts": [
+      "Človek"
+    ],
     "hostNotes": {
       "Pes": "Nález sarcocýst v truse psa predstavuje riziko najmä pre hovädzí dobytok, ovce, kozy a raticovú zver (napr. S. cruzi, S. tenella). Kontaminácia krmiva a pasienkov pozitívnym trusom psa vyvoláva u dobytka akútne ochorenie, masívne potraty a úhyn. Pre človeka v SR riziko nepredstavuje.",
       "Mačka": "Nález v truse mačky predstavuje riziko pre ošípané, ovce a hlodavce (napr. S. porcifelis, S. gigantea). Spôsobuje znehodnotenie mäsa oviec cystami a nervové/obehové problémy ošípaných.",
@@ -19365,7 +18745,13 @@
       "genus": "Sarcoptes",
       "species": "Sarcoptes scabiei"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mäsožravce",
+      "Domáce prežúvavce",
+      "Ošípané a diviaky",
+      "Primáty",
+      "ZOO zvieratá"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
@@ -19623,7 +19009,9 @@
       "genus": "Spirocerca",
       "species": "Spirocerca lupi"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -19812,55 +19200,6 @@
     "images": []
   },
   {
-    "latinName": "Strobilocercus fasciolaris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Cestoda",
-      "order": "Cyclophyllidea",
-      "family": "Taeniidae",
-      "genus": "Strobilocercus",
-      "species": "Strobilocercus fasciolaris"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Pečeň",
-    "stage": "Larva",
-    "group": "Cestoda",
-    "micrometry": {
-      "lengthMin": 3000,
-      "lengthMax": 8000,
-      "widthMin": 3000,
-      "widthMax": 8000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Mechúrik",
-      "colour": "Zlatožltý až žltohnedý",
-      "shell": "Tenká"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: mechúrik."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Strobilocercus môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Larválne štádium Taenia taeniformis",
-    "id": "strobilocercus_fasciolaris_larva",
-    "images": []
-  },
-  {
     "latinName": "Strongylida",
     "synonyms": [],
     "slovakName": "",
@@ -19873,9 +19212,25 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "Plazy",
+      "ZOO nepárnokopytníky",
+      "Voľne žijúce prežúvavce",
+      "ZOO prežúvavce",
+      "Nepárnokopytníky",
+      "ZOO nepárnokopytníky",
+      "Ošípané a diviaky"
+    ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Koňovité": "Pod to spadá: Rody Strongylus, Cyathostomum, Triodontophorusľmi podobné a mikroskopicky nerozlíšiteľné. (Rozmery vajíčok sa medzi rodmi mierne prekrývajú – napr. Haemonchus ~70–85 × 35–50 µm, Trichostrongylus ~80–100 × 40–50 µm, Oesophagostomum/Chabertia bývajú na hornej hranici až cca 100–105 × 50–60 µm – diferenciácia podľa veľkosti nie je spoľahlivá.) Druhové určenie vyžaduje larválnu koprokultúru (kultivácia L3) alebo PCR.",
+      "Domáce prežúvavce": "Rody Haemonchus, Ostertagia, Trichostrongylus, Cooperia, Nematodirus (ten má však o niečo väčšie vajíčka), Bunostomum, Chabertia či Oesophagostomum.",
+      "Voľne žijúce prežúvavce": "Rody Haemonchus, Ostertagia, Trichostrongylus, Cooperia, Nematodirus (ten má však o niečo väčšie vajíčka), Bunostomum, Chabertia či Oesophagostomum.",
+      "Ošípané a diviaky": "Rody Oesophagostomum a Hyostrongylus.",
+      "ZOO prežúvavce": "Rody Haemonchus, Ostertagia, Trichostrongylus, Cooperia, Nematodirus (ten má však o niečo väčšie vajíčka), Bunostomum, Chabertia či Oesophagostomum.",
+      "Zajace a králiky": "Rod Graphidium (žalúdočný červ králikov) a Trichostrongylus."
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
@@ -19897,23 +19252,7 @@
       "Bez viečka (opekula) a bez polarnej zátky",
       "Pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylidný' typ vajíčka"
     ],
-    "differentialDiagnosis": [
-      "Vajíčka parazitov z radu Strongylida (kam patria Bunostomum",
-      "Chabertia",
-      "Cooperia",
-      "Haemonchus",
-      "Nematodirus",
-      "Oesophagostomum",
-      "Ostertagia",
-      "Trichostrongylus) sú morfologicky veľmi podobné a mikroskopicky nerozlíšiteľné. (Rozmery vajíčok sa medzi rodmi mierne prekrývajú – napr. Haemonchus ~70–85 × 35–50 µm",
-      "Trichostrongylus ~80–100 × 40–50 µm",
-      "Oesophagostomum/Chabertia bývajú na hornej hranici až cca 100–105 × 50–60 µm – diferenciácia podľa veľkosti nie je spoľahlivá.) Druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR.",
-      "Nematodirus sp. – tiež z radu Strongylida",
-      "vajíčko je väčšie",
-      "s hrubšou škrupinou a obsahuje menej blastomér (zvyčajne 4–8)",
-      "Pri dlhšom státí trusu (teplo) sa vo vajíčku môže už vyvinúť larva – vtedy hrozí zámena s Strongyloides",
-      "ich vajíčka sú ale menšie"
-    ],
+    "differentialDiagnosis": [],
     "lifeCycle": "",
     "pathology": "",
     "zoonosis": false,
@@ -19934,11 +19273,12 @@
       "genus": "Strongyloides",
       "species": "Strongyloides papillosus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "ZOO prežúvavce",
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [
-      "Hovädzí dobytok",
-      "Zubor",
-      "Byvol",
       "Králik"
     ],
     "hostNotes": {},
@@ -19986,11 +19326,12 @@
       "genus": "Strongyloides",
       "species": "Strongyloides papillosus"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Domáce prežúvavce",
+      "ZOO prežúvavce",
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [
-      "Hovädzí dobytok",
-      "Zubor",
-      "Byvol",
       "Králik"
     ],
     "hostNotes": {},
@@ -20038,10 +19379,10 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ransomi"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Ošípaná"
+    "hostGroups": [
+      "Ošípané a diviaky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -20087,10 +19428,10 @@
       "genus": "Strongyloides",
       "species": "Strongyloides ransomi"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Ošípaná"
+    "hostGroups": [
+      "Ošípané a diviaky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -20221,104 +19562,6 @@
     "images": []
   },
   {
-    "latinName": "Strongyloides robustus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Strongyloididae",
-      "genus": "Strongyloides",
-      "species": "Strongyloides robustus"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 45,
-      "lengthMax": 54,
-      "widthMin": 25,
-      "widthMax": 33,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "veľmi tenká hladká priehľadná škrupina",
-      "pri vylúčení už obsahuje vyvinutú larvu (embryonované)."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko obsahuje už vyvinutú larvu (na rozdiel od väčšiny ostatných nematód GIT) - v čerstvom truse možno nájsť už aj voľné L1 larvy; odlíšiť od 'strongyle-type' vajec tenšou",
-      "priesvitnou škrupinou."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Larva stočená do tvaru U",
-    "id": "strongyloides_robustus_egg",
-    "images": []
-  },
-  {
-    "latinName": "Strongyloides robustus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Rhabditida",
-      "family": "Strongyloididae",
-      "genus": "Strongyloides",
-      "species": "Strongyloides robustus"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 230,
-      "lengthMax": 280,
-      "widthMin": 32,
-      "widthMax": 40,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Rabditoidná (voľne žijúca) larva s krátkym pažerákom s dvomi bulbami – typický rabditoidný pažerák",
-      "na rozdiel od filariformných larev strongylíd."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Strongyloides môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "L1 - veľké genit. promodium",
-    "id": "strongyloides_robustus_larva",
-    "images": []
-  },
-  {
     "latinName": "Strongyloides sp.",
     "synonyms": [],
     "slovakName": "",
@@ -20331,7 +19574,13 @@
       "genus": "Strongyloides",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mäsožravce",
+      "Hlodavce",
+      "Plazy",
+      "Primáty",
+      "Vtáky"
+    ],
     "hosts": [],
     "hostNotes": {
       "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
@@ -20391,7 +19640,13 @@
       "genus": "Strongyloides",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mäsožravce",
+      "Hlodavce",
+      "Plazy",
+      "Primáty",
+      "Vtáky"
+    ],
     "hosts": [],
     "hostNotes": {
       "Pes": "Z klinického a diagnostického hľadiska sa akýkoľvek nález rodu Strongyloides u psa v našich zemepisných šírkach automaticky posudzuje ako _Strongyloides stercoralis_, pretože ostatné druhy sú v Európe extrémne vzácne."
@@ -20877,7 +20132,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "tachygonetria_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/tachygonetria_egg/tachygonetria_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Terranova sp.",
@@ -20992,7 +20249,10 @@
       "genus": "Toxascaris",
       "species": "Toxascaris leonina"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce",
+      "Mačkovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21039,7 +20299,9 @@
       "genus": "Toxocara",
       "species": "Toxocara canis"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Psovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21087,7 +20349,9 @@
       "genus": "Toxocara",
       "species": "Toxocara cati"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mačkovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21185,7 +20449,9 @@
       "genus": "Toxoplasma",
       "species": "Toxoplasma gondii"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Mačkovité mäsožravce"
+    ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
@@ -21220,53 +20486,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "toxoplasma_gondii_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Trematoda",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Platyhelminthes",
-      "class": "Trematoda",
-      "order": "neurčený rad",
-      "family": "neurčená čeľaď",
-      "genus": "neurčený rod",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Trematoda",
-    "micrometry": {
-      "lengthMin": 35,
-      "lengthMax": 35,
-      "widthMin": 21,
-      "widthMax": 21,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Žltohnedý",
-      "shell": "Dvojvrstvová, s viečkom"
-    },
-    "diagnosticSigns": [
-      "Operkulované vajíčko",
-      "tvar a stupeň embryonácie sa líšia podľa čeľade motolíc."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu neurčený rod môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "trematoda_egg",
     "images": []
   },
   {
@@ -21518,55 +20737,6 @@
     "zoonosis": false,
     "notes": "16-32 blastomér",
     "id": "trichostrongylus_axei_egg",
-    "images": []
-  },
-  {
-    "latinName": "Trichostrongylus calcaratus",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Trichostrongylidae",
-      "genus": "Trichostrongylus",
-      "species": "Trichostrongylus calcaratus"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Veverica"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 80,
-      "lengthMax": 280,
-      "widthMin": 33,
-      "widthMax": 37,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "trichostrongylus_calcaratus_egg",
     "images": []
   },
   {
@@ -22428,55 +21598,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "wellcomia_evoluta_egg",
-    "images": []
-  },
-  {
-    "latinName": "Wenyonella gallinae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Wenyonella",
-      "species": "Wenyonella gallinae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Sliepka"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29.4,
-      "lengthMax": 33.5,
-      "widthMin": 19.8,
-      "widthMax": 22.7,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii obsahuje 4 sporocysty",
-      "každá so 4 sporozoitmi (vzor 4x4) - odlišuje rod Wenyonella od rodu Eimeria (4x2)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria a Tyzzeria: oocysta Wenyonella obsahuje 4 sporocysty",
-      "každá so 4 sporozoitmi (spolu 16)",
-      "zatiaľ čo Eimeria má 4 sporocysty s 2 sporozoitmi (spolu 8) a Tyzzeria nemá sporocysty vôbec – 8 voľných sporozoitov priamo v oocyste. Počet sporozoitov v sporocyste je preto kľúčovým diagnostickým znakom."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "wenyonella_gallinae_oocyst",
     "images": []
   },
   {

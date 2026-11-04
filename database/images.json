@@ -3970,7 +3970,7 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:15:51.047Z"
-  },  
+  },
   {
     "parasiteId": "ergasilus_sieboldi_adult",
     "url": "/public/images/parasites/ergasilus_sieboldi_adult/ergasilus_sieboldi_adult_04.webp",
@@ -4177,6 +4177,46 @@
     "dateAdded": "2026-08-29T13:17:42.804Z"
   },
   {
+    "parasiteId": "filicolis_anatis_egg",
+    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:29.417Z"
+  },
+  {
+    "parasiteId": "filicolis_anatis_egg",
+    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:29.426Z"
+  },
+  {
+    "parasiteId": "filicolis_anatis_egg",
+    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:29.436Z"
+  },
+  {
+    "parasiteId": "filicolis_anatis_egg",
+    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:29.447Z"
+  },
+  {
+    "parasiteId": "filicolis_anatis_egg",
+    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:29.456Z"
+  },
+  {
     "parasiteId": "gasterophilus_intestinalis_larva",
     "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_01.webp",
     "alt": "",
@@ -4201,12 +4241,60 @@
     "dateAdded": "2026-08-29T13:17:42.804Z"
   },
   {
+    "parasiteId": "geckobia_sp_adult",
+    "url": "/public/images/parasites/geckobia_sp_adult/geckobia_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:16:53.741Z"
+  },
+  {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.168Z"
+  },
+  {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.179Z"
+  },
+  {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.188Z"
+  },
+  {
+    "parasiteId": "giardia_intestinalis_cyst",
+    "url": "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:18:20.518Z"
+  },
+  {
     "parasiteId": "giardia_intestinalis_cyst",
     "url": "/public/images/parasites/giardia_intestinalis_cyst/giardia_intestinalis_cyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:02:46.762Z"
+  },
+  {
+    "parasiteId": "giardia_intestinalis_cyst",
+    "url": "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:18:20.529Z"
   },
   {
     "parasiteId": "giardia_intestinalis_cyst",
@@ -4224,6 +4312,22 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:02:46.774Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "giardia_microti_cyst",
+    "url": "/public/images/parasites/giardia_microti_cyst/giardia_microti_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:18:46.461Z"
+  },
+  {
+    "parasiteId": "giardia_muris_cyst",
+    "url": "/public/images/parasites/giardia_muris_cyst/giardia_muris_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:18:59.502Z"
   },
   {
     "parasiteId": "giardia_simoni_cyst",
@@ -4249,6 +4353,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:18:21.357Z"
+  },
+  {
+    "parasiteId": "giardia_varani_cyst",
+    "url": "/public/images/parasites/giardia_varani_cyst/giardia_varani_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:19:09.812Z"
   },
   {
     "parasiteId": "graphidioides_affinis_egg",
@@ -4332,6 +4444,62 @@
     "dateAdded": "2026-08-29T13:18:53.866Z"
   },
   {
+    "parasiteId": "habronema_sp_egg",
+    "url": "/public/images/parasites/habronema_sp_egg/habronema_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:19:52.671Z"
+  },
+  {
+    "parasiteId": "haemaphysalis_concinna_adult",
+    "url": "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:11.590Z"
+  },
+  {
+    "parasiteId": "haemaphysalis_concinna_adult",
+    "url": "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:11.602Z"
+  },
+  {
+    "parasiteId": "haemaphysalis_concinna_adult",
+    "url": "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:11.612Z"
+  },
+  {
+    "parasiteId": "haemaphysalis_concinna_adult",
+    "url": "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:11.622Z"
+  },
+  {
+    "parasiteId": "haematopinus_asini_adult",
+    "url": "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:47.014Z"
+  },
+  {
+    "parasiteId": "haematopinus_asini_adult",
+    "url": "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:20:47.024Z"
+  },
+  {
     "parasiteId": "haematopinus_eurysternus_adult",
     "url": "/public/images/parasites/haematopinus_eurysternus_adult/haematopinus_eurysternus_adult_01.webp",
     "alt": "",
@@ -4389,6 +4557,22 @@
     "dateAdded": "2026-08-29T13:19:20.258Z"
   },
   {
+    "parasiteId": "hammondia_hammondi_oocyst",
+    "url": "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:21:16.645Z"
+  },
+  {
+    "parasiteId": "hammondia_hammondi_oocyst",
+    "url": "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:21:16.656Z"
+  },
+  {
     "parasiteId": "hammondia_heydornii_oocyst",
     "url": "/public/images/parasites/hammondia_heydornii_oocyst/hammondia_heydornii_oocyst_01.webp",
     "alt": "",
@@ -4404,6 +4588,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:19:48.374Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "heterakis_dispar_egg",
+    "url": "/public/images/parasites/heterakis_dispar_egg/heterakis_dispar_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:21:28.618Z"
   },
   {
     "parasiteId": "heterakis_gallinarum_egg",
@@ -4439,12 +4631,92 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "heterakis_sp_egg",
+    "url": "/public/images/parasites/heterakis_sp_egg/heterakis_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:21:39.414Z"
+  },
+  {
     "parasiteId": "hexametra_sp_egg",
     "url": "/public/images/parasites/hexametra_sp_egg/hexametra_sp_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:20:12.882Z"
+  },
+  {
+    "parasiteId": "hexamita_parva_trophozoite",
+    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.891Z"
+  },
+  {
+    "parasiteId": "hexamita_parva_trophozoite",
+    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.903Z"
+  },
+  {
+    "parasiteId": "hexamita_parva_trophozoite",
+    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.913Z"
+  },
+  {
+    "parasiteId": "hexamita_parva_trophozoite",
+    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.924Z"
+  },
+  {
+    "parasiteId": "hippobosca_equina_adult",
+    "url": "/public/images/parasites/hippobosca_equina_adult/hippobosca_equina_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:16.667Z"
+  },
+  {
+    "parasiteId": "hirstiella_sp_adult",
+    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:31.952Z"
+  },
+  {
+    "parasiteId": "hirstiella_sp_adult",
+    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:31.964Z"
+  },
+  {
+    "parasiteId": "hirstiella_sp_adult",
+    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:31.974Z"
+  },
+  {
+    "parasiteId": "hirstiella_sp_adult",
+    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:31.985Z"
   },
   {
     "parasiteId": "histomonas_meleagridis_trophozoite",
@@ -4485,6 +4757,46 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:20:48.006Z"
+  },
+  {
+    "parasiteId": "hyostrongylus_rubidus_egg",
+    "url": "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:58.867Z"
+  },
+  {
+    "parasiteId": "hyostrongylus_rubidus_egg",
+    "url": "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:58.876Z"
+  },
+  {
+    "parasiteId": "hypoderma_actaeon_larva",
+    "url": "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:23:13.020Z"
+  },
+  {
+    "parasiteId": "hypoderma_actaeon_larva",
+    "url": "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:23:13.029Z"
+  },
+  {
+    "parasiteId": "hypoderma_actaeon_larva",
+    "url": "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:23:13.039Z"
   },
   {
     "parasiteId": "hypoderma_diana_larva",
@@ -4558,6 +4870,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:20:48.123Z"
+  },
+  {
+    "parasiteId": "hystrichis_tricolor_egg",
+    "url": "/public/images/parasites/hystrichis_tricolor_egg/hystrichis_tricolor_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:23:25.693Z"
   },
   {
     "parasiteId": "choanotaenia_infundibulum_egg",
@@ -5357,6 +5677,14 @@
     "dateAdded": "2026-08-29T11:36:36.369Z"
   },
   {
+    "parasiteId": "oochoristica_sp_egg",
+    "url": "/public/images/parasites/oochoristica_sp_egg/oochoristica_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:24:02.674Z"
+  },
+  {
     "parasiteId": "ophionyssus_natricis_adult",
     "url": "/public/images/parasites/ophionyssus_natricis_adult/ophionyssus_natricis_adult_01.webp",
     "alt": "",
@@ -6074,6 +6402,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-28T20:00:02.705Z"
+  },
+  {
+    "parasiteId": "tachygonetria_egg",
+    "url": "/public/images/parasites/tachygonetria_egg/tachygonetria_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:24:27.801Z"
   },
   {
     "parasiteId": "toxascaris_leonina_egg",
