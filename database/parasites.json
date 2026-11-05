@@ -12732,10 +12732,7 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Pravidelne oválny, symetrické póly."
     ],
     "differentialDiagnosis": [
       "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
@@ -12745,7 +12742,9 @@
     "zoonosis": false,
     "notes": "Žalúdočný červ",
     "id": "graphidium_strigosum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/graphidium_strigosum_egg/graphidium_strigosum_egg_01.webp"
+    ]
   },
   {
     "latinName": "Gyrodactylus sp.",
@@ -13862,7 +13861,7 @@
     "images": []
   },
   {
-    "latinName": "Choleoeimeria allogamae",
+    "latinName": "Choleoeimeria sp.",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -13872,11 +13871,12 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Choleoeimeria",
-      "species": "Choleoeimeria allogamae"
+      "species": "Choleoeimeria sp."
     },
     "hostGroups": [],
     "hosts": [
-      "Agamy"
+      "Agamy",
+      "Chameleóny"
     ],
     "hostNotes": {},
     "sample": "Žlčník",
@@ -13909,346 +13909,10 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "choleoeimeria_allogamae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria bohemii",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria bohemii"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo melleri"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 24,
-      "lengthMax": 26,
-      "widthMin": 13,
-      "widthMax": 15,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_bohemii_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria brookesiae",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria brookesiae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Brookesia decaryi"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 23,
-      "lengthMax": 27,
-      "widthMin": 13,
-      "widthMax": 16,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_brookesiae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria glawi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria glawi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chameleón pardálí (Furcifer pardalis)"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 26,
-      "lengthMax": 29.5,
-      "widthMin": 17,
-      "widthMax": 19,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_glawi_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria hirbayah",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria hirbayah"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo calyptratus"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 25,
-      "lengthMax": 30,
-      "widthMin": 13.5,
-      "widthMax": 17.5,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_hirbayah_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria largeni",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria largeni"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo gracilis"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 29.5,
-      "lengthMax": 34,
-      "widthMin": 18.5,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_largeni_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria pogonae",
-    "synonyms": [
-      "Eimeria pogonae"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria pogonae"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Agama bradatá"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 15,
-      "lengthMax": 30,
-      "widthMin": 10,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Podlhovastý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest agám (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "eimeria_pogonae_oocyst",
-    "images": []
-  },
-  {
-    "latinName": "Choleoeimeria tilburyi",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Apicomplexa",
-      "class": "Conoidasida",
-      "order": "Eucoccidiorida",
-      "family": "Eimeriidae",
-      "genus": "Choleoeimeria",
-      "species": "Choleoeimeria tilburyi"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Chamaeleo jacksonii"
-    ],
-    "hostNotes": {},
-    "sample": "Žlčník",
-    "stage": "Oocysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 26,
-      "lengthMax": 33,
-      "widthMin": 14,
-      "widthMax": 18,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Vajcovitý",
-      "colour": "Bezfarebný až svetlo hnedý",
-      "shell": "Dvojvrstvová, hladká"
-    },
-    "diagnosticSigns": [
-      "Nesporulovaná pri vylúčení; po sporulácii 4 sporocysty x 2 sporozoity (ako Eimeria)",
-      "ale vývojové štádiá prebiehajú v epiteli žlčníka/žlčových ciest plazov (nie v čreve)."
-    ],
-    "differentialDiagnosis": [
-      "Odlíšiť od Eimeria spp. podľa vývoja v žlčových cestách/žlčníku a morfológie sporocýst; oocysty môžu byť morfologicky prekrývajúce",
-      "preto je pri nejasnom náleze dôležitý hostiteľ a lokalizácia vývoja."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "choleoeimeria_tilburyi_oocyst",
-    "images": []
+    "id": "choleoeimeria_sp_oocyst",
+    "images": [
+      "/public/images/parasites/choleoeimeria_sp_oocyst/choleoeimeria_sp_oocyst_01.webp"
+    ]
   },
   {
     "latinName": "Chorioptes bovis",
@@ -14299,7 +13963,9 @@
     "zoonosis": false,
     "notes": "Končatiny",
     "id": "chorioptes_bovis_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/chorioptes_bovis_adult/chorioptes_bovis_adult_01.webp"
+    ]
   },
   {
     "latinName": "Chorioptes equi",
@@ -14704,7 +14370,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "kalicephalus_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_01.webp",
+      "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_02.webp"
+    ]
   },
   {
     "latinName": "Labiostrongylus sp.",
@@ -15044,7 +14713,10 @@
     "zoonosis": false,
     "notes": "Teľatá",
     "id": "linognathus_vituli_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_02.webp",
+      "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_03.webp"
+    ]
   },
   {
     "latinName": "Lipoptena cervi",
@@ -15150,56 +14822,6 @@
     "zoonosis": true,
     "notes": "",
     "id": "macracanthorhynchus_hirudinaceus_egg",
-    "images": []
-  },
-  {
-    "latinName": "Mehdiela sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Oxyurida",
-      "family": "Pharyngodonidae",
-      "genus": "Mehdiela",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Testudo horsfieldii"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 80,
-      "widthMin": 30,
-      "widthMax": 42,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až subsférický",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubšia škrupina",
-      "typický oxyuridný typ vajíčka; parazit korytnačiek (čeľaď Atractidae)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Mehdiela môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "mehdiela_sp_egg",
     "images": []
   },
   {
@@ -15349,7 +14971,10 @@
     "zoonosis": false,
     "notes": "Vnútri hruškovitá onkosféra",
     "id": "moniezia_benedeni_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_02.webp",
+      "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_03.webp"
+    ]
   },
   {
     "latinName": "Moniezia expansa",
@@ -15398,7 +15023,10 @@
     "zoonosis": false,
     "notes": "Vnútri hruškovitá onkosféra",
     "id": "moniezia_expanza_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_02.webp",
+      "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_03.webp"
+    ]
   },
   {
     "latinName": "Monoecocestus sp.",
@@ -15501,8 +15129,10 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "ceratophyllus_sciurorum_adult",
-    "images": []
+    "id": "monopsyllus_sciurorum_adult",
+    "images": [
+      "/public/images/parasites/monopsyllus_sciurorum_adult/monopsyllus_sciurorum_adult_01.webp"
+    ]
   },
   {
     "latinName": "Mosgovoyia pectinata",
@@ -15603,56 +15233,6 @@
     "images": []
   },
   {
-    "latinName": "Multicaecum sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Ascaridida",
-      "family": "Heterocheilidae",
-      "genus": "Multicaecum",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Krokodýly"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 60,
-      "lengthMax": 75,
-      "widthMin": 45,
-      "widthMax": 58,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až subsférický",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Oválne",
-      "hladká hrubšia škrupina",
-      "typický oxyuridný typ vajíčka; parazit korytnačiek (čeľaď Atractidae)."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Multicaecum môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "multicaecum_sp_egg",
-    "images": []
-  },
-  {
     "latinName": "Myobia musculi",
     "synonyms": [],
     "slovakName": "",
@@ -15700,7 +15280,11 @@
     "zoonosis": false,
     "notes": "Len 1 pazúrik",
     "id": "myobia_musculi_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_01.webp",
+      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_02.webp",
+      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_03.webp"
+    ]
   },
   {
     "latinName": "Myocoptes musculinus",
@@ -15826,7 +15410,11 @@
     "zoonosis": false,
     "notes": "",
     "id": "myocoptes_musculinus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_04.webp",
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_05.webp",
+      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_06.webp"
+    ]
   },
   {
     "latinName": "Nematodirus sp.",
@@ -15929,7 +15517,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "nemhelix_bakeri_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/nemhelix_bakeri_adult/nemhelix_bakeri_adult_01.webp"
+    ]
   },
   {
     "latinName": "Neohaematopinus sciuri",
@@ -15980,7 +15570,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "neohaemathopinus_sciuri_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/neohaemathopinus_sciuri_adult/neohaematopinus_sciuri_adult_02.webp",
+      "/public/images/parasites/neohaemathopinus_sciuri_adult/neohaematopinus_sciuri_adult_03.webp"
+    ]
   },
   {
     "latinName": "Neotrombicula autumnalis",
@@ -16032,56 +15625,9 @@
     "zoonosis": false,
     "notes": "Koniec leta",
     "id": "trombicula_autumnalis_larva",
-    "images": []
-  },
-  {
-    "latinName": "Nippostrongylus brasiliensis",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Heligmosomidae",
-      "genus": "Nippostrongylus",
-      "species": "Nippostrongylus brasiliensis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Potkan"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 50,
-      "lengthMax": 60,
-      "widthMin": 30,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Bezfarebný",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: oválny."
-    ],
-    "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' u potkana - odlíšiť od Strongyloides ratti (Strongyloides má tenšiu škrupinu a často už obsahuje larvu pri vylúčení)."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "nippostrongylus_brasiliensis_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/trombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp"
+    ]
   },
   {
     "latinName": "Notoedres cati",
@@ -16143,7 +15689,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "notoedres_cati_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_02.webp",
+      "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_03.webp"
+    ]
   },
   {
     "latinName": "Notoedres muris",
@@ -16314,7 +15863,7 @@
     ],
     "hostNotes": {},
     "sample": "Ústna dutina",
-    "stage": "Vajíčko",
+    "stage": "Dospelý jedinec",
     "group": "Trematoda",
     "micrometry": {
       "lengthMin": 70,
@@ -16341,8 +15890,11 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "ochetostoma_egg",
-    "images": []
+    "id": "ochetostoma_sp_adult",
+    "images": [
+      "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_02.webp",
+      "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_03.webp"
+    ]
   },
   {
     "latinName": "Oligacanthorhynchidae",
@@ -16512,7 +16064,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "ophidascaris_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_01.webp",
+      "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_02.webp"
+    ]
   },
   {
     "latinName": "Ophionyssus natricis",
@@ -16566,152 +16121,6 @@
     "images": []
   },
   {
-    "latinName": "Orneoascaris sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Ascaridida",
-      "family": "Ascarididae",
-      "genus": "Orneoascaris",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Varan"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 70,
-      "lengthMax": 90,
-      "widthMin": 55,
-      "widthMax": 70,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Okrúhly až subsférický",
-      "colour": "Hnedý",
-      "shell": "Hrubá"
-    },
-    "diagnosticSigns": [
-      "Guľovité až subguľovité",
-      "hrubá škrupina",
-      "typický ascaridný typ vajíčka; parazit vtákov."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Orneoascaris môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "orneoascaris_egg",
-    "images": []
-  },
-  {
-    "latinName": "Ornithocapillaria carbonis",
-    "synonyms": [
-      "Capillaria carbonis"
-    ],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Capillariidae",
-      "genus": "Ornithocapillaria",
-      "species": "Ornithocapillaria carbonis"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Hrabavá hydina"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 45,
-      "lengthMax": 280,
-      "widthMin": 20,
-      "widthMax": 35,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Žltohnedý",
-      "shell": "Hrubá, s polárnymi zátkami"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar",
-      "jemne bodkovaná škrupina."
-    ],
-    "differentialDiagnosis": [
-      "Kapilariíd čreva vtákov; odlíšiť od Baruscapillaria (lokalizácia pažerák/hltan vs. črevo)."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "ornithocapillaria_carbonis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Oslerus osleri",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Chromadorea",
-      "order": "Strongylida",
-      "family": "Filaroididae",
-      "genus": "Oslerus",
-      "species": "Oslerus osleri"
-    },
-    "hostGroups": [
-      "Psovité mäsožravce"
-    ],
-    "hosts": [],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Larva",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 280,
-      "lengthMax": 300,
-      "widthMin": 15,
-      "widthMax": 20,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Červovitý",
-      "colour": "Bezfarebný",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "L1 larva s dorzálnym tŕňovitým výrastkom na konci chvosta."
-    ],
-    "differentialDiagnosis": [
-      "Larvy L1 sa nachádzajú v nodulárnych léziách trachey/bronchov (BAL",
-      "endoskopia) skôr než klasickým flotačným vyšetrením trusu; odlíšiť od Crenosoma vulpis a Aelurostrongylus abstrusus (iná lokalizácia lézie - uzlíky v karíne trachey)."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "Výrazne stenčený konček chvosta",
-    "id": "oslerus_osleri_larva",
-    "images": []
-  },
-  {
     "latinName": "Oxyuris equi",
     "synonyms": [],
     "slovakName": "",
@@ -16760,7 +16169,9 @@
     "zoonosis": false,
     "notes": "So zátkou",
     "id": "oxyuris_equi_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/oxyuris_equi_egg/oxyuris_equi_egg_01.webp"
+    ]
   },
   {
     "latinName": "Paradeletrocephalus minor",
@@ -17597,7 +17008,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "polydelphis_sp_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/polydelphis_sp_egg/polydelphis_sp_egg_01.webp"
+    ]
   },
   {
     "latinName": "Polymorphus minutus",
@@ -18257,7 +17670,10 @@
     "zoonosis": false,
     "notes": "2 pazúriky nerovnakej dĺžky",
     "id": "radfordia_affinis_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_01.webp",
+      "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_02.webp"
+    ]
   },
   {
     "latinName": "Radfordia ensifera",
@@ -20724,10 +20140,7 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "Tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Podlhovastý, asymetrický, často zašpicatený na jednom konci, jedna strana môže byť mierne sploštená."
     ],
     "differentialDiagnosis": [
       "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
@@ -20773,10 +20186,7 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Podlhovastý, asymetrický, často zašpicatený na jednom konci, jedna strana môže byť mierne sploštená."
     ],
     "differentialDiagnosis": [
       "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
@@ -20822,10 +20232,7 @@
       "shell": "Tenká až stredne hrubá"
     },
     "diagnosticSigns": [
-      "Oválne až elipsovité",
-      "tenká hladká bezfarebná škrupina",
-      "pri vylúčení obsahuje morulu (segmentované v 8-32 blastomér) - typický 'strongylný' typ vajíčka",
-      "morfologicky ťažko odlíšiteľné od iných strongylíd bez kultivácie larvy."
+      "Podlhovastý, asymetrický, často zašpicatený na jednom konci, jedna strana môže byť mierne sploštená."
     ],
     "differentialDiagnosis": [
       "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."

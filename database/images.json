@@ -957,6 +957,14 @@
     "dateAdded": "2026-08-29T11:47:04.763Z"
   },
   {
+    "parasiteId": "monopsyllus_sciurorum_adult",
+    "url": "/public/images/parasites/monopsyllus_sciurorum_adult/monopsyllus_sciurorum_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:34:50.915Z"
+  },
+  {
     "parasiteId": "citellina_alpina_egg",
     "url": "/public/images/parasites/citellina_alpina_egg/citellina_alpina_egg_01.webp",
     "alt": "",
@@ -3820,14 +3828,6 @@
     "dateAdded": "2026-10-27T20:30:24.390Z"
   },
   {
-    "parasiteId": "eimeria_tsunodai_oocyst",
-    "url": "/public/images/parasites/eimeria_tsunodai_oocyst/eimeria_tsunoidai_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-10-27T20:47:12.689Z"
-  },
-  {
     "parasiteId": "eimeria_uzura_oocyst",
     "url": "/public/images/parasites/eimeria_uzura_oocyst/eimeria_uzura_oocyst_01.webp",
     "alt": "",
@@ -4177,40 +4177,40 @@
     "dateAdded": "2026-08-29T13:17:42.804Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_01.webp",
+    "parasiteId": "filicollis_anatis_egg",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:16:29.417Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_02.webp",
+    "parasiteId": "filicollis_anatis_egg",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:16:29.426Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_03.webp",
+    "parasiteId": "filicollis_anatis_egg",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_03.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:16:29.436Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_04.webp",
+    "parasiteId": "filicollis_anatis_egg",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:16:29.447Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_05.webp",
+    "parasiteId": "filicollis_anatis_egg",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_05.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -4377,6 +4377,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:18:53.776Z"
+  },
+  {
+    "parasiteId": "graphidium_strigosum_egg",
+    "url": "/public/images/parasites/graphidium_strigosum_egg/graphidium_strigosum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:29:39.265Z"
   },
   {
     "parasiteId": "gyrodactylus_sp_adult",
@@ -4904,6 +4912,22 @@
     "dateAdded": "2026-11-02T19:08:39.166Z"
   },
   {
+    "parasiteId": "choleoeimeria_sp_oocyst",
+    "url": "/public/images/parasites/choleoeimeria_sp_oocyst/choleoeimeria_sp_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:29:51.548Z"
+  },
+  {
+    "parasiteId": "chorioptes_bovis_adult",
+    "url": "/public/images/parasites/chorioptes_bovis_adult/chorioptes_bovis_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:30:01.299Z"
+  },
+  {
     "parasiteId": "chorioptes_equi_adult",
     "url": "/public/images/parasites/chorioptes_equi_adult/chorioptes_equi_adult_02.webp",
     "alt": "",
@@ -5157,6 +5181,22 @@
     "dateAdded": "2026-08-29T11:39:32.366Z"
   },
   {
+    "parasiteId": "kalicephalus_sp_egg",
+    "url": "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:30:10.578Z"
+  },
+  {
+    "parasiteId": "kalicephalus_sp_egg",
+    "url": "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T19:08:43.976Z"
+  },
+  {
     "parasiteId": "labiostrongylus_sp_egg",
     "url": "/public/images/parasites/labiostrongylus_sp_egg/labiostrongylus_sp_egg_01.webp",
     "alt": "",
@@ -5253,6 +5293,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-30T11:26:20.971Z"
+  },
+  {
+    "parasiteId": "linognathus_vituli_adult",
+    "url": "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:30:42.014Z"
+  },
+  {
+    "parasiteId": "linognathus_vituli_adult",
+    "url": "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:30:42.026Z"
   },
   {
     "parasiteId": "lipoptena_cervi_adult",
@@ -5424,12 +5480,36 @@
     "dateAdded": "2026-09-20T13:04:31.357Z"
   },
   {
-    "parasiteId": "moniezia_expanza_egg",
-    "url": "/public/images/parasites/moniezia_expanza_egg/moniezia_expanza_egg_01.webp",
+    "parasiteId": "moniezia_benedeni_egg",
+    "url": "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-08-29T11:38:02.954Z"
+    "dateAdded": "2026-11-05T18:31:07.307Z"
+  },
+  {
+    "parasiteId": "moniezia_benedeni_egg",
+    "url": "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:31:07.317Z"
+  },
+  {
+    "parasiteId": "moniezia_expanza_egg",
+    "url": "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:34:04.726Z"
+  },
+  {
+    "parasiteId": "moniezia_expanza_egg",
+    "url": "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:34:04.738Z"
   },
   {
     "parasiteId": "monoecocestus_sp_egg",
@@ -5482,12 +5562,60 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "myobia_musculi_adult",
+    "url": "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:35:10.064Z"
+  },
+  {
+    "parasiteId": "myobia_musculi_adult",
+    "url": "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:35:10.079Z"
+  },
+  {
+    "parasiteId": "myobia_musculi_adult",
+    "url": "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:35:10.089Z"
+  },
+  {
     "parasiteId": "myocoptes_musculinus_adult",
     "url": "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:34:29.873Z"
+  },
+    {
+    "parasiteId": "myocoptes_musculinus_adult",
+    "url": "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:36:39.246Z"
+  },
+  {
+    "parasiteId": "myocoptes_musculinus_adult",
+    "url": "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:36:39.261Z"
+  },
+  {
+    "parasiteId": "myocoptes_musculinus_adult",
+    "url": "/public/images/parasites/myocoptes_musculinus_adult/myocoptes_musculinus_adult_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:36:39.273Z"
   },
   {
     "parasiteId": "myocoptes_musculinus_egg",
@@ -5538,6 +5666,46 @@
     "credit": "",
     "dateAdded": "2026-08-28T20:07:44.317Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "nemhelix_bakeri_adult",
+    "url": "/public/images/parasites/nemhelix_bakeri_adult/nemhelix_bakeri_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:37:01.604Z"
+  },
+  {
+    "parasiteId": "neohaematopinus_sciuri_adult",
+    "url": "/public/images/parasites/neohaematopinus_sciuri_adult/neohaematopinus_sciuri_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:37:41.815Z"
+  },
+  {
+    "parasiteId": "neohaematopinus_sciuri_adult",
+    "url": "/public/images/parasites/neohaematopinus_sciuri_adult/neohaematopinus_sciuri_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:37:41.829Z"
+  },
+  {
+    "parasiteId": "notoedres_cati_adult",
+    "url": "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:38:19.169Z"
+  },
+  {
+    "parasiteId": "notoedres_cati_adult",
+    "url": "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:38:19.183Z"
   },
   {
     "parasiteId": "notoedres_muris_adult",
@@ -5645,6 +5813,22 @@
     "dateAdded": "2026-08-29T13:27:31.998Z"
   },
   {
+    "parasiteId": "ochetostoma_sp_adult",
+    "url": "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:38:53.075Z"
+  },
+  {
+    "parasiteId": "ochetostoma_sp_adult",
+    "url": "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:38:53.085Z"
+  },
+  {
     "parasiteId": "oligacanthorhynchidae_egg",
     "url": "/public/images/parasites/oligacanthorhynchidae_egg/oligacanthorhynchidae_egg_01.webp",
     "alt": "",
@@ -5685,6 +5869,22 @@
     "dateAdded": "2026-11-04T20:24:02.674Z"
   },
   {
+    "parasiteId": "ophidascaris_sp_egg",
+    "url": "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T19:09:17.568Z"
+  },
+  {
+    "parasiteId": "ophidascaris_sp_egg",
+    "url": "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T19:09:17.578Z"
+  },
+  {
     "parasiteId": "ophionyssus_natricis_adult",
     "url": "/public/images/parasites/ophionyssus_natricis_adult/ophionyssus_natricis_adult_01.webp",
     "alt": "",
@@ -5699,6 +5899,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-02T21:02:16.217Z"
+  },
+  {
+    "parasiteId": "oxyuris_equi_egg",
+    "url": "/public/images/parasites/oxyuris_equi_egg/oxyuris_equi_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T19:09:28.811Z"
   },
   {
     "parasiteId": "paradeletrocephalus_minor_egg",
@@ -5905,6 +6113,14 @@
     "dateAdded": "2026-09-20T13:05:23.168Z"
   },
   {
+    "parasiteId": "polydelphis_sp_egg",
+    "url": "/public/images/parasites/polydelphis_sp_egg/polydelphis_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T19:09:55.448Z"
+  },
+  {
     "parasiteId": "polyplax_spinulosa_adult",
     "url": "/public/images/parasites/polyplax_spinulosa_adult/polyplax_spinulosa_adult_01.webp",
     "alt": "",
@@ -6066,6 +6282,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:32:25.440Z"
+  },
+  {
+    "parasiteId": "radfordia_affinis_adult",
+    "url": "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:40:27.270Z"
+  },
+  {
+    "parasiteId": "radfordia_affinis_adult",
+    "url": "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:40:27.283Z"
   },
   {
     "parasiteId": "raillietina_sp_egg",
@@ -6274,8 +6506,8 @@
     "dateAdded": "2026-08-29T11:34:09.538Z"
   },
   {
-    "parasiteId": "strongyloides_ransomi_larva",
-    "url": "/public/images/parasites/strongyloides_ransomi_larva/strongyloides_ransomi_egg_01.webp",
+    "parasiteId": "strongyloides_ransomi_egg",
+    "url": "/public/images/parasites/strongyloides_ransomi_egg/strongyloides_ransomi_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -6405,7 +6637,7 @@
   },
   {
     "parasiteId": "tachygonetria_egg",
-    "url": "/public/images/parasites/tachygonetria_egg/tachygonetria_sp_egg_01.webp",
+    "url": "/public/images/parasites/tachygonetria_sp_egg/tachygonetria_sp_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -6704,6 +6936,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:40:32.047Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "trombicula_autumnalis_larva",
+    "url": "/public/images/parasites/trombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:37:51.895Z"
   },
   {
     "parasiteId": "trypanoxyuris_sciuri_egg",
