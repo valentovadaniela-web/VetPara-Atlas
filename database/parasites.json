@@ -13378,11 +13378,56 @@
     "notes": "",
     "id": "hexamita_parva_trophozoite",
     "images": [
-      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_01.webp",
-      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_02.webp",
       "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_03.webp",
       "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_04.webp"
     ]
+  },
+    {
+    "latinName": "Hexamita sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Metamonada",
+      "class": "Trepamonadea",
+      "order": "Diplomonadida",
+      "family": "Hexamitidae",
+      "genus": "Hexamita",
+      "species": "neurčený druh"
+    },
+    "hostGroups": ["Akváriové ryby"],
+    "hosts": [ ],
+    "hostNotes": {},
+    "sample": "Koža",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "micrometry": {
+      "lengthMin": 8.03,
+      "lengthMax": 8.03,
+      "widthMin": 4.79,
+      "widthMax": 4.79,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Identifikácia podľa veľkosti",
+      "morfológie predného a zadného konca",
+      "pažeráka",
+      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: hruškovitý."
+    ],
+    "differentialDiagnosis": [
+      "Skutočný rod Hexamita zahŕňa prevažne voľne žijúce"
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "hexamita_sp_trophozoite",
+    "images": [ ]
   },
   {
     "latinName": "Hippobosca equina",

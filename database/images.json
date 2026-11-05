@@ -4656,22 +4656,6 @@
   },
   {
     "parasiteId": "hexamita_parva_trophozoite",
-    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:00.891Z"
-  },
-  {
-    "parasiteId": "hexamita_parva_trophozoite",
-    "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:00.903Z"
-  },
-  {
-    "parasiteId": "hexamita_parva_trophozoite",
     "url": "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_03.webp",
     "alt": "",
     "caption": "",
@@ -4685,6 +4669,38 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:22:00.924Z"
+  },
+    {
+    "parasiteId": "hexamita_sp_trophozoite",
+    "url": "/public/images/parasites/hexamita_sp_trophozoite/hexamita_sp_trophozoite_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.891Z"
+  },
+  {
+    "parasiteId": "hexamita_sp_trophozoite",
+    "url": "/public/images/parasites/hexamita_sp_trophozoite/hexamita_sp_trophozoite_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.903Z"
+  },
+  {
+    "parasiteId": "hexamita_sp_trophozoite",
+    "url": "/public/images/parasites/hexamita_sp_trophozoite/hexamita_sp_trophozoite_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.903Z"
+  },
+  {
+    "parasiteId": "hexamita_sp_trophozoite",
+    "url": "/public/images/parasites/hexamita_sp_trophozoite/hexamita_sp_trophozoite_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:22:00.903Z"
   },
   {
     "parasiteId": "hippobosca_equina_adult",
