@@ -522,10 +522,10 @@
       "genus": "Angiostoma",
       "species": "Angiostoma aspersae"
     },
-    "hostGroups": [
+    "hostGroups": [],
+    "hosts": [
       "Slimáky"
     ],
-    "hosts": [],
     "hostNotes": {},
     "sample": "Pľúca",
     "stage": "Dospelý jedinec",
@@ -12326,10 +12326,10 @@
       "genus": "Geckobiella",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Leguánovité"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -12868,7 +12868,8 @@
       "ZOO prežúvavce",
       "Domáce prežúvavce",
       "Voľne žijúce prežúvavce",
-      "Zajace, králiky",
+      "Zajace",
+      "králiky",
       "Mäsožravce",
       "Nepárnokopytníky",
       "Vtáky"
@@ -13333,10 +13334,10 @@
       "genus": "Hexamita",
       "species": "Hexamita parva"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Korytnačky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Moč",
     "stage": "Trofozoit",
@@ -13382,7 +13383,7 @@
       "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_04.webp"
     ]
   },
-    {
+  {
     "latinName": "Hexamita sp.",
     "synonyms": [],
     "slovakName": "",
@@ -13395,8 +13396,10 @@
       "genus": "Hexamita",
       "species": "neurčený druh"
     },
-    "hostGroups": ["Akváriové ryby"],
-    "hosts": [ ],
+    "hostGroups": [
+      "Akváriové ryby"
+    ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Trofozoit",
@@ -13427,7 +13430,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "hexamita_sp_trophozoite",
-    "images": [ ]
+    "images": []
   },
   {
     "latinName": "Hippobosca equina",
@@ -13815,10 +13818,10 @@
       "genus": "Hystrichis",
       "species": "Hystrichis tricolor"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vodné voľne žijúce vtáky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -13918,11 +13921,11 @@
       "genus": "Choleoeimeria",
       "species": "Choleoeimeria sp."
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Agamy",
       "Chameleóny"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Žlčník",
     "stage": "Oocysta",
@@ -14322,7 +14325,8 @@
     "hostGroups": [
       "ZOO zvieratá",
       "Voľne žijúce prežúvavce",
-      "Zajace, králiky",
+      "Zajace",
+      "králiky",
       "Ošípané a diviaky",
       "Nepárnokopytníky",
       "Domáce prežúvavce",
@@ -14380,10 +14384,10 @@
       "genus": "Kalicephalus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -14539,7 +14543,7 @@
       "Vodné voľne žijúce vtáky"
     ],
     "hosts": [],
-    "hostNotes": [],
+    "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Cestoda",
@@ -14595,10 +14599,10 @@
       "genus": "Ligula",
       "species": "Ligula intestinalis"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Kaprovité"
     ],
+    "hosts": [],
     "hostNotes": {
       "Kaprovité": ""
     },
@@ -14776,10 +14780,10 @@
       "genus": "Lipoptena",
       "species": "Lipoptena cervi"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Voľne žijúce prežúvavce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -14882,11 +14886,11 @@
       "genus": "Mesocestoides",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Psovité mäsožravce",
       "Mačkovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -15527,10 +15531,10 @@
       "genus": "Nemhelix",
       "species": "Nemhelix bakeri"
     },
-    "hostGroups": [
+    "hostGroups": [],
+    "hosts": [
       "Slimáky"
     ],
-    "hosts": [],
     "hostNotes": {},
     "sample": "Pohlavné orgány",
     "stage": "Dospelý jedinec",
@@ -15687,10 +15691,10 @@
       "genus": "Notoedres",
       "species": "Notoedres cati"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Mačkovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -15802,10 +15806,10 @@
       "genus": "Nyctotherus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Herbivorné plazy"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
@@ -15902,10 +15906,10 @@
       "genus": "Ochetostoma",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Ústna dutina",
     "stage": "Dospelý jedinec",
@@ -16074,10 +16078,10 @@
       "genus": "Ophidascaris",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -16127,10 +16131,10 @@
       "genus": "Ophionyssus",
       "species": "Ophionyssus natricis"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Koža",
     "stage": "Dospelý jedinec",
@@ -17018,10 +17022,10 @@
       "genus": "Polydelphis",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -17274,10 +17278,10 @@
       "genus": "Porrocaecum",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Dravce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -17324,10 +17328,10 @@
       "genus": "Proteocephalus",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Sladkovodné ryby"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -17428,7 +17432,8 @@
       "species": "Protostrongylus commutatus"
     },
     "hostGroups": [
-      "Zajace, králiky"
+      "Zajace",
+      "králiky"
     ],
     "hosts": [],
     "hostNotes": {},
@@ -17527,9 +17532,11 @@
       "genus": "Psoroptes",
       "species": "Psoroptes equi"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Koňovité"
+    ],
+    "hosts": [
+      "Zebra"
     ],
     "hostNotes": {},
     "sample": "Koža",
@@ -17834,11 +17841,11 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Plazy",
       "Obojživelníky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Larva",
@@ -18037,10 +18044,10 @@
       "genus": "Rodentolepis",
       "species": "Rodentolepis microstoma"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hlodavce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -18090,11 +18097,11 @@
       "genus": "Rodentolepis",
       "species": "Rodentolepis nana"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hlodavce",
       "Primáty"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -18520,10 +18527,10 @@
       "genus": "neurčený rod",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Vodné korytnačky"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -19344,11 +19351,11 @@
       "genus": "Syngamus",
       "species": "Syngamus trachea"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hrabavá hydina",
       "Spevavce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -19610,10 +19617,10 @@
       "genus": "Terranova",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
-    "hosts": [
+    "hostGroups": [
       "Hady"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -20449,13 +20456,14 @@
       "genus": "Trichuris",
       "species": "neurčený druh"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Voľne žijúce prežúvavce"
+    ],
     "hosts": [
       "Hovädzí dobytok",
       "Zubor",
       "Byvol",
-      "Ovca",
-      "Voľne žijúce prežúvavce"
+      "Ovca"
     ],
     "hostNotes": {},
     "sample": "Trus",
