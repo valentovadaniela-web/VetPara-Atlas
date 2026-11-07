@@ -6101,6 +6101,38 @@
     "dateAdded": "2026-08-29T13:29:32.298Z"
   },
   {
+    "parasiteId": "pearsonema_feliscati_egg",
+    "url": "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:20.562Z"
+  },
+  {
+    "parasiteId": "pearsonema_feliscati_egg",
+    "url": "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:20.583Z"
+  },
+  {
+    "parasiteId": "pearsonema_feliscati_egg",
+    "url": "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:20.607Z"
+  },
+  {
+    "parasiteId": "pearsonema_feliscati_egg",
+    "url": "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:20.623Z"
+  },
+  {
     "parasiteId": "pearsonema_plica_egg",
     "url": "/public/images/parasites/pearsonema_plica_egg/pearsonema_plica_egg_01.webp",
     "alt": "",
@@ -6140,6 +6172,46 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:30:24.119Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "pharyngodoniade_egg",
+    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:38.234Z"
+  },
+  {
+    "parasiteId": "pharyngodoniade_egg",
+    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:38.260Z"
+  },
+  {
+    "parasiteId": "pharyngodoniade_egg",
+    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:38.281Z"
+  },
+  {
+    "parasiteId": "pharyngodoniade_egg",
+    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_08.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:38.299Z"
+  },
+  {
+    "parasiteId": "pharyngodoniade_egg",
+    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_09.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:38.319Z"
   },
   {
     "parasiteId": "pharyngomyia_picta_larva",
@@ -6193,6 +6265,22 @@
     "dateAdded": "2026-08-30T11:26:20.971Z"
   },
   {
+    "parasiteId": "physaloptera_clausa_egg",
+    "url": "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:53.404Z"
+  },
+  {
+    "parasiteId": "physaloptera_clausa_egg",
+    "url": "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:49:53.424Z"
+  },
+  {
     "parasiteId": "physaloptera_sp_egg",
     "url": "/public/images/parasites/physaloptera_sp_egg/physaloptera_sp_egg_01.webp",
     "alt": "",
@@ -6217,12 +6305,68 @@
     "dateAdded": "2026-11-05T19:09:55.448Z"
   },
   {
+    "parasiteId": "polymorphus_minutus_adult",
+    "url": "/public/images/parasites/polymorphus_minutus_adult/polymorphus_minutus_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:10.020Z"
+  },
+  {
+    "parasiteId": "polymorphus_minutus_adult",
+    "url": "/public/images/parasites/polymorphus_minutus_adult/polymorphus_minutus_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:10.020Z"
+  },
+  {
+    "parasiteId": "polymorphus_minutus_egg",
+    "url": "/public/images/parasites/polymorphus_minutus_egg/polymorphus_minutus_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:10.020Z"
+  },
+  {
+    "parasiteId": "polyplax_serrata_adult",
+    "url": "/public/images/parasites/polyplax_serrata_adult/polyplax_serrata_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:22.658Z"
+  },
+  {
     "parasiteId": "polyplax_spinulosa_adult",
     "url": "/public/images/parasites/polyplax_spinulosa_adult/polyplax_spinulosa_adult_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:31:35.324Z"
+  },
+  {
+    "parasiteId": "polyplax_spinulosa_adult",
+    "url": "/public/images/parasites/polyplax_spinulosa_adult/polyplax_spinulosa_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T13:31:35.324Z"
+  },
+  {
+    "parasiteId": "porrocaecum_crassum_egg",
+    "url": "/public/images/parasites/porrocaecum_crassum_egg/porrocaecum_crassum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:41.346Z"
+  },
+  {
+    "parasiteId": "porrocaecum_crassum_egg",
+    "url": "/public/images/parasites/porrocaecum_crassum_egg/porrocaecum_crassum_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:50:41.346Z"
   },
   {
     "parasiteId": "porrocaecum_sp_egg",
@@ -6298,6 +6442,46 @@
     "dateAdded": "2026-08-29T11:57:35.166Z"
   },
   {
+    "parasiteId": "proteocephalus_sp_adult",
+    "url": "/public/images/parasites/proteocephalus_sp_adult/proteocephalus_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:57:35.166Z"
+  },
+  {
+    "parasiteId": "proteocephalus_sp_adult",
+    "url": "/public/images/parasites/proteocephalus_sp_adult/proteocephalus_sp_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:57:35.166Z"
+  },
+  {
+    "parasiteId": "proteocephalus_sp_plerocercoid",
+    "url": "/public/images/parasites/proteocephalus_sp_plerocercoid/proteocephalus_sp_plerocercoid_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:57:35.166Z"
+  },
+  {
+    "parasiteId": "proteocephalus_sp_plerocercoid",
+    "url": "/public/images/parasites/proteocephalus_sp_plerocercoid/proteocephalus_sp_plerocercoid_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-08-29T11:57:35.166Z"
+  },
+  {
+    "parasiteId": "protostrongylus_brevispiculum_larva",
+    "url": "/public/images/parasites/protostrongylus_brevispiculum_larva/protostrongylus_brevispiculum_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:51:53.647Z"
+  },
+  {
     "parasiteId": "protostrongylus_commutatus_larva",
     "url": "/public/images/parasites/protostrongylus_commutatus_larva/protostrongylus_commutatus_larva_01.webp",
     "alt": "",
@@ -6321,6 +6505,30 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:32:09.015Z"
+  },
+  {
+    "parasiteId": "psoroptes_equi_adult",
+    "url": "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:53:14.050Z"
+  },
+  {
+    "parasiteId": "psoroptes_equi_adult",
+    "url": "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:53:14.078Z"
+  },
+  {
+    "parasiteId": "psoroptes_equi_adult",
+    "url": "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:53:14.099Z"
   },
   {
     "parasiteId": "psoroptes_ovis_adult",
@@ -6380,6 +6588,22 @@
     "dateAdded": "2026-08-29T13:32:25.440Z"
   },
   {
+    "parasiteId": "pterygosoma_sp_adult",
+    "url": "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:53:41.747Z"
+  },
+  {
+    "parasiteId": "pterygosoma_sp_adult",
+    "url": "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:53:41.769Z"
+  },
+  {
     "parasiteId": "radfordia_affinis_adult",
     "url": "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_01.webp",
     "alt": "",
@@ -6394,6 +6618,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-05T18:40:27.283Z"
+  },
+  {
+    "parasiteId": "radfordia_ensifera_adult",
+    "url": "/public/images/parasites/radfordia_ensifera_adult/radfordia_ensifera_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:54:05.994Z"
+  },
+  {
+    "parasiteId": "radfordia_ensifera_adult",
+    "url": "/public/images/parasites/radfordia_ensifera_adult/radfordia_ensifera_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:54:05.994Z"
   },
   {
     "parasiteId": "raillietina_sp_egg",
@@ -6426,6 +6666,86 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T11:48:10.784Z"
+  },
+  {
+    "parasiteId": "rhabdiasidae_larva",
+    "url": "/public/images/parasites/rhabdiasidae_larva/rhabdiasidae_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:17.905Z"
+  },
+  {
+    "parasiteId": "riccardoella_limacum_adult",
+    "url": "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:39.868Z"
+  },
+  {
+    "parasiteId": "riccardoella_limacum_adult",
+    "url": "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:39.893Z"
+  },
+  {
+    "parasiteId": "riccardoella_limacum_adult",
+    "url": "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:39.914Z"
+  },
+  {
+    "parasiteId": "riccardoella_limacum_adult",
+    "url": "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:39.935Z"
+  },
+  {
+    "parasiteId": "riccardoella_oudemansi_adult",
+    "url": "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:55.250Z"
+  },
+  {
+    "parasiteId": "riccardoella_oudemansi_adult",
+    "url": "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:55.270Z"
+  },
+  {
+    "parasiteId": "riccardoella_oudemansi_adult",
+    "url": "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:55.291Z"
+  },
+  {
+    "parasiteId": "riccardoella_oudemansi_adult",
+    "url": "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:52:55.311Z"
+  },
+  {
+    "parasiteId": "rodentolepis_microstoma_egg",
+    "url": "/public/images/parasites/rodentolepis_microstoma_egg/rodentolepis_microstoma_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T19:53:06.827Z"
   },
   {
     "parasiteId": "rodentolepis_nana_egg",
@@ -6543,6 +6863,14 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:34:45.403Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "skrjabinema_ovis_egg",
+    "url": "/public/images/parasites/skrjabinema_ovis_egg/skrjabinema_ovis_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-07T18:54:23.393Z"
   },
   {
     "parasiteId": "spirocerca_lupi_egg",

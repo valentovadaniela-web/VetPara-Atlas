@@ -16592,7 +16592,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "pearsonema_feliscati_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_01.webp",
+      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_02.webp",
+      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_03.webp",
+      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_04.webp"
+    ]
   },
   {
     "latinName": "Pearsonema plica",
@@ -16751,7 +16756,13 @@
     "zoonosis": false,
     "notes": "",
     "id": "pharyngodoniade_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_01.webp",
+      "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_04.webp",
+      "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_06.webp",
+      "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_08.webp",
+      "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_09.webp"
+    ]
   },
   {
     "latinName": "Pharyngomyia picta",
@@ -16902,7 +16913,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "physaloptera_clausa_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_01.webp",
+      "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_02.webp"
+    ]
   },
   {
     "latinName": "Physaloptera sp.",
@@ -17082,6 +17096,61 @@
     ],
     "hostNotes": {},
     "sample": "Trus",
+    "stage": "Dospelý jedinec",
+    "group": "Acanthocephala",
+    "micrometry": {
+      "lengthMin": 100,
+      "lengthMax": 110,
+      "widthMin": 18,
+      "widthMax": 20,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Eliptický",
+      "colour": "Tmavohnedý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Identifikácia podľa veľkosti",
+      "morfológie predného a zadného konca",
+      "pažeráka",
+      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: eliptický."
+    ],
+    "differentialDiagnosis": [
+      "Vajíčka prakticky nerozlíšiteľné od Filicollis anatis (rovnaký typ definitívneho hostiteľa) – spoľahlivá diferenciácia si vyžaduje dospelca (počet/usporiadanie hákov chobotíka). Medzihostiteľom P. minutus sú blešivce rodu Gammarus (G. pulex",
+      "G. roeseli",
+      "G. fossarum)",
+      "na rozdiel od F. anatis",
+      "kde je bežným medzihostiteľom kôrovec Asellus aquaticus – užitočný epidemiologický rozlišovací znak."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "polymorphus_minutus_adult",
+    "images": []
+  },
+  {
+    "latinName": "Polymorphus minutus",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Acanthocephala",
+      "class": "Palaeacanthocephala",
+      "order": "Polymorphida",
+      "family": "Dientamoebidae",
+      "genus": "Polymorphus",
+      "species": "Polymorphus minutus"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Kačica",
+      "Hus",
+      "Labuť"
+    ],
+    "hostNotes": {},
+    "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Acanthocephala",
     "micrometry": {
@@ -17114,7 +17183,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "polymorphus_minutus_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/polymorphus_minutus_egg/polymorphus_minutus_egg_01.webp"
+    ]
   },
   {
     "latinName": "Polyplax serrata",
@@ -17162,7 +17233,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "polyplax_serrata_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/polyplax_serrata_adult/polyplax_serrata_adult_01.webp"
+    ]
   },
   {
     "latinName": "Polyplax spinulosa",
@@ -17263,7 +17336,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "porrocaecum_crassum_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/porrocaecum_crassum_egg/porrocaecum_crassum_egg_01.webp"
+    ]
   },
   {
     "latinName": "Porrocaecum sp.",
@@ -17334,7 +17409,7 @@
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
-    "stage": "Vajíčko",
+    "stage": "Dospelý jedinec",
     "group": "Cestoda",
     "micrometry": {
       "lengthMin": 30,
@@ -17363,7 +17438,58 @@
     "pathology": "",
     "zoonosis": false,
     "notes": "",
-    "id": "proteocephalus_sp_egg",
+    "id": "proteocephalus_sp_adult",
+    "images": []
+  },
+  {
+    "latinName": "Proteocephalus sp.",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Cestoda",
+      "order": "Onchoproteocephalidea",
+      "family": "Proteocephalidae",
+      "genus": "Proteocephalus",
+      "species": "neurčený druh"
+    },
+    "hostGroups": [
+      "Sladkovodné ryby"
+    ],
+    "hosts": [],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Plerocerkoid",
+    "group": "Cestoda",
+    "micrometry": {
+      "lengthMin": 30,
+      "lengthMax": 50,
+      "widthMin": 25,
+      "widthMax": 40,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Sivastý",
+      "shell": "Hrubá, embryofor s radiálnym pruhovaním"
+    },
+    "diagnosticSigns": [
+      "Identifikácia podľa veľkosti",
+      "morfológie predného a zadného konca",
+      "pažeráka",
+      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: okrúhly."
+    ],
+    "differentialDiagnosis": [
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Proteocephalus môže byť potrebná molekulová identifikácia."
+    ],
+    "lifeCycle": "",
+    "pathology": "",
+    "zoonosis": false,
+    "notes": "",
+    "id": "proteocephalus_sp_plerocercoid",
     "images": []
   },
   {
@@ -17416,7 +17542,9 @@
     "zoonosis": false,
     "notes": "Chvost ostrý bez tŕňov",
     "id": "protostrongylus_brevispiculum_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/protostrongylus_brevispiculum_larva/protostrongylus_brevispiculum_larva_01.webp"
+    ]
   },
   {
     "latinName": "Protostrongylus commutatus",
@@ -17568,7 +17696,11 @@
     "zoonosis": false,
     "notes": "Hriva",
     "id": "psoroptes_equi_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_01.webp",
+      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_02.webp",
+      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_03.webp"
+    ]
   },
   {
     "latinName": "Psoroptes ovis",
@@ -17673,7 +17805,10 @@
     "zoonosis": false,
     "notes": "",
     "id": "pterygosoma_sp_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_01.webp",
+      "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_02.webp"
+    ]
   },
   {
     "latinName": "Radfordia affinis",
@@ -17774,7 +17909,9 @@
     "zoonosis": false,
     "notes": "2 pazúriky nerovnakej dĺžky",
     "id": "radfordia_ensifera_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/radfordia_ensifera_adult/radfordia_ensifera_adult_01.webp"
+    ]
   },
   {
     "latinName": "Raillietina sp.",
@@ -17876,7 +18013,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "rhabdiasidae_larva",
-    "images": []
+    "images": [
+      "/public/images/parasites/rhabdiasidae_larva/rhabdiasidae_larva_01.webp"
+    ]
   },
   {
     "latinName": "Riccardoella limacum",
@@ -17927,7 +18066,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "riccardoella_limacum_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_01.webp",
+      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_02.webp",
+      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_03.webp",
+      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_04.webp"
+    ]
   },
   {
     "latinName": "Riccardoella oudemansi",
@@ -17978,7 +18122,12 @@
     "zoonosis": false,
     "notes": "",
     "id": "riccardoella_oudemansi_adult",
-    "images": []
+    "images": [
+      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_01.webp",
+      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_02.webp",
+      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_03.webp",
+      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_04.webp"
+    ]
   },
   {
     "latinName": "Rodentolepis erinacei",
@@ -18079,7 +18228,9 @@
     "zoonosis": false,
     "notes": "Má polárne vlákna",
     "id": "rodentolepis_microstoma_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/rodentolepis_microstoma_egg/rodentolepis_microstoma_egg_01.webp"
+    ]
   },
   {
     "latinName": "Rodentolepis nana",
@@ -18354,7 +18505,9 @@
     "zoonosis": false,
     "notes": "",
     "id": "skrjabinema_ovis_egg",
-    "images": []
+    "images": [
+      "/public/images/parasites/skrjabinema_ovis_egg/skrjabinema_ovis_egg_01.webp"
+    ]
   },
   {
     "latinName": "Solenopotes burmeisteri",
@@ -20392,55 +20545,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "trichuris_leporis_egg",
-    "images": []
-  },
-  {
-    "latinName": "Trichuris muris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Nematoda",
-      "class": "Enoplea",
-      "order": "Trichinellida",
-      "family": "Trichuridae",
-      "genus": "Trichuris",
-      "species": "Trichuris muris"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Myš"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Vajíčko",
-    "group": "Nematoda",
-    "micrometry": {
-      "lengthMin": 75,
-      "lengthMax": 90,
-      "widthMin": 32,
-      "widthMax": 49,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Citrónovitý",
-      "colour": "Hnedý",
-      "shell": "Tenká až stredne hrubá"
-    },
-    "diagnosticSigns": [
-      "Citrónovitý tvar so symetrickými bipolárnymi zátkami",
-      "hladká hnedá škrupina."
-    ],
-    "differentialDiagnosis": [
-      "Typický súdočkovitý (citrónovitý) tvar s dvoma symetrickými priehľadnými zátkami (operkulami) na póloch; odlíšiť od Capillaria/Eucoleus (menšie",
-      "asymetrickejšie zátky) a Trichosomoides (asymetrický",
-      "jednostranný operkulum)."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "trichuris_muris_egg",
     "images": []
   },
   {
