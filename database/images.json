@@ -4241,6 +4241,30 @@
     "dateAdded": "2026-11-04T20:17:07.188Z"
   },
   {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.188Z"
+  },
+  {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.188Z"
+  },
+  {
+    "parasiteId": "geckobiella_sp_adult",
+    "url": "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-04T20:17:07.188Z"
+  },
+  {
     "parasiteId": "giardia_intestinalis_cyst",
     "url": "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_01.webp",
     "alt": "",
@@ -4645,38 +4669,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-04T20:22:16.667Z"
-  },
-  {
-    "parasiteId": "hirstiella_sp_adult",
-    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:31.952Z"
-  },
-  {
-    "parasiteId": "hirstiella_sp_adult",
-    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:31.964Z"
-  },
-  {
-    "parasiteId": "hirstiella_sp_adult",
-    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:31.974Z"
-  },
-  {
-    "parasiteId": "hirstiella_sp_adult",
-    "url": "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-04T20:22:31.985Z"
   },
   {
     "parasiteId": "histomonas_meleagridis_trophozoite",
@@ -5658,6 +5650,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-05T18:37:41.829Z"
+  },
+  {
+    "parasiteId": "neotrombicula_autumnalis_larva",
+    "url": "/public/images/parasites/neotrombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-05T18:37:51.895Z"
   },
   {
     "parasiteId": "notoedres_cati_adult",
@@ -7416,14 +7416,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-08T13:48:41.710Z"
-  },
-  {
-    "parasiteId": "neotrombicula_autumnalis_larva",
-    "url": "/public/images/parasites/neotrombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T18:37:51.895Z"
   },
   {
     "parasiteId": "trypanoxyuris_sciuri_egg",

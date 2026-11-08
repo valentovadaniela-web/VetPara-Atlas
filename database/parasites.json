@@ -8818,36 +8818,31 @@
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 15,
-      "lengthMax": 20,
+      "lengthMax": 22,
       "widthMin": 14,
-      "widthMax": 16,
+      "widthMax": 18,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Vajcovitý",
+      "shape": "Okrúhly až subsférický",
       "colour": "Žltobiely",
       "shell": "Dvojvrstvová, hladká"
     },
     "diagnosticSigns": [
       "Priemerné rozmery: 16,5 x 15 μm",
-      "Tvar oocysty: Typicky guľovitý (sférický) až subsférický, prípadne veľmi široko elipsovitý.",
-      "Oocystová stena: Hladká, dvojvrstvová, tenká (cca 1,0 μm), transparentná a takmer bezfarebná až jemne žltkastá.",
-      "Mikropyla (mikropylárny otvor): Striktne neprítomná (CHÝBA). Oocystová stena je celistvá na celom povrchu.",
-      "Mikropylárna čiapočka (polar cap): Neprítomná.",
-      "Polárne teliesko (polar granule): Prítomné po sporulácii (zvyčajne jedno alebo dve malé refraktilné telieska).",
-      "Oocystové reziduálne teliesko (oocyst residuum): Neprítomné, respektíve po sporulácii sa môže objaviť len minimálne množstvo drobnej voľnej drte (na rozdiel od iných vtáčích eimérií).",
+      "Subsférický až mierne elipsoidný tvar oocysty.",
+      "Mikropyla aj mikropylárna čiapočka chýba.",
+      "Oocystová reziduálna masa: Neprítomná po vysporulovaní, no nachádza sa tu 1 až 2 polárne telieska.",
       "Sporocysty: Obsahuje 4 sporocysty (cca 10 × 6 μm), ktoré sú ovoidné, majú málo výrazné Stiedove teliesko (Stieda body) a obsahujú sporocystové reziduálne teliesko spolu s dvoma sporozoitmi.",
-      "Nesporulovaná oocysta (čerstvý trus): Pod mikroskopom vidíme malé, číre, okrúhle perličky. Vnútro vypĺňa tmavý, rovnomerne granulovaný sférický sporont, ktorý zaberá takmer celú oocystu a necháva len minimálny voľný priestor pri stenách.",
       "Sporulovaná oocysta (z prostredia po 48 hodinách): Vo vnútri oocysty sa nachádzajú štyri jasne vyvinuté oválne sporocysty. Priestor mimo sporocýst zostáva číry bez masívnej vnútornej drte, prítomné je len jemné polárne teliesko."
     ],
     "differentialDiagnosis": [
-      "_Eimeria labbeana_: Najväčší diagnostický problém, keďže sa rozmerovo prekrývajú. _E. labbeana_ je však vo všeobecnosti o niečo menšia (priemerne 16,5 × 15,0 μm), jej tvar býva častejšie mierne vajcovitý (ovoidný) a jej Stiedove teliesko na sporocystách je podstatne menej výrazné ako u _E. columbarum_.",
-      "_Eimeria columbae_: Je rozmerovo väčšia (priemerne nad 24 – 26 μm) a vykazuje viac pretiahnutý, elipsovitý až vajcovitý tvar, na rozdiel od guľovitej _E. columbarum_."
+      "_Eimeria columbae_: Je rozmerovo **väčšia** (priemerne nad 24 – 28 μm) a má typicky **predĺžený, jasne oválny/hruškovitý** tvar."
     ],
-    "lifeCycle": "Vývinový cyklus je priamy (monoxénny). Holub sa nakazí ingesciou (prehltnutím) sporulovaných oocýst z kontaminovaného prostredia holubníka (krmítka, napájačky, znečistené podlahy a hniezda). V tenkom čreve a v konečníku (rektum) nastáva excystácia sporozoitov pôsobením žlče. Sporozoity prenikajú do buniek epitelu čreva, kde prebieha nepohlavná merogónia (produkcia merozoitov, ktoré po prasknutí buniek napádajú ďalšie enterocyty). Nasleduje gametogónia (pohlavná fáza s formovaním mikro- a makrogamét). Po fertilizácii vzniká zygóta a nesporulované oocysty odchádzajú s trusom von. Vo vonkajšom prostredí prebehne sporogónia (exogénna fáza) za 2 až 4 dni (48 – 96 hodín v závislosti od teploty a vlhkosti). Prepatentná perióda je relatívne krátka, približne 4 – 5 dní (cca 105 hodín).",
-    "pathology": "_Eimeria labbeana_ vykazuje strednú až vysokú patogenitu, najmä pri masívnych infekciách. Endogénne štádiá parazitujú v epiteli tenkého čreva a konečníka. Masívne dávky oocýst vyvolávajú fibrózne-nekrotizujúcu enteritídu spojenú s olupovaním (detachmentom) črevných klkov. Klinické príznaky postihujú primárne mladé holubatá (v hniezde alebo krátko po odstave) a športové/poštové holuby počas pretekárskej sezóny (stres z preletov). Typickým prejavom je profúzna, vodnatá, hlienovitá až zelenkastá hnačka, strata kondície, dehydratácia, našuchorené perie, chradnutie a zaostávanie v raste. U dospelých jedincov prebieha infekcia často asymptomaticky, no spôsobuje pokles letovej výkonnosti.",
+    "lifeCycle": "Vývin prebieha priamou cestou bez účasti medzihostiteľa (monoxénny cyklus). Vták sa nakazí perorálnou ingesciou (prehltnutím) vysporulovanej (infekčnej) oocysty z kontaminovaného krmiva, vody alebo pri požívaní trusu z podlahy holubníka. V svalnatom žalúdku a dvanástniku holuba dôjde vplyvom žlče a trypzínu k narušeniu Stiedovho telieska sporocýst a uvoľneniu sporozoitov (excystácia). Sporozoity invadujú do epitelových buniek tenkého čreva (najmä v strednej a zadnej tretine jej dĺžky). Nasleduje nepohlavné rozmnožovanie (schizogónia/merogónia) prebiehajúce v 2 až 3 generáciách merontov, ktoré masívne deštruujú enterocyty. Cyklus vrcholí pohlavnou fázou (gametogónia), kedy splynutím mikrogaméty a makrogaméty vzniká zygota, okolo ktorej sa vytvorí pevná stena. Táto nevysporulovaná oocysta odchádza s trusom do vonkajšieho prostredia, kde pri optimálnej teplote (20–25 °C), vlhkosti a prístupe kyslíka vysporuluje na infekčné štádium v priebehu 24 až 48 hodín. Prepatentná perióda trvá zvyčajne 6–7 dní.",
+    "pathology": "_Eimeria labbeana_ vykazuje strednú až vysokú patogenitu, pričom je hlavným pôvodcom klinickej kokcidiózy holubov. Parazit parazituje v epitelových bunkách klkov tenkého čreva, pričom narúša črevnú bariéru, čo vedie k závažnej katarálnej až hemoragickej enteritíde. Klinické príznaky zahŕňajú profúznu, vodnatú až zelenkastú hnačku (niekedy s prímesou krvi), apatiu, našuchorené perie, rýchlu dehydratáciu, výraznú stratu hmotnosti (chradnutie) a u pretekárskych holubov prudký pokles letovej výkonnosti. U dospelých vtákov infekcia často prebieha subklinicky, no predstavujú permanentný rezervoár parazita. Pri patologicko-anatomickej pitve uhynutých mláďat dominuje zhrubnutá stena čreva, sliznica je hyperemická, pokrytá hlienom alebo bodkovitými hemoragiami (petechiami) a črevný obsah je tekutý s bielymi vločkami odlúpeného epitelu.",
     "zoonosis": false,
-    "notes": "**Vplyv na pretekársku kondíciu**: Na rozdiel od iných eimérií, ktoré zviera buď zabijú alebo si nevšimnete ich prítomnosť, u poštových holubov je _E. labbeana_ limitujúcim faktorom úspechu. Aj nízky subklinický počet oocýst v truse (zistený rutinnou mikroskopiou pred sezónou) dokáže kvôli mikroléziám v čreve znížiť absorpciu živín natoľko, že holub stráca orientačnú a letovú vytrvalosť.\n**Imunitná odolnosť**: Holuby si na rozdiel od infekcie trichomonádami dokážu po opakovaných slabých expozíciách oocystám vybudovať čiastočnú prirodzenú odolnosť (imunitu), ktorá u dospelých vtákov drží prejavy kokcidiózy pod kontrolou.",
+    "notes": "*Nebezpečné najmä pre mladé*: Kým u chovateľov poštových holubov vyvoláva tento parazit masívne straty na mláďatách (tzv. hniezdna kokcidióza), staršie pretekárske holuby môžu vylučovať milióny oocýst denne bez akýchkoľvek vonkajších príznakov ochorenia, čím maskujú infekciu v celom chove.",
     "id": "eimeria_labbeana_oocyst",
     "images": []
   },
@@ -11904,10 +11899,11 @@
       "genus": "Eucoleus",
       "species": "Eucoleus aerophilus"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Jež"
+    "hostGroups": [
+      "Psovité mäsožravce",
+      "Mačkovité mäsožravce"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
@@ -11925,25 +11921,15 @@
       "shell": "Sieťovaná"
     },
     "diagnosticSigns": [
-      "Obal vajíčka sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými navzájom sa spájajúcimi ryhami",
-      "Jedno- až dvojbunkové embryo vypĺňa celé vajíčko",
-      "Široko asymetrický",
-      "robustný súdokovitý tvar vajíčka",
-      "Zátky neprominujúce",
-      "ploché a bez prstencovitého zhrubnutia na báze"
+      "Obal vajíčka sa vyznačuje hustou sieťou so **širokými priehlbinami a hrubými navzájom sa spájajúcimi ryhami**",
+      "Jedno- až dvojbunkové **embryo vypĺňa celé vajíčko**",
+      "Široko **asymetrický** robustný, súdokovitý tvar vajíčka",
+      "Zátky neprominujúce, ploché a bez prstencovitého zhrubnutia na báze"
     ],
     "differentialDiagnosis": [
-      "_Trichuris vulpis_ vs. _Eucoleus aerophilus_: Vajíčka Trichuris sú viditeľne väčšie",
-      "majú výraznejšie vystupujúce bipolárne zátky s prstencovitým zhrubnutím na báze a ich stena je dokonale hladká a tmavohnedá.Vajíčka E. aerophilus sú menšie",
-      "svetlejšie",
-      "mierne asymetrické a ich zátky sú plochejšie.",
-      "_Eucoleus boehmi_ vs. _Eucoleus aerophilus_: Tieto dva druhy sa prekrývajú vo veľkosti. Rozhoduje povrch (ornamentácia): _E. aerophilus_ má sieťovú štruktúru (ryhy)",
-      "zatiaľ čo _E. boehmi_ má drobné jamky (ako povrch golfovej loptičky). Vo vnútri čerstvého vajíčka _E. boehmi_ je už pokročilejšie rozdelené embryo",
-      "okolo ktorého je vidieť voľné miesto",
-      "zatiaľ čo u _E. aerophilus_ je vajíčko úplne vyplnené.",
-      "V truse kontaminovanom močom sa môžu objaviť vajíčka _Pearsonema plica_ (u psov) alebo _Pearsonema felis cati_ (u mačiek) – močových kapilárií",
-      "ktoré vyzerajú takmer identicky",
-      "no parazitujú v močovom mechúre.",
+      "_Trichuris vulpis_ vs. _Eucoleus aerophilus_: Vajíčka Trichuris sú viditeľne väčšie, majú výraznejšie vystupujúce bipolárne zátky s prstencovitým zhrubnutím na báze a ich **stena je dokonale hladká a tmavohnedá**.Vajíčka _E. aerophilus_ sú menšie, svetlejšie, mierne asymetrické a ich zátky sú plochejšie.",
+      "_Eucoleus boehmi_ vs. _Eucoleus aerophilus_: Tieto dva druhy sa prekrývajú vo veľkosti. Rozhoduje povrch (ornamentácia): _E. aerophilus_ má sieťovú štruktúru (ryhy), zatiaľ čo _E. boehmi_ má **drobné jamky** (ako povrch golfovej loptičky). Vo vnútri čerstvého vajíčka _E. boehmi_ je už pokročilejšie rozdelené embryo, okolo ktorého je vidieť **voľné miesto**, zatiaľ čo u _E. aerophilus_ je vajíčko úplne vyplnené.",
+      "V truse kontaminovanom močom sa môžu objaviť vajíčka _Pearsonema plica_ (u psov) alebo _Pearsonema felis cati_ (u mačiek) – močových kapilárií, ktoré vyzerajú takmer identicky, no parazitujú v močovom mechúre.",
       "Po zožratí vtáčieho trusu môže trus obsahovať vtáčie kapilárie",
       "ktoré sú ale menšie a užšie (48 – 56 × 21 – 24 μm)",
       "symetrickejšie a hladké. Ich viečka sú viac vystúpené."
@@ -11992,21 +11978,18 @@
     },
     "diagnosticSigns": [
       "Citrónovitý tvar",
-      "Stena vajíčka je jemná sieťová štruktúra obkolesujúca nepravidelne rozmiestnené malé jamky",
-      "čo vytvára porézny vzhľad s jemným hustým bodkovaním",
+      "Stena vajíčka je jemná sieťová štruktúra obkolesujúca **nepravidelne rozmiestnené malé jamky**, čo vytvára porézny vzhľad s jemným hustým bodkovaním",
       "Zátky neprominujúce a bez zhrubnutia na báze",
-      "Embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor"
+      "Embryo vajíčok _E. boehmi_ **nevyplňuje celý vnútorný priestor**"
     ],
     "differentialDiagnosis": [
-      "Druh E. aerophilus je mierne vačší sa vyznačuje hustou sieťou so širokými priehlbinami a hrubými",
-      "navzájom sa spájajúcimi hrebeňmi. Zzatiaľ čo u E. aerophilus je vajíčko úplne vyplnené jedno- alebo dvojbunkovým embryom",
-      "embryo vajíčok E. boehmi nevyplňuje celý vnútorný priestor",
-      "Vajíčka Trichuris vulpis sú výrazne väčšie a majú úplne hladký povrch vajíčka bez akejkoľvek siete alebo jamiek."
+      "Druh _E. aerophilus_ je mierne vačší sa vyznačuje hustou sieťou so **širokými priehlbinami a hrubými, navzájom sa spájajúcimi hrebeňmi**. Zatiaľ čo u _E. aerophilus_ je vajíčko **úplne vyplnené** jedno- alebo dvojbunkovým embryom, embryo vajíčok _E. boehmi_ nevyplňuje celý vnútorný priestor.",
+      "Vajíčka _Trichuris vulpis_ sú výrazne väčšie a majú úplne **hladký povrch** vajíčka bez akejkoľvek siete alebo jamiek."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus Eucoleus boehmi je priamy (monoxénny) a prebieha bez povinného striedania medzihostiteľov. Infekčné vajíčka s vyvinutou larvou prvej generácie (L1) sa dostávajú do vonkajšieho prostredia, kde vykazujú vysokú odolnosť voči klimatickým vplyvom. Definitívny hostiteľ (pes, líška) sa nakazí najčastejšie perorálnou ingesciou (prehltnutím) infekčných vajíčok kontaminujúcich pôdu, krmivo alebo vodu, pričom ako paratenickí hostitelia môžu mechanicky figurovať aj dážďovky požierajúce trus. Po zožratí dochádza v tráviacom trakte k uvoľneniu lariev, ktoré následne migrujú neznámou cestou (pravdepodobne hematogénne alebo cez lymfatický systém) späť do cieľového tkaniva, ktorým je sliznica nosových dutín a prinosových čelných sínusov. Tu larvy dospievajú na dospelé jedince, ktoré sa zavrtávajú do epitelu, kde samice produkujú vajíčka; tie sú vykašliavané, prehltnuté a odchádzajú nezmenené trusom, pričom prepatentná perióda trvá približne 3 až 4 týždne.",
+    "pathology": "Patogenita _Eucoleus boehmi_ závisí od intenzity infekcie, pričom prítomnosť červov v sliznici vyvoláva mechanické a imunitné dráždenie horných dýchacích ciest. Dospelé červy a vajíčka uviaznuté v epiteli spôsobujú katarálnu až mukopurulentnú (hlienovo-hnisavú) rinitídu, ktorá sa klinicky prejavuje chronickým kýchaním, reverzným kýchaním (tzv. \"reverse sneezing\"), seróznym až hnisavým výtokom z nosa a čiastočnou stratou čuchu (anosmiou). V závažných prípadoch masívnych infekcií dochádza k traumatizácii ciev sliznice s následnou epistaxou (krvácaním z nosa) a u postihnutých zvierat sa z dôvodu neustáleho upchatia nosových ciest objavuje namáhavé dýchanie, frkanie a celkový nepokoj. Atrofia nosových mušlí alebo trvalé zmeny kostných štruktúr sínusov sú však na rozdiel od iných rinitíd pri tejto kapilarióze zriedkavé.",
     "zoonosis": false,
-    "notes": "Zátky rovné asymetrické a bez prstencov",
+    "notes": "Krvácanie zo stresu: U poľovných a športových psov sa epistaxa vyvolaná týmto parazitom objavuje najčastejšie v momentoch vysokej fyzickej záťaže alebo vzrušenia, kedy sa zvýši krvný tlak v zapálenej nosovej sliznici.",
     "id": "eucoleus_boehmi_egg",
     "images": []
   },
@@ -12057,11 +12040,8 @@
       "Sedimentačná metóda (nie flotácia!) – vajíčka sú ťažké a flotačné roztoky s nízkou hustotou ich nezachytia."
     ],
     "differentialDiagnosis": [
-      "Fascioloides magna (veľká motolica jelenia) – morfologicky prakticky nerozlíšiteľné",
-      "rozdiel len v hostiteľskom spektre a lokalizácii (F. magna často v pečeňovom parenchýme",
-      "nie žlčových cestách; hostiteľ najčastejšie jelenia zver).",
-      "Paramphistomum spp. (črevná motolica) – tieto majú bezfarebnú (nie žltohnedú) škrupinu a operkulum je menej výrazné",
-      "hostiteľská lokalizácia je bachor/dvanástnik."
+      "_Fascioloides magna_ (veľká motolica jelenia) – morfologicky prakticky nerozlíšiteľné, rozdiel len v hostiteľskom spektre a lokalizácii (_F. magna_ často v pečeňovom parenchýme, nie žlčových cestách; hostiteľ najčastejšie jelenia zver).",
+      "_Paramphistomum_sp. (črevná motolica) – tieto majú **bezfarebnú** (nie žltohnedú) stenu a operkulum je menej výrazné, hostiteľská lokalizácia je bachor/dvanástnik."
     ],
     "lifeCycle": "Heteroxénny (digenetický), nutný medzihostiteľ – vodný slimák.\nDospelec v žlčových cestách definitívneho hostiteľa produkuje vajíčka → vylučované žlčou do čreva → stolicou do prostredia.\nVo vode sa vyvíja miracídium (za 9–14 dní pri optimálnej teplote), ktoré aktívne vyhľadáva a penetruje medzihostiteľa (Galba truncatula).\nV slimáku: sporocysta → rediá (1–2 generácie) → cerkárie (celý vývoj v slimáku trvá cca 4–7 týždňov).\nCerkárie opúšťajú slimáka, encystujú sa na vodných rastlinách alebo vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje požitím metacerkárií (pastva, kontaminovaná voda/tráva).\nV čreve sa uvoľňuje juvenilná motolica, penetruje črevnou stenou do peritoneálnej dutiny → migruje do pečene → prenikne pečeňovým parenchýmom (migračná fáza, cca 6–8 týždňov) → dostáva sa do žlčových ciest, kde dospieva a začína klásť vajíčka.\nCelý cyklus (od vajíčka po vajíčko) trvá cca 4–5 mesiacov.",
     "pathology": "Akútna fasciolóza (migračná fáza larvy v pečeňovom parenchýme): traumatická hepatitída, krvácanie, nekrózy, u oviec môže viesť k náhlemu úhynu (hlavne pri masívnej infekcii).\nChronická fasciolóza (dospelci v žlčových cestách): cholangitída, fibróza a zhrubnutie stien žlčových ciest (\"pipe-stem liver\" – klinicky typický nález pri pitve), cholestáza, anémia (hemofágia parazita), hypoalbuminémia, chudnutie, znížená produkcia mlieka/mäsa/vlny.\nSekundárne riziko: uľahčuje vznik \"black disease\" (infekčná nekrotická hepatitída spôsobená Clostridium novyi type B) v dôsledku poškodenia pečeňového tkaniva.",
@@ -12083,7 +12063,9 @@
       "genus": "Fascioloides",
       "species": "Fascioloides magna"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Vysoká zver"
+    ],
     "hosts": [
       "Hovädzí dobytok",
       "Zubor",
@@ -12116,23 +12098,16 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Tvar masívny",
-      "ovalný až elipsovitý (na rozdiel od listovitého tvaru F. hepatica s výrazným prednym kužeľom – u F. magna je predný kónus menej výrazný",
-      "telo je celkovo hrubšie a robustnejšie).",
-      "U definitívneho hostiteľa (jeleň) sú dospelci opuzdrení v hrubostenných fibróznych cystách/púzdrach v pečeni (\"black cysts\"",
-      "tmavé pigmentované puzdrá s hematínom)",
-      "vajíčka sa hromadia v cystách alebo sa vylučujú stolicou.",
-      "Pri pitve: veľké",
-      "tmavé",
-      "nekrotické tunely a cysty v pečeňovom parenchýme vyplnené čokoládovohnedým exsudátom (dôsledok migrácie a hemoragickej nekrózy)."
+      "Tvar masívny, ovalný až elipsovitý (na rozdiel od listovitého tvaru _F. hepatica_ s výrazným prednym kužeľom – u F. magna je **predný kónus menej výrazný**, telo je celkovo **hrubšie a robustnejšie**).",
+      "U definitívneho hostiteľa (jeleň) sú dospelci opuzdrení v hrubostenných fibróznych cystách/púzdrach v pečeni („black cysts“), tmavé pigmentované puzdrá s hematínom)",
+      "Vajíčka sa hromadia v cystách alebo sa vylučujú stolicou.",
+      "Pri pitve: veľké, tmavé, nekrotické tunely a cysty v pečeňovom parenchýme vyplnené čokoládovohnedým exsudátom (dôsledok migrácie a hemoragickej nekrózy)."
     ],
     "differentialDiagnosis": [
-      "Morfológia dospelca: F. magna je väčšia",
-      "hrubšia",
-      "menej listovitá ako F. hepatica.",
+      "_F. magna_ je väčšia, hrubšia, menej listovitá ako _F. hepatica_.",
       "Odlíšenie od abscesov/nekróz inej etiológie (bakteriálne abscesy pečene) – potrebný nález parazitov alebo vajíčok v léziách."
     ],
-    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu _F. hepatica_, ale s dôležitými rozdielmi podľa typu hostiteľa:\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
     "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
     "zoonosis": false,
     "notes": "Významný pôvodne severoamerický parazit, do Európy zavlečený s dovozom jelenej zveri (vysoký výskyt napr. v Českej republike, na južnej Morave, v Poľsku) – v SR a ČR sledovaný najmä u jelenej zveri vo voľnej prírode a v chovoch, epidemiologicky relevantný pre pastvu dobytka v endemických oblastiach.\nPri podozrení na infekciu u dobytka/oviec v endemickej oblasti (výskyt jelenej zveri) odporučiť histopatologické vyšetrenie pečene alebo PCR z tkaniva/lézií.",
@@ -12152,7 +12127,9 @@
       "genus": "Fascioloides",
       "species": "Fascioloides magna"
     },
-    "hostGroups": [],
+    "hostGroups": [
+      "Vysoká zver"
+    ],
     "hosts": [
       "Hovädzí dobytok",
       "Zubor",
@@ -12185,18 +12162,14 @@
       "shell": "S operculom"
     },
     "diagnosticSigns": [
-      "Tvar ovoidný",
-      "morfologicky prakticky identický s F. hepatica.",
-      "Žltohnedé",
-      "Operkulované vajíčko",
+      "Tvar ovoidný, morfologicky prakticky identický s _F. hepatica_.",
+      "**Žltohnedé, operkulované** vajíčko",
       "Vajíčka (ak sú prítomné v stolici) sa detegujú sedimentačnou metódou."
     ],
     "differentialDiagnosis": [
-      "Hlavné odlíšenie od Fasciola hepatica: vajíčka sú mikroskopicky prakticky nerozlíšiteľné (prekrývajúce sa rozmery) – rozhodujúce je epidemiologické kontextové posúdenie (prítomnosť jelenej zveri v danej oblasti",
-      "druh hostiteľa) a lokalizácia lézií pri pitve (F. magna vytvára rozsiahle čierne nekrotické tunely v parenchýme",
-      "nie fibrózu žlčových ciest ako F. hepatica)."
+      "_Fasciola hepatica_: vajíčka sú mikroskopicky prakticky nerozlíšiteľné (prekrývajúce sa rozmery) – rozhodujúce je epidemiologické kontextové posúdenie (prítomnosť jelenej zveri v danej oblasti, **druh hostiteľa**) a lokalizácia lézií pri pitve (_F. magna_ vytvára rozsiahle čierne nekrotické tunely v parenchýme, nie fibrózu žlčových ciest ako _F. hepatica_)."
     ],
-    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu F. hepatica, ale s dôležitými rozdielmi podľa typu hostiteľa:\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
+    "lifeCycle": "Heteroxénny (digenetický), analogický cyklu _F. hepatica_, ale s dôležitými rozdielmi podľa typu hostiteľa:\nVajíčka z pečeňových cýst definitívneho hostiteľa (jeleň) sa dostávajú do čreva a stolicou do prostredia.\nVo vode sa vyvíja miracídium, penetruje medzihostiteľa (sladkovodný slimák).\nV slimáku: sporocysta → rediá → cerkárie (vývoj trvá týždne).\nCerkárie encystujú na vodnej vegetácii ako metacerkárie.\nDefinitívny alebo aberantný hostiteľ sa infikuje pri pastve/pití kontaminovanej vody.\nJuvenilná motolica penetruje črevnú stenu, migruje do pečene:\nU definitívneho hostiteľa (jeleň): po migračnej fáze sa opuzdruje v pečeni v pároch, vytvára typické fibrózne cysty, dosahuje dospelosti, kladie vajíčka, ktoré sa dostávajú do žlčových ciest/čreva.\nU aberantného hostiteľa (dobytok, ovce): parazit sa nedokáže opuzdriť, pokračuje v chaotickej dlhodobej migrácii pečeňovým parenchýmom (aj mesiace až roky), spôsobuje rozsiahlu deštrukciu tkaniva, zriedka dosiahne reprodukčnú dospelosť, prakticky sa nekladú vajíčka do žlčových ciest.",
     "pathology": "U definitívneho hostiteľa (jeleň): relatívne dobre tolerované, pečeň obsahuje charakteristické čierne (melanínové/hematínové) fibrózne cysty s pármi dospelcov, klinicky často bez výrazných príznakov, hostiteľ prežíva.\nU aberantných hostiteľov (ovce, dobytok): ťažká, difúzna, progresívna deštrukcia pečeňového parenchýmu – rozsiahle hemoragicko-nekrotické tunely, masívne migračné stopy, silná fibróza, môže viesť k pečeňovej insuficiencii, u oviec často fatálne (ovce sú extrémne citlivé, podobne ako pri F. hepatica).\nRiziko sekundárnej infekcie Clostridium novyi (\"black disease\") pri poškodení pečeňového tkaniva.",
     "zoonosis": false,
     "notes": "U aberantných hostiteľov (dobytok, ovce) parazit zvyčajne NEKLADIE vajíčka do žlčových ciest (lebo sa nedostane do žlčových ciest, migruje voľne v parenchýme) → koprologické vyšetrenie je typicky negatívne aj pri ťažkej infekcii – diagnóza je väčšinou post mortem.",
@@ -12237,22 +12210,16 @@
       "shell": "Hrubá"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: podlhovastý."
+      "Vajíčko má mimoriadne charakteristický **štíhly, pretiahnutý, vretenovitý** tvar.",
+      "Vajíčko je obalené tromi vrstvami. Stredná vrstva je hrubá, kým vonkajšia je tenká a priehľadná. Vnútorný akantor (larva) je jemne tŕnitý a máva svetlooranžové až žltkasté sfarbenie. Póly vajíčka sú zaoblené, stredná membrána netvorí na póloch žiadne špecifické výbežky či uzly."
     ],
     "differentialDiagnosis": [
-      "Vajíčka prakticky nerozlíšiteľné od  P. minutus (rovnaký typ definitívneho hostiteľa) – spoľahlivá diferenciácia si vyžaduje dospelca (počet/usporiadanie hákov chobotíka). Medzihostiteľom P. minutus sú blešivce rodu Gammarus (G. pulex",
-      "G. roeseli",
-      "G. fossarum)",
-      "na rozdiel od F. anatis",
-      "kde je bežným medzihostiteľom kôrovec Asellus aquaticus – užitočný epidemiologický rozlišovací znak."
+      "_Polymorphus minutus_ - Široko vretenovitý až eliptický tvar, má **výrazné zaškrtenia na póloch**"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus _Filicollis anatis_ je nepriamy (heteroxénny) a úzko viazaný na vodné prostredie. Definitívny hostiteľ (vták) vylučuje trusom do vody zrelé vajíčka, ktoré klesajú ku dnu do bahna, kde dokážu prežívať celú zimu. Tieto vajíčka sú zožraté medzihostiteľom – sladkovodným kôrovcom berlou vodnou (Asellus aquaticus). V jej čreve sa z vajíčka uvoľní larva (akantor), prenikne do telovej dutiny kôrovca (hemocelu) a prechádza štádiom akantely. Počas tohto štádia larva vylučuje ochrannú substanciu a vytvára okolo seba pevnú opuzdrenú cystu, ktorá ju chráni pred imunitným systémom kôrovca. Vývin v kôrovcovi vrcholí do infekčného štádia – cystakantu. Vták sa nakazí požratím infikovaných kôrovcov. V tenkom čreve vtáka sa cystakant excystuje, samičie jedince sa pomocou svojho obrovského guľovitého sosáčika hlboko a pevne fixujú do črevnej steny, dospievajú a po kopulácii začínajú produkovať vajíčka.",
+    "pathology": "_Filicollis anatis_ patrí medzi vysoko patogénne tŕňohlavce vodnej hydiny, pričom jeho nebezpečnosť výrazne prevyšuje menšie druhy rodu Polymorphus. Patogenita vyplýva najmä z mechanického pôsobenia samíc; ich masívny guľovitý proboscis penetruje hlboko cez sliznicu a submukózu a často úplne perforuje svalovú vrstvu čreva (telo parazita zostáva v lúmene, ale bulbózna hlavička je viditeľná až na seróznej strane čreva ako žltkastý uzlík). Na miestach uchytenia vzniká ťažká, hlboká lokalizovaná nekróza, hemoragicko-purulentná enteritída a dochádza k formovaniu robustných väzivových uzlov (granulómov). Pri masívnych inváziách dochádza u hostiteľov k poruchám trávenia, ťažkej kachexii, anémii a v dôsledku perforácie čreva k fatálnej peritonitíde, čo vedie k vysokému úhynu najmä u mláďat domácich kačíc.",
     "zoonosis": false,
-    "notes": "",
+    "notes": "**Mechanická kotva**: Spôsob fixácie dospelých samíc v čreve je mechanický unikát. Guľovitý sosáčik (proboscis) funguje ako dokonalá expanzívna hmoždinka. Po preniknutí cez úzku ranu v sliznici sa sosáčik nafúkne/rozšíri do gule a parazita už nie je možné z čreva vytiahnuť bez toho, aby sa črevná stena roztrhla.\n\\n **Zmena správania medzihostiteľa**: Podobne ako iné tŕňohlavce, aj larvy _F. anatis_ dokážu čiastočne modifikovať správanie kôrovca _Asellus aquaticus_. Infikované jedince strácajú prirodzený pud schovávať sa v tme pod listami, stávajú sa hyperaktívnymi a pohybujú sa na svetle, čím sa stávajú ľahšou korisťou pre kačice, čo parazitovi zaručuje úspešné dokončenie cyklu",
     "id": "filicollis_anatis_egg",
     "images": []
   },
@@ -12278,7 +12245,7 @@
       "Zebra"
     ],
     "hostNotes": {},
-    "sample": "Koža",
+    "sample": "Trus",
     "stage": "Larva",
     "group": "Insecta",
     "micrometry": {
@@ -12294,8 +12261,8 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Larva s dvomi pásmi tŕňov na väčšine segmentov",
-      "parazit žalúdka koní."
+      "Larva **s dvomi pásmi tŕňov** na väčšine segmentov",
+      "Parazit žalúdka koní."
     ],
     "differentialDiagnosis": [
       "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
@@ -12303,10 +12270,10 @@
       "tvaru chvosta",
       "pažeráka a kutikulárnych znakov."
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Dospelé samičky poletujú v lete a kladú vajíčka na srsť koní. Larvy vnútri vajíčok dozrejú za 7 dní a k ich vyliahnutiu dochádza mechanickým dráždením (lízaním srsti koňom) alebo vlhkom a teplom. Larvy I. štádia prenikajú do sliznice jazyka a ďasien, kde sa 3 až 4 týždne vyvíjajú a migrujú do hltana. Odtiaľ sú prehltnuté do žalúdka, kde sa prevlečú na II. a III. larválne štádium. V bezžľazovej časti žalúdka zotrvávajú 8 až 10 mesiacov (prezimujú), živia sa tkáňovým mokom/krvou, a na jar sa uvoľnia s trusom na zem, kde sa zakuklia (3 – 5 týždňov trvá kuklenie v pôde, kým sa vyliahne dospelec).",
+    "pathology": "Prítomnosť migrujúcich lariev v ústnej dutine vyvoláva glositídu a tvorbu vredov na jazyku. V žalúdku spôsobuje masívne uchytenie stoviek lariev III. štádia chronický zápal sliznice (gastritídu), erózie, hlboké vredy, lokálnu atrofiu tkaniva a poruchy trávenia. Pri silných inváziách dochádza k poklesu výživy, zhoršeniu kondície, anémii, kolikovým bolestiam a zriedkavo až k perforácii žalúdka. Samotné kladenie vajíčok dospelými samicami vyvoláva u koní paniku a nepokoj.",
     "zoonosis": false,
-    "notes": "Dvojitý rad ostňov",
+    "notes": "",
     "id": "gasterophilus_intestinalis_larva",
     "images": []
   },
@@ -12332,32 +12299,30 @@
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 1000,
-      "lengthMax": 1000,
-      "widthMin": 1000,
-      "widthMax": 1000,
+      "lengthMin": 250,
+      "lengthMax": 600,
+      "widthMin": 300,
+      "widthMax": 800,
       "unit": "µm"
     },
     "morphology": {
-      "shape": "Nepravidelný",
+      "shape": "Oválny",
       "colour": "Červený",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Priečne oválny, **širší ako dlhší** (obličkovitý) tvar",
+      "**Všetky  4 páry končatín natlačené v prednej tretine tela**",
+      "Lokalizácie pod šupinami hlavy, uší a prstov"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Geckobia môže byť potrebná molekulová identifikácia."
+      "_Ophionyssus natricis_ (Klieštikovec plazí):  najmä hady, zriedkavo jaštery, tvar má pozdĺžne oválny, klasický **v tvare kvapky**, končatiny rozdelené (**2 páry vpredu, 2 páry vzadu**), **tmavohnedý až čierny**, voľne lezú po tele",
+      "_Geckobiella_ sp.: **Predĺžený, úzky** tvar, končatiny rozdelené po dĺžke tela, hostiteľ: hlavne **leguány a chameleóny**, v kožných záhyboch"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus prebieha kompletne na tele jedného hostiteľa (permanentný parazitizmus). Samička kladie vajíčka priamo pod šupiny hostiteľa. Z vajíčka sa líhne šesťnohá larva, ktorá sa kŕmi lymfou hostiteľa. Po nasatí prechádza cez štádia protonymfy a deuteronymfy (osemnohé štádia) až po dospelého jedinca. Celý cyklus trvá v závislosti od teploty prostredia 2 až 4 týždne. Prenos sa uskutočňuje výhradne priamym kontaktom medzi jaštermi (pri párení, bojoch o teritórium alebo v spoločných úkrytoch).",
+    "pathology": "Tieto roztoče sa živia tkanivovým mokom a lymfou hostiteľa, ktoré sajú po nabodnutí jemnej kože medzi šupinami. Pri nízkej intenzite invázie je patogenita subklinická. Pri masívnom premnožení (časté v stresových podmienkach terárií) vyvolávajú lokálnu dermatitídu, hyperkeratózu, ťažké poruchy zvliekania kože (dysedyzia), kedy stará koža ostáva prichytená na prstoch a môže spôsobiť nekrózy prstov. Zvieratá sú nepokojné, otierajú sa o substrát a pri extrémnej anémii môže dôjsť k celkovému chradnutiu a úhynu malých jedincov. Sú tiež potenciálnymi vektormi pre hemoparazity (napr. krvné prvoky rodu Hepatozoon).",
     "zoonosis": false,
-    "notes": "",
+    "notes": "**Extrémna špecializácia na mikrobiotop** Niektoré druhy rodu Geckobia sú tak špecializované, že žijú len na konkrétnej časti tela gekóna. Napríklad _Geckobia estherae_ sa vyskytuje takmer výhradne na čele gekónov stredomorských, zatiaľ čo iné druhy kolonizujú výhradne zvukovod plazov.",
     "id": "geckobia_sp_adult",
     "images": []
   },
@@ -12383,10 +12348,10 @@
     "stage": "Dospelý jedinec",
     "group": "Arachnida",
     "micrometry": {
-      "lengthMin": 1000,
-      "lengthMax": 1000,
-      "widthMin": 1000,
-      "widthMax": 1000,
+      "lengthMin": 400,
+      "lengthMax": 900,
+      "widthMin": 300,
+      "widthMax": 600,
       "unit": "µm"
     },
     "morphology": {
@@ -12395,18 +12360,17 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Telo predĺžené, vajcovité alebo **podlhovasté**. Sú výrazne dorzventrálne sploštené (**ploské**), čo im umožňuje tesne priliehať k epidermis pod šupinou.",
+      "Majú 4 páry nôh. Nohy sú robustné, posunuté smerom dopredu k ústnemu ústrojenstvu (gnathosome) a sú vybavené silnými, modifikovanými pazúrikmi a pretiahnutými coxálnymi štetinami, ktoré fungujú ako protišmykové kotvy.",
+      "Sfarbenie na koži je najčastejšie **jasne červené až tehlovo oranžové**.",
+      "Typicky okolo kloaky, v podpazuší, pod šupinami chrbta, **schovaný hlboko pod okrajom šupiny**"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Geckobiella môže byť potrebná molekulová identifikácia."
+      "_Geckobia_ sp.: u gekonov a gekončíkov, **širší ako dlhší** tvar",
+      "_Ophionyssus natricis_: najmä hady, zriedkavo jaštery, tvar má pozdĺžne oválny, klasický **v tvare kvapky**, končatiny rozdelené (**2 páry vpredu, 2 páry vzadu**), **tmavohnedý až čierny**, voľne lezú po tele"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Celý životný cyklus prebieha permanentne na koži hostiteľa. Samička kladie vajíčka do chránených mikrobiotopov – najčastejšie hlboko pod šupiny v oblasti bázy chvosta alebo okolo kloaky. Z vajíčka sa liahne šesťnohá larva, nasleduje osemnohá protonymfa, deuteronymfa a dospelec. Celý vývin trvá približne 20 až 30 dní v závislosti od teploty a vlhkosti v teráriu. K prenosu dochádza výhradne tesným kontaktom zvierat (napr. v chovných skupinách) alebo cez kontaminovaný substrát a dekoračné drevo v teráriu.",
+    "pathology": "Roztoče poškodzujú kožu mechanicky a chemicky. Chelicery (ústne ústrojenstvo) penetrujú jemnú pokožku medzi šupinami, kde parazit vylučuje lytické sliny a saje lymfu a tkanivový mok. Na koži vzniká silné ohniskové podráždenie, erytém (začervenanie) a hyperkeratóza. Masívne invázie spôsobujú vážne poruchy ekdýzy (zvliekania kože), kedy staré nánosy kutikuly ostávajú pevne prichytené na tele. Jaštery sú nepokojné, odmietajú potravu, trú sa o predmety v teráriu, čo vedie k vzniku otvorených kožných ulcerácií (vredov), ktoré sa sekundárne infikujú baktériami (napr. _Pseudomonas_spp.).",
     "zoonosis": false,
     "notes": "",
     "id": "geckobiella_sp_adult",
@@ -13496,57 +13460,6 @@
     "zoonosis": false,
     "notes": "",
     "id": "hippobosca_equina_adult",
-    "images": []
-  },
-  {
-    "latinName": "Hirstiella sp.",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Animalia",
-      "phylum": "Arthropoda",
-      "class": "Arachnida",
-      "order": "Trombidiformes",
-      "family": "Pterygosomatidae",
-      "genus": "Hirstiella",
-      "species": "neurčený druh"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Gekon"
-    ],
-    "hostNotes": {},
-    "sample": "Koža",
-    "stage": "Dospelý jedinec",
-    "group": "Arachnida",
-    "micrometry": {
-      "lengthMin": 1000,
-      "lengthMax": 1000,
-      "widthMin": 1000,
-      "widthMax": 1000,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Nepravidelný",
-      "colour": "Červený",
-      "shell": "Bez schránky"
-    },
-    "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Hirstiella môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "hirstiella_sp_adult",
     "images": []
   },
   {
@@ -16702,7 +16615,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "pharyngodonidae_egg",
-    "images": [ ]
+    "images": []
   },
   {
     "latinName": "Pharyngomyia picta",
@@ -18514,7 +18427,7 @@
     "zoonosis": false,
     "notes": "",
     "id": "solenopotes_capillatus_adult",
-    "images": [ ]
+    "images": []
   },
   {
     "latinName": "Spirocerca lupi",
