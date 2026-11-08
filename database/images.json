@@ -4169,60 +4169,20 @@
     "dateAdded": "2026-08-29T13:17:42.804Z"
   },
   {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.540Z"
-  },
-  {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.540Z"
-  },
-  {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.540Z"
-  },
-  {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.540Z"
-  },
-  {
-    "parasiteId": "filicolis_anatis_egg",
-    "url": "/public/images/parasites/filicolis_anatis_egg/filicollis_anatis_egg_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.540Z"
-  },
-  {
     "parasiteId": "filicollis_anatis_egg",
     "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:16:29.417Z"
+    "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
     "parasiteId": "filicollis_anatis_egg",
-    "url": "/public/images/parasites/filicollis_anatis_egg/filicollis_anatis_egg_02.webp",
+    "url": "/public/images/parasites/filicollis_anatis_egg/filicolis_anatis_egg_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:16:29.426Z"
+    "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
     "parasiteId": "filicollis_anatis_egg",
@@ -4230,7 +4190,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:16:29.436Z"
+    "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
     "parasiteId": "filicollis_anatis_egg",
@@ -4238,7 +4198,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:16:29.447Z"
+    "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
     "parasiteId": "filicollis_anatis_egg",
@@ -4246,7 +4206,7 @@
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:16:29.456Z"
+    "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
     "parasiteId": "gasterophilus_intestinalis_larva",
@@ -4563,38 +4523,6 @@
     "credit": "",
     "dateAdded": "2026-08-29T13:19:20.209Z",
     "isPrimary": true
-  },
-  {
-    "parasiteId": "haematopinus_eurysternus_adult",
-    "url": "/public/images/parasites/haematopinus_eurysternus_adult/haematopinus_eurysternus_adult_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:19:20.222Z"
-  },
-  {
-    "parasiteId": "haematopinus_eurysternus_adult",
-    "url": "/public/images/parasites/haematopinus_eurysternus_adult/haematopinus_eurysternus_adult_05.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:19:20.233Z"
-  },
-  {
-    "parasiteId": "haematopinus_eurysternus_adult",
-    "url": "/public/images/parasites/haematopinus_eurysternus_adult/haematopinus_eurysternus_adult_06.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:19:20.244Z"
-  },
-  {
-    "parasiteId": "haematopinus_eurysternus_adult",
-    "url": "/public/images/parasites/haematopinus_eurysternus_adult/haematopinus_eurysternus_adult_07.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:19:20.258Z"
   },
   {
     "parasiteId": "hammondia_hammondi_oocyst",
@@ -6174,40 +6102,40 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_01.webp",
+    "parasiteId": "pharyngodonidae_egg",
+    "url": "/public/images/parasites/pharyngodonidae_egg/pharyngodonidae_egg_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-07T18:49:38.234Z"
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_04.webp",
+    "parasiteId": "pharyngodonidae_egg",
+    "url": "/public/images/parasites/pharyngodonidae_egg/pharyngodonidae_egg_04.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-07T18:49:38.260Z"
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_06.webp",
+    "parasiteId": "pharyngodonidae_egg",
+    "url": "/public/images/parasites/pharyngodonidae_egg/pharyngodonidae_egg_06.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-07T18:49:38.281Z"
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_08.webp",
+    "parasiteId": "pharyngodonidae_egg",
+    "url": "/public/images/parasites/pharyngodonidae_egg/pharyngodonidae_egg_08.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-07T18:49:38.299Z"
   },
   {
-    "parasiteId": "pharyngodoniade_egg",
-    "url": "/public/images/parasites/pharyngodoniade_egg/pharyngodonidae_egg_09.webp",
+    "parasiteId": "pharyngodonidae_egg",
+    "url": "/public/images/parasites/pharyngodonidae_egg/pharyngodonidae_egg_09.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -6873,6 +6801,30 @@
     "dateAdded": "2026-11-07T18:54:23.393Z"
   },
   {
+    "parasiteId": "solenopotes_burmeisteri_adult",
+    "url": "/public/images/parasites/solenopotes_burmeisteri_adult/solenopotes_burmeisteri_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:44:34.912Z"
+  },
+  {
+    "parasiteId": "solenopotes_capillatus_adult",
+    "url": "/public/images/parasites/solenopotes_capillatus_adult/solenopotes_capillatus_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:44:50.782Z"
+  },
+  {
+    "parasiteId": "solenopotes_capillatus_adult",
+    "url": "/public/images/parasites/solenopotes_capillatus_adult/solenopotes_capillatus_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:44:50.807Z"
+  },
+  {
     "parasiteId": "spirocerca_lupi_egg",
     "url": "/public/images/parasites/spirocerca_lupi_egg/spirocerca_lupi_egg_01.webp",
     "alt": "",
@@ -6895,6 +6847,62 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T12:50:22.549Z"
+  },
+  {
+    "parasiteId": "spirurida_egg",
+    "url": "/public/images/parasites/spirurida_egg/spirurida_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:45:32.059Z"
+  },
+  {
+    "parasiteId": "spirurida_egg",
+    "url": "/public/images/parasites/spirurida_egg/spirurida_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:45:32.079Z"
+  },
+  {
+    "parasiteId": "spirurida_egg",
+    "url": "/public/images/parasites/spirurida_egg/spirurida_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:45:32.101Z"
+  },
+  {
+    "parasiteId": "stephanurus_dentatus_egg",
+    "url": "/public/images/parasites/stephanurus_dentatus_egg/stephanurus_dentatus_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:45:42.260Z"
+  },
+  {
+    "parasiteId": "stratiolaelaps_scimitus_adult",
+    "url": "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:46:31.939Z"
+  },
+  {
+    "parasiteId": "stratiolaelaps_scimitus_adult",
+    "url": "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:46:31.963Z"
+  },
+  {
+    "parasiteId": "stratiolaelaps_scimitus_adult",
+    "url": "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:46:31.987Z"
   },
   {
     "parasiteId": "strongylida_egg",
@@ -6930,22 +6938,6 @@
     "dateAdded": "2026-08-29T11:34:09.538Z"
   },
   {
-    "parasiteId": "strongyloides_ransomi_egg",
-    "url": "/public/images/parasites/strongyloides_ransomi_egg/strongyloides_ransomi_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-20T13:06:23.446Z"
-  },
-  {
-    "parasiteId": "strongyloides_ratti_egg",
-    "url": "/public/images/parasites/strongyloides_ratti_egg/strongyloides_ratti_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:36:26.772Z"
-  },
-  {
     "parasiteId": "strongyloides_sp_egg",
     "url": "/public/images/parasites/strongyloides_sp_egg/strongyloides_sp_egg_01.webp",
     "alt": "",
@@ -6966,13 +6958,45 @@
     "parasiteId": "strongyloides_sp_larva",
     "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_01.webp",
     "alt": "",
-    "caption": "Larvy štádia L3 majú dlhý cylindrický pažerák, ktorý zaberá až polovicu tela.",
+    "caption": "RO typický rhabditiformný pažerák, GP - viditeľné genitálne primordium larvy štádia L1",
     "credit": "",
     "dateAdded": "2026-08-28T19:58:24.939Z"
   },
   {
     "parasiteId": "strongyloides_sp_larva",
     "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_02.webp",
+    "alt": "",
+    "caption": "Šípka označuje viditeľné genitálne primordium larvy štádia L1",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:58:24.939Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_larva",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_03.webp",
+    "alt": "",
+    "caption": "Šípka označuje viditeľné genitálne primordium larvy štádia L1",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:58:24.939Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_larva",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_04.webp",
+    "alt": "",
+    "caption": "bg - krátka bukálna kapsula - len štrbina, ro - rhodditifotmný pažerák, gp - genitálne primordium larvy štádia L1",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:58:24.939Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_larva",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_05.webp",
+    "alt": "",
+    "caption": "Larvy štádia L3 majú dlhý cylindrický pažerák, ktorý zaberá až polovicu tela.",
+    "credit": "",
+    "dateAdded": "2026-08-28T19:58:24.939Z"
+  },
+  {
+    "parasiteId": "strongyloides_sp_larva",
+    "url": "/public/images/parasites/strongyloides_sp_larva/strongyloides_sp_larva_06.webp",
     "alt": "",
     "caption": "Typicky rozštiepený chvost larvy štádia L3 vykrojený do tvaru písmena V. Tieto larvy sa nachádzajú v staršom niekoľkodňovom truse",
     "credit": "",
@@ -7076,6 +7100,14 @@
     "dateAdded": "2026-11-04T20:24:27.801Z"
   },
   {
+    "parasiteId": "tetratrichomonas_limacis_trophozoite",
+    "url": "/public/images/parasites/tetratrichomonas_limacis_trophozoite/tetratrichomonas_limacis_trophozoite_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:46:41.691Z"
+  },
+  {
     "parasiteId": "toxascaris_leonina_egg",
     "url": "/public/images/parasites/toxascaris_leonina_egg/toxascaris_leonina_egg_01.webp",
     "alt": "",
@@ -7166,6 +7198,14 @@
     "dateAdded": "2026-08-29T11:59:15.958Z"
   },
   {
+    "parasiteId": "toxocara_vitulorum_egg",
+    "url": "/public/images/parasites/toxocara_vitulorum_egg/toxocara_vitulorum_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:46:55.883Z"
+  },
+  {
     "parasiteId": "toxoplasma_gondii_oocyst",
     "url": "/public/images/parasites/toxoplasma_gondii_oocyst/toxoplasma_gondii_oocyst_01.webp",
     "alt": "",
@@ -7213,6 +7253,62 @@
     "credit": "",
     "dateAdded": "2026-08-29T11:58:49.693Z",
     "isPrimary": true
+  },
+  {
+    "parasiteId": "trichobilharzia_regenti_egg",
+    "url": "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:06.845Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_regenti_egg",
+    "url": "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:06.869Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_regenti_egg",
+    "url": "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:06.891Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_regenti_egg",
+    "url": "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:06.912Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_regenti_egg",
+    "url": "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:06.930Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_sp_egg",
+    "url": "/public/images/parasites/trichobilharzia_sp_egg/trichobilharzia_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:27.627Z"
+  },
+  {
+    "parasiteId": "trichobilharzia_sp_egg",
+    "url": "/public/images/parasites/trichobilharzia_sp_egg/trichobilharzia_sp_egg_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:27.644Z"
   },
   {
     "parasiteId": "trichodina_sp_trophozoite",
@@ -7370,8 +7466,16 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "trombicula_autumnalis_larva",
-    "url": "/public/images/parasites/trombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp",
+    "parasiteId": "triodontophorus_sp_egg",
+    "url": "/public/images/parasites/triodontophorus_sp_egg/triodontophorus_sp_egg_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:41.710Z"
+  },
+  {
+    "parasiteId": "neotrombicula_autumnalis_larva",
+    "url": "/public/images/parasites/neotrombicula_autumnalis_larva/neotrombicula_autumnalis_larva_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
@@ -7409,6 +7513,22 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:41:12.563Z"
+  },
+  {
+    "parasiteId": "tyzzeria_parvula_oocyst",
+    "url": "/public/images/parasites/tyzzeria_parvula_oocyst/tyzzeria_parvula_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:48:52.332Z"
+  },
+  {
+    "parasiteId": "tyzzeria_perniciosa_oocyst",
+    "url": "/public/images/parasites/tyzzeria_perniciosa_oocyst/tyzzeria_perniciosa_oocyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-08T13:49:05.405Z"
   },
   {
     "parasiteId": "uncinaria_sp_egg",
