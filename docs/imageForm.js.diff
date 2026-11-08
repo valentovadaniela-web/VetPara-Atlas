@@ -1,0 +1,94 @@
+--- orig/imageForm.js	2026-11-08 14:14:02.121536366 +0000
++++ imageForm.js	2026-11-08 14:14:17.391037819 +0000
+@@ -1,18 +1,13 @@
+ import { state, addPendingChange, showToast } from '../admin.js';
+ 
+-// FIX: doteraz sa fotky brali len z p.images (embednuté priamo v parasites.json).
+-// Skutočný zdroj fotiek je ale database/images.json (state.images) — pri loadData()
+-// sa síce p.images kopírujú DO state.images, ale nie naopak, takže fotky, ktoré žijú
+-// len v images.json, sa v tomto tabe vôbec nezobrazili. Táto funkcia zlúči oba zdroje.
++// Jediný zdroj fotiek je database/images.json (state.images).
++// Pole `images` v parasites.json sa už nepoužíva a ostáva vždy prázdne `[]`
++// (starý obsah sa pri načítaní zlúči do state.images — pozri loadData() v admin.js).
+ function getImagesForParasite(parasiteId) {
+     const urls = new Set();
+     for (const img of state.images || []) {
+         if (img.parasiteId === parasiteId && img.url) urls.add(img.url);
+     }
+-    const parasite = state.parasites.find(p => p.id === parasiteId);
+-    if (parasite?.images) {
+-        for (const url of parasite.images) urls.add(url);
+-    }
+     return Array.from(urls);
+ }
+ 
+@@ -50,7 +45,7 @@
+ 
+     // Získať všetkých parazitov
+     const parasites = state.parasites || [];
+-    // FIX: zoznam obrázkov na parazita počítame raz (zlúčené state.images + p.images)
++    // FIX: zoznam obrázkov na parazita počítame raz (zo state.images)
+     // a znovu použijeme pri vykreslení riadkov aj pri súčte v hlavičke.
+     const imagesByParasite = new Map(parasites.map(p => [p.id, getImagesForParasite(p.id)]));
+     const totalImages = Array.from(imagesByParasite.values()).reduce((acc, arr) => acc + arr.length, 0);
+@@ -214,18 +209,8 @@
+                         }
+                     });
+ 
+-                    // Uložíme do state.parasites
+-                    const parasite = state.parasites.find(p => p.id === id);
+-                    if (parasite) {
+-                        if (!parasite.images) parasite.images = [];
+-                        parasite.images.push(baseUrl);
+-
+-                        // --- KRITICKÝ RIADOK ---
+-                        state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
+-                    }
+-
+-                    // FIX: aj state.images musí vedieť o novej fotke, inak sa po
+-                    // opätovnom vykreslení tabu (alebo pri exporte) nezobrazí/nezapíše.
++                    // Fotka sa zapisuje LEN do state.images (zdroj pre images.json).
++                    // Pole `images` v zázname parazita sa nemení.
+                     if (!state.images.find(img => img.url === baseUrl && img.parasiteId === id)) {
+                         state.images.push({
+                             parasiteId: id,
+@@ -267,18 +252,7 @@
+                     }
+                 });
+ 
+-                // Uložíme do state.parasites
+-                const parasite = state.parasites.find(p => p.id === id);
+-                if (parasite) {
+-                    if (!parasite.images) parasite.images = [];
+-                    parasite.images.push(newImageUrl);
+-
+-                    // FIX: chýbal rebuild workingCopy pre vetvu "pridanie cez URL"
+-                    // (multi-file vetva to robila, táto nie — nekonzistentné so zvyškom appky)
+-                    state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
+-                }
+-
+-                // FIX: aj state.images musí vedieť o novej fotke
++                // Fotka sa zapisuje LEN do state.images (zdroj pre images.json).
+                 if (!state.images.find(img => img.url === newImageUrl && img.parasiteId === id)) {
+                     state.images.push({
+                         parasiteId: id,
+@@ -309,18 +283,7 @@
+                 return;
+             }
+ 
+-            // Vymazať z parazita
+-            const parasite = state.parasites.find(p => p.id === id);
+-            if (parasite) {
+-                parasite.images = [];
+-                // FIX: bez tohto sa zmazanie neprejavilo v exporte, lebo zipExport.js
+-                // sťahuje dáta zo state.workingCopy, nie zo state.parasites priamo.
+-                state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
+-            }
+-
+-            // FIX: state.images (zdroj pre database/images.json pri exporte) doteraz
+-            // nebol pri mazaní vôbec upravený — fotka by sa "zmazala" len vizuálne
+-            // v tomto tabe, ale reálne by prežila v exportovanom images.json.
++            // Fotky sú len v state.images (zdroj pre database/images.json pri exporte).
+             state.images = (state.images || []).filter(img => img.parasiteId !== id);
+ 
+             // Pridanie záznamu k čakajúcim zmenám

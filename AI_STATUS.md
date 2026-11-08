@@ -1,3 +1,48 @@
+🔥 0.41 Aktuálny stav — doplnené (2026‑11‑08, session: Admin nástroj prestáva zapisovať cesty fotiek do `parasites.json[].images`)
+
+## ✅ ČO SA VYRIEŠILO V TEJTO SESSII
+
+### Kontext
+
+Autorka si všimla, že v `parasites.json` sa po nahrávaní cez Admin → Fotografie opäť objavili cesty k fotkám (príklad: `triodontophorus_sp_egg` → `"images": ["/public/images/parasites/triodontophorus_sp_egg/triodontophorus_sp_egg_01.webp"]`) a opýtala sa, načo, keď fotky načítava `images.json`. Nadväzuje na §0.35 (pole `images` vyprázdnené na `[]` pri 73 záznamoch). Nahraté: `imageForm.js`, `admin.js`, `zipExport.js`, `02_DATABASE_SPECIFICATION.md`.
+
+### 🔍 Príčina
+
+Admin nástroj zápis do `p.images` nikdy nezrušil: `imageForm.js` (pridanie súborov, pridanie cez URL) pushoval cestu do `parasite.images` aj do `state.images`, `admin.js::loadData()` kopíroval `p.images` do `state.images` a `zipExport.js` ich pri exporte opäť dopĺňal. Každý export preto znovu naplnil `images` v `parasites.json`, hoci živá aplikácia (`src/`) toto pole nikde nečíta.
+
+### ✅ Zmena (len kód admin nástroja, `database/*` sa nemenilo)
+
+- **`imageForm.js`**: `getImagesForParasite()` číta len `state.images`; pridanie (súbory aj URL) a „Vymazať všetky“ pracujú len so `state.images`. `parasite.images` sa už nemení.
+- **`admin.js::loadData()`**: ak je v načítanom `parasites.json` ešte neprázdne `images`, staré cesty sa jednorazovo zlúčia do `state.images` (dedup podľa `parasiteId`+`url`, nič sa nestratí) a pole sa vyprázdni na `[]`. Vytvorenie `state.workingCopy` sa presunulo ZA tento krok, takže export zapíše `images: []`.
+- **`zipExport.js`**: odstránené dopĺňanie `finalImages` z `parasite.images`; pri exporte sa každému parazitovi nastaví `images = []`.
+- Pole `images` ostáva v schéme (prázdne `[]`), schéma sa nemení.
+
+### 🐞 Vedľajší nález (opravený touto zmenou)
+
+Pôvodný „KRITICKÝ RIADOK“ v `imageForm.js` (`state.workingCopy = JSON.parse(JSON.stringify(state.parasites))`) po pridaní/zmazaní fotky prepísal `workingCopy` z `state.parasites` bez znovuaplikovania `pendingChanges`. Mohol tým zahodiť rozpracované (ešte neexportované) úpravy daného parazita z formulára. Po zmene sa `workingCopy` v `imageForm.js` už nemení.
+
+### 📝 Zmenené súbory (tento chat)
+
+| Súbor | Zmena | Stav |
+| --- | --- | --- |
+| `tools/admin/forms/imageForm.js` | zápis len do `state.images`, odstránené `p.images` a prepis `workingCopy` | ✅ syntax OK (`node --check`), ⬜ naživo neoverené, ⏳ čaká na manuálne nahradenie autorkou |
+| `tools/admin/admin.js` | normalizácia `p.images` v `loadData()` pred vytvorením `workingCopy` | ✅ syntax OK, ⬜ naživo neoverené, ⏳ čaká na nahradenie |
+| `database/parasites.json` | 62× `"images"` → `[]` | ✅ hotové (súbor priložený v chate), ⏳ čaká na nahradenie |
+| `docs/02_DATABASE_SPECIFICATION.md` | §8 `images`: zastarané, vždy `[]` | ✅ hotové, ⏳ čaká na nahradenie |
+| `tools/admin/zipExport.js` | odstránené dopĺňanie z `parasite.images`, export vždy `images: []` | ✅ syntax OK, ⬜ naživo neoverené, ⏳ čaká na nahradenie |
+
+**Nezmenené:** `database/images.json`, `src/*`, `parasiteForm.js`, `bulkExcel.js`, `diff.js`, `index.html`, `admin.css`, ostatné `docs/*`.
+
+### 🟡 Otvorené
+
+1. ⬜ Naživo overiť: načítať Admin, pridať fotku parazitovi (aj parazitovi s rozpracovanou úpravou), exportovať. V `parasites.json` majú byť všetky `images` prázdne `[]`, v `images.json` nový záznam, rozpracovaná úprava parazita zachovaná.
+2. ✅ `database/parasites.json`: `"images"` vyprázdnené na `[]` v **62 záznamoch**, kde sa medzitým znovu naplnilo. Cross-check: všetkých 62 záznamov (spolu so všetkými cestami) už bolo v `database/images.json` pod rovnakým `parasiteId`, nič sa nestratilo. Cielené textové nahradenie (diff = 62 hunkov, žiadny formátovací šum); overené, že po zhodení `images` sú všetky ostatné polia všetkých záznamov identické, `id` sú unikátne. ⏳ čaká na nahradenie v repozitári autorkou.
+2a. ✅ **Počet záznamov:** nahraný `parasites.json` má 390 záznamov (§0.36 uvádzalo 472). Autorka potvrdila, že počas nahrávania fotiek mazala neaktuálne záznamy a zlučovala viac druhov pod jeden rod, ide teda o zámerný stav, nie o čiastočný súbor.
+2b. ✅ Osirotené záznamy v `images.json` (9 záznamov / 5 `parasiteId`) vyriešila autorka sama: `capillaria_aerophyla_egg` (vymazané), `eimeria_labbeana_oocyst` (záznam pridaný do `parasites.json`), `choleoeimeria_brookesiae_oocyst` a `choleoeimeria_glawi_oocyst` (vymazané), preklep `neohaemathopinus_sciuri_adult` → `neohaematopinus_sciuri_adult` opravený. ⬜ Neoverené Claudom (súbory po oprave neboli nahraté); pri najbližšej práci s `parasites.json`/`images.json` skontrolovať, že žiadny `parasiteId` v `images.json` nie je bez záznamu v `parasites.json`, a či `eimeria_labbeana_oocyst` pri vymazaní fotiek `capillaria_aerophyla_egg` nestratila fotky, ktoré mali ostať pod `eucoleus_aerophilus_egg`.
+3. ✅ `docs/02_DATABASE_SPECIFICATION.md` §8 `images` označené ako zastarané (vždy `[]`, fotky len v `images.json`) — schválené autorkou, ⏳ čaká na nahradenie v repozitári. (§9 spec je navyše zastaraný — `objectId`/`thumbnail`/`isPrimary` vs. reálny formát `parasiteId`/`url`/`alt`/`caption`/`credit`/`dateAdded` — pozri §0.9/§0.10.)
+
+---
+
 # VetPara Atlas – AI STATUS (kompletný stav projektu)
 
 🔥 0.40 Aktuálny stav — doplnené (2026‑10‑27, session: zoradenie exportu v Admin nástroji + šablóna z existujúceho parazita)

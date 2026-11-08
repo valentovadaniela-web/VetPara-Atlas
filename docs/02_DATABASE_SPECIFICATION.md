@@ -554,9 +554,11 @@ Pole podobných objektov.
 
 ## images
 
-Pole ID obrázkov (referencie na `database/images.json`).
-
-Nie názvy súborov.
+> **Zastarané od 2026-11-08 (rozhodnutie autorky, `AI_STATUS.md` §0.35 a §0.41).**
+> Pole ostáva v zázname kvôli spätnej kompatibilite schémy, ale **vždy musí byť
+> prázdne `[]`**. Fotografie sa neukladajú do `parasites.json`, ale **výhradne**
+> do `database/images.json` (väzba cez `parasiteId`, pozri sekciu 9). Admin nástroj
+> pole pri načítaní vyprázdňuje a pri exporte vždy zapíše `[]`.
 
 ---
 

@@ -1,0 +1,40 @@
+--- orig/zipExport.js	2026-11-08 14:14:02.129240505 +0000
++++ zipExport.js	2026-11-08 14:14:17.391720189 +0000
+@@ -49,24 +49,11 @@
+         // 1. Zoberieme všetky existujúce obrázky z state.images
+         let finalImages = state.images ? JSON.parse(JSON.stringify(state.images)) : [];
+ 
+-        // 2. Vytiahneme aj obrázky, ktoré sú priamo v záznamoch parazitov (v poli "images")
++        // 2. Pole "images" v zázname parazita je zastarané — fotky žijú len v images.json.
++        //    Starý obsah sa zlúčil do state.images už pri načítaní (loadData v admin.js);
++        //    tu len zaručíme, že sa do exportovaného parasites.json zapíše vždy prázdne pole.
+         for (const parasite of finalParasites) {
+-            if (parasite.images && Array.isArray(parasite.images) && parasite.images.length > 0) {
+-                for (const url of parasite.images) {
+-                    // Ak tento obrázok ešte nie je v finalImages, pridáme ho
+-                    const existing = finalImages.find(img => img.url === url && img.parasiteId === parasite.id);
+-                    if (!existing) {
+-                        finalImages.push({
+-                            parasiteId: parasite.id,
+-                            url: url,
+-                            alt: '',
+-                            caption: '',
+-                            credit: '',
+-                            dateAdded: new Date().toISOString(),
+-                        });
+-                    }
+-                }
+-            }
++            parasite.images = [];
+         }
+ 
+         // --- Zoradenie (abecedne; obrázky navyše podľa čísla fotky) ---
+@@ -82,7 +69,7 @@
+         // 2. Pridanie host_hierarchy.json (NOVÉ)
+         zip.file('database/dictionary/host_hierarchy.json', JSON.stringify(finalHostHierarchy, null, 2));
+ 
+-        // 3. Pridanie images.json (NOVÉ - automaticky obsahuje aj obrázky z parasites.json)
++        // 3. Pridanie images.json (jediný zdroj fotiek)
+         if (finalImages.length > 0) {
+             zip.file('database/images.json', JSON.stringify(finalImages, null, 2));
+         }

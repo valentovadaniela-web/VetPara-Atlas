@@ -730,30 +730,6 @@
     "dateAdded": "2026-09-06T18:29:43.418Z"
   },
   {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
-    "parasiteId": "capillaria_aerophyla_egg",
-    "url": "/public/images/parasites/eucoleus_aerophilus_egg/eucoleus_aerophilus_egg_04.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-09-14T17:13:01.830Z"
-  },
-  {
     "parasiteId": "capillariidae_egg",
     "url": "/public/images/parasites/capillariidae_egg/capillariidae_egg_01.webp",
     "alt": "",
@@ -4872,22 +4848,6 @@
     "dateAdded": "2026-09-20T13:59:04.991Z"
   },
   {
-    "parasiteId": "choleoeimeria_brookesiae_oocyst",
-    "url": "/public/images/parasites/choleoeimeria_brookesiae_oocyst/choleoeimeria_brookesiae_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-02T19:08:26.795Z"
-  },
-  {
-    "parasiteId": "choleoeimeria_glawi_oocyst",
-    "url": "/public/images/parasites/choleoeimeria_glawi_oocyst/choleoeimeria_glawi_oocyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-02T19:08:39.166Z"
-  },
-  {
     "parasiteId": "choleoeimeria_sp_oocyst",
     "url": "/public/images/parasites/choleoeimeria_sp_oocyst/choleoeimeria_sp_oocyst_01.webp",
     "alt": "",
@@ -5682,22 +5642,6 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-05T18:37:01.604Z"
-  },
-  {
-    "parasiteId": "neohaemathopinus_sciuri_adult",
-    "url": "/public/images/parasites/neohaemathopinus_sciuri_adult/neohaematopinus_sciuri_adult_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.541Z"
-  },
-  {
-    "parasiteId": "neohaemathopinus_sciuri_adult",
-    "url": "/public/images/parasites/neohaemathopinus_sciuri_adult/neohaematopinus_sciuri_adult_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-11-05T19:52:27.541Z"
   },
   {
     "parasiteId": "neohaematopinus_sciuri_adult",

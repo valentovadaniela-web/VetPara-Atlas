@@ -47,12 +47,13 @@ export async function loadData() {
         state.parasites = parasites;
         state.images = images;
         state.hostHierarchy = hostHierarchy;
-        state.workingCopy = JSON.parse(JSON.stringify(parasites));
 
-        // --- NOVÉ: Rozbalenie obrázkov priamo z parasites.json do state.images ---
-        // Toto zabezpečí, že obrázky, ktoré sú priamo v záznamoch (v poli "images"),
-        // sú vždy súčasťou state.images, a teda budú automaticky zahrnuté
-        // aj v budúcich exportoch cez zipExport.js.
+        // --- Normalizácia poľa "images" v parasites.json ---
+        // Jediný zdroj fotiek je images.json (state.images). Pole "images" v zázname
+        // parazita je zastarané a má byť vždy prázdne []. Ak v ňom zostali staré cesty,
+        // jednorazovo ich zlúčime do state.images (aby sa nestratili) a pole vyprázdnime.
+        // Musí to prebehnúť PRED vytvorením workingCopy, aby export zapísal images: [].
+        let legacyCleared = 0;
         for (const parasite of state.parasites) {
             if (parasite.images && Array.isArray(parasite.images) && parasite.images.length > 0) {
                 for (const url of parasite.images) {
@@ -69,8 +70,15 @@ export async function loadData() {
                         });
                     }
                 }
+                parasite.images = [];
+                legacyCleared++;
             }
         }
+        if (legacyCleared > 0) {
+            console.info(`[admin] Vyprázdnené zastarané pole "images" v ${legacyCleared} zázname(och) parasites.json.`);
+        }
+
+        state.workingCopy = JSON.parse(JSON.stringify(state.parasites));
 
         statusEl.textContent = `✅ Načítané: ${parasites.length} parazitov, ${Object.keys(hostHierarchy).length} hostiteľov`;
         statusEl.style.background = '#27ae60';

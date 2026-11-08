@@ -1,0 +1,733 @@
+--- /mnt/user-data/uploads/parasites.json	2026-11-08 14:24:25.003073000 +0000
++++ database/parasites.json	2026-11-08 14:24:51.126289242 +0000
+@@ -12303,9 +12303,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "geckobia_sp_adult",
+-    "images": [
+-      "/public/images/parasites/geckobia_sp_adult/geckobia_sp_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Geckobiella sp.",
+@@ -12356,11 +12354,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "geckobiella_sp_adult",
+-    "images": [
+-      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_01.webp",
+-      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_02.webp",
+-      "/public/images/parasites/geckobiella_sp_adult/geckobiella_sp_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Giardia duodenalis",
+@@ -12438,10 +12432,7 @@
+     "zoonosis": true,
+     "notes": "Navrhovaná revízia názvoslovia\nV roku 2023 bola publikovaná návrhová taxonomická revízia, podľa ktorej by sa jednotlivé asambláže mali uznávať ako samostatné druhy. Navrhované názvy:\n Giardia duodenalis* – asambláž AI,\nGiardia intestinalis* – asambláž AII,\nGiardia enterica* – asambláž B,\nGiardia canis* – asambláž C,\nGiardia lupus* – asambláž D,\nGiardia bovis* – asambláž E,\nGiardia cati* – asambláž F,\nGiardia simoni* – asambláž G.\nTáto revízia je zatiaľ iba návrhom a nie je ešte univerzálne prijatá v diagnostickej, veterinárnej ani medicínskej nomenklatúre.",
+     "id": "giardia_intestinalis_cyst",
+-    "images": [
+-      "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_01.webp",
+-      "/public/images/parasites/giardia_intestinalis_cyst/giardia_duodenalis_cyst_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Giardia microti",
+@@ -12489,9 +12480,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "giardia_microti_cyst",
+-    "images": [
+-      "/public/images/parasites/giardia_microti_cyst/giardia_microti_cyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Giardia muris",
+@@ -12539,9 +12528,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "giardia_muris_cyst",
+-    "images": [
+-      "/public/images/parasites/giardia_muris_cyst/giardia_muris_cyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Giardia simoni",
+@@ -12637,9 +12624,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "giardia_varani_cyst",
+-    "images": [
+-      "/public/images/parasites/giardia_varani_cyst/giardia_varani_cyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Graphidioides affinis",
+@@ -12736,9 +12721,7 @@
+     "zoonosis": false,
+     "notes": "Žalúdočný červ",
+     "id": "graphidium_strigosum_egg",
+-    "images": [
+-      "/public/images/parasites/graphidium_strigosum_egg/graphidium_strigosum_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Gyrodactylus sp.",
+@@ -12841,9 +12824,7 @@
+     "zoonosis": false,
+     "notes": "Vnútri larva",
+     "id": "habronema_sp_egg",
+-    "images": [
+-      "/public/images/parasites/habronema_sp_egg/habronema_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Haemaphysalis concinna",
+@@ -12899,12 +12880,7 @@
+     "zoonosis": false,
+     "notes": "Lužné lesy",
+     "id": "haemaphysalis_concinna_adult",
+-    "images": [
+-      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_01.webp",
+-      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_02.webp",
+-      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_03.webp",
+-      "/public/images/parasites/haemaphysalis_concinna_adult/haemaphysalis_concinna_adult_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Haematopinus asini",
+@@ -12954,10 +12930,7 @@
+     "zoonosis": false,
+     "notes": "Najmä v zime",
+     "id": "haematopinus_asini_adult",
+-    "images": [
+-      "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_01.webp",
+-      "/public/images/parasites/haematopinus_asini_adult/haematopinus_asini_adult_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Haematopinus eurysternus",
+@@ -13057,10 +13030,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "hammondia_hammondi_oocyst",
+-    "images": [
+-      "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_02.webp",
+-      "/public/images/parasites/hammondia_hammondi_oocyst/hammondia_hammondi_oocyst_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hammondia heydorni",
+@@ -13158,9 +13128,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "heterakis_dispar_egg",
+-    "images": [
+-      "/public/images/parasites/heterakis_dispar_egg/heterakis_dispar_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Heterakis gallinarum",
+@@ -13263,9 +13231,7 @@
+     "zoonosis": false,
+     "notes": "Vajíčka Ascaridia columbae a Heterakis gallinarum sú morfologicky takmer identické a nemožno ich spoľahlivo odlíšiť bežnou koproskopiou. Výsledky laboratórnych analýz sa preto zvyčajne hlásia jednoducho ako „vajíčka askaridov\", najmä pri zmiešaných infekciách. Prípadne „vajíčka radu Ascaridida (Ascaridia/Heterakis)\", alebo „vajíčka nematód čeľade Ascaridiidae\".",
+     "id": "heterakis_sp_egg",
+-    "images": [
+-      "/public/images/parasites/heterakis_sp_egg/heterakis_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hexametra sp.",
+@@ -13372,10 +13338,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "hexamita_parva_trophozoite",
+-    "images": [
+-      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_03.webp",
+-      "/public/images/parasites/hexamita_parva_trophozoite/hexamita_parva_trophozoite_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hexamita sp.",
+@@ -13477,9 +13440,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "hippobosca_equina_adult",
+-    "images": [
+-      "/public/images/parasites/hippobosca_equina_adult/hippobosca_equina_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hirstiella sp.",
+@@ -13530,12 +13491,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "hirstiella_sp_adult",
+-    "images": [
+-      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_01.webp",
+-      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_02.webp",
+-      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_03.webp",
+-      "/public/images/parasites/hirstiella_sp_adult/hirstiella_sp_adult_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Histomonas meleagridis",
+@@ -13686,10 +13642,7 @@
+     "zoonosis": false,
+     "notes": "8-32 blastomér",
+     "id": "hyostrongylus_rubidus_egg",
+-    "images": [
+-      "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_01.webp",
+-      "/public/images/parasites/hyostrongylus_rubidus_egg/hyostrongylus_rubidus_egg_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hypoderma actaeon",
+@@ -13741,11 +13694,7 @@
+     "zoonosis": false,
+     "notes": "Na chrbte pod kožou",
+     "id": "hypoderma_actaeon_larva",
+-    "images": [
+-      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_01.webp",
+-      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_02.webp",
+-      "/public/images/parasites/hypoderma_actaeon_larva/hypoderma_actaeon_larva_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Hypoderma diana",
+@@ -13847,9 +13796,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "hystrichis_tricolor_egg",
+-    "images": [
+-      "/public/images/parasites/hystrichis_tricolor_egg/hystrichis_tricolor_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Choanotaenia infundibulum",
+@@ -13952,9 +13899,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "choleoeimeria_sp_oocyst",
+-    "images": [
+-      "/public/images/parasites/choleoeimeria_sp_oocyst/choleoeimeria_sp_oocyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Chorioptes bovis",
+@@ -14005,9 +13950,7 @@
+     "zoonosis": false,
+     "notes": "Končatiny",
+     "id": "chorioptes_bovis_adult",
+-    "images": [
+-      "/public/images/parasites/chorioptes_bovis_adult/chorioptes_bovis_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Chorioptes equi",
+@@ -14413,10 +14356,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "kalicephalus_sp_egg",
+-    "images": [
+-      "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_01.webp",
+-      "/public/images/parasites/kalicephalus_sp_egg/kalicephalus_sp_egg_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Labiostrongylus sp.",
+@@ -14756,10 +14696,7 @@
+     "zoonosis": false,
+     "notes": "Teľatá",
+     "id": "linognathus_vituli_adult",
+-    "images": [
+-      "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_02.webp",
+-      "/public/images/parasites/linognathus_vituli_adult/linognathus_vituli_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Lipoptena cervi",
+@@ -15014,10 +14951,7 @@
+     "zoonosis": false,
+     "notes": "Vnútri hruškovitá onkosféra",
+     "id": "moniezia_benedeni_egg",
+-    "images": [
+-      "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_02.webp",
+-      "/public/images/parasites/moniezia_benedeni_egg/moniezia_benedeni_egg_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Moniezia expansa",
+@@ -15066,10 +15000,7 @@
+     "zoonosis": false,
+     "notes": "Vnútri hruškovitá onkosféra",
+     "id": "moniezia_expanza_egg",
+-    "images": [
+-      "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_02.webp",
+-      "/public/images/parasites/moniezia_expanza_egg/moniezia_expansa_egg_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Monoecocestus sp.",
+@@ -15173,9 +15104,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "monopsyllus_sciurorum_adult",
+-    "images": [
+-      "/public/images/parasites/monopsyllus_sciurorum_adult/monopsyllus_sciurorum_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Mosgovoyia pectinata",
+@@ -15323,11 +15252,7 @@
+     "zoonosis": false,
+     "notes": "Len 1 pazúrik",
+     "id": "myobia_musculi_adult",
+-    "images": [
+-      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_01.webp",
+-      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_02.webp",
+-      "/public/images/parasites/myobia_musculi_adult/myobia_musculi_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Myocoptes musculinus",
+@@ -15453,11 +15378,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "myocoptes_musculinus_egg",
+-    "images": [
+-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_04.webp",
+-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_05.webp",
+-      "/public/images/parasites/myocoptes_musculinus_egg/myocoptes_musculinus_adult_06.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Nematodirus sp.",
+@@ -15560,9 +15481,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "nemhelix_bakeri_adult",
+-    "images": [
+-      "/public/images/parasites/nemhelix_bakeri_adult/nemhelix_bakeri_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Neohaematopinus sciuri",
+@@ -15727,10 +15646,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "notoedres_cati_adult",
+-    "images": [
+-      "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_02.webp",
+-      "/public/images/parasites/notoedres_cati_adult/notoedres_cati_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Notoedres muris",
+@@ -15929,10 +15845,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "ochetostoma_sp_adult",
+-    "images": [
+-      "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_02.webp",
+-      "/public/images/parasites/ochetostoma_sp_adult/ochetostoma_sp_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Oligacanthorhynchidae",
+@@ -16050,9 +15963,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "oochoristica_sp_egg",
+-    "images": [
+-      "/public/images/parasites/oochoristica_sp_egg/oochoristica_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Ophidascaris sp.",
+@@ -16102,10 +16013,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "ophidascaris_sp_egg",
+-    "images": [
+-      "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_01.webp",
+-      "/public/images/parasites/ophidascaris_sp_egg/ophidascaris_sp_egg_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Ophionyssus natricis",
+@@ -16207,9 +16115,7 @@
+     "zoonosis": false,
+     "notes": "So zátkou",
+     "id": "oxyuris_equi_egg",
+-    "images": [
+-      "/public/images/parasites/oxyuris_equi_egg/oxyuris_equi_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Paradeletrocephalus minor",
+@@ -16581,12 +16487,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "pearsonema_feliscati_egg",
+-    "images": [
+-      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_01.webp",
+-      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_02.webp",
+-      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_03.webp",
+-      "/public/images/parasites/pearsonema_feliscati_egg/pearsonema_feliscati_egg_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Pearsonema plica",
+@@ -16896,10 +16797,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "physaloptera_clausa_egg",
+-    "images": [
+-      "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_01.webp",
+-      "/public/images/parasites/physaloptera_clausa_egg/physaloptera_clausa_egg_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Physaloptera sp.",
+@@ -17054,9 +16952,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "polydelphis_sp_egg",
+-    "images": [
+-      "/public/images/parasites/polydelphis_sp_egg/polydelphis_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Polymorphus minutus",
+@@ -17166,9 +17062,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "polymorphus_minutus_egg",
+-    "images": [
+-      "/public/images/parasites/polymorphus_minutus_egg/polymorphus_minutus_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Polyplax serrata",
+@@ -17216,9 +17110,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "polyplax_serrata_adult",
+-    "images": [
+-      "/public/images/parasites/polyplax_serrata_adult/polyplax_serrata_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Polyplax spinulosa",
+@@ -17319,9 +17211,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "porrocaecum_crassum_egg",
+-    "images": [
+-      "/public/images/parasites/porrocaecum_crassum_egg/porrocaecum_crassum_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Porrocaecum sp.",
+@@ -17525,9 +17415,7 @@
+     "zoonosis": false,
+     "notes": "Chvost ostrý bez tŕňov",
+     "id": "protostrongylus_brevispiculum_larva",
+-    "images": [
+-      "/public/images/parasites/protostrongylus_brevispiculum_larva/protostrongylus_brevispiculum_larva_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Protostrongylus commutatus",
+@@ -17679,11 +17567,7 @@
+     "zoonosis": false,
+     "notes": "Hriva",
+     "id": "psoroptes_equi_adult",
+-    "images": [
+-      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_01.webp",
+-      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_02.webp",
+-      "/public/images/parasites/psoroptes_equi_adult/psoroptes_equi_adult_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Psoroptes ovis",
+@@ -17788,10 +17672,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "pterygosoma_sp_adult",
+-    "images": [
+-      "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_01.webp",
+-      "/public/images/parasites/pterygosoma_sp_adult/pterygosoma_sp_adult_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Radfordia affinis",
+@@ -17840,10 +17721,7 @@
+     "zoonosis": false,
+     "notes": "2 pazúriky nerovnakej dĺžky",
+     "id": "radfordia_affinis_adult",
+-    "images": [
+-      "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_01.webp",
+-      "/public/images/parasites/radfordia_affinis_adult/radfordia_affinis_adult_02.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Radfordia ensifera",
+@@ -17892,9 +17770,7 @@
+     "zoonosis": false,
+     "notes": "2 pazúriky nerovnakej dĺžky",
+     "id": "radfordia_ensifera_adult",
+-    "images": [
+-      "/public/images/parasites/radfordia_ensifera_adult/radfordia_ensifera_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Raillietina sp.",
+@@ -17996,9 +17872,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "rhabdiasidae_larva",
+-    "images": [
+-      "/public/images/parasites/rhabdiasidae_larva/rhabdiasidae_larva_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Riccardoella limacum",
+@@ -18049,12 +17923,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "riccardoella_limacum_adult",
+-    "images": [
+-      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_01.webp",
+-      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_02.webp",
+-      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_03.webp",
+-      "/public/images/parasites/riccardoella_limacum_adult/riccardoella_limacum_adult_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Riccardoella oudemansi",
+@@ -18105,12 +17974,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "riccardoella_oudemansi_adult",
+-    "images": [
+-      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_01.webp",
+-      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_02.webp",
+-      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_03.webp",
+-      "/public/images/parasites/riccardoella_oudemansi_adult/riccardoella_oudemansi_adult_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Rodentolepis erinacei",
+@@ -18211,9 +18075,7 @@
+     "zoonosis": false,
+     "notes": "Má polárne vlákna",
+     "id": "rodentolepis_microstoma_egg",
+-    "images": [
+-      "/public/images/parasites/rodentolepis_microstoma_egg/rodentolepis_microstoma_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Rodentolepis nana",
+@@ -18488,9 +18350,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "skrjabinema_ovis_egg",
+-    "images": [
+-      "/public/images/parasites/skrjabinema_ovis_egg/skrjabinema_ovis_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Solenopotes burmeisteri",
+@@ -18545,9 +18405,7 @@
+     "zoonosis": false,
+     "notes": "Voš",
+     "id": "solenopotes_burmeisteri_adult",
+-    "images": [
+-      "/public/images/parasites/solenopotes_burmeisteri_adult/solenopotes_burmeisteri_adult_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Solenopotes capillatus",
+@@ -18701,11 +18559,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "spirurida_egg",
+-    "images": [
+-      "/public/images/parasites/spirurida_egg/spirurida_egg_02.webp",
+-      "/public/images/parasites/spirurida_egg/spirurida_egg_03.webp",
+-      "/public/images/parasites/spirurida_egg/spirurida_egg_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Stephanurus dentatus",
+@@ -18756,9 +18610,7 @@
+     "zoonosis": false,
+     "notes": "V moči",
+     "id": "stephanurus_dentatus_egg",
+-    "images": [
+-      "/public/images/parasites/stephanurus_dentatus_egg/stephanurus_dentatus_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Stratiolaelaps scimitus",
+@@ -18809,11 +18661,7 @@
+     "zoonosis": false,
+     "notes": "Predátor",
+     "id": "stratiolaelaps_scimitus_adult",
+-    "images": [
+-      "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_02.webp",
+-      "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_03.webp",
+-      "/public/images/parasites/stratiolaelaps_scimitus_adult/stratiolaelaps_scimitus_adult_04.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Strongylida",
+@@ -19342,9 +19190,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "tachygonetria_egg",
+-    "images": [
+-      "/public/images/parasites/tachygonetria_egg/tachygonetria_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Tetratrichomonas limacis",
+@@ -19394,9 +19240,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "tetratrichomonas_limacis_trophozoite",
+-    "images": [
+-      "/public/images/parasites/tetratrichomonas_limacis_trophozoite/tetratrichomonas_limacis_trophozoite_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Toxascaris leonina",
+@@ -19596,9 +19440,7 @@
+     "zoonosis": false,
+     "notes": "",
+     "id": "toxocara_vitulorum_egg",
+-    "images": [
+-      "/public/images/parasites/toxocara_vitulorum_egg/toxocara_vitulorum_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Toxoplasma gondii",
+@@ -19700,13 +19542,7 @@
+     "zoonosis": true,
+     "notes": "",
+     "id": "trichobilharzia_regenti_egg",
+-    "images": [
+-      "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_01.webp",
+-      "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_02.webp",
+-      "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_04.webp",
+-      "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_05.webp",
+-      "/public/images/parasites/trichobilharzia_regenti_egg/trichobilharzia_regenti_egg_06.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Trichobilharzia sp.",
+@@ -19756,10 +19592,7 @@
+     "zoonosis": true,
+     "notes": "",
+     "id": "trichobilharzia_sp_egg",
+-    "images": [
+-      "/public/images/parasites/trichobilharzia_sp_egg/trichobilharzia_sp_egg_01.webp",
+-      "/public/images/parasites/trichobilharzia_sp_egg/trichobilharzia_sp_egg_03.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Trichodina sp.",
+@@ -20353,9 +20186,7 @@
+     "zoonosis": false,
+     "notes": "Malé strongylidy",
+     "id": "triodontophorus_sp_egg",
+-    "images": [
+-      "/public/images/parasites/triodontophorus_sp_egg/triodontophorus_sp_egg_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Trypanoxyuris sciuri",
+@@ -20451,9 +20282,7 @@
+     "zoonosis": false,
+     "notes": "Nemá mikropyle",
+     "id": "tyzzeria_parvula_oocyst",
+-    "images": [
+-      "/public/images/parasites/tyzzeria_parvula_oocyst/tyzzeria_parvula_oocyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Tyzzeria perniciosa",
+@@ -20500,9 +20329,7 @@
+     "zoonosis": false,
+     "notes": "Má mikropyle",
+     "id": "tyzzeria_perniciosa_oocyst",
+-    "images": [
+-      "/public/images/parasites/tyzzeria_perniciosa_oocyst/tyzzeria_perniciosa_oocyst_01.webp"
+-    ]
++    "images": []
+   },
+   {
+     "latinName": "Uncinaria sp.",
