@@ -11677,7 +11677,7 @@
     "images": []
   },
   {
-    "latinName": "Entamoeba invadens",
+    "latinName": "Entamoeba sp.",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -11687,26 +11687,22 @@
       "order": "Entamoebida",
       "family": "Entamoebidae",
       "genus": "Entamoeba",
-      "species": "Entamoeba invadens"
+      "species": "neurčený druh"
     },
     "hostGroups": [
       "Plazy"
     ],
     "hosts": [],
-    "hostNotes": {
-      "Korytnačky": "Asymptomatickí nosiči (rezervoáre): Korytnačky (najmä vodné korytnačky rodov Trachemys, Pseudemys a suchozemské korytnačky). Tieto zvieratá vylučujú obrovské množstvá cyst bez akýchkoľvek príznakov ochorenia.",
-      "Krokodýly": "Asymptomatickí nosiči (rezervoáre) vylučujú obrovské množstvá cyst bez akýchkoľvek príznakov ochorenia.",
-      "Hady": "Vysoko vnímavé (letálne) najmä veľhhadovité – Boidae, pytóny – Pythonidae, vretenice a užovky). U týchto druhov dosahuje mortalita bez liečby takmer 100 %.",
-      "Jaštery": "Vysoko vnímavé (letálne) pre varany, agamy bradaté, leguány"
-    },
+    "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 11,
-      "lengthMax": 20,
-      "widthMin": 11,
-      "widthMax": 20,
+      "lengthMin": null,
+      "lengthMax": null,
+      "widthMin": null,
+      "widthMax": null,
       "unit": "µm"
     },
     "morphology": {
@@ -11720,14 +11716,14 @@
       "V mladých cystách sú prítomné 1 až 3 ostro ohraničené chromatoidné tyčinky (zhluky RNA a proteínov) s typicky zaoblenými, tupými koncami (niekedy v tvare cigary)"
     ],
     "differentialDiagnosis": [
-      "_Entamoeba barreti / Entamoeba Knowlesi_: Nepatogénne améby korytnačiek. Ich cysty sú často o niečo väčšie a môžu vykazovať odlišný počet jadier v zrelom štádiu.",
+      "Morfologicky nie je možné druhy _Entamoeba invadens_ (potenciálny patogén plazov) a _Entamoeba terrapinae_ (nepatogénny komenzál korytnačiek) svetelnou mikroskopiou spoľahlivo diferencovať. Nález je potrebné interpretovať v kontexte klinického stavu zvieraťa (prítomnosť/absencia hnačiek, apatie) a chovateľského manažmentu (riziko prenosu na hady a jaštery v spoločnom chove). Pre definitívnu druhovú identifikáciu je potrebné vyšetrenie metódou PCR.",
       "Cysty bičíkovcov (Monocercomonas, Hypotrichomonas): Veľmi často prítomné u plazov. Ich cysty bývajú menšie (zvyčajne do 10 µm), majú oválny tvar a vnútorné štruktúry obsahujú pozostatky bičíkov (axostyl), nie 4 typické amébovité jadrá."
     ],
     "lifeCycle": "Vývinový cyklus je priamy (monoxénny) a šíri sa fekálno-orálnou cestou. Korytnačka (nosič) alebo chorý had vylúčia so stolicou do prostredia odolné, štvorjadrové cysty. Vnímavý plaz (napr. had) tieto cysty pozrie spolu s kontaminovanou potravou alebo vodou. Cysta vďaka svojej stene bez ujmy prekoná kyslé prostredie žalúdka a prechádza do čreva, kde dochádza k excystácii. Z jednej štvorjadrovej cysty sa uvoľní tetranukleárny trofozoit, ktorý sa následne rozdelí na 8 malých améb (metacystické trofozoity). Tieto trofozoity kolonizujú hrubé črevo a slepé črevá. Pri invazívnej forme prenikajú hlboko do sliznice, množia sa binárnym delením a neskôr, pri prechode do distálnych častí traktu, sa opäť encystujú (zahusťujú a vytvárajú stenu), pričom sa jadro dvakrát rozdelí na finálne 4 jadrá, a kolobeh sa uzatvára.",
-    "pathology": "U hadov a jašteríc je _E. invadens_ často vysoko patogénna (letalita ~100 % pri neliečenej invazívnej forme), zatiaľ čo u korytnačiek/suchozemských a vodných korytnačiek (Testudines) sa správa väčšinou ako komenzál bez klinických príznakov – korytnačky môžu byť bezpríznakovým zdrojom nákazy pre hady/jaštery v spoločnom chove.\n_Entamoeba invadens_ vyvoláva u vnímavých plazov závažné, často fatálne ochorenie zvané amébová dyzentéria (amébiáza plazov). Trofozoity vylučujú silné lytické enzýmy (histolytické proteázy), pomocou ktorých deštruujú bunky sliznice hrubého čreva. Stena čreva masívne zhrubne, pokryje sa pseudomembránami a dochádza k tvorbe hlbokých vredov. Cez poškodenú stenu čreva trofozoity penetrujú do cievneho systému a portálnym (vrátnicovým) obehom migrujú priamo do pečene. V pečeni parazit spôsobuje rozsiahlu nekrotizujúcu hepatitídu s tvorbou mnohopočetných amébových abscesov. Klinicky sa u hadov a jašterov ochorenie prejavuje apatiou, kompletnou anorexiou, ťažkou dehydratáciou, zvracaním a typickým hlienovitým až krvavým trusom. V dôsledku zlyhania pečene a septikémie nastáva úhyn.",
+    "pathology": "U bylinožravých suchozemských korytnačiek a viacerých vodných druhov infekcia _E. invadens_ prebieha veľmi často bez akýchkoľvek klinických príznakov. Parazit žije iba v lúmene čreva, živí sa baktériami a hostiteľovi neškodí. Z tohto dôvodu sú korytnačky v zmiešaných chovoch extrémne nebezpečné pre hady a jaštery, ktoré nakazia vylučovanými cystami.\nU hadov a jašteríc je _E. invadens_ často vysoko patogénna (letalita ~100 % pri neliečenej invazívnej forme), zatiaľ čo u korytnačiek/suchozemských a vodných korytnačiek (Testudines) sa správa väčšinou ako komenzál bez klinických príznakov – korytnačky môžu byť bezpríznakovým zdrojom nákazy pre hady/jaštery v spoločnom chove.\nAk je korytnačka v strese, imunitne potlačená, chovaná v nevhodných podmienkach (zlá teplota, hygiena) alebo dôjde k premnoženiu vysoko virulentného kmeňa, _E. invadens_ zmení svoje správanie. Z luminitickej formy sa stáva invazívna histolytická forma. \nHoci sú hady a jaštery k tejto amébe neporovnateľne citlivejšie, moderná veterinárna medicína považuje _Entamoeba invadens_ za potenciálny patogén pre všetky plazy, vrátane korytnačiek. Nález cýst _Entamoeba_ sp. v truse plazov preto nikdy nemožno stopercentne ignorovať ako \"bezpečný\".",
     "zoonosis": false,
-    "notes": "V herpetologickej praxi je toto ochorenie hlavným dôvodom, prečo sa nikdy **nesmú chovať hady spoločne s korytnačkami** (alebo v rovnakej miestnosti bez prísnej karantény). Korytnačky fungujú ako dokonalý trojský kôň – samy sú zdravé, no pre hady vylučujú biologickú zbraň.\n**Teplotná závislosť**: E. invadens je striktne závislá od teploty. Optimálne sa množí pri teplotách okolo 25 – 30 °C. Zvýšenie teploty prostredia (tzv. indukovaná horúčka plazov nad 33 – 35 °C) dokáže in vitro a niekedy aj in vivo zastaviť replikáciu trofozoitov, čo sa historicky využívalo ako podporná metóda liečby.",
-    "id": "entamoeba_invadens_cyst",
+    "notes": "V herpetologickej praxi je toto ochorenie hlavným dôvodom, prečo sa nikdy **nesmú chovať hady spoločne s korytnačkami** (alebo v rovnakej miestnosti bez prísnej karantény). Korytnačky fungujú ako dokonalý trojský kôň – samy sú zdravé, no pre hady vylučujú biologickú zbraň.\n**Teplotná závislosť**: _E. invadens_ je striktne závislá od teploty. Optimálne sa množí pri teplotách okolo 25 – 30 °C. Zvýšenie teploty prostredia (tzv. indukovaná horúčka plazov nad 33 – 35 °C) dokáže in vitro a niekedy aj in vivo zastaviť replikáciu trofozoitov, čo sa historicky využívalo ako podporná metóda liečby.",
+    "id": "entamoeba_sp_cyst",
     "images": []
   },
   {
@@ -11994,6 +11990,68 @@
     "images": []
   },
   {
+    "id": "fasciola_hepatica_adult",
+    "latinName": "Fasciola hepatica",
+    "synonyms": [],
+    "slovakName": "Motolica pečeňová",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Platyhelminthes",
+      "class": "Trematoda",
+      "order": "Plagiorchiida",
+      "family": "Fasciolidae",
+      "genus": "Fasciola",
+      "species": "Fasciola hepatica"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Človek",
+      "Diviak",
+      "Kôň",
+      "Zajac"
+    ],
+    "hostNotes": {
+      "Človek": "je pre tohto parazita náhodným (akcesorickým) hostiteľom. K infekcii človeka dochádza najčastejšie skonzumovaním divo rastúceho vodného rastlinstva (napr. potočnice lekárskej) kontaminovaného zapuzdrenými larvami (metacerkáriami).",
+      "Diviak": "",
+      "Kôň": "",
+      "Zajac": ""
+    },
+    "sample": "Pečeň",
+    "stage": "Dospelý jedinec",
+    "group": "Trematoda",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 20000,
+      "lengthMax": 30000,
+      "widthMin": 8000,
+      "widthMax": 15000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Listovitý",
+      "colour": "Hnedočervený",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Telo je dorzoventrálne sploštené a má charakteristický tvar **kopijovitého listu**.",
+      "Predná časť tela vybieha do **výrazného kužeľovitého výbežku**, za ktorým sa telo náhle rozširuje a vytvára nápadné **ramená**. Smerom k zadnému koncu sa telo opäť zužuje a zaobľuje.",
+      "Čerstvé dospelé červy vybraté z hostiteľa majú šedohnedú až ružovkastú / červenohnedú farbu (v dôsledku natrávenej krvi hostiteľa v ich bohato rozvetvenom čreve)",
+      "Dve prísavky: Malá ústna prísavka na vrchole predného kužeľa a väčšia brušná prísavka umiestnená v rovine ramien.",
+      "Na rozdiel od iných motolic má _Fasciola hepatica_ mimoriadne rozvetvené črevo, ale aj testes (vaječníky sú taktiež vetvené), ktoré vypĺňajú strednú a zadnú časť tela.",
+      "Povrch tela je husto pokrytý drobnými, ostrými spätnými tŕňmi."
+    ],
+    "differentialDiagnosis": [
+      "_Fascioloides magna_ (veľká motolica jelenia) – je **obrovská** a masívna (až 10 x 3 cm), úplne **chýbajú kužeľ aj ramená**, predný koniec je zaoblený, rozdiel v hostiteľskom spektre a lokalizácii (_F. magna_ často v pečeňovom parenchýme, nie žlčových cestách; hostiteľ najčastejšie jelenia zver).",
+      "_Paramphistomum_sp. (črevná motolica) – kužeľovitý, **valcovitý** alebo hruškovitý (**nie je plochý**) tvar, Kužeľ a **ramená chýbajú**, brušná prísavka je na úplnom zadnom konci tela (extrémne veľká a svalnatá), predná časť je zaostrená, povrch hladký, bez tŕňov, hostiteľská lokalizácia je bachor/dvanástnik."
+    ],
+    "lifeCycle": "Heteroxénny (digenetický), nutný medzihostiteľ – vodný slimák.\nDospelec v žlčových cestách definitívneho hostiteľa produkuje vajíčka → vylučované žlčou do čreva → stolicou do prostredia.\nVo vode sa vyvíja miracídium (za 9–14 dní pri optimálnej teplote), ktoré aktívne vyhľadáva a penetruje medzihostiteľa (Galba truncatula).\nV slimáku: sporocysta → rediá (1–2 generácie) → cerkárie (celý vývoj v slimáku trvá cca 4–7 týždňov).\nCerkárie opúšťajú slimáka, encystujú sa na vodných rastlinách alebo vo vode ako metacerkárie (infekčné štádium).\nDefinitívny hostiteľ sa infikuje požitím metacerkárií (pastva, kontaminovaná voda/tráva).\nV čreve sa uvoľňuje juvenilná motolica, penetruje črevnou stenou do peritoneálnej dutiny → migruje do pečene → prenikne pečeňovým parenchýmom (migračná fáza, cca 6–8 týždňov) → dostáva sa do žlčových ciest, kde dospieva a začína klásť vajíčka.\nCelý cyklus (od vajíčka po vajíčko) trvá cca 4–5 mesiacov.",
+    "pathology": "Akútna fasciolóza (migračná fáza larvy v pečeňovom parenchýme): traumatická hepatitída, krvácanie, nekrózy, u oviec môže viesť k náhlemu úhynu (hlavne pri masívnej infekcii).\nChronická fasciolóza (dospelci v žlčových cestách): cholangitída, fibróza a zhrubnutie stien žlčových ciest (\"pipe-stem liver\" – klinicky typický nález pri pitve), cholestáza, anémia (hemofágia parazita), hypoalbuminémia, chudnutie, znížená produkcia mlieka/mäsa/vlny.\nSekundárne riziko: uľahčuje vznik \"black disease\" (infekčná nekrotická hepatitída spôsobená Clostridium novyi type B) v dôsledku poškodenia pečeňového tkaniva.",
+    "zoonosis": true,
+    "images": [],
+    "references": [],
+    "notes": "Mäsožravce (psy, mačky, líšky či vlky) nie sú prirodzenými hostiteľmi tohto parazita. K infekcii u nich dochádza iba zriedkavo. Pes alebo mačka sa nemôžu nakaziť požieraním surového mäsa či pečene infikovaného zvieraťa (vajíčka ani dospelé červy v pečeni ich nenakazia). Infikovať sa môžu výhradne tak, že vypijú kontaminovanú vodu z prírodného zdroja alebo zožerú trávu/vodné rastliny, na ktorých sú prichytené zapuzdrené larvy (metacerkárie). V tele mäsožravcov parazit často nedokáže dokončiť svoj vývoj. Často uhynie skôr, než dosiahne dospelosť, alebo produkuje len minimálne množstvo vajíčok. Pre šírenie v prírode preto psy a mačky nemajú prakticky žiadny význam."
+  },
+  {
     "latinName": "Fasciola hepatica",
     "synonyms": [],
     "slovakName": "Motolica pečeňová",
@@ -12177,6 +12235,7 @@
     "images": []
   },
   {
+    "id": "filicollis_anatis_egg",
     "latinName": "Filicollis anatis",
     "synonyms": [],
     "slovakName": "",
@@ -12197,6 +12256,7 @@
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Acanthocephala",
+    "methods": [],
     "micrometry": {
       "lengthMin": 60,
       "lengthMax": 70,
@@ -12217,13 +12277,71 @@
       "_Polymorphus minutus_ - Široko vretenovitý až eliptický tvar, má **výrazné zaškrtenia na póloch**"
     ],
     "lifeCycle": "Vývinový cyklus _Filicollis anatis_ je nepriamy (heteroxénny) a úzko viazaný na vodné prostredie. Definitívny hostiteľ (vták) vylučuje trusom do vody zrelé vajíčka, ktoré klesajú ku dnu do bahna, kde dokážu prežívať celú zimu. Tieto vajíčka sú zožraté medzihostiteľom – sladkovodným kôrovcom berlou vodnou (Asellus aquaticus). V jej čreve sa z vajíčka uvoľní larva (akantor), prenikne do telovej dutiny kôrovca (hemocelu) a prechádza štádiom akantely. Počas tohto štádia larva vylučuje ochrannú substanciu a vytvára okolo seba pevnú opuzdrenú cystu, ktorá ju chráni pred imunitným systémom kôrovca. Vývin v kôrovcovi vrcholí do infekčného štádia – cystakantu. Vták sa nakazí požratím infikovaných kôrovcov. V tenkom čreve vtáka sa cystakant excystuje, samičie jedince sa pomocou svojho obrovského guľovitého sosáčika hlboko a pevne fixujú do črevnej steny, dospievajú a po kopulácii začínajú produkovať vajíčka.",
-    "pathology": "_Filicollis anatis_ patrí medzi vysoko patogénne tŕňohlavce vodnej hydiny, pričom jeho nebezpečnosť výrazne prevyšuje menšie druhy rodu Polymorphus. Patogenita vyplýva najmä z mechanického pôsobenia samíc; ich masívny guľovitý proboscis penetruje hlboko cez sliznicu a submukózu a často úplne perforuje svalovú vrstvu čreva (telo parazita zostáva v lúmene, ale bulbózna hlavička je viditeľná až na seróznej strane čreva ako žltkastý uzlík). Na miestach uchytenia vzniká ťažká, hlboká lokalizovaná nekróza, hemoragicko-purulentná enteritída a dochádza k formovaniu robustných väzivových uzlov (granulómov). Pri masívnych inváziách dochádza u hostiteľov k poruchám trávenia, ťažkej kachexii, anémii a v dôsledku perforácie čreva k fatálnej peritonitíde, čo vedie k vysokému úhynu najmä u mláďat domácich kačíc.",
+    "pathology": "_Filicollis anatis_ patrí medzi **vysoko patogénne** tŕňohlavce vodnej hydiny, pričom jeho nebezpečnosť výrazne prevyšuje menšie druhy rodu Polymorphus. Patogenita vyplýva najmä z mechanického pôsobenia samíc; ich masívny guľovitý proboscis penetruje hlboko cez sliznicu a submukózu a často úplne perforuje svalovú vrstvu čreva (telo parazita zostáva v lúmene, ale bulbózna hlavička je viditeľná až na seróznej strane čreva ako žltkastý uzlík). Na miestach uchytenia vzniká ťažká, hlboká lokalizovaná nekróza, hemoragicko-purulentná enteritída a dochádza k formovaniu robustných väzivových uzlov (granulómov). Pri masívnych inváziách dochádza u hostiteľov k poruchám trávenia, ťažkej kachexii, anémii a v dôsledku perforácie čreva k fatálnej peritonitíde, čo vedie k vysokému úhynu najmä u mláďat domácich kačíc.",
     "zoonosis": false,
-    "notes": "**Mechanická kotva**: Spôsob fixácie dospelých samíc v čreve je mechanický unikát. Guľovitý sosáčik (proboscis) funguje ako dokonalá expanzívna hmoždinka. Po preniknutí cez úzku ranu v sliznici sa sosáčik nafúkne/rozšíri do gule a parazita už nie je možné z čreva vytiahnuť bez toho, aby sa črevná stena roztrhla.\n\\n **Zmena správania medzihostiteľa**: Podobne ako iné tŕňohlavce, aj larvy _F. anatis_ dokážu čiastočne modifikovať správanie kôrovca _Asellus aquaticus_. Infikované jedince strácajú prirodzený pud schovávať sa v tme pod listami, stávajú sa hyperaktívnymi a pohybujú sa na svetle, čím sa stávajú ľahšou korisťou pre kačice, čo parazitovi zaručuje úspešné dokončenie cyklu",
-    "id": "filicollis_anatis_egg",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "**Mechanická kotva**: Spôsob fixácie dospelých samíc v čreve je mechanický unikát. Guľovitý sosáčik (proboscis) funguje ako dokonalá expanzívna hmoždinka. Po preniknutí cez úzku ranu v sliznici sa sosáčik nafúkne/rozšíri do gule a parazita už nie je možné z čreva vytiahnuť bez toho, aby sa črevná stena roztrhla.\n**Zmena správania medzihostiteľa**: Podobne ako iné tŕňohlavce, aj larvy _F. anatis_ dokážu čiastočne modifikovať správanie kôrovca _Asellus aquaticus_. Infikované jedince strácajú prirodzený pud schovávať sa v tme pod listami, stávajú sa hyperaktívnymi a pohybujú sa na svetle, čím sa stávajú ľahšou korisťou pre kačice, čo parazitovi zaručuje úspešné dokončenie cyklu."
   },
   {
+    "id": "gasterophilus_haemorrhoidalis_larva",
+    "latinName": "Gasterophilus haemorrhoidalis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Oestridae",
+      "genus": "Gasterophilus",
+      "species": "Gasterophilus haemorrhoidalis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Zebra"
+    ],
+    "hostNotes": {
+      "Zebra": ""
+    },
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 12000,
+      "lengthMax": 16000,
+      "widthMin": 4500,
+      "widthMax": 6000,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Tmavohnedý",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Počas parazitovania v žalúdku je ružovkastá až červenkastá, avšak v čase zrelosti pred opustením hostiteľa sa mení na charakteristickú zeleno-olivovú až tmavohnedú, čo sa u iných druhov nevyskytuje.",
+      "Podlhovastý, valcovitý, v prednej časti zúžený tvar. V porovnaní s _G. intestinalis_ je celkovo menší a subtílnejší.",
+      "Na prednom konci sa nachádzajú dva silné, čierne ústne háčiky (sklerotizované ústne ústrojenstvo).",
+      "Telové segmenty majú na prednom okraji **dva rady tŕňov** (podobne ako _G. intestinalis_), avšak tieto **tŕne sú menšie a jemnejšie**.",
+      "Tŕne na ventrálnej (brušnej) strane **chýbajú už od 8. segmentu smerom dozadu. Posledné segmenty sú tak takmer úplne hladké**.",
+      "Na zadnom konci tela sú peritrémy (dýchacie doštičky) s tromi rovnými, paralelnými štrbinami."
+    ],
+    "differentialDiagnosis": [
+      "_G. intestinalis_  má **tŕne širšie** a tiež v dvoch radoch, **chýbajú iba na 10. a 11. segmente** a na dorzálnej (chrbtovej) strane. Nemá zeleno-olivovú farbu.",
+      "_G. nasalis_ má tŕne usporiadané **v jednom rade**. Nemá zeleno-olivovú farbu.",
+      "_Hypoderma sp_ - sú pod kožou"
+    ],
+    "lifeCycle": "Dospelé samičky lietajú od konca jari do konca leta a kladú drobné čierne vajíčka na srsť koní v okolí pyskov, pier a na lícach. Larvy L1 sa liahnu spontánne, prenikajú do sliznice úst a migrujú v tkanive jazyka a líca. Po zvlečení na L2 migrujú do žalúdka (pylorická časť) a dvanástnika, kde sa prichytávajú na sliznicu. Tu sa vyvíjajú do štádia L3 a parazitujú väčšinu zimy. Na jar (koniec apríla až jún) sa uvoľnia, ale neodchádzajú hneď s trusom von – migrujú nižšie do konečníka (rekta), kde sa opätovne na krátky čas (niekoľko dní až týždňov) prichytia na sliznicu v blízkosti análneho otvoru. Následne odpadávajú do vonkajšieho prostredia, kuklia sa v pôde a po 3 – 4 týždňoch sa liahnu dospelé muchy.",
+    "pathology": "Larvy L1 spôsobujú pri migrácii v pyskoch a ústnej dutine silné drždenie, bolestivé lézie a nekrotické zmeny sliznice, čo vedie k inapetencii a sťaženému príjmu krmiva. V žalúdku a dvanástniku vyvolávajú L3 larvy tvorbu hlbokých vredov a gastritídu. Najšpecifickejšia patológia nastáva vo fáze rektálnej migrácie – prichytenie desiatok lariev v konečníku vyvoláva ťažkú proktitídu (zápal konečníka), úporné svrbenie (pruritus ani), kŕče pri kalení (tenezmus) a nepokoj. Kone sa otierajú o boxy a ohrady, čím si spôsobujú traumatické poranenia chvosta a perianálnej krajiny, pričom hrozí sekundárna bakteriálna infekcia.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Tento druh dostal svoje druhové meno „haemorrhoidalis“ práve kvôli tomu, že larvy prichytené v análnom otvore hostiteľa vizuálne pripomínajú uzly hemoroidov.\nNálet samičky _G. haemorrhoidalis_ na pysky koňa vyvoláva u zvierat extrémny strach a obrannú reakciu. Kôň v panike krúti hlavou, trie si nos o zem, o predné nohy alebo o iné kone, prípadne uteká z pastviny do tieňa."
+  },
+  {
+    "id": "gasterophilus_intestinalis_larva",
     "latinName": "Gasterophilus intestinalis",
     "synonyms": [
       "Gastrophilus intestinalis; Oestrus intestinalis"
@@ -12244,10 +12362,13 @@
     "hosts": [
       "Zebra"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Zebra": ""
+    },
     "sample": "Trus",
     "stage": "Larva",
     "group": "Insecta",
+    "methods": [],
     "micrometry": {
       "lengthMin": 16000,
       "lengthMax": 20000,
@@ -12257,25 +12378,85 @@
     },
     "morphology": {
       "shape": "Podlhovastý",
-      "colour": "Bezfarebný",
+      "colour": "Žltobiely",
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Larva **s dvomi pásmi tŕňov** na väčšine segmentov",
-      "Parazit žalúdka koní."
+      "Parazit žalúdka koní.",
+      "Robustný, valcovitý, v prednej časti zúžený, smerom dozadu tupo zakončený, tzv. súdkovitý tvar.",
+      "Na prednom konci sa nachádzajú dva silné, čierne ústne háčiky (sklerotizované ústne ústrojenstvo).",
+      "Na tele sú prítomné **dva rady tŕňov (ostňov) na prednom okraji segmentov**. Tieto tŕne sú **na báze široké a majú tupý koniec** (nie sú zašpicatené ako u iných druhov).",
+      "Dôležitý znak pre G. intestinalis: **Tŕne chýbajú na 10. a 11. segmente tela (resp. na dorzálnej strane posledných segmentov)**.",
+      "Na zadnom konci tela sú peritrémy (dýchacie doštičky) s tromi rovnými, paralelnými štrbinami."
     ],
     "differentialDiagnosis": [
-      "Diferenciálne: iné larválne štádiá nematód/cestód podľa dĺžky",
-      "šírky",
-      "tvaru chvosta",
-      "pažeráka a kutikulárnych znakov."
+      "_G. nasalis_ má na segmentoch **iba jeden rad** tŕňov",
+      "_G. haemorrhoidalis_ je **menšia** a tŕne na segmentoch sú usporiadané inak, pričom **pred zakuklením červenie**.",
+      "_Hypoderma sp_ - sú pod kožou"
     ],
-    "lifeCycle": "Dospelé samičky poletujú v lete a kladú vajíčka na srsť koní. Larvy vnútri vajíčok dozrejú za 7 dní a k ich vyliahnutiu dochádza mechanickým dráždením (lízaním srsti koňom) alebo vlhkom a teplom. Larvy I. štádia prenikajú do sliznice jazyka a ďasien, kde sa 3 až 4 týždne vyvíjajú a migrujú do hltana. Odtiaľ sú prehltnuté do žalúdka, kde sa prevlečú na II. a III. larválne štádium. V bezžľazovej časti žalúdka zotrvávajú 8 až 10 mesiacov (prezimujú), živia sa tkáňovým mokom/krvou, a na jar sa uvoľnia s trusom na zem, kde sa zakuklia (3 – 5 týždňov trvá kuklenie v pôde, kým sa vyliahne dospelec).",
+    "lifeCycle": "Dospelé samičky kladú v lete (júl – september) žltkasté vajíčka na srsť koní, najčastejšie v oblasti hrudných končatín a pliec. Kôň si tieto miesta oblizuje, čím teplo a vlhko z tlamy stimulujú vyliahnutie lariev L1. Tieto larvy prenikajú do sliznice jazyka a ústnej dutiny, kde sa vyvíjajú približne 3 až 4 týždne a levia na L2. Následne sú prehltnuté a migrujú do žalúdka, kde sa prichytávajú na bezžľaznatú časť sliznice (margo plicatus) pomocou ústnych háčikov. V žalúdku sa larvy zvliekajú na štádium L3 a parazitujú tu celú zimu (8 až 10 mesiacov). Na jar (máj – jún) sa larvy uvoľnia, odchádzajú trusom do vonkajšieho prostredia, kde sa v pôde zakuklia a po 1 až 2 mesiacoch sa liahnu dospelé imága, ktoré nežerú a žijú len niekoľko dní s cieľom spáriť sa.",
     "pathology": "Prítomnosť migrujúcich lariev v ústnej dutine vyvoláva glositídu a tvorbu vredov na jazyku. V žalúdku spôsobuje masívne uchytenie stoviek lariev III. štádia chronický zápal sliznice (gastritídu), erózie, hlboké vredy, lokálnu atrofiu tkaniva a poruchy trávenia. Pri silných inváziách dochádza k poklesu výživy, zhoršeniu kondície, anémii, kolikovým bolestiam a zriedkavo až k perforácii žalúdka. Samotné kladenie vajíčok dospelými samicami vyvoláva u koní paniku a nepokoj.",
     "zoonosis": false,
-    "notes": "",
-    "id": "gasterophilus_intestinalis_larva",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Larvy L3 _Gasterophilus intestinalis_ obsahujú v tele hemoglobín (v špeciálnych bunkách), čo im umožňuje prežiť v anaeróbnom prostredí konského žalúdka, kde je extrémne nízka koncentrácia kyslíka. To im dodáva ich typické ružovkasté až červenkasté sfarbenie v určitých fázach vývoja."
+  },
+  {
+    "id": "gasterophilus_nasalis_larva",
+    "latinName": "Gasterophilus nasalis",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Animalia",
+      "phylum": "Arthropoda",
+      "class": "Insecta",
+      "order": "Diptera",
+      "family": "Oestridae",
+      "genus": "Gasterophilus",
+      "species": "Gasterophilus nasalis"
+    },
+    "hostGroups": [],
+    "hosts": [
+      "Zebra"
+    ],
+    "hostNotes": {
+      "Zebra": ""
+    },
+    "sample": "Trus",
+    "stage": "Larva",
+    "group": "Insecta",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 13000,
+      "lengthMax": 15000,
+      "widthMin": 5000,
+      "widthMax": 6500,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Podlhovastý",
+      "colour": "Žltobiely",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Nikdy neprechádza do výraznej tmavohnedej farby a **chýba jej intenzívny ružový nádych**.",
+      "Podlhovastý, valcovitý, v prednej časti zúžený tvar. V porovnaní s _G. intestinalis_ je táto larva o niečo štíhlejšia a menej súdkovitá.",
+      "Na prednom konci sa nachádzajú dva silné, čierne ústne háčiky (sklerotizované ústne ústrojenstvo).",
+      "Na prednom okraji telových segmentov je prítomný **iba jeden rad tŕňov** (na rozdiel od dvoch radov u _G. intestinalis_). Tieto tŕne sú **dlhé a ostrejšie zakončené**.",
+      "Tŕne sú kompletne prerušené alebo úplne chýbajú na 9., 10. a 11. segmente (niekedy chýbajú už od 8. segmentu smerom dozadu).",
+      "Na zadnom konci tela sú peritrémy (dýchacie doštičky) s tromi rovnými, paralelnými štrbinami."
+    ],
+    "differentialDiagnosis": [
+      "_G. intestinalis_ je väčšia a má *dva rady tŕňov na segmentoch**.",
+      "_G. haemorrhoidalis_ má tŕne usporiadané **v dvoch radoch**, ale chýbajú na spodnej strane posledných segmentov a larvy menia farbu do červena.",
+      "_Hypoderma sp_ - sú pod kožou"
+    ],
+    "lifeCycle": "Dospelé samičky lietajú v teplých mesiacoch (jún – august) a kladú žltkasté vajíčka na srsť koní v medzisánkovom priestore a v okolí hrdla. Larvy L1 sa liahnu spontánne bez nutnosti stimulácie oblizovaním, rýchlo prenikajú do kože alebo sliznice ústnej dutiny a migrujú v tkanivách ďasien a v okolí zubov (najmä v okolí stoličiek). Po zvlečení na štádium L2 migrujú smerom do hltana a sú prehltnuté. Po dosiahnutí cieľového miesta – pylorickej časti žalúdka a proximálneho dvanástnika (duodéna) – sa usadzujú, zvliekajú sa do štádia L3 a fixované na sliznici tu zimujú 10 až 11 mesiacov. Na jar odchádzajú trusom von, zakuklia sa v pôde a po niekoľkých týždňoch sa liahnu dospelé imága.",
+    "pathology": "V ústnej dutine vyvolávajú larvy L1 a L2 bolestivé zápaly ďasien (gingivitídu), čo vedie k sťaženému prežúvaniu, slinotoku a vypadávaniu krmiva z tlamy. Po prechode do dvanástnika spôsobujú L3 larvy hlboké kráterovité defekty v sliznici, narúšajú sekréciu tráviacich enzýmov a pasáž tráveniny. Masívne infekcie spôsobujú duodenitídu, pylorickú stenózu (zúženie prechodu zo žalúdka), závažné chronické poruchy trávenia, stratu hmotnosti a rekurentné dvanástnikové koliky. Riziko perforácie steny dvanástnika s následnou peritonitídou je pri tomto druhu relatívne vyššie vzhľadom na tenšiu stenu čreva oproti žalúdku.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Samičky _G. nasalis_ sú pri kladení vajíčok mimoriadne agresívne a útočia priamo na spodnú časť hlavy koňa. Kone na ich prítomnosť reagujú panicky – charakteristicky schovávajú hlavu medzi predné nohy, tlačia sa k sebe alebo bezhlavo utekajú (tzv. strečkujú).\nNa rozdiel od _G. intestinalis_, vajíčka _G. nasalis_ nepotrebujú k vyliahnutiu vlhko a trenie jazykom. Larvy sa liahnu samé a do ústnej dutiny sa aktívne preplazia po koži hostiteľa."
   },
   {
     "latinName": "Geckobia sp.",
@@ -12629,9 +12810,9 @@
       "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (**polmesiačikovitú cytoplazmu** umiestnenú excentricky)"
     ],
     "differentialDiagnosis": [
-    "Od podobných lariev príbuzných taxónov podľa veľkosti",
-    "pomeru dĺžky k šírke",
-    "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
+      "Od podobných lariev príbuzných taxónov podľa veľkosti",
+      "pomeru dĺžky k šírke",
+      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
     ],
     "lifeCycle": "",
     "pathology": "",
