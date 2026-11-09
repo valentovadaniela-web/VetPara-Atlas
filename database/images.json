@@ -4030,6 +4030,30 @@
     "dateAdded": "2026-08-28T19:56:27.388Z"
   },
   {
+    "parasiteId": "fasciola_hepatica_adult",
+    "url": "/public/images/parasites/fasciola_hepatica_adult/fasciola_hepatica_adult_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-09T21:42:23.789Z"
+  },
+  {
+    "parasiteId": "fasciola_hepatica_adult",
+    "url": "/public/images/parasites/fasciola_hepatica_adult/fasciola_hepatica_adult_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-09T21:42:23.789Z"
+  },
+  {
+    "parasiteId": "fasciola_hepatica_adult",
+    "url": "/public/images/parasites/fasciola_hepatica_adult/fasciola_hepatica_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-09T21:42:23.789Z"
+  },
+  {
     "parasiteId": "fasciola_hepatica_egg",
     "url": "/public/images/parasites/fasciola_hepatica_egg/fasciola_hepatica_egg_01.webp",
     "alt": "",
@@ -4207,6 +4231,23 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:17:42.804Z"
+  },
+  {
+    "parasiteId": "gasterophilus_intestinalis_larva",
+    "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-09T21:21:25.175Z",
+    "isPrimary": true
+  },
+  {
+    "parasiteId": "gasterophilus_nasalis_larva",
+    "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-09T21:17:59.544Z"
   },
   {
     "parasiteId": "geckobia_sp_adult",
