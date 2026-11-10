@@ -622,6 +622,14 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "buxtonella_cameli_cyst",
+    "url": "/public/images/parasites/buxtonella_cameli_cyst/buxtonella_cameli_cyst_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:26:50.944Z"
+  },
+  {
     "parasiteId": "buxtonella_sulcata_cyst",
     "url": "/public/images/parasites/buxtonella_sulcata_cyst/buxtonella_sulcata_cyst_01.webp",
     "alt": "",
@@ -4209,6 +4217,30 @@
     "dateAdded": "2026-11-05T19:52:27.540Z"
   },
   {
+    "parasiteId": "gasterophilus_haemorrhoidalis_larva",
+    "url": "/public/images/parasites/gasterophilus_haemorrhoidalis_larva/gasterophilus_haemorrhoidalis_larva_01.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:08.057Z"
+  },
+  {
+    "parasiteId": "gasterophilus_haemorrhoidalis_larva",
+    "url": "/public/images/parasites/gasterophilus_haemorrhoidalis_larva/gasterophilus_haemorrhoidalis_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:08.057Z"
+  },
+  {
+    "parasiteId": "gasterophilus_haemorrhoidalis_larva",
+    "url": "/public/images/parasites/gasterophilus_haemorrhoidalis_larva/gasterophilus_haemorrhoidalis_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:08.057Z"
+  },
+  {
     "parasiteId": "gasterophilus_intestinalis_larva",
     "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_01.webp",
     "alt": "",
@@ -4242,12 +4274,68 @@
     "isPrimary": true
   },
   {
+    "parasiteId": "gasterophilus_intestinalis_larva",
+    "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:42.607Z"
+  },
+  {
+    "parasiteId": "gasterophilus_intestinalis_larva",
+    "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_06.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:42.607Z"
+  },
+  {
+    "parasiteId": "gasterophilus_intestinalis_larva",
+    "url": "/public/images/parasites/gasterophilus_intestinalis_larva/gasterophilus_intestinalis_larva_07.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:27:42.607Z"
+  },
+  {
     "parasiteId": "gasterophilus_nasalis_larva",
     "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
     "dateAdded": "2026-11-09T21:17:59.544Z"
+  },
+  {
+    "parasiteId": "gasterophilus_nasalis_larva",
+    "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_02.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:28:29.851Z"
+  },
+  {
+    "parasiteId": "gasterophilus_nasalis_larva",
+    "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:28:29.852Z"
+  },
+  {
+    "parasiteId": "gasterophilus_nasalis_larva",
+    "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_04.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:28:29.852Z"
+  },
+  {
+    "parasiteId": "gasterophilus_nasalis_larva",
+    "url": "/public/images/parasites/gasterophilus_nasalis_larva/gasterophilus_nasalis_larva_05.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:28:29.852Z"
   },
   {
     "parasiteId": "geckobia_sp_adult",
@@ -6264,6 +6352,14 @@
     "caption": "",
     "credit": "",
     "dateAdded": "2026-08-29T13:31:35.324Z"
+  },
+  {
+    "parasiteId": "polyplax_spinulosa_adult",
+    "url": "/public/images/parasites/polyplax_spinulosa_adult/polyplax_spinulosa_adult_03.webp",
+    "alt": "",
+    "caption": "",
+    "credit": "",
+    "dateAdded": "2026-11-10T20:29:34.100Z"
   },
   {
     "parasiteId": "porrocaecum_crassum_egg",

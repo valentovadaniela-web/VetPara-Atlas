@@ -1703,6 +1703,57 @@
     "images": []
   },
   {
+    "id": "buxtonella_cameli_cyst",
+    "latinName": "Buxtonella cameli",
+    "synonyms": [],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Ciliophora",
+      "class": "Listomatea",
+      "order": "Vestibuliferida",
+      "family": "Pycnotrichidae",
+      "genus": "Buxtonella",
+      "species": "Buxtonella cameli"
+    },
+    "hostGroups": [
+      "Ťavy, lamy"
+    ],
+    "hosts": [ ],
+    "hostNotes": { },
+    "sample": "Trus",
+    "stage": "Cysta",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 50,
+      "lengthMax": 100,
+      "widthMin": 50,
+      "widthMax": 100,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Okrúhly",
+      "colour": "Svetložltý",
+      "shell": "Hrubá"
+    },
+    "diagnosticSigns": [
+      "Guľovitá až oválna cysta",
+      "Priemerná veľkosť 70 x 65 µm",
+      "Svetložltá, žltohnedá až zelenkastá (v natívnom preparáte v závislosti od stravy hostiteľa), cystická stena je bezfarebná a vysoko refraktívna (láme svetlo)",
+      "Cysta má hrubú, dvojitú a hladkú stenu. Vo vnútri sa nachádza charakteristické, masívne, obličkovité alebo podlhovasté **makronukleus** (veľké jadro) a jedno malé, často prekryté mikronukleus. U čerstvých cýst je možné vidieť jemné zvyšky brvov (cílií) stiahnutého trofozoita a kontraktilné vacuoly."
+    ],
+    "differentialDiagnosis": [
+      "_Balantioides coli_:  Cysty rodov Balantioides a Buxtonella vyzerajú pod mikroskopom takmer identicky, cysty sa v truse tiav určujú ako _Buxtonella cameli_ primárne na základe hostiteľskej špecifity."
+    ],
+    "lifeCycle": "Životný cyklus prebieha priamo (monoxénne), bez účasti medzihostiteľa. Hostiteľ sa nakazí perorálne pozretím cysty kontaminovanou vodou alebo krmivom. V hrubom čreve nastáva exscystácia – z cysty sa uvoľní aktívny trofozoit, ktorý sa živí baktériami, zvyškami potravy a množí sa binárnym delením. Keď sa obsah čriev posúva smerom ku konečníku a dehydratuje sa, trofozoity sa encystujú (vytvoria pevnú stenu). Cysty sú následne vylučované trusom do vonkajšieho prostredia, kde sú okamžite infekčné a vďaka hrubej stene vysoko odolné voči nepriaznivým podmienkam.",
+    "pathology": "Vo väčšine prípadov sa _Buxtonella cameli_ správa ako komenzál a infekcia prebieha asymptomaticky bez klinických príznakov. K rozvoju patológie dochádza pri masívnom premnožení, často vyvolanom stresom (transport, zmena stravy, imunosupresia v ZOO). Parazit vtedy môže mechanicky narúšať sliznicu hrubého čreva, čo vedie k katarálnemu zápalu čriev (enteritída), narušeniu fermentácie, hnačkám (niekedy s prímesou hlienu), dehydratácii a postupnému chradnutiu zvieraťa. Na rozdiel od _Balantidioides coli_ však len zriedkavo preniká hlboko do submukózy a netvorí hlboké vredy.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "Hoci sa v staršej literatúre a mnohých veterinárnych štúdiách bežne uvádzalo, že ťavy bývajú infikované meňavkou _Balantioides coli_, najnovšie genetické a taxonomické výskumy tento omyl definitívne vyvrátili."
+  },
+  {
     "latinName": "Buxtonella sulcata",
     "synonyms": [],
     "slovakName": "",
