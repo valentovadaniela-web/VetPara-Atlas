@@ -4435,45 +4435,20 @@
     "isPrimary": true
   },
   {
-    "parasiteId": "giardia_microti_cyst",
-    "url": "/public/images/parasites/giardia_microti_cyst/giardia_microti_cyst_01.webp",
+    "parasiteId": "giardia_psittaci_cyst",
+    "url": "/public/images/parasites/giardia_psittaci_cyst/giardia_psittaci_cyst_01.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:18:46.461Z"
+    "dateAdded": "2026-08-28T20:02:46.774Z"
   },
   {
-    "parasiteId": "giardia_muris_cyst",
-    "url": "/public/images/parasites/giardia_muris_cyst/giardia_muris_cyst_01.webp",
+    "parasiteId": "giardia_psittaci_cyst",
+    "url": "/public/images/parasites/giardia_psittaci_cyst/giardia_psittaci_cyst_02.webp",
     "alt": "",
     "caption": "",
     "credit": "",
-    "dateAdded": "2026-11-04T20:18:59.502Z"
-  },
-  {
-    "parasiteId": "giardia_simoni_cyst",
-    "url": "/public/images/parasites/giardia_simoni_cyst/giardia_simoni_cyst_01.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:18:21.333Z"
-  },
-  {
-    "parasiteId": "giardia_simoni_cyst",
-    "url": "/public/images/parasites/giardia_simoni_cyst/giardia_simoni_cyst_02.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:18:21.345Z",
-    "isPrimary": true
-  },
-  {
-    "parasiteId": "giardia_simoni_cyst",
-    "url": "/public/images/parasites/giardia_simoni_cyst/giardia_simoni_cyst_03.webp",
-    "alt": "",
-    "caption": "",
-    "credit": "",
-    "dateAdded": "2026-08-29T13:18:21.357Z"
+    "dateAdded": "2026-08-28T20:02:46.774Z"
   },
   {
     "parasiteId": "giardia_varani_cyst",

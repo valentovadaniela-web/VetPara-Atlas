@@ -12623,10 +12623,24 @@
       "genus": "Giardia",
       "species": "Giardia duodenalis"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Človek"
+    "hostGroups": [
+      "Psovité mäsožravce",
+      "Domáce prežúvavce",
+      "Voľne žijúce prežúvavce",
+      "ZOO prežúvavce",
+      "ZOO nepárnokopytníky",
+      "ZOO hlodavce",
+      "ZOO zvieratá - ostatné",
+      "Ošípané a diviaky",
+      "Nepárnokopytníky",
+      "Mačkovité mäsožravce",
+      "Hmyzožravce",
+      "Hlodavce",
+      "Zajace, králiky",
+      "Primáty",
+      "Kengury"
     ],
+    "hosts": [],
     "hostNotes": {
       "Človek": "Asambláž A a B \n Väčšina prípadov giardiózy u ľudí je spôsobená prenosom z človeka na človeka (fekálno-orálnou cestou v škôlkach, rodinách) alebo pitím kontaminovanej vody. Riziko od zvierat sa delí podľa dvoch hlavných kategórií: \n Domáce zvieratá (psy a mačky): Väčšina psov a mačiek má svoje vlastné asambláže (C, D, F), ktoré na človeka neprejdú. Avšak malé percento domácich miláčikov môže byť infikované zoonotickou asamblážou A alebo B (často ju získajú práve od človeka). Ak zviera vylučuje tieto asambláže, prenos na majiteľa je možný, najmä pri zlej hygiene. \n Voľne žijúca zver a hospodárske zvieratá: Riziko spočíva najmä v kontaminácii životného prostredia. Napríklad bobry alebo hovädzí dobytok môžu infikovať vodné toky (rieky, studne) asamblážami A a B. Človek sa potom nakazí vypitím neprevarenej vody v prírode.",
       "Psovité mäsožravce": "Asambláž C a D",
@@ -12673,7 +12687,7 @@
     "images": []
   },
   {
-    "latinName": "Giardia microti",
+    "latinName": "Giardia psittaci",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -12683,19 +12697,19 @@
       "order": "Diplomonadida",
       "family": "Hexamitidae",
       "genus": "Giardia",
-      "species": "Giardia microti"
+      "species": "Giardia psittaci"
     },
-    "hostGroups": [],
-    "hosts": [
-      "Hraboš"
+    "hostGroups": [
+      "Papagáje"
     ],
+    "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
     "micrometry": {
       "lengthMin": 8,
-      "lengthMax": 12,
+      "lengthMax": 14,
       "widthMin": 7,
       "widthMax": 10,
       "unit": "µm"
@@ -12710,116 +12724,12 @@
       "Tenká, takmer neviditeľná stena, opaleskujúca zelenkastá",
       "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (**polmesiačikovitú cytoplazmu** umiestnenú excentricky)"
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [],
+    "lifeCycle": "Vývinový cyklus Giardia sp. u vtákov je priamy (monoxénny), bez účasti medzihostiteľa. Vtáky sa nakazia fekálo-orálnou cestou pri požití odolných, okamžite infekčných cýst z kontaminovanej vody, krmiva alebo pri vzájomnom čistení peria. Po prechode svalnatým žalúdkom dochádza v tenkom čreve (duodenum) vplyvom pH a tráviacich enzýmov k excystácii, pričom z jednej cysty sa uvoľnia dva aktívne trofozoity. Tie sa pomocou ventrálneho prísavného disku fixujú na kefkový lem enterocytov a rýchlo sa množia pozdĺžnym binárnym delením. Pri pasáži črevným obsahom smerom do kaudálnych častí čreva sa trofozoity zaobľujú, vytvárajú pevnú stenu (encystácia) a vo forme cýst sú trusom vylučované do prostredia. Prepatentná doba je 1 až 3 týždne.",
+    "pathology": "Parazit kolonizuje sliznicu tenkého čreva, kde mechanickým pokrytím epitelu a produkciou proteáz spôsobuje atrofiu črevných klkov, hyperpláziu krýpt a narušenie aktivity disacharidáz. Výsledkom je ťažká malabsorpcia tukov, sacharidov a vitamínov rozpustných v tukoch (najmä vitamínu E a A). Klinicky sa giardióza u mladých vtákov (najmä mláďat korel a anduliek v hniezdach) prejavuje objemným, páchnucim, kašovitým až vodnatým trusom svetložltej až nazelenalej farby s prímesou hlienu, chradnutím, dehydratáciou a vysokou mortalitou. U korel a agapornisov vyvoláva chronická giardióza charakteristický syndróm šklbania peria (tzv. cockatiel feather mutilation syndrome) so silným svrbením kože v oblasti krídel, hrude a stehien, spojený so škriekaním a suchou šupinatou kožou.",
     "zoonosis": false,
-    "notes": "",
-    "id": "giardia_microti_cyst",
-    "images": []
-  },
-  {
-    "latinName": "Giardia muris",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Metamonada",
-      "class": "Trepamonadea",
-      "order": "Diplomonadida",
-      "family": "Hexamitidae",
-      "genus": "Giardia",
-      "species": "Giardia muris"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Myš"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Cysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 12,
-      "widthMin": 7,
-      "widthMax": 10,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Zelenkastý",
-      "shell": "Hladká"
-    },
-    "diagnosticSigns": [
-      "Oválny až elipsoidný útvar s priemernou veľkosťou 8 – 14 μm na dĺžku a 7 – 10 μm na šírku.",
-      "Tenká, takmer neviditeľná stena, opaleskujúca zelenkastá",
-      "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (**polmesiačikovitú cytoplazmu** umiestnenú excentricky)"
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "giardia_muris_cyst",
-    "images": []
-  },
-  {
-    "latinName": "Giardia simoni",
-    "synonyms": [],
-    "slovakName": "",
-    "taxonomy": {
-      "kingdom": "Protozoa",
-      "phylum": "Metamonada",
-      "class": "Trepamonadea",
-      "order": "Diplomonadida",
-      "family": "Hexamitidae",
-      "genus": "Giardia",
-      "species": "Giardia simoni"
-    },
-    "hostGroups": [],
-    "hosts": [
-      "Potkan"
-    ],
-    "hostNotes": {},
-    "sample": "Trus",
-    "stage": "Cysta",
-    "group": "Protozoa",
-    "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 12,
-      "widthMin": 7,
-      "widthMax": 10,
-      "unit": "µm"
-    },
-    "morphology": {
-      "shape": "Oválny",
-      "colour": "Zelenkastý",
-      "shell": "Hladká"
-    },
-    "diagnosticSigns": [
-      "Oválny až elipsoidný útvar s priemernou veľkosťou 8 – 14 μm na dĺžku a 7 – 10 μm na šírku.",
-      "Tenká, takmer neviditeľná stena, opaleskujúca zelenkastá",
-      "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (**polmesiačikovitú cytoplazmu** umiestnenú excentricky)"
-    ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
-    "zoonosis": false,
-    "notes": "",
-    "id": "giardia_simoni_cyst",
+    "notes": "Kým v suchom prostredí klietky cysty rýchlo vysychajú a hynú, vo vlhkom prostredí, napájačkách a studenej vode dokážu prežívať a ostať infekčné niekoľko týždňov až mesiacov, pričom sú odolné voči bežným kvartérnym amóniovým zlúčeninám.",
+    "id": "giardia_psittaci_cyst",
     "images": []
   },
   {
@@ -12839,15 +12749,17 @@
       "Jaštery"
     ],
     "hosts": [],
-    "hostNotes": {},
+    "hostNotes": {
+      "Jaštery": "Najmä u varanov. Boli opísané aj u iných druhov veľkých jašterov."
+    },
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
     "micrometry": {
-      "lengthMin": 8,
-      "lengthMax": 12,
+      "lengthMin": 10,
+      "lengthMax": 14,
       "widthMin": 7,
-      "widthMax": 10,
+      "widthMax": 9,
       "unit": "µm"
     },
     "morphology": {
@@ -12856,19 +12768,15 @@
       "shell": "Hladká"
     },
     "diagnosticSigns": [
-      "Oválny až elipsoidný útvar s priemernou veľkosťou 8 – 14 μm na dĺžku a 7 – 10 μm na šírku.",
+      "Oválny až elipsoidný útvar s priemernou veľkosťou 10 – 14 μm na dĺžku a 7 – 9 μm na šírku.",
       "Tenká, takmer neviditeľná stena, opaleskujúca zelenkastá",
       "Kľúčovým sprievodným znakom po centrifugácii je stiahnutie cytoplazmy od hladkej cystovej steny, čo pod mikroskopom vytvára charakteristický svetlý prstencový lem (**polmesiačikovitú cytoplazmu** umiestnenú excentricky)"
     ],
-    "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Giardia môže byť potrebná molekulová identifikácia."
-    ],
-    "lifeCycle": "",
-    "pathology": "",
+    "differentialDiagnosis": [],
+    "lifeCycle": "Vývinový cyklus _Giardia varani_ je priamy (monoxénny) a prebieha bez účasti medzihostiteľa. Varan sa nakazí fekálo-orálnou cestou pri požití infekčných dvojjadrových cýst z kontaminovanej vody v bazéniku, znečisteného substrátu alebo potravy. Po prechode žalúdkom dochádza v tenkom čreve vplyvom tráviacich enzýmov a zmeny pH k excystácii, pri ktorej sa uvoľnia aktívne trofozoity. Tie kolonizujú sliznicu tenkého čreva, prichytávajú sa ventrálnym prísavným diskom na povrch enterocytov a množia sa pozdĺžnym binárnym delením. Pri posune črevného obsahu do zadných úsekov čreva sa trofozoity zaobľujú, vytvárajú ochranný obal (encystácia) a vo forme cýst odchádzajú trusom do vonkajšieho prostredia, kde vo vlhkom teplom prostredí terária prežívajú týždne.",
+    "pathology": "U zdravých, nestresovaných dospelých varanov vo voľnej prírode prebieha infekcia _Giardia varani_ často subklinicky alebo asymptomaticky ako súčasť črevnej mikrofauny. V podmienkach zajatia (stres z transportu, nevhodná teplota v teráriu, prehustenie, imunosupresia) však dochádza k premnoženiu parazita v tenkom čreve. Trofozoity mechanicky pokrývajú sliznicu, narúšajú kefkový lem enterocytov a vyvolávajú katarálnu enteritídu s atrofiou črevných klkov a malabsorpciou živín. Klinicky sa giardióza u varanov prejavuje páchnucou, hlienovitou až vodnatou hnačkou, prítomnosťou nestrávených zvyškov potravy v truse, nechutenstvom (anorexiou), letargiou, postupným chradnutím a dehydratáciou. Pri silných inváziách môže infekcia prispieť k úhynu mláďat alebo oslabených importovaných jedincov.",
     "zoonosis": false,
-    "notes": "",
+    "notes": " Pri liečbe giardiózy u varanov (najčastejšie pomocou fenbendazolu alebo metronidazolu) je u plazov mimoriadne dôležité dodržať presné dávkovanie a hydratáciu, keďže predávkovanie metronidazolom u jašterov môže vyvolať závažné neurologické príznaky (tremor, strata rovnováhy) a hepatotoxicitu.",
     "id": "giardia_varani_cyst",
     "images": []
   },
@@ -12924,6 +12832,7 @@
     "images": []
   },
   {
+    "id": "graphidium_strigosum_egg",
     "latinName": "Graphidium strigosum",
     "synonyms": [],
     "slovakName": "",
@@ -12938,12 +12847,17 @@
     },
     "hostGroups": [],
     "hosts": [
-      "Králik"
+      "Králik",
+      "Zajac"
     ],
-    "hostNotes": {},
+    "hostNotes": {
+      "Králik": "",
+      "Zajac": ""
+    },
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 98,
       "lengthMax": 106,
@@ -12960,16 +12874,18 @@
       "Pravidelne oválny, symetrické póly."
     ],
     "differentialDiagnosis": [
-      "Vajíčko typu 'strongyle egg' - morfologicky prakticky nerozlíšiteľné od ostatných trichostrongylidov toho istého hostiteľa; druhové určenie vyžaduje larválnu koprokultúru (McMaster + kultivácia L3) alebo PCR."
+      "_Trichostrongylus retortaeformis_ - **menšie** (75 – 85 × 40 – 45 µm), elipsovitý tvar s mierne zúženými pólmi",
+      "_Passalurus ambiguus_ - **asymetrický tvar** (jedna strana plochá), operkulum na jednom póle"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus _Graphidium strigosum_ je **priamy** (monoxénny), bez účasti medzihostiteľa. Dospelé samice **v žalúdku** hostiteľa kladú vajíčka, ktoré odchádzajú trusom do vonkajšieho prostredia. Vo vlhkom prostredí pri optimálnej teplote (15 – 25 °C) sa z vajíčka už po 1 – 2 dňoch liahne rabditiformná larva prvého štádia (L1), ktorá sa živí baktériami v truse, dvakrát sa zvlieka (cez štádium L2) a v priebehu 4 až 7 dní sa mení na odolnú, opuzdrenú infekčnú larvu tretieho štádia (L3). Larvy L3 migrujú z trusu na steblá trávy, kde čakajú na zožratie definitívnym hostiteľom. Po požití infikovanej pastvy alebo kontaminovaného čerstvého zeleného krmiva strácajú larvy L3 v žalúdku ochrannú pošvu, zavŕtavajú sa do žalúdočných žliaz sliznice (glandulae gastricae), kde dvakrát zvliekajú (cez štádium L4) na dospelé jedince. Prepatentná doba (čas od infekcie po objavenie sa prvých vajíčok v truse) je 12 až 21 dní (pri hypobióze sa môže predĺžiť na niekoľko mesiacov).",
+    "pathology": "_Graphidium strigosum_ je hematofágny (krv cicajúci) parazit lokalizovaný najmä v fundickej časti žalúdka (často v tesnej blízkosti sliznice alebo čiastočne zavŕtaný v žalúdočných žľazách). Larvy L4 a dospelé jedince mechanicky traumatizujú sliznicu žalúdka, spôsobujú deštrukciu parietálnych a hlavných buniek a vyvolávajú chronickú katarálnu až hemoragickú gastritídu. Makroskopicky je sliznica žalúdka zhrubnutá, edematózna, pokrytá hustým hlienom a posypaná drobnými petechiálnymi až ekchymotickými krvácaninami, pričom medzi záhybmi sliznice sú voľným okom viditeľné červené, stočené hlístovce. Klinicky sa ťažká grafidióza (najmä u mladých králikov a zajacov pri premnožení na vlhkých pastvinách) prejavuje progresívnou anémiou (bledosť slizníc), zníženou chuťou do jedla, chudnutím, apatiou, zaostávaním v raste a hnačkou (prípadne melénou), čo môže pri masívnych inváziách viesť až k úhynu z vyčerpania a straty krvi.",
     "zoonosis": false,
-    "notes": "Žalúdočný červ",
-    "id": "graphidium_strigosum_egg",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Viaceré európske parazitologické štúdie preukázali, že _Graphidium strigosum_ spolu s _Trichostrongylus retortaeformis_ a kokcídiami patrí medzi hlavné biologické faktory, ktoré dokážu výrazne tlmiť prírastky a kondíciu voľne žijúcich populácií zajaca poľného a králika divého vo vlhkých rokoch"
   },
   {
+    "id": "gyrodactylus_sp_adult",
     "latinName": "Gyrodactylus sp.",
     "synonyms": [],
     "slovakName": "",
@@ -12990,11 +12906,12 @@
     "sample": "Koža",
     "stage": "Dospelý jedinec",
     "group": "Monogenea",
+    "methods": [],
     "micrometry": {
-      "lengthMin": 500,
+      "lengthMin": 250,
       "lengthMax": 1000,
-      "widthMin": 500,
-      "widthMax": 1000,
+      "widthMin": 50,
+      "widthMax": 200,
       "unit": "µm"
     },
     "morphology": {
@@ -13003,22 +12920,23 @@
       "shell": "Bez schránky"
     },
     "diagnosticSigns": [
-      "Identifikácia podľa veľkosti",
-      "morfológie predného a zadného konca",
-      "pažeráka",
-      "genitálneho primordia a ďalších rodovo/ druhovo typických znakov; pri podobných taxónoch je vhodná molekulová konfirmácia. Tvar: nepravidelný."
+      "Priemerná dĺžka a šírka: 300 – 600 µm na dĺžku a 70 – 120 µm na šírku.",
+      "Rozdelený na **dva výrazné hlavové laloky** (kužeľovité výbežky), ktoré obsahujú vývody hlavových žliaz produkujúcich lepkavý sekrét na dočasné prichytenie pri pohybe.",
+      "**Očné škvrny chýbajú** (kľúčový rozlišovací znak od rodu Dactylogyrus).",
+      "Zadný prichytávací aparát (Opisthaptor / Haptor): Okrúhly až miskovitý svalnatý disk na zadnom konci tela vyzbrojený komplikovaným chitínovým prichytávacím aparátom: 1 pár veľkých centrálnych háčikov + 16 okrajových háčikov",
+      "Živorodý: V strednej časti tela dospelého jedinca je voľným okom pod mikroskopom zreteľne viditeľná maternica obsahujúca plne vyvinuté embryo (dcérskeho jedinca) vrátane jeho vlastných centrálnych a okrajových háčikov. Vo vnútri tohto embrya sa často už nachádza zárodok ďalšej generácie (hyperviviparia). V zadnej časti sa nachádza semenník a vaječník.",
+      "Aktívne sa pohybuje pijavicovitým (piadivkovitým) pohybom – striedavým prichytávaním predných hlavových lalokov a zadného haptora. V strede tela presvitajú háčiky embrya",
+      "Typická lokalizácia: koža, plutvy (menej žiabre)"
     ],
     "differentialDiagnosis": [
-      "Od podobných lariev príbuzných taxónov podľa veľkosti",
-      "pomeru dĺžky k šírke",
-      "stavby predného a zadného konca a charakteru pažeráka; v rámci rodu Gyrodactylus môže byť potrebná molekulová identifikácia."
+      "_Dactylogyrus_ sp. - **štyri** hlavové laloky, **4 tmavé očné škvrny**, 2 centrálne háčiky + 14 okrajových, **vajcorodý** (v tele viditeľné vajíčko), lokalizovaný výhradne na **žiabrach**"
     ],
-    "lifeCycle": "",
-    "pathology": "",
+    "lifeCycle": "Vývinový cyklus rodu Gyrodactylus je priamy (monoxénny) a v ríši parazitov unikátny fenoménom hyperviviparie (živorodosti s vnorenými generáciami). Dospelý parazit je hermafrodit a rodí už plne vyvinuté, pohlavne takmer dospelé mláďa rovnakej veľkosti ako matka. Ešte predtým, než sa toto mláďa narodí, v jeho tele sa už vyvíja zárodok ďalšej (vnukovej) generácie a v nej zárodok tretej generácie (ako ruská matrioška). Novonarodený jedinec sa okamžite prichytí vedľa matky na kožu tej istej ryby, pričom k prenosu na nových hostiteľov dochádza priamym kontaktom medzi rybami (v húfoch, pri trení, v prehustených nádržiach) alebo krátkodobým prichytením odtrhnutého parazita zo substrátu a vody (mimo hostiteľa prežíva len 1 až 5 dní). Celý generačný čas pri teplote 20 °C trvá len 1 až 3 dni, čo vedie k explozívnemu premnoženiu.",
+    "pathology": "Parazit sa prichytáva do epidermy kože a plutiev pomocou 16 ostrých okrajových háčikov a páru veľkých centrálnych kotiev, čím mechanicky narúša celistvosť pokožky a živí sa epidermálnymi bunkami a hlienom (vyvoláva gyrodaktylózu). Silná invázia spôsobuje lokálne ulcerácie, nekrózu epitelu, stratu šupín a rozstrapkanie plutiev. Koža reaguje nadmernou produkciou hlienu, čo sa makroskopicky prejavuje ako modrobiele zákalové povlaky („závoj“) na tele ryby. Postihnuté ryby sú nepokojné, majú stiahnuté plutvy, otierajú sa o kamene a dno nádrže (flashing), strácajú chuť do jedla a chradnú. Poškodená koža stráca osmoregulačnú funkciu a stáva sa vstupnou bránou pre sekundárne bakteriálne (napr. Aeromonas, Flavobacterium) a plesňové (Saprolegnia) infekcie, čo vedie k hromadným úhynom najmä plôdika a mladých rýb.",
     "zoonosis": false,
-    "notes": "2 laloky",
-    "id": "gyrodactylus_sp_adult",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Prvé generácie potomkov vznikajú u Gyrodactylus sp. nepohlavne (partenogeneticky/klonálne) bez nutnosti kopulácie, čo znamená, že jediný zavlečený parazit dokáže v akváriu alebo rybníku za pár týždňov vyprodukovať tisíce geneticky identických potomkov."
   },
   {
     "latinName": "Habronema sp.",
