@@ -1719,8 +1719,8 @@
     "hostGroups": [
       "Ťavy, lamy"
     ],
-    "hosts": [ ],
-    "hostNotes": { },
+    "hosts": [],
+    "hostNotes": {},
     "sample": "Trus",
     "stage": "Cysta",
     "group": "Protozoa",
@@ -6367,9 +6367,9 @@
     "images": []
   },
   {
-    "latinName": "Eimeria adenoides",
+    "latinName": "Eimeria adenoeides",
     "synonyms": [
-      "Eimeria adenoeides"
+      "Eimeria adenoiides"
     ],
     "slovakName": "",
     "taxonomy": {
@@ -6379,7 +6379,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Eimeria",
-      "species": "Eimeria adenoides"
+      "species": "Eimeria adenoeides"
     },
     "hostGroups": [],
     "hosts": [
@@ -6414,13 +6414,13 @@
     "differentialDiagnosis": [
       "_Eimeria meleagrimitis_: Menšia (cca 19 × 16 µm), tvar je subsférický až široko ovoidný, parazituje najmä v dvanástniku a jejune. Nemá tak výrazne pretiahnutý tvar.",
       "_Eimeria dispersa_: Stredne veľká (cca 23 × 21 µm), široko ovoidná až guľovitá, nemá polárnu granulu a vykazuje nízku patogenitu v tenkom čreve.",
-      "_Eimeria gallopavonis_: Rozmermi veľmi blízka (cca 27 × 17 µm) a tiež elipsovitá, parazituje v ileu a rekte. Diferenciácia čisto podľa oocysty je extrémne náročná a vyžaduje molekulárnu diagnostiku (PCR) alebo posúdenie presnej patológie čreva. Novšie fylogenetické a taxonomické revízie diskutujú o tom, či nejde o synonymum _E. adenoides_"
+      "_Eimeria gallopavonis_: Rozmermi veľmi blízka (cca 27 × 17 µm) a tiež elipsovitá, parazituje v ileu a rekte. Diferenciácia čisto podľa oocysty je extrémne náročná a vyžaduje molekulárnu diagnostiku (PCR) alebo posúdenie presnej patológie čreva. Novšie fylogenetické a taxonomické revízie diskutujú o tom, či nejde o synonymum _E. adenoeides_"
     ],
     "lifeCycle": "Cyklus prebieha bez účasti medzihostiteľa (priamy cyklus). Morka sa nakazí orálnym príjmom vysporulovanej oocysty z prostredia (podstielka, krmivo). V tráviacom trakte pôsobením mechanických faktorov a enzýmov dochádza k vycestovaniu sporozoitov, ktoré prenikajú do buniek črevného epitelu (enterocytov) v slepých črevách a rekte. Tu prebieha intenzívne nepohlavné množenie (schizogónia/merogónia) v minimálne dvoch generáciách, ktoré masívne ničí sliznicu čreva. Nasleduje pohlavná fáza (gametogónia), pri ktorej vznikajú mikrogaméty a makrogaméty, ktorých splynutím vzniká zygota. Po sformovaní obalu sa nevysporulované oocysty vylučujú trusom do vonkajšieho prostredia. Vo vonkajšom prostredí pri dostatočnej teplote (20–25 °C), vlhkosti a prístupe kyslíka oocysta vysporuluje do infekčného štádia už za 18 až 24 hodín. Prepatentná perióda trvá približne 4,5 až 5 dní (cca 108–114 hodín).",
-    "pathology": "Eimeria adenoides patrí spolu s E. meleagrimitis k najpatogénnejším kokcídiám moriek. Postihuje najmä mladé morčatá vo veku do 4 až 6 týždňov. Klinicky sa prejavuje ťažkou depresiou, hlukom sprevádzaným húfovaním (chladom), apatiou, našuchoreným perím a rýchlym chradnutím. Typickým príznakom je tekutá, hlienovitá až vodnatá hnačka, v ktorej sa často nachádzajú kusy zlúpanej črevnej sliznice (oranžovo-biele hlienové častečky), ojedinele s prímesou krvi. Pri sekcii nachádzame masívne patologické zmeny v slepých črevách a rekte: stena čreva je výrazne zhrubnutá, edematózna a lumen čreva je vyplnený charakteristickým syrovitým (kazeóznym) alebo hlienovo-hnisavým belavým odliatkom (detritom). Úmrtnosť v neliečených chovoch u mladých jedincov môže dosiahnuť až 100 %.",
+    "pathology": "Eimeria adenoeides patrí spolu s E. meleagrimitis k najpatogénnejším kokcídiám moriek. Postihuje najmä mladé morčatá vo veku do 4 až 6 týždňov. Klinicky sa prejavuje ťažkou depresiou, hlukom sprevádzaným húfovaním (chladom), apatiou, našuchoreným perím a rýchlym chradnutím. Typickým príznakom je tekutá, hlienovitá až vodnatá hnačka, v ktorej sa často nachádzajú kusy zlúpanej črevnej sliznice (oranžovo-biele hlienové častečky), ojedinele s prímesou krvi. Pri sekcii nachádzame masívne patologické zmeny v slepých črevách a rekte: stena čreva je výrazne zhrubnutá, edematózna a lumen čreva je vyplnený charakteristickým syrovitým (kazeóznym) alebo hlienovo-hnisavým belavým odliatkom (detritom). Úmrtnosť v neliečených chovoch u mladých jedincov môže dosiahnuť až 100 %.",
     "zoonosis": false,
     "notes": "Oocysty tohto druhu dokážu v podstielke hlbokých maštalí prežívať dlhé mesiace a vykazujú extrémnu rezistenciu voči bežným dezinfekčným prostriedkom na báze chlóru či kyselín; efektívne sú len špecifické krezolové dezinfekčné preparáty alebo termická asanácia (plameň, horúca para).",
-    "id": "eimeria_adenoides_oocyst",
+    "id": "eimeria_adenoeides_oocyst",
     "images": []
   },
   {
@@ -8613,7 +8613,7 @@
     "differentialDiagnosis": [
       "_Eimeria piriformis_: 29,0 × 18,0 μm, hruškovitý tvar, veľmi podobná, avšak **stena je intenzívne žltohnedá až olivovo-hnedá**.",
       "_Eimeria magna_: 35,0 × 24,0 μm, široko vajcovitý tvar, výrazne **väčšia** oocysta, **naružovastá** stena, masívny **golierik** okolo mikropyly.",
-      "_Eimeria stiedae_: 34,5 × 21,5 μm, pravidelne vajcovitý\t tvar, ocysta je **väčšia**, symetrická (**nie hruškovitá**), svetložltá.",
+      "_Eimeria stiedai_: 34,5 × 21,5 μm, pravidelne vajcovitý\t tvar, ocysta je **väčšia**, symetrická (**nie hruškovitá**), svetložltá.",
       "_Eimeria perforans_: 21,0 × 14,0 μm, výrazne **menšia** oocysta, **dokonale elipsovitá**, úplne jej **chýba mikropyla**."
     ],
     "lifeCycle": "Vývin prebieha priamou cestou (monoxénny cyklus). Králik sa nakazí perorálnou ingestiou sporulovaných oocýst z prostredia. V tenkom čreve nastáva excystácia a uvoľnené sporozoity prenikajú hlboko do sliznice. Na rozdiel od menej patogénnych druhov, Eimeria intestinalis parazituje v dolnej tretine tenkého čreva (jejunum a ileum), pričom invaduje nielen enterocyty, ale aj bunky v kryptách sliznice. Prebiehajú minimálne 3 generácie schizogónie (nepohlavného množenia) nasledované masívnou gametogóniou (pohlavné množenie). Nesporulované oocysty odchádzajú s trusom von, kde vo vlhkom prostredí do 48–72 hodín sporulujú na infekčné štádium.",
@@ -8722,7 +8722,7 @@
       "Sporulované štádium: Ako typická Eimeria obsahuje 4 sporocysty, z ktorých každá nesie 2 sporozoity. Sporocysty sú ovoidné a dosahujú rozmery okolo 15 – 20 µm × 8 – 10 µm."
     ],
     "differentialDiagnosis": [
-      "_Eimeria stiedae_: Pôvodca pečeňovej kokcidiózy králikov. Jej oocysty sú rovnako veľké (cca 35 – 40 µm), majú elipsoidný tvar a mikropylu, avšak ich **stena býva svetlejšia a mikropyla je o niečo užšia**. Definitívne sa líšia patológiou (pitva odhalí lézie v pečeni a žlčovodoch, nie v čreve).",
+      "_Eimeria stiedai_: Pôvodca pečeňovej kokcidiózy králikov. Jej oocysty sú rovnako veľké (cca 35 – 40 µm), majú elipsoidný tvar a mikropylu, avšak ich **stena býva svetlejšia a mikropyla je o niečo užšia**. Definitívne sa líšia patológiou (pitva odhalí lézie v pečeni a žlčovodoch, nie v čreve).",
       "_Eimeria magna_: Patrí tiež k veľkým druhom, no líši sa tým, že jej mikropyla je lemovaná **výrazným golierikom** alebo vyvýšenými okrajmi steny, ktoré sú neprehliadnuteľné.",
       "_Eimeria intestinalis_: Je o niečo menšia (cca 23 – 30 µm), má **hruškovitý tvar** a veľmi **výraznú mikropylu**.",
       "_Eimeria perforans / E. media_: Sú podstatne **menšie** oocysty (okolo 15 – 25 µm), ktoré sa v zornom poli mikroskopu dajú od obrovských oocýst _E. irresidua_ odlíšiť už na prvý pohľad podľa merítka."
@@ -9219,7 +9219,7 @@
       "Po exogénnej sporulácii (ktorá pri teplote 20 – 24 °C prebieha rýchlo, v priebehu 2 až 3 dní) oocysta obsahuje 4 sporocysty, v každej po 2 sporozoity. Sporocysty sú ovoidné (cca 16 × 9 μm) s masívnym, jasne viditeľným Stiedovej telieskom a s prítomným reziduálnym telieskom sporocysty."
     ],
     "differentialDiagnosis": [
-      "_Eimeria stiedae_: Pôvodca nebezpečnej jaternej kokcidiózy králikov. Rozmerovo je veľmi podobná (priemerne 37 × 20 μm) a taktiež má mikropylu, avšak jej absolútne chýba vyvýšený mikropylárny golierik. Má dokonale hladký, pravidelný elipsovitý obrys bez deformácie na póle a je o niečo užšia.",
+      "_Eimeria stiedai_: Pôvodca nebezpečnej jaternej kokcidiózy králikov. Rozmerovo je veľmi podobná (priemerne 37 × 20 μm) a taktiež má mikropylu, avšak jej absolútne chýba vyvýšený mikropylárny golierik. Má dokonale hladký, pravidelný elipsovitý obrys bez deformácie na póle a je o niečo užšia.",
       "_Eimeria intestinalis_: Vysoko patogénny črevný druh. Je o niečo menšia (priemerne 27 × 18 μm), má taktiež jemne naznačený golierik, avšak jej tvar je výrazne hruškovitejší (pyriformný) a stena je číra, takmer bezfarebná.",
       "_Eimeria media_: Menšia (cca 27 × 17 μm), ovoidná, má malú mikropylu, ale po sporulácii vždy obsahuje veľké, kompaktné reziduálne teliesko oocysty, ktoré u E. magna chýba."
     ],
@@ -9385,7 +9385,7 @@
       "Vnútro nesporulovanej oocysty: Stred vypĺňa symetrická, zrnitá zygota (poroplast), okolo ktorej je voľný priestor k stene oocysty. V nesporulovanom stave zatiaľ chýba voľné reziduálne teliesko, to sa formuje až pri sporulácii."
     ],
     "differentialDiagnosis": [
-      "_Eimeria stiedae_: Parazit žlčovodov pečene. Jej oocysty sú väčšie (31–36 × 18–21 μm), majú ovoidný tvar so zrejmým mikropylom, ale **zásadne im chýba reziduálne teliesko** oocysty po sporulácii.",
+      "_Eimeria stiedai_: Parazit žlčovodov pečene. Jej oocysty sú väčšie (31–36 × 18–21 μm), majú ovoidný tvar so zrejmým mikropylom, ale **zásadne im chýba reziduálne teliesko** oocysty po sporulácii.",
       "_Eimeria magna_: Výrazne väčšia oocysta (35 × 24 μm), má široko ovoidný tvar, masívny tmavý mikropyl lemovaný výrazným golierikom (vystúpené okraje steny).",
       "_Eimeria perforans_: Rozmerovo veľmi blízka (24–28 × 14–17 μm) elipsoidná oocysta, má reziduálne teliesko, ale **nemá viditeľnú mikropylu**.",
       "_Eimeria intestinalis_: Veľkostne podobná (27 × 18 μm), je však výrazne hruškovitého/ovoidného tvaru so zrejmým mikropylom, no s odlišnou patogenitou."
@@ -11009,7 +11009,7 @@
     "images": []
   },
   {
-    "latinName": "Eimeria stiedae",
+    "latinName": "Eimeria stiedai",
     "synonyms": [],
     "slovakName": "",
     "taxonomy": {
@@ -11019,7 +11019,7 @@
       "order": "Eucoccidiorida",
       "family": "Eimeriidae",
       "genus": "Eimeria",
-      "species": "Eimeria stiedae"
+      "species": "Eimeria stiedai"
     },
     "hostGroups": [],
     "hosts": [
@@ -11052,11 +11052,11 @@
       "_Eimeria piriformis_: 29,0 × 18,0 μm, typicky **asymetricky hruškovitá** oocysta s výraznou mikropylou.",
       "_Eimeria perforans_: 21,0 × 14,0 μm, elipsovitý\ttvar, výrazne **menšia** oocysta **bez prítomnej mikropyly**."
     ],
-    "lifeCycle": "Vývin prebieha priamo (monoxénny cyklus). Králik sa nakazí perorálne ingestiou krmiva alebo vody kontaminovanej sporulovanými oocystami (často pri kŕmení trávou znečistenou divými králikmi alebo pri koprofágii). V tenkom čreve nastáva excystácia sporozoitov. Na rozdiel od iných eimérií však sporozoity E. stiedae penetrujú cez stenu čreva do krvných a lymfatických ciev a migrujú cez portálny obeh do pečene. Tu invadujú epitelové bunky žlčovodov. V žlčovodoch prebieha masívna schizogónia a gametogónia. Vyprodukované nesporulované oocysty sú žlčou vyplavované do dvanástnika a odchádzajú von s trusom. V prostredí prebehne v priebehu 48–72 hodín sporulácia na infekčné štádium.",
-    "pathology": "_Eimeria stiedae_ vykazuje extrémnu patogenitu. Parazit spôsobuje masívnu hyperpláziu epitelu žlčovodov a ich následnú obštrukciu (upchatie). Pečeň sa výrazne zväčšuje (hepatomegália) a na jej povrchu aj v parenchýme sa tvoria charakteristické belavé až žltkasté uzlíky a rozvetvené pruhy naplnené žlčou, hnisom a miliónmi oocýst. Tlak na okolité tkanivo vedie k ischémii a nekróze pečene. Klinické príznaky u králikov (najmä u mláďat vo veku 1–3 mesiacov) zahŕňajú apatiu, nechutenstvo, výrazné zväčšenie brucha (\"žabie brucho\"), hnačky striedajúce sa so zápchou, ikterus (žltačku) a rapídne chradnutie. U mladých králikov dosahuje úmrtnosť pri masívnej infekcii až 80–100 %.",
+    "lifeCycle": "Vývin prebieha priamo (monoxénny cyklus). Králik sa nakazí perorálne ingestiou krmiva alebo vody kontaminovanej sporulovanými oocystami (často pri kŕmení trávou znečistenou divými králikmi alebo pri koprofágii). V tenkom čreve nastáva excystácia sporozoitov. Na rozdiel od iných eimérií však sporozoity E. stiedai penetrujú cez stenu čreva do krvných a lymfatických ciev a migrujú cez portálny obeh do pečene. Tu invadujú epitelové bunky žlčovodov. V žlčovodoch prebieha masívna schizogónia a gametogónia. Vyprodukované nesporulované oocysty sú žlčou vyplavované do dvanástnika a odchádzajú von s trusom. V prostredí prebehne v priebehu 48–72 hodín sporulácia na infekčné štádium.",
+    "pathology": "_Eimeria stiedai_ vykazuje extrémnu patogenitu. Parazit spôsobuje masívnu hyperpláziu epitelu žlčovodov a ich následnú obštrukciu (upchatie). Pečeň sa výrazne zväčšuje (hepatomegália) a na jej povrchu aj v parenchýme sa tvoria charakteristické belavé až žltkasté uzlíky a rozvetvené pruhy naplnené žlčou, hnisom a miliónmi oocýst. Tlak na okolité tkanivo vedie k ischémii a nekróze pečene. Klinické príznaky u králikov (najmä u mláďat vo veku 1–3 mesiacov) zahŕňajú apatiu, nechutenstvo, výrazné zväčšenie brucha (\"žabie brucho\"), hnačky striedajúce sa so zápchou, ikterus (žltačku) a rapídne chradnutie. U mladých králikov dosahuje úmrtnosť pri masívnej infekcii až 80–100 %.",
     "zoonosis": false,
-    "notes": "Oocysty _E. stiedae_ sú extrémne odolné voči bežným dezinfekčným prostriedkom na báze chlóru alebo kyselín. V prostredí králikární prežívajú mesiace. Účinnú asanáciu je možné dosiahnuť len vysokou teplotou (horúca voda nad 70 °C, opaľovanie klietok plameňom) alebo špeciálnymi antikokcidióznymi dezinfekciami (napr. na báze krezolu).",
-    "id": "eimeria_stiedae_oocyst",
+    "notes": "Oocysty _E. stiedai_ sú extrémne odolné voči bežným dezinfekčným prostriedkom na báze chlóru alebo kyselín. V prostredí králikární prežívajú mesiace. Účinnú asanáciu je možné dosiahnuť len vysokou teplotou (horúca voda nad 70 °C, opaľovanie klietok plameňom) alebo špeciálnymi antikokcidióznymi dezinfekciami (napr. na báze krezolu).",
+    "id": "eimeria_stiedai_oocyst",
     "images": []
   },
   {
@@ -12662,7 +12662,7 @@
     "differentialDiagnosis": [
       "Cysty komenzálnych monád: Najmä v truse bylinožravcov bývajú cysty, ktoré majú tiež cytoplazmu po centrifugácii asymetricky ako Giardia, ale majú rôzne rozmery a sú viac guľaté",
       "_Cryptosporidium_ spp.: Ooysty sú podstatne menšie (4–6 µm), guľaté, acidorezistentné (farbenie podľa Ziehl-Neelsena – červené na modrom pozadí).",
-      "_Tritrichomonas foetus_: Bičíkovec (častý u mačiek). Netvorí cysty. Trofozoity majú zvlnenú membránu, trhavý pohyb vpred a jedno jadro. Na Giardia ELISA / PCR nereaguje.",
+      "_Tritrichomonas blagburni_: Bičíkovec (častý u mačiek). Netvorí cysty. Trofozoity majú zvlnenú membránu, trhavý pohyb vpred a jedno jadro. Na Giardia ELISA / PCR nereaguje.",
       "_Entamoeba histolytica_: Cysty sú guľaté (10–15 µm), zrelé majú 4 jadrá a tyčinkovité chromatoidné telieska. Trofozoity majú meňavkovitý pohyb (pseudopódie), bez bičíkov."
     ],
     "lifeCycle": "Životný cyklus je priamy (monoxénny) a prebieha v tenkom čreve hostiteľa. \n **Ingescia (infekcia)**: Hostiteľ sa nakazí prijatím zrelých cýst kontaminovanou vodou, potravou alebo zo špinavých rúk/labiek (fekálno-orálna cesta). \n **Excystácia**: V kyslom prostredí žalúdka a následne v dvanástniku (duodene) dochádza k narušeniu steny cysty. Z každej cysty sa uvoľnia dva trofozoity. \n **Kolonizácia a množenie**: Trofozoity sa prichytávajú na povrch enterocytov (buniek tenkého čreva) pomocou prísavného disku. Množia sa pozdĺžnym binárnym delením. Neprenikajú hlboko do tkaniva, ale mechanicky a toxicky poškodzujú mikroklky čreva, čo vedie k malabsorpcii (poruche vstrebávania živín a tukov). \n **Encystácia**: Ako sa trofozoity posúvajú hrubým črevom ďalej, dehydratácia obsahu a prítomnosť žlčových solí stimuluje tvorbu cystovej steny – menia sa späť na cysty. \n **Eliminácia**: Cysty (v sformovanej stolici) a niekedy aj nestabilné trofozoity (pri hnačkách) odchádzajú stolicou do vonkajšieho prostredia. Cysty sú okamžite infekčné.",
@@ -20382,6 +20382,61 @@
     "notes": "Malé strongylidy",
     "id": "triodontophorus_sp_egg",
     "images": []
+  },
+  {
+    "id": "tritrichomonas_blagburni_trophozoite",
+    "latinName": "Tritrichomonas blagburni",
+    "synonyms": [
+      "Tritrichomonas foetus (mačací genotyp)"
+    ],
+    "slovakName": "",
+    "taxonomy": {
+      "kingdom": "Protozoa",
+      "phylum": "Metamonada",
+      "class": "Trichomonadea",
+      "order": "Trichomonadida",
+      "family": "Trichomonadidae",
+      "genus": "Tritrichomonas",
+      "species": "Tritrichomonas blagburni"
+    },
+    "hostGroups": [
+      "Mačkovité mäsožravce"
+    ],
+    "hosts": [],
+    "hostNotes": {},
+    "sample": "Trus",
+    "stage": "Trofozoit",
+    "group": "Protozoa",
+    "methods": [],
+    "micrometry": {
+      "lengthMin": 10,
+      "lengthMax": 18,
+      "widthMin": 4,
+      "widthMax": 9,
+      "unit": "µm"
+    },
+    "morphology": {
+      "shape": "Hruškovitý",
+      "colour": "Bezfarebný",
+      "shell": "Bez schránky"
+    },
+    "diagnosticSigns": [
+      "Hruškovitý trofozoit s undulujúcou membránou a bičíkmi; bez cystického štádia.",
+      "Identifikuje sa živý, pohyblivý trofozoit **v čerstvom** truse.  Typický je **trhavý, chaotický a rotačný pohyb** vpred.",
+      "Vnútro bunky je jemne granulované s viditeľným jadrom a kinetoplastom pri farbení (Giemsa)",
+      "**3 predné bičíky**",
+      "Prítomná **undulujúca membrána**"
+    ],
+    "differentialDiagnosis": [
+      "_Giardia duodenalis_ - symetrický, kvapkovitý tvar, pohyb **pomalý, kolísavý** (ako padajúci list), 8 bičíkov (v pároch), má **prísavný disk** (vzhľad tváre alebo šarkana)",
+      "_Pentatrichomonas hominis_ - nízka pravdepodobnosť u mačiek (skôr psy alebo ľudia), oválny - hriškovitý tvar, rýchly trhavý pohyb, **5 predných bičíkov**, definitívne odlíšenie len pomocou PCR"
+    ],
+    "lifeCycle": "Vývinový cyklus _Tritrichomonas blagburni_ je priamy (monoxénny), prebieha bez účasti medzihostiteľa. K prenosu dochádza fekálo-orálnou cestou pri priamom kontakte medzi mačkami, najčastejšie pri spoločnom používaní mačacích toaliet, vzájomnom čistení (grooming) alebo pozretím krmiva/vody kontaminovanej čerstvým trusom. Keďže parazit netvorí enviromentálne odolné cysty, trofozoity prežívajú vo vonkajšom prostredí len krátko (maximálne niekoľko hodín vo vlhkom truse). Po prehltnutí putujú trofozoity gastrointestinálnym traktom priamo do cieľového miesta, ktorým je ileum, cékum a predovšetkým hrubé črevo (colon). Tu sa prichytávajú k epitelu sliznice a množia sa pozdĺžnym binárnym delením. Neprebieha žiadny vnútrobunkový vývin ani migrácia tkanivami.",
+    "pathology": "_Tritrichomonas blagburni_ je obligátny patogén mačacieho hrubého čreva, kde vyvoláva chronickú mukopurulentnú až hemoragickú kolitídu (zápal hrubého čreva). Parazit svojou aktivitou a produkciou enzýmov poškodzuje enterocyty, narúša mikroklímu čreva a spôsobuje zmnoženie hlienu a narušenie permeability sliznice. Klinicky sa infekcia prejavuje chronickou alebo intermitentnou (striedavou) hnačkou s výrazným zápachom, s prímesou čerstvej krvi (hematochezia) a hlienu. Typické sú príznaky iritácie hrubého čreva: časté nutkanie na stolicu (tenezmus), flatulencia, fekálna inkontinencia a bolestivosť v oblasti brucha, pričom celkový habitus mačky, chuť do jedla a telesná hmotnosť často ostávajú nezmenené. Patologicko-anatomické zmeny zahŕňajú hyperémiu sliznice hrubého čreva, infiltráciu laminae propriae lymfoplazmocytárnymi a neutrofilnými zápalovými bunkami a fokálnu stratu mikroklkov.",
+    "zoonosis": false,
+    "images": [],
+    "references": [],
+    "notes": "• Je bezpodmienečne nutné použiť **úplne čerstvý trus** (ideálne tekutý hlien z povrchu stolice). Vzorka **nesmie byť chladená** v chladničke. Trofozoity nemajú ochrannú stenu (cystu), preto sú extrémne citlivé na vysychanie a pokles teploty. Vo vlhkom, tekutom truse pri izbovej teplote (okolo 20–22 °C) dokážu prežívať a aktívne sa pohybovať približne 2 až maximálne 4 hodiny. Po 2 hodinách od odberu už časť trofozoitov stráca vitalitu, zaobľuje sa a prestáva sa hýbať (čím sa stávajú pod mikroskopom neviditeľnými/neidentifikovateľnými). Pri príprave natívneho preparátu je vhodné použiť **fyziologický roztok zahriaty na telesnú teplotu (cca 37 °C)**. Tento tepelný stimul môže prebudiť k aktivite aj tie trofozoity, ktoré už v dôsledku chladnutia vzorky upadali do nehybnosti.\n• Bežné širokospektrálne antiprotozoiká (ako napr. metronidazol) sú voči tomuto parazitovi klinicky neúčinné (môžu iba dočasne zmierniť hnačku). Jedinou efektívnou kauzálnou liečbou je podávanie ronidazolu, ktorý je však pre mačky potenciálne neurotoxický a jeho použitie vyžaduje presné dávkovanie pod prísnym dohľadom veterinára.\n• U mnohých infikovaných mladých mačiek dochádza po mesiacoch až rokoch k spontánnemu klinickému vymiznutiu príznakov bez liečby, hoci zvieratá môžu naďalej ostávať latentnými, asymptomatickými nosičmi a vylučovateľmi parazita."
   },
   {
     "latinName": "Trypanoxyuris sciuri",
