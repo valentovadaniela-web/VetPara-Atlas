@@ -1965,6 +1965,7 @@
     "images": []
   },
   {
+    "id": "capillariidae_egg",
     "latinName": "Capillariidae",
     "synonyms": [],
     "slovakName": "",
@@ -1979,19 +1980,21 @@
     },
     "hostGroups": [
       "Domáce prežúvavce",
-      "Hmyzožravce",
       "Hlodavce",
-      "Vtáky",
+      "Hmyzožravce",
       "Kengury",
       "Plazy",
-      "Hmyzožravce",
-      "Akváriové ryby"
+      "Ryby",
+      "Vtáky",
+      "ZOO hlodavce",
+      "ZOO prežúvavce"
     ],
     "hosts": [],
     "hostNotes": {},
     "sample": "Trus",
     "stage": "Vajíčko",
     "group": "Nematoda",
+    "methods": [],
     "micrometry": {
       "lengthMin": 48,
       "lengthMax": 62,
@@ -2005,10 +2008,10 @@
       "shell": "Hrubá, s polárnymi zátkami"
     },
     "diagnosticSigns": [
-      "Súdkovitý až citrónovitý tvar",
-      "Povrch často jemne bodkovaný / priečne pruhovaný (najspoľahlivejší znak pod vyšším zväčšením/fázovým kontrastom)",
+      "Celá čeľaď Capillariidae (kam patria rody Aonchotheca, Eucoleus, Baruscapillaria, Capillaria a ďalšie) produkuje súdkovité vajíčka s dvoma pólovými zátkami. Pod svetelným mikroskopom vyzerajú takmer rovnako.",
       "Zátky menej výrazné, ale pri vtáčích druhoch niekedy prominujú.",
-      "Často asymetrické zátky"
+      "Často asymetrické zátky",
+      "Podľa štúdií o štruktúre vajíčok čeľade Capillariidae sa povrch ich steny delí na hladký, bodkovaný (jamkovitý) a sieťkovaný."
     ],
     "differentialDiagnosis": [
       "_Trichuris_ sp.: vždy hladký povrch, tmavšie, vypuklé steny, zátky vyčnievajú a sú symetrické"
@@ -2016,9 +2019,9 @@
     "lifeCycle": "1. Priamy (monoxénny) cyklus - typický napr. pre niektoré druhy parazitujúce v čreve hydiny:\nDospelé samice v hostiteľovi (čreve, pečeni, dýchacích cestách) kladú nezrelé vajíčka.\nVajíčka sa dostávajú von trusom (prípadne, pri C. hepatica, zostávajú v pečeni až do rozkladu tela hostiteľa).\nVo vonkajšom prostredí (pôda, vlhko, teplo) dochádza k dozretiu vajíčka na infekčné štádium obsahujúce larvu (L1).\nNový hostiteľ sa nakazí perorálne – prehltnutím infekčného vajíčka (napr. s kontaminovanou potravou, vodou, pôdou).\nV čreve sa larva vyliahne, migruje do cieľového orgánu (sliznica čreva, pečeň, priedušnica) a dozrieva na dospelého jedinca.\n 2. Nepriamy (heteroxénny) cyklus - typický pre druhy parazitujúce v močovom mechúre alebo dýchacích cestách mäsožravcov: \nVajíčka sa dostanú do prostredia trusom alebo močom.\nVajíčko musí byť pozreté dážďovkou (Lumbricidae), ktorá slúži ako medzihostiteľ (paratenický alebo skutočný).\nV tele dážďovky sa larva ďalej vyvíja do infekčného štádia.\nDefinitívny hostiteľ (napr. pes, líška, mačka) sa nakazí zjedením infikovanej dážďovky.\nLarva sa v tele definitívneho hostiteľa dostane do cieľového orgánu a dozreje na dospelého jedinca.",
     "pathology": "Hydina (hrvoľ/pažerák): zhrubnutie a zápal sliznice, difterická/nekrotická hrvoľová kapilariáza, dysfágia, regurgitácia, chudnutie, pri masívnej invázii úhyn (najmä mladé kurčatá, morky) \n Hydina (črevo): katarálna až hemoragická enteritída, hnačka, znížená znáška, spomalený rast \n Prežúvavce/hovädzí dobytok: väčšinou subklinické, pri vyššej intenzite invázie chronická hnačka, chudnutie, anémia \n Plazy: gastritída/ezofagitída, anorexia, regurgitácia, kachexia – u chovaných plazov (najmä hady, jašterice) môže byť pri vysokej intenzite letálna, často komplikovaná sekundárnymi infekciami. \n Akváriové ryby: \n _Capillaria pterophylli_ žije v črevách cichlíd (najmä skalárov a terčovcov). Napadnutá ryba stráca záujem o potravu, chradne, chudne (má prepadnuté bruško) a ťahajú sa z nej dlhé, svetlé až priesvitné výkaly. \n _Pseudocapillaria tomentosa_ napáda kaprovité ryby (napr. mrenky). Masívne infikuje Danio pruhované. Spôsobuje u nich chronické zápaly čriev, zakrivenie chrbtice. \n _Capillostrongyloides sp._ často parazituje u sumčekov a prísavníkov",
     "zoonosis": false,
-    "notes": "",
-    "id": "capillariidae_egg",
-    "images": []
+    "images": [],
+    "references": [],
+    "notes": "Ak nie je bezpečne určený druh uvádzať Capillariidae a nie Aonchotheca alebo Capillaria."
   },
   {
     "latinName": "Caryospora falconis",
